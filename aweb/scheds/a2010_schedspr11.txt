@@ -1,0 +1,183 @@
+A2010 observing schedule                                          last update: 11Apr19 mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing.
+--------------------------------------------
+COMPLETED OBSERVATIONS  
+------------------------------------------------------------------------------------------------
+SPRING 2010 to start 26 December 2010
+
+    10.12.26  S 26Dec    05h51    03h15-06h30   09h06-12h22    cancelled TOO       
+    10.12.27  M 27Dec    05h55    03h00-06h15   08h55-12h11    cancelled TOO    
+    10.12.28  T 28Dec    05h59    03h00-06h15   08h59-12h15   137p2  +332012  MH(R)  
+    10.12.29  W 29Dec    06h03    03h00-06h15   09h03-12h19   138p2  +333448  MH(R)                                     
+    10.12.30  R 30Dec    06h07    03h00-06h15   09h07-12h23    cancelled TOO 
+    10.12.31  F 31Dec    06h11    02h45-06h00   08h56-12h11    cancelled TOO  
+    11.01.04  T 04Jan    06h26    02h30-05h45   08h57-12h12    cancelled TOO  
+    11.01.08  S 08Jan    06h38    02h15-06h45   08h57-13h28   133p2  +322148  MH,RG(R) 
+    11.01.09  S 09Jan    06h42    02h15-06h45   09h01-13h32   134p2  +323624  GH(R)   
+    11.01.10  M 10Jan    06h46    02h15-06h45   09h05-13h36   135p2  +325100  GH(R)   
+    11.01.17  M 17Jan    07h17    01h45-06h30   09h03-13h48   134p1  +322906  UAT@AO         
+    11.01.18  T 18Jan    07h21    01h30-06h15   08h52-13h37   138p1  +332730  UAT@AO        
+    11.01.19  W 19Jan    07h25    01h30-06h15   08h56-13h41   136p1  +325818  UAT@AO          
+    11.01.24  M 24Jan    07h45    01h15-04h30   09h00-12h16   135p1  +324342  GH(R)   
+    11.01.30  S 30Jan    08h09    00h45-04h00   08h54-12h09   137p1  +331254  MH(R)   
+    11.01.31  M 31Jan    08h13    00h45-04h00   08h59-12h13   139p1  +334206  SH2(R)  
+    11.02.01  T 01Feb    08h17    00h45-04h00   09h03-12h17   140p1  +335642  SH2(R)
+    11.02.05  S 05Feb    08h33    00h45-04h00   09h17-12h33   136p2  +330536  AO,JM,HC(R)
+    11.02.06  S 06Feb    08h37    00h30-03h45   09h06-12h22   139p2  +334924  RK(R)         
+    11.02.09  W 09Feb    08h48    00h30-06h45   09h18-15h34   140p2  +340404  DF,JO(R)      
+    11.02.10  R 10Feb    08h52    00h15-06h45   09h07-15h38   141p1  +341118  RK,HD(R)   ZA restrictions lifted!
+    11.02.11  F 11Feb    08h56    00h15-06h45   09h11-15h42   141p2  +341836  RK(R) 
+    11.02.12  S 12Feb    09h00    00h15-06h45   09h15-15h46   142p1  +342554  AO,JM(R) 
+    11.02.13  S 13Feb    09h04    00h00-06h30   09h04-15h35   143p1  +344030  EP,GH
+    11.02.14  M 14Feb    09h08    00h00-06h30   09h08-15h39   144p1  +345506  GH,CM
+    11.02.15  T 15Feb    09h12    00h00-06h30   09h12-15h43   144p2  +350224  DS,EP 
+    11.02.16a W 16Feb    09h16    00h00-06h30   09h16-15h47   148p2  +360048  DF,CM,DS,GH
+    11.02.16p W 16Feb    09h20    23h59-06h15   09h16-15h36   145p1  +350942  DS,EP
+    11.02.17  R 17Feb    09h24    23h45-06h15   09h09-15h40   146p1  +352418  CM,DS,DF,EP,GH  
+    11.02.18  F 18Feb    09h28    23h45-04h15   09h13-13h43   148p3  +354951  CM,DS,DF  
+    11.02.20  S 20Feb    09h36    23h45-06h00   09h20-15h36   147p1  +353854  DC(R)    
+    11.02.21  M 21Feb    09h40    23h30-06h00   09h09-15h40   148p1  +355330  DF(R)       
+    11.02.22  T 22Feb    09h44    23h30-06h00   09h13-15h40   149p1  +360806  DC,CD(R)   
+    11.02.23  W 23Feb    09h48    23h30-06h00   09h18-15h44   142p2  +343312  DF(R)    
+    11.02.24  R 24Feb    09h52    23h30-05h45   09h21-15h37   143p2  +344748  DC,CD(R) 
+    11.02.25  F 25Feb    09h56    23h15-05h45   09h10-15h41   149p2  +360427  AO,JM,HC(R)  
+    11.02.26  S 26Feb    10h00    23h15-05h45   09h14-15h45   139p1  +334206  EP(R)
+    11.02.27  S 27Feb    10h04    23h00-05h30   09h03-15h34   135p1  +324342  GH(R)  
+    11.02.28  M 28Feb    10h08    23h00-05h15   09h07-15h23   145p2  +351700  CM(R)   
+    11.03.01  T 01Mar    10h12    22h45-05h15   08h56-15h27   146p2  +353136  CM(R)      
+    11.03.02  W 02Mar    10h16    22h45-05h15   09h00-15h31   147p2  +354612  CM(R)
+    11.03.03  R 03Mar    10h20    22h45-05h15   09h04-15h35   148p4  +355709  EP(R) 
+    11.03.04  F 04Mar    10h24    22h45-05h00   09h08-15h24   137p1  +331254  PT,RO,RK(R)
+    11.03.05  S 05Mar    10h28    22h30-05h00   08h56-15h28   140p1  +335642  PT,RO,CW(R)
+    11.03.06  S 05Mar    10h32    22h30-05h00   09h00-15h31   136p2  +330536  PT,RO,CW(R)
+    11.03.07  M 07Mar    10h36    22h30-05h00   09h04-15h35   137p2  +332012  JO,DF(R)
+    11.03.08  T 08Mar    10h39    22h30-04h45   09h08-15h24   138p2  +333448  DS(R) 
+    11.03.10  R 10Mar    10h47    22h15-04h45   09h01-15h32   139p2  +334924  RF,RK(R)  
+    11.03.11  F 11Mar    10h51    22h15-04h45   09h05-15h36   133p2  +322148  DC,CD,TP(R)    
+    11.03.12  S 12Mar    10h55    22h15-04h30   09h09-15h25   134p2  +323624  LH,RP(R)
+    11.03.14  M 14Mar    10h59    01h00-04h30   11h58-15h29   135p2  +325100  DS(R) 
+    11.03.19  S 19Mar    11h18    01h00-04h15   12h18-15h34   134p1  +322906  DC(R)  
+    11.03.20  S 20Mar    11h22    00h45-04h00   12h07-15h23   136p1  +325818  DS(R)   
+    11.03.21  M 21Mar    11h26    00h45-04h00   12h11-15h27   138p1  +332730  DS(R)
+    11.04.19  T 19Apr    12h31    00h00-02h15   13h21-15h35   148p3  +354951  MH(R)
+
+------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS  
+------------------------------------------------------------------------------------------------
+We have completed the Spring 2011 observing.... and all ALFALFA spring observing!
+
+----------------------
+
+FALL 2011 Season     (starting August 2011..... no schedule yet!)
+
+********************     NOTICE      AST IS THE SAME AS EDT                   ****************
+********************                Times for A2010 only                      ****************  
+                      *** Remember: the date refers to the day when the runs starts in AST****
+     Block     Date    LMSTmidn      AST           LST       Drift   DecJ    Observers  
+                  
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Fall 2010:  (updated Dec17)
+Still to do:         stat=azdectozaha(180.0d,21.5d,za,ha,/verbose) 
+      5p1 needs to be redone (09.08.30)
+      76 to 82 both passes (zenith strip observing)
+      83 to 86 both passes (meridian observing)
+      87p1 to finish
+     134p1 after 2330 
+     135p1
+     136-148 both passes   (need ZA restriction lifted)
+This makes 56 nights including p3/p4
+ 
+Drift   Dec    |  Az    | RotAng|  ZA  |   RA vs LST         | conf file to use    
+76p1  +182218  | 90.4   | -70.0 | 5.0  | need to experiment  | a2010_az85_2010.conf
+76p2  +182936  | 92.8   | -70.0 | 5.0  | need to experiment  | a2010_az85_2010.conf
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+AA: Adeel Altaf (Lafayette)
+CA: Cameron Arsenault (RMCC)
+TB: Tom Balonek
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+BC: Barbara Catinella
+BC2: Bret Comnes
+JC: John Cannon
+DC: David Craig
+HC: Heather Cutler (SLU)
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+AF: Amy Furniss (HSU)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+EG: Elena George (HSU)
+JG: Josh Goldstein (Lafayette)
+RG: Riccardo Giovanelli
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+MJ: Melissa Jacquart (UWisc)
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+VM: Victoria Mendoza (St.Marys)
+WM: Arik Mitschang (HSU)
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+JR: Jessica Rosenberg
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+TS: Tess Senty (HSU)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots

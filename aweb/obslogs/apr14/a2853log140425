@@ -1,0 +1,49 @@
+A2853   LBW   14.04.25      Observer: Luke Leisman
+
+CIMA version:          The Stable version (Default)  Ver 3.3.12 2014-03-20 17:38
+Configuration file:    a2853_apr14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140425.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.25apr14.a2853.*
+         and     /share/olcor/corfile.26apr14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+A100036.5+303210  100036.5 +303210  j   500 H v   # A205590        1023  13.2   6    411500174   calib:good detection @500 km/s stn=13 
+A100036.5+303210  100036.5 +303210  j   500 H v   # A205590        1035  14.4   7    411500178   repeat: det @ 500 km/s stn=13
+H110701.2+302508  110658.9 +302512  j  1600 H v   # A219660        1049  12.7   8    411500182   det @1550 km/s stn=6.4
+A115224.3+233737  115224.3 +233737  j  3400 H v   # A210866        1103  12.7   9    411500186   det @3450 km/s stn=7.4
+A115304.7+241509  115304.7 +241509  j  3500 H v   # A731814        1116  10.6  10    411500190   no det: maybe very weak narrow det @ 3530 km/s?   
+A115407.0+255146  115407.0 +255146  j  3800 H v   # A731818        1128  9.7   11    411500194   no det: wavy baseline, maybe weak det @3660 km/s
+A115535.0+232953  115535.0 +232953  j  5200 H v   # A719650        1141  6.2   12    411500198   det@5150 km/s stn=3.3
+A115612.1+254751  115612.1 +254751  j  5100 H v   # A724231        1153  7.4   13    411500202   no det
+A115647.4+251027  115647.4 +251027  j  4500 H v   # A724254        1206  7.0   14    411500206   no det 
+A115943.4+251704  115943.4 +251704  j  3500 H v   # A731863        1218  8.0   15    411500210   good det @ 3400 km/s stn=16
+A115829.6+244606  115829.6 +244606  j  4400 H v   # A731844        1230  9.6   16    411500214   broad baseline fluctuation; weak det @4350km/s (1400MHz) stn=3.2  
+A115917.2+250927  115917.2 +250927  j  4500 H v   # A731857        1243  12.0  17    411500218   no det
+A120454.9+240648  120454.9 +240648  j  3200 H v   # A731914        1255  12.8  18    411500222   no det  
+A115917.2+250927  115917.2 +250927  j  4500 H v   # A731857        1307  17.1  19    411500226   no det: Reobserve b/c 1 full source ahead.
+A142750.8+255017  142750.8 +255017  j  4400 H v   # A240380        1325  16.4  20    411500230   det @ 4600 km/s (1399MHz) stn=8   
+A142860.0+264746  142860.0 +264746  j  4400 H v   # A726610        1337  14.7  21    411500234   no det: (though hint @4400km/s (1400MHz))
+A142949.0+272153  142949.0 +272153  j  4200 H v   # A732949        1349  13.1   1    411600001   det @ 4150km/s (1400 MHz) stn=4.6
+A143021.9+255446  143021.9 +255446  j  4800 H v   # A245833        1402  10.0   2    411600005   det @ 4700km/s (1398 MHz) stn=2.5
+A143038.3+250949  143038.3 +250949  j  4400 H v   # A732951        1414  7.8    3    411600009   no det
+A143102.2+260027  143102.2 +260027  j  4400 H v   # A732952        1426  7.7    4    411600013   maybe det @ 4500 km/s stn<2
+A143344.8+251034  143344.8 +251034  j  4500 H v   # A726703        1439  6.8    5    411600017 ABORTED DUE TO TIME (just 40 seconds short :( ) 
+A143414.6+253543  143414.6 +253543  j  4800 H v   # A732971 if time
+
+Notes:
+     Clear weather, so tiedowns enabled. However, we seemed to be getting a little baseline structure, which
+	is quite possibly due to RFI, but I had the operator disable the tiedowns around LST 1220 as a precaution.   
+	A good night. STN estimates measured using lbwmeasure idl code.
+
+
+
+

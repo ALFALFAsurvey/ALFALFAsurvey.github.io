@@ -1,0 +1,77 @@
+Log for 05/05/10          Observer: Betsey Adams
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100505.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100506.a2010.****.fits
+
+LST@start: 0943
+
+LST  fits   Scan    calscan   Source     Pattern   Start coords. ang   time  loop  calmode    
+0928 0009  12500101 12500102  drift111p3 fixAZdr   092800+264939 19.0  600   99    loopend  
+0938 0010  12500103 12500104  quicklook, power levels ok
+0948 0011  12500105 12500106
+0959 0012  12500107 12500108
+1009 0013  12500109 12500110
+1019 0014  12500111 12500112  serious interpolation errors - occured at 0 hours UT
+1029 0015  12500113 12500114
+1039 0016  12500115 12500116
+1049 0017  12500117 12500118
+1059 0018  12500119 12500120
+1109 0019  12500121 12500122
+1119 0020  12500123 12500124
+1130 0021  12500125 12500126
+1140 0022  12500127 12500128
+1150 0023  12500129 12500130
+1200 0024  12500131 12500132
+1210 0025  12500133 12500134
+1220 0026  12500135 12500136
+1230 0027  12500137 12500138
+1240 0028  12500139 12500140
+1251 0029  12500141 12500142
+1301 0030  12500143 12500144
+1311 0031  12500145 12500146
+1321 0032  12500147 12500148
+1331 0033  12500149 12500150
+1341 0034  12500151 12500152  GPS burst
+1351 0035  12500153 12500154
+1401 0036  12500155 12500156
+1412 0037  12500157 12500158
+1422 0038  12500159 12600001
+1432 0000  12600002 12600003
+1442 0001  12600004 12600005
+1452 0002  12600006 12600007
+1502 0003  12600008 12600009
+1512 0004  12600010 12600011
+1522 0005  12600012 12600013
+1532 0006  12600014 12600015
+1543 0007  12600016 Aborted
+
+LST@stop:1543
+
+NOTES:
+
+-For interpolation error: 'denominator is zero' and 'skipping interpolation' are key phrases
+interpolation of pnt-data over a too large time gap attempted
+looks like a problem for 20:00:01,20:00:02 AST
+quick exam of fits file looks okay - checked records around 540
+
+-quicklook, power levels okay throughout night
+
+- TOGS only at END
+
+- FAA radar ON
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 13.8   K2: 13.7   K3: 15.2   K4: 15.2   AT 16:39
+70K = K1: 83.4   K2: 90.5   K3: 100.3  K4: 108.3
+
+16K = K1: 13.8   K2: 14.8   K3: 15.3   K4: 15.5   AT 22:42
+70K = K1: 84.6   K2: 91.5   K3: 101.5  K4: 109.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+

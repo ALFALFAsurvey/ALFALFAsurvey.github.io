@@ -1,0 +1,74 @@
+Log for 12.10.05 (05oct2012)        Observers: Aileen O'Donoghue, Jeff Miller, Steve Goldman
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121005.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121006.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2125 0001  227900045 227900046 drift142p1  fixAzdr   212500+342554  19  600   99  loopend power levels ok, FAA radar on
+   TOGS failed initally so we re-ran it, but still finished soon enough to start ALFALFA   bit early!
+   ALFA had stopped rotating, which caused the problem, causing TOGS to fail.  Operator (Juan) restarted ALFA communication
+   and that fixed the problem.  TOGS finished happily. 
+2135 0002 227400047 227400048 quicklook OK 
+2145 0003 227400049 227400049 
+2155 0004 227400051 227400051 quicklook OK
+2205 0005 227400053 227400054 power levels OK
+2215 0006 227400055 227400056 quicklook OK
+2225 0007 227400057 227400058   
+2236 0008 227400059 227400060 continuum source
+2246 0009 227400061 227400062 quicklook OK  
+2256 0010 227400063 227400064 quicklook OK  
+2306 0011 227400065 227400066 strong continuum source 0a, 2a, 5a  
+2316 0012 227400067 227400068 continuum source
+2326 0013 227400069 227400070  
+2336 0014 227400071 227400072 
+2347 0015 227400073 227400074 quicklook OK  
+2357 0016 227400075 227400076 power levels OK   
+0007 0017 227400077 227400078 quicklook OK   
+0017 0018 227400079 227400080 quicklook OK, power levels OK, beam 6, unlike GFF is no longer dead! 
+0027 0019 227400081 228000001  
+0037 0000 228000002 228000003  
+0048 0001 228000005 228000005  
+0058 0002 228000007 228000007      
+0108 0003 228000008 228000009 quicklook OK, power levels OK  
+0118 0004 228000010 228000011  
+0228 0005 228000012 228000013 quicklook OK, power levels OK  
+0138 0006 228000014 228000015  
+0148 0007 228000016 228000017 quicklook OK, power levels OK  
+0158 0008 228000018 228000019  
+0208 0009 228000020 228000021  
+0218 0010 228000022 228000023 very strong continuum sources, WAPPs have too much power (triggered by continuum sources!)
+0229 0011 228000024 228000025 strong continuum source, GPS Burst UT 06:02:30-06:03:45, quicklook OK, power levels OK   
+0239 0012 228000026 228000027 weak FAA harmonic at 1380 (not visible earlier), GPS burst begins UT 6:14:30
+0249 0013 228000028 228000029 GPS burst finished UT 6:15:00, WAPPs interpolated 2s gap
+0259 0014 228000030 228000031 weak continuum source, quicklook OK  
+0309 0015 228000032 228000033 GPS Burst UT 06:43:00-06:43:45       
+0319 0016 228000034 228000035 -- aborted
+
+LST stop: 0319
+
+At the bottom, add notes regarding:
+-- FAA radar on.
+-- All ALFA beams working.
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 13.8   K3: 15.5   K4: 15.2   AT 18:09
+70K = K1: 84.6   K2: 84.4   K3: 93.0   K4: 101.3
+
+16K = K1: 14.6   K2: 13.8   K3: 15.5   K4: 15.2   AT 22:00
+70K = K1: 84.6   K2: 84.4   K3: 92.7   K4: 101.0
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered

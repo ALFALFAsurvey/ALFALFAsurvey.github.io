@@ -1,0 +1,58 @@
+Log for 12.10.19 (19oct2012)        Observers: Gregory Hallenbeck
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121019.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121020.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+0030 0000  229300068 229300069 drift135p1  fixAzdr   003055+324342  19  600   99
+  Started 30 minutes late. Multiple unusual error messages involving CIMA not communicating with the backend properly:
+  IF/LO, backend, ALFA rotation angle all fine, but CIMA did not acknowledge them. e.g.:
+  got_cormsg: ERROR error message from DATATAKING: 'mcpSetupCmd: prg if2Prog@da err 0x3f50005'
+  got_cormsg: ERROR error message from DATATAKING: 'aog generic if1 Prog@da err 0x3f50005'
+  Arun was called and fixed the problem, though I don't know what its cause was.
+  I'm glad it was me observing tonight, and not one of the more novice observers...
+
+  power OK, quicklook OK. Waterfall plots have poor color gradients.
+0040 0001 229300070 229300071 continuum source? It's hard to tell what's happening in the waterfall plots.
+0050 0002 229300072 229300073
+0101 0003 229300074 229300075 continuum source
+0111 0004 229300076 229300077
+0121 0005 229300078 229400001
+0131 0000 229400002 229400003
+0141 0001 229400004 229400005 quicklook OK
+0151 0002 229400006 229400007
+0201 0003 229400008 229400009
+0212 0004 229400010 229400011
+0222 0005 229400012 229400013
+0232 0006 229400014 229400015
+0242 0007 229400016 229400017
+0252 0008 229400018 229400019 quicklook OK
+0302 0009 229400020 229400021
+0312 0010 229400022 229400023
+0323 0011 229400024 aborted
+
+LST stop: 0323
+
+At the bottom, add notes regarding:
+-- Started 30 minutes late (see explanation above)
+-- TOGS not run
+-- FAA radar was off (yay!)
+-- All ALFA beams working.
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 14.4   K2: 13.9   K3: 15.4   K4: 14.8   AT 18:54
+70K = K1: 84.0   K2: 83.5   K3: 92.3   K4: 100.4
+
+16K = K1: 14.4   K2: 13.5   K3: 15.3   K4: 15.0   AT 22:01
+70K = K1: 84.2   K2: 83.4   K3: 92.2   K4: 100.5
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________

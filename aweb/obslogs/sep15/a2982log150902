@@ -1,0 +1,77 @@
+A2982 LBW   15.09.02     Observers: GH
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_150902.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20150902.a2982.****.fits  
+                     /share/wappdata.now/wapp.20150903.a2982.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H220058.2+273721  220059.5 +273651  j     0 H v   # A321196cal 2143  10.29   0018  524500136   detected @ 1404 MHz, SN~8 
+S220415.3+293244  220415.3 +293244  j     0 H v   # A322494    2151  11.60   0019  524500140   possible detection @ 1396 MHz, SN~4. 1 more pair.
+S220052.0+300409  220052.0 +300409  j     0 H v   # A322661    2203  11.82   0020  524500144   no detection
+S222328.0+322048  222328.0 +322048  j     0 H v   # A323029    2216  14.20   0021  524500148   no detection
+S222407.6+313544  222407.6 +313544  j     0 H v   # A323030    2228  13.37   0000  524600004   possible detection @ 1389 MHz, SN~2. 1 more pair.
+S223739.9+345323  223739.9 +345323  j     0 H v   # A322546    2242  16.68   0001  524600008   detection @ 1382 MHz, SN~6 (definitely not GPS)
+S225421.2+324907  225421.2 +324907  j     0 H v   # A322622    2254  14.57   0002  524600012   detection @ 1390 MHz, SN~8
+S231146.0+342414  231146.0 +342414  j     0 H v   # A335311    2307  16.20   0003  524600016   very strong RFI @ 1350. Baseline too erratic to tell.
+S232634.4+325724  232634.4 +325724  j     0 H v   # A335360    2319  14.81   0004  524600020   detection @ 1398, SN~8
+S234328.6+335909  234328.6 +335909  j     0 H v   # A335440    2331  16.00   0005  524600024   possible detection @ 1393, 1395, SN~2. 1 more pair? GPS radar on.
+S000236.8+332319  000236.8 +332319  j     0 H v   # A104291    2344  15.73   0006  524600028   not detected. GPS on.
+S002034.6+333753  002034.6 +333753  j     0 H v   # A104366    2356  16.38   0007  524600032   detection @ 1391 MHz, SN~6. strong GPS (easily removed)
+S002102.3+323427  002102.3 +323427  j     0 H v   # A104369    0008  14.62   0008  524600036   detection @ 1389 MHz, SN~5.
+S004213.2+332309  004213.2 +332309  j     0 H v   # A104271    0021  15.88   0009  524600040   detection @ 1391 MHz, SN~12. 
+S004655.1+321711  004655.1 +321711  j     0 H v   # A104773    0033  14.40   0010  524600044   power loss during observation. aborted, restarted WAPPS
+                                                               0044  14.05   0011  524600046   garbage. flux values at ~1e3
+S005636.9+335026  005636.9 +335026  j     0 H v   # A104183    0057  15.61   0012  524600050   I tried Robert's suggestion of changing the attenuation manually. I've no idea how to do this and so this FITS file is likely to just still be bad. Yep. garbage.
+                                                                           for next source, I'm going to restart CIMA and follow Phil's advice and set receiver IF/LO
+                                                                           to configuration type: FULL.
+                                                                           WAPP board 2 looks like there's less power in pol A (power monitor window)... I'm switching boards 2 and 4.
+
+                                                                           Switching to configuration: FULL takes so long CIMA times out on IF/LO set up.
+                                                                           Israel ran "tsys" on the recommendation of Phil's email.
+
+                                                                           CIMA has begun rejecting the configuration file (or at least, it crashes after applying it automatically)
+                                                                           If I apply the file "manually" from the IF/LO menu after a "Load Only" then it times out on the IF/LO setup.
+                                                                           The "hail mary ICORR" configuration also fails.
+
+                                                                           Israel (operator) has manually rebooted some sort of RF generator. Arun's been called and is doing things
+                                                                             (obviously I don't know exactly what)
+                                                                           At this point, I can't even take the bad data which I know I'll get because the configuration can't be loaded.
+                                                                           I've been sort of twiddling my thumbs for quite some time. Didn't they expect that this would happen again?
+S010525.6+342216  010525.6 +342216  j     0 H v   # A115363                not observed
+S011900.9+344031  011900.9 +344031  j     0 H v   # A115410                not observed
+S013625.7+314646  013625.7 +314646  j     0 H v   # A115819                not observed
+S015215.6+323557  015215.6 +323557  j     0 H v   # A115341                not observed
+S020319.4+323426  020319.4 +323426  j     0 H v   # A124655                not observed
+S021843.6+311611  021843.6 +311611  j     0 H v   # A124713                not observed
+S021844.4+322439  021844.4 +322439  j     0 H v   # A124714                not observed
+S022020.0+320011  022020.0 +320011  j     0 H v   # A125161                not observed
+                                                                           It looks like Israel got things up and running again. Here we go...
+S022247.9+314609  022247.9 +314609  j     0 H v   # A124722     0307  16.67 0014  524600050   Detection @ 1397 MHz. SN~5. Tons of GPS swamping signal (but who cares anymore, right?)
+S024014.7+295834  024014.7 +295834  j     0 H v   # A124755     0320  14.79 0015  524600054   Detection @ 1396 MHz. SN~5.
+H030214.4+303148  030215.5 +303118  j     0 H v   # A131380cal             not observed
+                                                                 
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+  Signal to noise estimated as peak/rms
+  Tiedowns enabled.
+  1363MHz has been found in every scan, believed to be an rfi*
+  1345 and 1350 are as well rfi found in every scan
+  We should thank Arun and Israel for their heroic effort in getting the IF/LO working again (in the middle of the night no less).
+
+
+
+

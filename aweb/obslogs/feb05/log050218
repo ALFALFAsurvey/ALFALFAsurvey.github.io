@@ -1,0 +1,77 @@
+Log for 2/18/05 pm        Observers: BC, EM, MPH
+	2/19/05 am
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050218.a2010.****.fits   
+       /share/pserverf.sda3/wappdata/wapp.20050219.a2010.****.fits
+
+**** Remote observing from Bldg. 2 ****
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+______________________________________________________________________________________________________________
+
+0747 0057           aborted   drift56p1 FixedAZ  073500+133018  19   600  3	 
+
+0755 0058 504980745 504981347 drift56p1 FixedAZ  075518+133018  19   600  3     --- 
+0805 0059 504981350 504981952
+0815 0060 504981955 aborted								 datataking frozen
+
+0825 0061 504982550 504983153 drift56p1 FixedAZ  082528+133018  19   600  3     ---
+0835 0062 504983156 504983758
+0845 0063 504983761 504984363 
+
+0855 0064 504984369 504984971 drift56p1 FixedAZ  085551+133018  19   600  4     ---
+0905 0065 504984974 504985576
+0915 0066 504985579 504986181
+0926 0067 504986184 505000386
+
+0936 0000 505000392 505000994 drift56p1 FixedAZ  093621+133018  19   600  5     ---
+0946 0001 505000997 505001599 
+0956 0002 505001602 505002204 
+1006 0003 505002207 505002812
+1016 0004 505002809 505003414 
+
+1027 0005 505003420 505004022 drift56p1 FixedAZ  102658+133018  19   600  8     --- 
+1037 0006 505004025 505004627
+1047 0007 505004630 505005232
+1057 0008 505005235 505005837 
+1107 0009 505005840 505006442
+1117 0010 505006445 505007047
+1127 0011 505007050 505007652 
+1137 0012 505007655 505008257
+
+1148 0013 505008268 505008870 drift56p1 FixedAZ  114738+133018  19   600 11     ---      RA past starting
+1158 0014 505008873 505009475
+1208 0015 505009478 505010080
+1218 0016 505010083 505010685
+1228 0017 505010688 505011290
+1238 0018 505011293 505011895
+1248 0019 505011898 505012500
+1258 0020 505012503 505013105
+1308 0021 505013108 505013710 
+1318 0022 505013713 505014315
+1328 0023 505014318 505014920
+end of night ok.
+
+--------------------------
+
+Notes:
+
+1- Tests of commensality w/ G-ALFA done in the afternoon during Mikael's time. Ignore FITS:
+   wapp.20050218.a2010.0041-0056
+   G-ALFA does not seem to affect or slow down our data acquisition.
+
+2- Remote observing from Bldg. 2!
+
+3- Started ~10 min later b/c previous observer was late. :(
+   Problems w/ CIMA -- had to exit and restart.   
+   WARN WAPPDATA flushing 4 dumps. Aborted, restarted WAPPs, new FITS file. Problems running 
+   Mikael's software.
+
+4- WAPPs stopped taking data 3:13 sec before the end of the scan; *** no error messages from CIMA ***
+   We'll have to watch carefully the remaining time...
+

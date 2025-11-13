@@ -1,0 +1,107 @@
+Log for 03/21/10          Observer: Tom Balonek
+
+System Configuration:                   a2010_az85_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100321.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100322.a2010.****.fits
+          fits files start with 0035 in this set of drifts
+
+Zenith strip observing setup
+Az=78.36    ALFAang=-55.1  ZA=7.2
+RA@start=0723   RA@end=1639
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0752 0035 8000138   8000139       drift69p2 fixAZdr   072300+164724 -55.1 600 99 loopend
+                                  FAA radar strong, harmonic at 1380,
+                                  ZA at 7.16 deg, alfa sky angle +21.04
+                                  power levels ok, quicklook ok
+0803 0036 8000140   8000141
+0813 0037 8000142   8000143
+0823 0038 8000144   8000145
+0833 0039 8000146   8000147       "interpolating over 2 sec gap" (orange) three times
+0843 0040 8000148   8000149       "interpolating over 2 sec gap" (orange) once
+0853 0041 8000150   8000151  
+0903 0042 8000152   8000153       quicklook ok
+0913 0043 8000154   8000155       "interpolating over 2 sec gap" (orange) twice
+0924 0044 8000156   8000157       power levels ok, "interpolating over 2 sec gap" (orange) twice 
+0934 0045 8000158   8000159       strong cont. source in BM 5+0, "interpolating over 2 sec gap" (orange) once 
+0944 0046 8000160   8000161
+0954 0047 8000162   8000163
+1004 0048 8000164   8000165        "interpolating over 2 sec gap" (orange) twice
+1014 0049 8000166   8000167
+1024 0050 8000168   8000169
+1034 0051 8000170   8000171
+1044 0052 8000172   8000173
+1055 0053 8000174   8000175
+1105 0054 8000176   8000177
+1115 0055 8000178   8000179
+1125 0056 8000180   8100001
+1135 0000 8100002   8100003        quicklook ok, "interpolating over 2 sec gap" (orange) once
+1145 0001 8100004   8100005        ZA 7.32, powewr levels ok
+1155 0002 8100006   8100007
+1205 0003 8100008   8100009
+1216 0004 8100010   8100011
+1226 0005 8100012   8100012
+1236 0006 8100014   8100015
+1246 0007 8100016   8100017
+1256 0008 8100018   8100019
+1306 0009 8100020   8100021
+1316 0010 8100022   8100023
+1326 0011 8100024   8100025
+1336 0012 8100026   8100027
+1347 0013 8100028   8100029
+1357 0014 8100030   8100031
+1407 0015 8100032   8100033       quicklook ok
+1417 0016 8100034   8100035       ZA 7.30, power levels ok
+1427 0017 8100036   8100037       "interpolating over 2 sec gap" (orange) once
+1437 0018 8100038   8100039       
+1447 0019 8100040   8100041       "interpolating over 2 sec gap" (orange) twice
+1457 0020 8100042   8100043       GPS burst, 3 min, in all beams but stroongest in Bm 2 (and 1).
+1508 0021 8100044   8100045       
+1518 0022 8100046   8100047       "interpolating over 2 sec gap" (orange) once
+1528 0023 8100048   8100049
+1538 0024 8100050   8100051
+1548 0025 8100052   8100053       power levels ok 
+1558 0026 8100054   8100055
+1608 0027 8100056   8100057
+1618 0028 8100058   8100059       brief, few seconds, power dropout 0.1 units in Bm 2+3 only 8:50:55 UT
+1628 0029 8100060   8100061
+1639 0030 8100062   8100063      quicklook ok
+1649 0031 8100064   8100065      power levels ok, "interpolating over 2 sec gap" (orange) once
+1659 0032 8100066   8100067      ZA 7.18, "interpolating over 2 sec gap" (orange) once
+1709 0033 8100068   -- aborted
+
+LST stop: 1709     RA stop: 1639
+
+
+NOTES:
+
+FAA radar strong.
+
+CIMA and monpnt agreed on Dec throughout run.
+
+Galspec started at beginning.  TOGS at end of night only.
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 14.7   K3: 16.0   K4: 16.0   AT 21:11
+70K = K1: 87.3   K2: 94.9   K3: 104.7  K4: 112.5
+
+16K = K1: 14.3   K2: 14.5   K3: 16.0   K4: 15.9   AT 23:55
+70K = K1: 87.3   K2: 94.9   K3: 105.2  K4: 112.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+

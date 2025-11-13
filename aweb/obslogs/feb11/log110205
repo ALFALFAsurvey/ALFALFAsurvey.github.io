@@ -1,0 +1,65 @@
+Log for 11.02.05 (5Feb2011)        Observer: Jeff Miller, Aileen O'Donoghue, 
+                                             Heather Cutler
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110205.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0934 0000 103600019 103600020 drift136p2 fixAzdr   093400+330536  19   600 99 loopend   6b dead, no WAPPs warning or error
+                              can't run alfadatawin so we can't see the waterfall plots due to VNC problems  
+0944 0001 103600021 103600022 quicklook ok, power level ok except 6b
+0954 0002 103600023 103600024
+1004 0003 103600025 103600026 quicklook ok
+1014 0004 103600027 103600028
+1024 0005 103600029 103600030
+1034 0006 103600031 103600032
+1044 0007 103600033 103600034 quicklook ok, power levels ok except 6b
+1054 0008 103600035 103600036
+1104 0009 103600037 103600038
+1115 0010 103600039 103600040 quicklook ok, power levels ok except 6b
+1125 0011 103600041 103600042 
+1135 0012 013600043 103600044
+1145 0013 013600045 103600046 quicklook ok, power levels ok except 6b 
+1155 0014 013600047 103600048 
+1205 0015 013600049 103600050 quicklook ok, power levels ok except 6b 
+1215 0016 013600051 103600052  
+1225 0017 013600053 103600054   
+1235 0018 013600055 aborted ...
+
+LST stop 1235
+
+At the bottom, add notes regarding:
+--use AZ = 540 instead of 180 to avoid long slew at start
+--Beam 6B dead entire night.
+--FAA Radar ON
+--TOGS at end only
+
+-- Note added by Martha. Observers had trouble connecting via VNC to dataview.
+   In consultation, we tried killing all a2010 VNC connections. MH noticed several
+   .nfsXXXXXXXX files in .vnc at first. Tried logging out of dataview and restarting.
+   No avail. MH notices that there are numerous VNC connections belonging to a2335
+   left running on dataview, one of which calls "alfabeamwin". Jeff is able to get
+   one VNC connection to fusion00, so we use that to connect to observer2 and run
+   CIMA. alfaobswin run via ssh to dataview. Because of this, did not run 
+   alfadatawin, but observer made regular checks of data with quicklook.
+   In the morning, MH is able to start VNC on dataview with no problems. There are
+   still some a2335 VNCs but the VNC connection number is back down to "2" (last night
+   it was "14". Perhaps something got reset automatically. Will have StLU folks try again.
+
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 23.6   K2: 24.5   K3: 27.5   K4: 27.4   AT 18:01
+70K = K1: 117.7  K2: 124.9  K3: 134.7  K4: 143.1
+
+16K = K1: 24.1   K2: 24.8   K3: 27.7   K4: 27.5   AT 22:20
+70K = K1: 116.7  K2: 124.0  K3: 133.5  K4: 141.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+

@@ -1,0 +1,32 @@
+Log for 05/10/08
+Observers: Sabrina Stierwalt
+
+System Configuration
+
+FixedAz Drift Map CIMA normal version (i.e. the old expanded version, renamed)
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20051008.a2010.****.fits
+filecreator: /share/a2010-2/data/05.10.08
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop  DecJ off  Notes
+_______________________________________________________________________________
+2125 0003 528174477 528175079 drift134p1  FixedAz 212800+322906 19 600  50
+2135 0004 528175082 528175683
+2145 0005 528175687 528176289
+2155 0006 528176292 528176893
+2205 0007 528176897 528177499
+2215 0008 528177502 528178103
+2225 0009 528178107 528178708
+2236 0010 528178712 528179313
+2246 0011 528179317 528179919
+2256 0012 528179922 528180523
+2306 0013 528180527 528181129
+2316 0014 528181132 528181733
+2326 0015 528181737 528182338
+
+
+END LST: 23:36:35
+
+Notes:
+TOGS completed at the beginning of the run.

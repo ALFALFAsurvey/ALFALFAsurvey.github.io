@@ -1,0 +1,19 @@
+
+A2010 observing schedule
+
+Use searchable schedule on AO web page to get date,AST
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of
+      observations on given day.
+
+      Block     Date    LMSTmidn      AST            LST
+
+    05.02.04  F 04Feb     08h31   02h45-07h15   11h16-15h46 
+    05.02.05  S 05Feb     08h35   02h45-07h00   11h20-15h35
+    05.02.06  S 06Feb     08h39   02h30-07h00   11h08-15h39
+    05.02.07  M 07Feb     08h42   02h30-07h00   11h12-15h43
+    05.02.08  T 08Feb     08h46   00h00-07h00   08h46-15h47
+    05.02.09  W 09Feb     08h50   00h00-07h00   08h50-15h51
+
+

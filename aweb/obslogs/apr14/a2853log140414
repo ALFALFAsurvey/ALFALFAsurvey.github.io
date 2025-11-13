@@ -1,0 +1,64 @@
+A2853   LBW   14.04.14      Observers: GH, MJ, DK, Paola
+
+CIMA version:          The Stable version (Default)  Ver 3.3.12 2014-03-20 17:38
+Configuration file:    a2853_apr14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140414.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.14apr14.a2853.*
+         and     /share/olcor/corfile.15apr14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H091222.9+122952  091222.9 +122952  j  8900 H v   # U4842  calib   0839  10.0   18    410400603  Det. @ 9000km/s 
+A092516.1+105314  092516.1 +105314  j  3600 H v   # A190279        0852  11     19    410400607  Marginal 3800 km/s 
+A094059.8+120150  094059.8 +120150  j  6800 H v   # A192150        0904  11     20    410400611  Good det. 6800 km/s
+A094148.0+114025  094148.0 +114025  j  6600 H v   # A192153        0916  9.2    21    410400615  No det.
+A094217.5+111833  094217.5 +111833  j  6300 H v   # A192154        0928  7.85   22    410400619  Marginal det. 6300 km/s
+A100423.9+144920  100423.9 +144920  j  8900 H v   # A734213        0942  6.50   23    410400623  Det. 9890 km/s
+A100715.2+133307  100715.2 +133307  j  9300 H v   # A202953        0957  5.46   24    410400627  Weak detection at 9400 km/s
+A100726.4+144937  100726.4 +144937  j  9400 H v   # A734259        1007  3.55   25    410400631  Detection @ 9400 km/s
+A100855.3+150808  100855.3 +150808  j  9000 H v   # A734274        1019  4.06   26    410400635  Detection @ 8900 km/s
+A100619.6+140010  100619.6 +140010  j  8400 H v   # A205280        1032  7.53   27    410400639  Weak Detection @ 8400 km/s
+H102359.0+165427  102359.4 +165443  j   700 H v   #                1045  5.26   28    410400643  No detection
+A114220.9+100510  114220.9 +100510  j  6200 H v   # A213029        1103 12.73   29    410400647  No detection. Bright galaxy in OFF @ 8500 km/s
+A114758.6+135438  114758.6 +135438  j  3300 H v   # A215621        1116  9.01   30    410400651  Marginal (~2 sigma) detection at 3300 km/s
+A114603.2+143838  114603.2 +143838  j  3100 H v   # A215612        1128  5.67   31    410400655  No detection.
+A114602.6+094523  114602.6 +094523  j  6500 H v   # A213126        1142  8.70   32    410400659  No detection.
+A122713.6+085406  122713.6 +085406  j  7400 H v   # A224451        1155 12.34   33    410400663  Marginal (~2 sigma) detection at 7300 km/s 
+                                                                   1216  9.91   34    410400667  No detection
+				Next source sent telescope beyond ZA limits (oops!) so I reobserved. ~6 minutes lost due to slewing
+                Operator informs me that this has not caused any problems.       
+A132654.1+113345  132654.1 +113345  j  6800 H v   # A230339        1230 15.27   35    410400671  No detection
+A132928.4+113919  132928.4 +113919  j  7500 H v   # A233870        1242 13.38   36    410400675  Detection at 7500 km/s
+A132936.4+114850  132936.4 +114850  j  7900 H v   # A232224        1254 10.84    1    410400679  Marginal detection at 7800 km/s
+A140031.0+085358  140031.0 +085358  j  5400 H v   # A230924        1308 15.85    2    410500002  Detection at 5300 km/s
+A140331.2+091315  140331.2 +091315  j  6000 H v   # A240025        1321 13.92    3    410500006  Detection at 6000 km/s
+A140341.2+093423  140341.2 +093423  j  6800 H v   # A008971        1333 11.49    4    410500010  Detection at 6700 km/s  
+A140347.3+093125  140347.3 +093125  j  7100 H v   # A240029        1345  9.97    5    410500014  Possible detection @ 7000 km/s.
+                                                                                                 Poor baseline due to ~100 mJy peak source in OFF
+A140455.1+085513  140455.1 +085513  j  6900 H v   # A249349        1357  9.64    6    410500018  Detection at 6900 km/s
+A143937.8+030848  143937.8 +030848  j  8800 H v   # A240572        1412 16.61    7    410500022  No detection
+                                                                   1427 15.58    8    410500026  No detection
+A150138.6+015213  150138.6 +015213  j  2200 H v   # A254078        1439 17.42    9    410500030  No detection. At high ZA; re-observing
+                                                                   1452 16.70   10    410500034  No detection
+A150442.7+011727  150442.7 +011727  j  2000 H v   # A252423        1503 17.09   11    410500038  No detection
+A150642.0+003804  150642.0 +003804  j  2300 H v   # A252565        too close to setting time + ZA>18 --> skipped
+A150809.3+013632  150809.3 +013632  j  2200 H v   # A250105        too close to setting time + ZA>18 --> skipped
+A150635.8+131843  150635.8 +131843  j  6600 H v   # A736561        1523  6.60   14    410500044  No detection  
+A161841.0+153823  161841.0 +153823  j  9000 H v   # A262410        1539  9.84   15    410500048  No detection
+A161957.3+142102  161957.3 +142102  j  9000 H v   # A715327        1552  7.80   16    410500052  Detection at 8800 km/s
+A162126.8+142827  162126.8 +142827  j  9000 H v   # A260443        1604  5.70   17    410500056  Detection at 9000 km/s      
+A162133.3+142822  162133.3 +142822  j  9000 H v   # A260445        1617  4.04   18    410500060  Detection at 9000 km/s
+
+Notes  (please note anything of importance)
+     Tiedowns enabled because of clear weather.
+     No significant RFI.
+
+

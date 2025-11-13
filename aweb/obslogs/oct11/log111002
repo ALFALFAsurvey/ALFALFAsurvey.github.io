@@ -1,0 +1,90 @@
+Log for 11.10.02 (02Oct2011)        Observers: Lyle Hoffman 
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111002.a2010.****.fits
+         /share/pserverf.sda3/wappdata/wapp.20111003.a2010.****.fits     
+
+Normal meridian strip observing.
+
+LST  fits     Scan    calscan    Source    Pattern   Start coords. ang  time loop calmode
+2122 0019 127500208 127500209  drift 86p1 fixAzdr   212219+204818  19  600   99  loopend 4a dead, FAA weak, power levels OK, strong cs tiedowns active  quicklook OK
+2133 0020 127500210 127500211  power OK
+2143 0021 127500212 127500213  power OK  quicklook OK
+2153 0022 127500214 127500215  power OK
+2203 0023 127500216 127500217  power OK
+2213 0024 127500218 127500219  power OK  quicklook OK
+2224 0025 127500220 127500221  power OK
+2234 0026 127500222 127500223  power OK
+2244 0027 127500224 127500225  power intermittently low in 6b as well as 4a 
+2254 0028 127500226 127500227  6b power still flaky; will adjust power at end of this drift
+2304 0029 127500228  aborted to adjust power
+2305 0030 127500229 127500230  6b power still flaky; will ignore; quicklook confirms 6b dead
+2315 0031 127500231 127500232  power OK except 4a and 6b
+2325 0032 127500233 127500234  power OK except 4a and 6b
+2335 0033 127500235 127500236  power as above; quicklook OK (except 4a and 6b)
+2345 0034 127500237 127500238  power as above
+2355 0035 127500239 127500240  power as above
+0005 0036 127500241 127500242  power as above
+0015 0037 127500243 127600001  power as above
+0026 0000 127600002 127600003  power as above; quicklook OK (except 4a and 6b)
+0036 0001 127600004 127600005  power as above
+0046 0002 127600006 127600007  power as above
+0056 0003 127600008 127600009  power as above; quicklook OK (except 41 and 6b)
+0106 0004 127600010 127600011  power as above
+0116 0005 127600012 127600013  power as above
+0126 0006 127600014 127600015  power as above
+0136 0007 127600016 127600017  power as above
+0146 0008 127600018 127600019  power as above; quicklook as above
+0157 0009 127600020 127600021  power as above
+0207 0010 127600022 127600023  power as above
+0217 0011 127600024 127600025  power as above
+0227 0012 127600026 127600027  power as above; quicklook as above
+0237 0013 127600028 127600029  power as above
+0247 0014 127600030 127600031  power as above
+0257 0015 127600032 127600033  power as above
+0307 0016 127600034 127600035  power as above
+0317 0017 127600036 aborted
+
+LST stop: 0317, AST Stop=0258 
+
+At the bottom, add notes regarding:
+-- TOGS run at beginning.
+-- FAA radar (1350) off.
+-- Beam 4A still dead. 
+-- Adjusted power between fits 28 and 29 to try to fix beam 6b
+-- Power levels in 6b remained flaky (very low) from fits 27 on
+
+
+**** NOTE ADDED by Martha Oct 3
+Thanks to the heads up by Lyle, I alerted Phil, Ganesh and Dana to the problem
+with Beam 6 early in the morning, and heard back from them during the day:
+Phil:
+   I looked at the bm 6b data.
+   It is bad in 6b and 7b (which is a copy of 6b  in the wapps).
+   I also looked at the a2611 zoa data taken 3:00 am to 6:30 am on 03oct11 (after a2010).
+   It also has problems with beam 6b. sometimes it is much lower than expected. Other times it is
+   many times larger than 6a. (funny, i haven't yet heard a peep from a2611 about their data...).
+   So the problem is not in the wapps. Dana, ganesh, and carlos are currently looking at the system upstairs.
+Ganesh:
+   The news is bad, I am afraid. There is clearly a problem with 6B 
+   amplifier. This is unlike anything that we have seen before - not an open or short but intermittent 
+   increase in current with accompanying drop in gain. Since the problem is in the 3rd stage, the 
+   Tsys data taken this morning seemed OK.
+   The plan is to leave 6B off for tonight and warm ALFA up a few tens of degrees tomorrow 
+   morning, as Dana suspects the problem could be thermal in nature. We will observe what the warming 
+   up and then cooling down does to the bias. Sometimes, thermal cycling restores proper operation.
+   We are sorry to lose another channel for tonight (hopefully only for tonight...)
+
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 13.7   K3: 15.7   K4: 15.7   AT 18:15
+70K = K1: 88.8   K2: 89.3   K3: 96.4   K4: 104.7
+
+16K = K1: 14.3   K2: 13.8   K3: 15.5   K4: 15.5   AT 22:00
+70K = K1: 88.0   K2: 88.5   K3: 95.4   K4: 103.9

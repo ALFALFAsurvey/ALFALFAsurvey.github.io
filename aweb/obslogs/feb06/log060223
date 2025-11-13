@@ -1,0 +1,45 @@
+Log for 02/23/06
+Observer: Amy, Shea, Arik, Dave, Martha
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20060223.a2010.****.fits
+       /share/pserverf.sda2/wappdata/wapp.20060224.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.02.23
+
+LST  fits Scan      calscan   Source    Pattern Start coords. ang time loop Notes
+______________________________________________________________________________ 
+0740 0015 605478727 605479329  drift64p1 FixedAz 073300+152706 19 600   50
+0750 0016 605479332 605479933         power levels ok
+0800 0017 605479937 605480538
+0810 0018 605480542 605481143
+0820 0019 605481147 605481748         power levels ok
+0830 0020 605481752 605482353
+0841 0021 605482357 605482958
+0851 0022 605482962 605483563
+0901 0023 605483563 605484168
+0911 0024 605484172 605484773
+0921 0025 605484777 605485378         power levels ok
+0931 0026 605485382 605485984
+0941 0027 605485987 605500189
+0951 0000 605500192 605500794
+1002 0001 605500797 605501399
+1012 0002 605501402 605502004         power levels ok
+1022 0003 605502007 605502609
+1032 0004 605502612 605503214
+1042 0005 605503217 605503819
+1052 0006 605503822 605504424
+1102 0007 605504427 605505029         power levels ok
+1112 0008 605505032 605505634
+1123 0009 605505637 605506239                          
+END LST:1132
+
+
+Notes:
+--During TOGS run and our drifts, beams are reporting overflow errors, 
+--but TOGS calibration is running.  TOGS still reporting errors during
+--data taking
+--running TOGS at end 
+

@@ -1,0 +1,97 @@
+Log for 07/03/06     Observer: TB
+
+System Configuration:  FixedAZ Drift Map
+                       Cima version 2.2.18 (normal)
+
+Using: a2010_az180.gui as save state.
+
+Files:  /share/pserverf.sda2/wappdata/wapp.20070306.a2010.****.fits
+        /share/pserverf.sda2/wappdata/wapp.20070307.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern  Start coords.   ang  time  loop  calmod 
+0756 0000 706577122 706577724 drift103p1 FixedAz  075530+245630    19   600   99   loopend
+                                12 sec broadband rfi, power levels ok, quicklook ok
+0806 0001 706577727 706578329  strong GPS, 12 sec broadband rfi
+0816 0002 706578332 706578934  strong GPS, 12 sec broadband rfi, quicklook ok - shows gps
+0826 0003 706578937 706579539  12 sec broadband rfi, quicklook ok - no gps  
+0836 0004 706579542 706580144  12 sec broadband rfi, quicklook ok
+0846 0005 706580147 706580749  12 sec broadband rfi
+0856 0006 706580752 706581354  12 sec broadband rfi, power levels ok
+0906 0007 706581357 706581959  12 sec broadband rfi
+0916 0008 706581962 706582564  strong GPS, 12 sec broadband rfi much weaker (obvious in 3A only)
+0926 0009 706582567 706583169  strong GPS, 12 sec broadband rfi gone?
+0937 0010 706583172 706583774  strong GPS, 12 sec broadband rfi gone or weak?, quicklook ok
+0947 0011 706583777 706584379  strong GPS
+0957 0012 706584382 706584984  strong GPS
+1007 0013 706584987 706585589  strong GPS, quicklook ok - shows gps
+1017 0014 706585592 706586194  no GPS, but faint rfi at 1340 every 12 sec but no 
+                                  broadband rfi stripes, weak rfi at 1350, quicklook ok
+1027 0015 706586197 706600399  GPS gone, as scheduled
+1037 0000 706600402 706601004  power levels ok, quicklook ok
+1047 0001 706601007 706601609  
+1057 0002 706601612 706602214
+1108 0003 706602217 706602819
+1118 0004 706602822 706603424
+1128 0005 706603427 706604029 
+1138 0006 706604032 706604634
+1148 0007 706604637 706605239
+1158 0008 706605242 706605844  bright continnum source
+1208 0009 706605847 706606449
+1218 0010 706606452 706607054  power levels ok 
+1228 0011 706607057 706607659
+1239 0012 706607662 706608264
+1249 0013 706608267 706608869
+1259 0014 706608872 706609474
+1309 0015 706609477 706610079
+1319 0016 706610082 706610684
+1329 0017 706610687 706611289  power levels ok, quicklook ok
+1339 0018 706611292 706611894
+1349 0019 706611897 706612499
+1359 0020 706612502 706613104
+1410 0021 706613107 706613709
+1420 0022 706613712 706614314
+1430 0023 706614317 706614919  GPS
+1440 0024 706614922 706615524
+1450 0025 706615527 706616129  quicklook ok
+1500 0026 706616132 706616734  power levels ok
+1510 0027 706616737 706617339
+1520 0028 706617342 706617944
+1530 0029 706617947 706618549
+1541 0030 706618552 706619154
+1551 0031 706619157 706619759
+1601 0032 706619762 706620364  GPS
+1611 0033 706620367 706620969
+1621 0034 706620972 706621574  GPS
+1631 0035 706621577 706622179
+1641 0036 706622182 706622784  power levels ok, quicklook ok
+1651 0037 706622787 --aborted
+
+END LST: 1651
+
+NOTES:
+
+- 12 sec rfi: every 12 sec get rfi throughout spectrum (appear as 
+      horizontal stripes in waterfall, about 2% of the total power
+      in strength on total power plots), evident in 0A 2A 3A 5A 0B,
+      though there at lower levels in most / all beams.  Ends (or
+      too faint to see) by about 0925 LST.
+      This coincides in time with narrow rfi at 1340 MHz.
+
+- major GPS: very strong GPS at 1381 MHz ends by 1017 LST.  This is 
+      scheduled GPS -- see GPS alert for 2007 March 6,7,8.
+      Some GPS during cals.
+
+- FAA radars still very quiet at 1350 MHz, seem a bit stronger at end of
+      run compared with beginning.  
+
+- Beam 1B off.
+
+- TOGS run at end only, as scheduled.
+
+- Power levels ok all night. 
+
+- The messages below received during drifts (on 7th) 0003, 0005, 0006,
+      0009, 0012, 0013, 0015, 0016
+WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock ...
+WAPPDATA WARNING extrapolating agc-data from ...
+WAPPDATA WARNING interpolating agc-data over 2.00 second time gap ...

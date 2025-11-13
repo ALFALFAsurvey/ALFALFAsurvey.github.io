@@ -1,0 +1,44 @@
+Log for 3/20/05 am            ** see important note at bottom ** 
+
+Observers:  BK, KH
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050320.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+1208 0001 507902640 507903241 drift34p1 FixedAz 120817+080905  19   600  29
+1218 0002 507903245 507903847
+1228 0003 507903850 507904451
+1238 0004 507904455 507905056
+1248 0005 507905060 507905662
+1258 0006 507905665 507906266
+1309 0007 507906270 507906872
+1319 0008 507906875 507907476
+1329 0009 507907480 507908082
+1339 0010 507908085 
+WAPP CRASH on file 10. File 10, beam 3 bad.
+
+
+END LST:  ~13:50:00
+
+Notes:
+WAPP(2) ERROR counts don't match for chip 2 error again. 
+Multiple tries to restart wapps and flush command did not work.  
+Calls to M. Lerner and examiningn the last CAL of file 0010 
+showed that beam 3 had died.  J. Hagen recommended call to 
+B. Sisk.  W. Torres restarted all WAPP hardware.  
+Further "Flush" commands, etc. gave same result, except 
+now for all "chips".
+
+
+Note added:  Bill Sisk replaced half a wapp, showed B. Kent how 
+to run diagnostic and find a bad chip.  Replacement module was 
+placed in the rack.  Testing completed in the afternoon - 
+went fine.  See log050320ptest.
+

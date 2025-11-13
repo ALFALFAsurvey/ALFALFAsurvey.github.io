@@ -1,0 +1,26 @@
+Log for 090111p     Observer: Ann Martin & Sabrina Stierwalt
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:       aweb /share/pserverf.sda3/wappdata/wapp.20090111.a2010.****.fits 
+
+     ****
+LST  fits  Scan     calscan   Source     Pattern  Start coords. ang  time loop calmode
+0155 0043 901100193 901100194 drift34p2 fixAZdr  015500+081624  19   600  99  loopend
+0205 0044 901100195 901100196
+0215 0045 901100197 901100198
+0225 0046 901100199 901100200
+0235 0047 901100201 901100202
+0245 0048 901100203 901100204
+0255 0049 901100205 901100206
+0306 0050 901100207 --aborted
+
+
+END LST
+
+Notes:
+Running the new version of CIMA 3.1.02 "Smart"; all ok
+TOGS run at start only
+Beam 6B is dead again
+FAA radar on again
+trouble at start: really really long unwrap time

@@ -1,0 +1,53 @@
+A3173 LBW   18.10.04   Observers: Becky Koopmann, Helen Black,  & Union PHY 100: First Year Physics Seminar
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3173.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3173_181004.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20181004.a3173.****.fits  
+                     /share/wappdata.now/wapp.20181005.a3173.****.fits   (if after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H224250.1+325936  224250.1 +325936  j     0 H v   # A012165cal  2248   14.8  0000   827700001   detection 1390MHz, 6600 km/s s/n~5 3 min
+H224830.7+314652  224830.7 +314652  j     0 H v   # A320380cal  2256         0001   827700005   detection 1403MHz, 3800 km/s s/n~10 3 mins    
+S225343.9+281630  225343.9 +281630  j     0 H v   # A322621     2306   10.4  0002   827700009   possible detection 7400 km/s s/n~2 
+H231656.3+332857  231656.3 +332857  j     0 H v   # A335328cal  2319   15.3  0003   827700013   detection 1395 MHz 5500 km/s s/n~10  3 mins    
+S232953.5+320507  232953.5 +320507  j     0 H v   # A330495     2328   13.9  0004   827700017   detection 1397 MHz 5000 km/s s/n~3     
+S233057.5+301802  233057.5 +301802  j     0 H v   # A333401     2340   12.23 0005   827700021   detection 1399 MHz 4500 km/s s/n~5
+S235243.9+304724  235243.9 +304724  j     0 H v   # A333430     2353   12.6  0006   827700025   detection 1396 MHz 5200 km/s s/n~7  
+S001429.3+311915  001429.3 +311915  j     0 H v   # A101636     0005   13.3  0007   827700029   detection 1383.5 MHz 7950 km/s s/n^5
+S002929.6+301419  002929.6 +301419  j     0 H v   # A102776     0018   12.3  0008   827700033   detection 1390.0 MHz 6500 km/s s/n^3
+S002929.6+301419  002929.6 +301419  j     0 H v   # A102776     0030   12.0  0000   827800003   repeat obs for schedule; detection 1390 MHz 6500 km/s 
+s/n~3
+S005319.7+311419  005319.7 +311419  j     0 H v   # A102814     0042   13.2  0001   827800007   detection 1399 MHz 4500 km/s s/n~5
+S005522.6+302913  005522.6 +302913  j     0 H v   # A100630     0055   12.3  0002   827800011   detection 1396 MHz 5200km/s s/n~5; Spike at both 
+polarizations at 1425MHz
+S005645.1+311436  005645.1 +311436  j     0 H v   # A101239     0107   13.2  0003   827800015   detection 1395 MHz 5500km/s s/n~8; RFI 1425mhz
+S012946.2+320116  012946.2 +320116  j     0 H v   # A110369     0120   14.0  0004   827800019   detection 1392 MHz 6350km/s s/n~5  
+S015148.1+303235  015148.1 +303235  j     0 H v   # A001327     0132   13.1  0005   827800023   detection 1391 MHz 6400km/s s/n~6 
+S015955.1+304828  015955.1 +304828  j     0 H v   # A113972     0144   13.1  0006   827800027   detection 1400 MHz 4400km/s s/n~7
+S021340.1+311130  021340.1 +311130  j     0 H v   # A120104     0157   13.6  0007   827800031   detection 1381 MHz 8800km/s s/n~3   
+S022547.2+320311  022547.2 +320311  j     0 H v   # A123006     0209   14.4  0008   827800035   detection 1395 MHz 5500 km/s s/n~4
+S023052.9+252427  023052.9 +252427  j     0 H v   # A120300     0223   7.4   0009   827800039   detection 1396 MHz 5300km/s s/n~4
+S023731.3+312302  023731.3 +312302  j     0 H v   # A123041     0238   13.1  0010   827800043   detection 1395 MHz 5400km/s s/n~5
+H030215.5+303118  030215.5 +303118  j     0 H v   # A131380cal  0240   ~1    0011   827800047   detection 1391 MHz 6300 km/s, s/n~15  3 mins if time   
+H030510.4+354946  030510.4 +354946  j     0 H v   # A132243cal      3 mins if time  NO TIME
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal      3 mins if time  NO TIME
+
+                                                      
+Notes (be sure to write notes here so we can keep track of anything relevant!!!!)
+No problems, lots of detections!
+Tiedowns enabled.
+Few RFI spikes around 1425 MHz, couple of instances of GPS
+

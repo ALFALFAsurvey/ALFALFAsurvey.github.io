@@ -1,0 +1,73 @@
+Log for 10/10/09     Observer: David Kornreich and Friends
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20101009.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20101010.a2010.****.fits
+
+*** THIS IS AN ON-MERIDIAN DRIFT
+
+LST RANGE: 2051-0316
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.    ang  time loop  calmode  ZAdome
+2046 0001 28200071  27000121   drift96p2  fixAzdr   204600+232136     19  600	99   Hcorcal  5  *** WAPP FAILURE. Aborted, WAPPS restarted, power adjusted
+2051 0002 28200072  28200073			    205100+232136				 *** Beam 5A and 6B are bad, power levels low (0.6 or so) in beam 4B, FAA radar on at 1350 MHz, quicklook shows these issues in 5A,6B, 4B, otherwise OK.
+2101 0003 28200074  28200075
+2112 0004 28200076  28200077
+2122 0005 28200078  28200079
+2132 0006 28200080  28200081
+2142 0007 28200082  28200083
+2152 0008 28200084  28200085 quicklook, power levels same as above
+2202 0009 28200086  28200087
+2212 0010 28200088  28200089
+2222 0011 28200090  28200091
+2233 0012 28200092  28200093
+2243 0013 28200094  28200095 quicklook, power levels as above
+2253 0014 28200096  28200097 GPS Flares
+2303 0015 28200098  28200099 Strong continuum source in beams 2,0,5
+2313 0016 28200100  28200101 
+2323 0017 28200102  28200103
+2333 0018 28200104  28200105
+2343 0019 28200106  28200107
+2354 0020 28200108  28200109 quicklook, power levels as above
+0004 0021 28200110  28200111
+0014 0022 28200112  28200113
+0024 0023 28200114  28200115
+0034 0024 28200116  28200117
+0044 0025 28200118  28300001
+0054 0000 28300002  28300003 quicklook, power levels as above
+0104 0001 28300004  28300005
+0115 0002 28300006  28300007
+0125 0003 28300008  28300009
+0135 0004 28300010  28300011
+0145 0005 28300012  28300013
+0155 0006 28300014  28300015 quicklook, power levels as above
+0205 0007 28300016  28300017
+0215 0008 28300018  28300019
+0225 0009 28300020  28300021
+0236 0010 28300022  28300023
+0246 0011 28300024  28300025
+0256 0012 28300026  28300027
+0306 0013 28300028  28300029
+0316 0014 28300030  ABORTED
+
+
+LST@stop: 0316
+
+NOTES: 
+-- Beams 5A, 6B bad all night. Power levels low (0.5 at the beginning of the light, so probably bad) in beam 4B. 
+   Quicklooks showed the low power in that beamm as well. 
+-- Beam 4B power rose gradually over the night, but never to levels above 0.75
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 21.6   K2: 150.6  K3: 23.1   K4: 23.0   AT 15:02
+70K = K1: 123.7  K2: 131.2  K3: 141.8  K4: 152.0
+
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+

@@ -1,0 +1,86 @@
+Log for 04/19/10          Observer: Kelley Hess 
+
+System Configuration:                   a2010_az85_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100419.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100420.a2010.****.fits
+
+Zenith strip observing setup
+Az=110.0   ALFAang=88.0  ZA=5.1  AzG=109.88 
+
+RA@start=0848   RA@end=1622
+RA = LST - 20min
+
+LST  fits   Scan    calscan   Source    Pattern   Start coords. ang   time  loop  calmode    ZAdome     notes
+0908 0022  10900081 10900082  drift83p1 fixAZdr   084800+201148 88.0  600   99    loopend    ZAG=5.52   power adjusted, power in beam 4b a little low (0.791)
+0918 0023  10900083 10900084
+0928 0024  10900085 10900086                                                                            quicklook: data looks good 
+0938 0025  10900087 10900088
+0948 0026  10900089 10900090                                                                 ZAG=5.49 
+0959 0027  10900091 10900092
+1009 0028  10900093 10900094                                                                            power levels ok
+1019 0029  10900095 10900096
+1029 0030  10900097 10900098
+1039 0031  10900099 10900100
+1049 0032  10900101 10900102
+1059 0033  10900103 10900104                                                                 ZAG=5.45   power levels ok
+1109 0034  10900105 10900106
+1120 0035  10900107 10900108
+1130 0036  10900109 10900110
+1140 0037  10900111 10900112
+1150 0038  10900113 10900114                                                                 ZAG=5.44   power levels ok
+1200 0039  10900115 10900116
+1210 0040  10900117 10900118
+1221 0041  10900119 10900120
+1231 0042  10900121 10900122                                                                            quicklook is good
+1241 0043  10900123 10900124
+1251 0044  10900125 10900126
+1301 0045  10900127 10900128
+1311 0046  10900129 10900130								     ZAG=5.45   power levels ok
+1321 0047  10900131 11000001
+1331 0000  11000002 11000003
+1341 0001  11000004 11000005
+1351 0002  11000006 11000007
+1402 0003  11000008 11000009
+1412 0004  11000010 11000011
+1422 0005  11000012 11000013                                                                 ZAG=5.47   power levels ok
+1432 0006  11000014 11000015
+1442 0007  11000016 11000017
+1452 0008  11000018 11000019                                                                            quicklook is good
+1502 0009  11000020 11000021
+1512 0010  11000022 11000023
+1522 0011  11000024 11000025
+1532 0012  11000026 11000027                                                                 ZAG=5.50   power levels ok, albeit warning: "there are WAPP channels with too much power" (Momentary gliche I didn't catch?)
+1542 0013  11000028 11000029                                                                         power levels ok
+1553 0014  11000030 11000031
+1603 0015  11000032 11000033
+1613 0016  11000034 11000035
+1623 0017  11000036 11000037
+1633 0018  11000038 11000039    
+1643 0019  11000040          ***aborted***
+
+
+LST stop: 1643         RA stop: 1622
+
+NOTES:
+TOGS run at END. 
+
+Lost a little time at the beginning of the night because first bc of a small observer error and second because of some confusion with what the correct declination to observe was.  There were two different declinations posted between the a2010.cat and the a2010_schedupcoming.txt file. 
+
+Beam 2A is stable.
+
+FAA radar ON.
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 14.4   K3: 15.6   K4: 15.5   AT 10:27
+70K = K1: 90.3   K2: 97.9   K3: 108.2  K4: 116.5
+
+16K = K1: 14.1   K2: 14.3   K3: 15.3   K4: 15.3   AT 14:18
+70K = K1: 88.1   K2: 97.4   K3: 107.2  K4: 116.0
+

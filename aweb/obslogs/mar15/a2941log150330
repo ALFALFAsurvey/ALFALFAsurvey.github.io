@@ -1,0 +1,39 @@
+A2941 LBW   15.03.30     Observers: Catlan, Alyssa, Leland, Blake, Ron, Aparna, and Monica
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2941.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.40575  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2941_150330.cmd
+Mode:                WAPP search mode   
+                     ALFALFA/UAT Spring SDSS Search Pilot program
+
+Data written to:     /share/pserverf.sda3/wappdata/wapp.20150330.a2941.****.fits  
+                     /share/pserverf.sda3/wappdata/wapp.20150331.a2941.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+THIS IS A SHORT RUN.... THE ONE BEFORE MIDNIGHT
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H080217.4+124813  080219.2 +124715  j     0 H v   # A188819   08:22   7.15  0018  508900099   WAPPs board 2 failed restarted WAPPs
+H082013.1+130821  082015.6 +130717  j     0 H v   # A188822   08:29   5.59  0019  508900101   No source detected
+H084508.6+122750  084505.0 +122758  j     0 H v   # A188829   08:39   6.08  0020  508900105   No source detected
+S094405.5+170156  094405.5 +170156  j     0 H v   # A739067   08:50  13.10  0021  508900109   board 2 double horn detected 1400MHz S/N=5 vel=4420km/s potential source at 5400MHz S/N=1.5
+S093745.3+123522  093745.3 +123522  j     0 H v   # A198735   09:03  10.30  0022  508900113   Multiple Detections! 1 at 1380 MHZ (board 3, S/N=3, vel=8700km/s), and 1 at 1390 MHz (board 2, S/N~1, vel=6500 km/s)
+S094054.5+125807  094054.5 +125807  j     0 H v   # A198737   09:15   8.30  0023  508900117   board 3 double horn at 1380MHz S/N=1.75 vel=8700km/s
+S094303.4+110446  094303.4 +110446  j     0 H v   # A192157   09:28  08.25  0024  508900121   board 2 possible detection at 1392MHz S/N=2 vel=6200km/s
+S095038.6+120938  095038.6 +120938  j     0 H v   # A198743   09:40  06.79  0025  508900125   no source detected
+S095800.9+113533  095800.9 +113533  j     0 H v   # A192202 (if time, but probably not)
+
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+Previous group was 10 mins over. Didn't get control until 8:12 and required a 6+ min. slew. Also required a WAPPs restart on source 1 during OFF position.
+This is a short run before interruption for another program; We restart after midnight on 
+the run called 15.03.31a ("am").
+We went 1 min over before next (remote) observing session began. This session felt tight as we started late and had a WAPPs restart at the beginning but we got to almost everything.                                                                 

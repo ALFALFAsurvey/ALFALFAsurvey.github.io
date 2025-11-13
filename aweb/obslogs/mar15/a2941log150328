@@ -1,0 +1,59 @@
+A2941 LBW   15.03.28     Observers:  Blake, Ron, Leland, Monica, Aparna, and  Catlin
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2941.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.40575  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2941_150328.cmd
+Mode:                WAPP search mode   
+                     ALFALFA/UAT Spring SDSS Search Pilot program
+
+Data written to:     /share/pserverf.sda3/wappdata/wapp.20150328.a2941.****.fits  
+                     /share/pserverf.sda3/wappdata/wapp.20150329.a2941.****.fits
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+A103052.9+122648  103052.9 +122648  j     0 H v   # A205156cal 10:40 6.27  0000      1       board 1 source at 1344MHz S/N=25  vel=1700km/s
+S104431.0+134240  104431.0 +134240  j     0 H v   # A205443    10:48 4.75  0001      5       board 1 possible source at 1407Mhz S/N=2.5,board 4 rfi faa rada 1350MHz
+S104453.1+163021  104453.1 +163021  j     0 H v   # A208818    11:02 4.36  0002      9       board 1 source at 1414Mhz S/N=7.5 ,board 4 faa radar at 1350Mhz 
+S104340.9+173833  104340.9 +173833  j     0 H v   # A208817    11:15 7.18  0003      13      board 2 source at 1392MHz S/N=4 velocity=6000km/s , board 4 faa radar at 1350MHz
+S110926.0+171222  110926.0 +171222  j     0 H v   # A219741    11:28 4.38  0004      17      board 3 rfi @1381.05MHz, board 4 rfi 1350 MHz source at 1345MHz S/N=7  velocity=1580km/s
+S110928.5+171420  110928.5 +171420  j     0 H v   # A219742    11:41 7.30  0005      21      board 1 source at 1417MHz S/N=8  vel=800km/s 
+S111517.5+162715  111517.5 +162715  j     0 H v   # A219753    11:53 8.93  0006      25      board 1 source at 1406MHz S/N=8  vel=3220km/s
+
+***DATE CHANGE HERE SEE NEW FILE NUMBERS**
+
+S111850.7+165839  111850.7 +165839  j     0 H v   # A219754    12:05 10.79 0000      29      new day 29.00, ahead 10 min of schedule, stopped CIMA reobserving 0008 board 4 source double horn at 1344MHz S/N=6  vel=1700km/
+S111850.7+165839  111850.7 +165839  j     0 H v   # A219754    12:18 13.93 0001      33      board 4 source at 1344MHz S/N=10  vel=17000km/s
+S112743.1+171914  112743.1 +171914  j     0 H v   # A740950    12:30 14.78 0002      37      board 2 source at 1392MHz S/N=3   vel=5800km/s, 1345MHz* 
+S113954.0+172907  113954.0 +172907  j     0 H v   # A219563    12:42 14.68 0003      41      board 1 source at 1405MHz S/N=6   vel=3200km/s, board 2 source at 1390MHz S/N=1 vel=6600km/s
+S124340.2+271740  124340.2 +271740  j     0 H v   # A749246    12:57  9.35 0004      45      board 2 rfi at 1385MHz source at 1393MHz S/N=2 vel=5900km/s, board4 rfi at 1350MHz source at 1345MHz S/N=11 vel=1700km/s
+S132814.7+295709  132814.7 +295709  j     0 H v   # A233967    13:10 12.24 0005      49      board 1 possible source 1407MHz S/N=2.67 vel=2900km/s, board 2 possible source at 1387 MHz S/N=5 vel=7100km/s, board 4 source detected during off 1345 MHz S/N=11, vel=1700km/s
+S134109.1+260409  134109.1 +260409  j     0 H v   # A239154    13:24  8.68 0006      53      board 3 possible source at 1383MHz S/N=1 vel=830km/s, board 4 source at 1345MHz*
+S134118.3+293647  134118.3 +293647  j     0 H v   # A239155    13:37 11.25 0007      57      board 3 source at 1373MHz S/N=5 vel=1030km/s, board 4 1345MHz*
+S135630.5+292359  135630.5 +292359  j     0 H v   # A732824    13:49 11.13 0008      61      board 2 source at 1399MHz S/N=7 vel=4600km/s, 1345*
+S135733.1+284412  135733.1 +284412  j     0 H v   # A238896    14:01 10.35 0009      65      board 3 source at 1374MHz S/N=4 vel=1020km/s , board 4 possible source at 1363MHz S/N=4  vel=1260km/s ,1345*
+S135721.1+261227  135721.1 +261227  j     0 H v   # A732826    14:14  8.66 0010      69      board 1 possible source at 1409MHz, S/N=3 vel=2400km/s, 1345MHz* 
+S141819.3+293326  141819.3 +293326  j     0 H v   # A249501    14:27 11.30 0011      73      board 2 source double horn at 1398MHz, S/N=5 vel=4900km/s ,1345MHz*
+S143042.9+294257  143042.9 +294257  j     0 H v   # A245842    14:39 11.51 0012      77      board 4 possible source at 1363MHz, S/N=1.5 vel=1270km/s, 1345MHz*
+S143209.0+281932  143209.0 +281932  j     0 H v   # A726677    14:52 10.80 0013      81      slanted baseline, possible source at 1349MHz low flux density 
+S143102.2+260027  143102.2 +260027  j     0 H v   # A732952    15:04 10.65 0014      85      board 4 source at 1363MHz S/N=7.5 vel=1370km/s, 1345MHz*   
+S145129.2+281638  145129.2 +281638  j     0 H v   # A249612    15:17 11.36 0015      89      no noticable detections, 1345MHz*
+S150909.2+285004  150909.2 +285004  j     0 H v   # A258700    15:29 11.35 0016      93      board 4 source at 1364MHz S/N=5 vel=1260km/s, 1345MHz*     
+S151700.3+272835  151700.3 +272835  j     0 H v   # A258703    15:42 10.61 0017      97      board 3 at 1376MHz S/N=5 vel = 9700km/s, 1345MHz* 
+A153911.4+260129  153911.4 +260129  j     0 H v   # A749349calib 15:55 8.5 0018     101      board 1 at 1412MHz S/N=4 vel = 1800km/s, 1345MHz*
+A152357.1+241259  152357.1 +241259  j     0 H v   # A252648calib           if time
+
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+  Tiedowns enabled. Good night with lots of detections. GPS affected a few scans. 
+
+* 1345MHz was frequently found, could possibly be a resonance due to rfi at 1351MHz
+

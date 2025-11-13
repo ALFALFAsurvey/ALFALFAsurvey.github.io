@@ -1,0 +1,46 @@
+Log for 4/10/05 pm           
+Observers:  RG, MH, SS, BK
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050411.a2010.****.fits
+
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+1337 0000 510102775 510103377 drift42p1 FixedAz 133717+103506  19   600  20
+1347 0001 510103381 510103983
+1357 0002 510103986 510104588
+1407 0003 510104591 510105192
+1417 0004 510105196 510105797
+1427 0005 510105801 510106402
+1437 0006 510106406 510107007
+1448 0007 510107011 510107613
+1458 0008 510107616 510108217
+1508 0009 510108221 510108823
+1518 0010 510108826 510109428
+1528 0011 510109431 510110032
+1539 0012 510110036 510110638
+1549 0013 510110641 510111242
+1559 0014 510111246 510111848
+1609 0015 510111851 510112452
+1619 0016 510112456 510113057
+1629 0017 510113061 510113662
+1639 0018 510113666 510114267
+     0019 Abort
+     0020 Blank
+
+
+END LST: ~ 1649
+
+
+Notes:
+BK - WAPPs worked fine tonight - lots of good data!
+We lost the first 20 minutes of this night because "observer2"
+had run out of swap space. We then ran for ~1hour using LBW
+to followup on two features.
+

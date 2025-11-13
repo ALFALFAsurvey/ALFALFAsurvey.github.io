@@ -1,0 +1,42 @@
+Log for 05/06/05
+Observers: Brian Kent
+
+System Configuration
+
+FixedAz Drift Map CIMA new version 1.2.03 (normal default)
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20050605.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+     0000 Abort - pointing not applying...
+     0001 Abort - pointing not applying...
+
+2052 0002 515615834 515616435 drift57am FixedAZ  205230+135212  19  600  50
+2102 0003 515616439 515617041
+2112 0004 515617044 515617646
+2122 0005 515617649 515618251
+2133 0006 515618254 515618856
+2143 0007 515618859 515619461
+2153 0008 515619464 515620066
+2203 0009 515620069 515620671
+2213 0010 515620674 515621276
+2223 0011 515621279 515621881
+2233 0012 515621884 515622486
+2243 0013 515622489 515623091
+2254 0014 515623094 515623696
+2304 0015 515623699 515624301
+2314 0016 515624304 515624906
+2324 0017 515624909 515625511
+2334 0018 515625514 515626116
+2344 0019 515626119 515626721
+     0020 Abort
+     0021 Blank
+
+END LST:  235430
+
+
+Notes:
+
+No problems with this run.  Will fit data into schedule.

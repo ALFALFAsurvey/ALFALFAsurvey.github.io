@@ -1,0 +1,49 @@
+Log for 06/11/28      Observer: Tom Balonek
+on-site observing
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az180.gui as save state. -- Note, 180 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061128.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2345 0001 633270885 633271487 drift101p2 FixedAz 234500+243436  19   600   99    loopend
+2355 0002 633271490 633272092 Power levels ok; waterfalls, spectrum, total power plots ok
+0005 0003 633272095 633272697
+0015 0004 633272700 633273302
+0025 0005 633273305 633273907
+0035 0006 633273910 633274512 Power levels ok
+0045 0007 633274515 633275117 Heavy rain and thunder, no local lightning
+0056 0008 633275120 633275722
+0106 0009 633275725 633276327
+0116 0010 633276330 633276932
+0126 0011 633276935 633277537 power levels and everything ok
+0136 0012 633277540 633278142
+0146 0013 633278145 633278747 storm has passed
+0156 0014 633278750 633279352
+0206 0015 633279355 633279957 power levels and everything o
+0217 0016 633279960 633280562
+0227 0017 633280565 633281167
+0237 0018 633281170 633281772
+0247 0019 633281775 633282377
+0257 0020 633282380 633282982 Power levels, everything ok
+0307 0021 633282985 633283587 WAPPs fail AFTER drift during CAL -- so drift ok.  Cal not.
+
+END LST: 0317 (or 0307 if drift fits#0021 not usable)
+
+
+NOTES:
+
+TOGS ran at end only (as scheduled).  Note, WAPPS failed prior to end of run TOGS.
+
+WAPPS failed during CAL after drift 0021.  Drift ok, but CAL not.  Otherwise no problems.
+
+Because WAPPs failed after 3 LST, we did get our needed sky coverage.
+
+Early start since previous program had WAPP failures. Quick start since
+scope already at 180 degrees.
+
+Tiedowns active.

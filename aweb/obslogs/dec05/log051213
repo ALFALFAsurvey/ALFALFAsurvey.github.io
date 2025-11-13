@@ -1,0 +1,41 @@
+Log for 12/13/05
+Observer: Bilal, Becky, Martha, Prasanth
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20051213.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.13
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+0703 0003 534707335  534707937 drift60p2  FixedAz 070300+143600 19 600  50
+0713 0004 534707940  534708542
+0723 0005 534708545  534709147
+0733 0006 534709150  534709752
+0744 0007 534709755  534710357
+0754 0008 534710360  534710962
+0804 0009 534710965  534711567
+0814 0010 534711570  534712172
+0824 0011 534712175  534712777
+0834 0012 534712780  534713382
+0844 0013 534713385  534713987 
+0854 0014 534713990  534714592
+0904 0015 534714595  534715197
+0915 0016 534715200  534715802
+0925 0017 534715805  534716407
+0935 0018 534716410  534717012
+0945 0019 534717015  534717617
+0955 0020 534717620  
+
+
+End LST 1005
+
+Notes:
+- TOGS ran successfully. We restarted WAPP before running command line
+  observing.
+- We were not on source for the first ten seconds.
+
+- TOGS ran successfully at the end. WAPPs restarted before running TOGS. 

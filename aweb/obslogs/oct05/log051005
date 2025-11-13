@@ -1,0 +1,47 @@
+Log for 05/10/05
+Observers: Amelie Saintonge
+
+System Configuration
+
+FixedAz Drift Map CIMA normal version (i.e. the old expanded version, renamed)
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20051005.a2010.****.fits
+      /share/pserverf.sdb1/wappdata/wapp.20051006.a2010.****.fits
+filecreator: /share/a2010-2/data/05.10.05
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop  DecJ off  Notes
+_______________________________________________________________________________
+2113 0003 527874467 527875069 drift126p1  FixedAz 211300+303218 19 600  50
+2123 0004 527875072 527875673
+2133 0005 527875677 527876278
+2143 0006 527876282 527876883
+2153 0007 527876887 527877488
+2203 0008 527877492 527878093
+2213 0009 527878097 527878698
+2224 0010 527878702 527879303
+2234 0011 527879307 527879908
+2244 0012 527879912 527880513
+2354 0013 527880517 527881118
+2304 0014 527881112 527881723
+2314 0015 527881727 527882328
+2324 0016 527882332 527882933
+2334 0017 527882937 527883538
+2344 0018 527883542 527884143
+
+END LST OF FIRST PART: 23 54
+
+2358 0020 527884343 527884945 drift122p1  FixedAz 235800+293354 19 600  50
+0008 0021 527884948 527885549
+0018 0022 527885553 527886154
+0028 0023 527886158 527900359
+0038 0000 527900363 527900964
+0048 0001 527900968 527901569
+
+END LST OF SECOND PART: 00 58
+
+Notes: 
+Short run, split between two different drifts.  WAPPs were restarted in between the
+two, so process them separately! Switched from drift126p1 to drift122p1 at 23:54LST.  
+Started again at 23:58.
+No problems with TOGS.

@@ -1,0 +1,62 @@
+A2982 LBW   15.11.07  Observers: David Craig
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_151107.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20151107.2982.****.fits  
+                     /share/wappdata.now/wapp.20151108.2982.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S221259.0+242242  221259.0 +242242  j     0 H v   # A322502     2118   13.5 0003  53110019     Started early. GPS & radar in off. Nothing.
+S221259.0+242242  221259.0 +242242  j     0 H v   # A322502     2132   11.2 0004  53110023     repeat, but spike near 6800 km/s.
+                                                                                                GPS&radar strong.
+S221124.6+244136  221124.6 +244136  j     0 H v   # A322498     2145    9.9 0005      0027     src at 7100km/s, SN~10. no gps. 
+S220415.3+293244  220415.3 +293244  j     0 H v   # A322494     2158   11.4 0006      0031     src 5000km/s SN~5+. radar in off, strong gps
+S222407.6+313544  222407.6 +313544  j     0 H v   # A323030     2211   13.7 0007      0035     src 6750km/s, SN~5. gps, radar in off.
+S222520.1+321929  222520.1 +321929  j     0 H v   # A322513     2223   14.1 0008        39     SN 20+ ~9000km/s doesn't look like weak gps? 
+S224214.1+335848  224214.1 +335848  j     0 H v   # A323008     2335   15.8 0009        43     gps in off, nothing obvious. radar strong.
+S224603.7+310943  224603.7 +310943  j     0 H v   # A322994     2248   12.9 0010        47     nothing obvious, baselines a bit wavy, gps
+S225624.1+314743  225624.1 +314743  j     0 H v   # A322627     2300   13.6 0011        51     SN~4 at 6900km/s wavy baseline. gps in off.
+S231657.8+305023  231657.8 +305023  j     0 H v   # A336093     2312   12.6 0012        55     SN~8? at 6100km/s. baselines around -100mJy
+                                                                                                ?due to strong gps&radar in on?
+S233615.5+312801  233615.5 +312801  j     0 H v   # A335397     2325   13.4 0013        59     SN~4? 10000km/s using /gps, strong radar&gps 
+S234328.6+335909  234328.6 +335909  j     0 H v   # A335440     2338   15.8 0014        63     gps in off.
+S000236.8+332319  000236.8 +332319  j     0 H v   # A104291     2350   15.4 0015        67     gps looks almost like bright galaxy,
+S000738.0+332025  000738.0 +332025  j     0 H v   # A104214     0003   15.1 0016        71     narrow SN~4 at 4700km/s.
+S002237.2+300617  002237.2 +300617  j     0 H v   # A104896     0016   12.0 0017        75     strong source in OFF at 7000km/s, gps.
+S004655.1+321711  004655.1 +321711  j     0 H v   # A104773     0029   14.6 0018        79     gps in off.
+S005636.9+335026  005636.9 +335026  j     0 H v   # A104183     0042   16.0 0019        83     no gps, no detection radar in off.
+S010525.6+342216  010525.6 +342216  j     0 H v   # A115363     0054   16.4 0020        87     ? SN~3 5000km/s. Milky Way strong in off
+S011900.9+344031  011900.9 +344031  j     0 H v   # A115410     0106   16.7 0021        91     SN~5+ det at 3900km/s, no gps.
+S013625.7+314646  013625.7 +314646  j     0 H v   # A115819     0118   14.1 0022        95     SN10+ det at 10700km/s, gps in off
+S013625.7+314646  013625.7 +314646  j     0 H v   # A115819     0131   13.6 0023        99     REPEAT (time) confirms source
+S015215.6+323557  015215.6 +323557  j     0 H v   # A115341     0144   14.5 0024      0103     SN10+ det at 5200 km/s, gps&radar in off
+S020319.4+323426  020319.4 +323426  j     0 H v   # A124655     0156   14.4 0025      0107     SN10+ det at 10700 km/s, big gps in off.
+S021843.6+311611  021843.6 +311611  j     0 H v   # A124713     0208   13.2 0026      0111     no gps, nothing else (still radar)
+S021844.4+322439  021844.4 +322439  j     0 H v   # A124714     0220   14.2 0027      0115     possible SN~3 source(s) near 5000km/s
+                                                                                               strong gps.  
+S022020.0+320011  022020.0 +320011  j     0 H v   # A125161     0233   14.0 0028      0119     big spike at 6800km/s 1389MHz, gps in off,
+                                                                                               SN10+ src 10400 (broad).
+S025723.4+325415  025723.4 +325415  j     0 H v   # A125196     0246   14.9 0000 531200003     ?weak broad SN~3 det 12500km/s. gps in off.
+H030214.4+303148  030215.5 +303118  j     0 H v   # A131380cal  0258   12.3 0001        07     strong detection 6300km/s (expected)
+H030801.4+301230  030802.9 +301229  j     0 H v   # A131387cal  0307   11.9 0002        11     strong detection 5200km/s, gps&radar in off.
+S030910.4+262421  030910.4 +262421  j     0 H v   # A132195     0316    8.2 0003        15     noting obvious, gps in off, radar in on.
+                                                                 
+Notes (be sure to write notes here so we can keep track of anything relevant)
+
+Tiedowns disabled. Weather unstable.
+Tiedowns remained disabled all night.
+No bad files, started a bit early. Smooth as silk.
+

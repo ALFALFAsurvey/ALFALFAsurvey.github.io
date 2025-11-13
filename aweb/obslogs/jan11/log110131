@@ -1,0 +1,76 @@
+Log for 11.01.31 (31Jan2011)        Observer: Shan Huang
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110131.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0914 0000 103100025           drift139p1 fixAzdr   091000+334206  19   600 99 loopend   6b dead
+0923 aborted ...
+	lots of inter extrapolation warnings (orange) show up constantly,
+	e.g. 
+	2011-Jan-31 01:17:35 WARNING WAPPDATA-search_pnt: WARNING extrapolating pnt-data from 55592.220509 to 55592.220532!
+	2011-Jan-31 01:17:36 WARNING WAPPDATA-search_pnt: WARNING interpolating pnt-data over 3.00 second time gap (55592.220509 - 55592.220544)! 
+	as suggested by the operator, restarted the wapp
+	power adjusted, new fits file created
+
+0929 0001 103100026  103100027  
+	after restart the wapp still a lot of warning at first, even errors (red)
+	e.g.
+	2011-Jan-31 01:27:58 ERROR   WAPPDATA-interpolate: ERROR denominator is zero --- skipping interpolation!
+	after a few mins these warnings disappear, Arun is called
+	obs continues
+0939 0002 103100028  
+	a lot of warnings are received again
+0945 aborted ...
+	exit CIMA as suggested by the operator and restart
+
+0949 0003 103100029  103100030  
+	continued after restart, power adjust, warning and sometimes error still show up
+	obs continues as suggested by Martha
+	quicklook seems ok, power level ok except beam 6b
+0959 0004 103100031  
+	warning and errors
+1008 operator killed the CIMA session after left a msg 'hold a sec'
+
+1030 operator called in, Arun think it's the second on WAPP 4 correlator, 
+	but not sure if the data is affected, restart CIMA again
+	power adjusted
+
+1035 0005 103100032  103100033  warnings still received, power levels ok, 4b dead
+1045 0006 103100034  103100035  warnings come and go, quicklook ok
+1055 0007 103100036  103100037  warnings and errors
+1106 0008 103100038  103100039  WAPPDATA-queue_agcdata: Received duplicate AGC-datablock at 03:00:20.318
+1116 0009 103100040  103100041
+1126 0010 103100042  103100043  warnings and errors
+1136 0011 103100044  103100045  warnings
+1146 0012 103100046  103100047
+1156 0013 103100048  103100049  warnings
+1206 0014 103100050  103100051  warnings and errors
+1216 0015 103100052  aborted ...
+
+LST stop 1216
+
+At the bottom, add notes regarding:
+--Long slew at start
+--Beam 6B dead entire night.
+--FAA Radar ON
+--TOGS at end only
+--inter- extraplate warnings received throughout the night
+--WAPP and CIMA restarted several times
+--only fits files 0005-0014 are included in the file list to run filecreator
+--other complete files need separate cal, including 0001 and 0003
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 22.9   K2: 22.8   K3: 24.8   K4: 25.2   AT 16:18
+70K = K1: 117.4  K2: 123.2  K3: 133.0  K4: 139.9
+
+16K = K1: 23.3   K2: 23.3   K3: 26.5   K4: 26.7   AT 22:16
+70K = K1: 119.1  K2: 125.5  K3: 134.7  K4: 142.3
+
+			=>temperatures of the 8 sensors within ALFA housing
+

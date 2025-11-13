@@ -1,0 +1,50 @@
+Log for 07/02/11      Observer: Sabrina
+
+System Configuration:  FixedAZ Drift Map
+                       Cima version 2.2.16 (normal)
+
+Using: a2010_az180.gui as save state.
+
+Files:  /share/pserverf.sda2/wappdata/wapp.20070211.a2010.****.fits
+        /share/pserverf.sda2/wappdata/wapp.20070212.a2010.****.fits
+
+LST  fits   Scan    calscan    Source   Pattern  Start coords.   ang  time  loop  calmode
+0730 0019 704281042 704281644  drift121p1 FixedAz 073000+291918   19   600   99    loopend
+0740 0020 704281647 704282249 power levels okay
+0750 0021 704282252 704282854
+0800 0022 704282857 704283459
+0811 0023 704283462 704284064
+0821 0024 704284067 704284669
+0831 0025 704284672 704285274
+0841 0026 704285277 704285879 power levels okay
+0851 0027 704285882 704300084
+0901 0000 704300087 704300689
+0911 0001 704300692 704301294
+0922 0002 704301297 704301899
+0932 0003 704301902 704302504
+0942 0004 704302507 704303109
+0952 0005 704303112 704303714
+1002 0006 704303717 704304319
+1012 0007 704304322 704304924
+1022 0008 704304927 704305529
+1032 0009 704305532 704306134
+1042 0010 704306137 704306739
+1053 0011 704306742 704307344
+1103 0012 704307347 704307949
+1113 0013 704307952 704308554
+1123 0014 704308557 704309159
+1133 0015 704309162 704309764 power levels okay
+1143 0016 704309767 --aborted
+
+END LST: 1143
+
+Notes:
+TOGS run at start only.
+Beam 1B off.
+
+During files 0000, 0003, 0004, 0006, 0007, & 0010 I received the following error (in orange):
+WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock
+WAPPDATA WARNING extrapolating agc-data
+WAPPDATA WARNING interpolating data over 2.00 second time gap
+
+The error did not look too threatening so I continued.

@@ -1,0 +1,51 @@
+Log for 090215     Observer: Drew Brisbin
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090215.a2010.****.fits 
+            /share/pserverf.sda3/wappdata/wapp.20090216.a2010.****.fits
+
+     ****
+LST  fits  Scan       calscan    Source     Pattern   Start coords.  ang  time  loop  calmode
+1000 0032  904700001  904700002  drift5p1   fixAZdr   100000+010542  19   600   99    loopend 
+1011 0000  904700003  904700004   power levels OK
+1021 0001  904700005  904700006   continuum source in beam 3, quicklooked data looks OK
+1031 0002  904700007  904700008
+1041 0003  904700009  904700010   GPS burst
+1051 0004  904700011  904700012
+1101 0005  904700013  904700014
+1111 0006  904700015  904700016
+1121 0007  904700017  904700018
+1132 0008  904700019  904700020
+1142 0009  904700021  904700022
+1152 0010  904700023  904700024
+1202 0011  904700025  904700026
+1212 0012  904700027  904700028
+1222 0013  904700029  904700030   power levels OK
+1232 0014  904700031  904700032
+1242 0015  904700033  904700034
+1253 0016  904700035  904700036
+1303 0017  904700037  904700038
+1313 0018  904700039  904700040
+1323 0019  904700041  904700042
+1333 0020  904700043  904700044
+1343 0021  904700045  904700046
+1353 0022  904700047  904700048   continuum source
+1403 0023  904700049  904700050   power levels OK
+1414 0024  904700051  904700052
+1424 0025  904700053  Aborted
+
+END LST: 1424
+
+
+Notes:
+Running the new version of CIMA 3.1.02 "Smart"
+ALFA failed to rotate into +19 degrees position
+LST 7:53 operator (Elliot) restarting ALFA software
+LST 8:35 ALFA motors and other systems will be examined from the platform
+LST 10:00 ALFA rotation successful:
+ ALFA motor was not turned on after previous Sband observing!
+delay caused TOGS to NOT be run at start, only at end
+Beam 6b is dead
+FAA radar is on
+Harmonic near 1380 MHz present

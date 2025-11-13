@@ -1,0 +1,67 @@
+Log for 11.09.16 (16Sep2011)        Observers: AO, JM & HC
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda3/wappdata/wapp.20110916.a2010.****.fits
+         /share/pserverf.sda3/wappdata/wapp.20110917.a2010.****.fits     
+
+Normal meridian strip observing.
+
+LST  fits     Scan      calscan    Source  Pattern   Start coords. ang  time loop calmode
+2138 0008  125900066   125900067  drift5p1 fixAzdr   213845+010542  19  600   99  loopend 4a dead, 4b looks low in quicklook due to strong FAA 
+2148 0009  125900068   125900069  quicklook OK (beams labeled wrong), strong continuum source in all beams just before cal 
+2158 0010  125900070   125900071  quicklook OK, 2 cs's, power levels OK 
+2209 0011  125900072   125900073    
+2219 0012  125900074   125900075  quicklook OK 
+2229 0013  125900076   125900077  quicklook OK 
+2239 0014  125900078   125900079      
+2249 0015  125900080   125900081  power levels OK
+2259 0016  125900082   125900082  quicklook OK 
+2309 0017  125900084   126000001   
+2319 0000  126000002   126000003    
+2329 0001  126000004   126000005  cs 
+2339 0002  126000006   126000007  extra rfi on 1380 MHz for a brief time
+2349 0003  126000008   126000009  quicklook OK, 4B looks low due to strong FAA (in 4A skewing scale)  
+0000 0004  126000010   126000011   
+0010 0005  126000012   126000013  quicklook OK  
+0020 0006  126000014   126000015   
+0030 0007  126000016   126000017  cs
+0040 0008  126000018   126000019  quicklook OK   
+0050 0009  126000020   126000021  tiedowns disabled by operator due to lightning
+0101 0010  126000022   126000023    
+0111 0011  126000024   126000025  quicklook OK 
+0121 0012  126000026   126000027   
+0131 0013  126000028   126000029  power levels good 
+0141 0014  126000030   126000031  quicklook OK  
+0151 0015  126000032   126000033
+0201 0016  126000034   126000035   
+0211 0017  126000036   126000037     
+0221 0018  126000038   126000039  quicklook OK  
+0232 0019  126000040   126000041     
+0242 0020  126000042   126000043  tiedowns re-activated 
+0252 0021  126000044   126000045  power levels good, cs
+0302 0022  126000046   126000047  cs  
+0312 0023  126000047   126000049  ABORTED   
+
+
+LST stop: 0312, AST Stop=0356 
+
+At the bottom, add notes regarding:
+-- TOGS run at beginning.
+-- FAA radar on.
+-- Beam 4A still dead. 
+
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+ALFA TEMPERATURES
+
+16K = K1: 13.5   K2: 13.2  K3: 15   K4: 14.9   AT 18:00
+70K = K1: 81.2  K2: 82.1  K3: 88.5  K4: 95.8
+
+16K = K1: 13.3   K2: 13  K3: 14.7   K4: 14.9   AT 22:00
+70K = K1: 81  K2: 81.7  K3: 88  K4: 95.4
+
+

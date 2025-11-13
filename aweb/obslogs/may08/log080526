@@ -1,0 +1,35 @@
+Log for 080526      Observer: Lyle Hoffman
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080526.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080527.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1353 0009 814700117 814700118  drift1p2   fixAZdr  135200+001436  19  600   99   loopend  power OK fits OK
+1403 0010 814700119 814700120  power OK
+1414 0011 814700121 814700122 
+1424 0012 814700123 814700124  power OK
+1435 0013 814700125 814700126 
+1445 0014 814700127 814700128  power OK
+1455 0015 814700129 814700130
+1505 0016 814700131 814700132
+1515 0017 814700133 814700134  power OK  ZA glitch starting cal
+1525 0018 814700135 814700136  power OK fits OK
+1535 0019 814700137 814700138
+1545 0020 814700139 814800001
+1556 0000 814800002 814800003  power OK
+1606 0001 814800004 814800005
+1616 0002 814800006 814800007
+1626 0003 814800008 814800009  power OK
+1636 0004 814800010 814800011
+1646 0005 814800012 814800013  power OK
+1656 0006 814800014 aborted
+
+End LST:  1656
+
+Notes: TOGS already running at start by AGES
+Chip count errors 99999966 = 99999967 ignored as per Mikael's email.
+Chip count errors stop 7.5 min into first drift.
+Power dip at start of cal scan 814700134.
+Togs run at end.

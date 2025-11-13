@@ -1,0 +1,54 @@
+Log for 2/14/05 am        Observers: BC
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050214.a2010.****.fits   
+     
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop      Notes
+____________________________________________________________________________________________________
+1118 0000 504507670 504508272 drift60p1 FixedAZ  111817+142842 19   600  4      Had to unwrap the telescope
+1128 0001 504508275 504508878
+1138 0002 504508881 504509482
+1148 0003 504509486 504510088							DecJ off by +4"
+
+1158 0004 504510095 504510698 drift60p1 FixedAZ  115847+142842 19   600  10	missed 8 secs (obs. not on source)
+1208 0005 504510701 504511303
+1219 0006 504511305 504511908
+1229 0007 504511911 504512513
+1239 0008 504512516 504513118
+1249 0009 504513121 504513723
+1259 0010 504513726 504514328
+1309 0011 504514331 ---  							ABORTED -- see note 1
+
+1324 0012 504515238 ---								ABORTED -- see note 2
+1326      504515358 504515960 drift60p1 FixedAZ  132646+142842 19   600  4      see note 3
+1337 0013 504515963 504516565
+1347 0014 504516568 504517170
+1357 0015 504517173 504517775                                              	DecJ off by -6"
+
+1407 0016 504517780 504518382 drift60p1 FixedAZ  140715+142842 19   600  4      missed 6 secs (obs. not on source)
+1417 0017 504518385 504518988
+1427 0018 504518991 504519593
+1437 0019 504519596 504520198	                                              	DecJ off by -9"
+
+1447 0020 504520206 504520808 drift60p1 FixedAZ  144748+142842 19   600  3 
+1457 0021 504520811 504521413
+1508 0022 504521416 504522018                                             	DecJ off by -10" 
+
+1518 0023 504522028 504522630 drift60p1 FixedAZ  151814+142842 19   600  3 
+1528 0024 504522633 504523235
+1538 0025 504523238 504523840		   					DecJ off by -10"
+
+FITS 0026 is empty
+
+Notes:
+1- Problems with the WAPPs: "ERROR spectral line, read data error", "wappdata buildup logic error", 
+   "WAPPDATA confused". Tried to restart them a couple of times (tried also the "socksend WAPPDATA FLUSH") 
+   but did not work. I had to exit and restart CIMA.
+
+2- power levels crazy in most of beams - aborted and adjusted power.
+
+3- ok, but should have started a new FITS. Scans 504515238-357 are junk.

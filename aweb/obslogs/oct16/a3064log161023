@@ -1,0 +1,59 @@
+A3064 LBW   16.10.23   Observers: David Craig (WTAMU)
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161023.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161023.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161024.a3064.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+A214323.5+325124  214323.5 +325124  j     0 H v   # A311326cal  2155   14.8 0000   629700185   Strong src at ~7300 km/s b2, radar
+H215519.3+302924  215519.3 +302924  j     0 H v   # A011847cal  2203   12.4 0001         189   Strong src ~5500km/s, b2, radar in off
+S225025.7+283244  225025.7 +283244  j     0 H v   # A323094     2212   13.2 0002         193   Radar in on, no det.
+S230619.1+293820  230619.1 +293820  j     0 H v   # A336606     2225   13.9 0003         197   weaker radar in on, no det.
+S231607.5+295627  231607.5 +295627  j     0 H v   # A336620     2239   14.5 0004         201   strong GPS/off,radar/off, no det
+S232559.6+291631  232559.6 +291631  j     0 H v   # A333587     2251   13.7 0005         205   sn~10 dbl horn 10300km/s b3, radar/off
+S232846.4+295603  232846.4 +295603  j     0 H v   # A336081     2303   13.1 0006	 209   ?sn~3 spike 3000km/s b2, radar/off
+S233904.6+302934  233904.6 +302934  j     0 H v   # A336084     2315   13.4 0007	 213   nothing obvious radar in on+off
+S234056.5+304228  234056.5 +304228  j     0 H v   # A336664     2327   12.9 0008         217   no det. radar in on.
+S234853.7+304349  234853.7 +304349  j     0 H v   # A336676     2339   12.7 0009         221   strong src at -500km/s b1. radar in on.
+S235225.3+321050  235225.3 +321050  j     0 H v   # A335522     2352   13.9 0010         225   src in off 4800km/s,narrow src 8300,11300 
+											       crowded field!
+S235724.3+334130  235724.3 +334130  j     0 H v   # A336679     0004   15.5 0011         229   strong radar+1345MHz harmonic. no det.
+S000424.8+323250  000424.8 +323250  j     0 H v   # A104822     0016   14.6 0012         233   ?sn~3 src at 7800km/s, but baseline a bit wavy
+S000505.5+325937  000505.5 +325937  j     0 H v   # A104828     0029   15.6 0013         237   Power failure in off scan. *BAD FILE*
+S000505.5+325937  000505.5 +325937  j     0 H v   # A104828     0039   16.6 0014         239   repeat after pwr failure, restarted WAPPS
+											       operator reports stormy.
+S000556.9+330709  000556.9 +330709  j     0 H v   # A104832     0050   18.4 0015         243   ZA getting high,behind, will skip next one
+											       nothing obvious baselines a bit wavy, hi rms?
+S010843.5+322600  010843.5 +322600  j     0 H v   # A114547     **SKIPPED** 
+S010720.0+344056  010720.0 +344056  j     0 H v   # A115124     0102   16.4 0016         247  radar in off, baselines wavy, nothing obvious
+											      operator says still raining hard.
+S011112.4+344157  011112.4 +344157  j     0 H v   # A116208     0117   16.5 0017         251  sn~6 src 5000km/s b2, op says weather calms a bit
+S011853.0+331022  011853.0 +331022  j     0 H v   # A110192     0129   15.1 0018         255  sn~10+ src 5700km/s b2, gps, otherwise base better
+S012459.2+303652  012459.2 +303652  j     0 H v   # A116219     0142   12.9 0019         259  *date change* wavy baselines, radar, no obvious.
+S013644.7+315403  013644.7 +315403  j     0 H v   # A115490     0154   14.2 0000   629800004  nothing obvious, radar in off rfi 1344 on. wavy.
+S015108.1+310503  015108.1 +310503  j     0 H v   # A115533     0207   13.3 0001         008  sn~4 src 4600 km/s b2, radar in of.
+S015315.7+313007  015315.7 +313007  j     0 H v   # A113991     0219   14.4 0002         012  sn~10+ src (broad) @11000km/s b3, +12600km/s rfi?
+S025128.1+353104  025128.1 +353104  j     0 H v   # A125513     0231   17.6 0003         016  nothing obvious.
+S025245.4+350519  025245.4 +350519  j     0 H v   # A124616     0245   16.9 0004         020  bright GPS, nothing obvious
+S030417.7+354732  030417.7 +354732  j     0 H v   # A132250     0257   17.6 0005         024  no det.
+H030510.4+354946  030510.4 +354946  j     0 H v   # A132243cal  0309 **ABORTED** not enough time to finish.
+
+                                                      
+Operator noted it was raining at start, so disabled tiedowns
+Unwrap at beginning.
+Heavy rain mid-observations. Power failure about 0010 LST, operator reset things, 
+I restarted wapps and repeated. Skipped one source for time & ZAG.

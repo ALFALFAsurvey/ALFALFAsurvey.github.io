@@ -1,0 +1,64 @@
+Log for 091111     Observer: Rose Finn, Rebecca Koopmann
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20091111.a2010.****.fits 
+
+     ****
+LST  fits  Scan       calscan        Source      Pattern   Start coords.  ang  time  loop  calmode 
+2133 0005  931500268  931500269      drift1p3    fixAZdr   213400+000339   19   600   99   loopend  Tiedown Disabled
+2144 0006  931500270  931500271      Warning: extrapolating pnt-data; 1375 stronger in pol B; streakiness in 6B
+2154 0007  931500272  931500273
+2204 0008  913500274  931500275      Warning:  extrapolating pnt-data; Power levels OK
+2214 0009  913500276  931500277      
+2224 0010  913500278  931500279      
+2234 0011  913500280  931500281
+2244 0012  913500282  931500283
+2254 0013  913500284  931500285
+2304 0014  913500286  931500287      Warning:  observing when not on source
+2314 0015  913500288  931500289
+2325 0016  913500290  931500291  
+2335 0017  931500292  931500293  power levels ok
+2345 0018  931500294  931500295  GPS
+2355 0019  931500296  931500297
+0005 0020  931500298  931500299  strong continuum in 4B seems to create negative signal in 6B, also seeing some other instabilities in 6B; stripes ~2.5 min apart
+0015 0021  931500300  931500301  still seeing stripes in 6B approx ever 2.5 min
+0025 0022  931500302  931500303
+0035 0023  931500304  931500305  still seeing stripes in 6b  
+0045 0024  931500306  931500307  
+0055 0025  931500308  931500309  still seeing stripes in 6b; strong continuum source
+0105 0026  931500310  931500311  
+0115 0027  931500312  931500313  power levels ok; continuum source; 6b seems to be more stable 
+0125 0028  931500314  931500315  seeing stipes again in 6b
+0135 0029  931500316  931500317  
+0145 0030  931500318  931500319 
+0155 0031  931500320  931500321  6B more stable
+0206 0032  931500322  931500323  
+0216 0033  931500324  931500325
+0226 0034  931500326  931500327  Beam 5B power level low (lowest was .787) periodically, but no warning on CIMA log; seems to be trending toward lower values
+0237 0035  931500328  931500329  Beam 5B power low almost continually; bright continuum source - too much power in Beam 5, 4, 3; tiedowns now active
+0247 0036  931500330  931500331  
+0257 0037  931500332  931600001 
+0307 0000  931600002  -- aborted
+END LST:  0307    
+
+Notes:
+-- TOGS ran at start and end of night.
+-- rfi at 1375 MHz, stronger in pol B
+-- Streakiness in 6B before LST 0155
+-- Beam 5B power dipped a bit low (.787 - .800) intermittently starting LST 0226
+-- Tiedowns disabled b/c of bad weather conditions w/thunder before LST 0237. Operator
+   also notes that they are having powerline dips. 
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+16K = K1: 13.3   K2: 13.0   K3: 14.5   K4: 14.7   AT 16:37
+70K = K1: 76.3   K2: 78.5   K3: 87.3   K4: 94.9
+
+16K = K1: 13.6   K2: 13.3   K3: 14.8   K4: 14.7   AT 23:00
+70K = K1: 76.3   K2: 78.5   K3: 87.6   K4: 95.2
+
+
+
+

@@ -1,0 +1,54 @@
+A3064 LBW   16.10.24   Observers: Orlando, Rosemar, Alexandra, Yenuel, Luis, Amarilis, Stephanie, Elluz, Jessica, Carmen y Mayra(UPRRP)
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161024.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161024.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161025.a3064.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H215143.8+251518  215143.8 +251518  j     0 H v   # A011834cal  2147  7.07   0007    629800289  WAPPDATA-interpolate:ERROR denominator is zero --- skiping interpolation! But the observation continue. Source detected at 3,200km/s s/n ~7
+S221559.8+235445  221559.8 +235445  j     0 H v   # A321944     2156  7.34   0008    629800293  source at ~6,700km/s s/n ~5
+S224642.6+230300  224642.6 +230300  j     0 H v   # A322995     2210  10.0   0009    629800297  WAPPDATA getting low disk space! The spectra looks bad, seems like it plotted only the onsource data. I dont know why. 
+S225015.4+260200  225015.4 +260200  j     0 H v   # A323093     2222  10.21  0010    629800301  No detection. 
+S224842.0+275839  224842.0 +275839  j     0 H v   # A323089     2234  10.29  0011    629800305  Possible source at 10,000 km/s 
+S230344.6+285001  230344.6 +285001  j     0 H v   # A336629     2247  11.3   0012    629800309  GPS 1381MHZ, no source
+S233253.5+291723  233253.5 +291723  j     0 H v   # A336083     2300  13.44  0013          313  no source 
+S234149.3+303432  234149.3 +303432  j     0 H v   # A335426     2312  14.13  0014          317  strong line at 5,200km/s and a weak source at 6,500 km/s (this one is problably our source)
+S234339.7+305046  234339.7 +305046  j     0 H v   # A336666     2324  13.34  0015          321 very,very weak posible signal at 5,300 km/s  
+S235157.9+293732  235157.9 +293732  j     0 H v   # A336678     2337  11.34  0016          325  1,381 MHz (8,600 km/s)very weak peek.
+S000850.3+320241  000850.3 +320241  j     0 H v   # A104317     2350  14.49  0017          329  No detection.
+S001830.2+301004  001830.2 +301004  j     0 H v   # A104373     0002  12.53  0018          333  No detection.
+S002247.4+301040  002247.4 +301040  j     0 H v   # A104895     0014  12.11  0019          337  Very week posible source at 9,100 km/s
+S010750.2+300421  010750.2 +300421  j     0 H v   # A114073     0027  15.04  0020          341  Very nadle weak 10,800 km/s (1,371 MHz)
+S011055.7+323036  011055.7 +323036  j     0 H v   # A116269     0040  15.92  0021          345  Detection at 8,600 km/s. S/N `2-3. 
+S011413.4+323806  011413.4 +323806  j     0 H v   # A112562     0052  15.26  0022          349  No detection.
+S011624.8+324042  011624.8 +324042  j     0 H v   # A114207     0104  14.72  0023          353  Very nadle weak 1,370 MHz. 11,100 km/s Possible RFI.
+S012059.8+341455  012059.8 +341455  j     0 H v   # A000879     0117  16.04  0024          357  Detection at 5,000 km/s. S/N 1. Possible artefice  1,366 MHz  board 4 
+S011700.2+305801  011700.2 +305801  j     0 H v   # A116216     0130  13.01  0025          361  No detection. 
+S011707.1+313047  011707.1 +313047  j     0 H v   # A115302     0142  14.35  0026          365  No detection.
+S011836.4+314820  011836.4 +314820  j     0 H v   # A115795     0154  15.68  0000    629900003  file:wapp.201161025.a3064.0000.fits no detection.
+S015615.6+305622  015615.6 +305622  j     0 H v   # A115890     0208  12.93  0001          007  no detection.  
+S021753.5+315220  021753.5 +315220  j     0 H v   # A122444     0220  13.62  0002          011  strong detection at 1392MHz (6,000 km/s)
+S021221.9+283427  021221.9 +283427  j     0 H v   # A124690     0233  11.27  0003          015  not clear but possible line at 1370 MHz (~11,000 km/s)
+S023853.1+274643  023853.1 +274643  j     0 H v   # A124754     0246  09.61  0004          019  RFI at 1400 MHz and GPS. No detection. 
+S025200.2+292648  025200.2 +292648  j     0 H v   # A125532     0258  11.24  0005          023  No detection. 
+S030354.8+301552  030354.8 +301552  j     0 H v   # A002512 if time                        NO TIME.
+
+                                                      
+FAA radar is on, and there is recurrent low level stuff at 1364 MHz. 
+
+
+

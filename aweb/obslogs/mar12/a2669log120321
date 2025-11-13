@@ -1,0 +1,92 @@
+A2669 LBW   12.03.21        Observers: Rebecca Koopmann, Rachel Almovodar, Halley Darling, Lucas Viani
+
+CIMA version:          A `smart' version of CIMA (3.1.08 2010-02-01 17:44 "Smart")
+Configuration file:    a2669_lowvel.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.00 MHz = 1390-1450 MHz
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz @ 1420 MHz
+      Board  3&4  Pols A/B  9-level 2048 chans/25 MHz @ 1405 MHz
+  Catalog: 'a2669_lowv.cat'
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait       
+Command file:        a2669_120321.cmd  
+Mode:                Fixed frequency/topocentric; no doppler tracking                            
+                     Low velocity sources cz < 2000 km/s
+          
+Data written to: /share/olcor/corfile.21mar2012.a2669.*     (Watch for change at midnight)
+
+SRCNAME             RAJ     DECJ             AGNnr    Block      LST   ZA   File#  ONScan     Status
+H073609.4+095952  073610.3 +095911  j 0   # A174585   12.03.21   --skipped--
+H080238.3+052613  080238.1 +052606  j 0   #           12.03.21   --skipped--
+H075012.4+105930  075012.8 +105856  j 0   #           12.03.21   --skipped--
+H075928.8+133330  075929.1 +133320  j 0   #           12.03.21   --skipped--			
+H085923.1+154830  085923.9 +154815  j 0   #           12.03.21   0832   7.1  1     208175595   Detected at f=1420 MHz
+H092049.0+145953  092049.6 +145941  j 0   #           12.03.21   0842   9.8  2     208175599   Not Detected
+H092002.6+121703  092002.8 +121655  j 0   #           12.03.21   0850   9.5  3     208175603   Detected at f=1420 MHz 
+H090730.9+082925  090731.0 +082917  j 0   #           12.03.21   0900  10.1  4     208175607   Detected at f=1420 MHz
+A091028.2+071112  091028.2 +071112  j 0   # A190795   12.03.21   0908  11.2  5     208175611   Strong detection at f=1413 MHz
+H094148.8+124400  094149.1 +124351  j 0   #           12.03.21   0918   8.1  6     208175615   Not Detected
+H094437.6+125106  094437.9 +125057  j 0   #           12.03.21   0926   7.2  7     208175619   Not Detected
+H094540.3+093930  094540.4 +093922  j 0   #           12.03.21   0935   9.1  8     208175623   Not Detected
+H094756.0+093030  094756.1 +093022  j 0   #           12.03.21   0943   9.0  9     208175627   possible detection at f=1420 MHz
+H094838.0+085337  094838.1 +085329  j 0   #           12.03.21   0951   9.5 10     208175631   Not Detected
+H095244.7+045004  095244.4 +044958  j 0   #           12.03.21   1000  13.7 11     208175635   Not Detected
+H095338.3+093300  095338.4 +093252  j 0   #           12.03.21   1010   9.6 12     208175639   Not Detected
+H095615.0+095406  095615.1 +095358  j 0   #           12.03.21   1018   9.9 13     208175643   Not Detected
+H101716.0+082420  101716.0 +082413  j 0   #           12.03.21   1027  10.2 14     208175647   Not Detected
+H102141.2+085800  102141.3 +085752  j 0   #           12.03.21   1035   9.9 15     208175651   Not Detected  
+H103811.2+093303  103811.3 +093255  j 0   #           12.03.21   1043   8.9 16     208175655   Not Detected
+H104732.0+094650  104732.2 +094642  j 0   #           12.03.21   1051   8.6 17     208175659   Not Detected
+H104743.1+093324  104743.2 +093316  j 0   #           12.03.21   1059   9.2 18     208175663   Not Detected
+H111238.5+084808  111238.6 +084800  j 0   #           12.03.21   1109   9.6 19     208175667   Not Detected
+H112534.3+090000  112534.4 +085952  j 0   #           12.03.21   1117   9.7 20     208175671   Not Detected
+H112817.2+091050  112817.3 +091042  j 0   #           12.03.21   1124   9.2 21     208175675   Not Detected
+H112913.3+081550  112913.3 +081543  j 0   #           12.03.21   1133  10.2  1     208175679   Not Detected
+H114324.5+070213  114324.4 +070205  j 0   #           12.03.21   1141  11.4  2     208200004   Not Detected
+H120936.1+070830  120936.1 +070830  j 0   #           12.03.21   1150  12.2  3     208200008   Not Detected
+H123445.0+124658  123445.3 +124649  j 0   #           12.03.21   1200  10.2  4     208200012   Bad Baseline
+H122717.8+043530  122717.6 +043523  j 0   #           12.03.21   1210  14.5  5     208200015   Not Detected 
+H124540.5+070337  124545.7 +070347  j 0   #           12.03.21   1218  13.2  6     208200020   Not Detected
+H124643.2+102058  124643.3 +102049  j 0   #           12.03.21   1227   9.4  7     208200024   Detected at f=1413 MHz
+H125346.4+073642  125346.4 +073642  j 0   #           12.03.21   1236  11.6  8     208200028   Not Detected
+H125418.0+075352  125418.0 +075345  j 0   #           12.03.21   1244  10.8  9     208200032   Not Detected
+H125623.5+075737  125622.8 +075734  j 0   #           12.03.21   1252  10.5 10     208200036   Not Detected
+H125757.1+073730  125757.1 +073730  j 0   #           12.03.21   1300  10.8 11     208200040   Not Detected
+H130456.7+050144  130456.4 +050137  j 0   #           12.03.21   1309  13.4 12     208200044   Not Detected 
+H133528.6+063620  133528.5 +063613  j 0   #           12.03.21   1318  12.6 13     208100048   Not Detected
+H135140.1+062313  135140.1 +062313  j 0   #           12.03.21   1327  13.5 14     208200052   Not Detected
+H135818.2+074124  135818.2 +074124  j 0   #           12.03.21   1335  12.2 15     208200056   Not Detected
+H140304.8+074630  140304.8 +074630  j 0   #           12.03.21   1343  11.8 16     208200060   Not Detected
+H140456.9+055235  140456.9 +055235  j 0   #           12.03.21   1351  13.0 17     208200064   Not Detected
+H141432.1+065416  141432.1 +065416  j 0   #           12.03.21   1359  12.1 18     208200068   Not Detected
+H141908.2+075121  141908.2 +075115  j 0   #           12.03.21   1407  10.9 19     208200072   Not Detected
+H142250.1+092642  142250.2 +092634  j 0   #           12.03.21   1416   9.1 20     208200076   Not Detected
+H143429.9+124257  143430.2 +124248  j 0   #           12.03.21   1425   6.2 21     208200080   Not Detected
+H144704.2+043108  144703.9 +043102  j 0   #           12.03.21   1436  14.1 22     208200084   Not Detected
+H151909.5+103713  151909.7 +103705  j 0   #           12.03.21   1445  11.4 23     208200088   Not Detected
+H153246.6+100612  153246.8 +100604  j 0   #           12.03.21   1454  12.6 24     208200092   Not Detected
+H153832.9+060754  153832.7 +060747  j 0   #           12.03.21   1503  15.1 25     208200096   Not Detected
+H154514.4+083850  154514.4 +083842  j 0   #           12.03.21   1512  12.8 26     208200100   Possible Detection at f=1421 MHz
+H154914.6+144730  154915.1 +144718  j 0   #           12.03.21   1521   7.7 27     208200104   Not Detected
+H155836.1+101030  155836.2 +101022  j 0   #           12.03.21   1530  10.7 28     208200108   Not Detected
+H160411.6+063908  160411.5 +063900  j 0   #           12.03.21   1539  13.2 29     208200112   Not Detected
+H160246.9+113854  160247.1 +113846  j 0   #           12.03.21   1549   7.5 30     208200116   Not Detected
+A160247.9+065230  160247.9 +065230  j 0   # A716501   12.03.21   1559  11.5 31     208200120   Not Detected
+A165638.7+075950  165638.7 +075950  j 0   # A261945   12.03.21   1609  15.6 32     208200124   strong detection at f=1413.5 MHz
+
+LST Stop:1616
+
+Late start to beginning of night due to trouble rotating LBW. Rotation timed out in configuration file. 
+2012-Mar-21 20:18:36 LOG4    got_cormsg: From DATATAKING: turret stop err:0x3f50005
+2012-Mar-21 20:18:36 ERROR   got_cormsg: ERROR error message from DATATAKING: 'turret stop err:0x3f50005'
+
+CIMA restarted several times, but repeated error messages in datataking appeared before gui to select
+LBW. 
+
+2012-Mar-21 20:22:32 LOG3    vw_send: To DATATAKING: source/share/obs4/usr/aoui/psriflo.tcl
+2012-Mar-21 20:22:32 ERROR   vw_send: ERROR failed to send to DATATAKING: source /share/obs4/usr/aoui/psriflo.tcl
+
+Operator called Arun, who worked on processes remotely. Operator restarted interim correlator. CIMA 
+restarted and all functioned normally for rest of the night.
+
+

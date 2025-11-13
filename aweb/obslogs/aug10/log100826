@@ -1,0 +1,69 @@
+Log for 08/26/10          Observer: Lyle Hoffman, Ryan Payne
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100826.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100827.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern   Start coords. ang  time loop  calmode
+
+2106 0001 23800110  23800111   drift98p1  fixAZdr   212500+234330  19  600   99  loopend 
+2116 0002 23800112  23800113   power levels OK; fits OK
+2126 0003 23800114  23800115
+2136 0004 23800116  23800117   power levels OK
+2146 0005 23800118  23900001   power levels OK
+2156 0000 23900002  23900003   fits OK
+2206 0001 23900004  23900005   power levels OK
+2216 0002 23900006  23900007
+2226 0003 23900008  23900009  power levels OK; fits OK
+2237 0004 23900010  23900011
+2247 0005 23900012  23900013  power levels OK
+2257 0006 23900014  23900015
+2307 0007 23900016  23900017
+2317 0008 23900018  23900019  power levels OK; fits OK
+2327 0009 23900020  23900021
+2337 0010 23900022  23900023
+2347 0011 23900024  23900025  power levels OK
+2357 0012 23900026  23900027
+0007 0013 23900028  23900029  fits OK
+0018 0014 23900030  23900031  power levels OK
+0028 0015 23900032  23900033
+0038 0016 23900034  23900035
+0048 0017 23900036  23900037
+0058 0018 23900038  23900039  power levels OK; fits OK
+0108 0019 23900040  23900041
+0118 0020 23900042  23900043  power levels OK
+0128 0021 23900044  23900045
+0139 0022 23900046  23900047
+0149 0023 23900048  23900049  power levels OK; fits OK
+0159 0024 23900050  23900051
+0209 0025 23900052  23900053
+0219 0026 23900054  23900055  power levels OK
+0229 0027 23900056  23900057
+0239 0028 23900058  23900059  fits OK
+0249 0029 23900060  23900061  power levels OK
+0300 0030 23900062  23900063
+0310 0031 23900064  aborted
+
+LST@stop: 0310
+
+NOTES:
+- TOGS run at beginning 
+- FAA radar ON 
+- Tiedowns disabled (according to oplogs)
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 14.0   K3: 15.5   K4: 15.7   AT 18:18
+70K = K1: 83.2   K2: 90.3   K3: 101.0  K4: 109.5
+
+16K = K1: 14.1   K2: 14.3   K3: 15.5   K4: 15.7   AT 22:11
+70K = K1: 82.9   K2: 90.2   K3: 101.0  K4: 109.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+

@@ -1,0 +1,62 @@
+A2707 LBW   12.11.24      Observers: Ron Olowin
+
+CIMA version:          The Stable version (Default) (Ver 3.3.03 2012-11-14 07:43)
+Configuration file:    a2707_highvelres.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2707_121124.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.24nov12.a2707.*    
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA    File#  ONScan        Status
+
+H220519.0+252753  220519.0 +252753  j   500 H V   #          t=5min  2219 7.83    1    232900056  No clear detection
+H221848.5+244901  221848.5 +244901  j   500 H V   #                  2231 7.14    2    232900060  No clear detection
+H222825.2+300927  222826.6 +300926  j  1000 H V   #          t=5min  2241 12.22   3    232900064  No clear detection
+H223941.0+242041  223942.6 +242040  j  7500 H V   # A321345  t=5min  2255  7.02   4    232900068  Weak detection @1385.5 MHz
+H230617.5+255856  230619.0 +255856  j   400 H V   #                  2308  7.72   5    232900072  No clear detection
+H231744.2+275221  231745.3 +275220  j  7100 H V   # A333633  t=5min  2317  9.61   6    232900076  Weak detection @1387.2 MHz
+H232752.7+314400  232754.0 +314402  j   900 H V   #          t=5min  2329 13.49   7    232900080  No clear detection
+H234942.6+300713  234944.0 +300712  j  5100 H V   # A333631  t=5min  2343 11.97   8    232900084  No clear detection
+H000207.2+292130  000208.1 +292126  j   600 H V   #                  2355 11.22   9    232900088  Detection @1422.1 MHz
+H000352.2+252735  000353.5 +252737  j -1700 H V   #                  0004  7.19  10    232900092  Detection @1429.5 MHz
+H001456.1+283847  001456.9 +283844  j   900 H V   #                  0014 10.39  11    232900096  No clear detection
+H001538.9+250845  001540.2 +250847  j   400 H V   #                  0023  7.05  12    232900100  No clear detection
+H002957.2+305739  002958.2 +305831  j  -700 H V   # A102850  t=5min  0033 12.73  13    232900104  No clear detection
+H004940.8+275700  004941.8 +275703  j   800 H V   #                  0046  9.73  14    232900108  No clear detection
+H010820.7+262551  010821.9 +262549  j   800 H V   #                  0054  8.77  15    232900112  Detection @1422.1 MHz
+H011128.6+273633  011129.9 +273633  j   500 H V   #                  0103  9.56  16    232900116  No clear detection
+H011240.0+274738  011241.1 +274739  j   400 H V   #                  0111  9.54  17    232900120  No clear detection
+H011223.6+244502  011225.0 +244503  j  -300 H V   #                  0120  6,68  18    232900124  Possible detection @1417.9 MHz
+H011319.9+245904  011321.1 +245906  j  -300 H V   #                  0128  7.53  19    232900128  No clear detection
+H012520.1+263350  012521.3 +263348  j   300 H V   #                  0136  8.64  20    232900132  No clear detection
+H014137.2+270256  014138.5 +270253  j   500 H V   #                  0145  8.79  21    232900136  No clear detection
+H015543.5+260719  015544.5 +260718  j  -400 H V   #                  0153  7.87  22    232900140  No clear detection
+J022710.6+263820  022710.6 +263820  j   900 H V   # A123350          0203 10.14  23    232900144  Detection @1416.1 MHz
+H024633.8+293722  024634.6 +293719  j   800 H V   #                  0212 13.84  24    232900148  No clear detection 
+H024707.1+284916  024708.0 +284913  j  1000 H V   #                  0220 12.22  25    232900152  No clear detection
+H024829.2+244400  024830.6 +244401  j   600 H V   #                  0230  7.82  26    232900156  No clear detection
+H025737.0+234825  025736.8 +234903  j   400 H V   #          t=5min  0238  7.21  27    232900160  Detection @1418.5 MHz
+H030234.0+245007  030235.3 +245008  j  3300 H v   # A131375          0250  7.18  28    232900164  Detection @1405.2 MHz
+H030146.8+255630  030147.8 +255629  j  1000 H v   #                  0259  7.69  29    232900168  No clear detection
+
+
+Stop LST:0306 
+
+
+Please record any notes of importance here. (Remember: you were there; we weren't.)
+
+AO Schedule started a2707 at 18:30 AST; our schedule showed 18:15 AST.
+Prior observer logged off at about 18:20 AST and I started immediately thereafter.
+
+Tiedowns active through run
+
+
+
+

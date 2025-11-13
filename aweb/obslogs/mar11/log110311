@@ -1,0 +1,108 @@
+Log for 11.03.11 (11Mar2011)        Observers: David Craig, Colby Dennis and Tharaka Peiris (WTAMU)
+
+System Configuration:  a2010_az180_2010.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110311.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110312.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted; ZAG will be about 14.
+Due to cable wrap from previous observations, AZ is 540.
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0911 0030  107000173  107000174 drift133p2 fixAzdr  091200+322148 19 600   99  loopend pwr ok,FAA on,6B off
+0921 0031  107000175  107000176                      ql on fits 0030 ok. FAA harmonic at 1380 MHz. ql ok.
+0931 0032  107000177  107000178                     pointing good.
+0941 0033  107000179                       cs b0,2, may overlap prev cal in 2. WAPPS failure, aborted
+                                           near end of scan.
+                                           'WAPP-3 failed to complete current task' errors in restart attempts
+                                           include 'timeout waiting for correlator', etc. fits 0033-0035 bad.
+
+1005 0036  107000183 107000184             adjust power, restart took 4 tries (WAPPS errors). 
+                                           fits 0036 should be ok. its quicklook is ok.
+
+1015 0037  107000185                       alfadatawin is not working.  WAPPS failed again. Restart CIMA to
+                                           get alfadatawin and start over. fits 0037 bad near end of scan.
+
+1031 0039  107000188 107000189             CIMA restart,power adjusted, waterfall back, pwr ok. quicklook ok. 
+1041 0040  107000190 107100001             date change at cal.
+1051 0000  107100002 107100003             quicklook ok.
+1101 0001  107100004 107100005
+1111 0002  107100006 107100007             quicklook ok.
+1121 0003  107100008 107100009             gps burst 0435 UTC (faint), cs overlaps cal b0,2,5
+1131 0004  107100010 107100011
+1141 0005  107100012 107100013             gps 0452 UTC, quicklook ok.
+1151 0006  107100014 107100015             gps 0507 UTC,long one, or pair running to next drift
+1202 0007  107100016 107100017             gps at beginning
+1212 0008  107100018 107100019             quicklook ok.  Dewar temps high in observation mon, but steady.
+1222 0009  107100020 107100021               
+1232 0010  107100022 107100023             broad cs overlaps cal in b3 (not very bright). quicklook ok.
+1242 0011  107100024 107100025             quicklook ok.
+1252 0012  107100026 107100027
+1302 0013  107100028 107100029             very brief small pwr drop mid scan, very bright cs in 
+                                           b0,2 overlaps cal in b4,3   
+1312 0014  107100030 107100031             quicklook ok.
+1322 0015  107100032 107100033             bright cs b6,1 early in scan.
+1332 0016  107100034 107100035             quicklook ok.
+1343 0017  107100036 107100037             
+1353 0018  107100038 107100039             bright cs b2, also b0,6. quicklook ok.            
+1403 0019  107100040 107100041             faint gps burst, 0716 UTC, again at scan end.
+1413 0020  107100042 107100043             faint gps (?) 0726 UTC, cs overlaps cal in b5,b0
+1423 0021  107100044 107100045             
+1433 0022  107100046 107100047             quicklook ok.             
+1443 0023  107100048 107100049             
+1453 0024  107100050 107100051             quicklook ok.
+1503 0025  107100052 107100053             
+1513 0026  107100054 107100055
+1524 0027  107100056 10710005             
+1534 0028                     **ABORTED**             
+
+LST stop:1534      
+
+At the bottom, add notes regarding:
+-- TOGS run at end.
+-- FAA radar on.
+-- Physical dewar temps look high, red in monitor window, around 35K and 145K, but have been steady 
+(see below also from the temperature status).
+
+GREGORIAN DOME 16K TEMPERATURES
+
+AT 18:00      AT 22:06
+
+327 = 15.1    327 = 14.9
+430 = 14.0    430 = 13.1
+800 = 79.9    800 = 78.6
+LBW = 13.8    LBW = 13.8
+SBN = 10.9    SBN = 10.8
+SBW = 13.9    SBW = 13.9
+SBH = OFF     SBH = OFF
+CB  = 12.7    CB  = 12.7
+CBH = OFF     CBH = OFF
+XB  = 15.1    XB  = 15.5
+
+Floor Speed 3  AT 16:00
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 30.2   K2: 30.2   K3: 34.1   K4: 33.8   AT 18:00
+70K = K1: 124.7  K2: 133.5  K3: 141.8  K4: 149.4
+
+16K = K1: 30.4   K2: 30.9   K3: 34.6   K4: 34.3   AT 22:07
+70K = K1: 125.5  K2: 133.5  K3: 142.6  K4: 149.9
+
+			=>temperatures of the 8 sensors within ALFA 
+housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT /
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:00
+				=>certify our blanker is locking on
+
+

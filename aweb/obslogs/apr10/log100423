@@ -1,0 +1,80 @@
+Log for 04/23/10          Observer: Greg Hallenbeck 
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100423.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100424.a2010.****.fits
+
+Observing on meridian setup
+Az=179.74   ALFAang=19.0  ZA=10.65 
+
+LST@start=0855   RA@start=0855
+RA = LST
+
+LST  fits   Scan    calscan   Source     Pattern   Start coords. ang   time  loop  calmode    ZAdome     notes
+0855 0019  11300085 11300086  drift120p3 fixAZdr   090200+290102 19.0  600   99    loopend
+0906 0020  11300087 11300088  quicklook OK
+0916 0021  11300089 11300090
+0926 0022  11300091 11300092
+0936 0023  11300093 11300094
+0946 0024  11300095 11300096
+0956 0025  11300097 11300098
+1006 0026  11300099 11300100  beam 2A's power is too high (I note later when this stops)
+1016 0027  11300101 11300102  quicklook OK
+1026 0028  11300103 11300104
+1036 0029  11300105 11300106
+1046 0030  11300107 11300108
+1056 0031  11300109 11300110
+1107 0032  11300111 11300112
+1117 0033  11300113 11300114  quicklook OK
+1127 0034  11300115 11300116
+1137 0035  11300117 11300118
+1147 0036  11300119 11300120
+1157 0037  11300121 11300122
+1207 0038  11300123 11300124
+1217 0039  11300125 11300126  beam 2A has stopped acting up, but is still high (~1.7)
+1227 0040  11300127 11300128  quicklook OK
+1238 0041  11300129 11300130
+1248 0042  11300131 11300132
+1258 0043  11300133 11300134
+1308 0044  11300135 11300136
+1318 0045  11300137 11300138
+1328 0046  11300139 11300140
+1338 0047  11300141 11400001
+1348 0000  11400002 11400003  
+1358 0001  11400004 11400005  quicklook OK
+1409 0002  11400006 11400007
+1419 0003  11400008 11400009
+1429 0004  11400010 11400011
+1439 0005  11400012 11400013
+1449 0006  11400014 11400015
+1459 0007  11400016 11400017  beam 2A down to normal levels
+1509 0008  11400018 11400019
+1519 0009  11400020 11400021
+1530 0010  11400022 Aborted
+
+LST@stop:1530       RA@stop:1530
+
+NOTES:
+
+-TOGS run at END only
+-Telescope operator says there is bad weather in Arecibo tonight
+-Beam 2A is acting up again
+-FAA radar ON
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 18.7   K2: 18.4   K3: 19.9   K4: 20.6   AT 19:06
+70K = K1: 114.7  K2: 125.7  K3: 139.9  K4: 156.7
+
+16K = K1: 15.5   K2: 15.5   K3: 17.2   K4: 17.4   AT 23:10
+70K = K1: 101.3  K2: 110.5  K3: 122.8  K4: 136.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+

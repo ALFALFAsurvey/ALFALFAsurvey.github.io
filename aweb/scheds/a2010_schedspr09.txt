@@ -1,0 +1,121 @@
+A2010 observing schedule                                          last update: 09Nov16   mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+Az: should be 180 for Decs north of zenith and 360 for Decs south of zenith.
+(R) indicates remote observing.
+
+    09.01.03  S 03Jan      06h24  00h45-05h15   07h09-11h40    11p1  +023318  MH,RG(R)      
+    09.01.04  S 04Jan      06h28  00h45-05h15   07h13-11h44    10p1  +021842  MH,RG(R) 
+    09.01.05  M 05Jan      06h32  00h45-05h15   07h17-11h48     9p1  +020406  MH,RG(R) 
+    09.01.06a T 06Jan      06h36  00h45-07h15   07h21-13h52    13p2  +030948  RG(R)   
+    09.01.07a W 07Jan      06h40  00h30-07h15   07h10-13h56    12p2  +025512  RG(R)    
+    09.01.08a R 08Jan      06h44  00h30-07h15   07h14-14h00    11p2  +024036  RG(R)    
+    09.01.09  F 09Jan      06h48  00h30-07h15   07h18-14h04    10p2  +022600  RG(R) 
+    09.01.11a S 11Jan      06h56  00h15-07h00   07h07-13h53     9p2  +021124  SS,AM 
+    09.01.12  M 12Jan      07h00  00h15-07h15   07h00-14h01    15p2  +033900  SS,AM + UAT at AO
+    09.01.13a T 13Jan      07h04  00h15-07h15   07h04-14h05    14p2  +032424  SS,AM + UAT at AO
+    09.01.18  S 18Jan      07h27  23h59-06h30   07h26-13h58     8p2  +015648  BA,DB(R) 
+    09.01.19  M 19Jan      07h31  23h45-06h30   07h16-14h02     7p2  +014212  BA(R)  
+    09.01.20  T 20Jan      07h35  23h45-06h30   07h20-14h06     6p2  +012736  BA(R)  az=360
+    09.01.31  S 31Jan      08h18  23h15-06h00   07h33-14h19     5p2  +011300  DB(R)
+    09.02.01  S 01Feb      08h22  23h15-05h45   07h37-14h08     4p2  +005824  DB(R) 
+    09.02.02  M 02Feb      08h26  23h15-05h45   07h41-14h12     3p2  +004348  DB(R) 
+    09.02.03  T 03Feb      08h30  23h00-05h45   07h30-14h16     2p2  +002912  DB(R) 
+    09.02.06  F 06Feb      08h42  22h45-05h30   07h27-14h13     1p2  +001436  EP(R)
+    09.02.07  S 07Feb      08h46  22h45-05h30   07h31-14h17     8p1  +014930  EP(R)
+    09.02.08  S 08Feb      08h50  22h45-05h15   07h35-14h06     7p1  +013454  EP(R)
+    09.02.14  S 14Feb      09h14  22h15-05h00   07h28-14h14     6p1  +012018  EP, SH2(R) 
+    09.02.15  S 15Feb      09h18  22h15-05h00   07h32-14h18     5p1  +010542  DB(R) 
+    09.02.16  M 16Feb      09h22  22h15-04h45   07h36-14h07     4p1  +005106  SH2(R)
+    09.02.17  T 17Feb      09h26  22h00-04h45   07h25-14h11     3p1  +003630  SH2(R)
+    09.02.18  W 18Feb      09h30  22h00-04h45   07h29-14h15     2p1  +002154  SH2(R) 
+    09.02.19  R 19Feb      09h34  22h00-04h45   07h33-14h19     1p1  +000718  SH2(R)
+    09.02.20  F 20Feb      09h38  23h45-06h00   09h22-15h38     0p2  +000001  AM(R) 
+    09.02.21  S 21Feb      09h42  23h59-06h00   09h39-15h42     0p1  -000718  AM(R) no TOGS at start
+    09.02.28  S 28Feb      10h09  23h15-05h15   09h24-15h25    97p2  +233612  RG,SH2
+    09.03.01  S 01Mar      10h13  23h00-05h15   09h13-15h29    96p2  +232136  RG,SH2  
+    09.03.02  M 02Mar      10h17  23h00-05h15   09h17-15h33    95p2  +230700  SH2      
+    09.03.03  T 03Mar      10h21  23h00-05h15   09h21-15h37    94p2  +225224  SH2
+    09.03.04  W 04Mar      10h25  23h00-05h00   09h24-15h25    93p2  +223748  SH2     
+    09.03.05  R 05Mar      10h29  22h45-05h00   09h13-15h29    92p2  +222312  DB(R)                        
+    09.03.13  F 13Mar      11h00  22h00-04h30   09h00-15h38    91p2  +220836  LH(R)   
+    09.03.14  S 14Mar      11h04  22h00-04h30   09h04-15h42    90p2  +215400  LH(R)    
+    09.03.15  S 15Mar      11h08  22h00-04h15   09h08-15h24    89p2  +213924  DK,TS,SM  
+    09.03.16  M 16Mar      11h12  22h00-04h15   09h12-15h28    88p2  +212448  DK,TS,SM      
+    09.03.17  T 17Mar      11h16  21h45-04h15   09h01-15h32    87p2  +211012  DK,TS,SM   
+    09.03.30  M 30Mar      12h11  21h00-03h30   09h07-15h38    86p2  +205536  BK(R)
+    09.03.31  T 31Mar      12h15  21h00-03h15   09h11-15h27    85p2  +204100  BK(R)  
+    09.04.07  T 07Apr      12h39  20h30-02h45   09h08-15h24    84p2  +202624  EP(R)  az=180 
+    09.04.08  W 08Apr      12h43  20h30-02h45   09h12-15h28    83p2  +201148  EP(R)  az=180 
+    09.04.09  R 09Apr      12h48  20h15-02h45   09h01-15h32    82p2  +195712  EP(R)  az=180 
+    09.04.10  F 10Apr      12h52  20h15-02h45   09h05-15h36    98p1  +234330  SH2(R) az=180 
+    09.04.11  S 11Apr      12h55  20h15-02h30   09h09-15h25    97p1  +232854  SH2(R) az=180 
+    09.04.12  S 12Apr      12h58  20h00-02h30   08h58-15h29    96p1  +231418  BA(R)  az=180 
+    09.04.13  M 13Apr      13h02  20h00-02h30   09h02-15h33    95p1  +225942  KH(R)  az=180 
+    09.04.14  T 14Apr      13h06  20h00-02h30   09h06-15h37    94p1  +224506  KH(R)  az=180 
+    09.04.15  W 15Apr      13h10  19h45-02h15   08h55-15h26    93p1  +223030  BA  (KH as backup) 
+    09.04.16  R 16Apr      13h14  19h45-02h15   08h59-15h30    92p1  +221554  BA     az=180 
+    09.04.17  F 17Apr      13h18  19h45-02h15   09h03-15h34    91p1  +220118  BA     az=180 
+    09.04.18  S 18Apr      13h22  19h45-02h15   09h07-15h36    90p1  +214642  BA     az=180 
+    09.04.19  S 19Apr      13h26  19h30-02h00   08h55-15h26    89p1  +213206  BA     az=180 
+    09.04.20  M 20Apr      13h30  19h30-02h00   08h59-15h30    88p1  +211730  BA     az=180 
+    09.04.22  W 22Apr      13h38  19h30-02h00   09h07-15h38    87p1  +210254  BA     az=180 
+    09.04.29  W 29Apr      13h42  19h00-01h30   09h05-15h36    86p1  +204818  RK(R)  az=180 
+    09.04.30  R 30Apr      13h46  18h45-01h15   08h53-15h25    85p1  +203342  RK(R)  az=180 
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+AA: Adeel Altaf
+DB: Drew Brisbin
+CA: Cameron Arsenault
+TB: Tom Balonek
+NB: Noah Brosch
+SB: Shea Brown
+BC: Barbara Catinella
+JC: John Cannon
+JD: Josh Davidson
+AF: Amy Furniss
+JG: Josh Goldstein
+RG: Riccardo Giovanelli
+MH: Martha Haynes
+KH: Kelley Hess
+SH: Sarah Higdon
+SH2: Shan Huang
+LH: Lyle Hoffman
+WH: Walter Hopkins
+MJ: Melissa Jacquart
+SK: Shelvean Kapita
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax
+BM: Bilal Mahmood
+PM: Peiyuan Mao
+SM: Steven Margell
+AM: Ann Martin
+JM: Jeff Miller
+WM: Arik Mitschang
+EM: Emmanuel Momjian
+PN: Prasanth Nair
+KN: Kim-Yen Nguyen
+AO: Aileen O'Donoghue
+EP: Manolis Papastergis
+DR: Daniel Richey
+JR: Jessica Rosenberg
+AS: Amelie Saintonge
+JS: John Salzer
+KS: Kristine Spekkens
+OS: Oded Spector
+DS: David Stark
+SS: Sabrina Stierwalt
+TS: Tess Senty
+MT: Mari Carmen Toribio
+LV: Liese van Zee
+BW: Brian Walsh
+EW: Eric Wilcots

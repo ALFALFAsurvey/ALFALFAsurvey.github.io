@@ -1,0 +1,68 @@
+Log for 12.10.10 (10oct2012)        Observers: Crystal Moorman
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121010.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121011.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2142 0016  228400179 228400180 drift149p1  fixAzdr   214200+360806  19  600   99  loopend power levels ok, FAA radar on, quicklook OK
+2152 0017  228400181 228400182
+2202 0018  228400183 228400184
+2212 0019  228400185 228400186 power levels OK, quicklook OK
+2222 0020  228400187 228400188
+2233 0021  228400189 228400190 faint cs, quicklook OK
+2243 0022  228400191 228400192
+2253 0023  228400193 228400194
+2303 0024  228400195 228400196
+2313 0025  228400197 228400198 gps, power levels OK, quicklook OK
+2323 0026  228400199 228400200 extrap/interp
+2333 0027  228400201 228400202 extrap/interp
+2343 0028  228400203 228400204 extrap/interp,  powerlevels OK, quicklook OK
+2354 0029  228400205 228400206
+0004 0030  228400207 228400208
+0014 0031  228400209 228400210
+0024 0032  228400211 228400212 power levels OK, quicklook OK
+0034 0033  228400213 228400214 gps quicklook OK
+0044 0034  228400215 228500001 gps, extrap/interp, quicklook OK
+0054 0000  228500002 228500003
+0104 0001  228500004 228500005 extrap/interp, 
+0114 0002  228500006 228500007 extrap/interp, quicklook OK
+0125 0003  228500008 228500009 power levels OK
+0135 0004  228500010 228500011
+0145 0005  228500012 228500013 extrap/interp, power levels OK, quicklook OK 
+0155 0006  228500014 228500015 
+0205 0007  228500016 228500017 extrap/interp
+0215 0008  228500018 228500019 extrap/interp
+0225 0009  228500020 228500021
+0235 0010  228500022 228500023 power levels OK, quicklook OK
+0245 0011  228500024 228500025 extrap/interp
+0256 0012  228500026 228500027 gps power levels OK quicklook OK
+0306 0013  228500028 aborted
+
+LST stop: 0306
+
+At the bottom, add notes regarding:
+-- FAA radar on.
+-- All ALFA beams working.
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+ALFA TEMPERATURES
+
+16K = K1: 14.8   K2: 14.3   K3: 15.8   K4: 15.5   AT 11:00
+70K = K1: 84.4   K2: 84.2   K3: 92.2   K4: 100.3
+
+16K = K1: 15.1   K2: 14.3   K3: 16.0   K4: 15.7   AT 14:20
+70K = K1: 85.1   K2: 84.6   K3: 93.0   K4: 101.3
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered

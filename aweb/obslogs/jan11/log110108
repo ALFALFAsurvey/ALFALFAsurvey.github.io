@@ -1,0 +1,70 @@
+Log for 11.01.08 (08Jan2011)        Observers: MH & RG
+
+System Configuration:  {Record the configuration file you used. e.g., a2010_az180_2011.conf}
+CIMA version           {Record the FULL name of the CIMA version, e.g., 3.1.08 2010-02-01 17:44 "Smart"}
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110108.a2010.****.fits
+     {If observing block crosses midnight, add a 2nd line with the 2nd date}
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0902 0000 100800049  100800050 drift133p2 fixAzdr   090200+322148  19  600   99  loopend    6B is dead; quicklook ok
+0912 0001 100800051  100800052
+0922 0002 100800053  100800054
+0933 0003 100800055  100800056
+0943 0004 100800057  100800058
+0953 0005 100800059  100800060
+1003 0006 100800061  100800062
+1013 0007 100800063  100800064
+1023 0008 100800065  100800066
+1033 0009 100800067  100800068                                                              power levels nominal
+1043 0010 100800069  100800070
+1054 0011 100800071  100800072
+1104 0012 100800073  100800074
+1114 0013 100800075  100800076
+1124 0014 100800077  100800078
+1134 0015 100800079  100800080
+1144 0016 100800081  100800082
+1154 0017 100800083  100800084
+1205 0018 100800085  100800086
+1215 0019 100800087  100800088
+1225 0020 100800089  100800090                                     quicklook, levels ok
+1235 0021 100800091  100800092
+1245 0022 100800093  100800094
+1255 0023 100800095  100800096
+1305 0024 100800097  100800098
+1316 0025 100800099  100800100
+1326 0026 100800101  100800102          since TOGS takes only 6min, run a little past A2010 time
+1336 ABORT
+
+LST stop: 1336
+
+At the bottom, add notes regarding:
+-- TOGS run at end
+-- FAA radar on
+-- Beam 6B is dead; hence lots of warnings about WAPP channels with too little power
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 18.7   K2: 150.9  K3: 19.9   K4: 20.1   AT 18:28
+70K = K1: 111.5  K2: 117.1  K3: 128.3  K4: 138.9
+
+16K = K1: 18.0   K2: 38.0   K3: 19.2   K4: 19.4   AT 23:03
+70K = K1: 106.6  K2: 112.0  K3: 122.5  K4: 132.0
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT /
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:03
+				=>certify our blanker is locking on
+

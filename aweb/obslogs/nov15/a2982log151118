@@ -1,0 +1,68 @@
+A2982 LBW   15.11.18  Observers: David Craig, Alyssa McElroy, Astro 1411 Wed night lab students
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_151118.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20151118.2982.****.fits  
+                     /share/wappdata.now/wapp.20151115.2982.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S221542.3+230538  221542.3 +230538  j     0 H v   # A323001     2158   9.4  0000    532200156  Previous observer was on late
+												no obvious src, radar, 1360 rfi
+S221620.1+235308  221620.1 +235308  j     0 H v   # A323020     2210   5.8  0001         0160  radar in off, no detection 
+S223003.4+245040  223003.4 +245040  j     0 H v   # A323034     2223   6.8  0002         0164  src SN 10+ 12000 km/s baseline 85mJy 
+S223009.8+283234  223009.8 +283234  j     0 H v   # A323035     2234   10.4 0003         0168  src SN 3? at 1370MHz, bright GPS,
+												 radar in off.
+S223048.1+285834  223048.1 +285834  j     0 H v   # A323037     2248   11.4 0004         0172  nothing obvious radar in off, gps
+S230344.2+342024  230344.2 +342024  j     0 H v   # A336090     2300   16.1 0005         0176  bright radar rfi at 1363MHz?
+S231621.5+341832  231621.5 +341832  j     0 H v   # A336092     2314   16.1 0006         0180  SN 8+ src at 2000km/s
+S232729.3+333054  232729.3 +333054  j     0 H v   # A335368     2326   15.3  0007        0184  disabled tiedowns (in off, I think) 
+												?rfi at 1363MHz, src in off at 
+												1397 MHz, radar in off.
+S233912.7+340020  233912.7 +340020  j     0 H v   # A335406     2339   15.8  0008        0188   radar strong, gps in off, rfi 1363MHz
+S235402.7+324524  235402.7 +324524  j     0 H v   # A335637     2351   14.5  0009        0192   SN~10 src 9400km/s, gps in off
+S000850.3+320241  000850.3 +320241  j     0 H v   # A104317     0003   13.9  0010        0196   weak SN~3 broad source at 14000MHz
+S001811.8+321915  001811.8 +321915  j     0 H v   # A104359     0015   14.1  0011        0200   lots of rfi, nothing else
+S002315.2+305158  002315.2 +305158  j     0 H v   # A104382     0027   12.6  0012        0204   weak SN~4 src at 7400 km/s
+S004805.0+325254  004805.0 +325254  j     0 H v   # A104774     0040   14.7  0013        0208   nothing obvious radar in off
+S005443.6+330114  005443.6 +330114  j     0 H v   # A104497     0053         0014        0212   SN~20 broad src 10400km/s,missed ZAG
+S011256.0+345922  011256.0 +345922  j     0 H v   # A115126     0105   16.8  0015        0216   SN~10+ src 9300km/s
+S012051.8+345217  012051.8 +345217  j     0 H v   # A115798     0117   16.7  0016        0220   nothing obvious
+S012815.7+340749  012815.7 +340749  j     0 H v   # A115462     0129   15.9  0017        0224   nothing obvious, radar strong
+S014149.6+325346  014149.6 +325346  j     0 H v   # A115495     0142   14.6  0018        0228   weak broad src or faint gps 1380MHz?
+S015830.9+331146  015830.9 +331146  j     0 H v   # A115562     0154   14.9  0019        0232   SN~5 src 11000km/s. gps in off.
+S020534.8+324106  020534.8 +324106  j     0 H v   # A125158     0206   14.4  0020        0236   SN~10 src 10800 km/s, no gps. radar.
+S021107.3+323427  021107.3 +323427  j     0 H v   # A125164     0218   14.4  0021        0240   SN 10+ src 8600km/s probably not gps
+S022225.2+320934  022225.2 +320934  j     0 H v   # A124719     0231   14.0  0022        0244   b3 & b4 overlap mismatch ~1365MHz? rfi?
+S022259.0+303901  022259.0 +303901  j     0 H v   # A124726     0243   13.1  0023        0248   SN~6 src (broad) 10000km/s.
+S024340.3+315819  024340.3 +315819  j     0 H v   # A125189     0254   14.0  0024        0252   SN~2 src 10000 km/s?
+S025415.8+322016  025415.8 +322016  j     0 H v   # A124765     0308   14.4  0025        0256   very bright gps, wavy base w/ idl /gps. 
+												nada?
+S025236.9+332222  025236.9 +332222  j     0 H v   # A124227     0320   16.2  0026 	 0260   ditto, huge gps, wavy baselines w /gps
+
+H030801.4+301230  030802.9 +301229  j     0 H v   # A131387cal                                  BAD FILE. was running at 00:11 AST when
+												cima crashed or was killed early.
+												was able to check previous files, vnc
+												stayed connected. logged out of dtusr.
+                                                                 
+Notes (be sure to write notes here so we can keep track of anything relevant)
+Operator says cloudy but no rain in region, so I asked him to enable tiedowns.
+Will keep an eye on weather.
+Previous observer on late. Behavior of GNOME shell in putting CIMA main control window
+in another screen is bad for low bandwidth connections. Can we fix this? See Jeff's note.
+At startup, restarted WAPPS after config file but before cmd file (a bit out of order)
+
+At end, was running last H0308.. file at AST 00:11 and cima crashed or was killed.
+So I finished there, no good files from date 151119 in this run.

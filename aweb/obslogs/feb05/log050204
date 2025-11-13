@@ -1,0 +1,60 @@
+Log for 2/04/05 am        Observers: RG, BK
+First ALFALFA Observing Run!
+
+System Configuration:
+
+File:  /share/pserverf.sda3/wappdata/wapp.20050204.a2010.****.fits
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+
+1145 0001 503511644 503512158 drift38p1  fixAZdr   114500+090730  19  512   3  loopend  getting TP display only of 0-3
+1154 0002 503512161 503512675                                         512                  ""
+1202 0003 503512678 503513192                                         512                  ""
+
+1214 0004 503513379 503513893                      121400+090730      512   3           now we're getting all bms...!
+1223 0005 503513896 503514410                                         512      
+1232 0006 503514413 503514927                                         512
+
+1240 0007 503514951 503515553                      124016+090730      600   3           changed duration to 600sec 
+1250 0008 503515556 503516158                                         600
+1301 0009 503516161 503516163                                         600
+
+1310 0010 503516771 503517374                      131035+090730      600  10
+1321 0011 503517377 503517979                                         600
+1331 0012 503517982 503518584
+1341 0013 503518587 503519189
+1351 0014 503519192 503519794
+1401 0015 503519797 503520399
+1411 0016 503520402 503521004
+1421 0017 503521007 503521609
+1431 0018 503521612 503522214
+1441 0019 503522217 503522819                                                          decJ out of step by 16"
+
+1451 0020 503522824 503523427                      145148+090730      600   6 
+1501 0021 503523430 503524032
+1512 0022 503524035 503524637
+1522 0023 503524640 503525242
+1542 0024 503525245 503525847
+1542 0025 503525850 503526452                                                          Sunrise; decJ off by 18"
+
+1553 0026 503526458 503527060                      155236+090730      600   4          1 hr of free (mediocre) time...
+1603 0027 503527063 503527665
+1613 0028 503527668 503528270
+1623 0029 503528273 503528875                                                              decJ our of step by 16"
+ 
+Weather: overcast at 3 am; clear at dawn.
+
+
+Notes: 
+
+0- Forgot to do series of cals at the beginning...
+1- Inner ZA limit for Gregorian is 4.5887 deg tonight. Could not do scheduled dec. Had to start w/38p1.
+2- First set of 3 scans recording data only for 4 beams; beams 4-5-6 blank, no data in file
+   Hit "Configure Wapp ALFA" and got them back. Power occasionally lost from display... rocky start.
+3- Changed drift length to 600 sec after 1214LST; 512 too hard to make additions on the fly at 3am.
+   A lot easier with 10 min duration...
+4- It's proving impossible to start new set of drifts (updating dec) w/o losing at least 10 sec
+5- It looks as if Dec stays constant at 090730J through more than 1 drift: did ML make the change?
+   We'll take a chance andrun a loop of 100 min...
+6- After a series of 10 drifts with no interuptions, the dec drifts about about 17 arcseconds. 
+   Decision made to do 6 drifts in a row instead.

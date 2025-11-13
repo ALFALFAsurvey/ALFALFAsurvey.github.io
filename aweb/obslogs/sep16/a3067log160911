@@ -1,0 +1,54 @@
+A3067  LBW   16.09.11      Observers: LL
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3067_sep16.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3067_160911_final.cmd
+Mode:                Doppler tracking
+                     ALFALFA "Dark" Sources
+      
+Data written to: /share/olcor/corfile.11sep16.a3067.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr              LST    ZA   File#   ONScan     Status   
+H230919.9+004537  230920.2 +004522  j  9719 H v   # A12393              2306  17.5   1     625500001   detected @9700km/s
+S230750.1+005512  230750.1 +005512  j 12070 H v   # HI230750.0+005500   2314  17.4   2     625500005   BAD RFI @1367 off
+S231159.0+013035  231159.0 +013035  j  7982 H v   # HI231158.8+013024   2322  16.9   3     625500009   no detection (?)
+S231710.3+042553  231710.3 +042553  j  3203 H v   # HI231710.3+042600   2331  14.1   4     625500013   no detection
+S235426.8+004400  235426.8 +004400  j 10290 H v   # HI235427.2+004403   2340  17.9   5     625500017   no detection
+S000250.2+015048  000250.2 +015048  j 12257 H v   # HI000250.5+015038   2348  16.8   6     625500021   no detection
+S000454.9+042438  000454.9 +042438  j  9107 H v   # HI000455.0+042444   2357  14.0   7     625500025   det @9100 km/s; likely OC?
+S002214.3+050637  002214.3 +050637  j 10362 H v   # HI002214.3+050642   0006  13.8   8     625500029   det @10350 km/s; likely tt?
+S002819.9+025208  002819.9 +025208  j  4275 H v   # HI002820.0+025211   0014  15.8   9     625500033   det @4300 km/s!!!!!
+S002920.3+005424  002920.3 +005424  j 16493 H v   # HI002920.1+005412   0023  17.4  10     625500037   no detection
+S004227.3+051335  004227.3 +051335  j 12492 H v   # HI004227.3+051340   0032  13.3  11     625500041   det - but obvious oc; I misread distance 
+S012400.7+061544  012400.7 +061544  j 11675 H v   # HI012401.0+061545   0042  16.0  12     625500045   no detection (probs)
+S012318.3+015158  012318.3 +015158  j 11832 H v   # HI012318.0+015147   0051  18.3  13     625500049   no det (probs); good det in off.
+S012544.0+011006  012544.0 +011006  j  5180 H v   # HI012543.8+010955   0059  18.4  14     625500053   det @5200km/s - A WINNER!!
+S012944.9+064404  012944.9 +064404  j 11390 H v   # HI012945.3+064407   0109  12.7  15     625500057   weak det @11400km/s?; likely offset from real OC?
+S013155.6+025801  013155.6 +025801  j  9934 H v   # HI013155.7+025804   0118  15.7  16     625500061   det @9950km/s; bright gal @ 1'sep; lkly tt?
+S014304.6+065359  014304.6 +065359  j  2456 H v   # HI014304.9+065402   0127  12.1  17     625500065   no detection (vweak @2300kms?)
+S014537.7+065953  014537.7 +065953  j  8471 H v   # HI014538.0+065957   0135  11.6  18     625500069   no detection (unless if super wide, lol)
+S021430.5+042614  021430.5 +042614  j  9552 H v   # HI021430.6+042620   0145  15.7  19     625500073   no detection
+S024438.2+174027  024438.2 +174027  j  3963 H v   # HI024438.2+174027   0155  12.0  20     625500077   det @ 3900km/s!; narrow!; no sdss; face on spiral@1'?
+S023120.0+014858  023120.0 +014858  j 13962 H v   # HI023119.7+014847   0206  17.7  21     625500081   det @ 14000km/s; RFI nearby; unclear optical
+S023534.0+071337  023534.0 +071337  j 15920 H v   # HI023534.2+071342   0216  12.1  22     625500085   obliterated by the FAA Radar
+S023636.7+052008  023636.7 +052008  j  6393 H v   # HI023636.7+052013   0224  13.3  23     625500089   no detection
+S023824.1+015611  023824.1 +015611  j  6053 H v   # HI023823.8+015600   0233  16.4  24     625500093   GPS; rmGPS==>det @ 6000 km/s; likely big TT??
+S024914.4+053812  024914.4 +053812  j  1824 H v   # HI024914.4+053815   0242  12.7  25     625500097   no detection
+H021344.2+060303  021347.4 +060340  j   800 H v   # A124335; if time    0252  15.3  26     625500101   no clear det; some weak peaks
+H021437.2+062130  021434.2 +062210  j  1400 H v   # A124348; if time    0300  16.1  27     625500105   no clear det; maybe weak det @1100km/s
+
+
+Notes 
+  Tiedowns enabled.  RFI affected a few scans... a few interesting sources!
+
+  
+

@@ -1,0 +1,36 @@
+Log for 080512       Observer: Ann Martin
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080512.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080513.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1343 0011 813300215 813300216  drift10p2   fixAZdr  134300+022600 19  600   99   loopend   power levels OK. 
+1353 0012 813300217 813300218  GPS burst
+1403 0013 813300219 813300220  power dip for a few seconds
+1414 0014 813300221 813300222  AZ stuck at 360; see note
+1424 0015 813300223 813300224  lost tracking for a few seconds (see note)
+1434 0016 813300225 813300226 
+1444 0017 813300227 813300228 power ok 
+1454 0018 813300229 813400001 
+1504 0000 813400002 813400003
+1514 0001 813400004 813400005 
+1525 0002 813400006 813400007 
+1535 0003 813400008 813400009 power ok
+1545 0004 813400010 813400011
+1555 0005 813400012 813400013
+1605 0006 813400014 813400015
+1615 0007 813400016 813400017
+1625 0008 813400018 813400019
+1635 0009 813400020 -- aborted
+
+End LST: 1635
+
+Notes: TOGS run at end.
+At 11:24 pm (~14:20 LST) operator (Ed) reported that AZ power cannot be restored
+back to A2010. Would be fine for completing A2010, but will be a problem during
+TOGS calibration. Operator contacted Jorge B; needed unsched. maintenance (reset: restore command) to make
+sure the AZ is OK. As a result, lost tracking for a few seconds in 0015. Before reset,
+AZ at 359.6567, at 359.6568 afterwards. 
+All seems to be back to normal!

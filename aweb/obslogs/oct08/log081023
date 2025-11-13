@@ -1,0 +1,55 @@
+Log for 081023     Observer: Arsenault and Spekkens
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.04  "next generation"
+File:        /share/pserverf.sda3/wappdata/wapp.20081023.a2010.****.fits 
+File:        /share/pserverf.sda3/wappdata/wapp.20081024.a2010.****.fits 
+
+
+LST  fits  Scan      calscan   Source     Pattern  Start coords. ang  time loop calmode
+2128 0011  829700183  829700184 drift42p1  fixAZdr  212800+100554  19  600   99 loopend   
+2138 0012  829700185  829700186                                AGC datablock  LST~2137
+2149 0013  829700187  829700188
+2159 0014  829700189  829700190
+2209 0015  829700191  829700192
+2219 0016  829700193  829700194
+2229 0017  829700195  829700196                                  Beam 6B died LST~2235
+2239 0018  829700197  829700198
+2249 0019  829700199  829700200
+2259 0020  829700201  829700202
+2309 0021  829700203  829700204                                  RFI at 1380 LST~2314
+2319 0022  829700205  829700206                                  AGC datablock  LST~2331
+2329 0023  829700207  829700208
+2340 0024  829700209  829700210
+2350 0025  829700211  829700212
+0000 0026  829700213  829700214
+0010 0027  829700215  829700216
+0020 0028  829700217  829700218
+0030 0029  829700219  829700220
+0040 0030  829700221  829700222
+0051 0031  829700223  829700224
+0101 0032  829700225  829700226
+0111 0033  829700227  829700228
+0121 0034  829700229  829700230
+0131 0035  829700231  829700232
+0141 0036  829700233  829800001
+0151 0000  829800002  829800003
+0202 0001  829800004  829800005                                   AGC datablock  LST~0209   
+0212 0002  829800006  829800007
+0222 0003  829800008  829800009                                   AGC datablock error, LST~0214
+0232 0004  829800010  829800011
+0242 0005  829800012  829800013
+0252 0006  829800014  829800015                                   AGC datablock error, LST~0254 
+0302 0007  829800016                                              Fatal WAPP error right at end of scan ** no calibration scan
+
+
+END LST: 0313
+
+Notes:
+Beam 6B back (!) and then died.
+TOGS ran at beginning and end: fatal wapp error right at end. restarted the wapps and ran togs as usual.**
+
+Strong RFI at 1350
+WAPP warning 'chip count: WARNING counts don't match between chip 0 and chip#' message until LST ~2325 then stopped
+wapp_failed: ERROR WAPP-3 failed to complete its current task! **
+

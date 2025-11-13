@@ -1,0 +1,96 @@
+Log for 12.10.13 (13oct2012)        Observers: Kyle Murray, Parker Troischt 
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121013.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121014.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+
+2202  007  228700152 228700153 drift147p4  fixAzdr 213400+354233  19  600  99  power levels ok, waterfalls ok, quicklook ok no FAA radar
+2212  008  228700154 228700155 quicklook ok
+2222  009  228700156 228700157 quicklook ok
+2232  010  228700158 228700159 continuum source, quicklook ok 
+2242  011  228700160 228700161 quicklook ok
+2252  012  228700162 228700163 continuum sources, beam 0 and beam 2, quicklook ok
+2302  013  228700164 228700165 continuum source, beam 1 and beam 6, quicklook ok
+2312  014  228700166 228700167 GPS burst UT 02:10:00-02:13:30, quicklook ok
+2322  015  228700168 228700169 quicklook ok
+2332  016  228700170 228700171 faint continuum source, beam 6 and maybe beam 2, quicklook ok
+2342  017  228700172 228700173 multiple continuum sources
+2352  018  228700174 228700175 weak continuum source beams 1,5,6
+0002  019  228700176 228700177 
+0012  020  228700178 228700179 
+0023  021  228700180 228700181 weak continuum source
+0033  022  228700182 228700183 GPS burst UT 03:28:00-03:31:00
+0043  023  228700184 228700185 faint continuum source beam 6
+0053  024  228700186 228700187 faint continuum source
+0103  025  228700188 228800001 continuum source beams 3,4
+0113  000  228800002 228800003 quicklook ok
+0123  001  228800004 228800005 continnuum source
+0133  002  228800006 228800007 
+0143  003  228800008 228800009 strong continuum source beam 1
+0154  004  228800010 228800011 
+0204  005  228800012 228800013 
+0214  006  228800014 228800015 continuum source beams 3,4
+0224  007  228800016 228800017 
+0234  008  228800018 228800019 
+0244  009  228800020 228800021 continuum source beams 1,6, WAPP 2s interpolation warning
+0254  010  228800022 228800023 Many continuum sources, all beams, some weak, a couple strong
+0304  011  228800024 228800025 faint continuum source in beams 0,1,2
+
+LST stop: 0315
+
+At the bottom, add notes regarding:
+-- ALFA did not rotate correctly at first and it also appeared that no data was being taken 
+in the alfadata win monitor.  The spectrum was a flat line.  After consulting with the operator, 
+it was suggested that we abort and restart the cima process. This was done, but alfadatawin
+still looked the same.  After calling Greg Hallenbeck, he discovered that alfa_data_grabber and 
+alfa_data_provider failed. So, apparently the data taking process was ok, it just could not be observed
+in the window.  These were killed and alfadatawin was restarted.  The quicklooks were fine.
+
+-- TOGS was not run due to time constraints
+
+-- FAA radar was off (yeah!)
+
+-- All ALFA beams working.
+
+
+
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+
+ALFA TEMPERATURES
+
+16K = K1: 14.8   K2: 14.1   K3: 15.8   K4: 15.5   AT 16:32
+70K = K1: 87.5   K2: 87.6   K3: 95.9   K4: 103.5
+
+16K = K1: 15.1   K2: 14.3   K3: 16.3   K4: 15.7   AT 22:03
+70K = K1: 87.6   K2: 87.6   K3: 95.9   K4: 104.0
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   Yes AT 16:38
+				=>is Punta Salinas following our schedule
+TIE DOWN STATUS AT 16:37
+
+TD12: 9.877
+TD4 : 11.274
+TD8 : 11.566
+
+Total Kips: 99.82
+
+Tie Down:   Disabled
+

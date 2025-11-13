@@ -1,0 +1,59 @@
+Log for 3/26/05 pm            ** see important note at bottom ** 
+        3/27/05 am
+Observers:  BK, KH
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050326.a2010.****.fits
+       /share/pserverf.sda3/wappdata/wapp.20050327.a2010.****.fits
+ 
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+1102 0035 508583500 508584102 drift61p1 FixedAz 110317+144318  19   600  39
+1113 0036 508584105 508581707
+1123 0037 508584710 508585312
+1133 0038 508585315 508585918
+1143 0039 508585921 508600122
+1154 0000 508600126 508600727
+1204 0001 508600731 508601332
+1214 0002 508601336 508601938
+1224 0003 508601941 508602543
+1234 0004 508602546 508603148
+1244 0005 508603151 508603753
+1254 0006 508603756 508604357
+1304 0007 508604361 508604962
+1314 0008 508604966 508605567
+1325 0009 508605571 508606173
+1335 0010 508606176 508606779
+1345 0011 508606782 508607384
+1355 0012 508607387 508607989
+1405 0013 508607992 508608594
+1415 0014 508608597 508609199
+1425 0015 508609202 508609804
+1435 0016 508609807 508610409
+1445 0017 508610412 508611013
+1456 0018 508611017 508611619
+1506 0019 508611622 508612223
+1516 0020 508612227           Abort: WARN WAPPDATA flushing 14 dumps
+1523 0021 508612645           Bad file
+     0022 508613185 508613246 Only 60 sec scan, still good data
+     0023                     Aborted, 60 sec scans only
+1534 0024 508613317 508613920 drift61p1 FixedAz 153417+144318  19   600  15
+1544 0025 508613923 508614525
+1554 0026 508614528 508615130
+1604 0027 508615134 508615736
+1614 0028 508615739 508616341
+1624 0029 508616344 508616946
+1635 0030 508616949 508617552
+1645 0031 508617555 508618157
+1655 0032 508618160
+
+END LST:  1700
+
+Notes:
+
+1- WARN WAPPDATA flushing 14 dumps, halted in the middle of file 0020.  Aborted, did not hear dog.  Saw script error: ERROR runing exect script, aborted.  Attempted to re-run script. Exited CIMA and restarted.  Data view display did not update, restarted twice, then finally from command line, had a good data stream.  Data gap from 15:16 to 15:34.

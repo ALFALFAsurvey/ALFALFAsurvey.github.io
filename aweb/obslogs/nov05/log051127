@@ -1,0 +1,70 @@
+Log for 11/27/05
+Observer: SS
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20051127.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.11.27
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+2154 0003 533164417 533165019 drift120p2  FixedAz 215400+291200 19 600  50
+2204 0004 533165022 533165624
+2214 0005 533165627 533166229
+2224 0006 533166232 533166834
+2234 0007 533166837 533167439
+2244 0008 533167442 533168044
+2254 0009 533168047 533168649
+2304 0010 533168652 533169254
+2315 0011 533169257 533169859
+2325 0012 533169862 533170464
+2335 0013 533170467 533171069
+2345 0014 533171072 aborted
+2348 0015 533171241 533171843
+2358 0016 533171846 533172448
+0008 0017 533172451 533173053
+0018 0018 533173056 533173658
+0028 0019 533173661 533174263
+0038 0020 533174266 533174868
+0048 0021 533174871 533175473
+0059 0022 533175476 533176078
+0109 0023 533176081 533176683
+0119 0024 533176686 533177288
+0129 0025 533177291 533177893
+0139 0026 533177896 533178498
+0149 0027 533178501 533179103
+0159 0028 533179106 533179708
+0209 0029 533179711 533180313
+0219 0030 533180316 533180918
+0230 0031 533180921 533181523
+0240 0032 533181526 533182128
+0250 0033 533182131 533182733
+0300 0034 533182736 533183338
+0310 0035 533183341 533183943
+0320 0036 533183946 533184548
+0330 0037 533184551 533185153
+0340 0038 533185156 533185758
+
+END LST: 0350
+Notes:
+Late start due to problems with azimuth pointing.  Operator reported the telescope being at a different 
+azimuth than what was seen from Ithaca.  I am not sure if the togs calibration was run at the correct 
+azimuth.
+*****Update*****
+During the run on 20051204 the operator reports that the higher azimuth position of 530 as seen by Arecibo is the 
+equivalent of azimuth position of 180 as seen by Ithaca.  Thus there should be no problem with the initial TOGS 
+calibration.
+
+
+During fits file 0014 CIMA gave the following error:
+wappdata buildup logic error
+WAPPDATA confused cleared 1 dumps
+WAPPDATA flushing 76 dumps
+
+I aborted the observation and restarted the WAPPs.  CIMA noted that WAPP(2) never aborted, but they all 
+restarted.
+
+TOGS run at the beginning and end of run.

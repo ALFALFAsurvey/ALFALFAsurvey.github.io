@@ -1,0 +1,70 @@
+Log for 01/15/06
+Observer: Brian W, Tom, Sabrina
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20060115.a2010.****.fits
+       /share/pserverf.sda2/wappdata/wapp.20060116.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.01.15
+
+LST  fits Scan      calscan    Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+0721 0001 601600391 601600993 drift61p1  FixedAz 072122+144318 19 600 50
+0731 0002 601600996 601601598
+0741 0003 601601601 601602203 
+0751 0004 601602206 601602808
+0801 0005 601602811 601603413
+0811 0006 601603416 aborted
+0819 0007 601603861 601604463
+0829 0008 601604466 601605068
+0839 0009 601605071 601605673
+0849 0010 601605676 601606278
+0859 0011 601606281 601606883
+0909 0012 601606886 601607488
+0920 0013 601607491 601608093
+0930 0014 601608096 601608698
+0940 0015 601608701 601609303
+0950 0016 601609306 aborted
+1002 0017 601610023 601610625
+1012 0018 601610628 601611229
+1022 0019 601611233 601611835
+1032 0020 601611838 601612440
+1042 0021 601612443 601613045
+1052 0022 601613048 601613650
+1103 0023 601613653 601614254
+1113 0024 601614258 601614859
+
+END LST: 1123
+
+NOTES:
+Session labeled as 060115 although we started after midnight (060116).
+Running on generator power due to lightning storm earlier in the day.
+Light rain now, no thunder or lightning.
+Tiedowns enabled.
+During fits file 0006 (about 4 minutes into drift) WAPP failure:
+  01:01:40  WARN WAPPDATA flushing 8 dumps 
+  01:01:43  WARN wappdata buildup logic error 
+  01:01:43  WARN WAPPDATA confused cleared 1 dumps 
+  01:01:43  WARN WAPPDATA flushing 76 dumps 
+  01:01:47  WARN wappdata buildup logic error 
+  so abort fits file 0006:
+  01:02:00  sending command to abort observation
+  Restart WAPPS and start fits file 0007
+  So, no data for about 7 minutes of R.A. 
+  (power adjusted, calibration will need to be split)
+During fits file 0016 error on WAPP2, WAPPs restarted
+  (It is possible that file 0016 is fine and that only cal is messed up --
+    will need to check this later.)
+  (power adjusted, calibartion will need to be split)
+Skies still heavy overcast at end.
+
+
+
+
+
+
+
+

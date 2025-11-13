@@ -1,0 +1,68 @@
+Log for 11.01.18 (18Jan2011)        Observers: Ann Martin & UAT
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110118.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0859 0000 101800055 101800056 drift138p1 fixAzdr   085945+332730  19 600 99 loopend
+0910 0001 101800057 101800058 Beam 6B still dead, Quicklook ok
+0920 0002 101800059 101800060
+0930 0003 101800061 101800062
+0940 0004 101800063 101800064
+0950 0005 101800065 101800066 GPS burst 063804 to 063918ish UTC, quicklook ok
+1000 0006 101800067 101800068 and again 064550 to 064628 UTC :\
+1010 0007 101800069 101800070 Quicklook ok
+1020 0008 101800071 101800072
+1031 0009 101800073 101800074
+1041 0010 101800075 101800076 intermittent line features begin in Beam 6B; see note 
+1051 0011 101800077 101800078 total power plots shows 10% power jump in beam 5A, few percent 5B approx 1058
+1101 0012 101800079 101800080
+1111 0013 101800081 101800082
+1121 0014 101800083 101800084
+1131 0015 101800085 101800086
+1141 0016 101800087 101800088 Cont. src 
+1151 0017 101800089 101800090 Cont. src
+1202 0018 101800091 101800092 
+1212 0019 101800093 101800094 GPS Burst
+1222 0020 101800095 101800096
+1233 0021 101800097 101800098
+1243 0022 101800099 101800100 cs, strong in beam 6
+1253 0023 101800101 101800102 
+1303 0024 101800103 101800104
+1313 0025 101800105 101800106 
+1324 0026 101800107 101800108
+1333 0027 101800109 101800110 
+1343 0028 101800111 101800112 
+1354 0029 101800113 101800114
+1404 0030 101800115 101800116 beam 5a power drop drop from 1.18 to .8 return to consistant  1.13 
+1414 0031 101800117 --abort
+
+
+LST stop: 1414
+
+At the bottom, add notes regarding:
+-- TOGS run at end; restarted due to inadvertent abort.
+-- FAA radar on
+-- Beam 6B is still dead. During FITS 0010, line features begin appearing intermittently in Beam 6B. They are not apparent in
+any of the other beams and do not appear to be RFI. The lines occur near 1350. 1380, 1400 and 1420, but not all lines appear
+at all times. Appears roughly every 6 seconds or so -- harmonics of the radar?
+-- GPS bursts UTC 063804-063918, 064550-064628
+-- Some interpolation gap warnings
+-- Noticed some power jumps in 5A.
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+16K = K1: 17.0   K2: 175.0  K3: 18.4   K4: 18.6   AT 16:29
+70K = K1: 103.4  K2: 109.1  K3: 119.6  K4: 129.4
+
+16K = K1: 16.7   K2: 173.6  K3: 18.2   K4: 18.4   AT 23:50
+70K = K1: 100.5  K2: 105.7  K3: 115.7  K4: 124.2
+
+			=>temperatures of the 8 sensors within ALFA 
+housing
+
+
+

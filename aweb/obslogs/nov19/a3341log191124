@@ -1,0 +1,53 @@
+A3341 LBW   19.11.24  Observers: Olivia Jo Dickinson, Haille Perkins, and Joseph Ribaudo
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3341.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3341_191124.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20191124.a3341.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S220059.5+273651  220059.5 +273651  j     0 H v   # A321196     2212  09.80 0       932800307  Detection 1404MHz, 3500 km/s, S/N ~7 baseline in board 2 is curved,waiting for next observation to swap boards 2 and 4   
+S221928.6+284746  221928.6 +284746  j     0 H v   # A321473     2224  10.60 1       932800311  Detection 1400MHz, 4500 km/s, S/N ~3 baseline in board 2 still not great, restarted wapps and swaped boards  2 and 4 
+S225338.6+315946  225338.6 +315946  j     0 H v   # A321442     2243  14.00 2       932800315  Detection 1402MHz, 3900 km/s, S/N ~8 boards are now swiched and things seem okay 
+S232239.0+285807  232239.0 +285807  j     0 H v   # A333529     2256  12.00 3       932800319  Detection 1393Mhz, 5900 km/s, S/N ~5 cannot see anything from board 2, but all other boards look good 
+S232631.3+265615  232631.3 +265615  j     0 H v   # A332929     2308  09.72 4       932800323  Detection 1393Mhz, 5800 km/s, S/N ~11 choppy-like baseline in board 4
+S234637.0+291438  234637.0 +291438  j     0 H v   # A333568     2321  12.55 5       932800327  Detection 1397Mhz, 5100 km/s, S/N ~11 in board 4 
+S234738.0+273112  234738.0 +273112  j     0 H v   # A331343m    2334  09.87 6       932800331  No obvious source detected
+S234846.7+241845  234846.7 +241845  j     0 H v   # A333308     2347  06.11 7       932800335  WAPP died, had to restart
+S234846.7+241845  234846.7 +241845  j     0 H v   # A333308     2352  06.11 8       932800336  Dectection 1396Mhz, 5300 km/s, S/N ~4 in board 4 
+S000325.2+272410  000325.2 +272410  j     0 H v   # A102553     0005  09.18 9       932800340  Dectection 1399Mhz, 4500 km/s, S/N ~8 in board 4
+S000856.3+261419  000856.3 +261419  j     0 H v   # A102561     0017  08.20 10      932800344  Dectection 1400Mhz, 4400 km/s S/N ~8 , and strong dectection in the off at 1386Mhz, 7400km/s S/N ~13 in board 4 
+S003744.1+241228  003744.1 +241228  j     0 H v   # A100350     0031  06.22 11      932800348  Dectection 1399Mhz, 4600 km/s S/N ~8 in board 4
+S003811.6+252343  003811.6 +252343  j     0 H v   # A101771     0043  07.23 12      932800352  Dectection 1396Mhz, 5200 km/s S/N ~18 in board 4
+S003927.8+260429  003927.8 +260429  j     0 H v   # A102299     0055  08.60 13      932800356  Dectection 1396Mhz, 5300 km/s S/N ~10  baseline is chopppy in board 4 
+S004032.4+263950  004032.4 +263950  j     0 H v   # A102300     0108  10.38 14      932800360  Dectection 1396Mhz, 5300 km/s S/N ~6 in board 4 
+S005839.4+312143  005839.43+312143  j     0 H v   # A101240m    0121  14.00 15      923800364  Dectection 1396Mhz, 5300 km/s S/N ~6 in board 4
+S010802.9+314030  010802.9 +314030  j     0 H v   # A110052     0133  14.48 16      923800368  No obvious source detected
+S011955.9+331230  011955.9 +331230  j     0 H v   # A115660     0145  15.93 17      923800372  Detection 1394Mhz, 5700 km/s S/N ~4 in board 4 
+S012320.8+332043  012320.8 +332043  j     0 H v   # A114563     0157  16.80 18      923800376  Detection 1398Mhz, 4900 km/s S/N ~7 in board 4 
+S021344.6+312232  021344.6 +312232  j     0 H v   # A122974     0211  13.17 19      923800380  Detection 1396Mhz, 5100 km/s S/N ~6 in board 4, cannot see anything from board 2, gps in the off board 3
+H022538.7+312320  022538.7 +312320  j     0 H v   # A123004     0223  13.18 20      923800384  Detection 1398Mhz, 4900 km/s S/N ~4 in board 4 
+S023317.8+322206  023317.8 +322206  j     0 H v   # A124957     0231  14.15 21      923800388  Detection 1396Mhz, 4700 km/s S/N ~5 in board 4
+S024928.4+344429  024928.4 +344429  j     0 H v   # A124609     0244  16.57 22      923800392  Detection 1413Mhz, 1600 km/s S/N ~9 in board 1
+S025619.9+340251  025619.9 +340251  j     0 H v   # A124619     0256  15.81 23      923800396  Detection 1397Mhz, 5100 km/s S/N ~14 in board 4, gps in the off board 3 
+H024853.4+281624  024853.4 +281624  j     0 H v   # A120529cal  0310  11.06 24      923800400  Detection 1395Mhz, 5500 km/s S/N ~13 in board 4    
+H025141.5+320610  025141.5 +320610  j     0 H v   # A123057cal  0319  15.08 25      923800404  Detection 1413Mhz, 1400 km/s S/N ~15 in board 1    
+
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+NOTES:
+Using lbwquicklook before the on/off calibration has been written out results in an issue with how IDL reads the file.  To properly view the file,. exit and relaunch IDL.  To avoid, wait until the slewing of the next observation has completed.  10 seconds is not enough time after the finsihed chime sounds. 

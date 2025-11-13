@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+<h2><font color=#008000>EALFA memo 28Aug2004 (updated 5 Nov 2004) &nbsp &nbsp &nbsp &nbsp &nbsp Martha Haynes & Riccardo Giovanelli</font>
+
+<h2><font color=#cc0f14>Array rotation and beam spacing for off-meridian E-ALFA
+drift observations.</font> &nbsp &nbsp</h2>
+
+As described in Germ&#225n's <a href="http://alfa.naic.edu/memos/02-07.pdf">
+memo</a>, the 6 exterior ALFA beams move on an elliptical path in the sky, the
+major axis of which is elongated in the azimuth direction. As explained on Phil's
+<a href="http://www.naic.edu/~phil/mbeam/mbeamrotation.html"> page</a>, the array must
+be rotated to track the parallactic angle, if the outer beams are to remain fixed on the
+the sky through the duration of the scan. Parallactic angle tracking
+will probably be exploited by staring observations including those run commensally with the
+P-ALFA surveys. See also Wolfram's documentation on the AUDS
+<a href="http://www.naic.edu/~auds/doc/driftchasemap.html"> Drift and Chase</a> technique.</p>
+
+The various long- and short- drift mapping projects under consideration by E-ALFA
+should consider the issues associated with array rotation in designing their optimal
+strategies. The ellipticity of the array footprint on the sky has two important
+consequences for drift mapping schemes which desire beams tracks across the sky 
+equally spaced in declination:
+<li> Drifts should be conducted with ALFA configured at the array rotation angle
+     that produces adjacent beams equally spaced in Declination on the sky at the azimuth 
+     and zenith angle corresponding to the time of the observations. 
+<li> The separation of the beams in the equal-spacing configuration is not fixed. It
+     is maximal (~2.1 arcmin) for sources at transit (on the meridian). Thus drifts
+     obtained at different azimuths will be characterized by different beam spacings,
+     requiring the regridding of combined datasets. </p>
+
+The E-ALFA transit drift precursor experiment A1946 has helped to clarify the orientation
+of the beams on the sky and confirmed the predicted array rotation angle for equally spaced
+beams for targets observed on the meridian. Those have been crudely illustrated (ignoring the
+ellipticity) in our
+<a href="http://www.astro.cornell.edu/~galaxy/docs/figbeams.pdf">previous
+memo</a> available on the E-ALFA drift precursor 
+<a href="http://www.astro.cornell.edu/~haynes/pre204/drift.htm"> program A1946</a>
+web site (and submitted to NAIC's ALFA memo series).</p>
+
+In order to illustrate the result of such parallactic/array rotation angle tracking, we 
+explore here the requirements for equally spaced (in declination) tracks for mapping the
+large galaxy NGC 2903, a source at declination +21, which is the target of one of the
+E-ALFA precursor experiments. The following table gives, for the path of NGC 2903 on 
+28Nov2004, the Atlantic standard time, local mean sidereal time, the hour angle (in decimal hours), 
+azimuth and zenith angle (in degrees) of N2903 at that time, the mean separation in the Decl. 
+direction of adjacent beams, in arcminutes, and the corresponding optimal (producing equally
+spaced beams) array rotation angle (input to CIMA), in degrees. The algorithm used to identify the
+optimal beam separation finds the rotation angle for which the **maximum** spacing (in 
+Decl.) of adjacent beams (as depicted on our <a href="http://www.astro.cornell.edu/~galaxy/docs/figbeams.pdf">
+beam layout cartoon diagram</a>) is **minimized**. These results have been obtained using a 
+modified version of Phil Perillat's IDL routine ALFABMPOS.
+Note that these results are based on current understanding
+of the ALFA system and may need to be adjusted as more information on ALFA characteristics 
+becomes available.</p>
+
+<table width=250>
+<td><font color=#cc0f14>NGC 2903:</font> </td><td><font color=#cc0f14>  09h32m10s</font> </td>
+<td><font color=#cc0f14> +21d20'03"</font></td></tr>
+</table>
+
+Sample almanac for date: 2004 11 28   <br>
+JD at midnight AST:   2453337.67<br>
+dDec is the average spacing of adjacent beams, in the Decl. direction, in arcminutes<br>
+This table has been produced using the eggidl routine <i>optang.pro</i>, and is based on
+various routines available in Phil's aoidl package, particularly <i>alfabeampos</i>.</br>
+<table border=5 cellpadding=1 align=center>
+<tr><th width=100> J.D.</th><th width=60> AST </th><th width=60> LMST </th><th width=60> HA </th><th width=60> az </th>
+    <th width=60> za </th><th width=60> dDec </th><th width=60> OptAng</th></tr>
+<tr><td> 2453337.840 </td><td> 04h10m </td><td> 08h13m </td><td>-1.32 </td><td> 257.26 </td><td> 18.87 </td><td> 1.80 </td><td> -64.0</td></tr>
+<tr><td> 2453337.847 </td><td> 04h20m </td><td> 08h23m </td><td>-1.15 </td><td> 256.40 </td><td> 16.54 </td><td> 1.80 </td><td> -62.0</td></tr>
+<tr><td> 2453337.854 </td><td> 04h30m </td><td> 08h33m </td><td>-0.98 </td><td> 255.09 </td><td> 14.22 </td><td> 1.80 </td><td> -60.0</td></tr>
+<tr><td> 2453337.861 </td><td> 04h40m </td><td> 08h43m </td><td>-0.81 </td><td> 253.13 </td><td> 11.93 </td><td> 1.81 </td><td> -56.0</td></tr>
+<tr><td> 2453337.868 </td><td> 04h50m </td><td> 08h53m </td><td>-0.65 </td><td> 250.04 </td><td>  9.66 </td><td> 1.82 </td><td> -52.0</td></tr>
+<tr><td> 2453337.875 </td><td> 05h00m </td><td> 09h03m </td><td>-0.48 </td><td> 244.82 </td><td>  7.45 </td><td> 1.85 </td><td> -45.0</td></tr>
+<tr><td> 2453337.882 </td><td> 05h10m </td><td> 09h13m </td><td>-0.31 </td><td> 235.10 </td><td>  5.37 </td><td> 1.90 </td><td> -34.0</td></tr>
+<tr><td> 2453337.889 </td><td> 05h20m </td><td> 09h23m </td><td>-0.15 </td><td> 214.66 </td><td>  3.65 </td><td> 2.00 </td><td> -13.0</td></tr>
+<tr><td> 2453337.890 </td><td> 05h21m </td><td> 09h24m </td><td>-0.13 </td><td> 211.60 </td><td>  3.52 </td><td> 2.01 </td><td> -10.0</td></tr>
+<tr><td> 2453337.890 </td><td> 05h22m </td><td> 09h25m </td><td>-0.11 </td><td> 208.32 </td><td>  3.40 </td><td> 2.02 </td><td> -7.0</td></tr>
+<tr><td> 2453337.891 </td><td> 05h23m </td><td> 09h26m </td><td>-0.10 </td><td> 204.80 </td><td>  3.29 </td><td> 2.04 </td><td> -3.0</td></tr>
+<tr><td> 2453337.892 </td><td> 05h24m </td><td> 09h27m </td><td>-0.08 </td><td> 201.05 </td><td>  3.20 </td><td> 2.05 </td><td>  0.0</td></tr>
+<tr><td> 2453337.892 </td><td> 05h25m </td><td> 09h28m </td><td>-0.06 </td><td> 197.09 </td><td>  3.12 </td><td> 2.06 </td><td>  4.0</td></tr>
+<tr><td> 2453337.893 </td><td> 05h26m </td><td> 09h29m </td><td>-0.05 </td><td> 192.92 </td><td>  3.06 </td><td> 2.07 </td><td>  8.0</td></tr>
+<tr><td> 2453337.894 </td><td> 05h27m </td><td> 09h30m </td><td>-0.03 </td><td> 188.60 </td><td>  3.01 </td><td> 2.07 </td><td> 11.0</td></tr>
+<tr><td> 2453337.894 </td><td> 05h28m </td><td> 09h31m </td><td>-0.01 </td><td> 184.16 </td><td>  2.98 </td><td> 2.08 </td><td> 15.0</td></tr>
+<tr><td> 2453337.895 </td><td> 05h29m </td><td> 09h32m </td><td> 0.01 </td><td> 179.65 </td><td>  2.97 </td><td> 2.08 </td><td> 19.0</td></tr>
+<tr><td> 2453337.896 </td><td> 05h30m </td><td> 09h33m </td><td> 0.02 </td><td> 175.15 </td><td>  2.98 </td><td> 2.08 </td><td> 23.0</td></tr>
+<tr><td> 2453337.897 </td><td> 05h31m </td><td> 09h34m </td><td> 0.04 </td><td> 170.69 </td><td>  3.01 </td><td> 2.08 </td><td> 27.0</td></tr>
+<tr><td> 2453337.897 </td><td> 05h32m </td><td> 09h35m </td><td> 0.06 </td><td> 166.35 </td><td>  3.06 </td><td> 2.07 </td><td> 31.0</td></tr>
+<tr><td> 2453337.898 </td><td> 05h33m </td><td> 09h36m </td><td> 0.07 </td><td> 162.16 </td><td>  3.12 </td><td> 2.06 </td><td> 34.0</td></tr>
+<tr><td> 2453337.899 </td><td> 05h34m </td><td> 09h37m </td><td> 0.09 </td><td> 158.16 </td><td>  3.20 </td><td> 2.04 </td><td> 38.0</td></tr>
+<tr><td> 2453337.899 </td><td> 05h35m </td><td> 09h38m </td><td> 0.11 </td><td> 154.38 </td><td>  3.29 </td><td> 2.03 </td><td> 41.0</td></tr>
+<tr><td> 2453337.900 </td><td> 05h36m </td><td> 09h39m </td><td> 0.12 </td><td> 150.83 </td><td>  3.40 </td><td> 2.02 </td><td> 45.0</td></tr>
+<tr><td> 2453337.901 </td><td> 05h37m </td><td> 09h40m </td><td> 0.14 </td><td> 147.51 </td><td>  3.52 </td><td> 2.00 </td><td> 48.0</td></tr>
+<tr><td> 2453337.901 </td><td> 05h37m </td><td> 09h41m </td><td> 0.16 </td><td> 144.43 </td><td>  3.65 </td><td> 1.98 </td><td> 51.0</td></tr>
+<tr><td> 2453337.908 </td><td> 05h48m </td><td> 09h51m </td><td> 0.32 </td><td> 124.01 </td><td>  5.38 </td><td> 1.89 </td><td> 73.0</td></tr>
+<tr><td> 2453337.915 </td><td> 05h58m </td><td> 10h01m </td><td> 0.49 </td><td> 114.41 </td><td>  7.45 </td><td> 1.85 </td><td> 84.0</td></tr>
+<tr><td> 2453337.922 </td><td> 06h08m </td><td> 10h11m </td><td> 0.66 </td><td> 109.26 </td><td>  9.67 </td><td> 1.83 </td><td> 91.0</td></tr>
+<tr><td> 2453337.929 </td><td> 06h18m </td><td> 10h21m </td><td> 0.82 </td><td> 106.18 </td><td> 11.94 </td><td> 1.82 </td><td> 95.0</td></tr>
+<tr><td> 2453337.936 </td><td> 06h28m </td><td> 10h31m </td><td> 0.99 </td><td> 104.22 </td><td> 14.23 </td><td> 1.80 </td><td> 98.0</td></tr>
+<tr><td> 2453337.943 </td><td> 06h38m </td><td> 10h41m </td><td> 1.16 </td><td> 102.94 </td><td> 16.55 </td><td> 1.81 </td><td> 101.0</td></tr>
+<tr><td> 2453337.950 </td><td> 06h48m </td><td> 10h51m </td><td> 1.33 </td><td> 102.06 </td><td> 18.88 </td><td> 1.80 </td><td> 103.0</td></tr>
+</table>
+<br>
+
+This single example is meant merely to demonstrate that
+the various E-ALFA mapping programs that plan to exploit drift modes should pay careful
+attention to feed rotation issues in devising their optimal strategies.</p>
+
+<br>
+<h2>Useful links</h2>
+<ul>
+<li>The A1946 <a href="http://www.astro.cornell.edu/~galaxy/docs/figbeams.pdf">memo</a>
+on beam assignments for 0 rotation and for equal spacing for transit observations.
+<li>Germ&#225n's document on  
+<a href="http://alfa.naic.edu/memos/02-07.pdf"> feed rotation</a>
+<li> Phil's ALFA <a href="http://www.naic.edu/~phil/mbeam/mbeam.html"> notes page</a>
+<li> Instructions on Phil's IDL routines related to  
+<a href="http://www.naic.edu/~phil/pntdoc.html"> pointing</a>, including ALFABMPOS.
+<li> Frank Ghigo's GBT <a href="http://www.gb.nrao.edu/GBT/memos/memo52.ps"> memo on parallactic
+angles</a></p>
+</ul>
+
+<hr>
+<font color=#cc0f14>
+This page created and maintained by Martha Haynes and the members of the
+<a href="http://www.astro.cornell.edu/Galaxy/egg.html"> Cornell ExtraGalactic Group</a></font>
+</p>
+<!-- hhmts start -->
+<font color=#008000><bf>Last modified: Fri Nov  5 18:10:33 EST 2004</bf></font>
+<!-- hhmts end -->
+</body>
+</html>

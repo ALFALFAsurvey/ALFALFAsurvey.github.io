@@ -1,0 +1,53 @@
+A2982 LBW   15.11.25  Observers: GH, AO, Ryan, Kamin, Evan
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_151125.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+ 
+Data written to:     /share/wappdata.now/wapp.20151125.a2982.****.fits  (this run ends before midnight)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S221542.3+230538  221542.3 +230538  j     0 H v   # A323001     2145   8.68 0000    532900098  no det
+S221620.1+235308  221620.1 +235308  j     0 H v   # A323020     2158   7.15 0001    532900102  lost source due to wapp failure.  restatted wapps
+S224900.9+261612  224900.9 +261612  j     0 H v   # A322599     2213  11.59 0002    532900106  possible detections at 1409 and 1395Mhz
+S225200.3+234740  225200.3 +234740  j     0 H v   # A322617     2226   8.26 0003    532900110  possible detection at 1387MHz=7100km/s, sn=3
+S225508.8+265549  225508.8 +265549  j     0 H v   # A322626     2239   9.50 0004    532900114  possible detection at 1389Mhz
+S231956.8+264002  231956.8 +264002  j     0 H v   # A335333     2252  10.78 0005    532900118  possible source or rfi at 1376Mhz(9900km/s), seems polarized.
+S231636.4+321721  231636.4 +321721  j     0 H v   # A335323     2305  14.29 0006    532900122  rfi at 1389Mhz
+S233912.7+340020  233912.7 +340020  j     0 H v   # A335406     2318  16.48 0007    532900126  rfi as above at 1389Mhz
+S002125.1+285312  002125.1 +285312  j     0 H v   # A104827     2332  15.67 0008    532900130  detection at 1398Mhz(4700km/s),sn = 10
+S002155.6+285220  002155.6 +285220  j     0 H v   # A104826     2344  13.81 0009    532900134  no det
+S002237.2+300617  002237.2 +300617  j     0 H v   # A104896     2356  13.35 0010    532900138  no det
+S003803.4+292457  003803.4 +292457  j     0 H v   # A104962     0008  13.08 0011    532900142  possible det at 1396Mhz(5300km/s),sn = 5.
+S010716.0+330251  010716.0 +330251  j     0 H v   # A115905     0023  17.94 0012    532900146  highly polarized det at 1398Mhz(4800km/s).  Maybe rfi but the velocity places it in pices-perseus, soooo, yeah.
+S010723.0+334620  010723.0 +334620  j     0 H v   # A115904     0035  17.20 0013    532900150  nothing but rfi and the Milky Way ... and all the stuff too faint to detect
+S011427.3+324041  011427.3 +324041  j     0 H v   # A115129     0047  15.74 0014    539900154  detection at 1389Mhz(6800km/s),sn = 7
+S011435.7+323107  011435.7 +323107  j     0 H v   # A112563     0059  14.72 0015    539900158  another detection at 1389Mhz as above, sn = 2.  
+S011725.1+325514  011725.1 +325514  j     0 H v   # A115658     0111  14.76 0016    539900162  detection at 1369Mhz(11100km/s), sn = 8.
+S011629.9+283801  011629.9 +283801  j     0 H v   # A115399     0125  10.54 0017    539900166  detection at 1369Mhz(11200km/s)  possible rfi along with previous detection.  oddly consistent
+S014149.6+325346  014149.6 +325346  j     0 H v   # A115495     0138  14.67 0018    539900170  no det
+S013852.1+293142  013852.1 +293142  j     0 H v   # A115482     0151  11.61 0019    539900174  no det
+S021843.6+311611  021843.6 +311611  j     0 H v   # A124713     0205  13.41 0020    539900178  detection at 1398Mhz(4800km/s) sn = 5
+S022515.5+323049  022515.5 +323049  j     0 H v   # A125238     0217  14.38 0021    539900182  detection at 1399Mhz(4500km/s) sn = 5
+S025139.7+334648  025139.7 +334648  j     0 H v   # A125245     0230  16.30 0022    539900186  detection at 1400Mhz(4300Mhz) sn = 11
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+Tiedowns enabled.
+Greg's added a /pol option to the lbwquicklook program for the WAPPS. It came in handy for identifying RFI vs. real signals.
+recurring polarized signals at 1389Mhz and 1369Mhz.  possible rfi?
+no interference at 1416Mhz unlike last night
+
+
+
+

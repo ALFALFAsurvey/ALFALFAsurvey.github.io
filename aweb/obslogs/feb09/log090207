@@ -1,0 +1,66 @@
+Log for 090207     Observer: Manolis Papastergis
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090207.a2010.****.fits 
+            /share/pserverf.sda3/wappdata/wapp.20090208.a2010.****.fits
+
+     ****
+LST  fits  Scan     calscan    Source     Pattern   Start coords. ang  time  loop  calmode
+0719 0036 903800125 903800126  drift8p1   fixAZdr   072000+014930 19   600   99    loopend   22:39:53: cima message: received duplicate agc 
+datablock...  
+0729 0037 903800127 903800128  everything ok, quicklooked 0036 ok; GPS interference at LST 0733  
+0739 0038 903800129 903800130  
+0749 0039 903800131 903800132  23:09:51 usual cima message
+0800 0040 903800133 903800134  
+0810 0041 903800135 903800136  many continuum sources. a very strong one at LST 08:15:51
+0820 0042 903800137 903800138
+0830 0043 903800139 903800140  continuum sources
+0840 0044 903800141 903900001  continuum sources
+0850 0000 903900002 903900003  
+0900 0001 903900004 903900005
+0910 0002 903900006 903900007
+0920 0003 903900008 903900009  continuum sources
+0931 0004 903900010 903900011  continuum sources; everything ok
+0941 0005 903900012 903900013
+0951 0006 903900014 903900015
+1001 0007 903900016 903900017  continuum sources
+1011 0008 903900018 903900019  continuum sources
+1021 0009 903900020 903900021  
+1031 0010 903900022 903900023  
+1041 0011 903900024 903900025  everything ok; GPS pulses
+1052 0012 903900026 903900027  
+1102 0013 903900028 903900029  
+1112 0014 903900030 903900031  
+1122 0015 903900032 903900033  02:39:37 usual cima message
+1132 0016 903900034 903900035  continuum sources
+1142 0017 903900036 903900037  continuum sources
+1152 0018 903900038 903900039  03:09:35 usual cima message
+1202 0019 903900040 903900041  continuum sources
+1212 0020 903900042 903900043  
+1222 0021 903900044 903900045  03:39:33 usual cima message; very strong continuum at LST 12:30:31
+1233 0022 903900046 903900047  
+1243 0023 903900048 903900049  continuum sources
+1253 0024 903900050 903900051  everything ok;04:09:31 usual cima message
+1303 0025 903900052 903900053  
+1313 0026 903900054 903900055  continuum sources
+1323 0027 903900056 903900057  04:39:29 usual cima message
+1333 0028 903900058 903900059
+1343 0029 903900060 903900061  
+1353 0030 903900062 903900063  
+1404 0031 903900064 903900065  strong GPS 
+1414 0032 903800066 Aborted
+
+END LST: 1414
+
+
+Notes:
+Running the new version of CIMA 3.1.02 "Smart"; all ok
+TOGS run at start and end
+**started 12 mins early (at 0719). TOGS had problems rotating the receiver to 19deg, restarted TOGS allright, it kept its azimuth at 365 (is
+that ok?). When drift started everything ok, azimuth ok, checked with alfamotorwin rot angle 19deg** 
+FAA radar is ON 
+Harmonic near 1380 MHz present
+some GPS interference
+lots of continuum sources two of them very strong
+Beam 6b is FINE

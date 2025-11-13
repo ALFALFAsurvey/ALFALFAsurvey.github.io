@@ -1,0 +1,76 @@
+A2707 LBW   13.01.14       Observers: Luke Leisman, Katelyn Leisman, UAT 
+participants
+
+CIMA version:          The Stable version (Default) (Ver 3.3.04 2012-11-29  16:58)
+Configuration file:    a2707_jan13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2707_130114.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.14jan13.a2707.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H073112.3+240742  073113.7 +240730  j  7700 H v   # A749372 calib   0719  6.4  1      301400001  Detection at 1385  
+H074441.1+250833  074443.7 +250826  j   800 H v   # A171459 calib   0727  7.9  2      301400005  Detection at 1417
+H073533.8+283643  073536.8 +283753  j  2400 H v   # A174817         0736  10.3 3      301400009  No Detection
+H080428.9+281452  080430.2 +281502  j  1000 H v   #                 0746  10.8 4      301400013  No Detection
+H080708.7+242310  080710.3 +242321  j 10800 H v   # A180931         0755  6.7  5      301400017  Detection at 1371 (double horned)
+H082612.9+283620  082615.0 +283623  j  2700 H v   # A182559         0805  11.4 6      301400021  Possible Detection, fair blue OC
+H082630.0+252910  082633.8 +252959  j  2200 H v   # A182561         0814  7.7  7      301400025  No Detection
+H082817.2+254730  082818.3 +254725  j  2300 H v   # A180737         0822  7.6  8      301400029  Detection at 1410
+H090746.8+235434  090748.4 +235514  j  2700 H v   # A749519         0832  10.1 9      301400033  Detection at 1407
+H093840.1+235254  093842.2 +235310  j  6300 H v   # A198512         0842  14.5 10     301400037  Detection at 1391(possible RFI at 
+1381)
+H091509.8+294527  091511.5 +294534  j  6200 H v   # A198579         0851  12.7 11     301000041  Detection at 1391
+H093205.5+281837  093206.9 +281847  j  8200 H v   # A198580         0859  12.4 12     301000045  No Detection 
+H095639.8+290030  095641.4 +290038  j   500 H v   # A198583         0909  15.3 13     301400049  HVC detetction 1418  
+A095615.8+290010  095615.8 +290010  j  1000 H v   # A198605         0917  14.0 14     301400053  No detetction 
+H102224.2+192320  102226.2 +192317  j  1300 H v   # A208712         0927  13.3 15     301400057  RFI at 1414
+A102232.2+192341  102232.2 +192341  j  1000 H v   # A208711         0935  11.3 16     301400061  RFI at 1414
+A102253.2+193436  102253.2 +193436  j  1000 H v   # A208717         0944  9.25 17     301400065  RFI at 1414
+H102314.1+193221  102316.1 +193220  j  1300 H v   # A208713         0951  7.61 18     301400069  RFI at 1414
+H102326.4+193937  102328.3 +193938  j  1300 H v   # A208714         1001  5.33 19     301400073  Oscilating baseline (RFI?)
+H102717.1+292849  102719.2 +292934  j  1300 H v   # A208576         1010  11.7 20     301400077  RFI at 1414 
+H102903.4+282235  102904.0 +282155  j  1500 H v   # A208577         1018  10.2 21     301400081  No Detection
+H103643.9+284341  103645.5 +284350  j   300 H v   #                 1028  10.5 22     301400085  No Detetcion
+H105548.8+280915  105550.0 +280925  j  3500 H v   # A208581	`   1035  10.8 23     301400089  No Detection	
+H110402.0+292415  110403.6 +292422  j   600 H v   #		    1043  12.0 24     301400093  No Detection  
+H110407.5+280624  110409.5 +280538  j  2900 H v   # A219313         1051  10.1 25     301400097  RFI at 1414
+H111307.9+291615  111313.1 +291704  j   600 H v   # A219502	    1100  11.3 26     301400101  No Detection
+H112720.9+285956  112722.5 +290004  j  -400 H v   #		    1108  11.5 27     301400105  No Detection
+H114928.7+293239  114930.3 +293247  j   700 H v   #                 1117  13.4 28     301400109  No Detection
+H115632.8+295225  115634.5 +295233  j  -500 H v   #                 1125  13.6 29     301400113  No Detection 
+H115802.1+292424  115803.7 +292431  j   200 H v   #                 1133  12.4 30     301400117  No Detection
+H120629.1+283406  120630.6 +283415  j   700 H v   #                 1141  11.6 31     301400121  No Detection  
+H121215.2+291419  121216.8 +291426  j  3700 H v   # A229306         1149  12.0 32     301400125  Strong detection   
+H121216.7+290706  121218.3 +290714  j  4000 H v   # A229307         1158  11.2 33     301400129  Strong detection
+H121508.1+292345  121509.7 +292352  j  1000 H v   #                 1205  11.2 34     301400133  No Detection
+H122444.0+292846  122445.6 +292853  j   400 H v   #                 1214  11.4 35     301400137  No Detection
+H122843.4+292647  122845.0 +292655  j   400 H v   #                 1222  11.2 36     301400141  No Detection
+H122844.0+292637  122845.6 +292645  j   400 H v   #                 1230  11.0 37     301400145  No Detection
+H124436.6+285137  124438.2 +285146  j  1000 H v   #                 1238  10.6 38     301400149  No Detection
+H124513.0+294514  124514.6 +294521  j  1000 H v   #                 1246  11.3 39     301400153  No Detection
+H130425.2+294407  130426.9 +294414  j   400 H v   #                 1255  11.5 40     301400157  No Detection
+H130631.4+294022  130633.0 +294030  j   400 H v   #                 1303  11.3 41     301400161  No Detection
+H132119.0+285406  132120.6 +285415  j  1000 H v   #                 1311  10.8 42     301400165  No Detection  
+H132119.2+284500  132120.8 +284509  j   900 H v   #                 1319  10.4 43     301400169  No Detection
+H132921.3+285642  132922.9 +285651  j  2600 H v   # A239057         1327  10.6 44     301400173  No Detection
+H133155.7+292215  133157.3 +292223  j -1600 H v   #                 1335  11.0 45     301400177  No Detection
+H140339.8+295452  140341.6 +295500  j  1200 H v   # A249507         1344  12.3 46     301400181  Detection at 1415
+H145228.6+280747  145230.0 +280756  j 14500 H v   # A249375  if time1354  16.6 47     301400185  Detection at 1355
+H145323.5+273708  145325.5 +273711  j 14300 H v   # A733221  if time1402  15.0 48     301400189  Detection at 1356
+
+
+
+Stop LST:  1410
+
+
+Please record any notes of importance here  (Remember: you were there; we weren't.)
+Notes
+There were several detections at 1415 MHz - RFI?

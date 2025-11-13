@@ -1,0 +1,75 @@
+Log for 12.10.09 (09oct2012)        Observers: Crystal Moorman
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121009.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121010.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2119 0016  228300197 228300198 drift147p1  fixAzdr   211900+353854  19  600   99  loopend power levels ok, FAA radar on, quicklook OK, During TOGS: Beam 3B turned off 
+2129 0017  228300199 228300200 power levels OK
+2139 0018  228300201 228300202 
+2149 0019  228300203 228300204 power levels OK, quicklook OK extrap/interp message
+2200 0020  228300205 228300206 
+2210 0021  228300207 228300208 
+2220 0022  228300209 228300210 power levels OK, quicklook OK, extrap/interp message
+2230 0023  228300211 228300212  
+2240 0024  228300213 228300214 
+2250 0025  228300215 228300216 
+2300 0026  228300217 228300218 power levels OK
+2310 0027  228300219 228300220 GPS, power levels OK, quicklook OK
+2320 0028  228300221 228300222 
+2331 0029  228300223 228300224 
+2341 0030  228300225 228300226 
+2351 0031  228300227 228300228 power levels OK, quicklook OK
+0001 0032  228300229 228300230 
+0011 0033  228300231 228300232 GPS, power levels OK, quicklook OK 
+0021 0034  228300233 228300234 
+0031 0035  228300235 228300236 GPS, power levels OK
+0041 0036  228300237 228400001  
+0051 0000  228400002 228400003 
+0102 0001  228400004 228400005 
+0112 0002  228400006 228400007 
+0122 0003  228400008 228400009 power levels OK
+0132 0004  228400010 228400011 power levels OK, quicklook OK
+0142 0005  228400012 228400013 power levels OK
+0152 0006  228400014 228400015
+0202 0007  228400016 228400017
+0212 0008  228400018 228400019
+0222 0009  228400020 228400021
+0233 0010  228400022 228400023
+0243 0011  228400024 228400025 power levels OK, quicklook OK
+0253 0012  228400026 228400027
+0303 0013  228400028 228400029 power levels OK, quicklook OK
+0313 0014  228400030 aborted
+
+LST stop: 0313
+
+At the bottom, add notes regarding:
+-- FAA radar on.
+-- All ALFA beams working.
+-- During TOGS: Beam 3B turned off, TO turned it back on, it then complained about having too much 
+power. Problem corrected after Adjusting Power before running a2010.
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+
+ALFA TEMPERATURES
+
+16K = K1: 14.9   K2: 13.9   K3: 15.4   K4: 15.3   AT 10:02
+70K = K1: 83.5   K2: 83.0   K3: 91.3   K4: 99.2
+
+16K = K1: 14.7   K2: 14.1   K3: 15.6   K4: 15.3   AT 14:06
+70K = K1: 85.2   K2: 84.5   K3: 92.8   K4: 100.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   Off
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+

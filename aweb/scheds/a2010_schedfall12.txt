@@ -1,0 +1,212 @@
+A2010 observing schedule                                          last update: 13Dec12 mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+------------------------------------------------------------------------------------------------
+COMPLETED OBSERVATIONS
+------------------------------------------------------------------------------------------------
+    Block     Date    LMSTmidn      AST           LST         Drift  DecJ     Observers
+    12.09.10  M 10Sep    22h55    22h30-04h15   21h25-03h10   136p2  +330536  MH,GH,LL,MJ,EA(R)  
+    12.09.11  T 11Sep    22h59    22h30-04h15   21h28-03h14   137p2  +332012  BA(R)        
+    12.09.12  W 12Sep    23h03    22h30-04h15   21h32-03h18   138p2  +333448  BA(R)
+    12.09.13  R 13Sep    23h11    23h00-03h45   22h06-02h52   UCHVC targets   BA(R)  LBW A2664
+    12.09.15  S 15Sep    23h15    22h15-04h00   21h29-03h15   139p2  +334924  GH,LL(R)        
+    12.09.17  M 17Sep    23h23    22h15-03h45   21h37-03h08   145p2  +351700  GH,MJ(R)
+    12.09.18  T 18Sep    23h27    22h00-03h45   21h26-03h12   140p2  +340400  DF,JO(R)         
+    12.09.19  W 19Sep    23h31    21h45-03h45   21h15-03h16   141p2  +341836  DF,JO(R)
+    12.09.20  R 20Sep    23h35    21h45-03h45   21h19-03h20   142p2  +343312  LL(R)               
+    12.09.21  F 21Sep    23h39    21h45-03h30   21h21-03h12   143p2  +344748  LL(R)      
+    12.09.23  S 23Sep    23h47    21h30-03h30   21h16-03h17   144p2  +350224  LL(R)      
+    12.09.25  T 25Sep    23h54    21h30-03h15   21h24-03h10   146p2  +353136  RK(R) + Union class          
+    12.09.26  W 26Sep    23h58    21h30-03h15   21h28-03h14   147p2  +354612  RK(R) + Union class            
+    12.09.27  R 27Sep    00h02    21h15-03h15   21h16-03h17   148p2  +360048  CM(R)
+    12.09.28  F 28Sep    00h06    21h15-01h45   21h20-01h47   148p1  +355330  GH(R)
+    12.09.29  S 29Sep    00h10    21h30-03h00   21h39-03h10   149p2  +360427  PT(R)       
+    12.09.30  S 30Sep    00h14    21h00-03h00   21h13-03h14   148p4  +355709  MJ(R)   
+    12.10.05a F 05Oct    00h30    01h00-02h45   01h30-03h15   148p1  +355330  PT(R) - no data
+    12.10.05p F 05Oct    00h34    20h45-02h45   21h33-03h19   142p1  +342554  AO,JM,SG(R)     
+    12.10.06  S 06Oct    00h38    20h45-02h30   21h37-03h23   146p1  +352418  LH(R)        
+    12.10.08  M 08Oct    00h46    21h45-02h30   22h30-03h16   143p1  +344030  LH(R)       
+    12.10.09  T 09Oct    00h50    20h30-02h30   21h19-03h20   147p1  +353854  CM(R)        
+    12.10.10  W 10Oct    00h54    20h45-02h15   21h38-03h08   149p1  +360806  CM(R)   
+    12.10.11  R 11Oct    00h58    20h15-02h15   21h12-03h12   148p3  +354951  LL(R)  A2010 #800!!!
+    12.10.12  F 12Oct    01h01    20h30-01h00   21h30-02h00   147p3  +353516  AO,JM,SG(R)  Happy 50th, Jeff! 
+    12.10.13  S 13Oct    01h05    20h30-02h15   21h34-03h20   147p4  +354233  PT,KM(R)         
+    12.10.19  F 19Oct    01h29    22h30-02h00   23h58-03h29   135p1  +324342  GH(R)
+    12.10.20  S 20Oct    01h33    21h30-00h30   23h02-02h03   146p3  +352757  MJ(R)  
+    12.10.21  S 21Oct    01h37    21h30-01h30   23h06-03h07   145p1  +350942  MJ(R)   
+    12.10.23  T 23Oct    01h45    21h15-01h30   22h59-03h11   134p1  +322906  MJ(R)   
+    12.10.24  W 24Oct    01h49    21h15-01h30   23h03-03h15   144p1  +345506  MJ(R)
+    12.10.25  R 25Oct    01h52    21h15-01h15   22h55-00h40   135p1  +324342  MH,RG (big celebration)
+                                                00h40-01h52   134p1  +322906
+                                                01h53-03h07   148p1  +355330  
+    ** THE END OF A2010    7 years, 808 observing runs and 4741.5 hours later **
+
+LBW observing (program A2707)
+    Block     Date    LMSTmidn      AST           LST         a2707 cmd file     Observers   
+    12.11.18  S 18Nov    03h27    18h45-23h30   22h11-02h57                      night lost; LBW down
+    12.11.19  M 19Nov    03h31    18h30-23h30   22h00-03h01   a2707_121119.cmd   DK,RO,MG    Note: AO holiday
+    12.11.20  T 20Nov    03h35    18h30-23h30   22h04-03h05   a2707_121120.cmd   DK,RO,MG      
+    12.11.21  W 21Nov    03h39    18h15-23h30   21h53-03h09   a2707_121121.cmd   DK,RO,MG                    
+    12.11.22  R 22Nov    03h43    18h15-23h15   21h57-02h57   a2707_121122.cmd   DK,RO   
+    12.11.24  S 24Nov    03h51    18h15-23h15   22h05-03h05   a2707_121124.cmd   RO    
+    12.11.29  R 29Nov    04h11    17h45-22h45   21h54-02h55                      night lost; LBW down      
+    12.12.03  M 03Dec    04h26    17h30-22h30   21h55-02h56   a2707_121203.cmd   night lost; LBW down again
+        
+------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS        LBW Followup         starting January 2013
+------------------------------------------------------------------------------------------------  
+*****************   Remember: the date refers to when the A2010 runs starts in AST!!!*********
+*****************   All observing from now on is LBW followup                        *********
+
+All tentative as of this time
+Associated with UAT workshop
+    Block     Date    LMSTmidn      AST           LST         a2707 cmd file     Observers  
+    13.01.13  S 13Jan    07h08    00h00-07h00   07h04-14h05                      GH,LL,UAT  (Sat night/Sun am)
+    13.01.14a M 14Jan    07h12    00h00-07h00   07h08-14h09                      GH,LL,UAT  (Sun night/Mon am)
+    13.01.14b M 14Jan             16h00-17h45   23h10-00h55                      (UAT demo run)
+    13.01.15  T 15Jan    07h16    00h00-07h00   07h12-14h13                      GH,LL,UAT  (Mon night/Tue am)
+    13.01.16  W Jan 15   07h20    00h00-02h00   07h16-09h16                      GH,LL,UAT  (Tue night/Wed am)
+
+
+MARCH 2013:          LBW followup    TBD
+
+
+----------------------------------------------------------------------------------------------------
+AO Holidays 2012:
+Tue 25 Dec   Christmas
+Mon 31 Dec   New Year's Eve
+
+AO Holidays 2013:
+Tue Jan  1   New Year’s Day
+Sun Jan  6   Three King’s Day
+Mon Jan  7   Three King’s Day (observed)
+Mon Jan 14   Eugenio Maria de Hostos
+Mon Jan 21   Dr. Martin Luther King
+Mon Feb 18   Presidents’ Day
+Fri Mar 22   PR Slavery Abolition
+Fri Mar 29   Good Friday
+Mon Apr 15   Jose De Diego
+Mon May 27   Memorial Day
+Thu Jul  4   Independence day
+Mon Jul 15   Luis Muñoz Rivera
+Thu Jul 25   P.R. Constitution Day
+Fri Jul 26   José Celso Barbosa (observed)
+Sat Jul 27   José Celso Barbosa
+Mon Sep  2   Labor Day
+Fri Oct 11   Columbus Day (observed)
+Sat Oct 12   Columbus Day
+Tue Nov 19   PR Discovery Day
+Thu Nov 28   Thanksgiving Day
+Fri Nov 29   Day after Thanksgiving
+Wed Dec 25   Christmas
+Tue Dec 31   New Year's Eve
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+EG: Elena George (HSU)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+MG: Martin Garay-MacLean (Ithaca)
+RG: Riccardo Giovanelli
+SG: Steve Goldman (St. Lawrence)
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+KI: Katie Iadanza (Colgate)
+MJ: Melissa Jacquart (UWisc)
+MJ2: Mike Jones
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+LL: Luke Leisman
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+VM: Victoria Mendoza (St.Marys)
+WM: Arik Mitschang (HSU)
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+TS: Thad Savery (Siena) 
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+TS: Tess Senty (HSU)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots
+

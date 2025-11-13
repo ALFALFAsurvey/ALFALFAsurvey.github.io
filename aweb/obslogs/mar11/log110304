@@ -1,0 +1,69 @@
+Log for 11.03.04 (04Mar2011)        Observers:Parker Troischt, Ron Olowin, Becky Koopmann
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110304.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110305.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+LST  fits    Scan      calscan    Source    Pattern   Start coords. ang  time loop calmode
+0915 0033  106300242 106300243 drift137p1   fixAzdr   091500+331254  19   600  99   loopend 
+0925 0034  106300244 106300245  power levels ok, beam 6b dead, tiedowns disabled, rain
+0934 0035  106300246 106300247  quicklook ok
+0945 0036  106300248 106300249  
+0955 0037  106300250 106300251 
+1005 0038  106300252 106300253  
+1015 0039  106300254 106400001  tiedowns enabled, weather better
+1025 0000  106400002 106400003
+1035 0001  106400004 106400005  strong GPS (1380+Mhz; 12:17 AST, beams to high range ~1.6)
+1045 0002  106400006 106400007
+1055 0003  106400008 106400009  
+1105 0004  106400010 106400011
+1115 0005  106400012 106400013  power levels OK 
+1125 0006  106400014 106400015  continuum source beams 4, 3
+1135 0007  106400016 106400017
+1146 0008  106400018 106400019  faint continuum 6, 1
+1156 0009  106400020 106400021  faint GPS, all channels (1:37 AST)
+1206 0010  106400022 106400023  continuum source beams 6,2,0
+1216 0011  106400024 106400025 
+1226 0012  106400026 106400027  power levels OK
+1236 0013  106400028 106400029  multiple faint continuua in 5, 0
+1246 0014  106400030 106400031  extrap. pt data msg; weak cont.in 2,0; QuickLook OK  
+1256 0015  106400032 106400033  wk continuua in 1,2; faint GPS (2:39 AST)  
+1306 0016  106400034 106400035  wk continuum in 0, 2 
+1316 0017  106400036 106400037
+1327 0018  106400038 106400039 wk continuua in 2,0,5
+1337 0019  106400040 106400041 wk continuum in 3  
+1347 0020  106400042 106400043 wk continuum in 2,0; QuickLook OK
+1357 0021  106400044 106400045 
+1407 0022  106400046 106400047
+1417 0023  106400048 106400049
+1427 0024  106400050 106400051 wk continuua in 0,6,2
+1438 0025  106400052 106400053 
+1448 0026  106400054 106400055 wk continuum in 1,6,2,0,5
+1458 0027  106400056 106400057 Quick Look OK
+1508 0028  106400058 106400059 wk continuum in 1,6
+1518 0029  106400060 106400061
+1528 0030  106400062  -- abort
+
+
+LST stop: 1528
+
+-- FAA radar ON. 1380MHz harmonic present.
+-- Beam 6b dead
+-- TOGS at END only.
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+
+16K = K1: 30.4   K2: 30.9   K3: 34.6   K4: 34.3   AT 18:04
+70K = K1: 125.7  K2: 133.5  K3: 142.6  K4: 150.1
+
+16K = K1: 30.9   K2: 30.9   K3: 34.4   K4: 34.3   AT 22:12
+70K = K1: 125.5  K2: 133.5  K3: 142.6  K4: 150.2
+
+			=>temperatures of the 8 sensors within ALFA housing
+

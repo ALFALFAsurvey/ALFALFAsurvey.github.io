@@ -1,0 +1,36 @@
+Log for 06/09/15      Observer: Becky & Tom
+
+System Configuration:
+FixedAZ Drift Map Cima version 2.2.08 (normal)
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20060915.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20060916.a2010.****.fits
+
+LST  fits  Scan      calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2118 0009 625879547 625880149 drift25p1 FixedAz  2118000+055742  19   600    99 loopend
+2128 0010 625880152 625880754         power levels OK
+2138 0011 625880757 625881359
+2149 0012 625881362 625881964
+2159 0013 625881967 625882569
+2209 0014 625882572 625883174
+2219 0015 625883177 625883779
+2229 0016 625883782 625884384         power levels OK
+2239 0017 625884387 625884989
+2249 0018 625884992 625885594
+2259 0019 625885597 625886199
+2310 0020 625886202 625900404
+2320 0000 625900407 625901009
+2330 0001 625901012 625901614         power levels OK
+2340 0002 625901617 625902219
+2350 0003 625902222 625902824
+0000 0004 625902827 625903429         power levels OK 
+0010 0005 625903432 --- aborted
+
+END LST: 0010
+
+Notes:
+
+TOGS run at start only (no time allocated at end)
+No problems.

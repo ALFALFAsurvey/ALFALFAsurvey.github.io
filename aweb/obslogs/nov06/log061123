@@ -1,0 +1,63 @@
+Log for 06/11/23      Observers: Jamie Lomax, Aileen O'Donoghue,
+                                 Jeff Miller, Tom Balonek
+on-site observing
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az360.gui as save state.
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061123.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2132 0003 632764106 632764708 drift50p2 FixedAz 213200+121000   19   600   99   loopend
+2142 0004 632764711 632765313 Power levels ok
+2152 0005 632765316 632765918
+2202 0006 632765921 632766523
+2212 0007 632766526 632767128
+2222 0008 632767131 632767733
+2233 0009 632767736 632768338
+2243 0010 632768341 632768943 Power levels ok
+2253 0011 632768946 632769548
+2303 0012 632769551 632770153
+2313 0013 632770156 632770758
+2323 0014 632770761 632771363 Quicklook ok
+2333 0015 632771366 632771968 Power levels ok
+2343 0016 632771971 632772573
+2353 0017 632772576 632773178
+0004 0018 632773181 632773783
+0014 0019 632773786 632774388 Power levels ok
+0024 0020 632774391 632774993 Power levels ok
+0034 0021 632774996 632775598
+0044 0022 632775601 632776203
+0054 0023 632776206 632776808 Power levels ok
+0104 0024 632776811 632777413
+0114 0025 632777416 632778018
+0125 0026 632778021 632778623
+0135 0027 632778626 632779228
+0145 0028 632779231 632779833 Power levels ok
+0155 0029 632779836 632780438
+0205 0030 632780441 632781043
+0215 0031 632781046 632781648 Power levels ok
+0225 0032 632781651 632782253
+0235 0033 632782256 632782858
+0245 0034 632782861 632783463
+0256 0035 632783466 632784068 Power levels ok
+0306 0036 632784071 632784673
+0316 0037 632784676 --aborted
+
+END LST: 0316
+
+
+NOTES:
+TOGS ran at start and end.
+
+No problems.
+
+The catalog says that we are taking data at drift50p1 but the master list claims that the dec
+we are observing at is the correct dec for drift50p2. We checked on the ALFALFA website and
+found that drift50p1 had already been completed and there were no notes indicating that the
+data from that drift was bad. Several places also listed the dec we are observing at as the
+dec for drift50p2.  So we believe that this data is for drift50p2, as we have labled
+above.  But notice that CIMA log has source name as drift50p1 in error.

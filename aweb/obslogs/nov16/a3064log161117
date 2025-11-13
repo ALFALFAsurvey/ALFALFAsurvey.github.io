@@ -1,0 +1,65 @@
+3064 LBW   16.11.17 Observers: Becky Koopmann, Mark Wunderlich
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161117.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161117.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161118.a3064.****.fits   (only if goes after midnight AST; probably no)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S214737.5+255317  214737.5 +255317  j     0 H v   # A310476    2123   9.6   0000    632200003  GPS in OFF. No detection. Tiedowns initially disabled, enabled just before OFF: 
+baseline choppy.
+S220842.2+245624  220842.2 +245624  j     0 H v   # A321315    2136  10.2   0001    632200007   Detection at 1391 MHz, 6300 km/s, S/N~4
+S222504.8+285642  222504.8 +285642  j     0 H v   # A323005    2150  13.5   0002    632200011   No detection.   
+S222039.5+351320  222039.5 +351320  j     0 H v   # A011993    2204  17.4   0003    632200015   Detection at 1394 MHz, 5500 km/s, S/N~3
+S223949.5+263516  223949.5 +263516  j     0 H v   # A323054    2218   9.8   0004    632200019   No detection
+S224727.8+270546  224727.8 +270546  j     0 H v   # A323088    2230   9.8   0005    632200023   Prob no detection, but maybe something at 1404 MHz, 3400km/s. Hard to tell due 
+to high, uneven baseline: continuum source?
+S224442.2+263058  224442.2 +263058  j     0 H v   # A323084    2243   8.3   0006    632200027  GPS in ON. Maybe something at 1365 MHz, 12000 km/s, but pols unequal
+S232127.1+251621  232127.1 +251621  j     0 H v   # A336698    2257   9.2   0007    632200031   Detection at 1371.5 MHz, 11600 km/s, S/N~3; maybe something at 1412.5 MHz, 1500 km/s  
+S232931.5+265424  232931.5 +265424  j     0 H v   # A336098    2309   9.9   0008    632200035   Detection at 1377 MHz,  WAPPDATA interpolation error in ON
+S233602.8+261048  233602.8 +261048  j     0 H v   # A336011    2321   8.7   0009    632200039  GPS in OFF. Detection at 1382.5 MHz, 8100 km/s,  
+S233839.4+264747  233839.4 +264747  j     0 H v   # A336658    2334   8.7   0010    632200043   No detection.  
+S000028.4+270246  000028.4 +270246  j     0 H v   # A104819    2346   9.4   0011    632200047   No detection.
+S001550.0+271412  001550.0 +271412  j     0 H v   # A104342    2359   9.9   0012    632200051   Detection at 1386 MHz, 7500 km/s, S/N~7
+S005412.2+285600  005412.2 +285600  j     0 H v   # A102971    0013  14.5   0013    632200055  GPS in OFF. Detection at 1369 MHz, 11000 km/s, S/N~4 and Detection at 1397 MHz,  5000 
+km/s, S/N~3. WAPPS crash (timed out while waiting for adjust WAPP power between sources.) Restarted.
+S005413.4+285842  005413.4 +285842  j     0 H v   # A105205    0026  12.6   0014    632200059  GPS in ON. Detection at 1370 MHz, 11000 km/s, S/N~5
+S011543.2+294836  011543.2 +294836  j     0 H v   # A116284    0039  14.4   0015    632200063   No detection. RFI at 1388 MHz.
+S011626.1+293535  011626.1 +293535  j     0 H v   # A116285    0051  12.8   0016    632200067   Something at 1408 MHz, 2500 km/s
+S011640.6+293420  011640.6 +293420  j     0 H v   # A116288    0103  11.8   0017    632200071  GPS in ON. Detection at 1383 MHz, 8100 km/s, S/N~4. HVC at 1422 MHz. RFI at 1389 MHz; 
+source or RFI at 1397 MHz in OFF.
+S011801.3+291913  011801.3 +291913  j     0 H v   # A116289    0116  11.1   0018    632200075  GPS in ON. Wide signal at 1397 MHz, 5000 km/a again. Getting suspicious it's RFI? 
+HVC at 1422 MHz.  
+S011836.4+290225  011836.4 +290225  j     0 H v   # A116217    0128  11.0   0019    632200079   No detection  
+S013737.4+291408  013737.4 +291408  j     0 H v   # A116233    0140  11.0   0020    632200083   Detection at 1369.5 MHz, 11100 km/s, S/N~4
+S013959.8+294806  013959.8 +294806  j     0 H v   # A114081    0152  11.8   0021    632200087  GPS in on. Detection at 1370.5 MHz, 10900 km/s, S/N~3
+S015403.1+275222  015403.1 +275222  j     0 H v   # A115830    0205   9.9   0022    632200091   No detection.	     
+S021310.9+274636  021310.9 +274636  j     0 H v   # A123260    0218   9.6   0023    632200095   Detection at 1361 MHz, 13100 km/s
+S021742.5+273958  021742.5 +273958  j     0 H v   # A125541    0230   9.7   0024    632200099   No detection.
+S022324.8+234846  022324.8 +234846  j     0 H v   # A125197    0242   7.3   0025    632200103  GPS in ON. No detection Wide 1397 in OFF.
+S022828.1+221355  022828.1 +221355  j     0 H v   # A124040    0255   7.2   0026    632200107   No detection.
+                                                                
+Extra time, so pick up lost source from Nov 9, skipped source:
+S025800.0+351055  025800.0 +351055  j     0 H v   # A124878    0311  17.1   0027    632200111   No detection.
+                                                
+Notes 
+
+-- Extra time at end, so added a source that was missed because of WAPPS problems in 161109 run.
+-- Arun changed a disk on the WAPPS because of problems last night and last week.
+-- tiedowns disabled at beginning of run due to distomat errors
+-- WAPPS crash on power adjust midway through night; observing stopped and had to be restarted, but no scans affected.
+-- FAA radar on, GPS in numerous scans. Wide signal at 1397 MHz, 5000 km/s reocuring in ON and OFF: suspicious that it is RFI.
+
+                                                                 

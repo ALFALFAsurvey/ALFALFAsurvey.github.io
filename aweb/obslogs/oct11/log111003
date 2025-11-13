@@ -1,0 +1,68 @@
+Log for 11.10.03 (03Oct2011)        Observers: Lyle Hoffman 
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111003.a2010.****.fits
+         /share/pserverf.sda3/wappdata/wapp.20111004.a2010.****.fits     
+
+Normal meridian strip observing.
+
+LST  fits     Scan    calscan    Source    Pattern   Start coords. ang  time loop calmode
+2134 0019 127600213 127600214  drift 87p1 fixAzdr   213400+210254  19  600   99  loopend 4a&6b dead, FAA strong, power levels OK, strong cs tiedowns active  quicklook OK
+2144 0020 127600215 127600216  power OK
+2154 0021 127600217 127600218  power OK quicklook OK
+2204 0022 127600219 127600220  power OK
+2214 0023 127600221 127600222  power OK
+2225 0024 127600223 127600224  power OK quicklook OK
+2235 0025 127600225 127600226  power OK
+2245 0026 127600227 127600228  power OK
+2255 0027 127600229 127600230  power OK quicklook OK
+2305 0028 127600231 127600232  power OK
+2315 0029 127600233 127600234  power OK
+2325 0030 127600235 127600236  power OK quicklook OK
+2335 0031 127600237 127600238  power OK
+2345 0032 127600239 127600240  power OK
+2356 0033 127600241 127600242  power OK
+0006 0034 127600243 127600244  power OK
+0016 0035 127600245 127700001  power OK
+0026 0000 127700002 127700003  power OK quicklook OK
+0036 0001 127700004 127700005  power OK
+0046 0002 127700006 127700007  power OK
+0056 0003 127700008 127700009  power OK quicklook OK
+0107 0004 127700010 127700011  power OK
+0117 0005 127700012 127700013  power OK
+0127 0006 127700014 127700015  power OK
+0137 0007 127700016 127700017  power high in 1a & 1b & 6a at start, OK after 60 sec (cont.?)
+0147 0008 127700018 127700019  power OK quicklook OK
+0157 0009 127700020 127700021  power OK
+0207 0010 127700022 127700023  power OK
+0217 0011 127700024 127700025  power OK
+0227 0012 127700026 127700027  power OK
+0238 0013 127700028 127700029  power OK
+0248 0014 127700030 127700031  power OK
+0258 0015 127700032 127700033  power OK
+0308 0016 127700034 aborted
+
+LST stop: 0308, AST Stop=0244 
+
+At the bottom, add notes regarding:
+-- TOGS run at beginning.
+-- FAA radar (1350) ON.
+-- Beams 4A and 6B dead. 
+-- "Power Levels OK" means all but 4a and 6b.
+
+
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 13.7   K3: 15.5   K4: 15.7   AT 18:01
+70K = K1: 88.8   K2: 89.0   K3: 96.1   K4: 104.6
+
+16K = K1: 13.8   K2: 13.5   K3: 15.3   K4: 15.5   AT 22:02
+70K = K1: 88.5   K2: 88.8   K3: 95.9   K4: 104.4
+
+

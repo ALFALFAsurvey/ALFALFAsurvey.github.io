@@ -1,0 +1,108 @@
+Log for 2/07/05 pm        Observers: RG, BK, NB, BC
+        2/08/05 am     
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20050207.a2010.****.fits
+        /share/pserverf.sda3/wappdata/wapp.20050208.a2010.****.fits                    
+
+
+CIMA GUI: a2010_tracking_lo_feb05.gui
+Tracking LO with rest freq=14020.4058 and cz(optical) =7663 km/s (~1385 MHz)
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop      Notes
+____________________________________________________________________________________________________
+  
+0824 0035 503885135 503885138  CAL OFF/ON
+          503885141 
+     0036           503885144 
+          503885147 503885150
+          503885153 503885156
+          503885159 503885162
+
+0826      503885224 503885826 drift51p1 FixedAZ  082648+121718  19  600  4
+0836 0037 503885829 503900031    
+
+0847 0000 503900034 503900636
+0857 0001 503900639 503901241							  DecJ off by 15"
+
+0907 0002 503907257 503901860 drift51p1 FixedAZ  090718+121718  19  600  4
+0917 0003 503901863 503902466
+0927 0004 503902469 503903071
+0937 0005 503903074 503903676                                                     DecJ off by 12"
+
+0947 0006 503903682 503904286 drift51p1 FixedAZ  094758+121718
+0957 0007 503904286 503904889
+1007 0008 503904992 503905494
+1018 0009 503905497 503906098							  DecJ off by 8"
+
+1028 0010 503906105 503906708 drift51p1 FixedAZ  102827+121718  19  600  4
+1038 0011 503906711 503907313
+1048 0012 503907316 503907918
+1058 0013 503907921 503908523							  DecJ off by 6"
+
+1109 0014 503908529 503909131 drift51p1 FixedAZ  110859+121718  19  600  15
+1119 0015 503909134 503909736
+1129 0016 503909739 503910341
+1139 0017 503910344 503910946
+1149 0018 503910949 503911551
+1159 0019 503911554 503912156
+1209 0020 503912159 503912764
+1219 0021 503912764 503913366
+1229 0022 503913369 503913971							   BIG continuum source 3:44:00 AST
+1240 0023 503913974 503914576
+1250 0024 503914579 503915181
+1300 0025 503915184 503915786
+1310 0026 503915789 503916391
+1320 0027 503916394 503916996
+1330 0028 503917000 503917602							  DecJ off by < 1"
+
+1340 0029 503917603 503918211 drift51p1 FixedAZ  134042+121718  19  600  4
+1350 0030 503918214 503918816
+1401 0031 503918819 503919421
+1411 0032 503919424 503920026							  DecJ off by 7"
+
+1421 0033 503920032 503920634 drift51p1 FixedAZ  142113+121718  19  600  4
+1431 0034 503920637 503921239
+1441 0035 503921242 503921844
+1451 0036 503921847 503922449							  DecJ off by 8"
+
+1501 0037 503922455 503923057 drift51p1 FixedAZ  150141+121718  19  600  4
+1511 0038 503923060 503923662
+1521 0039 503923665 503924267		               		            platform dist reading lost at 6:40am AST
+1531 0040 503924270 503924872                                                     DecJ off by 13"
+
+1541 0041 503924878 503925480 drift51p1 FixedAZ  154212+121718  19  600  4
+1552 0042 503925483 503926085
+1602 0043 503926088 503926690
+1612 0044 503926693 503927295                                                     DecJ off by ~12"
+
+1622 0045 503927302 503927904 drift51p1 FixedAZ  162242+121718  19  600  2
+1632 0046 503927907 503928509
+
+1642 0047 503928522           CAL OFF/ON
+     0048           503928525 
+          503928528 503928531
+          503928534 503928537
+          503928540 503928543
+          503928546 503928549
+
+
+     0049  Blank FITS file
+
+Weather: Clear at beginning of run;  Overcast around 5:30am AST,  Light rain around 6:30am AST  
+        
+
+
+Notes: 
+
+0 - New calibration scheme tested :  1 sec drift as the OFF, followed by a 1 sec hcal for the CalON
+1 - New GUI in place. After heavy-handed propaganda by RG that "no tracking LO" was the way to go,
+    he eats crow and opts for having a tracking LO after all. Reasons are several; most important is
+    the realization that aligning spectra a posteriori will require interpolation, uneven frequency
+    corrections on high and lo ends of the spectrum, etc. Also because he is too lazy to write all the
+    software to carry out the alignments and keeping track of all the mess that results on integer
+    masks. From today, it's central vel=7663 withrestf=1420.4058, optical convention, Doppler tracking LO.

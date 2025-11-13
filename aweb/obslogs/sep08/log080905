@@ -1,0 +1,45 @@
+Log for 080905      Observer: Shan Huang
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.01  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20080905.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20080906.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2146 0022  824900197 824900198 drift38p1  fixAZdr  214600+090730 360   600   99 loopend   - power levels ok (except 6.1)
+2156 0023  824900199 824900200                                                              fits files ok
+2206 0024  824900201 824900202
+2217 0025  824900203 824900204
+2227 0026  824900205 825000001
+2237 0000  825000002 825000003                                                              power ok
+2247 0001  825000004 825000005
+2257 0002  825000006 825000007 
+2307 0003  825000008 825000009
+2317 0004  825000010 825000011
+2327 0005  825000012 825000013
+2338 0006  825000014 825000015
+2348 0007  825000016 825000017                                                              fits files ok
+2358 0008  825000018 825000019
+0008 0009  825000020 825000021
+0018 0010  825000022 825000023
+0028 0011  825000024 825000025                                                              power ok
+0038 0012  825000026 825000027
+0048 0013  825000028 825000029
+0059 0014  825000030 825000031                                                                
+0109 0015  825000032 825000033
+0119 0016  825000034 825000035                                                              power ok
+0129 0017  825000036 abort...
+
+END LST:  0129
+
+Notes: 
+-- Ran TOGS at start and end
+-- A long slew after last program.
+-- Beam 6.1 is dead
+-- Getting lots of "WARNING WAPP=4-chip_count: WARNING counts don't match between 
+   chip 0 and chip 14 (99999966 !=99999964)!" errors (orange, numbers are close). 
+-- Getting regular "check wapp levels: Warning there are WAPP channels with
+   too little power 0.092 < 0.75!" errors (orange) and lots of
+   "check_wapp_levels: WAPP power levels are between 0.092 and 1.116 (still bad)"
+   (grey). We think these are not serious.
+

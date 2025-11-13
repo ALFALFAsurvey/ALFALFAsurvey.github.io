@@ -1,0 +1,35 @@
+Log for 080428        Observer: Rebecca Koopmann
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080428.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080429.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+
+1345 0017 811900125 811900126  drift5p1   fixAZdr  134500+010542  19  600   99   loopend
+                                         brief low power warning, otherwise power OK
+1355 0018 811900127 812000001   strong cont src and GPS
+1405 0000 811900002 812000003 
+1415 0001 812000004 812000005
+1426 0002 812000006 812000007
+1436 0003 812000008 812000009   too much power in beam 0B , GPS at end
+1446 0004 812000010 812000011
+1456 0005 812000012 812000013
+1506 0006 812000014 812000015  power warning messages
+1516 0007 812000016 812000017
+1526 0008 812000018 812800019
+1536 0009 812000020 812800021   power levels OK
+1546 0010 812000022 812000023   GPS
+1556 0011 812000024 812000025
+1607 0012 812000026 812000027
+1617 0013 812000028 812000029   too much power in beam 0B for ~30s
+1627 0014 812000030 812000031   power levels OK
+1637 0015 812000032 812000033   GPS
+1647 0016 812000034 -- aborted
+
+End LST: 1647
+
+Notes:
+Bad power -- intermittent high levels for up to 30s in Beam 0B
+TOGS time only allocated at end.

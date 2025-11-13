@@ -1,0 +1,27 @@
+Log for 090113p     Observer: Undergrad ALFALFA Team	
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090113.a2010.****.fits 
+
+     ****
+LST  fits  Scan     calscan   Source     Pattern  Start coords. ang  time loop calmode
+0134 0044 901300175 901300176 drift49p2  fixAZdr  013400+115524  19  600  99 loopend
+0145 0045 901300177 901300178
+0155 0046 901300179 901300180
+0205 0047 901300181 901300182
+0215 0048 901300183 901300184
+0225 0049 901300185 901300186
+0235 0050 901300187 901300188
+0245 0051 901300189 901300190
+0255 0052 901300191 901300192
+0305 0053 901300193 901300194
+0315 0054 901300195 --aborted
+
+END LST: 0315
+
+Notes:
+Running the new version of CIMA 3.1.02 "Smart"; all ok
+TOGS run at start only
+Beam 6B is off
+FAA radar on again

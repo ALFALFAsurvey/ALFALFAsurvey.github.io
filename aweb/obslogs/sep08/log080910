@@ -1,0 +1,52 @@
+Log for 080910      Observer: Sabrina Stierwalt
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.01  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20080910.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20080911.a2010.****.fits
+
+LST  fits  Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2201 0001  825400108 825400109 drift21p2  fixAZdr 220100+050636 360   600   99 loopend
+2211 0002  825400110 825400111 power levels okay
+2222 0003  825400112 825400113
+2232 0004  825400114 825400115
+2242 0005  825400116 825400117
+2252 0006  825400118 825500001
+2302 0000  825500002 825500003 power levels okay
+2312 0001  825500004 825500005
+2322 0002  825500006 825500007
+2332 0003  825500008 825500009
+2342 0004  825500010 825500011  GPS 26 appears in some beams
+2353 0005  825500012 825500013
+0003 0006  825500014 825500015
+0013 0007  825500016 825500017
+0023 0008  825500018 825500019
+0033 0009  825500020 825500021
+0043 0010  825500022 825500023 power levels okay
+0053 0011  825500024 825500025
+0103 0012  825500026 825500027
+0114 0013  825500028 825500029
+0124 0014  825500030 825500031
+0134 0015  825500032 825500033 power levels okay
+0144 0016  825500034 825500035
+0154 0017  825500036 825500037
+0204 0018  825500038 825500039
+0214 0019  825500040 825500041
+0224 0020  825500042 825500043
+0234 0021  825500044 825500045
+0245 0022  825500046 825500047
+0255 0023  825500048 825500049
+0306 0024  aborted
+
+END LST: 0305
+
+Notes: 
+-- Ran TOGS at start and end. 
+-- A long slew after last program. Past ideal starting LST by 1 minute (grrr.)
+-- Beam 6.1 is still dead
+-- Getting lots of "WARNING WAPP=4-chip_count: WARNING counts don't match between 
+   chip 0 and chip 14 (99999966 !=99999964)!" errors (orange, numbers are close). 
+-- Getting regular "check wapp levels: Warning there are WAPP channels with
+   too little power 0.092 < 0.75!" errors (orange) and lots of
+   "check_wapp_levels: WAPP power levels are between 0.096 and 1.159 (still bad)"
+   (grey).

@@ -1,0 +1,34 @@
+Log for 080530      Observer: Lyle Hoffman
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080530.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080531.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1350 0006 815100138 815100139  drift1p3   fixAZdr  135000+000339  19  600   99   loopend 
+                                chip count errors  power OK  fits OK
+1400 0007 815100140 815100141  chip count errors continue (99999966 != 99999967)
+1411 0008 815100142 815100143  still chip count errors  power OK
+1421 0009 815100144 815100145  still chip count errors
+1431 0010 815100146 815100147  chip count errors
+1441 0011 815100148 815100149  chip count errors  power OK  
+1451 0012 815100150 815100151  chip count errors
+1501 0013 815100152 815100153  chip count errors
+1511 0014 815100154 815100155  chip count errors  power OK
+1521 0015 815100156 815100157  chip count errors
+1532 0016 815100158 815100159  chip count errors
+1542 0017 815100160 815100161  chip count errors  power OK
+1552 0018 815100162 815100163  chip count errors
+1602 0019 815100164 815200001  chip count errors
+1612 0000 815200002 815200003  chip count errors  power OK
+1622 0001 815200004 815200005  chip count errors
+1632 0002 815200006 815200007  chip count errors
+1642 0003 815200008 815200009  chip count errors
+1652 0004 815200010  aborted
+
+End LST:  1652
+
+Notes: TOGS already running at start by AGES
+TOGS run at end.
+Chip count errors in every drift, ignored as per Mikael's email.

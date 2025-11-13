@@ -1,0 +1,68 @@
+Log for 091106     Observer: Riccardo Giovanelli
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20091106.a2010.****.fits 
+Files:       /share/pserverf.sda3/wappdata/wapp.20091107.a2010.****.fits 
+
+     ****
+LST  fits  Scan       calscan        Source      Pattern   Start coords.  ang  time  loop  calmode 
+2106 0007  931000175  931000176      drift24p1    fixAZdr   210600+054306   19   600   99   loopend   everything ok!
+2116 0008  931000177  931000178      drift24p1    fixAZdr   210600+054306   19   600   99   loopend
+2126 0009  931000179  931000180
+2137 0010  931000181  931000182
+2147 0011  931000183  931000184
+2157 0012  931000185  931000186
+2207 0013  931000187  931000188
+2218 0014  931000189  931000190
+2228 0015  931000191  931000192
+2238 0016  931000193  931000194 at lst2238: WAPPDATA-queue-pntdata warning
+2248 0017  931000195  931000196
+2258 0018  931000197  931000198 near end of scan, telescope may have moved "sua sponte", during the  few seconds of reset commercial power
+2308 0019  931000199  931000200
+2318 0020  931000201  931000202  
+2328 0021  931000203  931000204  
+2338 0022  931000205  931000206  
+2348 0023  931000207  931000208  
+2358 0024  931000209  931000210  
+0009 0025  931000211  931000212  
+0019 0026  931000213  931000214  
+0029 0027  931000215  931000216  
+0039 0028  931000217  931000218  
+0049 0029  931000219  931000220  
+0059 0030  931000221  931000222  
+0109 0031  931000223  931000224  
+0119 0032  931000225  931000226  
+0129 0033  931000227  931000228  
+0139 0034  931000229  931000230 
+0149 0035  931000231  931000232
+0200 0036  931000233  931000234
+0210 0037  931000235  931000236
+0220 0038  931000237  931000238
+Lost conecton with AO - cannot login - called operator; he says prorgam still running, will terminate it at  00:45AST
+                                    connection lost; operator running
+0230 0039  931000239  931100001     this record added de post facto by mph
+0240 0000  931100002  931100003
+0250 0001  931100004  931100005
+0300 0002  931100006  931100007
+                                    operator was instructed to terminate at this point; no TOGS
+END LST:   0310
+
+Notes:
+-- freebee run; S-band run cancelled - DBC called at 5pm offering time 
+   and here we are: without Ann's help, RG would have been helpless
+-- at ast 20:28:30-40, ao back on commercial power - bad data for ~8 sec
+-- at lst 0230, connection to cornell lost; operator reports program
+   running ok; but last 4 drifts go unmonitored
+-- No rfi at 1375 MHz (NOTE: Phil has been looking into this)
+-- All beams working. 
+-- FAA radar ON (1380 harmonic also present)
+-- TOGS run at START only
+
+-- NOTE ADDED: We have noticed issues with Beam 2 (high Tsys) and Beam 6(instability).
+   Ganesh is looking into this.
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+No numbers recorded at end of night because of lost connection.
+ALFA TEMPERATURES
+

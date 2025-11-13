@@ -1,0 +1,39 @@
+Log for 12/09/05 evening
+Observer: Bilal, Becky, Martha
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20051209.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.09p
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+0052 0023 534372241 534372843 drift121p1   FixedAz 005200+291918 19 600  50
+0102 0024 534372846 534373448
+0112 0025 534373451 534374053
+0122 0026 534374056 534374658
+0132 0027 534374661 534375263
+0142 0028 534375266 534375868
+0153 0029 534375871 534376473
+End LST 0203 
+Switching to second source; immediately after switch, WAPP2 failed.
+Restart again.
+0210 0033 534376911 534377513 drift138p1   FixedAz 021000+332730 19 600  50 
+0220 0034 534377516 534378118
+0230 0035 534378121 534378723
+0240 0036 534378726 534379328
+0250 0037 534379331 534379933
+0300 0038 534379936 534380538
+End LST 0311
+
+Notes:
+- Started early thanks to EM. 
+- Started togs, first time process hung. Second time
+  power levels off (low) on ALFA obsmon. 
+- Started a2010 power levels look fine.
+- When we switched to the new source, WAPP error ocurred. We restarted and
+adjusted power.
+- Ran togs at end. Power levels for togs were sometimes okay, sometimes high.

@@ -1,0 +1,70 @@
+Log for 08/19/10          Observer: Parker Troischt, Becky Koopmann, Michelle Brault, Catherine Weigel, Ron Olowin, Ana Mikler, Katie O'Brien, Victoria Mendoza, Seth Felix
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100819.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100820.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern   Start coords. ang  time loop  calmode
+2113 0001 23100123  23100124   drift93p1  fixAZdr   211300+223030  19  600   99  loopend   power levels OK extrapolating pnt data warning quick look ok  there seems to be large deviations between polarizations for 4
+2124 0002 23100125  23200001    still large deviation between polarizations for 4 (looking back at past runs, perhaps this is not so unusual)
+2134 0000 23200002  23200003
+2144 0001 23200004  23200005   continuum scource in drift in 4
+2154 0002 23200006  23200007   
+2204 0003 23200008  23200009  
+2214 0004 23200010  23200011   
+2224 0005 23200012  23200013   
+2234 0006 23200014  23200015   
+2245 0007 23200016  23200017   
+2255 0008 23200018  23200019  Quick Look OK 
+2305 0009 23200020  23200021    
+2315 0010 23200022  23200023
+2325 0011 23200024  23200025  
+2335 0012 23200026  23200027  faint cs in beam 6 and beam 1
+2345 0013 23200028  23200029
+2355 0014 23200030  23200031  
+0005 0015 23200032  23200033  Strong RFI jat 1364 MHz - see Note
+0016 0016 23200034  23200035  
+0026 0017 23200036  23200037
+0036 0018 23200038  23200039  
+0046 0019 23200040  23200041
+0056 0020 23200042  23200043  Power levels ok
+0106 0021 23200044  23200045
+0116 0022 23200046  23200047
+0126 0023 23200048  23200049
+0136 0024 23200050  23200051
+0146 0025 23200052  23200053
+0156 0026 23200054  23200055
+0206 0027 23200056  23200057
+0217 0028 23200058  23200059
+0226 0029 23200060  23200061
+0238 0030 23200062  23200063  faint cs in 6 and 1
+0247 0031 23200064  23200065
+0257 0032 23200066  23200067
+0308 0033 23200068 --abort
+
+LST@stop:0308   
+
+NOTES:
+- TOGS run at beginning 
+- FAA radar ON, harmonic also visible
+- Tiedowns disabled
+- Strong RFI at 1364MHz in 23200032 in beams 3, 2, 1, 0 in record 8. 
+  Very strong in 2. Sent power levels greater than 2. Quicklook shows 
+  bright source in just record 8. Reported to RFI group. Phil thinks 
+  it was caused by low orbit satellite because timing was so short.
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 15.1   K2: 15.5   K3: 16.7   K4: 16.7   AT 18:16
+70K = K1: 89.0   K2: 96.3   K3: 107.6  K4: 116.1
+
+16K = K1: 15.3   K2: 15.3   K3: 16.7   K4: 16.9   AT 22:07
+70K = K1: 89.0   K2: 96.6   K3: 107.6  K4: 116.1
+
+
+			=>temperatures of the 8 sensors within ALFA housing
+

@@ -1,0 +1,85 @@
+Log for 09/06/10     Observer: Ann Martin
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100906.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100907.a2010.****.fits
+
+Zenith strip observing setup
+Az=295.6   ALFAang= 77.8  ZA=4.2  AzG=294.99?
+
+RA@start=2107  RA@end=0311
+RA = LST - 16 min
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.  ang  time loop  calmode ZAdome
+
+2051 0028  24900156 24900157   drift68p1  fixAZdr   205100+162530  19   600   99  loopend  ZAG=4.2   quicklook OK
+2101 0029  24900158 24900159
+2111 0030  24900160 24900161
+2121 0031  24900162 24900163
+2131 0032  24900164 24900165
+2141 0033  24900166 24900167
+2151 0034  24900168 24900169
+2201 0035  24900170 24900171  quicklook ok; power and waterfalls ok
+2212 0036  24900172 24900173
+2222 0037  24900174 24900175
+2232 0038  24900176 25000001
+2242 0000  25000002 25000003
+2252 0001  25000004 25000005
+2302 0002  25000006 25000007
+2312 0003  25000008 25000009
+2323 0004  25000010 25000011
+2333 0005  25000012 25000013
+2343 0006  25000014 25000015
+2353 0007  25000016 25000017
+0003 0008  25000018 25000019
+0013 0009  25000020 25000021
+0023 0010  25000022 -- aborted -- WAPPs confused! restarted WAPPs/adjusted power here. See notes
+0034 0011  25000023 25000024  quicklook ok; power and waterfalls ok
+0044 0012  25000025 25000026
+0054 0013  25000027 25000028
+0104 0014  25000029 25000030
+0114 0015  25000031 25000032
+0124 0016  25000033 25000034
+0134 0017  25000035 25000036
+0145 0018  25000037 25000038  beam 5B power levels dipped down to ~0.7 but came back up. Intermittent drops.
+0155 0019  25000039 25000040
+0205 0020  25000041 25000042
+0215 0021  25000043 25000044
+0225 0022  25000045 25000046
+0235 0023  25000047 25000048
+0245 0024  25000049 25000050  strong cont src
+0255 0025  25000051 --aborted
+
+LST@stop:0255       RA@stop: 0311
+
+
+NOTES:
+Changed Alt,Az in galfa_togs.cat, and contacted Snez to let her know. She then changed the ALFA
+rotation angle.
+
+"Not tracking" error during TOGS, along with "WARNING: observing when not on source." Continued.
+
+WAPPs became confused during FITS#10. Upon restarting them, had a stream of errors. Was able
+to restart observing, but the chat window & some others at AO had frozen. Operator suggested
+we proceed since a restart on his end would take quite some time. 
+
+- Using zenith strip observing mode
+- TOGS only run at the start 
+- FAA Radar ON
+- Tiedowns disabled occasionally
+- All beams ok
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 15.0   K3: 16.2   K4: 16.2   AT 17:50
+70K = K1: 87.3   K2: 95.1   K3: 105.6  K4: 113.9
+
+16K = K1: 14.6   K2: 15.0   K3: 16.2   K4: 16.2   AT 23:11
+70K = K1: 87.8   K2: 95.4   K3: 106.1  K4: 114.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+

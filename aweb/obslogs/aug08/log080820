@@ -1,0 +1,57 @@
+Log for 080820      Observer: Martha Haynes
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080820.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2201 0001 823300029  823300030 drift25p2   fixAZdr  220000+060500  19  600  99   loopend  -- Bm 6B dead. see notes
+2211 0002 823300031  823300032                                                               Verify FITS ok except 6.1
+2221 0003 823300033  823300034 
+2232 0004 823300035  823300036
+2242 0005 823300037  823300038
+2252 0006 823300039  823300040
+2302 0007 823300041  823300042
+2312 0008 823300043  823300044
+2322 0009 823300045  823300046
+2332 0010 823300047  823300048                                          everything stable; still error messages
+2342 0011 823300049  823300050
+2352 0012 823300051  823300052
+0002 0013 823300053  823300054
+0012 0014 823300055  823300056                                                       see 1348 MHz esp Bm 0&6
+0022 0015 823300057  823300058 
+0033 0016 823300059  823300060 
+0043 0017 823300061  823300062 
+0053 0018 823300063  823300064
+0103 0019 823300065  823300066
+0113 0020 823300067  823300068
+0123 0021 823300069  823300070
+0133 0022 823300071  823300072
+0143 0023 823300073  823300074
+0153 0024 823300075  823300076
+0204 0025 823300077  823300078
+0214 0026 823300079  823300080
+0224 0027 823300081  823300082
+0234 0028 823300083  823300084                                          everything stable; still error messages
+0244 0029 823300085  823300086
+0254 0030 823300087  823300088
+0304 0031 823300089  823300090
+0314 0032 823300091  -- aborted
+
+End LST: 0314  
+
+
+Notes
+0. TOGS run at start and end
+1. FAA radar is off :)
+2. Beam 6.1 is off :(
+3. At start, getting warning messages "WAPP=3-chip_count: WARNING counts don't match 
+   between chip 0 and chip 6". But the difference is small, so things should be
+   ok. Throughout the night, I check regularly that the fits files are ok using
+   IDL (see checkfitsnotes.txt for recipe). Also get occasional messages that
+   "there are WAPP channels with too little power" (this is Beam 6.1). Check the
+   power occasionally (alfamonwin)
+4. Also got at 0146LST = 0416AST, a message 
+   "WARNING interpolating agc-data over 2.00 second time gap (15398.0 - 15400.0)!"
+   This is likewise not a big deal (as long as the gap is small).
+4. On instrument control window, Beam 2.0 shows warning range for V6. (and Bm 6.1 is red)

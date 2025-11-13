@@ -1,0 +1,52 @@
+A3064 LBW   16.11.25   Observers: Cory Johnson, Jonathan Hoover, Joe Ribaudo, David Craig (at AO)
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161125.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161125.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161126.a3064.****.fits   (only if goes after midnight AST; probably no)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA    File#   ONScan     Status (Pls include freq & S/N ratio) 
+S232303.1+230322  232303.1 +230322  j     0 H v   # A335346     0000    9.7  0000    633000018  src board=3 @8400km/s, s/n=5, "yeah" 
+S232537.7+235253  232537.7 +235253  j     0 H v   # A334550     0012   12.1  0001          022  odd bump board=3, ~9900km/s (/pol view very different) "meh" 
+S001644.8+231818  001644.8 +231818  j     0 H v   # A105258     0027    5.6  0002          026  gps(off), bright source sn~6+ at 3000km/s, "yeah"
+S001712.5+231956  001712.5 +231956  j     0 H v   # A105260     0039    7.2  0003          030  odd bump board=4 (view different with /pol), "nope"  
+S002547.2+230533  002547.2 +230533  j     0 H v   # A104395     0051    7.7  0004          034  gps (off), src board=2 @5900km/s, s/n=3, "yeah"
+S003401.8+232438  003401.8 +232438  j     0 H v   # A104421     0104    8.6  0005          038  possible src board=3 @11800km/s, s/n=3, "yeah"  
+S004228.3+252147  004228.3 +252147  j     0 H v   # A104765v1   0116   10.5  0006          042  weird near symmertrical bump@1650km/s, asymmetrical with /pol, "meh"
+S005004.0+234814  005004.0 +234814  j     0 H v   # A104473     0128   10.4  0007          046  bump @7200km/s s/n=2+, "meh"
+S011222.6+234517  011222.6 +234517  j     0 H v   # A115391     0142    8.6  0008          050  possible src board=3, 9100km/s, s/n=2+, "meh" 
+S013105.4+235153  013105.4 +235153  j     0 H v   # A116230     0154    7.7  0009          054  gps (on), possible src board=2 3400km/s s/n=3, "yeah" 
+S014854.0+283017  014854.0 +283017  j     0 H v   # A115855v3   0207   11.0  0010          058  possible src at 3600km/s s/n=2, "meh"  
+S022428.9+235534  022428.9 +235534  j     0 H v   # A124733     0222    5.7  0011          062  gps (on), possible RFI near 1375MHz with and without /gps clean up
+S022746.8+220811  022746.8 +220811  j     0 H v   # A124057     0234    4.1  0012          066  gps (off), board=3 after /gps cleanup spike at 9150km/s s/n=3ish (RFI?)
+S022828.1+221355  022828.1 +221355  j     0 H v   # A124040     0246    5.7  0013          070  gps, board 2 bump at 1400MHz, /gps cleanup almost removes it, "meh" 
+S023536.9+275657  023536.9 +275657  j     0 H v   # A125199v2   0300   11.1  0014          074  **BAD FILE** wapp-3 failed to complete. timeout wait from correlator 
+S023536.9+275657  023536.9 +275657  j     0 H v   # A125199v2   0301   11.5  0015          075  boring, "nope"   
+S025917.5+244843  025917.5 +244843  j     0 H v   # A123254     0315    7.5  0016          079  weak gps (off), src near 4600km/s s/n=10 
+                                                                
+                                                
+Notes (be sure to write notes here so we can keep track of anything relevant)
+
+-Last run for the Fall 2016 APPSS season.
+
+-Tiedowns active the entire night, clear weather
+
+-"4 Levels of Certainty, A Spectral Analysis" by Dr. Craig: Nope, Meh, Yeah, WOW
+
+-Started roughly 4mins behind ideal schedule due to slew time from a remote observer's run. 
+
+-Radar consistent through the night's observations
+
+-So long and thanks for all the fish! -Cory

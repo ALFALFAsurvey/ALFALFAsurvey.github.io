@@ -1,0 +1,54 @@
+Log for 080826      Observer: Rebecca Koopmann
+
+System Configuration: a2010_az360.conf
+
+File:        /share/pserverf.sda3/wappdata/wapp.20080826.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2204 0000  823900001 823900002 drift41p1  fixAZdr  220430+095118  19   600   99 loopend 
+2215 0001  823900003 823900004    power levels OK except Beam 6B
+2225 0002  823900005 823900005   
+2235 0003  823900007 823900008      
+2245 0004  832900009 823900010
+2255 0005  832900011 823900012      
+2305 0006  832900013 823900014        
+2316 0007  832900015 823900016    power levels OK, cont src
+2326 0008  832900017 823900018    
+2336 0009  832900019 823900020
+2346 0010  832900021 823900022     cont src during cal?
+2356 0011  832900023 823900024  
+0006 0012  832900025 823900026    
+0016 0013  832900027 823900028
+0027 0014  832900029 832900030    power levels OK
+0037 0015  832900031 832900032
+0047 0016  832900033 832900034
+0057 0017  832900035 832900036
+0107 0018  832900037 832900038
+0117 0019  832900039 832900040
+0127 0020  832900041 832900042    power levels OK
+0137 0021  832900043  -- aborted
+
+END LST: 0137
+
+Notes: 
+** TOGS run at end.
+** Late start due to long unwrap. 
+** Beam 6B has low power
+** Saw NO WAPP chip count errors! Since Beam 6B dead, there were regular check_wapp_levels grey and
+orange messages: WAPP power levels are between 0.098 and 1.113 (still bad).
+** No FAA radar
+** WAPP extrapolating pnt-data warning message example in fits 0003, 0006, 0008, 0012, 0014: 
+2008-Aug-26 00:46:50 WARNING WAPPDATA-search_pnt: WARNING extrapolating pnt-data from 54704.199167 to
+54704.199178!
+2008-Aug-26 00:46:51 WARNING WAPPDATA-search_pnt: WARNING interpolating pnt-data over 2.00 second time gap
+(54704.199167 - 54704.199190)!
+** Several AGC-datablock warnings
+
+
+Noted added in messsage from Hector/Rey:
+On Monday, 25 Aug, 2008, from app. 19:00 AST till 26 Aug at 06:00AST,
+the 430 MHz TX was radiating.  The IPA was left on by mistake and the
+tube aging actually was a transmission.  This created a third harmonic at
+1290 MHz, which Chris clearly saw in his data, thinking it was the
+radar at Punta Borinquen.
+The projects affected are A2186, A2010 and A2130.

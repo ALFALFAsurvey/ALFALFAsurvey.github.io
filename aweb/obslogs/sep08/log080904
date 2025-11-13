@@ -1,0 +1,50 @@
+Log for 080904      Observer:  Martha Haynes and Shan Huang
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.01  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20080904.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20080905.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2208 0022  824800349 824800350 drift37p1  fixAZdr  220800+085254 360   600   99 loopend   - power levels ok (except 6.1)
+2218 0023  824800351 824800352 
+2228 0024  824800353 824900001
+2238 0000  824900002 824900003                                                              power ok
+2248 0001  824900004 824900005
+2258 0002  824900006 824900007
+2309 0003  824900008 824900009
+2319 0004  824900010 824900011
+2329 0005  824900012 824900013
+2339 0006  824900014 824900015
+2349 0007  824900016 824900017                                                              power ok
+2359 0008  824900018 824900019
+0009 0009  824900020 824900021
+0019 0010  824900022 824900023
+0029 0011  824900024 824900025
+0039 0012  824900026 824900027 
+0049 0013  824900028 824900029
+0100 0014  824900030 824900031
+0110 0015  824900032 824900033
+0120 0016  824900034 824900035
+0130 0017  824900036 824900037
+0140 0018  824900038 824900039                                                              power ok
+0150 0019  824900040  abort....
+
+END LST:  0150
+
+Notes: 
+-- Ran TOGS at start and end
+-- A long slew after last program.
+-- Beam 6.1 is dead
+-- FAA radar at 1350 is off :)
+-- Getting regular "check wapp levels: Warning there are WAPP channels with
+   too little power 0.092 < 0.75!" errors (orange) and lots of
+   "check_wapp_levels: WAPP power levels are between 0.092 and 1.116 (still bad)"
+   (grey). We think these are not serious.
+-- Also get occasional (orange) messages; also warnings only.
+    WARNING received duplicate AGC-datablock at 00:21:17.299 (seconds: 1277.299)!
+    WARNING WAPPDATA-queue_agcdata {WARNING received duplicate AGC-datablock at 00:21:17.299 (seconds: 1277.299)!}
+    WARNING WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock at 00:51:15.299 (seconds: 3075.299)!
+-- On the power monitor, besides 6.1, there are red indictors for the temperatures of the 70K stages
+   K1-4. (2 is only orange; other 3 are red).
+

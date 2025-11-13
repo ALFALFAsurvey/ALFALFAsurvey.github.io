@@ -1,0 +1,59 @@
+A3064 LBW   16.11.11 Observers: Elluz Pacheco and Mayra Lebron
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161111.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161111.a3064.0002.fits  
+                     /share/wappdata.now/wapp.20161112.a3064.0000.fits   (after midnight AST)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S220440.1+245549  220440.1 +245549  j     0 H v   # A323399   21:11  14.02  0002   631600204   source at 6100km/s S/N~3.5 RFI brd3 1381Mhz 
+S222006.7+231242  222006.7 +231242  j     0 H v   # A321946   21:24  14.08  0003   631600208   no detection  
+S224642.6+230300  224642.6 +230300  j     0 H v   # A322995   21:37  16.95  0004   631600212   no detection
+S230718.9+231154  230718.9 +231154  j     0 H v   # A332976   21:51  18.60  0005   631600216   very bright RFI GPS but possible line at 1391MHz
+S230856.9+233932  230856.9 +233932  j     0 H v   # A334290   22:03  16.41  0006   631600220   no detection very bright RFI GPS 1381MHz
+S232537.7+235253  232537.7 +235253  j     0 H v   # A334550   22:16  17.33  0007   631600224   source at 9800km/s S/N~2  
+S232816.7+231106  232816.7 +231106  j     0 H v   # A336075   22:28  15.04  0008   631600228   no detection RFI VERY VERY BAD GPS
+S232841.0+235903  232841.0 +235903  j     0 H v   # A336080   22:40  12.74  0009   631600232   no detection RFI VERY VERY BAD GPS and 1394MHz GPS
+S233429.9+233314  233429.9 +233314  j     0 H v   # A336648   22:52  11.27  0010   631600236   ERROR DATA in pnt-table is too old! can't interpolate position/weak source at 1374.5MHz S/N~2
+S235947.8+255131  235947.8 +255131  j     0 H v   # A335570   23:06  14.67  0011   631600240   no detection RFI GPS    
+S001235.3+234433  001235.3 +234433  j     0 H v   # A103315   23:18  13.86  0012   631600244   galaxy at 1366MHz(11800km/s) S/N~6 RFI brd3 1381MHz (there is a galaxy at ~1 arcmin)
+S002547.2+230533  002547.2 +230533  j     0 H v   # A104395   23:31  13.83  0013   631600248   detection at 1393MHz (5900km/s) S/N~2.5 
+S003401.8+232438  003401.8 +232438  j     0 H v   # A104421   23:43  13.10  0014   631600252   possible detection at 1367MHz (11700km/s) S/N~2 RFI 1388MHz 
+S003858.8+232342  003858.8 +232342  j     0 H v   # A104969   23:55  11.61  0015   631600256   no detection noise baseline 
+S005004.0+234814  005004.0 +234814  j     0 H v   # A104473   00:07  11.51  0016   631600260   possible detection at 1387MHz (7200km/s) S/N~2 RFI GPS 1381MHz
+S011222.6+234517  011222.6 +234517  j     0 H v   # A115391   00:20  13.44  0017   631600264   possible detection at 1378MHz (9100km/s) S/N~2 RFI 1388MHz
+S013105.4+235153  013105.4 +235153  j     0 H v   # A116230   00:33  14.68  0018   631600268   possible detection ai 1404.5MHz (3400km/s) S/N~2  
+S014408.5+231516  014408.5 +231516  j     0 H v   # A115508   00:45  14.67  0019   631600272   possible detection at 1374MHz (10000km/s) S/N~3 exit a small narrow peak at 1408MHz 
+S014552.6+233720  014552.6 +233720  j     0 H v   # A116244   00:58  12.52  0020   631600276   no detection GPS!!!
+S020731.0+235013  020731.0 +235013  j     0 H v   # A125225   01:11  14.43  0021   631600280   no detection RFI GPS!!!
+S022746.8+220811  022746.8 +220811  j     0 H v   # A124057   01:24  15.60  0022   631600284   no detection RFI GPS!!!!!!!
+S022428.9+235534  022428.9 +235534  j     0 H v   # A124733   01:36  12.68  0023   631600288   no detection RFI spike at 1375MHz
+S023052.9+252427  023052.9 +252427  j     0 H v   # A120300   01:48  12.24  0024   631600292   detection at 1396MHz (5200km/s) S/N~2 NOTE: we repeated it later
+S023541.0+265213  023541.0 +265213  j     0 H v   # A125202   02:01  11.87  0025   631600296   possible detection galaxy at 1383MHz (8000km/s) S/N~2 NOTE: we repeated it later
+S023613.4+251028  023613.4 +251028  j     0 H v   # A125155   02:13  08.77  0026   631600300   no detection
+S023823.8+271731  023823.8 +271731  j     0 H v   # A125542   02:26  09.50  0027   631600304   no detection 
+S025309.3+291538  025309.3 +291538  j     0 H v   # A125533   02:39  11.51  0028   631600308   no detection GPS!! 
+S030225.0+281035  030225.0 +281035  j     0 H v   # A132287   02:51  10.28  0029   631600312   no detection
+
+S023052.9+252427  023052.9 +252427  j     0 H v   # A120300   03:05  10.63  0000   631700003   detection at 1396MHz (5200km/s) S/N~4 source repeated 
+S023541.0+265213  023541.0 +265213  j     0 H v   # A125202   03:18  12.87  0001   631700007   plot out off scale
+                                                      
+Notes (be sure to write notes here so we can keep track of anything relevant)
+We started early, one source was observed near AZ 18. We repeated two sources because we have time.
+FAA radar is on. Tiedowns were off line. 
+
+
+                                                                 
+

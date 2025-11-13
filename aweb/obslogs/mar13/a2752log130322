@@ -1,0 +1,74 @@
+A2752 LBW   13.03.22      Observers: Parker Troicsht, Jonathon, Joseph, Jose, Elijah, Jesse, Andres
+
+CIMA version:          The Stable version (Default) (Ver 3.3.05 2013-02-22 15:46)
+Configuration file:    a2752_mar13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2752_130322.cmd
+Mode:                Doppler tracking
+                    ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.22mar13.a2752.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H075012.4+105930  075012.8 +105856  j   700 H v   # A174642         0747       34     308100607  non-detection
+H075204.3+132500  075204.4 +132443  j   800 H v   # A174556         0755  5.0  35     308100611  non-detection
+A084200.1+103052  084200.1 +103052  j  2000 H v   # A730645         0806  11.8 36     308100615  Detection at 1411 MHz (Velocity 2000 km/s)  
+A084105.9+094730  084105.9 +094730  j  2000 H v   # A730637         0814  10.9 37     308100619  Detection at 1411 MHz (Velocity 2100 km/s)  
+A084639.9+131249  084639.9 +131249  j  1900 H v   # A004590  5 mins 0823  7.8  38     308100623  non-detection, high baseline at 30 mJy  
+H084954.5+091012  084957.4 +091043  j  2000 H v   # A188904         0836  9.9  39     308100627  Possible detection at 1411 MHz (Velocity 2000 km/s)
+A091250.9+062833  091250.9 +062833  j  1400 H v   # A192677         0845  13.8 40     308100631  Possible detection at 1414 MHz (Velocity 1300km/s)
+A091457.3+060019  091457.3 +060019  j  1400 H v   # A192689         0853  13.5 41     308100635  non-detection
+H100836.8+121956  100828.0 +121823  j   300 H v   # A005470  5 mins 0903  17.0 42     308100639  heading to high za, so re-execute,wavy baseline 
+H100836.8+121956  100828.0 +121823  j   300 H v   # A005470  5 mins 0917  14.3 43     308100643  non-detection looks better
+H103319.2+181315  103316.2 +181310  j  1300 H v   # A739528         0930  15.1 44     308100647  Detection at 1414 MHz (Velocity 1300 km/s) 
+H105639.4+172207  105638.7 +172301  j   900 H v   # A740342         0940  18.5 45     308100651  high za, re-executing,wavy baseline
+H105639.4+172207  105638.7 +172301  j   900 H v   # A740342         0948  16.4 46     308100655  Narrow peak at 1416 MHz (Velocity 900 km/s), with OC 
+H105233.2+170815  105234.9 +170841  j  1100 H v   # A719161         0957  13.4 47     308100659  Detection at 1415 MHz (Velocity 1100 km/s)
+H104430.8+131208  104432.1 +131146  j  1100 H v   # A205269         1006  10.8 48     308100663  non-detection  
+H104507.3+152750  104509.7 +152700  j  1200 H v   # A205270         1014  8.0  49     308100667  Detection at 1414.5 MHz (Velocity 1250 km/s), low baseline -200 mJy
+H105144.7+070858  105139.8 +070843  j  1600 H v   # A208322         1025  13.1 50     308100671  non-detection  
+A105555.8+122023  105555.8 +122023  j   800 H v   # A202034         1034  8.1  51     308100675  Possible Detection 1416.5 MHz (Velocity 850 km/s)
+H111244.5+080247  111242.4 +080304  j  1400 H v   # A219256         1044  12.6 52     308100679	 non-detection 
+H112225.1+114800  112223.4 +114738  j  1600 H v   # A213511	    1053  9.8  53     308100683  Detection at 1413 MHz (Velocity 1600 km/s)
+H112331.1+113442  112333.8 +113437  j  1700 H v   # A215244         1101  8.8  54     308100687  Detection at 1413 MHz (Velocity 1600 km/s)
+H112417.1+133558  112415.2 +133544  j  1700 H v   # A215375	    1110  6.0  55     308100691  non-detection
+H121025.7+101141  121023.0 +101118  j   500 H v   # A220167	    1121  14.6 56     308100695  Detection at 1418 MHz (Velocity 520  km/s)
+H121241.9+124503  121242.7 +124546  j  1700 H v   # A224507         1130  11.9  1     308100699  Detection at 1412.5 MHz (Velocity 1700 km/s) 
+H121623.1+071239  121625.0 +071242  j  1800 H v   # A227914	    1139  14.5  2     308200003  Detection at 1412 MHz (Velocity 1800 km/s)   
+H121807.4+055537  121807.7 +055547  j  1800 H v   # A223390         1148  14.6  3     308200007  Weak Detection with likely OC (Velocity 1800 km/s)
+H122010.1+073305  122010.0 +073354  j  1700 H v   # A228021         1155  12.4  4     308200011  Detection at 1412.5 MHz (Velocity 1700 km/s)  
+H122041.5+055430  122038.6 +055432  j  1000 H v   # A224272         1204  13.2  5     308200015  Detection at 1416 MHz (Velocity 1000 km/s) 
+H122049.7+055900  122048.9 +055854  j  1800 H v   # A224273         1212  12.6  6     308200019  Detection at 1412 MHz (Velocity 1800 km/s), wavy baseline 
+H122202.0+050643  122201.2 +050600  j  1900 H v   # A007422         1220  13.3  7     308200023  Non-detection
+HVC1221.9+132810  122154.7 +132810  j  -100 H v   # A226067         1231   5.3  8     308200027  Detection at 1421 MHz (Velocity -100 km/s) 
+H122308.7+074044  122316.1 +074115  j  -300 H v   # A220483         1241  11.5  9     308200031  Non-detection
+H123813.7+070026  123815.5 +065940  j  -100 H v   # A220860         1250  11.7 10     308200035  Detection at 1421 MHz (velocity -100 km/s)
+H124946.9+052951  124942.1 +052922  j   700 H v   # A225197         1258  13.0 11     308200039  Detection at 1417 MHz (velocity 700 km/s)  
+H130155.2+022752  130153.3 +022738  j   900 H v   # A232135         1307  16.0 12     308200043  Detection at 1416 Mhz (velocity 900 km/s)  
+H124316.2+085700  124320.7 +085705  j  1500 H v   # A224035         1316  12.3 13     308200047  Detection at 1414 MHz (velocity 1500 km/s)  
+H132723.4+091556  132721.1 +091607  j  1300 H v   # A238675         1326  9.1  14     308200051  No detection  
+H141048.1+091425  141047.2 +091409  j  1400 H v   # A249155         1336  12.6 15     308200055  No detection  
+H141510.8+135950  141513.2 +135951  j   300 H v   # A249027         1345   8.5 16     308200059  No Detection
+H141522.5+091518  141519.6 +091422  j  1700 H v   # A249162         1354  10.6 17     308200063  No Detection  
+HVC1419.8+071115  141948.6 +071115  j   200 H v   # A249323         1403  12.0 18     308200067  Detection at 1419 MHz (Velocity 250 km/s)  
+H141904.8+063906  141903.4 +063859  j  1200 H v   # A249315         1411  11.9 19     308200071  non-detection, wavy baseline
+H141855.0+091652  141853.5 +091729  j  1200 H v   # A244129         1420  9.1  20     308200075  Detection at 1415 MHz (Velocity 1200 km/s)
+HVC1432.0+063520  143158.8 +063520  j   100 H v   # A249326         1429  11.8 21     308200079  non-detection
+H143602.6+063902  143601.0 +063923  j  1200 H v   # A249316         1436  11.7 22     308200083  non-detection
+H145315.3+035530  145315.1 +035533  j  1500 H v   # A249459         1445  14.6 23     308200087  Detection at 1413.5 MHz (Velocity 1500 km/s)
+HVC1504.7+061259  150441.3 +061259  j   200 H v   # A258459         1454  12.5 24     308200091  Detection at 1419 MHz (Velocity 150 km/s)
+HVC1510.0+111127  151000.6 +111127  j   200 H v   # A258242 UCHVC   1504  7.3  25     308200095  Detection at 1419.5 MHz (Velocity 200 km/s)
+H153215.0+064250  153217.4 +064327  j  1900 H v   # A258447         1514  12.5 26     308200099  non-detection
+H154942.1+092333  154943.0 +092301  j  1300 H v   # A258217         1522  11.1 27     308200103  Detection at 1414.5 MHz (Velocity 1300 km/s)  
+H160442.9+090430  160439.9 +090352  j  1300 H v   # A268176 #       1531  12.5 28     308200107  Possible detection at 1414 MHz (Velocity 1300 km/s), wavy baseline
+H160727.0+100835  160727.7 +100827  j  4900 H v   # A262401 calib   1539  10.8 29     308200111  Detection at 1397.5 (Velocity 4900 km/s)  
+H163230.6+111108  163229.9 +111115  j  5300 H v   # A268172 calib   1548  13.0 30     308200115  aborted to redo previous w/ wavy baseline 
+H160442.9+090430  160439.9 +090352  j  1300 H v   # A268176 #       1552  9.8  31     308200116  Detection at 1414 MHz (Velocity 1300 km/s)
+H163230.6+111108  163229.9 +111115  j  5300 H v   # A268172 calib   1601  10.5 32     308200120  aborted run, got out 2 minutes early, couldn't quite finish
+
+Stop LST 1604

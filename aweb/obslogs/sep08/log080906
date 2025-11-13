@@ -1,0 +1,46 @@
+Log for 080906      Observer: Shan Huang
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.01  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20080906.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20080907.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2216 0020  825000202 825000203 drift39p1  fixAZdr  221600+092206 360   600   99 loopend   - power levels ok (except 6.1)
+2226 0021  825000204 825000205                                                              continuum source, GPS burst, fits files ok
+2236 0022  825000206 825100001
+2246 0000  825100002 825100003
+2256 0001  825100004 825100005
+2307 0002  825100006 825100007                                                              continuum source
+2317 0003  825100008 825100009                                                              power ok, fits files ok
+2327 0004  825100010 825100011 
+2337 0005  825100012 825100013 
+2347 0006  825100014 825100015
+2357 0007  825100016 825100017                                                              power ok, fits files ok
+0007 0008  825100018 825100019
+0017 0009  825100020 825100021
+0027 0010  825100022 825100023 
+0037 0011  825100024 825100025                                                              power ok, fits files ok
+0048 0012  825100026 825100027               
+0058 0013  825100028 825100029
+0108 0014  825100030 825100031
+0118 0015  825100032 825100033                                                              power ok, fits files ok
+0128 0016  825100034 825100035 
+0138 0017  825100036 abort ...
+
+END LST:  0138
+
+Notes: 
+-- Ran TOGS at start and end
+-- A long slew after last program.
+-- Beam 6.1 is dead
+-- Getting lots of "WARNING WAPP=4-chip_count: WARNING counts don't match between 
+   chip 0 and chip 14 (99999966 !=99999964)!" errors (orange, numbers are close). 
+-- Getting regular "check wapp levels: Warning there are WAPP channels with
+   too little power 0.092 < 0.75!" errors (orange) and lots of
+   "check_wapp_levels: WAPP power levels are between 0.092 and 1.116 (still bad)"
+   (grey).
+-- Regular orange warning "WARNING extrapolating agc-data from 3781.0 to 3782.0!"
+   and "WARNING interpolating agc-data over 2.00 second time gap (3781.0 - 3783.0)!"
+-- Occational orange warning "WARNING received duplicate AGC-datablock at 01:33:00.300
+   (seconds: 5580.300)!"

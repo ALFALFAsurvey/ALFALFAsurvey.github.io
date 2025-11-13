@@ -1,0 +1,43 @@
+Log for 05/07/15
+Observers: Prasanth Nair, Brian Kent, Sabina Sabatini
+
+System Configuration
+
+FixedAz Drift Map CIMA expanded version
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20050715.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.07.06
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+1316 0000 Abort
+1316 0001 519665318 519665920 drift53p1 FixedAz  131631+124630 19 600 50
+1326 0002 519665923 519666525 
+1336 0003 519666528 519667130
+1346 0004 519667133 519667735
+1356 0005 519667738 519668340
+1407 0006 519668343 519668945
+1417 0007 519668948 519669550
+1427 0008 519669553 519670155
+1437 0009 519670158 519670760
+1447 0010 519670763 519671365
+1457 0011 519671368 519671970
+1507 0012 519671973 519672575
+1518 0013 519672578 519673180
+1528 0014 519673183 519673785
+1538 0015 519673788 519674390
+1548 0016 519674393 519674995
+1558 0017 519674998 519675600
+1608 0018 519675603 519676205
+1618 0019 519676208 519676810
+1628 0020 519676813 519677415
+1639 0021 519677418 519670820
+1649 0022 Abort 
+
+END LST: 1649
+
+- beam1 polA is highly attenuated.
+
+- dataview appeared to go blank for a few minutes.  Checked file and consulted with E. Momjian - informed bk that this happens.  File and data are OK.

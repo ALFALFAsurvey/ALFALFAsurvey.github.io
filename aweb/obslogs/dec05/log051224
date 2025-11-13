@@ -1,0 +1,51 @@
+Log for 12/24/05
+Observer: MH and RG
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20051224.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.24
+
+LST  fits Scan      calscan    Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+0652 0003 535804081 535804683  drift52p2  FixedAz  065400+123912 19 600  50
+0702 0004 535804686 535805287
+0712 0005 535805291 535805892
+0722 0006 535805896 535806497
+0732 0007 535806501 535807102
+0743 0008 535807106 535807707
+0753 0009 535807711 535808312
+0803 0010 535808316 535808917
+0813 0011 535808921 535809522
+0823 0012 535809526 535810127
+0833 0013 535810131 535810732
+0843 0014 535810736 535811337
+0853 0015 535811341 535811942
+0903 0016 535811946 535812547
+0913 0017 535812551 535813152
+0924 0018 535813156 535813757
+0934 0019 535813761 535814362
+0944 0020 535814366 535814967
+0954 0021 535814971 535815572
+1004 0022 535815576 535816177
+1014 0023 535816181 535816782
+1024 0024 535816786 535817388
+1034 0025 535817391 535817992
+1045 0026 535817996 535818598
+1055 0027 535818601 535819202
+1105 0028 535819206 535819807
+
+END LST: 1115
+Notes
+-- TOGS ran at start of night ok. 
+-- At end of TOGS, network hung for ~30-40 secs (LST not updating; no response);
+   then started up again.
+-- All smooth through the night.
+-- TOGS at end of night OK.
+-- Monitoring power levels with alfaobswin throughout
+-- Reindeer navigational system detected in all beams; appears to
+   strengthen through the night. Feliz navidad! :) 
+

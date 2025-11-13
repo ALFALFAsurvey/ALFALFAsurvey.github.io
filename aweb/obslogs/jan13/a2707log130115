@@ -1,0 +1,71 @@
+A2707 LBW   13.01.15       Observers: Greg and the Undergraduate ALFALFA Team
+
+CIMA version:          The Stable version (Default) (Ver 3.3.04 2012-11-29  16:58)
+Configuration file:    a2707_jan13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2707_130115.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.15jan13.a2707.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H073941.6+020037  073941.5 +020038  j   800 H v   #                 0727 16.63    1   301500001  No detection
+H075219.3+013435  075219.5 +013446  j  3500 H v   # A174779         0735 17.30    2   301500005  No detection
+H075522.6+025327  075522.8 +025331  j   500 H v   #                 0744 15.70    3   301500009  No detection
+H081701.2+170554  081701.6 +170610  j   400 H v   #                 0756  5.27    4   301500014  No detection
+H081708.9+165910  081709.4 +165927  j   400 H v   #                 0804  3.45    5   301500017  No detection 
+H085256.2+160619  085256.9 +160612  j  -500 H v   #                 0815  3.80    6   301500021  No detection 
+H090020.9+171100  090023.3 +171043  j 16300 H v   # A738959         0822  9.15    7   301500025  Detection at 1347 MHz
+                     - FAA radar apparent, unknown emission feature observed at 1339 MHz
+S085656.4+150546  085656.4 +150546  j   500 H v   # HVS             0832  6.90    8   301500029  No Detection
+H090852.2+143530  090853.7 +143501  j   300 H v   # A191791  t=4min 0840  7.95    9   301500033  Detection at 1419 MHz
+A091458.6+145149  091458.6 +145149  j  1000 H v   # A198672         0849  6.87   10   301500037  No Detection 
+H091506.5+140339  091506.9 +140329  j  3700 H v   # A193952         0858  5.96   11   301500041  No Detection 
+H095102.7+165341  095103.4 +165411  j  3800 H v   # A198598         0908 10.41   12   301500045  Detection at 1403 MHz
+H101632.0+123940  101632.3 +123931  j -1600 H v   #                 0918 15.14   13   301500049  No Detection
+H102359.0+165427  102359.4 +165443  j   700 H v   #                 0927 13.77   14   301500053  No Detection
+H103508.1+120841  103508.4 +120833  j   200 H v   #                 0936 15.67   15   301500057  No Detection
+H103612.9+125535  103613.2 +125526  j   400 H v   #                 0944 13.80   16   301500061  No detection
+H103633.7+131542  103634.0 +131533  j   900 H v   #                 0952 11.90   17   301500065  No Detection  
+H105121.8+164739  105122.2 +164755  j  1000 H v   #                 1001 12.22   18   301500069  No Detection
+H105439.2+173707  105439.7 +173722  j  1100 H v   # A208602         1009 10.96   19   301500073  Detection at 1415
+H105858.8+162023  105859.7 +162038  j  3000 H v   # A208608         1017 10.26   20   301500077  No Detection
+H111206.3+175753  111206.8 +175813  j  1000 H v   #                 1026 11.12   21   301500081  No Detection
+H111206.1+164511  111215.7 +164512  j  1200 H v   # A212823         1034  9.38   22   301500085  No Detection
+H110800.0+160930  110800.9 +160914  j   400 H v   #                 1042  6.59   23   301500089  No Detection
+H110855.9+160920  110856.8 +160904  j  -700 H v   #                 1050  4.98   24   301500093  No Detection
+H115110.6+184530  115112.2 +184532  j   200 H v   # A219642         1102 11.84   25   301500097  No Detection
+H114352.1+180312  114352.6 +180334  j  -700 H v   #                 1110  7.95   26   301500101  No Detection
+H114239.8+172212  114240.3 +172227  j  3400 H v   # A219555         1119  5.83   27   301500105  Detection at 1405 MHz
+H120548.1+165100  120548.2 +165106  j 10500 H v   # A222391 OHM     1128  9.14   28   301500109  Detection at 1371 MHz
+                    - Very wide, two fully separate peaks with additional flat emission
+H121932.3+180517  121932.8 +180540  j   200 H v   #                 1137 10.20   29   301500113  No Detection
+H123049.4+163300  123049.8 +163313  j   800 H v   #                 1145 11.04   30   301500117  No Detection
+H124332.3+160903  124333.0 +160859  j   800 H v   #                 1154 12.09   31   301500121  No Detection
+H125137.5+170223  125138.0 +170239  j   900 H v   #                 1202 11.94   32   301500125  No Detection
+H131623.7+161640  131624.2 +161643  j   400 H v   # A239077         1212 15.63   33   301500129  No Detection
+H131633.0+163950  131633.5 +164005  j   300 H v   #                 1220 13.65   34   301500133  No Detection
+H125130.4+033110  125128.9 +033124  j   700 H v   # A229211         1230 15.76   35   301500137  Detection at 1417 MHz
+H131643.3+021659  131643.4 +021702  j  1000 H v   # A238987         1240 18.52   36   301500141  No Detection
+                    - Observed ahead of schedule at high ZA, but baseline and rms ok  
+H133551.8+104342  133552.0 +104334  j -1200 H v   #                 1249 13.67   37   301500145  No Detection
+H135351.1+135716  135351.5 +135709  j   800 H v   #                 1258 14.20   38   301500149  No Detection
+H135403.5+103845  135403.7 +103837  j  1000 H v   #                 1309 13.95   39   301500153  No Detection
+H140247.5+145045  140248.1 +145033  j   600 H v   #                 1315 11.96   40   301500157  No Detection
+H142852.9+164502  142853.4 +164518  j  2600 H v   # A249534         1324 15.49   41   301500161  Detection at 1408 MHz
+H143855.4+174809  143856.1 +174729  j  1300 H v   # A249529         1333 15.78   42   301500165  No Detection
+H145256.1+171639  145256.6 +171655  j   700 H v   #                 1341 17.09   43   301500169  No Detection
+H150306.6+161436  150307.1 +161437  j   800 H v   #    if time      1350 17.67   44   301500173  No Detection
+
+Stop LST: 1358
+
+Please record any notes of importance here  (Remember: you were there; we weren't.)
+- Telescope took a long time to slew at startup.
+  We ended up starting at the nominal LST for the second source, so we skipped to it.
+- We finished 15 minutes early. Why weren't there more sources?

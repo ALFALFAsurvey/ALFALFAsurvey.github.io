@@ -1,0 +1,41 @@
+Log for 12/14/05
+Observer: Bilal, Becky, Martha, Prasanth
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20051214.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.14
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+0711 0003 534807547 WAPP ERROR: See Notes
+
+0722 0005 534808235 534808837 drift42p2  FixedAz 072200+101312 19 600  50
+0732 0006 534808840 534809442
+0742 0007 534809445 534810047
+0752 0008 534810050 534810652
+0802 0009 534810655 534811257
+0812 0010 534811260 534811862
+0823 0011 534811865 534812467
+0833 0012 534812470 534813072
+0843 0013 534813075 534813677
+0853 0014 534813680 534814282
+0903 0015 534814285 534814887
+0913 0016 534814890 534815492
+0923 0017 534815495 534816097
+0933 0018 534816100 534816702
+0944 0019 534816705 534817307
+0954 0020 534817310 534817912
+
+End LST: 1004 
+
+Notes:
+- Long slew to unwrap.
+- TOGS ran successfully. We restarted WAPP before running command line
+  observing.
+- WAPP Error spectral line, read data error. All 4 WAPPs. At end of first
+  drift scan.
+- TOGS at end ran successfully.

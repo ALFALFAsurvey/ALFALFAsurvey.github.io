@@ -1,0 +1,107 @@
+Log for 03/23/10          Observer: Manolis Papastergis
+
+System Configuration:                   a2010_az85_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100323.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100324.a2010.****.fits
+          fits files start with 0035 in this set of drifts
+
+Zenith strip observing setup
+Az=77.44    ALFAang=-54.1  ZA=7.2
+RA@start=0653   RA@end=1618
+RA = LST - 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode
+0723 0035  8200116  8200117       drift69p1 fixAZdr   065300+164006 -54.1 600   99   loopend
+0733 0036  8200118  8200119       everything ok! quicklooked fits 0035:ok
+0743 0037  8200120  8200121
+0753 0038  8200122  8200123
+0803 0039  8200124  8200125
+0813 0040  8200126  8200127
+0823 0041  8200128  8200129
+0833 0042  8200130  8200131
+0843 0043  8200132  8200133
+0853 0044  8200134  8200135       everything ok; power ok in all beams, pointing ok
+0903 0045  8200136  8200137
+0913 0046  8200138  8200139
+0924 0047  8200140  8200141
+0934 0048  8200142  8200143       beam 4B power slightly below 0.8 (orange)
+0944 0049  8200144  8200145
+0954 0050  8200146  8200147       beam 4B back to normal (blue)
+1004 0051  8200148  8200149       GPS interference
+1014 0052  8200150  8200151
+1024 0053  8200152  8200153
+1034 0054  8200154  8200155
+1044 0055  8200156  8200157
+1054 0056  8200158  8200159
+1104 0057  8200160  8200161       everything ok
+1115 0058  8200162  8200163
+1125 0059  8200164  8200165
+1135 0060  8200166  8300001
+1145 0000  8300002  8300003
+1155 0001  8300004  8300005
+1205 0002  8300006  8300007       everything ok; quicklooked fits 0000:ok
+1215 0003  8300008  8300009
+1225 0004  8300010  8300011
+1235 0005  8300012  8300013
+1246 0006  8300014  8300015
+1256 0007  8300016  8300017 
+1306 0008  8300018  8300019
+1316 0009  8300020  8300021
+1326 0010  8300022  8300023
+1336 0011  8300024  8300025
+1346 0012  8300026  8300027
+1356 0013  8300028  8300029
+1406 0014  8300030  8300031
+1417 0015  8300032  8300033
+1427 0016  8300034  8300035
+1437 0017  8300036  8300037
+1447 0018  8300038  8300039
+1457 0019  8300040  8300041
+1507 0020  8300042  8300043     cima message: received duplicate agc_datablock at 03:29:16
+1517 0021  8300044  8300045
+1527 0022  8300046  8300047     cima warning: extrapolating pnt data...
+1538 0023  8300048  8300049
+1548 0024  8300050  8300051
+1558 0025  8300052  8300053
+1608 0026  8300054  8300055     cima message: received duplicate agc_datablock at 04:29:12
+1618 0027  8300056  8300057
+1628 0028  8300058  8300059
+1638 0029  8300060  8300061
+1648 0030  8300062  aborted
+
+LST stop: 1648     RA stop: 1618
+
+NOTES:
+
+FAA radar ON.
+
+Power level for beam 4B low (orange) for a couple of drifts, occasional cima warnings regarding wapps.
+
+Some GPS interference.
+
+TOGS at END of night only.
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 13.6   K2: 13.7   K3: 15.1   K4: 15,2   AT 16:18
+70K = K1: 80.0   K2: 88.0   K3: 97.6   K4: 105.1
+
+16K = K1: 14.1   K2: 14.8   K3: 15.5   K4: 15.5   AT 23:14
+70K = K1: 81.7   K2: 89.3   K3: 99.1   K4: 106.9
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+

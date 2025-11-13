@@ -1,0 +1,57 @@
+A3064 LBW   16.11.12 Observers: Elluz Pacheco, Mayra Lebron
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161112.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161112.a3064.0002.fits  
+                     /share/wappdata.now/wapp.20161113.a3064.****.fits   (after midnight AST)NO NEEDED.
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S215502.9+303509  215502.9 +303509  j     0 H v   # A310220    21:17  15.08 0002    631700165  detection at 1388MHz (7000km/s) S/N~3.5, and at 1381MHz (8500 km/s) S/N~2. The later source is at the same frequency onf the GPS. But two galaxies are clear on the SDSS image. 
+S215504.7+303502  215504.7 +303502  j     0 H v   # A310219    21:29  13.70 0003    631700169  detection at 1388MHz (7000km/s) S/N~3.5 (RFI spike at 1388MHz), and at 1381MHz (8500 km/s) S/N~2. The later source is at the same frequency onf the GPS. But two galaxies are clear on the SDSS image. 
+We were ahead of time and did repeted the first two sources.
+S215502.9+303509  215502.9 +303509  j     0 H v   # A310220    21:41  12.75 0004    631700173  detection at 1388MHz (7000km/s) S/N~3, at 1381MHz (8500 km/s) S/N~2.
+S215504.7+303502  215504.7 +303502  j     0 H v   # A310219    21:53  12.34 0005    631700177  detection at 1388MHz (7000km/s) S/N~3 (RFI spike at 1388MHz), at 1381MHz (8500 km/s) S/N~2.
+S223003.4+245040  223003.4 +245040  j     0 H v   # A323034    22:07  08.54 0006    631700181  detection at 1366MHz (11900km/s) S/N~2.   
+S223630.2+245223  223630.2 +245223  j     0 H v   # A321532    22:19  07.82 0007    631700185  No detection. 
+S231323.5+244303  231323.5 +244303  j     0 H v   # A335313    22:32  11.55 0008    631700189  No detection. RFI spike at 1389MHz.  
+S232026.8+242209  232026.8 +242209  j     0 H v   # A335334    22:45  10.39 0009    631700193  Horrible GPS. No detection.  
+S232216.5+241519  232216.5 +241519  j     0 H v   # A336634    22:57  08.48 0010    631700197  Possible detection at 1365MHz (board3) but at board4 does not look clear. Probably nothing.   
+S232303.1+230322  232303.1 +230322  j     0 H v   # A335346    23:09  05.82 0011    631700201  Detection at 1381MHz (8500km/s) S/N~2.5 
+S232332.0+244516  232332.0 +244516  j     0 H v   # A335347    23:22  06.52 0012    631700205  No detection. RFI GPS 1381MHz.
+S232543.8+240820  232543.8 +240820  j     0 H v   # A335356    23:34  06.18 0013    631700209  No detection. RFI GPS 1381MHz.  
+S233427.1+235045  233427.1 +235045  j     0 H v   # A334657    23:46  06.20 0014    631700213  Detection at 1375.5MHz (9800km/s) S/N~2  
+S000730.5+244839  000730.5 +244839  j     0 H v   # A104735    00:00  06.80 0015    631700217  Detection at 1390MHz (6500 km/s) S/N~3.5 (line looks narrow ~100km/s)  
+S001103.3+242314  001103.3 +242314  j     0 H v   # A104849    00:12  06.14 0016    631700221  No detection. 
+S001644.8+231818  001644.8 +231818  j     0 H v   # A105258    00:25  05.34 0017    631700225  Detection at 1406MHz (3000 km/s) S/N~4 (line looks narrow ~100km/s) line in bd1 and bd2. RFI spike at 1389MHz.
+S001712.5+231956  001712.5 +231956  j     0 H v   # A105260    00:37  06.78 0018    631700229  No detection. RFI GPS 1381MHz.
+S002031.4+235624  002031.4 +235624  j     0 H v   # A104885    00:49  08.68 0019    631700233  No detection. RFI GPS 1381MHz. 
+S003735.9+231500  003735.9 +231500  j     0 H v   # A104963    01:02  07.53 0020    631700237  No detection. 
+S005720.5+243909  005720.5 +243909  j     0 H v   # A105214    01:15  07.51 0021    631700241  No detection. RFI spike at 1388MHz.
+S010315.6+232606  010315.6 +232606  j     0 H v   # A116204    01:27  07.50 0022    631700245  No detection.
+S013428.6+252517  013428.6 +252517  j     0 H v   # A113862    01:41  07.28 0023    631700249  No detection. 
+S013618.3+231014  013618.3 +231014  j     0 H v   # A115479    01:53  06.22 0024    631700253  No detection but a peak a peak emission at 1374.MHz. Most possible RFI.  
+S015043.8+232253  015043.8 +232253  j     0 H v   # A115872    02:06  06.12 0025    631700257  galaxy detected at 1394MHz (5700 km/s). S/N~6. SDSS shows two galaxies at ~1'N and ~1.3'W of the target source.  
+S020131.1+234205  020131.1 +234205  j     0 H v   # A125222    02:18  06.57 0026    631700261  No detection.
+S020917.5+235036  020917.5 +235036  j     0 H v   # A123849    02:30  07.29 0027    631700265  Detection at 1383MHz (8100 km/s) S/N~3. possible emission at 1396.5MHz. RFI??
+S021619.6+251240  021619.6 +251240  j     0 H v   # A125166    02:42  09.10 0028    631700269  Bright emission at 1397MHz (5000km/s) S/N > 10. Line + RFI???
+S023928.2+264537  023928.2 +264537  j     0 H v   # A125543    02:55  09.17 0029    631700273  possible line at 1374MHz (10100km/s) S/N~1.5 (line look narrow ~100km/s)
+S024034.8+275752  024034.8 +275752  j     0 H v   # A125545      NO TIME.
+                                                      
+Notes (be sure to write notes here so we can keep track of anything relevant)
+We stared early. We repeated at the begining the first two sources. 
+FAA radar is on. Tiedowns disabled. 
+
+
+                                                                 

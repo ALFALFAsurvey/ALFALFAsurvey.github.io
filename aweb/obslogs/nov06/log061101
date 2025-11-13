@@ -1,0 +1,92 @@
+Log for 06/11/01      Observer: Barbara Catinella
+
+System Configuration:
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20061101.a2010.****.fits
+	/share/pserverf.sdb1/wappdata/wapp.20061102.a2010.****.fits
+
+** New CIMA version: ver. 2.2.11 'normal' from 2006-10-31 17:59 **
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2137 0011 630569595 630570197 drift59p2 FixedAz  213700+142124   19   600   99  loopend
+2147 0012 630570200 630570802    power levels ok. RFI at 1380 MHz (1)
+2157 0013 630570805 630571407
+2207 0014 630571410 630572012 
+2217 0015 630572015 630572617    power levels ok. RFI at 1380 always there.
+2227 0016 630572620 630573222	 problems with beam6?? FITS not usable for now. See (2)
+2237 0017 630573225 630573827
+2248 0018 630573830 630574432 
+2258 0019 630574435 630575037
+2308 0020 630575040 630575642
+2318 0021 630575645 630576247    power levels always ok, RFI at 1380 always there
+2328 0022 630576250 630576852
+2338 0023 630576855 630577457
+2348 0024 630577460 630578062
+2358 0025 630578065 630578667
+0009 0026 630578670 630579272    power levels always ok, RFI at 1380 always there
+0019 0027 630579275 630579877
+0029 0028 630579880 630580482
+0039 0029 630580485 630581087
+0049 0030 630581090 630581692
+0059 0031 630581695 630582297
+0109 0032 630582300 630582902
+0119 0033 630582905 630583507    power levels always ok, RFI at 1380 always there
+0129 0034 630583510 630584112
+0139 0035 630584115 630584717	 RFI at 1380 suddenly very strong for ~1 min, all beams, in the middle of the scan
+0150 0036 630584720 630585322
+0200 0037 630585325 630585927
+0210 0038 630585930 630600132
+0220 0000 630600135 630600737
+0230 0001 630600740 630601342
+0240 0002 630601345 630601947
+0250 0003 630601950 630602552
+0300 0004 630602555 630603157
+0311 0005 630603160 630603762    power levels always ok, RFI at 1380 always there
+0321 0006 630603765              aborted
+
+
+TOGS ran at start and end.
+
+NOTES:
+
+(0) CIMA and WAPP software changes. 
+    Notice new CIMA version (2.2.11). Buttons to restart the GPIB socket communication (for 
+    GALSPECT) as well as the ALFA control software have been added to the "Utilities" menu 
+    in all CIMA versions. 
+
+    WAPP software upgrades. Mikael has fixed the problem that was producing all those
+    "WARN observing when not on source" messages without a good reason. See Miakel's  CIMA 
+    users log file for details. As of this evening, no such warnings will appear on the CIMA
+    logs. On the other hand, if you do get such warning, this really means that you are taking 
+    data and the telescope is 10 arcsec or more away from where it is supposed to be.
+
+(1) RFI at 1380.0-1380.2 MHz, very weak, strongest in beams 4A and 5A (where it is
+    just visible -- but it is in all beams and both pols if you look carefully). 
+    Present the whole night, strong only in one occasion. Sent RFI report.
+
+(2) Something very strange happened: the FAA radar disappeared from beam 6! A better look
+    shows that the x axis for beam 6 only, both pols, changed to the range 200-300 MHz (!). 
+    Both waterfall and spectrum displays show the same thing. Power levels ok, no error messages, 
+    nothing unusual on any other screen. Everything back to normal at the start of the 
+    new FITS file. I looked at the FITS file using quicklook in idl and it shows the same problem,
+    so it looks like the data were written with the wrong frequencies. Actually, the spectrum looks 
+    like the usual 1335-1435 MHz but reversed. If so, maybe this fits can be corrected/recovered?
+    Emailed Mikael and Phil (Cc-ed to Martha and Brian).
+
+    Mikael's answer:
+    ----------------------------------------------------------------------------
+    I checked the strange FITS-file and it seems that WAPP-4 has had a freak 
+    incident. CRVAL1 is reported to be 250 MHz instead of 1385 MHz, UPPERSB is 
+    said to be 0 instead of 1 and as a result of that, CDELT1 has got the 
+    wrong sign. In the quick look this would show up as reversed spectrum 
+    centered on 250 MHz.
+
+    If you change those values, the data should be OK.
+
+    How this happened is a good question.
+    ----------------------------------------------------------------------------
+ 
+    FITS file fixed by Phil on 11/02/2006.

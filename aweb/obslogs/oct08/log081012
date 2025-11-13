@@ -1,0 +1,46 @@
+Log for 081012      Observers: Kelley Hess, Melissa Jacquart 
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.04  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20081012.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20081013.a2010.****.fits 
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2122 0000                                                                                created after stopping TOGS (see notes), no data. 
+2142 0001 828600196 828600197 drift38p2  fixAZdr  214200+091448 360   600   99 loopend   power levels OK; chip count errors
+2152 0002 828600198 828600199
+2202 0003 828600200 828600201
+2213 0004 828600202 828600203
+2223 0005 828600204 828600205
+2233 0006 828600206 828600207                                                            "warning: extrapolating agc-data..." seen this error before, ok 
+2243 0007 828600208 828600209
+2253 0008 828600210 828600211                                                            power levels OK
+2303 0009 828600212 828600213                                                            extrapolating errors 
+2313 0010 828600214 828600215
+2323 0011 828600216 828600217
+2333 0012 828600218 828600219
+2343 0013 828600220 828600221
+2353 0014 828600222 828600223
+0003 0015 828600224 828600225
+0013 0016 828600226 828600227                                                            extrapolating errors
+0023 0017 828600228 828600229                                                            power levels OK
+0033 0018 828600230 828600231                                                            extrapolating errors
+0044 0019 828600232 828600233
+0054 0020 828600234 828700001
+0104 0000 828700002 828700003
+0114 0001 828700004 828700005
+0124 0002 828700006 828700007
+0134 0003 828700008 828700009
+0144 0004 828700010 828700011
+0154 0005 828700012                                                                      scan aborted 
+
+END LST:0157 
+
+Notes:
+Ran TOGS at beginning of observation; had to stop and restart b/c RA had passed.
+Uneventful night.  :) 
+
+Note: It turns out that the observers got the scan numbers
+wrong starting when the night rolled over. Discovered this because
+cal/drift scan list made by filecreator does not match. 
+Hence this file has been updated by Martha on Nov 29, 2008.

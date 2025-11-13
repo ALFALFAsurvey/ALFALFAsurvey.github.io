@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA Remote Observing</title> 
+  </head>
+<body bgcolor="ffffff">
+
+
+<center><h2 style="color: rgb(10,10,150);">ALFALFA Remote Observing Checklist: 
+Current as of February 12, 2006</h2></center>
+
+<br>
+<h3 style="color: rgb(70,130,180);">Things needed before observing</h3>
+<ul>
+ <li> laptop (for comfortable viewing of the AO status display) or other workstation....
+ <li> observing checklist
+ <li> this checklist
+ <li> coffee or diet pepsi, prosciutto sandwich, wings, junk food... your choice.
+</ul> 
+
+
+<h3 style="color: rgb(70,130,180);">30 minutes before observing</h3>
+<ul>
+ <li>Call the telescope operator at (+1) 787 878 2612, Ext. 211, and ask for the password for 
+     user "dtusr" at "Observer2". Ask also for the status of ALFA (cover off? amplifiers on?
+     all beams working? anything else new?...) </p>
+
+ <li>Set up your laptop (or another workstation), 
+     login to AO using the a2010 account, and start the AO status display:<br>
+     <b>ssh -X a2010@remote.naic.edu</b><br>
+     (the "X" variable sets up all the environment variables relevant
+     for the transmission of graphics accross the link).<br>
+     <b>aostatus</b> <br>
+     and the pointing monitor <br>
+     <b>monpnt</b></p>
+
+Note: See Phil's web page for how to access other telescope monitoring windows.</p>
+
+<li> <b><font color=#008000>NEW!</font></b>  Keep an eye on the aostatus window, and have the a2010.cat file open for editing.
+As soon as the previous observer is out, check the LST, and estimate and add the slew time (usually around 5 minutes).
+Put this in for the RA in the <i>galfasrc</i> entry and save the file.</p>
+
+ <li>On your workstation you will need to use 2 desktops, which will
+     be very creatively referred to as Desk1 and Desk2. </p>
+
+     On Desk1 open a terminal, login to AO using the a2010 account, and start rxview
+     to monitor the status of the IF/LO system:<br>
+     <b>ssh -X a2010@remote.naic.edu</b><br>
+     <b>rxview</b></p>
+
+     On Desk2 open a terminal, login to AO using the a2010 account,
+     and ssh into observer2 using the dtusr account (and the password
+     given to you by the telescope operator):<br>
+     <b>ssh -X a2010@remote.naic.edu</b><br>
+     <b>ssh -X dtusr@observer2</b><br>
+     You will use this terminal to run CIMA.
+</ul> 
+
+<h3 style="color: rgb(70,130,180);">Ready to go!</h3>
+<ul>
+ <li>Call the telescope operator and wait for the ok. Only one session
+     of CIMA can run on observer2 at a given time. Tell the operator the approximate AZ,ZA you want so that
+     he/she can start moving the telescope as soon as the previous program is done. Also ask him/her to
+     set up GALSPECT.
+ <li>Start CIMA on observer2 - Invoke the version we are currently using <b>Evolved version</b> 2.1. Type the following
+
+<pre>
+>  cima --X
+</pre> 
+
+
+     and then choose the new <b>"Normal Version 2.1"</b>.  
+After typing in <b>a2010</b> as both the project and observer name, you will be authorized by the operator.
+ <li>Follow the instructions in the <a href="checklista2010.html">A2010 observing checklist</a>.
+ <li>If you have problems (e.g. CIMA does not start, you can't select the receiver, the telescope doesn't move...)
+     contact the telescope operator. 
+ <li>On Desk1 open another terminal and run Mikael's software for data
+     monitoring. You have to do this on the dataview machine:<br>
+     <b>ssh -X a2010@remote.naic.edu</b><br>
+     <b>ssh -X a2010@dataview</b><br>
+     <b>/home/cima/bin/alfaobswin &</b> - shows the power in dB for each beam<br>
+     <b>/home/cima/bin/alfamotorwin &</b> - shows ALFA rotation angle<br>
+     <b>/home/cima/bin/alfabeamwin &</b> - shows ALFA beam positions<br>
+     The waterfall and spectral plots could be seen by typing 
+     <b>/home/cima/bin/alfadatawin &</b>, but unfortunately, that slows things
+     down too much. Do NOT open it.<br>
+  <li>On another terminal, likewise login and start up an IDL session on one of the fast linux machines
+      (e.g. fusion01) so that you can run "quicklook". Note these instructions make use of the aliases
+      in the a2010 account.<br>
+     <b>ssh -X a2010@remote.naic.edu</b><br>
+     <b>ssh -X a2010@fusion01</b><br>
+     <b>cd /share/a2010/idl/eggidl</b><br>
+     <b>idl</b><br>
+     <b>@wasinit2</b><br>
+     <b>quicklook 'filename'</b><br>
+        where 'filename' is the complete name of the last complete FITS file,
+        e.g. '/share/pserverf.sdb1/wappdata/wapp.20050706.a2010.0003.fits'. You have the option to display
+        the bandpasses for each beam, both pols of the first record of the file. Not as nice as
+        Mikael's data monitoring, but quick and convenient for remote observers.<br>
+</ul> 
+
+
+<h3 style="color: rgb(70,130,180);">While observing</h3>
+<ul>
+ <li>Keep an eye on the remaining time until the end of the scan on the AO
+    status display. Occasionally it might stop for no reason, meaning
+    that the WAPPs are no longer taking data, and you will receive no
+    error or warning messages from CIMA.
+ <li>Watch the CIMA "AO Observer Display" window, where error and
+     warning messages are displayed. When you see messages concerning
+     the WAPPs (e.g., <i>WAPP(N) DONE adjusting power</i>, 
+     <i>WAPP(N) DONE with spectral line observation</i>, etc.), make
+     sure that all four WAPPs are responding. Do not count on CIMA
+     letting you know that one of the WAPPs has stopped working...
+ <li>Check periodically that the declination setting (J2000) is correct.
+     For this, look at the <b>monpnt</b> window to be sure that the line
+     starting with <b>Rslt:</b> shows the correct DecJ. Also check the
+     appearance of the array and its coordinates in the alfabeampos widget.
+     If anything looks amiss, discuss with the telescope operator. In particular,
+     <i> be sure that he has given you control of the telescope!</i>
+ <li>Restart the WAPPS (1) before TOGS at the beginning of the night; (2) at
+     A2010 startup; and (3) before TOGS at the end of the night.
+</ul> 
+
+
+<h3 style="color: rgb(70,130,180);">Useful links</h3>
+<ul><li>The <a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA web page</a> at Cornell
+    <li>The <a href="docs/alfalfa_driftmaster.txt">master list of ALFALFA declination drift assignments</a>
+    <li>The <a href="scheds/a2010_schedcurrent.txt">Block allocation summary for current observing period</a>
+    <li><a href="a2010obs_instr.html">A2010 Observing cookbook</a>
+    <li><a href="checklista2010.html">A2010 Observing checklist</a>
+    <li><a href="useful_aliases.txt">Useful aliases</a> for a2010
+    <li><a href="a2010whereintheworldis.html">Where in the world is...</a>
+    <li><a href="http://www.naic.edu/~astro/remote.shtml">Remote Observing with
+    Arecibo</a> web page</p>
+</ul>
+
+<br><hr>
+<font color=#008800> This page created by Barbara Catinella
+and maintained by members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA </a>Observing Team.</font>
+<br>
+<!-- hhmts start -->
+Last modified: &nbsp Tue 20 Dec 16:33:34 EST 2005 by martha 
+<!-- hhmts end -->
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+A2941 LBW   15.01.12     Observers:  Mike & UAT15
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2941.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.40575  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2941_150112.cmd
+Mode:                WAPP search mode   
+                     ALFALFA/UAT Spring SDSS Search Pilot program
+
+Data written to:     /share/pserverf.sda3/wappdata/wapp.20150112.a2941.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+A071040.4+062713  071040.4 +062713  j     0 H v   # A170644    -----------------------------  Set too soon did NOT observe  
+A073357.1+145906  073357.1 +145906  j     0 H v   # A170778    0813   9.5   0      501200049  (Missed LST of ON start - extapolated) Strong detection at 4800 km/s FAA radar, no GPS
+S092045.8+135651  092045.8 +135651  j     0 H v   # A198470    0828   13.4  1      501200053  (Tiedowns off) No detection 
+S091640.7+112748  091640.7 +112748  j     0 H v   # A198377    0841   11.0  2	   501200057  Strong detection at 5000 km/s FAA stronger in off
+S094405.5+170156  094405.5 +170156  j     0 H v   # A739067    0854	  12.0	3	   501200061  Possible detection at 4500 km/s, baseline at -7mJy
+S094457.5+111656  094457.5 +111656  j     0 H v   # A193834    0907   11.6  4      501200065  Strange off detection at 1363MH,RFI?, baseline at 28mJy
+S095156.8+124858  095156.8 +124858  j     0 H v   # A198744    0919   9.62  5	   501200069  Detection at 5000km/s
+S095138.2+102623  095138.2 +102623  j     0 H v   # A192059    0933   9.28  6      501200073  Possible low S/N detection at 3800 km/s, continuum source in ON baseline at 4mJy
+H100803.5+145112  100804.1 +145100  j     0 H v   # l3         0945   6.54  7      501200077 No detection, airport radar stronger in off
+H100633.9+134600  100634.3 +134550  j     0 H v   # l3         0954   5.54  8      501200081 GPS 1380 MHz and airport 1350 OFF source. possible very weak signal to noise detection at 12000km/s
+S100506.3+101551  100506.3 +101551  j     0 H v   # A208800    1003   8.13  9      501200085 baseline at -8 mJy. detection at 7200 km/s. FAA at 1350MHz.
+S101741.8+131823  101741.8 +131823  j     0 H v   # A208805    1016   5.09  10     501200089 baseline at -2mJy, detection at 5100 km/s 
+S100908.5+163825  100908.5 +163825  j     0 H v   # A208804    1030   5.31  11     501200093 basekine at -80mJy, possible detection at 7900 km/s
+S102446.5+175950  102446.5 +175950  j     0 H v   # A739395    1043   4.60  12     501200097 (Missed LST of ON start - extapolated), baseline at 7.5mJy, detection at 3350 km/s
+S104252.4+134428  104252.4 +134428  j     0 H v   # A205268    1057   5.77  13     501200101 baseline at 15mJy, 2 sources detected at 1150 and 1450 km/s 
+S104127.4+175307  104127.4 +175307  j     0 H v   # A208813    1112   6.92  14     501200105 detection at 6300 km/s, baseline -8mJ
+S104312.8+170255  104312.8 +170255  j     0 H v   # A208815    1124   9.64	15	   501200109 No detection baseline at -2 mJy
+S110451.5+175115  110451.5 +175115  j     0 H v   # A219737    1137	  7.46  16     501200113 Detection at 1000 km/sec, baseline at -1 mJy
+H122034.9+133130  122035.2 +133123  j     0 H v   # HI223445   1154   8.06  17     501200117 No detection, baseline at -2 mJy
+A122656.4+125741  122656.4 +125741  j     0 H v   # A222857    1202   8.08  18     501200121 noisy baseline, detection @ 2000km/s
+H123602.3+071326  123602.3 +071326  j     0 H v   # HI223913   1213	  12.6  19     501200125 no detection, baseline at -5mJy
+A123401.5+055710  123401.5 +055710  j     0 H v   # A223873    1221   12.88 20     501200129 GPS in ON, detection at 1417MHz
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+  Tiedowns enabled for first source only (rain). Very long slew at beginning. Very little GPS. FAA all night.
+
+

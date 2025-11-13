@@ -1,0 +1,65 @@
+A2811 LBW   13.11.26      Observers: Aileen O'Donoghue, Jeff Miller, Becky Koopmann, Michael Warrener, Lucas Viani, Jonathan Perez, Jorge Padial, Andres Arrieta
+
+CIMA version:          The Stable version (Default) (Ver 3.3.05 2013-02-22 15:46)
+Configuration file:    a2811_nov13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2811_131126.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.26nov13.a2811.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA    File#    ONScan     Status
+A214739.5+221555  214739.5 +221555  j  2500 H v   # A311160         2135   5.0    1      333000194  Detection off center at 1412 MHz,1800 km/s,galactic HI observed,rfi at 1397 MHz
+A214737.5+255317  214737.5 +255317  j  5000 H v   # A310476         2144   7.7    2      333000198  No Detection
+H215040.4+283617  215040.3 +283527  j  3500 H v   # A310858 calib   2153  10.3    3      333000202  Detection at 1404 MHz, 3450 km/s 
+H220414.3+233454  220417.2 +233518  j  5600 H v   # A322055         2203   5.3    4      333000206  No Detection
+H221657.3+285742  221658.8 +285826  j  3800 H v   # A321496         2213  10.8    5      333000210  No Detection
+H221827.3+293804  221828.4 +293838  j  3300 H v   # A321497         2221  11.4    6      333000214  No Detection
+H222144.5+280123  222145.7 +280152  j  6900 H v   # A321210         2229   9.9    7      333000218  Detection at 1388 Mhz, 7000 km/s
+H230020.6+281800  230020.6 +281746  j  2900 H v   # A333582         2239  11.2    8      333000222  No detection           
+H230424.9+225202  230421.3 +225140  j  3800 H v   # A334525         2249   6.0    9      333000226  No detection
+H230834.6+253835  230834.0 +253827  j  3200 H v   # A333327         2257   7.9   10      333000230  No detection 
+H231736.9+252235  231734.0 +252252  j  2800 H v   # A333329         2306   7.7   11      333000234  No detection; RFI at 1395.5 MHz.
+H232729.9+223248  232730.2 +223244  j  3500 H v   # A334556         2314   5.4   12      333000238  Detection at 1403.5 MHz, 3550 km/s
+H232138.6+275135  232140.7 +275129  j  3600 H v   # A332921         2324   9.6   13      333000242  Detection at 1403 MHz, 3650 km/s
+H233039.5+245524  233039.8 +245456  j  3900 H v   # A333333         2333   6.7   14      333000246  Detection at 1402.5 MHz, 3850 km/s
+A233043.2+245427  233043.2 +245427  j  3900 H v   # A333345comp     2341   7.0   15      333000250  Detection at 1402.5 MHz, 3800 km/s
+H233217.6+241343  233219.5 +241155  j  4400 H v   # A333636         2349   7.0   16      333000254  No detection  
+H233848.8+241350  233853.4 +241354  j   700 H v   # A333337         2357   7.3   17      333000258  Detection at 1417 MHz, 750 km/s. Galactic HI observed.   
+A000106.7+322242  000106.7 +322242  j   600 H v   # A103567         0008  14.2   18      333000262  Detection at 1417.7 MHz, 550 km/s. Galactic HI observed.  
+H000335.7+253214  000336.1 +253204  j -1300 H v   # A102708         0018   7.9   19      333000266  No detection  
+A001407.3+263639  001407.3 +263639  j  4400 H v   # A103714comp     0026   8.8   20      333000270  Detection 1399.5 MHz, 4450 km/s.
+H001410.2+263518  001408.9 +263534  j  4400 H v   # A102603         0034   9.4   21      333000274  Detection 1399.5 MHz, 4450 km/s
+H002110.4+293143  002113.1 +293134  j  4800 H v   # A102955         0043  12.3   22      333000278  Detection 1398 MHz, 4800 km/s
+H002432.1+233737  002433.9 +233722  j  3100 H v   # A103497         0053   8.4   23      333000282  Detection 1405.5 MHz, 3150 km/s
+H004126.7+220217  004129.4 +220231  j   800 H v   # A103425         0102   6.0   24      333000286  Detection 1416.5 MHz, 800 km/s. Galactic HI observed.
+H004858.4+232510  004859.9 +232522  j  2100 H v   # A103503         0110   7.0   25      333000290  Detection 1410.5 MHz, 2100 km/s. Galactic HI observed.  
+H004937.3+284412  004934.8 +284421  j  4400 H v   # A102969         0120  12.5   26      333000294  Detection 1399.5 MHz, 4450 km/s.
+A011812.3+270849  011812.3 +270849  j  3500 H v   # A114831         0128   9.0   27      333000298  Detection 1404 MHz, 3500 km/s.
+H011813.1+270926  011813.6 +270924  j  3500 H v   # A113786         0137   9.8   28      333000302  Detection 1404 MHz, 3500 km/s
+H011958.0+215635  012000.1 +215618  j  3100 H v   # A114646         0147   7.1   29      333000306  No Detection; Strange clanking noise from azimuth speaker stopped observation at 0154 LST; The AZ was stopped during the cal, so observation probably OK.
+H014339.5+255955  014338.0 +260016  j  3900 H v   # A113863         Skipped
+A014626.8+285609  014626.8 +285609  j  4000 H v   # A114833comp     Skipped
+H014631.4+285637  014631.6 +285549  j  4000 H v   # A114123         Skipped
+H015351.6+261550  015351.0 +261547  j  2800 H v   # A113305         Skipped
+H020521.2+251650  020524.2 +251713  j  2800 H v   # A122927         Skipped
+H020640.2+272635  020639.1 +272623  j  2600 H v   # A122819         Skipped
+H021925.2+294343  021926.5 +294231  j  1800 H v   # A123191         Skipped
+H022712.1+235639  022713.2 +235739  j  1500 H v   # A122939         Skipped
+H023524.4+313700  023524.1 +313600  j  8900 H v   # A123095         0319   16.4  30      333000310 Detection at 1379.3 MHz, 8900 km/s 
+H023628.7+251300  023632.0 +251211  j  2800 H v   # A122943         0328   13.7  31      333000314 No Detection; RFI 1395 MHz
+H030141.8+284410  030143.2 +284412  j  3100 H v   # A002488 calib   0337   13.1  32      333000318 Detection at 1405.8 MHz, 3150 km/s
+H030234.0+245007  030235.3 +245008  j  3300 H v   # A131375 if time 0346   11.9  33      333000322 Detection at 1405.3 MHz,3250 km/s
+
+
+Notes
+Tiedowns disabled all night
+
+Lost LST 0154-315 because of clanking noise from azimuth speaker. Phil and others investigated and concluded the likely source
+was a loose chain banging against the speaker.

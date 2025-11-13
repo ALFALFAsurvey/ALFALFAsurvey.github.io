@@ -1,0 +1,53 @@
+A2853   LBW   14.05.04      Observers: Rebecca Koopmann
+
+CIMA version:          The Stable version (Default)  Ver 3.3.12 2014-03-20 17:38
+Configuration file:    a2853_apr14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140504.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.04may14.a2853.*
+         and     /share/olcor/corfile.05may14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A094303.4+110446  094303.4 +110446  j  6000 H v   # A192157    1035  14.5   1     412400459  early start; weak detection 1392MHz, 6000 km/s, S/N~3, GPS in off, away from det
+A094303.4+110446  094303.4 +110446  j  6000 H v   # A192157    1048  17.2   2     412400463  started to repeat to get closer to time, but ZA too high - aborted
+A114555.1+133058  114555.1 +133058  j  3400 H v   # A213530    1059  12.3   3     412400464  very weak detection? 1405 MHz, 3200 km/s, S/N~2  
+A114457.7+090348  114457.7 +090348  j  5900 H v   # A213115    1112  12.3   4     412400468  something at 1392.5MHz, 5900 km/s, S/N~2, but in only one pol; 2nd at 1389.5 MHz, 6500 km/s?
+A114521.2+094808  114521.2 +094808  j  6300 H v   # A213118    1124  10.0   5     412400472  weak detection 1391 MHz, 6300 km/s, S/N~2, uneven baseline 
+A114541.2+090355  114541.2 +090355  j  6300 H v   # A213121    1137   9.6   6     412400476  detection 1391 MHz, 6300 km/s,  S/N~4 (gaussian 3.6), GPS in off, away from det
+A122414.7+091600  122414.7 +091600  j  6800 H v   # A220511    1150  12.4   7     412400480  detection 1387.5 MHz, 7150 km/s, S/N~4;  GPS in off, away from det
+A122419.5+092930  122419.5 +092930  j  6800 H v   # A220513    1202  10.4   8     412400484  weak detection 1388.5 MHz, 6900 km/s, S/N~3, GPS in on, away from det
+A122257.8+103254  122257.8 +103254  j  8000 H v   # A007452    1215   8.1   9     412400488  detection 1384 MHz, 7900 k/ms, S/N~5 (doub horn 6.5), asymmetric  
+A122310.2+103833  122310.2 +103833  j  7250 H v   # A229431    1227   7.8  10     412400492  no detection  
+A122437.4+105019  122437.4 +105019  j  7700 H v   # A220523    1240   8.3  11     412400496  GPS in on near center, no detection
+A122644.3+090254  122644.3 +090254  j  6900 H v   # A220590    1252  11.1  12     412400500  detection 1388.5 MHz, 6900 km/s, S/N~4 (2.7 gaussian), 2nd poss detection 1386 MHz, 7400 km/s, S/N~3.5 (3.5 gaussian)
+A122644.3+090254  122644.3 +090254  j  6900 H v   # A220590    1305  13.0  13     412400504  detection 1388 MHz, 6900 km/s, S/N~3;  repeat since ahead > 10min; GPS in on
+A132928.4+113919  132928.4 +113919  j  7500 H v   # A233870    1319   7.2  14     412400508  GPS in off, but looks like detection 1386 MHz, 7500 km/s, S/N~3
+A132936.4+114850  132936.4 +114850  j  7900 H v   # A232224    1332   6.6  15     412400512  GPS in on; detection (double horn) 1384 MHz, 7900 km/s, S/N~3  
+A140156.3+085640  140156.3 +085640  j  6000 H v   # A231064    1345  10.3  16     412400516  GPS in off; detection 1393 MHz, 5900 km/s, S/N~3.5
+A140925.5+080843  140925.5 +080843  j  7300 H v   # A713868    1357  10.7  17     412400520  GPS (away from center); no detection    
+A141058.0+092242  141058.0 +092242  j  6870 H v   # A249588    1410   9.0  18     412400524  GPS (away from center); detection 1387.5 MHz, 7100 km/s, S/N~3
+B150549.0+123634  150549.0 +123634  j  6900 H v   # BKmystery  1425  11.6   1     412400528  GPS (away from center); no detection
+A150111.2+014206  150111.2 +014206  j  2000 H v   # A009655    1439  17.6   2     412500004  no detection, 1408 RFI in off
+A150629.2+013618  150629.2 +013618  j  1700 H v   # A009706    1451  17.2   3     412500008  no detection  
+A151241.4+013724  151241.4 +013724  j  1900 H v   # A253667    1503  17.0   4     412500012  no detection, 1408 MHz RFI  
+A151509.4+024506  151509.4 +024506  j  1800 H v   # A253506    1515  15.6   5     412500016  no detection, 1408 MHz RFI
+A151729.5+033508  151729.5 +033508  j  1900 H v   # A253262    1527  15.0   6     412500020  weak detection 1411.5MHz, 1850km/s, S/N~3, 1408 MHz RFI
+A150444.0+123903  150444.0 +123903  j  6600 H v   # A251599    1541  10.3   7     412500024  detection 1389.5, 6600 km/s, S/N~4 (3.4 gaussian), GPS away from det
+A150605.7+132119  150605.7 +132119  j  6900 H v   # A258002    1553  12.2   8     412500028  no detection (something weak at 1385.5 MHz, 7600 km/s?) Note this was an HI code 4.
+A150624.8+124524  150624.8 +124524  j  6500 H v   # A736557    1605  15.2   9     412500032  no detection
+A152226.9+132944  152226.9 +132944  j  2000 H v   # A258694    1618  14.3  10     412500036  Operator let this run over into X102 time. No detection
+
+Notes:
+   --Tiedowns enabled. 
+   --GPS very active - in 13/19 scans containing 1381MHz, most away from center frequency.
+   --RFI at 1408 MHz present in several scans
+   --S/N determined by S=(peak-average) flux and eye estimate of noise. S/N as fit by LBW routines given in parantheses.
+

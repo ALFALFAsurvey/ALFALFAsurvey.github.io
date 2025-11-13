@@ -1,0 +1,55 @@
+A3064 LBW   16.10.15   Observers: Miller & O'Donoghue
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161015.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161015.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161016.a3064.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S220002.9+304808  220002.9 +304808  j     0 H v   # A322491    2133   14.0  0000  628900110   FAA on, RFI at 1344 and 1363 MHz, no detection
+S221047.3+292644  221047.3 +292644  j     0 H v   # A323016    2145   12.6  0001  628900114   No detection
+S221827.2+291353  221827.2 +291353  j     0 H v   # A322506    2157   12.1  0002  628900118   Very strong detection @ 6500 km/s, S/N ~ 5, with a neighbor
+S224243.9+322109  224243.9 +322109  j     0 H v   # A322783    2211   15.9  0003  628900122   detection at 8900 km/s, S/N ~ 3
+S224321.6+323109  224321.6 +323109  j     0 H v   # A323070    2223   15.1  0004  628900126   no detection
+S230235.2+312557  230235.2 +312557  j     0 H v   # A336595    2236   14.6  0005  628900130   possible detection at 9400 km/s, S/N ~ 2
+S230409.4+313812  230409.4 +313812  j     0 H v   # A335297    2247   14.0  0006  628900134   GPS burst, used /gps, no detection
+S231438.6+314002  231438.6 +314002  j     0 H v   # A336618    2259   13.9  0007  628900138   No detection
+S233556.8+331512  233556.8 +331512  j     0 H v   # A336653    2312   16.0  0008  628900142   No detection
+S233703.2+334017  233703.2 +334017  j     0 H v   # A336654    2324   15.7  0009  628900146   GPS in OFF, no detection
+S233945.0+342418  233945.0 +342418  j     0 H v   # A336663    2337   16.2  0010  628900150   No detection
+S235050.9+360132  235050.9 +360132  j     0 H v   # A335587    2349   17.8  0011  628900154   Looks like a detection at 1381 MHz, /gps didn't remove it, 8400 km/s
+S235741.3+360608  235741.3 +360608  j     0 H v   # A335262    0001   17.9  0012  628900158   Possible detection 4900 km/s, S/N < 2
+S000619.0+323643  000619.0 +323643  j     0 H v   # A104833    0014   14.5  0013  628900162   No detection
+S001932.1+320118  001932.1 +320118  j     0 H v   # A104871    0027   13.9  0014  628900166   Possible detection at 7300 km/s, S/N < 2
+S003030.5+311846  003030.5 +311846  j     0 H v   # A104920    0039   13.2  0015  628900170   No detection
+S003205.7+311608  003205.7 +311608  j     0 H v   # A104922    0051   13.6  0016  628900174   Possible detection at 6400 km/s, S/N < 2
+S005754.3+312021  005754.3 +312021  j     0 H v   # A105215    0103   13.1  0017  628900178   GPS in OFF, no apparent detection
+S010310.3+330736  010310.3 +330736  j     0 H v   # A116203    0116   15.1  0000  629000003   Possible detection at 10000 km/s, S/N < 2
+S012603.9+320904  012603.9 +320904  j     0 H v   # A116227    0129   13.9  0001  629000007   Detection at 4200 km/s S/N ~ 2 
+S014955.0+330645  014955.0 +330645  j     0 H v   # A110908    0141   15.0  0002  629000011   GPS burst, no detection
+S015602.1+330802  015602.1 +330802  j     0 H v   # A110647    0153   14.9  0003  629000015   GPS burst, detection at 4400 km/s, S/N ~3
+S020958.5+315152  020958.5 +315152  j     0 H v   # A125176    0205   13.7  0004  629000019   Detection at 13900 km/s, S/N ~ 2
+S025003.3+350443  025003.3 +350443  j     0 H v   # A125512    0219   18.3  0005  629000023   GPS in off, detection at 8500 km/s, S/N ~ 2
+S025014.6+344254  025014.6 +344254  j     0 H v   # A125519    0231   17.1  0006  629000027   GPS in off, no detection
+S025057.0+350405  025057.0 +350405  j     0 H v   # A125516    0243   16.9  0007  629000031   No detection
+S025057.0+350405  025057.0 +350405  j     0 H v   # A125516    0255   16.8  0008  629000035   Repeated because we were ahead (of course there was no detection!)
+S025113.2+353230  025113.2 +353230  j     0 H v   # A125514    0307   17.6  0009  629000039   No detection
+S030200.2+350849  030200.2 +350849  j     0 H v   # A132274  if time ... there wasn't time due to the repeat so we didn't hit the ZA limit
+
+                                                      
+Notes 
+FAA radar on all night, strong RFI at 1344 MHz.  RFI at 1363 MHz varying.
+Lots of GPS

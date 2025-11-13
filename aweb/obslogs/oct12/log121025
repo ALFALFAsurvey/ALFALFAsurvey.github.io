@@ -1,0 +1,65 @@
+Log for 12.10.25 (25oct2012)        Observers: RG, MH and many others (in spirit if not in person)
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121025.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121026.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2318 0010  229900141 229900142 drift135p1  fixAzdr   231800+324342  19  600   99  loopend, FAA on
+2329 0011  229900143 229900144                                                    waterfall plots color bad
+2339 0012  229900145 229900146                                                    power levels ok; quicklook ok
+2349 0013  229900147 229900148                                                    monitoring spectra not wf plots
+2359 0014  229900149 229900150
+0009 0015  229900151 229900152
+0019 0016  229900153 229900154
+0029 ABORT switch drifts at this point
+
+0032 0018  229900156 229900157 drift134p1            003200+322906  19  600   99  quicklook ok; power levels ok
+0042 0019  229900158 229900159 
+0052 0020  229900160 229900161
+0102 0021  229900162 229900163
+0112 0022  229900164 229900165
+0122 0023  229900166 229900167
+0133 0024  229900168 229900169                                              Extrapolating agc-data over 2 sec gap
+0143 ABORT switch drifts again
+
+0146 0026  229900171 230000001 drift148p1            014600+355330  19  600   99  Power levels ok; quicklook ok
+0156 0000  230000002 230000003
+0206 0001  230000004 230000005 
+0216 0002  230000006 230000007
+0226 0003  230000008 230000009
+0236 0004  230000010 230000011
+0246 0005  230000012 230000013                        WAPPDATA-search pnt: WARNING extrapolating over 2 secs
+0256 0006  230000014 230000015
+0306 ABORT
+
+LST stop: 0306
+The party is over......... and so is A2010.
+6.5 years, 4751.5 observing hours, 808 observing runs and 99 observers later.
+
+At the bottom, add notes regarding:
+-- This is a triple header night, so there are 3 drifts and hence 3 cal periods.
+-- Late start; previous observer went overtime (again); we had to call; then long slew
+-- TOGS run at start @+324342
+-- FAA on
+-- Waterfall plots palette issues again. Killed data grabber; restarted several times;
+   Don't see any other jobs running, but no luck
+
+_____________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 13.8   K3: 15.5   K4: 15.2   AT 10:25
+70K = K1: 84.7   K2: 84.4   K3: 92.5   K4: 100.3
+
+16K = K1: 14.6   K2: 13.8   K3: 15.5   K4: 15.2   AT 14:25
+70K = K1: 86.1   K2: 86.1   K3: 93.9   K4: 101.5
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered

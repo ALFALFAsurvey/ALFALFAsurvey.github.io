@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA Survey - Data Reductions for A2010</title>
+  </head>
+<body bgcolor="ffffff">
+
+<font color=#cc0f14><i> Disclaimer:&nbsp ALFALFA signal extraction is a 
+work in progress and thus changes as developments occur. We try to keep 
+this documentation up to date, but
+you should be sure to understand what you are doing!</i></font><br>
+
+
+<h2><font color=darkblue>ALFALFA Survey - Signal Extraction Cookbook
+&nbsp &nbsp Current as of December 15, 2005</font></h2>
+
+<P>
+  Amelie Saintonge,     12 Dec. 2005                                  
+
+<p>
+<font size="+2" color="#FF0000">OVERVIEW</font>
+
+<p>
+The software is designed to find signals in ALFALFA drift scans.  It processes
+the data of a whole observing session with a single command.  The computation is
+done one 600sec drift at a time.
+
+<p> The following IDL procedures are required:
+<ul>
+<li>run_extract.pro  --  short script that controls the execution of the
+                     main programs
+<li>extract_compute.pro -- program that performs the matched filtering in the
+                       Fourier domain.  Returns the smoothed image and a
+                       structure containing the parameters of the detections.
+<li> extract_display.pro -- generates an interactive display so the observer can
+                       check and edit the catalog of detections.
+<li>extract_small.pro -- similar to extract_compute, but runs on a small region
+                     of the map (see option 'f' below).
+<li>sort_catalog.pro -- sorts out the catalog at the end to remove duplicates.
+
+</ul>
+
+The script <b>run_extract </b>will first call <b>extract_compute </b>to do the signal
+extraction on each drift of the observing session, one by one.  When it is
+done with one drift, it writes a .sav file containing the smoothed position-
+velocity map and a structure with the parameters of all detections.  The
+process takes about 3 minutes, more than half of which is used to load the
+data and smooth the maps.  So for a typical observing session, the computation
+process will take between two and three hours, during which the observer will
+not need to interact with the program.
+
+<p>When the computation is over, <b>run_extract </b>will call 
+<b>extract_display </b> for all
+the drifts, one at a time.  The observer will need to interact with the
+software at this point, to check what goes into the final catalog of
+detections. Alternatively the observer can start the program later, skip the
+detection algorithm, and immediately start the interactive display.
+
+<p>
+<font size="+2" color="#FF0000">GETTING READY:</font>
+
+<ul>
+<li> In your working directory, create a new directory called "tmp_extract"
+<PRE><FONT color=darkblue>
+&gt; mkdir tmp_extract
+</PRE></FONT>
+
+The detection .sav files will be written to this directory. You do not need to cd to this directory.
+<p>
+<li> In IDL, initialize the usual ALFA software:
+<PRE><FONT color=darkblue>
+IDL&gt; @wasinit2
+IDL&gt; @alfinit
+</PRE></FONT>
+(assuming that the path to alfinit is defined in your .idlstartup file.)
+
+<p>
+<li> Restore the position file for the observing session:
+<br>example:
+<PRE><FONT color=darkblue>
+IDL&gt; restore,'pos_050524_+121000s.sav'
+</PRE></FONT>
+
+NOTE: The program assumes that the data are stored in
+/home/dorado11/galaxy/flagbb/yy.mm.dd .   If this is not the case, the path
+will need to be given when run_extract is launched by they keywork DIR.
+</ul>
+
+<p>
+<FONT SIZE="+2" color="#FF0000"> SYNTAX: </font>
+<p>
+Launch <b>run_extract </b>by doing:
+
+<PRE><FONT color=darkblue>
+IDL&gt; run_extract,pos,agcdir,DATE=date,SN=snth,N1=n1,N2=n2,SKIP_CALC=skip,DIR=directory
+</PRE></FONT>
+
+<p> Example call:
+<PRE><FONT color=darkblue>
+IDL&gt; run_extract,pos,agcdir,DATE='050524',SN=4.5
+</PRE></FONT>
+
+<pre>
+input: pos - the position file
+       agcdir - the directory where the AGC catalog is stored in your system.
+                This path should be set in your alfinit file.
+                <i>It should be noted that the AGC is a private database, 
+                developed and maintained by Martha Haynes and Riccardo Giovanelli. 
+                It contains considerable contributions from them, their friends and 
+                students, much of which is preliminary and/or unpublished. It is made 
+                available to members of the ALFALFA collaboration for use in undertaking 
+                ALFALFA science, but it is not a public database and should not be used 
+                for other purposes, copied or passed onto others without permission.</i>
+KEYWORDS:
+       DATE - the 6 character string with the  date of the observing session
+                (eg.: '050522')
+       SN - the S/N threshold for the detections.  The program will accept
+            anything above that value, and show you as potential detections
+            objects with S/N up to 0.5 below that.  The default value is 4.5.
+            I recommend a number between 4.5 and 5.  You will have to experiment
+            with this parameter.
+       N1 - the drift number where to start the extraction.  The default
+            value is 0.  This refers to the order in the position file.
+       N2 - the drift number where to end the extraction.  The default value
+            is (n_elements(pos)-1)
+       SKIP_CALC - set this keyword to jump over the computation part and go
+                   straight to the interactive display.  
+                   0: don't skip anything  (default)
+                   1: jump to display and append results to existing catalog
+                   2: jump to display and create a new catalog
+       DIR - the directory where the data is.  The default is:
+             /home/dorado11/galaxy/flagbb/"date"
+             (eg.:/home/dorado11/galaxy/flagbb/05.05.24/)      
+             If your data is in a different directory, you must give the path
+             using this keyword.  
+
+</pre>
+
+
+<FONT SIZE="+2" color="#FF0000"> OUTPUT: </font>
+
+
+<p>
+For each drift, a save file will be created in the tmp_extract
+directory, called for example "ext_503521612.sav" where the number
+is the scannumber as written in the pos structure.
+In this save file, there is:
+<ul>
+       <li> msm - the smoothed position-velocity map
+       <li> cont_pt - the continuum profile
+       <li>  sources - a structure containing the parameters of the
+                  detections
+</ul>
+
+To see sources structure:
+
+<PRE><FONT color=darkblue>
+IDL&gt; help,sources,/st
+</Font>
+
+<pre>
+** Structure <8a79b7c>, 12 tags, length=60, data length=58, refs=1:
+   CH              INT         central channel
+   REC             INT         central record
+   W               FLOAT       width in km/s
+   ASIZE           FLOAT       size in arcmin
+   SN              FLOAT       S/N at central channel and record
+   INT_FLUX        FLOAT       integrated flux
+   PEAK_FLUX       FLOAT       peak flux at central position
+   RMS             FLOAT       rms over the spectrum
+   DIFF_POL        FLOAT       difference between the 2 polarisations in sigmas
+   POL_FLAG        INT         flag to say if signal is accepted or rejected
+   COLOR_POL       STRING      color for plotting
+   CZ              FLOAT       velocity
+   AGC             STRING      agc number
+   COMMENTS        STRING      comments that can be added during the interaction
+</pre></font>
+
+When <b>extract_compute </b>is done producing these for all the drifts, 
+<b>run_extract </b>
+enters another loop that will control the interactive display.
+
+<p>
+<FONT SIZE="+2" color="#FF0000"> INTERACTIVE DISPLAY: </font>
+
+<p>After the save file containing the preliminary catalog and
+the smoothed map is restored, 
+a window appears that displays the position-velocity map,
+with the continuum profile to the right and the badbox mask below (similar
+to the <b> flagbb </b> window).
+
+<p>
+Boxes are drawn on the map where detections have been made.  
+The size of the boxes
+is variable and reflects the size of the source, as evaluated by the 
+extractor.  The boxes come in four different colours:
+<ul>
+<li>green - good detections (above the S/N threshold)
+<li>red - bad detections (rejected due to a large difference in flux between
+      the two polarisations)
+<li>orange - possible detections (good in terms of polarisation, but having a
+         S/N value up to 0.5 below the threshold)
+<li>pink - a source too close to the edge, probably bad.
+</ul>
+
+<p>Only the sources with green boxes will make the final catalog.
+
+<p> In addition, yellow boxes are drawn at the position of AGC galaxies.
+
+<p> The interactive options are as follows:
+
+<pre>
+- ignore a detection and remove from catalog          (d galnr or d+click)
+- delete ALL galaxies from catalog                    (d 99)
+- add a galaxy in the catalog that was rejected       (a galnr or d+click)
+- add a comment for a galaxy (no apostrophes!)        (c galnr)
+- show the spectrum of a point in the map             (s galnr or s+click)
+- display the maps for each pol separately            (p)
+- blow-up a part of the map (pols. separate)          (b)
+- get the DSS image                                   (g)
+- find a source in a delimited region                 (f)
+- continue with the next beam                         (n or CR)
+- exit program                                        (e)
+</pre>
+
+<p> Description of the options:
+<ul>
+<lI>d - Used to remove a detection that was considered good or possible from the
+    catalog.  The map will be redrawn with a red box around the object.
+    You can either type d, followed by a space and the source number as written
+    on the map, or simply d followed immediately by Enter and then click in the
+    box of the object.
+
+<li>d 99 - Used to consider all sources as bad.  Red boxes will be put around all of
+    them, then the user can use 'a' to add some back.  Use this when there are many
+    bad detections due to poor flagging.
+
+<li>a - Used to add a detection that was considered bad or possible to the catalog.
+    The map will be redrawn with a green box around the object.
+
+<li>c - Add a comment to the catalog.  When a match is found with an AGC galaxy,
+    this information will be automatically entered as a comment.  A comment
+    will also be automatically entered when a possible detection or a
+    polarisation-rejected object is added to the catalog.
+
+<li>s - Shows the spectrum of a point in the map. Displays a 500 channel-wide spectrum
+    centered on the selected channel of the requested record.  The top pannel shows
+    both polarisations averaged, the bottom pannel the two separated.  The green
+    arrows point to the channel that was selected.
+    When a galaxy number is given after s, the plot made shows the spectrum of the
+    galaxy, with the best fit model overplot in green on the top pannel.
+
+<li>p - Shows the position-velocity maps of the two polarisations smoothed separately.
+
+<li>b - Like 'p', shows the position-velocity map for the two polarisations separated,
+    but only for a small region selected by the user.  Follow the instruction.
+
+<li>g - Used to query the DSS and display the image at the requested position.
+
+<li>f - Repeats the search process in the same way as the full algorithm, but only in a
+    small, user defined region.  The program prompts the user for the parameters of
+    the search:  the number of records in which the object is required to appear
+    (original value for this is 10, needs to be at least 3), and the S/N threshold
+    (needs to be greater than 2.5).  The user can choose to inlude or not the
+    detection in the catalog (if yes, then a comment is automatically added).
+</ul>
+
+<p>
+When a simple carriage return is made or the option 'n' is selected, the program
+moves on to the next beam.  Every source that was represented by a green box will
+be included in the catalog.  The information recorded in the catalog is:
+<ul>
+<li>  RA in decimal hours
+<li>  DEC in decimal degrees
+<li>  Scannumber
+<li>  Beam number
+<li>  Central channel
+<li>  Central record
+<li>  Width in km/s
+<li> Size in arcmin
+<li> Peak flux in mJy
+<li>  Integrated flux in Jy km/s
+<li>  Signal-to-noise ratio
+<li>  rms of the spectrum in mJy
+<li>  velocity in km/s
+<li>  AGC number if available
+<li>  Comment
+</ul>
+
+<p> The catalog is written and saved after each drift.
+
+
+<p>
+<FONT SIZE="+2" color="#FF0000"> SORTING THE CATALOG:
+</FONT>
+
+<p>
+When the extraction is finished, the catalog file (eg. cat050524.dat) will contain
+duplicates when galaxies are found over adjacent drifts or beams.  The program
+<b>sort_catalog </b> will go through the catalog, combine multiple detections of the same
+object and assign a source number to each unique detection.  To run it, do for
+example:
+
+<PRE><FONT color=darkblue>
+IDL&gt; sort_cat,'cat050524.dat','cat050524.sort',N=258
+</FONT>
+where N is the number of lines in cat050524.dat, and cat050524.sort is the name
+of the file to write the final catalog.</pre>
+
+<p>The final catalog contains:
+
+<pre>
+SOURCE NUMBER  -- assigned by sort_catalog
+SCAN NUMBER    -- from the header
+BEAM NUMBER    --
+RA             -- in decimal hours
+DEC            -- in decimal degrees
+CHANNEL        -- central channel
+RECORD         -- central record
+RA+DEC         -- coordinates in hhmmss+ddmmss
+VELOCITY       -- cz of the galaxy
+WIDTH          -- in km/s
+Speak          -- peak flux in mJy
+FLUX           -- integrated flux in Jy km/s
+SN             -- signal-to-noise ratio
+RMS            -- rms noise of the spectrum in mJy
+N DETECT       -- number of times this object was detected
+AGC NUMBER     -- AGC number if available
+COMMENT        -- as recorded earlier
+</pre></font>
+
+<p>When a galaxy was identified more than once, the information that goes in the final
+catalog are the parameters of the detection with the highest S/N.
+To read in IDL, here is the format:
+format='(i4,x,i9,x,i1,x,d9.5,d9.5,i5,i4,a14,i6,i4,x,f5.1,x,f5.1,x,f6.1,f4.1,i3,x,i7,a40)'
+
+<p>
+Original page created by Amelie Saintonge and maintained by the members of the 
+<a href="http://www.astro.cornell.edu/Galaxy/egg.html">Cornell ExtraGalactic Group</a>.</font><br>
+
+<!-- hhmts start -->
+Last modified: Thu Jan 26 13:17:14 EST 2006 by martha
+<!-- hhmts end -->
+</body>
+</html>

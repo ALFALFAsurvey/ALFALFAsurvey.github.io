@@ -1,0 +1,58 @@
+Log for 080823      Observer: Rebecca Koopmann
+
+System Configuration: a2010_az360.conf
+
+File:        /share/pserverf.sda3/wappdata/wapp.20080823.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2228 0001 823600001  823600002 drift22p2 fixAZdr  2228+052112  19   600   99 loopend - power levels okay
+2239 0002 823600003  823600004 
+2249 0003 823600005  823600006
+2259 0004 823600007  823600008
+2309 0005 832600009  823600010   cont src
+2319 0006 832600011  823600012   power levels OK
+2329 0007 832600013  823600014 
+2339 0008 832600015  823600016 
+2349 0009 832600017  823600018   strong src sends power levels high - 1345 MHz & ~1400 MHz - likely rfi
+0000 0010 832600019  823600020
+0010 0011 832600021  823600022 
+0020 0012 832600023  823600024   power levels OK
+0030 0013 832600025  823600026   
+0040 0014 832600027  823600028 
+0050 0015 832600029  823600030
+0100 0016 832600031  823600032   cont src
+0110 0017 832600033  823600034
+0121 0018 832600035  823600036
+0131 0019 832600037  823600038
+0141 0020 832600039  823600040   power levels OK
+0151 0021 832600041  823600042  
+0201 0022 832600043  823600044 
+0211 0023 832600045  823600046
+0221 0024 832600047  823600048
+0232 0025 832600049  823600050
+0242 0026 832600051  823600052
+0252 0027 832600053  823600054   power levels OK
+0302 0028 832600055  823600056
+0312 0029 832600057 -- aborted
+
+END LST: 0312
+
+Notes: 
+** TOGS run at end, but not at beginning - see next note.
+
+** Problems with ALFA rotation during setup delayed start by about an hour. TOGS script timed out
+at ALFA rotation command. Operator then attempted to rotate ALFA manually, but rotation angle registered
+as +18.39 rather than +19. Restarted CIMA and tried TOGS again, but script failed immediately at the
+rotation command. Restarting ALFA and cycling power to motors did not help. Operator called Phil. 
+Phil found that rotation program was 'dead'. After fixing this, he got ALFA to +19. I restarted CIMA
+and since it was past 22h, went directly to a2010 config. Script seemed to run normally, but crashed
+again on rotation. Phil found same problem with rotation program and cleared it. He had me restart CIMA
+and manually set rotation in Pointing Control and then try again. Finally worked. He has no idea what
+caused this. I sent a report to Mikael.
+
+**Almost continuous orange WAPP chip count mismatch errors throughout nite (numbers off by a little more
+than 2000): WAPP=3-chip_count: WARNING counts don't match between chip 0 and chip 6 (99999966 !=
+100002014)!  Quicklook shows no obvious problems. (But cimalog file is a lot bigger than usual.)
+This continued through end TOGS, even after WAPPS restart.
+
+**bandpass for beam 6B drops for frequencies lower than 1380 MHz

@@ -1,0 +1,85 @@
+A2669 followup catalog
+#CIMA version 3.1.08 2010-02-01 17:44 "Smart"
+#Jan 2012 -  Various objects with f > 1410 MHz
+# configuration file:       lbw_lowvel.conf
+# Done in fixed frequency mode
+# Center freq = 1420
+# "rest" freqs= 1420 1420 1405 1405
+# Most often, only the first 2 boards are used
+DEFAULT  J 0.0 Topocentric velocity(optical)
+A2669 LBW   12.01.17        Betsey, Greg + UAT
+
+CIMA version:          A `smart' version of CIMA (3.1.08 2010-02-01 17:44 "Smart")
+Configuration file:    a2669_lowvel.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.00 MHz = 1390-1450 MHz
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz @ 1420 MHz
+      Board  3&4  Pols A/B  9-level 2048 chans/25 MHz @ 1420 MHz
+  Catalog: 'a2669_lowv.cat'
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait       
+Command file:        a2669_120117.cmd  
+Mode:                Fixed frequency/topocentric; no doppler tracking                            
+                     Low velocity sources cz < 2000 km/s
+          
+Data written to: /share/olcor/corfile.16jan2012.a2669.*
+
+SRCNAME             RAJ     DECJ             AGNnr    Block      LST   ZA   File#  ONScan     Status
+H072538.9+091104  072538.8 +091058  j 0   # A170328   12.01.17   0726  9.2    1    201700001  Detected at 1415 MHz
+H073435.3+083430  073435.4 +083422  j 0   #           12.01.17   0735  9.8    2    201700005  Not detected
+H074017.1+075130  074017.1 +075123  j 0   #           12.01.17   0742  10.5   3    201700009  Detected at 1420 MHz? raised  baseline
+H074111.1+125159  074111.4 +125150  j 0   #           12.01.17   0751  6.0    4    201700013  Not detected  
+H074724.7+121343  074724.9 +121335  j 0   #           12.01.17   0800  6.8    5    201700017  Not detected
+H074840.6+131338  074841.0 +131329  j 0   #           12.01.17   0808  6.8    6    201700021  Not detected
+H083850.7+073747  083850.7 +073740  j 0   #           12.01.17   0819  11.8   7    201700025  Not detected
+H084223.2+083542  084223.3 +083534  j 0   #           12.01.17   0827  10.5   8    201700029  Not detected
+H085728.5+091145  085728.6 +091137  j 0   #           12.01.17   0836  10.6   9    201700033  Not detected
+H085844.6+082723  085844.6 +082715  j 0   #           12.01.17   0844  10.6  10    201700037  Not detected
+H090925.0+094335  090925.2 +094327  j 0   #           12.01.17   0852  9.6   11    201700041  Not detected 
+H091554.4+075123  091554.4 +075116  j 0   #           12.01.17   0900  11.2  12    201700045  Not detected
+H091723.8+082506  091723.9 +082459  j 0   #           12.01.17   0909  10.2  13    201700049  Not detected 
+H093818.8+050648  093818.6 +050641  j 0   #           12.01.17   0918  14.2  14    201700053  Possible at 1421
+H093857.8+044845  093857.5 +044838  j 0   #           12.01.17   0926  13.9  15    201700057  Not detected  
+H100144.3+062520  100144.3 +062520  j 0   #           12.01.17   0934  13.6  16    201700061  Detected at 1408?
+H100649.9+062623  100649.9 +062623  j 0   #           12.01.17   0943  13.3  17    201700065  Bad baseline, no detection?
+H100802.4+062103  100802.4 +062103  j 0   #           12.01.17   0951  12.8  18    201700069  Bad baseline, No detection
+H100836.8+121956  100828.0 +121823  j 0   # A005470   12.01.17   1002  6.4   19    201700073  Not detected
+H101605.8+094410  101605.9 +094402  j 0   #           12.01.17   1010  8.7   20    201700077  Not detected
+H102552.4+055740  102552.4 +055740  j 0   #           12.01.17   1019  12.5  21    201700081  Possible at 1420
+H104530.3+042403  104533.1 +042309  j 0   # A208408   12.01.17   1028  14.6  22    201700085  Not detected
+H105051.4+074308  105050.3 +074400  j 0   # A208321   12.01.17   1037  11.2  23    201700089  No apparent detection  	
+H111232.1+085740  111232.2 +085732  j 0   #           12.01.17   1046  11.4  24    201700093  Not detected
+H112003.8+074442  112003.8 +074442  j 0   #           12.01.17   1054  12.4  25    201700097  Not detected
+H112331.8+074230  112334.8 +074212  j 0   # A219233   12.01.17   1102  11.7  26    201700101  Not detected
+H112534.4+041649  112534.1 +041643  j 0   #           12.01.17   1111  14.6  27    201700105  Not detected
+H120632.3+065412  120632.3 +065412  j 0   #           12.01.17   1120  16.1  28    201700109  Not detected; zag > 15, repeated.
+H120632.3+065412  120632.3 +065412  j 0   #           12.01.17   1129  14.8  29    201700113  Not detected; absorption feature 1408 MHz
+H120950.8+055317  120950.8 +055317  j 0   #           12.01.17   1137  14.9  30	   201700117  Not detected
+H121930.6+060052  121930.5 +060045  j 0   # A227979   12.01.17   1145  15.0  31    201700121  Not detected, bad baseline
+H122027.5+062910  122030.9 +062836  j 0   # A228022   12.01.17   1153  13.7  32    201700125  Not detected  
+H122304.8+081959  122304.8 +081959  j 0   # A223312   12.01.17   1202  11.3  33    201700129  Possible at 1414  
+H121847.9+044819  121847.7 +044812  j 0   # A227978   12.01.17   1211  13.7  34    201700133  Detected 1412 MHz
+H122451.3+040322  122451.0 +040317  j 0   # A227981   12.01.17   1219  14.4  35    201700137  Not detected 
+H122459.1+064447  122501.8 +064504  j 0   # A228028   12.01.17   1228  11.6  36    201700141  Detected at 1417
+H122818.8+092412  122819.2 +092357  j 0   # A229040   12.01.17   1237  09.1  37    201700145  Possible at 1418
+H123602.3+071326  123602.8 +071200  j 0   # A223913   12.01.17   1245  11.4  38    201700149  Not detected 
+H123941.9+062941  123945.8 +062932  j 0   # A228037   12.01.17   1253  12.3  39    201700153  Not detected
+H122940.5+102306  122940.5 +102306  j 0   # A223729   12.01.17   1302  11.1  40    201700157  Not detected, poor baseline 
+H125623.5+075737  125622.8 +075734  j 0   # A227919   12.01.17   1311  11.0  41    201700161  possible 1413.5
+H132050.2+052337  132050.0 +052330  j 0   # A238712   12.01.17   1320  12.9  42    201700165  Not detected 
+H135409.6+041130  135409.3 +041124  j 0   #           12.01.17   1329  15.4  43    201700169  Over 15  Detected at end of bandpass 1409 seen in boards 3 and 4
+H135625.6+045119  135625.3 +045112  j 0   # A238715   12.01.17   1337  14.3  44    201700173  Detection at 1415 seen in boards 3 and 4  
+H141536.0+054930  141535.8 +054923  j 0   #           12.01.17   1346  14.6  45    201700177  "absorption" - RFI in the off at 1408?
+H141548.7+051039  141548.5 +051032  j 0   #           12.01.17   1353  14.1  46    201700181  no detection
+H143817.7+052500  143817.5 +052453  j 0   # A249384   12.01.17   1402  15.7  47    201700185  Detection 1413.5, RFI at 1408 in OFF 
+H143817.7+052500  143817.5 +052453  j 0   # A249384   12.01.17   1410  14.7  48    201700189  repeat of previous (zag) 
+H144259.0+050327  144258.8 +050320  j 0   # A249288   12.01.17   1419  14.6  49    201700193  nothing to see here. no detection. 
+H144512.6+115346  144512.8 +115338  j 0   # if time   12.01.17   1429   7.6  50    201700197  no apparent detection. 
+H145857.4+121938  145857.7 +121929  j 0   # if time   12.01.17   1437   8.0  51    201700201  not detected.  ended at 07:27 ast
+
+End LST:1445
+
+Notes:
+Occasional RFI at 1408 MHz.
+Two galaxies repeated for large zag.
+Operators let us run late -- maintenance time.

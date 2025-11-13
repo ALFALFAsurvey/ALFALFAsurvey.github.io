@@ -1,0 +1,68 @@
+Log for 08/17/10          Observer: Becky Koopmann, Ana Mikler, Katie 
+O'Brien, Parker Troischt, Michelle Brault, Catherine Weigel
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100817.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100818.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern   Start coords. ang  time loop  calmode
+2114 0001 22900106  23000001   drift92p1  fixAZdr   211400+221554  19  600   99  loopend   power levels OK
+2124 0000 23000002  23000003   quicklook OK
+2135 0001 23000004  23000005   
+2145 0002 23000006  23000007   
+2155 0003 23000008  23000009
+2205 0004 23000010  23000011
+2215 0005 23000012  23000013   power levels OK
+2225 0006 23000014  23000015
+2235 0007 23000016  23000017
+2245 0008 23000018  23000019   cs
+2255 0009 23000020  23000021
+2306 0010 23000022  23000022
+2316 0011 23000024  23000025
+2326 0012 23000026  23000027   cs
+2336 0013 23000028  23000029   cs power momentarily high in beams 3 and 4
+2346 0014 23000030  23000031   cs in beams 0 and 5
+2356 0015 23000032  23000033   quicklook OK
+0006 0016 23000034  23000034 
+0016 0017 23000036  23000037 
+0026 0018 23000038  23000039 
+0036 0019 23000040  23000041   power levels OK
+0046 0020 23000042  23000043  
+0056 0021 23000044  23000045
+0106 0022 23000046  23000047
+0116 0023 23000048  23000049
+0126 0024 23000050  23000051   faint cs in beams 0 and 5
+0137 0025 23000052  23000053
+0147 0026 23000054  23000055
+0157 0027 23000056  23000057   faint cs in beams 0 and 2
+0207 0028 23000058  23000059   quicklook OK
+0217 0029 23000060  23000061
+0227 0030 23000062  23000063
+0237 0031 23000064  23000065
+0248 0032 23000066  23000067   power levels OK
+0258 0033 23000068  23000069
+0308 0034--Abort
+
+LST@stop:0308   
+
+NOTES:
+- TOGS run at beginning but Dec was 221832 rather than 221554
+- first drift: starting ra had passed
+- FAA radar ON
+- Azimuth at 179.73 according to observation status window
+- Tiedowns disabled
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 14.7   K3: 16.2   K4: 16.2   AT 18:02
+70K = K1: 83.9   K2: 91.2   K3: 101.7  K4: 110.1
+
+16K = K1: 14.6   K2: 14.7   K3: 16.2   K4: 16.1   AT 22:01
+70K = K1: 84.4   K2: 92.5   K3: 102.7  K4: 111.0
+
+			=>temperatures of the 8 sensors within ALFA housing
+

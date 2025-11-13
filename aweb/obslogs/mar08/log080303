@@ -1,0 +1,75 @@
+Log for 08/03/03   Observer: Melissa Jacquart, Eric Wilcots, Kelley Hess, Dave Kornreich
+
+System Configuration:  FixedAZ Drift Map
+                       Cima version 2.3.xx  Unusable Engineering Version
+
+Using: a2010_az180.gui as save state.
+
+Files:  /share/pserverf.sda2/wappdata/wapp.20080303.a2010.****.fits
+        /share/pserverf.sda2/wappdata/wapp.20080304.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern  Start coords.   ang  time  loop  calmod
+0731 0041 806300187 806300188  drift118p2 FixedAz 073100+284248    19   600   99   loopend  
+0742 0042 806300189 806300190
+0752 0043 806300191 806300192
+0802 0044 806300193 806300194
+0812 0045 806300195 806300196      power levels look good 
+0821 0046 806300197 806300198
+0832 0047 806300199 806300200
+0842 0048 806300201 806300202
+0852 0049 806300203 806300204
+0902 0050 806300205 806300206
+0913 0051 806300207 806300208
+0923 0052 806300209 806300210	  power levels looking good
+0933 0053 806300211 806300212
+0943 0054 806300213 806300214
+0953 0055 806300215 806300216     power level spike due to continuum source, see notes*
+1003 0056 806300217 806300218
+1013 0057 806300219 806400001
+1024 0000 806400002 806400003
+1034 0001 806400004 806400005	  a little GPS happening
+1044 0002 806400006 806400007
+1054 0003 806400008 806400009
+1104 0004 806400010 806400011
+1114 0005 806400012 806400013
+1124 0006 806400014 806400015     power levels ok
+1135 0007 806400016 806400017
+1144 0008 806400018 806400019
+1154 0009 806400020 806400021
+1205 0010 806400022 806400023
+1215 0011 806400024 806400025
+1225 0012 806400026 806400027
+1235 0013 806400028 806400029
+1245 0014 806400030 806400031
+1255 0015 806400032 806400033     a little GPS happening
+1305 0016 806400034 806400035     more GPS
+1316 0017 806400036 806400037
+1326 0018 806400038 806400039
+1336 0019 806400040 806400041
+1346 0020 806400042 806400043
+1356 0021 806400044 806400045
+1406 0022 806400046 806400047     WAPP low disk warning **
+1416 0023 806400048 806400049     WAPP low disk warning **
+1426 0024 806400050               Ran out of disk space.  Lots of errors (see below)***.  Aborted.
+
+
+End LST: 1434  Given the low disk warning, we called Arun--ran out of disk space mid-conversation.  Aborted and exited cima.
+Last LST: 1426  TOGS was run only at the begining
+
+ TOGS aborted twice at start, strong FAA radar
+
+
+
+*23:40:08 check_wapp_levels: WAPP power levels are now OK between 0.873 and 1.268
+23:40:15 check_wapp_levels: WARNING there are WAPP channels with too much power (1.486 > 1.4)!
+23:40:17 check_wapp_levels: WAPP power levels are between 0.873 and 1.553 (still bad)
+23:40:19 check_wapp_levels: WAPP power levels are between 0.874 and 1.584 (still bad)
+23:40:21 check_wapp_levels: WAPP power levels are between 0.875 and 1.565 (still bad)
+23:40:23 check_wapp_levels: WAPP power levels are between 0.873 and 1.501 (still bad)
+23:40:25 check_wapp_levels: WAPP power levels are between 0.875 and 1.407 (still bad)
+23:40:27 check_wapp_levels: WAPP power levels are now OK between 0.879 and 1.302
+
+**04:03:50 WAPPDATA-get_filedir: WARNING wappdata getting low on disk space!
+
+***ERROR   WAPPDATA-fill_to_2880: ERROR failed to pad 2880-block in FITS-header --- wrote -1 of 80 bytes!
+PROBLEM WAPPDATA-fill_to_2880: Reason: No space left on device!

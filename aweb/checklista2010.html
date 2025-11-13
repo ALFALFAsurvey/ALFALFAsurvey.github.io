@@ -1,0 +1,517 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title></head><body bgcolor="#ffffff">
+
+<center><h2 style="color: rgb(10,10,150);">A2010 Observing Checklist </h2>
+
+<font color="#cc0f14"><b>WARNING: Version date: September 2012</b></font>
+<table border="3" bordercolor="darkblue" cellpadding="3">
+<tbody><tr><td>Cookbook date: </td> <td> 11 Sep 2012</td></tr>
+<tr><td>CIMA version  : </td> 
+<!--<td> "A `smart' version of CIMA (3.1.08 2010-02-01 17:44 "Smart")" -->
+<td> "The Stable version (Default) (Ver.3.3.02 2012-06-07 17:14)"
+</td></tr>
+
+<tr><td>WAPPdata      : </td> <td>  /share/pserverf.sdb1/wappdata/ &nbsp &nbsp &nbsp &nbsp (a2010 alias is "wdata2") </td></tr>
+</tbody></table>
+
+<br>
+<table bg="lightyellow" border="3" bordercolor="#cc0f14">
+<tbody><tr><td>
+Find the 2007 version <a target="_blank" href="a2010obs_instr_2007.html"> here</a>, the Spring 2008
+version <a target="_blank" href="a2010obs_instr_spr08.html"> here</a>,
+the Fall 2008 version <a target="_blank" href="a2010obs_instr_fall08.html"> here</a>, the
+Spring 2009 version <a target="_blank" href="a2010obs_instr_spr09.html"> here</a>, and the Jan 2010
+version with the normal meridian (transit) setup <a target="_blank" href="year10/a2010obs_instr_100312.html"> here</a>.
+The special Spring 2010 instructions are <a target="_blank" href="year10/a2010obs_instr_100507.html">here</a>
+as is the corresponding <a  target="_blank" href="year10/checklista2010_100507.html">checklist</a>. The normal instructions
+for Fall 2010 are <a target="_blank" href="year10/a2010obs_instr_100905.html">here</a>
+as is the corresponding <a  target="_blank" href="year10/checklista2010_100905.html">checklist</a>.
+Find the Aug-Sep2011 (including zenith strip observing) checklist <a target="_blank" href="year11/checklista2010_111006.html">here</a>,
+and the final one from Nov2011 <a target="_blank" href="year11/checklista2010_111121.html">here</a>.
+</p>
+
+<h3> IMPORTANT CHANGES FOR <font color=#cc0f14>SEPT-OCT</font> 2012</h3>
+
+All ALFA beams appear to be functioning. <b>Stay tuned for an update once we start observing!</b></p>
+
+<center>
+<b><font color=#008000>If you notice instabilities in any beams or unusual behavior, please be sure to make
+detailed notes in the log files about what you observe. Also ask the operator to report the problems to Dana and Phil.
+Our immediate feedback is really important... and much appreciated!</font></b></p></center>
+
+    <b><font color=#00CC66>Warning</font></b>&nbsp &nbsp
+    Warnings about WAPP chip count errors appear in the cimalog file (but not in the CIMA log window).
+    This warnings are not fatal, but the size of the cimalog file therefore exceeds the limit of the
+    web service. Include it in the loglinks.htm file, but you won't be able to view it. And, of course, keep an
+    eye on the WAPPS: this is not a positive sign.</p>
+    <b><font color=#00CC66>Warning from Sept 2010: &nbsp (This does not seem to be an issue now.)</font></b>&nbsp &nbsp
+    The TOGS calibration script appears to hang at the stage of rotating ALFA into position and times out
+    (after 2 min).
+    Run it again, and it should work.</p>
+
+<ul>
+<li> In Fall 2012, we will be completing the on-meridian drifts of the northernmost ALFALFA tile so that
+     all the observing will be at <font color="#cc0f14"><b>Az = 180 (or 540</b></font> if that is nearer). For a2010, you need to use the 
+     <b>a2010_az180_2012.conf</b> configuration file; the azimuth can be either
+     180 or 540; pick the one nearer to the current position.
+<li> In Fall 2012, <font color="#cc0f14">TOGS runs <b> at the START</b></font> (so start observing 15 min before the
+     posted time for A2010). Be sure that the DecJ of <b>galfasrc</b> in the <b>a2010.cat</b> file is set
+     to the same DecJ as tonight's drift. Load the TOGS command file: <b>command_galfasrc.cmd</b>.<br>
+     <font color=#008000>If there are problems running TOGS,
+     please call Snez (work: 608 890 1458 or home: 608 259 9449) to let her know 
+     (but don't delay the start of A2010; you can always call her later).</font>
+<li> We position the telescope at a particular Az (on the meridian) and DecJ2000. Always <b>double check</b> 
+     that the DecJ2000 is correct by
+     checking that the "Rslt" declination in the <b>monpnt</b> display is the correct DecJ2000. 
+     It will be updated
+     every ten minutes (beginning of each drift), so it may stray a bit, and it may require a few seconds to move into
+     position. Remember that that the beam is ~3.5 arcmin and it takes ~14 sec of time for a source to drift through the
+     beam so if you are "off source" for a few seconds at the start of the next drift, it doesn't really matter....
+<li> The ALFA rotation angle for meridian observing is <b>19 degrees</b>. This is set properly when you load the configuration file.
+<li> You need to start CIMA by typing <b>"cima --X"</b>. (Notice the "--X".)
+<li> <b>"Help"</b> info is available by right clicking on any widget or parameter
+     <li> The sources in your catalog which are "visible" are indicated along with
+              their current location, slew time, etc. 
+     <li> It is possible to launch the system monitoring widgets from within CIMA.
+     <li> <b>"Accept"</b>  is the same as <b>"Apply"+"Dismiss"</b> 
+     <li> The <b>scan number convention</b> is "ydddNNNNN.fits" where
+          <b>"y"</b> is the year number, <b>"ddd"</b> is the day number within the
+             year and <b>"NNNNN"</b>  is a sequential number which now has nothing to do
+             with the time. Note also it has nothing to do with the FITS file number. <p>
+</ul>
+</td></tr></tbody></table>
+</center>
+<br>
+This is a short checklist of the things to do when
+observing... for more details see 
+<a target="_blank" href="http://www.naic.edu/%7Ea2010/a2010obs_instr.html">the observing cookbook</a>. <br>
+Remote observers, see <a target="_blank" href="http://www.naic.edu/%7Ea2010/remote_obs.htm"> 
+remote observing checklist </a>.<br>
+In case of observational problems, see 
+<a target="_blank" href="http://www.naic.edu/%7Ea2010/troubleshooting.html"> 
+observational troubleshooting list</a>.<br>
+And, it is always a good idea to check the <a href="loglinks.htm">recent log files</a> 
+or ask recent observers about their experiences.</p>
+If you want to practice CIMA offline, use one of the other machines, e.g., <b> fusion00</b>, <b>aolcN</b> (where N is a number).
+</p>
+
+<br>
+
+<hr>
+<h2><font color="#cc0f14">Startup:</font></h2>
+<ul>
+<li> Ask the telescope operator to move to the azimuth and approximate zenith angle of the drift you're
+    doing. For <b>meridian observing</b> in general, it can either be 360 degrees 
+    (NOT 0) or 180 degrees (540 equivalent) depending
+    on whether the drift tracks north of zenith (Decl &gt; +20d; use AZ =&gt; 180) or south of zenith
+    (Decl &lt; +16d; use AZ = 360). <b><font color=cc0f14> In Fall 2012, we will always be observing north of zenith,
+    so choose the 180 degrees (540 equivalent) option.</font></b> And <b>be sure the operator
+    gives you back telescope control!</b>  Alternatively, go to the "Pointing Control" window
+    and point the telescope to the first position; just be sure the telescope goes to the proper azimuth.  
+    Usually the best approach is to have the telescope operator send the telescope to the approx
+    AZ, ZA <b> before (tell him/her)</b> he/she starts
+    up GALSPECT. <b> <i> If so, don't start CIMA until the telescope is close to position (once you start
+    CIMA, the telescope motion will halt until you start the TOGS command file.) </i></b>
+
+</p>
+
+<li><b><font color="#cc0f14"> New: In Fall 2012, run TOGS only at the START of the night! </font></b> <br>
+   <b>Check the TOGS setting</b>: </br> 
+   The source position is specified by the <b><i>galfasrc</i></b> position in the <b>a2010.cat</b>
+   file and you execute the command file <b>command_galfasrc.cmd</b>. Be sure that the
+   declination of <b><i>galfasrc</i></b>  is the same as the one for the A2010 drift. The TOGS command file sends the
+   telescope to the position specified by <b><i>galfasrc</i></b> , and then tracks that position for ~6 minutes. 
+   <font color=#008000>If you have problems running
+   TOGS, please call Snez (work: 608 890 1458 or home: 608 259 9449) to let her know 
+   (but don't delay the start of A2010; you can always call her later)..</font> 
+</p>
+
+<li><i><font color="#008000">LET THE OPERATOR DO THIS STEP!</font> 
+On the dataview machine do the following to start GALSPECT:</i>
+<ul>
+<li><i>Login to dataview using the a2010 account.  Switch to the 
+       guest account via <b>ssh -l guest dataview</b>.  You must do this as guest.</i>
+<li><i>In the same xterm window ssh to the galfa1 machines.  <b>ssh -i galfa_key galfa@galfa1</b>.  You should see a '#' prompt. </i>
+<li><i> Check if ghost galspect processes are running by typing <b>ps</b>. 
+If processes called <b>gdiag</b> are present, kill them by typing the command <b>kill</b> followed by the process number.</i>
+<li><i>Warm up GALSPECT via typing <b>/var/diag</b></i>
+<li><i>Type the command:  <b>/var/levels_togs</b>.  If you get the message 
+    LO2:  Set failed, got back:  ERROR setting freq, 
+then you need to start the gpib on the wapp server.  
+To do this, start CIMA and click <b>Restart GPIB</b> under the
+Utilities menu. Go back to the 
+xterm logged into galfa1 and again type <b>/var/levels_togs</b>.  You should not receive an error.
+</i>
+<li><i>Enter the command <b>/var/togs</b>.  This will run for the rest of the night, so minimize the windows</i>.<br>
+
+<font color="#cc0f14"><b>Note: if the operator is not able to get GALSPECT to run, he/she should call the
+<a target="_blank" href="http://sites.google.com/site/galfahi/contact-folks">TOGS contact</a> for
+the night.</b></font></p></ul>
+
+<li> <b> Log into  OBSERVER2: dtusr </b>  (once the previous observer is out). Password is taped to
+computer.</p>
+
+<a target="_blank" name="cima"></a>
+<li> <b>Start CIMA on-line GUI </b>when telescope is close to start position. At the moment, you need
+    to type <b>cima --X</b> in an available window or right click on the screen background and choose <b>CIMA Online GUI</b>.
+   Select the desired version of
+    CIMA; this is currently "The 'stable' version of CIMA (Ver 3.02 2012-06-07 17:14)".
+
+<ul> 
+    <li>Project Number: <b>a2010</b>
+    <li> Observer: <b> your name </b>
+    <li> select <b>Line</b> and <b>Accept</b>.</p></ul>
+
+<li><b>Receiver selection menu</b>
+   <ul>
+   <li> Choose Receiver: <b>ALFA</b> and "<b>Accept</b>". Note: "Quick Tsys" should 
+    be "no"; "rotate receiver" and "retrack source" should be "yes". 
+   <li> Hit <b>Accept</b>
+   <li> Close window</p>
+</ul>
+
+<li><b>Main menu / Utilities / Utilities </b>
+<ul>     <li><b> Restart the WAPPs</b>
+     <li> <b>Close</b> when output to log window complete.</p>
+</ul>
+
+<li><font color="#cc0f14"><b> New: In Fall 2012, run TOGS only at the START of the night!</b> </font><br>
+   <b> Command File Observing  (TOGS) Menu</b>
+ <ul> 
+   <li>Click <b>Load</b> - to open a menu listing available command files.
+   <li>Select the file <b>'command_galfasrc.cmd' </b>
+       (scroll down) and then <b> click Accept.</b>
+   <li>  When the operator has given the OK that GALSPECT is running, check and, if necesary,
+adjust the RA, Dec for <i> galfasrc</i> in the <b>"a2010.cat"</b> file. Note: In meridian observing, we update
+the <b>"a2010.cat"</b> file for the TOGS team; it should have the same declination as the A2010 drift.
+   <li> Click <b> Run</b> to run the command file. The telescope will slew to requested position and, 
+when it reaches the meridian, TOGS calibration will run for ~7 minutes.  
+   <li>As
+soon as "observing menu" appears it can be used to verify settings and
+then closed. The "command file" window cannot be closed until the run
+file is finished, at which point click <b> Close </b>.
+and then continue with <b> Load Configuration</b> menu (below) <br> 
+  <li> For for any reason the command file hangs, restart it; make sure that you 
+restart from First line by clicking appropriate button at middle left on Command Log GUI.
+
+  <li> <font color="#cc0f14"><i>Note: if the GALSPECT spectrometer is not set up within 
+ten minutes of their allotted time (so that
+the ~7 mins of calibration cannot be run before A2010 is scheduled to start), do not run the TOGS
+calibration if the A2010 prime map LST range is reached. In Fall 2012, we do not run TOGS at the end.</i></font></p>
+</ul>
+
+<li>
+   <b>Main menu / Utilities / Utilities </b>
+<ul>     <li><b> Restart the WAPPs</b> again. A favorite A2010 saying is: <i>"When in doubt, restart the WAPPs."</i>
+     Another one is, of course, <i>"Boring is good."</i>
+     <li> <b>Close</b> when output to log window complete.</p>
+</ul>
+
+<li><b>Main menu / Utilities / Load configuration</b>
+<ul>
+  <li> Scroll down to select the appropriate configuration file. In Fall 2012, this will be
+      <b>a2010_az180_2012.conf</b>.
+      Check the schedule to be sure you know what drift you are observing and which file to use.
+      After selecting the proper configuration file, be sure to  
+      check that the parameters look correct.
+    <li> Click <b> Load and Apply </b> when ready.<br>
+
+       <font color="#cc0f14"><i>Note: If this works, you will not need to load the IF/LO configuration or
+             adjust the Backend Control (next two steps below).</i></font></p>
+</ul>
+
+<li><b>Receiver IF/LO selection menu</b> &nbsp; <font color="#cc0f14"><b>Note: 
+    Not needed if you loaded the configuration!</b></font> 
+   <ul>
+   <li> Check receiver <b>ALFA</b>
+
+   <li> Check ALFA filter choice: <b>Full width</b>
+   <li> Check IF/LO path: <b>ALFA</b>
+   <li> Check center frequency: <b> 1385.0 MHz </b>(when topocentric observing)
+   <li> Check backend: <b>WAPP</b>
+   <li> Check WAPP bandwidths: <b>100 MHz</b>
+   <li> Configuration type: <b>Fast</b> &nbsp &nbsp &nbsp and Radar blanker: <b>Off</b>
+   <li> Click <b>Accept</b> Check that the correct ALFA center frequency (1385 MHz),
+        range (1335-1435 MHZ) and 4 IF band setups (100 MHz) are ok on the
+        upper display screen to right of observer2 computer or in CIMA log window.
+   <li> <b>Watch CIMA log window </b>to make sure IF/LO params are set before moving on, then <b>Dismiss </b> both IF/LO windows
+   </p>
+   </ul>
+
+<li><b>Backend Control Menu </b>  &nbsp; <font color="#cc0f14"><b>Note: 
+    Not needed if you loaded the configuration, but always needed if you restart the WAPPs!</b></font>
+    <ul>
+    <li> This opens the <b>Configure Wapp ALFA </b> window. Check that all WAPPs are using "2 chan, 3-level" and at 100MHz.
+    <li> All equal: <b>Yes</b> &nbsp &nbsp &nbsp Dump time: <b>1 sec</b><br>
+         (The power monitor button is there if you need it, but you shouldn't normally.)
+    <li> <b>Accept</b> this configuration.
+    </p>
+    </ul>
+
+<li><b>CIMA observing menu </b>  &nbsp (should pop open when configuration file loaded, or else click "spectral line observing")
+<ul>
+   <li> Quickly check the basic setup for fixed azimuth observing. Correct values:
+	<ul>
+        <li>  The<b> observing mode</b> is <font color="#cc0f14">Fixed azimuth drift map</font>
+        <li> <b> Number of loops</b> is set to cover length of run. Easiest to leave
+              it at the default <font color="#cc0f14">99</font>.
+        <li> <b>Strip time</b> is <font color="#cc0f14">600</font> secs.
+        <li> Set the <b>Azimuth position</b> to the exact value (DD.DD) for this observation.
+              <font color=#cc0f13>
+              For Fall 2011/2 meridian observing, this is 180 deg.</font>
+              Notice the possible configuration of Az+360=540 deg
+              according to wrap. We think that the telescope will chose the closer one, but 
+              double check if the telescope seems to be unwrapping itself. 
+              Be sure to record the one that is actually used.
+        <li> <b>ALFA rot angle</b> is <font color="#cc0f14">19.0</font> degrees for on-meridian observing.<br>
+              We do not use the Winking cal.
+        <li> <b>Drift type</b> is <font color="#cc0f14">Follow Dec J2000</font>
+
+        <li> <b>Calibration type</b> is <font color="#cc0f14">Hcorcal</font>
+        <li> <b>Calibration time</b> is <font color="#cc0f14">1 sec</font>
+        <li> <b>Calibrate when</b> is <font color="#cc0f14">On @ loopend</font>
+
+        <li> <b>Add extra cal</b> is <font color="#cc0f14">No</font>
+        <li> <b>Adjust power</b> is <font color="#cc0f14">First loop only</font>
+        <li> <b>Loops per file</b> is <font color="#cc0f14">1 loop</font></p>
+        </ul>
+ 
+</ul>
+OK, now it is time to pick your drift, make final adjustments and begin observing.</p></ul>
+
+<hr>
+<h2><font color="#cc0f14"> Beginning Observations: </font></h2><font color="#cc0f14"> </font>
+<ul>
+<li><b>CIMA observing menu:</b>
+    The observing widget should still be open since you didn't close 
+    the resulting window after completing the <b>Load Configuration</b>. 
+    This is the window you'll be using most of the night. Note it also has buttons that
+    allow you to "adjust power", but you should only do that if you stop/start data taking.</p>
+   <ul>  
+     <li>Click on the <b>start position</b> button and select the proper drift from the a2010.cat
+         for tonight's observation. (It will previously have been set to "galfasrc").
+     <li> Check the <b>RA</b> is set ahead enough for the starting RA (including the offset from LST).
+          Enter the correct value (if it is not already ok).
+          Review the "status" display to be sure the ZA is what you expect it to be. Adjust RA otherwise.
+          Check that the <b>declination</b> is correct, and click <b>use now</b> and then click <b>accept</b>. 
+     <li> Click <b>Adjust power </b>
+     <i>Wait until output in log window confirms power adjustment.</i>
+        Once observations have started, check that the power numbers  in the Observer's
+        Monitor (alfaobswin) to make sure OK (the numbers should be between 0.8 and 1.2)
+    <li>Click <b> Observe </b> to begin the observation. Hopefully only a small countdown will remain, and the photon collecting will begin.
+	</p>
+
+    </ul>
+</ul>
+<br>
+<hr>
+
+<h2><font color="#cc0f14"> When Observing:</font></h2>
+<ul>
+<li> As soon as you start observe, run some immediate quick checks. It is especially important that you do this
+     in Fall 2011 to be sure that the <b>Az, ZA</b> and <b>ALFA rotation angle</b> are correct.
+    <ul>
+    <li><b>Check that the telescope is actually at the correct declination </b><br>
+           1. Check the declination displayed in the <b>CIMA observation status window</b> &nbsp &nbsp 
+           <font color=#cc0f13>Always check this!</font><br>
+           2: Check the "Rslt" line in the <b>monpnt</b> window (the upper right window on the screen
+            below the frequency band monitor). Dec value should stay within a few
+            arcseconds of the drift value. &nbsp &nbsp <font color=#cc0f13> Always check this!</font>
+    <li><b>Check that the ALFA rotation angle is properly set</b>. Click on <b>telescope</b> in the <b>
+           CIMA observation status window</b> and check the number to the right of "ALFA" in the bottom right hand corner
+           of the display.&nbsp &nbsp <font color=#cc0f13> Always check this!</font>
+    <li> Check the power levels and waterfall plots as usual. &nbsp &nbsp <font color=#cc0f13> Always check this! If there
+           are unexpectedly bad beams, consult the telescope operator, and report issues in the nightly log.</font>
+    </p>
+    </ul>
+<li>
+<a target="_blank" name="log"></a>
+<b>Keep a log file </b>- it is very important to keep an accurate log of what happens, even to note "an uneventful night".  To do so:
+<ul>
+  <li> ssh to another machine as <i>a2010</i>
+
+  <li> open a new file <b>logYYMMDD</b> in <b>/share/obs4/usr/a2010</b>
+using you favorite
+text editor (vi or pico work well when remote observing; emacs is too
+slow, unless you use the '-nw' flag to open in a terminal.) Use a
+posted log file as the template. <li> record **anything** of note, especially 
+<br>(1) the CIMA version number and the saved state (a2010_az360.gui or a2010_az180.gui) 
+    <br>(2) any bad files, 
+    <br>(3) any power adjustments, 
+    <br> (4) unusual rfi etc. (see <a target="_blank" href="http://www.naic.edu/%7Ea2010/troubleshooting.html"> observational troubleshooting list</a> to check 
+for notes about specific RFI frequencies.)
+
+<br>To quote Brian: <i> I cannot stress the importance of keeping accurate logs.  
+While the file conversion software works automatically, it is good to have a backup to check against when 
+comparing scan numbers.  Sometimes CIMA squeezes in extra scans at the beginning or end of the run, or 
+has some other unpredictable behavior.  It is also important to note "empty" files, as IDL will hiccup on these.</i>
+The folks who calibrate/process the drifts you take will thank you for your carefully note-taking (and will be entirely
+justified in saying unkind things about you otherwise).
+
+</ul>
+</p>
+
+<li><b>Be vigilant for new sources of RFI; carefully check the waterfall plots and/or quicklook.</b>
+Know the expected locations in the band of the "usual suspects". The
+FAA radar  is usually at 1350 MHz (although they sometimes use 1330 MHz, out of our bandpass!).
+Strong RFI at 1367 and 1382 MHz is due to the
+Punta Salinas naval base radar, which should <b>not</b> be on during ALFALFA run 
+(see <a target="_blank" href="http://www.naic.edu/%7Erfiuser/smarg-coordPS.html"> this link</a>.) . 
+If you see this, ask the operator to 
+call Punta Salinas immediately and tell them to turn off their equipment! 
+See <a target="_blank" href="http://www.naic.edu/%7Ea2010/troubleshooting.html"> 
+
+observational troubleshooting list</a> for other observing issues.)
+
+</li>
+
+</p>
+<li><b>Between loops:</b>
+    <ul>
+    <li><b>Check power levels periodically. </b>They should stay in the range (0.8,1.2) and be coded 
+        <font dark="" blue=""> blue </font> on the dataview observer's monitor. Note any odd power level
+         variations in log. (Remote observers: be sure to note in log that you checked periodically.) 
+        <b>Do not adjust the power levels during a run unless absolutely necessary; be sure to make a 
+           clear note in the log file if you do so; it is necessary to process separately drifts done 
+           before and after the adjustment,
+           so make sure the processer can tell from the log file how to group the drift files.</b>
+
+    <li>Keep track of the times, file numbers, scan numbers for drift and cal and any notes in the log file. 
+    <li>Keep an eye on the declination on the monpnt window on
+           the right hand console to make sure it is the same (within
+           a few arcsec) of the desired J2000 declination.
+    </ul> </p>
+
+<li><b>File Integrity: Check the FITS files to make sure the coordinates are being written correctly.</b>  
+     Use the IDL program <b> quicklook. </b> 
+     <ul>
+       <li> <b> ssh </b> to one of the fast linux machines, like "fusion01", "aolc1", "aolc2" etc.
+       <li> &gt cd /share/a2010/idl/eggidl. 
+       <li> IDL&gt @wasinit2 
+       <li> IDL&gt;  quicklook, '<i>filename</i>'
+    <br> where 'filename' is the name of the fits file, with directory path. The directory path can
+      be found in the log file, e.g., /share/wappdata/wapp.20061116.a2010.0011.fits
+     </ul>
+<br>     This is fast and is good to use while remote observing.
+         If you want to look at an arbitrary record, see the file "checkfitsnotes.txt" in
+         the /share/obs4/usr/a2010 directory.</p>
+
+
+<li><b><b>Data Monitoring:</b>
+    </b><ul>    <li>Use the widgets provided on the dataview computer or within the CIMA widgets (there are
+    lots of monitoring tools; learn to use them!). When you
+    are in the control room, you can start them from the pull-down menu on
+    the dataview machine; be sure that the "CIMA version" is set to what
+    you want. Alternatively, you can open the widgets by typing the
+    following commands on an xterm: <ul>
+      <li><b>alfamonwin</b> &amp; - same display as to the right of the operator's station
+      <li><b>alfamotorwin</b> &amp;- shows ALFA rotation angle - good to check at start
+      <li><b>alfabeamwin</b> &amp;- shows approximate positions of each beam; 
+    can set to RA,Dec (note: currently, the positions aren't quite perfect but still helpful.)
+      <li><b>alfaobswin</b> &amp;- smaller window showing the power in dB for each beam
+      <li><b>alfadatawin</b>
+
+&amp;- waterfall plots in your color of choice (select ALFA pattern,
+then waterfalls from the pull-down menu under diagrams). Too cool.
+Enough said. </ul> The latter two (alfadatawin and alfaobswin) are
+particularly useful in monitoring the data and should be left up in
+plain sight.<br>
+
+    <li>Notice that you will not be able to start <b>alfadatawin</b> if the process is already 
+    running on dataview (started by one of the previous observers). If this happens, ask the telescope 
+    operator to kill the previous process or, if he cannot, to contact Mikael, Arun, or Phil to do so.
+    </ul> </p>
+
+<li><b><b>If there is a power failure...</b>
+   There is a remote "reset" switch for ALFA - it is no longer necessary to go up to the dome and push the reset button.
+
+</b>
+</ul>
+
+<a target="_blank" name="wapp"></a>
+<h2><font color="#cc0f14"> If the WAPPs get confused...which WILL happen:</font></h2><font color="#cc0f14"> </font>
+    The only sign of this happening in CIMA is that messages appear in <font color="red">red</font> in the
+    CIMA log window. WAPP error messages include: <font color="red"><i>WAPPs confused</i></font> 
+indicates a hardware problem (Note the messages <font color="darkorange"><i>WAPP (3) WARNING - 
+Counts don't match for chip 1</i></font> and <font color="darkorange"><i>WAPPDATA-queue_agcdata: 
+WARNING received duplicate AGC-datablock</i></font> are not WAPP errors.)
+ Occasionally there is no warning message from CIMA, but the countdown
+    time on the aostatus window stops, meaning that the WAPPs are no longer taking data.
+    Sometimes the problems go away, so try to restart
+    the WAPPs and then the observing again.
+    <ul>
+
+    <li>Procedure: 
+          <ul>
+    <li><b>Abort</b> Observation in, e.g.,  the <font color="darkorange">observing menu</font>
+        <li><b>Restart the WAPPS </b>under <font color="darkorange"> Utilities </font>
+        <li>Repeat start up process
+          <ul> <li> <b>Load Configuration</b> as before. <b> Load and Apply </b>
+               <li> <b> Reconfigure the WAPPS: </b> Click on B <font
+          <font color="darkorange"> Backend Control Menu, </font> which opens the Configure Wapp ALFA
+                  window. Check that all WAPPs are using 2 channels
+                  and 3 levels and at 100MHz. <b> Accept </b> this configuration.
+               <li> In the CIMA observing menu, select drift again and adjust
+                    starting time.
+               <li> Adjust power and observe.
+          </ul>
+         </ul>
+
+ If this does not work, try again, up to a few times. If this still does not help,
+      exit CIMA and start again.
+  If the <font color="red">error messages keep appearing</font>,  it will be necessary to have the operator call an engineer to
+    look into the problem. Currently, the WAPP experts are Giacomo Comes and Arun.</p>
+   </ul> 
+
+<hr>
+
+<a target="_blank" name="finish"></a>
+<h2><font color="#cc0f14"> Finishing Up:</font></h2>
+<ul>
+<li>After a few seconds of integration time, <b> abort</b> the last unfinished scan.  
+
+<li> <font color=#cc0f14><b>In Fall 2012, we do not run TOGS at the end, so you can skip this step.</b></font><br>
+ <b> If running TOGS: </b>
+<ul> <li> Under <b>Utilities</b>, <b>Restart the WAPPs</b> (note
+any error messages when you do this; if you get any, try restarting the WAPPs again)
+<li> Go to <b>Command File Observing</b>, and click on <b> Load </b>.  
+Choose <b>'command_galfacurpos_nov11.cmd"</b>, click <b> accept </b>,  and 
+<b>run</b> the script.  TOGS calibration will take about 6 minutes, so be sure to allow for this before the next program
+is set to start. <i>Note: should the telescope run into the ZA limit during TOGS calibration, just let it finish 
+(or abort and give up). </i>.</p>
+</ul>
+
+<li>Exit CIMA normally
+<li>Exit the observer2 machine
+<li>Exit data monitoring programs "nicely"
+<li>Exit IDL (if you were using it)
+<li>CTRL-C out of the GALSPECT control and logout of galfa1 (Let the operator do this!)
+<li>Exit out of the dataview machine</p>
+</ul>
+
+
+<a target="_blank" name="afterobs"></a>
+<hr>
+<h2><font color="#cc0f14">After observing...</font></h2>
+
+<b>See the <a target="_blank" href="http://www.naic.edu/%7Ea2010/todo_endrun.txt"> list of tasks to do after each  
+run. </a> <br> <a href="after100822"> Here </a> is a shorter summary
+of commands that can be saved to the disk and edited for current date. </b> 
+
+
+ 
+<p>
+
+
+<br>
+<hr><br>
+<font color="#cc0f14">
+This page maintained by the members of the Cornell
+<a target="_blank" href="http://www.astro.cornell.edu/Galaxy/egg.html">ExtraGalactic Group</a>
+and their friends, the other members of the 
+<a target="_blank" href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> observing team</font>
+
+<br>
+<font color="#008000"><i>Last modified: Tue Sep 11 08:28:28 EDT 2012 by martha</i></font>
+<!-- hhmts end -->
+</b></body></html>

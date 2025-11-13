@@ -1,0 +1,76 @@
+Log for 11.03.06 (06Mar2011)        Observers:Parker Troischt, Ron Olowin, Catherine Weigel, Michelle Brault, Nathan Nichols, Jaclyn Patterson
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110306.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110307.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+LST  fits    Scan      calscan    Source    Pattern   Start coords. ang  time loop calmode
+0911 0032  106500344  106500345  drift136p2   fixAzdr   090921+330541  19   600  99   loopend
+0921 0033  106500346  106500347  quicklook ok
+0931 0034  106500348  106500349 
+0941 0035  106500350  106500351 "broken" continuua beam 3,5
+0951 0036  106500352  106500353 power levels ok, continuum source in beam 4,3
+1001 0037  106500354  106500355 
+1011 0038  106500356  106500357 weak cs in beam 3
+1022 0039  106500358  106600001 power levels ok quicklook ok
+1032 0000  106600002  106600003 weak cs beam 0
+1042 0001  106600004  106600005 "broken" continuua beam 5,3
+1052 0002  106600006  106600007  quicklook ok
+1102 0003  106600008  106600009  extrapolating pt error LST 1105  power levels ok; faint "broken" continuua in beam 0,5,3,4
+1112 0004  106600010  106600011  continuum in beam 6,1,2
+1122 0005  106600012  106600013  
+1132 0006  106600014  106600015
+1142 0007  106600016  106600017  faint "broken" continuua in beam 0,2
+1152 0008  106600018  106600019  quicklook ok; faint "broken" continuua in beam  5,0,3,6; GPS at UTC 05:30 at 1381 MHz
+1202 0009  106600020  106600021  
+1212 0010  106600022  106600023  bright + faint continuua in beam 3,4,5; faint "broken" continuum in beam 0,2,5
+1222 0011  106600024  106600025  GPS at UTC 05:53 to 05:55 at 1381MHz; quicklook ok;
+1233 0012  106600026  106600027  power levels ok; faint "broken" continuua in beam 0,3,5,2
+1243 0013  106600028  106600029  extrapolating pt error LST 1251; faint "broken" continuum in beam 3;
+1253 0014  106600030  106600031  faint "broken" continuum in beam 3; continuum in beam 0; "broken" continuua 2,3,4,5; see ***; quicklook ok
+1303 0015  106600032  106600033  faint "broken" continuum in beam 0; quicklook ok 6B flat; 
+1313 0016  106600034  106600035  faint "broken" continuum in beam 4; very faint broken continuum in beam 5,3;
+1324 0017  106600036  106600037  "broken" continuum on 1,3,4,6
+1334 0018  106600038  106600039  very faint "broken" continuum in beam 6; quicklook ok  
+1344 0019  106600040  106600041  very faint "broken" continuua in beam 1,4,0,2;
+1354 0020  106600042  106600043  extrapolating pt error LST 14:30; very faint "broken" continuum in beam 4;
+1404 0021  106600044  106600045  power levels ok; quicklook ok
+1414 0022  106600046  106600047  
+1425 0023  106600048  106600049  very faint "broken" continuua in beam 5,3;
+1435 0024  106600050  106600051  very faint "broken" continuua in beam 4,2,6;
+1445 0025  106600052  106600053  very faint "broken" continuum in beam 0; faint "broken" continuum in beam 3,0,1,2,4,5; quicklook ok;
+1455 0026  106600054  106600055  power levels ok; very faint "broken" continuua in beam 1,3,4,5,6;
+1505 0027  106600056  106600057  very faint "broken" continuum in beam 1;
+1515 0028  106600058  106600059  very faint "broken" continuua in beam 2,6,0,4,3; faint "broken" continuum in beam 5;
+1525 0029  106600060  106600061  very faint "broken" continuua in beam 3,4; power levels ok
+1535 0030  106600062  --abort
+
+
+
+
+
+
+
+
+LST stop: 1535
+
+-- FAA radar ON. 1380MHz harmonic present.
+-- Beam 6b dead
+-- TOGS at END only.
+**First drift, we hit adjust power before observe, but the CIMA log display window hadn't given the power adjust confirmation.
+***TelOps operator, Edwin Perez, notified us at 02:28:21 AST that 6B was on and he shut it off.
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 31.4   K2: 31.6   K3: 35.3   K4: 35.0   AT 16:07
+70K = K1: 125.5  K2: 133.5  K3: 142.3  K4: 149.9
+
+16K = K1: 30.9   K2: 31.4   K3: 35.3   K4: 34,5   AT 23:02
+70K = K1: 125.5  K2: 133.5  K3: 142.6  K4: 150.1
+
+			=>temperatures of the 8 sensors within ALFA housing
+

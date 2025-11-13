@@ -1,0 +1,79 @@
+Log for 05/02/10          Observer: David Kornreich
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100502.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100503.a2010.****.fits
+
+LST@start: 0923
+
+LST  fits   Scan    calscan   Source     Pattern   Start coords. ang   time  loop  calmode    
+0923 0011  12200130 12200131  drift114p3 fixAZdr   091600+273327 19.0  600   99    loopend power levels OK, quicklook OK
+0934 0012  12200132 12200133
+0944 0013  12200134 12200135  WARNING: "Observing when not on source". See NOTE 1. Power Levels OK*, Quicklook OK
+0954 0014  12200136 12200137  
+1004 0015  12200138 12200139
+1014 0016  12200140 12200141
+1024 0017  12200142 12200143 power levels OK
+1034 0018  12200144 12200145
+1045 0019  12200146 12200147
+1055 0020  12200148 12200149
+1105 0021  12200150 12200151 power levels OK
+1115 0022  12200152 12200153 quicklook OK
+1125 0023  12200154 12200155 power levels OK
+1135 0024  12200156 12200157 GPS flare
+1145 0025  12200158 12200159
+1156 0026  12200160 12200161
+1206 0027  12200162 12200163
+1216 0028  12200164 12200165
+1226 0029  12200166 12200167 power levels OK
+1236 0030  12200168 12200169
+1246 0031  12200170 12200171
+1256 0032  12200172 12200173
+1306 0033  12200174 12200175
+1317 0034  12200176 12200177 power levels OK
+1327 0035  12200178 12200179
+1337 0036  12200180 12200181
+1347 0037  12200182 12200183
+1357 0038  12200184 12200185
+1407 0039  12200186 12300001 power levels OK
+1417 0000  12300002 12300003
+1427 0001  12300004 12300005
+1438 0002  12300006 12300006
+1448 0003  12300008 12300009
+1458 0004  12300010 12300011 power levels OK
+1508 0005  12300012 12300013
+1518 0006  12300014 12300015
+1529 0007  12300016 12300017
+1539 0008  12300018 12300019
+1549 0009  12300020 aborted
+
+
+LST@stop:1549 
+
+NOTES:
+
+1. There appears to be a band of zero power level in the waterfall plots 
+for about 10 seconds at the beginning of the scan, but WAPPS did not fail 
+or get confused. Power levels in alfaobswin remained in the blue during 
+this period. Data after the band look OK in waterfall plots.
+
+- Occasional "duplicate AGC datablock"s
+
+- No TOGS at start
+- FAA radar ON
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+16K = K1: 13.6   K2: 13.8   K3: 15.2   K4: 15.2   AT 18:28
+70K = K1: 79.8   K2: 85.6   K3: 95.9  K4: 103.9
+
+16K = K1: 13.3   K2: 13.5   K3: 15.0   K4: 15.0   AT 23:19
+70K = K1: 79.8   K2: 86.4   K3: 96.2    K4: 104.0
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

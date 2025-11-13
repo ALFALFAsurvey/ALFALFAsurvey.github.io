@@ -1,0 +1,92 @@
+Log for 09/26/10     Observer: Martha Haynes, Greg Hallenbeck
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100926.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100927.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=89.44   ALFAang= -69.0  ZA=5.91  AzG=89.44        very close to zenith
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2136  RA@end=0239
+      RA = LST -25 min
+****
+During the night, please make occasional notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the ZA limits
+are (3.5,12.0). If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.    ang  time loop  calmode  ZAdome
+2201 0032 26900138  26900139   drift75p1  fixAzdr   213600+180852   69.0   600   99  loopend  ZAG=5.91
+2211 0033 26900140  26900141   power levels ok; quick ok  +180902   ZAG = 5.82   not on source 5 secs
+2221 0034 26900142  26900143                              +180906         5.76   3 secs
+2231 0035 26900144  26900145                              +180909         5.71   3 secs
+2242 0036 26900146  26900147                              +180912         5.66   3 secs
+2252 0037 26900148  26900149                                              5.61   4 secs
+2302 0038 26900150  26900151	Greg takes over at beginning of this scan
+2312 0039 26900152  26900153                                              5.54
+2322 0040 26900154  26900155                              +180922         5.50
+2332 0041 26900156  26900157                              +180924
+2343 0042 26900158  26900159
+2353 0043 26900160  27000001                              +180926         5.44
+0003 0000 27000002  27000003    quicklook OK              +180927         5.43
+0013 0001 27000004  27000005                              +180927         5.42
+0023 0002 27000006  27000007
+0033 0003 27000008  27000009                                              5.43
+0043 0004 27000010  27000011
+0053 0005 27000012  27000013
+0103 0006 27000014  27000015    quicklook OK              +180924         5.47
+0114 0007 27000016  27000017
+0124 0008 27000018  27000019                              +180921         5.53
+0134 0009 27000020  27000021                              +180919         5.56
+0144 0010 27000022  27000023                              +180916         5.60
+0154 0011 27000024  27000025    quicklook OK              +180914         5.64
+0204 0012 27000026  27000027
+0214 0013 27000028  27000029
+0224 0014 27000030  27000031                              +180904         5.80
+0234 0015 27000032  27000033                              +180901         5.85
+0245 0016 27000034  27000035
+0255 0017 27000036  27000037    quicklook OK              +180853         5.98
+0305 0018 ABORT
+
+LST@stop: 0305      RA@stop: 0239  (enter at top of page too, please)
+
+NOTES:
+-- For this decl, the Az is very close to 90 degrees.
+   For weird reasons that we don't understand, we get a declination of +182208 rather than +180742
+   when we try to get to 91.47 az. I think that this will blow up later, so experimenting.
+   CIMA does very weird things and the declination always is far off the intended value.
+   If you want to be at Az>90, you have to be off in dec by 10+ arcmin.
+-- TOGS takes dome ZA to 6.6 degrees.
+    ALFA rotation takes ~30 sec, at which point TOGS ZA has gone up 0.3deg .
+-- Using 'zenith strip' observing mode, close to zenith!
+-- TOGS at START only. 
+-- Occasional cima warnings: extrapolating pnt-data... or AGC-datablock. As long as over only 2sec, ok.
+-- Regularly getting "observing when not on source" messages at the start of each drift. That's  
+   going to happen for the duration......... Not a big deal. It's only a couple of seconds and the
+   error is only some arcseconds.
+-- FAA radar ON
+-- All beams OK
+-- Tiedowns fine
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 13.7   K3: 15.5   K4: 15.5   AT 16.11
+70K = K1: 82.7   K2: 89.8   K3: 100.5  K4: 108.8
+
+16K = K1: 13.8   K2: 14.0   K3: 15.2   K4: 15.5   AT 22:13
+70K = K1: 82.7   K2: 89.8   K3: 100.3  K4: 108.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

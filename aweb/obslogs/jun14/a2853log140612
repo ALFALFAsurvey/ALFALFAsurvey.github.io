@@ -1,0 +1,48 @@
+A2853   LBW   14.06.12      Observers: Mike Jones, Alison Farrish
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140612.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.12jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A122230.6+102314  122230.6 +102314  j  6500 H v   # A222717   1312   14.37   1    416300019    no det, strong RFI @ 1381MHz
+A122257.8+103254  122257.8 +103254  j  8000 H v   # A007452   1324   16.77   2    416300023    no det strong RFI near source    
+A132722.6+122117  132722.6 +122117  j  6500 H v   # A230344   1340    6.78   3    416300027	   det, SN=13 @ 6400km/s, very broad 400km/s
+A132936.4+114850  132936.4 +114850  j  7900 H v   # A232224   1353    8.59   4    416300031    very strong RFI @ 1381MHz
+A140347.3+093125  140347.3 +093125  j  7100 H v   # A240029   1407    8.86   5    416300035    no det, again strong RFI  
+A140455.1+085513  140455.1 +085513  j  6900 H v   # A249349   1419   10.01   6    416300039    -----ABORTED
+A140925.5+080843  140925.5 +080843  j  7300 H v   # A713868   NOT OBSERVED   
+A141058.0+092242  141058.0 +092242  j  6870 H v   # A249588   NOT OBSERVED 
+A143933.2+031325  143933.2 +031325  j  8500 H v   # A242874   NOT OBSERVED  
+A144029.3+032558  144029.3 +032558  j  7400 H v   # A241975   NOT OBSERVED  
+A151509.4+024506  151509.4 +024506  j  1800 H v   # A253506   NOT OBSERVED  
+A155445.1+143502  155445.1 +143502  j  2000 H v   # A738015   1550   3.95    7    416300041    marginal det @ 2000km/s, SN~3
+															  1634   10.1    10   416300053	   det @ 1900km/s, SN~6 (much cleaner spectrum)
+A160013.8+175053  160013.8 +175053  j  2000 H v   # A747272   Skipped - in zone of avoidance
+															  1647   11.1    1	  ?????????    strong det @ 2000km/s
+A161910.5+140801  161910.5 +140801  j  9000 H v   # A260422   1607   5.14    8    416300045    marginal det @ 9000km/s, SN~3
+															  1700   10.6    2 -----------------ABORTED (Operator thought I had 45 extra mins - actually 30)
+A161918.9+154033  161918.9 +154033  j  9000 H v   # A715317   1621   ~3      9    416300049    strong det @ 9100km/s, SN~12
+
+Notes  (please note anything of importance; here is an example)
+     Tiedowns enabled. 
+	Started late due to previous observer.
+	Strong RFI @ 1381MHz
+	Azimuth stopped responding on A249349 observation - operator called technician - fixed after about 1.5 hours.
+	Operator awarded an additional 30 mins of injury time! I decided to repeat from A738015 down to A260422.
+
+
+

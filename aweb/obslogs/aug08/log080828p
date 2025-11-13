@@ -1,0 +1,41 @@
+Log for 080828p      Observer: Ann Martin
+
+System Configuration: a2010_az360.conf
+
+File:        /share/pserverf.sda3/wappdata/wapp.20080829.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2235 0000 824200001 824100002 drift16p1  fixAZdr  223500+034618  19   600   99 loopend 
+2245 0001 824200003 824200004
+2255 0002 824200005 824200006 power levels ok
+2305 0003 824200007 824200008 
+2315 0004 824200009 824200010
+2325 0005 824200011 824200012
+2335 0006 824200013 824200014
+2345 0007 824200015 824200016 -- RFI showed up at 2350, right on cue
+2356 0008 824200017 824200018
+0006 0009 824200019 824200020
+0016 0010 824200021 824200022
+0026 0011 824200023 824200024
+0036 0012 824200025 824200026
+0046 0013 824200027 824200028
+0056 0014 824200029 824200030
+0106 0015 824200031 824200032
+0116 0016 824200033 824200034
+0127 0017 824200035 824200036
+0137 0018 824200037 824200038
+0147 0019 824200039 --aborted
+ 
+END LST: 0147
+
+Notes: 
+TOGS not run at start!
+We lost the first hour due to a problem with WAPP4; operator contacted Mikael
+Computer was unable to communicate with WAPP4 (though the WAPP itself was functioning)
+Power recycling fixed the problem, but it took a while!
+Problem with WAPP4 prevented any power adjustments or observations; CIMA
+would abort the operation (failed on TOGS cal and later on A2010 after clicking "adjust power")
+
+I started a new session of CIMA after the fix, to prevent any WAPP confusion.
+
+Otherwise: beam 6b still down

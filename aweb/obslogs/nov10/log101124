@@ -1,0 +1,75 @@
+Log for 10.11.24 (24Nov2010)        Observers: TB, PP, HC, JM, AO, RO
+                                         (Phil Patrick, Heather Cutler,
+                                        Jeff Miller, Aileen O'Donoghue, Tom Balonek, Ron Olowin) 
+
+System Configuration:   a2010_az180_2010.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20101124.a2010.****.fits
+
+Normal meridian observing setup (Fall 2010) with Z.A.G. restricted to 16 degrees
+
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+2158 0001 32800180  32800181  drift89p2  fixASdr   215800+213924  19  600   99  loopend  quicklook ok
+                                               Beam 6B dead, Beam 0A, 0B, 1A, 5A, 6A power levels are high
+                                               FAA radar is on, 1380 MHz line is visible
+2208 0002 32800182  32800183
+2218 0003 32800184  32800185                           We closed ALFA observation monitor and reopened it and 
+                                                 found Beam 6B dead, Beam 4B low power-0.8, other beams normal
+2228 0004 32800186  32800187                      Strong continuum source (0.25 K) in beams 6, 1
+2238 0005 32800188  32800189                    quicklook ok
+2249 0006 32800190  32800191
+2259 0007 32800192  32800193
+2309 0008 32800194  32800195                    quicklook ok
+2319 0009 32800196  32800197
+2329 0010 32800198  32800199                      Error message: WARNING interpolating pnt-data over 3.00 second
+                                                  time gap
+2339 0011 32800200  32800201                      Error messages: Interpolate ERROR - denominator is zero - skipping interpolation!
+2349 0012 32800202  32800203                    quicklook ok
+2359 0013 32800204  32800205
+0010 0014 32800206  32800207
+0020 0015 32800208  32800209                    quicklook ok
+0030 0016 32800210  32800211                  Continuum source on beam 1A 
+0040 0017 32800212  32800213
+0050 0018 32800214  32800215                   quicklook ok
+0100 0019 32800216  32800217
+0110 0020 32800218  32800219                        Error message: duplicate AGC datablock  
+0120 0021 32800220  32800221
+0130 0022 32800222  32800223                    power levels, even 4B, ok 
+0141 0023 32800224  32800225                   quicklook ok
+0151 0024 32800226  32800227
+0201 0025 32800228  32800229
+0211 0026 32800230  32800231
+0221 0027 32800232  32800233
+0231 0028 32800234  32800235
+0241 0029 32800236  32800237                   quicklook ok-power levels ok except 6B  
+0251 0030 32800238  32800239
+0301 0031 32800240  32800241 
+0311 0032 32800242  --Aborted
+
+
+
+LST stop: 0311 
+
+TOGS run at start and end
+FAA radar on
+Power level for beam 4B rose to normal levels over the course of the night
+
+
+
+ALFA TEMPERATURES
+
+16K = K1: 16.8   K2: 59.2   K3: 18.2   K4: 18.4   AT 08:35
+70K = K1: 108.1  K2: 106.2  K3: 115.8  K4: 123.0
+
+16K = K1: 15.0   K2: 18.9   K3: 16.7   K4: 16.7   AT 15:00
+70K = K1: 92.5   K2: 98.1   K3: 108.3  K4: 117.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+

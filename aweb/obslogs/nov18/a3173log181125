@@ -1,0 +1,56 @@
+A3173 LBW   18.11.25   Observers: Greg Hallenbeck, Gracy Frost
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3173.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3173_181125.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20181125.a3173.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H215519.3+302924  215519.3 +302924  j     0 H v   # A011847cal  2232  14.71 0000  832900111    detection SN~15 @1394 MHz (5600 km/s)   3 mins
+S221906.2+243553  221906.2 +243553  j     0 H v   # A320149     2242   8.24 0001  832900115    NO SPECTRUM: WAPP failure. Restarting the WAPPS
+S221906.2+243553  221906.2 +243553  j     0 H v   # A320149     2250   9.47 0002  832900117    no det
+S222235.7+282811  222235.7 +282811  j     0 H v   # A320174     2303  13.78 0003  832900121    detection SN~4 @1388 MHz (6800 km/s)
+S223827.4+255503  223827.4 +255503  j     0 H v   # A321284     2316  11.58 0004  832900125    no det
+S224326.8+243350  224326.8 +243350  j     0 H v   # A321347     2328  12.08 0005  832900129    NO SPECTRUM: WAPP failure. Restarting the WAPPS
+S230343.8+300505  230343.8 +300505  j     0 H v   # A333356     2344  14.96 0006  832900133    WAPP interpolation error. continuing to run. possible det SN~5 @ 1399 MHz (6600 km/s)
+S231422.0+311505  231422.0 +311505  j     0 H v   # A333370     2357  16.10 0007  832900137    no det, poor baseline
+S234236.1+311035  234236.1 +311035  j     0 H v   # A335430     0010  14.51 0008  832900141    det @ 1409 MHz SN~4 (2200 km/s), [source in the off (proabably HVC) @ 1422 MHz]
+S000958.8+331541  000958.8 +331541  j     0 H v   # A104843     0022  15.27 0009  832900145    possible det @ 1397MHz (4800 km/s) SN~3
+S001228.1+293240  001228.1 +293240  j     0 H v   # A101203     0032  12.42 0010  832900149    gps, poor baseline, no det
+S002214.1+272828  002214.1 +272828  j     0 H v   # A104377     0048  10.91 0011  832900153    gps, no det
+S004634.2+294330  004634.2 +294330  j     0 H v   # A100542     0101  11.92 0012  832900157    gps, det @ 1398 (4800 kms/s)MHz SN~10    
+S005801.2+304218  005801.2 +304218  j     0 H v   # A100687     0113  12.90 0013  832900161    det @ 1398 (4700 km/s) SN~4    
+S010406.3+342510  010406.3 +342510  j     0 H v   # A115123     0127  16.92 0014  832900165    gps, no det
+S011038.7+314354  011038.7 +314354  j     0 H v   # A115382     0139  14.92 0015  832900169    tie downs disabled due to fog, no det
+S011935.6+303634  011935.6 +303634  j     0 H v   # A115415     0152  14.29 0016  832900173    det @ 1397 MHz (4900 km/s) SN~3
+S012333.3+325303  012333.3 +325303  j     0 H v   # A114473     0205  17.27 0017  832900177    possible det @ 1392 MHz (6000 km/s) SN~4
+                                                                                               WAPPS failure --- "WAPPS not on" --- this is our 4th significant WAPPS failure.
+                                                                                               Arun has asked that we try a different observing mode, which we don't have.
+                                                                                               He wants to see *anything* be changed, so he can get more data.
+                                                                                               So I have shifted all boards by +5 MHz. This should have no effect on later
+                                                                                               data reduction, other than it possibly confusing the reducers.
+S020412.1+272328  020412.1 +272328  j     0 H v   # A124660     0226   9.76 0018  832900181    NO SPECTRUM: WAPPS failure --- "WAPPS not on"--- trying a harder reset of the WAPPS, 
+                                                                                               massive failure of WAPPS, lost about half an hour       
+
+S023532.6+312223  023532.6 +312223  j     0 H v   # A123035     0259  14.16 0019  832900183    det @ 1397 MHz(4900 km/s) SN~5    
+S023029.3+302254  023029.3 +302254  j     0 H v                 0317  16.05 0020  832900187    det @ 1396 MHz(5200 km/s) SN~4
+
+
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+Tiedowns were disabled partway through due to fog.
+WAPPS died. Hard reset took about half an hour, had multiple WAPPS errors. 

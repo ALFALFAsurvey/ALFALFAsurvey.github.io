@@ -1,0 +1,45 @@
+Log for 06/12/08 AM      Observer: Oded Spector
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az180.gui as save state. -- Note, 180 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061208.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source    Pattern  Start coords.  ang  time  loop calmode
+
+0721 0001 634209648 634210250 drift110p1 FixedAz 072100+263842   19   600    99  loopend
+0731 0002 634210253 634210855 RFI at 1380MHz (see note 1)
+0741 0003 634210858 634211460
+0751 0004 634211463 634212065 Power levels are OK
+0801 0005 634212068 634212670
+0811 0006 634212673 634213275
+0822 0007 634213278 634213883
+0832 0008 634213883 634214485
+0842 0009 634214488 634215090 Power levels are OK
+0852 0010 634215093 634215695
+0902 0011 634215698 634216300
+0912 0012 634216303 634216905
+0922 0013 634216908 634217510
+0932 0014 634217513 634218115 Additional "Wide" RFI at 1380 (see note 2)
+0942 0015 634218118 634218720
+0953 0016 634218723 634219325
+1053 0017 634219328 634219930
+1013 0018 634219933 634220535
+1023 0019 634220538 634221140
+1033 0020 634221143 634221745
+1043 0021 634221748 634222350 Power levels OK.
+1053 0022 634222353 634222955
+1103 0023 634222958 634223560 Twilight.
+1113 0024 634223563 -- Aborted
+
+END LST: 
+
+
+NOTES:
+1. Small RFI peak at 1380MHz (correlated with the 1350MHz fluctualtions). Was on during the whole run.
+2. An additional wider RFI was noticed for a short while at 1380-1381MHz (~1MHz wide).
+3. Power levels were OK.
+4. TOGS OK at end of run.

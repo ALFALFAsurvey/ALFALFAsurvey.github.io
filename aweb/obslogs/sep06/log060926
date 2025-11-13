@@ -1,0 +1,58 @@
+Log for 06/09/26      Observer: Tom Balonek
+
+System Configuration:
+FixedAZ Drift Map Cima version 2.2.08 (normal)
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20060926.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20060927.a2010.****.fits
+
+LST  fits Scan      calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2153 0004 626979044 626979645 drift99p2 FixedAz  215300+240524  19   600    99 loopend  Power levels OK
+2203 0005 626979649 626980251
+2213 0006 626980254 626980856   Power levels ok
+2223 0007 626980859 626981461
+2233 0008 626981464 626982066   Power levels ok
+2243 0009 626982069 626982671
+2253 0010 626982674 626983276
+2304 0011 626983279 626983881
+2314 0012 626983884 626984486
+2324 0013 626984489 626985091
+2334 0014 626985094 626985696   Everything ok
+2344 0015 626985699 626986301
+2354 0016 626986304 627000506
+0004 0000 627000509 627001111   Everything ok
+0014 0001 627001114 627001716
+0025 0002 627001719 627002321
+0035 0003 627002324 627002926
+0045 0004 627002929 627003531
+0055 0005 627003534 627004136
+0105 0006 627004139 627004741
+0115 0007 627004744 627005346
+0125 0008 627005349 627005951
+0135 0009 627005954 627006556
+0145 0010 627006559 627007161  Power levels ok
+0155 0011 627007164 627007766
+0206 0012 627007769 627008371  intense rfi 5 for 10+ seconds and end of drift in beam 5A and 5B
+0216 0013 627008374 627008976
+0226 0014 627008979 627009581
+0236 0015 627009584 627010186
+0246 0016 627010189 627010791
+0256 0017 627010794 627011396
+0306 0018 627011399 627012001 Power levels ok
+0316 0019 627012004 --aborted
+
+
+END LST: 0316
+
+Notes:
+
+TOGS run at start and end of run.
+Had to abort fits 0003 - had erroneously left AZ set to 360 in AO Spectral 
+   Line Observers Widget.
+   Discovered the error when scope started moving at start of drift!  
+   Aborted drift, had operator return scope to 180, fixed AZ to 180 in widget,
+   started new fits file 0004.  Lost 6 minutes of data due to this mistake.
+Beam 5B stable - no problems.
+No problems.

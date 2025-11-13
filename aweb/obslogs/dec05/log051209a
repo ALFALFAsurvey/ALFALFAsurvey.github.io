@@ -1,0 +1,33 @@
+Log for 12/09/05 morning
+Observer: Bilal, Becky, Martha
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20051209.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.09a
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+0716 0002 534309061 534309663 drift39p2   FixedAz 070600+092924 19 600  50
+0726 0003 534309666 534310268
+0736 0004 534310271 534310873
+0746 0005 534310876 534311478
+0756 0006 534311481 534312083
+0807 0007 534312086 534312688
+0817 0008 534312691 534313293
+0827 0009 534313296 534313898
+0837 0010 534313901 534314503
+0847 0011 534314506 534315108
+0857 0012 534315111 534315713
+0907 0013 534315716 534316318
+0917 0014 534316321 534316923
+0927 0015 534316926 534317528
+0938 0016 534317531 534318132
+End lst 0948
+Notes:
+After radar finished, ALFA cover removed.
+Operator unable to start galspec, no togs.
+Otherwise, uneventful.

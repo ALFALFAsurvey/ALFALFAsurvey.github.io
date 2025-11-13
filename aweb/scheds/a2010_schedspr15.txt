@@ -1,0 +1,191 @@
+A2010 observing schedule                                       last update:  17 Jun 2015 mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+------------------------------------------------------------------------------------------------
+COMPLETED OBSERVATIONS       LBW Followup Program A2981      SPRING 2015  
+------------------------------------------------------------------------------------------------  
+    Block     Date    LMSTmidn      AST           LST         a2941 cmd file     Observers 
+    15.01.11  S 11Jan    06h54    01h00-05h30   07h54-12h25   a2941_150111.cmd   MJ2,LL,DC,PT,RK,UAT@AO
+    15.01.12  M 12Jan    06h58    01h00-05h30   07h58-12h29   a2941_150112.cmd   MJ2,UAT@AO
+    15.01.13  R 13Jan    07h02    01h00-05h30   08h02-12h33   a2941_150113.cmd   LL,UAT@AO
+    15.03.28  S 28Mar    11h58    22h30-04h00   10h37-15h58   a2941_150328.cmd   RO,AV,BT,LM,MS,CC           
+    15.03.29  S 29Mar    12h02    20h00-04h00   08h01-16h02   a2941_150329.cmd   RO,AV,AM3,BT,LM,MS,CC                                  
+    15.03.30  M 30Mar    12h06    20h00-21h45   08h05-09h50   a2941_150330.cmd   RO,AV,AM3,BT,LM,MS,CC 
+    15.03.31a T 31Mar    12h10    00h30-03h30   12h35-15h36   a2941_150331a.cmd  AV,RO,AM3,LM,BT
+    15.03.31p T 31Mar    12h10    19h45-03h45   07h54-15h55   a2941_150331p.cmd  RO,AM3,LM,BT
+    15.04.01  W 01Apr    12h14    19h45-03h45   07h58-15h59   a2941_150401.cmd   RO,AM3,LM,BT
+    15.04.02  R 02Apr    12h18    21h00-03h30   09h17-15h48   a2941_150402.cmd   RO,AM3,LM,BT
+
+------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS        LBW Followup Program A2982      Fall2015  APPSS! 
+
+Those of us on the mainland should remember that AST = EDT during this period.
+
+    Block     Date    LMSTmidn      AST           LST         a2941 cmd file     Observers 
+
+
+----------------------------------------------------------------------------------------------------
+
+AO holidays 2015:
+01Jan   New Year's Day
+02Jan   granted by AO director
+06Jan   Three King's Day
+19Jan   Martin Luther King Day
+16Feb   President's Day
+22Mar   PR Slavery Abolition
+23Mar   PR Slavery Abolition (observed)
+02Apr   Holy Thurs/granted by AO Director
+03Apr   Good Friday
+25May   Memorial Day
+03Jul   Independence Day (observed)
+04Jul   Independence Day
+24Jul   PR Constitution Day (observed)
+25Jul   PR Constitution Day 
+07Sep   Labor Day
+12Oct   Columbus Day
+11Nov   Veteran's Day
+19Nov   PR Discovery Day
+26Nov   Thanksgiving Day
+27Nov   Day after Thanksgiving
+24Dec   granted by AO director
+25Dec   Christmas Day
+31Dec   granted by AO director
+
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+AA2: Andres Arrieta (UPR-RP)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+EB: Elijah Bernstein-Cooper (Macalester)
+AB: Anthony Braddock (St.Marys)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+CC: Catlen Camacho-Light
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+MD: Maggie Dievendorf (Colgate)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+AF2: Alison Farrish (Cornell)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+BG: Bryan Geiger (St. Lawrence)
+EG: Elena George (HSU)
+GG: Genesis Guerra (Union)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+MG: Martin Garay-MacLean (Ithaca)
+RG: Riccardo Giovanelli
+SG: Steve Goldman (St. Lawrence)
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+WH2: Will Harney (Union)
+KI: Katie Iadanza (Colgate)
+MJ: Melissa Jacquart (UWisc)
+MJ2: Mike Jones
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+LL: Luke Leisman
+KL: Katelyn Leisman
+ML: Mayra Lebron
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+EM2: Evelin Mayens (UPR-RP)
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+AM3: Alyssa McElroy (WTAM)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+VM: Victoria Mendoza (St.Mary's)
+WM: Arik Mitschang (HSU)
+LM: Leland Moore (St.Mary's)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+CP: Carmen Pantoja
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+JP2: Jonathan Perez (UPR-RP)
+JP3: Jorge Padiel (UPR-RP)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+JR2: Jose Reyes (UPR-RP)
+JR3: Justin Robinson (St. Mary's)
+PR: Paola Rosa-Aquino (Cornell)
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+JS2: Joseph Serrano (UMET)
+TS: Thad Savery (Siena) 
+SS2: Samantha Schults (St.Mary's)
+TS: Tess Senty (HSU)
+KS: Kristine Spekkens
+MS: Monica Smith (USF)
+OS: Oded Spector
+OS2: Ora Starcher (St.Mary's)
+SS: Sabrina Stierwalt
+BT: Blake Tormey (St.Mary's)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+AV: Aparna Venkatesan
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+MW: Michael Warrener (Union)
+JW: Jesse Watson (UWSP)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots
+

@@ -1,0 +1,94 @@
+Log for 03/31/10          Observer: Greg Hallenbeck
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100331.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100401.a2010.****.fits
+
+Zenith strip observing setup
+Az=260.62   ALFAang=-63.1  ZA=7.3
+RA@start=0805   RA@end=????
+RA = LST + 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode
+0738 0001  9000062  9000063       drift80p1 fixAZdr   080500+192042 -63.1 600   99   loopend  WAPP warning dropped power 2B momentarily
+0748 0002  9000064  9000065
+0758 0003  9000066  9000067       2A took longer to recover from calibration
+0808 0004  9000068  9000069       2A is still sad, down to 0.50
+0818 0005  9000070  9000071
+0828 0006  9000072  9000073
+0838 0007  9000074  9000075
+0848 0008  9000076  9000077
+0858 0009  9000078  9000079
+0908 0010  9000080  9000081
+0918 0011  9000082  9000083
+0928 0012  9000084  9000085
+0938 0013  9000086  9000087
+0948 0014  9000088  9000089
+0958 0015  9000090  9000091
+1008 0016  9000092  9000093
+1019 0017  9000094  9000095
+1029 0018  9000096  9000097
+1039 0019  9000098  9000099
+1049 0020  9000100  9000101
+1059 0021  9000102  9000103
+1110 0022  9000104  9000105
+1120 0023  9000106  9000107
+1130 0024  9000108  9000109
+1140 0025  9000110  9000111
+1150 0026  9000112  9000113
+1200 0027  9000114  9000115
+1210 0000  9100001  9100002
+1220 0001  9100003  9100004
+1231 0002  9100005  9100006
+1241 0003  9100007  9100008
+1251 0004  9100009  9100010
+1301 0005  9100011  9100012
+1311 0006  9100013  9100014
+1321 0007  9100015  9100016
+1331 0008  9100017  9100018
+1341 0009  9100019  9100020
+1351 0010  9100021  9100022
+1402 0011  9100023  9100024
+1412 0012  9100025  9100026
+1422 0013  9100027  9100028
+1432 0014  9100029  9100030
+1442 0015  9100031  9100032 Beam 2A power fallen to less than 0.4
+1452 0016  9100033  9100034
+1502 0017  9100035  9100036
+1512 0018  9100037  9100038
+1522 0019  9100039  9100040
+1532 0020  9100041  9100042
+1542 0021  9100043  9100044
+1553 0022  9100045  9100046
+1603 0023  9100047  9100048
+1613 0024  9100049  Aborted
+
+LST stop: 1614        RA stop: 1642
+
+NOTES:
+
+From here on out, nighttime zenith angle limits have eased to 3.5-15
+Stricter limits of 6-9 still observed during the day
+
+TOGS run at end -- not run at start!
+
+Power on beam 2A low, quicklook OK throughout night.
+
+FAA radar ON, and for most of night was significantly stronger than galactic Hydrogen
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+16K = K1: 14.6   K2: 14.7   K3: 16.0   K4: 16.2   AT 16:09
+70K = K1: 84.2   K2: 92.4   K3: 102.0  K4: 119.8
+
+16K = K1: 14.3   K2: 14.5   K3: 16.0   K4: 16.2   AT 22:10
+70K = K1: 84.1   K2: 92.2   K3: 102.0  K4: 109.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+

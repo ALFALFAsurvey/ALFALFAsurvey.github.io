@@ -1,0 +1,82 @@
+Log for 9/16/10 pm        Observers: KH, DF, JO, JR, SH
+
+System Configuration:  {a2010_az85_2010.conf}
+CIMA version           {3.1.08 2010-02-01 17:44 "Smart"}
+File(s):  /share/pserverf.sda2/wappdata/wapp.20100916.a2010.****.fits
+         /share/pserverf.sda2/wappdata/wapp/20100917.a2010.****.fits
+
+Zenith strip observing setup (Fall 2010)
+   Az=433.99   ALFAang=-51.1   ZA=4.9
+   RA@start=2028  RA@end=0247
+   RA = LST - 20
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+2048 0025 25900144 25900145 drift70p1  fixAZdr   202800+165440  -51.1  600   99  loopend 
+2058 0026 25900146 25900147 
+2108 0027 25900148 25900149 --At this point, no GPS is seen.
+2118 0028 25900150 25900151
+2128 0029 25900152 25900153
+2138 0030 25900154 25900155
+2148 0031 25900156 25900157
+2159 0032 25900158 25900159 --Power levels all good. Quicklook good for all fits files so far.
+2209 0033 25900160 25900161
+2219 0034 25900162 25900163
+2229 0035 25900164 25900165 --Dec 165440.
+2239 0036 25900166 25900167 -- ZA = 4.79 degrees rather than 4.9 deg. Aborted and restarted to correct ZA, 
+                              but ended up at same ZA as before. {Note: because the ZA is determined by
+                              the DecJ2010.7, HA, and pointcorr, ZA.ne.const because DecJ2010.7=fn(RA)}
+                              Power was readjusted so this scan has no calibration.
+2253 0038 25900169 25900170 --Aborted and restarted once more, but ZA still reads 4.78 deg. Sorry for the aborts.
+                              Power was readjusted so separate cal period starts heret
+2305 0040 25900172 25900173 --Power levels still good. Dec = 165442. RotA = -51.1
+2315 0041 25900174 25900175
+2325 0000 26000002 26000003 -- files now called wapp.20100917.a2010.****.fits. Still no unusual RFI.
+2335 0001 26000004 26000005
+2345 0002 26000006 26000007
+2355 0003 26000008 26000009 --ZA now reads 4.77 deg. Still no unusual RFI. Dec = 165442. 
+0005 0004 26000010 26000011
+0016 0005 26000012 26000013
+0026 0006 26000014 26000015
+0036 0007 26000016 26000017
+0046 0008 26000018 26000019 -- Power levels all good. No unusual RFI.
+0056 0009 26000020 26000021
+0106 0010 26000022 26000023
+0116 0011 26000024 26000025 -- Dec = 165443. ZA reads 4.78 deg. 
+0126 0012 26000026 26000027
+0136 0013 26000028 26000029
+0146 0014 26000030 26000031
+0157 0015 26000032 26000033 -- Power levels all good. 
+0207 0016 26000034 26000035
+0217 0017 26000036 26000037 -- Dec = 165443. ZA = 4.80 deg. 
+0227 0018 26000038 26000039
+0237 0019 26000040 26000041
+0247 0020 26000042 26000043
+0257 0021 26000044 26000045
+
+LST stop:     0307    RAstop = 0247
+
+At the bottom, add notes regarding:
+-- TOGS run at start
+-- FAA radar on 1350 MHz 
+-- Observer reports waterfall plots cannot be displayed properly
+-- Warning of GPS tests; GPS was present at least in first 3 drifts (mh).
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(see link on a2010 observers page)
+(Martha copies the logs from 08h00 Sep 17th)
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 14.5   K3: 15.7   K4: 15.7   AT 16:27
+70K = K1: 80.7   K2: 88.9   K3: 98.5   K4: 106.8
+
+16K = K1: 14.6   K2: 14.7   K3: 16.8   K4: 16.0   AT 22:40
+70K = K1: 81.70  K2: 89.0   K3: 99.8   K4: 108.1
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+

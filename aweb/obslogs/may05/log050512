@@ -1,0 +1,42 @@
+Log for 05/05/12 pm
+Observers: BK, SS
+
+System Configuration:
+
+FixedAZ Drift Map Cima new version 1.2.02 (new)
+Using: a2010_fixedfrq_may05.gui as save state.
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050512.a2010.****.fits
+
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+1008 0001 513269136 513269739 drift57p1 FixedAz  094417+134454  19  600  15
+
+power levels (dB): 0.973 0.922 1.019 0.965 1.096 1.007 0.906 1.073 0.931 0.934 1.091 1.139 1.067 0.952
+
+1018 0002 513269742 513270344
+1028 0003 513270347 513270949
+1038 0004 513270952 513271554
+1048 0005 513271557 513272159
+1058 0006 513272162 513272764
+1109 0007 513272767 513273369
+1119 0008 513273372 513273974
+1129 0009 513273977 513274579
+1139 0010 513274582 513275184
+0011 aborted (we ran out of time)
+
+END LIST: 114940
+
+
+Notes:
+- Tiedowns are active
+- We lost time at the start because we got the message "Correlator Configuration changed since last apply, continue?" after clicking "Observe".  
+  We ignored the message but then saw no data was being taken.  
+  We think the problem was clicking "Configure WAPP ALFA" too fast so that CIMA didn't register the command.  The command does not appear in the CIMA log file, even though
+   we are sure we pressed the button.
+- Documentation says the normal and test versions of CIMA marked 1.2.02 are the same, and Mikael says to use the normal version.
+
+- BK notes:  When clicking to setup CIMA, make sure the command click are registered in the window before proceeding.  Otherwise the command may not take.
+	     Willie Torres reported that our logout did not complete for some reason at the end.

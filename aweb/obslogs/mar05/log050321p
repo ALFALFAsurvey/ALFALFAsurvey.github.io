@@ -1,0 +1,64 @@
+Log for 3/21/05 pm            ** see important note at bottom ** 
+        3/22/05 am
+Observers:  BK, KH
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050321.a2010.****.fits
+       /share/pserverf.sda3/wappdata/wapp.20050322.a2010.****.fits
+ 
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+1042 0030 508083442 508084043 drift36p1 FixedAz 104237+083818  19   600  35
+1052 0031 508084047 508084649
+1102 0032 508084652 508085254
+1113 0033 508085257 508085859
+1123 0034 508085862 508100063
+1133 0000 508100067 508100670
+1143 0001 508100673 508101274
+1153 0002 508101278 508101880
+1203 0003 508101883 508102485
+1213 0004 508102488 508103090
+1223 0005 508103093 508103694
+1234 0006 508103698 508104300
+1244 0007 508104303 508104904
+1254 0008 508104908 508105509
+1304 0009 508105513 508106115
+1314 0010 508106119 508106720
+1324 0011 508106724 508107326
+1334 0012 508107329 508107930
+1344 0013 508107934 508108535
+1354 0014 508108539 508109141
+1405 0015 508109144 508109746
+1415 0016 508109749 508110351
+1425 0017 508110354 508110956
+1435 0018 508110959 508111561
+1445 0019 508111564 508112166
+1455 0020 508112169 508112771
+1505 0021 508112774 508113376
+1515 0022 508113379 508113980
+1525 0023 508113984 508114586
+1536 0024 508114589 508115191
+1546 0025 508115194 508115796
+1556 0026 508115799 508116401
+1606 0027 508116404 508117006
+1616 0028 508117009 Did not finish. WARN WAPPDATA flushing 15 dumps. Completed 33 good scans.
+     0029 Abort
+     0030 Abort
+1629 0031 508117803 508118405 drift36p1 FixedAz 162900+083818  19   600  2
+1639 0032 508118409   Had to abort before finishing
+
+END LST:  16:49:00
+
+Notes:
+
+1- Feature present at 1431 MHz during entire night only in Beam 0, Pol B.  Changing in time,
+drifting in frequency.  RFI report made.  See http://www.naic.edu/~a2010/march22/
+
+1- Recieved warning on loop 34: WARN WAPPDATA flushing 15 dumps.  Reset number of loops to 2,
+started new file, fixed RA, everything worked fine.  Dataview machine locked up just before 
+error, not sure if related.

@@ -1,0 +1,46 @@
+Log for 090103     Observers: Martha Haynes & Riccardo Giovanelli
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.10 2008-12-29 17:18 "Normal"   
+File:        /share/pserverf.sda2/wappdata/wapp.20090103.a2010.****.fits 
+
+
+LST  fits  Scan     calscan   Source     Pattern  Start coords. ang  time loop calmode
+0710 0001 900300029 900300030 drift11p1  fixAZdr  070900+023318  19  600  99 loopend   beam 6B dead, no radar
+0720 0002 900300031 900300032                                                          Power ok except 6B
+0730 0003 900300033 900300034     
+0740 0004 900300035 900300036 
+0750 0005 900300037 900300038
+0800 0006 900300039 900300040
+0810 0007 900300041 900300042
+0820 0008 900300043 900300044
+0830 0009 900300045 900300046                                                          all ok except 6B
+0840 0010 900300047 900300048 
+0850 0011 900300049 900300050
+0900 0012 900300051 900300052
+0910 0013 900300053 900300054
+0921 0014 900300055 900300056
+0931 0015 900300057 900300058
+0941 0016 900300059 900300060
+0951 0017 900300061 900300062
+1001 0018 900300063 900300064                                                          ditto
+1011 0019 900300065 900300066     
+1021 0020 900300067 900300068  
+1032 0021 900300069 900300070
+1042 0022 900300071 900300072
+1052 0023 900300073 900300074
+1102 0024 900300075 900300076
+1112 0025 900300077 900300078
+1123 0026 900300079 900300080
+1133 0027 900300081 900300082
+
+END LST:  1143
+
+Notes:
+
+TOGS run at beginning and end.
+FAA radar off.
+Beam 6B dead. Therefore getting WAPP power warnings all night
+Martha notes that the Dec on the obs status/monpt is 02:33:24 not 02:33:18 at 07:50LST.
+Is 02:33:19 at 08:07... Still at 19 at 0921. at 02:33:22 at 10:10. Not a big deal, but
+this seems a bit larger than normal. At 02:33:18 at 10:53

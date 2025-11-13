@@ -1,0 +1,53 @@
+Log for 3/21/05 am            ** see important note at bottom ** 
+
+Observers:  BK, KH
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050321.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+1211 0000 508002584 508003186 drift35p1 FixedAz 121117+082342  19   600  29
+1221 0001 508003189 508003791
+1231 0002 508003794 508004396
+1241 0003 508004399 508005001
+1251 0004 508005004 508005606
+1301 0005 508005609 508006211
+1312 0006 508006214 508006816
+1322 0007 508006819 508007421
+1332 0008 508007424 508008029
+1342 0009 Abort  Do not use this file  11 secs lost  loaded M. Lerner's script
+1342 0010 508008044 508008645 drift35p1 FixedAz 134221+082342  19   600  20
+1352 0011 508008650 508009252
+1402 0012 508009255 508009857
+1413 0013 508009860 508010462
+1423 0014 508010465 508011066
+1433 0015 508011070 508011672
+1443 0016 508011675 508012277
+1453 0017 508012280 508012882
+1503 0018 508012885 508013487
+1513 0019 508013490 508014092
+1523 0020 508014095 508014697
+1534 0021 508014701 508015303
+1544 0022 508015306 508015907
+1554 0023 508015911 508016513
+1604 0024 508016516 508017119
+1614 0025 508017122 508017724
+1624 0026 508017727 508018328
+1634 0027 508018332 508018937
+1644 0028 ABORTED
+1644 0029 BLANK
+
+END LST: 16:44:00
+
+Notes:
+
+File 9 aborted after realization that M. Lerner's script was 
+not loaded.  However, the DecJ drift was only 3 arc seconds.  
+Quick abort made, new file started, and script loaded.  
+Approx. 11 seconds lost.

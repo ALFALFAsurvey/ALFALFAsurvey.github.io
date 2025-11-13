@@ -1,0 +1,178 @@
+A2010 observing schedule                                       last update: 30Mar2013  mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+
+------------------------------------------------------------------------------------------------
+COMPLETED OBSERVATIONS       LBW Followup         program A2707  
+------------------------------------------------------------------------------------------------
+    Block     Date    LMSTmidn      AST           LST         a2707 cmd file      Observers  
+    13.01.13  S 13Jan    07h08    00h00-07h00   07h04-14h05   a2707_130113.cmd    LL,KL,TB,MD
+    13.01.14  M 14Jan    07h12    00h00-07h00   07h08-14h09   a2707_130114.cmd    LL,KL,UAT13     
+    13.01.14D M 14Jan             15h15-17h00   22h25-00h10   a2707_uat13demo.cmd UAT13 demo run  
+    13.01.15  T 15Jan    07h16    00h00-07h00   07h12-14h13   a2707_130115.cmd    GH,UAT13    
+
+MARCH 2013:          LBW followup    Program:  A2752
+
+    Block     Date    LMSTmidn      AST           LST         a2752 cmd file      Observers  
+    13.03.20  W 20Mar    11h28    20h45-04h45   08h12-16h14   a2752_130320.cmd    PT,EB,JW
+    13.03.21  R 21Mar    11h32    20h30-04h45   08h01-16h18   a2752_130321.cmd    PT,EB,JW
+    13.03.22  F 22Mar    11h36    20h30-04h30   08h05-16h06   a2752_130322.cmd    PT,EB,JW,JP2,JR2,AA2,JS2
+    13.03.23  S 23Mar    11h40    20h15-04h15   07h54-15h55   a2752_130323.cmd    PT,RO,EB,JW,JP2,JR2,AA2,JS2,KM2,NN,OS2 (wow!)
+    13.03.24  S 24Mar    11h44    20h15-04h15   07h58-15h59   a2752_130324.cmd    PT,RO,JS2,KM2,NN,OS2
+    13.03.25  M 25Mar    11h48    20h15-04h15   08h02-16h03   a2752_130325.cmd    PT,RO,JS2,KM2,NN,OS2
+    13.03.26  T 26Mar    11h52    20h45-04h15   08h36-16h07   a2752_130326.cmd    PT,RO,JS2,KM2,NN,OS2  
+
+That does it for Spring 2013!
+
+------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS        LBW Followup         
+------------------------------------------------------------------------------------------------  
+Nothing scheduled at this time. Stay tuned.............
+
+
+
+AO Holidays 2013:
+Tue Jan  1   New Year’s Day
+Sun Jan  6   Three King’s Day
+Mon Jan  7   Three King’s Day (observed)
+Mon Jan 14   Eugenio Maria de Hostos
+Mon Jan 21   Dr. Martin Luther King
+Mon Feb 18   Presidents’ Day
+Fri Mar 22   PR Slavery Abolition
+Fri Mar 29   Good Friday
+Mon Apr 15   Jose De Diego
+Mon May 27   Memorial Day
+Thu Jul  4   Independence day
+Mon Jul 15   Luis Muñoz Rivera
+Thu Jul 25   P.R. Constitution Day
+Fri Jul 26   José Celso Barbosa (observed)
+Sat Jul 27   José Celso Barbosa
+Mon Sep  2   Labor Day
+Fri Oct 11   Columbus Day (observed)
+Sat Oct 12   Columbus Day
+Tue Nov 19   PR Discovery Day
+Thu Nov 28   Thanksgiving Day
+Fri Nov 29   Day after Thanksgiving
+Wed Dec 25   Christmas
+Tue Dec 31   New Year's Eve
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+AA2: Andres Arrieta (UPR-RP)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+EB: Elijah Bernstein-Cooper (Macalester)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+MD: Maggie Dievendorf (Colgate)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+EG: Elena George (HSU)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+MG: Martin Garay-MacLean (Ithaca)
+RG: Riccardo Giovanelli
+SG: Steve Goldman (St. Lawrence)
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+KI: Katie Iadanza (Colgate)
+MJ: Melissa Jacquart (UWisc)
+MJ2: Mike Jones
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+LL: Luke Leisman
+KL: Katelyn Leisman
+ML: Mayra Lebron
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+VM: Victoria Mendoza (St.Marys)
+WM: Arik Mitschang (HSU)
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+CP: Carmen Pantoja
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+JP2: Jonathan Perez (UPR-RP)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+JR2: Jose Reyes (UPR-RP)
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+JS2: Joseph Serrano (UMET)
+TS: Thad Savery (Siena) 
+KS: Kristine Spekkens
+OS: Oded Spector
+OS2: Ora Starcher (St.Marys)
+SS: Sabrina Stierwalt
+TS: Tess Senty (HSU)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+JW: Jesse Watson (UWSP)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots
+

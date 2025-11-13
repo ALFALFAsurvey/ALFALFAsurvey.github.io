@@ -1,0 +1,65 @@
+A2664 LBW   12.03.04        Betsey and others
+This is LBW followup observations focused on UCHVCs
+
+CIMA version:          A `smart' version of CIMA (3.1.08 2010-02-01 17:44 "Smart")
+Configuration file:    a2664_config.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1417.50 MHz
+  Backend: ICORR 1+2+3+4 'multi-config' --- 6.25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/6.25 MHz @ 1420.2 MHz
+      Board  3&4  Pols A&B  9-level 2048 chans/6.25 MHz @ 1415.2 MHz
+  Catalog: 'a2664_120304.cat'
+  Obsmode: Standard on/off   ---   either 180,240,300-sec loop with 'hcorcal' and 60-sec wait     
+Command file:        a2664_120304.cmd  
+Mode:                Fixed frequency/topocentric; no doppler tracking                            
+                     Low velocity sources cz < 1000 km/s and UCHVCs
+          
+Data written to: /share/olcor/corfile.04mar12.a2664.*
+                 /share/olcor/corfile.05mar12.a2664.*
+
+SRCNAME             RAJ      DECJ            AGNnr         LST   ZA   File#  ONScan     Status
+H073609.4+09595   073610.3 +095911  j 0   # A174585calib   0735  8.35   1    206401480  detected @1418.6
+HVC213.73+16.49   075149.2 +064508  j 0   # A174728        0743  11.8   2    206401484  not detected
+HVC216.23+18.30   080237.8 +052545  j 0   # A188988        0755  13.1   3    206401488  not detected
+HVC216.18+23.41   082058.5 +074506  j 0   #                0805  11.3   4    206401492  not detected
+H085631.7+10542   085631.8 +105412  j 0   #                0818  11.9   5    206401496  not detected
+HVC223.87+29.42   085511.0 +042422  j 0   # A188991        0828  15.5   6    206401500  detected @1419.5
+HVC219.30+39.36   092400.9 +121722  j 0   #                0841  12.1   7    206401504  not detected
+HVC222.19+38.99   092639.7 +100638  j 0   # A198421        0854  11.5   8    206401508  possible at 1420.8?
+HVC228.78+39.52   093827.7 +055332  j 0   #                0907  16.1   9    206401512  not detected
+HVC226.85+43.60   094951.5 +091024  j 0   #                0918  12.1  10    206401516  not detected
+HVC229.55+48.62   101118.3 +100041  j 0   # A208303        0930  13.0  11    206401520  not detected
+HVC235.69+46.05   101129.9 +050725  j 0   #                0943  15.0  12    206401524  not detected
+HVC232.68+52.23   102802.9 +100919  j 0   #                0956  11.3  13    206401528  detected at 1421
+HVC244.50+53.41   104850.1 +050419  j 0   # A208424        1011  16.3  14    206401532  detected at 1419.6
+HVC244.30+59.72   110759.2 +091303  j 0   #                1023  14.2   1    206500000  not detected  
+HVC249.03+57.58   110810.1 +055725  j 0   # A219213        1036  14.8   2    206500004  detected at 1419.6
+HVC250.16+57.45   110929.8 +052601  j 0   # A219214        1048  14.0   3    206500008  detected at 1419.7
+HVC247.62+62.98   112213.0 +100833  j 0   #                1059  10.0   4    206500012  detected at 1420
+HVC261.25+64.36   114401.6 +070536  j 0   # A219282        1113  13.7   5    206500016  not detected
+HVC267.68+64.72   115402.9 +055057  j 0   #                1125  14.4   6    206500020  not detected
+HVC277.22+65.13   120915.2 +042306  j 0   # A227977        1138  16.0   7    206500024  detected at 1421.2
+HVC278.79+65.45   121210.9 +042606  j 0   #                1150  15.0   8    206500028  detected at 1421.2
+HVC284.63+68.67   122500.7 +064428  j 0   #                1202  12.9   9    206500032  A7477 detected
+HVC290.37+66.23   123115.9 +035051  j 0   # A227983        1213  15.2  10    206500036  detections at 1412.5, 1421.2
+HVC299.58+67.66   124619.1 +044923  j 0   # A227988        1224  14.7  11    206500040  detected at 1418.8
+HVC298.78+74.83   124659.7 +115935  j 0   # A227870        1238  6.75  12    206500044  detected at 1419.3
+HVC304.63+70.45   125343.5 +073510  j 0   #                1250  10.8  13    206500048  not detected
+HVC314.57+74.80   130351.1 +121223  j 0   # A238626        1302  6.20  14    206500052  detected at 1419.5
+HVC320.95+72.32   131321.5 +101257  j 0   # A233830        1312  8.16  15    206500056  detected at 1419.5
+HVC325.15+72.40   131810.3 +104128  j 0   # A238615        1324  7.79  16    206500060  detected at 1421.2
+HVC333.71+75.23   132223.2 +141408  j 0   #                1337  5.36  17    206500064  detected at 1420
+HVC358.43+68.59   140338.5 +135503  j 0   #                1350  5.53  18    206500068  not detected
+HVC351.50+63.51   141027.7 +082147  j 0   #                1402  10.2  19    206500072  detected at 1421.2
+HVC352.45+59.06   142357.7 +052340  j 0   # A249283        1415  13.2  20    206500076  not detected?
+HVC357.74+60.45   142734.5 +081550  j 0   # A249243        1428  10.1  21    206500080  detected at 1421.1
+HVC010.97+47.25   152836.3 +061522  j 0   # A258472        1441  16.9  22    206500084  not detected
+HVC008.99+46.06   152927.1 +042721  j 0   #                1451  16.8  23    206500088  detected at 1421.3
+HVC015.11+45.54   154036.8 +074425  j 0   # A258474        1502  14.3  24    206500092  detected at 1421.4
+HVC011.69+43.10   154337.1 +042155  j 0   # A258389        1513  16.0  25    206500096  not detected
+H152835.1+06143   152834.9 +061429  j 0   #                1526  12.1  26    206500100  not detected
+HVC011.69+43.10   154337.1 +042155  j 0   # A258389        1535  14.2  27    206500104  not detected
+H155654.1+06562   155654.0 +065615  j 0   #                1548  11.6  28    206500108  not detected
+H161731.8+05084   161731.6 +050834  j 0   #                1557  14.2  29    206500112  not detected
+H162600.2+09085   162600.3 +090844  j 0   #                1606  10.5  30    206500116  not detected
+HVC 27.68+38.25   162443.4 +124412  j 0   # A268074        1617  5.9   31    206500120  detected

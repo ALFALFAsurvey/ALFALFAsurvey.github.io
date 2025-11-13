@@ -1,0 +1,71 @@
+A3064 LBW   16.11.16 Observers: Rebecca Koopmann, Richard Ward, Garrett Fitzgerald
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161116.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161116.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161117.a3064.****.fits   (only if goes after midnight AST; probably no)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+H215040.3+283527  215040.3 +283527  j     0 H v   # A310858cal  2127   12   0000    632100038   NO GOOD: 18:10:20: WAPP channels with too little power (0.02<0.75) during ON; 
+AO had power dip: Abort and start over.
+H215040.3+283527  215040.3 +283527  j     0 H v   # A310858cal  2132   11   0001    632100040   Repeated(3 min ON/OFF): detection at 1422.5 MHz, -450 km/s, S/N~10 and 
+detection at 1404 MHz, 3400 km/s, S/N~10; maybe something at 1385 MHz, 7600 km/s
+S215528.8+284647  215528.8 +284647  j     0 H v   # A311391     2141   11.1  0002    632100044   No detection. 
+H224011.3+321041  224011.3 +321041  j     0 H v   # A321428cal  2155   17.3  0003    632100048   Detection at 1386 MHz, 7500 km/s   
+H224021.9+320335  224021.9 +320335  j     0 H v   # A320305cal  2203   16.2  0004    632100052  NO GOOD: low wapp power warning during off: data bad - did not repeat since 
+cal
+S224143.0+321811  224143.0 +321811  j     0 H v   # A323067     2211   15.7  0005    632100056  NO GOOD: Aborted because previous data bad, restarted WAPPS
+S224143.0+321811  224143.0 +321811  j     0 H v   # A323067     2214   15.5  0006    632100057   Repeat obs: maybe something around 1379 MHz, 9000 km/s?   
+S224500.7+323356  224500.7 +323356  j     0 H v   # A323420     2226   15.0  0007    632100061   No detection, RFI at 1388 MHz
+S231213.6+260312  231213.6 +260312  j     0 H v   # A336696     2239   11.1  0008    632100065  GPS in OFF. No detection
+S232219.3+264958  232219.3 +264958  j     0 H v   # A336635     2251   11.3  0009    632100069   Detection at 1393 Mhz, 6000 km/s, S/N~4
+S233231.6+260240  233231.6 +260240  j     0 H v   # A336640     2304   10.4  0010    632100073  GPS in OFF. Detection at 1393 MHz, S/N~4  
+S233516.2+261902  233516.2 +261902  j     0 H v   # A336650     2316    9.3  0011    632100077  NO GOOD: WAPP errors in position- aborted and restarted. 
+S233516.2+261902  233516.2 +261902  j     0 H v   # A336650     2320    8.8  0012    632100078   Repeat obs: Detection at 1383 MHz, 8000 km/s, S/N~15. RFI at 1417.5 MHz. 
+Operator disabled tie-downs during ON, baseline choppy
+S235719.7+265623  235719.7 +265623  j     0 H v   # A335557     2333   10.4  0013    632100082   Detection at 1385 MHz, 7600 km/s, S/N~5
+S000836.2+280303  000836.2 +280303  j     0 H v   # A105229     2346   11.2  0014    632100086   Narrow Detection at 1399 MHz, 4500 km/s, S/N~4  
+S004527.5+294003  004527.5 +294003  j     0 H v   # A105273     0000   15.6  0015    632100090  GPS in OFF. Detection at 1396.5 MHz, 5100 km/s, S/N~5
+S004527.5+294458  004527.5 +294458  j     0 H v   # A105272     0012   13.9  0016    632100094   No Detection. Source in off at 1397 MHz
+S004715.9+290801  004715.9 +290801  j     0 H v   # A104460     0024   12.2  0017    632100098  GPS in ON. Detection at 1393 MHz, 5700km/s S/N~7, RFI at 1388MHz
+S005550.8+295153  005550.8 +295153  j     0 H v   # A105212     0036   12.5  0018    632100102   Maybe something weak at 1403 MHz, 3800km/s  
+S005910.5+291002  005910.5 +291002  j     0 H v   # A104508     0048   11.2  0019    632100106   Detection at 1397 MHz, 5000 km/s S/N~8   
+S010159.2+290144  010159.2 +290144  j     0 H v   # A116197     0101   10.8  0020    632100110   Detection at 1381.5 MHz, 8400 km/s S/N~3
+S010632.6+294125  010632.6 +294125  j     0 H v   # A116280     0113   11.5  0021    632100114  GPS in ON. Narrow source 1422 MHz, -400 km/s, HVC?
+S011242.7+294519  011242.7 +294519  j     0 H v   # A116281     0125   11.8  0022    632100118   No Detection. RFI? again at 1422MHz.   
+S011248.3+290606  011248.3 +290606  j     0 H v   # A116283     0137   12.1  0023    632100122   No Detection.   
+S012543.0+280643  012543.0 +280643  j     0 H v   # A116220     0149   11.2  0024    632100126   Detection at 1388 MHz, 7000 km/s, S/N~12 - likely RFI, HVC? at 1417 
+MHz, 600 km/s, S/N~6
+S014358.0+284709  014358.0 +284709  j     0 H v   # A115506     0202   11.2  0025    632100130  GPS in OFF. Detection at 1384 MHz, 7900 km/s, S/N~6
+S015242.9+282456  015242.9 +282456  j     0 H v   # A115829     0214   11.2  0026    632100134  GPS in OFF. Detection at 1384.5 MHz, 7700 km/s, S/N~5 
+S021520.9+283242  021520.9 +283242  j     0 H v   # A125540     0227   10.6  0027    632100138   Detection at 1388 MHz, 6900 km/s, S/N~5. Or is this RFI again?
+S022356.2+255903  022356.2 +255903  j     0 H v   # A124739     0240    8.4  0028    632100142  GPS in OFF. No detection.    
+S025912.0+345929  025912.0 +345929  j     0 H v   # A124773     0255   16.8  0029    632100146   No detection, signal 1421 MHz, -150km/s;  uneven baseline
+
+Extra time, so pick up last source not observed on Nov 12:
+S024034.8+275752  024034.8 +275752  j     0 H v   # A125545     0309   11.5  0030    632100150   No detection.
+                                                
+Notes 
+
+- Started a little early. Two instances of low power in WAPPS requiring restart. One instance of WAPPS error in position interpolation. Restarted.
+
+- Was able to do an extra source!! Chose last source scheduled for Nov 12, but not observed. 
+
+- FAA radar on, 1363/64 MHz RFI bright, GPS in multiple scans
+
+- RFI(?) at 1388 MHz.
+
+
+                                                                 

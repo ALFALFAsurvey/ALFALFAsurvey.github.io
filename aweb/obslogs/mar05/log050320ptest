@@ -1,0 +1,26 @@
+Log for 3/20/05 am            ** see important note at bottom ** 
+
+Observers:  KH, BK
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050320.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+0313 0018 507956791    stopped
+0315 0019 507956910 507957512 testmarch20  FixedAZ  031516+163122  19  600  5
+0325 0020 507957515 507958117
+0335 0021 507958420 507958723
+0345 0022 207958726 507959328
+0355 0023 507959331 507959933
+0406 0024  Blank
+
+END LST:  ~04:06:00
+
+Notes:
+ Test during X111 to try out the wapps.  Our usual startup routine seems to work fine this time around!

@@ -1,0 +1,53 @@
+Log for 2/06/05 am        Observers: RG, BK, NB
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+File:  /share/pserverf.sda3/wappdata/wapp.20050206.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop      Notes
+____________________________________________________________________________________________________
+
+1117 0000 503709497           drift57p1 FixedAZ  111700+134454  19  600 10       aborted  Power not adjusted
+
+1122 0001 503709795 503710398 drift57p1 FixedAZ  112130+134454  19  600 10 
+1132 0002 503710401 503711003
+1142 0003 503711006 503711608
+1152 0004 503711611 503712213
+1202 0005 503712216 503712818
+1212 0006 503712821 503713423
+1222 0007 503713426 503714028
+1233 0008 503714031 503714633
+1243 0009 503714636 503715238
+1253 0010 503715241 503715843                                                       DedJ off by 2.9 "
+
+1303 0011 503715852 503716454 drift57p1 FixedAZ  110326+134454  19  600  6
+1313 0012 503716457 503717059
+1323 0013 503717062 503717664
+1333 0014 503717667 503718269
+1343 0015 503718272 503718874
+1353 0016 503718877 503719479                                                       DecJ off by 7"
+
+1403 0017 503719485 503720087 drift57p1 FixedAZ  140411+134454  19  600  6  
+1414 0018 503720090 503720693
+1424 0019 503720696 503721299
+1434 0020 503721302 503721904
+1444 0021 503721907 503722509
+1454 0022 503722512 503723114                           		            DecJ off by 15"
+
+1504 0023 503723120 503723723 drift57p1 FixedAZ  150456+134454  19  600  3          DecJ off by 15"       
+1514 0024 503723726 503724328
+1425 0024 503724331 503724933		     					    GPS at 1380 MHz? 
+										    DecJ off by 8"
+
+0026 FITS file created at end
+
+Weather:Overcast   
+         Rain at 4:30 AST
+
+
+Notes: 
+
+0 - Make sure to use Rslt when computing next set of scans!!!!

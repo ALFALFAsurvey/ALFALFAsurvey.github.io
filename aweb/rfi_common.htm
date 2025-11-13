@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA Survey - Commonly seen RFI</title>
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=darkblue>ALFALFA Survey - Examples of commonly seen RFI
+&nbsp &nbsp Last update Wed Sept 28, 2011</font></h3>
+
+<h3><font color=darkblue> Useful links</font></h3>
+<ul>
+<li>Be sure to check out Phil's <a href="http://www.naic.edu/~phil/rfi/rfilist.html">
+list</a>.
+<li>Be sure you know how to check out the bandpass of any record
+in any fits file. See the <a href="http://www.naic.edu/~a2010/checkfitsnotes.txt">
+IDL recipe</a>.</p>
+</ul>
+
+<br>
+<h3><font color=darkblue>Bad Beam Bogus Birdies: It's not really RFI.</font></h3>
+<table width=800><tr><td width=500>
+More often that we would like, one or more of the ALFA beams is dead. The power
+to its amplifier should be turned off. But the way the data-taking schemes works,
+an array of data is being recorded for the spectrum. Bogus data are bogus data,
+with unpredictable results for autoscaling. Most of the quick-and-dirty data monitoring tools
+("alfadatawin", "quicklook") assume all spectra are good and use autoscaling to
+display. So, if you have bogus data, you may wind up with totally bogus autoscaling</p>
+
+The image to the right shows an example of the "corplot" display (same as
+"quicklook") which you get if you use the <a href="http://www.naic.edu/~a2010/checkfitsnotes.txt">
+IDL recipe</a> (or "quicklook" which looks at Record 0 only) to look at a particular
+record. In this example, Beam 4A is dead: <b> Note that the beams here are displayed with 
+labels 1 to 7 not 0 to 6,</b> so the dead beam is the red line with spikes in the Beam
+mis-labeled "5". This is <b>not RFI</b>; notice also the difference in the vertical
+scale of the plot for this beam relative to the others.</p>
+</ul>
+</p>
+Know what this is and then ignore it. Be sure to switch the display in the waterfalls plots
+to ignore the bad amplifier; in this case, set it to display Beam "B", not "A" or "both".
+Also, if you can't seem to get the waterfall plots to display correctly, switch the
+"alfadatawin" display to view the "spectral plots" and set the y-scale to "constant".
+Take a look also at the power level monitors in "alfaobswin". If the power is steady,
+then there is no RFI -- you are just seeing the bogus data from the dead beam.
+
+</td><td><img src="images/deadbeam.png" height=200><br>
+Click <a href="images/deadbeam.png">here</a> to enlarge.
+</p></td></tr>
+</table>
+
+<br>
+<h3><font color=darkblue>The San Juan FAA radar</font></h3>
+<table width=800><tr><td width=500>
+As noted on Phil's <a href="http://www.naic.edu/~phil/rfi/rfilist.html">
+list</a>, one of the frequencies (1350 MHz) used by the San Juan airport FAA 
+radar lies within the ALFALFA bandpass, so it almost always shows up. It is
+pulsed, polarized, azimuth-dependent and not picked up equally by all beams.
+When it is strong, harmonics may show up at 1380 and (sometimes) 1410 MHz.</p>
+
+The image to the right shows an example of the main
+transmitter plus the (much weaker but still visible) 1380 MHz harmonic.</p>
+
+There is not much we can do about the radar; it's needed
+and entirely legal. Please record at the bottom
+of the log file whether the FAA radar is on (or off!).</p>
+
+</td><td><img src="images/faa+1380.gif" height=200><br>
+Click <a href="images/faa+1380.gif">here</a> to enlarge.
+</p></td></tr>
+</table>
+
+<br>
+<h3><font color=darkblue>The Puntas Salinas radar</font></h3>
+<table width=800><tr><td width=500>
+As noted on Phil's <a href="http://www.naic.edu/~phil/rfi/rfilist.html">
+list</a>, the Puerto Rico Air National Guard station at Puntas Salinas
+has a landing system which operates at 1367 and 1382 MHz. It is not
+supposed to be turned on when we are observing (i.e. its use is not supposed
+to interfere with observations at AO). See also
+<a href='http://www.naic.edu/~rfiuser/smarg-coordPS.html'> this link</a>. 
+</p>
+
+The image to the right shows an example of the Puntas Salinas transmissions
+(also visible are the FAA 1350
+transmitter plus the 1380 MHz harmonic, discussed above).</p>
+
+If you see the dual frequency signature of Puntas Salinas, ask
+the telescope operator to call the folks at the air station to tell them to 
+turn off their equipment. Be insistent, if necessary; call yourself even.
+Also, if it persists, file an rfi report by emailing 
+"rfi-grp_AT_naic.edu". Include in the message the 
+AST time, frequency, description of the RFI, and
+please cc Martha (haynes_astro.cornell). Also, of course,
+include a note in the observing log file.</p>
+
+
+
+</td><td><img src="images/puntassalinas.gif" height=200><br>
+Click <a href="images/puntassalinas.gif">here</a> to enlarge.
+</p>
+</td></tr>
+</table>
+
+<br>
+<h3><font color=darkblue>The Global Positioning Satellite Nuclear Event Detector</font></h3>
+
+<table width=800><tr><td width=500>
+On occasion, you may see one or more short bursts of rfi, lasting from 30 to 180
+seconds, centered at 1381 MHz and extending over 1-2 MHz. These bursts arise from the
+NUclear DETonation detection (NUDET) system aboard the Global Positioning System (GPS)
+satellites. This system was established in the late 1970's as the US was planning
+to sign the Comprehensive Test Ban Treaty giving up the right to conduct tests of nuclear
+weapons. The NUDET system was designed to allow the US to verify that other nations
+are in compliance with the treaty. See this 
+<a href="http://www.fas.org/spp/military/program/nssrm/initiatives/usnds.htm">
+link</a>.</p>
+
+The image to the right shows an example of a GPS/NUDET burst (along with the FAA radar
+at 1350 and the mysterious new 1375 MHz birdie whose identity is not yet known.)
+Notice that GPS/NUDET is polarized and not identical in all beams.
+If you are curious, Phil has a set of <a href="http://www.naic.edu/~phil/satdoc.html">
+IDL routines</a> which predict the passage of satellites over AO.</p>
+
+</td><td><img src="images/d2028_rec300_gps.gif" height=200><br>
+Click <a href="images/d2028_rec300_gps.gif">here</a> to enlarge. You
+might want to compare that with this normal display
+<a href="images/d2138_rec300_nogps.gif">without GPS</a>
+</p>
+</td></tr>
+</table>
+If you notice up to a few, short (<300 sec) GPS/NUDET bursts, make a note(s) 
+in the log file.</p>
+
+The use of the 1381 MHz frequency for GPS/NUDET was carefully negotiated
+back in the 1980's to minimize impact on radio astronomy while still insuring
+national security (No kidding: this discussion including folks whose
+offices were in the White House...!).  As a result, there
+are limits to the burst duration and total accumulated time per day, month
+etc that the NUDET system can transmit for system tests under "normal" circumstances. 
+Once in a while, the Air Force notifies the observatory of 
+planned systems tests which may exceed the normal limits; we post received 
+NUDET test <a href="rfi_alerts.htm">notifications</a>. If you are observing
+when there is not a posted alert and the duration of the GPS/NUDET seems excessive,
+file an rfi report by emailing "rfi-grp_AT_naic.edu". Include in the message the 
+AST time, frequency, description of the RFI, and
+please cc Martha (haynes_astro.cornell).</p>
+
+Fortunately, GPS/NUDET bursts results from system tests and
+do not mean that an above-ground nuclear event has taken place so you
+don't need to dive under a desk. (That is a joke to us old folks.)</p>
+<br>
+<br>
+<hr>
+
+<font color=#cc0f14>
+Original page created and maintained members of the <a href="http://www.astro.cornell.edu/Galaxy/egg.html">Cornell ExtraGalactic Group</a> and the <a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA team</a></font><br>
+
+<i>Last modified: Wed Sep 28 16:05:34 EDT 2011 by martha</i>
+</html>

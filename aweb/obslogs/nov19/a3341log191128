@@ -1,0 +1,57 @@
+A3341 LBW   19.11.28  Observers: Olivia Jo Dickinson, Haille Perkins, Joseph Ribaudo 
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3341.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3341_191128.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20191128.a3341.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S225913.9+231233  225913.9 +231233  j     0 H v   # A321988     2212  12.09   0     933200079  Detection at 1398 MHz, 4800 km/s, S/N~ 14; removed GPS 
+S225923.2+244838  225923.2 +244838  j     0 H v   # A321386     2225  10.41   1     933200083  Detection at 1385 MHz, 7600 km/s, S/N~ ; restarted WAPPS after this observation finsihed 
+S230037.5+305740  230037.5 +305740  j     0 H v   # A333352     2240  13.58   2     933200087  Detection at 1388.5 MHz, 6900 km/s, S/N~ 10  
+S232023.7+275149  232023.7 +275149  j     0 H v   # A332918     2253  11.59   3     933200091  Detection at 1403 MHz, 3600 km/s, S/N~ 7,
+S232522.0+282104  232522.0 +282104  j     0 H v   # A333535     2305  11.19   4     933200095  Detection at 1387 MHz, 7250 km/s, S/N~ 10
+S232850.6+300037  232850.6 +300037  j     0 H v   # A333394     2318  12.10   5     933200099  Detection at 1395 MHz, 5500 km/s, S/N~ 10 
+S232727.0+253730  232727.0 +253730  j     0 H v   # A337141     2331  07.43   6     933200103  Detection at 1389 MHz, 6600 km/s, S/N~ 8; Detection in the off at 1403 MHz, 3800 km/s, S/N~ 18 
+S233853.2+241352  233853.2 +241352  j     0 H v   # A333337     2344  06.08   7     933200107  Detection at 1417 MHz, 750 km/s, S/N~ 10 
+S235535.8+291220  235535.8 +291220  j     0 H v   # A337123     2358  10.99   8     933200111  No obvious detections; possible detection around 1389 MHz or 1396 MHz
+S002129.7+285445  002129.7 +285445  j     0 H v   # A102911     0010  11.01   9     933200115  Detection at 1398.5 Mhz, 4650 km/s, S/N~ 15
+S012102.1+260520  012102.1 +260520  j     0 H v   # A113753     0024  15.40   10    933200119  Detection at 1406 MHz, 3100 km/s, S/N~ 6; removed GPS 
+S012608.8+275756  012608.8 +275756  j     0 H v   # A110324     0037  15.06   11    933200123  Detection at 1401.5 MHz, 4000 km/s, S/N~ 11
+S012324.6+344404  012324.6 +344404  j     0 H v   # A115591     0050  18.16   12    933200127  Detection at 396.5 MHz, 5200 km/s, S/N~ 4
+S013716.6+323416  013716.6 +323416  j     0 H v   # A115674     0103  16.40   13    933200131  Detection at 1397 MHz, 6300 km/s, S/N~  16
+S021328.8+243804  021328.8 +243804  j     0 H v   # A125802     0117  14.89   14    933200135  No obvious detections; possible detection around 1397 Mhz
+S020207.4+271506  020207.4 +271506  j     0 H v   # A125799     0129  11.89   15    933200139  Possible detection at 1397.5 MHz, 4900 km/s, S/N~ 3; removed GPS 
+S020929.0+315110  020929.0 +315110  j     0 H v   # A122966     0143  14.97   16    933200143  Detection at 1390 MHz, 6500 km/s, S/N~ 12 
+S021815.0+295613  021815.0 +295613  j     0 H v   # A123133     0156  12.88   17    933200147  Detection at 1997 MHz, 4950 km/s, S/N~ 4; removed GPS 
+S022325.0+265858  022325.0 +265858  j     0 H v   # A125804     0209  09.46   18    933200151  Detection at 1371 MHz, 10800 km/s, S/N~ 3
+S023314.3+292712  023314.3 +292712  j     0 H v   # A125807     0221  11.56   19    933200155  No obvious detections 
+S025052.4+314742  025052.4 +314742  j     0 H v   # A125809     0235  14.08   20    933200159  Detection at 1398.5 MHz, 4650 km/s, S/N~ 3; removed GPS 
+H025141.5+320610  025141.5 +320610  j     0 H v   # A123057cal  0247  13.92   21    933200163  Detection at 1413.5 MHz, 1550 km/s, S/N~ 17
+H024853.4+281624  024853.4 +281624  j     0 H v   # A120529cal  0257  10.14   22    933200167  Detection at 1395 MHz, 5400 km/s, S/N~ 9 
+H030215.5+303118  030215.5 +303118  j     0 H v   # A131380cal   if time
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal   if time
+
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+Started with boards 2 and 4 swapped and tiedowns disabled. 
+Restarted the WAPPS after file 1 finsihed due to a warning about the counts not matching. Data looked good, but restarted to make sure. 
+CIMAlog will be a whopper as a result of this WAPPS error. 
+
+
+
+

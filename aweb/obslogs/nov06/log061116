@@ -1,0 +1,59 @@
+Log for 06/11/16      Observer: Sabrina & Oded
+
+System Configuration:
+
+Using: a2010_az360.gui as save state.
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061116.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2137 0003 632066056 632066658 drift52p2 FixedAz  213720+123912   19   600   99  loopend
+2147 0004 632066661 632067263 Power levels okay*
+2157 0005 632067868 aborted**
+2250 0010 632070425 632071027 Power levels okay*
+2300 0011 632071030 632071632
+2310 0012 632071635 632072237
+2320 0013 632072240 632072842
+2330 0014 632072845 632073447
+2340 0015 632073450 632074052
+2350 0016 632074055 632074657
+0000 0017 632074660 632075262
+0011 0018 632075265 632075867
+0021 0019 632075870 632076472 Power levels okay*
+0031 0020 632076475 632077077
+0041 0021 632077080 632077682
+0051 0022 632077685 632078287
+0101 0023 632078290 632078892
+0111 0024 632078895 632079497
+0121 0025 632079500 632080102
+0131 0026 632080105 632080707
+0142 0027 632080710 632081312
+0152 0028 632081315 632081917
+0202 0029 632081920 632082522
+0212 0030 632082525 632083127 Power levels okay*
+0222 0031 632083130 632083732
+0232 0032 632083735 632084337
+0242 0033 632084340 632084942
+0252 0034 632084945 632085547
+0302 0035 632085550 632086152
+0313 0036 632086155 632100357
+0323 0000 632100360 aborted
+
+END LST:  0323
+
+Notes:
+
+*Note that the beam 1B power level is low (in the red around .170).  Previous observers noted problem and AO is 
+working on it.
+**During the third fits file we received the following error message:
+
+Thu Nov 16 18:51:13 AST 2006 WARN WAPPDATA flushing 12 dumps
+Thu Nov 16 18:51:25 AST 2006 ERROR timed out while waiting for WAPP spectra!
+
+We restarted the WAPPs and exited/restarted CIMA several times but with no success.  Each time all of the WAPPs 
+would restart but then CIMA would time out when trying to adjust power for WAPP(1) (i.e. WAPP(1) was 
+unresponsive).  The operator called Mikael for help and he flushed/restarted/massaged WAPP(1) until it worked.
+We are not sure what the problem was but it seemed to be a software issue.
+
+

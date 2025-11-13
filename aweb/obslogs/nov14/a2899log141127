@@ -1,0 +1,67 @@
+A2899  LBW   14.11.27      Observers: GH, Will Harney, Genesis Guerra
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2899search.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: 10GHz to 1500    center varies   (note!)
+  Backend: WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+      Board 1 1415.405751786 
+      Board 2 1395.405751786
+      Board 3 1355.405751786   **note
+      Board 4 1375.405751786
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2899_141127.cmd
+Mode:                WAPP search mode
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to:     /share/pserverf.sda3/wappdata/wapp.20141127.a2899.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+**** NOTE**** This run is a test of the WAPP-based "search mode".
+              Using the configuration file:   a2899search.conf  (See note at bottom)
+              Sources with names beginning with "S" run for 5mins ON+OFF
+              Other sources are 3mins ON-OFF
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include estimate of S/N ratio)
+H222601.7+225346  222601.7 +225420  j     0 H v   # A322064cal 2130  13.30     0   433100007  detection @ 1414 MHz, SN = 6
+A221404.7+254052  221404.7 +254052  j     0 H v   # A321307cal 2140  11.00     1   433100011  detection @ 1415 MHz, SN = 6
+H220535.2+335737  220535.5 +335753  j     0 H v   # A322641cal 2150  16.11     2   433100015  detection @ 1398 MHz, SN = 4
+S225337.5+254807  225337.5 +254807  j     0 H v   # A322620    2200  14.63     3   433100019  detection at 1386 MHz sn = 9
+	Swapped frequencies of boards 3 (bad) and board 4 (working fine) between these two observations.
+S225310.5+313509  225310.5 +313509  j     0 H v   # A322613    2215  15.92     4   433100023  detection at 1390 MHz sn = 3
+	Restarted the WAPPS between these two observations.
+S225500.3+322924  225500.3 +322924  j     0 H v   # A322625    2228  15.50     5   433100027  detection at 1388 MHz sn = 5
+S230202.1+271311  230202.1 +271311  j     0 H v   # A335280    2242  10.12     6   433100031  detection at 1386 MHz sn = 6
+S230400.1+343649  230400.1 +343649  j     0 H v   # A335281    2256  16.46     7   433100035  detection at 1393 MHz sn = 10 GPS
+S230658.5+293754  230658.5 +293754  j     0 H v   # A335282    2310  11.40     8   433100039  possible detection at 1372 sn=1
+S230729.2+293432  230729.2 +293432  j     0 H v   # A335283    2322  11.80     9   433100043  detection at 1377 MHz sn = 5
+S230750.3+265901  230750.3 +265901  j     0 H v   # A335284    2335  10.69     10  433100047  detection at 1387 MHz sn = 6
+H234539.0+283215  234539.7 +283203  j     0 H v   # A33356scal 2348  10.29     11  433100051  detection at 1378 MHz sn = 8
+S001313.6+244914  001313.6 +244914  j     0 H v   # A102631    2358   7.52     12  433100055  detection at 1367 MHz sn = 7
+S001131.2+285436  001131.2 +285436  j     0 H v   # A104328    0011  10.66     13  433100059  detection at 1384 MHz sn = 6
+S002222.0+293351  002222.0 +293351  j     0 H v   # A104378    0023  11.31     14  433100063  detection at 1388 MHz sn = 7 
+S004311.5+344016  004311.5 +344016  j     0 H v   # A104559    0036  16.49     15  433100067  possible detection at 1392 sn=3
+S004950.5+354353  004950.5 +354353  j     0 H v   # A104471    0049  17.49     16  433100071  detection at 1376 MHz sn = 5
+S010440.5+341023  010440.5 +341023  j     0 H v   # A115327    0102  15.94     17  433100075  detection at 1372 MHz sn = 7
+S011945.4+340758  011945.4 +340758  j     0 H v   # A115416    0114  15.94     18  433100079  detection at 1403 MHz sn = 8 GPS in off
+S012937.5+334736  012937.5 +334736  j     0 H v   # A115465    0126  15.56     19  433100083  detection at 1390 MHz sn = 13, GPS in off
+S013929.4+343547  013929.4 +343547  j     0 H v   # A115485    0138  16.35     20  433100087  det @ 1395MHz, sn=3, GPS  
+A013600.8+341112  013600.8 +341112  j     0 H v   # A114710cal 0151  16.24     21  433100091  det @ 1401MHz, sn=12, GPS
+S021123.4+330219  021123.4 +330219  j     0 H v   # A124686    0159  15.04     22  433100095  det @ 1366MHz, sn=3
+S025912.0+345929  025912.0 +345929  j     0 H v   # A124773    0213  19.64     23  433100099  aborted because of high zenith
+S021123.4+330219  021123.4 +330219  j     0 H v   # A124686    0221  14.93     25  433100101  detection at 1366 MHz, sn=3
+S025912.0+345929  025912.0 +345929  j     0 H v   # A124773    0234  17.65     26  433100105  possible detection at 1398 MHz
+S025847.4+352906  025847.4 +352906  j     0 H v   # A124772    0247  17.44     27  433100109  detection at 1397 MHz, sn=3
+H030305.8+334139  030305.8 +334139  j     0 H v   # A130770cal Not observed.
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+  Tiedowns enabled. Good night with lots of detections. GPS affected a few scans. 
+  Board 3 is pretty borked (bandpass is un /stable in time), and has been relegated to the lowest frequency
+  The return of seeing our good friend the FAA radar.
+  Testing the WAPP-based search mode
+  S/N estimated as peak over rms.
+
+*** For this setup, we swapped boards 3&4 from normal logical order because B3 is unstable as
+    noted above. Just be careful with reduction.

@@ -1,0 +1,70 @@
+Log for 11.02.25 (25Feb2011)        Observers: Aileen O'Donoghue, Jeff Miller & Heather Culter 
+(remote)
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110225.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110226.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+LST  fits   Scan      calscan    Source    Pattern   Start coords. ang  time loop calmode
+0915 0036  105600239  105600240 drift149p2 fixAzdr   091500+340427  19  600   99  loopend, power levels ok, FAA strong, cs, quicklook OK.
+0925 0037  105600241  105600240 strong cs 
+0935 0038  105600243  105600242 quicklook OK, power levels OK 
+0946 0039  105600245  105700001 cs
+0956 0000  105700002  105700003    
+1006 0001  105700004  105700005
+1016 0002  105700006  105700007
+1026 0003  105700008  105700009  
+1036 0004  105700010  105700011
+1046 0005  105700012  105700013 quicklook ok, power levels ok
+1056 0006  105700014  105700015
+1107 0007  105700016  105700017
+1117 0008  105700018  105700019 quicklook ok, power levels ok
+1127 0009  105700020  105700021
+1137 0010  105700022  105700023 
+1147 0011  105700024  105700025
+1157 0012  105700026  105700027 quicklook ok, gps burst at ast 0204 until ast 0207
+1207 0013  105700028  105700029
+1217 0014  105700030  105700031 
+1227 0015  105700032  105700033 quicklook ok 
+1238 0016  105700034  105700035 2 second interpolation error, strong cs in beams 3 and 4, quicklook ok
+1248 0017  105700036  105700037  
+1258 0018  105700038  105700039
+1308 0019  105700040  105700041
+1318 0020  105700042  105700043 cs in 0, 1, 2, 5, 6, quicklook ok
+1328 0021  105700044  105700045
+1338 0022  105700046  105700047 galactic HI seems very faint this evening
+1348 0023  105700048  105700049
+1359 0024  105700050  105700051 
+1409 0025  105700052  105700053 quicklook ok
+1419 0026  105700054  105700055 
+1429 0027  105700056  105700057
+1439 0028  105700058  105700059 mild GPS burst (UT 9:00 - 9:01:30) 
+1449 0029  105700060  105700061 quicklook OK  
+1459 0030  105700062  105700063  
+1509 0031  105700064  105700065  
+1519 0032  105700066  105700067
+1529 0033  105700068  105700069
+1539 0034  105700070  105700071   
+1549 0035  ... ABORTED
+LST stop: 1550
+
+
+-- TOGS at end.
+-- FAA radar on. 
+
+_______________________________________________________________________________
+
+ALFA TEMPERATURES
+
+16K = K1: 29.7   K2: 29.9   K3: 33.8   K4: 33.3   AT 18:00
+70K = K1: 123.2  K2: 131.3  K3: 140.4  K4: 147.9
+
+16K = K1: 29.7   K2: 30.2   K3: 34.1   K4: 33.3   AT 22:15
+70K = K1: 123.3  K2: 131.6  K3: 140.4  K4: 147.9
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

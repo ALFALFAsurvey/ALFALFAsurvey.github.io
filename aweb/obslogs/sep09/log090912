@@ -1,0 +1,76 @@
+Log for 090912     Observer: Manolis Papastergis
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20090912.a2010.****.fits 
+Files:       /share/pserverf.sda3/wappdata/wapp.20090913.a2010.****.fits 
+
+     ****
+LST  fits  Scan       calscan        Source      Pattern   Start coords.  ang  time  loop  calmode 
+2142 0029  925500159  925500160      drift3p2    fixAZdr   214200+004348   19   600   99   loopend    cima warning: interpolating data...
+2152 0030  925500161  925500162  quicklooked fits 0029, ok
+2202 0031  925500163  925500164
+2212 0032  925500165  925500166
+2222 0033  925500167  925500168
+2232 0034  925500169  925500170
+2242 0035  925500171  925500172
+2252 0036  925500173  925600001  strong cont. source
+2303 0000  925600002  925600003
+2313 0001  925600004  925600005
+2323 0002  925600006  925600007
+2333 0003  925600008  925600009
+2343 0004  925600010  925600011
+2353 0005  925600012  925600013
+0003 0006  925600014  925600015
+0013 0007  925600016  925600017
+0023 0008  925600018  925600019
+0033 0009  925600020  925600021
+0043 0010  925600022  925600023  
+0054 0011  925600024  925600025
+0104 0012  925600026  925600027
+0114 0013  925600028  925600029
+0124 0014  925600030  925600031  quicklooked fits 0000,ok; everything looks ok
+0134 0015  925600032  925600033
+0144 0016  925600034  925600035
+0154 0017  925600036  925600037
+0204 0018  925600038  925600039
+0214 0019  925600040  925600041
+0224 0020  925600042  925600043
+0235 0021  925600044  925600045
+0245 0022  925600046  925600047
+0255 0023  925600048  925600049
+0305 0024  925600050  925600051
+0315 0025  925600052  925600053
+0325 0026  925600054  aborted
+
+
+END LST: 0325
+
+
+
+Notes:
+
+-- The telescope took ~13mins to slew (almost 360degrees). As a result 1st drift about ~10mins late. 1 extra drift at end, though. 
+
+-- TOGS run at START and END
+
+-- All beams OK.
+
+-- FAA radar ON; 1380 harmonic also present
+
+-- a few cima messages: "received duplicate AGC datablock..."
+
+-- Quiet night overall. ALFA goes down and comes back in November. Good luck ALFA! 
+
+
+
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+16K = K1: 7.7    K2: 8.8    K3: 14.2   K4: 11.5   AT 21:55
+70K = K1: 73.1   K2: 78.7   K3: 92.2   K4: 99.7
+
+16K = K1: 7.7    K2: 9.0    K3: 14.5   K4: 11.5   AT 23:55
+70K = K1: 72.6   K2: 78.4   K3: 92.1   K4: 100.0
+

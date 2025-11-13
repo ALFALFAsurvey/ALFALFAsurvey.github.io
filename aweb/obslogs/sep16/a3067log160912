@@ -1,0 +1,52 @@
+A3067  LBW   16.09.12      Observers: LL
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3067_sep16.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3067_160912_final.cmd
+Mode:                Doppler tracking
+                     ALFALFA "Dark" Sources
+      
+Data written to: /share/olcor/corfile.12sep16.a3067.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr              LST    ZA   File#   ONScan     Status   
+H222627.1+160912  222627.5 +160851  j  1874 H v   # A12035              2252   6.2   1     625500109   det @ 1800km/s  
+S223032.1+174850  223032.1 +174850  j 10142 H v   # HI223032.0+174850   2300   6.8   2     625600001   no det   
+S224100.4+164746  224100.4 +164746  j  6182 H v   # HI224100.4+164746   2309   6.6   3     625600005   det @ 6175!!!!
+S225801.5+170835  225801.5 +170835  j  5161 H v   # HI225801.5+170835   2318   4.6   4     625600009   no det; rfi @1389MHz
+S230456.0+171247  230456.0 +171247  j  7569 H v   # HI230456.0+171247   2326   4.9   5     625600013   no det
+S231940.4+170322  231940.4 +170322  j  1596 H v   # HI231940.4+170322   2334   3.4   6     625600017   det @1600 km/s!!!!
+S232200.0+074147  232200.0 +074147  j 12382 H v   # HI232200.2+074156   2345  11.8   7     625600021   no det; maybe @lower v?
+S234240.9+111850  234240.9 +111850  j  9320 H v   # HI234240.6+111859   2355   7.4   8     625600025   no det; maybe vweak@9275?
+S003759.4+131543  003759.4 +131543  j 11587 H v   # HI003759.4+131555   0006   9.2   9     625600029   det @ 11600 km/s!; baseline wavy; cont=25mJy; opt star
+S004151.4+115743  004151.4 +115743  j  7962 H v   # HI004151.5+115754   0014   9.2  10     625600033   no det; rfi @1377?
+S004800.5+090601  004800.5 +090601  j 13043 H v   # HI004800.6+090608   0023  10.9  11     625600037   det @ 13000; confirms faint OC w/ 10^10Msun HI
+S011856.5+162054  011856.5 +162054  j  6135 H v   # HI011856.7+162105   0033  11.2  12     625600041   det@6100; blended w/red etg offset @ ~1' (?)
+S012330.0+164400  012330.0 +164400  j 13006 H v   # HI012330.0+164400   0041  10.4  13     625600045   wide det @13000km/s; must be behind star (see dss2Blue)
+S001255.1+162123  001255.1 +162123  j 10614 H v   # HI001255.4+162134   0056  10.2  14     625600049   det@10700; potential tt? 
+S012900.1+122653  012900.1 +122653  j  7354 H v   # HI012900.4+122705   0109   7.7  15     625600053   det@7350 km/s!; smudge to SE of centroid?
+S013426.9+073903  013426.9 +073903  j 17296 H v   # HI013427.1+073910   0118  11.4  16     625600057   no clear det; FAA on
+S020132.7+071854  020132.7 +071854  j 14578 H v   # HI020132.9+071900   0127  13.9  17     625600061   no det, suggestive baseline wiggles @13300 
+S022400.5+165706  022400.5 +165706  j  6896 H v   # HI022400.5+165706   0137  11.5  18     625600065   det @ 6900 km/s; lsb smudge to N is DSS2B?
+S022848.8+164740  022848.8 +164740  j  4069 H v   # HI022848.8+164740   0145  10.8  19     625600069   det @ 4100 km/s; likely associated w/ DSS2B smudge to E
+S023630.7+164139  023630.7 +164139  j  4376 H v   # HI023630.7+164139   0153  10.6  20     625600073   det @ 4400 km/s!!; vvlsb in DSS2B to NW?
+S024033.3+165608  024033.3 +165608  j  3878 H v   # HI024033.3+165608   0201   9.7  21     625600077   det @ 3900 km/s!; def dark in DSS2B
+S022238.5+073816  022238.5 +073816  j  1898 H v   # HI022238.7+073823   0212  10.9  22     625600081   no det
+S022243.5+074343  022243.5 +074343  j  5492 H v   # HI022243.7+074350   0220  10.6  23     625600085   no clear det; cont=148mJy
+H022017.4+070615  022019.7 +070607  j  1500 H v   # A124357 - if time   0228  11.3  24     625600089   det @ 1500 km/s!!!
+S014134.1+165718  014134.1 +165718  j  -928 H v   # HI014134.1+165718   0239  13.8  25     625600093   confirmed OHM 
+S031245.3+044207  031245.3 +044207  j                                   0252  14.6  26     625600097   for fun... sn50 det@5900km/s; confirms tail I think
+
+Notes 
+  Tiedowns enabled.  I got an unexpectedly early start, so I got through all the sources, plus 2 bonus sources...
+
+  
+

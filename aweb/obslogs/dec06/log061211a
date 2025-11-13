@@ -1,0 +1,44 @@
+Log for 06/12/11 AM      Observer: Oded Spector
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az180.gui as save state. -- Note, 180 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061211.a2010.****.fits
+
+LST  fits   Scan     calscan   Source    Pattern  Start coords.  ang  time  loop calmode
+0739 0001 634510023 634510625 drift112p1  FixedAz 073900+270754   19   600    99  loopend
+0749 0002 634510628 634511230
+0759 0003 634511233 634511835
+0809 0004 634511838 634512440
+0819 0005 634512443 634513045
+0830 0006 634513048 634513650 Power levels OK
+0840 0007 634513653 634514255 
+0850 0008 634514258 634514860 Beam 5B - Power level marginal (0.79 since RA 0851) (see note 1)
+0900 0009 634514863 634515465
+0910 0010 634515468           Aborted (WAPPS error)!!!    (see note 1)
+0917 0011 634515915 634516517 Power levels OK
+0928 0012 634516520 634517122
+0938 0013 634517125 634517727 1381MHz RFI (~1MHz wide) during RA 0938-0941  (see note 2)
+0948 0014 634517730 634518332
+0958 0015 634518335 634518937 Power levels OK
+1008 0016 634518940 634519542
+1018 0017 634519545 634520147
+1028 0018 634520150 634520752
+1038 0019 634520755 634521357 Power levels OK
+1048 0020 634521360 634521962
+1059 0021 634521965 634522567
+1109 0022 - Aborted
+
+END LST:
+
+
+NOTES:
+1. WAPPS error at RA ~0915 !
+   After restaring the WAPPS, they seem to work OK.
+   This error was preceded by a decrease in power level of beam 5B, starting at RA ~0810,
+   and stabilizing on ~0.79 at RA 0851 (after decreasing significantly in the few minutes 
+   before).
+2. RFI at 1381MHz, ~1MHz wide (detected once during RA 0938-0941).
+3. TOGS run at end.

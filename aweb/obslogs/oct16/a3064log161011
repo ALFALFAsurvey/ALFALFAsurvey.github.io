@@ -1,0 +1,50 @@
+A3064 LBW   16.10.11   Observers: Mike
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161011.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161011.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161012.a3064.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+A232708.9+302418  232708.9 +302418  j     0 H v   # A333392cal  2335   12.3 0000    628500108  Strong det @ 4500 km/s - FAA on also RFI at 1344 and 1363 MHz
+S230935.5+264937  230935.5 +264937  j     0 H v   # A336610     2344   11.6 0001    628500112  Det @ 9500 km/s S/N ~ 5 - FAA and 1344MHz RFI
+S233429.9+233314  233429.9 +233314  j     0 H v   # A336648     2358   7.5  0002    628500116  Possible det @ 9900 km/s S/N ~ 3
+S235947.8+255131  235947.8 +255131  j     0 H v   # A335570     0011   8.0  0003    628500120  Possible det @ 7600 km/s S/N ~ 2
+S002321.0+264916  002321.0 +264916  j     0 H v   # A104993     0024   8.6  0004    628500124  Possible det @ 9300 km/s S/N ~ 2
+S003045.3+254028  003045.3 +254028  j     0 H v   # A104414     0037   7.5  0005    628500128  Possible det @ 10200 km/s S/N ~ 2 - GPS
+S003735.1+245306  003735.1 +245306  j     0 H v   # A104431     0049   7.1  0006    628500132  No det (maybe something @ 13100 km/s, but can't trust it)
+S004301.7+273157  004301.7 +273157  j     0 H v   # A105193     0102   10.2 0000    628600003  Possible det @ 10300 or 7300 km/s S/N ~ 2 (I'm a bit suspicious of all these marginals in board 3, is there some low level RFI I don't know about?)
+S005009.8+292727  005009.8 +292727  j     0 H v   # A104474     0114   12.4 0001    628600007  Det @ 10700 km/s S/N ~ 3
+S010920.6+280528  010920.6 +280528  j     0 H v   # A116207     0127   10.6 0002    628600011  No det - HVC maybe @ -400 km/s
+S013810.2+305037  013810.2 +305037  j     0 H v   # A115820     0140   12.6 0003    628600015  Det @ 10900 km/s S/N ~ 5
+S014957.3+290828  014957.3 +290828  j     0 H v   # A116247     0153   10.9 0004    628600019  No det
+S020529.4+294754  020529.4 +294754  j     0 H v   # A123181     0205   11.5 0005    628600023  Possible detection @ 10700 km/s S/N ~ 2
+S022432.2+314424  022432.2 +314424  j     0 H v   # A125186     0218   13.6 0006    628600027  Possible det @ 10400 km/s S/N ~ 2
+S024507.1+330208  024507.1 +330208  j     0 H v   # A125510     0230   15.2 0007    628600031  Det @ 5000 km/s S/N ~ 4
+S024619.6+335513  024619.6 +335513  j     0 H v   # A124610     0243   15.7 0008    628600035  No det - GPS in off scan
+S025236.9+332222  025236.9 +332222  j     0 H v   # A124227     0255   15.1 0009    628600039  No det
+S030247.9+350428  030247.9 +350428  j     0 H v   # A131430     0307   16.8 0010    628600043  Possible det @ 3700 km/s S/N ~ 2
+H030215.5+303118  030215.5 +303118  j     0 H v   # A131380cal  Not observed
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal        if time
+
+                                                                  
+Notes (be sure to write notes here so we can keep track of anything relevant)
+Operator told me that there is a problem with the encoder and that he gets a fault when slewing. He warned that slews may take a long time and that tracking may not be perfect.
+He said he will try to slew in the secondary encoder, which is working, but doesn't track as well, then switch back to the primary one for observing the targets.
+Tiedowns enabled, FAA on pretty much all night, only one GPS burst.
+Late start because we had to slew 180 deg ..... which took even longer than normal.
+Aside from the late start I didn't have any issues with slewing. Apparently Phil made a temporary script to "fix" the issue.
+

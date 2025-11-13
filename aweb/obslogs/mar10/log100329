@@ -1,0 +1,109 @@
+Log for 03/29/10          Observer: Betsey Adams
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100329.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100330.a2010.****.fits
+
+Zenith strip observing setup
+Az=264.49   ALFAang=-65.2  ZA=7.3 - see note below!
+RA@start=0715   RA@end=1641
+RA = LST + 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode
+0648 0027  8800125  8800126       drift79p1 fixAZdr   071500+190606 -65.2 600   99   loopend  continuum source
+0658 0028  8800127  8800128
+0708 0029  8800129  8800130
+0718 0030  8800131  8800132  quicklook ok
+0728 0031  8800133  8800134
+0738 0032  8800135  8800136
+0749 0033  8800137  8800138
+0759 0034  8800139  8800140
+0809 0035  8800141  8800142
+0819 0036  8800143  8800144
+0829 0037  8800145  8800146
+0839 0038  8800147  8800148
+0849 0039  8800149  8800150   quicklook ok
+0859 0040  8800151  8800152
+0909 0041  8800153  8800154
+0919 0042  8800155  8800156
+0930 0043  8800157  8800158
+0940 0044  8800159  8800160
+0950 0045  8800161  8800162
+1000 0046  8800163  8800164
+1010 0047  8800165  8800166
+1020 0048  8800167  8800168
+1030 0049  8800169  8800170
+1040 0050  8800171  8800172
+1050 0051  8800173  8800174   quicklook ok
+1101 0052  8800175  8800176
+1111 0053  8800177  8800178
+1121 0054  8800179  8800180
+1131 0055  8800181  8800182  continuum source
+1141 0056  8800183  8800184
+1151 0057  8800185  8800186
+1201 0058  8800187  8900001
+1211 0000  8900002  8900003   quicklook ok
+1221 0001  8900004  8900005
+1232 0002  8900006  8900007
+1242 0003  8900008  8900009
+1252 0004  8900010  8900011
+1302 0005  8900012  8900013
+1312 0006  8900014  8900015   quicklook ok
+1322 0007  8900016  8900017
+1332 0008  8900018  8900019
+1342 0009  8900020  8900021
+1353 0010  8900022  8900023
+1403 0011  8900024  8900025
+1413 0012  8900026  8900027
+1423 0013  8900028  8900029
+1433 0014  8900030  8900031   quicklook ok
+1443 0015  8900032  8900033
+1453 0016  8900034  8900035
+1503 0017  8900036  8900037
+1514 0018  8900038  8900039
+1524 0019  8900040  8900041	
+1534 0020  8900042  8900043
+1544 0021  8900044  8900045   quicklook ok
+1554 0022  8900046  8900047
+1604 0023  8900048  8900049
+1614 0024  8900050  Aborted
+
+
+LST stop: 1614        RA stop: 1641
+
+NOTES:
+
+From here on out, nighttime zenith angle limits have eased to 3.5-15
+Stricter limits of 6-9 still observed during the day
+
+Calculated start params:
+Az=262.49  ZA=7.3  hour angle=+30 min
+
+Acutal params:
+Az=261.9 (requested) ZA=6.52  hour angle=+27 min
+
+TOGS run at start and end
+
+
+Power OK, quicklook OK throughout night.
+
+FAA radar ON.
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 14.3   K3: 15.7   K4: 15.7   AT 17:30
+70K = K1: 84.6   K2: 92.7   K3: 102.7  K4: 110.0
+
+16K = K1: 14.3   K2: 14.5   K3: 15.7   K4: 15.7   AT 23:55
+70K = K1: 84.6   K2: 93.0   K3: 102.8  K4: 110.1
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+

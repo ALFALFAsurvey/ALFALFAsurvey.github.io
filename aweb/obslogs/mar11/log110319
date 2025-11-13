@@ -1,0 +1,95 @@
+Log for 11.03.19 (19Mar2011)        Observers: David Craig (remote)
+
+System Configuration:   a2010_az180_2011.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110319.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted.  ZAG approx. 14
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+1216  0000  107800001  107800002 drift134p1 fixAzdr  121800+322906  19  600   99  loopend checkTP/monpnt/etc
+				            started a little early, FAA radar on, pwr ok, 6B dead.
+					    Telescope AZ shows 179.7, Sky 180, pointing checks in monpnt
+                                            quicklook ok.
+1226  0001  107800003  107800004            Dewars are cool--better than last week. 
+1237  0002  107800005  107800006            strong cs b0,5,3, then galaxy in b0,5,3 at RA~12h43, ql ok.
+                                            NGC 4627/4631/4656?
+1247  0003  107800007  107800008
+1257  0004  107800009  107800010            cs b0, faint in 2,5
+1307  0005  107800011  107800012            cs all beams 3/4 of scan, quicklook ok (radar bright).
+1317  0006  107800013  107800014
+1327  0007  107800015  107800016            quicklook ok.
+1337  0008  107800017  107800018
+1347  0009  107800019  107800020            quicklook ok.
+1358  0010  107800021  107800022
+1408  0011  107800023  107800024            quicklook ok.
+1418  0012  107800025  107800026            cs b1, faint in others.
+1428  0013  107800027  107800028            quicklook ok.
+1438  0014  107800029  107800030            
+1448  0015  107800031  107800032            quicklook ok.
+1458  0016  107800033  107800034            
+1508  0017  107800035  107800036            quicklook ok.            
+1518  0018  107800037  107800038            
+1528  0019  107800039  107800040
+1539  0020  107800041  **ABORTED**            
+
+LST stop: 1539
+
+-- Short run, TOGS run at end only.
+-- FAA radar on.
+-- Uneventful.  No GPS that I noticed.
+              
+                               OPERATORS LOG
+                               AS OF 3/18/2011 
+________________________________________________________________________________
+GREGORIAN DOME 16K TEMPERATURES
+
+AT 18:00      AT 22:09
+
+327 = 14.3    327 = 14.3
+430 = 15.9    430 = 15.9
+800 = 81.9    800 = 78.9
+LBW = 14.9    LBW = 14.9
+SBN = 11.4    SBN = 11.3
+SBW = 14.2    SBW = 14.0
+SBH = OFF     SBH = OFF
+CB  = 13.0    CB  = 12.6
+CBH = OFF     CBH = OFF
+XB  = 14.7    XB  = 15.9
+
+Floor Speed 3  AT 16:00
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 16.7   K2: 16.2   K3: 17.4   K4: 17.6   AT 18:00
+70K = K1: 60.9   K2: 68.5   K3: 74.1   K4: 81.2
+
+16K = K1: 16.3   K2: 16.0   K3: 17.2   K4: 17.4   AT 22:09
+70K = K1: 60.9   K2: 67.8   K3: 73.7   K4: 80.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT /
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:00
+				=>certify our blanker is locking on
+_______________________________________________________________________________
+TIE DOWN STATUS AT 16:00
+
+TD12: 11.706
+TD4 : 11.954
+TD8 : 11.727
+
+Total Kips: 79.62
+
+Tie Down:   Enabled
+________________________________________________________________________________
+

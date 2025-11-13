@@ -1,0 +1,62 @@
+Log for 12/16/09          Observers: MH
+
+System Configuration:                   a2010_az360_2009.conf
+CIMA version       			3.1.06 2009-11-22 11:19 "Smart" 
+File(s):  /share/pserverf.sda3/wappdata/wapp.20091216.a2010.****.fits
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0700 0001 935000041 935000042     drift68p2 fixAZdr  071200+163248  19  600   99  loopend  
+0710 0002 935000043 935000044     all beams working and power levels ok; checkfits ok; extrapolating agc-data warning
+0720 0003 935000045 935000046     
+0730 0004 935000047 935000048    
+0740 0005 935000049 935000050     all ok  
+0751 0006 935000051 935000052     Extrapolating agc-data warning
+0801 0007 935000053 935000054     
+0811 0008 935000055 935000056     checkfits ok
+0821 0009 935000057 935000058  
+0831 0010 935000059 935000060  
+0841 0011 935000061 935000062 
+0852 0012 935000063 935000064 
+0902 0013 935000065 935000066 
+0912 0014 935000067 935000068 
+0922 0015 935000069 935000070 
+0932 0016 935000071 935000072      all ok
+0942 0017 935000073 935000074 
+0952 0018 935000075 935000076 
+1003 0019 935000077 935000078 
+1013 0020 935000079 935000080  
+1023 0021 935000081 935000082      power levels ok  
+1033 0022 935000083 935000084       
+1043 0023 935000085 935000086      
+1053 0024 935000087 935000088    
+1103 0025 935000089 935000090  
+1113 0026 935000091 935000092   
+1123 0027 935000093 935000094   
+1133 0028 935000095 935000096 
+1143 0029 935000097 935000098 
+1154 ABORT
+
+LST stop:  1154
+
+Notes:
+-- Picked up this night at last minute because of cancelled radar run.
+-- All beams working.
+-- FAA on all night
+-- TOGS ran at start and end
+-- Receive CIMA warning: the telescope is close (ZA=1.77) to the zenith angle limit 1.06 degrees!
+   Starts at beginning until around 0952. Then these messages stop for a while (ZA is actually 1:51).
+-- Pretty unremarkable night
+
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+could not get temps because AO webserver is down.
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   
+Alfa Covers: Not Covered
+

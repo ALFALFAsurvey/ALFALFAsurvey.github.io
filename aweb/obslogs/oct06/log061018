@@ -1,0 +1,53 @@
+Log for 06/10/18      Observer: Becky Koopmann
+
+System Configuration:
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  no data
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+
+Notes:
+No observing due to unscheduled maintenance 
+
+----------------------
+Summary from Barbara:
+----------------------
+Date: Thu, 19 Oct 2006 10:33:46 -0400
+From: Barbara Catinella <bcatinel@naic.edu>
+Hi all
+
+A2010 was cancelled yesterday due to problems with the AZ encoder. Ganesh,
+Phil and others have been working until ~2am to fix it, and Robert first
+and Tapasi later were able to observe after then. Tapasi told me that
+there are two encoder readings for the AZ arm and that they are now
+inconsistent (the problem started yesterday around 4pm). After trying to
+troubleshoot the problem, Ganesh and the others chose a workaround in
+order to allow people to observe for the rest of the night -- basically
+they use one of the two readings and bypass the other one. But the problem
+hasn't been fixed yet.
+
+-----------------------------------------------------------------------
+Date: Thu, 19 Oct 2006 14:37:46 -0400
+From: Barbara Catinella <bcatinel@naic.edu>
+Hi all
+
+Ok, so here is the story. Last Saturday lightning hit and damaged the
+tie-downs. It was also realized that one of the two AZ encoders was
+jumping. All the encoders (there are 4 in total) are connected to the same
+board. It turned out that the encoders are ok, but the port to which the
+"faulty" AZ encoder was connected is no longer working. So now the AZ
+encoder used for the pointing is connected to a port that works. The
+pointing was checked early this morning and is ok (maybe 1-2 arcsec worse,
+says Phil). Bottom line: things should work fine now (but they still have
+to fix the dead port). As for the data taken after Saturday, i.e. Sunday,
+Monday, and Tuesday night, there might be pointing problems. Phil's guess
+is up to 30 arcsec, but this is a guess. He needs to look into this (but
+not right now... they are working on fixing the problems) and will post a
+plot on his webpage. Notice however that Tapasi has been observing every
+morning since the 10th and she did not notice pointing problems in these
+last runs (the source was always there).
+
+Barbara
+----------------------------------------------------------------

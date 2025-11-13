@@ -1,0 +1,97 @@
+Log for 09/24/10     Observer: Manolis Papastergis
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100924.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100925.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=84.15   ALFAang= -62.6  ZA=4.8  AzG=444.15
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2030  RA@end=0300
+      RA = LST -20 min
+****
+During the night, please make occasional notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the ZA limits
+are (3.5,12.0). If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.    ang  time loop  calmode  ZAdome
+2050 0022 26700121  26700122   drift73p2  fixAZdr   203000+174548  -62.6   600   99  loopend  ZAG=4.76
+2100 0023 26700123  26700124
+2110 0024 26700125  26700126   everything fine; quicklooked fits 0022:ok
+2120 0025 26700127  aborted    CIMA said: "observing when not on source" and "WAPP channels with too little power" in middle of drift and
+                               stopped taking data   
+
+
+2136 0026 26700128  26700129   restarted drifting.                                            ZAG=4.69
+2146 0027 26700130  26700131
+2156 0028 26700132  26700133
+2206 0029 26700134  26700135
+2216 0030 26700136  26700137   CIMA stopped taking data for ~5 secs and displayed: "the telescope is close (Az -193.5) to the azimuth limit 0
+                               degrees". The azimuth at that time was 444.15 and ZA 4.63 (see notes)
+2226 0031 26700138  26700139
+2236 0032 26700140  26700141   
+2247 0033 26700142  26700143
+2257 0034 26700144  26700145
+2307 0035 26700146  26700147
+2317 0036 26700148  26700149   quicklooked fits 0026:ok                                       ZAG=4.59
+2327 0037 26700150  26700151
+2337 0038 26700152  26700153
+2347 0039 26700154  26800001
+2357 0000 26800002  26800003                                                                  ZAG=4.58
+0007 0001 26800004  26800005
+0017 0002 26800006  26800007
+0028 0003 26800008  26800009
+0038 0004 26800010  26800011
+0048 0005 26800012  26800013
+0058 0006 26800014  26800015
+0108 0007 26800016  26800017
+0118 0008 26800018  26800019
+0128 0009 26800020  26800021
+0138 0010 26800022  26800023
+0148 0011 26800024  26800025                                                                  ZAG=4.61
+0159 0012 26800026  26800027
+0209 0013 26800028  26800029
+0219 0014 26800030  26800031
+0229 0015 26800032  26800033   cima warnings: "extrapolating pnt-data..."
+0239 0016 26800034  26800035
+0249 0017 26800036  26800037                                                                  ZAG=4.68
+0259 0018 26800038  26800039
+0310 0019 26800040  26800041
+0320 0020 26800042  aborted 
+
+
+LST@stop:0320       RA@stop: 0300
+
+NOTES:
+-- There were a couple of instances where the telescope stopped taking data. The first time I had to abort and restart, while the second time it
+resumed taking data after ~5 secs. The telescope operator told me that it was not a pointing problem but issues with electrical power. 
+-- There are 2 fitsfiles associated with this observing session, named files20100924a.txt and files20100924b.txt
+   Martha combined into a standard single file files20100924.txt the next morning
+-- Using 'zenith strip' observing mode
+-- TOGS at START only. 
+-- Occasional cima warnings: extrapolating pnt-data...
+-- FAA radar ON
+-- All beams OK
+-- Tiedowns fine
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 13.6   K2: 14.0   K3: 15.2   K4: 15.2   AT 16:31
+70K = K1: 78.8   K2: 85.4   K3: 96.4   K4: 104.7
+
+16K = K1: 13.8   K2: 13.7   K3: 15.2   K4: 15.5   AT 23:26
+70K = K1: 79.0   K2: 86.1   K3: 96.6   K4: 105.4
+
+

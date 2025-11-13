@@ -1,0 +1,76 @@
+A2982 LBW   15.09.01     Observers: GH, RK
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_150901.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/pserverf.????/wappdata/wapp.20150901.a2982.****.fits  
+                     /share/pserverf.????/wappdata/wapp.20150902.a2982.****.fits   (after midnight AST)
+                     The data can be accessed at /share/wappdata/wapp.20150901.a2982.****.fits
+                     Where is it actually? I have no idea.
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S215143.8+251504  215143.8 +251518  j     0 H v   # A011834cal 2137   7.82  0000   524400063   detection @ 1405 MHz, SN=20; GPS in OFF
+S220158.9+272928  220158.9 +272928  j     0 H v   # A323014    2146   9.98  0001   524400067   not detected
+S220002.9+304808  220002.9 +304808  j     0 H v   # A322491    2158  12.55  0002   524400071   detection @ 1363 MHz, SN=7
+S222212.8+322428  222212.8 +322428  j     0 H v   # A323004    2210  14.30  0003   524400075   detection @ 1380 MHz (seriously) SN=14
+S224130.6+332846  224130.6 +332846  j     0 H v   # A323007    2224  15.75  0000   524500004   not detected
+S225910.9+342642  225910.9 +342642  j     0 H v   # A322635    2236  17.00  0001   524500008   detection @ 1416 MHz, SN=8
+S230344.2+342024  230344.2 +342024  j     0 H v   # A336090    2248  16.45  0002   524500012   Telescope pointing failure?
+                             Warning that telescope was close to non-existent limits (Az=-193.5 degrees) when at 186. Pointing off source.
+                             Arecibo had a power dip and switched to backup generators. WAPPS complaining of low power and restarted.
+                             Scan aborted.
+                                                               2254  16.26  0003   524500013   repeated above observation.
+                                                                                               baseline levels ~1e6. data unusable
+S231621.5+341832  231621.5 +341832  j     0 H v   # A336092    2306  16.22  0004   524500017   baseline levels ~1e5. data unusable
+S232729.3+333054  232729.3 +333054  j     0 H v   # A335368    2317         0005    -----      WAPPS serious error. No data taken.
+                             "Unable to adjust power levels." scan aborted. CIMA restarted.
+                                                               2326  15.28  0006   524500021   Possible detection @ 1405 MHz, SN~3. GPS in off
+S233912.7+340020  233912.7 +340020  j     0 H v   # A335406    2338  15.76  0007   524500025   baseline levels ~1e5. data unusable
+S235402.7+324524  235402.7 +324524  j     0 H v   # A335637    2350  14.54  0008   524500029   another power dip and back on commercial power. 
+                                                                                               aborted scan. CIMA restarted.
+S000850.3+320241  000850.3 +320241  j     0 H v   # A104317    0000  13.98  0009   524500030   baseline levels ~1e5. data unusable
+S001811.8+321915  001811.8 +321915  j     0 H v   # A104359    0011  14.16  0010   524500034   aborted scan. WAPPS restarted several times. Power adjusted.
+S002315.2+305158  002315.2 +305158  j     0 H v   # A104382    0021  12.63  0011   524500035   baseline levels ~1e5. data unusable
+S004805.0+325254  004805.0 +325254  j     0 H v   # A104774    0035  14.83  0012   524500039   baseline levels ~1e5. data unusable
+                                                                                               WAPP power level adjust failed. Run forcibly aborted.
+                                                                                               Restarting CIMA.
+S005443.6+330114  005443.6 +330114  j     0 H v   # A104497    0052  14.77  0014   524500043   baseline levels ~1e5. data unusable
+S011256.0+345922  011256.0 +345922  j     0 H v   # A115126    0105  16.85  0015   524500047   aborted.
+S012051.8+345217  012051.8 +345217  j     0 H v   # A115798    0118  16.63  0016   524500048   more garbage
+S012815.7+340749  012815.7 +340749  j     0 H v   # A115462    0130  15.88  0017   524500052   aborted
+                                                               Throwing all caution to the wind, I have loaded an interim correlator configuration file.
+                                                               Then I altered it so we have two staggered 25 MHz bands centered on ~1400 MHz
+                                                               Let's just see if we can even get plausible data out of the interim correlator
+                                                               (see hail-mary.conf)
+                                                               Maybe just all of Arecibo is borked.
+S014149.6+325346  014149.6 +325346  j     0 H v   # A115495    0145  14.65         524500001   Yeah everything's borked. (/share/olcor/corfile.02sep15.a2982.1)
+S015830.9+331146  015830.9 +331146  j     0 H v   # A115562    0157  14.94         524500005   Same (/share/olcor/corfile.02sep15.a2982.1)
+S020534.8+324106  020534.8 +324106  j     0 H v   # A125158    0209  14.44         524500009   aborted.
+S021107.3+323427  021107.3 +323427  j     0 H v   # A125164    not observed  
+S022225.2+320934  022225.2 +320934  j     0 H v   # A124719        "
+S022259.0+303901  022259.0 +303901  j     0 H v   # A124726        "
+S025415.8+322016  025415.8 +322016  j     0 H v   # A124765        "
+H030801.4+301230  030802.9 +301229  j     0 H v   # A131387cal     "
+                                                                 
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+  Tiedowns disabled. Lots of rain.
+  All boards are good to go
+  SN calculated from lbwmeasure (except the calibrator; I eyeballed it)
+  After a few observations, the power at Arecibo "dipped" according to the operator. After that point, only a single observation wasn't ruined by problems mentioned above. The data appears offset by +/-1e5 mJy and has similar noise properties. There are no features.
+  1363MHz has been found in every scan, believed to be an rfi*
+  1345 and 1350 are as well rfi found in every scan
+
+

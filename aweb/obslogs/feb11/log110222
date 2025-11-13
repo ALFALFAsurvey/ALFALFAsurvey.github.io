@@ -1,0 +1,91 @@
+Log for 11.02.22 (22Feb2011)        Observers: David Craig and Colby Dennis (remote)
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110222.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110223.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0918 0038  105300261  105300262 drift149p1 fixAzdr   091300+360806  19  600   99  loopend, pwr lvls ok FAA on, quicklook OK.
+0928 0039  105300263  105300264                    beam 6A still dead, GALSPECT problems, unable to restart GPIB
+0938 0040  105300264                                ABORTED on this scan --GPIB and Galspect trouble: CIMA
+                                                   was not allowing GPIB or wapps restart, power adj, restarted CIMA.
+0944 0041  105400001 105400002                    first scan after CIMA restart, date change, pwr lvls ok, quicklook OK.
+0954 0000  105400003 105400004                     button for 'restart WAPPs' in CIMA Utilities menu is still 'greyed out'
+					          but run ok now
+1004 0001  105400005 105400006                    sent Arun email about CIMA, quicklook OK.
+1014 0002  105400007 105400008                     pwr lvls ok, quicklook ok
+1024 0003  105400009 105400010
+1035 0004  105400011 105400012                     quicklook OK.
+1045 0005  105400013 105400014                     positions check between CIMA and monpnt.
+1055 0006  105400015 105400016                     CIMA obs status window briefly reported close to Az limit at about 05:20
+                                                   UTC, briefly showed off-source, but aostatus and monpnt Rslt look ok.
+1105 0007  105400017 105400018                     quicklook ok.
+1115 0008  105400019 105400020                     quicklook ok.
+1126 0009  105400021 105400022			   Weak continuum src at about 11h29ra in b1. 
+1136 0010  105400023 105400024
+1146 0011  105400025 105400026                     pwr lvls ok. Quicklook ok.
+1156 0012  105400027 105400028                     GPS burst starting at 06h16 UTC.
+1206 0013  105400029 105400030                     Quicklook OK.
+1216 0014  105400031 105400032
+1226 0015  105400033 105400034                     Quicklook OK.
+1236 0016  105400035 105400036   		   GPS burst starting at 06h58 UTC. Strong cont src b0,b5 near end.
+1246 0017  105400037 105400038                     Quicklook OK.
+1257 0018  105400039 105400040
+1307 0019  105400041 105400042                     Quicklook OK.
+1317 0020  105400043 105400044
+1327 0021  105400045 105400046                     Quicklook OK.
+1337 0022  105400047 105400048                     pwr lvls ok.
+1347 0023  105400049 105400050                     Quicklook OK.
+1357 0024  105400051 105400052
+1407 0025  105400053 105400054                     Quicklook OK.
+1418 0026  105400055 105400056
+1428 0027  105400057 105400058                     Bootes drifts by . . .Quicklook OK.
+1438 0028  105400059 105400060                     cont src 09h00 UTC b0,b2 
+1448 0029  105400061 105400062                     Quicklook OK. 
+1458 0030  105400063 105400064
+1508 0031  105400065 105400066
+1518 0032  105400067 105400068
+1528 0033  105400069 105400070
+1528 0034  105400071                               Aborted.  Ability to restart WAPPs reappeared after abort, so it was
+                                                   done before TOGS cal          
+
+LST stop: 15:39
+
+-- In first couple of scans, operator had trouble with GALSPECT, asked me to restart GPIB from CIMA Utilities, the button 
+ would not work, both it and 'Restart WAPPs' button were grey. Aborted, restarted CIMA and observations. Was able to
+restart GPIB initially, but after that, that button group (restart WAPPs, GPIB ...) was grey and nonfunctional again.
+-- At the ending abort, before the TOGS script, the buttons for restart WAPPS reappeared.
+-- Luckily no WAPP problems after initial GALSPECT/GPIB trouble.
+-- Beam 6B dead.
+-- TOGS at end.
+-- FAA radar on.
+
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 29.4   K2: 29.4   K3: 33.1   K4: 32.8   AT 16:16
+70K = K1: 122.7  K2: 131.1  K3: 139.4  K4: 146.9
+
+16K = K1: 29.2   K2: 28.9   K3: 32.9   K4: 32.6   AT 22:40
+70K = K1: 122.8  K2: 131.3  K3: 139.9  K4: 147.7
+
+			=>temperatures of the 8 sensors within ALFA 
+housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   Yes  AT 16:18
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16;17
+				=>certify our blanker is locking on
+
+

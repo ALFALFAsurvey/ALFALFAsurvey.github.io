@@ -1,0 +1,44 @@
+Log for 06/11/27      Observer: Tom Balonek
+on-site observing
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az180.gui as save state. -- Note, 180 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061127.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+0011 0001 633172678 633173280 drift105p2 FixedAz 001100+253300  19   600   99   loopend 
+0021 0002 633173283 633173885 Power levels ok; waterfalls, spectrum, total power plots ok
+0031 0003 633173888 633174490
+0041 0004 633174493 633175095
+0051 0005 633175098 633175700
+0101 0006 633175703 633176305
+0112 0007 633176308 633176910
+0122 0008 633176913 633177515 Power levels ok
+0132 0009 633177518 633178120
+0142 0010 633178123 633178725
+0152 0011 633178728 633179330
+0202 0012 633179333 633179935
+0212 0013 633179938 633180540 Power levels ok
+0222 0014 633180543 633181145
+0232 0015 633181148 633181750
+0243 0016 633181753 633182355
+0253 0017 633182358 633182960
+0303 0018 633182963 633183565
+0313 0019 633183568 --aborted
+
+END LST: 0313
+
+
+NOTES:
+
+TOGS ran at end only (as scheduled).
+
+No problems.
+
+Quick start since scope already at 180 (540) degrees.
+
+Tiedowns active.

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="MSSmartTagsPreventParsing" content="TRUE"><title>ALFALFA</title>
+
+<!-- base -->
+<!--link rel="stylesheet" type="text/css" href="alfa.css"></head-->
+
+<body>
+
+<table class="Page"><tbody><tr><td class="basicMiddle">
+
+
+<H1> 2004 Observations: Results </H1>
+
+Last Update:
+<script><!--//hide
+document.write(document.lastModified); //end hide--></script>
+<br>
+<br>
+
+<TABLE BORDER=5 COLS=7 WIDTH="100%" BGCOLOR="FFFFD" NOSAVE >
+
+<TR>
+<TD width="5%" BGCOLOR="#CCAFFF">Date</TD>
+<TD width="5%" BGCOLOR="#CCAFFF">Observer(s)</TD>
+<TD width="10%" align=center BGCOLOR="#CCAFFF">Target</TD>
+<TD width="2%" BGCOLOR="#CCAFFF">Log file</TD>
+<TD width="2%" BGCOLOR="#CCAFFF">Results</TD>
+<TD  align="center" BGCOLOR="#CCAFFF">Comments</TD>
+</TR>
+
+<!--  new row   new row   new row   new row   new row   new row   new row -->
+
+<!--#include virtual="results.table"-->
+
+
+</table>
+
+<P>

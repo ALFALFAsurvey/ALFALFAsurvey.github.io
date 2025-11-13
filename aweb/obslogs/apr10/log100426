@@ -1,0 +1,74 @@
+Log for 04/26/10          Observer: Ann Martin
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100426.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100427.a2010.****.fits
+
+Meridian observing setup
+Zenith Strip observing setup
+Az=180   ALFAang=19  ZA= 9.90
+
+LST@start=1030   RA@start=1030
+RA = LST
+
+LST  fits   Scan    calscan   Source     Pattern   Start coords. ang   time  loop  calmode    ZAdome     notes
+1030 0012  11600112 11600113  drift117p3 fixAZdr   103000+281715 19.0  600   99    loopend	
+1040 0013  11600114 11600115
+1050 0014  11600116 11600117
+1100 0015  11600118 11600119
+1111 0016  11600120 11600121
+1121 0017  11600122 11600123
+1131 0018  11600124 11600125
+1141 0019  11600126 11600127
+1151 0020  11600128 11600129
+1201 0021  11600130 11600131
+1211 0022  11600132 11600133
+1221 0023  11600134 11600135
+1231 0024  11600136 11600137
+1242 0025  11600138 11600139
+1252 0026  11600140 11600141	quicklook OK, power OK
+1302 0027  11600142 11600143
+1312 0028  11600144 11600145
+1322 0029  11600146 11600147
+1332 0030  11600148 11600149
+1342 0031  11600150 11600151
+1352 0032  11600152 11700001
+1402 0000  11700002 11700003
+1412 0001  11700004 11700005
+1422 0002  11700006 11700007
+1432 0003  11700008 11700009
+1443 0004  11700010 11700011
+1453 0005  11700012 11700013
+1503 0006  11700014 11700015
+1513 0007  11700016 11700017
+1523 0008  11700018 11700019
+1533 0009  11700020 11700021
+1543 0010  11700022 --aborted
+
+LST@stop:1543      RA@stop: 1543
+
+NOTES:
+- Late start due to temps at AO
+- Drift 75p2 not cooperating, so we swapped with 117p3. Martha will fight with
+75p2 while grads attend Ask An Astronomer Live!
+- No TOGS at start because of long delay, no TOGS at end scheduled, but we had extra
+time because of how our drifts lined up so I made quick edits to the TOGS files and ran it.
+- FAA radar ON
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 13.4   K2: 13.3   K3: 14.8   K4: 14.7   AT 21:15
+70K = K1: 79.0   K2: 86.8   K3: 95.2   K4: 103.5
+
+16K = K1: 13.3   K2: 13.2   K3: 14.8   K4: 14.7   AT 23:55
+70K = K1: 79.0   K2: 86.4   K3: 95.2   K4: 103.5
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

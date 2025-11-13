@@ -1,0 +1,76 @@
+Log for 06/11/29      Observer: Tom Balonek
+on-site observing (last night for this trip)
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az180.gui as save state. -- Note, 180 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061129.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+0019 0003 633372684 633373286 drift103p2 FixedAz 001900+250348  19   600   99    loopend
+0029 0004 633373289 633373891 --aborted.  Drift ok, cal had WAPP(1) failure
+             WAPP failure, exited and restarted CIMA
+             the above data not usable                           
+
+     0005 --non-existent
+
+0101 0006 633375199 633375801 drift103p2 FixedAz 010100+250348  19   600   99    loopend
+0111 0007 633375804 633376406 Power levels ok; waterfalls, spectrum, total power plots ok
+0121 0008 633376409 633377011
+0121 0009 633377014 633377616
+0141 0010 633377619 633378221
+0151 0011 633378224 633378826 high winds, reaching 25 kph
+0202 0012 633378829 633379431
+0212 0013 633379434 633380036
+0222 0014 633380039 633380641 Power levels, everything ok
+0232 0015 633380644 633381246 
+0242 0016 633381249 633381851 rain, winds 10-15 kp
+0252 0017 633381854 633382456
+0302 0018 633382459 633383061
+0312 0019 633383064 633383666 Power levels, everything ok
+0322 0020 633383669 --aborted
+
+END LST: 0322
+
+
+NOTES:
+
+** NO successful TOGS since had WAPP(1) failure twice when running TOGS at 
+end of run (as scheduled). **
+
+WAPP(1) failed during initial setup, before any data taken.
+
+WAPP(1) failed 20:31:34 AST during CAL for drift 0004.  Aborted.  Had to log out of
+CIMA so Arun could restart WAPP(1).
+
+** Drift 0004 has different size than normal.  So decide NOT to run 
+post-session filecreator on drifts 0003 and 0004. **
+
+Tiedowns disabled for entire run -- platform remained stable.  
+
+Heavy rain and thunder and high winds during most of run, especially middle.
+
+Useful data over LST range 0101 to 0322 -- no problems in this interval.
+
+But WAPP(1) failure twice when running TOGS at end of run.  Unable to try 
+a third TOGS since next program needed to start.
+
+====
+
+cimalog messages:
+Wed Nov 29 20:31:32 AST 2006 WAPP(1) start sec 1893.00
+Wed Nov 29 20:31:32 AST 2006 WAPP(4) start sec 1893.00
+Wed Nov 29 20:31:32 AST 2006 WAPP(2) start sec 1893.00
+Wed Nov 29 20:31:32 AST 2006 WAPP(3) start sec 1893.00
+Wed Nov 29 20:31:34 AST 2006 WAPP(2) DONE with spectral line observation
+Wed Nov 29 20:31:34 AST 2006 WAPP(4) DONE with spectral line observation
+Wed Nov 29 20:31:34 AST 2006 WAPP(3) DONE with spectral line observation
+Wed Nov 29 20:31:36 AST 2006 exec evaluating message from WAPPDATA : display_log
+{WARN WAPPDATA flushing 12 dumps}
+Wed Nov 29 20:31:36 AST 2006 WARN WAPPDATA flushing 12 dumps
+Wed Nov 29 20:31:48 AST 2006 ERROR timed out while waiting for WAPP spectra!
+
+=====

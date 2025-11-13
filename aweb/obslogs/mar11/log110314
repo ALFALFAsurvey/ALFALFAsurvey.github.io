@@ -1,0 +1,50 @@
+Log for 11.03.14 (14Mar2011)        Observers:David Stark
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110314.a2010.****.fits
+
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+LST  fits    Scan      calscan    Source    Pattern   Start coords. ang  time loop calmode
+1210 0000 107300001  107300002  drift135p2  fixAzdr   121000+325100  19   quicklook ok
+1221 0001 107300003  107300004
+1231 0002 107300005  107300006
+1241 0003 107300007  107300008
+1251 0004 107300009  107300010
+1301 0005 107300011  107300012   quicklook ok
+1311 0006 107300013  107300014
+1321 0007 107300015              wapps got confused, aborted and restarted
+1328 0008 107300016  107300017   quicklook ok
+1338 0009 107300018  107300019
+1348 0010 107300020  107300021
+1358 0011 107300022  107300023
+1409 0012 107300024  107300025   quicklook ok
+1419 0013 107300026  107300027
+1429 0014 107300028  107300029
+1439 0015 107300030  107300031   quicklook ok
+1449 0016 107300032  107300033
+1459 0017 107300034  107300035
+1509 0018 107300036  107300037
+1520 0019 107300038  107300039   quicklook ok
+1530 0020 aborted
+
+
+LST stop: 1530
+
+-- FAA radar ON. 1380 MHz harmonic. 
+-- Beam 6b dead
+-- TOGS at END only.
+
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 31.7   K2: 31.9   K3: 36.1   K4: 35.5   AT 16:15
+70K = K1: 125.7  K2: 133.8  K3: 142.8  K4: 149.9
+
+16K = K1: 31.2   K2: 31.2   K3: 35.1   K4: 34.6   AT 22:46
+70K = K1: 125.7  K2: 133.8  K3: 142.8  K4: 150.2
+
+         =>temperatures of the 8 sensors within ALFA housing
+

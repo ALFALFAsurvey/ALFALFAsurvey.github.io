@@ -1,0 +1,61 @@
+Log for 090407     Observer: Manolis Papastergis
+
+System Configuration: a2010_az180_2009.conf
+CIMA version  3.1.03 2008-1-20 13:50 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090407.a2010.****.fits 
+            /share/pserverf.sda3/wappdata/wapp.20090408.a2010.****.fits
+
+     ****
+LST  fits  Scan       calscan      Source      Pattern    Start coords.   ang   time  loop   calmode
+0907 0001  909700200  909700201    drift84p2   fixAZdr    091300+202624   19    600    99    loopend 
+0917 0002  909700202  909700203    quicklooked fits 0001 OK; beam 6b dead; broadband rfi? (at record approx.150) 
+0927 0003  909700204  909700205
+0937 0004  909700206  909700207
+** An error in WAPP-3 caused the data to stop, right after calsession (AST 20:09:15). Aborted and restarted, everything looks fine. Lost about
+6mins**
+0953 0005  909700208  909700209
+1003 0006  909700210  909700211    quicklooked fits 0005 OK
+1014 0007  909700212  909700213 
+1024 0008  909700214  909700215    checked fits 0004, all records exist and they're ok 
+1034 0009  909700216  909700217
+1044 0010  909700218  909700219
+1054 0011  909700220  909700221
+1104 0012  909700222  909700223    everything ok
+1114 0013  909700224  909700225
+1124 0014  909700226  909700227
+1134 0015  909700228  909700229
+1144 0016  909700230  909700231
+1154 0017  909700232  909700233
+1204 0018  909700234  909700235
+1215 0019  909700236  909700237    very strong cont. source
+1225 0020  909700238  909700239
+1235 0021  909700240  909800001
+1245 0000  909800002  909800003
+1255 0001  909800004  909800005    quicklooked 0000 ok
+1305 0002  909800006  909800007
+1315 0003  909800008  909800009
+1325 0004  909800010  909800011    
+1335 0005  909800012  909800013    
+1346 0006  909800014  909800015   everything ok
+1356 0007  909800016  909800017   
+1406 0008  909800018  909800019   
+1416 0009  909800020  909800021   
+1426 0010  909800022  909800023   
+1436 0011  909800024  909800025   GPS bursts
+1446 0012  909800026  909800027   strong cont. source
+1456 0013  909800028  909800029   
+1506 0014  909800030  909800031   
+1517 0015  909800032  909800033
+1527 0016  909800034  aborted
+
+** Same WAPP  problem during TOGS at end. I aborted it, cause there was not enough time to restart the procedure **
+
+END LST:  1527
+
+
+Notes:
+Running the new version of CIMA 3.1.03 "Smart"
+TOGS run at start and end
+FAA radar is ON
+Beam 6B is DEAD
+** Problem with WAPPs, lost 6mins of drift time & TOGS at end **

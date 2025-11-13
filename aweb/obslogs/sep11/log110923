@@ -1,0 +1,87 @@
+Log for 11/09/23     Observer: Parker Troischt, Catherine Weigel, Jaclyn Patterson,Scott Suriano
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda3/wappdata/wapp.20110923.a2010.****.fits
+             /share/pserverf.sda3/wappdata/wapp.20110924.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+
+****82p1   Az=247.22    AFLAang=-46  ZA=4.23  ZAG=4.23
+****
+
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+
+
+82p1: RA@start=2159  RA@end=0324
+      RA=LST + 17
+
+****
+During the night, please make occational notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the inner ZA limit
+is 1.1 deg. If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2144 0001  126600057 126600058   drift 82p1 fixZAdr  215952+194955  -46  600 99 loopend  ZAG=4.23; Az=247.22 ran TOGS FAA 
+				radar ON, 4A dead and off. Quicklook ok
+2154 0002  126600059 126600060   
+2204 0003  126600061 126600062   cs in beam 1,3,6 quicklook ok
+2214 0004  126600063 126600064
+2224 0005  126600065 126600066   ZAG=4.24  cs in 1, 4
+2235 0006  126600067 126600068  cs 3,4,5  quicklook ok
+2245 0007  126600069 126600069  
+2255 0008  126600071 126600072
+2305 0009  126600073 126600074  cs 3,4,0,5,6 quicklook ok
+2315 0010  126600075 126600076  power levels good 
+2325 0011  126600077 126600078 
+2335 0012  126600079 126700001  cs 3 strong cs in 4
+2346 0000  126700002 126700003  power levels good  strong cs in 5,0 also in 3,2,4 quicklook ok
+2356 0001  126700004 126700005  
+0006 0002  126700006 126700007  cs in3,5 quicklook ok
+0015 0003  126700008 126700009  strong cs in 3,4
+0026 0004  126700010 126700011  
+0036 0005  126700012 126700013  quicklook ok
+0046 0006  126700014 126700015  
+0056 0007  126700016 126700017  power levels look good Rslt 194955.7 ZAG=4.24 ZA=4.24 Az=247.22 ALFA=-46.0
+0106 0008  126700018 126700019  QL ok WAPP error: WAPP chip counts did not match; looked it up, countdown on AOstatus still running
+0117 0009  126700020 126700021  QL ok
+0127 0010  126700022 126700023  strong cs 1,2,6 
+0137 0011  126700024 126700025  
+0147 0012  126700026 126700027  cs 0,6,1 strong in 5
+0157 0013  126700028 126700029
+0207 0014  126700030 126700031
+0217 0015  126700032 126700033
+0227 0016  126700034 126700035
+0237 0017  126700036 126700037
+0247 0018  126700038 126700039
+0257 0019  126700040 126700041 power levels ok
+0308 0020  126200042 ABORTED
+
+
+LST@stop:0308       RA@stop: 0324
+
+NOTES:
+
+-- Using 'zenith strip' observing mode
+-- Started TOGS at LST start
+-- FAA radar ON 
+-- Beam 4A dead.
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 13.2   K2: 12.6   K3: 14.2   K4: 14.1   AT 16:14
+70K = K1: 83.1   K2: 84.0   K3: 90.3   K4: 97.9
+
+16K = K1: 13.8   K2: 13.0   K3: 14.8   K4: 14.9   AT 22:44
+70K = K1: 83.9   K2: 84.4   K3: 90.5   K4: 98.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________

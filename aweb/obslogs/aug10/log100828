@@ -1,0 +1,78 @@
+Log for 08/28/10          Observer: Greg Hallenbeck
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100828.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100829.a2010.****.fits
+
+RA@Start: 2103      RA@End: 0316
+LST  fits   Scan    calscan    Source    Pattern   Start coords.  ang  time loop calmode
+2102 0032  24000185 24000186   drift93p2  fixAZdr   210000+223747  19  600   99  loopend  ZA=4.34
+     I didn't set the RA far enough ahead of the current RA, so I'm not going to include this fit file
+     got the 'WARNING RA has already passed --- starting anyway!' message
+2112 0033  24000187 24000188
+2122 0034  24000189 24000190
+2132 0035  24000191 24000192 quicklook OK
+2142 0036  24000193 24000194
+2152 0037  24000195 24100001
+2202 0000  24100002 24100003
+2212 0001  24100004 24100005
+2223 0002  24100006 24100007
+2233 0003  24100008 24100009 quicklook OK
+2243 0004  24100010 24100011
+2253 0005  24100012 24100013
+2303 0006  24100014 24100015
+2313 0007  24100016 24100017
+2323 0008  24100018 24100019
+2334 0009  24100020 24100021 quicklook OK
+2344 0010  24100022 24100023
+2354 0011  24100024 24100025 
+0004 0012  24100026 24100027
+0014 0013  24100028 24100029 quicklook OK -- B7's green polarization much weaker in high frequency
+                             from alfadatawin, I think this is beam 2B, but I'm not sure.
+0024 0014  24100030 24100031
+0034 0015  24100032 24100033
+0044 0016  24100034 24100035
+0054 0017  24100036 24100037
+0105 0018  24100038 24100039 quicklook OK -- same thing with B7 green polarization
+0115 0019  24100040 24100041
+0125 0020  24100042 24100043
+0135 0021  24100044 24100045
+0145 0022  24100046 24100047
+0155 0023  24100048 24100049 quicklook the same as before
+0205 0024  24100050 24100051
+0215 0025  24100052 24100053
+0225 0026  24100054 24100055
+0236 0027  24100056 24100057
+0246 0028  24100058 24100059 quicklook still OK
+0256 0029  24100060 24100061
+0306 0030  24100062 24100063
+0316 0031  24100064 aborted
+
+
+LST@stop: 0317
+
+NOTES:
+- TOGS run at beginning -- ran a few minutes into ALFALFA time
+- FAA Radar on!
+- Tiedown disabled
+
+
+
+
+~
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.5   K2: 14.7   K3: 16.0   K4: 16.2   AT 16:30
+70K = K1: 86.3   K2: 93.4   K3: 104.7  K4: 112.7
+
+16K = K1: 14.6   K2: 14.7   K3: 16.2   K4: 16.2   AT 22:36
+70K = K1: 86.4   K2: 93.7   K3: 105.2  K4: 113.5
+
+=>temperatures of the 8 sensors within ALFA housing
+
+
+

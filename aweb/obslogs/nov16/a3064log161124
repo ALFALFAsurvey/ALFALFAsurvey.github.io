@@ -1,0 +1,53 @@
+A3064 LBW   16.11.24   Observers: David Craig, Grant Denn, Joseph Ribaudo, Cory Johnson, Jonathan Hoover, Rosa Wallace
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161124.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161124.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161125.a3064.****.fits   (only if goes after midnight AST; probably no)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S215217.1+303402  215217.1 +303402  j     0 H v   # A311386    21:37  12.85  0000   632900245  radar(on), weak gps, s/n6 @ 5300km/s
+S222802.7+313530  222802.7 +313530  j     0 H v   # A323406    21:50  16.00  0001        0249  radar(off), very wavy baseline
+S223011.3+263539  223011.3 +263539  j     0 H v   # A323408    22:03  10.48  0002        0253  radar(on/off), broad & wavy signal in 1390-1400MHz range in one pol 
+S223133.9+310502  223133.9 +310502  j     0 H v   # A322522v3  22:17  13.31  0003        0257  radar(on), strong gps, used /gps, s/n3 @ 3600km/s
+S223357.9+305212  223357.9 +305212  j     0 H v   # A322537v3  22:29  12.69  0004        0261  radar(off),bd2 s/n6 @ 3700km/s
+S223552.9+301113  223552.9 +301113  j     0 H v   # A322538v3  22:41  11.98  0005        0265  radar(on), strong gps, bd2 s/n6 @ 3700km/s
+S231621.5+341832  231621.5 +341832  j     0 H v   # A336092v1  22:55  16.83  0006        0269  radar(off), bd1 s/n5 @ 1900km/s (foreground object)
+S234523.0+275339  234523.0 +275339  j     0 H v   # A336670    23:08  13.04  0007        0273  radar(off), 1388MHz rfi
+S234236.1+311035  234236.1 +311035  j     0 H v   # A335430v2  23:21  13.91  0008        0277  radar(on), naught else
+S001000.7+293554  001000.7 +293554  j     0 H v   # A105231    23:33  14.21  0009        0281  radar(on), bd2 s/n3 @ 4700km/s
+S002321.0+264916  002321.0 +264916  j     0 H v   # A104993    23:46  12.33  0010        0285  radar(off), 1388MHz rfi, bd2 s/n2 @ 5500km/s
+S002615.3+291013  002615.3 +291013  j     0 H v   # A105265    23:58  12.75  0011        0289  radar(off), bd4 s/n4 @ 14000km/s   
+S002817.9+331236  002817.9 +331236  j     0 H v   # A105267    00:12  15.49  0012        0293  radar(off), nothing remarkable
+S010843.5+322600  010843.5 +322600  j     0 H v   # A114547    00:24  17.46  0013        0297  radar(on), strong gps, used /gps, bd2 s/n3 @ 4500km/s
+S011439.1+332221  011439.1 +332221  j     0 H v   # A115057    00:37  17.46  0014        0301  radar(on), baseline -100mJy, bd2 s/n5.9 @ 4600km/s
+S011501.5+302042  011501.5 +302042  j     0 H v   # A115791v3  00:50  13.47  0015        0305  radar(off), 1422MHz rfi, nothing of note
+S011501.5+302042  011501.5 +302042  j     0 H v   # A115791v3  01:02  12.48  0016        0309  repeat, radar(off), 1422MHz rfi, nada 
+S011900.9+344031  011900.9 +344031  j     0 H v   # A115410v3  01:15  16.46  0017        0313  radar(on), bd2 s/n4 peak @ 3900km/s and s/n3 horns @ 4200km/s 
+S014740.6+284013  014740.6 +284013  j     0 H v   # A116246    01:29  11.29  0018        0317  radar(off), bd2&3 s/n3 @ 7850km/s
+S015242.9+282456  015242.9 +282456  j     0 H v   # A115829    01:42  10.54  0019        0321  radar(on), bd2&3 s/n5 @ 7700km/s
+S022059.5+251712  022059.5 +251712  j     0 H v   # A124718    01:55   9.44  0020        0325  radar(on), no strong signals
+S021843.6+311611  021843.6 +311611  j     0 H v   # A124713v4  02:08  13.26  0021        0329  radar(on/off), strong gps, used /gps, bd2 s/n2 @ 4800km/s
+S023150.8+325355  023150.8 +325355  j     0 H v   # A125240v4  02:21  14.88  0022        0333  radar(off), 1403Mhz rfi, bd2 s/n7 @ 4700km/s
+S022935.1+341344  022935.1 +341344  j     0 H v   # A124887v3  02:33  15.98  0023        0337  radar(on), nada  
+S025407.9+345755  025407.9 +345755  j     0 H v   # A125526    02:46  16.83  0024        0341  radar(off), strong gps, used /gps, bd2 s/n3 @ 5200km/s  
+S030352.5+353453  030352.5 +353453  j     0 H v   # A132283    02:58  17.38  0025        0345  radar(off), nada  
+S030354.8+301552  030354.8 +301552  j     0 H v   # A002512    03:12  12.10  0026        0349  radar, gps(off), used /gps, bd3 s/n4 @ 11000km/s 
+                                                                
+                                                
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+Tiedowns enabled at start, active through all observations
+rfi in 1388MHz range appeared several times

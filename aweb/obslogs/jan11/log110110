@@ -1,0 +1,59 @@
+Log for 11.01.10 (10Jan2011)        Observers: Greg Hallenbeck (GH)
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110110.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0915 0000 101000073  101000074 drift135p2 fixAzdr   091500+325100  19  600 99 loopend    6B is dead, quicklook OK
+0925 0001 101000075  101000076
+0936 0002 101000077  101000078
+0946 0003 101000079  101000080
+0956 0004 ABORTED              something looks strange in quicklook, but fine in waterfall plots, beams. restarting.
+                               Power readjusted; see note below
+1006 0005 101000082  101000083 quicklook OK
+1016 0006 101000084  101000085
+1026 0007 101000086  101000087 WAPP interpolates over 2 second period
+1037 0008 101000088  101000089
+1047 0009 101000090  101000091 quicklook OK
+1057 0010 101000092  101000093
+1107 0011 101000094  101000095
+1117 0012 101000096  101000097
+1127 0013 101000098  101000099
+1137 0014 101000100  101000101
+1147 0015 101000102  101000103
+1157 0016 101000104  101000105
+1208 0017 101000106  101000107
+1218 0018 101000108  101000109
+1228 0019 101000110  101000111
+1238 0020 101000112  101000113 quicklook OK
+1248 0021 101000114  101000115
+1258 0022 101000116  101000117
+1308 0023 101000118  101000119
+1319 0024 101000120  101000121
+1329 0025 101000122  101000123
+1339 0026 101000124  ABORTED
+
+LST stop: 1339
+
+At the bottom, add notes regarding:
+-- TOGS run at end
+-- FAA radar on
+-- Beam 6B is still dead
+-- Something funky happened (beam 4 Tsys drop it seems) and weird quicklook (location
+   of strongest peak seems to have shifted; power levels readjusted.
+   Two cal periods needed.
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 19.9   K2: 182.4  K3: 21.6   K4: 21.8   AT 16:45
+70K = K1: 110.5  K2: 116.4  K3: 125.4  K4: 132.8
+
+16K = K1: 21.2   K2: 183.4  K3: 22.6   K4: 22.8   AT 22:04
+70K = K1: 113.0  K2: 119.1  K3: 128.4  K4: 135.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+

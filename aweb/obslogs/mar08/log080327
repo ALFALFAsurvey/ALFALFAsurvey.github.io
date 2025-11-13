@@ -1,0 +1,72 @@
+Log for 3/27/08 pm        Observers: JR
+Remote observing from GMU
+
+System Configuration:
+Cima version 3.3.xx "unusable"
+a2010_az180.conf
+
+File:  /share/pserverf.sdb1/wappdata/wapp.20080327.a2010.****.fits
+File:  /share/pserverf.sdb1/wappdata/wapp.20080328.a2010.****.fits
+
+TOGS executed at beginning and end of night
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+
+0723 0030 808700144   808700145  drift129p2  fixAZdr   072899+312324  19  600  99  loopend  
+0734 0031 808700146   808700147				                                           wapp_level too high warning (cal?). cals -looks OK
+0744 0032 808700148   808700149
+0754 0033 808700150   808700151
+0804 0034 808700152   808700153
+0814 0035 808700154   808700155
+0824 0036 808700156   808700157
+0834 0037 808700158   808700159									   WAPPDATA-queue_agcdata:WARNING received dupplicate AGC-datablock at 21:46:46.31 (second: 78406.310)!
+0844 0038 808700160   808700161
+0854 0039 808700162   808700163
+0904 0040 808700164   808700165
+0914 0041 808700166   808700167
+0925 0042 808700168   808700169
+0935 0043 808700170   808700171
+0945 0044 808700172   808700173
+0955 0045 808700174   808700175
+1005 0046 808700176   808700177
+1015 0047 808700178   808700179
+1025 0048 808700180											Power levels rising. Aborted scan, adjusted power and started again. 
+103? 0049 							 					Power problems still aborting, some wapp errors and WAPPS restarted - power probelms still in beams 2 & 3
+     0050 and 0051 aborted due to these problems as well
+1052 0052 808700 UGH! Moved to testdrift accidentally aborted now I have to move back
+Mikael is looking at problem. 
+1122 0053 808700184 					 						Starting again. Beams 2&3 have bad power levels. Not on source. Aborted 
+1125 0054 808700185 Declination is off aborting again 
+1134 0055 808700186 Still going to the wrong dec I don't understand 31:25:34 aborting again 
+1145 0056 808700187 808800001			Bad interference ~1157
+
+1155 0000 808800002 808800003
+1206 0001 808800004 808800005
+1216 0002 808800006 808800007
+1226 0003 808800008 808800009										Everything seems to be behaving (other than beams 2&3) for now
+1236 0004 808800010 808800011										Brief strong broadband signal (very bright continuum source?) at ~124730 
+1246 0005 808800012 808800013
+1258 0006 808800014 808800015			Interference just above 1390
+1309 0007 808800016 808800017
+1319 0008 808800018 808800019
+1329 0009 808800020 808800021
+1339 0010 808800022 808800023		Power spike in beam 4 - I think it might have been a VERY bright continuum source? Looks okay now.
+1349 0011 808800024 808800025
+1359 0012 808800026 808800027
+1410 0013 808800028 808800029
+1420 0014 808800030 808800031
+1430 0015 808800032 808800033
+1440 0016 808800034 808800035
+1451 0017 808800036 808800037
+1501 0018 808800038 808800039
+1511 0019 808800040 808800041
+1521 0020 808800042 808800043
+1531 0021 808800044 808800045
+1541 0022 808800046 808800047
+1551 0023 808800048 808800049										WAPPDATA-queue_agcdata warnings again 03:59:16
+1602 0024 808800050 808800051
+1611 0025 808800052 808800053
+1621 0026 808800054 808800055			   								WAPPDATA-queue_agcdata warnings again 03:59:16
+1631 0027 808800056											End of observing scan aborted
+
+End of last full scan is 1631 LST

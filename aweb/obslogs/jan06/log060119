@@ -1,0 +1,61 @@
+Log for 01/19/06
+Observer: Brian W, Tom, Sabrina
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20060119.a2010.****.fits
+       /share/pserverf.sda2/wappdata/wapp.20060120.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.01.19
+
+LST  fits Scan      calscan    Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+0725 0026 601986085 602000287 drift40p2  FixedAz 072500+094400 19 600 50
+0735 0000 602000290 602000892
+0745 0001 602000895 602001497 **bad file - don't use!!**
+0755 0002 602001500 602002102
+0805 0003 602002105 602002707
+0815 0004 602002710 602003312
+0826 0005 602003315 602003917 
+0836 0006 602003920 602004522
+0846 0007 602004525 602005127
+0856 0008 602005130 602005732
+0906 0009 602005735 602006337
+0916 0010 602006340 602006942
+0926 0011 602006945 602007547
+0936 0012 602007550 602008152 
+0946 0013 602008155 602008757
+0956 0014 602008760 602009362
+1007 0015 602009365 602009967
+1017 0016 602009970 602010572
+1027 0017 602010575 602011177
+1037 0018 602011180 602011782
+1047 0019 602011785 602012387
+1057 0020 602012390 602012992
+
+END LST: 1107
+
+NOTES:
+TOGS run at start and end okay.
+
+WAPP error occured during fits file 0001, but drift ended before we noticed the problem (error occured approx 1 minute before the end of the drift)
+Error message read:
+00:18:05  WARN WAPPDATA flushing 8 dumps 
+00:18:08  WARN wappdata buildup logic error 
+00:18:08  WARN WAPPDATA confused cleared 1 dumps 
+00:18:08  WARN WAPPDATA flushing 76 dumps 
+00:18:12  WARN wappdata buildup logic error 
+00:18:12  WARN WAPPDATA confused cleared 3 dumps 
+WAPPs seemed to recover themselves and data in the next fits file looked fine, so we did not adjust power and we did not restart the WAPPs.  Calibration will have to be split since fits file 0001 is not large enough.
+
+Mikael has this to say about the error:
+"This was an interesting one. It is definitively not the typical problem.
+In fact, I don't think there was a WAPP problem at all since the WAPPs
+kept running and stopped at the same time.
+
+I think it was a problem with the data collector/FITS-writer. My theory
+is that there might have been a network hick-up garbling one of the
+incoming data blocks thus causing the writer to feel that it was out of
+sync waiting for a set of data that never arrived."

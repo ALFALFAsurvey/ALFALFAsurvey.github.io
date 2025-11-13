@@ -1,0 +1,55 @@
+A3173 LBW   18.11.19   Observers: Denn, Harris, Luna, Ribaudo, Patterson, McMichael
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3173.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3173_181119.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20181119.a3173.****.fits  
+                     /share/wappdata.now/wapp.20181120.a3173.****.fits   (if after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S221609.7+281608  221609.7 +281608  j     0 H v   # A321469     2209   10.2 0000    832300211  Strong detection. SN ~11 at ~6408km/s (~1390.5 MHz)
+S224238.6+293021  224238.6 +293021  j     0 H v   # A320322     2222   12.2 0001    832300215  detection at ~1386.5MHz (~7300km/s). SN ~16
+S230644.6+312557  230644.6 +312557  j     0 H v   # A333361     2235   15.0 0002    832300219  gps. detection at ~1388MHz (~7000 km/s), SN ~11
+S231920.1+295823  231920.1 +295823  j     0 H v   # A333377     2248   13.8 0003    832300223  detection at ~1392MHz (~6000 km/s), SN ~10
+S232017.8+290858  232017.8 +290858  j     0 H v   # A333525     2300   11.9 0004    832300227  two detections? at ~1392.5MHz (~6000km/s), SN~'12; possible detection at  ~1366MHz (~11800km/s), SN~3
+S234715.2+282057  234715.2 +282057  j     0 H v   # A332115     2313   12.9 0005    832300231  possible detection at ~1386MHz (~7150km/s), SN~4
+S001228.1+293240  001228.1 +293240  j     0 H v   # A101203     2326   15.6 0006    832300235  wappdata error, but it kept taking data. possible detection at ~1388MHz (~6700km/s), SN~2. restarted wapps.
+S000738.0+332025  000738.0 +332025  j     0 H v   # A104214     2340   16.4 0007    832300239  gps. possible detection at ~1398.5MHz (~4800km/s), SN~2.5
+S000958.8+331541  000958.8 +331541  j     0 H v   # A104843     2352   15.6 0008    832300243  gps. possible detection at ~1397.5MHz (~4850km/s), SN~2.5
+S002102.3+323427  002102.3 +323427  j     0 H v   # A104369     0004   14.8 0009    832300247  gps. possible detection at ~1389MHz (~6750km/s), SN~2
+S003642.3+360729  003642.3 +360729  j     0 H v   # A104518     0017   18.4 0010    832300251  gps. possible detection ~1397.5MHz (~4900km/s), SN~2.5.
+S010406.3+342510  010406.3 +342510  j     0 H v   # A115123     0030   17.0 0011    832300255  det @ 1395 MHz (5400 km/s), SN 3
+S011222.3+332949  011222.3 +332949  j     0 H v   # A115390     0042   16.8 0012    832300259  pos det @ 1391.5 MHz (6200 km/s), SN 3
+S011910.2+334422  011910.2 +334422  j     0 H v   # A115412     0054   16.5 0013    832300263  pos det @ 1402.5 (3800 km/s), SN 4-5, narrow peak (~100 km/s wide)
+S012638.1+314435  012638.1 +314435  j     0 H v   # A115447     0107   14.3 0014    832300267  gps, no det
+S012924.1+334051  012924.1 +334051  j     0 H v   # A116229     0119   15.6 0015    832300271  det @ 1390 MHz (6600 km/s), SN 6-7
+S013022.0+320229  013022.0 +320229  j     0 H v   # A115902     0132   13.8 0016    832300275  pos det @ 1396 MHz (5300 km/s), SN 2, very weak
+S014538.9+303322  014538.9 +303322  j     0 H v   # A115514     0144   12.3 0017    832300279  det @ 1377 MHz (9300 km/s), SN 5-6, smooth SN 11 (after fit)
+S015215.6+323557  015215.6 +323557  j     0 H v   # A115341     0157   14.4 0018    832300283  det @ 1395 MHz (5200 km/s), SN 4-5, narrow peak (~100 km/s wide)
+S015535.1+271022  015535.1 +271022  j     0 H v   # A115889     0222   10.7 0020    832300289  pos det @ 1385 MHz (7600 km/s), SN 2-3, narrow peak (~100 km/s wide)
+S020253.0+283931  020253.0 +283931  j     0 H v   # A124653     0234   12.5 0021    832300293  det @ 1385 MHz (7700 km/s), SN 6-7, narrow peak
+S020412.1+272328  020412.1 +272328  j     0 H v   # A124660      
+S023054.9+245851  023054.9 +245851  j     0 H v   # A122882      
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal  
+
+ 3 mins if time
+
+                                         
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+wapp crashed
+wapp crashed @ file 0019

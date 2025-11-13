@@ -1,0 +1,72 @@
+Log for 10/10/10     Observer: David Kornreich and Friends
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20101010.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20101011.a2010.****.fits
+
+*** THIS IS AN ON-MERIDIAN DRIFT
+
+LST RANGE: 2051-0316
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.    ang  time loop  calmode  ZAdome
+2051 0016 28300075  28300076   drift97p2  fixAzdr   205100+233612     19  600	99   Hcorcal  5     *** strong pulsating RFI at the beginning of the run, quicklook ok beam 6b dead and power in 4b was .71 
+2101 0017 28300077  28300078   
+2112 0018 28300079  28300080
+2122 0019 28300081  28300082
+2132 0020 28300083  28300084
+2142 0021 28300085  28300086 *** quicklook ok
+2152 0022 28300087  28300088 *** quicklook ok
+2202 0023 28300089  28300090
+2212 0024 28300091  28300092
+2222 0025 28300093  28300094
+2232 0026 28300095  28300096
+2242 0027 28300097  28300098 ***GPS data flare observed
+2253 0028 28300099  28300100 *** quicklook ok power in beam 4b .75 others ok
+2303 0029 28300101  28300102
+2313 0030 28300103  28300104
+2323 0031 28300105  28300106
+2333 0032 28300107  28300108
+2344 0033 28300109  28300110
+2354 0034 28300111  28300112 ***beam 4b up to .77, other power levels ok.  quicklook ok
+0004 0035 28300113  28300114	
+0014 0036 28300115  28300116
+0024 0037 28300117  28300118
+0034 0038 28300119  28300120
+0044 0039 28300121  28400001
+0054 0000 28400002  28400003 *** beam 4b at 0.77, other power levels ok.  quicklook ok.
+0104 0001 28400004  28400005
+0114 0002 28400006  28400007
+0124 0003 28400008  28400009 *** big continuum source
+0134 0004 28400010  28400011
+0145 0005 28400012  28400013  
+0155 0006 28400014  28400015 *** beam 4b at .79, other power levels ok. quicklook ok
+0205 0007 28400016  28400017
+0215 0008 28400018  28400019
+0225 0009 28400020  28400021
+0235 0010 28400022  28400023
+0245 0011 28400024  28400025 *** beam 4b=0.8 "blue yay!" other power levels ok. quicklook ok
+0255 0012 28400026  28400027
+0305 0013 28400028  28400029
+0316 0014 28400030   ABORTED
+
+LST@stop:0316
+
+NOTES:
+  
+-- Beams 6B bad all night. Power levels low (0.72 at the beginning of the night, so maybe bad) in beam 4B. 
+   Quicklooks showed 4b power by eye to be normal
+-- Beam 4B power rose gradually over the night, but never to levels above 0.79
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 18.4   K2: 210.2  K3: 19.7   K4: 20.1   AT 14:40
+70K = K1: 108.1  K2: 114.9  K3: 123.7  K4: 131.2
+
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+

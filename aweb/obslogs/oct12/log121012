@@ -1,0 +1,79 @@
+Log for 12.10.12 (12oct2012)        Observers: Aileen O'Donoghue, Jeff Miller 
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121012.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121013.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2122 0015  228600069 228600070 drift147p3  fixAzdr   213000+353516  19  
+600   99  power levels OK, FAA radar on, waterfalls OK, quicklook OK 
+2132 0016  228600071 228600072   
+2142 0017  228600073 228600074  power levels OK, quicklook OK 
+2152 0018  228600075 228600076  
+2203 0019  228600077 228600078  weak continuum source, quicklook OK  
+2213 0020  228600079 228600079  strongish continuum source (0.2) 
+2223 0021  228600081 228600082  quicklook OK  
+2233 0022  228600083 228600084  
+2243 0023  228600085 228600086  quicklook OK
+2253 0024  228600087 228600088  several weak continuum sources, WAPPs interpolated 2s gap 
+2303 0025  228600089 228600090  power levels OK, quicklook OK  
+2313 0026  228600091 228600092  GPS burst UT 02:14:00-02:17:00 
+2323 0027  228600093 228600094  quicklook OK 
+2334 0028  228600095 228600096  weak continuum source, FAA radar off 02:40:45-02:42:30,
+  waterfalls washed out while radar off, power levels OK, quicklook OK 
+2344 0029  228600097 228600098  several weak continuum sources, FAA off at UT 02:43:30     
+2354 0030  228600099 228600100  quicklook shows no radar, otherwise OK  
+0004 0031  228600101 228600102   
+0014 0032  228600103 228600104  quicklook OK 
+0024 0033  228600105 228600106  GPS burst UT 03:32:15-03:35:15   
+0034 0034  228600107 228600108  WAPPs interpolated 2s gap, quicklook OK 
+0044 0035  228600109 228600110  quicklook OK  
+0054 0036  228600111 228700001  transient narrowband spike at 1380MHz, contacted operator
+0105 0000  228700002 228700003  WAPPs interpolated 2s gap, spike continues, quicklook OK,
+  1380MHz spike weak but visible     
+0115 0001  228700004 228700005    
+0125 0002  228700006 228700007  powerlevels OK, quicklook OK  
+0135 0003  228700008 228700009  WAPPs interpolated 2s gap
+0145 0004  228700010 228700011  1340 MHz spike strong, operator says no one at Punta Salinas    
+0155 0005  228700011 ... aborted and a parting glass lifted to A2010 from SLU! 
+
+LST stop: 0155
+
+At the bottom, add notes regarding:
+-- FAA radar on at beginning, off after UT 02:43:30 for rest of night.
+-- All ALFA beams working.
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 15.1   K2: 14.5   K3: 16.0   K4: 15.7   AT 18:24
+70K = K1: 87.3   K2: 87.3   K3: 95.2   K4: 103.5
+
+16K = K1: 14.8   K2: 14.0   K3: 15.8   K4: 15.5   AT 22:11
+70K = K1: 86.6   K2: 86.6   K3: 94.9   K4: 102.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No  AT 
+				=>is Punta Salinas following our schedule
+TIE DOWN STATUS AT 16:00
+
+TD12: 9.168
+TD4 : 10.565
+TD8 : 10.857
+
+Total Kips: 116.88
+
+Tie Down:   Enabled

@@ -1,0 +1,89 @@
+Log for 12.09.15 (15Sep2012)        Observers: GH,LL
+
+System Configuration:  a2010_az180_2012.conf
+CIMA version   The Stable version (Default) (Ver.3.3.02 2012-06-07 17:14) 
+File(s):       /share/pserverf.sdb1/wappdata/wapp.20120915.a2010.****.fits
+               /share/pserverf.sdb1/wappdata/wapp.20120916.a2010.****.fits
+
+Normal meridian observing setup north of zenith, Az=180 deg (Fall 2012) 
+Drift is:  139p2  +334924
+All beams working
+FAA is on
+
+LST  fits   Scan     calscan   Source    Pattern   Start coords. ang  time loop calmode
+2132 0000 225900227 225900228 drift139p2 fixAzdr   212900+334924  19  600   99  loopend qucklook OK
+2142 0001 225900229 225900230
+2152 0002 225900231 225900232
+2202 0003 225900233 225900234
+2213 0004 225900235 225900236
+2223 0005 225900237 225900238
+2233 0006 225900239 225900240
+2243 0007 225900241 225900242
+2253 0008 225900243 225900244
+2303 0009 225900245 225900246
+2313 0010 225900247 226000001
+2324 0000 226000002 226000003
+2334 0001 226000004 226000005
+2344 0002 226000006 226000007
+2354 0003 226000008 226000009
+0004 0004 226000010 226000011
+0014 0005 226000012 226000013
+0024 0006 226000014 226000015
+0034 0007 226000016 226000017
+0045 0008 226000018 226000019 quicklook OK
+0055 0009 226000020 226000021
+0105 0010 226000022 226000023
+0115 0011 226000024 226000025
+0125 0012 226000026 226000027
+0135 0013 226000028 226000029
+0145 0014 226000030 226000031
+0155 0015 226000032 226000033
+0205 0016 226000034 226000035 quicklook OK
+0215 0017 226000036 226000037
+0225 0018 226000038 226000039
+0236 0019 226000040 226000041
+0246 0020 226000042 226000043
+0256 0021 226000044 226000045
+0306 0022 226000046 226000047
+0316 0023 aborted
+
+LST stop: 0316
+
+At the bottom, add notes regarding:
+-- TOGS run at start only
+-- FAA radar on
+--Waterfall plots have poor color rendering.
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 14.2   K2: 13.4   K3: 14.9   K4: 14.6   AT 16:10
+70K = K1: 86.4   K2: 85.7   K3: 94.0   K4: 101.3
+
+16K = K1: 14.1   K2: 13.3   K3: 15.1   K4: 14.7   AT 22:06
+70K = K1: 84.7   K2: 84.2   K3: 92.5   K4: 100.5
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No  AT 16:10
+				=>is Punta Salinas following our schedule
+TIE DOWN STATUS AT 16:10
+
+TD12: 85.559
+TD4 : 9.956
+TD8 : 10.248
+
+Total Kips: 121.44
+
+Tie Down:   Disabled
+________________________________________________________________________________

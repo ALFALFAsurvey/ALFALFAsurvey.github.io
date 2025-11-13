@@ -1,0 +1,32 @@
+Log for 05/10/04
+Observers: Amelie Saintonge
+
+System Configuration
+
+FixedAz Drift Map CIMA normal version (i.e. the old expanded version, renamed)
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20051004.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.10.04
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop  DecJ off  Notes
+_______________________________________________________________________________
+2119 0003 527775062 527775664 drift115p1  FixedAz 211900+275140 19 600  50
+2129 0004 527775667 527776268
+2139 0005 527776272 527776874
+2149 0006 527776877 527777478
+2159 0007 527777482 527778084
+2209 0008 527778087 527778688
+2219 0009 527778692 527779293
+2230 0010 527779297 527779898
+2240 0011 527779902 527780504
+2250 0012 527780507 527781108
+2300 0013 527781112 527781714
+2310 0014 527781717 527782318
+
+END LST: 2320
+
+Notes:
+No problems with TOGS.
+Short and uneventful run!

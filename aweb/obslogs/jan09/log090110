@@ -1,0 +1,32 @@
+Log for 090110     Observer: Ann Martin & Sabrina Stierwalt
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:       aweb /share/pserverf.sda3/wappdata/wapp.20090110.a2010.****.fits 
+
+     ****
+LST  fits  Scan     calscan   Source     Pattern  Start coords. ang  time loop calmode
+
+0131 0002 901000081 901000082  drift35p1  fixAZdr  013100+082342  19   600  99  loopend 
+0141 0003 901000083 901000084
+0152 0004 901000085 901000086
+0202 0005 901000087 901000088
+0212 0006 901000089 901000090
+0222 0007 901000091 901000092
+0232 0008 901000093 901000094
+0242 0009 901000095 901000096
+0252 0010 901000097 901000098
+0302 0011 901000099 901000100
+0312 0012 901000101 901000102
+0322 0013 901000103 -- aborted
+
+END LST 0322
+
+Notes:
+short run but we'll be back for more in a few short hours
+Running the new version of CIMA 3.1.02 "Smart"; all ok
+TOGS run at beginning only
+FAA radar on again
+Additional radar noticed at 1367 and 1382 MHz
+Beam 6B looks ok 
+operator notes problems with WAPP 4: operator logs say WAPP 4 may not be writing; quicklook looks good throughout

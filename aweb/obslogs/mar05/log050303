@@ -1,0 +1,66 @@
+ppdata/wapp.20050303.a2010.****.fits   
+       /share/pserverf.sda3/wappdata/wapp.20050303.a2010.****.fits
+
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________Log for 3/03/05 pm        Observers:  BK, SS
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050303.a2010.****.fits
+
+1102 0000 506202703 506203305 drift66p1 FixedAz 110217+155618  19   600  2
+1112 0001 506203308 506203910							+3"
+
+1122 0002 506203914 506204517 drift66p1 FixedAz 112232+155618  19   600  4
+1132 0003 506204520 506205122							
+1142 0004 506205125 506205727
+1152 0005 506205730 506206332                                                   +4"
+
+1203 0006 506206336 506206939 drift66p1 FixedAz 120260+155618 19 600 8
+1213 0007 506206942 506207544
+1223 0008 506207547 506208149
+1233 0009 506208152 506208754
+1243 0010 506208757 506209359
+1253 0011 506209362 506209964
+1303 0012 506209967 506210569
+1313 0013 506210572 506211174                                                   -2"
+
+1323 0014 506211180 506211782 drift66p1 FixedAz 132357+155618 19 600 4
+1333 0015 506211785 506212387
+1343 0016 506212390 506212992
+1353 0017 506212995 506213597                                                   -5"
+
+1404 0018 506213603 506214205 drift66p1 FixedAz 140428+155618 19 600 4
+1414 0019 506214208 506214810
+1424 0020 506214813 506215415
+1434 0021 506215418 506216021                                                   -8"
+
+1444 0022 506216027 506216629 drift66p1 FixedAz 144458+155618 19 600 2
+1454 0023 506216632 506217234                                                   -5"
+
+1505 0024 506217240 506217842 drift66p1 FixedAz 150514+155618 19 600 2
+1515 0025 506217845 506218447                                                   -6"
+
+1525 0026 506218453 506219055 drift66p1 FixedAz 152531+155618 19 600 2
+1535 0027 506219058 506219660                                                   -7"
+
+1545 0028 506219666 506220268 drift66p1 FixedAz 154547+155618 19 600 2 
+1555 0029 506220271 506220873                                                   -8"
+
+1606 0030 506220878 506221480 drift66p1 FixedAz 160603+155618 19 600 2
+1615 0031 506221483 506222085                                                   -10"
+
+Ending LST 16:26:00
+
+
+
+Notes:
+1. We got the orange warning "Observing when not on source" for each of the four 
+wapps everytime a new scan was started (even the cals).  Normally we just get 
+this warning at the beginning of a set of loops after we've nudged the declination 
+back in place.  After the warning we do not get a notice "Observing on source" 
+as we usually do.

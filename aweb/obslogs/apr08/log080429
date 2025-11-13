@@ -1,0 +1,42 @@
+Log for 080429        Observer: Brian Kent
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080429.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080430.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+
+1356 0018 812000176 812000177  drift4p1   fixAZdr  135610+005106 19  600   99   loopend   power OK  
+                                  warning given:  There are WAPP channels with too much power (1.405 > 1.4)!
+                                   beam 0 pol B is kinda flaky.  Spikes occuring and large flucuations in power
+1406 0019 812000178 812100001
+1416 0000 812100002 812100003
+1426 0001 812100004 812100005
+1436 0002 812100006 812100007
+1447 0003 812100008 812100009   
+1457 0004 812100010 812100011
+1507 0005 812100012 812100013  Power OK (except for Beam 0 Pol B)
+1517 0006 812100014 812100015  
+1527 0007 812100016 812100017
+1537 0008 812100018 812100019
+1547 0009 812100020 812100021  Power OK (except for Beam 0 Pol B)
+1557 0010 812100022 812100023   
+1607 0011 812100024 812100025
+1617 0012 812100026 812100027
+1627 0013 812100028 812100029  received duplicate AGC-datablock and extrapolating agc-data message
+1637 0014 812100030 812100031   
+1648 0015 812100032 812100033
+1658 0016 812100034 812100035  Power OK (except for Beam 0 Pol B)
+1708 0017 812100036 812100037
+1718 0018 812100038 812100039
+1728 0019 812100040 812100041  Power OK (except for Beam 0 Pol B)
+1738 0020 Abort
+
+
+End LST: 1738
+
+Notes:
+
+Beam 0 Pol B continues to fluctuate as in previous runs.  Electronics group is aware of the problem.
+TOGS cal run at the end.

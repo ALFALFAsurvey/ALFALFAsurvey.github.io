@@ -1,0 +1,34 @@
+Log for 11/22/05
+Observer: Amelie Saintonge
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20051122.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.11.22
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time 
+loop   Notes
+_______________________________________________________________________________
+2145 0001 532665066 532665667 drift101p2  FixedAz 214520+243436 19 600  50
+2155 0002 532665671 532666273
+2205 0003 532666276 532666877
+2215 0004 532666881 532667482
+2225 0005 532667486 532668087
+2235 0006 532668091 532668692
+2246 0007 532668696 532669297
+2256 0008 532669301 532669902
+2306 0009 532669906 532670507
+2316 0010 532670511 532671112
+2326 0011 532671116 532671717
+2336 0012 532671721 532672322
+2346 0013 532672326 532672927
+2356 0014 532672931 Aborted.
+
+END LST: 2356
+
+Notes:
+No TOGS tonight.  The operator couldn't get it to start, there were problems with the
+levels.  Neither Snezna or Mary could be reached.  Phil tried but couldn't fix it either
+Everything else went well, though we started relatively late due to the problems.

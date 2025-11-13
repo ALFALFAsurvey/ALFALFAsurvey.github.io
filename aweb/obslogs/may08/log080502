@@ -1,0 +1,35 @@
+Log for 080502       Observer: Rebecca Koopmann
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080502.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080503.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1345 0017 812300231 812300232  drift1p1   fixAZdr  134500+000718 19  600   99   loopend   
+                                           low power in beam 0B
+1355 0018 812300233 812300234   GPS
+1405 0019 812300235 812300236  
+1415 0020 812300237 812400001       low power in beam 0B, otherwise powerlevels OK
+1425 0000 812400002 812400003
+1435 0001 812400004 812400005       low power in beam 0B
+1445 0002 812400006 812400007       low power in beam 0B
+1455 0003 812400008 812400009 
+1505 0004 812400010 812400011 
+1515 0005 812400012 812400013      power levels OK, strong continuum source in 1
+1526 0006 812400014 812400015      OB continues to be flaky   
+1536 0007 812400016 812400017 
+1546 0008 812400018 812400019     OB fluctuating
+1556 0009 812400020 812400021     low power in 0B
+1606 0010 812400022 812400023     continuum source in 4
+1616 0011 812400024 812400025 
+1626 0012 812400026 812400027
+1636 0013 812400028 812400029   GPS     
+1646 0014 812400030  --abort 
+
+End LST: 1646
+
+Notes:
+
+Beam 0 Pol B continues to fluctuate as in previous runs.  
+TOGS cal run at the end.

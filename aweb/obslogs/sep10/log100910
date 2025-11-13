@@ -1,0 +1,84 @@
+Log for 09/10/10     Observer: Becky Koopmann and Union College Physics 100 class
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100910.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100911.a2010.****.fits
+
+*****Zenith strip observing setup********
+****
+****   Az=287.0   ALFAang= 87.4  ZA=5.1  AzG=286.4  ZAG=5.33
+****
+****
+      RA@start=2114  RA@end=0328
+      RA = LST + 21 min
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2053 0028  25300137 25300138   drift69p1  fixAZdr   211400+164006  87.4   600   99  loopend  ZAG=5.33 powerlevels, 
+quicklook OK 
+2103 0029  25300139 25300140  GPS extending to cal before next 
+drift
+2113 0030  25300141 25300142  GPS 
+2124 0031  25300143 25300144  quicklook OK
+2134 0032  25300145 25300146 
+2144 0033  25300147 25300148  ZAG 5.33
+2154 0034  25300149 25300150 
+2204 0035  25300151 25300152
+2214 0036  25300153 25300154  powerlevels OK
+2224 0037  25300155 25300156
+2234 0038  25300157 25300158
+2244 0039  25300159 25300001  quicklook OK  ZAG 5.31
+2254 0000  25400002 25400003
+2305 0001  25400004 25400005 
+2315 0002  25400006 25400007  quicklook OK
+2325 0003  25400008 25400009
+2335 0004  25400010 25400011
+2345 0005  25400012 25400013  powerlevels OK
+2355 0006  25400014 25400015 
+0006 0007  25400016 25400017
+0016 0008  25400018 25400019
+0026 0009  25400020 25400021  cont source   ZAG 5.31
+0036 0010  25400022 25400023  cont source
+0046 0011  25400024 25400025
+0056 0012  25400026 25400027
+0106 0013  25400028 25400029
+0116 0014  25400030 25400031  quicklook OK
+0126 0015  25400032 25400033  cont source, extrapolating pnt data
+0136 0016  25400034 25400035
+0147 0017  25400036 25400037  ZAG 5.32
+0157 0018  25400038 25400039
+0207 0019  25400040 25400041  powerlevels OK  
+0217 0020  25400042 25400043  cont source
+0227 0021  25400044 25400045  ZAG 5.34
+0237 0022  25400046 25400047  
+0247 0023  25400048 25400049  ZAG 5.35
+0257 0024  25400050 25400051  cont source
+0307 0025  25400052 -- abort
+
+LST@stop:0307       RA@stop: 0328
+
+NOTES:
+
+-- TOGS run at beginning. ALFA Rotation timed out on first try; ALFA motor control window showed correct 
+rotation angle, but script stalled. No problems on second attempt.
+-- Using 'zenith strip' observing mode
+-- Occasional cima warnings: extrapolating pnt-data...
+-- FAA radar ON
+-- All beams OK
+-- Tiedowns active
+-- WAPP chip-count errors appear in cima log, but did not appear in log window during observing! 
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 15.6   K2: 15.2   K3: 16.9   K4: 16.9   AT 16:34
+70K = K1: 94.6   K2: 103.   K3: 114.0  K4: 122.0
+
+16K = K1: 15.3   K2: 15.2   K3: 17.0   K4: 16.9   AT 22:12
+70K = K1: 94.2   K2: 103.0  K3: 113.5  K4: 122.1
+
+
+
+

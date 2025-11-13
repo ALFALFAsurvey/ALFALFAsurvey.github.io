@@ -1,0 +1,66 @@
+Log for 091111     Observer: Betsey Adams, Martha Haynes
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20091112.a2010.****.fits 
+             /share/pserverf.sda3/wappdata/wapp.20091113.a2010.****.fits 
+     ****
+LST  fits  Scan       calscan        Source      Pattern   Start coords.  ang  time  loop  calmode 
+2134 0003  931600268  931600269      drift0p3    fixAZdr   213400-000339  19   600   99   loopend    1375 rfi present; fits file ok
+2144 0004  931600270  931600271
+2154 0005  931600272  931600273
+2204 0006  931600274  931600275
+2214 0007  931600276  931600277
+2224 0008  931600278  931600279
+2234 0009  931600280  931600281
+2244 0010  931600282  931600283     extrapolating/interpolating messages; fits file ok
+2254 0011  931600284  931600285
+2305 0012  931600286  931600287    slight increase in power for brief simul. time near start of drift seen in waterfall plots
+2315 0013  931600288  931600289    duplicate agc-block; extra/interpolating message
+2325 0014  931600290  931600291
+2335 0015  931600292  931600293    fits file ok
+2345 0016  931600294  931600295    long gps!; duplicate agc-datablock message
+2355 0017  931600296  931600297    MH takes over; strong cont source 5,0
+0005 0018  931600298  931600299   
+0015 0019  931600300  931600301    1375 vstrong around 0019 LST
+0025 0020  931600302  931600303   
+0035 0021  931600304  931600305    fits file ok
+0045 0022  931600306  931600307
+0055 0023  931600308  931600309
+0105 0024  931600310  931600311
+0116 0025  931600312  931600313    agc-datablock warning
+0126 0026  931600314  931600315
+0136 0027  931600316  931600317    At very end: WAPP extrapolating pnt-data message: see below 
+0147 0028  931600318  931600319    duplicate AGC-datablock warning at 22:51:08
+0157 0029  931600320  931600321
+0207 0030  931600322  931600323
+0217 0031  931600324  931600325    
+0227 0032  931600326  931600327
+0237 0033  931600328  931600329    WAPP channels with too much power; cont source 6,2 ~0243
+0247 0034  931600330  931600331
+0257 0035  931600332  931700001   
+0307 0000  931700002  931700003    WAPP extrapolating pnt-data message at 00:05:32, 00:09:02 and 09:09:40
+0317 0001    -- aborted
+END LST:  0317    
+
+Notes:
+-- TOGS ran at start and end
+-- FAA radar on
+-- rfi at 1375 MHz, stronger in pol B, 1380 harmonic also present
+   Source of 1375 MHz unknown; has been there since Sep09. See Phil's page. Ganesh and Phil aware
+-- AST 22:44:01 Get:
+   22:44:01 WARNING WAPPDATA-search_pnt: WARNING extrapolating pnt-data from 55148.113877 to 55148.113889!
+   22:44:02 WARNING WAPPDATA-search_pnt: WARNING interpolating pnt-data over 2.00 second time gap (55148.113877- 55148.113900)!
+-- There are known issues with Beam 2.0 (calibration sometimes off so Tsys too high); Beam 6.1
+   (instability; sometimes stripes show up in waterfall plots); Beam 5.1 (ditto); Ganesh and Phil aware.
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+16K = K1: 13.6   K2: 13.5   K3: 14.7   K4: 15.0   AT 10:01
+70K = K1: 76.3   K2: 78.5   K3: 87.5   K4: 94.6
+
+16K = K1: 14.1   K2: 13.7   K3: 15.2   K4: 15.7   AT 14:03
+70K = K1: 75.8   K2: 78.7   K3: 87.5   K4: 95.1
+
+

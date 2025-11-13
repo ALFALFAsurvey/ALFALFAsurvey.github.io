@@ -1,0 +1,130 @@
+Log for 03/17/10          Observers: David Craig + Tom Balonek
+                                      
+
+System Configuration:                   a2010_az85_2010.conf
+CIMA version       			3.1.08 2010-02-01 "Smart" 
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20100317.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20100318.a2010.****.fits
+
+Zenith strip observing setup
+Az=85.93   ALFAang=-63.8 
+RA@start=0725  RA@end=1640
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0754 0000 7600002   7600003       drift73p2 fixAZdr   072500+174548 -63.8 600 99 loopend
+0804 0001 7600004   7600005       quicklook 1 looks fine
+0814 0002 7600006   7600007       power levels look good, see FAA and galactic HI
+0824 0003 7600008   7600009
+0834 0004 7600010   7600011       the coquis are happy.
+0844 0005 7600012   7600013       strong  continuum source about 3/4 scan 
+0854 0006 7600014   7600015       FAA radar is strong tonight.
+0905 0007 7600016   7600017       quicklook for scan is good.
+0915 0008 7600018   7600019       Zenith angle now at 6.95 after scan
+0925 0009 7600020   7600021       tiedowns adjusting 1/3 into scan.         
+0935 0010 7600022   7600023       
+0945 0011 7600024   7600025       quicklook of scan looks good.
+0955 0012 7600026   7600027       power levels ok.
+1005 0013 7600028   7600029       quicklook ok, radar strong.
+1015 0014 7600030   7600031       zenith angle 7.03 at start
+1025 0015 7600032   7600033       power levels ok, quicklook ok.
+1035 0016 7600034   7600035       
+1045 0017 7600036   7600037       power levels ok.
+1055 0018 7600038   7600039       coquis quieter, continuum src near end in beams 3-5
+					quicklook ok
+1105 0019 7600040   7700001       date change just before calibration scan.  
+1115 0000 7700002   7700003
+1126 0001 7700004   7700005       zenith angle at 7.10 at start, power levels ok,
+                                  quicklook ok
+1136 0002 7700006   7700007       quicklook ok, radar strong.
+1146 0003 7700008   7700009       zenith angle 7.11
+1156 0004 7700010   7700011       zenith angle 7.12
+1206 0005 7700012   7700013       zenith angle 7.12; 
+                                  0.3 deg continuum source brightest beams 5&3
+1216 0006 7700014   7700015
+1227 0007 7700016   7700017       weak continuum source near end.
+1237 0008 7700018   7700019       
+1247 0009 7700020   7700021       quick look ok.      
+1257 0010 7700022   7700023       moderate cont source, zenith angle at 7.13
+1307 0011 7700024   7700025       weak continuum source
+1317 0012 7700026   7700027       zenith angle 7.12,quicklook ok.
+1327 0013 7700028   7700029       coquis have gone to bed.
+1338 0014 7700030   7700031       quicklook ok.
+1348 0015 7700032   7700033       0.4K continuum source
+1358 0016 7700034   7700035       
+1408 0017 7700036   7700037       zenith angle down to 7.09 
+1418 0018 7700038   7700039      
+1428 0019 7700040   7700041       WAPPS search_pnt: extrapolating/interpolating warning
+					-- first time seen tonight.
+1438 0020 7700042   7700043       back to observing slightly before on-source.
+1448 0021 7700044   7700045       zenith angle 7.05, weak continuum source.
+1459 0022 7700046   7700047
+1509 0023 7700048   7700049       continuum source in beams 2-4 near end of scan.
+1519 0024 7700050   7700051 
+1529 0025 7700052   7700053       Zenith angle 6.99               
+1539 0026 7700054   7700055       quicklook ok
+1549 0027 7700056   7700057       Power dropout (SEE NOTE BELOW)
+1559 0028 7700058   7700059       quicklook ok
+1609 0029 7700060   7700061
+1619 0030 7700062   7700063       Power dropout (SEE NOTE BELOW)
+1629 0031 7700064   7700065       zenith angle 6.88
+1639 0032 7700066   7700067
+1650 0033 7700068   7700069
+1700 0034 7700070   7700071      quicklook ok
+1710 0035 7700072   -- aborted
+
+
+LST stop: 1710    RA stop: 1640
+
+NOTES:
+
+Power dropout during 20100318.0027 around 1553 LST, 0437 AST, RA 1530.  Lasted less
+than one minute.  WAPPS had low power but didn't fail.  Decided no need to abort.
+But will want to edit out data from 0437 to about 0439 AST.
+Everything looked fine by 0439 AST.
+
+Power dropout during 20100318.0030 around 1624 LST, 050820 AST, RA 1555.  Lasted 15
+seconds.  All beam total powers come back to pre-dropout level except beam 5 which is 
+at about 90% pre-dropout level.
+
+We are doing this at Az 85 and subtracted about 30 min from LST at start for RA start.
+
+Zenith Angle: drift 0000 6.77 degrees; drift 0003 6.83; +0.02 between each drift.
+
+In ALFA beam posn window, rotation angle -63.8 deg corresponds to sky angle +19.91 deg
+
+No TOGS at start, as per schedule, Galspect not working.  So no TOGS at end.
+
+First observing after platform repairs.
+
+FAA radar is on.
+
+ZACH 8.84 degrees
+
+Declination checked throughout night on monpnt, stays within few arcmin of 174548.
+
+Drifts 0000-00016 (on Mar 17) first 3-5 seconds not on source due to ZA move.
+
+
+
+
+
+(will update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 13.6   K2: 14.0   K3: 15.2   K4: 15.1   AT 16:21
+70K = K1: 81.0   K2: 89.8   K3: 98.0   K4: 105.6
+
+16K = K1: 13.8   K2: 14.8   K3: 15.2   K4: 15.2   AT 22:18
+70K = K1: 81.7   K2: 89.8   K3: 99.1   K4: 106.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+__________________________________

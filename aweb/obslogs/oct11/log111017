@@ -1,0 +1,82 @@
+Log for 11.10.17 (17Oct2011)        Observers: David Craig
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111017.a2010.****.fits
+
+Normal meridian strip observing.
+
+ LST   fits     Scan    calscan    Source    Pattern    Start coords. ang  time loop calmode
+2132?  0000     **bad fits file, lost track of windows in vnc at startup.  TOGS ran ok. Quicklook shows nothing in it.
+2142   0001     12900376 12900377 drift 144p1 fixAzdr   214200+345406  19  600   99  loopend  
+                                 6B dead, started slightly late, TOGS at beginning, Quicklook OK
+2152   0002     12900378 12900379 FAA off. alfamotorwin shows +19.00, AZ 540 due to wrap.
+2201   0003     12900380 12900381 in alfamonwin B4 has stage 2&3 V_G voltages red. 
+2211   0004     12900382 12900383 B4 spectra look ok, monpnt & cima agree on pointing 
+2221   0005     12900384 12900385 cs B1,B6. QL ok.
+2231   0006     12900386 12900387
+2241   0007     12900388 12900389 Quicklook OK.
+2251   0008     12900390 12900391
+2302   0009     12900392 12900393 QL ok.
+2312   0010     12900394 12900395
+2322   0011     12900396 12900397
+2332   0012     12900398 12900399
+2342   0013 **ABORTED**
+
+FAA Radar OFF, beam 6B dead. Tiedowns Active. Uneventful after start.
+
+Did not include fits 0000 in files for filecreator: lost track of cima observing window in 
+vnc windows and didn't start properly, then restarted from load configuration ok. TOGs ran fine 
+before this at beginning.
+
+________________________________________________________________________________
+GREGORIAN DOME 16K TEMPERATURES
+
+AT 09:55      AT 14:00
+
+327 = 15.8    327 = 17.8
+430 = 14.1    430 = 15.3
+800 = OFF     800 = OFF
+LBW = 14.4    LBW = 14.3
+SBN = 14.1    SBN = 14.4
+SBW = 15.0    SBW = 15.3
+SBH = 18.3    SBH = 19.5
+CB  = 16.4    CB  = 17.1
+CBH = 21.8    CBH = 22.0
+XB  = 14.4    XB  = 14.5
+
+Floor Speed 3  AT 08:00
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 13.8   K2: 13.3   K3: 14.7   K4: 14.9   AT 09:56
+70K = K1: 80.9   K2: 81.2   K3: 88.0   K4: 96.6
+
+16K = K1: 13.8   K2: 13.2   K3: 15.0   K4: 15.2   AT 14:00
+70K = K1: 81.7   K2: 82.1   K3: 89.2   K4: 97.5
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT 
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:       AT 
+				=>certify our blanker is locking on
+_______________________________________________________________________________
+TIE DOWN STATUS AT 08:00
+
+TD12: 11.284
+TD4 : 11.532
+TD8 : 11.305
+
+Total Kips: 92.86
+
+Tie Down:   Enabled
+

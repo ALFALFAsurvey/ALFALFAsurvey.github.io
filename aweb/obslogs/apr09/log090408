@@ -1,0 +1,62 @@
+Log for 090408     Observer: Manolis Papastergis
+
+System Configuration: a2010_az180_2009.conf
+CIMA version  3.1.03 2008-1-20 13:50 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090408.a2010.****.fits 
+            /share/pserverf.sda3/wappdata/wapp.20090409.a2010.****.fits
+
+     ****
+
+** WAPP failure during TOGS at start. Aborted & restarted. TOGS data is fits file 0019 (0018 is junk) **
+
+LST  fits  Scan       calscan      Source      Pattern    Start coords.   ang   time  loop   calmode
+0916 0020  909800297  909800298    drift83p2   fixAZdr    091600+201148    19    600    99   loopend 
+0926 0021  909800299  909800300    polarized interference towards end of spectrum
+0936 0022  909800301  909800302
+0946 0023  909800303  909800304    quicklooked 0020, all ok
+0957 0024  909800305  909800306    
+1007 0025  909800307  909800308
+1017 0026  909800309  909800310    strong cont. source
+1027 0027  909800311  909800312
+1037 0028  909800313  909800314    warning about being close to zenith angle limit of 1.06 (actual zenith angle 1.7921)    
+1047 0029  909800315  909800316    22:07:11 cima warning: extrapolating pnt data
+1057 0030  909800317  909800318     
+1107 0031  909800319  909800320    polarized interference towards end of spectrum (about 1427 MHz)
+*last good (checked) data file is 0031. Calscan 909800320 may be damaged*
+**********
+Error in WAPP 3, program crashed... The last good file is 0031 (files 0032,33,34 bad). 
+I tried restarting observation didn't work. Tried restarting cima didn't work. Talked to the operator, waiting for Arun to check the WAPPs.
+Arun did his magic and the WAPPs work again. Total time lost 1h30mins.
+**********
+
+1249 0000  909900001  909900002    Restarted. No TOGS. RE-adjusted power.
+1259 0001  909900003  909900004    
+1309 0002  909900005  909900006    
+1320 0003  909900007  909900008    
+1330 0004  909900009  909900010    
+1340 0005  909900011  909900012    
+1350 0006  909900013  909900014    Beams 2 and 3 show a record that of low power accross spectrum
+1400 0007  909900015  909900016    quicklooked 0000, ok
+1410 0008  909900017  909900018    
+1420 0009  909900019  909900020    
+1430 0010  909900021  909900022    
+1440 0011  909900023  909900024    
+1450 0012  909900025  909900026    
+1501 0013  909900027  909900028
+1511 0014  909900029  909900030    very strong cont. source
+1521 0015  909900031  909900032            
+1531 0016  909900033  Aborted
+
+END LST:  1531
+
+
+
+Notes:
+
+>Running the new version of CIMA 3.1.03 "Smart"
+>TOGS run at START and END
+>FAA radar is ON
+>Beam 6B is DEAD
+
+** Big problem with WAPPs. Arun came and finally fixed the problem. Lost totally 1h30mins of drift time. Last good data file is 0031
+(0032,33,34 might exist but they're junk). Run 'restart WAPPs' and 'Adjust power' before starting the second drift block **

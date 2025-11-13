@@ -1,0 +1,30 @@
+Log for 080504       Observer: Betsey Adams
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080504.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080505.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1409 0015 812500133 812500134  drift14p2   fixAZdr  140900+032424 19  600   99   loopend   power levels OK
+1419 0016 812500135 812600001
+1430 0000 812600002 812600003  continuum source
+1440 0001 812600004 812600005
+1450 0002 812600006 812600007
+1500 0003 812600008 812600009
+1510 0004 812600010 812600011
+1520 0005 812600012 812600013
+1530 0006 812600014 812600015
+1540 0007 812600016 812600017
+1550 0008 812600018 812600019
+1600 0009 812600020 812600021
+1611 0010 812600022 812600023
+1621 0011 812600024 812600025
+1631 0012 812600026 aborted
+
+End LST: 1631
+
+Notes:
+
+VNC viewers froze twice - data refreshing resumed after a minute or so.
+TOGS cal run at the end.

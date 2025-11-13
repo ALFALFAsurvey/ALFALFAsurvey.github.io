@@ -1,0 +1,101 @@
+Log for 09/20/10     Observer: Martha Haynes
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100920.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100921.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=85.60   ALFAang= -64.2  ZA=4.8  AzG=82.28   ZAG=4.72  ****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=20h41    RA@end= 02h56
+      RA = LST - 20 min
+****
+During the night, please make occasional notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the ZA limits
+are (3.5,12.0). If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2101 0023  26300135 26300136   drift74p1  fixAzdr   2025+175306   -64.2  500   99  loopend   4.71 quicklook ok
+2112 0024  26300137 26300138               GPS at end of first/beginning of this one
+2122 0025  26300139 26300140                                                           za=   4.66
+2132 0026  26300141 26300142
+2142 0027  26300143 26300144
+2152 0028  26300145 26300146                                                           za=   4.63
+2202 0029  26300147 26300148                                                                 4.61
+2212 0030  26300149 26300150                                                                 
+2222 0031  26300151 26300152                                                                 4.58
+2232 0032  26300153 26300154                                                                 4.57
+2242 0033  26300155 26300156                                                                 4.56
+2252 0034  26300157 26300158                                                                 4.55
+2303 0035  26300159 26300160                                                                 4.54
+2313 0036  26300161 26300162                                                                 4.53
+2323 0037  26300163 26400001                                                                 4.53
+2333 0000  26400002 26400003         Extrapolating/interpolating pnt-data 2.0sec time gap    4.52
+2343 0001  26400004 26400005                                                                 4.52
+2354 0002  26400006 26400007                                                                 4.51
+0004 0003  26400008 26400009                                                                 4.51
+0014 0004  26400010 26400011                                                                 4.51
+0024 0005  26400012 26400013                                                                 4.51
+0034 0006  26400014 26400015                                                                 4.51
+0044 0007  26400016 26400017                                                                 4.52
+0054 0008  26400018 26400019                                                                 4.52
+0104 0009  26400020 26400021                                                                 4.53
+0114 0010  26400022 26400023                                                                 4.53
+0124 0011  26400024 26400025                                                                 4.54
+0134 0012  26400026 26400027                                                                 4.55
+0144 0013  26400028 26400029                                                                 4.56
+0155 0014  26400030 26400031                                                                 4.57
+0205 0015  26400032 26400033              start seeing not on source warnings again          4.58
+0215 0016  26400034 26400035                                                                 4.59
+0225 0017  26400036 26400037                                                                 4.60
+0235 0018  26400038 26400039              error at start 20"; extrp pnt-data 2.0sec          4.62
+0245 0019  26400040 26400041                                                                 4.64
+0256 0020  26400042 26400043              extrap/interp agc-data 2.0 sec                     4.65
+0306 0021  26400044 26400045                                                                 4.67
+
+LST@stop: 03h16       RA@stop: 02h56
+
+NOTES:
+Long slew at start.
+FAA radar ON; looks pretty strong.
+TOGS run at start.  All ok.
+Since we are very close to zenith, the position needs updating by ~2-10" after
+   some cals. Get warning "observing when not on source" for a second or so.
+   Not a bit deal; this is the nature of the exercise. Happens nearly every 10 min
+   at beginning of night; then settles down.
+Saw some of the usual warnings about extrapolating/interpolating over 2 sec
+   in pnt-data or agc-data. Not important.
+Tiedowns disabled.
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.8   K2: 15.0   K3: 16.5   K4: 16.4   AT 18:24
+70K = K1: 88.8   K2: 96.6   K3: 107.4  K4: 115.9
+
+16K = K1: 14.8   K2: 15.0   K3: 16.5   K4: 16.5   AT 22:36
+70K = K1: 88.0   K2: 95.9   K3: 106.9  K4: 115.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT 
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:15
+				=>certify our blanker is locking on

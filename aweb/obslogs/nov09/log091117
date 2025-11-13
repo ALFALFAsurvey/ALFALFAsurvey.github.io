@@ -1,0 +1,62 @@
+Log for 11/17/09         Observers: KH 
+
+System Configuration:  a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"  
+File:  /share/pserverf.sda3/wappdata/wapp.20091117.a2010.****.fits
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+2140 0001 932100079 932100080 drift2p2   fixAZdr   214000+002912  19  512   99  loopend   TOGS run at beginning; power levels okay 
+2150 0002 932100081 932100081
+2200 0003 932100083 932100084
+2210 0004 932100085 932100086
+2220 0005 932100087 932100088
+2230 0006 932100089 932100090
+2241 0007 932100091 932100092
+2251 0008 932100093 932100094								Power levels okay
+2301 0009 932100095 932100096 
+2311 0010 932100097 932100098
+2321 0011 932100099 932100100
+2331 0012 932100101 932100102
+2341 0013 932100103 932100104								Some RFI at 1382 MHz ***see note below***  
+2351 0014 932100105 932100106
+0002 0015 932100107 932100108
+0012 0016 932100109 932100110
+0022 0017 932100111 932100112    							Power levels okay
+0032 0018 932100113 932100114
+0042 0019 932100115 932100116
+0052 0020 932100117 932100118
+0102 0021 932100119 932100120
+0112 0022 932100121 932100122
+0122 0023 932100123 932100124
+0133 0024 932100125 932100126
+0143 0025 932100127 932100128
+0153 0026 932100129 932100130
+0203 0027 932100131 932100132	  							Power levels okay
+0213 0028 932100133 932100134
+0223 0029 932100135 932100136
+0233 0030 932100137 932100138
+0243 0031 932100139 932100140
+0254 0032 932100141 932100142
+0304 0033 932100143 932100144  								Power levels okay
+0314 0034 932100145 932100146
+0324 0035 932100146									***Aborted*** 
+
+LST stop:  0324
+
+Notes:
+
+TOGS run at start & end of observing
+
+FAA radar on.  Also, RFI source at ~1375 MHz
+*** Saw 1382 MHz RFI for a short bit during one scan.  Operator said that he had to call Punta Salinas during the previous experiment and they changed modes. Kept an eye on it to see if it returned...all seemed to be quiet.***
+      ***MH notes: PS is normally at 1367 and 1382; was this GPS? Will check.  Yes, it's GPS/NUDET burst.
+
+ALFA Temperatures:
+16K	K1: 13.1  K2: 12.8  K3: 14.5  K4: 14.7   AT 14:29
+70K	K1: 74.8  K2: 77.5  K3: 86.3  K4: 93.4
+
+ALFA Instrument Status:
+Alfa amps:	On
+Alfa covers:	Not Covered
+LBW covers:	Not Covered 
+

@@ -1,0 +1,37 @@
+Log for 12/10/05 morning
+Observer: Bilal, Becky, Emmanuel, Martha
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20051210.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.10a
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+0658 0003 534407742 534408344 drift38p2  FixedAz 065821+091448 19 600  50
+0708 0004 534408347 534408949
+0718 0005 534408952 534409554
+0728 0006 534409557 534410159
+0738 0007 534410162 534410764
+0748 0008 534410767 534411369
+0759 0009 534411372 534411974
+0809 0010 534411977 534412579
+0819 0011 534412582 534413184
+0829 0012 534413187 534413789
+0839 0013 534413792 534414394
+0849 0014 534414397 534414999
+0859 0015 534415002 534415604
+0909 0016 534415607 534416209
+0919 0017 534416212 534416814
+
+
+END LST: 0930
+
+Notes:
+
+-- After radar finished, ALFA cover removed.
+-- togs starting up okay.
+-- At end, attempted to run togs. Command file hung, retried 3 times. Gave up.

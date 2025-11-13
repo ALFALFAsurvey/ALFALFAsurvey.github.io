@@ -1,0 +1,57 @@
+A2664 LBW  12.09.13            Betsey
+
+#CIMA version "The Stable version (Default) (Ver.3.3.02 2012-06-07 17:14)"
+#Sep 2012 -  Betsey's LBW candidates
+# configuration file:       a2664_fall12.conf
+# Done in fixed frequency mode
+# Center freq = 1417.7   ***NEED TO UPDATE??
+# "rest" freqs= 1420.2 1420.2 1415.2 1415.2 ***NEED TO UPDATE??
+# Most often, only the first 2 boards are used
+# All 4 boards are used in this configuration
+#
+
+Configuration file:    a2664_config.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1417.50 MHz
+  Backend: ICORR 1+2+3+4 'multi-config' --- 6.25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/6.25 MHz @ 1420.2 MHz
+      Board  3&4  Pols A&B  9-level 2048 chans/6.25 MHz @ 1415.2 MHz
+  Catalog: 'a2664_120304.cat'
+  Obsmode: Standard on/off   ---   either 180,240,300-sec loop with 'hcorcal' and 60-sec wait     
+Command file:        a2664_120304.cmd  
+Mode:                Fixed frequency/topocentric; no doppler tracking                            
+                     Low velocity sources cz < 1000 km/s and UCHVCs
+          
+Data written to: /share/olcor/corfile.13sep12.a2664.*
+                 /share/olcor/corfile.14sep12.a2664.*
+
+
+
+SRCNAME           RAJ      DECJ             AGCnr      LST    ZA     File#   ONscan     Status
+HVCA321455        221122.0 +295355  j 0   # A321455    2214   11.6     1     225700261  detected @1421.8
+HVC083.32-20.50   215929.2 +285048  j 0   # A310866    2223   11.9     2     225700265  detected @1422.2 
+HVC084.70-19.24   220019.6 +303913  j 0   #            2234   14.5     3     225700269  ?detected @1422.1?
+HVC082.90-23.42   220637.3 +262131  j 0   #            2245   12.0     4     225700273  ?detected @1421.7?
+HVC084.42-25.94   221825.9 +251543  j 0   # A321349    2257   11.4     1     225700277  NOT detected
+HVC084.60-26.90   222133.6 +243614  j 0   # A321351    2307   12.3     2     225800001  detections @ 1422 AND 1422.4
+HVC086.45-27.61   222915.1 +250052  j 0   # A321394    2319   13.4     3     225800005  NOT detected
+HVC094.39-32.10   230529.8 +245012  j 0   # A333317    2331   8.8      4     225800009  detected @1422.3
+HVC095.09-31.12   230549.6 +255835  j 0   # A333225    2344   11.6     5     225800013  detected @1422.2
+HVC099.70-31.72   232250.6 +270718  j 0   #            2356   11.7     6     225800017  detected @1420.1
+HVC098.77-34.10   232351.8 +243756  j 0   # A333322    0009   12.2     7     225800021  NOT detected
+HVC105.09-34.22   234544.6 +262212  j 0   # A333229    0019   11.2     8     225800025  detected @1422.4
+HVC106.25-32.98   234813.5 +275017  j 0   # A333610    0029   13.4     9     225800029  NOT detected
+HVC105.65-36.29   235024.3 +243113  j 0   # A333324    0040   13.0    10     225800033  maybe at 1422.5
+HVC110.34-37.79   000757.8 +240056  j 0   # A102680    0051   11.4    11     225800037  detected @1422.4
+HVC111.21-37.40   001034.0 +243214  j 0   # A102681    0101   13.2    12     225800041  NOT detected
+HVC111.88-39.96   001228.6 +250420  j 0   #            0111   15.2    13     225800045  NOT detected (?)
+HVC121.45-33.93   004549.9 +285520  j 0   #            0125   13.8    14     225800049  ?detected @1421.1
+HVC123.10-33.67   005204.8 +291156  j 0   # A102992    0137   14.9    15     225800053  ?detected @1421.3
+HVC128.41-37.57   011035.6 +250601  j 0   # A113843    0150   11.4    16     225800057  detected @1420.1
+HVC129.29-34.71   011504.6 +275220  j 0   #            0203   14.5    17     225800061  detected @1421.1
+HVC129.51-35.28   011534.9 +271643  j 0   #            0213   15.9    18     225800065  detected @1421.1
+HVC145.03-31.56   021618.2 +273831  j 0   #            0225   9.6     19     225800069  ?detected @1421.7
+HVC150.02-26.47   024415.7 +302415  j 0   #            0238   12.2    20     225800073  NOT detected
+
+
+Snuck one extra source in: HVC111.88-39.96

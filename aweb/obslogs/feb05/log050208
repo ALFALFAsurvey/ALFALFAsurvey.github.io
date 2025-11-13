@@ -1,0 +1,96 @@
+Log for 2/08/05 pm => 2/09/05 am        Observers: RG, BK, NB
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050208.a2010.****.fits
+       /share/pserverf.sda3/wappdata/wapp.20050209.a2010.****.fits
+   
+     
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop      Notes
+____________________________________________________________________________________________________
+0829 0052 503985138 503985740 drift52p1 FixedAZ  082900+123154 19   600  4    cal series uselesss
+0839 0053 503985743 503986345
+0849 0054 503986348 504000550
+
+0859 0000 504000553 504001155                                                    DecJ up by > 13"
+
+0909 0001 504001197 504001800 drift52p1 FixedAZ  090928+123154 19   600  4     missed about 30 seconds
+0920 0002 504001803 504002405
+0930 0003 504002408 504003010
+0940 0004 504003013 504003615							 DecJ up by 12"
+
+Vel/z set to zero sometime in past 4 loops????
+
+0950 0005 504003621 504004223 drift52p1 FixedAZ  095054+123154 19   600  4
+1000 0006 504004226 504004828
+1011 0007 504004831 504005433
+1021 0008 504004436 504006038							 DecJ up by 10"
+
+Vel/z set to zero for past 4 loops????
+
+1031 0009 504006044 504006646 drift52p1 FixedAZ  103122+123154 19   600  4
+1041 0010 504006643 504007251
+1051 0011 504007254 504007856
+1101 0012 504007859 504008461                                                    DecJ off by ~7"
+
+1111 0013 504008467 504009069 drift52p1 FixedAZ  111153+123154 19   600  4
+1121 0014 504009072 504009674
+1132 0015 504009678 504010280
+1142 0016 504010283 504010885
+
+1152 0017 504010891 504011493 drift52p1 FixedAZ  115224+123154 19   600  1
+
+1202 0018 504011496 504012098 drift52p1 FixedAZ  120217+123154 19   600  10
+1212 0019 504012101 504012703
+1222 0020 504012706 504013308
+1232 0021 504013311 504013913
+1242 0022 504013916 504014518
+1252 0023 504014521 504015124
+1302 0024 504015127 504015729
+1312 0025 504015732 504016334
+1323 0026 504016337 504016939
+1333 0027 504016942 504017544                                                   DecJ off by 4"                   
+
+1343 0028 504017544 504018149 drift52p1 FixedAZ  134325+123154 19   600 4
+1353 0029 504018152 504018754
+1403 0030 504018757 504019359
+1413 0031 504019362 504019964							DecJ off by 12"
+
+1423 0032 504019967 504020569 drift52p1 FixedAZ  142352+123141 19   600 2       Coord start not needed apparently
+1434 0033 504020572 504021174                                                   DecJ off  17"
+
+1444 0034 504021176 504021779 drift52p1 FixedAZ  144406+123136 19   600 2
+1454 0035 504021782 504022384                                                   DecJ down 23"
+
+1504 0036 504022387 504022989 drift52p1 FixedAZ  150420+123136 19   600 1       DecJ down 26"
+
+1514 0037 504022992                                                              ABORTED
+
+1514      504023015 504023617 drift52p1 FixedAZ  151430+123154 19   600 4
+1525 0038 504023620 504024222
+1535 0039 504024225 504024827
+1545 0040 504024830 504025432
+
+1555 0041 504025435 504026039 drift52p1 FixedAZ  155525+123154 19   600 4
+1605 0042 504026042 504026644
+1615 0043 504026647 504027249
+1625 0044 504027252 504027854
+
+1636 0045 504027882 504027886  CALOFF CALON
+          504027889 
+     0046           504027893
+          504027896 504027899
+          504027902 504027905
+          504027908 504027911
+
+     0047  Empty FITS file
+
+Notes:
+1- started with 5 cals (using drift of 1 sec and loopend), but CIMA did not configure beams
+   4-5-6 (again!). had to abort. Started w/o cals
+2- Scans 1-8 MIGHT have a velocity problem.  CIMA reset the Velocity/z in the Pointing Control to 0 at some 
+   point.  Took a quick look at the data, and it *seems* be OK.  Always be wary.

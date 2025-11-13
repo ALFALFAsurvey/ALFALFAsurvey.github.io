@@ -1,0 +1,82 @@
+A3064 LBW   16.11.09 Observers: Becky Koopmann, Brendan O'Connor
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161109.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161109.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161110.a3064.****.fits   (after midnight AST)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S222558.9+230559  222558.9 +230559  j     0 H v   # A322063    2139   12.2  0000   631400162   WAPPS crash on CAL off:  FILE NO GOOD!  restarted WAPPS
+S222551.5+242951  222551.5 +242951  j     0 H v   # A323403    2152   10.2  0001   631400166   WAPPS crash on CAL off AGAIN: FILE NO GOOD. Operator calling Arun.
+S223919.9+282519  223919.9 +282519  j     0 H v   # A323409 SKIP - Arun running tests; found nothing wrong. Restarted CIMA.
+
+S224308.8+293602  224308.8 +293602  j     0 H v   # A323413    2229   11.8  0002   631400170   Detection 1387MHz, 7250 km/s, S/N~4   
+
+S224514.9+292134  224514.9 +292134  j     0 H v   # A323415    2242   11.2  0003   631400174   WAPP interpolate positions errors; denominator is zero. Occurred 
+            toward end of observation, and did not abort, so let it finish. Data look OK, but beware this file.  Calling Arun again. 
+            Possible weak detection 1386MHz, 7400km/s;  GPS in on?
+S225325.3+312425  225325.3 +312425  j     0 H v   # A323417 SKIP    
+S233838.3+270939  233838.3 +270939  j     0 H v   # A336657 SKIP - No answer from Arun.  Restarting. 
+
+S234523.0+275339  234523.0 +275339  j     0 H v   # A336670    2321   11.2  0004   631400178   GPS in off; Detection 1386MHz, 7500 km/s, S/N~2.5 & 1388MHz, 6900 
+km/s, S/N~4 (narrow)
+S000019.4+273606  000019.4 +273606  j     0 H v   # A104807    2333   11.3  0005   631400182   Detection 1367Mhz, 11800km/s, S/N~4
+S000054.7+274319  000054.7 +274319  j     0 H v   # A104808    2346   10.2  0006   631400186   Detection 1366MHz, 12000km/s, S/N~3, possible detection 1389Mhz, 
+6800km/s  
+S000513.7+285304  000513.7 +285304  j     0 H v   # A101688    2358   10.8  0007   631400190   Detection in On and Off at 1382 MHz, 8300km/s (on), 1383 MHz, 8000 
+km/s (off) 
+S001000.7+293554  001000.7 +293554  j     0 H v   # A105231    0010   11.4  0008   631400194   Detection 1398Mhz, 4700 km/s, S/N~3 narrow  
+S001253.8+293104  001253.8 +293104  j     0 H v   # A105234    0022   11.4  0009   631400198   Detection 1398MHz, 4700 km/s, S/N~3
+S001526.8+291029  001526.8 +291029  j     0 H v   # A105253    0034   11.7  0010   631400202   No Detection
+S002700.3+303617  002700.3 +303617  j     0 H v   # A105244    0046   13.1  0011   631400206   Possible Weak Detection 1385MHz, 7500 km/s
+S003346.8+340241  003346.8 +340241  j     0 H v   # A105246    0059   16.8  0012   631400210   Maybe Weak Detection 1385MHz, 7500 km/s
+
+S004246.6+332645  004246.6 +332645  j     0 H v   # A105248                 0013   63140014    WAPPS crash just after file opened: Lost. Restarted on same source.
+
+S004246.6+332645  004246.6 +332645  j     0 H v   # A105248    0114   16.7  0014   631400215   Something weak at 1369 MHz, 11300 km/s?
+S010941.1+322043  010941.1 +322043  j     0 H v   # A116264    0127   14.6  0015   631400219   Maybe something at 1372 MHz (10600km/s), and 1381 MHz (8500 km/s)
+S015051.0+323020  015051.0 +323020  j     0 H v   # A110930    0140   14.5  0016   631400223   GPS in OFF. Several sources: 1402 MHz, 4000 km/s, 1372 MHz, 10500 
+km/s, S/N~5 and 1369 MHz, 11200 km/s, S/N~4 (and 4th at 1407 MHz, 2900 km/s)
+S015054.4+322717  015054.4 +322717  j     0 H v   # A110931    0152   14.2  0017   631400227   GPS in ON. VERY narrow signal at 1388 MHz in both pols: prob RFI?   
+S015122.0+333810  015122.0 +333810  j     0 H v   # A110938    0205   15.6  0018   631400231   GPS in ON. No detection.   
+
+S021647.9+324037  021647.9 +324037  j     0 H v   # A125523    0217   14.4  0019   631400235   WAPPS crash just after ON. Lost observation.
+S025049.6+345840  025049.6 +345840  j     0 H v   # A125517 SKIP - Arun rebooting   
+S025407.9+345755  025407.9 +345755  j     0 H v   # A125526 SKIP     
+S025800.0+351055  025800.0 +351055  j     0 H v   # A124878 SKIP     
+
+S030001.2+351738  030001.2 +351738  j     0 H v   # A132273    0316   17.3  0000   631500001   No detection  
+H030215.5+303118  030215.5 +303118  j     0 H v   # A131380cal 0329   13.6  0001   631500005   Detection 1390 MHz, 6300 km/s, S/N~12
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal NO TIME
+                                                      
+Notes 
+WAPPS crashes (5):
+-- WAPPS crashed on CAL off in first two scans. Operator called Arun. Operator said WAPP3 had hard drive problems, but "not that critical yet." Arun did some 
+tests, but didn't find anything wrong. Aborted data-taking (hit abort in all screens), reloaded configuration file, then restarted CIMA. Moved on to 4th source on 
+list: observation OK.
+-- WAPPS error during 5th source, but data look OK. Stopped while Daniel tried to fix; couldn't reach Arun. Restarted everything and then was OK for awhile. 
+-- WAPPS error at very start of data-taking at 0114 LST. Restarted on same source. Daniel reached Arun who said if it happens again he would reboot WAPP3, but that 
+it might be a powersupply issue. Continued data taking and monitoring.
+-- Another WAPPS error at 0224 LST = 23:30. Arun rebooted, but it took ~45 minutes because of some system checks. Everything was fine afterwards, but there was 
+time left for only two sources.
+-- Symptom was that WAPP3 correlator would hang producing error message like: 
+2016-Nov-09 23:31:31 DEBUG4  got_wappmsg: Calling 'got_wappmsg WAPPCON3 {log_message ERROR start_spectra {ERROR the correlator has failed to start!}}
+-- Arun suggested further testing during maintenance period Nov 10.
+
+Lost 8 sources to problems, plus last cal.
+
+FAA radar is on, RFI at 1364 MHz, GPS in several scans
+
+Tie-downs enabled.

@@ -1,0 +1,58 @@
+A2941 LBW   15.04.02    Observers: Ron, Alyssa, Leland, Blake
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2941.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.40575  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2941_150402.cmd   
+Mode:                WAPP search mode   
+                     ALFALFA/UAT Spring SDSS Search Pilot program  
+
+Data written to:     /share/pserverf.sda3/wappdata/wapp.20150402.a2941.****.fits  
+                     /share/pserverf.sda3/wappdata/wapp.20150403.a2941.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H100023.5+205800  100025.0 +205806  j     0 H v   # A208768L  09:23  09:31 0017    509200095  Disabled tiedowns during this source. Weird standing wave developed. Not sure if the tiedowns caused it. Possible source, board 4,  at 1354.5, 14600 km/s, S/N = 8
+S094820.3+155054  094820.3 +155054  j     0 H v   # A731124   09:33  04.59 0018    509200099  No Detection.  
+S094557.7+095833  094557.7 +095833  j     0 H v   # A192034   09:47  08.40 0019    509200103  WAPP FAILURE, BOARD 2. Dumpped Data, had to move on for sake of time. 
+S104312.8+170255  104312.8 +170255  j     0 H v   # A208815   10:04  09.70 0020    509200106  Multiple Sources detected . Both board 2. 1389.5MHz 6600km/s S/N = 2 ||  1405MHz,3300 km/s, S/N = 2 
+S110047.1+165255  110047.1 +165255  j     0 H v   # A740437   10:16  10.83 0021    509200110  Board 1 source, 1415 MHz, 1150 km/s, S/N = 4
+S101811.9+133551  101811.9 +133551  j     0 H v   # A208807   10:33  06.03 0022    509200114  Board 3 source, 1380 MHz, 8600 km/s, S/N = 4 
+S104252.4+134428  104252.4 +134428  j     0 H v   # A205268   10:46  04.73 0023    509200118  Board 1 source, 1414 MHz, 1300 km/s, S/N = 6, (NED: 1145 km/s,redshift = .003820)
+H111316.8+062925  111316.8 +062925  j     0 H v   # A219273L  11:01  12.30 0024    509200122  Board 1 source, 1408 MHz, 2600 km/s. S/N = 3.5   
+S113438.6+153718  113438.6 +153718  j     0 H v   # A215362   11:11  06.34 0025    509200126  RFI at 1381 in the off, no detection.     
+H121748.6+150503  121749.1 +150452  j     0 H v   # A226055L  11:26  12.89 0026    509200130  RFI at 1381 in the on. Detection board 1, 1410 MHz, 2100 km/s, S/N = 2
+A122154.0+132732  122154.0 +132732  j     0 H v   # A226067   11:34  12.52 0027    509200134  Possible detection at 1416 MHz, 900 km/s, S/N = 1   
+H122638.0+195104  122639.7 +195111  j     0 H v   # A229360L  11:44  10.32 0028    509200138  Board 1 source, 1413 MHz, S/N = 7   
+A122928.2+203348  122928.2 +203348  j     0 H v   # A742390   11:51  09.22 0029    509200142  Board 1 source, 1415 MHz, 1150km/s, S/N = 5 (NED: 1079 km/s, redshift = .003599) 
+H122053.9+325822  122053.9 +325822  j     0 H v   # A747869   12:02  15.15 0030    509200146  Board 2 source, 1388 MHz, 6900km/s, S/N = 4   
+S120634.5+312033  120634.5 +312033  j     0 H v   # A731985   12:11  12.95 0031    509200150  Board 1 source, 1418 Mhz, 500km/s, S/N = 4 (NED: 568 km/s, redshift = .001895)   
+S122606.0+315135  122606.0 +315135  j     0 H v   # A226671   12:24  13.45 0000    509300003  Board 1 source, 1416.5 MHz, 800km/s, S/N = 3.5 (NED: 623 +- 57, redshift = .002078)
+S124826.1+314318  124826.1 +314318  j     0 H v   # A725089   12:36  13.61 0001    509300007  Board 1 source, 1416.5 MHz, 800km/s, S/N = 9  (NED: 833 +-24, redshift = .002777)
+S125906.5+284843  125906.5 +284843  j     0 H v   # A226727   12:49  10.64 0002    509300011  Board 1 source, 1415.5 MHz, 1000km/s, S/N = 7  (NED: 959+-36, redshift = .003198) 
+S132315.7+323207  132315.7 +323207  j     0 H v   # A239179   13:03  14.89 0003    509300015  No Detection.
+S132811.0+315230  132811.0 +315230  j     0 H v   # A239180   13:15  13.80 0004    509300019  Board 2 1387 MHz, 7250km/s, S/N = 2, RFI in off at 1409
+S133629.4+305341  133629.4 +305341  j     0 H v   # A239182   13:27  12.68 0005    509300023  Board 3 1373.5 MHz, 10300km/s, S/N = 3   
+S134046.4+311333  134046.4 +311333  j     0 H v   # A239183   13:39  12.82 0006    509300027  No Detection.   
+S135559.1+315915  135559.1 +315915  j     0 H v   # A239184   13:51  13.62 0007    509300031  Potential source at 1984 MHz, 7800km/s, S/N= 2.5. RFI at 1381.
+S142728.7+305024  142728.7 +305024  j     0 H v   # A249621   14:04  13.51 0008    509300035  Board 1 source at 1407 MHz, 2800km/s, S/N = 5
+S142912.7+304322  142912.7 +304322  j     0 H v   # A249622   14:16  12.67 0009    509300039  Board 2 source at 1402 MHz, 3900km/s, S/N = 12, Possible source board 1 1407 MHz, 2850 km/s, S/N = 2   
+S143205.3+324445  143205.3 +324445  j     0 H v   # A249623   14:29  14.35 0010    509300043  Board 2 source at 1389 MHz, 6800km/s, S/N = 4   
+S143249.2+322850  143249.2 +322850  j     0 H v   # A249624   14:41  14.18 0011    509300047  Board 3 source at 1365.5 MHz, 12500km/s, S/N = 2    
+S143837.0+302918  143837.0 +302918  j     0 H v   # A249625   14:54  12.54 0012    509300051  Multiple detections: Both board 2. First at 1389.5, 6700km/s, S/N 5. Second: 1402.5MHz, 3800km/s, S/N = 8    
+S141752.2+230432  141752.2 +230432  j     0 H v   # A242007   15:08  12.40 0013    509300055  Board 2 source at 1398.5 MHz, 4700km/s, S/N = 4.5 
+S142657.3+243138  142657.3 +243138  j     0 H v   # A749563   15:20  13.61 0014    509300059  Board 3 source at 1367 MHz, 11700km/s, S/N = 3.33 
+A152357.1+241259  152357.1 +241259  j     0 H v   # A252648calib 15:35 06.32  0015 509300063  Board 2 source at 1390 MHz, 6550km/s, S/N = 5
+A153911.4+260129  153911.4 +260129  j     0 H v   # A749349calib       if time
+
+
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+Tiedowns disabled all night due to possiblity of rain. Continuous blasting of FAA radar(1350, 1346), board 4 essentially gone most of the night. Good night with tons of detections and a good final night to round out the ned of the run. WAPP Failure on second source of the evening. File 19 of April 2. 

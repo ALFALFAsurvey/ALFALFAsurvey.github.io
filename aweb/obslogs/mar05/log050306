@@ -1,0 +1,64 @@
+
+Log for 3/06/05 am            ** see important note at bottom ** 
+
+Observers:  MPH, BK
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050306.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+1058 0000 506501784 506502386 drift39p1 FixedAz 105847+092206  19   600  30
+1108 0001 506502389 506502992
+1118 0002 506502995 506503598
+1128 0003 506503711 506504313
+1138 0004 506504316 506504919
+1148 0005 506504922 506505692
+1159 0006 506505745 506506347
+1209 0007 506506350 506506952
+1219 0008 506506958 506507560
+1229 0009 506507563 506508166
+1239 0010 506508169 506508771
+1249 0011 506508774 506509377
+1259 0012 506509380 506509983
+1309 0013 506509986 506510589
+1319 0014 506510592 506511195
+1329 0015 506511198 506511801
+1339 0016 506511804 506512407
+1350 0017 506512410 506513013
+1400 0018 506513016 506513619
+1410 0019 506513622 506514225
+1420 0020 506514228 506514830
+1430 0021 506514834 506515436
+1440 0022 506515439 506516042
+1450 0023 506516045 506516648
+1500 0024 506516651 506517252
+1510 0025 506517256 506517858
+1520 0026 506517861 506518464
+1530 0027 506518467 506519068
+1547 0028 506519072 506519674 	Log a bit off in LST - due to slow connection earlier
+1557 0029 506519677 506520280
+
+1607 0030 506520284 506520887 drift39p1 FixedAz 160757+092206  19   600  1
+1617 0031 506520890 506521493
+
+END LST:  16:27:53
+
+Notes:
+
+1- TCL script, night two, worked fine!
+
+
+Note added:  alas, it appears that the telescope operator left the system
+under his control all night, and so it was fixed at ZA=9.0 degrees. Since error
+messages appear routinely about "not being on source" even when you are, we did
+not realize this since the coordinates appeared to update on the cimalog correctly.
+So, in the future, make sure the operator puts the system back into "program" mode,
+if you ask him to move it to 360 at the beginning of the run. This isn't drift 39p1,
+but we'll of course use it anyway.
+

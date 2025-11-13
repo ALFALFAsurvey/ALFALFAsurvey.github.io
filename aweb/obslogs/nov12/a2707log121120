@@ -1,0 +1,56 @@
+A2707 LBW   12.11.20       Observers: Kornreich, Olowin, Garay-MacLean
+
+CIMA version:          The Stable version (Default) (Ver 3.3.03 2012-11-14 07:43)
+Configuration file:    a2707_highvelres.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2707_121120.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.20nov12.a2707.*    
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#   ONScan     Status
+H214512.3+135700  214516.7 +135611  j  -400 H v   # A748924         2214   7.94   1    232500409  No clear detection
+HVC072-30-334     215518.8 +144841  j  -334 H v   # A749023         2222   7.17   2    232500413  Possible detection @1418 MHz 5 min On/Off
+H215306.5+152146  215307.2 +152129  j  8900 H v   # A749022         2234  10.24   3    232500417  No clear detection
+HVC076-32-102     221219.0 +154418  j  -112 H v   # A749026         2243   7.82   4    232500421  No clear detection  5 min On/Off
+HVC080-35+573     223332.2 +155339  J   565 h V   #                 2257   5.94   5    232500425  No clear detection  4 min On/Off
+H223638.6+142109  223638.8 +142057  j 10900 H v   # A749041         2307   8.21   6    232500429  Detection @1370 MHz
+H225744.4+145930  225744.5 +145919  j   100 H v   #                 2316   5.45   7    232500433  No clear detection
+H230122.0+155552  230123.0 +155531  j  2300 H v   # A749072         2325   6.00   8    232500437  Strong detection @1409 MHz
+HVC088-39-445     230211.3 +160048  j  -452 H v   #                 2332   7.53   9    232500441  detection @1422 MHz  5 min On/Off
+H231310.2+140223  231311.5 +140200  j  4700 H v   # A749094         2345   8.68  10    232500445  No clear detection 
+H232015.3+143134  232015.3 +143125  j   300 H v   #                 2353   8.67  11    232500449  Possible detection @1427 MHz
+H232209.8+135606  232211.7 +135538  j   500 H v   #                 0001  10.29  12    232500453  No clear detection 
+H232325.2+140352  232326.3 +140331  j 12400 H v   # A749108         0009  11.77  13    232500457  No clear detection
+H233012.7+151455  233013.2 +151440  j   400 H v   #                 0018  11.68  14    232500461  No clear detection
+H233146.7+152206  233147.4 +152149  j  1900 H v   # A749115         0026  13.18  15    232500465  No clear detection
+H234705.4+145559  234705.5 +145548  j   800 H v   #                 0034  11.77  16    232500469  No clear detection
+HVC103-45-182     235552.9 +145802  j  -185 H v   # A749124         0043  11.62  17    232500473  Weak detection @1421.5 MHz  5 min On/Off
+HVC103-45-183     235714.6 +150230  j  -185 H v   # A749125         0055  14.16  18    232500477  No clear detection  4 min On/Off
+H001635.7+142527  001635.8 +142517  j   500 H v   #                 0106  12.40  19    232500481  Possible Detection
+H003019.1+160045  003019.9 +160025  j   700 H v   #                 0115  10.79  20    232500485  Possible Detection @1425 MHz
+HVC121-49-307     004515.4 +141109  j  -307 H v   # A749138         0123   9.93  21    232500489  Weak detection @1421.5 MHz  5 min On/Off
+H004650.5+141410  004651.0 +141356  j   400 H v   #                 0135  12.30  22    232500493  No Clear Detection 
+HVC127-47-308     010237.8 +160752  j  -308 H v   # A749141         0145  10.24  23    232500497  Detection @14221.6 MHz  4 min On/Off
+HVC137-45-218     013444.6 +155758  j  -214 H v   # A749161         0157   5.66  24    232500501  Weak Detection @1421.5 MHz  5 min On/Off
+H014215.2+151658  014215.8 +151643  j   700 H v   #                 0209   6.98  25    232500505  No clear detection
+H014635.5+144120  014635.4 +144111  j  7500 H v   # A114121         0226   6.60  26    232500509  Strong Detection @1386 MHz
+HVC147-44-248     020202.5 +145045  j  -242 H v   #                 0239  10.69  27    232500513  Possible detection @ 1421.2 MHz 5 min On/Off
+HVC145-44-254     015616.6 +150429  j  -249 H v   # A749162         0251  12.26  28    232500517  Detection @1421.5 MHz 5 min On/Off
+HVC145-43+046     015959.4 +160556  j    52 H v   # A749166         0251  12.26  29    232500521  No clear detection 4 min On/Off
+
+
+Stop LST: 0301
+
+
+Please record any notes of importance here  (Remember: you were there; we weren't.)
+
+
+
+

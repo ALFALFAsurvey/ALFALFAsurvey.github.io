@@ -1,0 +1,65 @@
+Log for 2/05/05 am        Observers: RG, BK
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+File:  /share/pserverf.sda3/wappdata/wapp.20050205.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop      Notes
+____________________________________________________________________________________________________
+
+1123 0000 503609988           drift58p1 CALS     112300+135930  19  1         
+          503609994 503610009 drift58p1 CALS
+          503610014           drift58p1 CALS
+          503610022 503610026 drift58p1 CALS
+          
+1123 0000 503610092 503610694 drift58p1  fixAZdr 112300+135930  19  600   6    
+1133 0001 503610697 503611299
+1143 0002 503611302 503611904
+1153 0003 503611907 503612509
+1203 0004 503612512 503613114
+1213 0005 503613117 503613719                                                decJ up by 4"
+
+1224 0006 503613725 503614327 drift58p1  fixAZdr 122342+135933  19  600   10
+1234 0007 503614330 503614932
+1244 0008 503614935 503615538
+1254 0009 503615541 503616143
+1304 0010 503616146 503616748
+1314 0011 503616751 503617353
+1324 0012 503617356 503617958
+1334 0013 503617961 503618563
+1344 0014 503618566 503619168
+1354 0015 503619171 503619773                                                decJ down by 9"
+
+1405 0016 503619795 503620397 drift58p1  fixAZdr 140525+135933  19  600  6
+1415 0017 503620400 503621002
+1425 0018 503621005 503621607
+1435 0019 503621610 503622212
+1445 0020 503622215 503622817
+1456 0021 503622820 503623422                                                 decJ down by 13"
+
+1506 0022 503623443 503624045 drift58p1  fixAZdr 150624+135930  19  600  3
+1516 0023 503624048 503624650
+1526 0024 503624653 503625255                                                 decJ down by 9"
+
+1537 0025 503625264 503625269 
+          503625273 503625277
+          503625282 503625286 
+                    503625293 
+ 
+Newfits at end  0026
+
+Weather: clear at 2:45 am
+
+
+Notes: 
+
+0 - fired CALon/CALof at begininng tonight - response sluggish to do ons/offs
+    (did not take "new Fits file" at end of cal cycle at beginning: "exec busy").
+1 - 3 ON/OFF pairs will do fine. Make sure that to get CALoff recs, you "fire the cal"
+    with the "nocal" option set; to get CALon recs, set option "hcal".
+2 - DecJ increasing by 1.6"/10min at start; by end of 1st set of 6 drift segments,
+    it increases only by 0.2"/10min; could have done a longer loop (12 tomorrow).
+3 - Odd shift in color intensity on waterfall plot aroudn 10:59 UTC in ALFA data display

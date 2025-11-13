@@ -1,0 +1,122 @@
+Log for 04/07/10          Observer: Betsey Adams
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100407.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100408.a2010.****.fits
+
+Zenith strip observing setup
+Az=267.9   ALFAang=-70.0  ZA=4.76   AzG=267.17
+RA@start=0806   RA@end=1645
+RA = LST + 18 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode       ZAdome
+0748 0024  9700092  9700093       drift76p2 fixAZdr   080600+182936 -70.0 600   99   loopend       ZA=4.76d
+0758 0025  9700094  9700095       quicklook ok; power levels ok                                       4.53
+0808 0026  9700096  9700097                                                                           4.35
+0818 0027  9700098  9700099       continuum source                                      ha=17 min; ZA=4.18
+0828 0028  9700100  9700101   command sent to stop cima executive; quicklook and last record ok       4.03
+**restarted observations; small move but no power adjustment; should be able to use same cal values**
+AZ=268.0   ALFAang=-70.0  ZA=4.49 (4.48 of greg)  AzG=267.24
+RA@start=0858
+0839 0029  9700102  9700103          continuum source; quicklook ok                     ha=19 min; ZA=4.48
+0849 0030  9700104  9700105                                                                        ZA=4.28
+0859 0031  9700106  9700107                                                                        ZA=4.13
+0910 0032  9700108  9700109                                                             ha=16 min; ZA=3.98
+0920 0033  9700110  9700111                                                                        ZA=3.86
+0930 0034  9700112  9700113          quicklook ok                                                     3.74
+0940 0035  9700114  9700115                                                             ha=15 min;    3.64
+0950 0036  9700116  9700117                                                                           3.54
+1001 0037  9700118  Aborted                                                                           
+**ZA limit of 3.5 reached; scan aborted and az changed to 268.1; za=3.95 originally; no power adjustment
+**RA@start=1018   AzG=267.20
+1002 0038  9700119  9700120          quicklook ok                                       ha=16 min; ZA=3.95
+1012 0039  9700121  9700122                                                                        za=3.84
+1022 0040  9700123  9700124                                                                           3.75
+1032 0041  9700125  9700126                                                             ha=15 min; ZA=3.67
+1042 0042  9700127  9700128                                                                           3.60
+1052 0043  9700129  9700130                                                                           3.54
+1102 0044  9700131  Aborted    reached za limit
+**ZA limit reached; AZ changed to 268.2; za=4.13 originally; no power adjustment
+**RA@start=1121  AzG=267.39
+1104 0045  9700132  9700133          quicklook, power levels ok                         ha=17 min; ZA=4.13
+1114 0046  9700134  9700135                                                                           4.07
+1124 0047  9700136  9700137                                                                           4.02
+1134 0048  9700138  9700139                                                                           3.99
+1144 0049  9700140  9700141                                                                           3.97
+1154 0050  9700142  9700143          we'll be moving away from za limits after this     ha=16 min;    3.97
+1204 0051  9700144  9700145
+1215 0052  9700146  9700147
+1225 0053  9700148  9700149
+1235 0054  9700150  9800001                                                             ha=17 min
+1245 0000  9800002  9800003          quicklook, power levels ok                                    ZA=4.16
+1255 0001  9800004  9800005
+1305 0002  9800006  9800007
+1315 0003  9800008  9800009
+1325 0004  9800010  9800011
+1335 0005  9800012  Aborted   tried to go to za=-0.0220; az=-218.9
+**Aborted - pointing issues!  Who knows why?  Things looked good before that
+**Telescope started to slew in very crazy directions - power was reset for these drifts
+**Will need a separate cal run from here on out
+RA@start=1355, Az=268.1, AzG=267.25
+1339 0006  9800013  9800014   continuum source? crazy rfi? major power jump in beams 4,5,6        ZA=3.85
+1349 0007  9800015  9800016   quicklook, power levels ok                                             4.00
+1359 0008  9800017  9800018                                                            ha=17 min; ZA=4.15
+1409 0009  9800019  9800020
+1420 0010  9800021  9800022                                                                          4.55
+1430 0011  9800023  9800024
+1440 0012  9800025  9800026                                                                          5.45
+1450 0013  9800027  Aborted  same issue as above - why?!?
+**Aborted, tried to prevent telescope from moving too far
+**Did NOT readjust power levels - same cal as above
+RA@start=1510, Az=267.9, AzG=267.02
+1454 0014  9800028  9800029            quicklook ok                                    ha=15 min; ZA=3.71
+1504 0015  9800030  9800031                                                azG=267.04; ha=16 min; ZA=3.84
+1515 0016  9800032  9800033                                                azG=267.07; ha=16 min; ZA=3.99
+1525 0017  9800034  9800035                                                azG=267.09; ha=17 min; ZA=4.16
+1535 0018  9800036  9800037                                                azG=267.12; ha=18 min; ZA=4.35
+1545 0019  9800038  9800039                                                azG=267.15; ha=19 min; ZA=4.56
+1555 0020  9800040  9800041                                                azG=267.18; ha=20 min; ZA=4.83
+1605 0021  9800042  9800043                                                                          5.16
+1615 0022  9800044  Aborted
+
+LST stop: 1615        RA stop: 1636
+
+NOTES:
+This drift is close to zenith.
+Initially set AZ=268.3 but CIMA attempted to send azimuth to 49 degrees
+Scans were aborted several times and the az was incremented by 0.1 degrees.
+Power was not adjusted for the minor moves so that they can all be done as one cal run.
+There will be slight losses of RA coverage to minute or two loss between az resets.
+
+There will need to be two cal periods.  After fits file 0004, the next drift resulted in non-sensical
+coordinates.
+The drift was aborted but the telescope slewed enough that power levels were adjusted before resuming observing.
+This happened again, but think telescope was caught in time so that power levels were NOT adjusted second time.
+
+This is going to be a fun night to put together...
+
+Fits file 6 shows uniform power increase for indices 131,144,155,167,179
+
+
+TOGS run at end -- not run at start!
+
+Beam 2A seemed fine.
+
+FAA radar ON
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 14.7   K3: 16.0   K4: 15.9   AT 16:19
+70K = K1: 81.9   K2: 90.0   K3: 99.3   K4: 106.9
+
+16K = K1: 14.6   K2: 14.8   K3: 16.0   K4: 16.0   AT 23:08
+70K = K1: 83.2   K2: 91.3   K3: 100.3  K4: 108.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+

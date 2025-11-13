@@ -1,0 +1,36 @@
+Log for 06/09/18      Observer: Amelie
+
+System Configuration:
+FixedAZ Drift Map Cima version 2.2.08 (normal)
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20060918.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20060919.a2010.****.fits
+
+LST  fits  Scan      calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2127 0009 626179377 626179979 drift22p1 FixedAz  2127200+051354  19   600    99 loopend
+2137 0010 626179982 626180584
+2147 0011 626180587 626181189
+2157 0012 626181192 626181794
+2207 0013 626181797 626182399
+2217 0014 626182402 626183004
+2228 0015 626183007 626183609
+2238 0016 626183612 626184214
+2248 0017 626184217 626184819
+2258 0018 626184822 626185424
+2308 0019 626185427 626186029
+2318 0020 626186032 626200234
+2328 0000 626200237 626200839
+2338 0001 626200842 626201444
+2348 0002 626201447 626202049
+2358 0003 626202052 626202654
+0008 0004 626202657 ***aborted
+
+END LST: 0008
+
+Notes:
+
+TOGS run at start only (no time allocated at end)
+No problems.
+Noticed some strong GPS during the second scan

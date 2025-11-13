@@ -1,0 +1,62 @@
+A2899  LBW   14.11.28      Observers: GH, Jonathan Perez, Jorge Padial, Evelin Mayens, Genesis Guerra, Will Harney    
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2899.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2899_141128.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to: /share/olcor/corfile.28nov14.a2899.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include estimate of S/N ratio)
+A214731.0+220950  214731.0 +220950  j  1800 H v   # U011813   2140  4.31    1   433200419    Detection @1412MHz SN=50. observed galactic HI @1420 
+A214734.4+220909  214734.4 +220909  j  1800 H v   # A311162   2148  3.88    2   433200423    Detection @1412MHz SN=30. observed galactic HI @1420
+A220052.0+300409  220052.0 +300409  j  5000 H v   # A322661   2159  11.8    3   433200427   No detection
+A220752.5+294420  220752.5 +294420  j  5000 H v   # A322662   2209  11.5    4   433200431   No detection 
+A220816.5+304000  220816.5 +304000  j  5000 H v   # A322496   2216  12.5    5   433200435    No detection
+A223540.6+233627  223540.6 +233627  j  1300 H v   # A320902   2226  5.78    6   433200439    No detection. 5 min integration source
+H225533.7+314118  225532.1 +314110  j  6800 H v   # A321452   2241  13.8    7   433200443    Detection @1388MHz
+B233356.0+262234  233626.7 +263919  j 10000 H v   # A331232   2251  13.4    8   433200447    RFI on the off-source @1381MHz (GPS)
+B233416.0+262306  233646.2 +263945  j  8800 H v   # A331234   2300  12.1    9   433200451    Detection @1380MHz SN=9. Detection @1375 SN=5.
+A233756.5+271636  233756.5 +271636  j  8400 H v   # A331536   2307  11.5   10   433200455   No detection  
+A234217.3+281623  234217.3 +281623  j  8700 H v   # A331287   2315  11.8   11   433200459   Detection @1380 SN=6. 5min integration source
+H234533.8+305950  234536.0 +310001  j  7900 H v   # A333470   2328  13.4   12   433200463   No detection 
+A234345.9+355733  234345.9 +355733  j  5000 H v   # A335264   2338  17.8   13   433200467    Detection @1397 MHz. SN=7
+A235318.4+274220  235318.4 +274220  j  7900 H v   # A330992   2349   9.5   14   433200471    Noisy baseline. possible detection at 1383 MHz
+A235348.3+272504  235348.3 +272504  j  8000 H v   # A330996   2357   9.2   15   433200475    Detection at 1383 MHz. SN = 2
+H001243.7+275741  001244.6 +275815  j  7500 H v   # A102951   0005   9.8   16   433200479    Detection @ 1386MHz. SN= 7
+H001442.9+302436  001451.4 +302507  j  7200 H v   # A102843   0014  12.2   17   433200483    Strong RFI @ 1381 MHz (GPS)
+H005530.7+231407  005531.0 +231404  j  5100 H v   # A103507   0025   8.8   18   433200487    Detection @ 1396 MHz. SN = 7
+A005315.4+323238  005315.4 +323238  j  5000 H v   # A103413   0035  14.9   19   433200491    No detection 
+A005439.8+315934  005439.8 +315934  j  6700 H v   # A101732   0043  13.9   20   433200495   Off centered detection @1395MHz SN=10
+A010708.8+331839  010708.8 +331839  j  4600 H v   # A114144   0052  15.5   21   433200499   Possible detection SN=2
+A010747.7+321317  010747.7 +321317  j  4900 H v   # A112542   0100  14.1   22   433200503   No detection.
+A010858.9+321424  010858.9 +321424  j  4500 H v   # A111957   0108  14.0   23   433200507   Detection 1400MHz SN=6.
+A011916.3+345129  011916.3 +345129  j  4900 H v   # A110816   0117  16.6   24   433200511   Detection 1398MHz SN=12.
+A012001.7+333920  012001.7 +333920  j  3800 H v   # A111960   0125  15.2   25   433200515    possible detection @1403MHz SN=4
+A012214.5+311517  012214.5 +311517  j  4800 H v   # A112545   0134  13.2   26   433200519    Detection @1397.5MHz SN=8  
+A012229.1+340224  012229.1 +340224  j  4900 H v   # A111963   0143  16.4   27   433200523    Detection @1397.5MHz SN=4
+A012406.1+340045  012406.1 +340045  j  6700 H v   # A115573   0151  16.9   28   433200527    Detection @1389MHz SN=7. GPS radar in off
+A013458.0+335525  013458.0 +335525  j  5200 H v   # A110422   Not observed. Ran out of time.   
+A013603.2+341936  013603.2 +341936  j  7000 H v   # A114728      
+H015956.3+225137  015957.4 +225143  j  8200 H v   # A114654      
+H022824.6+221425  022828.1 +221355  j  4300 H v   # A124040      
+A022141.7+275854  022141.7 +275854  j  3000 H v   # A124783      
+H030248.5+350443  030247.9 +350428  j  4800 H v   # A131430      
+M030538.5+361013  030538.5 +361013  j   100 H v   #           high ZA; if time
+    
+Notes (be sure to write notes here so we can keep track of anything relevant)
+  Tiedowns enabled.
+  S/N estimated as peak over rms.
+  Had lots of fun learning about the planetary radar!
+
+

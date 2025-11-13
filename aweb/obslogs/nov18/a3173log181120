@@ -1,0 +1,54 @@
+A3173 LBW   18.11.20   Observers: Denn, Ribaudo, Luna, Harris, Patterson, McMichael
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3173.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3173_181120.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20181120.a3173.****.fits  
+                     /share/wappdata.now/wapp.20181121.a3173.****.fits   (if after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S220849.2+244146  220849.2 +244146  j     0 H v   # A320047     2212  6.49  0000   832400109   det @ 1392 MHz (6300 km/s), S/N~12
+S221906.2+243553  221906.2 +243553  j     0 H v   # A320149     2225  6.46  0001   832400113   possible det @ 1383 MHz (8300 km/s) S/N~10, something in the off at 1386 MHz
+S224745.5+285426  224745.5 +285426  j     0 H v   # A321490     2238  10.92 0002   832400117   tiedowns disabled midscan, WAPP crash
+S224745.5+285426  224745.5 +285426  j     0 H v   # A321490     2246  10.7  0003   832400119   det @ 1388 MHz (7000 km/s), S/N~13
+S230343.8+300505  230343.8 +300505  j     0 H v   # A333356     2258  11.94 0004   832400123   *posssible det @ 1390 MHz (6500 km/s), source has off counterpart
+S230357.0+300936  230357.0 +300936  j     0 H v   # A012335     2210  12.0  0005   832400127   gps removed, det@ 1392 MHz (6100 km/s), something as usual around 1381 MHz, SN~9-11
+S231949.5+284743  231949.5 +284743  j     0 H v   # A332305     2323  10.58 0006   832400131   gps removed,det @1392 MHz (6000 km/s), SN~7, similar to source above 
+S232023.7+275149  232023.7 +275149  j     0 H v   # A332918     2336  10.2  0007   832400135   det @ 1403 MHz (3600 km/s), SN~9-11
+S235158.9+272015  235158.9 +272015  j     0 H v   # A330980     2349  9.1   0008   832400139   once polarized there is no visible detection, loose maybe between 1380-84 MHz
+S001018.8+290816  001018.8 +290816  j     0 H v   # A101063     0002  11.1  0009   832400143   det @ 1383 MHz (8000 km/s), noisy, SN~6
+S003205.0+234555  003205.0 +234555  j     0 H v   # A104813     0015  6.9   0010   832400147   possible detection at 1388 MHz (9200km/s), w/o /pol it is a convincing detection
+S004634.2+294330  004634.2 +294330  j     0 H v   # A100542     0029  12.2  0011   832400151   det @ 4800 km/s (1398 MHz), SN~9
+S004703.7+280402  004703.7 +280402  j     0 H v   # A100556     0042  9.9   0012   832400155   det @ 5200 km/s (1396 MHz), SN~12
+S005801.2+304218  005801.2 +304218  j     0 H v   # A100687     0055  12.5  0013   832400159   det @ 1398 MHz (4800 km/s) (same values as 0011), SN~5-6
+S010000.4+302411  010000.4 +302411  j     0 H v   # A113884     0107  12.3  0014   832400163   gps removed, det @ 1398 MHz (4800 km/s) again! SN~10 
+S011928.0+353818  011928.0 +353818  j     0 H v   # A115572     0121  17.4  0015   832400167   gps removed, possibly something at 1398 but more faint w/o gps, also @ 4800 km/s 
+S012401.9+313804  012401.9 +313804  j     0 H v   # A113920     0134  13.6  0016   832400171   det @ 1399 MHz (4600 km/s) SN~10
+S012512.7+291152  012512.7 +291152  j     0 H v   # A115841     0147  12.0  0017   832400175   det @ 7400 km/s (1386 MHz), SN~5
+S015831.8+323609  015831.8 +323609  j     0 H v   # A115563     0200  14.4  0018   832400179   possible detection @ 1399 MHz (4433km/s), SN 7.6 after smoothing (noisy)
+S021514.0+310534  021514.0 +310534  j     0 H v   # A122979     0212  12.9  0019   832400183   detection at ~1397/98 MHz (4892km/s). SN 11.9
+S022135.7+313425  022135.7 +313425  j     0 H v   # A123087     0224  13.3  0020   832400187   possible detection @ 1397 MHz (5069km/s). SN~5? SN 8.2 after smoothing
+S023436.2+295754  023436.2 +295754  j     0 H v   # A120354     0237  11.7  0021   832400191   possible detection @ 1396 MHz (~5200km/s), but less clear after /pol. polarizations on board 2 cross, so baselines will be different.
+S025858.6+351645  025858.6 +351645  j     0 H v   # A124777     0251  17.1  0022   832400195   detection at ~1396.5 MHz (~5050km/s), SN~5
+S025202.9+245519  025202.9 +245519  j     0 H v   # A122902                                    ran out of time - no data
+H030215.5+303118  030215.5 +303118  j     0 H v   # A131380cal   3 mins, if time               ran out of time - no data
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal   3 mins, if time               ran out of time - no data
+                   
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+Tiedowns disabled @ file#0002, WAPP crash @ file#0002, multiple detections at 1398 MHz. 
+                                                                 

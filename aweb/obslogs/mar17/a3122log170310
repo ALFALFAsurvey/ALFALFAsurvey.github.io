@@ -1,0 +1,34 @@
+A3122  LBW   17.03.10      Observers: LL    
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3122_mar17.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3122_170310.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to: /share/olcor/corfile.10mar17.a3122.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include estimate of S/N ratio)
+
+S074616.7+065409  074616.7 +065409  j  9976 H v   # A174727   0754   11.6    1    706900697   5 minute ON/OFF by mistake. Detection @ 10000km/s, GPS in off 
+S074639.1+264750  074639.1 +264750  j  4708 H v   # A174742   0812   10.1    2    706900701   no detection
+S074741.4+264818  074741.4 +264818  j  4653 H v   # A174743   0820   11.0    3    706900705   no detection  
+S075149.9+272421  075149.9 +272421  j  7962 H v   # A174744   0828   12.0    4    706900709   no detection, but washed out by GPS??
+S085547.0+131241  085547.0 +131241  j  4027 H v   # A188812   0843    6.1    5    706900713   detection at 4100 km/s
+S091803.4+224502  091803.4 +224502  j  6206 H v   # A-50000   0855    7.0    6    706900717   detection at 6200 km/s
+S100025.0+205806  100025.0 +205806  j  5520 H v   # A208768   0906   13.3    7    706900721   no detection
+S092536.0+112822  092536.0 +112822  j  2882 H v   # A198420   0917    7.3    8    706900725   detection at 2900 km/s
+S100528.4+040704  100528.4 +040704  j  6740 H v   # A208489[if time]    - not enough time.
+
+Notes:
+Lots of GPS tonight. A bit of a last start since the previous person went over, and I did a 5 minute on/off by accident. But 
+else pretty smooth.

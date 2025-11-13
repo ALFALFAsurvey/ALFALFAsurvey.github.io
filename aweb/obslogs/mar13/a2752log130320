@@ -1,0 +1,74 @@
+A2752 LBW   13.03.20      Observers: Parker Troischt, Jesse Watson, Elijah Bernstein-Cooper
+
+CIMA version:          The Stable version (Default) (Ver 3.3.05 2013-02-22 15:46)
+Configuration file:    a2752_mar13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2752_130320.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.20mar13.a2752.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H074441.1+250833  074443.7 +250826  j   800 H v   # A171459  calib  0807  ?    1      307900400  Strong detection at 1416 MHz
+H074441.1+250833  074443.7 +250826  j   800 H v   # A171459  calib  0816  9.7  2      307900404  Same source as above
+H080546.0+301330  080547.7 +301401  j  2300 H v   # A180036         0825  12.6 3      307900408  Detection at 1409 MHz, broad width  
+H084459.0+303227  084500.3 +303227  j  2100 H v   # A182584         0834  12.4 4      307900412  Detection at 1410 MHz
+H085135.0+305730  085132.0 +305803  j  2000 H v   # A721331         0842  12.8 5      307900416  Detection at 1411 MHz, likely spiral galaxy with OC
+H085532.3+311230  085533.2 +311242  j  2100 H v   # A180545         0850  12.9 6      307900420  Detection at 1411 MHz  
+H091200.0+313426  091159.4 +313536  j   800 H v   # A194019         0858  13.6 7      307900424  Very strong detection at 1416 MHz...RFI?
+HVC0930.2+241217  093013.2 +241217  j   200 H v   #          UCHVC  0909  7.8  8      307900428  Strong detection at 1419.5 MHz
+HVC0932.2+233744  093206.4 +233744  j   200 H v   #          UCHVC  0917  6.5  9      307900432  Detection at 1419.5 MHz  
+H094522.0+230344  094522.3 +230415  j  2200 H v   # A005214  5 mins 0925  6.8  10     307900436  non-detection      
+H094651.6+314640  094653.0 +314745  j  1400 H v   # A194085         0940  13.5 11     307900440  Detection at 1414 MHz  
+H094819.4+304523  094821.3 +304534  j  1500 H v   # A194090         0948  12.4 12     307900444  Detection at 1414 MHz  
+H095429.3+320330  095430.0 +320342  j  1400 H v   # A194099         0957  13.7 13     307900448  Detection at 1414 MHz
+A095636.8+290258  095636.8 +290258  j  1000 H v   # A198585         1006  10.8 14     307900452  Strong detection at 1418 MHz    
+H102903.4+282235  102904.0 +282155  j  1500 H v   # A208577  5 mins 1015  10.5 15     307900456  Possible detection at 1414 MHz
+H103223.5+282537  103221.2 +282512  j  1600 H v   # A201128         1027  10.1 16     307900460  Possible detection at 1413 MHz
+H105443.3+280654  105441.8 +280731  j  1600 H v   # A731524         1036  10.7 17     307900464  Non detection  
+H105647.5+310550  105645.2 +310533  j  1600 H v   # A200698         1044  13.0 18     307900468  Detection at 1413 MHz
+H110443.1+320717  110445.7 +320719  j  1800 H v   #                 1053  14.0 19     307900472  Detection at 1412 MHz
+H110701.2+302508  110658.9 +302512  j  1600 H v   #                 1101  12.1 20     307900476  Detection at 1413 MHz  
+H112524.2+271820  112531.7 +271741  j  1000 H v   # A749202  5 mins 1110  9.6  21     307900480  non-detection
+H112832.2+282340  112832.2 +282340  j  -500 H v   # A219511  5 mins 1122  10.1 1      308000000  Non-detection   
+H115352.9+311019  115354.2 +310957  j  2800 H v   # A215998         1136  13.4 2      308000004  Detection at 1407 MHz  
+H120851.0+302450  120854.1 +302451  j   300 H v   #                 1144  13.4 3      308000008  Detection at 1419 MHz  
+H121343.6+295912  121348.4 +295731  j   200 H v   # A732009         1152  12.7 4      308000012  Detection at 1419.5 MHz
+H121626.8+313454  121624.7 +313509  j  1500 H v   # A724633         1200  12.0 5      308000016  non-detection  
+H122228.4+295453  122232.1 +295341  j   900 H v   # A007443         1208  12.0 6      308000020  Detection?  
+H122928.9+273652  122928.9 +273652  j  1000 H v   # A749238         1217  9.7  7      308000024  non-detection
+A123702.3+330501  123702.3 +330501  j  1000 H v   # A229363  5 mins 1227  14.9 8      308000028  non-detection
+A125356.1+340601  125356.1 +340601  j   700 H v   # A226718         1240  16.0 9      308000032  Very strong detection at 1417 MHz
+H122228.4+295453  122232.1 +295341  j   900 H v   # A007443         1251  13.1 10     308000035  Had extra time, reobserved this one, but we stopped after on
+A125356.1+340601  125356.1 +340601  j   700 H v   # A226718         1300  15.8 11     308000036  Same observation, science works! 
+H131317.8+312418  131318.8 +312449  j   800 H v   # A239104         1308  13.1 12     308000040  Strong detection at 1417 MHz
+H131354.0+312845  131355.8 +312854  j   700 H v   #                 1316  13.1 13     308000044  non-detection
+H131944.8+260557  131944.1 +260530  j  1900 H v   # A732599         1326  7.8  14     308000048  Galaxy! OC at similar redshift
+H140050.8+263309  140053.6 +263411  j  2600 H v   # A249376         1336  10.1 15     308000052  Detection at 1408 MHz 
+H140433.1+254650  140433.1 +254650  j   300 H v   # A249392         1343  8.9  16     308000056  Oscillating baseline, no detection  
+H141224.8+251322  141225.0 +251240  j   900 H v   # A749559         1352  8.4  17     308000060  No detection
+HVC1418.8+262452  141850.1 +262452  j   300 H v   # A249374         1400  9.1  18     308000064  Possible detection at 1417MHz
+H141952.2+234330  141953.9 +234340  j  2800 H v   # A249557         1409  5.9  19     308000068  Detection at 1407 MHz, spiral galaxy
+H141819.2+303850  141820.3 +303854  j  1300 H v   #                 1420  12.3 20     308000072  non-detection
+H142901.4+313915  142901.3 +313940  j  2000 H v   # A748506         1428  13.3 21     308000076  detection at 1411 MHz galaxy with OC of similar redshift
+H144149.7+302530  144153.3 +302527  j  2400 H v   # A726778         1436  12.1 22     308000080  possible detection at 1409 MHz 
+H150355.1+314037  150357.1 +314046  j   400 H v   #                 1447  14.0 23     308000084  non-detection
+H152402.8+194820  152404.1 +194759  j   400 H v   # A258678         1456  7.0  24     308000088  non-detection
+HVC1521.1+234634  152108.6 +234634  j  -100 H v   #          UCHVC  1505  6.6  25     308000092  detection at 1421 MHz 
+H153909.7+260133  153911.4 +260129  j  1800 H v   # A749349  calib  1514  9.6  26     308000096  strong detection at 1412 MHz
+H154645.8+280930  154643.4 +280943  j  2100 H v   # A749350         1523  11.3 27     308000100  detection at 1411 MHz
+H154941.8+253304  154941.7 +253216  j  1500 H v   # A749574         1532  8.3  28     308000104  non-detection
+H155221.1+302048  155222.6 +302053  j  1400 H v   #                 1541  12.3 29     308000108  non-detection
+H155245.8+305145  155247.4 +305152  j   400 H v   #                 1549  12.5 30     308000112  non-detection
+H160133.6+305022  160135.1 +305029  j   900 H v   #                 1557  12.5 31     308000116  non-detection
+H162126.6+283815  162128.3 +283824  j   900 H v   # A010351 calib   1606  10.9 32     308000120  strong detection at 1416 MHz
+H163802.5+262651  163802.9 +262710  j  4300 H v   # A262736 calib (if time) ***did not have time to make this observation***
+
+We had 30 minutes extra time so we observed the first target twice
+**stop lst--1614

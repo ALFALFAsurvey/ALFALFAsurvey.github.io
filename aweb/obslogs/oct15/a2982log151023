@@ -1,0 +1,55 @@
+A2982 LBW   15.10.23   Observers: LL
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_151023.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20151023.2982.****.fits  
+                     /share/wappdata.now/wapp.20151024.2982.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S222412.7+290949  222412.7 +290949  j     0 H v   # A323031    21h35m 15.8  0000   529600100  no det? hints @ 1406, 1395MHz. FAA on 
+S222739.8+291809  222739.8 +291809  j     0 H v   # A323033    21h47m 14.5  0001   529600104  no det? Hint @1389MHz (6600 km/s)?
+S223215.9+285405  223215.9 +285405  j     0 H v   # A323038    21h59m 13.1  0002   529600108  det @1382MHz, 8400km/s sn=2   
+S224022.5+324018  224022.5 +324018  j     0 H v   # A323074    22h13m 15.7  0003   529600112  no det? possible det @14600km/s
+S224602.5+304728  224602.5 +304728  j     0 H v   # A322993    22h25m 13.5  0004   529600116  weak (wide?) det @1372MHz (10400 km/s) sn=2     
+S225136.1+313827  225136.1 +313827  j     0 H v   # A322616    22h37m 13.8  0005   529600120  det @1388MHz 6950 km/s, sn=4-5
+S225315.2+311848  225315.2 +311848  j     0 H v   # A321936    22h49m 13.1  0006   529600124  det @1389MHz 6700 km/s, sn=5
+S230720.1+280236  230720.1 +280236  j     0 H v   # A335306    23h02m  9.9  0007   529600128  det @1375MHz 9900 km/s, sn=6
+S232348.3+285815  232348.3 +285815  j     0 H v   # A336096    23h15m 10.9  0008   529600132  weak det @1376MHz 9700km/s sn<2      
+S234614.4+281717  234614.4 +281717  j     0 H v   # A335451    23h28m 11.0  0009   529600136  det @1378MHz 9000 km/s, sn=3-4 cont=-55mJy  
+S235019.6+282955  235019.6 +282955  j     0 H v   # A336103    23h40m 10.6  0010   529600140  det@1411MHz 2000 km/s!,sn=3 & 1388MHz/7000km/s,sn=5
+S235227.5+285018  235227.5 +285018  j     0 H v   # A335521    23h52m 10.6  0011   529600144  no detection 
+S000513.7+285304  000513.7 +285304  j     0 H v   # A101688    00h04m 10.6  0012   529600148  det @1382MHz 8400km/s sn=4, also det in off @ 1384MHz  
+S002016.7+291104  002016.7 +291104  j     0 H v   # A104778    00h16m 11.0  0013   529600152  det @1360MHz 13200km/s sn=3; possible det @300km/s
+S004956.9+285834  004956.9 +285834  j     0 H v   # A104472    00h29m 11.8  0014   529600156  det @1380 8800 km/s sn=5
+S010411.6+305250  010411.6 +305250  j     0 H v   # A115358    00h42m 13.6  0015   529600160  det @1422MHz -400km/s sn=10; maybe something @4200km/s, GPS in off.   
+S010630.1+325650  010630.1 +325650  j     0 H v   # A115371    00h55m 15.0  0016   529600164  det @1397MHz 5000km/s sn=6; possible det @1417MHz 700km/s !?
+S011631.5+305814  011631.5 +305814  j     0 H v   # A115792    01h07m 12.9  0017   529600168  det @1362MHz? 12600km/s sn=4, but near rfi in other scans. other stuff here is likely just baseline ripples
+S012338.4+325338  012338.4 +325338  j     0 H v   # A114472    01h20m 14.7  0018   529600172  det @1392MHz 6000km/s sn=3-4  
+S012638.1+314435  012638.1 +314435  j     0 H v   # A115447    01h32m 13.5  0019   529600176  det @1398MHz 4600km/s sn=2-3
+S013810.2+305037  013810.2 +305037  j     0 H v   # A115820    01h45m 12.7  0000   529700003  det @1371MHz 10800km/s sn=7   
+S015108.1+310503  015108.1 +310503  j     0 H v   # A115533    01h57m 12.9  0001   529700007  det @1398MHz 4700km/s sn=5 
+S015359.2+315644  015359.2 +315644  j     0 H v   # A115548    02h09m 14.1  0002   529700011  det @1359MHz 13400km/s sn=3 ?   
+S014853.9+261517  014853.9 +261517  j     0 H v   # A115528    02h22m 11.0  0003   529700015  det @1384MHz 7900km/s sn=4  
+S021221.9+283427  021221.9 +283427  j     0 H v   # A124690    02h35m 11.4  0004   529700019  det @1370MHz 11000km/s sn=5, maybe also 1383MHz 8000km/s  
+S022355.6+260035  022355.6 +260035  j     0 H v   # A124731    02h48m  9.4  0005   529700023  uncertain, strong continuum
+S023613.4+251028  023613.4 +251028  j     0 H v   # A125155    03h01m  8.8  0006   529700027  no det?
+
+                                                                 
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+Slightly late start since I couldn't get ahold of the operator until 4 minutes before 
+the run,:/ and we needed a fairly long slew.
+FAA radar is on, and there is recurrent low level stuff at 1364 MHz, and around 1405 MHz. 

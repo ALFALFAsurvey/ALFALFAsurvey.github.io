@@ -1,0 +1,106 @@
+Log for 11.09.27 (27Sep2011)        Observers: Jess O'Connor and Derek Fertig
+
+System Configuration:  a2010_az265_2010.conf
+CIMA version     3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda3/wappdata/wapp.20110927.a2010.****.fits
+          /share/pserverf.sda3/wappdata/wapp.20110928.a2010.****.fits
+
+Zenith strip observing. 
+****
+****   Az=250.0   ALFAang= -50.0  ZA=4.4  ZAG=4?? AzG=??
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2146  RA@end=0329
+      RA = LST + 17 min
+
+
+LST  fits   Scan      calscan   Source    Pattern   Start coords. ang  time loop calmode  ZAdome
+2129 0020  127000159  127000160 drift81p2  fixZAdr  214600+194236 -50  600   99  loopend          GPS burst in channel 2. 
+                                                                               Some RFI from beam 4A amplifier early on, but it's turned off.  
+2139 0021  127000161  127000162                                                Checked power levels. Odd RFI on Beam 6. Looks a bit elevated on
+                                                                               quicklook plots, but not horrible. Beam 5A might be dead.  
+                                                *** SEE NOTE AT BOTTOM ADDED BY MPH 9/28****
+2149 0022  127000163  127000164            Last minute of 21 the operator turned off 5A, RFI disappeared. Turned it back on, GPS burst at UTC 0150
+                                            ZA=4.28. RFI from beam 5A came back later. 
+2159 0023  127000165  127000166            Still have intermittent RFI, especially bad in 5A. Quicklook plots look better.
+2209 0024  127000167  127000168            ZA=4.29 RA=2226 Still have some RFI, but it's improving a bit. Power levels are fine. 
+2219 0025  127000169  127000170            ZA=4.29 RA=2236 Power levels are fine, the RFI seems to be gone. Quicklook plots look good. 
+2229 0026  127000171  127000172            Quicklook is okay. 
+2240 0027  127000173  127000174            ZA=4.30 RA=2257 Quicklook is fine. Power levels are good. 
+2250 0028  127000175  127000176            Quicklook plot is good. 
+2300 0029  127000177  127000178       
+2310 0030  127000179  127000180            Quicklook fine. 
+2320 0031  127000181  127000182            RA=2338 ZA=4.31 Quicklook fine. 
+2330 0032  127000183  127000184            Quicklook is good. 
+2341 0033  127000185  127000186  
+2351 0034  127000187  127100001            ZA=4.31 RA=0009 Quicklook and power levels are good. 
+0000 0000  127100002  127100003            ZA=4.30 
+0011 0001  127100004  127000005            ZA=4.30 RA=0028 Checked quicklook. 
+0021 0002  127100006  127100007  
+0031 0003  127100008  127100009 
+0042 0004  127100010  127100011            ZA=4.30 RA=0058 Power levels and waterfall plots look fine. 
+0052 0005  127100012  127100013 
+0102 0006  127100014  127100015            Power levels are good. ZA=4.29 RA=0119 
+0112 0007  127100016  127100017            Quicklook is fine. 
+0122 0008  127100018  127100019            ZA=4.29 RA=0138 
+0133 0009  127100020  127100021            ZA=4.28 RA=0148 Quicklook fine. 
+0143 0010  127100022  127100023 
+0153 0011  127100024  127100025            Quicklook is fine. 
+0203 0012  127100026  127100027 
+0213 0013  127100028  127100029            Quicklook okay. 
+0223 0014  127100030  127100031            Quicklook okay. 
+0233 0015  127100032  127100033            RA=0229 ZA=4.25
+0243 0016  127100034  127100035
+0253 0017  127100036  127100037 
+0303 0018  127100038  127100039            Power levels are good.  
+0315 0019  127100040   ABORTED             ZA=4.22 RA=0329                           
+                                                                                                 
+LST stop:0315       RA stop= 0329 (MPH)
+
+At the bottom, add notes regarding:
+-- TOGS run at start.
+-- FAA radar ON.
+-- Beam 4A is dead. The amplifier was on at the beginning of the run, but it was turned off 
+early. We had some odd RFI that went away when beam 5A was turned off and 
+reset. There were a few GPS bursts early in the night. WAPP writeout 
+error: ERROR: BIG TIME LOGIC ERROR 
+when we aborted the last file, but it said "WAPP successfully aborted" 
+after.     
+
+*** Note added by Martha 9/28
+*** Phil and I have independently verified that there was no problem with RFI or with
+    Beam 5A at the beginning of the night. However, Beam 5A was apparently turned off 
+    at about record 541 of fitsfile 0021; it was turned back on in the first 10second of
+    fitsfile22, and then turned off again for another short time at rec 435.
+    It is speculated that the observers were having problems with the waterfall plot
+    displays, perhaps because the autoscaling was including the bad beam, and may
+    have mistaken the spikey bandpass for the dead beam 4A as RFI in beam 5A
+    (given that quicklook labels the beams 1-7 not 0-6). 
+    I have added a section to the "common rfi" page to warn about this.
+    
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 13.5  K3: 15.5   K4: 15.4   AT 18:00
+70K = K1: 87.5  K2: 88  K3: 94.9  K4: 103.1
+
+16K = K1: 14.4   K2: 13.5  K3: 15.2   K4: 15.4   AT 22:00
+70K = K1: 87.3  K2: 87.8  K3: 94.9  K4: 103.2
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered 
+LBW Covers:  Not Covered 
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT 16:00
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:00
+				=>certify our blanker is locking on
+

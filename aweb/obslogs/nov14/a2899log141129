@@ -1,0 +1,57 @@
+A2899  LBW   14.11.29      Observers: GH, Will Harney, Genesis Guerra
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2899search.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO:   10GHz to 1500     center varies   (note!)
+  Backend: WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+      Board 1 1415.405751786 
+      Board 2 1395.405751786
+      Board 3 1355.405751786   **note
+      Board 4 1375.405751786
+
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2899_141129.cmd
+Mode:                WAPP search mode
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to:     /share/pserverf.sda3/wappdata/wapp.20141129.a2899.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+**** NOTE**** This run is a test of the WAPP-based "search mode".
+              Configuration file:   a2899search.conf 
+              Here, since B3 is bad, we set 3rd freq band to B4 and lowest freq to bad B3
+              Sources with names beginning with "S" run for 5mins ON+OFF
+              Other sources are 3mins ON-OFF
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include estimate of S/N ratio)
+H220058.2+273721  220059.5 +273651  j     0 H v   # A321196cal not observed because telescope started at ~600 degrees. Moved telescope to ~300 instead.
+H220841.1+245624  220842.2 +245624  j     0 H v   # A321315    2155   7.39   0     433300179  det @ 6400 km/s, SN=4, GPS present
+H220949.0+302307  220947.0 +302335  j     0 H v   # A321408cal 2205  12.19   1     433300183  det @ 4800 km/s, SN=9
+S225329.8+254710  225329.8 +254710  j     0 H v   # A322667    2215  11.72   2     433300187  det @ 7500 km/s, SN=12
+S225320.5+290030  225323.4 +290051  j     0 H v   # A321492    2228  12.30   3     433300191  det @ 3100 km/s, SN=4
+S230658.5+293754  230658.5 +293754  j     0 H v   # A335282    2240  12.98   4     433300195  det @ 9000 km/s, SN=4
+S233418.0+252008  233418.0 +252008  j     0 H v   # A335275    2253  11.91   5     433300199  No detection.
+S233523.6+251000  233523.6 +251000  j     0 H v   # A335279    2306   9.84   6     433300203  det @ 9200 km/s, SN=4
+H235449.1+275447  235451.4 +275439  j     0 H v   # A332320    2319  12.75   7     433300207  det @ 7000 km/s, SN=5
+S234303.1+343028  234303.1 +343028  j     0 H v   # A335285    2329  16.60   8     433300211  det @ 10400 km/s, SN=3, GPS present
+S234114.9+350437  234114.9 +350437  j     0 H v   # A335286    2341  16.84   9     433300215  No detection.
+S000116.9+310607  000116.9 +310607  j     0 H v   # A104289    2354  12.96  10     433300219  det @ 12500 km/s, SN=4  
+S000359.4+343818  000359.4 +343818  j     0 H v   # A104295    0008  16.41  11     433300223  det @ 5100  km/s, sn=7
+S000703.1+341405  000703.1 +341405  j     0 H v   # A104306    0020  16.22  12     433300227  det @ 10300 km/s, sn=3
+S000122.0+314327  000122.0 +314327  j     0 H v   # A104290    0032  15.13  13     433300231  possible detection at 11800 km/s, sn=2
+S004311.5+344016  004311.5 +344016  j     0 H v   # A104559    0045  16.43  14     433300235  det @ 6200 km/s, sn=7
+S010137.0+354234  010137.0 +354234  j     0 H v   # A115352    0058  17.49  15     433300239  det @ 7700 km/s, sn=8
+S011727.8+340340  011727.8 +340340  j     0 H v   # A115400    0110  15.90  16     433300243  det @ 4900 km/s, sn=7
+S013420.8+342315  013420.8 +342315  j     0 H v   # A115476    0123  16.36  17     433300247  det @ 5700 km/s, sn=2
+S014002.3+310231  014002.3 +310231  j     0 H v   # A115481    not observed 
+                                                                 
+Notes (be sure to write notes here so we can keep track of anything relevant)
+  Telescope started at ~600 degrees azimuth, so we started late and skipped the first calibrator.
+  Tiedowns enabled.
+  Board 3 is pretty borked (bandpass is un /stable in time), and has been relegated to the lowest frequency
+  Our friend the FAA Radar is back. How I missed it!
+  S/N estimated as peak over rms.
+

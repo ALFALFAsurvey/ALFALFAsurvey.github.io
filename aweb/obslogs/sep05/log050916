@@ -1,0 +1,68 @@
+Log for 05/09/16
+Observers: M. Haynes, B. Kent
+                                                                           
+System Configuration
+                                                                           
+FixedAz Drift Map CIMA expanded version
+                                                                           
+Files:/share/pserverf.sdb1/wappdata/wapp.20050916.a2010.****.fits
+      /share/pserverf.sdb1/wappdata/wapp.20050917.a2010.****.fits
+                                                                           
+filecreator: /share/a2010-2/data/05.09.16
+                                                                           
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop  DecJ off  Notes
+_______________________________________________________________________________
+2110 0003 525978780 525979382 drift121p1  FixedAz 211010+290442 19 600  50
+2120 0004 525979385 525979986
+2130 0005 525979990 525980591
+2140 0006 525980595 525981196
+2150 0007 525981200 525981801
+2200 0008 525981805 525982406
+2210 0009 525982410 525983011
+2220 0010 525983015 525983617
+2231 0011 525983620 525984221
+2241 0012 525984225 525984826
+2251 0013 525984830 525985431
+2301 0014 525985435 525986036
+2311 0015 525986040 526000241
+2321 0000 526000245 526000846
+2331 0001 526000850 526001451
+2341 0002 526001455 526002056
+2351 0003 526002060 526002661
+0002 0004 526002665 526003266
+0012 0005 526003270 526003871
+0022 0006 526003875 526004476 
+0032 0007 526004480 526005081
+0042 0008 526005085 526005687
+0052 0009 526005690 526006291
+0102 0010 526006295 526006896
+0112 0011 526006900 526007501
+0122 0012 526007505 526008106  Nothing recorded after this scan??  File appears OK here
+	
+		********** NETWORK DROP ***************
+
+     0013 BLANK FILE
+0155 0014 526009428 526010030		Resume normal operation    
+0205 0015 526010033 526010634
+0215 0016 526010638 526011239
+0225 0017 526011243 526011844
+0235 0018 526011848 526012449
+0245 0019 526012453 526013055
+0255 0020 526013058 526013659
+0305 0021 Abort
+
+END LST: 0305 
+                                                                           
+Notes:
+
+
+1.  TOGS successfully started
+2.  Network appeared to drop all connections to Arecibo around 2:15 AST.  Called Willie
+Torres and he informed B.Kent that the countdown had stopped.  Attemped to close windows
+on Vieques, Culebra, and caborojo.  Screens had froze.  Logout/login of Sun
+machines.  Attemped to ssh to remote.naic.edu.  No success with login or ping
+attempts.  Informed Willie Torres, who reports he cannot see cornell.edu and then called
+Arun V.  Network/observing resumed at
+2:37 AST.  Cause unknown.  Be careful with File 0012 from Sept. 17.
+3. TOGS completed

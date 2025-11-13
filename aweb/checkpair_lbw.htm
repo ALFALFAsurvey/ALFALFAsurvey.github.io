@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA LBW Observing</title> 
+  </head>
+<body bgcolor="ffffff">
+
+
+<center><h2 style="color: rgb(10,10,150);">ALFALFA L-band Wide Followup Data Monitoring Checklist </h2>
+<h3>Current as of Jan 15, 2012</h3></center><br>
+
+<br>
+
+<table border=3 bordercolor=#008000 bgcolor=#E6FEE6>
+<tr><td>
+<b>Note: These instructions are for the LBW followup program. More than just checking 
+data quality, we're looking for detectections, so be alert!</b></td></tr></table></p>
+
+
+<br>
+
+<h3><font color=#cc0f14>Preparation for Data Monitoring</font></h3>
+<ul>
+  <li>In a terminal, start up an IDL session on one of the fast linux machines
+      (e.g. fusion00,aolc1,2,3,4). <br>
+     &nbsp &nbsp &nbsp <b>ssh -X a2010@remote.naic.edu</b><br>
+     &nbsp &nbsp &nbsp <b>ssh -X a2010@fusion00</b>  (or aolc1, etc)<br>
+     &nbsp &nbsp &nbsp <b>lbwdata</b> &nbsp <i> This alias puts you into the directory/share/a2010-2/lbwdata</i><br>
+     &nbsp &nbsp &nbsp <b>idl</b><br>
+     &nbsp &nbsp &nbsp <b>@corinit</b> &nbsp  <i> This loads all the procedures we will need for the 
+following steps</i>
+  <li>You can find documentation of the idl routines we will be using on <a 
+href="http://www.naic.edu/~phil/cordoc.html">Phil's idl 
+page</a>.
+</ul>
+
+<h3><font color=#cc0f14>Load the correlator file.</font> </h3>
+
+<ul>
+<li> We need to open the correlator file so that can manipulate it to display our data <br>
+     &nbsp &nbsp &nbsp <b>openr, lun, '/share/olcor/corfile.16jan12.a2669.1', /get_lun</b><br>
+<li> Make sure to choose the correct file.
+</ul>
+
+
+<h3><font color=#cc0f14>Do the (ON-OFF)/OFF</font></h3>
+<ul>
+    <li>In order to remove the bandpass shape imposed by the instrumentation, we want subtract the OFF 
+observation from the ON, and then divide by the OFF spectrum. See <a href="ALFALFA_lbwobserving.htm"> 
+the explanation of LBW observing page</a> for an explanation of why we do this.
+    <li>We will use Phil's corposonoff routine. <br>
+        &nbsp &nbsp &nbsp <b>io=corposonoff(lun, b, /han, /scly)</b><br>
+    <li>This routine returns the (ON-OFF)/OFF to the structure b. There are four substructures - b.b1, 
+b.b2, b.b3, b.b4 - one for each board of the correlator. For now, we only care about the data in the first 
+two boards.
+    <li>The keyword <b>/scljy</b> scales the ouptput to Jy using information from the calibrator.
+    <li>The keyword <b>/han</b> applies Hanning smoothing.
+    <li>Since we have a single ON-OFF pair in each file, we do NOT need to set the scan number - the 
+routine defaults to the first scan.
+</ul>
+
+
+<h3><font color=#cc0514>Average the Polarizations</font></h3>
+<ul>
+    <li>We want to take advantage of the fact that we took data in two separate polarizations, and average 
+the polarizations together to increase our sensitivity.
+    <li>We will use the routine coravg to do this. <br>
+        &nbsp &nbsp &nbsp <b>bavg = coravg(b, /pol)</b> <br>
+    <li>The keyword <b>/pol</b> tells the routine to average polarizations.
+    <li>The returned structure, <b>bavg</b> will have fewer boards than the original structure, <b>b</b>. 
+Since boards 1&2 have the same set-up but are different polarizations, the routine averages the two 
+boards together and returns them to a single board, <b>bavg.b1</b>. The remaining number of boards in the 
+bavg 
+structure will depend on whether the observations are in low- or high-velocity mode. For now, we don't 
+need to worry about those other boards.
+</ul>
+
+<h3><font color=#cc0514>Smooth the Data</font></h3>
+<ul>
+   <li>Now we smooth the spectral data to increase our sensitivity slightly. <br>
+       &nbsp &nbsp &nbsp <b>corsmo, bavg, smo=3</b><br>
+   <li>The output structure <b>bsm</b> contains the smoothed spectral data.
+   <li>For now we set <b>smo=3</b> to boxcar smooth the data over 3 channels. The smoothing value can be 
+increased to more channels as appropriate. 
+</ul>
+
+<h3><font color=#cc0514>Plot the Data</font></h3>
+<ul>
+   <li>Time to plot the data to look for a detection! <br>
+       &nbsp &nbsp &nbsp <b>corplot, bsm, brdlist=1, xtitle='Frequency', ytitle='Flux'</b><br>
+   <li>The keyword <b>brdlist</b> allows us to plot just the first board of <b>bsm</b>. Remember, this 
+board contains the average of the original two boards, as they were separate polarizations.
+   <li>The default behavior of corplot is to plot flux as a function of the topocentric frequency. This is 
+what we need for low-velocity mode as we take data in the topocentric frame! For the high-velocity mode, we 
+center on the velocity of our source, and you can set the keyword <b>/vel</b>.
+   <li>If you're observing in low-velocity mode you may want to rescale the y-axis manually to see signals 
+that have low fluxes compared to the Galactic HI.<br>
+    &nbsp &nbsp &nbsp <b>ver, y_low, y_high</b> &nbsp <i>Scale the y-axis between y_low & 
+y_high</i><br>
+</ul>
+
+
+<h3><font color=#cc0514>Clean Up</font></h3>
+<ul>
+   <li>We want to close the files we have opened and free the lun - there are a limited 
+number of luns in IDL and we don't want to run out.<br>
+     &nbsp &nbsp &nbsp <b>close, lun</b><br>
+     &nbsp &nbsp &nbsp <b>free_lun, lun</b><br>
+   <li>Now you're ready to go back to the top for the next source!
+</ul>
+
+<br><hr>
+<font color=#008800> This page maintained by members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA </a>Observing Team.</font>
+<br>
+<!-- hhmts start -->
+<b><font color="#008000"><b>Last modified: Sun Jan 15 13:55:55 EST 2012 by betsey 
+</b></font>
+<!-- hhmts end -->
+
+</body>
+</html>

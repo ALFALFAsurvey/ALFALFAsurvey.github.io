@@ -1,0 +1,66 @@
+Log for 12/23/05
+Observer: MH and RG
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20051223.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.23
+
+LST  fits Scan      calscan    Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+0717 0007 535705813 535706415  drift51p2  FixedAz  065400+122436 19 600  50
+0727 0008 535706418 535707019
+0737 0009 535707023 535707624
+0747 0010 535707628 535708229
+0757 0011 535708233 535708834
+0807 0012 535708838 535709439
+0818 0013 535709443 535710044
+0828 0014 535710048 535710649
+0838 0015 535710653 535711254
+0848 0016 535711258 535711859
+0858 0017 535711863 535712464
+0909 0018 535712468 535713126  57 sec mismatch... time warp??? SEE NOTE!!!
+0919 0019 535713129 535713730
+0929 0020 535713734 535714335
+0940 0021 535714339 535714940 
+0950 0022 535714944 535715545  just at end of CAL, got WAPPDATA flushing 12 dumps
+1000                           WAPP error; aborted
+                               restarting CIMA; wapps reconfigured; power adjustment
+                               fits0022 is short (will have to check)
+                               calibration will be split
+1009 0024 535716104 535716706  
+1019 0025 535716709 535717310
+1029 0026 535717314 535717915
+1039 0027 535717919 535718520
+1050 0028 535718524 535719125
+1100 0029 535719129 535719730
+
+END LST: 1110
+
+Notes
+-- Error in TOGS at beginning "Error failed pattern smart frequency
+   switching"; appears associated with WAPPS. Could not abort and start
+   again after restarting WAPPs.
+   Exited CIMA and starting again. This is taking time....
+-- At start, TOGS calibration eventually completed; startup of A2010 about 0130 AST.
+-- strange occurrence in fits file 0018: scan number 535712468 starts at 03:28:44
+   and lasts 600 sec. Next scan (a 1 sec cal) starts at 03:38:46, 602 sec later,
+   which is right, but scan nr is 535713126, which indicates a start time 658 sec
+   after previous scan, which is inconsistent with start time. Now, 13126 is
+   03:38:46 after midnite (and similarly all the successive scans have numbers 
+   that agree with the log AST start time), but all the previous scan numbers are
+   inconsistent with the log's AST start time. 
+   BIG QUESTION: are the data RA's and time stamps correct or are they affected by
+   the same timing error? And why did this happen?
+-- At end of CAL scan fits 0022, got error message: "exec evaluating message
+   from WAPPDATA: ... WARN WAPPDATA flushing 12 dumps". We note that fits
+   file 0022 is a bit short; perhaps the cal was not written; we will have
+   to check this.
+-- Sent a comment to CIMA using CIMA email comment. Got "`riccardo@astro.cornell.edu,
+   haynes@astro.cornell.edu' does not look like a valid email address"
+-- Running TOGS at end ok.
+-- Monitoring power levels with alfaobswin throughout
+

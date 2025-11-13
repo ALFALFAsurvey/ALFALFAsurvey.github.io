@@ -1,0 +1,72 @@
+Log for 11.02.27 (27Feb2011)        Observers: Greg Hallenbeck
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110227.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110228.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+LST  fits    Scan      calscan    Source    Pattern   Start coords. ang  time loop calmode
+0911 0036  105800371 105800372 drift135p1  fixAzdr   091100+324343  19   600  99   loopend
+	quicklook OK
+0922 0037  105800373 105800374
+0932 0038  105800375 105800376
+0942 0039  105800377 105800378
+0952 0040  105800379 105800380
+1002 0041  105800381 105900001
+1012 0000  105900002 105900003 quicklook OK
+1022 0001  105900004 105900005 continuum source in all beams
+1032 0002  105900006 105900007 Maybe that's not a continuum source?
+                               FAA radar appears to be off (or very weak).
+                               The autoscaling of the plots may have just mimicked a continuum source.
+1042 0003  105900008 105900009
+1053 0004  105900010 105900011
+1103 0005  105900012 105900013
+1113 0006  105900014 105900015
+1123 0007  105900016 105900017
+1133 0008  105900018 105900019
+1143 0009  105900020 105900021
+1153 0010  105900022 105900023
+1203 0011  105900024 105900025
+1213 0012  105900026 105900027 quicklook OK. FAA radar definitely on at this point.
+1223 0013  105900028 105900029
+1234 0014  105900030 105900031
+1244 0015  105900032 105900033
+1254 0016  105900034 105900035
+1304 0017  105900036 105900037
+1314 0018  105900038 105900039
+1324 0019  105900040 105900041
+1334 0020  105900042 105900043
+1344 0021  105900044 105900045
+1354 0022  105900046 105900047
+1405 0023  105900048 105900049
+1415 0024  105900050 105900051
+1425 0025  105900052 105900053
+1435 0026  105900054 105900055
+1445 0027  105900056 105900057
+1455 0028  105900058 105900059
+1505 0029  105900060 105900061
+1515 0030  105900062 105900063
+1526 0031  105900064 105900065
+1536 0032  105900066 ABORTED
+
+LST stop: 1536
+
+-- FAA radar appeared to be on at timon but weak most of night.
+-- Beam 6b dead
+-- TOGS at END only.
+
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 29.9   K2: 30.2   K3: 34.1   K4: 33.8   AT 16:24
+70K = K1: 124.2  K2: 132.0  K3: 141.1  K4: 148.7
+
+16K = K1: 29.7   K2: 29.9   K3: 33.0   K4: 33.3   AT 22:06
+70K = K1: 124.2  K2: 131.8  K3: 141.1  K4: 140.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+

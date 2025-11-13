@@ -1,0 +1,71 @@
+Log for 12.10.06 (06oct2012)        Observers: Lyle Hoffman
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121006.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121007.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2127 0018  228000086 228000087 drift146p1  fixAzdr   212700+352418  19  600   99  loopend power levels ok, FAA radar on, quicklook OK
+   TOGS ran without problems.
+2137 0019  228000088 228000089 power levels OK
+2148 0020  228000090 228000091 quicklook OK
+2158 0021  228000092 228000093 power levels OK; warnings chip counts don't match 
+2208 0022  228000094 228000095 power levels OK
+2218 0023  228000096 228000097 power levels OK
+2228 0024  228000098 228000099 power levels OK; quicklook OK
+2238 0025  228000100 228000101 power levels OK
+2248 0026  228000102 228000103 power levels OK
+2259 0027  228000104 228000105 power levels OK; quicklook OK
+2309 0028  228000106 228000107 power levels OK
+2319 0029  228000108 228000109 power levels OK
+2329 0030  228000110 228000111 power levels OK; quicklook OK
+2339 0031  228000112 228000113 power levels OK
+2349 0032  228000114 228000115 power levels OK
+2359 0033  228000116 228000117 power levels OK; quicklook OK
+0009 0034  228000118 228000119 power levels OK
+0019 0035  228000120 228000121 power levels OK
+0030 0036  228000122 228100000 power levels OK; quicklook OK
+0040 0000  228100002 228100003 power levels OK; quicklook OK
+0050 0001  228100004 228100005 power levels OK
+0100 0002  228100006 228100007 power levels OK
+0110 0003  228100008 228100009 power levels OK
+0120 0004  228100010 228100011 power levels OK; quicklook OK
+0130 0005  228100012 228100013 power levels OK
+0140 0006  228100014 228100015 power levels OK
+0150 0007  228100016 228100017 power levels OK
+0201 0008  228100018 228100019 power levels OK; quicklook OK
+0211 0009  228100020 228100021 power levels OK
+0221 0010  228100022 228100023 power levels OK
+0231 0011  228100024 228100025 power levels OK
+0241 0012  228100026 228100027 power levels OK
+0251 0013  228100028 228100029 power levels OK
+0301 0014  228100030 228100031
+0311 0015  228100032 -- aborted
+
+LST stop: 0312
+
+At the bottom, add notes regarding:
+-- FAA radar on.
+-- All ALFA beams working.
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+ALFA TEMPERATURES
+
+16K = K1: 13.9   K2: 13.3   K3: 15.0   K4: 14.8   AT 08:30
+70K = K1: 82.9   K2: 82.2   K3: 90.5   K4: 98.9
+
+16K = K1: 14.1   K2: 13.5   K3: 15.3   K4: 15.0   AT 15:11
+70K = K1: 84.4   K2: 83.9   K3: 92.5   K4: 100.3
+
+=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered

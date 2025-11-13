@@ -1,0 +1,40 @@
+A2853   LBW   14.06.14      Observers: D. Craig, Josh Alvarez, Alyssa McElroy
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140614.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.14jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A122437.4+105019  122437.4 +105019  j  7700 H v   # A220523    1318  15.5     1    416500471  no det. baseline wobbly? clear no fog
+A122644.3+090254  122644.3 +090254  j  6900 H v   # A220590                                   skipped this one, ZAG > 18  
+A132654.1+113345  132654.1 +113345  j  6800 H v   # A230339    1337  7.5      3   416500476   no detection
+A132725.9+115049  132725.9 +115049  j  6800 H v   # A232219    1349  8.72     4   416500480   BIG peak at 1381 MHz GPS?
+A140001.8+092035  140001.8 +092035  j  5700 H v   # A730071    1402  9        5   416500484   peaks SNR 4 to 2 at 5800, 6200 km/s
+A140156.3+085640  140156.3 +085640  j  6000 H v   # A231064    1416  10.0     6          88   marginal det. 1383 MHz 6000 km/s SNR 1?
+A143937.8+030848  143937.8 +030848  j  8800 H v   # A240572    1430  15.4     7          92   no detection.
+A150115.3+012954  150115.3 +012954  j  2200 H v   # A253624    1443  17.5     8          96   milky way at 1421, negative at 1408 MHz,2500 km/s in off?
+A151208.2+013509  151208.2 +013509  j  2000 H v   # A253656    1454  17.1     9   416500500   marginal detection at 1410 MHz,2000 km/s SNR 1?
+A151131.4+071508  151131.4 +071508  j 13300 H v   # A250239    1509  11.1    10          04   strong neg src at 16000 km/s 1350 MHz in off? FAA radar?
+A151313.1+071331  151313.1 +071331  j  4000 H v   # A250327    1521  11.3    11          08   neg peak at 3900 km/s 1403 MHz, src in off?
+A150444.0+123903  150444.0 +123903  j  6600 H v   # A251599    1534  9.1     12          12   strong signal 8700 km/s, 1380 MHz, SNR 6+
+A150624.8+124524  150624.8 +124524  j  6500 H v   # A736557    1547  11.1    13          16   no detection
+A160953.5+133148  160953.5 +133148  j 10600 H v   # A260295    1602   5.2    14          20   double peak at 1372 MHz, 10,600 km/s, SNR 6? SDSS shows edge on Sp
+A162019.1+144024  162019.1 +144024  j  9000 H v   # A268099    1515   3.9    15          24   nice double peak at 9000 km/s, 1380 MHz, SNR 4 but obvious
+
+
+Notes  (please note anything of importance; here is an example)
+	Tiedowns enabled, started a little late with slew and checking. 
+	Skipped 2nd source because  ZA got over 18 and climbing.

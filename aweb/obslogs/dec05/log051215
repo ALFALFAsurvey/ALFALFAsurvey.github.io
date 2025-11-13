@@ -1,0 +1,40 @@
+Log for 12/15/05
+Observer: Bilal, Becky, Martha, Prasanth
+
+System Configuration:
+FixedAz Drift Map CIMA "evolved" version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20051215.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.15
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+0704 0003 534906953 534907555  drift57p1  FixedAz  070430+134454 19 600  50
+0715 0004 534907558 534908160
+0725 0005 534908163 534908765 
+0735 0006 534908768 534909370
+0745 0007 534909373 534909975
+0755 0008 534909978 534910580
+0805 0009 534910583 534911185
+0815 0010 534911188 534911790 
+0826 0011 534911793 534912395
+0836 0012 534912398 534913000
+0846 0013 534913003 534913605
+0856 0014 534913608 534914210
+0906 0015 534914213 534914815
+0916 0016 534914818 534915420
+0926 0017 534915423 534916025
+0936 0018 534916028 534916630
+0946 0019 534916633 534917235
+0957 0020 534917238 534917840
+
+
+End LST: 1006 
+
+Notes:
+- We are using the new "Evolved" version of CIMA i.e CIMA version 2.1
+- TOGS ran at beginning.
+- WAPP data files move to new disk area. See above.
+- TOGS at end, good.

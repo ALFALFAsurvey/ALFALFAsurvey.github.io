@@ -1,0 +1,51 @@
+Log for 081014      Observers: Kelley Hess, Melissa Jacquart 
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.04  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20081014.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20081015.a2010.****.fits 
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2140 0015 828800270 828800271  drift36p2  fixAZdr  214000+084536 360   600   99 loopend   power levels OK 
+2150 0016 828800272 828800273                                                             "WARNING extrapolating agc-data" seen before, ok
+2200 0017 828800274 828800275
+2210 0018 828800276 828800277
+2220 0019 828800278 828800279
+2230 0020 828800280 828800281 
+2240 0021 828800282 828800283                                                             extrapolating errors
+2250 0022 828800284 828800285                                                             Power levels OK
+2300 0023 828800286 828800287
+2311 0024 828800288 828800289
+2321 0025 828800290 828800291
+2331 0026 828800292 828800293
+2341 0027 828800294 828800295
+2351 0028 828800296 828800297
+0001 0029 828800298 828800299
+0011 0030 828800300 828800301
+0021 0031 828800302 828800303
+0031 0032 828800304 828800305
+0041 0033 828800306 828800307
+0052 0034 828800308 828800309
+0102 0035 828800310 828900001                                                             power levels OK   
+0112 0000 828900002 828900003
+0122 0001 828900004 828900005
+0132 0002 828900006 828900007
+0142 0003 828900008 828900009
+0152 0004 828900010                                                                       WAPP errors (see notes); restarted WAPPs
+0206 0005 828900011                                                                       aborted, adjusted power, & started new fits file 
+0209 0006 828900012 828900013                                                             Power levels OK 
+0219 0007 828900014 828900015                                                             
+0229 0008 828900016 828900017 
+0239 0009 828900018 828900019
+0250 0010 828900020 828900021
+0300 0011 828900022 828900023 
+0310 0012 828900024                                                                       aborted
+
+
+END LST:0310 
+
+Notes:
+Ran TOGS at beginning and end of observation.
+
+WAPP errors (saw the same as last night, around the same time of the evening):
+"ERROR WAPP-# failed to complete its current task!":  all four WAPP #'s failed

@@ -1,0 +1,44 @@
+Log for 11/26/09          Observers: Colgate Students (Josh Adams and Phil Patrick), TB
+
+
+System Configuration:                   a2010_az360_2009.conf
+CIMA version       			3.1.06 2009-11-22 11:19 "Smart" 
+File(s):  /share/pserverf.sda3/wappdata/wapp.20091126.a2010.****.fits
+
+LST  fits   Scan        calscan       Source    Pattern   Start coords. ang  time loop calmode
+0122 0001   933000242   933000243     drift20p1 fixAZdr   001400+044442  19  600   99  loopend  power levels ok, quick look ok
+0132 0002   933000244   933000245         strong continuum source, especially in beam 6
+0142 0003   933000246   933000247
+0152 0004   933000248   933000249         continuum source, beam 1 & 2, power levels ok
+0203 0005   933000250   933000251
+0213 0006   933000252   933000253         quick look ok
+0223 0007   933000254   933000255         power levels ok
+0233 0008   933000256   933000257         error message - see below
+0243 0009   933000258   933000259         continuum source, beam 4,5,6
+0253 0010   933000260   933000261         power levels ok
+0303 0011   933000262   933000263         quick look ok
+0313 0012   933000264   933000265
+0323 0013   933000266   933000267         power levels ok
+0334 0014   933000268   aborted 
+
+
+LST stop: 0334
+Overall uneventful night.
+FAA radar active all night
+didn't see GPS burst
+TOGS ran at the start
+TOGS ran at end
+
+The following error message appeared in orange during fits 0008:
+22:45:04 WAPPDATA-search_pnt: WARNING extrapolating pnt-data from 55162.114606 to 55162.114618!
+22:45:05 WAPPDATA-search_pnt: WARNING interpolating pnt-data over 2.00 second time gap (55162.114606 - 55162.114630)!
+
+
+ALFA TEMPERATURES
+
+16K = K1: 12.9   K2: 12.8   K3: 14.1   K4: 14.3   AT 10:37
+70K = K1: 80.1   K2: 82.2   K3: 91.3   K4: 98.9
+
+16K = K1: 14.3   K2: 14.0   K3: 15.7   K4: 15.9   AT 13:57
+70K = K1: 80.5   K2: 82.2   K3: 91.7   K4: 99.3
+

@@ -1,0 +1,49 @@
+Log for 11.02.01 (1Feb2011)        Observer: Shan Huang
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110201.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0908 0000 103200022 103200023 drift140p1 fixAzdr   091000+335642  19   600 99 loopend   6b dead, no WAPPs warning or error as yesterday
+0918 0001 103200024 103200025 quicklook ok, power level ok except 6b
+0928 0002 103200026 103200027
+0939 0003 103200028 103200029
+0949 0004 103200030 103200031
+0959 0005 103200032 103200033
+1009 0006 103200034 103200035 quicklook, power level ok
+1019 0007 103200036 103200037
+1029 0008 103200038 103200039
+1039 0009 103200040 103200041
+1049 0010 103200042 103200043
+1100 0011 103200044 103200045
+1110 0012 103200046 103200047
+1120 0013 103200048 103200049 
+1130 0014 103200050 103200051 quicklook, power level ok
+1140 0015 103200052 103200053
+1150 0016 103200054 103200055
+1200 0017 103200056 103200057
+1210 0018 103200058 103200059 GPS burst
+1220 0019 103200060 aborted ...
+
+LST stop 1221
+
+At the bottom, add notes regarding:
+--use AZ = 540 instead of 180 to avoid long slew at start
+--Beam 6B dead entire night.
+--FAA Radar ON
+--TOGS at end only
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 23.6   K2: 24.5   K3: 27.2   K4: 26.9   AT 16:15
+70K = K1: 115.2  K2: 122.2  K3: 131.5  K4: 139.3
+
+16K = K1: 24.8   K2: 25.5   K3: 28.4   K4: 28.2   AT 22:25
+70K = K1: 116.4  K2: 123.7  K3: 133.0  K4: 140.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+

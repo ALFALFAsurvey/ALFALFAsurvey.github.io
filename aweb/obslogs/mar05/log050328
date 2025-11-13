@@ -1,0 +1,41 @@
+Log for 3/28/05 am            
+Observers:  SS, MH, RG, BK
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050328.a2010.****.fits
+ 
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+1240 0001 508702627 508703229 drift56p1 FixedAz 123920+133018  19   600  28
+1250 0002 508703232 508703834
+1300 0003 508703837 508704439
+1310 0004 508704442 508705044
+1320 0005 508705047           Wapp chip error near end of scan
+1330 0006                     file aborted 
+1335 0007                     Wapp chip error again (file aborted)
+1341 0008 508706288           Wapp chip error again (file aborted)
+1348 0009 508706755 508707357
+1359 0010 508707360 508707962
+1409 0011 508707965 508708567
+1419 0012 508708570 508709171
+1429 0013 508709175 508709778
+1439 0014 508709781 508710383
+1449 0015 508710386 508710988
+1459 0016 508710991 508711593
+1509 0017 508711596           Wapp chip error again (file aborted)
+     0018                     Wapp chip error again (file aborted)
+     0019                     Wapp chip error again (file aborted)
+     0020                     Wapp chip error again (file aborted)
+1540 0021 508713436 508714037
+1550 0022                     Wapp chip error again (file aborted)
+     0023                     Wapp chip error again (file aborted)
+1605 0024 508714935           Wapp chip error again (file aborted)
+     0025                     Wapp chip error again (file aborted)
+     0026                     Wapp chip error again (file aborted)
+     0027                     Wapp chip error again (file aborted)
+1620 0028 508715814 508717124

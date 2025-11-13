@@ -1,0 +1,51 @@
+Log for 081008      Observers: Ann Martin
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.04  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20081008.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20081009.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2258 0016 828200159 828200160 drift41p2  fixAZdr  225800+095836 360   600   99 loopend power levels OK; beam 6B back!; chip count errors
+2308 0017 828200161 828200162 chip errors gone!
+2318 0018 828200163 828200164
+2328 0019 828200165 828200166 chip errors return
+2338 0020 828200167 828200168
+2349 0021 828200169 828200170
+2359 0022 828200171 828200172
+0009 0023 828200173 828200174
+0019 0024 828200175 828200176
+0029 0025 828200177 828200178 Gregorian brake failure, see note
+0039 0026 828200179 828300001 strong cont. src
+0049 0000 828300002 828300003
+0059 0001 828300004 828300005
+0109 0002 828300006 828300007
+0119 0003 828300008 828300009
+0130 0004 828300010 828300011
+0140 0005 828300012 828300013
+0150 0006 828300014 828300015
+0200 0007 828300016 828300017 power OK
+0210 0008 828300018 828300019
+0220 0009 828300020 828300021
+0230 0010 828300022 828300023
+0240 0011 828300024 828300025
+0251 0012 828300026 828300027 power OK
+0301 0013 828300028 --aborted
+
+
+END LST: 0301
+
+Notes: 
+TOGS not run at start due to delay -- problem with WAPPs.
+WAPP error message at the start of the night: "WAPP=4-wapprt: ERROR failed to bind to socket!"
+Reported to operator; Mikael needed to restart WAPP 4, and reported that WAPP 4 "might have
+a bad disk in the RAID system," should not affect ALFALFA datataking.
+
+But then the ALFA rotation was stuck at 26.71, so Mikael was called again.
+Problem quickly resolved.
+
+At 0035 LST, operator reports "brake failure" with Gregorian; it had stopped but only briefly
+
+Chip count errors continue sporadically.
+
+TOGS run at end.

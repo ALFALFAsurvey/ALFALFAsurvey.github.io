@@ -1,0 +1,121 @@
+
+
+02/07/05 10:35:27  starting wapp_spectra 600 1 
+02/07/05 10:35:27  Starting WAPP scan: 503823726 
+02/07/05 10:35:27  New FITS file: wapp.20050207.a2010.0024.fits 
+02/07/05 10:35:27  WAPP(1) start sec 23728.000000 
+02/07/05 10:35:28  WAPP(4) start sec 23728.000000 
+02/07/05 10:35:28  WAPP(3) start sec 23728.000000 
+02/07/05 10:35:28  WAPP(2) start sec 23728.000000 
+02/07/05 10:45:28  WAPP(4) DONE with spectral line observation 
+02/07/05 10:45:28  WAPP(3) DONE with spectral line observation 
+02/07/05 10:45:28  WAPP(1) DONE with spectral line observation 
+02/07/05 10:45:28  WAPP(2) DONE with spectral line observation 
+02/07/05 10:45:28  starting wappcal hcal 1 
+02/07/05 10:45:29  starting wapp_spectra 1 1 
+02/07/05 10:45:29  Starting WAPP scan: 503824328 
+02/07/05 10:45:29  WAPP(1) start sec 24330.000000 
+02/07/05 10:45:29  WAPP(4) start sec 24330.000000 
+02/07/05 10:45:29  WAPP(3) start sec 24330.000000 
+02/07/05 10:45:29  WAPP(2) start sec 24330.000000 
+02/07/05 10:45:31  WAPP(1) DONE with spectral line observation 
+02/07/05 10:45:31  WAPP(4) DONE with spectral line observation 
+02/07/05 10:45:31  WAPP(3) DONE with spectral line observation 
+02/07/05 10:45:31  WAPP(2) DONE with spectral line observation 
+02/07/05 10:45:31  WARN aborting FIXEDAZ Observation 
+02/07/05 10:45:32  DONE with WAPP cal 
+02/07/05 10:45:32  starting wapp_spectra 600 1 
+02/07/05 10:45:32  Starting WAPP scan: 503824330 
+02/07/05 10:45:32  starting wappcal hcal 1 
+02/07/05 10:45:32  New FITS file: wapp.20050207.a2010.0025.fits 
+02/07/05 10:45:32  WARN aborting FIXEDAZ Observation 
+02/07/05 10:45:33  starting wapp_spectra 1 1 
+02/07/05 10:45:33  Starting WAPP scan: 503824330 
+02/07/05 10:45:33  WAPP(4) start sec 24333.000000 
+02/07/05 10:45:33  WAPP(3) start sec 24333.000000 
+02/07/05 10:45:33  WAPP(2) start sec 24333.000000 
+02/07/05 10:45:33  WAPP(1) start sec 24333.000000 
+02/07/05 10:45:33  WARN aborting FIXEDAZ Observation 
+02/07/05 10:45:33  DONE with WAPP cal 
+02/07/05 10:45:34  starting wapp_spectra 600 1 
+02/07/05 10:45:34  Starting WAPP scan: 503824331 
+02/07/05 10:45:34  starting wappcal hcal 1 
+02/07/05 10:45:34  New FITS file: wapp.20050207.a2010.0026.fits 
+02/07/05 10:45:34  WARN Executive is busy, waiting CALON 
+02/07/05 10:45:34  starting wapp_spectra 1 1 
+02/07/05 10:45:34  Starting WAPP scan: 503824331 
+02/07/05 10:45:35  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:35  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:35  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:35  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:35  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:35  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:35  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:38  WAPP(1) failed to set fits header, wapp busy 
+02/07/05 10:45:38  WAPP(4) failed to set fits header, wapp busy 
+02/07/05 10:45:38  WAPP(3) failed to set fits header, wapp busy 
+02/07/05 10:45:38  WAPP(2) failed to set fits header, wapp busy 
+02/07/05 10:45:38  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:38  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:39  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:43  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:43  WAPP(1) failed to set fits header, wapp busy 
+02/07/05 10:45:43  WAPP(4) failed to set fits header, wapp busy 
+02/07/05 10:45:43  WAPP(3) failed to set fits header, wapp busy 
+02/07/05 10:45:43  WAPP(2) failed to set fits header, wapp busy 
+02/07/05 10:45:43  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:44  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:44  WARN Executive is busy, waiting WAPP spectral line 
+02/07/05 10:45:46  WARN aborting FIXEDAZ Observation 
+02/07/05 10:45:46  DONE with WAPP cal 
+02/07/05 10:45:46  Finished Fixed Azimuth Drift Map 
+02/07/05 10:45:47  Starting Fixed Azimuth Drift Observation 
+02/07/05 10:45:48  WAPP(4) failed to set fits header, wapp busy 
+02/07/05 10:45:48  WAPP(3) failed to set fits header, wapp busy 
+02/07/05 10:45:48  WAPP(2) failed to set fits header, wapp busy 
+02/07/05 10:45:48  WAPP(1) failed to set fits header, wapp busy 
+02/07/05 10:45:48  ha 0.0000000000 start 15.469433755000001 lst 15.489807 diff -0.
+02037324500000004 
+02/07/05 10:45:48  WARN RA is past starting anyway 
+02/07/05 10:45:48  Waiting 0 seconds for RA 15:28:10 
+02/07/05 10:45:48  starting wapp_spectra 600 1 
+02/07/05 10:45:48  Starting WAPP scan: 503824347 
+02/07/05 10:45:49  WAPP(1) wapp successfully aborted 
+02/07/05 10:45:49  WAPP(4) wapp successfully aborted 
+02/07/05 10:45:49  WAPP(3) wapp successfully aborted 
+02/07/05 10:45:49  WAPP(2) wapp successfully aborted 
+02/07/05 10:45:49  WAPP(1) DONE with spectral line observation 
+02/07/05 10:45:49  WAPP(4) DONE with spectral line observation 
+02/07/05 10:45:49  WAPP(3) DONE with spectral line observation 
+02/07/05 10:45:49  WAPP(2) DONE with spectral line observation 
+02/07/05 10:45:49  starting wappcal hcal 1 
+02/07/05 10:45:50  WAPP(1) start sec 24350.000000 
+02/07/05 10:45:50  starting wapp_spectra 1 1 
+02/07/05 10:45:50  Starting WAPP scan: 503824348 
+02/07/05 10:45:50  WAPP(4) start sec 24350.000000 
+02/07/05 10:45:50  WAPP(3) start sec 24350.000000 
+02/07/05 10:45:50  WAPP(2) start sec 24350.000000 
+02/07/05 10:45:55  WAPP(1) failed to set fits header, wapp busy 
+02/07/05 10:45:55  WAPP(4) failed to set fits header, wapp busy 
+02/07/05 10:45:55  WAPP(3) failed to set fits header, wapp busy 
+02/07/05 10:45:55  WAPP(2) failed to set fits header, wapp busy 
+02/07/05 10:45:55  WAPP(1) WARN observing when not on source 
+02/07/05 10:45:55  WAPP(4) WARN observing when not on source 
+02/07/05 10:45:55  WAPP(3) WARN observing when not on source 
+02/07/05 10:45:56  WAPP(2) WARN observing when not on source 
+02/07/05 10:45:56  WAPP(1) Observing now on source 
+02/07/05 10:45:56  WAPP(4) Observing now on source 
+02/07/05 10:45:56  WAPP(3) Observing now on source 
+02/07/05 10:45:56  WAPP(2) Observing now on source 
+02/07/05 10:55:50  WAPP(1) DONE with spectral line observation 
+02/07/05 10:55:50  WAPP(4) DONE with spectral line observation 
+02/07/05 10:55:50  WAPP(3) DONE with spectral line observation 
+02/07/05 10:55:50  WAPP(2) DONE with spectral line observation 
+02/07/05 10:55:51  DONE with WAPP cal 
+02/07/05 10:55:51  starting wapp_spectra 600 1 
+02/07/05 10:55:51  Starting WAPP scan: 503824950 
+02/07/05 10:55:51  New FITS file: wapp.20050207.a2010.0027.fits 
+02/07/05 10:55:51  WAPP(1) start sec 24952.000000 
+02/07/05 10:55:51  WAPP(4) start sec 24952.000000 
+02/07/05 10:55:51  WAPP(3) start sec 24952.000000 
+02/07/05 10:55:51  WAPP(2) start sec 24952.000000 

@@ -1,0 +1,69 @@
+A2899  LBW   14.10.22      Observers: Koopmann, Hallenbeck, Harney, PHY 100 class
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2899.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2899_141020.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to: /share/olcor/corfile.22oct14.a2899.*
+         and     /share/olcor/corfile.23oct14.a2899.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A212116.3+292754  212116.3 +292754  j  4600 H v   # A011730   2113   11.4   14    429500519   detection 1398.5 MHz, 4700 km/s, S/N~120
+A212116.3+292754  212116.3 +292754  j  4600 H v   # A011730   2120   11.2   15    429500523   repeated because ahead
+A221404.7+254052  221404.7 +254052  j  1200 H v   # A321307   2130   12.6   16    429500527   detection 1415 MHz, 1100 km/s, S/N~13   
+H222601.7+225346  222601.7 +225420  j  1300 H v   # A322064   2139   12.0   17    429500531   detection 1414 MHz, 1250 km/s, S/N~8  
+H223006.7+235250  223008.8 +235252  j  5200 H v   # A322065   2147   11.6   18    429500535   detection 1396 MHz, 5200 Km/s, S/N~7
+H223320.5+230354  223320.3 +230400  j  7600 H v   # A321521   2155   10.1   19    429500539   detection 1385 MHz, 7600 km/s, S/N~6
+H225900.6+211835  225905.6 +211837  j  2900 H v   # A322484   2205   13.2   20    429500543   detection 1406.5 MHz, 2900 km/s,S/N~7
+H223640.8+335654  223640.8 +335654  j  6100 H v   # A320272   2215   16.5   21    429500547   detection 1392 MHz, 6050 km/s, S/N~6   
+H225245.0+332351  225245.0 +332351  j  6700 H v   # A320851   2223   16.5   22    429500551   detection 1389 MHz, 6650 km/s, S/N~3
+H232140.9+275132  232140.9 +275132  j  3600 H v   # A332921   2232   16.0   23    429500555   detection 1403 MHz, 3700 km/s, S/N~6
+H232524.9+283004  232521.9 +282939  j  7000 H v   # A012591   2240   14.7   24    429500559   GPS bad baseline - wipes out spectrum
+H232947.5+230107  232943.2 +230042  j  4900 H v   # A334570   2249   10.6   25    429500563   no detection 
+H233307.8+224810  233308.0 +224828  j  4800 H v   # A334563   2257    9.6   26    429500567   no detection 
+H233424.2+253320  233422.4 +253231  j  3700 H v   # A333336   2306    9.9   27    429500571   detection 1403 MHz, 3700 km/s, S/N~6
+H234156.0+284926  234150.6 +284937  j  3000 H v   # A333590   2315   12.3   28    429500575   no detection      
+H234629.6+274424  234628.1 +274424  j  8100 H v   # A333232   2323   11.0   29    429500579   detection 1383 MHz, 8000 km/s, S/N~7
+H234636.9+270924  234639.4 +270913  j  8100 H v   # A333233   2331    9.6   30    429500583   detection 1382.5 MHz, 8100 km/s, S/N~7
+H000012.5+294140  000013.3 +294037  j  7000 H v   # A102946   2340   12.4   31    429500587   GPS away from detection 1388 MHz, 7000 km/s, S/N~6  
+H000900.4+274647  000900.9 +274704  j  7600 H v   # A102601   2348   10.7   32    429500591   detection 1385 MHz, 7600 km/s, S/N~8
+H001901.2+290325  001902.8 +290322  j  7600 H v   # A102953   2357   12.0   33    429500595   detection 1385 MHz, 7500 Km/s, S/N~7
+H002007.9+301442  002007.8 +301409  j  3700 H v   # A102848   0005   12.5   34    429500599   no detection
+H003612.3+284352  003617.1 +284445  j  3400 H v   # A102960   0014   11.8   35    429500603   no Detection  
+H005402.3+221803  005403.4 +221812  j  7500 H v   # A103506   0023    8.4   36    429500607   detection 1386 MHz, 7500 km/s, S/N~4
+H005714.3+270418  005714.5 +270413  j  3900 H v   # A102604   0032   10.6   37    429500611   no detection     
+H012259.0+224126  012259.9 +224147  j  1300 H v   # A114647   0041   11.0   38    429500615   no detection
+H012259.0+224126  012259.9 +224147  j  1300 H v   # A114647   0049    9.2   39    429500619   repeat for time 
+H014028.8+190904  014032.3 +190848  j  2700 H v   # A115312   0059   10.1   40    429500623   detection 1407.6 MHz, 2700 km/s, S/N~10, narrow!
+H014850.7+220723  014850.3 +220649  j  3000 H v   # A115320   0107   10.7   41    429500627   detection 1406.5 MHz, 2950 km/s, S/N~6
+H015735.9+201627  015737.8 +201624  j  2300 H v   # A115323   0115   10.3   42    429500631   detection 1409.5 MHz, 2250 km/s, S/N~6    
+H020831.0+250847  020832.8 +250929  j  8200 H v   # A122928   0124   12.5   43    429500635   detection 1382 MHz, 8200 km/s, S/N~6
+H021155.3+310450  021154.9 +310516  j  7200 H v   # A123075   0134   15.6    1    429500639   GPS in off nr detection 1387 MHz, S/N~5
+H021605.7+320923  021609.2 +320933  j  7400 H v   # A123082   0142   16.0    2    429600003   GPS in on, looks like no detection anyway
+H021710.2+313737  021710.0 +313744  j  6700 H v   # A123083   0150   14.8    3    429600007   no detection  
+H022019.6+313218  022021.5 +313226  j  6400 H v   # A123086   0158   14.3    4    429600011   GPS in off away from center;  no detection 
+H023400.5+220813  023359.3 +220802  j  7800 H v   # A123927   0208    7.3    5    429600015   detection 1384.5 MHz, 7800 km/s, S/N~5    
+H023633.1+241247  023633.9 +241142  j  2400 H v   # A122944   0217    7.6    6    429600019   no detection
+H024656.3+241846  024653.8 +241804  j  7300 H v   # A122947   0225    8.0    7    429600023   detection 1386.5 MHz, 7300 km/s, S/N~6  
+H024947.5+232948  024947.8 +232908  j  7100 H v   # A124050   0233    6.6    8    429600027   detection 1387.5 MHz, 7100 km/s, S/N~5
+H023929.2+293305  023937.5 +293345  j  7600 H v   # A123201   0243   11.3    9    429600031   detection 1385.5 MHz, 7600 km/s, S/N~4
+H023105.3+305248  023106.9 +305303  j  5400 H v   # A123093   0251   13.4   10    429600035   detection 1395 MHz, 5400 km/s, S/N~4  
+A024951.8+345917  024951.8 +345917  j  5200 H v   # A120538   0301   16.9   11    429600039   no detection
+H030305.8+334139  030305.8 +334139  j   200 H v   # A130770calib   no time
+H025027.3+241847  025027.3 +241834  j  1400 H v   # A122900calib   no time
+
+Notes  
+    Tiedowns enabled. Early start. GPS in several scans. No time for last two sources.
+
+

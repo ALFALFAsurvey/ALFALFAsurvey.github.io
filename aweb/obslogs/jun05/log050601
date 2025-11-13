@@ -1,0 +1,76 @@
+Log for 05/06/01 pm
+Observers: SS
+
+System Configuration
+
+FixedAz Drift Map CIMA new version 1.2.03 (normal default)
+Using: a2010-fixedfrq_may05.gui as save state
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20050601.a2010.****.fits
+       /share/pserverf.sdb1/wappdata/wapp.20050602.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+1049 0005 515266870 515267471 drift54p2 FixedAz 104932+130824  19  600  50                (1)
+
+power levels (dB):0.924 0.957 1.091 1.022 0.980 1.083 1.024 0.934 1.043 1.048
+0.960 1.042 0.933 1.097
+
+1059 0006 515267474 515268076
+1109 0007 515268079 515268681
+1119 0008 515268684 515269286
+1129 0009 515269289 515269891
+1140 0010 515269894 515270496
+1150 0011 515270499 515271101
+1200 0012 515271104 515271706
+1210 0013 515271709 515272311
+1220 0014 515272314 515272916
+1230 0015 515272919 515273521
+1240 0016 515273524 515274126
+1250 0017 515274129 515274731
+1300 0018 515274734 515275336
+1311 0019 515275339 515275941
+1321 0020 515275944 515276546
+1331 0021 515276549 515277151
+1341 0022 515277154 515277756
+
+power levels (dB): 0.961 1.093 1.234 1.148 1.043 1.183 1.108 1.009 1.143 1.085
+1.038 1.082 1.053 1.156
+
+1351 0023 515277759 515278361
+1401 0024 515278364 515278966
+1411 0025 515278969 515279571
+1421 0026 515279574 515280176
+1431 0027 515280179 515280781
+1442 0028 515280784 515281386
+1452 0029 515281389 515281991
+1502 0030 515281994 515282596
+1512 0031 515282599 515283201                                                              (2)
+1522 0032 515283204 515283806
+
+power levels (dB): 0.984 1.136 1.241 1.185 1.070 1.234 1.147 1.048 1.189 1.144
+1.071 1.138 1.064 1.197
+
+1532 0033 515283809 515284411
+1542 0034 515284414 515285016
+1552 0035 515285019 515285621
+1603 0036 515285624 515286226
+1613 0037 515286229 515300431
+1623 0000 515300434 515301036
+1633 0001 515301039 515301641
+file 0002 aborted (no time left)
+
+END LST: 164318
+
+Notes:
+(1) We lost 20 minutes at the beginning of the run to uncover ALFA and to 
+unwind the telescope.
+
+(2) Power was switched from emergency generator to commercial within the last 
+40 seconds of the drift 0031 (at 1521 LST).  We lost pointing for a few seconds 
+and the screen showed "Tiedown failure" for those few seconds.  Before the next 
+drift began, everything (tracking, pointing, tiedowns, power levels, waterfall 
+plots) seemed to be back to normal.
+
+Tiedowns Active.

@@ -1,0 +1,68 @@
+Log for 2/19/05 pm        Observers: BC, MPH
+	2/20/05 am
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050219.a2010.****.fits   
+       /share/pserverf.sda3/wappdata/wapp.20050220.a2010.****.fits
+
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+0842 0043 505083291 505083893 drift55p1 FixedAZ  084118+131542  19   600  1      +4.1"
+
+0852 0044 505083898 505084500 drift55p1 FixedAZ  085157+131542  19   600  4      +4.0"
+0902 0045 505084503 505085105
+0912 0046 505085108 505085710							+10.9"
+0922 0047 505085713 505086315							+14.0"
+
+0932 0048 505086322 505100524 drift55p1 FixedAZ  093227+131542  19   600  5      +3.4"
+0942 0000 505100527 505101129 
+0952 0001 505101132 505101734 
+1002 0002 505101737 505102339
+1012 0003 505102342 505102944
+
+1023 0004 505102950 505103552 drift55p1 FixedAZ  102246+131542  19   600  8      
+1033 0005 505103555 505104157                                                    +5.1
+1043 0006 505104160 505104762                                                    +6.8
+1053 0007 505104765 505105367 
+1103 0008 505105370 505105972                                                    +9.9
+1113 0009 505105975 505106577
+1123 0010 505106580 505107182                                                   +12.4
+1134 0011 505107185 505107787
+
+1144 0012 505107794 505108396 drift55p1 FixedAZ  114344+131542  19  600  15
+1154 0013 505108399 505109001
+1204 0014 505109004 505109606
+1214 0015 505109609 505110211                                                    +1.0"
+1224 0016 505110214 505110816                                                    +2.1"
+1234 0017 505110819 505111421                                                           Marko starts up GSPEC
+1244 0018 505111424 505112026
+1254 0019 505112029 505112631                                                    +0.7"
+1304 0020 505112634 505113236
+1314 0021 505113239 505113841                                                    -0.2"
+1324 0022 505113844 505114446
+1335 0023 505114449 505115051                                                    -4.4"
+1345 0024 505115054 505115656 
+1355 0025 505115659 505116261                                                    -7.6
+1405 0026 505116264 505116866                                                   -10.1
+
+1415 0027 505116873 505117475 drift55p1 FixedAZ  141529+131542  19  600   3      -1.7
+1425 0028 505117478 505118080                                                    -4.4"
+1435 0029 505118083 505118685
+end of uneventful evening/morning
+
+Notes
+
+1- Tried tests of commensality w/ G-ALFA in the afternoon. Ignore FITS:
+   wapp.20050219.a2010.0025-0042
+   We couldn't do much b/c of a very strong RFI at 1380.0 MHz (peak intensity ~1500!!). Phil came and looked into this.
+   It is local. More investigation needed. However we started observing tonight and the RFI is very weak.
+
+2- When we started at 2300, the strong rfi was gone.
+
+3- Marko Krco started up GSPEC around 0245. We don't notice anything amiss. 

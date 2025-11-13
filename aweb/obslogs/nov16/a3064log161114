@@ -1,0 +1,54 @@
+A3064 LBW   16.11.14 Observers: Greg Hallenbeck (GH)
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161114.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161114.a3064.****.fits  
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S213702.9+291106  213702.9 +291106  j     0 H v   # A311389     2134  10.94 0000   631900001   det@4900 km/s (1398 MHz) SN ~ 10
+S221611.3+254605  221611.3 +254605  j     0 H v   # A323002     2148   9.95 0001   631900005   not detected   
+S222704.4+250139  222704.4 +250139  j     0 H v   # A323405     2201   9.16 0002   631900009   not detected
+S230408.7+271035  230408.7 +271035  j     0 H v   # A336604     2215  14.50 0003   631900013   det@1100 km/s (1415 MHz) SN ~ 6
+S231759.6+331528  231759.6 +331528  j     0 H v   # A336622     2230  18.51 0004   631900017   not detected. baseline wavy on short scale (~1MHz)   
+S231847.9+321858  231847.9 +321858  j     0 H v   # A336624     2242  16.32 0005   631900021   not detected. strong GPS causes wavy baseline.
+S232846.4+295603  232846.4 +295603  j     0 H v   # A336081     2254  14.07 0006   631900025   det@7000 km/s (1388 MHz) SN~12. EXTREMELY narrow, but unpolarized
+S233336.8+334802  233336.8 +334802  j     0 H v   # A336645     2306  16.61 0007   631900029   det@6500 km/s (1390 MHz) SN~5. Wavy baselines.   
+S233904.6+302934  233904.6 +302934  j     0 H v   # A336084     2320  12.84 0008   631900033   possible det@2100 km/s (1410 MHz) SN~2.
+S234056.5+304228  234056.5 +304228  j     0 H v   # A336664     2332  12.62 0009   631900037   det@7000 km/s (1388 MHz) SN~12 Same frequency as above. Doesn't match any of phil's rfi, so real?
+S234853.7+304349  234853.7 +304349  j     0 H v   # A336676     2344  12.50 0010   631900041   det@-500 km/s (1422 MHz) SN=10. That's probably not our galaxy...
+S235741.3+360608  235741.3 +360608  j     0 H v   # A335262     2358  17.87 0011   631900045   2 possible dets: 4900 km/s (1397 MHz) SN~5 and less likely @1415 MHz SN~3
+S235157.9+293732  235157.9 +293732  j     0 H v   # A336678     0012  12.26 0012   631900049   3 possible dets: 8700 km/s (1380 MHz) SN~5 and two narrow ones @1388, 1389 MHz. GPS in OFF
+S000332.1+292234  000332.1 +292234  j     0 H v   # A105221     0024  12.10 0013   631900053   not detected   
+S001826.6+300923  001826.6 +300923  j     0 H v   # A104361     0037  12.93 0014   631900057   solid det@6400 km/s (1390 MHz) SN~5
+S001830.2+301004  001830.2 +301004  j     0 H v   # A104373     0049  13.76 0015   631900061   detection @6400 km/s (1390 MHz) SN~7. GPS active.   
+S002247.4+301040  002247.4 +301040  j     0 H v   # A104895     0101  14.71 0016   631900065   possible det @4200 km/s (1401 MHz) SN~3.
+S011413.4+323806  011413.4 +323806  j     0 H v   # A112562     0115  14.41 0017   631900069   very narrow polarized signal @6950 km/s (1388.2 MHz) SN~30. possible det@2700 km/s (1408MHz) SN~4
+S015108.1+310503  015108.1 +310503  j     0 H v   # A115533     0127  13.81 0018   631900073   detection @ 4700 km/s (1398 MHz) SN~5
+S020535.1+315039  020535.1 +315039  j     0 H v   # A125169     0140  14.81 0019   631900077   detection @ 4800 km/s (1398 MHz) SN~4
+S025010.0+293138  025010.0 +293138  j     0 H v   # A125531     0153  17.30 0020   631900081   not detected. GPS in OFF.
+S025353.7+292056  025353.7 +292056  j     0 H v   # A124591     0205  15.78 0021   631900085   not detected.   
+S025733.1+290233  025733.1 +290233  j     0 H v   # A125534     0217  14.02 0022   631900089   not detected.   
+S025831.4+292533  025831.4 +292533  j     0 H v   # A125535     0229  12.70 0023   613900093   detected @ 6100 km/s (1392 MHz) SN~5
+S030317.9+350214  030317.9 +350214  j     0 H v   # A132284     0242  17.27 0024   613900097   not detected. GPS in ON.
+S030417.7+354732  030417.7 +354732  j     0 H v   # A132250     0255  17.63 0025   613900101   not detected (except another possible HVC at negative velocity). GPS in OFF.
+
+                                                
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+- Tiedowns on throughout night.
+- Occasional GPS but rarely had a significant effect on the noise level.
+- We observed some signals at 1388 MHz which were very narrow, and in one case, polarized (see files 0006, 9, 17). Possible RFI?
+- All sources labeled "possible detection" could use one more observation to detect. All labeled detection are quite good,
+  despite low SN ~ peak/rms estimates.

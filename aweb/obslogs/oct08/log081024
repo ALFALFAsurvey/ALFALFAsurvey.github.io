@@ -1,0 +1,58 @@
+Log for 081024     Observer: Arsenault and Spekkens
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.04  "next generation"
+File:        /share/pserverf.sda2/wappdata/wapp.20081024.a2010.****.fits 
+File:        /share/pserverf.sda2/wappdata/wapp.20081025.a2010.****.fits 
+
+
+LST  fits  Scan      calscan   Source     Pattern  Start coords. ang  time loop calmode
+2132 0010  829800168  829800169 drift39p2  fixAZdr  213200+092924  19  600   99 loopend   
+2142 0011  829800170  829800171 
+2152 0012  829800172  829800173
+2202 0013  829800174  Aborted                 **  wappdata-flush_pending flushing two dumps LST~2205
+2230 0014  829800175  829800176                   dec was off (~092850) possible pointing problem 
+2240 0015  829800177  829800178                   pointing problem solved everything seems ok
+2250 0016  829800179  829800180
+2300 0017  829800181  829800182
+2310 0018  829800183  829800184                            strong RFI at 1380 LST~2318
+2321 0019  829800185  829800186
+2331 0020  829800187  829800188
+2341 0021  829800189  829800190
+2351 0022  829800191  829800192
+0001 0023  829800193  829800194
+0011 0024  829800195  829800196
+0022 0025  829800197  829800198
+0032 0026  829800199  829800200
+0042 0027  829800201  829800202
+0052 0028  829800203  829800204
+0102 0029  829800205  829800206
+0112 0030  829800207  829800208
+0122 0031  829800209  829800210                       AGC datablock error 01:25  
+0132 0032  829800211  829800212
+0142 0033  829800213  829900001
+0152 0000  829900002  829900003                       AGC datablock error 01:56
+0203 0001  829900004  829900005                       AGC datablock error 02:11
+0213 0002  829900006  829900007
+0223 0003  829900007  829900009                       AGC datablock error 02:26
+0233 0004  829900010  829900011
+0243 0005  829900012  829900013
+0253 0006  829900014  829900015                       AGC datablock error 02:56
+0303 0007  829900016  829900017
+0314 0008  829900018  829900019
+0324 0009  829900020  Aborted
+
+END LST: 0323
+
+Notes:
+Beam 6B still gone.
+TOGS ran at beginning. TOGS wasn't run at end since the dataview crash killed galspect.
+Strong RFI at 1350
+intermittent weak RFI at 1380
+At the end of the 829800174 scan the wapp timed out waiting for wapps data apparently data stopped being taken with wappdata-flush error**
+It should be noted that the wappdata-flush_pending error was in orange (although it killed the wapps) but cima still thought it was taking data.
+It was then noticed that alfadatawin wasn't updating and then dataview froze altogether. Called Mikael and he confirmed that dataview was down. 
+Stayed down for ~5 minutes. When restarting the sequence the RA was adjusted in the CIMA 'pointing control menu'. 
+The telescope started slewing away from Az 360. We think this is because we adjusted the starting position from drift1p2 to drift39p2 and the 
+a2010.cat RA overrode the manually inserted RA. Once observing recommenced, the dec was off. This was automatically fixed on the next scan.
+

@@ -1,0 +1,72 @@
+Log for 04/30/10          Observers: Becky Koopmann, Parker Troischt, Halley Darling
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100430.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100501.a2010.****.fits
+
+LST  fits   Scan    calscan   Source     Pattern   Start coords. ang   time  loop  calmode    
+0918 0000  12000044 12000045  drift116p3 fixAZdr   091800+280239 19.0 600   99    loopend power levels OK, quicklook OK
+0928 0001 12000046 12000047 
+0938 0002 12000048 12000049
+0948 0003 12000050 12000051     quicklook OK
+0958 0004 12000052 12000053
+1008 0005 12000054 12000055
+1018 0006 12000056 12000057     power levels OK
+1028 0007 12000058 12000059     continuum source
+1039 0008 12000060 12000061 
+1049 0009 12000062 12000063
+1059 0010 12000064 12000065     several faint continuum sources
+1109 0011 12000066 12000067
+1119 0012 12000068 12000069
+1129 0013 12000070 12000071
+1139 0014 12000072 12000073
+1149 0015 12000074 12000075
+1159 0016 12000076 12000077
+1210 0017 12000078 12000079
+1220 0018 12000080 12000081     power levels OK
+1230 0019 12000082 12000083     Duplicate AGC datablock message
+1240 0020 12000084 12000085
+1250 0021 12000086 12000087
+1300 0022 12000088 12000089     Duplicate AGC datablock message
+1310 0023 12000090 12000091
+1320 0024 12000092 12000093     extrapolating pnt-data error
+1230 0025 12000094 12000095     quicklook OK
+1341 0026 12000096 12000097
+1351 0027 12000098 12000099     Duplicate AGC datablock message
+1401 0028 12000100 12100001     extrapolating pnt-data error
+1411 0000 12100002 12100003
+1421 0001 12100004 12100005     duplicate AGC datablock message
+1431 0002 12100006 12100007
+1441 0003 12100008 12100009     continuum source
+1451 0004 12100010 12100011     Duplicate AGC datablock message
+1501 0005 12100012 12100013     Duplicate AGC datablock message
+1512 0006 12100014 12100015     GPS
+1522 0007 12100016 12100017     GPS, Duplicate AGC databllock message
+1532 0008 12100018 12100019     Duplicate AGC datablock message
+1542 0009 12100020 --- Abort
+LST stop: 1542
+
+NOTES:
+- Late start due to rotating 360 to 180
+- Tiedowns disabled at start. Activated at 19:42
+- No TOGS at start; TOGS at end: no problems.
+- FAA radar ON
+- Beam 2.0 and 6.1 looked normal.
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+ALFA TEMPERATURES
+
+16K = K1: 13.8   K2: 14.0   K3: 15.3   K4: 154.4  AT 18:32
+70K = K1: 82.9   K2: 89.0   K3: 100.0  K4: 108.8
+
+16K = K1: 13.6   K2: 14.0   K3: 15.2   K4: 15.2   AT 22:07
+70K = K1: 81.2   K2: 87.3   K3: 98.1   K4: 106.9
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

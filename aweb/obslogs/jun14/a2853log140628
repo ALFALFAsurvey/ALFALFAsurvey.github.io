@@ -1,0 +1,41 @@
+A2853   LBW   14.06.28      Observers: Becky Koopmann
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140628.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.28jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A122414.7+091600  122414.7 +091600  j  6800 H v   # A220511   1307   13.7    1    417900673   no detection near center freq; src at 1387 MHz, 7100 km/s, S/N~5
+A122417.7+092004  122417.7 +092004  j  6700 H v   # A220512   1320   16.0    2    417900677   GPS in off scan; detection 1389.5 MHz, 6650 km/s, S/N~3; second at 1391 MHz, 6250 km/s, S/N~3
+A132913.3+115612  132913.3 +115612  j  7100 H v   # A230358   1336    6.6    3    418000681   no detection
+A133049.9+114946  133049.9 +114946  j  7000 H v   # A233738   1348    7.7    4    418000685   GPS in on scan; weak detection off center: 1385.5 MHz, 7450 km/s S/N~2
+A133301.5+120307  133301.5 +120307  j  7500 H v   # A233874   1400    9.0    5    418000689   GPS in on scan; detection at 1385.5 MHz, 7500 km/s, S/N~4
+A140144.1+095206  140144.1 +095206  j  6700 H v   # A230953   1413    8.9    6    418000693   GPS in on scan; no detection
+A140156.7+093200  140156.7 +093200  j  5600 H v   # A230959   1426   10.5    7    418000697   detection 1394 MHz, 5600 km/s, S/N~2 ;second at 1391 MHz, 6400 km/s, S/N~2
+A143116.6+031524  143116.6 +031524  j  1600 H v   # A242160   1439   15.2    8    418000701   no detection (is there absorption??)   
+A143933.2+031325  143933.2 +031325  j  8500 H v   # A242874   1451   15.4    9    418000705   GPS in on scan wipes out spectrum - no detection
+A144029.3+032558  144029.3 +032558  j  7400 H v   # A241975   1503   15.9   10    418000709   no detection   
+A150138.6+015213  150138.6 +015213  j  2200 H v   # A254078   1516   16.8   11    418000713   no detection
+A150805.8+013905  150805.8 +013905  j  1800 H v   # A250103   1528   17.4   12    418000717   detection 1411.5 MHz, 1800 km/s, S/N~3 ; second detection 1410.5 MHz, 2100 km/s, S/N~2
+A151509.4+024506  151509.4 +024506  j  1800 H v   # A253506   1540   16.7   13    418000721   narrow detection 1412 MHz, 1750 km/s, S/N~3  
+A161910.5+140801  161910.5 +140801  j  9000 H v   # A260422   1555    7.2   14    418000725   no detection   
+A162019.1+144024  162019.1 +144024  j  9000 H v   # A268099   1608    4.8   15    418000729   GPS in offscan very near detection at 1379MHz, 9000 km/s, S/N~6
+A160151.8+175540  160151.8 +175540  j  2200 H v   # A747288   1624    5.2   16    418000733   detection 1410 MHz, 2200 km/s, S/N~10
+
+Notes  
+     Tiedowns enabled. GPS in 5 scans, wipes out one target, very close to another.  
+
+

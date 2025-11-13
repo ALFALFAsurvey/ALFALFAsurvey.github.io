@@ -1,0 +1,307 @@
+<html>
+  <head>
+    <title> <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+
+<body bgcolor="ffffff">
+
+<h2><font color=#32cd32>ALFA FITS format</font> for <font color=#cc0f14>ALFALFA</font></h2>
+
+The ALFA data are delivered to the user as binary FITS tables. The format of these tables
+is still under development, so be aware that this document will certainly need regular
+updating over the next months. In particular, we anticipate that some columns now blank or
+hardwired will be fixed and more columns will have to
+be added to record additional parameters such as Doppler corrections, etc.</p>
+
+<ul>
+<li><p>A single data dump occuring every <b><font color=#cc0f14>D</font></b> seconds
+consists of <b><font color=#cc0f14>R</font></b> spectra where 
+<b><font color=#cc0f14>R</font></b> = (<b><font color=#cc0f14>B</font></b> beams 
+times <b><font color=#cc0f14>P</font></b> polarizations) + 2 =
+<b><font color=#cc0f14>16</font></b>. 
+ALFA records 7 beams and 2 polarizations.
+The reason for the extra 2 is that the WAPPS have 8 inputs; we might use the last two 
+someday for something else. Currently, the last two are junk.
+<li><p>A single dumped spectrum contains <b><font color=#cc0f14>N</font></b> spectral points,
+in our case 4096.
+<li><p> Each of the <b><font color=#cc0f14>R</font></b> spectra is dumped to a separate 
+<b><font color=#0000ff>row</font></b> of the binary table, so that each dump occupies 16 rows.</p>
+
+<li><p>A single dumped spectrum of <b><font color=#cc0f14>N</font></b> spectral points
+is written to <b><font color=#0000ff>column 1</font></b> of the table as <b><font color=#cc0f14>N</font></b>
+elements of 4 byte real (7 significant digits).
+<li><p>The remaining <b><font color=#0000ff>columns 2-NNN</font></b> occupy <b><font color=#cc0f14>NNN</font></b>
+bytes. See below for current column assignments. For higher precision, many of the columns are written
+as 8 byte real (15 significant digits).
+<li><p>A single <b><font color=#0000ff>row</font></b> therefore has a width of  
+(<b><font color=#cc0f14>N</font></b> times <b><font color=#cc0f14>4</font></b>) bytes 
+plus <b><font color=#cc0f14>NNN</font></b> bytes.
+<li><p>Thus a single data dump contains <b><font color=#cc0f14>R</font></b> rows 
+of <b><font color=#cc0f14>(4 N + NNNNNNN)</font></b> bytes.
+</p>
+</ul>
+
+<br>
+Look at Jeff Hagen's <a href="http://alfa.naic.edu/data/fits_header.h">header</a> definition for the latest and also
+his <a href="http://alfa.naic.edu/data/wappfits_doc.html">documentation</a> page</p>
+
+Look at Mike Nolan's <a
+href="http://www.naic.edu/~nolan/wappfits.html">notes on suggested
+changes</a></p>
+
+Look at Phil's page describing <a href="http://www.naic.edu/~phil/software/hdrs/fitspos.html">how the
+FITS positions and offsets</a> are calculated</p>
+
+Here is a listing of the<a href="docs/wapp.20040928.a1946.0001_h1.txt"> header contents</a> of a file 
+written on 28Sep2004.</p>
+
+<br>
+On 28 Sep 2004, the FITS tables produced by ALFA contained 118(+1) columns, though not all of them were correctly set. 
+Here's what a single <font color=0000ff>row</font> contains: &nbsp (<i>note: this page is a work in progress!!!!</i>)
+</table>
+<table border=8 cellpadding=5>
+<tr><th>Col#</th><th>Title</th><th>Description</th><th>Format</th><th># bytes</th></tr>
+<tr><td>1 </td><td>DATA  </td><td>Spectral values; an array of dimension = # channels = # lags. 
+See Jeff's <a href="http://alfa.naic.edu/data/wappfits_doc.html">documentation</a> for further info. </td><td>4096*4 </td><td align=right>16384</td></tr>
+<tr><td>2 </td><td>OBJECT  </td><td>Name of source, as input by user.</td><td> A16  </td><td align=right>16</td></tr>
+<tr><td>3 </td><td>CRVAL1  </td><td>Center Frequency, in Hz, of spectrum. </td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>4 </td><td>CDELT1  </td><td>Channel separation, in Hz (delta f), hardwired to
+be = (bandwidth/# lags); this is currently
+a positive number, but if freq decreases with increasing channel number, it should be 
+negative.</td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>5 </td><td>CRPIX1  </td><td>Pixel of center frequency, hardwired to be = (# lags/2);
+     currently, we do not know if this is before or after flipping which would make a difference.</td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>6 </td><td>CRVAL2  </td><td>Requested source coordinate 1, either RA or AZ "depending on equinox".
+                         Currently for FIXEDAZ, this is the requested azimuth, in degrees.  
+                         See note under EQUINOX.</td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>7 </td><td>CRVAL3  </td><td>Requested source coordinate 2, either Dec or ZA "depending on epoch".
+                         Currently for FIXEDAZ, this is the ZA that corresponds to the requested DecJ, in degrees. 
+                         See note under EQUINOX.</td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>8 </td><td>EQUINOX </td><td>Epoch of requested CRVAL2,3. If "0", then CRVAL2 and CRVAL3 are azimuth and
+zenith angle. As currently implemented, this does not distinguish between current and epoch coordinates in
+systems other than RA, Decl. and will cause problems for either Az,ZA or l,b users.</td><td> D13.5 </td><td align=right> 8</td></tr
+<tr><td>9 </td><td>CRVAL4  </td><td>A code which designates the type of polarization data, where applicable,
+ (neg -> Pol, pos -> Stokes). See Jeff's <a href="http://alfa.naic.edu/data/wappfits_doc.html">documentation.</a>
+                          </td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>10</td><td>CRVAL5  </td><td>Time at start of data block, in hours since midnight.</td><td> D13.5 </td>
+                          <td align=right> 8</td></tr>
+<tr><td>11</td><td>DATE-OBS</td><td>Date of this observation, in yyyy-mm-dd. </td><td> D13.5 </td>
+                          <td align=right> 8</td></tr>
+<tr><td>12</td><td>TSYS   </td><td>Tsys, as last computed; available only if "standard cal" is invoked. 
+                          </td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>13</td><td>BANDWID </td><td>Overall bandwidth of spectrum, in Hz. </td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>14</td><td>RESTFRQV </td><td>Rest frequency, in Hz;
+   currently, this is defined as the "rest frequency at band center" but is hardwired to the center frequency
+   input to the IFLO configuration widget for topocentric V = 0 km/s. Thus, it will be
+   be the same as CRVAL1 for such modes, and not 1420.4058 MHz. </td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>15</td><td>CRVAL1V </td><td>Requested velocity, in m/s or z (?)     </td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>16</td><td>CDELT1V </td><td>Velocity, or z, per channel, in m/s or z; supposedly
+   hardwired to be = (CRVAL1V/# lags), so that usage is entirely unclear(?). Furthermore, delta v
+   will not be constant across the band. It is not clear how or when the
+   frequency and velocity implementations of spectral coordinates are applied. Not applicable
+   for 100 MHz BW.  </td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>17</td><td>CRPIX1V</td><td>Center channel; supposedly hardwired to be = (#lags/2), but actually is "0". 
+   Should be different from CRPIX1 if (# chans) is even, so usage unclear.  
+   Currently it is set to a mysterious "4000f" for FIXEDAZ ALFA data. </td><td> D13.5 </td><td align=right> 8</td></tr>
+<tr><td>18</td><td>CUNIT1V</td><td>units of CRVAL1V; m/s or z; currently: "m/sd" (?)</td><td> 8A </td><td align=right> 8</td></tr>
+<tr><td>19</td><td>CTYPE1V</td><td>supposedly "units" of velocity, but appears to refer to velocity definition, e.g.
+   "VOPT-F2V" refers to optical convention for doppler correction.</td><td> 8A </td><td align=right> 8</td></tr>
+<tr><td>20</td><td>SPECSYS</td><td>specifies frame for velocity, as chosen by user, e.g. "topocent"
+    </td><td> 8A </td><td align=right> 8</td></tr>
+<tr><td>21</td><td>MJD-OBS</td><td>Modified Julian date (MJD) at start of data block (= JD-240000.5).</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>22</td><td>LST    </td><td>Local mean sidereal time, in hours, at start of data block.</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>23</td><td>EXPOSURE</td><td>Integration time, in sec, of fundamental data block.</td><td> D13.5 </td>
+     <td align=right> 8 </td></tr>
+<tr><td>24</td><td>ENC_AZMITH</td><td>Encoder azimuth on sky (not dome/feed), in degrees;
+    note that it can be > 360, to distinguish wraps; is it on the sky? Get Az=539 for obj at 180. in north.
+    This is uninterpreted engineering info.          </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>25</td><td>ENC_ELEVATIO</td><td>Encoder elevation, in degrees; uninterpreted engineering info.</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>26</td><td>ENC_ALTEL   </td><td>Encoder elevation, of the other 
+    carriage house in deg; uninterpreted engineering info. </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>27</td><td>CROFF2  </td><td>RA offset applied at req_time, in hours (?) of J2000(?); note says that 
+    "offsets include encoder errors and reflect actual telescope position of this beam as well as can be known
+    at the starting time of this scan". Possibly related to map construction as 
+    "Offset to commanded map center" noted in header. Unclear if user can control this; if so,
+    should allow for coordinate offsets in other than RA,Dec.    </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>28</td><td>CROFF3  </td><td>Dec offset applied at req_time, in deg. See CROFF2.   </td>
+     <td> D13.5  </td><td align=right> 8 </td></tr>
+<tr><td>29</td><td>OFFC1  </td><td>Engineering offset 1, in radians. </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>30</td><td>OFFC2  </td><td>Engineering offset 2, in radians. </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>31</td><td>OFF_TIME</td><td>Time of offsets OFFC1 and OFFC2, in seconds from midnight AST</td>
+     <td> D13.5 </t d><td align=right> 8 </td></tr>
+<tr><td>32</td><td>RATE_C1 </td><td>Rate of change of offset C1; in header: rad/sec; in FITS file: deg/sec.</td>
+      <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>33</td><td>RATE_C2</td><td>Rate of change of offset C2; in header: rad/sec; in FITS file: deg/sec.</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>34</td><td>OFF_CS  </td><td>Coordinate system of offsets C1,C2; currently set to "0". </td><td> 8A   </td>
+     <td align=right> 8 </td></tr>
+<tr><td>35</td><td>RATE_CS  </td><td>Coordinate system of rates; currently set to "0". </td><td> 8A   </td>
+     <td align=right> 8 </td></tr>
+<tr><td>36</td><td>RATE_DUR</td><td>How long has rate been applied?, in sec. Note that these rates are valid
+     at the time specified by OFF_TIME and not necessarily at the start of the scan.  </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>37</td><td>CUR_TOL </td><td>Computed great circle tolerance, in sec. Currently, this is not interpolated;
+     needs to be fixed. </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>38</td><td>REQ_TOL </td><td>Requested tolerance, in sec, as set by user.</td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>39</td><td>MODEL_OFFAZ</td><td>Pointing model offset Az, in deg, for this beam; read from
+     /share/wappsrc/alfa_pointing.tcl (cannot find this file?)</td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>40</td><td>MODEL_OFFZA</td><td>Pointing model offset ZA, in deg, for this beam; see above. </td><td> D13.5 </td>
+     <td align=right> 8 </td></tr>
+<tr><td>41</td><td>BEAM_OFFAZ </td><td>Unrotated ALFA beam offset in Az, in deg, of this beam from Beam 0.
+Is this read from /share/wappsrc/alfa_offsets.tcl? </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td>42</td><td>BEAM_OFFZA </td><td>Unrotated ALFA beam offset in ZA, in deg, of this beam from Beam0.</td><td> D13.5 </td>
+      <td align=right> 8 </td></tr>
+<tr><td> 43 </td><td>USER_OFFAZ  </td><td>User commanded pointing offset in Az, in deg</td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 44 </td><td>USER_OFFZA  </td><td>User commanded pointing offset in ZA, in deg</td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 45 </td><td>RFEED_OFFAZ </td><td>Rotated offset of this beam in Az, in deg; refers to offset
+     along ellipse, given the ALFA rotation angle. Changes with each beam.    </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 46 </td><td>RFEED_OFFZA </td><td>Rotated offset of this beam in ZA, in deg; see above.   </td><td> D13.5 </td>
+     <td align=right> 8 </td></tr>
+<tr><td> 47 </td><td>PRFEED_OFFAZ</td><td>Offset from nominal to the beam selected as the "centered" one, in Az, in deg, corresponding
+     to the beam selected in the CIMA pointing widget to which all offsets are referenced. Normally this will be 0 and for Beam 0,
+     these are the negative of RFEED_OFFXX above; "same for all beams of a scan". Not 100% sure of this.</td>
+     <td> D13.5 </td> <td align=right> 8 </td></tr>
+<tr><td> 48 </td><td>PRFEED_OFFZA</td><td>Offset to "centered" beam, in ZA, in deg; see above. </td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 49 </td><td>BEAM_OFFRAJ  </td><td>Total RA offset to this beam from "center beam", in deg of J2000 </td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 50 </td><td>BEAM_OFFDECJ </td><td>Total Dec offset to this beam from "center beam", in deg of J2000 </td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 51 </td><td>CRVAL2A </td><td>True RA pointing of this beam on the sky, in hours. </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 52 </td><td>CRVAL3A </td><td>True Dec. pointing of this beam on the sky, in deg. </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 53 </td><td>CRVAL2B </td><td>True Az pointing of this beam on the sky, in deg. </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 54 </td><td>CRVAL3B </td><td>True ZA pointing of this beam on the sky, in deg. </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 55 </td><td>CRVAL2C </td><td>RA J2000 antenna pointing without beam offset, in deg. Same for all beams.</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 56 </td><td>CRVAL3C </td><td>Dec J2000 antenna pointing without beam offset, in deg. Same for all beams.</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 57 </td><td>CRVAL2G </td><td>True galactic l pointing this beam on the sky, in deg. Computed from CRVAL(2,3)A.</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 58 </td><td>CRVAL3G </td><td>True galactic b pointing this beam on the sky, in deg. See above. </td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 59 </td><td>CROFF2B </td><td>True Az offset to commanded map center, in deg. Since this is not "0", we are not
+     sure what it means for FIXEDAZ modes.</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 60 </td><td>CROFF3B </td><td>True ZA offset to commanded map center, in deg. See above.</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 61 </td><td>ALFA_ANG    </td><td>ALFA rotation angle        </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 62 </td><td>PARA_ANG    </td><td>Parallactic angle, in deg  </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 63 </td><td>OBSMODE     </td><td>Name of pattern: e.g. FIXEDAZ. This is a character string intended to
+     identify the overall type of observation collecting groups of scans into one "observation".</td>
+     <td> A8 </td><td align=right> 8 </td></tr>
+<tr><td> 64 </td><td>OBS_NAME    </td><td>Name of lowest obs: e.g. FIXEDAZ; other options include
+                                          ON, OFF, CALON, CALOFF, DRIFT. This is a string intended to
+     identify a particular group of scans within an "observation".</td><td> A8  </td><td align=right> 8 </td></tr>
+<tr><td> 65 </td><td>BACKENDMODE </td><td>Backend mode (e.g., 2-chan, 3-level auto); specifies backend setup. </td><td> A24   </td><td align=right> 24 </td></tr>
+<tr><td> 66 </td><td>CALTYPE     </td><td>Type of cal selected (eg., HCORCAL) </td><td> A8   </td><td align=right> 8 </td></tr>
+<tr><td> 67 </td><td>FRONTEND    </td><td>Name of receiver (e.g., ALFA)        </td><td> A8   </td><td align=right> 8 </td></tr>
+<tr><td> 68 </td><td>PLAT_POWER  </td><td>Last power measurement from the platform meter; for engineering purposes. </td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 69 </td><td>CNTRL_POWER </td><td> Last power measurement from the control room power meter; ditto</td>
+     <td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 70 </td><td>TOT_POWER   </td><td>Scaled power in the 0th lag </td><td> D13.5 </td><td align=right> 8 </td></tr>
+<tr><td> 71 </td><td>TCAL        </td><td>Tcal MHz/K for (dimension 64?)
+                          0:freq0 1:tcal0 2:freq1 3:tcal1 ...        </td><td> 64D13.5 </td><td align=right> 512 </td></tr>
+<tr><td> 72 </td><td>SYN1        </td><td>Platform synthesizer setting, in Hz.
+</td><td> D13.5   </td><td align=right> 8 </td></tr>
+<tr><td> 73 </td><td>SYNFRQ      </td><td>Control room sythesizer settings, in Hz; an array of 4.
+</td><td> 4D13.5   </td><td align=right> 32 </td></tr>
+<tr><td> 74 </td><td>PATTERN_SCAN</td><td> Scan number of **first** scan at which
+    pattern selected (e.g., if part of a LOOP). Written as YDDDnnnnn; see below.</td>
+    <td> I9   </td><td align=right> 8 </td></tr>
+<tr><td> 75 </td><td>SCAN_NUMBER </td><td> Scan number of data block (e.g. within scan within loop), written as
+    YDDDNNNNNN = Year (starting at 2000) + Daynum + number of seconds since midnight at start.</td>
+     <td> I9   </td><td align=right> 8 </td></tr>
+<tr><td> 76 </td><td>PATTERN_NUMBER</td><td> Number of current dump within scan - 1 (i.e. the first one is "0").</td>
+    <td> I8   </td><td align=right> 8 </td></tr>
+<tr><td> 77 </td><td>TOTAL_PATTERN</td><td> Total dumps for this scan, as requested</td><td> I8   </td><td align=right> 8 </td></tr>
+<tr><td> 78 </td><td>ENC_TIME    </td><td>Time when enc_Az and enc_ZA recorded, in msec (?)</td><td> I8</td>
+     <td align=right> 8 </td></tr>
+<tr><td> 79 </td><td>LAGS_IN     </td><td>Number of correlator lags; hardwired to be = # bytes(data)/4.0;
+declared integer, but then written as D? </td><td> D13.5   </td><td align=right>8 </td></tr>
+<tr><td> 80 </td><td>WAPPMASK    </td><td> Code to specify what other WAPPS or ALFAs enabled. Currently set to
+     "252645135"; note says to check WAPP web page(?)</td><td> I8   </td><td align=right> 8 </td></tr>
+<tr><td> 81 </td><td>NTCAL       </td><td> Number of valid Tcal pairs(?); currently "31"? </td><td> I8 </td>
+     <td align=right> 8 </td></tr>
+<tr><td> 82 </td><td>PRFEED      </td><td>Master ALFA feed for this scan </td><td> 1B   </td><td align=right> 1 </td></tr>
+<tr><td> 83 </td><td>NIFS        </td><td># of IFs in this observation; typically 2 for 2 pols.  </td>
+     <td> 1B   </td><td align=right> 1 </td></tr>
+<tr><td> 84 </td><td>IFVAL       </td><td>Which polarization? 0-1 or 0-3 for Stokes</td><td> 1B   </td><td align=right> 1 </td></tr>
+<tr><td> 85 </td><td>ATTN_CORR   </td><td>Correlator attenuator 1-15</td> <td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 86 </td><td>UPPERSB     </td><td>Flag to indicate if spectrum is flipped. Currently "1".</td> <td> 1B </td>
+     <td align=right> 1 </td></tr>
+<tr><td> 87 </td><td>INPUT_ID    </td><td>WAPP number 0-3 or 0-7 for ALFA</td><td> 1B </td><td align=right> &nbsp </td></tr>
+<tr><td> 88 </td><td>MASTER      </td><td> Which is the master? 0: Gregorian dome; 1: carriage house. OK if "0".</td>
+<td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 89 </td><td>ONSOURCE    </td><td>Flag to indicate if on-source at ENC_TIME. OK if "1"</td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 90 </td><td>BLANKING    </td><td>Flag to indicate if blanking turned on. </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 91 </td><td>LBWHYB      </td><td>Flag to indicate if LBandWide Hybrid is in. OK if "0".</td><td> 1B </td>
+     <td align=right> 1 </td></tr>
+<tr><td> 92 </td><td> SHCL   </td><td>Flag to indicate if receiver shutter is closed. OK if "0". </td><td> 1B </td>
+     <td align=right> 1 </td></tr>
+<tr><td> 93 </td><td> SBSHCL   </td><td>Flag to indicate if S-band receiver shutter closed. OK if "0". </td>
+     <td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 94 </td><td> RFNUM   </td><td>Platform position of the receiver selector </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 95 </td><td> CALRCVMUX   </td><td>&nbsp                   </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 96 </td><td> ZMNORMAL   </td><td>&nbsp                   </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 97 </td><td> RFATTN   </td><td> Platform attenuator position, array of 2 </td><td> 2B </td><td align=right> 2 </td></tr>
+<tr><td> 98 </td><td> IFNUM   </td><td>&nbsp                   </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 99 </td><td> IFATTN   </td><td>&nbsp                   </td><td> 2B </td><td align=right> 2 </td></tr>
+<tr><td> 100 </td><td> FIBER   </td><td>&nbsp                   </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 101 </td><td> AC2SW   </td><td>&nbsp                   </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 102 </td><td> PHBSIG   </td><td>&nbsp                   </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 103 </td><td> HYBRID   </td><td>&nbsp                   </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> 104 </td><td> PHBLO   </td><td>&nbsp                   </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> XFNORMAL   </td><td>&nbsp                   </td><td> 1B   </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> NOISE   </td><td>&nbsp                   </td><td> 1B  </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> GAIN   </td><td>&nbsp                   </td><td> 2B   </td><td align=right> 2 </td></tr>
+<tr><td> &nbsp </td><td> INPFRQ   </td><td>&nbsp                  </td><td> 1B   </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> MIXER   </td><td>&nbsp                   </td><td> 4B </td><td align=right> 4 </td></tr>
+<tr><td> &nbsp </td><td> VLBAINP   </td><td>&nbsp                 </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> AMPINP   </td><td>&nbsp                  </td><td> 4B </td><td align=right> 4 </td></tr>
+<tr><td> &nbsp </td><td> EXTINP   </td><td>&nbsp                  </td><td> 4B </td><td align=right> 4 </td></tr>
+<tr><td> &nbsp </td><td> SYNDEST   </td><td>&nbsp                 </td><td> 4B </td><td align=right> 4 </td></tr>
+<tr><td> &nbsp </td><td> CALSRC   </td><td>&nbsp                  </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> CAL   </td><td>&nbsp                     </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> VIS30MHz   </td><td>&nbsp                </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> PWRMET   </td><td>&nbsp                  </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> BLANK430   </td><td>&nbsp                </td><td> 1B </td><td align=right> 1 </td></tr>
+<tr><td> &nbsp </td><td> FILL   </td><td>&nbsp                    </td><td> 4B </td><td align=right> 4 </td></tr>
+<tr><td> &nbsp </td><td> .....   </td><td>.....                   </td><td> .....   </td><td align=right> ..... </td></tr>
+<tr><td> &nbsp </td><td> &nbsp   </td><td>&nbsp                   </td><td> &nbsp   </td><td align=right> &nbsp </td></tr>
+</table>
+<br>
+<h3> Useful links:</h3>
+<ul>
+<li>The <a href="http://www.aoc.nrao.edu/~egreisen/scs_041022.pdf">22Oct04 version</a> of the 
+"Representation of spectral coordinates in FITS" draft, by Greisen et al. (a work in progress).
+Note: if this link is broken, look for an updated version towards the bottom of
+<a href="http://www.aoc.nrao.edu/~egreisen">Eric Greisen's</a> home page.
+<li>The aips++ <a href="http://aips2.nrao.edu/docs/notes/236/node14.html">SDFITS page</a>
+to read more about SDFITS specifications.
+<li>The MAST <a href="http://archive.stsci.edu/fits/index.html">FITS</a> page at STScI.
+<li>The GSFC <a href="http://fits.gsfc.nasa.gov/">FITS Support Office</a>.
+<li><a href="http://www.adass.org/adass/proceedings/adass99/P2-32/P2-32.html">Bob Garwood's</a>
+summary talk at ADASS IX.
+<li>The <a href="http://heasarc.gsfc.nasa.gov/docs/software/ftools/fv/">FV</a> page
+to download the generic FITS viewer.
+<li>The <a href="http://heasarc.gsfc.nasa.gov/docs/software/fitsio/">CFITSIO</a> page
+to download the C and FORTRAN FITSio routines.
+<li>The <a href="http://heasarc.gsfc.nasa.gov/docs/software/ftools/fitsverify/">FITSVERIFY</a> page
+</p>
+</ul>
+<br>
+<hr>
+<br>
+<font color=#cc0f14>
+This page created and maintained by Martha Haynes and the members of the
+<a href="http://www.astro.cornell.edu/Galaxy/egg.html"> Cornell ExtraGalactic Group</a></font>
+</p>
+<!-- hhmts start -->
+<font color=#008000><bf>Last modified:Tue Dec 14 10:07:48 EST 2004</bf> </font>
+<!-- hhmts end -->
+</body>
+</html>

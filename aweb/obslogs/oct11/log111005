@@ -1,0 +1,76 @@
+Log for 11.10.05 (05Oct2011)        Observers: Rebecca Koopmann + Union AST-051Lab, PHY-100 classes
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111005.a2010.****.fits
+         /share/pserverf.sda3/wappdata/wapp.20111006.a2010.****.fits     
+
+Normal meridian strip observing.
+
+LST  fits     Scan    calscan    Source    Pattern   Start coords. ang  time loop calmode
+2129 0018 127800391 127800392  drift 84p2 fixAzdr   213002+202624  19  600   99  loopend 4a,6b dead, FAA strong, power levels OK, strong cs tiedowns 
+active; tried restarting wapps to get 6b
+2139 0019 127800393 127800394  quicklook ok 
+2149 0020 127800395 127800396 
+2159 0021 127800397 127800398  cont src
+2209 0022 127800399 127800400  cont src
+2219 0023 127800401 127800402
+2230 0024 127800403 127800404 
+2240 0025 127800405 127800406  power levels ok
+2250 0026 127800407 127800408  quicklook ok 
+2300 0027 127800409 127800410
+2310 0028 127800411 127800412
+2320 0029 127800413 127800414  quicklook ok
+2330 0030 127800415 127800416
+2340 0031 127800417 127800418
+2350 0032 127800419 127800420
+0000 0033 127800421 127800422  cont src
+0011 0034 127800423 127800424  cont src through calibration;  power levels ok 
+0021 0035 127800425 127800426 
+0031 0036 127800427 127900001
+0041 0000 127900002 127900003  quicklook ok
+0051 0001 127900004 127900005  cont src; power levels ok
+0101 0002 127900006 127900007 
+0111 0003 127900008 127900009  cont src
+0121 0004 127900010 127900011  quicklook ok
+0131 0005 127900012 127900013
+0142 0006 127900014 127900015  quicklook OK
+0152 0007 127900016 127900017  power levels OK
+0202 0008 127900018 127900019
+0212 0009 127900020 127900021
+0222 0010 127900022 127900023  quicklook OK
+0232 0011 127900024 127900025  power levels OK
+0242 0012 127900026 127900027  quicklook OK
+0252 0013 127900028 127900029
+0302 0014 127900030 127900031
+0312 0015 127900032 -- abort
+LST stop: 0312, AST Stop=0242
+
+At the bottom, add notes regarding:
+-- TOGS run at beginning.
+-- FAA radar (1350) ON.
+-- Beam 4A dead.  
+-- Beam 6B power low; restarted waps at beginning but no luck 
+-- "Power Levels OK" means all but 4a&6b.
+
+
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+ALFA TEMPERATURES
+
+16K = K1: 15.0   K2: 14.2   K3: 16.2   K4: 16.4   AT 16:24
+70K = K1: 92.9   K2: 93.6   K3: 102.5  K4: 113.2
+
+16K = K1: 14.6   K2: 13.5   K3: 15.5   K4: 15.4   AT 22:26
+70K = K1: 85.6   K2: 86.1   K3: 93.7   K4: 103.2
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered

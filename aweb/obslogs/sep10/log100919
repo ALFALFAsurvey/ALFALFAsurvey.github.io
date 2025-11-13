@@ -1,0 +1,85 @@
+Log for 09/19/10     Observer: Gregory Hallenbeck (GH)
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100919.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100920.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=82.70   ALFAang= -60.9  ZA=4.8  AzG=82.70   ZAG=4.78  ****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2025  RA@end=0250
+      RA = LST - 20 min
+****
+During the night, please make occasional notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the ZA limits
+are (3.5,12.0). If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2045 0023  26200116 26200117   drift73p1  fixAzdr   2025+173831    -60.9  500   99  loopend   4.78
+        beam 6B looks low again (slightly less than 0.8), quicklook OK
+2055 0024  26200118 26200119
+2105 0025  26200120 26200121
+2115 0026  26200122 26200123  ZA=4.74
+2125 0027  26200124 26200125
+2135 0028  26200126 26200127
+2146 0029  26200128 26200129  ZA=4.70  quicklook OK
+2156 0030  26200130 26200131
+2206 0031  26200132 26200133  ZA=4.68
+2216 0032  26200134 26200135
+2226 0033  26200136 26200137  ZA=4.67
+2236 0034  26200138 26200139
+2246 0035  26200140 26200141  ZA=4.65  quicklook OK
+2257 0036  26200142 26200143  WAPPS had to interpolate for 2 seconds
+2307 0037  26200144 26200145  ZA=4.64
+2317 0038  26200146 26200147
+2327 0039  26200148 26300001
+2337 0000  26300002 26300003  ZA=4.63  quicklook OK. VERY strong radar!
+2347 0001  26300004 26300005
+2357 0002  26300006 26300007  ZA=4.62
+0008 0003  26300008 26300009
+0018 0004  26300010 26300011
+0028 0005  26300012 26300013  ZA=4.62
+0038 0006  26300014 26300015  quicklook OK
+0048 0007  26300016 26300017
+0058 0008  26300018 26300019  ZA=4.63
+0108 0009  26300020 26300021
+0118 0010  26300022 26300023
+0128 0011  26300024 26300025  ZA=4.63  quicklook OK
+0139 0012  26300026 26300027
+0149 0013  26300028 26300029
+0159 0014  26300030 26300031
+0209 0015  26300032 26300033  ZA=4.67
+0219 0016  26300034 26300035
+0229 0017  26300036 26300037
+0239 0018  26300038 26300039
+0249 0019  26300040 26300041
+0259 0020  26300042 26300043  ZA=4.72  quicklook OK
+0310 0021  26300044--aborted!
+
+LST@stop: 0310       RA@stop: 0250
+
+NOTES:
+TOGS run at start.  All went well.
+Tiedown disabled.
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.8   K2: 14.7   K3: 16.2   K4: 16.4   AT 16:22
+70K = K1: 87.3   K2: 95.1   K3: 106.1  K4: 114.4
+
+16K = K1: 15.1   K2: 15.0   K3: 16.5   K4: 16.4   AT 22:36
+70K = K1: 88.8   K2: 96.4   K3: 107.6  K4: 116.2
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

@@ -1,0 +1,441 @@
+
+<!-- saved from url=(0045)http://www.naic.edu/~a2010/checklist_lbw.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Arecibo Legacy Fast ALFA (ALFALFA) 
+Survey</title></head><body bgcolor="#ffffff">
+
+<center><h2 style="color: rgb(10,10,150);">a2941 Observing Checklist (for ALFALFA SEARCH MODE LBW Observations)</h2>
+
+<font color="#cc0f14"><b>Version date: Jan 2015</b></font>
+<table border="3" bordercolor="darkblue" cellpadding="3">
+<tbody><tr><td>Checklist date: </td> <td> Jan 5, 2015</td></tr>
+<tr><td>CIMA version  : </td> <td> "The Stable version (Default) (Ver 3.3.13 2014-05-08 17:14)"</td></tr>
+</tbody></table>
+<p></p>
+Before observing, be sure to study the <a href="http://www.naic.edu/~a2010/ALFALFA_lbwobserving.htm">background</a> document. <font color=cc0f14><b> THIS NEEDS TO BE UPDATED WITH THE NEW WAPP SEARCH MODE</b></font><p></p>
+If the CIMA version/time stamp is not as appears above (one or the other has changed a few times in
+the last week), check the <a href="http://www.naic.edu/~cima/cima_users_log.html">CIMA
+User's Log</a> to see what has happened. Presumably any changes made would not apply to us; don't
+take the adjective "stable" too literally.<p></p>
+</center>
+
+<br>
+This is a short checklist of the things to do when observing with LBW as part of the ALFALFA followup observations. <br>
+Remote observers: see the <a href="http://www.naic.edu/~a2010/remote_lbw.htm"> LBW remote observing checklist </a> (Note: instructions are almost
+the same as for A2010/ALFA except of course when it comes to the specifics).<br>
+<!--
+For general issues, see the ALFALFA
+<a href="http://www.naic.edu/~a2010/troubleshooting.html"> observational troubleshooting</a>
+page.<br>
+-->
+It is always a good idea to check with recent observers about their experiences.
+<p></p>
+
+<center>
+<table border="3" bordercolor="#008000" bgcolor="#E6FEE6">
+<tbody><tr><td>
+<center><b>Important points about ALFALFA followup observing with LBW</b></center>
+<ol>
+<li> <font color=#cc0f14><b>NEW 2015!</b></font> &nbsp Starting in January 2015, we will be using the WAPP spectrometer
+     in a staggered, overlapping frequency band mode to search for HI signals from galaxies whose redshifts we
+     do not know. Understanding how this mode works is a new task for all of us this year! In this "WAPP-search" mode,
+     each of the 4 WAPP boards is set to observe both polarizatiopns of a 25 MHz bandpass with each board 
+     centered on a different frequency (instead of the whole 100 MHz ALFALFA frequency range). Be sure
+     to understand the 2015 WAPP search
+     <a href="http://www.naic.edu/~a2010/lbw_observingmodes.htm">spectrometer mode</a>. In previous LBW observations 
+     we used the interim correlator at specified velocity; you can find the
+     instructions for that mode <a href="checklist_lbw14125.html">here </a>.
+<li> <font color=#cc0f14><b>NEW 2015!</b></font> &nbsp Don't forget to <b>RESTART THE WAPPS</b> at startup, before
+     you load the configuration file. &nbsp For some of us, this is blast from the past: <i>"When in doubt, restart
+     the WAPPs!"</i>
+<li> <font color=#cc0f14><b>NEW 2015!</b></font> &nbsp Sometimes it happens that one of the WAPP boards is bad.
+     Be sure you know what to do if that is the case; see the discussion below on what to do while observing.
+<li> In 2015, the configuation file will be the same every night; only the command file 
+     containing the observing sequence will change. See the
+     <a href="http://www.naic.edu/~a2010/scheds/a2010_schedupcoming.txt">A2010 schedule</a> page.
+<li> We still use the a2010 user account (to login, etc), but the observing 
+     program name is different. In spring 2015, the observing program is called <b>"a2941"</b>. You can navigate, 
+     as user a2010, to the observing file directory by typing <b>"a2941obs"</b> in any window.
+<li> We use <b>LBW</b> (the L-band wide receiver; not ALFA). <!--Therefore, there are <b>no waterfall plots</b>.-->
+<li> We use the <b>idl_lbw</b> software routines to monitor the data. You'll have to follow the instructions; see below!
+<li> The observing sequence is executed using a <b>command file</b>. Once you set up the
+     receiver and the correlator and start to run the command file, the observing sequence will run automatically,
+     moving from source to source and running the ON-OFF sequence for each one smoothly (but again, you need to 
+     pay attention!).
+<li> The observing program for a2941 consists normally
+     of a series of 5-minute ON-OFF "pairs", one for each galaxy followed automatically by 
+     a CalON/CalOFF sequence which takes 20 seconds; observing each target "pair" takes about 13 minutes plus slew time. 
+     Then it's time to look at the resulting spectrum to see if there is a galaxy lurking there! &nbsp <b>Note:</b> Sometimes
+     observations only last 3 minutes (if the source name does not start with "S".
+<li> During each observing block, the observing sequence will be executed by running a command file 
+     called <b>"a2941_YYMMDD.cmd"</b>, found in the observing directory "/share/obs4/usr/a2941". We also use only
+     one configuration file: <b>a2941.conf</b>.
+<li> Additionally, in the "/share/obs4/usr/a2941/jan15" directory, 
+     you will find two other files for your use:<br>
+     <ul> <li> <b>a2941logYYMMDD</b>: a template log file for the night. Please fill in/correct as necessary. Be sure
+               to look at some <a href="http://www.naic.edu/~a2010/logs_fall14.htm"> old log files</a> for examples, 
+         e.g. <a href="http://www.naic.edu/~a2010/obslogs/nov14/a2899log141127">one example</a>
+          </li><li> <b> a2941_YYMMDD_nominal.txt</b>: an <i>approximate</i> schedule for the night. Notice that the times here are
+               <i> ONLY APPROXIMATE</i> and that the given azimuths are for the source not the dome.</li></ul>
+<li><font color="#cc0f14"><b>NOTE THIS!!!!</b></font> &nbsp; If there is any chance of rain or fog,
+ask the operator to disable the tiedowns. In March
+2013, bad baselines occurred when there was some rain and/or fog because one or more of the distomats was not
+recording. The symptom: bad baselines with 1 MHz periodicity. Solution: disable the tiedowns. If unsure, discuss
+with the operator, but we are thinking that the best solution is simply to disable them. Read Phil's
+explanation <a href="http://www.naic.edu/~a2010/phil_tiedowndisable.txt">here</a>.
+<li> Your job includes (a) watching that the telescope does what it is supposed to; (b) making
+     sure the timing of the observations stays roughly on schedule; and (c)
+     making a quick check of the result for each galaxy to see if there
+     is a detection; hence you will have to keep track of what is going on!
+<li> (Left over from the ALFALFA survey days:) &nbsp; 
+We do not run TOGS; there is no commensal observing, and so (we presume), no need for a cell phone -- which is an 
+especially good thing if we are observing at Arecibo: <b> BE SURE ALL YOUR WIRELESS DEVICES ARE IN AIRPLANE MODE OR TURNED 
+OFF ALTOGETHER!</b>
+</ol>
+</td></tr></tbody></table>
+</center><p></p>
+
+<hr>
+<h2><font color="#cc0f14">Startup:</font></h2>
+<ul>
+  <li> Ask the telescope operator to move the telescope to the Az,Za of the first source and select LBW as soon
+       as the previous observation is finished. Note that the Az of the <b>source</b> is given in the 
+      <b> a2941_YYMMDD_nominal.txt</b>, but you need to add/subtract 180 degrees for the Az of the dome. (If you
+       are observing remotely, you should have already done this when you called the operator 30 min in advance.)<p></p>
+
+  </li><li> If there is any chance of rain/fog, ask the telescope operator to <b> disable the tiedowns</b>. Read Phil's
+       explanation <a href="http://www.naic.edu/~a2010/phil_tiedowndisable.txt">here</a>.<p></p>
+
+  </li><li><b>Log into OBSERVER2: dtusr</b>  (once the previous observer is done). Password is taped to computer (or
+         get it from the operator in advance).<p></p><br>
+
+  <a name="cima"></a>
+  </li><li><b>Start CIMA on-line GUI</b>:<br>
+  <ul> 
+    <li>Type <b>cima --X</b> in an available window. Select the desired version of
+    CIMA; this is currently <b>"The Stable version (Default) (Ver 3.3.13 2014-05-08 17:14")" </b>
+    </li><li>Project Number: <b>a2941</b> (note: even if you type "A", CIMA will change it to "a" when you click "Line") 
+    </li><li> Observer: <b> your name </b>  (for entry into operator's log book) 
+    </li><li> select <b>Line</b> and <b>Accept</b>
+  </li></ul><p></p><br>
+
+Several other windows will also open: the <b>CIMA log display window</b> and the <b>CIMA observation status</b> window.
+Leave them open through the night.<p></p><br>
+
+  <li>The <b>Receiver selection menu</b> will open. 
+        Choose Receiver: <b>L-Band Wide</b> and <b>Accept</b>.<br>
+        Make sure that L-wide shows up in the aostatus monitor. Leave the default options as is:<br>
+        <ul><li>Make quick Tsys measurement: <b>No</b><br>
+        </li><li>Rotate receiver into position: <b>Yes</b><br>
+        </li><li>Retrack source if selected: <b>Yes</b>
+         </li></ul>
+        <p></p><br>
+
+   <li><b>Main menu / Utilities / Utilities </b> &nbsp &nbsp <font color=#cc0f14><b> NEW SPRING 2015!!!!!!!!!!!!!</b></font>
+<ul>     <li><b> Restart the WAPPs</b>
+     <li> <b>Close</b> when output to log window complete.</p></b>
+</ul>
+
+ 
+  </li><li>In the CIMA main menu, under <b>Utilities -&gt;Load configuration </b>(file)
+     <br>Load the appropriate a2941 configuration file: <b>a2941.conf</b><br>
+        This corresponds to the <a href="http://www.naic.edu/~a2010/lbw_observingmodes.htm"><b>search mode</b></a> in our terminology.<p></p>
+        <img src="config_a2941search.jpg" height="200"> <p></p>
+         Then click <b>Load and apply</b>.<br>
+         Be patient while the configuration file is applied....
+     <br><br>
+
+     <font color="red"><i>If you cannot find the configuration file</i></font><i> (or if only the a2010 files are present)</i>, then you entered the
+     wrong project number into the CIMA opening window. You will have to exit CIMA and enter <b>a2941</b><p></p>
+
+   </li><li>The <b>CIMA observing menu</b> should pop up; this particular window can also be found via
+       the <b>Observing modes-&gt;Spectral line observing</b> button.<br>
+       <i> This should be set up automatically by the configuration file, so that
+       these items should always be set as follows:</i><p></p>
+              <img src="a2899_cimaobsmenu.png" height="300"><p></p>
+      When you have checked things, you can <b>Close</b> this window. <p></p>
+
+  </li><li>Double check that the receiver IF/LO frequencies have been properly set in the <b>Set-up-&gt;Receiver IF/LO selection menu</b>.<br>
+      <i> This should be set up automatically by the configuration file but you need to know what correlator board configuration
+      you are using, so it's a good idea to check.</i><br> 
+      Currently, we are using one basic observing mode (in the past, we sometimes used a second one, but not now).<br>
+      Note that because some of the WAPPS boards may be bad, the rest frequency of each board may be slightly different than
+      the picture below.<br>
+      However, there should be one board at each of the four frequencies below (at approximately 1415, 1395, 1375, and 1355 MHz).<br>
+      <i>If you determine a different board is bad while observing, you'll need to return here to make changes!</i><p></p>
+          <img src="iflo_searchmode_jan15.jpg" height="400"> <p></p>
+       
+      When you have checked things, you can <b>Dismiss</b> this window.<br>
+      <ul><li>If anything needs to be changed, make sure you have the correct configuration file. <br>
+      </li><li>If this does not help, change the settings manually, then click <b>Apply</b> followed by <b>Accept</b>.</li></ul><p></p><br>
+
+
+   </li><li>If necessary, double check the <b>Backend control</b> menu<br>
+       <i> This should be set up automatically by the configuration file, so that
+       these items should always be set as follows:</i><p></p>
+          <img src="backend_searchmode.png" height="200"> <p></p>
+      
+      When you have checked things, you can <b>Dismiss</b> this window.<p></p><br>
+
+
+   </li><li>Double check that the right catalog is loaded in the <b>Set-up-&gt;Pointing control</b> menu<br> 
+      <i> This should be set up automatically by the configuration file, so that
+       these items should always be set as follows:</i><br>      
+      <table cellpadding="15">
+      <tbody><tr><td>
+          <img src="LBWpointing_a2941_jan15.jpg" height="80"></td></tr>
+       <tr><td> <ul><li> Source: <b><font color="#cc0f14">variable</font></b> &nbsp; <i>(The command file will set the source.)</i>
+                   </li><li> Catalog: <b> a2941.cat</b> 
+                   </li><li> Epoch:   <b> Equatorial - J2000</b>
+                   </li><li> Velocity: <b><font color="#cc0f14">depends on the source</font></b>
+                   </li><li> Frame:  <b> Heliocentric</b> <i>[Note: At startup this
+       may be initially set to Topocentric. After running command file, recheck
+       and confirm that it has switched to Heliocentric.]</i>
+                   </li><li> Type: <b> velocity(optical)</b>
+                   </li><li> Offset info: <b> Hide all</b>
+                   </li><li> System: <b> Main</b>
+                   </li><li> Az range: <b> Use closest in 0-720 degrees</b>
+                   </li><li> Track tol: <b> 10 arcseconds</b></li></ul></td></tr>
+       </tbody></table><p></p>
+               
+      The <b>Source</b> entry is irrelevant; it will likely be set to the last source from the previous observation.<br>
+
+      When you have checked things, you can <b>Dismiss</b> this window.<p></p><br>
+
+   </li><li> And, now, you are <font color="#4AA02C"><b>READY TO GO</b></font>! 
+       <ul><li> Click on <b>Command file observing</b>
+           </li><li> Click on <b>Load</b>
+           </li><li> Highlight the correct command file: <b>a2941_YYMMDD.cmd</b> and click <b>Accept</b>
+           </li><li> Click on <b>Run</b> and cross your fingers....
+       <p></p>
+       <table bordercolor="red" cellpadding="3" border="3">
+       <tbody><tr><td> <b>Note:</b> If you need to skip sources that are at the beginning of the command file,
+       <b>Load</b> the command file as usual. After it loads, it waits for 10 seconds (the <b>WAIT 10</b>
+       line in the command file). As soon as it starts to wait the 10 seconds, hit <b>Stop</b>. Quickly 
+       identify the proper line in the file to pick up the source at which you want to start observing 
+       (e.g. a "GOTO" line). Click on it or enter the line number to the left and then hit <b>Run</b>. Skipping or 
+       repeating sources is definitely something you want to practice using CIMA offline before your 
+       first night of observing. See also instructions below under <b><font color="#cc0f14">What if the timing gets 
+       out of whack</font></b>.</td></tr></tbody></table>
+       </li></ul>   <p></p>
+</li></ul>
+<br>
+
+<br>
+
+<h2><font color="#cc0f14">While Observing:</font></h2>
+
+<ul>
+<li> As soon as you start observe, run some immediate quick checks.
+    <ul>
+    <li><b>Check that the telescope is actually at the correct declination </b><br>
+           1. Check the declination displayed in the <b>CIMA observation status window</b> &nbsp; &nbsp; 
+           <font color="#cc0f13">Always check this!</font><br>
+           2: Check the "Rslt" line in the <b>monpnt</b> window (the upper right window on the screen
+            below the frequency band monitor). Dec value should stay within a few
+            arcseconds of the drift value. &nbsp; &nbsp; <font color="#cc0f13"> Always check this!</font>
+    </li><li> Check the receiver is centered at the right frequency via the <b>"Observer's On-line IF/LO Graphical
+         Display"</b> (the "rxview" command if you are running remotely). <i> NEED TO ADD SCREENSHOTS FOR a2941 HERE!</i><br>
+         First line: &nbsp; L-band wide &nbsp; center frequency = 1420.0 MHz (this may change a very small amount)<br>
+         2nd line: &nbsp; Receiver filters: &nbsp; 1320 hipass  &nbsp; <i> should show 1320 to 1788 MHz</i><br>
+         3rd line: &nbsp; IF path: &nbsp; 10GHz to 1500 &nbsp; <i> The whole thing will be green</i><br>
+         Bottom table: &nbsp; IF band setup<br>
+         <img src="a2899searchrxview.png" height="500"><p></p>
+                 Note: the center frequency of the band in "rxview" display will
+           change very slightly during observing due to heliocentric correction.<br>
+         <font color="#cc0f14">If something went wrong and you had to re-apply the configuration, this display may look wrong, with 100 MHz bandwidth windows, like <a href="a2899searchrxview_bad.png"> this</a>.<br>
+         <b> Do not panic!</b> It is just a lag in the rxview window and will correct itself once you begin integrating on the first source.</font>
+
+    <p></p>
+    </li></ul>
+<br>
+</li><li>
+<a target="_blank" name="log"></a>
+<b>Keep the log file </b>- it is very important to keep an accurate log of what happens, even to note "an uneventful night".  
+<i>Note: log files will be generated in advance for each night's observing. Use the one appropriate for your run.</i>
+<ul>
+  <li> To keep the log, ssh to another machine as <i>a2010</i> and then type <b>a2941obs</b> to get to the a2941 observing directory.
+  </li><li> Find the log file <b>a2941logYYMMDD</b> in <b>/share/obs4/usr/a2941/MONTH15</b> and edit it 
+       using you favorite text editor (vi or pico work well when remote observing; emacs is too
+       slow, unless you use the '-nw' flag to open in a terminal.) 
+   </li><li> Check that the setup is what is indicated in the log file, i.e. the CIMA version number and the configuration file.
+   </li><li> Keep track of the approximate LST start, the file number and the <b>ON-source scan number</b> for each pair.
+   </li><li> Check and note any rfi in the observing band. Be especially vigilant for new sources of RFI, and
+        know the expected locations in the band of the "usual suspects". The
+        FAA radar  is usually at 1350 MHz (although they sometimes use 1330 MHz, out of our bandpass!).
+        Strong RFI at 1367 and 1382 MHz is due to the
+        Punta Salinas naval base radar, which should <b>not</b> be on during ALFALFA run 
+        (see <a target="_blank" href="http://www.naic.edu/~rfiuser/smarg-coordPS.html"> this link</a>.) . 
+        If you see this, ask the operator to 
+        call Punta Salinas immediately and tell them to turn off their equipment! 
+        See <a target="_blank" href="http://www.naic.edu/~a2010/troubleshooting.html"> 
+        observational troubleshooting list</a> for other observing issues.)
+   </li><li> After each pair, take a quick look at the resultant ON-OFF spectrum (see IDL instructions following).<p></p></li></ul><br>
+
+   </li><li><b> Keep track of the timing</b> (but remember that the nominal timing we predict is only approximate so don't
+        expect it to be exact!)<br>
+        In the directory with the log file (/jun4 in this case), there 
+        is a file called <b>a2941_YYMMDD_nominal.txt</b>
+        which contains an estimated schedule of tonight's observations. <b>It is not precise!</b>. For example it assumes
+        a start time and a slew from some arbitrary position; the run may start earlier or later than that. It contains
+        estimated slew times and scan tracking times and hence the Az and ZA of the source at the expected time of observation.
+        Note that the Az here is the Az of the source, not the Az of the dome. The ZA of the source and dome should be
+        close, but the Az will be off by about 180 degrees (or some multiple of that). Use this file as a guide. If you
+        find that the actual observing times are falling behind, you
+        may need to skip a source. Or if you are ahead or behind and
+        the ZA is approaching 18, you may need to skip or repeat a source. Also, in general, there
+        may be extra sources at the end. If you seem to have a gap, it is also ok to do a source twice.<p></p>
+
+    <b><font color="#cc0f14">What if the timing gets out of whack (e.g. you start late, something crashes etc)???</font></b><br>
+
+        If you want to repeat or skip a source, you have two
+        choices. You can either <b> Stop </b> or <b> Abort. </b> <b>
+        Stop </b> will finish the current observation and then halt. <b>
+        Abort </b> will immediately halt the observation. Once the process
+        completes, click on the GOTO line of the source you want (or
+        enter the line number on the left side where it says "<b>Start from</b>")  and
+        hit  <b> Run</b>. 
+
+        Alternatively after an <b>Abort </b> you may reload the commmand file, make sure
+        First Line is selected, and hit <b>Run. </b> After it sets things up, 
+        it waits for 10 seconds (the  <b>WAIT 10</b> line in the command file). As soon as it starts to wait the 10 seconds,
+        hit <b>Stop</b>. Quickly identify the proper line in the file to
+        pick up the source at which you want to start observing
+        (e.g. a "GOTO" line). Click on it or enter the line number to
+        left and hit <b>Run.</b> 
+        Skipping or repeating sources is definitely something you want to practice
+        using CIMA offline before your first night of observing.<p></p>
+
+   </li><li><font color="#cc0f14"><b> Determine if the current board setup is OK</b></font><br>It is quite possible that some of the WAPPS boards may fail,
+   leaving less than all of them working correctly. You should be able to determine whether this is the case after looking at
+   the first source with <b>lbwquicklook</b> (see below) regardless of whether it was detected or not. Note that, unlike previous
+   LBW observations with the interim correlator, you <b>do not need to wait until the next source begins</b> before running
+   <b>lbwquicklook</b>! In fact it is very important that you don't wait, so you can fix the boards before starting another source.<br>
+   <ul><li><a href="lbwquicklook_bad3.png">This</a> lbwquicklook screenshot shows a bad board 3. The order of the boards in lbwquicklook is always the same, regardless of the specific frequencies they are set to.
+       <li>If one board is bad, but is already assigned to 1355 MHz, do nothing.
+       <li>If one board is bad, but not assigned to 1355MHz, do the following:
+       <ul><li>Press <b>Stop</b> to pause observing before the second source starts.
+           <li>Open <b>Set-up->Receiver IF/LO selection menu</b> and rearrange the rest frequencies so that the bad board is at 1355.405751 MHz.
+           <li>Press <b>Apply</b> in the IF/LO selection menu, and wait for things to set up.
+           <li>Continue your observing by finding the next source in the command file, and pressing <b>Run</b>.</ul>
+       <li>If two boards are bad, do the above, but assign one to 1355 MHz, and the other to 1415 MHz.<br><br></ul>
+
+   </li><li><font color="#cc0f14"><b> Check the spectrum produced by each ON-OFF pair</b></font><br>
+        Part of your job is to make a quick review of whether the
+        source was detected, at what velocity and also to note the presence of any RFI, bad baselines etc.<br>
+        Open an IDL session on fusion00 (or aolc1, ...) and run <b>@wasinit</b> to compile the WAPPS utilities, and
+        <b>@lbwinit</b> to compile the LBW observation checking program.<br>
+        This observing mode takes four times as much data as the previous LBW follow-up, so these files take some time to load!<br>
+        The WAPPS files are written to <i>/share/pserverf.sda3/wappdata/wapp.YYYYmmDD.a2941.NNNN.fits</i> 
+   <ul> <li>To check a particular corfile<br>
+            <b>lbwquicklook, file='/share/pserverf.sda3/wappdata/wapp.YYYYmmDD.a2941.NNNN.fits'</b> where <i>NNNN</i> is the number of the FITS file (starting from 0000)
+        </li><li>To show spectral data from just one of the four boards<br>
+            <b>lbwquicklook, file='/share/pserverf.sda3/wappdata/wapp.YYYYmmDD.a2941.NNNN.fits', board=2</b><br>
+        </li><li>To change the number of channels used in smoothing to <b>X</b> (default is 3)<br>
+            <b>lbwquicklook, file='/share/pserverf.sda3/wappdata/wapp.YYYYmmDD.a2941.NNNN.fits', smo=X</b><br>
+        </li><li>To display the velocity scale in stead of the frequency scale in <b>X</b><br>
+            <b>lbwquicklook, file='/share/pserverf.sda3/wappdata/wapp.YYYYmmDD.a2941.NNNN.fits', /vel</b><br>
+        </li><li>To change the x scale <br>
+            <b>lbwquicklook, file='/share/pserverf.sda3/wappdata/wapp.YYYYmmDD.a2941.NNNN.fits', xrange=[1420,1421]</b><br>
+        </li><li>To change the y scale <br>
+            <b>lbwquicklook, file='/share/pserverf.sda3/wappdata/wapp.YYYYmmDD.a2941.NNNN.fits', yrange=[-30,50]</b><br>
+</li></ul>
+For further information on reducing LBW data, refer to the UAT
+<a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/lbw/lbw_reduction.htm">LBW reduction instructions</a> page.<p></p>
+<!---
+When observing in high velocity mode, it is useful to plot boards
+3 and 4 separately. To do this, run another idl session and do the following:<br>
+<ul>
+<li><b>openr, lun, '/share/olcor/corfile.13jan14.a2941.1', /get_lun</b>&nbsp <i>Use the relevant corfile</i>=-lp
+        <li><b>io=corposonoff(lun, b, /han, /scljy)</b> &nbsp <i> Takes ON-OFF/OFF, scales in 
+Jy; Keeps boards separate; Boards 1&2 are the boards we care about</i>
+        <li><b>bavg=coravg(b, /pol) </b> &nbsp <i> Averages the two polarizations; Boards 1&2 (separate 
+polarizations) are combined into a single board</i>
+        <li><b>corsmo, bavg, bsm, smo=3 </b> &nbsp <i> Smooths via boxcar over 3 channels; maybe also want to try 9 channels</i>
+        <li><b>corplot, bsm, brdlist=2, xtitle='Velocity (km/s)',ytitle='Flux (Jy)'</b> &nbsp <i> Plots the smoothed spectrum; Plot the combined board 3&4 (brdlist=2)</i>
+        <li><b>ver, y_low, y_high</b> &nbsp <i> Optional: Sets the vertical scale between y_low and y_high. Then execute <b>corplot</b> again.</i>
+        <li><b>close, lun &amp free_lun, lun</b> &nbsp <i> Closes the corfile</i></p> 
+        </ul>
+--->
+
+        Check <a href="http://www.naic.edu/~a2010/checkpair_lbw.htm">here</a> for a more thorough discussion of what is done in this script.
+        Be sure to record in the log file all useful information about the resultant spectrum, e.g.  presence of any RFI, bad baselines etc
+        and whether (or not) the source is detected; if it is, record the approximate central channel and frequency AND velocity of the HI line. Also, make a judgement call as to whether the signal to noise is good enough or whether the source needs to be reobserved.
+If you want to, follow the instructions at the UAT
+<a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/lbw/lbw_reduction.htm">LBW reduction instructions</a> page to   
+measure the RMS, HI line flux density, velocity and W50. If possible, include an estimate of the signal-to-noise ratio
+(just compare the peak HI line emission to the rms noise in the baseline region; a guess-timate is all that's needed!).
+The more info you put in the log, the better for our planning for the next observing session!<p></p>
+</li></ul>
+
+<a target="_blank" name="finish"></a>
+<h2><font color="#cc0f14">Finishing up:</font></h2>
+<ul>
+<li> If the command file finishes, then you are done. Usually we include a couple of extra sources at the end,
+to be done if there is time. If the time allocated for a2941 is up in less than 10 minutes, you should abort the command
+file.
+</li><li>Exit CIMA normally
+</li><li>Exit the observer2 machine
+</li><li>Exit data monitoring programs "nicely"
+</li><li>Exit IDL (if you were using it)
+</li><li>Exit out of the dataview machine
+</li><li>If remote observing, follow the <a href="http://www.naic.edu/~a2010/remote_lbw.htm%22">procedures</a> to close down the VNC connections when you
+    are ready to do that..<p></p>
+</li></ul>
+
+<br>
+<a target="_blank" name="afterobs"></a>
+<h2><font color="#cc0f14">After observing...</font></h2>
+
+Here, we're assuming the date is 11 Jan 2015. Change as necessary.<br><br>
+
+Open a terminal on an Arecibo machine (i.e. remote.naic.edu):
+<ul>
+<li> Copy/move the command file and the log files (CIMA log and observer log) to the log archive and the web area:<br>
+<font color="#cc0f14">Adjust this as appropriate for your observing date</font><br>
+     <b>a2941obs</b> <i>(If this alias fails, then cd /share/obs4/usr/a2941/)</i><br>
+     <b>mv a2941.cimalog_20150111 jan15/a2941.cimalog.150111</b> 
+           &nbsp; <i>notice the name format, please; adjust date for today.</i><br>
+     <b>mv a2941_150111.cmd jan15</b><br> 
+     <b>cd jan15</b><br>
+     <b>cp a2941.cimalog.150111 /share/a2010/obslogs/jan15/</b> <i>(Note that the directory is a2010, not a2941!)</i><br>
+     <b>cp a2941log150111 /share/a2010/obslogs/jan15/</b><p>
+
+</p></li><li> Determine which FITS are <i>good</i>, that is, which correspond to completed observations. In the same directory
+as above, make a list of them and write it to a file like <a href="http://www.naic.edu/~a2010/fitsfiles/nov14/files20141127.txt">this</a>, named "filesYYYYMMDD.txt". The list should
+include all good files for the run, <b>both detections and 
+non-detections</b>; it is used to determine which raw data files should be copied 
+over to their final resting place at Cornell.
+To make the file, you can issue commands similar to these:
+<br><b> ls /share/pserverf.sda3/wappdata/wapp.20150111.a2941.*.fits &gt; files20150111.txt</b><br>
+If the run crosses midnight, then you'll need to append the 2nd set of files (with the morning date)
+to that first file:
+<br><b>ls /share/pserverf.sda3/wappdata/wapp.20150112.a2941.*.fits &gt;&gt; files20150111.txt</b><br>
+</b>
+<br> You will only need the second line if you crossed midnight. Then edit the file to remove any bad files, e.g. if the observations of objects 1-10 were fine, but something failed during 11 and the run was restarted and 45 total objects were observed then it might contain only corfiles 1-10, 12-45. Be sure you get the date right; it may
+change during the night. Once this file is ready, copy it to the web area:<br>
+      <b> cp files20150111.txt /share/a2010/fitsfiles/jan15/</b><br>
+
+<p>
+</p></li><li> Update the log links file:<br>
+     <b>aweb</b> <i>(This alias points to /home/a2010/public_html/)</i><br>
+     Open <b>loglinks.htm</b> and update the references to the log, CIMAlog and the
+     list of corfiles that you made in the previous step.<br>
+     Go to the <a href="http://www.naic.edu/~a2010/loglinks.htm">loglinks</a> page and check that your update worked.
+</li></ul>
+
+<p>
+<br>
+<br>
+</p><hr align="left"><br>
+<font color="#cc0f14">
+This page maintained by the members of the Cornell
+<a target="_blank" href="http://www.astro.cornell.edu/Galaxy/egg.html">ExtraGalactic Group</a>
+and their friends, the other members of the 
+<a target="_blank" href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> observing team</font>
+
+<br>
+<font color="#008000"><i>Last modified: Wed Jan  7 18:31:59 EST 2015 by martha </i></font>
+<!-- hhmts end -->
+
+</body></html>

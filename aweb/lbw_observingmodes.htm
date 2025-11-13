@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA LBW Followup Observing Modes</title> 
+  </head>
+<body bgcolor="ffffff">
+
+
+<center><h2 style="color: rgb(10,10,150);">Common ALFALFA L-band Wide Followup Spectrometer Setups</h2>
+<h3><font color=#cc0f14>Current as of Jan 5, 2015</font></h3></center><br>
+
+
+<h3><font color=#cc0f14> Modes using the WAPPs in search mode</font></h3>
+
+Beginning in January 2015, we are looking at galaxies whose redshifts are unknown (actually in
+spring 2015, some of the objects we are observing have known redshifts, but we are using them
+to test the criteria by which we can predict that a galaxy will have HI and lie in the distance
+range from 30-100 Mpc). Since we don't know the redshift but hope to detect the HI in the galaxy, we
+want to (1) look over a broad range of redshift but at the same time (2) maintain relatively high spectral
+resolution, sensitivity and dynamic range, and (3) avoid the FAA radar at 1350 MHz. 
+Our compromise solution is to use the WAPP spectrometer which is more powerful in terms of the
+number of spectra it can collect at 09-level sampling than the interim correlator which we have
+used before (and is discussed below). Some of us remember that we used the WAPPs for the ALFALFA drift
+scan survey.</p>
+
+<table>
+<tr>
+<td width=300 valign=top>
+In this setup, we will be recording 8 spectra simultanously. Pairs of spectra will cover both
+polarizations collected by the LBW-receiver, set over 4 staggered frequency ranges (bandpasses)
+of 25 MHz, each of which is sent to a separate WAPP "board". To accomplish the overlap of frequency 
+bands, we set the "rest frequencies" of the four bandpasses to 1415.4058, 1395.4058, 1375.4018 and 
+1350.4058 MHz, corresponding to WAPP boards 1 to 4, respectively. </p>
+
+The true rest frequency  of the HI line is, of course, 1420.4058 MHz.</p>
+
+Note that the frequency <b> decreases</b> from Board 1 to Board 4.</p>
+</td><td>
+<img src="WAPPsearch_pols.jpg" height=350>
+</p>
+</td></tr></table>
+
+
+
+
+<br>
+<h3><font color=#cc0f14> Modes using the Interim Correlator</font></h3>
+
+<li> Look here for the discussion of the setup used in <a href="lbw_observingmodes_2012.htm">Spring 2012</a></p>
+
+As discussed in the ALFALFA followup <a href="ALFALFA_lbwobserving.htm">background</a> page, 
+the interim correlator we use with LBW when we know the redshift of the target
+has more capability than we actually need for the followup
+observations. So, we are going to try to make best use of it! We also don't want to have too
+many different setups so that we don't waste time making too many changes, we can use the
+same calibrations, and we can monitor the system performance and the behavior of RFI. </p>
+
+In our first LBW observing runs, we used two distinct setups; you can read about them
+<a href="lbw_observingmodes_2012.htm">here</a>. Starting in March 2012, we adopted a single 
+setup for all LBW followup runs in 2012-2014, regardless of the scientific aim of the program or the kind
+of sources we target. 
+We call this spectrometer setup the <b>"hybrid/dual bandwidth, doppler tracking"</b>  mode.
+</p>
+<br>
+
+<font color=#cc0f14><b>Hybrid/dual bandwidth, doppler tracking mode</b></font>:</p>
+    
+
+<table>
+<tr>
+<td width=350 valign=top>
+This correlator setup yields four separate spectra,
+in two pairs:
+<ul>
+<li> Two spectra, one for each of the two polarizations, of 2048 spectral channels covering a 25 MHz bandwidth,
+     centered at the frequency corresponding to the heliocentric velocity specified in the observing catalog.
+<li> Two spectra, one for each of the two polarizations, of 2048 spectral channels covering a 6.25 MHz bandwidth,
+     centered at the frequency corresponding to the heliocentric velocity specified in the observing catalog.
+</p></ul>
+The first set of spectra are referred to as the "low resolution" spectra; the second are the "high resolution" ones.</p>
+</td><td>
+<img src="IntCorr_2bw.jpg" height=300>
+</td></tr></table><br>
+
+In terms of the correlator setup, we use 4 "boards", one for each of the four spectra.</p>
+Boards 1 and 2 record spectra at 9 level sampling from the two
+    polarizations separately. Each spectrum will cover 25 MHz with 2048 spectral pixels.
+    Spectra will be centered at the frequency corresponding to the HI doppler shift,
+    rounded to the nearest 100 km/s; this shifting will be done by reading the velocity
+    from the input target catalog file.</p>
+
+    Boards 3 and 4 are also sampled at 9 levels and centered at the same velocity but 
+    produce the higher resolution spectra by covering only 6.25 MHz also with 2048 channels.</p>
+    We use the high resolution spectrum when the source emission is very narrow in velocity
+    and gaussian; then the higher resolution can help us measure the width more accurately,
+    if the signal-to-noise ratio is adequate.</p>
+   
+</p>
+<br>
+<br>
+<br><hr>
+<font color=#008800> This page maintained by members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA </a>Observing Team.</font>
+<br>
+<!-- hhmts start -->
+<b><font color="#008000"><b>Last modified: Tue Jan  6 15:25:13 EST 2015 by martha </b></font>
+<!-- hhmts end -->
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+A3173 LBW   18.11.18   Observers: Liam Patterson, Chelsey McMichael, Joseph Ribaudo, Grant Denn, Kitty, Omar
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3173.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3173_181118.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20181118.a3173.****.fits  
+                     /share/wappdata.now/wapp.20181119.a3173.****.fits   (if after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S232617.0+291513  232617.0 +291513  j     0 H v   # A332164    2239  15.5   0000    832200001  det at 5600 km/s (1394 MHz), SN 2-3, 
+S235714.4+292058  235714.4 +292058  j     0 H v   # A333580    2255  18.2   0001    832200005  det at 9800 km/s (1375 MHz), SN 2-3, 
+S235814.9+274705  235814.9 +274705  j     0 H v   # A335562    2306  15.3   0002    832200009  no det
+S000018.4+273720  000018.4 +273720  j     0 H v   # A104816    2318  13.5   0003    832200013  possible det at 7900 km/s (1384 MHz), SN 2, noisy baseline, not certain
+S000846.9+272539  000846.9 +272539  j     0 H v   # A104747    2331  12.8   0004    832200017  potential det at 12000 km/s (1365 MHz), SN 2, det in the off at 1394 MHz
+S001046.1+245806  001046.1 +245806  j     0 H v   # A104752    2344   9.3   0005    832200021  potential det at 9900 km/s (1375 MHz), SN 1-2, uncertain
+S001555.5+300425  001555.5 +300425  j     0 H v   # A100116    2357  12.6   0006    832200025  det at 6700 km/s (1388 MHz), SN 4, ~300 km/s width
+S002214.1+272828  002214.1 +272828  j     0 H v   # A104377    0010   9.7   0007    832200029  gps, no detection, noisy board 4, possible weak source 
+S003644.2+303928  003644.2 +303928  j     0 H v   # A104429    2337  12.8   0008    832200033  gps, det @ 4500 km/s, freq 1399 MHz, SN~3
+S002945.4+272835  002945.4 +272835  j     0 H v   # A104402    0037   9.4   0009    832200037  det @ 8700 km/s, freq 1380 MHz, SN~10, possible gaussian
+S005009.8+292727  005009.8 +292727  j     0 H v   # A104474    0049  11.2   0010    832200041  gps, det @ 10700 km/s, freq 1372 MHz, SN~3
+S011935.6+303634  011935.6 +303634  j     0 H v   # A115415    0102  13.1   0011    832200045  no obvious det, possible det @ 5000 km/s, freq 1397 MHz
+S012214.5+311517  012214.5 +311517  j     0 H v   # A112545    0114  13.2   0012    832200049  det @ 4900 km/s, freq 1397 MHz, SN~5-6
+S012338.4+325338  012338.4 +325338  j     0 H v   # A114472    0126  14.7   0013    832200053  possible double detection, 4800 km/s (1398 MHz)& 6000 km/s (1392 MHz) 
+S012527.9+334823  012527.9 +334823  j     0 H v   # A115442    0139  15.8   0014    832200057  possible detections at 4800 km/s & 5300 km/s, very unlikely, SN~5
+S022011.0+293315  022011.0 +293315  j     0 H v   # A123135    0152  13.0   0015    832200061  potential detection(4900km/s) but standing waves in the baseline 1398 
+S022520.2+270936  022520.2 +270936  j     0 H v   # A122802    0205  10.1   0016    832200065  tie downs disabled mid observation,
+S024423.7+273834  024423.7 +273834  j     0 H v   # A122422    0218  11.2   0017    832200069  det @ 8100 km/s (1383 MHz) SN~4-5
+S022011.0+293315  022011.0 +293315  j     0 H v   # A123135    0230  11.5   0018    832200073  possible det @ 4800 km/s and 1398 MHz, comes frequently  
+S022520.2+270936  022520.2 +270936  j     0 H v   # A122802    0244  9.8    0019    832200077  det @ 5200 km/s and 1396 MHz SN~5
+S024551.9+280853  024551.9 +280853  j     0 H v   # A122425    0258  10.2   0020    832200081  det @ 5600 km/s and 1394 MHz SN~4
+S024800.2+280730  024800.2 +280730  j     0 H v   # A122426    0309  11.0   0021    832200085  2 det possibly 3, 4800 km/s, 8000 km/s, and sharp peak @ 4600 km/s
+S025202.9+245519  025202.9 +245519  j     0 H v   # A122902        if time
+H030215.5+303118  030215.5 +303118  j     0 H v   # A131380cal     3 mins if time
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal     3 mins if time
+
+                                         
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+Tiedowns were disabled mid observation, 2 sources reobserved S022011.0+293315 and S022520.0+270936    
+
+

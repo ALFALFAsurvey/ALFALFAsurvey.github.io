@@ -1,0 +1,37 @@
+Log for 081031     Observer: Drew Brisbin and Betsey Adams
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.06  "normal version"
+File:        /share/pserverf.sda2/wappdata/wapp.20081031.a2010.****.fits 
+File:        /share/pserverf.sda2/wappdata/wapp.20081101.a2010.****.fits 
+
+
+LST  fits  Scan      calscan   Source     Pattern  Start coords. ang  time loop calmode
+0004 0001  830500172 830500173 drift25p1  fixAZdr  000400+055742  19  600   99 loopend  radar is off, beam 6B is dead
+0014 0002  830500174 830500175
+0024 0003  830500176 830500177
+0034 0004  830500178 830500179
+0044 0005  830500180 Aborted	 WAPPS failure
+0055 0006  830500181 830500182	power levels ok, data looks good
+0106 0007  830500183 830500184
+0116 0008  830500185 830500186
+0126 0009  830500187 830500188
+0136 0010  830500189 830500190
+0146 0011  830500191 830500192
+0156 0012  830500193 830500194
+0206 0013  830500195 830600001
+0216 0000  830600002 830600003
+0227 0001  830600004 830600005	power levels ok
+0237 0002  830600006 830600007
+0247 0003  830600008 830600009
+0257 0004  830600010 830600011  continuum source
+0307 0005  830600012 Aborted
+
+END LST: 0307
+
+Notes:
+Beam 6B still gone.
+FAA radar turned off.
+WAPPS failure at start of night.
+TOGS run at beginning and end of night.
+

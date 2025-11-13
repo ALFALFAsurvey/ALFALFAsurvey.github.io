@@ -1,0 +1,102 @@
+Log for 03/28/10          Observer: Betsey Adams
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100328.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100329.a2010.****.fits
+
+Zenith strip observing setup
+Az=264.9   ALFAang=-68.5  ZA=6.7/8.4 - see note below!
+RA@start=0845   RA@end=1631
+RA = LST + 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode
+0817 0037  8700170  8700171       drift78p1 fixAZdr   084500+185130 -68.5
+600   99   loopend
+0827 0038  8700172  8700173
+0837 0039  8700174  8700175
+0847 0040  8700176  8700177
+0857 0041  8700178  8700179
+0907 0042  8700180  8700181
+0918 0043  8700182  8700183
+0928 0044  8700184  8700185
+0938 0045  8700186  8700187
+0948 0046  8700188  8700189
+0958 0047  8700190  8700191
+1008 0048  8700192  8700193
+1018 0049  8700194  8700195
+1028 0050  8700196  8700197
+1038 0051  8700198  8700199
+1049 0052  8700200  8700201
+1059 0053  8700202  8700203  GPS burst
+1109 0054  8700204  8700205
+1119 0055  8700206  8700207
+1129 0056  8700208  8700209
+1139 0057  8700210  8700211
+1149 0058  8700212  8800001
+1159 0000  8800002  8800003
+1210 0001  8800004  8800005
+1220 0002  8800006  8800007
+1230 0003  8800008  8800009
+1240 0004  8800010  8800011
+1250 0005  8800012  8800013
+1300 0006  8800014  8800015
+1310 0007  8800016  8800017
+1320 0008  8800018  8800019
+1330 0009  8800020  8800021
+1341 0010  8800022  8800023  continuum source
+1351 0011  8800024  8800025
+1401 0012  8800026  8800027
+1411 0013  8800028  8800029
+1421 0014  8800030  8800031
+1431 0015  8800032  8800033
+1441 0016  8800034  8800035
+1451 0017  8800036  8800037
+1502 0018  8800038  8800039
+1512 0019  8800040  8800041
+1522 0020  8800042  8800043
+1532 0021  8800044  8800045
+1542 0022  8800046  8800047
+1552 0023  8800048  8800049
+1602 0024  8800050  Aborted
+
+
+LST stop: 1602        RA stop: 1631
+
+NOTES:
+
+Major pointing issues!
+Could not do planned drift of +183654 - tried to send telescope to za~5
+Problems with being close to zenith?
+For example: AZ chosen for this drift was based on an hour angle of 35 minutes
+the calculation: lsttoazrt,100328,081000l,084500l,185130l,480. returned:
+ 1  2455283.510955  20h15m47s  08h10m00s  264.9057   8.439  -68.5  1.79    0.0    0.0    0.0
+Observations started at 0817 LST w/ za of 6.71 - not close to calc!
+
+TOGS run at start and hit ZA limit
+TOGS run at end and hit ZA limit
+
+Power OK, quicklook OK throughout night.
+
+FAA radar ON.
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 14.2   K3: 15.5   K4: 15.7   AT 20:32
+70K = K1: 83.9   K2: 91.7   K3: 101.5  K4: 109.1
+
+16K = K1: 14.1   K2: 14.3   K3: 15.5   K4: 15.4   AT 23:55
+70K = K1: 83.4   K2: 91.7   K3: 101.5  K4: 106.9
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+
+
+

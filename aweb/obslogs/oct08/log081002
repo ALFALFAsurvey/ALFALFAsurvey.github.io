@@ -1,0 +1,59 @@
+Log for 081002      Observers: Martha Haynes & Sarah Morrison 
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.04  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20081002.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20081003.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2222 0001 827000115 827600116 drift42p2  fixAZdr  222200+101312 360   600   99 loopend   beam 6B look ok
+2232 0002 827600117 827600118                               power levels ok; FAA radar back too bad
+2242 0003 827600119 827600120
+2252 0004 827600121 827600122
+2302 0005 827600123 827600124
+2312 0006 827600125 827600126                               power levels ok
+2322 0007 827600127 827600128
+2332 0008 827600129 827600130
+2342 0009 827600131 827600132
+2352 0010 827600133 827600134
+0002 0011 827600135 827600136
+0012 0012 827600137 827700001
+0022 0000 827700002 827700003
+0033 0001 827700004 827700005                               power levels ok
+0043 0002 827700006 827700007
+0053 0003 827700008 827700009
+0103 0004 827700010 827700011
+0113 0005 827700012 827700013
+0123 0006 827700014 827700015
+0133 0007 827700016 827700017                   WAPP AGC datablock note; see below
+0143 0008 827700018 827700019 
+0153 0009 827700020 827700021                   same AGC datablock warning 
+0203 0010 827700022 827700023
+0213 0011 827700024 827700025
+0223 0012 827700026 827700027                   same AGC datablock warning
+0233 0013 827700028 827700029
+0244 0014 827700030 827700031
+0254 0015 827700032 827700033
+
+
+END LST:  0304
+
+Notes: 
+TOGS run at start and end.  
+No WAPP logic/chip errors (see below) and Beam 6b is on!
+Looks like FAA 1350 is back on :( oh well
+
+From SCRAMWAPPDATA: log_message WARNING WAPPDATA-queue_agcdata {WARNING received duplicate AGC-datablock 
+      at 01:06:23.299 (seconds: 3983.299)!}
+01:06:23 WARNING WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock at 01:06:23.299 (seconds: 3983.299)!
+01:06:24 WARNING WAPPDATA-search_agc: WARNING extrapolating agc-data from 3982.0 to 3983.0!
+01:06:25 WARNING WAPPDATA-search_agc: WARNING interpolating agc-data over 2.00 second time gap (3982.0 - 3984.0)!
+and again
+01:36:21 WARNING WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock at 01:36:21.298 (seconds: 5781.298)!
+01:36:22 WARNING WAPPDATA-search_agc: WARNING extrapolating agc-data from 5780.0 to 5781.0!
+01:36:23 WARNING WAPPDATA-search_agc: WARNING interpolating agc-data over 2.00 second time gap (5780.0 - 5782.0)!
+and again
+01:36:21 WARNING WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock at 01:36:21.298 (seconds: 5781.298)!
+01:36:22 WARNING WAPPDATA-search_agc: WARNING extrapolating agc-data from 5780.0 to 5781.0!
+01:36:23 WARNING WAPPDATA-search_agc: WARNING interpolating agc-data over 2.00 second time gap (5780.0 - 5782.0)!
+

@@ -1,0 +1,90 @@
+Log for 09/09/10     Observer: Manolis Papastergis
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100909.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100910.a2010.****.fits
+
+Zenith strip observing setup
+Az=294.1   ALFAang= 79.5  ZA=4.2  AzG=294.99?
+
+RA@start=2106  RA@end=0331
+RA = LST + 16 min
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+
+2050 0002  25200073 25200074   drift68p2  fixAZdr   210600+163248  79.5   600   99  loopend  ZAG=4.2   cima warning: extrapolating
+                                                                                                       pnt-data...
+2100 0003  25200075 25200076   all beams ok; pointing ok; rotation angle ok; cima warning: extrapolating pnt-data...
+2110 0004  25200077 25200078   quicklooked fits 0002:ok
+2120 0005  25200079 25200080
+2130 0006  25200081 25200082
+2140 0007  25200083 25200084
+2150 0008  25200085 25200086
+2201 0009  25200087 25200088
+2211 0010  25200089 25200090 
+2221 0011  25200091 25200092
+2231 0012  25200093 25200094
+2241 0013  25200095 25300001
+2251 0000  25300002 25300003
+2301 0001  25300004 25300005
+2311 0002  25300006 25300007
+2322 0003  25300008 25300009
+2332 0004  25300010 25300011   all beams ok;pointing ok;quicklooked fits 0000:ok    
+2342 0005  25300012 25300013 
+2352 0006  25300014 25300015
+0002 0007  25300016 25300017
+0012 0008  25300018 25300019
+0023 0009  25300020 25300021
+0033 0010  25300022 25300023
+0043 0011  25300024 25300025
+0053 0012  25300026 25300027
+0103 0013  25300028 25300029
+0113 0014  25300030 25300031 
+0123 0015  25300032 25300033
+0134 0016  25300034 25300035
+0144 0017  25300036 25300037  everything looks good
+0154 0018  25300038 25300039
+0204 0019  25300040 25300041
+0214 0020  25300042 25300043
+0224 0021  25300044 25300045
+0234 0022  25300046 25300047
+0244 0023  25300048 25300049
+0254 0024  25300050 25300051  extremely bright cont. src. Caused 2 beams to go into 'orange' (too much power)
+0305 0025  25300052 25300053
+0315 0026  25300054 aborted
+
+
+
+LST@stop:0315       RA@stop: 0331
+
+
+NOTES:
+Was not able to run TOGS. The file was tracking a position that hit the zenith angle restriction limit of 3.5 deg, before TOGS had time to
+complete ("Not tracking" error during TOGS, along with "WARNING: observing when not on source.").
+
+-- Using 'zenith strip' observing mode
+
+-- No TOGS (see notes above) 
+
+-- Occasional cima warnings: extrapolating pnt-data...
+
+-- FAA radar ON
+
+-- All beams OK
+
+-- Tiedowns fine
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 14.3   K3: 15.5   K4: 15.5   AT 16:11
+70K = K1: 92.9   K2: 101.0  K3: 111.8  K4: 119.8
+
+16K = K1: 15.3   K2: 15,2   K3: 16.7   K4: 16.9   AT 22:24
+70K = K1: 93.9   K2: 102.5  K3: 113.2  K4: 121.5
+
+
+

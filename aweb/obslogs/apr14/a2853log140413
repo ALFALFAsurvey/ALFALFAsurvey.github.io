@@ -1,0 +1,63 @@
+A2853   LBW   14.04.13      Observer: Rebecca Koopmann
+
+CIMA version:          The Stable version (Default)  Ver 3.3.12 2014-03-20 17:38
+Configuration file:    a2853_apr14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140413.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.13apr14.a2853.*
+         and     /share/olcor/corfile.14apr14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST    ZA   File#  ONScan    Status
+H090145.3+125929  090145.3 +125929  j  8700 H v   # A180589 calib   0837  08.27   17   410300369  detection 1380 MHz, 8750 km/s, S/N ~17 (43(!) Double Pk fit)
+A092510.7+113159  092510.7 +113159  j  3700 H v   # A192125         0849  11.00   18   410300373  no detection 
+A093934.3+112941  093934.3 +112941  j  5900 H v   # A193971         0902  11.58   19   410300377  detection 1383 MHz, 5900 km/s, S/N ~12, (A5148 contam)
+A094303.4+110446  094303.4 +110446  j  6000 H v   # A192157         0914  10.24   20   410300381  detection 1392.5MHz, 6000 km/s, S/N~3 (2.6 Gaussian fit)
+A094106.7+113024  094106.7 +113024  j  6600 H v   # A190437         0926   7.80   21   410300385  GPS 1381 MHz, detection 1389.4 MHz, 6650 km/s, S/N~5 (12.6 Double Pk fit), poss weak detect 1412.5 MHz, 
+1650 km/s, S/N ~ 2.5
+A102214.0+180622  102214.0 +180622  j  2200 H v   # A208686 mhadd   0941   9.90   22   410300389  detection 1403.5 MHz, 3550 km/s, S/N~6, poss weak detection 1412.5 Mhz, 1650 km/s, S/N~2
+A102214.0+180622  102214.0 +180622  j  2200 H v   # A208686 mhadd   0953   6.90   23   410300393  repeat previous, detection 1403.5 MHz 3550 km/s, S/N~6
+A100423.9+144920  100423.9 +144920  j  8900 H v   # A734213         1010   3.70   24   410300397  GPS in off scan overwhelms any signal - no detection  
+A100551.3+135456  100551.3 +135456  j 10000 H v   # A734230         1022   5.80   25   410300401  detection 1374.5 MHz, 10000 km/s, S/N~3.5, uneven baseline at -122 mJy (2.5 Gaussian fit) 
+A100619.6+140010  100619.6 +140010  j  8400 H v   # A205280         1034   7.86   26   410300405  weak detection, broad signal, 1381 MHz, 8400 km/s (width~600km/s), S/N~2
+A100635.7+133630  100635.7 +133630  j  8700 H v   # A202185         1047  10.61   27   410300409  detection 1380.4 MHz, 8650 km/s, S/N~8  (4.6 Gaussian fit)
+A100655.3+142719  100655.3 +142719  j  9500 H v   # A734249         1059  12.88   28   410300413  weak detection? 1377 MHz, 9350 km/s, S/N~2.5, uneven baseline
+A114555.1+133058  114555.1 +133058  j  3400 H v   # A213530         1116   8.76   29   410300417  no detection 
+A114602.6+094523  114602.6 +094523  j  6500 H v   # A213126         1129   9.64   30   410300421  possible weak detection offcenter 1384 MHz, 7900 km/s, S/N~2
+A114602.6+094523  114602.6 +094523  j  6500 H v   # A213126         1141   9.72   31   410300425  repeat previous, possible weak detection offcenter 1384 MHz, 7900 km/s, S/N~2 
+A114603.2+143838  114603.2 +143838  j  3100 H v   # A215612         1155   4.22   32   410300429  possible weak, narrow detection, 1404 MHz, 3500 km/s, S/N~2 
+A114639.4+143338  114639.4 +143338  j  3200 H v   # A215614         1207   6.11   33   410300433  detection 1405.5 MHz, 3150 km/s, S/N~5.5 (5.9 Gaussian fit)
+A122417.7+092004  122417.7 +092004  j  6700 H v   # A220512         1222   9.08   34   410300437  possible weak detection, 1389 MHz, 6750 km/s, S/N~2.5  
+A122419.5+092930  122419.5 +092930  j  6800 H v   # A220513         1234   9.16   35   410300441  no detection at redshift, weak signal 1382.5 MHz, 8200 km/s, S/N~2  
+A122543.0+090135  122543.0 +090135  j  7500 H v   # A220554         1246  10.57   36   410300445  detection 1386 MHz, 7450 km/s, S/N~6 (11.2 Double Pk fit, 3.7 Gaussian fit)
+A122807.6+082551  122807.6 +082551  j  7400 H v   # A229039         1259  12.30    1   410300449  detection 1386.2 MHz, 7400 km/s, S/N~4.5  (4.3 Gaussian fit)
+A132913.3+115612  132913.3 +115612  j  7100 H v   # A230358         1313   7.57    2   410400004  no detection
+A132925.7+115436  132925.7 +115436  j  6700 H v   # A230365         1326   6.54    3   410400008  no detection (hint of something broader at 1390 MHz, 6500 km/s)
+A132929.4+113729  132929.4 +113729  j  6300 H v   # A008478         1338   7.01    4   410400012  detection 1391 MHz 6300 km/s, S/N~3, second weak 1385.5 MHz, 7500 km/s, S/N~2
+A140144.1+095206  140144.1 +095206  j  6700 H v   # A230953         1352   8.89    5   410400016  GPS offcenter at 1381 MHz, possible weak detection 1390 MHz, 6300-6500 km/s, S/N~2?
+A140144.1+095206  140144.1 +095206  j  6700 H v   # A230953         1404   8.51    6   410400020  repeat previous; no detection, off line source 1387 MHz, 7200 km/s
+A140156.7+093200  140156.7 +093200  j  5600 H v   # A230959         1416   9.45    7   410400024  detection 1394 MHz, 5700 km/s, S/N~3; second/overlapping at 1392 MHz, 6400 km/s, S/N ~3
+A140222.0+095815  140222.0 +095815  j  6900 H v   # A730093         1429  10.44    8   410400028  detection 1387 MHz, 7000 km/s, S/N~4.5 (9.8 Double Pk fit)
+A140224.3+092958  140224.3 +092958  j  6100 H v   # A231836         1441  12.80    9   410400032  no detection 
+A140247.5+091932  140247.5 +091932  j  6000 H v   # A249350         1453  15.13   10   410400036  no detection  
+A141411.5+080611  141411.5 +080611  j  6870 H v   # A249160         1506  16.03   11   410400040  detection 1386 MHz, 7450 km/s, S/N~6 (10.3 Double Pk fit, 4 Gaussian)  
+A151208.2+013509  151208.2 +013509  j  2000 H v   # A253656         1520  16.86   12   410400044  weak detection 1411MHz, 2000 km/s, S/N~2.5 (one source?)
+A151208.2+013509  151208.2 +013509  j  2000 H v   # A253656         1532  17.41   13   410400048  repeat previous. possible weak detection 1411MHz, 2000 km/s, S/N~2
+A151729.5+033508  151729.5 +033508  j  1900 H v   # A253262         1544  16.08   14   410400052  detection 1411.6 MHz, 1850 km/s, S/N~3 
+A150701.4+123419  150701.4 +123419  j  6800 H v   # A736571         1558  13.33   15   410400056  detection 1389 MHz, 6750 km/s, S/N~5.5 (4.0 Gaussian fit)
+A161741.3+140349  161741.3 +140349  j  9000 H v   # A738604         1614   4.43   16   410400060  detection 1379 MHz, 9000 km/s, S/N~5.5; second detection 1374.5 MHz, 10000 km/s, S/N~7
+A161942.1+135546  161942.1 +135546  j  9000 H v   # A715324         1626   4.61   17   410400064  detection 1379 MHz, 9000 km/s, S/N~5
+A162531.9+141317  162531.9 +141317  j  9000 H v   # A715441   no time
+
+Notes  
+   --Tiedowns disabled. Strong GPS wiped one source and close to another, which was one of the repeated sources
+   --S/N estimated by subtracting baseline level from peak signal
+   --S/N from lbwmeasure programs indicated when fit. ascii, sav files in /home/a2010/lbwplots_140413
+   --4 sources repeated to stay on time

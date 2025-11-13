@@ -1,0 +1,78 @@
+Log for 11.02.13 (13Feb2011)        Observer: Greg Hallenbeck, Manolis Papastergis
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110213.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restriction lifted!
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0907 0000 104400001 104400002 drift143p1 fixAzdr   090700+344030  19   600 99 loopend
+              6B dead, other power levels OK.  
+0917 0001 104400003 104400004 quicklook OK
+0928 0002 104400005 104400006 quicklook OK
+0938 0003 104400007 104400008
+0948 0004 104400009 104400010
+0958 0005 104400011 104400012
+1008 0006 104400013 104400014 quicklook OK
+1018 0007 104400015 104400016
+1028 0008 104400017 104400018
+1038 0009 104400019 104400020
+1048 0010 104400021 104400022
+1059 0011 104400023 104400024 quicklook OK
+1109 0012 104400025 104400026
+1119 0013 104400027 104400028
+1129 0014 104400029 104400030
+1139 0015 104400031 104400032
+1149 0016 104400033 104400034 quicklook OK
+1159 0017 104400035 104400036
+1209 0018 104400037 104400038
+1220 0019 104400039 104400040
+1230 0020 104400041 104400042
+1240 0021 104400043 104400044
+1250 0022 104400045 104400046
+1300 0023 104400047 104400048 quicklook OK
+1310 0024 104400049 104400050
+1320 0025 104400051 104400052
+1330 0026 104400053 104400054
+1340 0027 104400055 104400056
+1351 0028 104400057 104400058 quicklook OK
+1401 0029 104400059 104400060 
+1411 0030 104400061 104400062
+1421 0031 104400063 104400064
+1431 0032 104400065 104400066
+1441 0033 104400067 104400068
+1451 0034 104400069 104400070
+1501 0035 104400071 104400072 quicklook OK
+1511 0036 104400073 104400074
+1521 0037 104400075 104400076 strong RFI around 1380MHz in all beams.
+      I think this is the GPS?--it doesn't look like the double-peaked Puntas Salinas radar
+1532 0038 aborted
+
+LST stop: 1533
+
+At the bottom, add notes regarding:
+--Beam 6B dead
+--FAA Radar ON
+--TOGS at end only
+--GPS radar during last scan
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+PAGE NOT WORKING!  Copying down instrument temperatures from operator's screen: "ALFA instrument monitor and remote control"
+
+16 K = K1:  35.6 K2: 174.9 K3:  40.5 K4:  40.2
+70 K = K1: 131.8 K2: 140.4 K3: 149.1 K4: 156.7
+
+Operator says that the 16K:K2 sensor is bad, giving an incorrect temperature
+
+7:03AM: as filecreator started running, I double-checked the page.  It's up now.
+ALFA TEMPERATURES
+
+16K = K1: 34.1   K2: 211.2  K3: 38.7   K4: 37.9   AT 16:11
+70K = K1: 130.0  K2: 139.1  K3: 147.9  K4: 155.5
+
+16K = K1: 35,3   K2: 160.7  K3: 40.4   K4: 39.7   AT 22:19
+70K = K1: 132.1  K2: 140.6  K3: 149.9  K4: 157,0
+
+			=>temperatures of the 8 sensors within ALFA housing
+

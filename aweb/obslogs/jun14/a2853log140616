@@ -1,0 +1,47 @@
+A2853   LBW   14.06.16      Observers: Parker Troischt
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140616.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.16jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A122414.7+091600  122414.7 +091600  j  6800 H v   # A220511   1300    observing stopped due to amplifier on azimuth arm   
+A122736.1+091201  122736.1 +091201  j  7600 H v   # A224453      not done due to arm malfunction
+A132913.3+115612  132913.3 +115612  j  7100 H v   # A230358      " "
+A132929.4+113729  132929.4 +113729  j  6300 H v   # A008478      " "
+A133049.9+114946  133049.9 +114946  j  7000 H v   # A233738      " "
+A133301.5+120307  133301.5 +120307  j  7500 H v   # A233874      " "
+A140144.1+095206  140144.1 +095206  j  6700 H v   # A230953      " "
+A140156.7+093200  140156.7 +093200  j  5600 H v   # A230959      " "
+A143116.6+031524  143116.6 +031524  j  1600 H v   # A242160      " "
+A150138.6+015213  150138.6 +015213  j  2200 H v   # A254078      " "
+A150805.8+013905  150805.8 +013905  j  1800 H v   # A250103      " "
+A150635.8+131843  150635.8 +131843  j  6600 H v   # A736561      1549  11.2  1  416700496  det@1389.7 MHz 6,600 km/s sprial?  S/N ~2-3  negative baseline (-6)
+A150605.7+132119  150605.7 +132119  j  6900 H v   # A258002      1601  14.0  2  416700500  possible peak at 1392.5 (5,950 km/s)  not at center  negative baseline (-4) 
+A150624.8+124524  150624.8 +124524  j  6500 H v   # A736557      1614  17.0  3  416700504  no detection
+H153509.2+163250  153510.4 +163258  j  1000 H v   # A009912      1628  12.6  4  416700508  strong detection at 1415.5 MHz (1040 km/s) peak ~215  S/N~ 200 calibration
+
+END LST 1639
+
+Notes  For first source of night the azimuth arm stopped moving.  I consulted with Elliot and Greg Hallenbeck and tried to log out and restart CIMA, but the azimuth 
+arm stopped moving again within a few minutes.  Elliot called a technician and after a while, a technician came in and went up to the Gregorian dome.  I was told 
+the issue was an overheating amplifier (or two of them.. 51 and 52) which them shuts down the arm.  We were able to restart and the four sources were observed.  
+     
+Tiedowns enabled. 
+
+
+
+

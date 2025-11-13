@@ -1,0 +1,95 @@
+Log for 2/14/05 pm        Observers: BC, RG
+	2/15/05 am
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050214.a2010.****.fits   
+       /share/pserverf.sda3/wappdata/wapp.20050215.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop      Notes
+____________________________________________________________________________________________________
+
+0756 0027 504581778 504582380 drift49p1 FixedAZ  075648+114806 19   600  4      long slew (start az=90)
+0806 0028 504582383 504582985
+0817 0029 504582988 504583590 							DecJ off by +12" -- see note 2
+
+0827 0030 504583602 504584204 drift49p1 FixedAZ  082717+114806 19   600  4
+0837 0031 504584207 504584809
+0847 0032 504584812 504585414 
+0857 0033 504585417 504586019 							DecJ off by +15.5"
+
+0907 0034 504586027 504600230 drift49p1 FixedAZ  090748+114806 19   600  3	missed 6 s
+0917 0000 504600233 504600835
+0927 0001 504600838 504601440  							DecJ off by +10"
+
+0938 0002 504601451 504602053 drift49p1 FixedAZ  093818+114806 19   600  4	
+0948 0003 504602056 504602658
+0958 0004 504602661 504603263
+1008 0005 504603266 504603868  							DecJ off by +11"
+
+1018 0006 504603878 504604481 drift49p1 FixedAZ  101845+114806 19   600  4	missed a few secs
+1028 0007 504604484 504605086
+1039 0008 504605089 504605691
+1049 0009 504605694 504606296 							DecJ off by +9"
+
+1059 0010 504606303 504606905 drift49p1 FixedAZ  105923+114806 19   600  6
+1109 0011 504606908 504607510
+1119 0012 504607513 504608115
+1129 0013 504608118 504608720 							DecJ off by +5.4"
+1139 0014 504608723 504609325
+1149 0015 504609328 504609930 							DecJ off by +6.9"
+
+1200 0016 504609937 504610539 drift49p1 FixedAZ 120007+114806 19   600  10
+1210 0017 504610542 504611144
+1220 0018 504611147 504611749
+1230 0019 504611752 504612354 							DecJ off by +0.8" (-0.1" in last 10 min)
+1240 0020 504612357 504612959
+1250 0021 504612962 504613564                                                               -0.2"
+1300 0022 504613567 504614169
+1310 0023 504614172 504614774 
+1321 0024 504614777 504615379                                                               -3.5"
+1331 0025 504615382 504615984
+
+1341 0026 504616990 504616592 drift49p1 FixedAZ 134101+114806 19   600   6	            -1.4"
+1351 0027 504616595 504617197								    -3.2"
+1401 0028 504617200 504617802                                                               -5.2"
+1411 0029 504617805 504618406
+1421 0030 504618410 504619012
+1431 0031 504619015 504619617                                                               -11
+
+1441 0032 504619621 504620224 drift49p1 FixedAZ 144217+114806 19   600   6	CIMA DID NOT UPDATE DEC!
+                              Abort Observation to reset Dec at end of drift 1 of loop
+1452 0033 504620239           Did not update DecJ aborted again. Ignore scan
+1452      504620248           Did not update DecJ..... Use scan
+1502 0034 504620854 504621455                   150222+11406				    -18"
+                              Dec stuck. See no way out but to POINT on TelPoint widget. That did it.
+
+1513 0035 504621466 504622069 drift49p1 FixedAZ 151230+114806 19   600   6		    -3"
+1523 0036 504622072 504622674								    -6.1"
+1533 0037 504622677 504623279								    -9.5"
+1544 0038 504623283 504623885								    -13"
+1554 0039 504623888 504624490								    -16.6"
+1604 0040 504624493 504625096
+
+1614 0041 504625103 504625706 drift49p1 FixedAZ 161320+114806 19   600   3		    -3.6"
+1624 0042 504625709 504626311								    -7.5"
+1634 0043 504626314 504626916
+
+1644 0044 504626922 504627524 drift49p1 FixedAZ 164345+114806 19   600   3
+1654 0045 504627527 504628129		    
+1704 0046 504628132 504628734								    -9"
+
+Notes:
+
+1- lost first half hour due to unbearable lightness of being (extra half hour at start, op did not call).
+2- aborted after end of 3rd drift because of Dec drift; started new FITS file.
+3- Watch out for future occurrences: CIMA did not update DecJ at 1441. Bad news. 
+   Even after abort and restart few times, DecJ NOT updated. Had to use POINT on 
+   Telescope Pointing Control widget. Scans 504619621, 504620248, 504620854,
+   should be OK, but several bad gaps in drift coverage.
+
+
+

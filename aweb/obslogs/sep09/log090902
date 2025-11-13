@@ -1,0 +1,83 @@
+Log for 090909     Observer: Becky Koopmann
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20090902.a2010.****.fits 
+Files:       /share/pserverf.sda3/wappdata/wapp.20090903.a2010.****.fits 
+
+     ****
+LST  fits  Scan       calscan    Source     Pattern   Start coords.  ang  time  loop  calmode 
+2136 0032 924500219  924500220   drift2p1  fixAZdr   213600+002154   19   600   99    loopend   fits file ok
+2147 0033 924500221  924500222     Punta Salina radar on.  power levels ok
+2157 0034 924500223  924500224     Punta Salina radar off towards beginning
+2207 0035 924500225  924500226
+2217 0036 924500227  924600001
+2227 0000 924600002  924600003      power levels ok
+2237 0001 924600004  924600005       quicklook ok
+2247 0002 924600006            WAPP failure at 2251 -- restarted, adjusted power
+2254 0003 924600007  924600008       quicklook ok
+2305 0004 924600009  924600010
+2315 0005 924600011  924600012
+2325 0006 924600013  924600014      power levels OK
+2335 0007 924600015  924600016      cont src
+2345 0008 924600017  924600018      GPS 
+2355 0009 925600019  924600020
+0005 0010 925600021  924600022 
+0015 0011 925600023  924600024      power levels OK, bright cont src
+0026 0012 925600025  924600026 
+0036 0013 925600027  924600028 
+0046 0014 925600029  924600030      duplicate agc-datablock message
+0056 0015 925600031  924600032       quicklook ok
+0106 0016 925600033  925600034   Orange WAPP warning (see notes), quicklook: scans with partial record
+0116 0017 925600035  925600036       quicklook ok
+0126 0018 925600037  925600038      duplicate agc-datablock message
+0136 0019 925600039  925600040
+0147 0020 925600041  925600042      power levels ok, cont srcs, duplicate agc-datablock message
+0157 0021 925600043  925600044
+0207 0022 925600045  925600046 
+0217 0023 925600047  925600048 
+0227 0024 925600049  925600050
+0237 0025 925600051  925600052       power levels ok
+0247 0026 925600053  925600054
+0257 0027 925600055  925600056
+0307 0028 925600057  925600058       duplicate agc-datablock message
+0317 0029 925600059  925600060
+0328 0030 925600061 -- aborted
+
+END LST: 0328
+
+
+Notes:
+
+-- TOGS run at start and end
+
+-- WAPP error (confused, buildup logic) and auto abort: lost LST 2247-2254
+
+-- WAPP error in fits0016 : WAPPDATA confused, buildup logic error. 
+   In orange and waterfalls normal, so continued. Quicklook shows 
+   0016 has scans with partial records, so removed from filecreator. 
+   Warning messages from LST 0108-0110; first 140 records display 
+   in corplot. Unless salvagable, lost LST 0106-0116
+
+-- Punta Salina radar RFI during first 2+ drifts. Operator had called 
+   earlier in evening (21:45) and P.S. adjusted then. Operator called 
+   again at 23:20 with no result - they claimed all was OK. I called 
+   and requested that they check again. During recheck, radar
+   disappeared.
+
+-- Beam 6 (A&B) OK!
+
+-- FAA radar on; 1380 harmonic also present
+
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 7.9  K2: 8.8  K3: 14.2  K4: 11.5  AT 20:13
+70K = K1: 71.4  K2: 77.5  K3: 90.9  K4: 99.0
+
+16K = K1 7.7   K2 8.8   K3 14.4   K4 11.5   AT 23:09
+70K = K1 71.3   K2 77.2   K3 90.9   K4 98.7
+
+

@@ -1,0 +1,44 @@
+Log for 080828      Observer: Kristine Spekkens and Cameron Arsenault
+
+System Configuration: a2010_az360.conf
+
+File:        /share/pserverf.sda3/wappdata/wapp.20080828.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2202 0000  824100006 824100007 drift17p1  fixAZdr  220200+040054  19   600   99 loopend 
+2212 0001  824100008 824100009        		   	    		   	      	 	  - power levels okay 
+2222 0002  824100010 824100011	     								   - fits files okay
+2232 0003  824100012 824100013
+2242 0004  824100014 824100015
+2252 0005  824100016 824100017									   - power levels okay
+2303 0006  824100018 824100019
+2313 0007  824100020 824100021
+2323 0008  824100022 824100023
+2333 0009  824100024 824100025								           - power levels okay
+2343 0010  824100026 824100027
+2353 0011  824100028 824100029
+0003 0012  824100030 824100031
+0013 0013  824100032 824100033
+0023 0014  824100034 824100035
+0034 0015  824100036 824100037
+0044 0016  824100038 824100039								           - power levels okay
+0054 0017  824100040 824100041
+0104 0018  824100042 824100043
+0114 0019  824100044 824100045
+0124 0020  824100046 824100047
+0134 0021  824100048 824100049
+0144 0022  -- aborted
+
+END LST: 0144
+
+Notes: 
+** TOGS run at start and end.
+** Beam 6B has low power
+**  Since Beam 6B dead, there were regular check_wapp_levels grey and
+orange messages: WAPP power levels are between 0.098 and 1.113 (still bad).
+** "Counts don't match" error is back! 99999966 !=99999967 (numbers are close)
+** Some RFI peaks coming and going, ~1350 MHz (FAA radar?) - but spectrum generally clean. 
+** 23:16 (fits 0007): strong continuum source bms 6 + 1
+**** "WEIRD RFI" at 23:50 (1:50am): right on schedule! Bms 2, 3 affected.
+** interpolating pnt-data over 2:00 secs errors: 22:18 (fits 0001), 22:46 (fits 0003), 23:01 (fits 0005), 23:26 (fits 0006),
+23:30, 23:31 (fits 0008)

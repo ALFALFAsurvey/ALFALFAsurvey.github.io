@@ -1,0 +1,38 @@
+Log for 080501       Observer: Brian Kent
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080501.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080502.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+
+1345 0017 812200174 812200175  drift2p1   fixAZdr  134530+002154 19  600   99   loopend   power OK  5
+                                   warning given:  There are WAPP channels with too much power (2.197 > 1.4)!
+                                   beam 0 pol B is kinda flaky.  Spikes occuring and large flucuations in power
+1355 0018 812200176 812200177
+1405 0019 812200178 812300001
+1415 0000 812300002 812300003
+1425 0001 812300004 812300005  Power OK (except for Beam 0 Pol B)
+1435 0002 812300006 812300007
+1445 0003 812300008 812300009   
+1455 0004 812300010 812300011  Very strong GPS at 1380 MHz
+1505 0005 812300012 812300013                                    
+1516 0006 812300014 812300015  
+1526 0007 812300016 812300017
+1536 0008 812300018 812300019
+1546 0009 812300020 812300021  Power OK (except for Beam 0 Pol B)
+1556 0010 812300022 812300023   
+1606 0011 812300024 812300025  
+1616 0012 812300026 812300027
+1627 0013 812300028 812300029  
+1637 0014 812300030 812300031  Power OK (except for Beam 0 Pol B)
+1647 0015 Abort
+
+
+End LST: 1647
+
+Notes:
+
+Beam 0 Pol B continues to fluctuate as in previous runs.  
+TOGS cal run at the end.

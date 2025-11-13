@@ -1,0 +1,46 @@
+A3122  LBW   17.04.15      Observers: LL     
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3122_apr17.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3122_170415.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to: /share/olcor/corfile.15apr17.a3122.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+S073500.3+263932  073500.3 +263932  j  7261 H v   # A749251    0816  12.4    1   710500001   det @ 7250 km/s
+S075155.2+271811  075155.2 +271811  j  7915 H v   # A4061      0824  11.5    2   710500005   det @ 7900 km/s; bad gps in off removed
+S075149.9+272421  075149.9 +272421  j  7962 H v   # A174744    0832  12.8    3   710500009   maybe det @7800? or no det, but gps
+S075808.9+254950  075808.9 +254950  j  4743 H v   # A749376    0841  12.2    4   710500013   det@ 4700 km/s
+reobserving S075149.9+272421 ------------------------------    0850  15.9    5   710500017   no det, but gps again. Worth a coadd to confirm.
+S082837.8+145823  082837.8 +145823  j  5864 H v   # A188768    0901   8.3    6   710500021   det @ 6000 km/s
+S085410.9+285804  085410.9 +285804  j  3945 H v   # A189167    0913  11.3    7   710500025   strong det @3900 km/s
+S101435.8+224142  101435.8 +224142  j  1300 H v   # A-3162     0924  12.7    8   710500029   no det; worth looking into...
+S101512.4+211857  101512.4 +211857  j  1300 H v   # A-3162b    0933  10.6    9   710500033   no det
+S100513.1+040949  100513.1 +040949  j  6723 H v   # A204060    SKIP this because I don't need it...                    
+S100528.4+040704  100528.4 +040704  j  6740 H v   # A208489    0944  15.3   10   710500037  Obliterated by GPS...
+S104719.4+130921  104719.4 +130921  j   806 H v   # A205293    0954  14.0   11   710500041  det @ 800 km/s
+S105009.5+130021  105009.5 +130021  j   797 H v   # A205322    1002  12.9   12   710500045  det @ 800 km/s
+reobserving S100528.4+040704 ------------------------------    1013  14.4   13   710500049  no detection
+S111751.0+135856  111751.0 +135856  j   871 H v   # A215386    1025  13.7   14   710500053  det @ 875 km/s
+S105737.7+351004  105737.7 +351004  j  7616 H v   # A-30000    1036  17.5   15   710500057  det @ 7600 km/s
+S111828.7+141802  111828.7 +141802  j   917 H v   # A215389    SKIP THIS (I don't need it, and the next one is the same feature)   
+S111833.6+143151  111833.6 +143151  j   909 H v   # A215392    1048   8.4   16   710500061  det @ 900 km/s  
+S111854.9+141256  111854.9 +141256  j   909 H v   # A215397    1056   7.0   17   710500065  det @ 900 km/s
+S112434.2+124040  112434.2 +124040  j  1004 H v   # A215415    1105   7.6   18   710500069  det @ 1000 km/s
+S115106.1+134621  115106.1 +134621  j  7090 H v   # A215230    1114  10.2   19   710500073  det @ 7100 km/s
+S121920.4+125710  121920.4 +125710  j  2164 H v   # A226061    1124  14.6   20   710500077  det (barely) @ 2500? maybe needs another look
+S123445.3+124649  123445.3 +124649  j   785 H v   # A226118    1132  16.2   21   710500081  no detection (but redo?)
+S121930.5+060045  121930.5 +060045  j  1622 H v   # A227979 [if time]   
+
+Notes: Fairly smooth night, nothing extrordinary, made up for most of the GPS.

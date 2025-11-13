@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA LBW Followup Observing Modes</title> 
+  </head>
+<body bgcolor="ffffff">
+
+
+<center><h2 style="color: rgb(10,10,150);">ALFALFA L-band Wide Followup Observing Modes </h2>
+<h3><font color=#cc0f14>Current as of Mar 9th, 2012</font></h3></center><br>
+
+
+As discussed in the ALFALFA followup <a href="ALFALFA_lbwobserving.htm">background</a> page, 
+the spectrometer we use with LBW has more capability than we actually need for the followup
+observations. So, we are going to try to make best use of it! We also don't want to have too
+many different setups so that we don't waste time making too many changes, we can use the
+same calibrations, and we can monitor the system performance and the behavior of RFI. </p>
+
+<h3><font color=#cc0f14>Spring 2012</font></h3>
+In this observing
+period, we proposed to conduct LBW followup observations of four sets of ALFALFA sources:
+<ol>
+<li>high quality ALFALFA detections without optical counterparts and not associated with 
+known tidal debris fields: the "dark galaxy"candidates; 
+<li>ALFALFA sources without optical counterparts which are candidate OH 
+megamasers because of their coincidence with optical sources at the appropriate 
+redshift;
+<li> low signal-to-noise, low velocity (nearby, cz < 1000 km/s), narrow line width ALFALFA sources 
+without optical counterparts: the extreme gas-dominated dwarf galaxy candidates; <br>and
+<li> statistical samples of the low signal-to-noise ratio detections possibly 
+associated with optical galaxies. </p>
+</ol>
+
+There are lots of objects in categories (3) and (4) but fewer in (1) and (2).
+Because the extreme gas-dominated dwarf galaxy candidates are all at very low velocity,
+and because there are some in all the other categories likewise at low velocity 
+(including cz < 0 km/s), the density of low velocity sources on the sky is quite high
+but the range of frequencies needed to be covered is fairly small. On the other hand,
+there is a large spread in the frequencies of sources in the other categories. </p>
+
+Given all the considerations, we have decided to adopt for the Spring 2012 LBW followup
+observations (program A2669), two different observing setups which depend on the
+velocity (and hence the frequency) of the target HI source/candidate. Both setups will 
+produce spectra with 2048 spectral pixels ("channels") covering 25 MHz, but where we
+center them and how we decide what frequency to center them on will be different, depending
+on the expected velocity (doppler shift) of the target source/candidate.</p>
+<ul>
+<li><b>Low velocity mode (cz < 2000 km/s)</b>:<br>
+    For sources/candidates which lie at velocities so that the observed frequency
+    should lie in the range 1410-1430 MHz (OHM candidates might be at apparent
+    HI blueshifts!), we will center a 25 MHz bandwidth at 1420 MHz, giving coverage
+    from 1407.5-1432.5 MHz. With this setting, the spectra will be sampled at
+    9-levels (good dynamic range in the presence of RFI) and 2048 channels (twice
+    the resolution of ALFALFA's 4096 channels over 100 MHz).
+    We will not doppler track, but rather conduct the observations
+    at fixed frequencies (topocentric frame, with the "velocity" set to 0 km/s).</p>
+    With this setup, it may be possible to use more than on OFF for each ON source
+    (if we don't move the telescope much) and we will be able to look for low-level
+    RFI in the band.</p>
+
+    Boards 1 and 2 of the correlator will record the spectra (25 MHz, centered at
+    1420.0 MHz) from the two polarizations
+    respectively. We will center Boards 3 and 4 at 1405 MHz, also covering
+    25 MHz, with Pol A on Board 3 and Pol B on Board 4. These spectral will let us look for
+    signals over the frequency range from 1392.5 to 1417.5 MHz. <i> Remember:
+    we don't really need the spectra recorded by Boards 3 and 4, but just in case
+    there is a signal lurking in there, we'll see it!</i></p>
+
+    What this setup means is that the candidate sources observing in this mode will shift 
+    in the spectra, depending on the frequencies corresponding to their doppler shifts.</p>
+
+    The configuration file called <b>a2669_lowvel.conf</b> will set up the interim correlator
+    (the "backend") for this configuration. All observations made with this configuration
+    will cover the exact same frequency range, since no doppler corrections are applied.
+    The corresponding source catalog file is <b>a2669_lowv.cat</b>.</p>
+
+<li><b>High velocity mode (cz > 2000 km/s)</b>:<br>
+    For sources/candidates which lie at velocities greater than cz~2200 km/, the observed 
+    frequency should lie below 1410 MHz, but because they are spread throughout the
+    ALFALFA bandpass down to ~1340 MHz, we'd have to have a bunch of different setups
+    to cover the whole range. That makes things too complicated, so we instead will
+    work in velocity space and center the spectra taken for each individual target
+    at the frequency range appropriate for its expected HI doppler shift. So that 
+    sources don't always fall exactly at the band center (sometimes funny things can
+    happen to correlator channels at exactly the half-way mark), we'll round off the HI 
+    velocity to the nearest hundred km/s.</p>
+
+    As before, Boards 1 and 2 will record spectra at 9 level sampling from the two
+    polarizations separately. Each spectrum will cover 25 MHz with 2048 spectral pixels.
+    Spectra will be centered at the frequency corresponding to the HI doppler shift,
+    rounded to the nearest 100 km/s; this shifting will be done by reading the velocity
+    from the input target catalog file.</p>
+
+    In this mode, we normally don't really need Boards 3 and 4. In January, we set them to
+    be identical to Boards 1 and 2. In March however, we decided to use the second set
+    to produce a higher resolution spectrum, covering only 6.25 MHz with 2048 channels.
+    The IF/LO setting is identical to B1 and B2. Usually, we won't need Beams 3 and 4
+    but having higher resolution may be useful for a few of the narrowest sources. This
+    mode will be called "high velocity high resolution" mode, and the configuration
+    file will be <b>a2669_highvelres.conf</b>. The corresponding source catalog
+    file is <b>a2669_highv.cat</b>. </p>
+
+    Note also that we will, on occasion, also observe sources at cz < 2000 km/s in
+    this mode, if, for example, we want the high resolution, or if we need to fill
+    a gap in the schedule.</p>
+   
+    
+</ul>
+</p>
+<br>
+<br>
+<br><hr>
+<font color=#008800> This page maintained by members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA </a>Observing Team.</font>
+<br>
+<!-- hhmts start -->
+<b><font color="#008000"><b>Last modified: Fri Mar  9 14:46:43 EST 2012 by martha </b></font>
+<!-- hhmts end -->
+
+</body>
+</html>

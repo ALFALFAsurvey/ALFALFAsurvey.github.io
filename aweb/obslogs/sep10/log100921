@@ -1,0 +1,116 @@
+Log for 09/21/10     Observer: Ann Martin
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100921.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100922.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=441.3   ALFAang=-59.2   ZA=4.8  AzG=441.3   ZAG=4.81  ****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2032    RA@end= 0256
+      RA = LST - 20 min
+****
+During the night, please make occasional notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the ZA limits
+are (3.5,12.0). If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2052 0024  26400130 26400132   drift72p2  fixAzdr   2032+173112   -59.2  600   99  loopend   4.81 quicklook ok
+2102 0025  26400132 26400133   ZA=4.80
+2112 0026  26400134 26400135   ZA=4.78
+2122 0027  26400136 26400137
+2133 0028  26400138 26400139   ZA=4.76
+2143 0029  26400140 26400141
+2153 0030  26400142 26400143   ZA=4.74  quicklook, power ok
+2203 0031  26400144 26400145   ZA=4.73  cont src
+2213 0032  26400146 26400147
+2223 0033  26400148 26400149
+2233 0034  26400150 26400151
+2243 0035  26400152 26400153   ZA=4.70
+2253 0036  26400154 26400155
+2303 0037  26400156 26400157
+2313 0038  26400158 26400159
+2323 0039  26400160 26400161
+2334 0040  26400162 26500001
+2344 0000  26500002 26500003   ZA=4.68
+2354 0001  26500004 26500005
+0004 0002  26500006 26500007
+0014 0003  26500008 26500009
+0024 0004  26500010 26500011
+0035 0005  26500012 26500013   quicklook ok, power ok
+0045 0006  26500014 26500015   ZA=4.68
+0055 0007  26500016 26500017  
+0105 0008  26500018 26500019
+0115 0009  26500020 26500021   ZA=4.69
+0125 0010  26500022 26500023
+0135 0011  26500024 26500025
+0145 0012  26500026 26500027
+0155 0013  26500028 26500029
+0206 0014  26500030 26500031
+0216 0015  26500032 26500033   quicklook ok, power ok
+0226 0016  26500034 26500035   ZA=4.73
+0236 0017  26500036 26500037
+0246 0018  26500038 26500039
+0256 0019  26500040 26500041
+0306 0020  26500042 26500043
+0316 0021  26500044 --aborted
+
+LST@stop: 0316        RA@stop: 0256
+
+NOTES:
+Short slew at start (went to 81.3 + 360 = 441.3 and hoped for a smart CIMA!)
+FAA radar ON; also some weak RFI I haven't seen before at 1340 MHz 
+   (appears to be polarized (pol B). Shows up in drift 0024 and persists,
+   so I sent an RFI report through CIMA.
+   operator mentioned some new untested equipment on tiedown 12)
+TOGS run at start.  All ok.
+No "observing off source" warnings tonight.
+Saw some of the usual warnings about extrapolating/interpolating over 2 sec
+   in pnt-data or agc-data. Not important.
+Tiedowns disabled.
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 14.8   K2: 15.2   K3: 16.5   K4: 16.4   AT 18:13
+70K = K1: 89.7   K2: 97.6   K3: 108.1  K4: 116.1
+
+16K = K1: 15.1   K2: 15.5   K3: 16.5   K4: 16.7   AT 22:23
+70K = K1: 90.0   K2: 98.1   K3: 109.1  K4: 117.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT n/a
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  OFF  AT 16:18
+				=>certify our blanker is locking on
+_______________________________________________________________________________
+TIE DOWN STATUS AT 16:00
+
+TD12: 14.363
+TD4 : 14.611
+TD8 : 14.384
+
+Total Kips: 96.42
+
+Tie Down:   Disabled
+________________________________________________________________________________
+

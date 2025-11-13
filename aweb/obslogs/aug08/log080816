@@ -1,0 +1,55 @@
+Log for 080816      Observer: Ann Martin
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080816.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2127 0001 822900029 822900030  drift29p2   fixAZdr  212700+070324  19  600  99   loopend  -- power OK but beam 6B down
+2137 0002 822900031 822900032 
+2147 0003 822900033 822900034  strong continuum src
+2157 0004 822900035 822900036  strong continuum src
+2208 0005 822900037 822900038
+2218 0006 822900039 822900040
+2228 0007 822900041 822900042
+2238 0008 822900043 822900044
+2248 0009 822900045 822900046
+2258 0010 822900047 822900048  power ok
+2308 0011 822900049 822900050
+2319 0012 822900051 822900052
+2329 0013 822900053 822900054
+2339 0014 822900055 822900056
+2349 0015 822900057 822900058
+2359 0016 822900059 822900060
+0009 0017 822900061 822900062
+0019 0018 822900063 822900064  chip count errors (WAPP 3), see notes
+0029 0019 822900065 -- aborted restarted WAPPs and readjusted power
+
+0034 0020 822900066 822900067  WAPP 3 errors continue, not used
+0044 0021 822900068 --aborted, power adjusted
+
+0052 0023 822900070 822900071  errors continued intermittently for the first few records; data looks OK, so we proceeded 
+0103 0024 822900072 822900073 
+0113 0025 822900074 822900075
+0123 0026 822900076 822900077
+0133 0027 822900078 822900079
+0143 0028 822900080 822900081
+0153 0029 822900082 822900083
+0203 0030 822900084 822900085
+0213 0031 822900086 822900087
+0223 0032 822900088 822900089
+0233 0033 822900090 822900091
+0243 0034 822900092 822900093
+0254 0035 822900094 822900095
+0304 0036 822900096 --aborted
+
+End LST: 0304
+
+Notes: TOGS run at start and end.
+Beam 6B down (known problem at AO)
+
+During FITS 18, WAPP 3 chip count errors began coming 1x/second; differences were substantial (several thousand counts).
+Operator advised that Mikael believes large chip errors can cause problems; FITS files looked OK.
+Restarted, adjusted power, and continued; took several restarts, but things settled down in FITS 0024. 
+The error continued to pop up from time to time, but we continued.
+Operator noted problems with WAPP 3.

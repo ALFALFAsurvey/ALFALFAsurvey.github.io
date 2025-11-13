@@ -1,0 +1,33 @@
+Log for 080427        Observer: Ann Martin
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080427.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080428.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+
+1347 0017 811800119 811800120  drift6p1   fixAZdr  134700+012018  19  600   99   loopend
+1357 0018 811800121 811900001 beam 0B power issue again; GPS
+1407 0000 811900002 811900003 cont src
+1417 0001 811900004 811900005
+1427 0002 811900006 811900007
+1438 0003 811900008 811900009
+1448 0004 811900010 811900011
+1458 0005 811900012 811900013
+1508 0006 811900014 811900015 strong cont src
+1518 0007 811900016 811900017
+1528 0008 811900018 811900019
+1538 0009 811900020 811900021
+1548 0010 811900022 811900023
+1558 0011 811900024 811900025 cont src
+1609 0012 811900026 811900027
+1619 0013 811900028 811900029
+1629 0014 811900030 811900031
+1639 0015 811900032 --aborted
+
+End LST: 1639
+
+Notes:
+Bad power -- intermittent high levels for a minute or so --  in Beam 0B for a good chunk of the night.
+TOGS time only allocated at end.

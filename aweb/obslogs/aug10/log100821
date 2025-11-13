@@ -1,0 +1,65 @@
+Log for 08/21/10          Observer:Ana Mikler, Katie O'Brien, Ron Olowin,  Parker Troischt, Becky Koopmann, Michelle Brault, Catherine Weigel, Victoria Mendoza, Seth Felix
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100821.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100822.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern   Start coords. ang  time loop  calmode
+2131 0035 23300156  23400001   drift95p1  fixAZdr   213100+225942  19  600   99  loopend; power levels ok
+2141 0000 23400002  23400003   broad 1381MHz RFI in this and first drift; fainter than typical GPS
+2151 0001 23400004  23400005   intermittent 1381 MHz
+2201 0002 23400006  23400007   1381MHz only for 1 minute; operator confirmed not from Punta Salinas   
+2211 0003 23400008  23400009   1381MHz not present
+2221 0004 23400010  23400011
+2231 0005 23400012  23400013
+2241 0006 23400014  23400015   GPS 
+2251 0007 23400016  23400017   quicklook OK    
+2302 0008 23400018  23400019 
+2312 0009 23400020  23400021   
+2322 0010 23400022  23400023
+2332 0011 23400024  23400025   cs beams 5 and 0  power levels OK
+2342 0012 23400026  23400027
+2352 0013 23400028  23400029   cs beams 3 and 5
+0002 0014 23400030  23400031
+0012 0015 23400032  23400033
+0022 0016 23400034  23400035   cs beams 6 and 1 quicklook OK
+0033 0017 23400036  23400037   cs beams 6 and 1, cs 3
+0043 0018 23400038  23400039   cs beam 1
+0053 0019 23400040  23400041   
+0103 0020 23400042  23400043   
+0113 0021 23400044  23400045   cs beam 6
+0123 0022 23400046  23400047   
+0133 0023 23400048  23400049   cs beam 5 and 0
+0143 0024 23400050  23400051   quicklook ok
+0153 0025 23400052  23400053   
+0203 0026 23400054  23400055   
+0214 0027 23400056  23400057   
+0224 0028 23400058  23400059   cs beam 0 amd 2
+0234 0029 23400060  23400061   
+0244 0030 23400062  23400063   cs beam 1  
+0254 0031 23400064  23400065   
+0305 0032 23400066  23400067  
+0315 0033 23400068 -- abort 
+
+LST@stop: 0313
+
+NOTES:
+- TOGS run at beginning 
+- FAA radar ON, harmonic also visible
+- Tiedowns disabled
+- 1381 MHz RFI in first four drifts. Reported to observatory RFI group. Conclusion: likely GPS L3.
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+16K = K1: 15.0   K2: 15.5   K3: 16.7   K4: 16.9   AT 16:17
+70K = K1: 91.0   K2: 98.8   K3: 109.8  K4: 117.8
+
+16K = K1: 15.3   K2: 15.2   K3: 16.7   K4: 16.9   AT 22:42
+70K = K1: 92.5   K2: 100.0  K3: 111.3  K4: 119.6
+
+
+
+			=>temperatures of the 8 sensors within ALFA housing
+

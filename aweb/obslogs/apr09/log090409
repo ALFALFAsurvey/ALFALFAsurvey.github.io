@@ -1,0 +1,69 @@
+Log for 090409     Observer: Manolis Papastergis & Ann Martin
+
+System Configuration: a2010_az180_2009.conf
+CIMA version  3.1.03 2008-1-20 13:50 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090409.a2010.****.fits 
+            /share/pserverf.sda3/wappdata/wapp.20090410.a2010.****.fits
+
+     ****
+
+*********
+SPECIAL CONDITIONS: We had a problem with the network at Cornell, and so Ann guided the operator (Ed) through Cima over the phone. Everything seems to be working
+well. No TOGS at start. Lost 13mins of drift time.
+
+Log kept just with aid of aostatus. MAY NOT BE COMPLETE. 
+*********
+
+LST  fits  Scan       calscan      Source      Pattern    Start coords.   ang   time  loop   calmode
+0914 0018  909900210  909900211    drift82p2   fixAZdr    091400+195712    19    600    99   loopend 
+0924 0019  909900212  909900213    
+0934 0020  909900214  909900215
+0945 0021  909900216  909900217     
+0955 0022  909900218  909900219    quicklooked fits 0018,19,20,21: all ok
+1005 0023  909900220  909900221    
+1015 0024  909900222  909900223    
+1025 0025  909900224  909900225
+1035 0026  909900226  909900227    quicklooked fits 0022,23,24,25: all ok
+1046 0027  909900228  909900229    
+1056 0028  909900230  909900231
+1106 0029  909900232  909900233     
+1116 0030  909900234  909900235   
+1126 0031  909900236  909900237    
+1136 0032  909900238  909900239   
+1146 0033  909900240  909900241    
+1156 0034  909900242  909900243   
+1206 0035  909900244  909900245  
+1217 0036  909900246  909900247  
+1227 0037  909900248  909900249   
+1237 0038  909900250  910000001
+1247 0000  910000002  910000003
+1257 0001  910000004  910000005
+1307 0002  910000006  910000007
+1317 0003  910000008  910000009
+1327 0004  910000010  910000011    quicklooked fits 0000: ok
+1337 0005  910000012  910000013
+1348 0006  910000014  910000015
+1358 0007  910000016  910000017
+1408 0008  910000018  910000019
+1418 0009  910000020  910000021 
+1428 0010  910000022  910000023  
+1438 0011  910000024  910000025
+1448 0012  910000026  910000027    quicklooked fits 0011: ok
+1458 0013  910000028  910000029    
+1508 0014  910000030  910000031
+1519 0015  910000032  910000033
+1529 0016  910000034  Aborted
+
+
+END LST:  1529
+
+
+
+Notes:
+
+>Running the new version of CIMA 3.1.03 "Smart"
+>*NO* TOGS
+>FAA radar is ON
+>Beam 6B is DEAD
+
+** Computers at Cornell down. Cima run by arecibo operator. Log based ONLY on aostatus. NO TOGS. **

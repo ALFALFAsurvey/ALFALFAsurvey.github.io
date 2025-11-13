@@ -1,0 +1,83 @@
+Log for 11.11.25(25Nov2011)        Observers: Tom Balonek, Damian Roesler,
+                              Michael Fusco, Kevin McCullough, Katie Iadanza, 
+                              Ajay Chahar, Lauren Bearden (all from Colgate Univ.)
+
+System Configuration:  a2010_az180_2010.conf
+CIMA version           {Record the FULL name of the CIMA version, e.g., 
+                             3.1.08 2010-02-01 17:44 "Smart"}
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111125.a2010.****.fits
+
+Normal meridian observing setup (AZ = 180)
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+
+2123 0000 132900306 132900307 drift139p1 fixAzdr 212300+334206 19  600 99 loopend quicklook ok
+2133 0001 132900308 132900309   FAA Radar strong. power levels ok (4A is at 0.8)
+2144 0002 132900310 132900311 
+2153 0003 132900312 132900313
+2204 0004 132900314 132900315 
+2214 0005 132900316 132900317 quicklook ok 
+2224 0006 132900318 132900319 total power ok
+2234 0007 132900320 132900321 heavy rain 
+2244 0008 132900322 132900323 bright continuum source .3 degrees in beam 6
+2254 0009 132900324 132900325 
+2305 0010 132900326 132900327
+2314 0011 132900328 132900329 quicklook ok
+2324 0012 132900330 132900331
+2334 0013 132900332 132900333
+2345 0014 132900334 132900335 red warnings (interpolation problem - same as last night) --
+2355 0015 132900336 132900337 not significant
+0005 0016 132900338 132900339 
+0015 0017 132900340 132900341 
+0025 0018 132900342 132900343 quicklook ok
+0035 0019 132900344 132900345
+0045 0020 132900346 132900347
+0055 0021 132900348 132900349
+0105 0022 132900350 132900351
+0115 0023 132900352 132900353
+0125 0024 132900354 132900355
+0136 0025 132900356 132900357 quicklook ok
+0146 0026 132900358 132900359
+0156 0027 132900360 132900361   
+0207 0028 132900362 132900363 quicklook ok
+0217 0029 132900364 132900365
+0227 0030 132900366 132900367 galaxy NGC 925 in beams 6 & 1!!!, & a continuum source later
+0237 0031 132900368 132900369
+0247 0032 132900370 132900371 quicklook ok
+0257 0033 132900372 132900373
+0307 0034 132900374 132900375 quicklook ok
+0317 0035 aborted
+
+
+
+LST stop:  0317   {Be sure to record the LST stop time of the last GOOD record)
+
+
+= = = = = = = =
+
+
+
+At the bottom, add notes regarding:
+-- Beam 6B dead; 4A reported running hot (42K as per Dana in advance) [sometimes power level below 0.8]
+-- TOGS run at end.
+-- FAA radar on
+-- 1380 harmonic visible but faint.
+-- check many scans with quicklook.  all looks ok to us!
+-- power level checked most drifts, looked fine
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 14.2   K3: 15.7   K4: 15.9   AT 09:11
+70K = K1: 86.8   K2: 86.8   K3: 94.9   K4: 103.5
+
+16K = K1: 15.0   K2: 14.5   K3: 16.2   K4: 16.4   AT 14:21
+70K = K1: 87.5   K2: 87.5   K3: 95.4   K4: 104.2
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+________________________________________________________________________________
+

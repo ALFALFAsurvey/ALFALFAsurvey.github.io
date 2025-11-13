@@ -1,0 +1,65 @@
+A2982 LBW   15.10.07   Observers: Becky Koopmann, Greg Hallenbeck, and Union College First-Year Physics Seminar 
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_151007.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20151007.2982.****.fits  
+                     /share/wappdata.now/wapp.20151008.2982.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST   ZA    File#   ONScan     Status (Pls include freq & S/N ratio)
+S221514.0+270655  221514.0 +270655  j     0 H v   # A323019    2138  12.4   0014    528000307  No Detection   (LBW Temp @ 15.2)
+S223322.4+302439  223322.4 +302439  j     0 H v   # A323044    2151  15.54  0015    528000311  GPS In Off. No Detection  
+S223320.3+305116  223320.3 +305116  j     0 H v   # A323040    2204  14.4   0016    528000315  GPS In On. No Detection
+S223357.9+305212  223357.9 +305212  j     0 H v   # A322537    2216  13.3   0017    528000319  Detection at 1403 MHz, 3700 km/s, s/n=5
+S224058.3+302727  224058.3 +302727  j     0 H v   # A323066    2228  12.6   0018    528000323  No Detection
+S224656.4+311156  224656.4 +311156  j     0 H v   # A321935    2240  13.1   0019    528000327  No Detection
+S225704.6+310530  225704.6 +310530  j     0 H v   # A322630    2252  12.9   0020    528000331  No Detection
+S231917.4+304719  231917.4 +304719  j     0 H v   # A336094    2305  13.0   0021    528000335  No Detection
+S233229.5+315224  233229.5 +315224  j     0 H v   # A335234    2317  14.1   0022    528000339  No Detection  
+S234901.7+300955  234901.7 +300955  j     0 H v   # A336101    2329  12.8   0023    528000343  Detection at 1377 MHz, 9500 km/s, s/n=3-4 
+S235521.2+301607  235521.2 +301607  j     0 H v   # A336104    2341  12.5   0024    528000347  No Detection
+S000717.2+302209  000717.2 +302209  j     0 H v   # A104309    2354  12.6   0025    528000351  Detection at 1399 MHz, 4600 km/s, s/n=6  
+S001838.1+300835  001838.1 +300835  j     0 H v   # A104776    0006  12.3   0026    528000355  Detection at 1397 MHz, 5000 km/s, s/n=3
+S002425.0+291125  002425.0 +291125  j     0 H v   # A104388    0018  11.1   0027    528000359  GPS in On No Detection
+S005834.2+303054  005834.2 +303054  j     0 H v   # A104269    0031  13.8   0028    528000363  Possible Weak Detection at 1380.5 Mhz 8600 km/s (We're 
+desperate)
+S010008.0+324019  010008.0 +324019  j     0 H v   # A115040    0044  14.9   0000    528100003  Detection at 1399 MHz 4700 km/s S/N~7
+S011038.7+314354  011038.7 +314354  j     0 H v   # A115382    0056  13.9   0001    528100007  Detection at 1398 MHz, 4900 km/s, S/N~6; continuum ~80mJy, 
+baseline uneven; 1.6Jy source found within 6' (sidelobe) in NVSS 
+S011501.5+302042  011501.5 +302042  j     0 H v   # A115791    0108  12.2   0002    528100011  Detection at 1407MHz, 2800 km/s, S/N~4; HVC at 1422.5 MHz, 
+-400 km/s, S/N~30
+S011935.6+303634  011935.6 +303634  j     0 H v   # A115415    0120  12.4   0003    528100015  Detection at 1397 MHz, 5000 km/s, S/N~3
+S013044.7+302627  013044.7 +302627  j     0 H v   # A115843    0132  12.2   0004    528100019  GPS in On. Marginal detection at 1416 MHz, 900 km/s, S/N~2
+S014106.6+300914  014106.6 +300914  j     0 H v   # A115493    0144  11.9   0005    528100023  GPS in On away from detection at 1370 MHz, 11000 km/s, 
+S/N~5  
+S015220.7+314106  015220.7 +314106  j     0 H v   # A115539    0157  13.5   0006    528100027  WAPPS crash at end of cal - lost obs
+S015220.7+314106  015220.7 +314106  j     0 H v   # A115539    0210  14.0   0007    528100031  Repeat previous. No detection.
+S015948.4+300555  015948.4 +300555  j     0 H v   # A115568    0223  12.9   0008    528100035  No detection
+S020131.2+302604  020131.2 +302604  j     0 H v   # A124650    0235  14.2   0009    528100039  No detection
+S022752.2+311436  022752.2 +311436  j     0 H v   # A125187    0247  13.7   0010    528100043  Detection @1394.5 MHz, 5600 km/s, S/N~5, plus edge of 
+large spiral at 1397 MHz, 4990 km/s
+S025703.8+333347  025703.8 +333347  j     0 H v   # A125195    0300  15.3   0011    528100047  No Detection
+H030214.4+303148  030215.5 +303118  j     0 H v   # A131380cal 0312  12.5   0012    528100051  GPS in On. Detection @ 1391.5 MHz, 6200 km/s, S/N~15. (GPS 
+NOT removed by Kamin's program this time!)
+H030801.4+301230  030802.9 +301229  j     0 H v   # A131387cal NO TIME
+
+Notes 
+  Tiedowns enabled.
+  Operator reports floor unit not working optimally, suspect too warm due to faulty AC unit. To be repaired tomorrow.
+  LBW Temp at 15.2 on receiver page
+  WAPP-4A power high throughout night. WAPP-3B power high for about second half of night.
+  Several WAPPs Warning for high power during CalOff.
+  One WAPP failure and GPS in several scans.
+  

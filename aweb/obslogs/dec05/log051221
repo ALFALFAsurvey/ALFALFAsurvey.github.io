@@ -1,0 +1,58 @@
+Log for 12/21/05
+Observer: MH and RG
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20051221.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.21
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+0654 0002 535504939 535505541 drift49p2  FixedAz  070300+115524 19 600  50
+0704 0003 535505544 535506146
+0714 0004 535506149 535506750
+0724 0005 535506754 535507355   power levels ok
+0735 0006 535507359 535507960
+0745 0007 535507964 535508565
+0755 0008 535508569 535509170
+0805 0009 535509174 535509775
+0815 0010 535509779 535510380
+0825 0011 535510384 535510985
+0835 0012 535510989 535511591   Power dip at AO; See note below
+0846 0013 535511594 535512195
+0856 0014 535512199 535512801
+0906 0015 535512804 535513405
+0916 0016 535513409 535514011
+0926 0017 535514014 535514616   power levels ok
+0936 0018 535514619 535515221
+0946 0019 535515224 535515826
+0956 0020 535515829 535516431
+1006 0021 535516434 535517036
+1017 0022 535517039 535517641
+1027 0023 535517644 535518246
+1037 0024 535518249 535518851
+1047 0025 535518854 535519456
+1057 0026 535519459 535520061
+1107 0027 535520064             WAPP error at beginning of scan 20064
+                                stopped program. Ran TOGS cal and quit
+                                15 min ahead of time
+                                WAPPS confused: "WAPP data build up logic error"
+
+END LST: 1107
+
+Notes
+-- Starting after radar run; ALFA cover removal takes time!
+-- Launching CIMA kinda slow... network seem slower than usual.
+   Edgardo reports 2Mb.
+-- TOGS run at beginning (command_galfasrc) started ok, but at end
+   got WAPP errors; check CIMA logs.
+-- 2 major power dips around 0835 LST. Data taking continues but status
+   says "Not tracking"; ok at 0843. Rslt looked ok, power levels ok.
+   Ran quicklook on fits0012; ok. Edgardo restarting some systems. Reports 
+   waterfall plots look ok too.
+
+
+Power levels were monitored using alfaobswin.

@@ -1,0 +1,39 @@
+Log for 080430        Observer: Brian Kent
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080430.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080501.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+
+1344 0022 812100135 812100136  drift3p1   fixAZdr  134425+003630 19  600   99   loopend   power OK  5
+                                   warning given:  There are WAPP channels with too much power (7.445 > 1.4)!
+                                   beam 0 pol B is kinda flaky.  Spikes occuring and large flucuations in power
+1354 0023 812100137 812100138
+1404 0024 812100139 812200001
+1414 0000 812200002 812200003
+1424 0001 812200004 812200005
+1435 0002 812200006 812200007
+1445 0003 812200008 812200009   
+1455 0004 812200010 812200011
+1505 0005 812200012 812200013  Power OK (except for Beam 0 Pol B)  
+                                  Ed Cruz reports alarm on Beam 0 Pol B.  Same as previous night
+1515 0006 812200014 812200015  
+1525 0007 812200016 812200017
+1535 0008 812200018 812200019
+1545 0009 812200020 812200021 
+1555 0010 812200022 812200023   
+1606 0011 812200024 812200025   Power OK (except for Beam 0 Pol B)
+1616 0012 812200026 812200027
+1627 0013 812200028 812200029  
+1637 0014 812200030 812200031   Power OK (except for Beam 0 Pol B)
+1647 0015 Abort
+
+
+End LST: 1647
+
+Notes:
+
+Beam 0 Pol B continues to fluctuate as in previous runs.  Electronics group is aware of the problem.
+TOGS cal run at the end.

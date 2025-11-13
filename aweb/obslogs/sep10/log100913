@@ -1,0 +1,80 @@
+Log for 09/13/10     Observer: Ann Martin
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100913.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100914.a2010.****.fits
+
+*****Zenith strip observing setup********
+****
+****   Az=230.88   ALFAang= -29.7  ZA=6.1  AzG=230.35  ZAG=6.0
+****
+****
+      RA@start=2121  RA@end=0325
+      RA = LST + 20 min
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome 
+2101 0026  25600142 25600143  drift91p1   fixAZdr   212100+220118  -29.7   600   99  loopend   powerlevels, quicklook OK; 5B looks OK at start   
+2111 0027  25600144 25600145
+2121 0028  25600146 25600147
+2131 0029  25600148 25600149
+2142 0030  25600150 25600151
+2152 0031  25600152 25600153
+2202 0032  25600154 25600155
+2212 0033  25600156 25600157
+2222 0034  25600158 25600159 quicklook OK
+2232 0035  25600160 25600161
+2242 0036  25600162 25600163
+2252 0037  25600164 25600165
+2302 0038  25600166 25700001 quicklook OK
+2312 0000  25700002 25700003 - WAPP chip count errors, up to a difference of 11
+2322 0001  25700004 25700005
+2332 0002  25700006 25700007
+2342 0003  25700008 25700009
+2352 0004  25700010 25700011
+0003 0005  25700012 25700013
+0013 0006  25700014 25700015
+0023 0007  25700016 25700017
+0033 0008  25700018 25700019
+0044 0009  25700020 25700021 quicklook ok
+0054 0010  25700022 25700023
+0104 0011  25700024 25700025
+0114 0012  25700026 25700027
+0124 0013  25700028 25700029
+0134 0014  25700030 25700031
+0144 0015  25700032 25700033
+0154 0016  25700034 25700035
+0204 0017  25700036 25700037
+0214 0018  25700038 25700039
+0224 0019  25700040 25700041
+0235 0020  25700042 25700043
+0245 0021  25700044 25700045
+0255 0022  25700046 25700047
+0305 0023  25700048 --aborted
+
+LST@stop:0305     RA@stop: 0325
+
+NOTES:
+
+-- Long slew at start
+-- 5B appeared normal
+-- No TOGS problems tonight (run at start only)
+-- Using 'zenith strip' observing mode
+-- some extrapolation warnings
+-- FAA radar ON
+-- Tiedowns active
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+16K = K1: 16.2   K2: 16.2   K3: 17.7   K4: 17.7   AT 18:47
+70K = K1: 99.3   K2: 108.1  K3: 119.1  K4: 127.4
+
+16K = K1: 16.3   K2: 16.2   K3: 17.7   K4: 17.9   AT 22:15
+70K = K1: 99.3   K2: 108.1  K3: 119.1  K4: 127.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+
+

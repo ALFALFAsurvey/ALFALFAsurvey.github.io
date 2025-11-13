@@ -1,0 +1,52 @@
+Log for 080913      Observer: Shan Huang
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.01  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20080913.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20080914.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2141 0023  825700075 825700076 drift46p2  fixAZdr  214100+111136 360   600   99 loopend   - power levels ok (except 6.1)
+2151 0024  825700077 825700078                                                              fits files ok, beam 6.1 is dead
+2201 0025  825700079 825700080
+2211 0026  825700081 825700082
+2221 0027  825700083 825700084                                                              power ok, fits files ok
+2231 0028  825700085 825700086 
+2242 0029  825700087 825700088
+2252 0030  825700089 825700090
+2302 0031  825700091 825800001
+2312 0000  825800002 825800003                                                              power ok, fits files ok 
+2322 0001  825800004 825800005
+2332 0002  825800006 825800007
+2342 0003  825800008 825800009                                                              conti source
+2352 0004  825800010 825800011
+0003 0005  825800012 825800013
+0013 0006  825800014 825800015
+0023 0007  825800016 825800017                                                              power ok, fits files ok
+0033 0008  825800018 825800019
+0043 0009  825800020 825800021
+0053 0010  825800022 825800023
+0103 0011  825800024 825800025                                                              power ok, fits files ok
+0113 0012  825800026 825800027 
+0124 0013  825800028 825800029
+0134 0014  825800030 825800031
+0144 0015  825800032 825800033
+0154 0016  825800034 825800035
+0204 0017  825800036 825800037
+0214 0018  825800038 825800039                                                              power ok, fits files ok
+0224 0019  825800040 825800041           
+0234 0020  825800042 825800043 
+0244 0021  825800044 825800045
+0255 0022  825800046 825800047
+0305 0023  825800048 aborted...
+
+END LST:  0305
+
+Notes: 
+-- Ran TOGS at start and end.
+-- A long slew after last program.
+-- Beam 6.1 is dead.
+-- Getting regular "check wapp levels: Warning there are WAPP channels with
+   too little power 0.092 < 0.75!" errors (orange) and lots of
+   "check_wapp_levels: WAPP power levels are between 0.097 and 1.078 (still bad)"
+   (grey).

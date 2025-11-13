@@ -1,0 +1,98 @@
+Log for 08/02/29     Observer: Kelley Hess, Dave Kornreich
+
+System Configuration:  FixedAZ Drift Map
+                       Cima version 2.3.xx  Unusable Engineering Version
+
+Using: a2010_az180.gui as save state.
+
+Files:  /share/pserverf.sda2/wappdata/wapp.20080229.a2010.****.fits
+        /share/pserverf.sda2/wappdata/wapp.20080301.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern  Start coords.   ang  time  loop  calmod
+0731 0041 806000135 806000136 drift106p2 FixedAz  073100+254736    19   600   99   loopend  *WAPP errors: "too little power"; see end notes
+0741 0042 806000137 806000138
+0751 0043 806000139 806000140
+0802 0044 806000141 806000142
+0812 0045 806000143            Lost bm 5 part way through scan, WAPPS confused, scan aborted, restarted WAPPs, power adjusted
+0828 0046 806000144            Turned off WAPP-3 (bm 4 & 5) b/c technician started running diagnostic that interfered with observations, and crashed entire scan.  Aborted.
+0831 0047 806000145 806000146 Turned WAPP-3 back on b/c passed diagnostic, still have bm 4 error, but bm 5 is back. Got bm 4 back in last 2.5 mins of scan..."apparently the power cord wasn't plugged in all the way." -DK
+0841 0048 806000147            **WAPP errors: now "too much power".  Aborted
+0846 0049 806000148 806000149 Power adjusted.  Still get "too much power", but looks better & continuing anyway.
+0856 0050 806000150 806000151
+0906 0051 806000152 806000153
+0916 0052 806000154 806000155
+0927 0053 806000156 806000157
+0937 0054 806000158 806000159
+0947 0055 806000160 806000161  ***WAPP errors: see below; power levels still okay except bm 2A
+0957 0056 806000162 806000163
+1007 0057 806000164 806100001
+1017 0000 806100002 806100003
+1028 0001 806100004 806100005
+1038 0002 806100006 806100007
+1048 0003 806100008 806100009
+1058 0004 806100010 806100011
+1108 0005 806100012 806100013
+1118 0006 806100014 806100015
+1129 0007 806100016 806100017 
+1139 0008 806100018 806100019  power levels still okay except bm 2A
+1149 0009 806100020 806100021
+1159 0010 806100022 806100023
+1209 0011 806100024 806100025
+1219 0012 806100026 806100027
+1229 0013 806100028 806100029
+1239 0014 806100030 806100031
+1249 0015 806100032 806100033
+1300 0016 806100034 806100035
+1310 0017 806100036 806100037
+1320 0018 806100038 806100039
+1330 0019 806100040 806100041
+1340 0020 806100042 806100043  power levels still okay except bm 2A
+1350 0021 806100044 806100045
+1400 0022 806100046 806100047
+1410 0023 806100048 806100049
+1420 0024 806100050 806100051
+1431 0025 806100052 806100053
+1441 0026 806100054 806100055
+1451 0027 806100056 806100057
+1501 0028 806100058 806100059
+1511 0029 806100060 806100061
+1521 0030 806100062 806100063
+1531 0031 806100064 806100065
+1541 0032 806100066 806100067
+1552 0033 806100068 806100069
+1602 0034 806100070 806100071
+1612 0035 806100072 806100073
+1622 0036 806100074 806100075
+1632 0037 806100076 806100077
+1642 0038 806100078            aborted. 
+
+
+End LST: 1642
+
+Ran TOGS both before and after A2010. 
+
+Beam 2A - Amplifier status is slightly bad, but operator says this is
+an issue they have had recently, and shouldn't be a problem 
+
+Beam 4 - Power is low, and there is no power appearing in the
+waterfall plot, this is probably the cause of the WAPP error below.
+
+WAPP-3 had been worked on today, after last night's (2/28/08) run
+suffered from WAPP errors.  We began observations with bm 4 down,
+deciding 6 beams was better than none.  ?? was called, and came down
+to run diagnostics on WAPP-3.  Somewhere we lost bm 5, and confused
+the WAPPs, so aborted and restarted with WAPP-3 off.  On the next
+scan, the entire thing crashed.  WAPP-3 passed the diagnostic, so we
+turned it back on, and got back both bm 5 and eventually bm 4.  With
+the start of the following scan, the WAPP power levels were too high,
+so we aborted and adjusted the power.
+
+*WAPP Error - There are WAPP channels with too little power 0.014 and
+1.079 (get this error once a minute, and additional reminder errors
+once every second)
+
+**WAPP Error - "WAPP channels with too much power (1.564 > 1.4)!"
+
+***WAPP Errors - "WARNING extrapolating agc-data from 85549.0 to 85550.0!"
+"WARNING interpolating pnt-data over 2.00 second time gap (54526.156817 - 54526.156840)!"
+Continued to get this errors through the rest of the night on about every third scan.

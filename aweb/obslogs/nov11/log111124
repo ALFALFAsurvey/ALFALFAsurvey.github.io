@@ -1,0 +1,89 @@
+Log for 11.11.24(24Nov2011)        Observers: Tom Balonek, Damian Roesler,
+                              Michael Fusco, Kevin McCullough, Katie Iadanza, 
+                              Ajay Chahar, Lauren Bearden (all from Colgate Univ.)
+
+System Configuration:  a2010_az180_2010.conf
+CIMA version           {Record the FULL name of the CIMA version, e.g., 
+                             3.1.08 2010-02-01 17:44 "Smart"}
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111124.a2010.****.fits
+
+Normal meridian observing setup (AZ = 180)
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+
+2125 0000 132800287 132800288 drift138p1 fixAzdr  212500+332730 19  600 99 loopend  quicklook ok
+2135 0001 132800289 132800290    FAA radar strong, no other interference obvious   quicklook ok
+2145 0002 132800291 132800292
+2155 0003 132800293 132800294    short (few 10s of sec) feature at 1380 MHz in all beams
+2206 0004 132800295 132800296    two continuum sources. Changed filter level to 3, in order not to
+                                    be flooded with error messages(Minchin recommended).
+2216 0005 132800297 132800298
+2226 0006 132800299 132800300
+2236 0007 132800301 132800302    quicklook ok
+2246 0008 132800303 132800304
+2256 0009 132800305 132800306    quicklook ok
+2306 0010 132800307 132800308    power level ok
+2316 0011 132800309 132800310
+2326 0012 132800311 132800312
+2337 0013 132800313 132800314    quicklook ok
+2347 0014 132800315 132800316    14 seconds into drift, get error message (red) copied below 
+                                         looks not significant
+2357 0015 132800317 132800318   
+0007 0016 132800319 132800320
+0017 0017 132800321 132800322  
+0027 0018 132800323 132800324
+0037 0019 132800325 132800326 
+0047 0020 132800327 132800328    quick look shows radar was really bright; therefore difficult to see spectrum
+0057 0021 132800329 132800330    quicklook OK
+0107 0022 132800331 132800332
+0117 0023 132800333 132800334
+0127 0024 132800335 132800336
+0137 0025 132800337 132800338
+0148 0026 132800339 132800340
+0158 0027 132800341 132800342
+0208 0028 132800343 132800344
+0218 0029 132800345 132800346
+0228 0030 132800347 132800348
+0238 0031 132800349 132800350   quicklook ok
+0248 0032 132800351 132800352   quicklook ok 
+0259 0033 132800353 132800354   quicklook ok
+0309 0034 132800355 132800356   quicklook ok
+0319 0035 aborted
+
+LST stop:  0319   {Be sure to record the LST stop time of the last GOOD record)
+
+
+= = = = = = = =
+
+(red) error message during fits 0014 -- nothing serious
+20:00:01 WAPPDATA-search_pnt: ERROR data in pnt-table is too old! (55890.000000 > 55889.000000)
+20:00:01 WAPPDATA-compute_interp: ERROR can't interpolate positions at 00:00:00.000 --- using the last positions written to FITS-file!
+20:00:02 WAPPDATA-search_pnt: ERROR interpolation of pnt-data over a too large time gap attempted (55889.000000 - 55890.000012) --- cancelling interpolation attempt!
+20:00:02 WAPPDATA-interpolate: ERROR denominator is zero --- skipping interpolation!
+20:00:02 WAPPDATA-interpolate: Values:   x = 55890.000012    x1 = 55890.000012  y1 = 23.789402116005    x2 =
+
+= = = = = = = = = 
+
+At the bottom, add notes regarding:
+-- Beam 6B dead; 4A reported running hot (42K as per Dana in advance) [sometimes power level below 0.8]
+-- TOGS run at end.
+-- FAA radar on
+-- 1380 harmonic visible but faint.
+-- check many scans with quicklook.  all looks ok to us!
+-- power level checked each drift, looked fine
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 14.2   K3: 15.7   K4: 15.9   AT 09:38
+70K = K1: 86.8   K2: 86.8   K3: 94.7   K4: 103.4
+
+16K = K1: 14.6   K2: 13.7   K3: 15.7   K4: 15.9   AT 14:47
+70K = K1: 87.8   K2: 87.8   K3: 95.8   K4: 104.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+________________________________________________________________________________
+
