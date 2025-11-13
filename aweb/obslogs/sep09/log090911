@@ -1,0 +1,76 @@
+Log for 090911     Observer: Manolis Papastergis
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20090911.a2010.****.fits 
+Files:       /share/pserverf.sda3/wappdata/wapp.20090912.a2010.****.fits 
+
+     ****
+LST  fits  Scan       calscan        Source      Pattern   Start coords.  ang  time  loop  calmode 
+2138 0028  925400184  925400185      drift4p2    fixAZdr   214200+005824   19   600   99   loopend
+2148 0029  925400186  925400187
+2158 0030  925400188  925400189   quicklooked fits 0028, all ok
+2208 0031  925400190  925400191   
+2218 0032  925400192  925400193
+2228 0033  925400194  925400195
+2238 0034  925400196  925400197
+2248 0035  925400198  925500001  
+2258 0000  925500002  925500003
+2309 0001  925500004  925500005
+2319 0002  925500006  925500007
+2329 0003  925500008  925500009
+2339 0004  925500010  925500011
+2350 0005  925500012  925500013
+0000 0006  925500014  925500015
+0010 0007  925500016  925500017   strong cont. source
+0020 0008  925500018  925500019   
+0030 0009  925500020  925500021   quicklooked fits 0000, ok
+0040 0010  925500022  925500023
+0050 0011  925500024  925500025
+0100 0012  925500026  925500027
+0110 0013  925500028  925500029
+0121 0014  925500030  925500031
+0131 0015  925500032  925500033
+0141 0016  925500034  925500035
+0151 0017  925500036  925500037
+0201 0018  925500038  925500039
+0211 0019  925500040  925500041
+0221 0020  925500042  925500043
+0231 0021  925500044  925500045
+0241 0022  925500046  925500047
+0251 0023  925500048  925500049
+0302 0024  925500050  925500051
+0312 0025  925500052  925500053
+0322 0026  925500054  aborted
+
+
+END LST: 0322
+
+
+
+Notes:
+
+-- previous program (a2186) went ~5mins overtime. I called the operator at ~3mins overtime to let them know. First drift ~10mins late, also
+because of long slew and ~1m30s miscalculation of starting lst by me.  I squeezed an extra drift at the end though. 
+
+-- TOGS run at START and END
+
+-- All beams OK!
+
+-- FAA radar ON; 1380 harmonic also present
+
+-- some of the polarization A beams show horizontal streaks (3A,4A,5A).
+
+-- Very boring night. (that's a good thing)
+
+
+
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+16K = K1: 7.9  K2: 8.8  K3: 14.4  K4: 11.7  AT 18:30
+70K = K1: 73.1  K2: 78.9  K3: 92.4  K4: 100.2
+
+16K = K1 7.7   K2 8.8   K3 14.5   K4 11.4   AT 22:45
+70K = K1 72.3   K2 78.5   K3 91.7   K4 99.7

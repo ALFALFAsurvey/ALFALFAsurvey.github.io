@@ -1,0 +1,91 @@
+A2010 observing schedule                                          last update: 08Nov08 mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+Az: should be 180 for Decs north of zenith and 360 for Decs south of zenith.
+(R) indicates remote observing.
+
+-----------------------------------------------------------------------------------------------------
+JANUARY 2009
+
+    Block      Date      LSTmid     AST           LST        drift    DecJ    Who    Azimuth   
+   08.08.14  R 14Aug      21h04  00h30-06h15   21h34-03h35    31p2  +073236  BA(R)  AZ=360  
+   09.01.02  F 02Jan             02h45-07h15                                 MH,RG(R)
+   09.01.03
+   09.01.04
+   09.01.05
+   09.01.06a
+   09.01.06p
+   09.01.07a
+   09.01.07p
+   09.01.08a
+   09.01.08p
+   09.01.09
+   09.01.10
+   09.01.11a
+   09.01.11p
+   09.01.12a                    00h00-07h00    07h00-14h01    15p2  +033900
+   09.01.12p   workshp demo     16h00-17h00    23h02-00h02                         UAT workshop demo
+   09.01.13a                    00h00-07h00    07h04-14h05    14p2  +032424
+   09.01.13p
+   09.01.14
+   
+   09.01.19
+   
+   
+Drew is coming back Jan 6
+Shan is coming back Jan 18
+Sabrina & Ann are at AAS meeting Jan 3-9
+AO UAT workshop is Jan 11-15
+
+
+-----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+AA: Adeel Altaf
+DB: Drew Brisbin
+CA: Cameron Arsenault
+TB: Tom Balonek
+NB: Noah Brosch
+SB: Shea Brown
+BC: Barbara Catinella
+JC: John Cannon
+JD: Josh Davidson
+AF: Amy Furniss
+JG: Josh Goldstein
+RG: Riccardo Giovanelli
+MH: Martha Haynes
+KH: Kelley Hess
+SH: Sarah Higdon
+SH2: Shan Huang
+LH: Lyle Hoffman
+WH: Walter Hopkins
+MJ: Melissa Jacquart
+SK: Shelvean Kapita
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax
+BM: Bilal Mahmood
+AM: Ann Martin
+JM: Jeff Miller
+WM: Arik Mitschang
+EM: Emmanuel Momjian
+PN: Prasanth Nair
+AO: Aileen O'Donoghue
+EP: Manolis Papastergis
+DR: Daniel Richey
+JR: Jessica Rosenberg
+AS: Amelie Saintonge
+JS: John Salzer
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+MT: Mari Carmen Toribio
+LV: Liese van Zee
+BW: Brian Walsh
+EW: Eric Wilcots

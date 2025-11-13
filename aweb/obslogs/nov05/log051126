@@ -1,0 +1,41 @@
+Log for 11/26/05
+Observer: MH, RG & WBK
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20051126.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.11.26
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time 
+loop   Notes
+_______________________________________________________________________________
+2135 0003 533063516 533064117 drift120p2  FixedAz 214300+291200 19 600  50
+2145 0004 533064120 533064722
+ 
+2155 0005 533064726 crashed on wapps failure Restarted CIMA
+2205 0006 533065311 wapps failure again
+Arun V. on site, running diagnostic. No wisdom from diagnostic.
+Trying to get going again
+ 
+2238 0007 533067287 533067890
+2248 0008 533067893 533068495 
+2258 0009 533068498 WAPPs crash again
+                    Arun & Giacomo trying hardware power recycle
+                    Diagnostics show nothing.... Let's try again.
+
+0006 0011 533072554 533073156     power levels ok
+0016 0012 533073159 533073761 
+0026 0013 533073764 533074366 
+0036 0014 533074369 5330          WAPP2 fails again
+                    We tell Arun & Giacomo to try diagnostics again
+                    We give up.
+ 
+
+Notes:
+Pulsar folks took the extra 15min in schedule. Then a long slew.
+CIMA chat window not seen by OP at first; had to restart CIMA.
+Ran TOGS ok at start but then WAPPS failed (WAPP2; chip count error).
+
+Eventful night. And a bust.

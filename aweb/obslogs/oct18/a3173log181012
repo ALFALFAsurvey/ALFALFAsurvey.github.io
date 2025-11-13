@@ -1,0 +1,57 @@
+A3173 LBW   18.10.12   Observers: Rebecca Koopmann, Gianna Morton, UC PHY 100 First Year Physics Seminar
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3173.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3173_181012.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20181012.a3173.****.fits  
+                     /share/wappdata.now/wapp.20181013.a3173.****.fits   (if after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H215353.5+340423  215354.6 +340425  j     0 H v   # A311300cal  2202   15.9  0000   828500085     GPS, wipes out signal        (3 mins)
+S221219.2+315328  221219.2 +315328  j     0 H v   # A321411      2209  13.7  0001   828500089    Detection 1398MHz 4700km/s S/N ~7, wavy baseline
+S224202.4+304230  224202.4 +304230  j     0 H v   # A012159     2224   13.2  0002   828500093    No detection
+S224706.2+313221  224706.2 +313221  j     0 H v   # A320367     2236   13.6  0003   828500097    Detection, 1390MHz,6500km/s S/N ~10
+S225506.2+321105  225506.2 +321105  j     0 H v   # A320441     2248   14.1  0004   828500101    detections, 1390.5MHz,1391.5MHz,  6100 km/s, 6500km/s,  S/N ~5 
+S225524.5+315148  225524.5 +315148  j     0 H v   # A320446     2301   13.7  0005   828500105    possible detection 1387MHz,7050km/s,S/N~3  
+S231422.0+311505  231422.0 +311505  j     0 H v   # A333370     2313   13.0  0006   828500109    GPS, detection 1387MHz, 7200km/s,S/N~4 
+S231554.3+314527  231554.3 +314527  j     0 H v   # A333372     2325   13.7  0007   828500113    Detection, 1392 MHz, 6150km/s, S/N ~4
+S232634.3+313901  232634.3 +313901  j     0 H v   # A335359     2338   13.6  0008   828500117    No detection, RFI, 1425MHz    
+S234027.0+314849  234027.0 +314849  j     0 H v   # A333416     2350   13.7  0009   828500121    Detection, 1397.5MHz, 4750km/s, S/N~8
+S235521.3+302306  235521.3 +302306  j     0 H v   # A331006     0002   12.2  0010   828500125    Detection, 1396.7MHz, 5100km/s, S/N~12
+S001555.5+300425  001555.5 +300425  j     0 H v   # A100116     0014   11.9  0011   828500129    Detection, 1389MHz, 6650km/s, S/N~7
+S002516.2+311346  002516.2 +311346  j     0 H v   # A102771     0027   13.0  0012   828500133    GPS, detection 1389.5MHz, 6650km/s, S/N~8.5
+S003212.1+312459  003212.1 +312459  j     0 H v   # A100291     0038   13.3  0013   858500137    detection, 1392 MHz,6200 km/s, s/n~4 
+S004018.4+310641  004018.4 +310641  j     0 H v   # A102789     0051   13.1  0014   828500141    detection (?), 1394 MHz, 5700 km/s, s/n~2      
+S004821.2+303703  004821.2 +303703  j     0 H v   # A102804     0103   12.8  0000   828600003    detection 1389 MHz, 6800 km/s s/n~10
+S005757.4+315440  005757.4 +315440  j     0 H v   # A102825     0115   14.2  0001   828600007    possible detection near 1396MHz possible source in off 1397MHz 
+superposed,5100 km/s
+S011549.5+314944  011549.5 +314944  j     0 H v   # A110169     0128   13.8  0002   828600011    detection 1400 MHz, 4400 km/s, s/n~5
+S015148.1+303235  015148.1 +303235  j     0 H v   # A001327     0141   12.6  0003   828600015    Detection, 1399.5 MHz, 4600 km/s, S/N~5
+S021340.1+311130  021340.1 +311130  j     0 H v   # A120104     0153   13.8  0004   828600019    Detection, 1380 MHz, 8850 km/s, S/N~7
+S022306.4+314608  022306.4 +314608  j     0 H v   # A122993     0205   14.2  0005   828600023    Detection, 1397.5 MHz, 4900 km/s, S/N~5
+S023532.6+312223  023532.6 +312223  j     0 H v   # A123035     0218   13.8  0006   828600027    GPS. Detection, 1397 MHz, 4900 km/s, S/N~7    
+S024758.0+294340  024758.0 +294340  j     0 H v   # A123173     0230   12.2  0007   828600031    Detection, 1383.5 MHz,7900 km/s, S/N~7
+
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal   NO time      (3 mins)
+H030510.4+354946  030510.4 +354946  j     0 H v   # A132243cal   NO time      (3 mins)
+
+                                                      
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+Weather a bit cloudy at beginning. Tiedowns enabled. Wavy baseline at beginning, but resolved after first couple of obs.
+First cal not detected; had GPS in observation.
+GPS in a few other scans.

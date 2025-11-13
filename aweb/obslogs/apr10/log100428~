@@ -1,0 +1,66 @@
+Log for 04/28/10          Observer: David Kornreich
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100428.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100429.a2010.****.fits
+
+LST  fits   Scan    calscan   Source     Pattern   Start coords. ang   time  loop  calmode    
+1030 0013  11800085 11800086  drift115p3 fixAZdr   103000+274803 19.0  600   99    loopend power levels OK, quicklook OK
+1040 0014  11800087 11800088  
+1050 0015  11800089 11800090
+1100 0016  11800091 11800092
+1110 0017  11800093 11800094
+1120 0018  11800095 11800096 power levels OK
+1130 0019  11800097 11800098
+1140 0020  11800099 11800100
+1151 0021  11800101 11800102
+1201 0022  11800103 11800104
+1211 0023  11800105 11800106
+1221 0024  11800107 11800108
+1231 0025  11800109 11800110 power levels OK
+1241 0026  11800111 11800112
+1251 0027  11800113 11800114
+1301 0028  11800115 11800116
+1311 0029  11800117 11800118
+1322 0030  11800119 11800120
+1332 0031  11800121 11800122 power levels OK
+1342 0032  11800123 11800124
+1352 0033  11800125 11900001
+1402 0000  11900002 11900003
+1412 0001  11900004 11900005
+1422 0002  11900006 11900007
+1433 0003  11900008 11900009 power levels OK
+1443 0004  11900010 11900011 
+1453 0005  11900012 11900013
+1503 0006  11900014 11900015
+1513 0007  11900016 11900017
+1523 0008  11900018 11900019
+1533 0009  11900020 11900021 Warnings: "WAPPS CONFUSED" during CAL
+1543 0010  11900022 11900023
+1553 0010  11900024 aborted
+
+
+
+
+LST@stop:1548      RA@stop: 1524
+
+NOTES:
+- ALFA rotation position encoders failed at startup; engineers went up to fix it; this lost us about 90 minutes before start.
+- No TOGS at start; TOGS at end scheduled, but no galfasrc in a2010.cat; used the "curpos10" script, but this rotated alfa to 70 degrees... hm.
+- FAA radar ON
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+16K = K1: 3.3   K2: 13.7   K3: 15.0   K4: 15.2   AT 16:10
+70K = K1: 81.7   K2: 89.7   K3: 98.0  K4: 106.1
+
+16K = K1: 13.6   K2: 13.8   K3: 15.2   K4: 15.2   AT 22:50
+70K = K1: 83.2   K2: 91.2   K3: 100.8   K4: 108.3
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

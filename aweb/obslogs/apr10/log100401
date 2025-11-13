@@ -1,0 +1,94 @@
+Log for 04/01/10          Observer: Greg Hallenbeck
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100401.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100402.a2010.****.fits
+
+Zenith strip observing setup
+Az=258.73   ALFAang=-60.9  ZA=7.3
+RA@start=0801   RA@end=1648
+RA = LST + 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode
+0733 0026  9100120  9100121       drift81p1 fixAZdr   080500+193518 -60.9 600   99   loopend
+0743 0027  9100122  9100123
+0753 0028  9100124  9100125
+0803 0029  9100126  9100127       quicklook OK
+0813 0030  9100128  9100129
+0823 0031  9100130  9100131
+0833 0032  9100132  9100133
+0843 0033  9100134  9100135
+0854 0034  9100136  9100137
+0904 0035  9100138  9100139
+0914 0036  9100140  9100141       quicklook OK
+0924 0037  9100142  9100143
+0934 0038  9100144  9100145
+0944 0039  9100146  9100147
+0954 0040  9100148  9100149
+1004 0041  9100150  9100151
+1015 0042  9100152  9100153       quicklook OK
+1025 0043  9100154  9100155
+1035 0044  9100156  9100157
+1045 0045  9100158  9100159
+1055 0046  9100160  9100161
+1105 0047  9100162  9100163       quicklook OK
+1115 0048  9100164  9100165       power in 5A and B momentarily too high
+1125 0049  9100166  9100167       beam 2 seems normal?
+1135 0050  9100168  9100169
+1145 0051  9100170  9100171       no warnings since one noted at LST1115, even in beam 2
+1156 0052  9100172  9100172
+1206 0053  9100174  9200001       quicklook OK
+1216 0000  9200002  9200003       beam 2 drops in power again, momentarily
+1226 0001  9200004  9200005
+1236 0002  9200006  9200007
+1246 0003  9200008  9200009
+1256 0004  9200010  9200011
+1306 0005  9200012  9200013       quicklook OK
+1317 0006  9200014  9200015
+1327 0007  9200016  9200017       beam 2 drops in power again... I guess it's a lost cause.
+1337 0008  9200018  9200019
+1347 0009  9200020  9200021       beam 0A&B spikes in power... then is fine.... now 5A&B spikes in power
+1357 0010  9200022  9200023
+1407 0011  9200024  9200025
+1417 0012  9200026  9200027       quicklook OK -- beam 0A goes too high for a moment
+1427 0013  9200028  9200029
+1437 0014  9200030  9200031
+1448 0015  9200032  9200033
+1458 0016  9200034  9200035
+1508 0017  9200036  9200037
+1518 0018  9200038  9200039
+1528 0019  9200040  9200041
+1538 0020  9200042  9200043
+1548 0021  9200044  9200045
+1558 0022  9200046  9200047
+1609 0023  9200048  9200049
+1619 0024  9200050  Aborted
+
+LST stop: 1619        RA stop: 1648
+
+NOTES:
+
+From here on out, nighttime zenith angle limits have eased to 3.5-15
+Stricter limits of 6-9 still observed during the day
+
+TOGS run at end -- not run at start!
+
+Beam 2A consistently low, occasional power spikes on beams 0 and 5 as noted above.
+
+FAA radar ON, and for most of night was significantly stronger than galactic Hydrogen
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+16K = K1: 14.6   K2: 14.7   K3: 16.0   K4: 15.9   AT 16:27
+70K = K1: 83.9   K2: 91.7   K3: 101.5  K4: 109.1
+
+16K = K1: 14.6   K2: 14.7   K3: 16.0   K4: 16.2   AT 22:04
+70K = K1: 84.6   K2: 92.7   K3: 102.5  K4: 110.1
+
+			=>temperatures of the 8 sensors within ALFA housing
+

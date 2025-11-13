@@ -1,0 +1,110 @@
+Log for 09/17/10     Observer: JR, DF, KH, JO
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100917.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100918.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=436.79   ALFAang= -54.3  ZA=4.8  AzG=436.79   ZAG=4.79  ****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2037  RA@end=0303
+      RA = LST - 20 min
+****
+During the night, please make occational notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the ZA limits
+are (3.5,12.0). If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2057 0024  26000160 26000161   drift71p1  fixAZdr   203700+170917  -54.3   600   99  loopend  ZAG=4.78                                                                                                      pnt-data...
+2107 0025  26000162 26000163                   Power levels look good, fits look good
+2117 0026  26000164 26000165
+2127 0027  26000166 26000167                   Power levels still good
+2137 0028  26000168 26000169
+2147 0029  26000170 26000171 
+2157 0030  26000172 26000173                   GPS in scans 220-240ish
+2207 0031  26000174 26000175
+2218 0032  26000176 26000177                   Dec=17:09:15,ZA=4.73, power level looks good
+2228 0033  26000178 26000179
+2238 0034  26000180 26000181
+2248 0035  26000182 26000183
+2258 0036  26000184 26000185
+2308 0037  26000186 26000187                   Dec=17:09:19,ZA=4.71,power level looks good, fits look good
+2318 0038  26000188 26100001
+2328 0000  26100002 26100003
+2339 0001  26100004 26100005
+2349 0002  26100006 26100007
+2359 0003  26100008 26100009
+0009 0004  26100010 26100011                   Dec=17:09:19,ZA=4.70, power level looks good
+0019 0005  26100012 26100013
+0029 0006  26100014 26100015
+0039 0007  26100016 26100017                   about LST004430 (05:18:30 UTC) continuum source
+0049 0008  26100018 26100019
+0059 0009  26100020 26100021
+0110 0010  26100022 26100023                   Dec=17:09:19,ZA=4.70, power level looks good
+0120 0011  26100024 26100025                   06:09:30 UTC Continuum Source
+0130 0012  26100026 26100027
+0140 0013  26100028 26100029
+0150 0014  26100030 26100031
+0200 0015  26100032 26100033
+0210 0016  26100034 26100035                   Dec=17:09:21,ZA=4.73, power level good
+0221 0017  26100036 26100037
+0231 0018  26100038 26100039                   17:09:30 UTC Continuum source
+0241 0019  26100040 26100041
+0251 0020  26100042 26100043
+0301 0021  26100044 26100045
+0311 0022  26100046 26100047
+0321 0023  26100048 aborted
+
+
+
+LST@stop:0321       RA@stop: 0303
+
+NOTES:
+TOGS was run, overan observing time by a minute due to previous observer.
+Fits 24 can see the FAA
+Fits 25 recieved two warnings in orange: "WARNING extrapolating pnt-data from 55457.077211 to 55457.077222!"
+    and "WARNING interpolating pnt-data over 2.00 second time gap (55457.077211-55457.077234)!"
+Fits 27 "WARNING extrapolating pnt-data from 55457.090787 to 55457.090799!"
+	"WARNING interpolating pnt-data over 2.00 second time gap (55457.090787-55457.090810)!"
+Fits 10 Warnings extrapolating & interpolating again
+Fits 21 Warnings extrapolating & interpolating again
+
+-- Using 'zenith strip' observing mode
+-- Occasional cima warnings: extrapolating pnt-data...
+-- FAA radar ON
+-- All beams OK
+-- Tiedowns fine
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 14.7   K3: 16.0   K4: 15.9   AT 16:16
+70K = K1: 83.1   K2: 90.5  K3: 101.2  K4: 109.5
+
+16K = K1: 14.3   K2: 14.7   K3: 16.0   K4: 15.9   AT 22:01
+70K = K1: 84.1   K2: 91.7  K3: 102.5  K4: 111.0
+
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT 16:16
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:16
+				=>certify our blanker is locking on
+
+

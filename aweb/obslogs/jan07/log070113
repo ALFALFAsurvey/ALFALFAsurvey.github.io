@@ -1,0 +1,52 @@
+Log for 07/01/13      Observer: MH, SH, DR, JD, LV
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az360.gui as save state. -- Note, 360 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20070113.a2010.****.fits
+
+LST  fits   Scan    calscan    Source   Pattern  Start coords.   ang  time  loop  calmode
+0725 0003 701301397 701301999  drift18p2 FixedAz 072500+042253   19   600   99    loopend
+0735 0004 701302002 701302604 
+0745 0005 701302607 701303209              Power Level ok
+0755 0006 701303212 701303814 
+0805 0007 701303817 701304419 
+0815 0008 701304422 701305024
+0825 0009 701305027 701305629 
+0835 0010 701305632 701306234 
+0845 0011 701306237 701306839 
+0855 0012 701306842 701307444              Power Level ok
+0905 0013 701307447 701308049 
+0915 0014 701308052 701308654
+0925 0015 701308657 701309259
+0935 0016 701309262 701309864              Power Level Ok
+0945 0017 701309867 701310469
+0955 0018 701310472 701311074              Power Level ok    Waterfall Okay
+1005 0019 701311077 701311679 
+1015 0020 701311682 701312284              Power Level ok
+1025 0021 701312287 701312889  
+1038 0022 701312892 701313494              Power Level ok    Lightning!
+1048 0023 701313497 701314099
+1058 0024 701314102 701314704              Power Level ok    Lightning
+1108 0025 701314707 701315309                                Waterfall  Okay
+1118 0026 701315312 701315914              Power Level ok
+1128 0027 701315917 701316519
+1138 0028 701316522 701317124 
+1148 0029 701317127 701317729 
+1158 0030 701317732 701318334              Power Level ok
+1208 0031 701318337 701318939                                Waterfall Okay
+1218 0032 701318942 701319544
+1228 0033 701319547 701320149              Power Level ok    Interferance 1381 mHz
+1238 0034 701320152 701320754
+1248 0035 701320757 701321359              Power Level ok    Waterfall Okay
+
+END LST: 1258
+
+
+NOTES:
+                                           
+beam 1b still bad :(
+
+Togs Ran Beginning and End Okay

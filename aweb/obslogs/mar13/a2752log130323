@@ -1,0 +1,75 @@
+A2752 LBW   13.03.23      Observers: Parker Troischt, Ron Olowin, Ora Starcher, Nathan Nichols, Kyle Murray, Jesse Watson, Elijah 
+Berstein-Cooper, Jose Reyes, Jonathan Perez, Andres Arrieta, Joseph Serrano
+
+CIMA version:          The Stable version (Default) (Ver 3.3.05 2013-02-22 15:46)
+Configuration file:    a2752_mar13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2752_130323.cmd
+Mode:                Doppler tracking
+                    ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.23mar13.a2752.*
+
+SRCNAME             RAJ     DECJ                     AGNnr           LST   ZA   File#  ONScan     Status
+H073050.1+041830  073049.4 +041841  j  1200 H v   # A174687	     752   14.9  33    308200649  Non-detection
+H080231.8+013747  080234.7 +013706  j  1000 H v   # A189099          801   16.8  34    308200653  Non-detection
+H082817.5+010037  082814.9 +010013  j 13000 H v   # A004432  5 min   810   18.0  35    308200657  1362Mhz,13000km/s, 500km/s Wide, Broad
+H080610.4+153042  080612.7 +153015  j  2000 H v   # A181474  calib   826   5.5   36    308200661  1411Mhz,2000km/s, strong narrow single peak
+H082631.9+114741  082630.6 +114712  j  1900 H v   # A188875  calib   836   6.9   37    308200665  1411Mhz,1900km/s, narrow single peak
+H090050.2+025337  090049.9 +025327  j  4700 H v   # A193146	     847   15.9  38    308200669  Detection at 1398Mhz, 4700km/s
+H090515.7+100316  090515.7 +100234  j  2100 H v   # A191916          858   8.5   39    308200673  Detection at 1411Mhz, 2100km/s
+H091548.1+093840  091549.5 +093851  j  2700 H v   # A192311          906   9.1   40    308200677  Detection at 1407Mhz, 2700km/s
+H095015.0+090135  095015.8 +090022  j  2900 H v   # A198339          916   12.7  41    308200681  Very bad baseline, reexecuting (file 43)
+H095946.5+114130  095943.2 +114140  j  2700 H v   # A191300          924   11.0  42    308200685  Wavy baseline, reexecuting (file 44)
+H095015.0+090135  095015.8 +090022  j  2900 H v   # A198339          933   10.3  43    308200689  Very bad baseline again
+H095946.5+114130  095943.2 +114140  j  2700 H v   # A191300          942   8.1   44    308200693  Very bad baseline again  
+H100158.2+022315  100153.8 +022450  j  2100 H v   # A202468          953   16.2  45    308200697  Detection at 1411Mhz, 2000km/s
+H101037.5+123618  101033.9 +123540  j  2800 H v   # A202731         1005   6.0   46    308200701  Weak Detection  1407MHz w/2800km/s 
+H105158.0+083140  105158.2 +083157  j  1400 H v   # A208369         1016   13.3  47    308200705  Non-Detection
+A105810.5+115956  105810.5 +115956  j  1000 H v   # A202036         1024   10.5  48    308200709  Wavy baseline
+H105852.8+140735  105852.2 +140746  j   700 H v   # A205278         1033   7.7   49    308200713  Wavy baseline Weak Detection at 1417MHz, 700km/s
+A110456.8+173830  110456.8 +173830  j   900 H v   # A719277         1042   5.6   50    308200717  Non-Detection  
+A110651.1+173002  110651.1 +173002  j   900 H v   # A719297         1050   4.2   51    308200721  Non-Detection, Wavy Baseline
+H111206.1+164511  111215.7 +164512  j  1200 H v   # A212823  5 mins 1058   3.8   52    308200725  Non-Detection, Wavy Baseline
+H111746.4+163706  111748.4 +163824  j  1000 H v   # A740710         1110   2.6   53    308200729  Aborted run, to address wavy baselines. laser ranging error
+H112956.1+162626  112954.5 +162545  j  1100 H v   # A210381                                       Skipped due to lack of time and baseline issues
+H114436.2+165318  114440.7 +165358  j   900 H v   # A741338         1132   3.4    1    308200730  Detection at 1416 MHz (Velocity 900 km/s)
+HVC1140.1+150644  114008.1 +150644  j   200 H v   # A215417         1143   3.3    2    308300001  Detection at 1419.2 MHz (Velocity 200 km/s)
+H115106.7+051500  115104.8 +051446  j  1500 H v   # A213174         1155   13     3    308300005  Detection at 1413 MHz, 1500km/s
+H122023.7+135343  122023.3 +135351  j   300 H v   # A222215         1205   5.9    4    308300009  Detection at 1419 MHz, 300km/s
+H122238.0+121030  122235.8 +120927  j     0 H v   # A220456         1213   6.7    5    308300013  What does 0 Hv mean?
+H122318.8+065541  122317.7 +065443  j  1900 H v   # A220485         1223   11.5   6    308300017  Not Detected
+H122827.5+065642  122827.2 +065645  j   900 H v   # A223691         1231   11.5   7    308300021  Detection at 1416 MHz, 900km/s
+H122924.2+095935  122922.6 +095918  j   800 H v   # A220661         1240   8.7    8    308300025  Detection at 1417 MHz, 800km/s, slightly wavy baseline back
+HVC271.57+79.03   122734.7 +173823  j   200 H V   # A229326  UCHVC  1250   5.3    9    308300029  Detection at 1419 MHz, 200km/s
+A125001.9+031254  125001.9 +031254  j  1000 H v   # A229173         1302   15.4  10    308300033  Non-Detection  
+A124641.7+102309  124641.7 +102309  j  1000 H v   # A229166         1312   10.0  11    308300037  1413 MHz, 1600km/s strong narrow single peak Not at expected velocity
+A124925.4+145452  124925.4 +145452  j  1000 H v   # A229373         1321   8.3   12    308300041  Non-Detection* maybe. . .  
+H124827.8+181612  124828.7 +181616  j   700 H v   # A229357         1330   9.6   13    308300045  Non-Detection
+H125224.7+180817  125223.8 +180800  j   900 H v   # A229358         1338   10.6  14    308300049  1416MHz, 900km/s narrow single peak
+H142715.9+135504  142714.5 +135541  j  1500 H v   # A249040         1352   9.7   15    308300053  Non-Detection 
+H144301.5+125815  144306.3 +125750  j   800 H v   # A249056         1401   11.6  16    308300057  Non-Detection
+A140617.3+003743  140617.3 +003743  j  1000 H v   # A249432         1411   17.8  17    308300061  Non-Detection
+H142635.9+144818  142634.1 +144822  j  2800 H v   # A249039         1425   4.6   18    308300065  Non-Detection
+H143940.5+023446  143939.3 +023455  j  1600 H v   # A243215         1438   15.8  19    308300069  Detection at 1413 MHz (Velocity 1650 km/s)  
+H145831.3+033052  145833.9 +033107  j  6600 H v   # A240994         1446   15.2  20    308300073  Detection at 1390 MHz (Velocity 6500 km/s)
+H150902.0+004949  150904.3 +004919  j  1600 H v   # A253746         1455   17.9  21    308300077  Weak detection at 1413 MHz (Velocity 1647 km/s)  
+H151228.7+004910  151231.7 +004845  j  1900 H v   # A253770         1503   17.7  22    308300081  Detection at 1412 MHz (Velocity 1850 km/s)
+H151207.6+013548  151208.2 +013509  j  2000 H v   # A253656         1511   16.8  23    308300085  Weak detection at 1411.5 MHz (Velocity 1944 km/s)  
+H151912.9+023240  151913.3 +023241  j  1900 H v   # A733977         1520   15.8  24    308300089  Detection at 1411.5 MHz (Velocity 1900 km/s)
+H160411.9+145530  160413.8 +145524  j   600 H v   # A268084         1530   8.9   25    308300093  Non-Detection
+HVC1605.5+145920  160532.6 +145920  j   100 H v   # A268069         1539   7.4   26    308300097  Detection at 1419.8 MHz (Velocity 150 km/s)
+H160705.0+170258  160705.5 +170315  j  5300 H v   # A268363         1547   5.1   27    308300101  Detection at 1396 MHz
+H162600.2+090852  162600.3 +090844  j   200 H v   #          if time
+
+General Notes:
+
+Around LST of 11:15 we aborted run to address the wavy baseline. Possibly related to laser ranging errors (Erratic Platform Pipe). Foggy conditions. We disabled the tiedowns and 
+set the height for the night assuming that the temperature will not vary too much ( +/- 1degreeF). Consulted Robert Minchin, and TelOps ran signal diagnostics.
+
+STOP LST 1554

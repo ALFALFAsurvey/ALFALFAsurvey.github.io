@@ -1,0 +1,71 @@
+Log for 10.11.25 (25Nov2010)        Observers: TB, PP, HC, JM, AO, RO
+                                         (Ron Olowin, Aileen O'Donoghue, Jeff Miller,
+                                          Phil Patrick, Heather Culter, Tom Balonek) 
+
+System Configuration:   a2010_az180_2010.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20101125.a2010.****.fits
+
+Normal meridian observing setup (Fall 2010) with Z.A.G. restricted to 16 degrees
+
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+2202 0000 32900095  32900096  drift88p2  fixASdr   220200+212448  19  600   99  loopend  quicklook ok
+                                                   Beam 6B dead 
+                                                   FAA radar is on, 1380 MHz line is visible
+2212 0001 32900097 32900098
+2222 0002 32900099 32900100  Strong Continuum Source in 1 & 6
+2232 0003 32900101 32900102
+2243 0004 32900103 32900104  Continuum source in 3, 4, 5, 0 
+2253 0005 32900105 32900106  Continuum source in 2, quicklook OK  
+2304 0006 32900107 32900108  Message that data were interpolated for 2 sec  
+2313 0007 32900109 32900110 
+2323 0008 32900111 32900112
+2333 0009 32900113 32900114  Power levels OK, 6B and Generalissimo Francisco Franco are still dead, Quicklook OK   
+2343 0010 32900115 32900116  Message that data were interpolated for 2 sec, then interpolation failed (red)
+2353 0011 32900117 32900118 
+0004 0012 32900119 32900120 
+0014 0013 32900121 32900122  Message that data were interpolated for 2 sec, quicklook OK   
+0024 0014 32900123 32900124  Strong Continuum Source in 1      
+0034 0015 32900125 32900126  Message (Orange) that data were interpolated for 2 sec, strong CS in all beams 
+0044 0016 32900127 32900128      
+0054 0017 32900129 32900130    
+0104 0018 32900131 32900132  quicklook OK  
+0114 0019 32900133 32900134  
+0124 0020 32900135 32900136  CS in 1    
+0134 0021 32900137 32900138   
+0145 0022 32900139 32900140  Power levels OK, 6B and Generalissimo Francisco Franco are still dead
+0155 0023 32900141 32900142      
+0205 0024 32900143 32900144  Strong CS in 0, 1, 2, 6, quicklook OK     
+0215 0025 32900145 32900146   
+0225 0026 32900147 32900148  
+0235 0027 32900149 32900150     
+0245 0028 32900151 32900152  
+0255 0029 32900153 32900154    
+0305 0030 32900155 -- Abort
+
+
+LST stop:0305 
+
+TOGS run at end
+FAA radar on
+The night was uneventful with a few continuum sources.  The Generalissimo's ghost did not appear.
+
+
+ALFA TEMPERATURES
+
+16K = K1: 14.8   K2: 18.7   K3: 16.5   K4: 16.5   AT 08:10
+70K = K1: 88.5   K2: 94.2   K3: 103.2  K4: 111.3
+
+16K = K1: 15.1   K2: 18.9   K3: 16.5   K4: 16.8   AT 14:11
+70K = K1: 89.2   K2: 95.4   K3: 104.2  K4: 112.5
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+
+

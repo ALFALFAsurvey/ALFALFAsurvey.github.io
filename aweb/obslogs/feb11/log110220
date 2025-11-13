@@ -1,0 +1,86 @@
+Log for 11.02.20 (20Jan2011)        Observers: David Craig (DC) (remote) 
+
+System Configuration: a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110220.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110221.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restriction lifted
+
+LST  fits   Scan      calscan       Source    Pattern   Start coords. ang  time loop calmode
+0931 0000  105100345 105200001      drift147p1 fixAzdr   093100+353854  19  600   99  scan starts 23:55 AST
+0942 0000  105200002 105200003      New date on second scan!  Az at 540.  First calscan should be 105200001 
+0951 0001  105200004 105200005      San Juan radar is on, beam 6B still dead, quicklook ok.
+1001 0002  105200006 105200007      quicklook ok.
+1011 0003  105200008 105200009
+1022 0004  105200010 105200011      quicklook ok
+1032 0005  105200012 105200013
+1042 0006  105200014 105200015
+1052 0007  105200016 105200017      RFI? something bright near 1347 MHz 05:17UTC also a bit at 1400 MHz
+1101 0008  105200018 105200019      cont src at 05:36 UTC in beams 0,3,4,5
+1112 0009  105200020 105200021      GPS NUDET at 05:38 UTC 1380 MHz in all beams
+1123 0010  105200022 105200023      quicklook ok.
+1132 0011  105200024 105200025
+1143 0012  105200026 105200027      interpolating 2 s gap wapp warnings, quicklook ok.
+1153 0013  105200028 105200029      GPS burst starts at 06:24 UTC
+1203 0014  105200030 105200031      ...and ends at 06:27 or so in this scan.
+1213 0015  105200032 105200033      quicklook ok.    
+1223 0016  105200034 105200035      'Boring is good.' Radar looks bright in quicklook, but seems ok.
+1233 0017  105200036 105200037             
+1243 0018  105200038 105200039      moderate cont src in b0,b2 at abt 12h46 RA, quicklook ok.    
+1254 0019  105200040 105200041      pwr lvs have been steady so far via alfaobswin
+1303 0020  105200042 105200043      quicklook ok.
+1313 0021  105200044 105200045      quicklook ok.
+1324 0022  105200046 105200047      
+1334 0023  105200048 105200049      quicklook ok.
+1344 0024  105200050 105200051      
+1354 0025  105200052 105200053      quicklook ok.
+1404 0026  105200054 105200055      cont src in b0,b5 0830 UTC, around RA 14h07
+1414 0027  105200056 105200043      cont src b0, b2 0840 UTC, WAPP interpolation (2 s gap), quicklook ok.
+1424 0028  105200058 105200059      
+1435 0029  105200060 105200061      quicklook ok.
+1445 0030  105200062 105200063      harmonic of radar at 1380 MHz in b1,b5.
+1455 0031  105200065 105200065      cont src bright in b3 09:22 UTC, also in b4,b5
+1505 0032  105200066 105200067
+1515 0033  105200068 105200069      
+1525 0034  105200070 105200071      bright cont. src in last scan      
+
+LST stop: 15:35:47
+
+-- Only one fits file from 20110220  date (number 0000) 
+-- Beam 6B dead
+-- TOGS at end only
+-- FAA radar on
+May have forgotten to restart wapps before TOGS calibration at end.
+
+ALFA TEMPERATURES
+
+16K = K1: 29.2   K2: 29.4   K3: 329    K4: 32.6   AT 16:23
+70K = K1: 122.3  K2: 130.3  K3: 139.1  K4: 146.9
+
+16K = K1: 29.4   K2: 29.4   K3: 33.1   K4: 33.1   AT 22:23
+70K = K1: 122.0  K2: 130.8  K3: 139.4  K4: 147.5
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   Yes  AT 16:35
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:22
+				=>certify our blanker is locking on
+_______________________________________________________________________________
+TIE DOWN STATUS AT 16:35
+
+TD12: 12.569
+TD4 : 12.816
+TD8 : 12.589
+
+Total Kips: 94.80
+

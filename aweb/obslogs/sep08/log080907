@@ -1,0 +1,45 @@
+Log for 080907      Observer: Shan Huang
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.01  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20080907.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20080908.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2204 0020  825100202 825100203 drift40p1  fixAZdr  220400+093642 360   600   99 loopend   - power levels ok (except 6.1)
+2214 0021  825100204 825100205                                                              fits files ok
+2224 0022  825100206 825100207
+2234 0023  825100208 825200001
+2245 0000  825200002 825200003                                                              power ok, fits files ok
+2255 0001  825200004 825200005
+2305 0002  825200006 825200007
+2315 0003  825200008 825200009
+2325 0004  825200010 825200011                                                              power ok, fits files ok
+2335 0005  825200012 825200013
+2345 0006  825200014 825200015
+2355 0007  825200016 825200017
+0005 0008  825200018 825200019                                                              power ok, fits files ok 
+0016 0009  825200020 825200021
+0026 0010  825200022 825200023
+0036 0011  825200024 825200025                                         
+0046 0012  825200026 825200027                                                              Beam 6.1 is back sometimes
+0056 0013  825200028 825200029 
+0106 0014  825200030 825200031                                                              power ok, fits files ok 
+0116 0015  825200032 825200033
+0126 0016  825200034 825200035
+0137 0017  825200036 abort...
+
+END LST:  0137
+
+Notes: 
+-- Ran TOGS at start and end. Mistakenly ran 'command_galfacurpos' instead of 
+   'command_galfasrc' at the beginning.
+-- A long slew after last program.
+-- Beam 6.1 is dead
+-- Getting lots of "WARNING WAPP=4-chip_count: WARNING counts don't match between 
+   chip 0 and chip 14 (99999966 !=99999964)!" errors (orange, numbers are close). 
+-- Getting regular "check wapp levels: Warning there are WAPP channels with
+   too little power 0.092 < 0.75!" errors (orange) and lots of
+   "check_wapp_levels: WAPP power levels are between 0.092 and 1.116 (still bad)"
+   (grey).
+-- Beam 6.1 is back sometimes.

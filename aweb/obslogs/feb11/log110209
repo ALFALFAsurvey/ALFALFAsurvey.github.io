@@ -1,0 +1,81 @@
+Log for 2011.02.09 (09Feb2011)        Observers: DF, JO
+
+System Configuration:  { a2010_az180_2010.conf}
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110209.a2010.0000.fits
+Observed at az=540, not 180
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan    Source    Pattern   Start coords. ang  time loop calmode
+0926 0000  104000001  104000002 drift140p2 fixAzdr   092600+340400  19   600   99 loopend  
+0936 0001  104000003  104000004                          6b dead; other power levels ok
+0946 0002  104000005  104000006                          quicklook ok
+0957 0003  104000007  104000008
+1008 0004  104000009  104000010 
+1016 0005  104000011  104000012 
+1026 0006  104000013  104000013 
+1037 0007  104000015  104000016
+1047 0008  104000017  104000018 
+1057 0009  104000019  104000020  
+1107 0010  104000021  104000022 
+1117 0011  104000023  104000024 
+1127 0012  104000025  104000026
+1137 0013  104000027  104000028 
+1147 0014  104000029  104000030  
+1157 0015  104000031  104000032 
+1207 0016  104000033  104000034                         RFI@1380 MHz in this drift (GPS?)
+1217 0017  104000035  104000036  
+1228 0018  104000037  104000038  
+1238 0019  104000039  104000040                         Extrap pnt data warning at 1244
+1248 0020  104000041  104000042  
+1258 0021  104000043  104000044  
+1308 0022  104000045  104000046  
+1318 0023  104000047  104000048  
+1328 0024  104000049  104000050  
+1338 0025  104000051  104000052  
+1349 0026  104000053  104000054  
+1359 0027  104000055  104000056  
+1409 0028  104000057  104000058  
+1420 0029  104000059  104000060                        Extrap pnt warning at 1422
+1429 0030  104000061  104000062 
+1440 0031  104000063  104000064  
+1450 0032  104000065  104000066  
+1500 0033  104000067  104000068  
+1510 0034  104000069  104000070 
+1520 0035  104000071  104000072 
+1530 0036  104000073  104000074                       RFI at 1380 (GPS?)
+{Power levels were fine except for beam 6b. RFI at 1350 mhz along with 
+some at 1380 mhz. }
+Quicklook checked: 0000, 0001, 
+0002, 0011, 0025, 0027, 0018, 0031 on quicklook. 
+
+LST stop:      {1541 }
+
+-- Started late due to previous group
+-- FAA on; RFI at 1350MHz
+-- TOGS run at end
+-- FAA radar on 
+
+ALFA TEMPERATURES
+
+16K = K1: 29.4   K2: 192.9  K3: 33.1   K4: 32.8   AT 16:42
+70K = K1: 124.7  K2: 132.5  K3: 141.6  K4: 150.1
+
+16K = K1: 29.2   K2: 193.0  K3: 33.4   K4: 32.8   AT 22:23
+70K = K1: 124.2  K2: 132.1  K3: 141.6  K4: 149.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   Off
+Alfa Covers: Covered
+LBW Covers:  
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT 08:08
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 08:08
+				=>certify our blanker is locking on
+

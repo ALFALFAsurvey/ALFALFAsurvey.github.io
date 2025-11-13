@@ -1,0 +1,293 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>The Arecibo Legacy Fast ALFA (ALFALFA) 
+Survey</title>
+</head>
+<body bgcolor="#ffffff">
+
+
+<center>
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<h2 style="color: rgb(10,10,150);">Observing with LBW for ALFALFA: Background</h2>
+
+<font color="#cc0f14"><b>Version date: December 2015</b></font>
+<table border="3" bordercolor="darkblue" cellpadding="3">
+</tbody></table>
+</center>
+<br>
+<br>
+<b><font color=#008000> Useful links:</font></b> <br>
+<li> <a href="lbw_observingmodes.htm" target=new">LBW observing modes</a> for ALFALFA followup
+</p><br>
+In this document, we discuss how we set up the receiver (the "frontend"), 
+the spectrometer (the "backend"), conduct observations and finally, produce a 
+flattened (instrument/sky subtracted) spectrum for observations with the
+ALFALFA followup observations made with the L-band Wide Receiver.</p>
+
+<h3><font color="#cc0f14"> The L-Band Wide Receiver (LBW)</font></h3>
+
+Because the objective of the followup observations is to obtain spectra
+with lower noise than the main ALFALFA survey at specifically targeted
+positions, we will use the more sensitive single-pixel 
+<a href="http://www.naic.edu/~astro/RXstatus/Lwide/Lwide.shtml">L-band Wide
+(LBW)</a>. Although the LBW receiver operates in the frequency range from 
+1120-1730 MHz, we will insert a filter (called "1320-hipass") to limit it 
+to 1280-1470 MHz
+to cut down the impact of RFI on our observations.</p>
+
+<br>
+<h3><font color="#cc0f14"> The Spectral Bandpass</font></h3>
+<table>
+<tr><td>
+The Spectral Bandpass refers the intensity of the total radiation collected
+by the system over the frequency range covered by each spectrum. In general,
+this intensity varies as a function of frequency in a complicated way.</p>
+
+The image to the right shows a spectral bandpass for one of the ALFA beams;
+for ALFALFA, the bandpass covers 100 MHz centered at 1385 MHz. </p>
+
+Notice the frequency structure within the bandpass and the sharp followoff
+at the high and low frequency edges; those are due to the bandpass filters and
+we'll have the same issues when we go to the narrower bandwidths.</p>
+
+When we already know the frequency of the candidate signal in the followup 
+LBW observations, we can
+use a narrower bandpass of say 25 MHz covering only the frequency of the
+candidate so that we avoid known sources of RFI. In fact, we normally
+adopt one of two observing modes which are discussed on a separate page
+presenting the
+<a href="lbw_observingmodes.htm">LBW Followup Spectrometer Setups</a>.
+
+</td>
+<td> <a href="http://egg.astro.cornell.edu/alfalfa/pract/gifs/bpd9.gif">
+<img src="http://egg.astro.cornell.edu/alfalfa/pract/gifs/bpd9.gif" height=200></a></p>
+Click on image to see larger version.
+</td></tr></table>
+</p>
+
+<br>
+<h3><font color="#cc0f14"> Basic Total-Power Position-Switched (ON-OFF) Observations</font></h3>
+
+Like most observations, measurements of the HI line emission from
+galaxies require removal of the contribution to the noise from the instrumentation, the
+sky and other sources other than the target. ALFALFA and its followup observations 
+use different variations of the basic "position switching" technique to remove these 
+other (more-or-less predictable, at least over short times) contributions to the power over
+the bandpass.</p>
+
+<table>
+<tr><td>
+The drift technique adopted by ALFALFA is designed to allow for adequate bandpass
+subtraction using the drift scans themselves with no manipulation of the
+data taking stream or electronics during a drift, e.g. with 
+"minimum intrusion". We make use of the fact that most of the time, nearly all of
+the bandpass contains no signal.
+In ALFALFA, the bandpass subtraction is performed in the LOVEDATA
+routine called <b>BPD</b>. A linear fit is calculated along the time dimension for
+each frequency channel. The <i>rms</i> noise for each channel is calculated, and a record
+is kept of what fraction of the time sequence deviates less that 2 times the <i>rms</i>. Outliers
+are then excluded, and a final bandpass value for each frequency channel is taken 
+as equal to the zeroth order coefficient of the linear fit. The adopted "OFF" bandpass
+then is the normalized bandpass times the system temperature T<sub>sys</sub>. Removing the 
+noise contribution in this way
+works very effectively for sources that are not very large; it does not
+work for very extended features such as galactic hydrogen. But, for nearly all
+ALFALFA galaxies, this is quick and easy and quite acceptable. </p>
+
+The purpose of the LBW observations is to increase the integration time ON-source,
+so, rather than letting the sky drift across the beam, we actually track the
+target. Therefore, in order to perform the bandpass/sky subtraction, we need an
+equivalent OFF-source observation, i.e. one in which we expect the instrument+sky
+noise at each channel to be identical to that contained in the ON-source spectrum.
+Thus, we need to acquire an appropriate OFF-source bandpass that can be
+subtracted for each ON-source observation; we end up then with matched
+ON-OFF "pairs". This method is very common in radio
+astronomy and is called "total power" or "ON-OFF" observing.</p>
+
+Let's define a few terms:
+<ul>
+<li> T<sub>rx</sub>(f):  The receiver noise temperature at each frequency f
+<li> T<sub>source</sub>(f): The source noise temperature at each frequency f (during the ON observation only)
+<li> T<sub>conf</sub>(f):  The contribution to the noise from "confusion" (caused by lots of
+weak unresolved sources) within the main beam during the OFF observation; 
+this will normally be negligible and negligibly different from the general contribution
+during the ON-source observation
+<li> T<sub>sky</sub>(f):  The sky noise temperature at each frequency f, which includes
+     the CMB contribution and the galactic background
+<li> T<sub>spill</sub>(f):  The contribution to the noise temperature from other sources
+such as ground pickup ("spillover", atmospheric noise, etc.)
+<li> G<sub>rx</sub>(f): The receiver gain (from the all elements, including the backend, mixers, etc)
+<li> G<sub>mainbeam</sub>(f): The telescope gain, i.e. the response to cosmic radiation
+in the main telescope beam (from the aperture plane until the receiver)
+</ul>
+
+</td>
+<td valign=top> <a href="levelIplot.jpg"><img src="levelIplot.jpg" height=350></a></p>
+Click on image to see larger version. (Thanks, BK!)</td>
+</tr>
+</table>
+</p>
+
+The signal then from the ON-source observation is</p> 
+<center>
+      ON(f) = G<sub>rx</sub>(f) * (T<sub>rx</sub>(f) + T<sub>source</sub>(f)*G<sub>mainbeam</sub>(f)
+              + T<sub>sky</sub>(f)*G<sub>mainbeam</sub>(f) + T<sub>spill</sub>(f))
+</center> </p>
+Somewhere in the middle of all that noise, there will be our HI line source. It will not,
+of course, be present in the OFF-source observation. 
+Similarly, the signal from the OFF-source observation is</p> 
+<center>
+      OFF(f) = G<sub>rx</sub>(f) * (T<sub>rx</sub>(f)  + T<sub>conf</sub>(f)*G<sub>mainbeam</sub>(f)
+              + T<sub>sky</sub>(f)*G<sub>mainbeam</sub>(f) + T<sub>spill</sub>(f))
+</center>  </p>
+
+The normal practice of tracking ON-OFF position switching is to
+undertake the OFF-source observation immediately after the ON-source one and covering
+the exact same track <i>on the sky</i> (e.g. in azimuth and zenith angle). In those circumstances, we
+expect that T<sub>rx</sub>(f), T<sub>sky</sub>(f), T<sub>spill</sub>(f), G<sub>rx</sub>(f)
+and G<sub>cos</sub>(f) will not change significantly between the two observations. 
+Furthermore, under most conditions, T<sub>conf</sub>(f) will be negligible and negligibly
+different from the general noise level during the ON-source observation
+(except in the case of a strong continuum source; that's a complication for another
+day...). Hence, the quantity we want,
+i.e. the derived <b>total power difference spectrum</b>, is:
+<center>
+<img src="ONOFFeqn_crop.jpg" height=90>
+</center>  </p>
+Thus, our standard procedure will be to conduct paired ON-OFF observations for each
+HI target. The first observations, the ON-source scan, will track the position of
+the target for few minutes (nominally 3). The telescope will then move back to the
+starting Az,ZA of the ON-scan and expose the OFF-source scan for the same length of time.
+The track of each scan in the pair will cover the same Az,ZA (the same orientation with
+in telescope coordinates). We will then construct the total power difference spectrum
+from each pair as above.</p>
+
+Following each pair of ON- and OFF-source observations, a set of calibration
+scans will be taken with the built-in noise diode (the "cal") alternately
+turned ON and OFF for 10 seconds each; these are the CalON and CalOFF scans.
+It's a bit of a waste of time to fire the diode for so long, but there is no
+option to make it shorter, as this is a standard part of the "standard ON-OFF"
+CIMA mode.</p>
+
+<b>Bottom line: Each target observation, including both the 3 minute ON-OFF target
+pair and the calibration scans, will take about 8 minutes plus slew time.
+A 5 minute ON-OFF pair with take about 13 minutes including slew time.</b></p>
+
+<br>
+
+<h3><font color="#cc0f14"> The Spectrometer (aka the "Backend")</font></h3>
+
+For the main ALFALFA survey observations (program A2010), we use the WAPPs as the
+backend. For the LBW observations, we used what is called the 
+<a href="http://www.naic.edu/~astro/general_info/correlator/correlat.htm">
+"Interim Correlator"</a>. BTW, it's been "interim" for more a decade....</p>
+
+The correlator has lots of flexibility, actually more than we need, so as always,
+we will try to "keep it simple". The basic parameters to control, 
+set by the mysterious terms "sbc", "lags", and "subcorrelator" (="sbc") (not to
+mention "interleaved", "Stokes" and "double Nyquist"),
+are the total bandwidth per spectrum, the number of spectra (spectra of different
+bandwidths could be take simultaneously if we wanted to, which we don't),
+and the number of channels per spectrum. There is also a choice between
+3-level and 9-level sampling; this describes the number of levels of encoding
+of the signal autocorrelation function. The more the better for dynamic
+range (e.g. in the presence of RFI) and precision. 
+As the AO page says, <i>"9-level operation achieves 96.8% 
+of the signal-to-noise of analog correlation, whereas 3-level achieves 81%."</i>
+Under some circumstances, e.g. where spectral resolution is important, it is better
+to sacrifice the 9-level, and doesn't make much difference. These subtleties
+are left to those who take advanced radio astronomy....</p>
+
+Like ALFA, LBW samples orthogonal polarizations which are essentially 
+means that we record two independent spectra. So we will set up the 
+correlator to treat the two polarizations independently.</p>
+
+<!--
+Another trick learned by young radio astronomers (c.f. <a 
+href="http://adsabs.harvard.edu/abs/1984AJ.....89..758H"> H&G 1984</a>, AJ 89, 758)
+on the Arecibo staff in practically-prehistoric days (to many of you, at least) 
+is to double-up the spectra analyzed
+by the backend. Even though they are not wholly independent, recording this 
+extra set of spectra (both pols) can recover some of the noise
+introduced within the backend (amplifiers, mixers, etc). </p> -->
+
+We fully understand that some of the very low signal-to-noise ratio
+sources are spurious. Some of the high S/N ones may also be bogus,
+especially because of RFI. Part of the objective of some of the LBW observing
+programs specifically address the reliability of the different categories of 
+low S/N sources (e.g. with and without possible optical counterparts, as
+functions of S/N or width or flux density, etc). </p>
+
+For a more specific discussion of the correlator setup we have been using
+for the LBW ALFALFA followup observations, take a
+look at the <a href="lbw_observingmodes.htm">ALFALFA followup LBW observing modes</a>
+document.
+</p>
+
+<!-- Hence, we are going to set up the spectrometer
+to use some of its extra (unnecessary for our needs for spectral resolution 
+and frequency coverage) capability to monitor RFI within
+the band and/or to look for signals at velocities different from the
+source candidate.</P>
+
+For the Jan 2012, we have decided on two <a href="lbw_observingmodes.htm"> observing modes</a>
+one which we will use for the large number of very low velocity sources (cz < 2000 km/s)
+and, a second, for sources at higher redshift (cz > 2000 km/s). See the discussion
+<a href="lbw_observingmodes.htm"> here</a>.
+-->
+
+<br>
+
+<h3><font color="#cc0f14"> The Radiometer Equation</font></h3>
+
+Take a look at the detailed discussion of <a href="http://www.cv.nrao.edu/course/astr534/Radiometers.html">
+radiometers</a> under the web site <a href="http://www.cv.nrao.edu/course/astr534/ERA.shtml">Essential
+Radio Astronomy</a> by Jim Condon and Scott Ransom at NRAO.</p>
+
+For us, what we want to know is how the noise in the HI spectra depends on the integration time,
+and the properties of the receiver/spectrometer setup. To derive the rms noise per spectral
+element, &Delta;S<sub>rms</sub>, in Jy, the relevant parameters are:
+<table>
+<tr><td>
+<ul>
+<li> the system temperature (total noise contribution; see above), T<sub>sys</sub>, in K
+<li> the system gain, G, in K/Jy
+<li> the bandwidth per spectral pixel (i.e. spectrometer channel, or the final spectral resolution
+     if we smooth), &beta;, in Hz
+<li> the integration time, &tau;, in seconds
+<li> C, an efficiency factor that depends on the correlator sampling level, of order 1, but
+     about 0.8 for 3-level and more like 1.0 for 9-level.
+</ul>
+</td><td><img src="radioeqn.jpg" height=200>
+</td></tr></table></p>
+Note right away, that since the system temperature of LBW is lower than that of ALFA and
+its gain higher, observations of the same integration time and spectral resolution made with LBW
+will be more sensitive than those made with ALFALFA. And, with the LBW observations, we will
+integrate 3 minutes ON-source. So we really are digging deeper into the noise (which is the
+whole point!).</p>
+
+Because we integrate for 3 minutes both ON- and OFF-source and also combine both polarizations,
+the above equation doesn't exactly work. In ON-OFF position switching, the line is observed only
+half of the time, but the noise is there all of the time. So, the equation, we actually use is
+<img src="eqn_radiom_onoff.jpg" align=center height=80>
+per polarization, or
+<img src="eqn_radiom_2pol.jpg" align=center height=80>
+when both polarizations are
+averaged to obtain the final spectrum. Here, &tau; refers to the total
+time (ON+OFF). You can read more about this at the Arecibo
+<a href="http://www.naic.edu/~astro/guide/node14.html">observer's guide</a>. </p>
+
+<br>
+<br>
+<hr><br>
+<font color="#cc0f14">
+This page maintained by the members of the Cornell
+<a target="_blank" href="http://www.astro.cornell.edu/Galaxy/egg.html">ExtraGalactic Group</a>
+and their friends, the other members of the 
+<a target="_blank" href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> observing team</font>
+
+<br>
+<b><font color="#008000"><i>Last modified: Tue Jan  6 15:38:04 EST 2015</font></b> by martha
+
+</body></html>
+

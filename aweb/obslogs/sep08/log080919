@@ -1,0 +1,54 @@
+Log for 080919      Observer: Betsey Adams
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.01  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20080919.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20080920.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2131 0001 826300033 826300034 drift45p2  fixAZdr  213100+105700 360   600   99 loopend   beam 6B dead
+2141 0002 826300035 826300036
+2151 0003 826300037 826300038                     beam 6B dead; other power levels ok
+2201 0004 826300039 826300040
+2211 0005 826300041 826300042
+2222 0006 826300043 826300044
+2232 0007 826300045 826300046
+2242 0008 826300047 826300048
+2252 0009 826300049 826300050
+2302 0010 826300051 826300052
+2312 0011 826300053 826300054
+2322 0012 826300055 826400001
+2332 0000 826400002 826400003
+2342 0001 826400004 826400005
+2352 0002 826400006 826400007
+0003 0003 826400008 826400009
+0013 0004 826400010 aborted                         power dip; drift aborted near end
+0024 0005 826400011 aborted                         problems restarting (on my part - user error)
+0032 0006 826400012 826400013			    power levels ok; fits files look good
+0042 0007 826400014 826400015
+0052 0008 826400016 826400017
+0102 0009 826400018 826400019
+0112 0010 826400020 826400021
+0122 0011 826400022 826400023
+0132 0012 826400024 826400025
+0142 0013 826400026 826400027
+0153 0014 826400028 826400029
+0203 0015 826400030 826400031
+0213 0016 826400032 826400033
+0223 0017 826400034 826400035
+0233 0018 826400036 826400037
+0243 0019 826400038 826400039
+0253 0020 826400040 826400041
+0303 0021 826400042 Aborted
+
+
+END LST:  0303
+
+Notes: 
+TOGS run at start and end.  
+Beam 6B is dead.  Power levels at 0.09, warnings in grey.
+Chip mismatch errors (in orange), ignored.  Mismatch of 99999966!=99999964 for chip 0 and 8,11-15
+Frequency of chip mismatch errors decreased throughout the night; rare by fits file 9
+Power dip in middle of night, drift aborted, WAPPS restarted (twice - the second time due to user error) and observing
+resumed.
+Chip mismatch errors resumed in frequency.

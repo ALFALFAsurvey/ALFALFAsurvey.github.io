@@ -1,0 +1,67 @@
+Log for 05/09/05
+Observers: Sabrina Stierwalt
+
+System Configuration
+
+FixedAz Drift Map CIMA expanded version
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20050905.a2010.****.fits
+      /share/pserverf.sdb1/wappdata/wapp.20050906.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.09.05
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time
+loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+2136 0032 524882921 524883523 drift116p1  FixedAz 213600+280618 19 600 50
+2146 0033 524883526 524884128
+2156 0034 524884131 524884733
+2206 0035 524884736 524885338
+2216 0036 524885341 524885943
+2226 0037 524885946 524900148
+2237 0000 524900151 524900753
+2247 0001 524900756 524901358
+2257 0002 524901361 524901963
+2307 0003 524901966 524902568
+2317 0004 524902571 524903172
+2328 0005 524903176 524903777
+2338 0006 524903781 524904382
+2348 0007 524904386 524904987
+2358 0008 524904991 524905592
+0008 0009 524905597 524906254
+0019 0010 524906258 524906859
+0029 0011 524906863 524907464
+0039 0012 524907468 524908069
+0049 0013 524908073 524908674
+0059 0014 524908678 524909279
+0109 0015 524909283 524909884
+0119 0016 524909888 524910489
+0129 0017 524910493 524911094
+0139 0018 524911098 524911699
+0149 0019 524911703 524912304
+0200 0020 524912308 524912909
+0210 0021 524912913 524913514
+0220 0022 524913518 524914119
+0230 0023 524914123 524914724
+0240 0024 524914728 524915329
+0250 0025 524915333 524915934
+0300 0026 524915938 524916539
+0310 0027 524916543 524917145
+0321 0028 524917148 524917749
+
+
+Notes:
+Lost 10 minutes at the beginning because of the "Audioplay error: Permission denied" message came 
+up when trying to enter CIMA.  This problem occured last night as well, and so far the only way to 
+fix it seems to be to ask the operator to call Mikael.
+
+CIMA gave the following error at LST 0009:
+ERROR: 'Making drift observation...' should have finished 1 minute ago!
+WARN: Is 'Making drift observation..' hanging?
+But the status shown on the "aostatus" monitor window and in CIMA's status gui all looked fine.  A 
+quicklook at the data in that file (0009) showed no problems with the data.  I noticed that the 
+message in the CIMA window was different for this file (and this file only).  CIMA did not report 
+"WARN: Observing when not on source" and then "Now observing on source" as usual.
+
+TOGS ran fine.

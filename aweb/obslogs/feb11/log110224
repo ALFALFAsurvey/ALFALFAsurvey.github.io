@@ -1,0 +1,90 @@
+Log for 11.02.24 (24Jan2011)        Observers: David Craig and Colby Dennis
+
+System Configuration:  a2010_az180_2010.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110224.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110225.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restrictions lifted.
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0925 0037  105500386 105500387 drift143p2 fixAzdr   092100+344748  19  600   99  loopend quicklook ok
+0935 0038  105500388 105500389                      FAA on, pwr lvls ok. Positions good by monpnt.
+0946 0039  105500390 105600001                      Date change. Quicklook OK.
+0956 0000  105600002 105600003                      Strong (double?)cont src overlaps cal in b3, almost in b4.  
+1006 0001  105600004 105600005                      Cluster or structured continuum sources? STRONG in b4.
+1016 0002  105600006 105600007                      Quicklook OK.                             
+1026 0003  105600008 105600009
+1036 0004  105600010 105600011
+1046 0005  105600012 105600013                      FAA radar OFF at 04h55 UTC; brief rfi? in b4,1347MHz.
+1056 0006  105600014 105600015                      Quicklook OK, no radar!
+1106 0007  105600016 105600017                      Continuum src overlaps cal b1.
+1117 0008  105600018 105600019			    
+1127 0009  105600020 105600021			    Quicklook OK. 
+1137 0010  105600022 105600023			    Pwr lvls ok.
+1147 0011  105600024 105600025                     
+1157 0012  105600026 105600027                      GPS burst at 06h08 UTC, Quicklook OK.
+1207 0013  105600028 105600029                      Strong cont. src b2,0,5, overlap cal in 5,6 (a little).
+1217 0014  105600030 105600031
+1227 0015  105600032 105600033                      Quicklook OK. Radar still off.
+1238 0016  105600034 105600035
+1248 0017  105600036 105600037                      brief Radar? 1350MHz 07h01-04 UTC,Quicklook OK
+1258 0018  105600038 105600039                                      
+1308 0019  105600040 105600041
+1318 0020  105600042 105600043	                    Quicklook OK.
+1328 0021  105600044 105600045
+1338 0022  105600046 105600047
+1349 0023  105600048 105600049                      Quicklook OK.
+1359 0024  105600050 105600051                      FAA on at 08h07, then back off by 08h13 
+1409 0025  105600052 105600053                      Radar on at 08h25 UTC, Strong cont src b0,2,6.
+1419 0026  105600054 105600055                      Radar off again at 08h30 UTC. Quicklook OK.
+1429 0027  105600056 105600057                      very brief pwr drop visible in total pwr display, 
+                                                    b2 and 3 at 084444UTC
+1439 0028  105600058 105600059                      Radar on at 08h54 UTC.
+1449 0029  105600060 105600061                      Radar off again at 08h59 UTC.
+1459 0030  105600062 105600063
+1509 0031  105600064 105600065                      Quicklook Ok.
+1520 0032  105600066 105600067                      Radar on at 0929UTC
+1530 0033  105600068 105600069                      GPS Burst 09h36 UTC. Radar off again.
+1540 0034   ****                            ABORTED (bigtime WAPPS errors at abort)
+
+
+LST stop: 1540
+
+-- TOGS run at end
+-- FAA radar on at beginning, OFF at 04h55 UTC (in fits 0005) and was very 
+   intermittently on rest of run, 3-5 min at a time.  
+--No problems. Uneventful.
+
+ALFA TEMPERATURES
+
+16K = K1: 29.4   K2: 29.4   K3: 33.1   K4: 32.8   AT 16:02
+70K = K1: 123.2  K2: 131.3  K3: 139.9  K4: 147.7
+
+16K = K1: 29.2   K2: 29.4   K3: 33.1   K4: 32.6   AT 22:04
+70K = K1: 123.0  K2: 131.1  K3: 139.9  K4: 147.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   
+Alfa Covers: 
+LBW Covers:  
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT /
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:00
+				=>certify our blanker is locking on
+_______________________________________________________________________________
+TIE DOWN STATUS AT 16:00
+
+TD12: 12.535
+TD4 : 12.783
+TD8 : 12.556
+
+Total Kips: 91.16
+
+Tie Down:   Enabled

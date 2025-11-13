@@ -1,0 +1,54 @@
+Log for 07/02/22      Observer: BC, KS, RK
+
+System Configuration:  FixedAZ Drift Map
+                       Cima version 2.2.17 (normal)
+
+Using: a2010_az180.gui as save state.
+
+Files:  /share/pserverf.sda2/wappdata/wapp.20070222.a2010.****.fits
+        /share/pserverf.sda2/wappdata/wapp.20070223.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern  Start coords.   ang  time  loop  calmode
+0746 0050 705379416 705380018 drift124p1 FixedAz  074630+300306    19   600   99   loopend
+0756 0051 705380021 705380623  power levels ok
+0807 0052 705380626 705381228
+0817 0053 705381231 705381833
+0827 0054 705381836 705382438
+0837 0055 705382441 705383043
+0847 0056 705383046 705383648
+0857 0057 705383651 705384253
+0907 0058 705384256 705384858
+0917 0059 705384861 705385463
+0927 0060 705385466 705386068  power levels ok
+0938 0061 705386071 705400273
+0948 0000 705400276 705400878 
+0958 0001 705400881 705401483 
+1008 0002 705401486 705402088
+1019 0003 705402091 705402693 
+1029 0004 705402696 705403298 power levels ok
+1039 0005 705403301 705403903 
+1049 0006 705403906 705404508 
+1059 0007 705404511 705405113   
+1109 0008 705405116 705405718
+1119 0009 705405721 705406323 power levels OK
+1129 0010 705406326 705406928 
+1139 0011 705406331 -- aborted
+END LST: 1139
+
+
+NOTES
+
+- 20 min. to unwrap the telescope!! (it was at AZ=690)
+
+- start 705400276, 70540081, 705401486, 705402696 : 
+WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock at 00:01:40.299 (seconds: 100.299)! 
+
+- FAA radars still very quiet at 1350 MHz
+
+- Beam 1B off
+
+- TOGS run at beginning only
+
+- Power levels ok all night. 
+
+

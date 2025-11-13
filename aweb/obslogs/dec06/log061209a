@@ -1,0 +1,45 @@
+Log for 06/12/09 AM      Observer: Noah Brosch
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az180.gui as save state. -- Note, 180 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061209.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source    Pattern  Start coords.  ang  time  loop calmode
+
+0740 0001 634310554 634311156 drift111p1 FixedAz 071400+265318   19   600    99  loopend
+0750 0002 634311159 634311761 Power levels OK
+0800 0003 634311764 634312366
+0810 0004 634312369 634312971
+0820 0005 634312974 634313576
+0830 0006 634313579 634314181
+0841 0007 634314184 634314786
+0851 0008 634314789 634315391 Power levels fine
+0901 0009 634315394 634315996
+0911 0010 634315999 634316601
+0921 0011 634316604 634317206
+0931 0012 634317209 634317811 Toward end of scan saw wide 1382 RFI
+0941 0013 634317814 634318416
+0951 0014 634318419 634319021 Power levels OK
+1001 0015 634319024 634319626
+1012 0016 634319629 634320231
+1022 0017 634320234 634320836
+1032 0018 634320839 634321441
+1042 0019 634321444 634322046
+1052 0020 634322049 634322651
+1102 0021 634322654 634323256
+
+1113 0022 634323259  -- Aborted
+
+END LST: 11:12
+
+
+NOTES: 
+1. The previous program (p2030) did not terminate on time and did not
+stop data taking. Telescope control was aborted at 0233, then a large ~260
+deg slew was done to AZ=180
+2. WIde RFI interference from 1380 to 1382 MHz visible near end of scan 0012
+3. TOGS run at end

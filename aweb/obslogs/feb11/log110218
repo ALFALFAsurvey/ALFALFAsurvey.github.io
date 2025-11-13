@@ -1,0 +1,61 @@
+Log for 11.02.18 (18Feb2011)        Observer: Derek Fertig & Crystal Moorman & David Stark
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110218.a2010.****.fits
+          /share/pserverf.sda2/wappdata/wapp.20110219.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restriction lifted!
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0919 0039  104900261 105000001 148p3	 fixAzdr   0913+354951	  19   600  99  loopend quicklook ok
+0930 0000  105000002 105000003		quicklook OK
+0940 0001  105000004 105000005
+0950 0002  105000006 105000007
+1000 0003  105000008 105000009
+1010 0004  105000010 105000011
+1020 0005  105000012 105000013		quicklook OK
+1030 0006  105000014 105000015
+1040 0007  105000016 105000017
+1051 0008  105000018 105000019		quicklook ok
+1101 0009  105000020 105000021
+1111 0010  105000022 105000023		
+1121 0011  105000024 105000025
+1132 0012  105000026 105000027
+1142 0013  105000028 105000029		quicklook OK
+1152 0014  105000030 105000031
+1202 0015  105000032 105000033
+1212 0016  105000034 105000035
+1222 0017  105000036 105000037		rfi @ 1380MHz (gps?)
+1232 0018  105000038 105000039		quicklook OK
+1243 0019  105000040 105000041
+1253 0020  105000042 105000043
+1303 0021  105000044 105000045
+1313 0022  105000046 105000047		quicklook OK
+1323 0023  105000048 105000049
+1333 0024  105000050 105000051		quicklook OK	
+1343 0025  ABORTED
+
+
+
+
+
+LST stop: 1343
+
+At the bottom, add notes regarding:
+--Beam 6B dead
+--FAA Radar ON, 1380MHz harmonic present
+--TOGS at end only
+
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 29.34  K2: 29.7   K3: 33.1   K4: 33.1   AT 18:15
+70K = K1: 123.2  K2: 131.3  K3: 140.4  K4: 147.7
+
+16K = K1: 29.2   K2: 29.2   K3: 32.8   K4: 32.6   AT 22:21
+70K = K1: 123.3  K2: 131.3  K3: 140.4  K4: 148.0
+
+			=>temperatures of the 8 sensors within ALFA housing

@@ -1,0 +1,113 @@
+Log for 09/29/11 (29Sep2011)     Observer: Jess O'Connor & Derek Fertig
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda3/wappdata/wapp.20110929.a2010.****.fits
+             /share/pserverf.sda3/wappdata/wapp.20110930.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=243.0   ALFAang= -42.0  ZA=4.0  AzG=242.22  ZaG=4.02
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2315  RA@end=0320
+      RA = LST + 15 min
+****
+During the night, please make occational notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the inner ZA limit
+is 1.1 deg. If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2300 0023 127200157 127200158  drift83p1  fixAZdr   231500+200431                     Quicklook plots look good. WAPP interplotation at 2309.
+2310 0024 127200159 127200160 							      Power levels look good. Quicklook plot fine.
+2320 0025 127200161 127200162 
+2330 0026 127200163 127200164 
+2340 0027 127200165 127200166 
+2350 0028 127200167 127200168 
+0001 0029 127200170 127300001 
+0011 0000 127300002 127300003
+0021 0001 127300004 127300005								ZA=4.02 Power levels okay. 
+0031 0002 127300006 127200007							WAPP chip error: counts don't match at 0037. Quicklook fine. 
+0041 0003 127300008 127300009							Quicklook okay. 
+0051 0004 127300010 127300011 							Power levels are good. 
+0101 0005 127200012 127300013 							Power levles are good. ZA=4.02
+0112 0006 127300014 127300015							ZA=4.01
+0122 0007 127300016 127300017
+0132 0008 127300018 127300019
+0142 0009 127300020 127300021 
+0152 0010 127300022 127300023 
+0202 0011 127300024 127300025
+0212 0012 127300026 127300027
+0222 0013 127300028 127300029							ZA=3.99
+0223 0014 127300030 127300031							ZA=3.98
+0233 0015 127300032 127300033							ZA=3.98
+0243 0016 127300034 127300035
+0253 0017 127300036 ABORTED  						Power levels good near end. ZA=3.97                                      
+
+
+
+LST@stop:0306      RA@stop:0320 
+
+NOTES:
+We tried to run TOGS twice before our run and it failed both times because 
+of WAPPS errors. The errors continued when we tried to run he drift. 
+Re-starting CIMA did not seem to fix the problem. When we adjust the power
+before observing, an error saying that the operation timed out while waiting
+for the WAPPS to adjust power comes on and we are unable to take any observations.  
+We had to wait until LST 2300 to start because of errors. FAA harmonic throughout. 
+
+NOTE ADDED by Martha 9/30: Message from Luis Quintero
+Dear Martha,
+We had problems tonight with WAPP1, the half band filter connected to the 
+correlator 1 was overloading the 48VDC line of one of the power supplies, 
+producing a voltage drop of 18V (30VDC measured). This was disabling 
+correlator 2, that is connected to the same power supply.
+We isolated the problem disconnecting the mentioned half band filter, so I 
+assume that you will have full bandwidth for this channel (I am not sure what 
+is your configuration for A2010). The observer restarted the experiment, 
+and checked the data files, reporting to us that everything looks fine.
+
+Tomorrow morning we will check the failure, and we expect to have the 
+equipment fully functional during the day. Sorry for the inconvenience.
+Best,
+-- Luis
+
+
+-- Using 'zenith strip' observing mode
+-- No TOGS (see notes above) 
+-- Problems with WAPPS-WAPP 1 was dead when we started so Beam 0 and 1 were not working until LST 2300
+-- FAA radar ON
+-- Beam 4A dead. 
+-- Tiedowns disabled 
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.5   K2: 13.7   K3: 15.7   K4: 15.7   AT 18:12
+70K = K1: 90.2   K2: 90.9  K3: 97.8  K4: 103.4
+
+16K = K1: 14.6   K2: 14.0   K3: 15.7   K4: 15.9   AT 23:11
+70K = K1: 87.3   K2: 87.8  K3: 94.9  K4: 103.4
+
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT n/a
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:39
+				=>certify our blanker is locking on
+
+

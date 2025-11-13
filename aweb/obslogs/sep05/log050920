@@ -1,0 +1,74 @@
+Log for 05/09/20
+Observers: Amelie Saintonge
+
+System Configuration
+
+FixedAz Drift Map CIMA normal version (i.e. the old expanded version, renamed)
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20050920.a2010.****.fits
+      /share/pserverf.sdb1/wappdata/wapp.20050921.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.09.20
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop  DecJ off  Notes
+_______________________________________________________________________________
+2116 0028 526378185 526378786  drift125p1  FixedAz 211600+301742 19 600  50
+2126 0029 526378790 526379391
+2136 0030 526379395 526379996
+2146 0031 526380000 526380602
+2156 0032 526380605 526381206
+2206 0033 526381210 526381812
+2216 0034 526381815 526382416
+2227 0035 526382420 526383021
+2237 0036 526383025 526383626
+2247 0037 526383630 526384231
+2257 0038 526384235 526384836
+2307 0039 526384840 526385441
+2317 0040 526385445 526386046
+2327 0041 526386050 526400251
+2337 0000 526400255 526400857
+2347 0001 526400860 aborted    WAPP error
+2349 0002 526400976 526401577  WAPPs restarded and power adjusted right before this one
+0000 0003 526401581 526402183
+0010 0004 526402186 526402787
+0020 0005 526402791 526403393
+0030 0006 526403396 526403997
+0040 0007 526404001 526404602
+0050 0008 526404606 526405207
+0100 0009 526405211 526405812
+0110 0010 526405816 526406417
+0120 0011 526406421 526407022
+0131 0012 526407026 526407628
+0141 0013 526407631 526408232
+0151 0014 526408236 526408837
+0201 0015 526408841 526409442
+0211 0016 526409446 526410047
+0221 0017 526410051 526410652
+0231 0018 526410656 526411257
+0241 0019 526411261 526411862
+0251 0020 526411866 526412468
+0302 0021 526412471 526413072
+0312 0022 526413076 526413678
+0322 0023 aborted
+
+END LST: 032200
+
+Notes:
+
+TOGS ran fine at the beginning of the night.
+
+At 21:51ast, the operator reports a problem: in red he reads in the guest window "A1 narrow
+MLFS=1000, wide FS-00".  Nothing looks wrong from over here, and a quicklook at the data reveals
+no problems, so I decided not to worry about it.
+
+WAPP error during fits file 0000, 60 secs before the end ("WAPP ERROR counts don't match for
+chip x").  I let it finish, then aborted 0001,
+restarted the WAPPs, started a new fits file, and restarted a new drift.  Data in file 0000 looks
+okay, as shown by quicklook (don't know about the end of the drift, though). Lost about 2
+minutes.
+
+I haven't noticed any GPS signals by having quicklooks at the data, even though there was a
+warning for tonight.
+
+TOGS ran fine at the end of the night.

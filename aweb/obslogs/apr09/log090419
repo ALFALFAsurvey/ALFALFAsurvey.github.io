@@ -1,0 +1,87 @@
+Log for 090419     Observer: Betsey Adams
+
+System Configuration: a2010_az180_2009.conf
+CIMA version  3.1.03 2008-1-20 13:50 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090419.a2010.****.fits 
+            /share/pserverf.sda3/wappdata/wapp.20090420.a2010.****.fits
+
+     ****
+LST  fits  Scan       calscan    Source     Pattern   Start coords.  ang  time  loop  calmode 
+0925 0019  910900188  910900189  drift89p1  fixAZdr   092500+213206  19   600   99    loopend    fits file ok
+0935 0020  910900190  910900191
+0945 0021  910900192  910900193
+0955 0022  910900194  910900195   extrapolating and interpolating warnings
+1006 0023  910900196  910900197
+1016 0024  910900198  910900199
+1026 0025  910900200  910900201
+1036 0026  910900202  910900203  
+1046 0027  910900204  Failed     WAPP-3 failure, restart WAPPS
+
+1048 0028  910900205  910900206  fits file ok
+1058 0029  910900207  910900208
+1108 0030  910900209  910900210
+1118 0031  910900211  910900212
+1128 0032  910900213  910900214
+1138 0033  910900215  910900216
+1148 0034  910900217  910900218
+1158 0035  910900219  910900220
+1208 0036  910900221  910900222
+1218 0037  910900223  910900224
+1229 0038  910900225  910900226
+1239 0039  910900227  910900228  fits file ok
+1249 0040  910900229  910900230
+1259 0041  910900231  910900232
+1309 0042  910900233  910900234
+1319 0043  910900235  911000001
+1329 0000  911000002  911000003  fits file ok
+1339 0001  911000004  911000005
+1349 0002  911000006  911000007
+1400 0003  911000008  911000009
+1410 0004  911000010  911000011
+1420 0005  911000012  911000013
+1430 0006  911000014  911000015
+1440 0007  911000016  911000017
+1450 0008  911000018  911000019
+1500 0009  911000020  911000021
+1510 0010  911000022  911000023  fits file ok
+1520 0011  911000024  911000025
+1531 0012  911000026  Aborted
+
+
+
+END LST: 1531
+
+
+Notes:
+Running the new version of CIMA 3.1.03 "Smart"
+At AZ=540
+TOGS not run at start - failing on adjusting WAPP power
+Wapp-1 is failing on adjust power step
+Restarting WAPPS and restarting CIMA both fail to fix problem 
+Start of night lost - WAPP-1 fixed in correlator room by disconnecting half-band (?) filter
+Problem was with filter (not needed for ALFALFA), resulted in cutting power to WAPP-1
+Beam 6B dead
+FAA radar on
+TOGS run at end
+
+
+WAPP error messages:
+
+Start of night:
+2009-Apr-19 19:22:57 ERROR   end_wait_seconds: ERROR timed out while waiting for adjust WAPP power!
+2009-Apr-19 19:23:02 ERROR   end_wait_seconds: ERROR timed out while waiting for stopping WAPPs!
+2009-Apr-19 19:23:02 ERROR   finish_task: ERROR failed adjusting: WAPP power
+2009-Apr-19 19:23:02 ERROR   finish_task: ERROR failed adjusting: WAPP power levels
+2009-Apr-19 19:23:03 ERROR   WAPP=1-wappcon: ERROR the WAPP never aborted!
+
+2009-Apr-19 19:32:44 ERROR   WAPP=1-wappcon: ERROR ignoring command 'ADJUSTPOWER' since WAPP1 is busy!
+2009-Apr-19 19:32:48 ERROR   end_wait_seconds: ERROR timed out while waiting for adjust WAPP power!
+2009-Apr-19 19:33:17 ERROR   WAPP=1-adjust_power: ERROR overflow when using first 'EDT_NEXTBUF'!
+
+
+WAPP-3:
+2009-Apr-19 21:20:30 ERROR   wapp_failed: ERROR WAPP-3 failed to complete2009-Apr-19 21:20:33 WARNING WAPPDATA-flush_pending: WARNING WAPPDATA flushing 24 dumps! its current task!
+2009-Apr-19 21:20:31 ERROR   WAPP=3-read_timeout: ERROR time-out while waiting for data from the correlator!
+2009-Apr-19 21:20:31 ERROR   WAPP=3-start_spectra: ERROR failed to read spectral line data!
+2009-Apr-19 21:20:31 PROBLEM WAPP=3-start_spectra: Reason: Connection timed out!
+2009-Apr-19 21:20:31 ERROR   WAPP=3-start_spectra: ERROR the correlator has failed to start!

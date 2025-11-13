@@ -1,0 +1,60 @@
+A3064 LBW   16.11.20 Observers: David Craig, Joe Ribaudo, Cory Johnson, Jonathan Hoover (at AO! with many coquis.)
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161120.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161120.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161121.a3064.****.fits   (only if goes after midnight AST; probably no)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+H215353.5+340423  215354.6 +340425  j     0 H v   # A311300cal  21:37  16.1 0000   632500247   detection at 7000 km/s,sn~10, rfi red pol 1388MHz
+S215217.1+303402  215217.1 +303402  j     0 H v   # A311386     2149   12.3 0001         251   spike at 5500 km/s with hump@lower v, radar in off
+S220816.5+304000  220816.5 +304000  j     0 H v   # A322496     2202   12.5 0002         255   strong peak 1100 km/s, both pols; radar in on.
+S222509.0+362736  222509.0 +362736  j     0 H v   # A323421     2216   18.4 0003         259   1388 rfi spike in b pol,spike at 1414Mhz/1100km/s both pols
+                                                                                               gps & radar in off.                                      
+S222802.7+313530  222802.7 +313530  j     0 H v   # A323406     2230   13.4 0004         263   nothing apparent.
+S224931.3+305900  224931.3 +305900  j     0 H v   # A323416     2242   12.9 0005         267   strong gps in on, /gps seems to remove, radar in off. no det.
+S230235.2+312557  230235.2 +312557  j     0 H v   # A336595     2254   13.3 0006         271   gps in off (strong) radar in off nothing obvious. raining.
+S231835.3+302824  231835.3 +302824  j     0 H v   # A336623     2306   12.6 0007         275   src 6300km/s sn~5, gps & radar in on. radar harmonic at 1345?
+S232538.6+331044  232538.6 +331044  j     0 H v   # A336636     2320   15.0 0008         279   weak sn~2 src at 8300km/s. Radar+1345MHz rfi in on. still raining.
+S233409.4+343601  233409.4 +343601  j     0 H v   # A336705     2332   16.4 0009         283   ABORTED wapps interpolation denom=0 errors **BAD FILE**
+S233409.4+343601  233409.4 +343601  j     0 H v   # A336705     2336   16.4 0010         284   restarted wapps, restarted obs.  SN~10+ 6550km/s detection. 
+                                                                                               Yaay for humans in loop! radar+1345 in on.
+S234339.7+305046  234339.7 +305046  j     0 H v   # A336666     2349   12.7 0011         288   SN~5 5300 km/s detection 
+S000333.1+341217  000333.1 +341217  j     0 H v   # A105222     0003   16.0 0012         292   nothing. radar in off.
+S002817.9+331236  002817.9 +331236  j     0 H v   # A105267     0015   15.3 0013         296   nothing obvious. radar in off, maybe weaker. not much rain now.
+S003643.7+325404  003643.7 +325404  j     0 H v   # A105247     0027   14.9 0014         300   HVC at 1422MHz? SN~4 detection at 10,800km/s. radar in off.
+S005403.5+320911  005403.5 +320911  j     0 H v   # A105251     0039   14.3 0015         304   nothing much. maybe maybe sn~1.5 @ 1385MHz
+S010843.5+322600  010843.5 +322600  j     0 H v   # A114547     0051   14.8 0016         308   SN~10 detection, 4600 km/s.
+S011439.1+332221  011439.1 +332221  j     0 H v   # A115057     0103   15.4 0017         312   wapp channel >2 warning. strong gps in off, nothing obvious.
+S015033.4+322638  015033.4 +322638  j     0 H v   # A110921     0116   16.2 0018         316   baselines less flat. nothing obvious. radar+1345 in off.
+S015639.0+334806  015639.0 +334806  j     0 H v   # A116258     0129   16.8 0019         320   strong gps in on. bump at 1380 with /gps, likely incomplete excision.
+S015830.0+324819  015830.0 +324819  j     0 H v   # A115901     0141   15.1 0020         324   1388 rfi in blue pol is back. SN~10 src at 4500km/s. gps&radar in on.
+S020841.3+261818  020841.3 +261818  j     0 H v   # A124672     0156   08.6 0021         328   ?SN~5 src at 12000km/s. broad but looks a little diferent in pols.
+S021332.6+252626  021332.6 +252626  j     0 H v   # A125219     0208    7.4 0022         332   SN~6+ src at 12000km/s. looks similar in both pols.
+S024542.1+312435  024542.1 +312435  j     0 H v   # A125524     0222   14.2 0023         336   1388Mhz rfi -  red pol, SN~5 src at 5200 km/s, (narrow), gps in on
+S025003.3+350443  025003.3 +350443  j     0 H v   # A125512     0236   17.2 0024         340   1388Mhz rfi, both pols in off. no obvious src, gps in off.
+S030247.9+350428  030247.9 +350428  j     0 H v   # A131430     0248   17.2 0025         344   wapp errors pwr >2. Strong src at 8500km/s? or weak gps?
+S030352.5+353453  030352.5 +353453  j     0 H v   # A132283   ***ran out of time*** operator said next observer immediately after. 
+H030510.4+354946  030510.4 +354946  j     0 H v   # A132243cal if time
+                               
+                                                
+Notes (be sure to write notes here so we can keep track of anything relevant)
+Had a long slew at beginning - got our angles a bit mixed up.
+Tiedowns disabled at start, drizzly. Examined all targets with /pol.
+1388 rfi appeared twice before about 1900 AST, then appeared again about 22:15 AST, 22:50 AST.
+radar on all night, also at 1345MHz.
+
+                                                                 
+

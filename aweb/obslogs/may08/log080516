@@ -1,0 +1,32 @@
+Log for 080516       Observer: Betsey Adams and Shan Huang
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080516.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080517.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1400 0011 813700192 813700193  drift6p2   fixAZdr  140000+012736 19  600   99   loopend   power levels OK
+1410 0012 813700194 813700195
+1420 0013 813700196 813700197
+1431 0014 813700198 813700199
+1441 0015 813700200 813700201
+1451 0016 813700202 813700203
+1501 0017 813700204 813700205  GPS burst
+1511 0018 813700206 813800001
+1521 0000 813800002 813800003
+1531 0001 813800004 813800005
+1541 0002 813800006 813800007
+1551 0003 813800008 813800009
+1601 0004 813800010 813800011
+1612 0005 813800012 813800013
+1622 0006 813800014 813800015
+1632 0007 813800016 Aborted
+
+End LST: 1632
+
+Notes: TOGS run at end.
+Late start due to WAPPS failure to execute command when reconfiguring at start of night.
+We exited CIMA and restarted.
+
+Password at AO changed tonight.

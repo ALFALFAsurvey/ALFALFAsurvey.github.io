@@ -1,0 +1,92 @@
+Log for 07/03/07     Observer: TB
+
+System Configuration:  FixedAZ Drift Map
+                       Cima version 2.2.18 (normal)
+
+Using: a2010_az180.gui as save state.
+
+Files:  /share/pserverf.sda2/wappdata/wapp.20070307.a2010.****.fits
+        /share/pserverf.sda2/wappdata/wapp.20070308.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern  Start coords.   ang  time  loop  calmod 
+0759 0041 706677096 706677698 drift102p1 FixedAz  075900+244154    19   600   99   loopend
+                               no GPS, power levels ok, quicklook ok
+0809 0042 706677701 706678303  no GPS, power levels ok, quicklook ok
+0819 0043 706678306 706678908  bright continuum source (0.3 K) beams 6,1
+0829 0044 706678911 706679513
+0839 0045 706679516 706680118  power levels ok
+0850 0046 706680121 706680723
+0900 0047 706680726 706681328
+0910 0048 706681331 706681933  power levels ok, quicklook ok
+0920 0049 706681936 706682538  no GPS, still
+0930 0050 706682541 706683143  GPS (few minutes, weak) - first time noticed tonight
+0940 0051 706683146 706683748  GPS (few minutes, some strong)
+0950 0052 706683751 706684353  no GPS
+1000 0053 706684356 706684958
+1010 0054 706684961 706685563  
+1021 0055 706685566 706686168  power levels ok
+1031 0056 706686171 706700373
+1041 0000 706700376 706700978  quicklook ok
+1051 0001 706700981 706701583
+1101 0002 706701586 706702188
+1111 0003 706702191 706702793  GPS
+1121 0004 706702796 706703398
+1131 0005 706703401 706704003
+1141 0006 706704006 706704608
+1152 0007 706704611 706705213
+1202 0008 706705216 706705818
+1212 0009 706705821 706706423
+1222 0010 706706426 706707028
+1232 0011 706707031 706707633  power levels ok, quicklook ok
+1242 0012 706707636 706708238
+1252 0013 706708241 706708843
+1302 0014 706708846 706709448
+1312 0015 706709451 706710053  a few second intense GPS pulse
+1323 0016 706710056 706710658
+1333 0017 706710661 706711263
+1343 0018 706711266 706711868
+1353 0019 706711871 706712473
+1403 0020 706712476 706713078  GPS intense 40sec burst 2 K peak
+1413 0021 706713081 706713683
+1423 0022 706713686 706714288
+1433 0023 706714291 706714893  GPS intense 40sec burst
+1444 0024 706714896 706715498
+1454 0025 706715501 706716103  quicklook ok
+1504 0026 706716106 706716708
+1514 0027 706716711 706717313
+1524 0028 706717316 706717918
+1534 0029 706717921 706718523
+1544 0030 706718526 706719128
+1554 0031 706719131 706719733
+1604 0032 706719736 706720338  power levels ok
+1614 0033 706720341 706720943
+1625 0034 706720946 706721548  GPS 40 sec
+1635 0035 706721551 706722153  1340 MHz rfi strong, seen in entire bandpass in some beams (esp 3A)
+1645 0036 706722156 706722758
+1655 0037 706722761 --aborted
+
+END LST: 1655
+
+NOTES:
+
+- GPS at 1381 MHz noticed in only two drifts during scheduled GPS.
+      This is scheduled GPS -- see GPS alert for 2007 March 6,7,8.  
+      Nothing worse than a typical night with a few GPS intervals. 
+
+- FAA radar at 1350 MHz present, but at low, steady amplitude -- no pulsing. 
+      (1/10 to 1/2 peak strength of galactic HI line at start of run.)
+
+- rfi at 1340 MHz every 12 sec, but weak and does not produce bands across
+      all wavelengths like last night; seen only in 0035.
+
+- Beam 1B off.
+
+- TOGS run at end only, as scheduled.
+
+- Power levels ok all night. 
+
+- The messages below received during drifts 0041, 0055 (last two messages only),
+      0013, 0014 (last two messages only), 0018, 0021, 0022
+WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock ...
+WAPPDATA WARNING extrapolating agc-data from ...
+WAPPDATA WARNING interpolating agc-data over 2.00 second time gap ...

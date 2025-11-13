@@ -1,0 +1,36 @@
+Log for 06/09/06      Observer: Sabrina
+
+System Configuration:
+FixedAZ Drift Map Cima version 2.2.07 (normal)
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20060906.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20060907.a2010.****.fits
+
+LST  fits  Scan      calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2127 0035 624982209 624982811 drift33p1 FixedAz  212700+075430  19   600    99  loopend
+2137 0036 624982814 624983416 power levels okay
+2147 0037 624983419 624984021
+2157 0038 624984024 624984626
+2207 0039 624984629 624985231
+2217 0040 624985234 624985836
+2228 0041 624985839 625000041
+2238 0000 625000044 625000646
+2248 0001 625000649 625001251
+2258 0002 625001254 625001856
+2308 0003 625001859 625002461
+2318 0004 625002464 625003066 power levels okay
+2328 0005 625003069 aborted
+2341 0006 625003827 625004429
+2351 0007 625004432 625005033 power levels okay
+
+END LST: 0001
+
+Notes:
+Tiedowns were active.
+During fits file 0005 there was a WAPP error near the end of the drift that I did not catch for 3 minutes.  After restarting & reconfiguring the WAPPs 
+and adjusting power, I began the observations again.  The waterfall plots showed that no data was being taken even though I restarted them many times, 
+but with quicklook things looked okay.
+
+

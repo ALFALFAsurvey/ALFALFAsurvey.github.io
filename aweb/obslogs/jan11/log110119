@@ -1,0 +1,66 @@
+Log for 11.01.19 (19Jan2011)        Observers: Ron Olowin,David Craig,Parker Troischt, Catherine 
+Weigel,Jaclyn,Matt,Betsey (started) & UAT continued
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110119.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0903 0000 101900055 101900056 drift136p1 fixAzdr   090330+325818  19 600 99 loopend
+0914 0001 101900057 101900058 Beam 6B still dead, beam 4B has low power (near .75), Quicklook ok
+0924 0002 101900059 101900060 
+0934 0003 101900061 101900062
+0944 0004 101900063 101900064 quicklook OK 
+0954 0005 101900065 101900066
+1004 0006 101900067 101900068 GPS Burst
+1014 0007 101900069 101900070
+1024 0008 101900071 101900072 GPS Burst 
+1034 0009 101900073 101900074 
+1044 0010 101900075 101900076
+1054 0011 101900077 101900078 quicklook OK
+1105 0012 101900079 101900080
+1115 0013 101900081 101900082 
+1125 0014 101900083 101900084 quicklook OK 
+1135 0015 101900085 101900086 
+1145 0016 101900087 101900088
+1155 0017 101900089 101900090
+1205 0018 101900091 101900092 quicklook OK, beam 4B still low power, 0.76 
+1216 0019 101900093 101900094 gps burst
+1226 0020 101900095 101900096 
+1236 0021 101900097 101900098 continuum sources, quicklook OK
+1246 0022 101900099 101900100 
+1256 0023 101900101 101900102 continuum source
+1307 0024 101900103 101900104 continuum source
+1316 0025 101900105 101900106 power burst on 6A and 1A, extrapolating pnt-data
+1326 0026 101900107 101900108 continuum source
+1337 0027 101900109 101900110
+1347 0028 101900111 101900112 continuum sources
+1657 0029 101900113 101900114 power spike down 0AB 1AB 2AB 3AB, continuum source
+1407 0030 101900115 101900116 continuum source
+1417 0031 101900117 --abort
+
+LST stop; 1417
+
+At the bottom, add notes regarding:
+-- Tiedowns are disabled
+-- TOGS run at end;
+-- FAA radar on
+-- Beam 6B is still dead. 
+-- Beam 4B has low power
+
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+16K = K1: 16.3   K2: 173.6  K3: 17.5   K4: 17.4   AT 16:42
+70K = K1: 102.0  K2: 107.4  K3: 116.4  K4: 124.0
+
+16K = K1: 17.7   K2: 181.4  K3: 19.2   K4: 19.4   AT 22:19
+70K = K1: 103.9  K2: 109.5  K3: 118.4  K4: 126.2
+
+			=>temperatures of the 8 sensors within ALFA 
+housing
+
+
+

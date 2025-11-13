@@ -1,0 +1,65 @@
+A2811 LBW   13.11.27      Observers: Michael Warrener, Jorge Padial, Blake Tormey, Anthony Braddick, Jonathan Perez, Andres Arrieeta, Rebecca Koopmann, Aileen O'Donoghue, Jeff Miller, Ron Olowin
+
+CIMA version:          The Stable version (Default) (Ver 3.3.05 2013-02-22 15:46)
+Configuration file:    a2811_nov13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2811_131127.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.27nov13.a2811.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H214731.0+220950  214731.0 +220950  j  1800 H v   # A011813 calib       if time
+A214734.4+220909  214734.4 +220909  j  1800 H v   # A311162 comp        if time
+A214756.8+221458  214756.8 +221458  j  1800 H v   # A311163         2142   4.2   1   333103971   Detection @1412 MHz, 1800 km/s; galactic HI line observed, possible continuum source in off
+A214808.2+221735  214808.2 +221735  j  1800 H v   # A311164         2151   4.0   2   333103975   No detection; galactic HI line observed
+A220908.3+212955  220908.3 +212955  j  3800 H v   # A322219         2201   3.8   3   333103979   Detection @1402 MHz, 3800 km/s;Big Galaxy at the very edge of the SDSS field.  
+H220915.3+213105  220915.3 +213105  j  3800 H v   # A011924 calib   2209   3.2   4   333103983   Detection @1402 MHz, 3800 km/s;Big Galaxy at the very edge of the SDSS field.
+H220528.9+252102  220523.7 +252102  j  7600 H v   # A321312         2219   7.7   5   333103987   No detection; weak continuum source in Off
+H220841.1+245624  220842.2 +245624  j  6300 H v   # A321315         2227   7.8   6   333103991   Detection @1391 MHz, 6350 km/s
+H221349.5+254901  221359.0 +254902  j  4900 H v   # A321316         2235   8.9   7   333103995   No detection
+H221610.2+240740  221612.7 +240732  j  7100 H v   # A322057         2243   8.5   8   333103999   Detection @1386 MHz, 7100 km/s; GPS burst at 1381 MHz
+H224144.7+222203  224145.2 +222152  j  7700 H v   # A322142         2253   4.8   9   333104003   Detection @1385 MHz, 7650 km/s  
+H224319.9+292046  224322.0 +292054  j  8200 H v   # A321499         2303  12.0  10   333104007   No detection   
+H224408.4+284537  224411.4 +284440  j  7400 H v   # A321500         2312  12.1  11   333104011   No detection   
+H230020.6+281800  230020.6 +281746  j  2900 H v   # A333582         2320  11.0  12   333104015   No detection 
+H230841.9+253340  230833.9 +253406  j  6600 H v   # A333328         2329   8.6  13   333104019   No detection; GPS busrt at 1381
+H231608.7+260050  231610.2 +260035  j  7500 H v   # A332299         2337   9.1  14   333104023   Possible detection at 1385 MHz, 7650 km/s; GPS burst at 1381 MHz, RFI at off source detected at 1392 MHz and 1396 MHz 
+H232356.4+274842  232359.9 +274903  j  7300 H v   # A330436         2345  10.7  15   333104027   Detection at 1387 MHz, 7300 km/s
+H233100.7+240716  233102.3 +240711  j  7100 H v   # A334560         2354   7.9  16   333104031   Detection at 1387.5 MHz, 7100 km/s
+H233826.7+310030  233834.7 +310007  j  8800 H v   # A333465         0005  14.0  17   333104035   Detection at 1379.5 MHz, 8900 km/s
+H234715.2+284824  234717.5 +284825  j  6900 H v   # A333593         0013  12.0  18   333104039   Detection at 1388.5 MHz, 6900 km/s
+H235653.8+293542  235657.4 +293651  j  7200 H v   # A333597         0021  12.6  19   333104043   Detection at 1387 MHz, 7200 km/s; GPS burst at 1381 MHz
+H001117.1+295802  001118.2 +295834  j  4700 H v   # A102840         0030  12.4  20   333104047   Detection at 1398.5 MHz, 4700 km/s
+H002042.9+294634  002044.4 +294701  j  7100 H v   # A102954         0038  12.1  21   333104051   Detection at center peak @ 1387.5 Mhz,7100 km/s; second peak at 1388 MHz, 6850 km/s   
+H002537.6+293152  002534.3 +293136  j  5300 H v   # A102956         0046  12.1  22   333104055   Detection at 1395.5 MHz, 5300 km/s   
+H002700.7+311148  002701.8 +311204  j  9000 H v   # A102849         0054  14.3  23   333104059   GPS in the off overwhelms spectrum  
+H003108.2+313130  003109.9 +313126  j  6700 H v   # A102851         0102  15.0  24   333104063   GPS at 1381 MHz overwhelms the spectrum 
+H004723.5+295321  004720.5 +295247  j  5000 H v   # A102966         0111  12.8  25   333104067   Detection at 1397 MHz, 5000 km/s; GPS at 1381 MHz, possible signal at 1410 MHz   
+H005553.2+290015  005558.6 +290016  j  4900 H v   # A102973         0120  12.0  26   333104071   Detection at 1398 MHz, 4850 km/s
+H010300.2+271904  010255.4 +271933  j  4700 H v   # A113777         0128  10.7  27   333104075	 Detection at 1398 MHz, 4700 km/s
+H011543.6+290655  011544.9 +290635  j  5800 H v   # A114076         0136  11.8  28   333104079   No detection
+H011943.0+294353  011943.6 +294352  j  4800 H v   # A114077         0144  12.7  29   333104083   Detection at 1398 MHz, 4850 km/s
+H012850.7+291726  012851.3 +291619  j  7400 H v   # A114078         0153  12.2  30   333104087   Detection at 1386 MHz, 7400 km/s; GPS at 1381 MHz
+H014339.5+255955  014338.0 +260016  j  3900 H v   # A113863         0202  8.7   31   333104091   Detection at 1402 MHz, 3900 km/s
+A014626.8+285609  014626.8 +285609  j  4000 H v   # A114833 comp    0211  12.0  32   333104095   Detection at 1402 MHz, 4000 km/s
+H014631.4+285637  014631.6 +285549  j  4000 H v   # A114123         0219  12.8  33   333104099   Detection at 1402 MHz, 3950 km/s
+H015351.6+261550  015351.0 +261547  j  2800 H v   # A113305         0228  11.1  34   333104103   Detection at 1407 MHz, 2800 km/s; Peak at 1395.5 RFI?
+H020521.2+251650  020524.2 +251713  j  2800 H v   # A122927         0236  9.9   35   333104107   Detection at 1407 MHz, 2900 km/s; Peak at 1395.5 RFI?
+H020640.2+272635  020639.1 +272623  j  2600 H v   # A122819         0245  12.6  36   333104111   No dectection, Peak at 1395.5 RFI?; Galactic HI line observed
+H021925.2+294343  021926.5 +294231  j  1800 H v   # A123191         0253  13.7  37   333104115   Detection at 1412 MHz, 1800 km/s; Galactic HI line observed
+H022712.1+235639  022713.2 +235739  j  1500 H v   # A122939         0303  9.9   38   333104119   Detection at 1413 MHz, 1550 km/s; Galactic HI line observed
+H024656.3+241846  024653.8 +241804  j  7300 H v   # A122947         0312  8.2   39   333104123   Possible very weak detection at 1386 MHz, 7350 km/s
+H030352.5+275951  030350.6 +275913  j  6900 H v   # A131364         0321  10.4  40   333104127   Detection at 1388.5 Mhz, 6900 km/s
+H030229.9+225152  030232.0 +225200  j  7000 H v   # A132120         0330  7.65  41   333104131   Uncertain waivy baseline; Possible GPS
+
+Notes
+	Saw GPS and 1395.5 MHz RFI numerous times
+Tiedowns disabled all night
+

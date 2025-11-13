@@ -1,0 +1,48 @@
+Log for 091110     Observer: Jessica Rosenberg
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20091110.a2010.****.fits 
+
+     ****
+LST  fits  Scan       calscan        Source      Pattern   Start coords.  ang  time  loop  calmode 
+2326 0000  931400069  931400070      drift15p2    fixAZdr   232600+033900   19   600   99   loopend  All looking good except RFI (see below)
+2338 0001  931400071  931400072
+2348 0002  931400073  931400074
+2358 0003  931400075  931400076   
+0008 0004  931400077  931400078
+0017 0005  931400079  931400080
+0027 0006  931400081  931400082	  Warning about WAPP channels with too much power but it seems to have fixed itself before we even saw it in the window.
+0037 0007  931400083  931400084
+0047 0008  931400085  931400086
+0057 0009  931400087  931400088
+0107 0010  931400089  931400090
+0117 0011  931400091  931400092
+0127 0012  931400093  931400094
+0138 0013  931400095  931400096
+0148 0014  931400097  931400098
+0158 0015  931400099  931400100
+0208 0016  931400101  931400102
+0218 0017  931400103  931400104
+0228 0018  931400105  931400106
+0238 0019  931400107  931400108
+0248 0020  931500000  931500001
+0258 0000  931500002  931500003
+0308 0001  931500004  931500005
+
+END LST:  0318    
+
+Notes:
+-- Late start so no TOGS; previous program ran overtime.
+-- rfi at 1375 MHz
+-- All beams working. 
+-- TOGS not running at start
+-- Looks like Punta Salinas radar is coming on and off scans 931400069-9314000??. Israel is calling to see what is going on. Not going off. I think this is going to be with us all night. 
+      *** Martha notes: this is not PS. PS should be at 1367 and 1382; This was probably
+          the FAA harmonic at 1380 MHz(note below says it was v.strong) plus a GPS burst.
+-- FAA radar at 1350 is very strong
+Lots of RFI but otherwise a calm night.
+-- TOGS running at end 
+
+
+Log file modified by MH to record stop time and reason for no TOGS

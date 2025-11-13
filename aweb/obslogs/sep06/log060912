@@ -1,0 +1,56 @@
+Log for 06/09/12      Observer: Becky & Tom
+
+System Configuration:
+FixedAZ Drift Map Cima version 2.2.08 (normal)
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20060912.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20060913.a2010.****.fits
+
+LST  fits  Scan      calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2139 0021 625581510 625582112 drift49p1 FixedAz  2139000+114806  19   600    99 loopend
+2149 0022 625582115 625582717     power levels OK except 5B which is fluctuating more than normal range - about 5 sec modulation
+2159 0023 625582720 625583322
+2209 0024 625583325 625583927
+2219 0025 625583930 625584532
+2229 0026 625584535 625585137
+2240 0027 625585140 625585742
+2250 0028 625585745 625586347
+2300 0029 625586350 625600552
+2310 0000 625600555 625601157
+2320 0001 625601160 625601762
+2330 0002 625601765 625602367    power level for 5B possibly high, as determined by quicklook
+2340 0003 625602370 625602972
+2350 0004 625602975 625603577
+0000 0005 625603580 625604182    we first notice power level in 5B rising during drift to about 1.4-1.5
+0011 0006 625604185 625604787    5B power level near 1.5 for entire drift; confirmed by quicklook
+0021 0007 625604790 625605392    5B power level stable around 1.5 for entire drift; confirmed by quicklook
+0031 0008 625605395 625605997
+0041 0009 625606000 625606602
+0051 0010 625606605 625607207
+0101 0011 625607210 625607812    5B power level still high at 1.5
+0111 0012 625607815 625608417
+0121 0013 625608420 625609022
+0131 0014 625609025 625609627    5B power level still high at 1.5
+0142 0015 625609630 625610232
+0152 0016 625610235 625610837
+0202 0017 625610840 625611442
+0212 0018 625611445 625612047
+0222 0019 625612050 625612652
+0232 0020 625612655 625613257
+0242 0021 625613260 --aborted
+
+
+END LST: 0242
+
+Notes:
+
+TOGS run at start only (no time allocated at end)
+Aborted fits file 0020 at beginning of run 
+5B fluctuates during early part of run, around 0.9-1.0 level; many times more noise / fluctuations than any other
+beams / pols
+5B rises dramatically during fits file 0005, then remains steady around 1.5; is much steadier than early in night
+5B stays around power 1.5 until end of run
+Otherwise, good run.  No problem with WAPPS.
+

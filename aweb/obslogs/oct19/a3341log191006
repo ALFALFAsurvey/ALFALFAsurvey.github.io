@@ -1,0 +1,64 @@
+A3341 LBW   19.10.06   Observers: Becky Koopmann, Joe Ribaudo, Olivia Dickinson, Anhad Gande, Zihui Zeng
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3341.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3341_191006.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20191006.a3341.****.fits  
+                     /share/wappdata.now/wapp.20191007.a3341.****.fits  after midnight AST
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H214323.5+325124  214323.5 +325124  j     0 H v   # A311326cal  2158  14.97   0      927900126  detection 1387 MHz, 7300 km/s, S/N~10, baseline not flat
+S220059.5+273651  220059.5 +273651  j     0 H v   # A321196     2208   9.5    1      927900130  detection 1404 MHz, 3500 km/s, S/N~8
+S225338.6+315946  225338.6 +315946  j     0 H v   # A321442     2223  15.5    2      927900134  detection 1402 MHz, 3900 km/s, S/N~8 Board 2 looks noisy
+S233138.6+240208  233138.6 +240208  j     0 H v   # A333291     2236  14.3    3      927900138  GPS in off, detection 1402 MHz, 4000 km/s, S/N~6, baseline not flat 
+S233138.6+240208  233138.6 +240208  j     0 H v   # A333291     2249  11.7    4      927900142  Repeat with Board 2 and 4 switched, GPS in on, detection 1402 MHz, 4000 
+km/s, 
+S/N~8                          
+S233214.3+250844  233214.3 +250844  j     0 H v   # A333292     2301  10.2    5      927900146  Detection 1401 MHz, 4100 km/s, S/N~10  
+S231102.7+321650  231102.7 +321650  j     0 H v   # A335310      ----         6      927900150  Aborted and restarted WAPPSS because thought baseline bad in previous 
+(realized later looked too soon after file written)
+S231102.7+321650  231102.7 +321650  j     0 H v   # A335310     2317  14?     7      927900151  detection 1415 Mhz, 1100 km/s, S/N~10
+S234048.2+293633  234048.2 +293633  j     0 H v   # A333557     2330  11.66   8      927900155  detection 1408 Mhz, 2500 km/s, S/n~10  
+S234450.7+273729  234450.7 +273729  j     0 H v   # A337136sn   2343  9.41    9      927900159  No obvious detection; possible marginal 1376 MHz, 1391 Mhz
+S234841.8+255440  234841.8 +255440  j     0 H v   # A333210     2356  7.82   10      927900163  detection 1413 Mhz, 1600 km/s, S/N~9
+S234946.7+240800  234946.7 +240800  j     0 H v   # A333310     0008  7.17   11      927900167  detection 1412.5 Mhz, 1650 km/s, S/N~15
+S000903.4+252750  000903.4 +252750  j     0 H v   # A102624     0021  7.69   12      927900171  No obvious detecion
+S003353.7+284551  003353.7 +284551  j     0 H v   # A102921     0034  10.54  13      927900175  detection 1403 MHz, 3700 km/s, S/N~13
+S004139.6+311601  004139.6 +311601  j     0 H v   # A102793     0046  13.08   0      928000004  detection 1396 MHz, 5200 km/s, S/N~9
+S010440.4+321949  010440.4 +321949  j     0 H v   # A112350     0059  14.18   1      928000008  detection 1398 MHz, 4700 km/s, S/N~9 
+S011454.0+311620  011454.0 +311620  j     0 H v   # A113910     0012  13.08   2      928000012  detection 1409 MHz, 2300 km/s, S/N~15 
+S013940.6+303608  013940.6 +303608  j     0 H v   # A113936     0124  12.91   3      928000016  detection 1401 MHz, 4200 km/s, S/N~9
+S015006.7+320354  015006.7 +320354  j     0 H v   # A113952     0137  14.2    4      928000020 - aborted, because thought problem with wapps, but realized opened file too 
+soon
+S015006.7+320354  015006.7 +320354  j     0 H v   # A113952     0138  14.1    5      928000021  detection 1397 MHz, 5000 km/s, S/N~8 
+S020037.2+325016  020037.2 +325016  j     0 H v   # A124918     0150  14.8    6      928000025  detection 1399 MHz, 4500 km/s, S/N~12 
+S020237.5+334045  020237.5 +334045  j     0 H v   # A124920     0203  15.45   7      928000029  detection 1395 MHz, 5500 km/s, S/N~11
+S022356.7+321317  022356.7 +321317  j     0 H v   # A124621     0215  14.17   8      928000033  detection 1404 MHz, 3200 km/s, S/N~7  
+S023317.8+322206  023317.8 +322206  j     0 H v   # A124957     0227  14.23   9      928000037  detection 1398 MHz, 4700 km/s, S/N~8
+S023347.1+300356  023347.1 +300356  j     0 H v   # A123027     0240  11.88  10      928000041  detection 1397 MHz, 5100 km/s, S/N~7 
+S022819.5+260731  022819.5 +260731  j     0 H v   # A122401     0253   9.56  11      928000045  GPS in off; detection 1412 MHz, 1800 km/s, S/N~12
+H024853.4+281624  024853.4 +281624  j     0 H v   # A120529cal      3 mins if time   NO TIME
+H025141.5+320610  025141.5 +320610  j     0 H v   # A123057cal      3 mins if time   NO TIME
+
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+ISSUES:
+Tiedowns were disabled because of lightning damage several hours before our run.
+Board 2 was flaky for first couple of scans. Stopped and switched 2 and 4 for rest of run.
+Files 6 and 4 aborted to restart wapps because baselines looked bad - realized we had looked at file too soon after closing (need to put warning in instructions). 
+
+

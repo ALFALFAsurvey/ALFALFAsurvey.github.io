@@ -1,0 +1,50 @@
+A2853   LBW   14.01.14      Observers: Greg H. & the UAT
+
+CIMA version:          The Stable version (Default) (Ver 3.3.11 2013-09-23 10:36)  
+Configuration file:    a2853_jan14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140113.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.14jan14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H090145.3+125929  090145.3 +125929  j  8700 H v   # A180589        0803 15.19      1 401400001   Detection at 1380MHz, 8700 Km/s   
+H092734.6+121609  092734.6 +121609  j  8800 H v   # A190299        0816 18.48      2 401400005   Detection at 1381MHz, 8800
+                                                                   0829 15.52      3 401400009   Ahead of schedule and at high ZAG, so re-observed
+A094059.8+120150  094059.8 +120150  j  6800 H v   # A192150        0841 15.75      4 401400012   Detection at 1389MHz, 6800 Km/s
+A094139.1+112828  094139.1 +112828  j  6500 H v   # A193975        0853 13.77      5 401400017   No detection after smoothing, polarizations don't match; RFI GPS 1381MHz
+A094148.0+114025  094148.0 +114025  j  6600 H v   # A192153        0905 11.17      6 401400021   Off center target at 5000 km/s, RFI GPS 1381 MHz 
+A094150.9+121101  094150.9 +121101  j  6500 H v   # A190732        0918 08.53	   7 401400025   Detection at 1389MHz, 7000km/s
+A094153.9+113916  094153.9 +113916  j  5200 H v   # A193976        0930 07.34 	   8 401400029 	 Asymmetric detection at 1396MHz, 5100km/s
+A094217.5+111833  094217.5 +111833  j  6300 H v   # A192154        0943 07.06	   9 401400033   No detection.
+A094303.4+110446  094303.4 +110446  j  6000 H v   # A192157        0955 07.77	  10 401400037   Detection at 1393MHz, 6000 Km/s
+A100423.9+144920  100423.9 +144920  j  8900 H v   # A734213        1009 03.66	  11 401400041   Has poor baselines (low zenith angle?), Detection at 9000 Km/s
+A100619.6+140010  100619.6 +140010  j  8400 H v   # A205280        1021 05.55     12 401400045   Weak Detection at 1382MHz, 8500 Km/s
+A114220.9+100510  114220.9 +100510  j  6200 H v   # A213029        1037 17.90     13 401400049   No detection
+                                                                   1050 15.30     14 401400053   Ahead of schedule and at high ZAG, so re-observed
+A114407.0+132027  114407.0 +132027  j  3200 H v   # A213527        1103 11.20     15 401400057   Detection at 1406MHz = 3100 km/s
+A114521.2+094808  114521.2 +094808  j  6300 H v   # A213118        1116 11.19     16 401400061   No detection
+A114555.1+133058  114555.1 +133058  j  3400 H v   # A213530        1130  6.41     17 401400066   No detection
+A114758.6+135438  114758.6 +135438  j  3300 H v   # A215621        1141  4.70     18 401400069   No detection
+A122228.9+093735  122228.9 +093735  j  7700 H v   # A224429        1156 10.96     19 401400073   No detection
+A122230.6+102314  122230.6 +102314  j  6500 H v   # A222717        1208  8.78     20 401400077   No detection
+A122251.9+101811  122251.9 +101811  j  7200 H v   # A222719        1221  8.09     21 401400081   No detection
+A122323.5+101757  122323.5 +101757  j  8200 H v   # A222727        1232  8.36     22 401400082   No detection, GPS burst, 1381 MHz
+A122337.5+094109  122337.5 +094109  j  6400 H v   # A224436        1245  10.07    23 401400089   Detection at  1391MHz, 6479 km/s
+A122352.0+093603  122352.0 +093603  j  7000 H v   # A224439        1257  11.86    24 401400093   No detection
+A132622.0+115821  132622.0 +115821  j  6700 H v   # A232374        1312  7.28     25 401400097   No detection, GPS 1382 MHz
+A132750.6+122712  132750.6 +122712  j  6500 H v   # A232502        1324  6.00     26 404400101   No detection, GPS 1381 MHz
+A132822.8+112651  132822.8 +112651  j  7100 H v   # A232221        1336  7.17     27 404400105   Detection at 1388 MHz = 7000 km/s
+A132914.8+113560  132914.8 +113560  j  6700 H v   # A232398        1349  8.18     28 404400109   No detection
+
+Notes
+     Tidedowns are off-line.
+     Frequent GPS bursts, but we found a detection in the strongest one! (file #6)
+

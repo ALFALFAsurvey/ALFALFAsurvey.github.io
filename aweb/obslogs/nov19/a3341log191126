@@ -1,0 +1,59 @@
+A3341 LBW   19.11.26  Observers: Olivia Jo Dickinson, Haille Perkins, Joseph Ribaudo 
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3341.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3341_191126.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20191126.a3341.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S223627.8+234258  223627.8 +234258  j     0 H v   # A321379     2201  09.92   0     933000205  Detection at 1414 MHz, 1500 km/s, S/N~ 5, baselines look good with tiedowns on.
+S223829.7+235131  223829.7 +235131  j     0 H v   # A321380     2213  08.19   1     933000209  Detection at 1414 MHz, 1400 km/s, S/N~ 5, baselines not looking great
+S231809.9+255003  231809.9 +255003  j     0 H v   # A333330     2228  13.96   2     933000213  Potential detection at 1394 MHz dificult to tell with baseline; removed GPS; disabled tiedowns after observation completed
+S233042.8+233231  233042.8 +233231  j     0 H v   # A336082     2240  12.94   3     933000217  No obvious detections; baselines look a little better with tiedowns disabled 
+S235351.7+234157  235351.7 +234157  j     0 H v   # A334516     2254  15.15   4     933000221  Detection at 1383.5 MHz, 8000 km/s, S/N~ 4; removed GPS; RFI spikes in boards 1 and 2: 1422.5 MHz and 1355 MHz respectively 
+S235711.7+222120  235711.8 +222133  j     0 H v   # A334595     2306  12.80   5     933000225  Detection at 1400 MHz, 4400 km/s, S/N~ 5; baseline looks choppy in board 3 
+S235050.4+293703  235050.4 +293703  j     0 H v   # A332343     2319  13.54   6     933000229  Detection at 1398 MHz, 4800 km/s, S/N~ 12; RFI spike at 1355 MHz
+S001512.0+291502  001512.0 +291502  j     0 H v   # A100105     2332  14.86   7     933000233  Detection at 1388.5 MHz, 6900 km/s, S/N~ 6; crossing fingers that WAPPS doen't crash at 20:00:01 
+S001737.3+290200  001737.3 +290200  j     0 H v   # A105263     2344  13.30   8     933000237  Detection at 1398 MHz, 4800 km/s, S/N~ 3; WAPPDATA Error at 20:00:01 realted to interpolation:'denominator is zero'; data looks good here 
+S003013.6+241759  003013.6 +241759  j     0 H v   # A102655     2357  09.91   9     933000241  Detection at 1412.5 MHZ, 1700 km/s, S/N~ 15 
+S004518.3+240841  004518.3 +240841  j     0 H v   # A102670     0010  10.27   10    933000245  Detection at 1411 MHz, 2100 km/s, S/N~ 6 
+S005535.4+241142  005535.4 +241142  j     0 H v   # A100635     0022  09.98   11    933000249  Detection at 1397 MHz, 4900 km/s, S/N~ 5 
+S005124.6+271602  005124.6 +271602  j     0 H v   # A101828     0035  09.88   12    933000253  Detection at 1399 MHz, 4500 km/s, S/N~ 10 
+S014610.1+284852  014610.1 +284852  j     0 H v   # A111473     0050  16.80   13    933000257  Detection at 1403 MHz, 3800 km/s, S/N~ 14; possible detection at 1404 MHz; baseline in board 3 looks choppy 
+S015956.5+245833  015956.5 +245833  j     0 H v   # A113836     0102  15.12   14    933000261  Detection at 1398 MHz, 4900 km/s, S/N~ 20
+S020400.5+250336  020400.5 +250336  j     0 H v   # A125795     0114  13.58   15    933000265  Detection at 1398 MHz, 4800 km/s, S/N~ 6; removed GPS 
+S020756.1+253651  020756.1 +253651  j     0 H v   # A122863     0126  12.28   16    933000269  Detection at 1407 MHz, 2800 km/s, S/N~ 10
+S022901.7+260448  022901.7 +260448  j     0 H v   # A122202     0139  14.08   17    933000273  Possible detection at 1421 MHz, -200 km/s, S/N~ 14; Detection at 1393 MHz, 5900 km/s, S/N~ 15; reobserving to ensure ZA doesn't exceed 20.00 since ahead of schedule 
+S022901.7+260448  022901.7 +260448  j     0 H v   # A122202     0151  11.82   18    933000277  Detection at 1421 MHz, -200km/s confirmed; Detection at 1393 MHz, 5900 km/s, S/N~ 15
+S022940.2+280111  022940.2 +280111  j     0 H v   # A123156     0204  11.51   19    933000281  Detection at 1394 MHz, 5600 km/s, S/N~ 4
+S023007.9+284750  023007.9 +284750  j     0 H v   # A123157     0216  11.06   20    933000284  Detection at 1398.5 MHz, 4600 km/s, S/N~ 5; removed GPS 
+S024055.6+264002  024055.6 +264002  j     0 H v   # A122219     0229  08.92   21    933000289  Detection at 1413 MHz, 1500 km/s, S/N~ 12
+S025847.4+352906  025847.4 +352906  j     0 H v   # A124772     0244  17.58   22    933000293  Possible detection at 1397 MHz; removed GPS
+H030510.4+354946  030510.4 +354946  j     0 H v   # A132243cal  0256  17.72   23    933000297  Detection at 1402 MHz, 3800 km/s, S/N~ 9 
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal    3 mins if time
+
+
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+Swapped boards 2 and 4 at the start of the night.
+WAPP error at 20:00:01 each of the first three nights, but doesn't actually appear to affect the data or require restart of the WAPPS
+
+
+
+
+
+                                                                 

@@ -1,0 +1,64 @@
+Log for 05/09/17
+Observers: Brian Kent
+                                                                           
+System Configuration
+                                                                           
+FixedAz Drift Map CIMA expanded version
+                                                                           
+Files:/share/pserverf.sdb1/wappdata/wapp.20050917.a2010.****.fits
+      /share/pserverf.sdb1/wappdata/wapp.20050918.a2010.****.fits
+                                                                           
+filecreator: /share/a2010-2/data/05.09.17
+                                                                           
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time loop  DecJ off  Notes
+_______________________________________________________________________________
+2113 0028 526078713 526079315 drift122p1  FixedAz 211300+293354 19 600  50
+2123 0029 526079318 526079919
+2133 0030 526079923 526080524
+2143 0031 526080528 526081129
+2153 0032 526081133 526081735
+2203 0033 526081738 526082340
+2214 0034 526082343 526082945
+2224 0035 526082948 526083550
+2234 0036 526083553 526084155
+2244 0037 526084158 526084760
+2254 0038 526084763 526085365
+2304 0039 526085368 526085970
+2314 0040 526085973 526100175
+2324 0000 526100178 526100780
+2334 0001 526100783 526101385
+2344 0002 526101388 526101990
+2354 0003 526101993 526102595
+0004 0004 526102598 526103200
+0015 0005 526103203 526103805
+
+********** Network drop ***************
+
+0025 0006 BLANK 
+0035 0007 526104476 526105078
+0045 0008 526105082 526105683
+0055 0009 526105687 526106288
+0105 0010 526106292 526106893
+0115 0011 526106897 526107499
+0125 0012 526107502 526108103
+0136 0013 526108107 526108709
+0146 0014 526108712 526109313
+0156 0015 526109317 526109918
+0206 0016 526109922 526110524
+0216 0017 526110527 526111128
+0226 0018 526111132 526111733
+0236 0019 526111737 526112338
+0247 0020 526112342 526112944
+0257 0021 526112947 526113548
+0307 0022 526113552 ABORT
+
+END LST: 0307
+                                                                           
+Notes:
+
+1. TOGS started
+2. Network connection  dropped again tonight at 1:03am AST.  Norberto reports data looked OK on waterfall prior to that, and
+then went black.  Terminals froze on vieques, culebra, caborojo.  Restart and login after a few minutes when connection
+resumes.  Norberto reports that waterfall plots show no data coming through, even after restart.  Looking at data on the Ithaca
+end show that data is being recorded to FITS files correctly.  Continued despite problems.
+3. TOGS complete

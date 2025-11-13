@@ -1,0 +1,55 @@
+A3064 LBW   16.10.29   Observers: Miller & O'Donoghue
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161029.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161029.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161030.a3064.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S215852.1+275314  215852.1 +275314  j     0 H v   # A323397    2131   11.7  0005  630300096    no detection, rfi at 1363 MHz is huge
+S220801.7+291527  220801.7 +291527  j     0 H v   # A323400    2144   12.4  0006  630300100    no detection, rfi at 1363 gone
+S222802.7+313530  222802.7 +313530  j     0 H v   # A323406    2157   15.1  0007  630300104    WAPPS crashed,restarted, repeat source
+S222802.7+313530  222802.7 +313530  j     0 H v   # A323406    2209   14.0  0008  630300106    detection at 10600 km/s, S/N ~2
+S222814.9+310255  222814.9 +310255  j     0 H v   # A323407    2221   12.9  0009  630300110    no detection
+S224225.1+291041  224225.1 +291041  j     0 H v   # A323412    2234   11.1  0010  630300114    no detection, rfi spike at 1388 MHz and 1363 MHz is back.
+S224241.8+293213  224241.8 +293213  j     0 H v   # A323419    2246   11.3  0011  630300118    GPS, detection at 7300 km/s S/N ~2 
+S224255.5+344436  224255.5 +344436  j     0 H v   # A322612    2300   16.9  0012  630300122    no detection
+S231028.0+303445  231028.0 +303445  j     0 H v   # A336612    2314   12.4  0013  630300126    no detection, rfi spike at 1388 MHz
+S231953.0+301600  231953.0 +301600  j     0 H v   # A336697    2326   12.1  0014  630300130    no detection
+S232649.5+314044  232649.5 +314044  j     0 H v   # A336699    2338   13.7  0015  630300134    no detection
+S234101.4+311452  234101.4 +311452  j     0 H v   # A333467    2351   13.2  0016  630300138    detection at 7600 km/s S/N ~3
+S000333.1+341217  000333.1 +341217  j     0 H v   # A105222    0003   16.0  0017  630300142    possible detection at 7500 km/s S/N ~1.5
+S000346.2+340611  000346.2 +340611  j     0 H v   # A105225    0015   16.0  0018  630300146    no detection
+S000835.2+344948  000835.2 +344948  j     0 H v   # A104316    0028   17.1  0019  630300150    GPS, detection at 6300 km/s S/N ~3
+S002817.9+331236  002817.9 +331236  j     0 H v   # A105267    0041   15.2  0020  630300154    weak detection at 4800 km/s S/N ~1.5
+S003643.7+325404  003643.7 +325404  j     0 H v   # A105247    0053   15.0  0021  630300158    weak detection 10800 km/s S/N ~1.5
+S005403.5+320911  005403.5 +320911  j     0 H v   # A105251    0105   14.1  0022  630300162    detection 7600 km/s S/N ~2
+S010310.3+330736  010310.3 +330736  j     0 H v   # A116203    0117   15.2  0023  630300166    GPS, detction at 10100 km/s, S/N ~1.5 
+A010959.4+322206  010959.4 +322206  j     0 H v   # A000724cal 0129   14.7  0024  630300170    (3 mins ON/OFF) detection on steroids!  5100 km/s S/N ~7
+S012705.7+343526  012705.7 +343526  j     0 H v   # A116272    0138   16.5  0025  630300174    GPS, no detection
+S013758.8+331614  013758.8 +331614  j     0 H v   # A116234    0150   15.2  0026  630300178    odd. spectra on boards sloped, not flat
+S014805.2+331108  014805.2 +331108  j     0 H v   # A116301    0202   15.3  0027  630300182    no detection
+S014959.5+332859  014959.5 +332859  j     0 H v   # A115531    0215   16.1  0000  630400003    detection at 10500 km/s S/N ~3
+S015033.4+322638  015033.4 +322638  j     0 H v   # A110921    0227   16.3  0001  630400007    possible detection 10500 km/s S/N ~1.25
+S024542.1+312435  024542.1 +312435  j     0 H v   # A125524    0240   13.2  0002  630400011    GPS, no clear detection 
+S025003.3+350443  025003.3 +350443  j     0 H v   # A125512    0253   16.8  0003  630400015    GPS, no detection
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal if time (3 mins ON/OFF)         NO TIME
+                                                      
+Notes (be sure to write notes here so we can keep track of anything relevant)
+Tiedowns were disabled at beginning due to humidity, rain and thunderstorms at the site.
+WAPPS crashed early but were fine after a restart.
+RFI at 1363 MHz and spikes at 1388 MHz were intermittant
+The Indians beat the Cubs 7 runs to 2.  Bummer.  Go Cubbies!!                     

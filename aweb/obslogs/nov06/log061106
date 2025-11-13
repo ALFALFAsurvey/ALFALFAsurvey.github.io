@@ -1,0 +1,64 @@
+Log for 06/11/06      Observer: Tom Balonek
+
+System Configuration:  FixedAZ Drift Map Cima version 2.2.11 (normal)
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20061106.a2010.****.fits
+	/share/pserverf.sdb1/wappdata/wapp.20061107.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2145 0010 631068894 631069496 drift55p2 FixedAz 214500+132300   19   600   99  loopend  power levels, quicklook ok (RA start 21:45:20)
+2155 0011 631069499 631070101
+2205 0012 631070104 631070706
+2215 0013 631070709 631071311   quicklook ok
+
+2225 0014 631071314 --aborted WAPP failure 54 sec into drift
+     0015           --non-existent
+     0016 631071557 --aborted WAPP failure 3 sec into drift
+     0017           --non-existent
+
+2232 0018 631071736 631072338 (RA start 22:32:51)   quicklook ok
+2242 0019 631072341 631072943   quicklook ok
+
+2253 0020 631072946 --aborted WAPP failure 3 min 15 sec into drift
+     0021 631073253 --aborted WAPP failure 3 sec into drift
+     0022           --non-existent
+
+2301 0023 631073442 631074044 (RA start 23:01:21)  quicklook ok
+2311 0024 631074047 631074649
+2321 0025 631074652 631075254
+2331 0026 631075257 631075859
+2341 0027 631075862 631076464
+2351 0028 631076467 631077069
+0002 0029 631077072 631077674
+0012 0030 631077677 631078279
+0022 0031 631078282 631078884
+0032 0032 631078887 631079489
+0042 0033 631079492 631080094  power levels, quicklook ok
+0052 0034 631080097 631080699
+0102 0035 631080702 631081304  very strong continuum source
+0112 0036 631081307 631081909
+0122 0037 631081912 631082514
+0133 0038 631082517 631083119
+0143 0039 631083122 631083724
+0153 0040 631083727 631084329
+0203 0041 631084332 631084934
+0213 0042 631084937 631085539
+0223 0043 631085542 631086144
+0233 0044 631086147 631100349  power levels, quicklook ok
+0243 0000 631100352 631100954  quicklook ok
+0253 0001 631100957 631101559
+0304 0002 631101562 631102164
+0314 0003 631102167 631102769  power levels, quicklook ok
+0324 0004 631102772 --aborted
+
+END LST: 0324
+
+NOTES:
+TOGS ran at start and end.
+Repeated WAPP problems.  WAPP(3) failure 4 times (came in two pairs!).
+Lost LST (RA): (about 15 minutes total) 
+   22:25 - 22:32 (lost 7.0 min)
+   22:53 - 23:01 (lost 8.3 min)

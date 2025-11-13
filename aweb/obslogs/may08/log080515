@@ -1,0 +1,31 @@
+Log for 080515       Observer: Betsey Adams and Shan Huang
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080515.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080516.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1354 0010 813600283 813600284  drift7p2   fixAZdr  135400+014212 19  600   99   loopend   power levels OK, GPS burst
+1404 0011 813600285 813600286
+1414 0012 813600287 813600288
+1424 0013 813600289 813600290
+1435 0014 813600291 813600292
+1445 0015 813600293 813600294
+1455 0016 813600295 813600296   beam 5B has high power
+1505 0017 813600297 813700001
+1515 0000 813700002 813700003
+1525 0001 813700004 813700005
+1535 0002 813700006 813700007
+1545 0003 813700008 813700009
+1555 0004 813700010 813700011   beam 5B has high power
+1605 0005 813700012 813700013
+1615 0006 813700014 813700015   beam 5B has high power
+1625 0007 813700016 813700017   beam 5B has high power
+1635 0008 813700018 Aborted
+
+End LST: 1635
+
+Notes: TOGS run at end.
+Beam 5B had high power through the end of the night, typically 1.4 with some variability.  As it was only one beam/polarization, the
+WAPPS were not restarted.

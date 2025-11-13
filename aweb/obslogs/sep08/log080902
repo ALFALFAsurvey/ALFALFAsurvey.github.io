@@ -1,0 +1,41 @@
+Log for 080902      Observer: Kristine Spekkens
+
+System Configuration: a2010_az360.conf
+
+File:        /share/pserverf.sda3/wappdata/wapp.20080902.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2211 0001  824600029 824600030 drift35p1  fixAZdr  221100+082342 360   600   99 loopend   - power levels okay
+2221 0002  824600031 824700001 		  	   		       	     	          - fits files okay
+2231 20080903.0000 824700002 824700003
+2241 0001  824700004 824700005								  - power levels okay
+2251 0002  824700006 824700007
+2301 0003  824700008 824700009                                                    
+2311 0004  824700010 824700011
+2321 0005  824700012 824700013								  - power levels okay
+2331 0006  824700014 824700015
+2341 0007  824700016 824700017
+2351 0008  824700018 824700019
+0002 0009  824700020 824700021
+0012 0010  824700022 824700023			                                          - power levels okay
+0022 0011  824700024 824700025
+0032 0012  824700026 824700027
+0043 0013  824700028 824700029
+0053 0014  824700030 824700031
+0103 0015  824700032 824700033
+0113 0016  824700034 824700035
+0123 0017  824700036 824700037
+0133 0018  824700038   -- aborted
+
+END LST: 0133
+
+Notes: 
+** TOGS run at start and end.
+** Started ~3 mins late due to long slew.
+** Beam 6B has low power
+**  Since Beam 6B dead, there were regular check_wapp_levels grey and
+orange messages: WAPP power levels are between 0.098 and 1.076 (still bad).
+** Tiedowns were disabled at 23:03 due to bad weather.
+** "Counts don't match" error (99999966 !=9999997) was back at start of night, but cleared itself up after a few drifts
+**** No WEIRD RFI tonight! We are observing at +0823 tonight, instead of +04ish... narrows down the range of sat locations?
+** interpolating pnt-data over 2:00 secs errors: 22:33 (fits 0000)

@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+  
+<title>ALFALFA Survey - Observations for A2010</title> 
+</head><body bgcolor="#ffffff">
+
+<center>
+<h2><font color="darkblue">ALFALFA Survey - Notes on Zenith Strip Observing</font></h2>
+<font color="#cc0f14"><b>Version date: Fall 2011 Sep 6th update)</b></font></center>
+<br>
+<li> Previous page <a href="zenithstrip_instr_aug10.html">Fall2010 version</a></p>
+
+This page is designed to provide the background needed to understand the changes in observing
+strategy being adopted in 2011 to accomodate zenith strip, off-meridian observing for the
+Fall 2011 A2010 observing season. It will be best if observers' understand the need
+for the changes, the limits on telescope motion and how to arrive at the solution, especially
+since the observing schedule may change unexpectedly.</p>
+
+<br>
+<b> Changes to observing protocol</b><br>
+Here is a quick summary:
+<ul>
+<li> We run TOGS **only** at the start.
+<li> We will use one of several new configuration files including <b> a2010_az85_2010.conf </b> or
+     <b> a2010_az265_2010.conf </b> depending on whether we are using an azimuth near 90 or near 270 
+    degrees or something else. Choose the one specified for a particular date and drift (chosen to
+    be close to the Az for that night). 
+<li> Unlike the circumstance of meridian observing, the configuration file only provides
+    a basic setup of the backend, LO and observing mode. 
+<li> Unlike the circumstance of meridian observing, the "start time" for the observing (in RA)
+     will be offset from the actual LST time by 20-30 minutes. The <b>hour angle</b> is <b>non-zero</b>
+    (i.e., we are **real** astronomers!). See the <a href="http://www.naic.edu/~a2010/scheds/a2010_schedupcoming.txt">
+    A2010 current schedule page</a>.
+<li> Once the configuration file is loaded, the observer will have to update 
+     <ol>
+     <li> the ALFA rotation angle, in the "fixed azimuth drift" widget of the CIMA observing observing menu
+     <li> the azimuth, in the "fixed azimuth drift" widget
+     <li> the starting R.A., in the "fixed azimuth drift" widget. The RA will be offset from the LST by 
+          a predictable amount.
+     </ol>
+and then <b> rotate ALFA</b> to the proper rotation angle </b> using the <b>pointing control</b> widget 
+off the main menu.</p>
+</ul>
+
+The tentative plan for how to accomplish this can be found <a href="sep2011_setup.txt">here</a>
+without regard to the date of the observations. You should use that as a guide, but please
+double check according to the date when observations are actually conducted.</p>
+
+<br>
+<b> Restricted ZA "almost fixed azimuth" observing mode: the basics</b> <br>
+In the normal mode of A2010 observing, we fix the azimuth at 180 or 360, and then adjust the ZA
+according to the declination of the drift. Close to zenith, we run into the constraint that the Gregorian
+cannot come with 1.1 deg of zenith, so we have always known that we would have to observe those drifts
+at some different azimuth. The exact azimuth we might choose depends on the zenith angle 
+and the hour angle of the target drift (and thus, the declination and the RA range we want to cover). 
+As analyzed by Shan and Manolis, once the zenith angle of a source very close to Dec =~ +18 deg
+exceeds a few degrees, the required azimuth changes only a little even if the zenith angle changes a lot.
+For those sources, the azimuth needs to be close to either 90 deg or 270 deg, once the source is beyond a ZA of 
+a few degrees. Restricting the ZA to a range between 3.5 and 12 degrees (the current limits) introduces
+further constraints/considerations:
+<ul>
+<li> Obviously, when we observe at an AZ off the meridian, the RA of Beam 0 does not match the LST. Hence
+     the observed range of RA will not correspond to the LST range of the observations.
+<li> The position in AZ, ZA to which the telescope is commanded to point does not ever correspond exactly
+     to the position corresponding to RA, Dec, because of (a) precession and (b) the telescope
+     pointing model. Moreover, the position we specify corresponds to the mapping of the RA,Dec
+     at the center of ALFA Beam 0 to Az,ZA, but the limits refer to the encoder position tracking
+     the center of the dome. In particular, you will notice that the Z.A. changes during the night. 
+     Remember that we are tracking in J2000 coords
+     and it is now 2010.7 (Sep 2010). Close to 90,270 a small change in Decl translates to a larger change in Z.A.
+     Refer to the  ALFALFA notes on <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/precession.php">precession</a>.
+     As long as we are within the limits of 3.5 < Z.A. < 12 degrees, we are ok.
+<li> Phil thinks that CIMA may have divide by zero errors if AZ = 90 or 270 exactly, so he urges us to
+     stay a few degrees away from 90.0 and 270.0. (Indeed, after our experience last spring, we are sure of this.)
+<li> Very close to zenith, the value of ZA for a given azimuth is <a href="images/cima_fixeddrift_transit.jpg">
+     double valued</a>. CIMA will always select the lower ZA, so we have to think most carefully about
+     these drifts (for this reason, they will be done by the EGGs from Ithaca). See Phil's
+     <a href="http://www.naic.edu/~phil/software/datataking/cima/fixedazdrift_attransit.html">notes</a>.
+<li> We require that the ALFA beams tracks be equally spaced in declination and achieve that by rotating
+     ALFA appropriately. The required rotation angle depends on AZ, and is 19 degrees only on the meridian.
+     Hence if we elect different azimuths, we need to rotate ALFA accordingly. Note: the beam spacing also
+     changes slightly; we have to live with that. You might want to refresh your knowledge; refer to our
+     <a href="http://www.naic.edu/~a2010/rotbeams.htm">memo</a> and links there.
+<li> The ALFA beam pattern has 6-fold symmetry, but we do not want to change the relative orientation
+     of the beams. In particular, we always want beam 4 to be the one at highest ZA; remind yourself
+    <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/observingmode.htm"> here</a>.
+<li> ALFA can be rotated only over the range of (-100,+100) degrees; that turns out to be important and reduces
+     our flexibility in choosing whether to use 90 or 270. That constraint, in turn, impacts the RA range we
+     actually cover.</p>
+</ul>
+<br>
+
+<b> A note about TOGS</b> <br>
+During the fall 2011 season, TOGS is scheduled only at the start of A2010. To accomodate the
+ZA restriction issues, the TOGS command file has been modified so that the A2010 observer no longer
+has to update the "galfasrc" entry in the "a2010.cat" file. Just run the special <b>command_galfasrc_zenstrip.cmd</b>
+script. Instead of RA,Dec, it takes an Az,ZA from the "galfa_togs.cat" file; that should be updated by
+the TOGS team prior to the start of the run. If something weird happens, check that "galfa_togs.cat" 
+is set for an azimuth near ours; if not, skip it (or fix it yourself if you have time). 
+If for some reason, the telescope runs into a limit, just let the script continue to collect 
+data. Can't do much more than that on the fly. 
+</p>
+
+Note for future reference: 
+we have commented out the "galfasrc" entry in the a2010.cat file, so you cannot run
+the other mode of TOGS calibration (via command_galfasrc10.cmd) unless you (a) edit
+a2010.cat to uncomment that line; (2) make a new version of command_galfasrc10.cmd
+which does not rotate ALFA (comment out the "ALFAANG 19" line); and (3) change the
+RA of the galfasrc in a2010.cat as before. </p>
+
+<br>
+<b> What needs to be observed:</b><br>
+The missing drifts can be identified 
+<a href="http://www.naic.edu/~a2010/scheds/a2010_schedfall_needed10.txt">here</a>,
+assuming that someone keeps that file updated. Check also the <a href="
+http://www.naic.edu/~a2010/scheds/a2010_schedupcoming.txt">A2010 team schedule</a> (likewise,
+assuming someone keeps it updated).</p>
+
+<br>
+<b> Useful software for planning</b><br>
+There are two programs in eggidl/gen which I use to help with scheduling:
+<b>blocksched</b>, <b>lsttoazRT</b> and <b>azdectozaha</b> (which is a function,
+written by Phil, modified by us). These programs are accessible when
+you call <b>@egggeninit</b> (assuming you have the path to
+<b>eggidl/gen</b> in your .idl_startup file).Note, that these programs are neither
+elegant nor flexible, so be sure you understand their limitations.</p>
+
+
+<b>blocksched</b> &nbsp &nbsp Calculates LST start/stop times for AST time block on a given date<br>
+SYNTAX: &nbsp &nbsp &nbsp &nbsp blocksched, yymmdd,ast1HHMM,ast2HHMM<br>
+EXAMPLE: &nbsp &nbsp blocksched,100316L,2215,2359<br>
+Use this to figure out the LST range corresponding to a given block in AST on a given date.
+Note that if your block crosses midnight, you need to run it twice (or just add 4 minutes).
+Also, precision only to nearest minute.</p>
+
+
+<b>lsttoazrt</b> &nbsp &nbsp Computes the az, za and optimal
+rotation angles for a succession of drifts of length DRIFTTIME, starting
+on a given day yymmdd at a given LST and assuming the ALFALFA beam
+configuration. Performs simple error check on slew times between drifts,
+ALFA rotation limits, and optimization algorithm iteration boundaries.
+Was written for the NGC 2903 ALFA precursor program (A1963).
+<i>Note: Since this routine was not written for A2010, it does more than we
+need it to do but I am too lazy to change it. Just ignore the DRIFTTIME 
+(set it to 480.) and the info on drifts other than the first one.</i><br>
+SYNTAX: &nbsp &nbsp lsttoazrt, yymmdd,lmstHHMMSS,raHHMMSS,decDDMMSS,driftTime<br>
+EXAMPLE: &nbsp &nbsp lsttoazRT,100312L,092000L,084500L,162530L,480.</p>
+
+Use a standard value of the LST (I am using 092000L) and then adjust raHHMMSS
+so that the resultant Az and ZA yield (1) ZA within (6:9) and Az differs from
+90 or 270 by a few degrees. The result also then can be used to see the approx
+difference between the LST and RA at the actual LST of the observation
+(which will vary from night to night). 
+</p>
+<br>
+<br>
+<b> Daily chores: (IF NOT PERFORMED BY MARTHA -- not needed now!)</b> <br>
+Every day, the following tasks need to be performed. It is not necessary that
+a single person perform all of them, but the tasks need to be performed every day
+(or at most, within 2 days).
+<ul>
+<li> Check the <a href="http://www.naic.edu/vscience/schedule/scedfra2.htm">
+     posted schedule</a> for unexpected changes. &nbsp (Task should take <2 minutes.)
+<li> Update the schedule files (see below). &nbsp (Task should take <10 minutes.)
+<li> Double check that the a2010.cat file is set up properly for the next observer.
+     It's always a good idea that this task be performed by someone other than the
+     observer who may have been seriously sleep deprived. &nbsp (Task should take <5 minutes.)
+<li> (1) check that the data were properly converted to IDL save files. &nbsp (Task should take <5 minutes.)<br>
+     (2) transfer the IDL save files to the dorado13/idlraw area. &nbsp  (Task should take <5 minutes to set up, and
+         files should take about 2 hour to transfer.)<br>
+     Edit and "source" <b> /home/dorado3/dorado13/galaxy/idlraw/rsync.csh</b> to perform the transfer.
+<li> Once the data are successfully transfered, then someone should run NCALIB1, NCALIB2 and BPD
+     on the files to make sure that everything is ok. Do this as "galaxy" on the machine
+     called "arecibo" in the disk area /home/arecibo/galaxy/mar2010. Make a subdirectory with the
+     appropriate block name and follow the <b>log.spring</b> file, filling in to make 
+     log_processing_YYMMDD. You only need to get through BPD, but be sure to check the pos
+     file and one drift to make sure everything is ok. If you find something wrong (especially
+     unfamiliar or gross rfi), notify the folks at AO (especially Phil phil@naic.edu). If problem is serious, 
+     call someone like Robert, Phil, Ganesh, etc. on the phone. &nbsp (Task should take <15 minutes to get to point
+     when BPD starts: BDP should then run for about 90 min.)
+     </p>
+</ul>
+
+<b> The schedule files:</b> <br>
+There are 4 files which we use to keep track of the planned and executed observations.
+They are designed to be, in some ways, redundant; instilling redundancy is a good
+way to minimize errors. The files are located in camuy:/home/web/research/projects/egg/alfalfa/scheds/asttimes/
+<ul>
+<li> <b>a2010_schedcurrent.txt</b> &nbsp containing the past and future observing plan
+<li> <b>a2010_schedupcoming.txt</b> &nbsp containing only the future observing plan 
+<li> <b>a2010_schedspr_needed.txt</b> &nbsp indicates what RA coverage is still needed per drift
+<li> <b>a2010_schedsprstatus.txt</b> &nbsp indicates what RA coverage has been completed</p></ul>
+To update, follow the instructions in 
+<b>/home/web/research/projects/egg/alfalfa/scheds/asttimes/upsched_process.txt</b>.</p>
+<br>
+<br>
+<hr>
+<font color="#008000"><i>Last updated Tue Aug 31 09:00:14 EDT 2010 </i> by martha</font>
+    
+</body></html>

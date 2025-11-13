@@ -1,0 +1,78 @@
+Log for 2/20/05 pm        Observers: BC, MPH
+	2/21/05 am
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050020.a2010.****.fits   
+       /share/pserverf.sda3/wappdata/wapp.20050221.a2010.****.fits
+
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+0734 0031 505179036 aborted   drift42p1 FixedAZ  073438+100554  19   600  2     	aborted to fix power levels
+
+0738 0032 505179235 ignore    drift42p1 FixedAZ  073758+100554  19   600  2     	GALFA/GSPEC on; see note 1
+0748 0033 505179840 aborted
+
+0804 0034                     drift42p1 FixedAZ  080418+100554  19   600  3 
+
+*** ignore FITS 0031-0036 ***
+
+0819 0037 505181689 505182291 drift42p1 FixedAZ  081858+100554  19   600  3 
+0829 0038 505182294 505182896
+0839 0039 505182899 505183501							+11.9"
+
+0849 0040 505183507 505184109 drift42p1 FixedAZ  084921+100554  19   600  4
+0859 0041 505184112 505184714 
+0909 0042 505184717 505185319
+0919 0043 505185322 505185924                                                   +14.1
+
+0929 0044 505185930 505200132 drift42p1 FixedAZ  002950+100554  19   600  5      +4.0
+0939 0000 505200135 505200737 
+0949 0001 505200740 505201342                                                    +9.0
+0959 0002 505201345 505201948                                                   +11.8
+1009 0003 505201951 505202553                                                   +14.2
+
+1020 0004 505202558 505203160 drift42p1 FixedAZ  102027+100554  19   600  8         
+1030 0005 505203163 505203765                                                    +4.7"
+1040 0006 505203768 505204370                                                    +6.6  Marko starts up GSPEC again
+1050 0007 505204373 505204975                                                    +8.4
+1100 0008 505204978 505205580 
+1110 0009 505205583 505206185                                                   +11.0
+1120 0010 505206188 505206790                                                   +12.4
+1131 0011 505206793 505207395                                                   +13.8
+
+1141 0012 505207401 505208003 drift42p1 FixedAZ  114123+100554  19   600  5
+1151 0013 505208006 505208608                                                    +1.7
+1201 0014 505208611 505209213                                                    +2.0"
+1211 0015 505209216 505209818 
+1221 0016 505209821 505210423 
+end of night....
+
+
+
+Notes
+
+1- "slew 0:01, status=not tracking" in the mid of the drift.
+   Had to unwrap the telescope (az=0 instead of 360) :(
+   Even after unwrapping we had tracking problems. Exit CIMA and asked the TO to try and make the tracking work. That fixed it.
+   So we start taking data, and beam1, pol A has zero power. Restarted WAPPs, problem not solved...
+
+   FITS 0035:  beam1, pol A has bad power levels; right after starting the observations we got a series of messages:
+	02/21/05  2:33:33  WAPP(1) ERROR counts dont match for chip 4 
+	02/21/05  2:33:33  WAPP(1) ERROR counts dont match for chip 5 
+	02/21/05  2:33:33  WAPP(1) ERROR counts dont match for chip 6 
+	...
+
+   We were thinking of rebooting WAPP1, but tried to take data (while the TOs were trying to figure out how to do it) and magically
+   WAPP1 started working again. Note that at the time when we were having problems with the WAPPs, Arun was working on them 
+   (making disk space for next  experiment -- WAPP 4 was full). We learned this when he called in, after receiving a call 
+   from the operator that we were having trouble with the WAPPs. Hypothesis: what he was doing caused our problems....
+
+   Note also that, during the time WAPP1 was misbehaving, the ALFA Observation Monitor Window indicated that Beam 1A had no power;
+   The ALFA instrument monitor window did not indicate any problem. Both pols of beams 0 and 1 are on WAPP1, so we don't understand
+   why only 1A appeared dead in that one application. (The diagnostic tools don't always convey correct info...)

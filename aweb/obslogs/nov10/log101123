@@ -1,0 +1,73 @@
+Log for 10.11.23 (23Nov2010)        Observers: TB et al.(Heather Cutler, Phil Patrick, 
+                                           Aileen O'Donoghue, Jeff Miller, Ron Olowin, Tom Balonek)
+
+System Configuration:   a2010_az180_2010.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20101123.a2010.****.fits
+
+Normal meridian observing setup (Fall 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+2154 0001 32700098  32700099  drift95p2  fixAZdr   215400+230700  19  600   99  loopend  
+                                                      Power levels OK, except: Beam 6B Dead, Beam 4B Low Power 0.8
+                                                      quicklook ok
+2204 0002 32700100  32700101  
+2214 0003 32700102  32700103
+2224 0004 32700104  32700105
+2234 0005 32700106  32700107
+2245 0006 32700108  32700109                          quicklook ok
+2255 0007 32700110  32700111
+2305 0008 32700112  32700113
+2315 0009 32700114  32700115
+2325 0010 32700116  32700117                          quicklook ok
+2335 0011 32700118  32700119                          At 20:00:01 Error message [red]:"can't interpolate, using last position written                                                            to FITS, skipping interpolation occured," non-fatal error.
+2345 0012 32700120  32700121
+2345 0013 32700122  32700123                          At 20:14:50 Error message [orange]: "Interpolating over 2-second time gap"
+0006 0014 32700124  32700125                          power levels fine (except 6B, 4B as above), quicklook ok
+0016 0015 32700126  32700127
+0026 0016 32700128  32700129
+0036 0017 32700130  32700131
+0046 0018 32700132  32700133                          quicklook ok
+0056 0019 32700134  32700135
+0106 0020 32700136  32700137
+0116 0021 32700138  32700139
+0126 0022 32700140  32700141                          quicklook ok
+0137 0023 32700142  32700143                          
+0147 0024 32700144  32700145
+0157 0025 32700146  32700147
+0207 0026 32700148  32700149
+0217 0027 32700150  32700151                          quicklook ok
+0227 0028 32700152  32700153
+0237 0029 32700154  32700155
+0247 0030 32700156  32700157
+0258 0031 32700158  32700159
+0308 0032 32700160  32700161
+0318 0033 32700162  --Aborted
+
+LST stop: 0318
+
+TOGS run at start/end
+FAA radar moderately strong
+Also, 1380 weak but seen
+Power levels for 4B rose from .8 to .85 over the course of the night
+Weather partly cloudy, tiedown cables worked all night
+
+
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 15.1   K2: 18.9   K3: 16.5   K4: 16.5   AT 10:26
+70K = K1: 97.7   K2: 104.0  K3: 112.8  K4: 120.9
+
+16K = K1: 16.3   K2: 62.9   K3: 18.0   K4: 17.7   AT 14:04
+70K = K1: 96.7   K2: 102.1  K3: 112.1  K4: 120.6
+
+                        =>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+
+ALFA INSTRUMENT STATUS
+Alfa Amps:   Off
+Alfa Covers: Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+

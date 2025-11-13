@@ -1,0 +1,174 @@
+A2010 observing schedule                                       last update: 16Apr2014  mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+------------------------------------------------------------------------------------------------
+COMPLETED OBSERVATIONS        LBW Followup Program A2853      SPRING 2014  
+    Block     Date    LMSTmidn      AST           LST         a2853 cmd file      Observers 
+    14.01.13  M 13Jan    07h07    01h00-07h00   08h03-14h04   a2853_140113.cmd   LL,UAT workshop    EARTHQUAKE! Data bad
+    14.01.14  T 14Jan    07h11    01h00-07h00   08h07-14h08   a2853_140114.cmd   GH UAT workshop    Data bad; earthquake
+    14.01.15  W 15Jan    07h15    00h45-07h00   07h56-14h12   a2853_140115.cmd   GH,LL,UAT workshop CANCELLED
+
+    14.04.12  S 12Apr    12h58    19h30-03h30   08h27-16h28   a2853_140412.cmd    AO,JM,BG(R)
+    14.04.13  S 13Apr    13h02    19h30-03h30   08h31-16h32   a2853_140413.cmd    RK(R)
+    14.04.14  M 14Apr    13h06    19h30-03h30   08h35-16h36   a2853_140414.cmd    GH,MJ2,DK,PR(R)
+
+------------------------------------------------------------------------------------------------
+SPRING 2014 OBSERVATIONS         LBW Followup Program A2853      SPRING 2014  
+   ***** PLEASE NOTE THAT AST = EDT so EDT times are THE SAME!
+    Block     Date    LMSTmidn      AST           LST         a2853 cmd file      Observers 
+    14.04.24  R 24Apr    13h45    20h45-01h15   10h29-15h00   a2853_140424.cmd    EGGs(R)
+    14.04.25  F 25Apr    13h49    20h45-01h00   10h33-14h49   a2853_140425.cmd    EGGs(R)
+
+    14.04.27  S 27Apr    13h57    20h45-01h00   10h41-14h57   a2853_140427.cmd    EGGs(R)
+    14.04.28  M 28Apr    14h01    20h30-01h00   10h30-15h01   a2853_140428.cmd    PT(R)
+
+    14.05.04  S 04May    14h25    20:15-02:00   10h39-16h25   a2853_140504.cmd    maybe RK or DK?
+    14.05.05  M 05May    14h29    20:00-00:00   10h28-14h28   a2853_140505.cmd    PT(R)
+    14.05.06  T 06May    14h25    20:00-01:00   10h32-15h24   a2853_140506.cmd    maybe RK or DK?
+    
+
+----------------------------------------------------------------------------------------------------
+
+AO holidays 2014:
+18Apr  Good Friday
+21Apr  Jose de Diego
+26May  Memorial Day
+04Jul  Independence Day
+21Jul  Luiz Munoz Rivera
+25Jul  PR Constitution Day
+28Jul  Jose Celso Barbosa (observed)
+01Sep  Labor Day
+13Oct  Columbus Day (observed)
+19Nov  PR Discovery Day
+27Nov  Thanksgiving
+28Nov  Day after Tday
+25Dec  Christmas
+31Dec  New Year's Eve
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+AA2: Andres Arrieta (UPR-RP)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+EB: Elijah Bernstein-Cooper (Macalester)
+AB: Anthony Braddock (St.Marys)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+MD: Maggie Dievendorf (Colgate)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+AF2: Alison Farrish (Cornell)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+BG: Bryan Geiger (St. Lawrence)
+EG: Elena George (HSU)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+MG: Martin Garay-MacLean (Ithaca)
+RG: Riccardo Giovanelli
+SG: Steve Goldman (St. Lawrence)
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+KI: Katie Iadanza (Colgate)
+MJ: Melissa Jacquart (UWisc)
+MJ2: Mike Jones
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+LL: Luke Leisman
+KL: Katelyn Leisman
+ML: Mayra Lebron
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+VM: Victoria Mendoza (St.Marys)
+WM: Arik Mitschang (HSU)
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+CP: Carmen Pantoja
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+JP2: Jonathan Perez (UPR-RP)
+JP3: Jorge Padiel (UPR-RP)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+JR2: Jose Reyes (UPR-RP)
+PR: Paola Rosa-Aquino (Cornell)
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+JS2: Joseph Serrano (UMET)
+TS: Thad Savery (Siena) 
+KS: Kristine Spekkens
+OS: Oded Spector
+OS2: Ora Starcher (St.Marys)
+SS: Sabrina Stierwalt
+TS: Tess Senty (HSU)
+BT: Blake Tormey (St.Marys)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+MW: Michael Warrener (Union)
+JW: Jesse Watson (UWSP)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots
+

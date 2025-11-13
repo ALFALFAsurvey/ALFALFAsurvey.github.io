@@ -1,0 +1,57 @@
+Log for 11/27/09          Observers: PP, JA, TB
+
+
+System Configuration:                   a2010_az360_2009.conf
+CIMA version       			3.1.06 2009-11-22 11:19 "Smart" 
+File(s):  /share/pserverf.sda3/wappdata/wapp.20091127.a2010.****.fits
+
+LST  fits   Scan        calscan       Source    Pattern   Start coords. ang  time loop calmode
+0116 0001   933100255   933100256     drift19p1 fixAZdr  001400 +043006  19  600   99  loopend          strong contiuum source in beam 4, quick look ok, power levels ok
+0126 0002   933100257   933100258         continuum source (strongest in beam 0)
+0136 0003   933100259   933100260         power levels ok
+0146 0004   933100261   933100262         
+0156 0005   933100263   933100264         continuum source (beams 3 and 4)
+0206 0006   933100265   933100266         quick look ok , power levels ok
+0216 0007   933100267   933100268          
+0226 0008   933100269   933100270         continuum source (beams 0 and 5)
+0236 0009   933100271   933100272         power levels ok
+0247 0010   933100273   933100274         power levels ok
+0257 0011   933100275   933100276         quick look ok
+0307 0012   933100277   933100278         power levels ok
+0317 0013   933100279   933100280         power levels ok
+0327 0014   933100281   ABORTED                                                                     
+
+LST stop: 0327 
+Overall uneventful night.
+FAA radar active all night
+didn't see GPS burst
+Togs ran at start and end
+All of the messages mentioned below (fits files, 0002, 0005, 0008, 0009, 0011, 0012) appeared in grey.
+During fits file 0002, this message appeared on CIMA observation log display:
+21:27:13 WAPPDATA-search_agc: Extrapolating agc-data from 77231.0 to 77232.0!
+21:27:14 WAPPDATA-search_agc: Interpolating agc-data over 2.00 second time gap (77231.0 - 77233.0)!
+During fits file 0005, this message appeared on CIMA observation log display:
+21:57:11 WAPPDATA-search_agc: Extrapolating agc-data from 79029.0 to 79030.0!
+21:57:12 WAPPDATA-search_agc: Interpolating agc-data over 2.00 second time gap (79029.0 - 79031.0)!
+During fits file 0008, this message appeared on CIMA observation log display:
+22:27:09 WAPPDATA-search_agc: Extrapolating agc-data from 80827.0 to 80828.0!
+22:27:10 WAPPDATA-search_agc: Interpolating agc-data over 2.00 second time gap (80827.0 - 80829.0)!
+During fits file 0009, this message appeared on CIMA observation log display:
+22:42:08 WAPPDATA-search_agc: Extrapolating agc-data from 81726.0 to 81727.0!
+22:42:09 WAPPDATA-search_agc: Interpolating agc-data over 2.00 second time gap (81726.0 - 81728.0)!
+During fits file 0011, this message appeared on CIMA observation log display:
+22:57:07 WAPPDATA-search_agc: Extrapolating agc-data from 82625.0 to 82626.0!
+22:57:08 WAPPDATA-search_agc: Interpolating agc-data over 2.00 second time gap (82625.0 - 82627.0)!
+During fits file 0012, this message appeared on CIMA observation log display:
+23:12:06 WAPPDATA-search_agc: Extrapolating agc-data from 83524.0 to 83525.0!
+23:12:07 WAPPDATA-search_agc: Interpolating agc-data over 2.00 second time gap (83524.0 - 83526.0)!
+
+The message mentioned below (fits file 0010) appeared in orange.
+During fits file 0010, this message appeared on CIMA observation log display:
+49:56 WAPPDATA-search_pnt: WARNING extrapolating pnt-data from 55163.117986 to 55163.117998!
+22:49:57 WAPPDATA-search_pnt: WARNING interpolating pnt-data over 2.00 second time gap (55163.117986 - 55163.118009)!
+
+
+
+ALFA TEMPERATURES
+

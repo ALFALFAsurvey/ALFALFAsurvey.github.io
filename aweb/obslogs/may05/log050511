@@ -1,0 +1,39 @@
+Log for 05/05/11 pm
+Observers: BK, SS
+
+System Configuration:
+
+FixedAZ Drift Map Cima new version 1.2.02 (new)
+Using: a2010_fixedfrq_may05.gui as save state.
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050511.a2010.****.fits
+
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+0944 0013 513167920 513168522 drift40p1 FixedAz  094417+093642  19  600  15
+
+power levels (dB): 1.030 0.953 1.041 0.986 0.897 1.022 0.953 1.1 0.963 0.98 0.901 0.929 1.094 0.992
+
+0954 0014 513168525 513169127
+1004 0015 513169130 513169732
+1014 0016 513169735 513170337
+1024 0017 513170340 513170942
+1034 0018 513170945 513171547
+1045 0019 513171550 513172152
+1055 0020 513172155 513172757
+1105 0021 513172760 513173362
+1115 0022 513173365 513173967
+1125 0023 513173970 513174572
+1135 0024 513174575 513175177
+     0025 Abort
+
+END LIST: 11:45  
+
+
+Notes:
+
+- Tiedowns disabled
+- Power dip reported by Willie Torres at 19:00 AST.  No problems noted from Ithaca, NY.
+

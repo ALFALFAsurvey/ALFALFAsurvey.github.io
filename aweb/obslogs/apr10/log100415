@@ -1,0 +1,93 @@
+Log for 04/15/10          Observer: Manolis Papastergis
+
+System Configuration:                   a2010_az85_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100415.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100416.a2010.****.fits
+
+Zenith strip observing setup
+Az=69.0   ALFAang=-45.3  ZA=5.00  AzG=87.28
+
+RA@start=0826 (scheduled: 0803)   RA@end=1620
+RA = LST - 20min
+
+LST  fits   Scan    calscan   Source    Pattern   Start coords. ang   time  loop  calmode              ZAdome
+0846 0000  10500001 10500002  drift68p2 fixAZdr   082600+163248 -45.3 600   99    loopend              ZAG=4.95
+0856 0001  10500003 10500004    power in beam 2 seems high in waterfall plot                 AzG=69.00 ZAG=4.96
+0906 0002  10500005 10500006    quicklooked fits 0000:ok                                     AzG=69.00 ZAG=4.96
+0916 0003  10500007 10500008    cima message: received duplicate datablock...                AzG=69.00 ZAG=4.97
+0927 0004  10500009 10500010                                                                 AzG=69.00 ZAG=4.97
+0937 0005  10500011 10500012                                                                 AzG=69.00 ZAG=4.98
+0947 0006  10500013 10500014                                                                 AzG=69.00 ZAG=4.98
+0957 0007  10500015 10500016                                                                 AzG=69.00 ZAG=4.98
+1007 0008  10500017 10500018                                                                 AzG=69.00 ZAG=4.99
+1017 0009  10500019 10500020                                                                 AzG=69.00 ZAG=4.99
+1027 0010  10500021 10500022                                                                 AzG=69.00 ZAG=5.00
+1037 0011  10500023 10500024                                                                 AzG=69.00 ZAG=5.00
+1047 0012  10500025 10500026                                                                 AzG=69.00 ZAG=5.00
+1058 0013  10500027 10500028 very bright and narrow rfi burst at >1400MHz. Beams 0 and 6 temporarily recorded 
+                             a power level of 8!! not readily visible in all beams like GPS but seemed to appear
+                             only in 2-3 beams.                                              AzG=69.00 ZAG=5.01
+1108 0014  10500029 10500030                                                                 AzG=69.00 ZAG=5.01
+1118 0015  10500031 10500032                                                                 AzG=69.00 ZAG=5.01
+1128 0016  10500033 10500034                                                                 AzG=69.00 ZAG=5.02
+1138 0017  10500035 10500036                                                                 AzG=69.00 ZAG=5.02
+1148 0018  10500037 10500038                                                                 AzG=69.00 ZAG=5.02
+1158 0019  10500039 10500040                                                                 AzG=69.00 ZAG=5.02
+1208 0020  10500041 10500042                                                                 AzG=69.00 ZAG=5.02
+1218 0021  10500043 10500044                                                                 AzG=69.00 ZAG=5.02
+1228 0022  10500045 10500046                                                                 AzG=69.00 ZAG=5.02
+1238 0023  10500047 10500048                                                                 AzG=69.00 ZAG=5.02
+1248 0024  10500049 10500050                                                                 AzG=69.00 ZAG=5.02
+1258 0025  10500051 10500052                                                                 AzG=69.00 ZAG=5.02
+1309 0026  10500053 10600001                                                                 AzG=69.00 ZAG=5.02
+1319 0000  10600002 10600003                                                                 AzG=69.00 ZAG=5.02
+1329 0001  10600004 10600005                                                                 AzG=69.00 ZAG=5.02
+1339 0002  10600006 10600007                                                                 AzG=69.00 ZAG=5.02
+1349 0003  10600008 10600009                                                                 AzG=69.00 ZAG=5.01
+1359 0004  10600010 10600011                                                                 AzG=69.00 ZAG=5.01
+1409 0005  10600012 10600013                                                                 AzG=69.00 ZAG=5.01
+1419 0006  10600014 10600015                                                                 AzG=69.00 ZAG=5.00
+1430 0007  10600016 10600017                                                                 AzG=69.00 ZAG=5.00
+1440 0008  10600018 10600019                                                                 AzG=69.00 ZAG=5.00
+1450 0009  10600020 10600021                                                                 AzG=69.00 ZAG=5.00
+1500 0010  10600022 10600023                                                                 AzG=69.00 ZAG=4.99
+1510 0011  10600024 10600025                                                                 AzG=69.00 ZAG=4.99
+1520 0012  10600026 10600027                                                                 AzG=69.00 ZAG=4.98
+1530 0013  10600028 10600029                                                                 AzG=69.00 ZAG=4.98
+1540 0014  10600030 10600031                                                                 AzG=69.00 ZAG=4.97
+1551 0015  10600032 10600033                                                                 AzG=69.00 ZAG=4.97
+1601 0016  10600034 10600035                                                                 AzG=69.00 ZAG=4.96
+1611 0017  10600036 10600037  cima message: received duplicate datablock...                  AzG=69.00 ZAG=4.96
+1621 0018  10600038 10600039                                                                 AzG=69.00 ZAG=4.95
+1631 0019  10600040 10600041  cima message: received duplicate datablock...                  AzG=69.00 ZAG=4.94
+1641 0020  10600042 aborted
+
+
+LST stop: 1641        RA stop: 1621
+
+NOTES:
+** Missed ~25 mins of observing at beginning because I could not enter CIMA. I talked to the operator and 
+it seems that some datataking had not been shut down. As a result I did not perform TOGS at start.**
+
+TOGS at END only (due to the problem mentioned above).
+
+Very strong RFI burst at ~1410MHz with very narrow width. 
+
+Beam 2A noisy for most of the night.
+
+FAA radar ON.
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 14.8   K3: 16.0   K4: 16.2   AT 16:25
+70K = K1: 84.7   K2: 93.5   K3: 102.5  K4: 110.5
+
+16K = K1: 14.6   K2: 14.5   K3: 16.0   K4: 16.2   AT 22:40
+70K = K1: 85.4   K2: 93.5   K3: 103.0  K4: 111.1
+

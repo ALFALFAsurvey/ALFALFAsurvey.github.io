@@ -1,0 +1,55 @@
+A3122  LBW   17.05.08      Observers: LL     
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3122_may17.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3122_170508.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to: /share/olcor/corfile.08may17.a3122.*
+Data written to: /share/olcor/corfile.09may17.a3122.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+S114857.2+235016  114857.2 +235016  j   520 H v   # 6782       1131   6.9    1   712800041   nice det@500 km/s; some baseline wiggles/ stuff in off   
+S113613.3+200003  113613.3 +200003  j  6640 H v   # A219134    1142   1.9    2   712800045   det@6700km/s, caution: GPS & other bright sources
+S121548.9+351149  121548.9 +351149  j   969 H v   # A229487    1156  17.4    3   712800049   no det; bad baseline/ lots of junk; hires baseline is ok.
+S121920.4+125710  121920.4 +125710  j  2164 H v   # A226061    1209   6.0    4   712800053   no det using hires. I think there's a bad board.
+S121930.5+060045  121930.5 +060045  j  1622 H v   # A227979    1219  12.4    5   712800057   no clear det; bad baseline, hires is better
+S123445.3+124649  123445.3 +124649  j   785 H v   # A226118    1230   5.8    6   712800061   no clear det; bad baseline, hires is better
+S125504.3+080613  125504.3 +080613  j  2629 H v   # A227927    1240  11.0    7   712800065   det@2650km/s. Are there other sources here, or other bad stuff?
+S122640.3+194822  122640.3 +194822  j  1615 H v   # A-229360   1253   6.1    8   712800069   det@1600km/s still weird stuff going on though.
+S123703.7+211626  123703.7 +211626  j  9509 H v   # A229418    1301   6.5    9   712800073   no det, wiped out by PS radar
+S125209.2+260517  125209.2 +260517  j  7803 H v   # A229057    1311   8.7   10   712800077   wiped out by PS radar
+S133257.0+331342  133257.0 +331342  j  7468 H v   # A239193    1321  15.1   11   712800081   -------------- wiped out
+S134301.1+322909  134301.1 +322909  j  8179 H v   # A239194    1329  14.5   12   712800085   -------------- wiped out
+S133257.0+331342  133257.0 +331342  ----- reobserve -------    1337  14.8   13   712800089   no det; no bad stuff, YAY!!!
+S134301.1+322909  134301.1 +322909  ----- reobserve -------    1346  14.1   14   712800093   no det
+S141953.9+234340  141953.9 +234340  j  2757 H v   # A249557    1356   7.8   15   712800097   det@2700km/s
+S142008.7+350723  142008.7 +350723  j  3634 H v   # A-40000    1407  17.0   16   712800101   possible det@3600km/s
+S143547.9+215248  143547.9 +215248  j  5348 H v   # A249586    1419   5.2   17   712800105   det@5400km/s
+S142020.9+034945  142020.9 +034945  j  1562 H v   # A249461    1436  15.0    1   712800109   no det
+S144348.6+031430  144348.6 +031430  j  7603 H v   # A249463    1445  15.1    2   712900003   det@7500km/s
+S144529.6+192749  144529.6 +192749  j 12189 H v   # A249552    1457   2.8    3   712900007   det@12300km/s
+S145625.9+224314  145625.9 +224314  j  5710 H v   # A-60000    1507   4.9    4   712900011   det@5700km/s
+S150926.5+234540  150926.5 +234540  j  4270 H v   # A-70000    1516   5.5    5   712900015   det@4300km/s
+S151528.2+225020  151528.2 +225020  j  6315 H v   # A-80000    1524   4.8    6   712900019   det@6300km/s
+S153832.7+060747  153832.7 +060747  j  1431 H v   # A258387    1538  12.2    7   712900023   no det   
+S154557.9+023000  154557.9 +023000  j  3842 H v   # A258609    1548  15.9    8   712900027   det@3900km/s
+
+Notes: Well, the PS radar wiped out the first part of the night. It took us a while to
+debug the problem because it wasn't just at specific frequencies, it was all over the
+place. It was good weather, so I started the night with tiedowns enabled. I kept getting bad baselines, 
+I disabled tiedowns before source #6. It didn't help. After several rounds of debugging,
+the operator thought it might be Puntas Salinas, and called over and got them to switch modes.
+
+So anyway, I'm not sure what we can trust from the first part of the night, we might need to
+try to do a short program to reobserve them. Anyway, we'll see.

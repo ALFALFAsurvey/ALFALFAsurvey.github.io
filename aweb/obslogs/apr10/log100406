@@ -1,0 +1,94 @@
+Log for 04/06/10          Observer: Martha Haynes (Greg Hallenbeck after 1040AST)
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100406.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100407.a2010.****.fits
+
+Zenith strip observing setup
+Az=264.31   ALFAang=-66.3  ZA=4.8 (actually 4.02 dome)   AzG=263.69
+RA@start=0804   RA@end=1645
+RA = LST + 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode       ZAdome
+0747 0024  9600091  9600092       drift77p2 fixAZdr   080400+184412 -66.3 600   99   loopend       ZA=4.02d 
+0757 0025  9600093  9600094                           power levels ok, including 2A  GPS burst     ZA=3.99
+0807 0026  9600095  9600096                           quicklook/checkfits ok                       ZA=3.97
+0818 0027  9600097  9600098                                                                        ZA=3.94
+0828 0028  9600099  9600100                                                                        ZA=3.91
+0838 0029  9600101  9600102                                                                        ZA=3.89
+0848 0030  9600103  9600104                           RA=0904                                      ZA=3.86
+0858 0031  9600105  9600106                           power levels ok all beams                    ZA=3.84
+0908 0032  9600107  9600108                                                                        ZA=3.81
+0918 0033  9600109  9600110                           RA=0934                                      ZA=3.79
+0928 0034  9600111  9600112                                                                        ZA=3.77
+0938 0035  9600113  9600114                                                                        ZA=3.75
+   Abort deliberately.
+At this point, move to slightly higher Az; that will also move out in HA=> higher ZA
+Readjust power, so need separate cal period 
+Send to AZ=265.4 but it ends up at 264.69  ZA=5.01 should be ok rest of night.
+Start again at RA=1017    az=264.5   rotang=-67.0    azG=264.69
+0956 0037  9600116  9600117                           HA now 21min; levels ok                      ZA=5.01
+1006 0038  9600118  9600119                                                                        ZA=4.99
+1016 0039  9600120  9600121                                                                        ZA=4.96
+1026 0040  9600122  9600123                           Beam 2A now down around 0.89                 ZA=4.95
+1036 0041  9600124  9600125                                                                        ZA=4.93
+1047 0042  9600126  9600127                                                                        ZA=4.92
+1057 0043  9600128  9600129                                                                        ZA=4.90
+1107 0044  9600130  9600131                                                                        ZA=4.89
+1117 0045  9600132  9600133                                                                        ZA=4.88
+1127 0046  9600134  9600135                                                                        ZA=4.88
+1137 0047  9600136  9600137                                                                        ZA=4.88
+1147 0048  9600138  9600139                                                                        ZA=4.87
+1158 0049  9600140  9600141                                                                        ZA=4.87
+1208 0050  9600142  9600143 quicklook OK                           Martha, are you EVER wrong? --> ZA=4.88
+1218 0051  9600144  9600145                                                                        ZA=4.88
+1228 0052  9600146  9700001                                                                        
+1238 0000  9700002  9700003                                                                        
+1248 0001  9700004  9700005                                                                        ZA=4.91
+1258 0002  9700006  9700007                                                                        ZA=4.93
+1308 0003  9700008  9700009                                                                        ZA=4.94
+1319 0004  9700010  9700011                                                                        ZA=4.96
+1329 0005  9700012  9700013 quicklook OK                                                           ZA=4.98
+1339 0006  9700014  9700015                                                                        ZA=5.00
+1349 0007  9700016  9700017                                                                        ZA=5.03
+1359 0008  9700018  9700019                                                                        ZA=5.05
+1409 0009  9700020  9700021                                                                       
+1419 0010  9700022  9700023                                                                        ZA=5.11
+1429 0011  9700024  9700025                                                                        ZA=5.15
+1439 0012  9700026  9700027                                                                        ZA=5.18
+1450 0013  9700028  9700029                                                                        ZA=5.22
+1500 0014  9700030  9700031 quicklook OK                                                           ZA=5.26
+1510 0015  9700032  9700033                                                                        ZA=5.30
+1520 0016  9700034  9700035                                                                        ZA=5.34
+1530 0017  9700036  9700037                                                                        ZA=5.38
+1540 0018  9700038  9700039                                                                        ZA=5.43
+1550 0019  9700040  9700041                                                                        ZA=5.47
+1600 0020  9700042  9700043                                                                        ZA=5.52
+1611 0021  9700044  9700045                                                                        ZA=5.57
+1621 0022  9700046  Aborted
+
+LST stop: 1622        RA stop: 1645
+
+NOTES:
+This drift is close to zenith. Calculated Beam 0 ZA is 4.8 deg but Dome reads 4.02 deg at start.
+After 120 min, decide to switch to higher az to avoid ZA limit problem, so abort, move in Az and restart.
+
+TOGS run at end -- not run at start!
+
+Beam 2A power unstable but not dropping into orange level.
+
+FAA radar ON
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+16K = K1: 14.4   K2: 14.3   K3: 15.7   K4: 15.7   AT 19:09
+70K = K1: 80.7   K2: 89.1   K3: 97.9   K4: 105.5
+
+16K = K1: 14.3   K2: 14.8   K3: 15.8   K4: 15.7   AT 21:59
+70K = K1: 81.0   K2: 89.1   K3: 96.1   K4: 105.7
+
+			=>temperatures of the 8 sensors within ALFA housing

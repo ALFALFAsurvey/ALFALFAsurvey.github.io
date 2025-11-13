@@ -1,0 +1,25 @@
+Log for 090106p     Observers: Martha Haynes & Riccardo Giovanelli & Drew Brisbin
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:        /share/pserverf.sda2/wappdata/wapp.20090106.a2010.****.fits 
+
+
+LST  fits  Scan     calscan   Source     Pattern  Start coords. ang  time loop calmode
+0128 0043 900600136 900600137 drift39p1  fixAZdr  012800+092207  19   600  99  loopend  no radar; Bm6B ok
+0138 0044 900600138 900600139
+0148 0045 900600140 900600141
+0158 0046 900600142 900600143   power levels OK
+0208 0047 900600144 900600145
+0218 0048 900600146 900600147
+0228 0049 900600148 900600149
+0238 0050 900600150 900600151   power levels OK
+0248 0051 900600152 900600153
+0259 0052 900600154 900600155
+END LST:  0309
+
+Notes:
+Running the new version of CIMA 3.1.02 "Smart" for 2nd night; all ok
+TOGS run at beginningand end freeby.
+FAA radar off.
+Beam 6B looks ok

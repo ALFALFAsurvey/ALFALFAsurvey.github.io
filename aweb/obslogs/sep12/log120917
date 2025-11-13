@@ -1,0 +1,93 @@
+Log for 12.09.17 (17Sep2012)        Observers: GH,MJ
+
+System Configuration:  a2010_az180_2012.conf
+CIMA version   The Stable version (Default) (Ver.3.3.02 2012-06-07 17:14) 
+File(s):       /share/pserverf.sdb1/wappdata/wapp.20120917.a2010.****.fits
+               /share/pserverf.sdb1/wappdata/wapp.20120918.a2010.****.fits
+
+Normal meridian observing setup north of zenith, Az=180 deg (Fall 2012) 
+Drift is: 145p2  +351700
+All beams working
+FAA is on
+
+LST  fits   Scan     calscan   Source    Pattern   Start coords. ang  time loop calmode
+2146 0001 226100224 226100225 drift145p2 fixAzdr  214700+351700  19  600   99  loopend
+               quicklook OK. Started a bit late because of long slew time and TOGS hanging on ALFA rotation.
+               Probably should have skipped running it.
+               waterfall plots not functioning--all black--even after restarting alfadatawin.
+2156 0002 226100226 226100227 quicklook OK
+2206 0003 226100228 226100229
+2216 0004 226100230 226100231
+2226 0005 226100232 226100233 quicklook OK.
+               After closer inspection, none of the alfa data-reading programs were updating.
+               I killed the data-grabbing process and restarted alfaobswin and alfadatawin
+               Everything is working now---AND the palette for the waterfall plots has regained 
+               its smooth contrast, not that I have any idea why.
+2236 0006 226100234 226100235
+2247 0007 226100236 226100237
+2257 0008 226100238 226100239
+2307 0009 226100240 226100241
+2317 0010 226100242 226200001
+2327 0000 226200002 226200003
+2337 0001 226200004 226200005
+2348 0002 226200006 226200007
+2358 0003 226200008 226200009
+0008 0004 226200010 226200011
+0018 0005 226200012 226200013
+0028 0006 226200014 226200015 quicklook OK
+0038 0007 226200016 226200017
+0048 0008 226200018 226200019
+0058 0009 226200020 226200021
+0108 0010 226200022 226200023
+0119 0011 226200024 226200025
+0129 0012 226200026 226200027
+0139 0013 226200028 226200029
+0149 0014 226200030 226200031 quicklook OK
+0159 0015 226200032 226200033
+0209 0016 226200034 226200035
+0219 0017 226200036 226200037
+0229 0018 226200038 226200039
+0239 0019 226200040 226200041
+0249 0020 226200042 226200043
+0300 0021 aborted
+
+LST stop: 0302
+
+At the bottom, add notes regarding:
+-- TOGS run at start only
+-- Waterfall plots again have excellent contrast.
+-- FAA radar on
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 13.3   K3: 15.0   K4: 14.7   AT 18:01
+70K = K1: 85.1   K2: 84.6   K3: 92.7   K4: 100.5
+
+16K = K1: 14.4   K2: 13.5   K3: 15.3   K4: 14.8   AT 22:00
+70K = K1: 84.4   K2: 84.2   K3: 92.5   K4: 100.5
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No  AT n/a
+				=>is Punta Salinas following our schedule
+TIE DOWN STATUS AT 17:26
+
+TD12: 10.875
+TD4 : 12.272
+TD8 : 12.564
+
+Total Kips: 101.52
+
+Tie Down:   Enabled
+________________________________________________________________________________

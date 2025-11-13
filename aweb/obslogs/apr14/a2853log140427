@@ -1,0 +1,45 @@
+A2853   LBW   14.04.27      Observers: DK
+
+CIMA version:          The Stable version (Default)  Ver 3.3.12 2014-03-20 17:38
+Configuration file:    a2853_apr14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140427.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.27apr14.a2853.*
+         and     /share/olcor/corfile.28apr14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+A100726.4+144937  100726.4 +144937  j  9400 H v   # A734259         1056  12   1     411700735   S/N=3.5 at 9450km/s, double-horned
+A114555.1+133058  114555.1 +133058  j  3400 H v   # A213530         1117  9    2     411700739   No detection.   
+A114541.2+090355  114541.2 +090355  j  6300 H v   # A213121         1130  10   3     411700743   S/N=2 at 6400   
+A122202.3+103716  122202.3 +103716  j  7700 H v   # A220444         1143  12   4     411700747   Maybe there's something at 7600 if you squint really hard and use your imagination.   
+A122226.0+102112  122226.0 +102112  j  7600 H v   # A224503         1155  10   5     411700751   No detection.
+A122344.6+092017  122344.6 +092017  j  7100 H v   # A220497         1207  10   6     411700755   S/N < 1.2 at 7000
+A122402.6+105054  122402.6 +105054  j  8400 H v   # A222732         1220  8    7     411700759   No detection.
+A122414.7+091600  122414.7 +091600  j  6800 H v   # A220511         1233  9    8     411700763   No detection.   
+A122417.7+092004  122417.7 +092004  j  6700 H v   # A220512         1245  10   9     411700767   S/N = 1.5 at 6600   
+A122419.5+092930  122419.5 +092930  j  6800 H v   # A220513         1257  12   10    411700771   No detection.
+A122543.0+090135  122543.0 +090135  j  7500 H v   # A220554         1309  14   11    411700775   S/N=3 at 7500, double-horned
+A122807.6+082551  122807.6 +082551  j  7400 H v   # A229039         1322  16   12    411700779   S/N=4 at 7400
+A122949.8+093608  122949.8 +093608  j  7500 H v   # A224458         1334  18   13    411700783   Nothing at 7500; possible S/N=1.5-2 detection at 8300.
+A132928.4+113919  132928.4 +113919  j  7500 H v   # A233870         1350  8    1     411700787   S/N=1.5 at 7500
+A132936.4+114850  132936.4 +114850  j  7900 H v   # A232224         1402  10   2     411800003   Very Marginal Detection V=7900   
+A143933.2+031325  143933.2 +031325  j  8500 H v   # A242874         1417  16   3     411800007   No detection.
+A144029.3+032558  144029.3 +032558  j  7400 H v   # A241975         1429  15   4     411800011   No detection.
+A150111.2+014206  150111.2 +014206  j  2000 H v   # A009655         1442  17   5     411800015   No detection.
+A150642.0+003804  150642.0 +003804  j  2300 H v   # A252565 if time    ##### No time to observe.
+
+Notes  
+	1. Weather reported good; Tiedowns active.
+	2. Very long initial slew at start of run. Behind already!
+	3. SNR's are Dave's eyeball estimates.
+
+
+

@@ -1,0 +1,60 @@
+A3064 LBW   16.11.21 Observers: Joe Ribaudo, Jonathan Hoover, Grant Denn, Rosa Wallace, Cory Johnson, David Craig (at AO)
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161121.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161121.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161122.a3064.****.fits   (only if goes after midnight AST; probably no)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+H215143.8+251518  215143.8 +251518  j     0 H v   # A011834cal  2116   10.5  0000   632600023    strong cal source there, as expected
+H215143.8+251518  215143.8 +251518  j     0 H v   # A011834cal  2126    9.2  0001   632600027    ditto, usual radar
+S222558.9+230559  222558.9 +230559  j     0 H v   # A322063     2134   12.4  0002         031    1388 rfi spike, src@+10000 km/s
+S222551.5+242951  222551.5 +242951  j     0 H v   # A323403     2148   10.8  0003         035    mod. gps (on), radar (off), weak? src@+14000 km/s
+S223919.9+282519  223919.9 +282519  j     0 H v   # A323409     2201   13.4  0004         039    disabled tiedowns (foggy drizzle), no dice (dice=hi) 
+S224514.9+292134  224514.9 +292134  j     0 H v   # A323415     2214   13.3  0005         043    src@+7500 km/s, s/n~6, strong radar (on)
+S225325.3+312425  225325.3 +312425  j     0 H v   # A323417     2227   14.5  0006         047    strong gps (on), radar (off), noisy baseline, no dice
+S233838.3+270939  233838.3 +270939  j     0 H v   # A336657     2240   16.3  0007         051    v. strong gps (off), radar (on), noisy base w/ /gps    
+S000054.7+274319  000054.7 +274319  j     0 H v   # A104808     2253   18.3  0008         055    v. strong gps (on), radar (off), 1388 rfi
+S000054.7+274319  000054.7 +274319  j     0 H v   # A104808     2305   16.0  0009         059    REPEAT (getting ahead), poss.weak src@+12000 km/s
+S001000.7+293554  001000.7 +293554  j     0 H v   # A105231     2318   16.5  0010         063    1388 rfi spike, radar(off), weak src@+4700 km/s (?)
+S001253.8+293104  001253.8 +293104  j     0 H v   # A105234     2330   15.0  0011         067    wapps interp denom=0 error, radar(off), gps(off)
+                                                                                                 weak src@4650 km/s, s/n 3
+S001737.3+290200  001737.3 +290200  j     0 H v   # A105263     2342   13.6  0012         071    narrow src@4800 km/s, signal s/n ~10, radar (on)
+S235637.3+334001  235637.3 +334001  j     0 H v   # A336706     2355   15.4  0013         075    Strong rfi spike @1388 MHz, radar (off) 
+S002700.3+303617  002700.3 +303617  j     0 H v   # A105244     0008   13.1  0014         079    gps(on), Radar(on), noisy baseline
+S003346.8+340241  003346.8 +340241  j     0 H v   # A105246     0021   16.1  0015         083    nothing obvious, radar in on (strong)
+S004246.6+332645  004246.6 +332645  j     0 H v   # A105248     0033   15.4  0016         087    strong radar (on) 
+S010138.6+344716  010138.6 +344716  j     0 H v   # A116195     0046   16.9  0017         091    radar(off),narrow src@ 114300 km/s(?) , s\n~8
+S011241.3+312051  011241.3 +312051  j     0 H v   # A116266     0059   13.5  0018         095    narrow src@10000km/s, s/n5 , radar
+S011449.4+332730  011449.4 +332730  j     0 H v   # A115058     0111   15.2  0019         099    radar(off), poss. src @4700km/s , s/n3 
+S011449.4+332730  011449.4 +332730  j     0 H v   # A115058     0124   15.3  0020         103    strong gps(off), src in off, above is present aswell,radar
+S014059.7+315121  014059.7 +315121  j     0 H v   # A116240     0136   13.7  0021         107    bad gps(off),radar , s/n3 6600km/s? noisy baseline       
+S015051.0+323020  015051.0 +323020  j     0 H v   # A110930     0149   14.3  0022         111    radar(off), s/n 6 108600 km/s may be broad , 
+                                                                                                 SDSS image of galaxy cluster
+S015416.7+334047  015416.7 +334047  j     0 H v   # A116302     0201   15.5  0023         115    radar(on) 
+S015639.3+333943  015639.3 +333943  j     0 H v   # A114699     0213   15.8  0024         119    radar(on), rfi 1388 (off),4400km/s s/n6 
+                                                                                                 stong src off @ 5400km/s
+S020531.9+315032  020531.9 +315032  j     0 H v   # A125165     0226   14.3  0025         123    radar(off), src @ 4850km/s, s/n6
+S021647.9+324037  021647.9 +324037  j     0 H v   # A125523     0238   15.1  0026         127    strong gps(off), 1388 rfi, radar, noisy baseline
+                                                                                                 s/n3 4600km/s
+S025049.6+345840  025049.6 +345840  j     0 H v   # A125517     0251   16.7  0027         131    1388 rfi(off), radar(off), noisy baseline? 
+S025407.9+345755  025407.9 +345755  j     0 H v   # A125526     0303   16.8  0028         135    radar(on), src @ 5200Km/s, s/n10,  double horn?
+S025800.0+351055  025800.0 +351055  j     0 H v   # A124878     0315   17.3  0029         139    1388 rfi, radar(on), tilted baseline
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal  0329   12.7  0030         143    big spike @+5200km/s
+                                                                
+                                                
+Notes:
+Started early (observed 1st src twice), Tiedowns active, 
+                                                                 

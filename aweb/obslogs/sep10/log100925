@@ -1,0 +1,108 @@
+Log for 09/25/10     Observer: Martha Haynes
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100925.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100926.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=87.07   ALFAang= -66.0  ZA=4.68  AzG=87.06        very close to zenith
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2050  RA@end=0301
+      RA = LST -20 min
+****
+During the night, please make occasional notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the ZA limits
+are (3.5,12.0). If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.    ang  time loop  calmode  ZAdome
+2117 0023 26800106  26800107   drift74p2  fixAzdr   205700+180024  -66.0   600   99  loopend  ZAG=4.68 +180017
+2127 0024 26800108  26800109               6b sitting at 0.80   quicklook ok   ZAG=4.64  +180024 obs when not on source message for 1-2 sec at start as dec is updating
+2137 0025 26800110  26800111               ZAG = 4.61    observing when not on source               
+2147 0026 26800112  26800113               ZAG = 4.59    ditto     got extrap/interp AGC-datablock warning
+2157 0027 26800114  26800115               
+2208 0028 26800116  26800117               
+2218 0029 26800118  26800119               ZAG = 4.53    
+2228 0030 26800120  26800121               ZAG = 4.52
+2238 0031 26800122  26800123               ZAG = 4.50 
+2248 0032 26800124  26800125               ZAG = 4.49
+2258 0033 26800126  26800127               ZAG = 4.47
+2308 0034 26800128  26800129               ZAG = 4.46
+2318 0035 26800130  26800131               ZAG = 4.45   got extrap/interp pnt-data over 2sec warning
+2328 0036 26800132  26800133               ZAG = 4.44   no observing off source here or last one
+2338 0037 26800134  26800135               ZAG = 4.44
+2348 0038 26800136  26900001               ZAG = 4.43   got extrap/interp pnt-data over 2sec warn 
+2359 0000 26900002  26900003               ZAG = 4.43  
+0009 0001 26900004  26900005               ZAG = 4.43
+0019 0002 26900006  26900007               ZAG = 4.43
+0029 0003 26900008  26900009               ZAG = 4.43
+0039 0004 26900010  26900011               ZAG = 4.43
+0049 0005 26900012  26900013               ZAG = 4.44
+0100 0006 26900014  26900015               ZAG = 4.44
+0110 0007 26900016  26900017               ZAG = 4.45
+0120 0008 26900018  26900019               ZAG = 4.46 
+0130 0009 26900020  26900021               ZAG = 4.47 
+0140 0010 26900022  26900023               ZAG = 4.48   got observing off source 1 sec
+0151 0011 26900024  26900025               ZAG = 4.50   ditto 3 secs
+0201 0012 26900026  26900027               ZAG = 4.51   ditto
+0211 0013 26900028  26900029               ZAG = 4.53
+0221 0014 26900030  26900031               ZAG = 4.55   ditto 4 secs
+0231 0015 26900032  26900033               ZAG = 4.56  
+0241 0016 26900034  26900035               ZAG = 4.58   ditto 5 secs
+0251 0017 26900036  26900037               ZAG = 4.61   got extrap/interp pnt-data over 2sec warn  
+0301 0018 26900038  26900039               ZAG = 4.63   ditto 7 secs
+0311 0019 26900040  26900041               ZAG = 4.65   ditto 6 secs
+0321  ABORT
+
+LST@stop:0321       RA@stop: 0301
+
+NOTES:
+
+-- Long slew at start to avoid any misunderstandings.
+-- TOGS takes telescope very close to 90 degrees and up in ZA to 6.6 degrees.
+-- Notice power in 6B is a bit low; aborted at start and tried to readjust again, but 
+   it stays at about 0.80. Leaving it as is and proceed. A few warnings (0.79) but mostly ok.
+-- Using 'zenith strip' observing mode, close to zenith!
+-- TOGS at START only. 
+-- Occasional cima warnings: extrapolating pnt-data... or AGC-datablock. As long as over only 2sec, ok.
+-- Regularly getting "observing when not on source" messages at the start of each drift. That's  
+   going to happen for the duration......... Not a big deal. It's only a couple of seconds and the
+   error is only some arcseconds.
+-- FAA radar ON
+-- All beams OK
+-- Tiedowns fine
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 14.0   K3: 15.2   K4: 15.5   AT 16:29
+70K = K1: 80.7   K2: 87.5   K3: 98.5   K4: 106.6
+
+16K = K1: 13.8   K2: 14.0   K3: 15.2   K4: 15.4   AT 22:05
+70K = K1: 81.0   K2: 87.8   K3: 99.1   K4: 107.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   Yes  AT 16:31
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:30
+				=>certify our blanker is locking on
+

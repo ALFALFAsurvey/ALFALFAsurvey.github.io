@@ -1,0 +1,92 @@
+Log for 05/05/20 pm
+Observers: SS
+
+System Configuration
+
+FixedAZ Drift Map CIMA new version 1.2.02 (normal default)
+Using: a2010_fixedfrq_may05.gui as save state
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050520.a2010.****.fits
+       /share/pserverf.sda3/wappdata/wapp.20050521.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+1019 0008 514067911 514068513 drift45p2 FixedAz  101920+105700  19  600  50		
+power levels (dB): 0.948 1.051 0.941 0.905 1.043 0.920 0.860 1.028 0.897 1.099 1.018 1.082 1.017 0.891
+
+1029 0009 514068516 514069118
+1039 0010 514069121 514069723
+1049 0011 514069726 514070328
+1100 0012 514070331 514070933
+1110 0013 514070936 514071538
+1120 0014 514071541 514072143
+1130 0015 514072146 514072748
+1140 0016 514072751 514073353
+1150 0017 514073356 514073958
+1200 0018 514073961 514074563
+1210 0019 514074566 514075168
+1220 0020 514075171 514075773
+1231 0021 514075776 514076378
+1241 0022 514076381 514076983
+1251 0023 514076986 514077588
+1301 0024 514077591 514078193
+1311 0025 514078196 514078798
+1321 0026 514078801 514079403
+1331 0027 514079406 514080008
+
+power levels (dB):0.995 1.143 0.988 0.936 1.080 0.972 0.922 1.067 0.960 1.181 
+1.071 1.148 1.066 0.913
+
+1341 0028 514080011 514080613
+1352 0029 514080616 514081218
+1402 0030 514081221 514081823
+file 0031 514081826 aborted - see note below
+1413 0032 514082498 514083100
+1423 0033 514083103 514083705
+
+power levels (dB): 1.039 0.552(red) 1.011 0.996 1.106 0.672(red) 0.794(orange)
+0.932 0.801(orange) 0.815 0.876 0.946 1.078 0.952
+
+1443 0034 514083708 514084310
+1453 0035 514084313 514084915
+1503 0036 514084918 514085520
+
+power levels (dB): 1.041 0.611(red) 1.016 1.019 1.117 0.716(orange) 0.814 0.967
+0.837 0.840 0.889 0.960 1.088 0.962
+
+1514 0037 514085523 514086125
+1524 0038 514086128 514100330
+1534 0000 514100333 514100935
+
+power levels (dB): 1.026 0.531(red) 1.013 0.988 1.111 0.651(red) 0.781(orange)
+0.945 0.788(orange) 0.832 0.872 0.944 1.091 0.950
+
+1544 0001 514100938 514101540
+1554 0002 514101543 514102145
+1604 0003 514102148 514102750
+1614 0004 514102753 514103355
+1624 0005 514103358 514103960
+file 0006 aborted (no time left)
+
+power levels (dB): 1.036 0.506(red) 1.020 0.982 1.119 0.648(red) 0.770(orange)
+0.926 0.805 0.830 0.882 0.944 1.094 0.956
+
+
+END LST:
+
+Notes:
+Tiedowns Active.
+
+I noticed the power level of Beam 0, polarization B went orange (1.463 dB) for
+about 30 seconds around 1359 LST.  Then at 1409 LST Beam 0 Pol B went red and 
+continued rising.  Beam 4 Pol B and Beam 2 Pol B also went orange and began to
+rise.  I stopped between drifts to abort and adjust power.  Right before I 
+adjusted power the deviant beams read 2.451 for Beam 0 Pol B, 1.483 for Beam 2
+Pol B, and 1.515 for Beam 4 Pol B.  There are no problems for about 8 min 
+after the adjustment, but then I see Beam 0 Pol B and Beam 2 Pol B go red.  I 
+see flickerings between orange and blue in the other beams, but none as 
+consistent as the above two.  Although adjusting the power did not completely 
+fix the problem, the power levels no longer rose steadily.
+
+Strong RFI still persists at 1428.2 MHz.

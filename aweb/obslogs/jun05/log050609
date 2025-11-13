@@ -1,0 +1,41 @@
+Log for 05/06/09
+Observers: Brian Kent, Adrienne Stilp, Neil Patel, Sabrina Stierwalt
+
+System Configuration
+
+FixedAz Drift Map CIMA new version 1.2.03 (normal default)
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20050609.a2010.****.fits
+       /share/pserverf.sdb1/wappdata/wapp.20050610.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+1348 0002 516075669 516076270 drift35p2 FixedAZ  134807+083100  19  600  50
+1358 0003 516076273 516076875
+1408 0004 516076878 516077480
+1418 0005 516077483 516078085
+1428 0006 516078088 516078690
+1438 0007 516078693 516079295
+1448 0008 516079298 516079900
+1458 0009 516079903 516080505
+1508 0010 516080508 516081110
+1518 0011 516081113 516081715
+1528 0012 516081718 516082320
+1538 0013 516082323 516082925
+1549 0014 516082928 516083530
+1559 0015 516083533 516084135
+1609 0016 516084138 516084740
+1619 0017 516084743 516085345
+1628 0018 516085348 516085950
+1638 0019 516085953 ABORT
+
+
+
+
+END LST: 1638
+
+
+Notes:
+
+Notified that cryostat in beam 2 is not working.

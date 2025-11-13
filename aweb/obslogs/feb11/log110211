@@ -1,0 +1,77 @@
+Log for 11.02.11 (11Feb2011)        Observer: Becky Koopmann, Alexandrea Safiq, Lucas Viani
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110211.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0920 0000 104200010 104200011 drift141p2 fixAzdr   092000+341836  19   600 99 loopend 6b dead, cs passes through cal on 1
+0930 0001 104200012 104200013  power levels OK, quicklook OK, cs
+0941 0002 104200014 104200015  
+0951 0003 104200016 104200017  cs
+1001 0004 104200018 104200019  power levels OK
+1011 0005 104200020 104200021  cs   
+1021 0006 104200022 104200023  
+1031 0007 104200024 104200025
+1041 0008 104200026 104200027  power levels OK, quicklook OK
+1051 0009 104200028 104200029  cs
+1102 0010 104200030 104200031  
+1112 0011 104200032 104200033  power levels OK, quicklook OK  
+1122 0012 104200034 104200035 
+1132 0013 104200036 104200037
+1142 0014 104200038 104200039  
+1152 0015 104200040 104200041  power levels OK, cs
+1202 0016 104200042 104200043  
+1212 0017 104200044 104200045  GPS (AST 03:20-03:23), quicklook OK
+1222 0018 104200046 104200047  
+1232 0019 104200048 104200049
+1242 0020 104200050 104200051  power levels OK
+
+1252 0021 104200052 -- ABORTED:  repeated WAPP warning errors: 
+       wappdata buildup logic error 
+       WARNING WAPPDATA confused  
+       (orange background, but repeated for couple minutes)
+
+1259 0022 104200053 104200054   power levels OK, quicklook OK
+1309 0023 104200055 104200056 
+1319 0024 104200057 104200058  cs
+1329 0025 104200059 104200060  power levels OK, quicklook OK
+1339 0026 104200061 104200062 
+1349 0027 104200063 104200064 
+1359 0028 104200065 104200066  cs
+1409 0029 104200067 104200068  
+1419 0030 104200069 104200070  quicklook OK
+1430 0031 104200071 104200072 
+1440 0032 104200073 104200074
+1450 0033 104200075 104200076  power levels OK
+1510 0034 104200077 104200078 
+1510 0035 104200079 104200080  quickook OK
+1520 0036 104200081 104200082  GPS through cal - bright burst
+1530 0037 104200083 104200084  GPS (AST 6:32-6:35) 
+1540 0038 104200085 104200086  cs
+1550 0039 104200087 -- abort
+
+LST stop: 1550
+
+At the bottom, add notes regarding:
+--slight delay in starting: operator started to go to 180 rather than 540
+--WAPP gap 1252-1259
+--Beam 6B dead entire night.
+--FAA Radar ON and bright
+--TOGS at end only
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 31.1   K2: 195.6  K3: 35.3   K4: 34.5   AT 10:14
+70K = K1: 126.1  K2: 134.0  K3: 143.1  K4: 150.8
+
+16K = K1: 31.9   K2: 196.1  K3: 36.0   K4: 36.0   AT 22:08
+70K = K1: 126.7  K2: 135.0  K3: 144.6  K4: 151.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+

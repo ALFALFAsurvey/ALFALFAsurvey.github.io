@@ -1,0 +1,89 @@
+Log for 04/03/10          Observer: Shan Huang
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100403.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100404.a2010.****.fits
+
+Zenith strip observing setup
+Az=261.52   ALFAang=-64.1  ZA=7.3
+RA@start=0806   RA@end=1632
+RA = LST + 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode
+0739 0025  9300077  9300078       drift79p2 fixAZdr   080600+191324 -64.1 600   99   loopend
+0749 0026  9300079  9300080       quicklook ok, power ok except for 2A
+0759 0027  9300081  9300082
+0809 0028  9300083  9300084
+0819 0029  9300085  9300086
+0829 0030  9300087  9300088
+0839 0031  9300089  9300090
+0850 0032  9300091  9300092
+0900 0033  9300093  9300094
+0910 0034  9300095  9300096
+0920 0035  9300097  9300098       power occasionally went up in 2A, but still lower than normal 
+0930 0036  9300099  9300100
+0940 0037  9300101  9300102
+0950 0038  9300103  9300104       new messages from CIMA log, caused by fixing ZA? quicklook ok
+1000 0039  9300105  9300106       GPS burst
+1010 0040  9300107  9300108       2A power went up to normal level occasionally
+1021 0041  9300109  9300110
+1031 0042  9300111  9300112
+1041 0043  9300113  9300114
+1051 0044  9300115  9300116
+1101 0045  9300117  9300118
+1111 0046  9300119  9300120
+1121 0047  9300121  9300122
+1131 0048  9300123  9300124
+1142 0049  9300125  9300126
+1152 0050  9300127  9300128       quicklook ok
+1202 0051  9300129  9300130
+1212 0052  9300131  9300132
+1222 0000  9400001  9400002
+1232 0001  9400003  9400004
+1242 0002  9400005  9400006
+1252 0003  9400007  9400008
+1302 0004  9400009  9400010
+1313 0005  9400011  9400012
+1323 0006  9400013  9400014
+1333 0007  9400015  9400016
+1343 0008  9400017  9400018
+1353 0009  9400019  9400020
+1403 0010  9400021  9400022
+1413 0011  9400023  9400024
+1423 0012  9400025  9400026
+1433 0013  9400027  9400028       quicklook ok
+1444 0014  9400029  9400030
+1454 0015  9400031  9400032       GPS burst
+1504 0016  9400033  9400034
+1514 0017  9400035  9400036
+1524 0018  9400037  9400038
+1534 0019  9400039  9400040
+1544 0020  9400041  9400042       quicklook ok
+1554 0021  9400043  9400044
+1605 0022  9400045  Aborted
+
+LST stop: 1605        RA stop: 1632
+
+NOTES:
+
+TOGS run at end -- not run at start!
+
+Beam 2A unstable, occasionally back to normal
+
+FAA radar ON
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+16K = K1: 13.4   K2: 13.8   K3: 14.8   K4: 14.8   AT 16:58
+70K = K1: 83.5   K2: 91.0   K3: 100.6  K4: 107.7
+
+16K = K1: 14.6   K2: 14.5   K3: 16.0   K4: 16.0   AT 22:15
+70K = K1: 84.2   K2: 91.7   K3: 101.6  K4: 108.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+

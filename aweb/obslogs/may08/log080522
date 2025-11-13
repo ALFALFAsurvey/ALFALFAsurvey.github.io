@@ -1,0 +1,32 @@
+Log for 080522       Observer: Lyle Hoffman
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080522.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080523.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1359 0009 814300247 814300248  drift5p2   fixAZdr  135900+011300  19  600   99   loopend   power levels OK
+1409 0010 814300249 814300250  data OK 
+1419 0011 814300251 814300252
+1429 0012 814300253 814300254  power OK
+1439 0013 814300255 814300256
+1449 0014 814300257 814300258  power OK data OK
+1459 0015 814300259 814300260  power OK
+1509 0016 814300261 814300262
+1520 0017 814300263 814300264  power OK
+1530 0018 814300265 814400001  power OK
+1540 0000 814400002 814400003
+1550 0001 814400004 814400005  power OK
+1600 0002 814400006 814400007  cont. src beam 6
+1610 0003 814400008 814400009  power OK
+1620 0004 814400010 814400011
+1630 0005 814400012 814400013  power OK
+1640 0006 814400014 814400015
+1650 0007 814400016  aborted
+
+End LST:  1650
+
+Notes: TOGS already running at start by AGES
+Togs run normally at end.
+

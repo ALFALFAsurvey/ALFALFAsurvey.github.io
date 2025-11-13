@@ -1,0 +1,47 @@
+A2853   LBW   14.06.13      Observers: Becky Koopmann, Mary Odekon, Parker Troischt, Margot Accettura, Pierre-Francois Wolfe, 
+Skye Elliott, Yang Yu
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140613.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.13jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A115924.4+245536  115924.4 +245536  j  4000 H v   # A731860   1308   17.1   3     416400783  possible detection 1401MHz, 4050km/s, S/N~2, wavy 
+baseline
+A133230.3+250725  133230.3 +250725  j   400 H v   # A238890   1324    7.0   4     416400787  detection 1418.6MHz, 360km/s, S/N~8,  
+A142520.7+254229  142520.7 +254229  j  4600 H v   # A726535   1339   13.1   5     416400791  no detection
+A142846.6+271502  142846.6 +271502  j  4400 H v   # A240397   1351   12.5   6     416400795  possible detection 1399.6MHz 4450km/s, S/N~2
+A142860.0+264746  142900.0 +264746  j  4400 H v   # A726610   1403   10.3   7     416400799  no detection        
+A142922.6+273034  142922.6 +273034  j  4200 H v   # A726619   1416    9.7   8     416400803  no detection
+A143021.9+255446  143021.9 +255446  j  4800 H v   # A245833   1428    7.5   9     416400807  no detection
+A143038.3+250949  143038.3 +250949  j  4400 H v   # A732951   1441    7.1  10     416400811  no detection
+A143102.2+260027  143102.2 +260027  j  4400 H v   # A732952   1453    9.1  11     416400815  no detection
+A143344.8+251034  143344.8 +251034  j  4500 H v   # A726703   1505    9.9  12     416400819  no detection
+A143102.2+260027  143102.2 +260027  j  4400 H v   # A732952   1518    13.3 13     416400823  repeat because ahead of time, marginal detection 
+1399.5 MHz, 4450 km/s, S/N~2     
+A143344.8+251034  143344.8 +251034  j  4500 H v   # A726703   1530    14.7 14     416400827  repeat because ahead of time, no detection
+A143414.6+253543  143414.6 +253543  j  4800 H v   # A732971   1543    17.3 15     416400831  detection 1397.8MHz, 4810km/s, s/n~3, possible 
+second detection 1400.2MHz, 4300km/s, s/n~2    
+H155245.8+305145  155247.4 +305152  j   400 H v   #           1557    12.5 16     416500835  no detection
+H160133.6+305022  160135.1 +305029  j   900 H v   #           1609    12.6 17     416400839  no detection
+H163802.5+262651  163802.9 +262710  j  4300 H v   # A262736   1623     8.8 18     416400843  calib detection 1400MHz, 4300 km/s, S/N~10
+
+Notes  (please note anything of importance; here is an example)
+     Tiedowns enabled. No problems.
+
+
+
+

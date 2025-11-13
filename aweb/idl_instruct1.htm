@@ -1,0 +1,1267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA Survey - Data Reductions for A2010</title>
+  </head>
+<body bgcolor="ffffff">
+<font color=#cc0f14><i> Disclaimer: &nbsp We try to keep this up to date, but
+you should be sure to understand what you are doing!</i></font><br>
+
+<h2><font color=darkblue>ALFALFA Survey - Data Reduction Cookbook
+&nbsp &nbsp Current as of March 11, 2010 </font></h2>
+
+
+<font size="+2" color="#FF0000">Getting Started:</font><br>
+<font color=darkgreen><b> Before you start, read through this whole document. We are not kidding! Processing
+ALFALFA data to Level I is not rocket science, but it is not monkey work either.
+We are sure that, with a bit of training and some careful thought, you can contribute
+to ALFALFA in a meaningful way by helping us with this part of the overall ALFALFA effort.
+But, it is **really** important to do the job correctly, so (1) </font> <font color=#cc0f14>ASK IF YOU ARE UNSURE
+</font><font color=darkgreen> and (2) </font> <font color=#cc0f14>
+TAKE NO SHORTCUTS!</b></p></font>
+
+<h4>You may also wish to work through the practice
+questions found at the ALFALFA <a href="http://egg.astro.cornell.edu/alfalfa/pract">practice</a> 
+page, especially the introduction to 
+<a href="http://egg.astro.cornell.edu/alfalfa/pract/pract_levelI.htm">ALFALFA
+drift scan data</a>.</h4>
+
+<h3><font color=#cc0f14> NEW March 2010! &nbsp An updated version of
+FLAGBB is on-line; consult section 5 of this document for changes!</font></h3>
+
+<ul>
+<li> In consultation with Martha, you will be assigned to work on the data obtained
+in a particular observing block, e.g. 05.12.08, where 05.12.08 indicates the
+observing block in yy.mm.dd. Check the Observing Logs for that run via the
+ALFALFA observer's <a href="http://www.naic.edu/~a2010/loglinks.htm">webpage</a>) 
+and note if any power adjustments were made between
+drifts, as will happen if CIMA is restarted for any reason (e.g. WAPP failure). 
+If power adjustments were made, the calibrations will need to be done in
+sections. Note that we need more than 1 hour of contiguous data taking to establish adequately
+the calibration; if you have smaller blocks, consult Martha as to what to do.
+<li> Read about ALFALFA
+<a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/filenaming060421.txt">
+filenaming conventions</a> and take a look at <a href="http://www.naic.edu/~a2010/docs/Level1Hints.htm">
+Kristine's tips</a> on Level I processing.
+<li> If you are not at Arecibo or Cornell, set up a directory with 6-8 GB for the raw data. 
+We suggest you name this area /home/yourdisk/idlraw/05.12.08.  At Arecibo, the raw data are
+located in /share/a2010-2/data/05.12.08; at Cornell, check the 
+<a href="http://caborojo.astro.cornell.edu/alfalfalog/archive.php">ALFALFA archive 
+log</a> for location. Elsewhere, retrieve the data with the "rsync" command:
+<PRE><FONT color=darkblue>
+rsync -av -e ssh a2010@remoto.naic.edu:/share/a2010-2/data/05.12.08  /home/yourdisk/idlraw/05.12.08
+</PRE></FONT>
+<font color=#cc0f14>Note: Most likely, Martha will already have run the calibration
+and bandpass subtraction routines already and will give you specific instructions on how to
+retrieve the new files from a machine at Cornell. Follow her instructions, not these.</font><br>
+You must enter the password to retrieve the data.
+<li> Set up a working directory with 6-8 GB to contain the processed data.
+At Arecibo use /share/a2010-2/work/yourname/05.12.08. Elsewhere, we suggest you use
+/home/yourdisk/work/05.12.08.
+<li> Download <a href="log.start"> log.start </a>  &nbsp This file contains a summary
+of the commands and will be the template of the processing log for each set of data.
+&nbsp; Copy 'log.start' file to 'log_processing_051208' and use the file to record your
+progress in the reduction process. This file will become a permanent record of your work.
+<li> Enter drift number and declination in the beginning of the log_processing
+file. Enter your name to identify you as the reducer. Change the date to the 
+date when you are <i> processing </i> the data. Change the directories in
+the command lines of the the log_processing file to correspond to your directory.
+<li> Copy the two list files from the raw data directory:  calyymdd.list and
+driftyymmdd.list.  Edit the cal list file as described in Section 2 below.  
+Edit the drift list by adding the absolute directory path to the beginning of each line.  
+This can be done quickly in vi or emacs (just ask how to do it). Standard naming
+convention adopted so far:
+<PRE>
+cal050305.list &nbsp; &nbsp; &nbsp; &nbsp; for CALlist
+drift050305.list        for drift scan list
+</Pre>
+<li> As you do each step, remove the detailed comments from the log file.
+Insert appropriate comments, as indicated in the instructions.
+<li> As you become more experienced, you can follow the log file procedure.
+More detailed instructions and explanations are provided here.
+<li> Always remember to "Love Your Data"! If you do a good job, the other ALFALFAeros will appreciate you
+for it. If you do a bad job, they **will** think otherwise!
+</ul>
+
+<hr>
+
+<P>
+<DIV>
+<FONT SIZE="+2" color="#FF0000">Getting to Level I: Calibration, bandpass subtraction, baselining and inspecting ALFALFA Data
+
+</FONT></FONT></DIV>
+
+<P>
+R. Giovanelli, February 28, 2005<br>
+B. Kent, August 16, 2005<br>
+Numerous others since then.... :)<br>
+Martha, Jan 19,2009</br>
+</p>
+
+<P>
+<FONT SIZE="+1"><B>0. Compiling procedures in your IDL session</B></FONT>
+
+<P>
+You will need to load a number of IDL procedures to process the data. The
+locations of these files should be defined in your .idlstartup file.
+(At Cornell: <code>/home/dorado3/galaxy/idl/idl_alfa</code>;
+see <a href="http://www.naic.edu/~a2010/idl_startup.txt"> instructions </a>
+for setting up IDL at Arecibo.)
+Load via the call:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; @wasinit2
+</PRE> </FONT>
+
+<P>
+The ALFALFA specific procedures (at Cornell stored in
+<code>/home/dorado3/galaxy/idl/idl_alfa</code>) are loaded via the call:
+
+<PRE><FONT color=darkblue>
+IDL&gt; @alfinit
+</PRE></FONT>
+
+<P> If the idl_alfa directory is not in your path, you can load using:
+<PRE><FONT color=darkblue>
+IDL&gt; @/home/dorado3/galaxy/idl/idl_alfa/alfinit
+</PRE></FONT>
+
+<P>
+When references are made to procedures without further explanation, they refer
+to programs stored in the <code>idl_alfa</code> directory. Those
+programs (well, most of them...) have explanatory descriptions at the beginning,
+regarding input and output parameters, keywords, and how they function. See
+those for further understanding.
+
+<h3><font color=#cc0f14> Please review the ALFALFA
+<a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/filenaming060421.txt">
+file naming conventions</a> and
+<a href="http://www.naic.edu/~a2010/docs/Level1Hints.htm">
+Kristine's tips</a> on Level I processing</font></h3>
+
+<P>
+<FONT SIZE="+1"><B>1. Conversion of FITS files to IDL .sav files</B></FONT>
+
+<P>
+<font color=#cc0f14>This step is usually done by the designated observer.
+</font><br> Raw FITS files are converted 
+to a WAS Hdr type format based on correlator routines written by Phil  
+Perillat at NAIC.  The drifts are grouped into SAVE files of dimensions [npols, nrecs, nboards] - 2 by
+600 by 8.  The "d" structure contains the WAS header, a copy of the FITS header, position and setup
+information, and a data array of dimension N channels (currently 4096).
+
+<P>
+A FITS file consists of a 600 drift scan for 8 boards and two polarizations, as well as a Cal ON scan.  
+Four IDLE SAV files are created from each FITS file..  1) A drift file nnnnnnnnn.sav.  2) A Cal OF begin
+file - the first record from the drift to be used as part of a cal off.  3) A Cal OF end file - the
+last record from the drift to be used as part of a cal off. 4) A Cal ON file.
+
+<P>
+A list of all FITS files to be converted is created with complete path names to the files.  The file
+list is named in the format filesyyyymmdd.txt.  The program filecreator is then invoked in IDL:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; filecreator, 'filesyyyymmdd.txt'
+</PRE></FONT>
+
+<P>
+The process is automatic, and should be run on one of the faster machines at AO as soon as a night's observing run is complete.
+
+
+<P>
+<FONT SIZE="+1"><B>2. Getting a session calibration solution from cal scans: Calib1</B></FONT></p>
+
+<font color=#cc0f14>This step is usually done by Martha before you take over (unless you are
+the designated observer and reducing the data yourself at Arecibo).
+</font> <br>
+In step 1, we have produced a set of idl .sav files, each containing a drift
+structure. In addition to the standard drifts, labeled plainly nnnnnnnnn.sav,
+which contain the actual 600-record drift scans, there are files named, e.g.
+
+<P>
+<PRE>
+504507670CALOFend.sav
+504508272CALON.sav
+504508275CALOFbegin.sav
+</PRE>
+
+<P>
+which come by "triplets", provided there is no breach of continuity in the data
+taking process. Each of those files contains a scan with a single 1-sec record;
+the format is the same as for the other drift scans. The scan name with the
+"CALON" extension corresponds to a scan in which the cal was fired for one second,
+at the end of each regular 600 sec drift scan. The one with the "CALOFend" extension
+is the last record of the drift preceding the firing of the cal, and that with the
+"CALOFbegin" extension is the first record of the drift immediately following
+the firing of the cal. An average of the spectra of CALOFend and CALOFbegin will
+constitute the cal OFF record.
+
+<P>
+Calib1 will generate two arrays of structures, named respectively dcalON and dcalOFF,
+which will contain the spectra of each of the calibration events. The format of
+these structures is identical to that of the drift structures. A "calibration event"
+is a set of cal ON, cal OFF records, in our case a triplet as listed above.
+
+<P>
+Calib1 is run on the data of a whole data taking session, or on subsets thereof in
+case some major change took place during that session which may have reset the scaling
+of the data, altered the cal values, changed the LO chain, etc. Then you'll run separately Calib1 for the data taken before and after the change.
+
+<P>
+In order to run Calib1, you'll need a listing of the files containing the
+cal events.  In the directory containing the
+data of a data taking session, there should be a file containing all the names of the idl .sav files 
+with "CAL" embedded in the
+name: <FONT color=darkblue>cal051209a.list </FONT>. This file is created when filecreator
+is run at the end of an observing session. You need to copy this file into your working directory and
+edit the file so that it is organized by triplets. For
+example, in a normal data taking session in which 5 drift scans were taken, you'll have something like:
+
+<P>
+<PRE>
+504507670CALOFbegin.sav
+504507670CALOFend.sav
+504508272CALON.sav
+504508275CALOFbegin.sav
+504508275CALOFend.sav
+504508878CALON.sav
+504508881CALOFbegin.sav
+504508881CALOFend.sav
+504509482CALON.sav
+504509486CALOFbegin.sav
+504509486CALOFend.sav
+504510088CALON.sav
+</PRE>
+
+<P>
+You'll want to delete the first line, 504507670CALOFbegin.sav, for the Cal OFF record
+of the first drift is not a part of a triplet (although the program will run even
+if you leave it on, and ignore it). Similarly, you will want to add an OFF
+cal after the last line, so that the last Cal ON is in a complete triplet. Do so by
+repeating the last cal OFF record. The final CALlist file will look like:
+
+<P>
+<PRE>
+504507670CALOFend.sav
+504508272CALON.sav
+504508275CALOFbegin.sav
+504508275CALOFend.sav
+504508878CALON.sav
+504508881CALOFbegin.sav
+504508881CALOFend.sav
+504509482CALON.sav
+504509486CALOFbegin.sav
+504509486CALOFend.sav
+504510088CALON.sav
+504509486CALOFend.sav
+</PRE>
+
+<P>
+You will need to be careful in preparing this file, if there was some breach of
+continuity in the data taking, e.g. aborted scans, drifts not followed by Cal ON
+scans, power readjustment, etc. Even if you have to sacrifice some Cal data, always
+restrict the list to good triplet sets only. It is always best to make sure that
+the data you are including in the calibration is OK.
+
+<P>
+You can now run Calib1.
+
+<P>
+Define the directory in which the idl .sav files are located, e.g.:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; dir='/home/arecibo2/galaxy/idlraw/05.02.14a'
+IDL&gt; CALlist='this is the file name of your CALlist'
+IDL&gt; calib1,CALlist,dcalON,dcalOFF,dir=dir
+</PRE></FONT>
+
+<P>
+Alternatively, have the names of the CAL files specified in CALlist with the
+full address, directory and subdirectory from <code>"/"</code> downhill.
+Then you can ignore specifying "dir=dir" in the call to Calib1.
+
+<P>
+The procedure will silently load all the calibration data and return the structures
+dcalON and dcalOFF at the IDL prompt level. You can check that it worked:
+<PRE><FONT color=darkblue>
+IDL&gt; help,dcalON,/st
+</PRE></FONT>
+
+You may want to save them in an IDL sav file for safety:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; save,dcalON,dcalOFF,file='dcals_05.02.14a.sav'
+</PRE></FONT>
+
+<P>
+<FONT SIZE="+1"><B>3. Getting a session calibration solution from cal scans: Calib2</B></FONT>
+
+<P>
+<font color=#cc0f14>This step is usually done by Martha before you take over (unless you are
+the designated observer and reducing the data yourself at Arecibo).
+</font> <br>
+Once you have dcalON and dcalOFF available, you can obtain runs of crat and
+<i>Tsys  </i> through your observing session. As a reminder, crat is the value in 
+K of 1 instrumental (spectrometer) unit. Calib2 produces a structure named <I>ncalib</I>:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; calib2,dcalON,dcalOFF,ncalib
+</PRE></FONT>
+
+You will be asked
+<PRE><FONT color=darkblue>
+Any bad boards in system?
+</PRE></FONT>
+Answer "n" if none.
+
+<P>
+You will be engaged in interactive approval of the calibration process as the
+program steps through each beam. Most of the time, you will OK each beam by hitting
+enter. A typical example is shown <a href="calonspect.gif"> here.</a> 
+Oddities which require expert
+opinions include big spikes outside the flagged windows or double spectra.
+
+<P> Next the calratios (Cal/TPcalON-TPcalOFF) and <i> Tsys</i>
+will be displayed for the drift. Click for examples of a <a href="calfit.gif"> calratio
+fit </a>  and a <a href="tsys.gif"> Tsys plot. </a> 
+Note the amplitude of the variation in
+calratios. The calibration performed here is to the first order (it will be
+improved later in the reduction process.) The difference between points should be on the
+order of 1K, with <i> &delta;T /T </i>
+on the order of 1/25.  If OK, hit 'enter' to fit by default and then enter the order
+of the fit as makes sense; lower order is better, but if curvature is evident and
+warranted, then set N = 2 or 3. (Think here about the statistical significance of
+the fit. Does the data warrant fitting a curve really, or is N=1 just as statistically
+valid?) The other two options are 
+to exclude data points or to restart the fitting process.
+
+
+<P>
+<B>Note: </B>
+If something unusual takes place during data taking in the given session, it may be
+necessary to break the session data into segments, each characterized by a different
+set of dcalON, dcalOFF and ncalib. You will notice that while running Calib2, as the
+values for each calibration event are separately displayed for each beam/pol
+configuration. If, for example, a "step" appears in the values of crat, you may want
+to process separately the calibration data before and after the step; hence two
+different ncalib structures will be necessary to properly calibrate the session's
+drifts.
+
+<P> Check that the <I>ncalib</I> file was created by typing:
+<PRE><FONT color=darkblue>
+IDL&gt; help,ncalib,/st
+</PRE></FONT>
+Add a comment to the log file, providing the number of cals in the set and comment
+that
+
+
+<P>
+The structure <I>ncalib</I> is used in the calibration of the drift data.
+Save the <I>ncalib</I> structure for future use, e.g.:
+
+<PRE><FONT color=darkblue>
+IDL&gt; save,ncalib,file='ncalib_050214a.sav'
+</PRE></FONT>
+
+If you want, you can plot some of the values:
+<PRE><FONT color=darkblue>
+IDL&gt; restore,'ncalib_05.02.14a.sav'
+IDL&gt; plot,ncalib.rahr0,ncalib.decdeg0,psym=4
+</PRE></FONT>
+
+
+<P>
+<FONT SIZE="+1"><B>4. Bandpass Subtraction and Scaling, Calibration Monitoring and Position Recording</B></FONT>
+
+<P><font color=#cc0f14>This step is usually done by Martha before you take over (unless you are
+the designated observer and reducing the data yourself at Arecibo).
+</font> <br>
+The next step in processing involves calling a procedure called <B>bpd</B>, which
+is a grab-bag of many operations: it reads the raw "d" structure of each drift,
+computes a bandpass, applies a baseline, extracts continuum data, scales spectra
+and continuum in K, monitors galactic HI for possible changes in the calibration
+records positions sampled in the sky, and stores output in a .sav file, besides
+leaving it for access at the idl command line level.
+
+<P>
+Read the descriptions of both procedures in the files bpd.pro and bpc.pro, to learn
+the nitty-gritty of the processing. Procedure <B>bpd</B>
+calls a number of other procedures, most notably <B><code>bpc</code></B> and
+<B><code>make_caldrift</code></B>. It needs as inputs:
+
+<P>
+
+<UL>
+<LI>the raw idl drift scan, <I>d</I>
+</LI>
+<LI>the applicable <I>ncalib</I> structure plus several keywords, namely:
+</LI>
+<LI><I>brdstat</I>, a (2,8) byte array that specifies whether any wapp boards are out of
+  order (all array elements =1 means all OK).  
+</LI>
+<LI><I>calwhat</I> a keyword that specifies how the structure <I>calsession</I> is to be
+  stored. <I>calsession</I> contains variables monitoring the stability of the
+  system and its calibration values; <I>calwhat</I> is set to "new" for the first
+  drift of the observing session (a new <I>calsession</I> is started) and "append"
+  for the rest.
+</LI>
+<LI><I>poswhat</I>, a keyword that specifies how the structure <I>runpos</I> is to be
+  written and stored. <I>runpos</I> contains the positional information summary of the
+  data for the observing session, as well as the "status" code (weight assignment;
+  can be modified for a range of records via "r" key in flagbb) for each record; <I>poswhat</I>
+  is set to "new" for the first drift of the session and "append" for the rest.
+</LI>
+<LI><I>calmask</I> is a 4096 element byte array
+  defining the mask over which continuum power was measured by the Calib2 procedure;
+</LI>
+<LI><I>force_interp</I> is set to 1 if the bandpass should be interpolated across some
+  interval of spectral channels, e.g. galactic HI or permanent rfi.
+</LI>
+<LI><I>interp_reg </I> is an array of channel numbers defining the intervals of spectral
+  channels the bandpass is to be interpolated across.
+</LI>
+<LI><I>HIchns</I> is a two element array with the boundaries (channel numbers) of the
+  peak of the galactic HI (use 3-4 channels around the peak). These numbers will be
+  set automatically by the program, which searches the peak of galactic HI pkHI, and
+  selects as HIchns=[pkHI-1,pkHI+1]. Specify explicitly HIchns only if you wish to
+  override that choice.
+</LI>
+</UL>
+
+<P>
+The output of <FONT color=darkblue><B>bpd</B></FONT> consists of:
+
+<UL>
+<LI><I>dred</I>, the bandpass subtracted, baselined, continuum-subtracted, scaled (to K)
+  drift structure;
+</LI>
+<LI><I>caldrift</I>, a calibration monitoring structure that tracks changes in the cal
+  values by checking the galactic HI line and continuum fluxes and
+</LI>
+<LI><I>calsession</I>, an array of caldrift structures appended with every drift reduced,
+  during that observing session;
+</LI>
+<LI><I>runpos</I>, a "positions" structure containing positional information for all
+  the drifts of a given observing session or run;
+</LI>
+<LI><I>mc</I> a set of continuum profiles for the drift, measured over several narrow
+  bandpasses across the 100 MHz of the survey;
+</LI>
+<LI><I>BP2</I>, the bandpass spectra for the drift;
+</LI>
+<LI><I>mask</I>, the spectral mask used to measure continuum flux, for the given drift;
+</LI>
+<LI><I>cont_bg</I>, a continuum power profile of the drift, after removal of the point
+  sources;
+</LI>
+<LI><I>cont_pt</I>, point source continuum power profile of the drift.
+</LI>
+</UL>
+
+<P>
+The procedure <FONT color=darkblue><B>bpdgui</B></FONT> runs via a GUI interface.
+
+<P>
+<B>4.1 Running <I>bpdgui</I></B>
+
+<P>
+You invoke the program as:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; bpdgui
+</PRE></FONT>
+
+<P>
+A graphical user interface will pop up and you will enter several parameters using the
+various widgets in the gui. Refer to <a href="bpdgui.jpg"> this example. </a>
+
+<P>
+First, click on the "browse" button in the upper right part of the gui and a widget
+will appear prompting you to select the IDL sav file containing the appropriate
+<I>ncalib</I> structure for the data you are about to process. Click on that file name
+and you'll see values for Tcals, median Crat and median Tsys filling the slots near
+the center of the gui. The Tsys values should be on the order of 30K.
+The plot in the lower part of the gui illustrates the mask
+function used for the measurement of total power for calibration purposes.
+
+<P>
+Second, click on the "browse" button in the upper left of the gui, and a widget will
+appear with the list of drift files. Select the list that is appropriate. It will take
+about 15-20 seconds to return control (the program is loading the first file from
+disk). A widget will appear in the upper right asking you to "OK" the list of N drift
+scans to be processed. The number of drift files should be the same as the number of
+cal files in Section 3.
+
+<P>
+Third, click on the appropriate button to decide whether the Calsession and Runpos
+structures are to be appended to or new ones started. You will have to enter the
+names of the files being created or appended to. Also it is important to
+make sure that CRAT is set to 'fit' NOT 'median'.  Sample names include <i>calsession_060318.sav</i> and
+<i>pos_060318_+083100s.sav</i>. In the latter, the +083100 is the night's drift declination and the
+following "s" indicates this is a spring drift. If a night is spread across more than one drift,
+make multiple pos files with the different declinations indicated.</p>
+
+<P>
+Fourth, you will have to set the "interpolation regions" in the bandpass creation
+process. Bandpass interpolation will involve principally (and perhaps only) the
+galactic HI line. BPDGUI has a default choice for the interpolation region
+(channels 3480 to 3520), which may suit most drift scans. However, it may be
+desirable to tighten the region, so that the bandpass will be more precise
+in the galactic HI spectral domain. Also galactic HI will shift around both
+frequency and channel number, during an
+observing session, and what fits a drift scan may not fit drift scans taken
+one or more hours later. You should examine about 3 spectra (beginning, middle,
+end). Refer to <a href="interpreg1.jpg" > this example.</a> &nbsp;
+For each spectrum, click on the file in the "raw files" window; after it loads click on
+the button that says "Interp region" and a set of options will appear, as well as
+a spectrum of the
+bandpass that you can interactively inspect. You may then select your own set
+of interpolation channel values, or select the default ones. Hit "zoom" to change
+the scale. Identify the channels where the galactic HI begins to rise, click "done"
+and go on to the others. Find the maximum range needed for your spectra. Then click
+on any one of the entries in the "Interp regions" box. The Interp Regions Edit widget
+will appear. Enter these new values (usually only 2) and then click "apply to all".
+The values in the display should update. Record the interpolation values in the log
+file.
+Note that this is a delicate part of the process, and you should
+be careful with it. Here is an unusual <a href="interpreg2.jpg"> example,</a>  in which
+the interpolation window was enlarged to exclude M33! 
+
+<P>
+OK, you're ready to BPD. Click on "process BP" and let it rip.
+
+<P>
+It should take about 7-10 seconds to precess each pol/beam configuration, i.e.
+about 2.5 min for a full drift.</p>
+
+Often, when BPD finishes, there are some warning messages like<br>
+% Program caused arithmetic error: Floating underflow<br>
+% Program caused arithmetic error: Floating overflow<br>
+% Program caused arithmetic error: Floating illegal operand<br>
+These should not indicate a real problem, so if the pos file is written correctly
+and BPD seems to terminate normally, it is safe to assume all is well.</p>
+
+After running BPD, check that the pos file has the correct dimension:
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; restore,'pos_050305_+093642s.sav'</FONT></PRE>
+<PRE><FONT color=darkblue>
+IDL&gt; help,pos
+</FONT>
+</PRE></p>
+
+This should tell you that "pos" is array with dimension equal to the
+   number of drifts that were processed. </p>
+
+It is recommended that you exit IDL at this point and restart it (to clear memory).
+You may also want to make a copy of the pos file, just in case...</p>
+<br>
+<P>
+<FONT SIZE="+1"><B>5. Inspection of the data: <B>flagbb</B> and <B>reviewbb</B></B> </FONT>
+
+<center><table bordercolor=#cc0f14 cellpadding=3 border=3>
+<tr><td>
+<font color=#cc0f14> This is where you pick up if Martha has already run the
+calibration and bandpass subtraction. Notice that when you pick up the files,
+the directory contains, in addition to the drift data and the pos, ncalib
+and calsession IDL "sav" files, several anciallary files including
+a log file (e.g. "log_processing_YYMMDD") and a starter bad box file ("bb").
+You should keep records in the log file, adding on to where Martha has left
+off. Be sure to erase from that file the instructions (leaving only the
+relevant information). Also you need to understand the steps that
+you did not have to perform, so that you know what has happened to your
+data up to now. If you are not already familiar with the process, check out
+the <a href="http://egg.astro.cornell.edu/alfalfa/pract/">practice questions </a>,
+especially the introduction to 
+<a href="http://egg.astro.cornell.edu/alfalfa/pract/pract_levelI.htm">ALFALFA
+drift scan data</a>.</font>
+</td></tr></table></center><br>
+
+<font color=#e30505><h3>NOTE: March 2010 Changes
+to FLAGBB:</h3>
+<ul>
+<li>New main menu option "b" allows you to return to the previous
+map. This preserves any changes you have already made to the current map.</li>
+<li>Peaks found with "t" no longer persist from map to map; instead,
+they are removed each time you go on to a new (or previous) map. Of
+course, any boxes you have added with 'a' or 'A' will remain.</li>
+<li>The optical image now has more readable tickmarks along the axes,
+and the RA and DEC of the cursor will be displayed on the terminal
+window.</li>
+<li>Manually entering the coordinates of boxes you are adding with "m", "M",
+"i", or "I" is no longer required. Press "q" or "RETURN" to add the
+box automatically, or "x" to exit without adding the box.</li>
+</ul>
+</font>
+
+<B>5.1 <I>flagbb</I></B>
+
+<P>
+Once the drift data have been bandpass calibrated, you will
+visually inspect the data - ONE BEAM/POL AT A A TIME - and flag
+bad parts of each 2-D map. This is also the first time in the
+data processing flow that you get to take a close look at
+the data. You will thus use this module to:
+  (i) inspect the data
+  (ii) flag "bad boxes"
+  (iii) enter comments in your reduction logfile.
+The coordinates of the regions of bad data in the 2-D map ("badboxes")
+are logged by the program in the "position" structure, previously created
+by module BPD (In the previous section we referred to it as "runpos").
+The badbox information is contained in the pos structure as POS.BADBOX.
+BPDGUI inserts a default badbox, which you will edit using flagbb.
+
+<P>
+<B>5.1.1 <I> Calling flagbb</I></B>
+<p>To begin, open the position sav file in IDL:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; restore,'pos_050305_+093642s.sav'
+</PRE></FONT>
+
+<P>
+Next restore a reduced data .sav file produced by BPDGUI, e.g.:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; restore,'d080848+102030.509371189.sav'
+</PRE></FONT>
+
+<P>
+The preceding command
+will load the dred structure, as well as a number of ancillary 
+structures and arrays associated with that drift scan.
+
+<P>
+The inspection program is called <b> flagbb. </b> 
+It is invoked with this general format:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; flagbb,dred,cont_pt,cmask,pos,GAUSAV=gausav,HAN=han,AGC=agc,$
+        N1=n1,N2=n2$, RFIMOD=rfimod,MASK=mask
+</PRE></FONT>
+
+<P>
+Your standard way of calling will be:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; flagbb,dred,cont_pt,mask,pos,GAUSAV=11,HAN=3,AGC=1,n1=0,n2=6
+</PRE></FONT>
+
+<P>
+where:
+
+<P>
+
+<UL>
+<LI><I>dred</I>  input file - a reduced drift structure of nrec records
+                                         nchn spectral channels
+                                         nstr strips
+                                         npol (2) polarizations
+</LI>
+<LI><I><code>cont_pt</code></I>     input file - a continuum map of nrec x 
+                   nstr, or npol x nrec x nstr [e.g. <code>cont_pt</code>], or
+                                    nerg x np x nrec x nstr [e.g. mc]
+
+<P>
+</LI>
+<LI><I>mask</I>      -  the continuum mask produced by bpd
+
+<P>
+</LI>
+<LI><I>pos</I>      -  the pos /st (e.g. runpos) produced by bpd
+</LI>
+</UL>
+
+<P>
+and <B>KEYWORDS:</B>
+
+<P>
+
+<UL>
+<LI><I>GAUSAV</I> -   FWHM of a Gaussian weighting function, expressed in
+                number of records, with which the strip should be
+                convolved, along the strip (time) direction. Default=1
+</LI>
+<LI><I>HAN</I>    -    spectral smoothing applied to all spectra of the map,
+                in order to increase the sensitivity of the display.
+                Options are 3-channel, 5-channel and 7-channel Hanning
+                (HAN=3, HAN=5, HAN=7). Default=1
+</LI>
+<LI><I>AGC</I>  -  if set, program searches for AGC galaxies in the vicinity
+                of the drift, overplots their location in (RA,Vel), and
+		prints galaxy information in the IDL window.</p>
+<ul><dd><table width=600 align=center border=3 bordercolor=#cc0f14><tr><td>
+<font color=#cc0f14><i>It should be noted that the AGC is a private database, developed and
+maintained by Martha Haynes and Riccardo Giovanelli. It contains considerable
+contributions from them, their friends and students, much of which is 
+preliminary and/or unpublished. It is made available to members
+of the ALFALFA collaboration for use in undertaking ALFALFA science, but it is not
+a public database and should not be used for other purposes,
+copied or passed onto others without permission. Improvements
+to it are always welcome; if you find errors, send corrections to Martha.</font>
+</td></tr></table></ul>
+</LI>
+<LI><I>N1</I>   -  first strip number to process (default 0)
+</LI>
+<LI><I>N2 </I>  -  last strip number to process (default nrec-1, i.e. highest numbered strip)
+</LI>
+
+</UL>
+
+<P>
+The following keywords are almost never used:
+
+<UL>
+<LI><I>MASK</I>   -   mask of 1 (good pix) and 0 (bad pix) to use before
+               convolution. Bad pixels are converted to NaN so they
+                 are not used in the smoothing convolution.
+</LI>
+<LI><I>RFIMOD</I> - "RFI modification" option (default=-1):
+
+<UL>
+<LI>0 - pixels for which maps in strip 7 are .ne.0, are set to zero
+                  in displayed data (strip 7 contains RFI+galHI maps for 
+                  each pol in dred structure)
+</LI>
+<LI>1 - maps in strip 7 are subtracted from data
+</LI>
+<LI>2 - uses mask to set 'bad' pixels to NaN before smoothing
+</LI>
+<LI>-1 or RFIMOD not specified -  no "RFI modification"
+</LI>
+</UL>
+<LI><I>/KEEPT</I>   -   if set, peaks found with the "t" option (see
+                  below) will persist from one map to the next.
+<P>
+</LI>
+</UL>
+
+<P>
+If the keyword AGC is set, the program will overplot on each image
+AGC galaxies in the vicinity of the drift. "Vicinity" is decided
+by the program on the basis of the size of the galaxy (if size is
+listed in the AGC). To do this, the program reads an ancillary file with all
+AGC gals within the Arecibo dec range. Information about the galaxies,
+including any previous HI flux detections, is printed to the screen.
+
+<p> Once called, <b> flagbb </b> will query the user about the intensity
+scaling (usually hit enter for default) and then ask what BADBOX information 
+to use.
+The first time you invoke <b> flagbb, </b> choose (d) for default. The next
+sections describe the format of the BADBOX tag and how to refine the 
+bad boxes.
+
+<p>
+<B>5.1.2 <I> Description of POS.BADBOX </I></B> 
+
+<P>
+The POS.BADBOX tag is an array of integers (100,2,8,4). It
+contains the coordinates of the corners of up to 100 boxes containing
+data that are deemed "bad", an especially useful tool
+when the data will be used for gridding and producing clean cubes.
+The first dimension of .BADBOX is the box number; the second is the
+pol number, the third is the beam number and the fourth contains 4
+numbers which are LLch,LLrec,URch,URrec, i.e. the
+channel number and record number of the lower left (LL) corner of the box
+and the channel number and record number of the upper right (UR) corner of 
+the box. Beam number 7 in this structure is a special value used
+internally that represents a potential box not necessarily active
+in any beam, but that has known dimensions and is ready to be added
+with 'a' or 'A'. The box numbers are defined for specific classes of bad data:
+
+<ul>
+<li>
+.BADBOX numbers 0-20 are used for "default" rfi features, which appear
+very often in the data. Some effort is made also in setting up a
+"memory" of which beam/pol configs are most affected by each rfi feature.
+
+<li>
+.BADBOX numbers 21-49 are used for new features cropping up in the data;
+when a "new" rfi featuer is flagged, the first unused .BADBOX with number
+in the range 21-49 is used.
+
+<li>
+.BADBOX numbers 50-99 are used (more frequently than you think) when the
+data are flooded with many rfi features. The program has an option "t" in
+its internal menu) to search and identify all the peaks in the "total"
+of the drift in the record direction. Peaks are labeled in the image and
+you have the option of "activating" a .BADBOX for each.
+
+</ul>
+
+<P>
+<B>5.1.3 <I>Description of flagbb display</I></B>
+
+<P>
+When <b> flagbb </b> is invoked, it 
+uses Phil Perillat's <b>imgdisp</b> procedure to display, 
+one strip and pol at
+a time, position-frequency maps where the x-axis is channel number and the
+y-axis is record (sample) number along the strip. 
+Click <a href="flagbbqualq1.html"> here </a> for an example.
+In this screen, you will see:
+<p>
+<li> right side - the continuum flux profile along the strip </li>
+
+<li> upper image - the position-frequency map of the drift, showing active badboxes plotted as 
+red boxes </li>
+
+<li> middle plot - the mask used to produce the total power continuum 
+within the <b> bpc </b> program (Section 4).
+This mask shows the pixels that were excluded in the computation of total 
+power. </li>
+
+<li>lower plot - the average spectrum over the whole drift. 
+</ul>
+
+<p> The user actually works only on the position-frequency map. The continuum
+mask and averaged spectrum are
+displayed purely as references. The continuum mask follows a conservative
+approach and finds many more "bad" channels than there really are in
+the data. It is however useful to have it as a visual sanity check.
+The averaged spectrum can be used to help judge the significance of
+a feature and better determine the box edges.
+
+<P>
+<B>5.1.4 <I>Refining POS.BADBOX using flagbb</I></B>
+
+<P>
+Default .BADBOXes (0-20) are indicated by red numbers along the top of 
+the map in the <b> flagbb </b> image display. 
+"Active" boxes are plotted as red rectangles and labeled
+under each rectangle along the bottom of the map.
+These default .BADBOXes extend over the full
+duration of a drift (i.e. they are BAD CHANNELS). 
+
+<P>
+Since RFI features came and go from one day to the next, but persisting
+generally for the duration of an observing session, your first task is
+to refine the list of default .BADBOXes so that it will be close to 
+correct for each of the scans in your observing session. In essence,
+you build a "memory" of .BADBOXES for your session, which should 
+avoid having to reset them for each drift. 
+In addition to the "default" .BADBOXES, the program allows for
+writing a badbox file, dimensioned [100,2,8,4], containing all the
+settings used for a given drift (see Section 5.1.2). 
+At the end of processing a drift,
+the user has the option of saving the new set of .BADBOXes. 
+At the beginning
+of the inspection of each drift, the user can (a) read in that file in the
+internal .BADBOX, then modify it at will or (b) read in the default
+.BADBOX file, specified inside the program itself.
+
+<P>
+After each pol/beam map is smoothed and shown, you can
+
+<pre>
+You can now :  - delete a box for this map only                       (d boxnr)
+               - delete a box for this + all subsequent maps          (D boxnr)
+               - activate a box for this map only                     (a boxnr)
+               - activate a box for this + all subsq maps             (A boxnr)
+               - modify a box for this map only                       (m boxnr)
+               - modify a box for this + all subsequent maps          (M boxnr)
+               - insert a new box for this map only                   (i)
+               - insert a box for this + all subsequent maps          (I)
+               - modify status flag for board or part thereof         (s)
+               - obtain a row Total and identify peaks                (t)
+               - undo all peaks found by "t"                          (u)
+               - get an image of specified size                       (g)
+               - HVC catalog maps                                     (h)
+               - go back to previous map                              (b)
+	       - exit &amp go to next map                                (e)
+</pre>
+
+<P> Description of Options:
+<ul>
+<li> <b> d </b>
+ is used to de-activate a .BADBOX for the beam/pol map being inspected,
+ i.e. its [LLch,LLrec,URch,URrec] are set to zero for the given beam and
+ pol numbers.
+</li>
+<P>
+<li> <b> D</b>
+ is used to de-activate a .BADBOX for the current beam/pol being inspected,
+ as well as for all the subsequent nbeam/npol maps of the drift.
+ This is useful if, e.g., in the previous drift there was a box set, say,
+ for GPS, affecting every bm/pol, and you are using the badbox file determined
+ in the previous drift; using <b>D</b> will get rid of that badbox in all the
+ beam/pols of the drift at one time.
+</li>
+<P>
+<li> <b> a</b>
+ is used to activate a .BADBOX currently defined but not activated. 
+ For example, one of the default features with their IDs listed on top 
+ of the map, or any of the features found by the option <b>t </b> (see below). 
+ The activation takes place only for the current beam/pol.
+</li>
+<P>
+<li> <b> A</b>
+ is used to activate a .BADBOX currently defined but not activated, as
+ for option <b>a</b>. However, the activation holds for all the maps of the 
+ drift
+ which have not been set/inspected yet. For example, there is GPS in the
+ first map you look at; GPS will appear in all the beams/pols; you might as
+ well set it with <b>A</b>.
+</li>
+<P><li> <b> m</b>
+ is used to modify the boundaries of a set .BADBOX. It will prompt you to
+ use the cursor to define a box, then allow you to inspect the characteristics
+ of the data in that box (e.g. row, column plots, stat - follow instructions
+ on screen). When inspection is done, enter "q" to save the box as an
+ active .BADBOX and return to the main menu, or "x" to exit to the
+ main menu without adding the box.
+ <b> m </b> only
+ changes the given box for the current beam/pol map.
+</li>
+<P><li> <b> M</b>
+ does the same thing as <b>m</b>, but it does so for all the maps of the drift
+ which have not been set/inspected yet.
+</li>
+<P><li> <b> i</b> is used to insert a "new" .BADBOX. The program will
+ prompt the user to use the cursor to define a box, then allow
+ inspection of the characteristics of the data in that box (e.g. row,
+ column plots, stat). When inspection is done, enter "q" to save the
+ box as an active .BADBOX and return to the main menu, or "x" to exit
+ to the main menu without adding the box. It only changes the given
+ box for the current beam/pol map.  </li>
+<P><li> <b> I</b>
+ does the same thing as <b>i</b>, but it does so for all the maps of the drift
+ which have not been set/inspected yet.
+</li>
+<P><li> <b> s</b>
+ allows you to assign a lower weight (1/N) to an entire drift or a range of
+ records when a significant fraction of the spectrum is of poorer quality
+ than normal. This weight is then applied across the entire frequency range.
+ The user is asked to specify whether to apply this lowered weight to all
+ records ("a") or a range ("r"). If range is selected, the record range can
+ then be set interactively by clicking on the beginning and ending range
+ (in the time domain). Then the user enters N, the inverse weight which is used
+ later in the gridding process. To choose N, think about the impact of including
+ data with a weight 1/N. Setting N=9 means that the data will be ignored.
+ The interactive part looks like:
+<pre>?s
+You may reset the pos.status flag of this board
+   Reset all records (a) or record range (r)? (def=a)
+: r
+Left click LOWER record nr...
+Left click UPPER record nr...
+You Chose:  70, 181,  OK?
+:
+You can set the pos.status index as follows:
+                0 or 1  bm/pol board (or chosen section is used at full weight
+                N       board is used at 1/N weight
+                [if N.ge.9      board is used at zero weight
+    Enter a number
+: 2
+</pre>
+In this case, records 70-181 of this drift would be averaged with a weight
+of 1/2 during the gridding process.
+</li>
+
+<P><li> <b> t</b>
+ is used for diagnostic purposes especially when there are a lot of
+ narrow rfi features in the data.
+ The program computes a "total" spectrum in the record direction and identifies
+ features by thresholding. It will label them inside the image. <i>Note that
+ it will also label galactic HI. </i> The user then decides which of those
+ features should be activated as a .BADBOX, using the option <b>a</b> one
+ feature at a time. These features are all numbered 50 and up.
+ Notice that "t" may find multiple narrow features when it is more appropriate 
+ to flag a bigger region, so use "t" judiciously in combination
+ with "a" and "m".  (Note that for
+ each new beam, you should run "u" before "t", since the thresholds only
+ apply to a single beam.)
+</li>
+<P><li> <b> u</b>
+ undoes the setting of all .BADBOXes numbered 50 and up (and removes the
+ labels from the image). It does so for all the beam/pol left to inspect in
+ the drift. 
+<P><li> <b> g</b>
+ puts you into an interactive mode that allows you to view images from
+ the DSS2 blue or SDSS (where available). After typing "g", click on a feature
+ in the drift. You will be prompted for the size of the image box; the default
+ is 6' by 6' (usually good); hit "return" (or change the value). A box will
+ appear with the images from both DSS2 and SDSS; you can switch between the two
+ with the <b>left</b> button; exit this routine via the <b>right</b>
+ button. The RA and DEC of the cursor will be displayed in the
+ terminal window as you roll over the image.
+ Use this utility to check immediately for optical counterparts. When recording
+ the position of possible optical counterparts, estimate the position
+ **from the optical image**. Use your best judgement; if you are not sure, make
+ a note of that fact!
+<P><li> <b> h</b>
+ gets you a map of the high velocity clouds in the vicinity from the catalog
+ of deHeij et al. Note that some of these are extended (some even bigger than
+ 10 arcmin and narrow, so they could fill a large fraction of a drift at almost
+ the same velocity, slightly offset from galactic HI. Be sure not to flag HVC's.
+<P><li> <b> b</b>
+lets you go back to the previous map, useful if your fingers are more nimble
+than your brain, as can happen, especially at 4am!
+</ul>
+<P>
+<b>TIPS:</b>
+<ol>
+<li> the program overwrites the POS structure only after the whole drift
+    has been processed, so if there is a crash, you should start from
+    the beginning of the drift.
+</li>
+<li> The program does not save POS after each drift, 
+    so it is your responsibility
+    to do so as often as you see fit, and certainly when you are done with
+    an observing session. It is safest to save after each drift. Save POS this way:
+    <br> <font color=darkblue>IDL&gt; save,POS,file='pos050322.sav'</font>
+    <br>where 050322 is the date of the observing session.
+</li>
+<li> If you goofed in setting parameters of a box, you can always modify
+    them or delete them
+</li>
+<li>If you noticed that a .BADBOX should have been activated or deleted
+    in a given map, use the "b" option to return to that map. This
+    will not affect any changes you made to the current map.
+</li>
+<li>You can also set or reset boxes manually after you exit
+<b>flagbb</b>. Say you forgot to deactivate
+    box 2 in beam 4, pol 0, while you were processing the drift number 13 in
+    the series of the observing session. After you are done with <b> flagbb </b>
+    <br> <font color=darkblue> IDL&gt; pos[13].badbox[2,0,4,*]=0 </font>
+    <br>will do the trick. or you can start from scratch on drift 13.
+</li>
+<li>To inspect the job of box setting you've done, you can invoke the
+    program <b> reviewbb </b> (Section 5.2). 
+    It is invoked with the same parameters as <b> flagbb, </b>
+    but it does not change anything; it just shows you what you've set.
+</li>
+<li> If the user goes through the data of a drift and realizes that a given
+    map needs to be revisited, the program can be reloaded only for the
+    specific beam (n1=beam to redo, n2=beam to redo); however, both pols
+    will have to be redone, rather than only the one that needs redoing
+    (make sure to use the saved pos file in flagbb not to lose the bad boxes
+    of the other beams).
+</li>
+</ol>
+<br>
+<center>
+<table border=5 bordercolor=#cc0f14>
+<tr><th><font color=#cc0f14><b> Simple flagging rules</b> </font></th></tr>
+<tr><td>0. <font color=darkgreen><b>Understand what you are doing.</b></font> If
+           this process were trivial, you wouldn't be doing it; we'd get our cats to do it.
+<tr><td>1. Pay close attention! It is IMPERATIVE that you do a good job.
+           A bad job is worse than no job and will earn you snickers (and
+           we don't mean the candy bar!). </td></tr> 
+<tr><td>2. Be sure to use the "t" option. </td></tr> 
+<tr><td>3. Know how big to make your boxes; use the "m" key when you need to!</td></tr> 
+<tr><td>4. Know what is a continuum source; do not flag continuum sources.</td></tr> 
+<tr><td>5. Know what is galactic hydrogen; do not flag galactic hydrogen (or HVC's!)</td></tr> 
+<tr><td>6. Know when to set the status flag via the "s" key.</td></tr> 
+<tr><td>7. Save the pos file regularly; occasionally make a copy of it.</td></tr> 
+</table>
+</center>
+<P>
+<B>5.1.5 <I>Logging comments on data quality and detected galaxies</I></B>
+
+<p>
+As you process each drift, you should log comments about the data quality
+and detected galaxies. The default log file contains example comments
+for a drift. Be aware of and log the following:
+<ul>
+<li> Quality of data on a (rough!) scale of 1 - 3. Click to get
+examples of <a href="flagbbqualq1.html"> quality 1 </a> and 
+<a href="flagbbqualq2.html"> quality 2 </a> images. Assign rough
+q1-q3 classes to each drift as follows:
+<ul> 
+<li> q1: high quality - most beams clean, OK to have faint standing
+wave or rfi problems in 1-2 beam/pols</li>
+<li> q2: multiple beams have rfi, standing wave, base, or other problems</li>
+<li> q3: most beams have severe rfi, standing wave, or other problems </li>
+</ul>
+</li>
+<li> List specific beams and pols with standing wave and/or rfi problems
+(e.g., "6.0,6.1" sw  or 
+</li>
+<li> Number of AGC and (hopefully!) non-AGC galaxies detected. AGC
+galaxies in the vicinity of the beam will be overplotted as yellow
+boxes, and information about these galaxies will appear in the IDL
+window. Jot down on scrap paper the names of galaxies you think are detected 
+in each beam. You will see larger galaxies in multiple beams, but
+only count each galaxy once. Especially note the non-AGC galaxies;
+you want to make note of them at the end of your log file. Also note
+any **new** HI detections of AGC galaxies, any galaxies that appear
+to be unusually extended, any HVC's etc. 
+</ul>
+
+<P>
+<B>5.2 <I>reviewbb</I></B>
+
+<P>
+<B>reviewbb</B> is very similar to <B>flagbb</B>, except that it modifies nothing. It is
+just used to review the modifications made by <B>flagbb</B>. You call it via
+
+<P><FONT color=darkblue>
+<PRE>
+IDL&gt; reviewbb,dred,cont_pt,mask,pos,GAUSAV=11,HAN=3,AGC=1,N1=n1,N2=n2
+</PRE></FONT>
+
+<p>
+<P>
+<B>6. <I>Producing and examining a smooth version of the data: strip_pv and inspect</B></I>
+
+<p>
+It is best to smooth the data before inspecting further, so you
+can see deeper into the noise.
+In order to produce a smooth display of a <I>dred</I> position-velocity 
+(time-frequency) drift file, you will use <B>strip_pv</B>, which 
+produces and displays a smoothed version of <I>dred</I>.
+You can then use <b> inspect </b> to display and inspect the data.
+
+<p>Before the smoothing step, you should check that you did not miss
+any drifts in the session by insuring that box 0 is assigned in each one:
+
+<FONT color=darkblue>
+<PRE>
+IDL&gt; print,where(pos.badbox[0,0,0,2] eq 0)
+</PRE></FONT>
+
+If any number is returned, then that drift (remember to start from "0" when you count down the list) has not been
+flagbb'd correctly. If you get "-1", then you are ready to smooth!  
+
+<P>
+To run <B>strip_pv</B>:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; strip_pv,dred,cont_tot,msmooth,n1=0,n2=6,showpol=3,gausav=11,han=5,rfimod=0,units=1
+</PRE></FONT>
+
+<P>
+where
+
+<P>
+<ul>
+<li><I>dred</I> is the input drift structure (produced by <B>bpd</B>)
+</li>
+<li><I>cont_tot</I> is a continuum profile of the drift -- use e.g. <I>cont_pt</I> or <I>mc</I> as an input
+</li>
+<li><I>msmooth</I> is the output, smoothed structure
+</li>
+<li><I>n1, n2</I> are the first and last beam numbers to be processed for 
+    that drift 
+</li>
+<li><I>showpol</I> is 0 for pol 0, 1 for pol 1, 2 for processing of both 
+    pols, separately, 3 for processing the average of both pols (in that 
+    case the average is placed in pol 0 of msmooth)
+</li>
+<li><I>gausav</I> is the HPFW in record units of the Gaussian used to smooth 
+the data in the time (record) domain;
+</li>
+<li><I>han</I> is the number of spectral channels for Hanning smoothing
+</li>
+<li><I>rfimod</I> of -1 does nothing, and if =0 it compresses the dynamic 
+    range of the spectra by subtracting from the map the median of the 
+    rfi- and galactic HI-affected channels
+</li>
+<li><I>units</I> is used to scale the continuum profile plotted along the 
+   contour map (=1 means K).
+</li>
+
+</ul>
+<P>
+Once you have <i>msmooth,</i> you can display the data and inspect it 
+  with <B>inspect</B>, which uses the display tool <b> atv.</b> Call
+  <b> inspect </b> like this:
+
+<P>
+<PRE><FONT color=darkblue>
+IDL&gt; inspect, msmooth,showpol=3,nstrip=2, agc=1
+</PRE></FONT>
+
+<P>
+where <i>nstrip</i> is the beam number and <i>agc</i> can be used to turn
+on the AGC catalog display. In this example, beam 3 will be displayed
+with polarization averaged.
+
+<p> Inspection options:
+<ul>
+<li> Row and column plots may be produced using the <b>r</b> and <b>c </b> 
+keys, respectively.  Three plots are produced: one for each polarization
+and the averaged polarization (on top). Position and velocity information
+for the cursor position are printed at the top of the plot. 
+</li>
+<li> The <b> g </b> key will return the 6'x6' arcminute DSS2 Blue/SDSS images 
+centered around that point in the drift map. The <b> r </b> key will return specta, with position and velocity information
+for the cursor position printed at the top of the plot.
+</li>
+<li> See <a href="http://www.physics.uci.edu/~barth/atv/"> ATV </a> 
+documentation for other options.
+</li>
+</ul>
+
+</p>
+<br>
+<B>7. <I>Final steps: checking that your flagging job is done</I></B
+
+<p>
+When you think that you have completed the flagging for an entire session, you
+should following the instructions at the end of the log <a href="log.start"> template</a>
+to verify that all is well. </p>
+
+<PRE><FONT color=darkblue>
+IDL&gt; print,where(pos.badbox[0,0,0,2] eq 0)
+</PRE></FONT>
+If "-1" is returned, then you are ready to run the last check. If some other number appears,
+then you have not flagged the boxes in the drift corresponding to that entry in the pos file
+(remember that IDL starts counting from 0). Go back and fix it. Otherwise, proceed to check
+that all of your boxes are valid:</p>
+
+<PRE><FONT color=darkblue>
+IDL&gt; check_pos,pos
+</PRE></FONT>
+
+If any problems are found, then go back and fix them. If, on the other hand, checkpos
+returns no errors, you are done! Notify Martha at this point. She will be very happy
+to hear from you.</p>
+<br>
+<br>
+<hr>
+<br>
+<p> 'Features' at Arecibo (Dec '05/Jan '06):
+<ul>
+<li> The DSS2/SDSS image retrieval ("g") does not work on all computers because not
+all are enable to access the outside world. Check that your web browser
+can see SDSS; if not, try another machine or discuss with Arun. In particular,
+the aolcN machines are firewalled.</li> 
+
+<li> Position information printed in row window was incorrect. 
+Position information printed in DSS window was correct. </li>
+<li> Color key in row window is not correct. Average polarization
+is on top, despite the color key. </li>
+
+<li> If inspect window was not restarted for each beam, the wrong
+cursor position was input to the row window, resulting in incorrect
+row plots. 
+</ul>
+
+<p>
+<br>
+<hr>
+
+<font color=#cc0f14>
+Original page created by Riccardo Giovanelli and Brian Kent and maintained by the members
+of the <a href="http://www.astro.cornell.edu/Galaxy/egg.html"> Cornell
+ExtraGalactic Group</a> including honorary and visiting EGGs. ("Once an EGG, always an EGG!")<font><br>
+
+<!-- hhmts start -->
+<font color=#008000><i>Last modified: Thu Mar 11 13:26:49 EST 2010 by martha</i></font>
+<!-- hhmts end -->
+</body>
+</html>
+    

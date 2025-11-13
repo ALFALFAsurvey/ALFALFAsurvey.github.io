@@ -1,0 +1,69 @@
+A2811 LBW   13.11.24      Observers: Rebecca Koopmann, Lucas Viani, Michael Warrener
+
+CIMA version:          The Stable version (Default) (Ver 3.3.05 2013-02-22 15:46)
+Configuration file:    a2811_nov13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2811_131124.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.24nov13.a2811.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST    ZA   File#  ONScan     Status
+H215107.4+255155  215107.1 +255150  j  5700 H v   # A011830 calib   2125   9.8    1   332800204  Detected @1394 Mhz,5700 km/s
+H215107.4+255155  215107.1 +255150  j  5700 H v   # A011830 calib   2133   8.7    2   332800208  Test Abort and repeat source; Detected @1394 Mhz, 5700 km/s
+H215820.8+303334  215822.3 +303240  j  7800 H v   # A310849         2143  12.8    3   332800212  No Detection  
+H215917.9+320241  215920.5 +320256  j  6900 H v   # A310850         2152  13.9    4   332800216  Detected @1388 MHz,6900 km/s
+H222344.3+304403  222340.9 +304455  j  6400 H v   # A321447         2201  13.6    5   332800220  Detected @1391 MHz,6400 km/s  
+H223331.3+320203  223333.7 +320316  j  7700 H v   # A321448         2209  14.9    6   332800224  No Detection  
+H224539.3+303807  224535.8 +303625  j  7200 H v   # A321449         2217  14.0    7   332800228  Detected @1387 MHz,7100 km/s; source/RFi in off @1381 MHz
+H224615.1+311257  224615.1 +311304  j  6300 H v   # A321450         2225  13.9    8   332800232  No Detection
+H225533.7+314118  225532.1 +314110  j  6800 H v   # A321452         2233  14.4    9   332800236  Weak Detection @1389 MHz,6900 km/s; possible continuum source in off (negative baseline)
+H225717.5+315317  225720.8 +315316  j  6700 H v   # A321453         2241  14.1   10   332800240  Detected @1389 MHz, 6700 km/s
+H230600.6+310640  230602.5 +310716  j  5900 H v   # A333446         2249  13.4   11   332800244  Detected @1393 MHz, 5900 km/s
+H231439.9+312050  231438.5 +312012  j  5600 H v   # A333452         2257  13.7   12   332800248  Detected @1387 MHz, 7000 km/s
+H231647.3+304732  231646.0 +304630  j  6200 H v   # A333453         2306  12.8   13   332800252  Detected @1392 MHz, 6100 km/s; possible continuum source in off (slightly negative)
+H232000.3+303230  231958.7 +303309  j  2300 H v   # A333455         2314  12.4   14   332800256  No Detection  
+H232710.6+315809  232709.2 +315752  j  5000 H v   # A333458         2322  13.8   15   332800260  Detected @1397 MHz, 5000 km/s
+H232731.5+305920  232732.8 +305806  j  5100 H v   # A333459         2330  12.7   16   332800264  No Detection
+H235416.0+320424  235411.1 +320409  j  5100 H v   # A333473         2339  14.3   17   332800268  Detected @1397 MHz, 5000 km/s;power surge
+H000319.2+304602  000321.9 +304654  j  5100 H v   # A100013         2347  13.1   18   332800272  Detected @1396 MHz, 5200 km/s
+H001413.3+320113  001419.3 +320144  j  4700 H v   # A102842         2355  14.5   19   332800276  No Detection
+H004320.3+302900  004323.0 +302935  j  3100 H v   # A102854         0004  15.2   20   332800280  No Detection;power surge;possible continuum source in off (non-flat, negative baseline)
+H004404.0+302135  004404.3 +302127  j  4900 H v   # A102855         0012  14.2   21   332800284  Detected @1397 MHz, 5000 km/s
+H004626.5+301903  004627.9 +302002  j  4100 H v   # A102856         0020  13.5   22   332800288  No Detection
+H004823.0+313400  004824.2 +313427  j  5100 H v   # A102857         0028  14.1   23   332800292  Detected @1397 MHz, 5000 km/s
+H004853.7+302400  004900.3 +302313  j  6000 H v   # A102858         0037  12.5   24   332800296  No Detection
+H011244.5+313048  011242.9 +313053  j  5000 H v   # A113978         0046  14.7   25   332800300  Detected @1397 MHz, 5000 km/s
+H013035.1+320937  013036.2 +320859  j  6400 H v   # A113985         0054  16.2   26   332800304  Detected @1391 MHz, 6400 km/s; RFi in off @1381 MHz
+H013035.1+320937  013036.2 +320859  j  6400 H v   # A113985         0105  15.1   27   332800308  Detected @1391 MHz, 6400 km/s; Repeat because ahead of time
+H013231.7+312113  013232.6 +312050  j  3500 H v   # A113986         0113  13.9   28   332800312  No Detection; tie downs disabled; possible continuum source (negative baseline)
+H014055.1+300425  014059.0 +300440  j  4300 H v   # A114082         0121  12.7   29   332800316  Detected @1400 MHz, 4300 km/s
+H015727.2+305135  015726.4 +305215  j  4800 H v   # A113993         0130  14.2   30   332800320  Detected @1397 MHz, 5000 km/s
+H020232.2+311625  020234.5 +311557  j  4700 H v   # A123069         0138  14.2   31   332800324  Detected @1398 MHz, 4700 km/s
+H020714.3+315612  020720.0 +315658  j  5100 H v   # A123073         0146  14.6   32   332800328  Detected @1397 MHz, 5000 km/s
+H021331.6+300926  021331.6 +300803  j  4600 H v   # A123077         0154  12.7   33   332800332  Detected @1399 MHz, 4600 km/s
+H021736.3+310630  021736.7 +310606  j  3400 H v   # A123084         0202  13.3   34   332800336  Detected @1404 MHz, 3400 km/s
+H021758.5+305419  021759.0 +305421  j  4800 H v   # A123085         0210  12.8   35   332800340  Detected @1398 MHz, 4700 km/s
+H022130.6+313420  022135.7 +313425  j  5100 H v   # A123087         0218  13.3   36   332800344  Possible Weak Detection @1397 MHz, 5000 km/s; tie downs enabled; fluxuating baseline
+H022556.3+302620  022556.5 +302603  j  5200 H v   # A123090         0227  12.2   37   332800348  Detected @1396 MHz, 5200 km/s
+H022633.7+320747  022636.1 +320729  j  4400 H v   # A123092         0235  14.0   38   332800352  Detected @1400 MHz, 4300 km/s
+H023349.7+304230  023355.4 +304245  j  5000 H v   # A123094         0244  12.6   39   332800356  Detected @1397 MHz, 5000 km/s
+H024033.9+305030  024036.0 +305029  j  3300 H v   # A123097         0252  12.8   40   332800360  No Detection
+H025856.2+303258  025854.3 +303403  j  3300 H v   # A123101         0300  12.3   41   332800364  Detected @1405 MHz, 3300 km/s
+H024835.4+231622  024839.2 +231628  j   500 H v   # A123352 if time 0311   7.0   42   332800368  Detected @1418 MHz, 500 km/s
+H030234.0+245007  030235.3 +245008  j  3300 H v   # A131375 if time 0319   7.4   43   332800372  Detected @1405 MHz, 3300 km/s
+H030234.0+245007  030235.3 +245008  j  3300 H v   # A131375 if time 0327   8.8   44   332800376  Detected @1405 MHz, 3300 km/s; Repeated because extra time
+
+
+Notes:
+Got telescope early: LST 21:17
+
+Tested stop and abort on first calib source. There is no need to reload command file after abort.
+
+Tie downs disabled for part of the night.

@@ -1,0 +1,70 @@
+Log for 090108a     Observer: Riccardo Giovanelli
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:        /share/pserverf.sda2/wappdata/wapp.20090108.a2010.****.fits 
+
+     ****
+LST  fits  Scan     calscan   Source     Pattern  Start coords. ang  time loop calmode
+0733 0001 90080003 90080004 drift11p2  fixAZdr  072300+024036  19   600  99  loopend  radar's back; Bm6B ok
+0743 0002 90080005 90080006		power levels ok; quicklook on file 1 ok - step in Dec to 024041...
+
+0756 0004 90080008 90080010		restarting; see below 0745LST
+0806 0005 90080010 90080011
+
+0820 0007 90080013 90080014		restarting; see below 0815LST
+0830 0008 90080015 90080016
+0840 0009 90080017 90080018
+0850 0010 90080019 90080020
+0900 0011 90080021 90080022
+0910 0012 90080023 90080024
+0920 0013 90080025 90080026
+0930 0014 90080027 90080028
+0940 0015 90080029 90080030
+0951 0016 90080031 90080032
+1001 0017 90080033 90080034
+1011 0018 90080035 90080036
+1021 0019 90080037 90080038
+1031 0020 90080039 90080040
+1041 0021 90080041 90080042
+1051 0022 90080043 90080044
+1101 0023 90080045 90080046
+1111 0024 90080047 90080048
+1122 0025 90080049 90080050
+1132 0026 90080051 90080052	power levels ok
+1142 0027 90080053 90080054
+1152 0028 90080055 90080056
+1202 0029 90080057 90080058
+1212 0030 90080059 90080060
+1222 0031 90080061 90080062
+1232 0032 90080063 90080064
+1242 0033 90080065 90080066
+1253 0034 90080067 90080068
+1303 0035 90080069 90080070
+1313 0036 90080071 90080072
+1323 0037 90080073 90080074
+1333 0038 90080075 90080076
+1343 0039 90080077 90080078
+1353 0040 90080079 90080080
+1403 0041 90080081 90080082
+1413 0042 90080083 90080084
+1424 0043 90080085 90080086
+
+END LST 1434
+Notes:
+- Upon logging on CIMA, an error message appeared, indicating system was unable to access 
+/share/obs4/usr/a2010 - Any other function after that (e.g. enabling ALFA) cima was "unable" to perform.
+Exited and reloaded CIMA 3 times, the third after killing -9 CIMA and exiting from observer2 - it worked
+Possible explanation is that previous observer did not get off cima on time...
+No time to run TOGS calibration. 
+- Another CIMA quirk: it completed the first 600 sec drift and 1 sec cal without wwriting a fits file
+(scans 900800001 and 900800002) - produced fits file after scan 00003.
+-0745LST Dec jumps 5" in CIMA Observation status window...
+-0755LST: alfadatawin stops updating; killed process and restarted - same (segmentation fault). 
+Power levels on ALFAobswin being updated and looking ok... keeps happening several times, then stabilizes... 
+-0815LST Dec jumps again...
+Running the new version of CIMA 3.1.02 "Smart"; all ok
+TOGS run at end only
+FAA radar on again
+Beam 6B looks ok 
+Went an extra half hour of NYA time at the end, but note: after sunrise

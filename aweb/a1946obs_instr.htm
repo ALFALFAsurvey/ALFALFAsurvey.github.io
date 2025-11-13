@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA Survey - Observations</title> 
+  </head>
+<body bgcolor="ffffff">
+<h2><font color=darkblue>ALFALFA Survey - Setup and Observing Cookbook  &nbsp &nbsp 28Sep2004</font></h2>
+
+<br>
+<b><font color=#cc0f14>Disclaimer:</font> CIMA is changing; this works today but may not
+tomorrow! Note that there are some redundancies in the current version and some features
+are not yet implemented. This and CIMA are works in progress.</b>
+<br>
+
+<h2><font color=darkblue>Before Observing</font></h2>
+<ul>
+<li> The ALFA cover must have been removed. ALFA is covered during radar runs, so take a look at the telescope schedule beforehand. For instance, if it looks like ALFA had to be covered the day before your observations, make sure that time is allocated to remove the cover before your run starts  (this can be done during maintenance or system check time). In any case, it is a good idea to double check with the telescope operator. 
+<li>The motor must be switched on (this is also done on the platform!). If the power have failed on the platform, the "reset button" on the motor may have to be pushed; if someone switches the motor on, he/she probably should hit the reset button too, before coming down, just in case. If you have any doubts, look for ALFA rotation using the dome video monitors (you should be able to see it move). Also, the operator may need to turn on ALFA in software from the control room. (Someday, all this will be automated.)</p>
+</ul>
+
+<h2><font color=darkblue>Datataking</font></h2>
+<ul>
+<li> Log into OBSERVER2 as "dtusr" (password taped to the monitor). </p>
+
+<li> Start CIMA by clicking with the right button of the mouse on the background, and choosing
+     "cima online GUI" from the menu. Several windows will pop up: 
+     <font color=#cc0f14>Identify New User</font> (orange),  
+     <font color=#cc0f14>AO Observer Display</font> (black), 
+     <font color=darkorange>CIMA Observer's Interface</font> (orange), and a couple of others (white background,
+     with red or blue writing) that you will not use. <font color=darkorange>CIMA Observer's Interface</font>
+     is the main window and should always be open. The buttons therein open new windows, which allow you
+     to control the telescope. These windows will be indicated with <font color=darkorange>orange</font> fonts
+     in this document; all the other ones will be <font color=#cc0f14>red</font>. </p>
+
+<li><font color=#cc0f14>Identify New User</font>
+<ul>
+  <li> Observer(s). This entry is placed in the FITS header for each record.
+It is also used in the return address in case, during your observations, you decide to email 
+       the RFI or CIMA groups with a comment (using the <font color=darkorange>E-mail Comment</font> button).
+  <li> Proposal Number. This is important. Your settings and log files will be saved (if you decide to do so) 
+       in the corresponding project directory, which for us is /share/obs4/usr/a1946/.
+  <li> Select "Line" observing mode.
+</ul>
+
+
+</p>
+
+<li><font color=#cc0f14>Choose Receiver</font><br>
+     Select "ALFA", click on "Select Receiver Now", and make sure that ALFA shows up in the AOSTATUS 
+     monitor (on your top-left side). Dismiss the <font color=#cc0f14>Choose Receiver</font> window.</p>
+
+<li>Choose "Load/Save State" from the <font color=#cc0f14>CIMA Observer's Interface</font> and select your setup file. Note that
+    "a1946AsyncCal.gui" is a basic setup for cals fired at regular intervals throughout each scan and "a1946CalEnd.gui" is a basic 
+    setup for cals fired only at the end of each scan. The current files to use are "Asyncal_am.gui" and "Asyncal_pm.gui". This will 
+    set most of the parameters, but you must still apply the configuration in each of the widgets described below. </p>
+
+<li><font color=darkorange>Pointing Control</font>
+<ul>
+  <li> For the a1946 project, the telescope is fixed at AZ=180. Point the telescope near where
+       you will start observing by entering the dec of the strip you will do and the current lst as the RA, and point the 
+       telescope.  Note that the telescope won't move until the receiver floor has
+       finished rotating.
+  <li> Enter the "ALFA Rotation Angle" and hit "Send". You can actually see if ALFA is rotating by looking
+       at the TV camera in the control room (ask the telescope operator to show the appropriate camera).  
+       The blue number next to the "Send" button should change to your entry once ALFA reaches that position.
+       For drifts at 180 deg azimuth, the correct angle is thought to be 19 deg.
+       At azimuth 90 deg, it is thought to be -14 deg. 
+  <li> If, on the other hand, you have a source list, you can load it using the "Catalog" button (on the top left). 
+       You can also type the coordinates of the source (RA and Dec); if you do so, select also the correct
+       epoch (B1950 or J2000).
+</ul>
+</p>
+
+<li><font color=darkorange>Receiver IF/LO Control</font>
+<ul>
+  <li> Select "New Improved IFLO Setup". This will open the <font color=#cc0f14>New Improved IFLO Control</font>
+       window.
+</ul>
+</p>
+
+<li><font color=#cc0f14>New Improved IFLO Control</font>
+<ul>
+  <li> Both "Choose Receiver" and "IFLO Path" should be set to ALFA. Note that this is another place where
+       you can select the receiver (several functions are redundant).
+  <li> Check that the central frequency is 1385 MHz, and that the bandwidth is 100 MHz.
+  <li> Hit "Apply This Setup".
+  <li> Dismiss <font color=darkorange>Receiver IF/LO Control</font> and 
+       <font color=#cc0f14>New Improved IFLO Control</font> windows.
+</ul>
+</p>
+
+
+<li><font color=darkorange>Backend Control</font>
+<ul>
+  <li> "WAPP as Spectral Line Machine" should be selected (default). <br>
+  <li> Check that all four WAPPs are enabled (green) and click on the corresponding square if any are not.
+  <li> Hit the "ALFA Backend Control" button. This will open the <font color=#cc0f14>WAPP ALFA</font> window.<br> 
+</ul>
+</p>
+
+<li><font color=#cc0f14>WAPP ALFA</font><br>
+<ul>
+  <li> Check that the configuration is "2chan, 3-level auto."  If not,
+choose it from the pull-down menu (click on the displayed configuration
+[in red] with the left 
+       button of the mouse).
+  <li> Choose a Cal (for a1946, it should be hcal). The number of seconds for its duration is only relevant if you 
+       choose to test the cal by pressing the "Start Cal" button..
+  <li> Check that the integration time (i.e., how often the data are written to file) is 1 sec.
+  <li> Hit "Configure WAPP ALFA" to apply your setup.
+  <li> Adjust power, and look at the numbers on the <font color=darkorange>Backend Control</font> window:
+       1+/- 0.2 is ok. If the numbers are zeros (or close to zeros), trying redoing the startup sequence: 
+       <i>This appears to depend on the order in which you do things</i>. If that doesn't work, probably 
+       the ALFA amplifiers have 
+       not been turned on. If this is the case, you can ask the telescope operator to turn them on 
+       for you, or you can do it yourself by typing "/home/aoui/bin/alfaon" on an xterm (FYI:
+       "/home/aoui/bin/alfasafe" turns the ALFA amplifiers off).
+       If the power is now back, but the numbers look wrong, try adjusting the power a few times. 
+  <li> The bottom part of the window is the "Monitor Control". Do not worry about it (it is meant to
+       display the signal from one beam and one polarization at a time on the monitors sitting on the
+       top shelf of the wall to your right, in the control room). Just make sure that the control
+       is set to "Remote" and not to "Local".
+</ul>
+</p>
+
+<li><font color=darkorange>Spectral Line Observing</font>
+<ul>
+  <li> Choose your observing mode from the "Mode" pull-down menu.  
+For most a1946 observations, use the "Fixed Azimuth Drift" mode.
+In this mode, the name of the drift and the starting RA are taken from
+the <font color=darkorange>Pointing Control</font> window.
+  <li>Make sure that the starting RA is sufficiently later than current LST so
+that the telescope can be in position before that RA drifts into the beam.
+Hit "Observe" and make sure that the slew time is less than the wait time displayed
+in the  <font color=#cc0f14>AO Observer Display</font>.
+If not, hit "Abort" and set a slightly later RA.
+  <li>  After the scan starts, type in the name, RA and Dec of 
+the start of the next drift in the <font color=darkorange>Pointing Control</font> window and its duration in the <font color=darkorange>Spectral Line Observing</font> window, as long as you do not hit "Point" nor "Observe"
+until the current scan has finished. 
+  <li>It is possible to write a new fits file automatically at the end of every scan (so you don't have to 
+      hit "new fits file" at all anymore); a large number of loops
+      are therefore requested. Stop the observing at the end of the run by hitting abort after the desired number of scans. 
+      Wait until the gui says that a new fits file has been written to hit abort. One junk fits file is 
+      therefore created at the end of each run.
+  <li>The power levels do not update in the <font color=darkorange>Backend Control</font> widget after you hit "Observe"!
+      Be sure to check Mikael's data monitoring window periodically to look for power dips. 
+  <li>Open and update the log file each time a new fits file is written. The file should be in /share/obs4/usr/a1946/ &nbsp ; 
+      if it's not there, make one.
+</ul>
+</p>
+
+<li><font color=darkorange>Exit normally</font>
+<ul>
+  <li> When you are done, make sure that a new fits file has been written, and then select 
+       <font color=darkorange>Exit normally</font> to exit CIMA. There is no 
+       need to hit the "Move Data" button on the <font color=darkorange>Spectral Line Observing</font>
+       window if you were using the WAPP correlator. 
+</ul>
+</ul>
+
+
+<h3><font color=darkblue>Notes</font></h3>
+<ul>
+  <li> You can save your entire setup, or parts of it, by opening the <font color=darkorange>Load/Save State</font>
+       window, and selecting the configurations that you want to save. When you are done, hit "Save Selected
+       Choices". Enter a file name (for instance: a1946_fixAZ), and a descriptive comment (e.g., ALFALFA 
+       fixed AZ drift standard mode). A file a1946_fixAZ.gui will be written to your project directory 
+       (/share/obs4/usr/a1946/). The next time that you observe you will be able to recover your saved setup
+       by opening the <font color=darkorange>Load/Save State</font> window, and selecting "Load a Saved State".
+       However, loading does not mean <i>applying</i>! You will have to open the windows mentioned above
+       and apply the corresponding setups. </p>
+
+  <li> Is WAPPDATA confused? On a few occasions, after hitting "Observe" to start the integration, we had a series 
+       of warnings (on the <font color=#cc0f14>AO Observer Display</font> window): "WAPPDATA is confused".
+       If this happens, open the <font color=darkorange>User Preferences</font> window, and type 
+       "socksend WAPPDATA FLUSH" on the "Send to GUI" line. Hit the "Send to GUI" button. 
+If the "WAPPDATA is confused" state persists, exit CIMA and start again,
+this time choosing "Pulsar Observing" in the <font color=darkorange>CIMA Observer's Interface</font>.  
+Click on the "More" button, then on "Restart all WAPPs." </p>
+
+  <li> There is a limit to the size of the FITS file (2 GB or so). It is a good idea to write the data (e.g.,
+       different drift scans) to separate FITS files; this can be now be done automatically by setting 
+       "New FITS (each loop)" in the <font color=darkorange>Spectral Line Observing</font> widget. 
+       If you don't, and the data exceeds the limiting size,
+       another FITS will be created (you will get the message "FITS file is full, creating new"
+       on the <font color=#cc0f14>AO Observer Display</font> window). This can happen in the middle of a 
+       scan, leaving that scan incomplete and corrupting the new FITS file, so it is essential to avoid it. </p>
+
+   <li> If you abort a scan during the night with the "Abort" command in the <font color=darkorange>Spectral Line Observing</font> widget, be sure to start a new fits file before observing again; if you don't, the two scans (the one you aborted and the new one) will be in the same fits file, complicating the data reduction.
+ 
+</ul>
+
+
+
+<br>
+<h2><font color=darkblue>Data Monitoring</font></h2>
+
+Mikael is working on a package for telescope monitoring and data display. Most of the features are
+already available. These programs read the data that are being broadcasted to the FITS files, and not
+the FITS files themselves. The screens are updated every 10 seconds.<br>
+
+On Dataview, click on the background and select from the menu:
+<ul> 
+  <li>Quicklook Data Display  -- launches the ALFA on-line display.
+  <li>Observers Monitor -- opens a widget that currently only gives the power levels.
+  <li>Array Rotation -- launches the ALFA motor control. 
+  <li>Frontend Monitor -- launches the ALFA instrument monitor.
+</ul>
+You can open the same widgets by typing on an xterm:
+<ul> 
+  <li>/home/aoui/alfa/alfadatawin &
+  <li>/home/aoui/alfa/alfaobswin &
+  <li>/home/aoui/alfa/alfamotorwin &
+  <li>/home/aoui/alfa/alfamonwin &
+
+</ul> 
+The program alfadatawin is currently only available on Linux machines. The other commands are available
+on other machines, too.
+
+
+<h3><font color=darkblue>Notes</font></h3>
+<ul>
+  <li> If you are using the Dataview machine, with its two screens, in the control room, you can 
+       control the display device by setting the DISPLAY environment before you launch the above. <br>
+       <dd> > setenv DISPLAY :0.1 &nbsp &nbsp &nbsp   send display to 2nd screen
+       <dd> > setenv DISPLAY :0.0 &nbsp &nbsp &nbsp   sets display back to primary screen
+       <dd> > setenv DISPLAY fusion01:0.0 &nbsp &nbsp &nbsp sets display to remote screen</p>
+
+  <li> In particular, use these displays to monitor the power levels. Notice that after hitting
+       "Observe" the CIMA monitor WAPP power levels <i>do not update</i>, whereas the monitoring windows 
+       show the current levels.</p>
+
+  <li> If you reset the WAPPs, you will have to exit and restart alfadatawin to get it to grab 
+       the online data again.</p>
+
+  <li> To log out of dataview at the end of the observing run, close the windows "politely" by hitting 
+       exit in each display window before logging out. This will make sure that the processes terminate.</p>
+
+</ul>
+
+
+
+<br>
+<h2><font color=darkblue>Reading Data into IDL</font></h2>
+Once a fits file has been written and closed, it can be converted into a set of IDL structures for future use; see Brian's tutorial for details. You can do this at the telescope on dataview machine. Below, IDL> means "inside idl".
+<ul>
+<li> Start up IDL in /share/a1946/data/<i>{run_directory}</i>. Make sure that you are on a fast machine (fusion01, fusion02, aolc1,2,3,4).
+<li> IDL>@wasinit2   &nbsp &nbsp &nbsp &nbsp (if this doesn't work, check that your idl account is <a href="http://astrosun.tn.cornell.edu/~galaxy/idl_startup.txt">set up properly</a>)
+<li> IDL> .comp ../../idl/alfalist      &nbsp &nbsp &nbsp &nbsp (compile Brian's programs)
+<li> IDL> .comp ../../idl/filecreator   &nbsp &nbsp <font color=red>note: compile akb_filecreator instead to read new fits files... 28sep04</font>
+<li> IDL> .comp ../../idl/headersorter
+<li> IDL> .comp ../../idl/structsort
+<li> IDL>filein='/share/pserverf.sda3/wappdata/<i>{fits filename}</i>'
+<li> IDL>print,wasopen(filein,desc)
+<li> IDL>filecreator, desc   &nbsp &nbsp <font color=red>note: do akb_filecreator,desc instead to read new fits files... 28sep04</font>
+</ul>
+Note that each 900-sec scan take 5-6mins to be read into IDL.
+
+<br>
+<h2><font color=darkblue>After Observing</font></h2>
+After the run has finished, do the following things to keep the rest of the a1946 group informed about how the run is going.
+<ul>
+<li>Copy the log file from /share/obs4/usr/a1946/log04****** to /share/a1946-2/obslogs/log04******.txt (make sure to make this
+file writable for everyone!).
+<li>Modify the alfalfa files <font color=red>obslog.htm</font> and <font color=red>fitsfiles.htm</font>. You need to be able to log in
+as galaxy on astrosun to do this; if you are not a Cornell EGG, ask someone who is to do this for you. The files are in /home/astrosun/galaxy/public_html. You will want to upload log04******.txt to the logs/ file therein too.
+<li> If you'd like, you can modify the gui files for the next night ahead of time; they are in /share/obs4/usr/a1946/. Note that the order in which the 
+drifts in tile 26 (for project a1946) should be completed are in the file /share/a1946-2/obslogs_am.txt &nbsp.
+</ul>
+
+
+<br>
+<h2><font color=darkblue>Useful Links</font></h2>
+<ul>
+<li>The <a href="http://www.astro.cornell.edu/~haynes/pre204/drift.htm"> A1946 Drift precursor website</a>
+<li>The <a href="http://www.astro.cornell.edu/~galaxy/whereintheworldis.htm"> Where in the World is...</a>
+<li><a href="http://www.astro.cornell.edu/~galaxy/checklist.html">Observing checklist</a>
+</ul>
+
+<h2>
+
+
+<hr>
+
+<address><font color=#cc0f14>
+Page created and maintained by Barbara Catinella and the members of the
+<a href="http://www.astro.cornell.edu/Galaxy/egg.html"> Cornell ExtraGalactic Group</a></font></address> 
+</p>
+<!-- hhmts start -->
+Last modified: Wed Sept 28 2004 by ks
+<!-- hhmts end -->
+</body>
+</html>
+    

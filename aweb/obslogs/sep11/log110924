@@ -1,0 +1,72 @@
+Log for 11.09.24 (24Sep2011)        Observers:Parker Troischt, Catherine Weigel, Jaclyn Patterson, Scott Suriano, Kyle Murray
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda3/wappdata/wapp.20110924.a2010.****.fits
+File(s):  /share/pserverf.sda3/wappdata/wapp.20110925.a2010.****.fits
+
+Normal meridian observing setup (Fall 2011) with Z.A.G. restrictions lifted
+
+LST  fits    Scan      calscan    Source      Pattern   Start coords.  ang  time loop  calmode
+2134 0021  126700127  126700128  drift86p2    fixAzdr   213501+205537   19   600  99   loopend  started TOGS during this 
+				 fits file, FAA radar is on, tiedowns active, 1380 MHz harmonic of FAA radar apparent, power levels ok
+2136 0022  126700129  126700130  quicklook ok
+2146 0023  126700131  126700132  strong cs 5,0,3
+2156 0024  126700133  126700134 
+2206 0025  126700135  126700136  quicklook ok 
+2216 0026  126700137  126700138
+2226 0027  126700139  126700140  powerlevels ok,quicklook ok, cs 0
+2236 0028  126700141  126700142  
+2246 0029  126700143  126700144  cs 1
+2257 0030  126700145  126700146
+2307 0031  126700147  126700148 
+2317 0032  126700149  126700150  quicklook ok, powerlevels ok, cs 1,6
+2327 0033  126700151  126700152  quicklook ok
+2337 0034  126700153  126700154 
+2347 0035  126700155  126800001 
+2357 0000  126800002  126800003  powerlevels ok
+0007 0001  126800004  126800005  cs in 1
+0017 0002  126800006  126800007  quicklook ok  
+0027 0003  126800008  126800009   
+0037 0004  126800010  126800011  cs 0,1,5 powerlevels ok quick look ok
+0048 0005  126800012  126800013  
+0058 0006  126800014  126800015
+0108 0007  126800016  126800017  quicklook ok 
+0118 0008  126800018  126800019 
+0128 0009  126800020  126800021  power levels ok, cs in 5,0, strong cs in 5,0,3,2
+0138 0010  126800022  126800023  quicklook showed a spike (scale at 30) in beam 4A
+0148 0011  126800024  126800025  quicklook ok
+0159 0012  126800026  126800027  power levels ok cs in 3,4
+0209 0013  126800028  126800029  quicklook ok
+0219 0014  126800030  126800031  
+0229 0015  126800032  126800033  powerlevels ok, quicklook ok
+0239 0016  126800034  126800035  
+0249 0017  126800036  126800037  quicklook ok
+0259 0018  126800038  126800039 
+0310 0019  126800040  126800041  
+0320 0020  126800042  126800043  quicklook ok
+0330 0021  126800044  126800045  cs in 1,2,6
+0340 0022  126800046  --ABORT
+
+
+
+
+LST stop: 0340
+
+-- FAA radar ON. 1380MHz harmonic present.
+-- Beam 4A dead
+-- TOGS at START only.
+-- Were given an extra 20 mins
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 13.8   K2: 13.3   K3: 15.0   K4: 14.9   AT 17:51
+70K = K1: 82.9   K2: 83.4   K3: 90.0   K4: 97.6
+
+16K = K1: 13.3   K2: 12.8   K3: 14.8   K4: 15.0   AT 22:05
+70K = K1: 82.9   K2: 83.4   K3: 90.0   K4: 97.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________

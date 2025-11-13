@@ -1,0 +1,44 @@
+Log for 06/12/14 PM      Observer: Noah Brosch
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az360.gui as save state. -- Note, 360 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061214.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source    Pattern  Start coords.  ang  time  loop calmode
+
+0027 0030 634869625 Aborted, bad power level beam 1B, restart
+
+0036 0032 634870163 634870765 drift33p1  FixedAz 002700+075430   19   600    99  loopend
+0046 0033 634870768 634871370 Power levels OK except beam 1B
+0056 0034 634871373 634871975 
+0106 0035 634871978 634872580 
+0116 0036 634872583 634873185
+0126 0037 634873188 634873790
+0137 0038 634873793 634874395
+0147 0039 634874398 634875000
+0157 0040 634875003 634875605 Power levels fine but for 1B 
+0207 0041 634875608 634876210
+0217 0042 634876213 634876815 
+0227 0043 634876818 634877420
+0237 0044 634877423 634878025
+0247 0045 634878028 634878630
+0257 0046 634878633 634879235
+0308 0047 634879238 634879840 
+
+0318 0048 - Aborted 
+
+END LST: 0317
+
+
+NOTES:
+1. ALFA debugging (Mikael) till obs time start
+2. Beam 1B shut down because of bad power (0.164)
+3. Wide 1381MHz next to narrow 1380 present at start for ~one minute
+3. TOGS run at end.
+
+
+

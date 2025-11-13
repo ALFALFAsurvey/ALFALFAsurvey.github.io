@@ -1,0 +1,89 @@
+Log for 04/05/10          Observer: Shan Huang
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100405.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100406.a2010.****.fits
+
+Zenith strip observing setup
+Az=257.72   ALFAang=-59.7  ZA=7.3
+RA@start=0808   RA@end=1644
+RA = LST + 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode
+0740 0024  9500137  9500138       drift81p2 fixAZdr   080500+194236 -59.7 600   99   loopend
+0750 0025  9500139  9500140       quicklook ok, power ok except for 2A, which falls below to normal level occasionally
+0800 0026  9500141  9500142
+0810 0027  9500143  9500144
+0820 0028  9500145  9500146
+0830 0029  9500147  9500148
+0840 0030  9500149  9500150
+0850 0031  9500151  9500152
+0901 0032  9500153  9500154
+0911 0033  9500155  9500156
+0921 0034  9500157  9500158
+0931 0035  9500159  9500160
+0941 0036  9500161  9500162
+0951 0037  9500163  9500164
+1001 0038  9500165  9500166
+1011 0039  9500167  9500168
+1021 0040  9500169  9500170      quicklook ok, 2A power in normal range but unstable
+1032 0041  9500171  9500172
+1042 0042  9500173  9500174
+1052 0043  9500175  9500176
+1102 0044  9500177  9500178
+1112 0045  9500179  9500180      strong cont src
+1122 0046  9500181  9500182
+1132 0047  9500183  9500184
+1142 0048  9500185  9500186
+1152 0049  9500187  9500188
+1203 0050  9500189  9500190
+1213 0051  9500191  9500192
+1223 0052  9500193  9600001      2A power dropped to very low from here
+1233 0000  9600002  9600003      quicklook ok
+1243 0001  9600004  9600005
+1253 0002  9600006  9600007
+1303 0003  9600008  9600009      GPS burst
+1313 0004  9600010  9600011
+1324 0005  9600012  9600013
+1334 0006  9600014  9600015
+1344 0007  9600016  9600017
+1354 0008  9600018  9600019
+1404 0009  9600020  9600021
+1414 0010  9600022  9600023      quicklook ok, 2A power still low
+1424 0011  9600024  9600025
+1434 0012  9600026  9600027
+1445 0013  9600028  9600029
+1455 0014  9600030  9600031
+1505 0015  9600032  9600033
+1515 0016  9600034  9600035
+1525 0017  9600036  9600037
+1535 0018  9600038  9600039
+1545 0019  9600040  9600041      quicklook ok, 2A power low
+1555 0020  9600042  9600043
+1605 0021  9600044  9600045
+1616 0022  9600046  Aborted
+
+LST stop: 1616        RA stop: 1644
+
+NOTES:
+
+TOGS run at end -- not run at start!
+
+Beam 2A power unstable. 
+
+FAA radar ON
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+16K = K1: 14.6   K2: 14.5   K3: 16.0   K4: 15.9   AT 18:01
+70K = K1: 82.7   K2: 91.0   K3: 100.3  K4: 108.4
+
+16K = K1: 14.3   K2: 14.3   K3: 15.8   K4: 15.7   AT 22:03
+70K = K1: 82.0   K2: 90.5   K3: 99.9   K4: 107.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+

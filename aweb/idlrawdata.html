@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Viewing the raw data in IDL</title>
+</head>
+<body>
+
+<h2>Viewing the raw data in IDL</h2>
+<p>
+So, you've got the data in IDL format - how about taking a quick look at what you've got?  
+There may be galaxies lurking... :)</p>
+
+<hr>
+
+
+<font size="+2" color="#FF0000">Open an IDL session</font>
+<ul>
+<li>Start IDL with <b>idl61</b>. Note that this invokes IDL Version 6.1; the command
+"idl" is aliased to this in the a2010 account. Also note that we runner a newer version
+in Ithaca (6.2 currently).</li>
+<li>Compile the was routines with <b>@wasinit2</b></li>
+</ul>
+
+<font size="+2" color="#FF0000">Viewing all 8 wapps</font>
+<ul>
+<li>Log in as a2010, which has all IDL paths and files, etc. setup correctly</li>
+<li>Restore the data file you wish to view, with <b>restore,  '504801359.sav'</b> , or whatever the file 
+path is.</li>
+<li>Use the routine rawplot via  <b>rawplotd, d, record=record</b></li>
+<li>All 7 beams, both pols will be displayed for each record.  Press enter to cycle through the records. </li>
+<li>The keyword <i>record</i> allows you to start at a record of your choice.  If left out you start at the beginning of the scan.</li></ul>
+
+<font size="+2" color="#FF0000">View waterfall style</font>
+<ul>
+<li>Restore the data file you wish to view, with <b>restore,  '504801359.sav'</b> , or whatever the file
+path is.</li>
+<li>Issue the command <b>loadct, 1</b></li>
+<li>Issue the command <b>imgdisp, reform(d[pol,*,beam].d), zx=-4 </b> where beam and pol define the beam and
+polarization respectively</li>
+<li>You can run xloadct and fine tune the dynamic range colors to your liking, then replot</li>
+</ul>
+
+<font size="+2" color="#FF0000">View a single beam, single rec, single pol spectrum</font>
+<ul>
+<li>Restore the data file you wish to view, with <b>restore,  '504801359.sav'</b> , or whatever the file 
+path is.</li>
+<li>Issue the command <strong>plot, reform(d[pol,rec,beam].d)</strong>, where pol=Polarization, rec=record number, and
+beam = beam number. The resulting plot has channel number on the independent axis</li>
+<li>If you wish to plot vs velocity(with 0 km/sec at band center) or frequency, use corfrq:</li>
+<li><b>freq=corfrq(d[0,0,0].h)</b></li>
+<li><b>vel=corfrq(d[0,0,0].h, retvel=1)</b></li>
+<li>Use <b>plot, vel, reform(d[pol,rec,beam].d)</b> or <b>plot, freq, reform(d[pol,rec,beam].d)
+ </b>to plot vs. these other arrays</li>
+</ul>
+
+<font size="+2" color="#FF0000">Using mpi_plot</font>
+<ul>
+<li>The a2010 account has an alternative plotting routine, <b>mpi_plot</b>, which can be used instead 
+of the plot command - use it if you prefer clicking and dragging with your mouse.</li>
+<li>Nice eps printouts can be made with mpi_plot as well.</li>
+</ul>
+<hr>
+Back to <a href="index.html">A2010</a>
+<hr>
+<i>Last updated Fri Dec 30 11:32:12 EST 2005 by martha</i>
+
+</body>
+</html>

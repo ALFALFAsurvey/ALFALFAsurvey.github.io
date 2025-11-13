@@ -1,0 +1,49 @@
+A2941 LBW   15.01.13     Observers:  Luke & UAT15
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2941.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.40575  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2941_150113.cmd
+Mode:                WAPP search mode   
+                     ALFALFA/UAT Spring SDSS Search Pilot program
+
+Data written to:     /share/pserverf.sda3/wappdata/wapp.20150113.a2941.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H090346.7+124414  090346.7 +124414  j     0 H v   # A198307cal  0750   18.8   0    501300033  det @5100km/s (1397MHz), stn~5-6 
+H090346.7+124414  090346.7 +124414  j     0 H v   # A198307cal  0759   16.7   1    501300037  det @5100km/s (1397MHz), stn~5-6
+S091651.0+113200  091651.0 +113200  j     0 H v   # A198729     0808   18.1   2    501300041  Detection @ 1366Mhz, Continuim 70mJy, S/N 4,12000 km/s   
+S090111.3+080146  090111.3 +080146  j     0 H v   # A198724     0821   14.4   3    501300045  No detection, RFI 1375MHz, Continuim -14 mJy  
+S091910.6+085849  091910.6 +085849  j     0 H v   # A191893     0833   14.7   4    501300049  Detection @ 1395 Mhz 5400km/s, Continuum -6mJy, Possible detection @1400 Mhz 4400 km/s, RFI @1374 Mhz
+S092116.5+095205  092116.5 +095205  j     0 H v   # A198730     0845   12.2   5    501300053  RFI @1374 Mhz, Detection @1414 Mhz 1200 km/s Continuum -5 Mjy 
+S092946.2+080236  092946.2 +080236  j     0 H v   # A191904     0858   12.9   6    501300057  Suspected RFI @1411 Mhz, No detection
+S093051.1+104204  093051.1 +104204  j     0 H v   # A198373     0911   9.08   7    501300061  Detection at 1394MHz, continuum 35mJy, 5800km/s
+S093255.4+091754  093255.4 +091754  j     0 H v   # A198733     0924   9.4    8    501300065  Detection at 1391MHz, continuum -7mJy, 6400km/s
+S094508.4+093550  094508.4 +093550  j     0 H v   # A198741     0936   9.1    9    501300069  Possible detection at 1405MHz, continuum -2mJy, 3200km/s 
+S094557.7+095833  094557.7 +095833  j     0 H v   # A192034     0948   8.4   10    501300073  No detection, RFI at 1425,1400,1375,1350MHz
+S095258.7+093232  095258.7 +093232  j     0 H v   # A198745     0959   8.96  11    501300077  Detection at 10400km/s, 1373 MHz
+S100835.9+080409  100835.9 +080409  j     0 H v   # A202192     1013   10.3  12    501300081  Possible detection at 5400km/s, low S/N, continuum -3mJy
+S104040.1+092449  104040.1 +092449  j     0 H v   # A202232     1026   9.7   13    501300085  Detection at 5700km/s, continuum -6.5mJy
+S105220.9+101400  105220.9 +101400  j     0 H v   # A208793     1038   8.90  14    501300089  Detection at 1407MHz, 2800km/s, continuum -1mJy  
+S105400.0+094952  105400.0 +094952  j     0 H v   # A734633     1050   8.61  15    501300093  Continuum -10mJy,possible detection at 1415MHz, 1200km/s, very narrow (possibly RFI)
+S111425.3+091547  111425.3 +091547  j     0 H v   # A219750     1103   9.58  16    501300097  Possible detection at 1380MHz, 8800km/s, continuum -4mJy
+S111313.9+101604  111313.9 +101604  j     0 H v   # A219748     1115   8.12	 17	   501300101  Possible detection at 1357MHz, 14000km/s
+S113041.1+091036  113041.1 +091036  j     0 H v   # A219760     1128   9.24  18    501300105  Possible detection at 6200km/s, low S/N, continuum -12mJy
+H123602.3+071326  123602.3 +071326  j     0 H v   # HI223913    1143   17.15 19    501300109  RFI at 1395?
+A123401.5+055710  123401.5 +055710  j     0 H v   # A223873     1151   16.34 20    501300113  Narrow detection at 1417MHz, 700 km/s
+H122034.9+133130  122035.2 +133123  j     0 H v   # HI223445    1203   6.56  21    501300117  GPS in OFF, possible detection at 1396 MHz/, 5300 km/s, repeated
+A122656.4+125741  122656.4 +125741  j     0 H v   # A222857     1214   6.81  22    501300121  Nice and terrible. Standing waved due to M87, no visible detection.
+H122034.9+133130  122035.2 +133123  j     0 H v   # HI223445    1220   4.88  23    501300125  GPS. Very narrow signal at 1396 MHz. Probably no detection.
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+  Tiedowns enabled. FAA on all night, including persistent RFI at 1375 MHz
+
+                                                                 

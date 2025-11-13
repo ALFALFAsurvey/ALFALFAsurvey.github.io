@@ -1,0 +1,82 @@
+A2669 LBW   12.01.16        Betsey, Greg + UAT
+This is the first night of the LBW followup observations
+
+CIMA version:          A `smart' version of CIMA (3.1.08 2010-02-01 17:44 "Smart")
+Configuration file:    a2669_lowvel.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.00 MHz
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz @ 1420 MHz
+      Board  3    Pols A&B  9-level 1024 chans/25 MHz @ 1397.5 MHz
+      Board  4    Pols A&B  9-level 1024 chans/25 MHz @ 1377.5 MHz
+  Catalog: 'a2669_lowv.cat'
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait       
+Command file:        a2669_120116.cmd  
+Mode:                Fixed frequency/topocentric; no doppler tracking                            
+                     Low velocity sources cz < 2000 km/s
+          
+Data written to: /share/olcor/corfile.16jan2012.a2669.*
+
+SRCNAME             RAJ     DECJ             AGNnr    Block      LST   ZA   File#  ONScan     Status
+H072538.9+091104  072538.8 +091058  j 0   # A170328   12.01.16   0736  9.2  1      201600002  Corfile malformed
+H075204.3+132500  075204.4 +132443  j 0   # A174556   12.01.16   0746  5.2  3      201600006  Detected at f=1415 MHz
+H080238.3+052613  080238.1 +052606  j 0   # A188988   12.01.16   -- skipped --
+H083925.0+141930  083925.5 +141919  j 0   #           12.01.16   0801 10.3  4      201600010  Not detected  
+H085633.9+134358  085634.3 +134348  j 0   #           12.01.16   0809 12.3  5      201600014  Not detected
+H085703.5+133530  085703.8 +133520  j 0   #           12.01.16   0818 10.6  6      201600018  Not detected
+H085758.2+123530  085758.5 +123521  j 0   #           12.01.16   0826  9.7  7      201600022  Not detected
+H085923.1+154830  085923.9 +154815  j 0   #           12.01.16   0835  6.5  8      201600026  Maybe at 1420 MHz -- near Milky Way galaxy?
+H090852.2+143530  090853.8 +143502  j 0   # A191791   12.01.16   0843  7.3  9      201600030  Detected at f=1420 MHz
+H091651.3+151742  091652.0 +151729  j 0   #           12.01.16   0853  6.6 10      201600034  Detected at f=1419 MHz
+H091658.5+132355  091658.8 +132346  j 0   #           12.01.16   0900  6.4 11      201600038  Not detected
+H092410.3+141100  092410.7 +141049  j 0   #           12.01.16   0908  5.7 12      201600042  Not detected
+H092448.7+145208  092449.2 +145155  j 0   #           12.01.16   0917  4.0 13      201600046  Not detected
+H093128.4+150038  093129.0 +150025  j 0   #           12.01.16   0925  3.7 14      201600050  Maybe at 1420 MHz -- near galaxy?
+H093709.8+152710  093710.4 +152656  j 0   #           12.01.16   0933  3.1 15      201600054  Not detected
+H100130.9+132135  100131.2 +132126  j 0   # A205283   12.01.16   0943  6.8 16      201600058  Not detected
+H102201.3+141806  102201.8 +141755  j 0   #           12.01.16   0952  8.4 17      201600062  Not detected
+H103023.3+152823  103024.0 +152810  j 0   #           12.01.16   1000  7.9 18      201600066  Not detected
+H103520.2+142212  103520.7 +142201  j 0   #           12.01.16   1008  7.7 19      201600070  Not detected
+H103542.4+141708  103542.9 +141657  j 0   #           12.01.16   1017  6.2 20      201600074  Not detected
+H104408.5+150917  104409.1 +150904  j 0   #           12.01.16   1025  5.7 21      201600078  Not detected  
+H105742.4+160003  105743.2 +155947  j 0   #           12.01.16   1033  6.4 22      201600082  Not detected  
+H110050.4+150337  110051.0 +150324  j 0   #           12.01.16   1042  5.8 23      201600086  Not detected
+H110111.9+151013  110112.5 +151000  j 0   #           12.01.16   1050  4.3 24      201600090  Not detected
+H111557.9+153950  111558.7 +153936  j 0   #           12.01.16   1059  5.0 25      201600094  Possible detection at f=1413 MHz
+H112228.3+150525  112228.9 +150512  j 0   #           12.01.16   1107  5.0 26      201600098  Not detected
+H113351.4+140400  113350.9 +140315  j 0   # A215248   12.01.16   1115  6.2 27      201600102  Not detected
+H121645.3+133016  121649.9 +133014  j 0   # A224385   12.01.16   1127 13.2 28      201600106  Detected at f=1416 MHz
+H121814.1+134453  121815.3 +134456  j 0   # A220321   12.01.16   1134 11.6 29      201600110  Not detected  
+H121348.0+124125  121348.1 +124126  j 0   # A223286   12.01.16   1143 9.5  30      201600114  Detected at f=1419.2 MHz
+H121842.5+122307  121843.8 +122308  j 0   # A223407   12.01.16   1151 8.7  31      201600118  Detected at f=1416 MHz
+H121920.1+125718  121920.4 +125710  j 0   # A226061   12.01.16   1159 7.4  32      201600122  Detected at f=1420 MHz  
+H122034.9+133130  122030.7 +133109  j 0   # A223445   12.01.16   1207 5.9  33      201600126  Not detected
+H122036.3+125305  122036.3 +125305  j 0   # A223447   12.01.16   1216 5.6  34      201600130  Not detected
+H122906.3+140015  122906.3 +140015  j 0   # A223711   12.01.16   1224 4.6  35      201600134  Poor baseline, no detection  
+H122931.9+133036  122931.9 +133036  j 0   # A223721   12.01.16   1233 4.9  36      201600138  Not detected
+H122930.3+131150  122933.6 +131146  j 0   # A223724   12.01.16   1240 5.8  37      201600142  Not detected
+H123406.7+124430  123406.7 +124430  j 0   # A222764   12.01.16   1249 6.6  38      201600146  Detected at f=1414 MHz  
+H123514.7+121415  123514.7 +121415  j 0   # A223082   12.01.16   1257 8.0  39      201600150  Not detected  
+H123651.1+125732  123651.1 +125732  j 0   # A223337   12.01.16   1305 8.7  40      201600154  Possible detection at f=1411.5 MHz? Very wide
+H124417.7+125633  124412.0 +125631  j 0   # A220977   12.01.16   1313 6.7  41      201600158  Not detected. Bad baseline
+H124851.0+160027  124851.7 +160014  j 0   #           12.01.16   1322 8.1  42      201600162  Detected at f=1416 MHz
+H130010.4+145100  130010.8 +145051  j 0   #           12.01.16   1330 7.8  43      201600166  Not detected  
+H130735.2+140746  130735.5 +140739  j 0   #           12.01.16   1338 8.4  44      201600170  Not detected
+H132441.6+134221  132442.0 +134214  j 0   #           12.01.16   1347 7.0  45      201600174  Maybe at 1420.5 MHz -- near galaxy?
+H133308.5+120053  133308.7 +120045  j 0   #           12.01.16   1355 8.4  46      201600178  Not detected
+H133659.4+124830  133659.7 +124821  j 0   #           12.01.16   1403 8.3  47      201600192  Not detected
+H140345.8+154538  140346.5 +154523  j 0   #           12.01.16   1414 3.6  48      201600196  Not detected                                   
+H141151.2+154544  141152.0 +154529  j 0   #           12.01.16   1422 3.5  49      201600200  Not detected
+H142007.3+151426  142007.9 +151413  j 0   #           12.01.16   1430 4.0  50      201600204  Not detected
+
+End LST: 1438
+
+
+NOTES:
+Some galaxies not in log file in same order as command file!
+These galaxies are marked in this file, with the "correct" HI source name from the command file
+(MH has fixed issues associated with conflict between original log copy and actual log; all ok)
+
+No RFI noted in any spectrum, but occasional bad baselines observed and noted.
+
+Israel said there was some extra time, so we stayed until ~7:15 to finish all the sources in the command file!

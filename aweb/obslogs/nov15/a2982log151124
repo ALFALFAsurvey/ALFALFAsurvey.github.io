@@ -1,0 +1,54 @@
+A2982 LBW   15.11.24  Observers: GH, AO, Ryan, Kamin, Evan
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_151124.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+ 
+Data written to:     /share/wappdata.now/wapp.20151124.a2982.****.fits  (this run ends before midnight)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST   ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+H220058.2+273721  220059.5 +273651  j     0 H v   # A321196cal   
+S224504.6+254723  224504.6 +254723  j     0 H v   # A323010     2152  13.80 0000   532800140  possible det at 1380Mhz, wavey baseline
+S223250.2+325343  223250.2 +325343  j     0 H v   # A322525     2206  15.89 0001   532800144  no det, another weird baseline
+S222913.1+351824  222913.1 +351824  j     0 H v   # A322757     2218  17.24 0002   532800148  possible det at 1391Mhz=6200km/s
+S223302.6+352309  223302.6 +352309  j     0 H v   # A322526     2230  17.16 0003   532800152  det at 1392Mhz=6200km/s,sn=8
+S223742.8+351857  223742.8 +351857  j     0 H v   # A322547     2242  17.10 0004   532800156  possible det at 1380Mhz=8800km/s
+S223733.3+353316  223733.3 +353316  j     0 H v   # A322717     2255  17.71 0005   532800160  det at 1417MHz=600km/s,sn=20
+S223858.2+340304  223858.2 +340304  j     0 H v   # A322553     2307  16.97 0006   532800164  det at 1386MHz=7500km/s, sn=4
+S224640.4+321705  224640.4 +321705  j     0 H v   # A322792     2320  15.84 0007   532800168  det at 1389Mhz=6900km/s, sn = 20
+S224638.8+265114  224638.8 +265114  j     0 H v   # A323087     2333  13.59 0008   532800172  no det, terrible baseline
+S233232.5+250357  233232.5 +250357  j     0 H v   # A225388     2347   7.60 0009   532800176  two possible dets at 1403Mhz (3800km/s) and 1366Mhz (12000km/s) respectively.
+S000003.6+261647  000003.6 +261647  j     0 H v   # A104806     0001   8.02 0010   532800180  briefly lost power during obersvation, file unreadable. restarted WAPPS
+S002311.4+265155  002311.4 +265155  j     0 H v   # A102253     0016   8.80 0011   532800184  another power dip, file is terrible (flux density ~ 10^5 mJy). restarted WAPPS
+S005636.9+335026  005636.9 +335026  j     0 H v   # A104183     0031  16.63 0012   532800188  this file is also terrible (flux density - 10^3 mJy)
+S010525.6+342216  010525.6 +342216  j     0 H v   # A115363     0043  16.89 0013   532800192  aborted scan due to the past 3 being terrible
+S010525.6+342216  010525.6 +342216  j     0 H v   # A115363     0048  16.63 0014   532800193  repeat of above aborted scan. Milky way appears only in off. Detections at 1417Mhz (600km/s)) and 1389Mhz (6800km/s).  Marginal detection at 1398 (4900km/s).
+S010939.1+352304  010939.1 +352304  j     0 H v   # A115378     0100  17.26 0015   532800197  no det, odd baseline
+S011735.4+333145  011735.4 +333145  j     0 H v   # A115666     0112  15.33 0016   532800201  no det
+S011755.5+332753  011755.5 +332753  j     0 H v   # AA11668     0125  15.28 0017   532800205  no det
+S011923.1+334524  011923.1 +334524  j     0 H v   # A115414     0137  15.96 0018   532800209  det at 1399Mhz(4500km/s)
+S012857.8+315429  012857.8 +315429  j     0 H v   # A115805     0149  14.39 0019   532800213  det at 1415Mhz(1000km/s), sn = 4  
+S012438.9+282349  012438.9 +282349  j     0 H v   # A115452     0202  13.21 0020   532800217  det at 1369Mhz(11000km/s), sn = 5 and possible dets at 1385 and 1392Mhz
+S015203.8+340213  015203.8 +340213  j     0 H v   # A115876     0215  16.57 0021   532800221  no det
+S015427.6+324731  015427.6 +324731  j     0 H v   # A115886     0227  16.25 0022   532800225  no det
+S020909.5+304212  020909.5 +304212  j     0 H v   # A123922     0240  14.25 0023   532800229  det at 1397Mhz(5000km/s), sn = 20
+S020835.4+281633  020835.4 +281633  j     0 H v   # A125160     0253  14.22 0024   532800233  det at 1373Mhz(10300km/s),sn = 3
+S021408.2+252202  021408.2 +252202  j     0 H v   # A125217     0305  13.72 0025   532800237  no det
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+  Tiedowns disabled. Lots of rain and lightning (including two power dips)
+  Plenty of GPS radar throughout.
+  1345 and 1350 are as well rfi found in every scan
+

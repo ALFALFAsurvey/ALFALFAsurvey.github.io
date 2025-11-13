@@ -1,0 +1,30 @@
+og for 12 Jul 2006
+Observer: Union Undergrads
+
+System Configuration:
+FixedAz Drift Map CIMA More Capable Version 2.2.04
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20060712.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.07.12
+
+LST  fits Scan      calscan   Source    Pattern Start coords. ang time 
+loop Not$
+______________________________________________________________________________
+1141 0000 619360354 619360956 drift16p2 FixedAz 114100+035336  19  600 99
+1151 0001 619360959 619361561
+1201 0002 619361564 619362166
+1211 0003 619362169 619362771
+1221 0004 619362774 619363376
+1231 0005 aborted (see note)
+1253 0008 619364662 619365264
+1303 0009 619365267 619365869
+1313 0010 619365872 619366474
+
+END LST: 1323
+
+Notes:
+During fits file 0005 we got a WAPP buildup logic error seven minutes into the drift.
+We restarted but then during file 0006 the waterfalls showed we had no power.  So we
+exited CIMA and began again.
+No TOGS time allotted.

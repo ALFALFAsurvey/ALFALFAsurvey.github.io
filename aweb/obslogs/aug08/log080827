@@ -1,0 +1,43 @@
+Log for 080827      Observer: Kristine Spekkens
+
+System Configuration: a2010_az360.conf
+
+File:        /share/pserverf.sda3/wappdata/wapp.20080827.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2156 20080826.0023  824000001 824000002 drift18p1  fixAZdr  215600+041530  19   600   99 loopend 
+2206 0000  824000003 824000004        		   	    		   	      	 	  - power levels okay 
+2216 0001  824000005 824000006 
+2226 0002  824000007 824000008									  - fits files okay 		
+2237 0003  824000009 824000010
+2247 0004  824000011 824000012
+2257 0005  824000013 824000014
+2307 0006  824000015 824000016									  - power levels okay		
+2317 0007  824000017 824000018									  - fits files okay	
+2327 0008  824000019 824000020	
+2337 0009  824000021 824000022
+2348 0010  824000023 824000024								          - WEIRD RFI 23:50 (1:55am)	
+2358 0011  824000025 824000026									  - power levels OK
+0008 0012  824000027 824000028
+0018 0013  824000029 824000030
+0028 0014  824000031 824000032
+0038 0015  824000033 824000034
+0048 0016  824000035 824000036	 
+0058 0017  824000037 824000038
+0109 0018  824000039 824000040
+0119 0019  824000041 824000042									  - power levels OK
+0129 0020  824000043 824000044
+0139 0021  824000045  -- aborted
+
+END LST: 0139
+
+Notes: 
+** Previous program ran 5mins over: had to call operator. No TOGS at start.
+** TOGS run at end.
+** Beam 6B has low power
+** "WEIRD RFI" at 23:50 (1:55am): right on schedule! Bms 2, 3 affected.
+** Saw NO WAPP chip count errors! Since Beam 6B dead, there were regular check_wapp_levels grey and
+orange messages: WAPP power levels are between 0.098 and 1.113 (still bad).
+** interpolating pnt-data over 2:00 secs errors: 22:18 (fits 0001), 22:46 (fits 0003), 23:01 (fits 0005), 23:26 (fits 0006),
+23:30, 23:31 (fits 0008)
+** No FAA radar

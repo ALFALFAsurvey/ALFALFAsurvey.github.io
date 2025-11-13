@@ -1,0 +1,45 @@
+Log for 11/23/09          Observers: DK, Bret Comnes, Noah Billings and Company
+
+
+System Configuration:                   a2010_az360_2009.conf
+CIMA version       			3.1.06 2009-11-23 11:19 "Smart" 
+File(s):  /share/pserverf.sda3/wappdata/wapp.20091123.a2010.****.fits
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+2342 0001 932700185 932700186  drift23p1 fixAZdr   234100+052830  19  600   99  loopend    power levels okay on all beams and quick look okay  gps  interference and continuum source
+2352 0002 932700187 932700188
+0003 0003 932700189 932700190
+0012 0004 932700191 932700192
+0022 0005 932700193 932700194
+0032 0006 932700195 932700196      power levels okay quick look okay
+0042 0007 932700197 932700198
+0052 0008 932700199 932700200
+0103 0009 932700201 932700202
+0113 0010 932700203 932700204      power levels okay
+0123 0011 932700205 932700206      quick look okay power okay
+0133 0012 932700207 932700208      power levels okay
+0143 0013 932700209 932700210
+0153 0014 932700211 932700212
+0203 0015 932700213 932700214      power levels okay quick look okay
+0213 0016 932700215 932700216
+0223 0017 932700217 932700218
+0234 0018 932700219 932700220      power levels okay
+0244 0019 932700221 932700222
+0254 0020 932700223 932700224
+0304 0021 932700225 932700226      power levels okay
+0314 0022 932700227 932700228
+0324 0023 932700229 aborted
+
+LST stop: 0324
+faa radar active all night
+overall very uneventful night
+togs run at start/end
+
+
+
+ALFA TEMPERATURES
+16K = K1: 13.8	K2: 13.5	K3: 15.3	K4: 15.2	AT 08:13
+70K = K1: 79.8	K2: 81.0	K3: 90.5	K4: 98.1
+
+16K = K1: 13.5	K2: 13.5	K3: 15.0	K4: 15.2	AT 14:19
+70K = K1: 79.5	K2: 81.7	K3: 91.0	K4: 98.5

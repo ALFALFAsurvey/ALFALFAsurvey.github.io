@@ -1,0 +1,59 @@
+A3064 LBW   16.10.12   Observers: Rebecca Koopmann and Union College First Year Physics Seminar
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161012.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161012.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161013.a3064.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S232024.9+331344  232024.9 +331344  j     0 H v   # A331859    2319   15    0011   628600163   detection @ 1395MHz, 5400 km/s, S/N~5   
+S232823.9+333841  232823.9 +333841  j     0 H v   # A335372    2332   15.4  0012   628600167   detection @ 1390MHz, 6600 km/s, S/N~4   
+S233336.8+334802  233336.8 +334802  j     0 H v   # A336645    2343   15.7  0013   628600171   possible  @ 1390MHz, 6500 km/s
+S235311.1+314106  235311.1 +314106  j     0 H v   # A335523    2356   13.5  0014   628600175   detection @ 1367MHz, 11800 km/s, S/N~2
+S001811.8+321915  001811.8 +321915  j     0 H v   # A104359    0009   14.2  0015   628600179   no detection
+S004253.1+332458  004253.1 +332458  j     0 H v   # A105249    0022   16.0  0016   628600183   GPS in ON, no detection
+S004937.5+334454  004937.5 +334454  j     0 H v   # A105013    0034   16.0  0017   628600187   No detection  
+S005315.4+323238  005315.4 +323238  j     0 H v   # A103413    0046   14.4  0018   628600191   No detection
+S010138.6+344716  010138.6 +344716  j     0 H v   # A116195    0059   16.6  0019   628600195   detection @ 1368MHz, 11400 km/s,S/N~3
+S010406.3+342510  010406.3 +342510  j     0 H v   # A115123    0111   16.2  0000   628700004   marginal detection @ 1395MHz, 5400 km/s
+S012503.3+333421  012503.3 +333421  j     0 H v   # A115439    0123   15.3  0001   628700008   multiple peaks; very narrow-birdies?
+S015021.1+331649  015021.1 +331649  j     0 H v   # A116273    0136   15.4  0002   628700012   no detection 
+S015639.0+334806  015639.0 +334806  j     0 H v   # A116258    0148   15.7  0003   628700016   GPS in off, possible @ 1369MHz, 
+11300km/s
+S015830.0+324819  015830.0 +324819  j     0 H v   # A115901    0200   14.6  0004   628700020   detection @ 1400MHz, 4400 km/s, S/N~4  
+S021446.6+312556  021446.6 +312556  j     0 H v   # A125181    0213   13.2  0005   628700024   detection @ 1396MHz, 5300 km/s, S/N~8, 
+likely to be off-center spiral; possible detection @ 1357MHz, 14000 km/s, broad RFI at 1363 MHz 
+S021647.9+324037  021647.9 +324037  j     0 H v   # A125523    0225   14.5  0006   628700028   GPS in off; detection @ 1399MHz, 4600 
+km/s, S/N~3
+S024812.5+341202  024812.5 +341202  j     0 H v   # A124906    0238   16.1  0007   628700032  GPS in off, detection @ 1367.5MHz, 11500 
+km/s,S/N~2 
+S025211.8+350043  025211.8 +350043  j     0 H v   # A124615    0250   16.8  0008   628700036  GPS in off, detection @ 1397 MHz, 5100 
+km/s, S/N~10    
+S030412.2+353044  030412.2 +353044  j     0 H v   # A132176    0303   17.3  0009   628700040  No detection; Broad RFI at 1363 MHz
+(H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal  Not observed - no time)
+                                                      
+Notes 
+-Phil reported encoder problem from previous night was solved. No problems.
+
+-Early start but long slew puts us at predicted start time.
+
+-Orange error message in CIMA: "warning: wappdata getting low on disk space". Emailed Arun and told operator. No problems fortunately.
+
+-FAA radar is on. Occasional GPS. One scan (001)with multiple very narrow peaks - possible birdies. Occasional RFI at 1363 MHz.
+
+-Tiedowns enabled.
+
+                                                                 

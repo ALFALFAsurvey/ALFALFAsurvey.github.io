@@ -1,0 +1,46 @@
+Log for 080821      Observer: Kristine Spekkens
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080821.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+** 0001-0005 junk: see below
+2253 0006 823400034  823400035 drift24p2 fixAZdr  230100+055023 19   600  99    loopend   -- Bm 6B back! *** PROBABLY BAD. SEE NOTES
+2303 0007 823400036  823400037  	 	  		     	  		  -- duplicate AGC block warning ** PROBABLY BAD. SEE NOTES
+2313 0008 823400038  823400039                                                            -- duplicate AGC block warning LST=2318 
+2323 0009 823400040  823400041
+2333 0010 823400042  823400043								  -- checked fits files: okay
+2343 0011 823400044  823400045								  -- power levels okay
+2353 0012 823400046  823400047				             	  -- 2355: power jump (>15), ~2 secs in beams 2+3: spike in BPs at ~1380. RFI
+0003 0013 823400048  823400049						                  -- power levels okay
+0013 0014 823400050  823400051
+0023 0015 823400052  823400053
+0033 0016 823400054  823400055
+0044 0017 823400056  823400057							          -- checked fits files: okay
+0054 0018 823400058  823400059
+0104 0019 823400060  823400061							          -- power levels okay
+0114 0020 823400062  823400063
+0124 0021 823400064  823400065
+0134 0022 823400066  823400067
+0144 0023 823400068  823400069							          -- power levels okay
+0155 0024 823400070  823400071								  -- checked fits files: okay
+0205 0025 823400072  823400073
+0215 0026 823400074  823400075
+0225 0027 823400076  823400077
+0235 0028 823400078  823400079
+0245 0029 823400080  823400081
+0255 0030 823400082  823400083								  -- power levels okay
+0305 0031 823400084  823400085
+0315 0032 823400086									  -- aborted
+
+
+Notes
+0. TOGS run at start  (PROBABLY BAD; SEE BELOW) and end (okay)
+1. FAA radar off, not much RFI
+2. Beam 6B power levels okay, but bandpass looks strange: no gain between 1340-1360, gain at 1430 = 2 (instead of 1.5), and can't see galactic HI...
+3. At start, got warning messages about WAPP chip count: the difference between the numbers was ~2000, so re-started a few times and they went away...
+4. Got "duplicate AGC block warning - interpolated over 2 second gap" a few times too - see above
+5. LOTS STARTUP PROBLEMS: Lost an hour of time at the start. Two main reasons: 
+#1: When you point the telescope in the Pointing Control Window, the "Start Position" in the CIMA observing window does not change from the default of drift4p1: you have to click this buttongin the CIMA observing window and choose the drift you want there as well. Otherwise, the telescope tries to go to drift4p1 irrespective of what you did in the pointing window. This took a few tries to figure out.
+#2: Strange pointing problems: Once the telescope was pointed in the Pointing Control Window and the "Start Position" was correct in the CIMA observing window, when I hit "Observe" the declination changed from the value in the Pointing Control Window: specifically, although +055024 was specified in the pointing control menu and the telescope was in fact pointed at that location, after I hit "Observe" it slewed to +055013 (or so) before starting to take data (this dec was listed in the CIMA obs status, monpnt window, and ZA did change, so I think it was real). I tried everything to fix this: re-loading the config file, restarting the wapps, exiting and re-entering CIMA. Called the operator: he had not seen this problem before. Finally resigned myself to take data at wrong dec all night, when dec corrected itself half-way into second drift (fits 0007). For this reason, files 0006 and 0007 are probably bad, but I'm not sure... 

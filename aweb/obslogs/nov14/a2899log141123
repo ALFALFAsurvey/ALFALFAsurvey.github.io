@@ -1,0 +1,70 @@
+A2899  LBW   14.11.23      Observers: GH, RO, UAT
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2899.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2899_141123.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to: /share/olcor/corfile.23nov14.a2899.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+
+**********SEE ERROR MESSAGE AT: 
+http://www.naic.edu/~phil/software/datataking/aoscramnet.html#25nov14
+**********
+
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include estimate of S/N ratio)
+A212116.3+292754  212116.3 +292754  j  4600 H v   # A011730   2136   11.3      1  432700588   detection at 1399Mhz very lope sided sn=110
+A221404.7+254052  221404.7 +254052  j  1200 H v   # A321307   2146    9.9      2  432700592   detection at 1415Mhz sn=14, rfi at 1409Mhz
+A223540.6+233627  223540.6 +233627  j  1300 H v   # A320902   2155   10.55     3  432700596   rfi at 1409MHz
+H220535.2+335737  220535.5 +335753  j  4700 H v   # A322641   2205   15.71     4  432700600   detection at 1398Mhz sn=2.5
+H222901.0+353200  222902.7 +353150  j  5900 H v   # A322639   2214   17.62     5  432700604   detection at 1393Mhz sn=16, two detections near edge of bandpass
+H224230.7+353817  224230.7 +353817  j  5100 H V   # A322640   2222   17.99     6  432700608   detection 1396Mhz sn=2
+A225442.4+321912  225442.4 +321912  j  6600 H v   # A320429   2231   15.1      7  432700612   detection at 1390Mhz sn=12  
+H230848.3+285639  230854.1 +285737  j  6700 H v   # A333583   2239   12.6      8  432700616   detection at 1389Mhz sn=5, galaxy?rfi? at 1396Mhz in off scan
+H231024.1+294907  231025.2 +294830  j  6900 H v   # A333584   2247   12.6      9  432700620   detection at 1388Mhz sn=3, galaxy?rfi? at 1395Mhz sn=24
+H231301.3+313530  231302.6 +313518  j  6500 H v   # A333451   2256   13.91    10  432700624   no detection
+H232524.9+283004  232521.9 +282939  j  7000 H v   # A012591   2304   11.31    11  432700628   rfi at 1395Mhz in off scan
+H234533.8+305950  234536.0 +310001  j  7900 H v   # A333470   2314   14.66    12  432700632   detection at 1386Mhz sn=30
+H235240.6+292330  235240.6 +292334  j  7900 H v   # A333595   2322   13.17    13  432700636   no detection
+H235710.2+294156  235711.3 +294221  j  7100 H v   # A333599   2330   13.05    14  432700640   detection at 1386MHz, rfi at 1394Mhz in off scan
+H235955.3+295630  235956.6 +295555  j  7000 H v   # A333477   2338   12.7     15  432700644   detection at 1388Mhz sn=4, rfi at 1395 MHz
+H000701.9+285208  000703.4 +285211  j  6900 H v   # A102949   2346   11.68    16  432700648   detection at 1388Mhz sn=4
+H001115.2+281804  001112.9 +281733  j  7500 H v   # A102950   2354   10.8     17  432700652   detection at 1386Mhz sn=3
+H001243.7+275741  001244.6 +275815  j  7500 H v   # A102951   0002   10.02    18  432700656   no detection. rfi in off scan at 1390Mhz?
+H001319.0+292139  001319.5 +292055  j  7000 H v   # A102952   0010   11.12    19  432700660   detection at 1388Mhz sn=15
+H001442.9+302436  001451.4 +302507  j  7200 H v   # A102843   0019   12.19    20  432700664   rfi at 1393 MHz
+H004927.4+282137  004927.8 +282119  j  5000 H v   # A102968   0028   11.29    21  432700668   detection at 1397Mhz sn=5
+H005635.9+354630  005637.2 +354609  j  2700 H v   # A104558   0039   18.00    22  432700672   detection at 1408Mhz sn=7   
+H012326.7+344407  012324.6 +344404  j  5200 H v   # A115591   0047   18.41    23  432700676   detection at 1396Mhz sn=5
+H012537.8+021530  012537.2 +021511  j  2300 H v   # OHMcand?  0100   17.18    24  432700680   not detected. rfi at 1395MHz
+H012941.8+324836  012941.8 +324836  j  4900 H v   # A110370   0118   14.79    25  432700684   detection at 1397MHz sn=9
+A013836.3+351848  013836.3 +351848  j  5600 H v   # A115599   0127   17.26    26  432700688   detection at 1395MHz sn=15. or is it the rfi?
+H014357.0+292503  014357.1 +292446  j  6900 H v   # A114084   0137   11.26    27  432700692   not detected. rfi at 1395MHz
+H020442.2+300619  020439.9 +300551  j  6800 H v   # A123072   0146   12.61    28  432700696   no detection
+H021212.8+282512  021215.6 +282425  j  5600 H v   # A123186   0154   10.98    29  432700700   detection at 1394MHz sn=10. poor baseline: edge of bandpass rises sharply.
+H021650.8+291952  021650.6 +291932  j  5200 H v   # A123239   0202   11.57    30  432700704   detection at 1396MHz sn=5
+H021605.7+320923  021609.2 +320933  j  7400 H v   # A123082   0211   13.95    31  432700708   detection at 1394Mhz sn=2. additional galaxy in ON at 1391 MHz?
+H023034.9+272330  023036.3 +272257  j  5600 H v   # A122833   0221    7.80    32  432700712   detection at 1395MHz sn=5
+H025027.3+241847  025027.3 +241834  j  1400 H v   # A122900   0230    7.74    33  432700216   detection at 1414MHz sn=25, rfi at 1407MHz
+H030305.8+334139  030305.8 +334139  j   200 H v   # A130770   0243   16.12    35  432700221   no detection. rfi at 1405 MHz, interloper at 1406 MHz
+H030305.8+334139  030305.8 +334139  j   200 H v   # A130770   0252   16.00    36  432700225   no detection. rfi at 1405 MHz, interloper at 1406 MHz
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+  Tiedowns enabled. Good night with lots of detections.
+  Unknown RFI at ~1395 & ~1410 MHz; contacting AO staff
+  S/N estimated as peak over rms.
+
+**********SEE ERROR MESSAGE AT: 
+http://www.naic.edu/~phil/software/datataking/aoscramnet.html#25nov14
+**********

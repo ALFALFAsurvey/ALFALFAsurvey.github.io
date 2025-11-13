@@ -1,0 +1,58 @@
+A2982 LBW   15.11.27  Observers: GH, Ryan, Kamin
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_151127.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+ 
+Data written to:     /share/wappdata.now/wapp.20151127.2982.****.fits  (this run ends before midnight)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA    File#   ONScan     Status (Pls include freq & S/N ratio) 
+S222551.4+230620  222551.4 +230620  j     0 H v   # A322515     2128   14.30 0000    533100196  possible det at 1367Mhz(11800km/s) sn = 4
+S223627.4+235400  223627.4 +235400  j     0 H v   # A322539     2141   14.17 0001    533100200  no det
+S224521.7+233426  224521.7 +233426  j     0 H v   # A322992     2153   13.38 0002    533100204  no det
+S222012.7+331832  222012.7 +331832  j     0 H v   # A323100     2207   15.36 0003    533100208  detection at 1391Mhz(6400km/s) sn = 8.
+S224812.0+324145  224812.0 +324145  j     0 H v   # A323102     2220   15.83 0004    533100212  detection at 1389Mhz(6800km/s), sn = 10.
+S225253.6+332236  225253.6 +332236  j     0 H v   # A322668     2232   15.87 0005    533100216  detection at 1391Mhz(6400km/s), sn = 15.
+S230625.5+324302  230625.5 +324302  j     0 H v   # A336113     2244   15.34 0006    533100220  detection at 1391Mhz(6400km/s), sn = 10. nice two horned profile
+S231828.9+342205  231828.9 +342205  j     0 H v   # A335256     2257   16.86 0007    533100224  gps present, bad bandpass shape.  detection at 1396Mhz(5300km/s), sn = 10
+S232316.7+333448  232316.7 +333448  j     0 H v   # A336114     2309   15.68 0008    533100228  gps present, detection at 1377Mhz(9300km/s), sn = 7.
+S233955.7+322520  233955.7 +322520  j     0 H v   # A336115     2321   14.81 0009    533100232  detection at 1372Mhz(10700km/s), sn = 2.
+S002025.4+270833  002025.4 +270833  j     0 H v   # A104883     2335   13.91 0010    533100236  detection at 1377Mhz(9300km/s), sn = 4.
+S002035.9+295525  002035.9 +295525  j     0 H v   # A104877     2347   13.96 0011    533100240  no det
+S003551.3+284949  003551.3 +284949  j     0 H v   # A104995     0000   13.48 0012    533100244  obsevation aborted due to wapps failure
+S003551.3+284949  003551.3 +284949  j     0 H v   # A104995     0009   12.21 0013    533100246  reobservation of previous source.  gps present.  no det.
+S010159.8+270551  010159.8 +270551  j     0 H v   # A115851     0022   12.86 0014    533100250  no det.  1422Mhz rfi in off
+S010011.2+303639  010011.2 +303639  j     0 H v   # A115349     0034   13.70 0015    533100254  detection at 1396Mhz(5100km/s), sn = 10.
+S011516.2+334415  011516.2 +334415  j     0 H v   # A115903     0048   16.70 0016    533100258  no det.
+S011631.7+341052  011631.7 +341052  j     0 H v   # A115570     0100   16.38 0017    533100262  detection at 1379Mhz(9000km/s), sn = 4.
+S011928.0+353818  011928.0 +353818  j     0 H v   # A115572     0112   17.48 0018    533100266  gps present, detection at 1398Mhz(4800km/s), sn = 7.
+S012248.7+335806  012248.7 +335806  j     0 H v   # A110268     0125   15.72 0019    533100270  detection at 1395Mhz(5600km/s), sn = 4.
+S012424.5+340239  012424.5 +340239  j     0 H v   # A115578     0137   16.03 0020    533100274  gps present.  detection at 1393Mhz(5800km/s), sn = 8.
+S013022.0+320229  013022.0 +320229  j     0 H v   # A115902     0149   14.47 0021    533100278  detection at 1396Mhz(6300km/s), sn = 2.
+S015626.5+330623  015626.5 +330623  j     0 H v   # A110951     0202   14.90 0022    533100282  no det
+S015736.4+322048  015736.4 +322048  j     0 H v   # A115900     0215   14.61 0023    533100286  wapp failed to perform cals.  observation aborted
+S015736.4+322048  015736.4 +322048  j     0 H v   # A115900     0223   15.15 0024    533100288  possible detection at 1396Mhz(5100km/s), sn = 2
+S022935.1+341344  022935.1 +341344  j     0 H v   # A124887     0236   16.01 0025    533100292  detection at 1405Mhz(3300km/s), sn = 5.
+S022135.7+313425  022135.7 +313425  j     0 H v   # A123087     0248   14.55 0026    533100296  detection at 1397Mhz(5000km/s), sn = 3.
+S023150.8+325355  023150.8 +325355  j     0 H v   # A125240     0300   16.05 0027    533100300  gps present.  detection at 1399Mhz(4700km/s), sn = 8.
+S024715.6+335932  024715.6 +335932  j     0 H v   # A124611     0313   16.72 0028    533100304  wapps failed at the end of caloff
+S023853.1+274643  023853.1 +274643  j     0 H v   # A124754 if time
+H030801.4+301230  030802.9 +301229  j     0 H v   # A131387cal if time (3 min ON/OFF)
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+  Tiedowns enabled.
+  Two WAPPS failures during CALOFF scan.
+  The 1422 MHz rfi is back in one scan.
+
+

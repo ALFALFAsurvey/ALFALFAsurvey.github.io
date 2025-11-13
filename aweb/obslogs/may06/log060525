@@ -1,0 +1,55 @@
+Log for 25 May 2006
+Observer: Ann
+
+System Configuration:
+FixedAz Drift Map CIMA normal version 2.1
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20060525.a2010.****.fits
+       /share/pserverf.sdb1/wappdata/wapp.20060526.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.05.25
+
+LST  fits Scan      calscan   Source    Pattern Start coords. ang time loop Note
+______________________________________________________________________________
+1050 0011 614568628 614569230 drift116p1 FixedAz 105000+280618  19  600  99 Power levels ok  
+1100 0012 614569233 614569834
+1110 0013 614569838 614570440
+1120 0014 614570443 614571044
+1130 0015 614571048 614571649
+1140 0016 614571653 614572254
+1150 0017 614572258 614572859
+1201 0018 614572863 -- aborted when connection was lost
+1245 0019 -- new FITS file created in CIMA restart to which no data was written
+1256 0020 614576157 614576759 -- first scan of data in the second session
+1306 0021 614576763 614577364
+1316 0022 614577368 614577969
+1326 0023 614577973 614578574
+1336 0024 614578578 614579179
+1346 0025 614579183 614579784 
+1356 0026 614579788 614580389
+1407 0027 614580393 614580994
+1417 0028 614580998 614581600
+1427 0029 614581603 614582204
+1437 0030 614582208 614582809
+1447 0031 614582813 614583414
+1457 0032 614583418 614584019
+1507 0033 614584023 614584624
+1517 0034 614584628 614585229
+1527 0035 614585233 614585834
+1538 0036 614585838 614600039
+1548 0000 614600043 614600644
+1558 0001 614600648 614601249
+1608 0002 614601253 614601854
+1618 0003 614601858 614602459
+1628 0004 614602463 614603064
+1638 0005 614603068 --aborted
+
+END LST: 1638
+
+NOTES:
+Early start w/TOGS run at start.
+Able to check power levels remotely (RSA authentication problem FIXED) for first hour.
+Lost internet connection in Ithaca during FITS file 0018 (0017 is a-OK). AO continued observations. All
+Scan/calscan numbers after scan 18 were determined from tracing through the cimalog, except for the
+scans/cal corresponding to 0005, 0004, and 0003 which were watched from AOSTATUS/MONPNT.
+No TOGS run at end.

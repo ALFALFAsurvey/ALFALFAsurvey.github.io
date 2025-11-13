@@ -1,0 +1,93 @@
+Log for 11/09/18     Observer: Betsey, Anne, Martha, Parker
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda3/wappdata/wapp.20110918.a2010.****.fits
+             /share/pserverf.sda3/wappdata/wapp.20110919.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****76p3   Az=267.8   ALFAang= -70.0  ZA=4.2  ZAG=5.4 (dome)
+****
+****78p2   Az=260    AFLAang=-61  ZA=4.2  ZAG=4.29
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+76p3  RA@start=2212    RA@end= 
+      RA = LST + 22 
+
+78p2: RA@start=2255  RA@end=0317
+      RA=LST + 18
+****
+During the night, please make occational notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the inner ZA limit
+is 1.1 deg. If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2150 0025  126100133 126100134   drift76p3  fixAZdr   221200+182451  -70  600 99  loopend  ZAG=5.4   
+2200 0026  126100135 126100136      ZAG=5.67
+2210 0027  126100137 126100138   quicklook ok; ZAG=5.93
+2221 0028  126100139 126100140   ZAG=6.3; HA=26min; AZ=267.22
+2231 0029  126100141 ABORTED      tried to go to ZA=0; double-value region
+
+SWITCH TO DRIFT 78p2; readjust power
+
+2238 0030  126100142 126100143   drift 78p2 fixZAdr  225500+185848  -61  600 99 loopend  ZAG=4.29; Az=259.22 
+2248 0031  126100144 126100145   quicklook ok
+2258 0032  126100146 126100147   ZAG=4.29
+2308 0033  126100148 126100149
+2318 0034  126100150 126200001
+2328 0000  126200002 126200003  ZAG=4.3; quicklook ok
+2338 0001  126200004 126200005
+2348 0002  126200006 126200007
+2358 0003  126200008 126200009
+0009 0004  126200010 126200011
+0019 0005  126200012 126200013   quicklook ok
+0029 0006  126200014 126200015  ZAG=4.29
+0039 0007  126200016 126200017
+0049 0008  126200018 126200019
+0059 0009  126200020 126200021
+0109 0010  126200022 126200023
+0119 0011  126200024 126200025  ZAG=4.25
+0129 0012  126200026 126200027
+0140 0013  126200028 126200029
+0150 0014  126200030 126200031  ZAG=4.23
+0200 0015  126200032 126200033
+0210 0016  126200034 126200035
+0220 0017  126200036 126200037
+0230 0018  126200038 126200039
+0240 0019  126200040 126200041
+0250 0020  126200042 126200043
+0301 0021  126200044 ABORTED
+
+
+LST@stop:0301       RA@stop: 0317
+
+NOTES:
+
+-- Using 'zenith strip' observing mode
+-- Started late due to wrap
+-- FAA radar OFF 
+-- Beam 4A dead.
+-- Tiedowns disabled
+-- Switched drifts in the middle of night - hit double-valued region of drift near zenith
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 13.3   K2: 12.8   K3: 14.5   K4: 14.7   AT 18:00
+70K = K1: 80.0   K2: 80.5   K3: 86.6   K4: 94.2
+
+16K = K1: 13.3   K2: 12.8   K3: 14.5   K4: 14.7   AT 22:00
+70K = K1: 79.7   K2: 80.0   K3: 86.3   K4: 93.9
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

@@ -1,0 +1,60 @@
+A3064 LBW   16.10.28   Observers: Miller & O'Donoghue
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161028.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161028.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161029.a3064.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+A212116.3+292754  212116.3 +292754  j     0 H v   # A011730cal  2112  11.4  0000  630200001    3min ON/OFF, tiedowns disabled (unstable weather, lost tension)
+S213455.9+285613  213455.9 +285613  j     0 H v   # A311390     2121  11.2  0001  630200005    narrow spike at 1387MHz ... rfi? seeems to narrow for galaxy 
+S215217.1+303402  215217.1 +303402  j     0 H v   # A311386     2134  12.8  0002  630200009    nice source in PPS, 5300 km/s S/N ~2
+S221954.1+282339  221954.1 +282339  j     0 H v   # A323402     2146  12.8  0003  630200013    no detection
+S222623.2+312911  222623.2 +312911  j     0 H v   # A323404     2159  14.6  0004  630200017    WAPPs failed.  Aborted, restarted WAPPs & reobserved this source
+S222623.2+312911  222623.2 +312911  j     0 H v   # A323404     2206  14.0  0005  630200018    nada ... after all that excitement!
+S224038.8+300030  224038.8 +300030  j     0 H v   # A323410     2219  12.8  0006  630200022    possible weak source at 12,700 km/s, S/N ~1.5
+S224931.3+305900  224931.3 +305900  j     0 H v   # A323416     2231  13.5  0007  630200026    weak source at 6700 km/s, S/N ~2
+S225825.2+315703  225825.2 +315703  j     0 H v   # A323418     2243  14.2  0008  630200030    GPS burst, no apparent source even using /gps
+S231438.6+314002  231438.6 +314002  j     0 H v   # A336618     2256  14.2  0009  630200034    weak source at 6200 km/s, S/N ~1.5
+S232538.6+331044  232538.6 +331044  j     0 H v   # A336636     2308  15.5  0010  630200038    two sources? 7700 & 8300 km/s, S/N ~1.5 & ~2
+S232634.4+335450  232634.4 +335450  j     0 H v   # A336637     2320  15.8  0011  630200042    GPS burst, no apparent source even using /gps
+S233409.4+343601  233409.4 +343601  j     0 H v   # A336705     2332  16.4  0012  630200046    detection at 6500 km/s S/N ~4
+S235741.3+360608  235741.3 +360608  j     0 H v   # A335262     2345  18.1  0013  630200050    detection at 5900 km/s S/N ~2, narrow rfi spike at 1389 MHz
+S235637.3+334001  235637.3 +334001  j     0 H v   # A336706     2358  15.4  0014  630200054    GPS burst, possible weak source at 10900 km/s ... and it's a spiral on DR12! 
+S001201.6+330124  001201.6 +330124  j     0 H v   # A105233     0010  14.8  0015  630200058    GPS in off, no detection
+S001349.4+332010  001349.4 +332010  j     0 H v   # A105239     0022  15.2  0016  630200062    no detection
+S001727.4+313219  001727.4 +313219  j     0 H v   # A105242     0035  13.8  0017  630200066    weak detection of 2(or rfi?): 13700 km/s, 14300 km/s S/N ~1.5, rfi at 1363 MHz
+S001932.1+320118  001932.1 +320118  j     0 H v   # A104871     0047  15.0  0018  630200070    detection at 7200 km/s S/N ~2
+S003205.7+311608  003205.7 +311608  j     0 H v   # A104922     0059  14.3  0019  630200074    detection at 6400 km/s S/N ~2
+S004642.3+303253                                                0112  13.5  0020  630200078    no detection, source left off log list, added from nominal file during last scan
+S010121.5+313518  010121.5 +313518  j     0 H v   # A116263     0124  14.2  0021  630200082    rfi at 1363 MHz
+S012135.3+302100  012135.3 +302100  j     0 H v   # A116270     0137  12.5  0022  630200086    rfi at 1363 MHz, GPS in off
+S014722.4+331057  014722.4 +331057  j     0 H v   # A116300     0149  14.9  0023  630200090    no detection
+S015639.0+334806  015639.0 +334806  j     0 H v   # A116258     0202  15.6  0024  630200094    detection at 8700 km/s S/N ~2
+S025311.0+343447  025311.0 +343447  j     0 H v   # A124763     0215        0000  630200098    no detection
+S025311.0+343447  025311.0 +343447  j     0 H v   # A124763     0227  18.5  0001  630200004    no detection
+S030200.2+350849  030200.2 +350849  j     0 H v   # A132274     0239  17.7  0002  630300008    no detection, but some weirdness ... lurking continuum source?
+S030247.9+350428  030247.9 +350428  j     0 H v   # A131430     0251  17.0  0003  630300016    no detection
+S030352.5+353453  030352.5 +353453  j     0 H v   # A132283     0303        0004  630300020    no detection
+
+                                                      
+Notes (be sure to write notes here so we can keep track of anything relevant)
+Tiedowns weird. Jonathan had them off at first, but on aostatus they flashed between "active" and "failure" continually all night
+The rfi at 1363MHz that we saw lots of on 10/15 didn't show up until after 11 pm AST
+As we started the last scan, we discovered that the log list had left out one source.  At the end of the night we had to add that line and transfer the LSTs, ZA's, File#'s and 
+ONScans up one line to be associated with the correct source.  In the log, I had a different source repeated and, in changing things with foggy brains, we lost some of the
+zenith angles.  We hope we were able to clear things up but beware of the data after S004642.3+303253.  Also, we checked the last five files at the end of the night on a small 
+laptop, so our evaluations may not be accurate.  Sorry, Martha.

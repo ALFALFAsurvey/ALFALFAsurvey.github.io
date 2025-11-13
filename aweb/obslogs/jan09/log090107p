@@ -1,0 +1,24 @@
+Log for 090107p     Observers: Martha Haynes & Riccardo Giovanelli & Drew Brisbin
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:        /share/pserverf.sda2/wappdata/wapp.20090107.a2010.****.fits 
+
+
+LST  fits  Scan     calscan   Source     Pattern  Start coords. ang  time loop calmode
+0126 0047 900700178 900700179 drift37p1  fixAZdr  012800+085254  19   600  99  loopend  Bm6B ok
+0136 0048 900700180 900700181
+0146 0049 900700182 900700183
+0156 0050 900700184 900700185  power levels OK
+0206 0051 900700186 900700187
+0216 0052 900700188 900700189
+0226 0053 900700190 900700191
+0236 0054 900700192 900700193
+0246 0055 900700194 900700195  power levels OK
+0257 0056 900700196 900700197
+END LST:  0307
+
+Notes:
+TOGS run at beginning only.
+FAA radar on.
+Beam 6B looks ok

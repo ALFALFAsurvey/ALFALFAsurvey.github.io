@@ -1,0 +1,69 @@
+Log for 4/2/05 pm            
+Observers:  BC, MH
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050402.a2010.****.fits
+       /share/pserverf.sda3/wappdata/wapp.20050403.a2010.****.fits
+ 
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+1018 0000 509279155           drift39p1 FixedAz 101800+092206  19   600  45	         (1) aborted
+1026 0001 509279634 509280236
+1036 0002 509280239 509280840
+1046 0003 509280844 509281446
+1056 0004 509281449 509282051
+1106 0005 509282054 509282655
+1116 0006 509282659 509283261
+1126 0007 509283264 509283866
+1137 0008 509283869 509284470
+1147 0009 509284474 509285076
+1157 0010 509285079 509285681
+1207 0011 509285684 509286286 
+1217 0012 509286289 509300490
+1227 0000 509300494 509301096
+1237 0001 509301099 509301700
+1247 0002 509301704 509302305
+1258 0003 509302309 509302911 
+1308 0004 509302914 509303516
+1318 0005 509303519 509304121 
+1328 0006 509304124 509304726
+1338 0007 509304729 509305331
+1348 0008 509305334 509305936 
+1358 0009 509305939 509306541
+1408 0010 509306544 509307145
+1418 0011 509307149 509307750
+1428 0012 509307754 509308356
+1438 0013 509308359 509308961
+1449 0014 509308964 509309566
+1459 0015 509309569 509310170
+1509 0016 509310174 509310775
+1519 0017 509310779 509311380
+1529 0018 509311384 509311985
+1539 0019 509311989 509312591
+1549 0020 509312594                                                          (2) aborted 
+1552 0021 509312769 509313371 drift39p1 FixedAz 155230+092206  19   600  45  (3) skip    
+1605 0022 509313567 509314169 drift39p1 FixedAz 160550+092206  19   600  45  looks ok 
+1615 0023 509314172 509314774
+1626 0024 509314777 509315379 
+1636 0025 509315382 509315989
+Normal finish                
+LST stop = 1646
+
+
+
+NOTES
+
+0- Started 1h 10min earlier (radar run cancelled)
+1- Aborted. WAPP ERROR counts dont match for chip xx.
+   Wapp restarted. It worked.
+   Also: can't display the data w/ alfadatawin b/c the process is already running on dataview (schneider). 
+   Called Mikael to kill the process.
+2- Aborted. WAPP ERROR wappdata buildup logic error; WAPPDATA confused
+   Restarted all WAPPs. Power levels low on polB all beams; will reset after this drift
+3- Power levels seem low in Pol B. Also, "wapp not running"? So, restart WAPPS again, adjust power,
+   new fits file.

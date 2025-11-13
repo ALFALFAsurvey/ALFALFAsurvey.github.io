@@ -1,0 +1,69 @@
+A2899  LBW   14.11.24      Observers: GH, RO, Will, Genesis, Justin, Leland, Samantha
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2899.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2899_141124.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to: /share/olcor/corfile.24nov14.a2899.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+**********SEE ERROR MESSAGE AT: 
+http://www.naic.edu/~phil/software/datataking/aoscramnet.html#25nov14
+**********
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include estimate of S/N ratio)
+A221404.7+254052  221404.7 +254052  j  1200 H v   # A321307cal 2145  10.06     1  432800252   rfi at 1409, detection at 1414MHz sn=9
+A215502.9+303509  215502.9 +303509  j  8500 H v   # A310220    2154  12.33     2  432800256   source at 1374Mhz sn=4,second source at 1380Mhz sn=4
+H215353.5+340423  215354.6 +340425  j  4700 H v   # A311300    2203  15.96     3  432800260   source at 1398Mhz sn=6
+H215500.7+303406  215504.7 +303502  j  7000 H v   # A310219    2213  12.94     4  432800264   source at 1385.5Mhz sn=2, faint second source at 1394 MHz
+H222039.5+351320  222039.5 +351320  j  5600 H v   # A011993    2222  16.98     5  432800268   source at 1393Mhz sn=3
+H232008.1+225218  232009.4 +225212  j  6100 H v   # A334548    2233  12.09     6  432800272   source at 1392Mhz sn=5
+H230557.1+231004  230558.3 +231011  j  6000 H v   # A334526    2242   7.48     7  432800276   detection at 1393 Mhz sn=4
+A225439.7+321827  225439.7 +321827  j  6600 H v   # A321461    2253  14.07     8  432800280   detection at 1390Mhz sn=9
+H230424.3+344453  230426.0 +344427  j  6100 H v   # A335263    2302  16.51     9  432800284   detection at 1393Mhz sn=11 
+H231929.0+282206  231929.0 +282147  j  6900 H v   # A333585    2312  10.27    10  432800288   detection at 1389MHz sn=4
+B233410.0+262430  233640.1 +264106  j  8800 H v   # A2634cl    2320   9.24    11  432800292   detection at 1380MHz sn=3
+A235453.1+244308  235453.1 +244308  j  1000 H v   # A334261    2329   8.84    12  432800296   rfi at 1411MHz. No detection.
+A233756.5+271636  233756.5 +271636  j  8400 H v   # A331536    2339   9.02    13  432800300   gps interference at 1382MHz  
+A233758.7+272248  233758.7 +272248  j  8700 H v   # A330625    2347   9.32    14  432800304   detection at 1380MHz sn=4
+H000238.9+265339  000243.9 +265349  j  7700 H v   # A102597    2356   8.80    15  432800308   detection at 1385MHz sn=3
+H000606.4+260558  000608.6 +260643  j  7300 H v   # A102556    0004   7.87    16  432800312   detection at 1386MHz sn=3
+H000608.5+274938  000609.1 +274925  j  6700 H v   # A102599    0012   9.66    17  432800316   no detection 
+H001957.3+230437  001957.1 +230434  j  5600 H v   # A103496    0022   4.83    18  432800320   det @ 1392MHz, SN=4, faint second source at 1398MHz
+H003657.6+253903  003703.1 +253854  j  7100 H v   # A102710    0031   7.53    19  432800324   det @ 1387MHz, SN=4
+H004717.8+272718  004720.3 +272759  j  5000 H v   # A102291    0040   9.39    20  432800328   det @ 1397MHz, SN=2  
+H005129.1+244130  005128.6 +244136  j  5000 H v   # A102713    0049   6.47    21  432800332   no detection
+H005530.7+231407  005531.0 +231404  j  5100 H v   # A103507    0057   4.97    22  432800336   det @ 1396MHz, SN=4
+H010300.7+263404  010300.3 +263423  j  5100 H v   # A113778    0106   8.33    23  432800340   no detection
+H011343.5+233030  011345.7 +233033  j  4400 H v   # A114640    0115   5.25    24  432800344   no detection
+H011651.4+234425  011653.5 +234445  j  5300 H v   # A114644    0123   5.65    25  432800348   no detection
+A012001.7+333920  012001.7 +333920  j  3800 H v   # A111960    0135  15.74    26  432800352   very faint detection at 1402 MHz, sn<2 
+H020147.5+240842  020149.0 +240910  j  4900 H v   # A111952    0146   6.93    27  432800356   det @ 1397MHz, SN=3
+H015956.3+225137  015957.4 +225143  j  8200 H v   # A114654    0155   4.67    28  432800360   unknown rfi at 1384 MHz, detection (contaminated) at 1382 MHz
+H020229.0+221923  020228.4 +221906  j  4900 H v   # A110751    0203   4.04    29  432800364   det @ 1396MHz, SN=4
+H020548.6+224218  020548.1 +224226  j  5000 H v   # A124022    0211   4.56    30  432800368   det @ 1397 MHz, SN=4   
+H020823.3+230020  020826.4 +230039  j  4800 H v   # A124023    0219   5.29    31  432800372   det @ 1398MHz, SN=3
+H021952.0+241715  021952.2 +241750  j  5200 H v   # A122933    0228   6.23    32  432800376   det @ 1396MHz, SN=5
+H022635.3+244815  022637.1 +244818  j  6000 H v   # A122938    0236   6.81    33  432800380   no detection
+H022824.6+221425  022828.1 +221355  j  4300 H v   # A124040    0244   5.77    34  432800384   no detection
+H025027.3+241847  025027.3 +241834  j  1400 H v   # A122900    0254   6.06    35  432800388   detection at 1414MHz sn=17, rfi at 1407 MHz
+H030305.8+334139  030305.8 +334139  j   200 H v   # A130770    0305  15.42    36  432800392   no detection, strong rfi at 1406,1407 MHz
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+  The night was made better by the presence of Leland.
+  RFI at 1410 MHz makes another appearance in a few scans
+  Observer allowed us to go 10 minutes over and get final source in.
+
+**********SEE ERROR MESSAGE AT: 
+http://www.naic.edu/~phil/software/datataking/aoscramnet.html#25nov14
+**********

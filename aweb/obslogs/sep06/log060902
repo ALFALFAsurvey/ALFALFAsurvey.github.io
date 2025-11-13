@@ -1,0 +1,56 @@
+Log for 06/09/02      Observer: E. Momjian
+
+System Configuration:
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20060902.a2010.****.fits
+	/share/pserverf.sdb1/wappdata/wapp.20060903.a2010.****.fits
+
+LST  fits  Scan      calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2136 0036 624583690 624584292 drift60p1 FixedAz  213600+142842  19   600    99  loopend  
+2146 0037 624584295 624584897
+2156 0038 624584900 624585502    power levels ok
+2206 0039 624585505 624586107
+2217 0040 624586110 624600312 
+2227 0000 624600315 624600917
+2237 0001 624600920 624601522    short, weak, RFI burst at 1381 MHz at end of scan
+2247 0002 624601525 624602127
+2257 0003 624602130 624602732 
+2307 0004 624602735 624603337 
+2317 0005 624603340 624603942 
+2327 0006 624603945 624604547    power levels ok
+2337 0007 624604550 624605152
+2347 0008 624605155 624605757     
+2358 0009 624605760 624606362 
+0008 0010 624606365 624606967
+0018 0011 624606970 624607572
+0028 0012 624607575 624608177
+0038 0013 624608180 624608782    RFI at 1381 MHz near the end of the scan 
+0048 0014 624608785 624609387    RFI burst at 1381 MHz in middle of scan
+0058 0015 624609390 624609992
+0108 0016 624609995 624610597    
+0118 0017 624610600 624611202    power levels ok
+0129 0018 624611205 624611807
+0139 0019 624611810 624612412    RFI burst at 1381 MHz about 3.5 mins before the end of scan
+0149 0020 624612415 624613017    RFI burst at 1381 MHz in middle of scan
+0159 0021 624613020 624613622    
+0209 0022 624613625 624614227
+0219 0023 624614230 624614832
+0229 0024 624614835 624615437
+0239 0025 624615440 624616042    Beam 5B, higher power, level ~1.5. Others ok
+0249 0026 624616045 624616647    Beam 5B, higher power, level ~1.5. Others ok
+0259 0027 624616650 624617252    ~03:05LST power level of 5B dropped to ~1.1, then went up and stayed at ~1.25 
+0310 0028 624617255 624617857    Beam 5B power level is ~1.26. Others ok
+0320 0029 624617860 624618462    Beam 5B power level is ~1.27. Others ok
+0330 0030  aborted 
+
+Last scan ends at LST 0330
+
+Notes:
+
+TOGS run at beginning ok; TOGS run at end ok.
+
+One distomat "failed" (tie-down lost) for a couple of minutes around 02:43 AST (01:05 LST) due to rain.
+
+Beam 5 pol B power level was higher by 50% than other beams/pols in some scans (see above).

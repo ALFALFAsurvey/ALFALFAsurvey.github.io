@@ -1,0 +1,69 @@
+Log for 090218     Observer: Shan Huang
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.03 2009-1-20 17:19 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090218.a2010.****.fits 
+            /share/pserverf.sda3/wappdata/wapp.20090219.a2010.****.fits
+
+     ****
+LST  fits  Scan       calscan    Source     Pattern   Start coords.  ang  time  loop  calmode
+0729 0031  904900162  904900163  drift2p1   fixAZdr   072900+002154  19   600   99    loopend   GPS burst
+0739 0032  904900164  904900165  power ok, fits file ok
+0749 0033  904900166  904900167
+0759 0034  904900168  904900169
+0810 0035  904900170  904900171
+0820 0036  904900172  904900173
+0830 0037  904900174  904900175
+0840 0038  904900176  904900177  power ok, fits file ok
+0850 0039  904900178  904900179
+0900 0040  904900180  904900181
+0910 0041  904900182  904900183
+0920 0042  904900184  905000001
+0930 0000  905000002  905000003  power ok, fits file ok
+0941 0001  905000004  905000005
+0951 0002  905000006  905000007
+1001 0003  905000008  905000009
+1011 0004  905000010  905000011
+1021 0005  905000012  905000013
+1031 0006  905000014  905000015  around 10:35 accidentally click on stop. 
+                                 stop to take data at the end of loop.
+                                 this fits file is fine. 
+
+1044 0007  905000016  start to observe again at 10:44, but no data shown on water fall 
+                      though data monitoring window shows data are taken. 
+                      abort the loop and start over again after creating a new fits file. 
+                      lost 8 mins in all.
+                      check latter and find out that data were taken but only not shown on water fall...
+
+1049 0008  905000017  905000018  power rebalanced, power ok, fits file ok
+1059 0009  905000019  905000020
+1109 0010  905000021  905000022
+1119 0011  905000023  905000024
+1129 0012  905000025  905000026
+1140 0013  905000027  905000028
+1150 0014  905000029  905000030
+1200 0015  905000031  905000032
+1210 0016  905000033  905000034  power ok, fits file ok
+1220 0017  905000035  905000036  GPS burst
+1230 0018  905000037  905000038
+1240 0019  905000039  905000040
+1250 0020  905000041  905000042  
+1300 0021  905000043  905000044
+1311 0022  905000045  905000046
+1321 0023  905000047  905000048  power ok, fits file ok
+1331 0024  905000049  905000050
+1341 0025  905000051  905000052
+1351 0026  905000053  905000054
+1401 0027  905000055  905000056  power ok, fits file ok
+1411 0028  905000057  Aborted...
+
+
+END LST: 1411
+
+
+Notes:
+Running the new version of CIMA 3.1.03 "Smart"
+TOGS run at start and end
+Beam 6B is on
+FAA radar is on
+Accidentally send stop command. Lost 8 mins in all.

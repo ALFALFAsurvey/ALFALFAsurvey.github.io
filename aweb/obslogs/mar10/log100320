@@ -1,0 +1,110 @@
+Log for 03/20/10          Observer: Tom Balonek
+
+System Configuration:                   a2010_az85_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100320.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100321.a2010.****.fits
+          fits files start with 0035 in this set of drifts
+
+Zenith strip observing setup
+Az=80.25    ALFAang=-57.3  ZA=7.1
+RA@start=0723   RA@end=1639
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0752 0035 7900207   7900208       drift70p2 fixAZdr   072300+170200 -57.3 600 99 loopend
+                                  FAA radar VERY strong, harmonic at 1380, 
+                                  ZA at 7.09 deg, alfa sky angle +20.72 
+                                  power levels ok, quicklook ok
+0803 0036 7900209   7900210        
+0813 0037 7900211   7900212       observing when not on source - 3 sec
+0823 0038 7900213   7900214
+0833 0039 7900215   7900216       quicklook ok, power levels ok
+0843 0040 7900217   7900218
+0853 0041 7900219   7900220
+0903 0042 7900221   7900221       very stroong, 0.6 K continuuum, strong in 5,0,3 beams  
+0913 0043 7900223   7900224
+0923 0044 7900225   7900226
+0934 0045 7900227   7900227
+0944 0046 7900229   7900230       ZA 7.21
+0954 0047 7900231   7900232
+1004 0048 7900233   7900234       power levels ok, quicklook ok
+1014 0049 7900235   7900236
+1024 0050 7900237   7900238
+1034 0051 7900239   7900240
+1044 0052 7900241   7900242 
+1054 0053 7900243   7900244
+1105 0054 7900245   7900246
+1115 0055 7900247   7900248
+1125 0056 7900249   8000001
+1135 0000 8000002   8000003   
+1145 0001 8000004   8000005
+1155 0002 8000006   8000007       quicklook ok
+1205 0003 8000008   8000009       power levels ok
+1215 0004 8000010   8000011
+1225 0005 8000012   8000013 
+1236 0006 8000014   8000015
+1246 0007 8000016   8000017      
+1256 0008 8000018   8000019
+1306 0009 8000020   8000021       interpolating over 2 sec gap - orange, quicklook ok
+1316 0010 8000022   8000023       
+1326 0011 8000024   8000025
+1336 0012 8000026   8000027        
+1346 0013 8000028   8000029
+1357 0014 8000030   8000031       ZA 7.27 
+1407 0015 8000032   8000033
+1417 0016 8000034   8000035       power levels ok
+1427 0017 8000036   8000037
+1437 0018 8000038   8000039
+1447 0019 8000040   8000041
+1457 0020 8000042   8000043       GPS burst about 3 min near end, interpolating over 2 sec gap
+1507 0021 8000044   8000045      
+1517 0022 8000046   8000047       interpolating over 2 sec gap
+1528 0023 8000048   8000049       power levels ok, quicklook ok 
+1538 0024 8000050   8000051
+1548 0025 8000052   8000053
+1558 0026 8000054   8000055
+1608 0027 8000056   8000057
+1618 0028 8000058   8000059
+1628 0029 8000060   8000061
+1638 0030 8000062   8000063
+1648 0031 8000064   8000065     quicklook ok, power levels ok
+1659 0032 8000066   8000067     observing when not on source - 3 sec, ZA 7.11 
+1709 0033 8000068   -- aborted
+
+LST stop:1709     RA stop:1639
+
+
+NOTES:
+
+FAA radar strongest in 4 days.  In total power, can see the 10 sec modulation.
+
+CIMA and monpnt agreed on Dec throughout run.
+
+Galspec started at beginning.  TOGS at end of night only.
+
+A few scans with interpolating (orange) messages as indicated.  Only two drifts
+with starting while not on source (due to ZA movement) as indicated in log.
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 14.5   K3: 15.7   K4: 15.7   AT 18:28
+70K = K1: 86.1   K2: 93.4   K3: 103.9  K4: 111.3
+
+16K = K1: 14.6   K2: 14.5   K3: 16.0   K4: 15.9   AT 23:51
+70K = K1: 86.6   K2: 93.9   K3: 104.2  K4: 111.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+
+________________________________________________________________________________

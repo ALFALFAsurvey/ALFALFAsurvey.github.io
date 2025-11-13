@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>Spectral Line Observing with ALFA</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<h2><font color=magenta>ALFA/CIMA Observing Checklist</font></h2>
+<h3><font color=darkblue>Prepared by the E-ALFA Drift Group (A1946)
+&nbsp &nbsp 21Sep2004</font></h3>
+
+
+<p> This is a short checklist of the things to do when observing... for more details see <a href="http://www.astro.cornell.edu/~galaxy/alfacima_instr.htm">the observing cookbook</a>.
+</p>
+
+<hr>
+<h2><font color=#cc0f14>Before Observing</font></h2>
+<ul>
+<li><h3>Make sure that ALFA will be ready for your observations</h3>
+     <ul>
+     <li> ALFA cover must be removed. 
+     <li> If you need to rotate the feed, the motor must be switched on
+     </ul>
+</ul>
+<hr>
+<h2><font color=#cc0f14>Startup:</font></h2>
+<ul>
+<li><h3>Log in: dtusr</h3>
+<li><h3>User: yourname, aNNNN, select spectral line</h3>
+<li><h3>Load/Save State: load your setup file ***.gui</h3>
+<li><h3>Pointing control</h3>
+     <ul>
+     <li> Point telescope
+     <li> Set ALFA rotation angle
+     <li> choose beam 0 as center
+     </ul>
+<li><h3>Receiver IF/LO Control --> New Improved IFLO Control</h3>
+    <ul>
+    <li>Check central frequency and bandwidths
+    <li>Apply this setup
+    </ul>
+<li><h3>Backend Control</h3>
+        <ul>
+	<li><h3>WAPP data</h3>
+	   <ul>
+	   <li>Configure Wapp ALFA
+	   <li>Adjust Power - make sure it's right!
+	   </ul>
+	</ul>
+<li><h3>Spectral Line Observing</h3>
+</ul>
+
+<hr>
+<h2><font color=#cc0f14>When Observing</font></h2>
+<ul>
+<li><h3>Between scans:</h3>
+    <ul>
+    <li>Check power levels periodically
+    <li>Start new fits file (WAPP data) if needed
+    </ul>
+<li><h3>Data Monitoring:</h3>
+    <ul>
+    <li>On Dataview, click on the background and select from the menu:
+        <ul> 
+        <li>Quicklook Data Display
+        <li>Observers Monitor
+        <li>Array Rotation
+        <li>Frontend Monitor
+	</ul><br>
+    <li>You can open the same widgets by typing on an xterm:
+        <ul> 
+        <li>/home/aoui/alfa/alfadatawin &
+        <li>/home/aoui/alfa/alfaobswin &
+        <li>/home/aoui/alfa/alfamotorwin &
+        <li>/home/aoui/alfa/alfamonwin &
+        </ul> 
+    </ul>
+<li><h3>Troubleshooting</h3>
+    <ul>
+    <li>If CIMA gets confused, go to User preferences and 
+          <ul> 
+	  <li>type "socksend WAPPDATA FLUSH" in "Send to gui"
+          <li>Hit "Send to gui"
+	  </ul>
+        Pulsar Observing --> More --> Restart All WAPPS<br>
+        Exit CIMA and start again</p>
+    <li>If you need to restart the WAPPs:<br> 
+          <ul><li> Pulsar Observing --> More --> Restart All WAPPS<br>
+         </ul>
+    </ul>
+</ul>
+        
+<hr>
+<h2><font color=#cc0f14>Finishing Up</font></h2>
+<ul>
+<li><h3>Exit data monitoring programs "nicely"</h3>
+<li><h3>Exit CIMA normally</h3>
+</ul>
+
+<hr>
+<address><font color=#cc0f14>
+This page created and maintained by 
+<a href="mailto:spekkens@astro.cornell.edu">Kristine Spekkens</a> and the members of the Cornell
+<a href="http://www.astro.cornell.edu/Galaxy/egg.html">ExtraGalactic Group</a></font></address> 
+</p>
+<!-- hhmts start -->
+Last modified: Tue Sep 21 18:00:47 EDT 2004
+<!-- hhmts end -->
+by BC
+</body>
+</html>

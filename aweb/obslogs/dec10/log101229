@@ -1,0 +1,65 @@
+Log for 10.12.29 (29Dec2010)        Observer: Martha Haynes
+
+System Configuration:  {Record the configuration file you used. e.g., a2010_az180_2010.conf}
+CIMA version           {Record the FULL name of the CIMA version, e.g., 3.1.08 2010-02-01 17:44 "Smart"}
+File(s):  /share/pserverf.sda2/wappdata/wapp.20101229.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0917 0000  36300097  36300098 drift138p2 fixAZdr   091741+333448  19  600   99  loopend  6b dead; quicklook ok
+0927 0001  36300099  36300100                                                   extrapolating pnt;=> see note on timer
+0938 0002  36300101  36300102
+0948 0003  36300103  36300104
+0958 0004  36300105  36300106
+1008 0005  36300107  36300108                                                   checkfits ok
+1018 0006  36300109  36300110
+1029 0007  36300111  36300112
+1039 0008  36300113  36300114                                                   checkfits ok
+1049 0009  36300115  36300116                                                   extrapolating pnt-data 2 secs
+1059 0010  36300117  36300118
+1109 0011  36300119  36300120
+1119 0012  36300121  36300122                                                   extrapolating pnt-data 2 secs
+1129 0013  36300123  36300124
+1139 0014  36300125  36300126
+1149 0015  36300127  36300128
+1159 0016  36300129  36300130                                                   extrapolating pnt-data 2 secs
+1210 0017  36300131  36300132                                  
+1220  abort
+
+LST stop:  1220    
+
+Notes:
+-- Short run
+-- Long slew from AUDS at start
+-- TOGS run at END only  (galfacurpos_spr11.cmd)
+-- FAA radar on
+-- Beam 6b is dead and so getting lots of error messages about WAPP channels with too little power etc.
+-- At 0935, I notice that the timer in the CIMA observation status window is reading 00:19.... it should be less than 10!
+   Fits file number is ok. Countdown time is ok; it's the accumulated time that seems weird. It is not resetting; it seems
+   to refer to time since we started this run. File writing appears ok. But this is unusual behavior.
+
+-------------------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+16K = K1: 17.5   K2: ?      K3: 18.9   K4: 19.2   AT 18:30
+70K = K1: 101.8  K2: 106.7  K3: 116.2  K4: 123.8
+
+16K = K1: 17.5   K2: ?      K3: 18.9   K4: 18.9   AT 22:16
+70K = K1: 101.5  K2: 106.7  K3: 116.0  K4: 123.3
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT /
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:       AT /
+				=>certify our blanker is locking on

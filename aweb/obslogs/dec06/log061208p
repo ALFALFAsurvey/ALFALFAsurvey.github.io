@@ -1,0 +1,43 @@
+Log for 06/12/08 PM      Observer: OS BC
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az360.gui as save state. -- Note, 360 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061208.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source    Pattern  Start coords.  ang  time  loop calmode
+
+0013 0028  - aborted (Cima didn't have control over the telescope)
+0017 0029 634270441 634271043 drift26p1  FixedAz 001700+061218   19   600    99  loopend
+0027 0030 634271046 634271648
+0037 0031 634271651 634272253
+0047 0032 634272256 634272858
+0057 0033 634272861 634273463
+0107 0034 634273466 634274068 Power levels OK
+0118 0035 634274071 634274673
+0128 0036 634274676 634275278
+0138 0037 634275281 634275883
+0148 0038 634275886 634276488 
+0158 0039 634276491 634277093
+0208 0040 634277096 634277698 Power levels OK
+0218 0041 634277701 634278303
+0228 0042 634278306 634278908
+0238 0043 634278911 634279513
+0249 0044 634279516 634280118
+0259 0045 634280121 634280723 - laser ranging error (for a few seconds)
+0309 0046 634280726 634281328
+0319 0047 - Aborted 
+
+END LST: 0319
+
+
+NOTES:
+1. RFI at 1350MHz and 1380MHz.
+2. Power levels OK.
+3. TOGS run at end.
+
+
+

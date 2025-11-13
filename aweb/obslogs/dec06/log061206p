@@ -1,0 +1,53 @@
+Log for 06/12/06 PM      Observer: Becky Koopmann
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az360.gui as save state. -- Note, 360 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061206.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+
+0020 0027 634071093 634071695 drift27p1 FixedAz 002000+062654   19   600    99  loopend
+0030 0028 634071698 634072300       Power Levels OK
+0040 0029 634072303 634072905
+0050 0030 634072908 634073510
+0100 0031 634073513 634074115
+0110 0032 634074118 634074720
+0120 0033 634074723 634075325
+0131 0034 634075328 634075930
+0141 0035 634075933 634076535       Power Levels OK
+0151 0036 634076538 634077140 
+0201 0037 634077143 634077745
+0211 0038 634077748 634078350
+0221 0039 634078353 634078955
+0232 0040 634078958 634079560   intermittent rfi bursts at 1400 MHz.
+0242 0041 634079563 634080165   intermittent rfi bursts at 1400 MHz.
+0252 0042 634080168 634080770
+0302 0043 634080773 634081375   power levels OK
+0312 0044 634081378 634081983
+0322 0045 634082082   --aborted 
+END LST: 0322
+
+
+NOTES:
+During the third drift, noticed that the aostatus window reported 'not tracking'
+and that the Telescope requested position was 360 az, 12 za (which I originally
+requested from observer). In monpnt, the Rslt RA and Dec were correct and the reqP
+was correct, while the curP position had 360, 12. I asked the operator to check. He
+issued a pntpowrdip command just before the 4th drift (at 20:15 AST, 00:50 LST) and
+the positions were then reported correctly and the tracking appeared on. In the
+cimalog, there is a warning 'WAPP WARN observing when not on source' at the
+beginning of each of the first three drifts (fits 27-29). Given that monpnt
+reported the correct positions, it appears that the data is probably OK, but that
+something weird prevented the updating of the requested position fields. I emailed
+Mikael to ask if there are header parameters that might be affected by this.
+
+Intermittent short bursts of RFI around 1400 MHz in 0040 and 0041.
+
+TOGS run at the end only (as scheduled). (galfa may have been turned on a bit
+late due to a misunderstanding - I said that togs was not running at beginning,
+there was confusion about whether galfa was running.)
+

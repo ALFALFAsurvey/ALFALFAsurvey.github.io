@@ -1,0 +1,52 @@
+Log for 080911      Observer: Sabrina Stierwalt & Drew Brisbin
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.01  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20080911.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20080912.a2010.****.fits
+
+LST  fits  Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2204 0027  825500107 825500108 drift48p2  fixAZdr 220400+114048  19   600   99 loopend
+2214 0028  825500109 825500110
+2224 0029  825500111 825500112
+2234 0030  825500113 825500114
+2244 0031  825500115 825500116 power levels okay
+2254 0032  825500117 825600001
+2304 0000  825600002 825600003
+2315 0001  825600004 825600005
+2325 0002  825600006 825600007
+2335 0003  825600008 825600009
+2345 0004  825600010 825600011
+2355 0005  825600012 825600013
+0005 0006  825600014 825600015
+0015 0007  825600016 825600017
+0025 0008  825600018 825600019 power levels okay
+0036 0009  825600020 825600021
+0046 0010  825600022 825600023
+0056 0011  825600024 825600025
+0106 0012  825600026 825600027
+0116 0013  825600028 825600029 power levels okay
+0126 0014  825600030 825600031
+0136 0015  825600032 825600033
+0146 0016  825600034 825600035
+0156 0017  825600036 825600037
+0206 0018  825600038 825600039
+0217 0019  825600040 825600041 power levels okay
+0227 0020  825600042 825600043
+0237 0021  825600044 825600045
+0247 0022  825600046 825600047
+0257 0023  825600048 825600049
+0307 0024  825600050 825600051
+0317 0025  abort
+
+END LST: 0317
+
+Notes: 
+-- Ran TOGS at start and end. 
+-- A long slew after last program. 
+-- Beam 6.1 is back? Power levels, quicklook, and waterfall plots ALL suggest that 6.1 is functioning!!
+-- Getting lots of "WARNING WAPP=4-chip_count: WARNING counts don't match between 
+   chip 0 and chip 14 (99999966 !=99999964)!" errors (orange, numbers are close). 
+-- At LST 0150 the operator notes that there is a fault on the AZ. I am told the AZ is still 360 (as aostatus tells 
+me it is) and the AZ will stay at 360, BUT if I want to move to a new AZ, the operator will have to reset the 
+azimuth controls. so ... this should not be a problem.

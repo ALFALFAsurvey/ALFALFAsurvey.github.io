@@ -1,0 +1,53 @@
+Log for 11.10.18 (18Oct2011)        Observers: Rose Finn
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111018.a2010.****.fits
+
+Normal meridian strip observing.
+
+ LST   fits     Scan    calscan    Source    Pattern    Start coords. ang  time loop calmode
+2131   0001   129100234 129100235 drift145p1 fixAzdr   2131+350942    19   600  99  loopend  quicklook 
+looks ok, 6b dead
+2141   0002   129100236 129100237             quicklook looks the same
+2151   0003   129100238 129100239             quicklook looks the same
+2201   0004   129100240 129100241	      quicklook looks the same
+2211   0005   129100242 129100243             quicklook looks the same
+2222   0006   129100244 129100245             quicklook looks the same
+2232   0007   129100246 129100247             quicklook looks the same
+2242   0008   129100248 129100249             quicklook looks the same
+2252   0009   129100250 129100251             power levels good, quicklook looks the same
+2302   0010   129100252 129100253	      quicklook good
+2312   0011   129100254 129100255             quicklook good
+2322   0012   129100256 129100257             quicklook good
+2332   0013   129100258 129100259      
+2342   0014   129100260 129100261       aborted
+
+
+LST stop:23:45:14   , AST Stop=22:23:07
+
+At the bottom, add notes regarding:
+-- TOGS
+-- FAA radar off
+
+And also, copy the ALFA temperatures and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 13.8   K2: 13.0   K3: 15.0   K4: 15.0   AT 10:01
+70K = K1: 81.0   K2: 81.7   K3: 88.8   K4: 97.1
+
+16K = K1: 13.5   K2: 13.2   K3: 15.0   K4: 14.9   AT 14:01
+70K = K1: 82.6   K2: 83.1   K3: 90.2   K4: 98.5
+
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+

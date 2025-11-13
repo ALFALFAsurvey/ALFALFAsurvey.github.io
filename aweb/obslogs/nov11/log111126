@@ -1,0 +1,94 @@
+Log for 11.11.26(26Nov2011)        Observers: Tom Balonek, Damian Roesler,
+                              Michael Fusco, Kevin McCullough, Katie Iadanza, 
+                              Ajay Chahar, Lauren Bearden (all from Colgate Univ.)
+
+System Configuration:  a2010_az180_2010.conf
+CIMA version           {Record the FULL name of the CIMA version, e.g., 
+                             3.1.08 2010-02-01 17:44 "Smart"}
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111126.a2010.****.fits
+
+Normal meridian observing setup (AZ = 180)
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+
+
+2120 0000 133000286 133000287 drift140p1 fixAzdr 212000+335642 19 600 99 loopend
+                              quicklook ok 6A reported 20 counts from FAA radar 
+2130 0001 133000288 133000289   quicklook ok, total power levels good
+2140 0002 133000290 133000291
+2150 0003 133000292 133000293
+2200 0004 133000294 133000295   quicklook ok
+2210 0005 133000296 133000297
+2221 0006 133000298 133000299
+2231 0007 133000300 133000301
+2241 0008 133000302 133000303
+2251 0009 133000304 133000305
+2301 0010 133000306 133000307
+2311 0011 133000308 133000309
+2321 0012 133000310 133000311
+2331 0013 133000312 133000313   quicklook ok 3-4 minute small burst at 1380 MHz
+2342 0014 133000314 133000315
+2353 0015 133000316 133000317   quicklook ok, red error at 0000 UT trying to interpoalte, 
+                                  happened last night, and the night before as well
+0002 0016 133000318 133000319
+0012 0017 133000320 133000321
+0022 0018 133000322 133000323
+0032 0019 133000324 133000325
+0042 0020 133000326 133000327
+0052 0021 133000328 133000329
+0103 0022 133000330 133000331
+0113 0023 133000332 133000333
+0123 0024 133000334 133000335  quicklook ok
+0133 0025 133000336 133000337
+0143 0026 133000338 133000339     
+0153 0027 133000340 133000341 
+0203 0028 133000342 133000343 
+0213 0029 133000344 133000345
+0223 0030 133000346 133000347
+0234 0031 133000348 133000349  quicklook ok
+0244 0032 133000350 133000351
+0254 0033 133000352 133000353
+0304 0034 133000354 133000355
+0314 0035 133000356 133000357
+0324 0036 133000358 133000359
+0334 0037 aborted
+
+LST stop:  0334  {Be sure to record the LST stop time of the last GOOD record)
+
+= = = = = = = =
+20:00:01 WAPPDATA-search_pnt: ERROR data in pnt-table is too old! (55892.000000 > 55891.000000)
+20:00:01 WAPPDATA-compute_interp: ERROR can't interpolate positions at 00:00:00.000 --- using the last positions written to FITS-file!
+20:00:02 WAPPDATA-search_pnt: ERROR interpolation of pnt-data over a too large time gap attempted (55891.000000 - 55892.000012) --- cancelling interpolation attempt!
+20:00:02 WAPPDATA-interpolate: ERROR denominator is zero --- skipping interpolation!
+20:00:02 WAPPDATA-interpolate: Values:   x = 55892.000012    x1 = 55892.000012  y1 = 23.920821450674    x2 = 55892.000012  y2 = 23.920821450674
+20:00:02 WAPPDATA-interpolate: ERROR denominator is zero --- skipping interpolation!
+20:00:02 WAPPDATA-interpolate: Values:   x = 55892.000012    x1 = 55892.000012  y1 = 23.910513495628    x2 = 55892.000012  y2 = 23.910513495628
+20:00:02 WAPPDATA-interpolate: ERROR denominator is zero --- skipping interpolation!
+20:00:02 WAPPDATA-interpolate: Values:   x = 55892.000012    x1 = 55892.000012  y1 = 33.945216347927    x2 =
+
+= = = = = = = =
+
+At the bottom, add notes regarding:
+-- Beam 6B dead; 4A reported running hot (42K as per Dana in advance) [sometimes power level below 0.8]
+-- TOGS run at end.
+-- fits scan error level changed from 5 to 3
+-- Active rain starting at observation
+-- FAA radar on
+-- 1380 harmonic visible.
+-- Actively raining at start of observations
+-- check many scans with quicklook.  all looks ok to us!
+-- power level checked most drifts, looked fine
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+LFA TEMPERATURES
+
+16K = K1: 14.5   K2: 14.0   K3: 15.7   K4: 15.7   AT 10:02
+70K = K1: 86.4   K2: 86.3   K3: 93.9   K4: 102.7
+
+16K = K1: 14.5   K2: 14.0   K3: 15.7   K4: 15.9   AT 14:04
+70K = K1: 87.3   K2: 87.5   K3: 94.9   K4: 103.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+

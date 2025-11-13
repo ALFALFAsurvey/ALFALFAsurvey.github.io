@@ -1,0 +1,75 @@
+Log for 01/11/10          Observers: Ann Martin + Undergrad ALFALFA Team
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version       			3.1.06 2009-11-22 11:19 "Smart" 
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20100111.a2010.****.fits
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0857 0000  294964  294965     drift84p1 fixAZdr   085700+201906  19  600   99  loopend  
+0907 0001  294966  294967     no radar!
+0917 0002  294968  294969
+0927 0003  294970  294971     quicklook ok
+0938 0004  294972  294973     quicklook ok
+0948 0005  294974  294975
+0958 0006  294976  294977
+1008 0007  294978  294979
+1019 0008  294980  294981
+1029 0009  294982  294983
+1039 0010  294984  294985
+1049 0011  294986  294987
+1059 0012  294988  294989
+1109 0013  294990  294991
+1129 0014  294992  294993    strong GPS burst
+1130 0015  294994  294995
+1140 0016  294996  294997
+1150 0017  294998  294999
+1200 0018  295000  295001    quick look ok
+1210 0019  295002  295003    power levels ok. d. craig, r. olowin and r. koopmann take over for ann
+1220 0020  295004  295005    strong continuum source late in scan
+1230 0021  295006  295007 
+1240 0022  295008  295009 
+1250 0023  295010  295011    still no radar
+1301 0024  295012  295013    
+1311 0025  295014  295015    duplicate AGC datablock at 6:20:52.299     shift change
+1321 0026  295016  295017    Observers: Jeff Miller, Becky Koopman, Parker Troischt, Tess Senty, Nancy Irisari, Schuyler Smith
+1331 0027  295018  295019    
+1341 0028  295020  295021    duplicate AGC datablock at 06:50:50.320
+1351 0029  295022  295023    strong GPS burst - continuum source also observed 
+1401 0030  295024  295025    2 continuum sources
+1412 0031  295026 --- aborted 
+
+LST stop:  1412
+
+NOTES:
+TOGS not run at start -- command file observing script reflected togs_09 configuration
+file, which it couldn't find since it had been replaced by togs_10. Working on it!
+TOGS run at end
+
+We notice that the scan numbers are wrong. A discussion with Phil reveals
+this is a CIMA issue because the year number has rolled over to "0". 
+CIMA assumes that a number beginning with 0 is in octal. So these are the octal
+equivalents of the real scan numbers. Phil will fix this, but probably not until
+he has some test time. MH will need to retrofit scan numbers as a result.
+We would have expected the first scan number to be 00110001. (Added by MH)
+
+no radar
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 11.9   K2: 12.0   K3: 13.5   K4: 13.5   AT 21:22
+70K = K1: 66.8   K2: 76.6   K3: 83.2   K4: 90.5
+
+16K = K1: 12.1   K2: 12.0   K3: 13.5   K4: 13.5   AT 23:55
+70K = K1: 66.8   K2: 76.6   K3: 83.4   K4: 91.0
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________

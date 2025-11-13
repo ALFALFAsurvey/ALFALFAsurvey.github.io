@@ -1,0 +1,72 @@
+Log for 05/09/04
+Observers: Brian Kent
+
+System Configuration
+
+FixedAz Drift Map CIMA expanded version
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20050904.a2010.****.fits
+      /share/pserverf.sdb1/wappdata/wapp.20050905.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.09.04
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time 
+loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+2125 0003 524782499 524783101 drift115p1  FixedAz 212516+275142 19 600 50
+2135 0004 524783104 524783706
+
+Power levels 0.976 0.957 0.962 0.902 0.904 1.049 0.900 1.058 1.124 0.945 1.089 1.002 0.962 1.011
+
+2145 0005 524783709 524784311
+2155 0006 524784314 524784916
+2205 0007 524784919 524785521
+2215 0008 524785524 ERROR
+
+------------------- Split calibration here
+
+2308 0001 524802266 524802869
+2318 0002 524802872 524803474
+2328 0003 524803477 524804078
+2338 0004 524804082 524804683
+2348 0005 524804687 524805288
+2358 0006 524805292 524805894
+0009 0007 524805897 524806498
+0019 0008 524806502 524807103
+0029 0009 524807107 524807708
+0039 0010 524807712 524808313
+0049 0011 524808317 524808919
+0059 0012 524808922 524809523
+0109 0013 524809527 524810129
+0119 0014 524810132 524810733
+0129 0015 524810737 524811339
+0139 0016 524811342 524811943
+0150 0017 524811947 524812548
+0200 0018 524812552 524813153
+0210 0019 524813157 524813758
+0220 0020 524813762 524814363
+0230 0021 524814367 524814968
+0240 0022 524814972 524815573
+0250 0023 524815577 524816178
+0300 0024 524816182 524816783
+0310 0025 524816787 524817388
+0321 0026 524817392 Abort
+
+END LST: 032102
+
+NOTE:
+
+Tonights errors:
+
+       at 23:52 AST got error WAPPdata confused flushing 1 dump
+       at 23:56 AST logged out of CIMA
+       at 23:59 AST Wait for response from operator - none there.  Received "Audio error.  Permission denied."
+       at 00:03 AST Norberto/Ed informed me of problem
+       at 00:12 AST Still no word.  Tried logging in again.  No response. Same error
+       at 00:23 AST Ed reports from Mikhail that WAPP error was an anomaly.  Says the Audio exception is
+                     currently being worked on by Mikheil. 
+       at 00:39 AST Resume operation with file 0001.fits
+
+1.  TOGS started successfully
+2.  TOGS complete

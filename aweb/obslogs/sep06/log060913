@@ -1,0 +1,40 @@
+Log for 06/09/13      Observer: Tom & Becky
+
+System Configuration:
+FixedAZ Drift Map Cima version 2.2.08 (normal)
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20060913.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20060914.a2010.****.fits
+
+LST  fits  Scan      calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2140 0025 625681335 625681937 drift27p1 FixedAz  2140000+062654  19   600    99 loopend
+2150 0026 625681940 625682542 power levels ok
+2200 0027 625682545 625683147
+2210 0028 625683150 625683752
+2220 0029 625683755 625684357
+2231 0030 625684360 625684962
+2241 0031 625684965 625685567 power levels ok
+2251 0032 625685570 625686172
+2301 0033 625686175 625700377
+2311 0000 625700380 625700982
+2321 0001 625700985 625701587
+2331 0002 625701590 625702192
+2341 0003 625702195 625702797
+2351 0004 625702800 625703402
+0001 0005 625703405 625704007 power looks ok
+0011 0006 625704010 625704611
+0021 0007 625704615 --aborted
+
+
+END LST: 0021
+
+Notes:
+
+TOGS run at start only (no time allocated at end)
+Next observer gave us two minutes to complete a drift.
+5B fluctuates, around 1.0-1.1 level; many times more noise /fluctuations than any other beams /
+ pols; but much less than last night; never outside of blue range
+
+

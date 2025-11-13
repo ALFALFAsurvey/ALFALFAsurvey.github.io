@@ -1,0 +1,64 @@
+Log for 08/22/10          Observer: Victoria Mendoza, Seth Felix, Ana Mikler, Katie O'Brien, Ron Olowin,  Parker Troischt, Becky Koopmann, Michelle Brault, Catherine Weigel
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100822.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100823.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern   Start coords. ang  time loop  calmode
+2116 0035 23400154  23400155   drift96p1  fixAZdr   211600+231416  19  600   99  loopend; power levels ok
+2126 0036 23400156  23400157   
+2137 0037 23400158  23500001	Faint continuum source in 0 and 6, harmonic
+2147 0000 23500002  23500003    GPS
+2157 0001 23500004  23500005    GPS
+2208 0002 23500006  23500007    GPS
+2217 0003 23500008  23500009    GPS,  power levels ok
+2228 0004 23500010  23500011    
+2237 0005 23500012  23500013    
+2248 0006 23500014  23500015    Extrapolating Data warning, continuum scource,high radar, power levels ok
+2258 0007 23500016  23500017    
+2307 0008 23500018  23500019	continuum scource
+2317 0009 23500020  23500021
+2328 0010 23500022  23500023	
+2338 0011 23500024  23500025    continuum scource
+2348 0012 23500026  23500027    
+2358 0013 23500028  23500029	
+0008 0014 23500030  23500031	Continuum source, power levels okay.
+0018 0015 23500032  23400033	Continuum source
+0028 0016 23500034  23400035	
+0038 0017 23500036  23500037	Continuum source
+0048 0018 23500038  23500039	radar high, continuum scource
+0058 0019 23500040  23500041    continuum scource, power level ok	
+0109 0020 23500042  23500043    Continuum source
+0119 0021 23500044  23500045	Continuum source
+0129 0022 23500046  23500047	Faint continuum source
+0139 0023 23500048  23500049	Continuum source
+0149 0024 23500050  23500051    Very faint continuum sources
+0159 0025 23500052  23500053    Faint continuum sources
+0209 0026 23500054  23500055	Faint continuum source in 0
+0219 0027 23500056  23500057	faint continuum source, power level ok
+0230 0028 23500058  23500059    continuum source
+0240 0029 23500060  23500061
+0250 0030 23500062  23500063    
+0300 0031 23500064  23500065   
+0310 0032 23500066 -- abort
+
+LST@stop: 0310
+
+NOTES:
+- TOGS run at beginning 
+- FAA radar ON, harmonic also visible
+- Tiedowns disabled
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+16K = K1: 15.5   K2: 15.5   K3: 17.0   K4: 17.2   AT 16:12
+70K = K1: 92.9   K2: 101.0  K3: 112.0  K4: 120.3
+
+16K = K1: 15.5   K2: 15.7   K3: 16.9   K4: 17.2   AT 22:12
+70K = K1: 93.7   K2: 101.5  K3: 112.7  K4: 120.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+

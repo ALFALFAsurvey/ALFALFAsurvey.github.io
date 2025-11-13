@@ -1,0 +1,77 @@
+Log for 05/05/31 pm
+Observers: SS
+
+System Configuration
+
+FixedAz Drift Map CIMA new version 1.2.03 (normal default)
+Using: a2010_fixedfrq_may05.gui as save state
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20050531.a2010.****.fits
+       /share/pserverf.sdb1/wappdata/wapp.20050601.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+1057 0000 515167570 515168172 drift53p2 FixedAz 105717+125348  19  600  50                 (1)
+
+power levels (dB): 1.120 0.991 1.106 1.037 0.976 1.086 1.049 0.953 1.046 0.989
+0.965 1.005 0.937 1.101
+
+1107 0001 515168175 515168777
+1117 0002 515168780 515169382
+1127 0003 515169385 aborted (WAPPS confused)
+
+1139 0004 515170083 515170685 drift53p2 FixedAz 113917+125348  19  600  50                 (2)
+
+power levels (dB): 1.145 1.028 0.909 1.074 0.988 1.112 1.080 0.974 1.095 1.026
+0.976 1.013 0.967 1.115
+
+1149 0005 515170688 515171290
+1159 0006 515171293 515171895
+1209 0007 515171898 515172500
+1219 0008 515172503 515173105
+1229 0009 515173108 515173710
+1239 0010 515173713 515174315
+1250 0011 515174318 515174920
+1300 0012 515174923 515175525
+1310 0013 515175528 515176130
+1320 0014 515176133 515176735
+1330 0015 515176738 515177340
+1340 0016 515177343 515177945
+1350 0017 515177948 515178550
+1400 0018 515178553 515179155
+1410 0019 515179158 515179760
+
+power levels (dB): 1.196 1.088 0.961 1.115 1.016 1.153 1.135 1.016 1.159 1.071
+1.021 1.057 1.018 1.147
+
+1421 0020 515179763 515180365
+1431 0021 515180368 515180970
+1441 0022 515180973 515181575
+1451 0023 515181578 515182180
+1501 0024 515182183 515182785
+1511 0025 515182788 515183390
+1521 0026 515183393 515183995
+1531 0027 515183998 515184600
+1541 0028 515184603 515185205
+1552 0029 515185208 515185810
+1602 0030 515185813 515200015
+1612 0000 515200018 515200620
+1622 0001 515200623 515201225
+1632 0002 515201228 515201830
+1642 0003 515201833 515202435
+file 0004 aborted (no time left)
+
+END LST: 165238
+
+Notes:
+(1) We lost half of an hour at the beginning of the run to cover ALFA.
+
+(2) WAPPS got confused during the first 0003 fits file (observations had to be 
+aborted, WAPPs and CIMA restarted).  I got the error: "WAPP(3) ERROR counts 
+dont match for chip" followed by a number.  After restarting the waterfall 
+plots showed no data even after restarting Quicklook several times.  A direct 
+look at the data files showed they were being generated.  The waterfall 
+plots began working again about 20 minutes after data taking re-started.
+
+Tiedowns Active.

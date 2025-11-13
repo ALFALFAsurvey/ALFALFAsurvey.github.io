@@ -1,0 +1,49 @@
+A2853   LBW   14.04.24      Observers: Greg Hallenbeck (GH)
+
+CIMA version:          The Stable version (Default)  Ver 3.3.12 2014-03-20 17:38
+Configuration file:    a2853_apr14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140424.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.24apr14.a2853.*
+         and     /share/olcor/corfile.25apr14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST   ZA   File#  ONScan     Status
+A104822.8+110547  104822.8 +110547  j  8000 H v   # A202646    1041  7.5     1  411400158    Beautiful two-horned detection @ 8000 km/s
+A111334.7+092931  111334.7 +092931  j  8800 H v   # A211089    1053 10.2     2  411400162    Detection at 8800 km/s
+A114457.7+090348  114457.7 +090348  j  5900 H v   # A213115    1107 13.2     3  411400166    No detection.
+A114521.2+094808  114521.2 +094808  j  6300 H v   # A213118    1119 10.5     4  411400170    Hint of a detection at 6300 km/s. GPS in off at 1381 MHz
+A114603.2+143838  114603.2 +143838  j  3100 H v   # A215612    1133  4.9     5  411400174    Hint of a detection, at 3100 km/s
+A122228.9+093735  122228.9 +093735  j  7700 H v   # A224429    1148 12.1     6  411400178    No detection.
+A122230.6+102314  122230.6 +102314  j  6500 H v   # A222717    1201  9.6     7  411400182    Weak detection at 6400 km/s. GPS visible at 1381 MHz
+A122258.8+102825  122258.8 +102825  j  7700 H v   # A229438    1213  8.3     8  411400186    Poor baseline, detection at 7000 km/s.
+                                                                                             Many possible detections, but baseline is poor
+A122303.7+103750  122303.7 +103750  j  7250 H v   # A229432    1225  7.8     9  411400190    No detection.
+A122437.4+105019  122437.4 +105019  j  7700 H v   # A220523    1237  8.2    10  411400194    Possible detection at 7900 km/s
+A122644.3+090254  122644.3 +090254  j  6900 H v   # A220590    1250 10.9    11  411400198    Possible detection at 6900 km/s
+A122759.3+095422  122759.3 +095422  j  7500 H v   # A224456    1301 11.9    12  411400202    Weak detection at 7500 km/s
+A140249.6+091858  140249.6 +091858  j  6870 H v   # A249351    1318 13.7    13  411400206    No detection.
+A140255.0+092058  140255.0 +092058  j  5800 H v   # A240011    1331 12.0    14  411400210    No detection.
+A140304.4+085651  140304.4 +085651  j  6900 H v   # A240015    1343 10.7     1  411400214    Weak detection at 7000 km/s, GPS in off at 1381 MHz
+A140307.1+092147  140307.1 +092147  j  5700 H v   # A240016    1355  9.2     2  411500004    Detection at 6000 km/s
+A143819.2+033828  143819.2 +033828  j  8400 H v   # A240552    1410 16.3     3  411500008    Poor Baseline. No detection. 360 mJy continuum source in ON.
+                                                               1421 15.2     4  411500012    Poor Baseline. No detection. 360 mJy continuum source in ON.
+                                                               Re-observed because far ahead of schedule, putting us right on target.
+A144059.3+030812  144059.3 +030812  j  8000 H v   # A009463    1434 15.3     5  411500016    Possible detection at 8300 km/s
+A145601.7-012318  145601.7 -012318  j  1800 H v   # A009601    Telescope refused to slew above 19.69 (nominal ZA is 19.87), so it sat idle for ~9 minutes
+                                                               Distance of closest approach was ~5' from source.
+
+Notes
+	Observing started 4 minutes late because people were on the platform, then needed to slew to source (another 3-4 minutes)
+    Tiedowns disabled.
+    Signs of GPS radar throughout night.
+
+
+

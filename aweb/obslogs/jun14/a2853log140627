@@ -1,0 +1,42 @@
+A2853   LBW   14.06.27      Observers:LL, and Cornell REU team
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140627.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.27jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A122230.6+102314  122230.6 +102314  j  6500 H v   # A222717    1309  13.7    1    417800001   No detection
+A122440.8+090922  122440.8 +090922  j  7000 H v   # A224443    1322	 16.5    2    417800005   No detection
+A122759.3+095422  122759.3 +095422  j  7500 H v   # A224456    1333  17.9    3    417800009   Weak detection at 1385.5, broad waves in baseline
+A132914.8+113560  132914.8 +113560  j  6700 H v   # A232398    1350   8.3    4    417800013   Strong GPS, signal obliterated
+A132939.6+111612  132939.6 +111612  j  6500 H v   # A232406    1402  10.4    5    417800017   No detection
+A140331.2+091315  140331.2 +091315  j  6000 H v   # A240025    1415   9.5    6	  417800021   Weak detection at 1392, SN = 1.5
+A140347.3+093125  140347.3 +093125  j  7100 H v   # A240029    1428  10.5    7    417800025   No detection (maybe a hint?)
+A143933.2+031325  143933.2 +031325  j  8500 H v   # A242874    1441  15.2    8    417800029   No detection
+A143937.8+030848  143937.8 +030848  j  8800 H v   # A240572    1453  15.6    9    417800033   No detection
+A150115.3+012954  150115.3 +012954  j  2200 H v   # A253624    1506  16.9   10    417800037   Possible RFI (FAA radar harmonic) at 1409
+A150904.3+004919  150904.3 +004919  j  1600 H v   # A253746    1518  17.7   11    417800041   Possible detection at 1413
+H150748.1+023318  150747.5 +023405  j  1600 H v   # A009726    1530  16.7   12    417800045   Possible weak detection at 1413
+A161735.9+135148  161735.9 +135148  j  9000 H v   # A738601    1546   9.0   13    417800049   Possible weak detection at 1379
+A161942.1+135546  161942.1 +135546  j  9000 H v   # A715324    1558   7.0   14    417800053   Detection!!!! At 1379
+A161841.0+153823  161841.0 +153823  j  9000 H v   # A262410    1611   3.4   15    417800057   Strong GPS, signal obliterated
+
+Notes  (please note anything of importance; here is an example)
+     Late start due to 180 degree slew from previous observer  
+     Smooth night overall
+     Some GPS activity
+
+

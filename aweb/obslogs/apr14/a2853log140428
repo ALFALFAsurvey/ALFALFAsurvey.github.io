@@ -1,0 +1,45 @@
+A2853   LBW   14.04.28      Observers: MJ
+
+CIMA version:          The Stable version (Default)  Ver 3.3.12 2014-03-20 17:38
+Configuration file:    a2853_apr14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140428.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.28apr14.a2853.*
+         and     /share/olcor/corfile.29apr14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+A092457.4+113231  092457.4 +113229  j  3700 H v   # A190273         skipped - ZA too high (over 19) - initial slew too long
+A094303.4+110446  094303.4 +110446  j  6000 H v   # A192157         1043  16.1 7      411800159  weak det@600km/s - S/N~3 - RFI@1395MHz
+A100551.3+135456  100551.3 +135456  j 10000 H v   # A734230         1057  12.5 8      411800163  det@10,000km/s - S/N~3 - baseline fluct.
+A100619.6+140010  100619.6 +140010  j  8400 H v   # A205280         1108  15.5 9      411800167  det@8300km/s - S/N~5
+A122202.3+103716  122202.3 +103716  j  7700 H v   # A220444         1126  15.7 10     411800171  marginal det@7600km/s
+A122226.0+102112  122226.0 +102112  j  7600 H v   # A224503         1138  13.4 11     411800175  no det
+A122258.8+102825  122258.8 +102825  j  7700 H v   # A229438         1150  11.2 12     411800179  no det - baseline fluct. - interloper/RFI?@1387MHz
+A122257.8+103254  122257.8 +103254  j  8000 H v   # A007452         1203  9.3  13     411800183  det@7800km/s - S/N~3
+A122344.6+092017  122344.6 +092017  j  7100 H v   # A220497         1215  9.3  14     411800187  marginal det@7000km/s
+A122402.6+105054  122402.6 +105054  j  8400 H v   # A222732         1228  7.6  15     411800191  no det - RFI?@1386MHz
+A122419.5+092930  122419.5 +092930  j  6800 H v   # A220513         1240  9.6  16     411800195  no det
+A122543.0+090135  122543.0 +090135  j  7500 H v   # A220554         1252  11.3 17     411800199  good det@7400km/s - S/N~9
+A122713.6+085406  122713.6 +085406  j  7400 H v   # A224451         1305  13.1 18     411800203  marginal det@7500km/s (if you really squint)
+A140001.8+092035  140001.8 +092035  j  5700 H v   # A730071         1320  13.2 19     411800207  good det@5700km/s - S/N~6
+A140154.9+092244  140154.9 +092244  j  4600 H v   # A249359         1333  11.5 20     411800211  good det@4500km/s - S/N~5(eyeball) (Note:This source broke lbwmeasure in two-peak mode)
+A140156.3+085640  140156.3 +085640  j  6000 H v   # A231064         1345  10.3 21     411800215  det@5800km/s - S/N~3 - RFI@1381MHz
+A140312.9+093122  140312.9 +093122  j  5300 H v   # A715690         1357  9.0  1      411800219  good det@5300km/s - S/N~7 - interloper@4600km/s
+A140925.5+080843  140925.5 +080843  j  7300 H v   # A713868         1409  10.2 2      411900004  no det
+A141058.0+092242  141058.0 +092242  j  6870 H v   # A249588         1422  9.3  3      411900008  no det - RFI@1381MHz
+A141411.5+080611  141411.5 +080611  j  6870 H v   # A249160         1434  11.3 4      411900012  no det - RFI@1386MHz
+																	1446  12.9 5      411900016  file wasn't written!!?
+
+Notes  (please note anything of importance; here is an example)
+     Tiedowns enabled
+	 Some RFI around 1380MHz
+
+

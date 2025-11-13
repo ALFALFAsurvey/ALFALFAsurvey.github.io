@@ -1,0 +1,91 @@
+Log for 09/28/10     Observer: Betsey Adams
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100928.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100929.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=78.5 =438.5  ALFAang= -55.5  ZA=4.84   AzG=438.5         very close to zenith
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2103          RA@end=0253
+      RA = LST-20 min
+****
+During the night, please make occasional notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the ZA limits
+are (3.5,12.0). If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.    ang  time loop  calmode  ZAdome
+2123 0020 27100084  27100085   drift71p2  fixAzdr   210300+171636  -55.5   600   99  loopend  ZAG=4.84
+2133 0021 27100086  27100087              ZAG=4.83            +171636     powerlevels ok   quicklook ok 
+2143 0022 27100088  27100089                  4.82                       
+2154 0023 27100090  27100091                  4.81    
+2204 0024 27100092  27100093                 
+2214 0025 27100094  27100095                  4.80
+2224 0026 27100096  27100097                  4.79
+2234 0027 27100098  27100099                  4.79            
+2244 0028 27100100  27100101                  4.78                         interpolation message
+2254 0029 27100102  27100103                  4.78        +171637  started, at 171636 w/in 40 sec
+2304 0030 27100104  27100105                  4.77        +171637 for ~45sec
+2315 0031 27100106  27100107                  4.77        interp message
+2325 0032 27100108  27100109                              interp message; quicklook ok
+2335 0033 27100110  27100111              
+2345 0034 27100112  27100113                  4.76        +171637 for ~2min; interp message
+2355 0035 27100114  27200001                              interp message
+0005 0000 27200002  27200003                              quicklook ok
+0015 0001 27200004  27200005                              interp message
+0025 0002 27200006  27200007                              +171637; interp message
+0036 0003 27200008  27200009             
+0046 0004 27200010  27200011                              +171637 for ~6min then +171638
+0056 0005 27200012  27200013                  4.77        +171637  interp message
+0106 0006 27200014  27200015                  4.77
+0116 0007 27200016  27200017                
+0126 0008 27200018  27200019
+0136 0009 27200020  27200021                  4.78
+0146 0010 27200022  Aborted                               low power in WAPPS, power failure abort & restart WAPPS
+0152 0011 27200023  27200024                  4.79        +171638;  AO on emergency power generator; quicklook ok
+0203 0012 27200025  27200026                              +171637
+0213 0013 27200027  27200028                  4.80        interp message
+0223 0014 27200029  27200030               
+0233 0015 27200031  27200032                  4.81        off source for 14 sec,low power levels - power switch to commerical?
+0243 0016 27200033  27200034                  4.82
+0253 0017 27200035  27200036          
+0303 0018 27200037  27200038                  4.83       +171639
+0313 0019 27200039  ABORTED
+
+
+
+LST@stop: 0313      RA@stop: 0253   (enter at top of page too, please)
+
+NOTES:
+--Late start due to problems (mostly power?) at AO before start of run
+--On telescope at 9pm AST, still ran TOGS since outside prime ALFALFA RA range
+--One WAPPs restart due to low power levels
+
+-- TOGS at START only. 
+-- Occasional cima warnings: extrapolating pnt-data... or AGC-datablock. As long as over only 2sec, ok.
+-- FAA radar ON
+-- All beams OK
+-- Tiedowns fine
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 14.2   K3: 15.7   K4: 15.9   AT 18:31
+70K = K1: 86.6   K2: 93.9   K3: 105.2  K4: 113.5
+
+16K = K1: 14.6   K2: 14.3   K3: 15.7   K4: 15.9   AT 22:01
+70K = K1: 86.8   K2: 94.2   K3: 105.4  K4: 114.2
+
+			=>temperatures of the 8 sensors within ALFA housing
+

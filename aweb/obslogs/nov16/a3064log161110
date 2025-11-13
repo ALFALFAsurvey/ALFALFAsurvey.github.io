@@ -1,0 +1,59 @@
+A3064 LBW   16.11.10 Observers: Mike
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161110.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20161110.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161111.a3064.****.fits   (after midnight AST)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+A212116.3+292754  212116.3 +292754  j     0 H v   # A011730cal  2122   11.2 0002    631500187  Easily detected @ 4700 km/s, FAA   
+S214110.3+292456  214110.3 +292456  j     0 H v   # A311260     2130   11.3 0003    631500191  Very nice det @ 8600 km/s
+S221428.6+260544  221428.6 +260544  j     0 H v   # A323017     1849   10.6 0004    631500193  Something @ 6900 km/s, but very narrow, also something @ 600 km/s but it is also narrow (and polarised)
+S221939.8+274642  221939.8 +274642  j     0 H v   # A323401     1901   11.0 0005    631500199  RFI again at 1417.5 MHz (600 km/s), no det
+S223936.2+271958  223936.2 +271958  j     0 H v   # A323053     1914   11.5 0006    631500203  Dets @ 8500 km/s & 10700 km/s, both SNR ~ 4
+S230201.9+271749  230201.9 +271749  j     0 H v   # A336593     1926   13.0 0007    631500207  Det @ 10400 km/s not sure if it's a double horn or two sources - looking at sdss i's probably one source
+S230526.6+273820  230526.6 +273820  j     0 H v   # A336695     1939   12.0 0008    631500211  Det @ 7300 km/s SNR ~ 6
+S234412.2+271102  234412.2 +271102  j     0 H v   # A336667     1952   15.9 0009    631500215  Very strong GPS burst - WAPPS errors - restarted WAPPS
+S235401.6+271902  235401.6 +271902  j     0 H v   # A336086     2008   14.8 0010    631500219  GPS again, I must have been slewing with it or something
+S000311.8+270608  000311.8 +270608  j     0 H v   # A104809     missed this 0011    631500223  GPS AGAIN !!!!
+S001737.3+290200  001737.3 +290200  j     0 H v   # A105263     2033   15.6 0012    631500227  Det @ 4800 km/s SNR ~ 4
+S001939.9+294453  001939.9 +294453  j     0 H v   # A104873     2045   14.5 0013    631500231  Marginal @ 6700 km/s SNR ~ 2
+S002109.2+284026  002109.2 +284026  j     0 H v   # A104888     2058   12.2 0014    631500235  No det
+S003440.8+285913  003440.8 +285913  j     0 H v   # A104923     2110   12.7 0015    631500239  Det @ 10500 km/s SNR ~ 3
+S004633.0+290118  004633.0 +290118  j     0 H v   # A101839     2122   12.7 0016    631500243  Det @ 5700 km/s SNR ~ 3
+S010920.5+322557  010920.5 +322557  j     0 H v   # A116268     2136   13.6 0017    631500247  Maybe something in board 3, but baseline is not so stable
+S010932.8+322442  010932.8 +322442  j     0 H v   # A115647     2148   15.3 0018    631500251  RFI @ 1388 MHz and GPS in OFF, det @ 5200 km/s SNR ~ 3
+S011129.3+335114  011129.3 +335114  j     0 H v   # A116265     2200   16.0 0019    631500255  No det, maybe something @15000 km/s but can't trust it
+S011241.3+312051  011241.3 +312051  j     0 H v   # A116266     2213   13.1 0020    631500259  Det @ 9800 km/s SNR ~ 4
+S015054.9+285739  015054.9 +285739  j     0 H v   # A115874     2226   12.6 0021    631500263  No det
+S015416.7+334047  015416.7 +334047  j     0 H v   # A116302     2240   16.0 0022    631500267  Det @ 4400 km/s SNR ~ 3, RFI @ 1388 MHz again
+S015639.3+333943  015639.3 +333943  j     0 H v   # A114699     2252   15.6 0023    631500271  GPS again, det @ 4400 km/s SNR ~ 4
+S020330.2+332331  020330.2 +332331  j     0 H v   # A125522     2304   15.1 0024    631500275  No det
+---- I just realised that I've been recording AST not LST all night, sorry, the difference is about 2h56m.
+S021844.4+322439  021844.4 +322439  j     0 H v   # A124714     0212   14.2 0025    631500279  Det @ 5400 km/s SNR ~ 4
+S024031.5+290953  024031.5 +290953  j     0 H v   # A125544     0225   11.5 0026    631500283  GPS, apparent sources are polarised, I don't think there's anything real there
+S024902.0+303338  024902.0 +303338  j     0 H v   # A125525     0237   12.6 0027    631500287  GPS yet again, no det
+S025312.2+294244  025312.2 +294244  j     0 H v   # A125536     0250   11.5 0028    631500291  Marginal @ 8800 km/s
+H030510.4+354946  030510.4 +354946  j     0 H v   # A132243cal  0304   17.6 0000    631600003  Strong det @ 3800 km/s, HVC at -200 km/s
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal  0314   12.0 0001    631600007  Strong det @ 5200 km/s
+                                                      
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+Tiedowns disabled from start (there were issues according to the operator)
+Started a tad late - long slew and in my rush to get going I forgot to ssh into observer2, started cima on dataview, took a minute to figure it out. Wooops!
+The issues Becky had with the WAPPS last night seem to have been resolved.
+I lost about 30 min in the middle due to very bad GPS. Also I think it triggered a WAPPS power level problem.
+I noticed intermittent RFI @ 1417.5 MHz & 1388 MHz. Not sure what that is.
+                                                                 

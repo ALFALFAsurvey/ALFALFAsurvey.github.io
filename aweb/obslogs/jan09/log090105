@@ -1,0 +1,48 @@
+Log for 090104     Observers: Martha Haynes & Riccardo Giovanelli
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:        /share/pserverf.sda2/wappdata/wapp.20090105.a2010.****.fits 
+
+
+LST  fits  Scan     calscan   Source     Pattern  Start coords. ang  time loop calmode
+0724 0001 900500030 900500031 drift9p1   fixAZdr  072400+020406  19   600  99  loopend  no radar; Bm6B ok
+0734 0002 900500032 900500033                                                           GPS burst  
+0744 0003 900500034 900500035
+0754 0004 900500036 900500037
+0804 0005 900500038 900500039
+0815 0006 900500040 900500041                                                           all ok     
+0825 0007 900500042 900500043
+0835 0008 900500044 900500045
+0845 0009 900500046 900500047
+0855 0010 900500048 900500049
+0905 0011 900500050 900500051
+0915 0012 900500052 900500053
+0925 0013 900500054 900500055
+0935 0014 900500056 900500057                                                           See AGC block note below
+0945 0015 900500058 900500059
+0955 0016 900500060 900500061
+1005 0017 900500062 900500063
+1016 0018 900500064 900500065                                                           See AGC block note below 
+1026 0019 900500066 900500067                                                           See AGC block note below  
+1036 0020 900500068 900500069
+1046 0021 900500070 900500071                                                           See AGC block note below  
+1056 0022 900500072 900500073                                                           See AGC block note below    
+1107 0023 900500074 900500075
+1117 0024 900500076 900500077
+1127 0025 900500078 900500079
+1137 0026 900500080 900500081                                                           GPS burst  
+
+END LST:  1147
+
+Notes:
+Running the new version of CIMA 3.1.02 "Smart" for 2nd night; all ok
+TOGS run at beginning and end.
+FAA radar off.
+Beam 6B looks ok tonight!
+Got one agcdata: Received "duplicate AGC-datablock at 03:03:05; interpolating...
+over 2.00 second time gap" (It is easy to notice these messages when
+they are not embedded in a million WAPP warnings...)
+A second one (ditto) at 03:48:0 and at 04:03:01 and at 04:18:00 and again
+at 04:32:59 and at 05.02.57
+Pretty uneventful.

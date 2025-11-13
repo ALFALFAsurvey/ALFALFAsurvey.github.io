@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>Who is supposed to do what</title> 
+  </head>
+<body bgcolor="ffffff">
+<img src="alfalfabanner.jpg">
+
+<h2><font color=#cc0f14>Who is supposed to do what.....</font></h2>
+
+<h2><font color=darkblue><li> The "designated" observer</font></h2>
+The designated observer is the person responsible for carrying out the observations
+on a given day, regardless of whether that person is actually the one driving the
+telescope. Normally, the designated observer also performs the data file conversion
+(FITS to IDL) and immediate data quality verification.</p>
+
+<ol><b><font color=#cc0f14>Before observing</font></b>
+<li> Check the telescope schedule in the control room to verify the times of the
+     observing blocks.
+<li> Check the <a href="scheds/a2010_schedupcoming.txt">block allocation schedule</a>
+     <ul><li>Note the name of the "observing block". Use this exactly in naming
+             files (<font color=#cc0f14>logYYMMDD and cimalogYYMMDD</font>)
+             and directories (<font color=#cc0f14>data/mmdd/</font> for the moment). 
+             See the A2010 <a href="conventions.htm">naming conventions</a> for details.
+         <li>Note the <a href="docs/alfalfa_driftmaster.txt">declination</a> and 
+             <a href="conventions.htm">drift/pass designation</a>
+             to be observed during this block. Except in dire emergency, please follow the
+             schedule; do not improvise. If there is any confusion, ask the
+             <font color=darkblue><b> designated scheduler</b></font>.</ul>
+<li>Check that the declination and drift/pass designation are correct for
+    this date in the current observing catalog found at
+    <font color=#cc0f14>/share/obs4/usr/a2010/a2010.cat</font>.If there is any 
+    confusion, ask the <font color=darkblue><b> designated scheduler</b></font>.
+<li>Create today's observing log file in /share/obs4/usr/a2010 as <font color=#cc0f14>logYYMMDD</font>,
+    according to the block name, following the template /share/obs4/usr/a2010/log_template. While
+    you observe, take good notes for which your colleagues will thank you.
+</ol>
+
+<ol><b><font color=#cc0f14>After observing</font></b>
+<li> Rename the cimalog in /share/obs4/usr/a2010 to <font color=#cc0f14>a2010.cimalog.YYMMDD</font>.
+<li> Copy both the cimalogYYMMDD and the log file logYYMMDD to /share/a2010/obslogs/monYY.
+<li>Following the instructions in the <a href="checklista2010.html"> checklist</a>, create the
+     list of input files <font color=#cc0f14>filesYYYYMMDD.txt</font> in
+     the /share/a2010/fitsfiles/monYY directory</font>.
+<li>Update the loglinks.htm file in ~a2010/public_html to point to the
+correct location of the observing log, the cimalog and the fitsfile
+list. 
+<li> Edit the a2010.cat file in /share/obs4/usr/a2010, inserting a "#" at the beginning of
+the line corresponding to the declination strip you just observed. (CIMA does not display
+lines with the # in column 1, so this will make it easier for the next observer.)
+<li> If you have agreed to do the file conversion, do it following the 
+<a href="checklista2010.html"> checklist</a>.  This task should be coordinated with
+the designated file monitor who bears responsibility for the task even if he/she does not
+actually perform it.  If this does not appear to work properly,
+notify Brian (bkent@astro.cornell.edu) and Riccardo (riccardo@astro.cornell.edu) immediately.
+<li> If you have agreed to do it, verify the data quality; this normally means running CALIB1,
+CALIB2 and BPD on at least a subset of the data. If anything appears unusual, discuss it
+with someone!</ol>
+<br>
+
+<h2><font color=darkblue><li> The "designated" data file monitor &nbsp
+(Martha/Ann)</font></h2>
+The designated data file monitor is the person responsible for verifying the
+existence of the raw fits files and their valid conversion to IDL .sav
+files. Most often, the observer will perform the conversion, but the data file
+monitor should verify this, and also verify that the files have been transferred
+to Ithaca by the designated archivist. The observer, data file monitor and
+archivist need to keep in close touch.</p>
+<ol>
+<li> Check that the observing log, the cimalog and the fitsfile list
+have been properly created by the <font color=darkblue><b> designated
+observer</b></font> and that they can be properly accessed via the link on the a2010
+website. If there is any confusion, ask the <font color=darkblue><b> designated observer</b></font>.
+<li> If the observer has not, copy the list of fitsfiles <font color=#cc0f14>filesYYYYMMDD.txt</font>
+from <font color=#cc0f14>/share/a2010/fitsfiles/monYY</font> to the
+directory where you will write the IDL files, <font
+color=#cc0f14>/share/a2010N/data/MMDD</font>, i.e., <br>
+ &nbsp &nbsp &nbsp &nbsp &nbsp> cp /share/a2010/fitsfiles/monYY/filesYYYYMMDD.txt /share/a2010A/fitsfiles/monYY<br>
+and make sure there is enough disk space left to write the new IDL files.
+<li> If the observer cannot, convert the files to IDL following the instructions in the 
+     <a href="checklista2010.html"> checklist</a>. If this does not appear to work properly,
+     notify Brian (bkent@astro.cornell.edu) and Riccardo (riccardo@astro.cornell.edu) immediately.
+<li> Check with the archivist to make sure that the files will be transferred to Cornell.</p>
+</ol>
+<br>
+
+<h2><font color=darkblue><li> The "designated" scheduler &nbsp
+(Martha/Ann) </font></h2>
+The designated scheduler is the person responsible for assigning the declination
+strip/pass to be observed on a given day.</p>
+<ol><b><font color=#cc0f14>Before observing</font></b>
+<li>Check the telescope schedules as soon as they are posted. Update the 
+    block allocation schedule (using eggidl/gen/blocksched.pro) and post them to:
+    <ul><li>~a2010/public_html/scheds
+        <li>/home/web/research/projects/egg/alfalfa/scheds/asttimes (on rap)</ul>
+<li>Update the graphical schedules (*.fig) by identifying the drifts now included
+    in the block allocation schedule in yellow/gold as appropriate, export to *jpg 
+    and post them to:
+    <ul><li>~a2010/public_html/scheds/images
+    <li>/home/web/research/projects/egg/alfalfa/scheds/images (on rap)</ul>
+</ol></p>
+<ol><b><font color=#cc0f14>After observing</font></b>
+<li>Copy the various log filesto the team website:
+    <ul><li>scp /share/a2010/obslogs/MonYY/cimalog* /var/www/html/alfalfalog/cimalogs (on cbrj)
+    <li>/var/www/html/alfalfalog/fitsfiles (on cbrj)
+    <li>/var/www/html/alfalfalog/logs (on cbrj) </ul>
+<li>Update the graphical schedules (*.fig) by identifying the drifts now included
+    in the block allocation schedule in green as appropriate, export to *jpg 
+    and post them to:
+    <ul><li>~a2010/public_html/scheds/images
+    <li>/home/web/research/projects/egg/alfalfa/scheds/images (on rap)</ul>
+</ol></p>
+<br>
+
+<h2><font color=darkblue><li> The "designated" archivist &nbsp
+(Martha/Ann) </font></h2>
+The designated archivist is the person responsible for transfering the raw IDL
+save files to disk storage at Cornell and making a backup copy there.</p>
+<ol>
+<li>Verify that with the designated data monitor that the files have been properly
+converted to IDL.
+<li>Copy them (scp) to a disk area in Ithaca. Record the disk location.
+<li>Make a backup on a removable disk and record the backup date.
+</ol></p>
+<br>
+
+<hr>
+<font color=#cc0f14> 
+Last modified: Sun Jun 29 10:26:39 EDT 2008 by martha
+</font>
+</body>
+</html>

@@ -1,0 +1,76 @@
+Log for 05/01/10         Observer: Martha & Riccardo 
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100501.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100502.a2010.****.fits
+
+Zenith Strip observing setup
+This is the innermost zenith drift
+Az=90.4   ALFAang=-69.3  ZA= 4.2 at start   HA = -28min
+(Also tried 89.1. ZA=6.6 but that did not work; Got Dec=18d09'44)
+We had to fake the declination in order to get the right decJ.
+The declination was input as +181900 in order to get it close to +182218
+
+LST@start=0943   RA@start=0925
+RA = LST-28
+
+LST  fits   Scan    calscan   Source    Pattern   Start coords.  ang  time  loop  calmode ZAdome   AzG
+0943 0013  12100127 12100128  drift76p1 fixAZdr   092535+182240 -69.3  600   99    loopend   4.22  90.45 
+0953 0014  12100129 12100130                            +182238     beam 6B in low power     4.33  90.44 AGC datablock
+1004 0015  12100131 12100132                            +182244     quicklook ok             4.37           
+1014 0016  12100133 12100134                            +182243                              4.42
+1024 0017  12100135 12100136  								     4.46
+1034 0018  12100137 12100138				+182247	 active tie down enabled     4.50
+1045 0019  12100139 12100140				+182248				     4.53  90.43
+1055 0020  12100141 12100142				+182250				     4.56
+1105 0021  12100143 12100144	cima warning about wapp power levs off:cont src? (missed it) 4.59  90.42
+1115 0022  12100145 12100146				+182253				     4.61  90.42
+1125 0023  12100147 12100148				+182254				     4.64  90.42
+1135 0024  12100149 12100150				+182254				     4.64  90.42
+1145 0025  12100151 12100152				+182255				     4.67  90.42
+1155 0026  12100153 12100154				+182257				     4.68  90.42
+1205 0027  12100155 12100156				+182256				     4.69  90.42
+1216 0028  12100157 12100158				+182256				     4.70  90.42
+1226 0029  12100159 12100160				+182256				     4.70  90.42
+1236 0030  12100161 12100162				+182256				     4.70  90.42
+1246 0031  12100163 12100164				+182256				     4.69  90.42
+1256 0032  12100165 12100166				+182256				     4.68  90.42
+1306 0033  12100167 12100168				+182256				     4.67  90.42
+1316 0034  12100169 12100170				+182255				     4.66  90.42
+1326 0035  12100171 12100172				+182254				     4.64  90.42
+1336 0036  12100173 12100174 power in 6B marginally ok  +182252				     4.62  90.42
+1347 0037  12100175 12100176				+182251				     4.59  90.42
+1357 0038  12100177 12100178				+182249				     4.57  90.42
+1407 0039  12100179 12200001				+182247				     4.54  90.42
+1417 0000  12200002 12200003				+182246				     4.50  90.42
+1427 0001  12200004 12200005				+182245				     4.46  90.43
+1437 0002  12200006 12200007				+182242				     4.42  90.42
+1447 0003  12200008 12200009				+182240		6b back in blue	     4.37  90.40
+1457 0004  12200010 12200011				+182236		quicklook ok	     4.33  90.44
+1507 0005  12200012 12200013				+182235				     4.27  90.44
+1517 0006  12200014 12200015				+182232	  Interpolating agcblock     4.22  90.45
+1528 0007  12200016 12200017				+182229				     4.16  90.45
+1538 0008  12200018 12200019                            +182225                              4.10  90.46
+1548 0009  ABORT
+
+LST@stop:1548    RA@stop: 1530
+
+NOTES:
+- Had to fake position to get it on target.
+- TOGS run at end
+- FAA radar ON
+- Beam 6b has low power; starts in orange range; creeps up to blue later,
+    but ~0.87
+- At start, temp is 75.34. Elliott says "tie downs are still disabled,
+  but have manually adjusted. As soon as temp drops, they will enable."
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+16K = K1: 13.3   K2: 13.7   K3: 15.0   K4: 15.0   AT 16:02
+70K = K1: 79.0   K2: 85.4   K3: 95.4   K4: 103.2
+
+16K = K1: 13.3   K2: 13.3   K3: 15.0   K4: 15.0   AT 21:57
+70K = K1: 80.5   K2: 86.6   K3: 96.6   K4: 104.7
+

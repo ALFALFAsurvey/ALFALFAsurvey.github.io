@@ -1,0 +1,58 @@
+Log for 12.10.24 (24oct2012)        Observers: Mike Jones
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121024.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121025.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2309 0010  229800115 229800116 drift144p1  fixAzdr   230900+345506  19  600   99 power levels ok, waterfalls ok, starting a min late - previous observer overran by 5 mins - quicklook ok, FAA on, burst RFI ~1380MHz
+2319 0011  229800117 229800118
+2329 0012  229800119 229800120 quicklook ok
+2340 0013  229800121 229800122
+2350 0014  229800123 229800124 quicklook ok
+0000 0015  229800125 229800126
+0010 0016  229800127 229800128
+0020 0017  229800129 229800130 continuum source, quicklook ok
+0030 0018  229800131 229800132
+0040 0019  229800133 229800134 continuum source
+0050 0020  229800135 229800136
+0100 0021  229800137 229800138
+0111 0022  229800139 229800140 quicklook ok
+0121 0023  229800141 229800142 continuum source
+0131 0024  229800143 229800144 wapps extrapolated 2s gap
+0141 0025  229800145 229900001
+0151 0000  229900002 229900003 quicklook ok, wapps extrapolated 2s gap
+0201 0001  229900004 229900005 wapps extrapolated 2s gap
+0211 0002  229900006 229900007
+0221 0003  229900008 229900009 wapps extrapolated 2s gap
+0231 0004  229900010 229900011 quicklook ok, wapps extrapolated 2s gap
+0241 0005  229900012 229900013
+0251 0006  229900014 229900015
+0301 0007  229900016 229900017 wapps extrapolated 2s gap
+0312 0008  229900018 aborted
+
+LST stop: 0312
+
+At the bottom, add notes regarding:
+- FAA on
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 16.5   K2: 16.0   K3: 17.2   K4: 17.2   AT 18:03
+70K = K1: 81.0   K2: 79.5   K3: 88.8   K4: 97.6
+
+16K = K1: 14.9   K2: 14     K3: 15.5   K4: 15.2   AT 23:00
+70K = K1: 82.9   K2: 82.2   K3: 91     K4: 98.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered

@@ -1,0 +1,70 @@
+Log for 04/24/10          Observer: Ann Martin
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100424.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100425.a2010.****.fits
+
+Observing on meridian setup
+Az=179.74   ALFAang=19.0  ZA=10.88 
+
+LST@start=1047   RA@start=1047
+RA = LST
+
+LST  fits   Scan    calscan   Source     Pattern   Start coords. ang   time  loop  calmode    ZAdome     notes
+1047 0013  11400155 11400156  drift121p3 fixAZdr   104700+291539 19.0  600   99    loopend
+1057 0014  11400157 11400158	quicklook ok, power ok
+1107 0015  11400159 11400160
+1117 0016  11400161 11400162
+1127 0017  11400163 11400164
+1137 0018  11400165 11400166
+1147 0019  11400167 11400168	quicklook
+1157 0020  11400169 11400170
+1207 0021  11400171 11400172
+1217 0022  11400173 11400174
+1227 0023  11400175 11400176
+1237 0024  11400177 11400178
+1247 0025  11400179 11400180
+1258 0026  11400181 11400182
+1308 0027  11400183 11400184
+1318 0028  11400185 11400186
+1328 0029  11400187 11400188	power ok, quicklook ok
+1338 0030  11400189 11500001
+1348 0000  11500002 11500003
+1358 0001  11500004 11500005
+1408 0002  11500006 11500007
+1418 0003  11500008 11500009
+1429 0004  11500010 11500011
+1439 0005  11500012 11500013
+1449 0006  11500014 11500015
+1459 0007  11500016 11500017
+1509 0008  11500018 11500019	power ok, quicklook ok throughout night
+1519 0009  11500020 11500021
+1529 0010  11500022 --aborted
+
+
+LST@stop: 1529     RA@stop: 1529
+
+NOTES:
+
+Significantly late start -- ALFA wouldn't rotate, although the motor was powered up,
+so a technician needed to go up and manually set it to 19 degrees.
+Problem: cable was pinched by the motor. Will not be able to be fixed
+until tomorrow, but manual rotation and a quick fix sufficed tonight. Operator hoped
+that temp. fix would allow rotation for TOGS at end (sending ALFA to 45 degs); this worked.
+
+-TOGS run at start and end
+-FAA radar ON
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+16K = K1: 13.1   K2: 13.0   K3: 14.8   K4: 14.7   AT 16:06
+70K = K1: 76.8   K2: 85.1   K3: 93.5   K4: 101.8
+
+16K = K1: 13.1   K2: 13.3   K3: 14.5   K4: 14.5   AT 21:31
+70K = K1: 75.3   K2: 83.2   K3: 91.5   K4: 99.8
+

@@ -1,0 +1,97 @@
+Log for 03/19/10          Observers: David Craig + Tom Balonek
+
+System Configuration:                   a2010_az85_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100319.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100320.a2010.****.fits
+          fits files start with 0036 in this set of drifts
+
+Zenith strip observing setup
+Az=82.25    ALFAang=-59.6  ZA=7.1
+RA@start=0717  RA@end=1633
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0747 0036 7800099   7800100       drift71p2 fixAZdr   071700+171636 -59.6 600 99 loopend
+                                  FAA radar strong, harmonic at 1380, ZA at 7.08 deg
+0757 0037 7800101    7800102      power lvls ok. quicklook ok.
+0807 0038 7800103    7800104      weak cont source overlaps cal in b0.
+0817 0039 7800105    7800106      
+0827 0040 7800107    7800108      quicklook ok.
+0837 0041 7800109    7800110
+0847 0042 7800111    7800112
+0858 0043 7800113    7800114
+0908 0044 7800115    7800116
+0918 0045 7800117    7800118     pointing settles immediately now.
+0928 0046 7800119    7800120     quicklook ok.
+0938 0047 7800121    7800122     strong continuum source in beams 0&5
+0948 0048 7800123    7800124
+0958 0049 7800125    7800126     GPS burst 0240-0243 UTC
+1008 0050 7800127    7800128
+1018 0051 7800129    7800130
+1028 0052 7800131    7800132
+1039 0053 7800133    7800134
+1049 0054 7800135    7800136     coquis have been quieter all evening.
+1059 0055 7800137    7800138     quicklook ok.
+1109 0056 7800139    7800140
+1119 0057 7800141    7900001     date change
+1129 0000 7900002    7900003     quicklook ok.
+1139 0001 7900004    7900005 
+1149 0002 7900006    7900007
+1200 0003 7900008    7900009
+1210 0004 7900010    7900011
+1220 0005 7900012    7900013
+1230 0006 7900014    7900015     quicklook ok.
+1240 0007 7900016    7900017
+1250 0008 7900018    7900019
+1300 0009 7900020    7900021
+1310 0010 7900022    7900023
+1321 0011 7900024    7900025
+1331 0012 7900026    7900027
+1341 0013 7900028    7900029
+1351 0014 7900030    7900031    quicklook ok.
+1401 0015 7900032    7900033
+1411 0016 7900034    7900035
+1421 0017 7900036    7900037
+1431 0018 7900038    7900039
+1441 0019 7900040    7900041
+1452 0020 7900042    7900043
+1502 0021 7900044    7900045    GPS Burst 0740-0743 UTC
+1512 0022 7900046    7900047
+1522 0023 7900048    7900049    "Boring is good." 
+1532 0024 7900050    7900051
+1542 0025 7900052    7900053    quicklook ok.
+1552 0026 7900054    7900055 
+1602 0027 7900056    7900057    
+1612 0028 7900058    7900059
+1623 0029 7900060    7900061    continuum source b3,4,5 near end.
+1633 0030 7900062    7900063
+1643 0031 7900064    7900065    quicklook ok.
+1653 0032 7900066    7900067
+
+1703 0033 7900068   -- aborted
+LST stop:1703     RA stop:1633
+
+NOTES:
+CIMA and monpnt agreed on Dec throughout run.
+Two GPS bursts. Otherwise uneventful.
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 14.5   K3: 15.5   K4: 15.7   AT 16:21
+70K = K1: 83.4   K2: 91.0   K3: 101.0  K4: 108.3
+
+16K = K1: 14.1   K2: 14.2   K3: 15.7   K4: 15.7   AT 22:42
+70K = K1: 84.6   K2: 92.9   K3: 102.7  K4: 110.3
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+

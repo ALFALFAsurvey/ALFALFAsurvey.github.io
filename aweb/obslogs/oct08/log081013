@@ -1,0 +1,59 @@
+Log for 081013      Observers: Kelley Hess, Melissa Jacquart 
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.04  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20081013.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20081014.a2010.****.fits 
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2144 0008 828700368 828700369  drift37p2  fixAZdr  214400+090012 360   600   99 loopend   power levels OK 
+2154 0009 828700370 828700371
+2204 0010 828700372 828700373 
+2214 0011 828700374 828700375
+2224 0012 828700376 828700377
+2235 0013 828700378 828700379
+2245 0014 828700380 828700381                                                             power levels OK  
+2255 0015 828700382 828700383 
+2305 0016 828700384 828700385 
+2315 0017 828700386 828700387
+2325 0018 828700388 828700389
+2335 0019 828700390 828700391
+2345 0020 828700392 828700393
+2355 0021 828700394 828700395
+0006 0022 828700396 828700397
+0016 0023 828700398 828700399
+0026 0024 828700400 828700401                                                             power levels OK
+0036 0025 828700402 828700403
+0046 0026 828700404 828700405                                                             "WARNING extrapolating agc-data", error seen before, ok. 
+0056 0027 828700406 828800001
+0106 0000 828800002 828800003
+0116 0001 828800004 828800005
+0126 0002 828800006 828800007 
+0137 0003 828800008 828800009                                                             extrapolating errors
+0147 0004 828800010 828800011
+0157 0005 828800012 828800013
+0207 0006 828800014 828800015                                                             power levels OK; extrapolating errors 
+0217 0007 828800016 828800017
+0227 0008 828800018 828800019  
+0237 0009 828800020                                                                       WAPP errors (see notes***); WAPPS restarted & power adjusted
+0247 0010 828800021 828800022                                                             No data - empty waterfall plots
+0257 0011 828800023                                                                       Aborted
+030? 0012 828800024 
+
+
+END LST:0237 
+
+Notes:
+Ran TOGS at beginning and end of observation; had to stop and restart at beginning b/c RA had passed.
+
+*** Internet connection hung, then we received the following WAPP errors:
+"ERROR WAPP-# failed to complete its current task" appeared for all WAPP #s
+"ERROR failed to read spectral line data!"
+Restarted wapps, adjusted power, continued observing, but noticed that there was no data appearing in the waterfall plots.
+Aborted again (fits 0011).  Restarted (fits 0012), believe I put in the correct RA, but the telescope started slewing. 
+Called operator to reset the telescope to 360 in azimuth, but ran out of time for observing.
+
+Started running TOGS, but was unable to finish before the next observer was due on the telescope. 
+
+Spoke to another astronomer over the phone (tghosch), but she did not see the WAPP errors in the Cima log.  Emailing errors with details to Mikhail.
+

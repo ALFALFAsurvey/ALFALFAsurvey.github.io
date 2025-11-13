@@ -1,0 +1,71 @@
+Log for 11.03.07 (07Mar2011)        Observers:Jessica O'Connor, Derek Fertig
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110307.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110308.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+LST  fits    Scan      calscan    Source    Pattern   Start coords. ang  time loop calmode
+0911 0032 106600228  106600229  drift137p2   fixAzdr   091100+332012  19  600  99   loopend quickook and power levels look good 
+0920 0033 106600230  106600231 .... quicklook is good 
+0930 0034 106600232  106600233 ... power levels and quicklook plots are fine. 
+0940 0035 106600234  106600235  ... 
+0950 0036 106600236  106600237 ... Checked power levels.  
+1000 0037 106600238  106600239  ... 
+1010 0038 106600240  106600241  ... Power levels are good. 
+1021 0039 106600242  106600243
+1031 0040 106600244  106700001  quicklook is good
+1041 0000 106700002  106700003  quicklook okay, power levels are good 
+1051 0001 106700004  106700005  checked power levels 
+1102 0002 106700006  106700007  quicklook is fine
+1112 0003 106700008  106700009  power levels and quicklook plots are good. Line from galactic HI at 1420 MHz
+1122 0004 106700010  106700011  1420 MHz line still prominent. Power
+levels and quicklook plot still fine.  
+1132 0005 106700012  106700013  Continuum source at 1134 in beam 0,2,6 1420 
+                                strong in beam 4 
+1142 0006 106700014  106700015  Continuum in beam 5 at 1147 in beam 5 
+1152 0007 106700016  106700017  Continuum in beam 0,5 at 1154. quicklook fine.
+                                Strong 1380 MHz RFI starting at 1159 and continuing sporadically until 1202 
+1202 0008 106700018  106700019  Power is fine, quicklook is good. 
+1212 0009 106700020  106700021  
+1222 0010 106700022  106700023  Checked quicklook plot, power levels. 
+1233 0011 106700024  106700025
+1243 0012 106700026  106700027  quicklook okay 
+1253 0013 106700028  106700029  Power levels fine. 
+1302 0014 106700030  106700031 
+1312 0015 106700032  106700033  Checked power levels and quicklook plots. 
+1323 0016 106700034  106700035 
+1333 0017 106700036  106700037 
+1344 0018 106700038  106700039  quicklook plot fine. 
+1353 0019 106700040  106700041  power levels are fine. Checked quicklook plot.
+1404 0020 106700042  106700043  Power levels and quicklook plots are good. 
+1414 0021 106700044  106700045  Power levels good, quicklook plots are fine. 
+1423 0022 106700046  106700047  quicklook is good, but has some noise from beam 6b
+1433 0023 106700048  106700049  quicklook and power levels are fine 
+1444 0024 106700050  106700051 
+1454 0025 106700052  106700053  Extrapolated over 2.00 second time gap at 1514
+1515 0027 106700056  106700057  quicklook is good
+1524 0028 106700058  106700059  Continuum in beam 1 at 1528 
+1534 0029                       Aborted 
+
+
+
+LST stop: 1535 
+
+-- FAA radar ON. Very faint 1380 MHz harmonic. 
+-- Beam 6b dead
+-- TOGS at END only.
+
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 31.4   K2: 31.4   K3: 35.3   K4: 35.0   AT 16:39
+70K = K1: 125.9  K2: 134.0  K3: 142.8  K4: 150.1
+
+16K = K1: 31.2   K2: 31.4   K3: 35.3   K4: 35.0   AT 22:08
+70K = K1: 126.5  K2: 134.5  K3: 143.6  K4: 151.1
+
+			=>temperatures of the 8 sensors within ALFA housing
+

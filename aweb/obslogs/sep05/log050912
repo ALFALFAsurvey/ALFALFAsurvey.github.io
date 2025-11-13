@@ -1,0 +1,71 @@
+Log for 05/09/12
+Observers: Sabrina Stierwalt, Amelie Saintogne, Ann Martin
+
+System Configuration
+
+FixedAz Drift Map CIMA expanded version
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20050912.a2010.****.fits
+      /share/pserverf.sdb1/wappdata/wapp.20050913.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.09.12
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time
+loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+2144 0003 525581749 525582351 drift118p1  FixedAz 214400+283530 19 600 50
+2154 0004 525582354 525582955
+2204 0005 525582959 525583560
+2214 0006 525583564 525584165
+2224 0007 525584169 525584771
+2234 0008 525584774 525585375
+2244 0009 525585379 525585980
+2255 0010 525585985 525600322
+2307 0000 525600325 525600926
+2317 0001 525600930 525601531
+2327 0002 525601535 525602136
+2337 0003 525602140 525602741
+2348 0004 525602745 525603346
+2358 0005 525603350 525603951
+0008 0006 525603955 525604556
+0018 0007 525604560 525605161
+0028 0008 525605165 525605766
+0038 0009 525605770 525606371
+0048 0010 525606375 525606976
+0058 0011 525606980 525607581
+0108 0012 525607585 aborted
+0116 0013 525608037 525608639
+0126 0014 525608643 525609244
+0136 0015 525609248 525609849
+0146 0016 525609853 525610454
+0156 0017 525610458 525611059
+0206 0018 525611063 525611664
+0217 0019 525611668 525612269
+0227 0020 525612273 525612874
+0237 0021 525612878 525613479
+0247 0022 525613483 525614084
+0257 0023 525614088 525614689
+0307 0024 525614693 525615295
+0317 0025 525615298 525615899
+
+END LST: 032740
+
+Notes:
+Late start due to testing of the spectrometer.
+
+CIMA gave the following error at LST 2303:
+ERROR: 'Making drift observation...' should have finished 1 minute ago!
+WARN: Is 'Making drift observation... ' hanging?
+The status shown on aostatus monitor window and in CIMA's status gui all looked 
+fine.  A quicklook at the data in files 0009 and 0010 (the first fits files 
+with those numbers) showed no problems.  The drift in the first file 0010 (the 
+drift during which we saw the error message) seems to have taken longer than
+10 minutes (see LST times above) although the header reports 600 seconds.  This is 
+the same error as noticed on 05/09/05.
+
+WAPP failure during file 0012.  I had to abort, restart the WAPPs and adjust power.
+
+TOGS ran fine.
+
+

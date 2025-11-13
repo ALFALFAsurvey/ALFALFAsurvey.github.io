@@ -1,0 +1,41 @@
+A2853   LBW   14.06.23      Observers: O'Donoghue & Miller
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140623.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.23jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr    LST   ZA   File#   ONScan     Status
+A122352.0+093603  122352.0 +093603  j  7000 H v   # A224439  13:05 13.27   1   417400342   No detection
+A122355.2+103447  122355.2 +103447  j  8300 H v   # A222731  13:18 15:05   2   417400346   Continuum source? Detection not obvious   
+A132925.7+115436  132925.7 +115436  j  6700 H v   # A230365  13:34  6.53   3   417400350   No detection some continuum possible, aimuth warnings
+A133049.9+114946  133049.9 +114946  j  7000 H v   # A233738  13:46  7.39   4   417400354   GPS burst 1381 MHz
+A132939.6+111612  132939.6 +111612  j  6500 H v   # A232406  13:59  9.87   5   417400358   Detection? 1394 MHz 5600 km/s SNR ~1-2
+A133049.9+114946  133049.9 +114946  j  7000 H v   # A233738  14:10 11.65   6   417400362   Detection? 1383.5 MHz 8000 km/s SNR ~2
+A133009.6+105724  133009.6 +105724  j  7300 H v   # A232291  14:23 14:68   7   417400366   No detection
+A140144.1+095206  140144.1 +095206  j  6700 H v   # A230953  14:37 11.90   8   417400370   GPS burst in OFF, 1381 MHz
+A140156.3+085640  140156.3 +085640  j  6000 H v   # A231064  14:49 14.75   9   417400374   Detection spiral 1393 MHz 5900 km/s SNR ~2-3
+A150100.9+010050  150100.9 +010050  j  1800 H v   # A253623  15:05 17:39  10   417400378   Narrow feature 1412 MHz 1750 km/s SNR ~5, azimuth warnings
+A151241.4+013724  151241.4 +013724  j  1900 H v   # A253667  15:17 16.78  11   417400382   Narrow feature 1407 MHz 2900 km/s SNR ~4, azimuth warnings
+A151509.4+024506  151509.4 +024506  j  1800 H v   # A253506  15:30 15.98  12   417400386   No detection
+A151313.1+071331  151313.1 +071331  j  4000 H v   # A250327  15:43 13.15  13   417400390   Non-detection of source at 1402 MHz 3900 km/s in OFF SNR ~15
+A161741.3+140349  161741.3 +140349  j  9000 H v   # A738604  16:06  5.15  14   417400394   Two detectioins 1374 & 1379 MHz 10100 & 9000 km/s SNR ~7 & ~4
+H160333.3+171136  160332.0 +171155  j 10200 H v   # A260043  16:22  4.39  15   417400398   Strong source in OFF at 1373.5 MHz 10200 km/s SNR ~30
+
+Notes  (please note anything of importance; here is an example)
+     Tiedowns enabled. GPS wiped out one source, another was re-observed with no detection.
+     Slews took longer than extimated but we still finished 7.5 minutes early.  Few detections.  Nice night.  
+
+

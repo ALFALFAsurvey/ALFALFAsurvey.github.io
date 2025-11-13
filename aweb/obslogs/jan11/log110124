@@ -1,0 +1,47 @@
+Log for 11.01.24 (24Jan2011)        Observer: Greg Hallenbeck (GH)
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110124.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0910 0000 102400046 102400047 drift135p1 fixAzdr   091000+324343  19   600 99 loopend   quicklook OK
+0920 0001 102400048 102400049
+0931 0002 102400050 102400051
+0941 0003 102400052 102400053
+0951 0004 102400054 102400055
+1001 0005 102400056 102400057 quicklook OK
+1011 0006 102400058 102400059
+1021 0007 102400060 102400061
+1031 0008 102400062 102400063
+1041 0009 102400064 102400065
+1051 0010 102400066 102400067
+1101 0011 102400068 102400069 quicklook OK
+1111 0012 102400070 102400071
+1121 0013 102400072 102400073
+1131 0014 102400074 102400075
+1141 0015 102400076 102400077
+1152 0016 102400078 102400079
+1202 0017 102400080 102400081
+1212 0018 102400082 ABORTED
+
+LST stop 1213
+
+At the bottom, add notes regarding:
+
+--Beam 6B dead entire night.
+--FAA Radar ON
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 18.9   K2: 178.7  K3: 20.4   K4: 20.8   AT 16:31
+70K = K1: 109.8  K2: 115.6  K3: 124.9  K4: 132.0
+
+16K = K1: 19.9   K2: 179.7  K3: 21.6   K4: 22.1   AT 22:01
+70K = K1: 112.5  K2: 118.1  K3: 127.7  K4: 135.0
+
+			=>temperatures of the 8 sensors within ALFA housing
+

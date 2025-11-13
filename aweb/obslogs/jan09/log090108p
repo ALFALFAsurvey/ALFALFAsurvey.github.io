@@ -1,0 +1,25 @@
+Log for 090108p     Observer: Drew Brisbin and Riccardo Giovanelli
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.02 2008-12-29 17:19 "Smart"   
+File:       aweb /share/pserverf.sda2/wappdata/wapp.20090108.a2010.****.fits 
+
+     ****
+LST  fits  Scan     calscan   Source     Pattern  Start coords. ang  time loop calmode
+0116 0047 900800170 900800171 drift36p1  fixAZdr  011800+083818  19   600  99  loopend  radar's back; Bm6B ok
+0127 0048 900800172 900800173
+0137 0049 900800174 900800175  power levels OK, quicklook OK
+0147 0050 900800176 900800177
+0157 0051 900800178 900800179
+0207 0052 900800180 900800181
+0217 0053 900800182 900800183
+0227 0054 900800184 900800185
+0237 0055 900800186 900800187
+0247 0056 900800188 900800189  power levels OK
+0257 0057 900800190 900800191
+0307 0058 900800192 900800193
+
+
+END LST 0317
+Notes:
+Ran Togs at start

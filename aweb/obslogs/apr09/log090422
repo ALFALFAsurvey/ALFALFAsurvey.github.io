@@ -1,0 +1,81 @@
+Log for 090422     Observer: Betsey Adams
+
+System Configuration: a2010_az180_2009.conf
+CIMA version  3.1.03 2008-1-20 13:50 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090422.a2010.****.fits 
+            /share/pserverf.sda3/wappdata/wapp.20090423.a2010.****.fits
+
+     ****
+LST  fits  Scan       calscan    Source     Pattern   Start coords.  ang  time  loop  calmode 
+0903 0001  911200248  911200249  drift87p1  fixAZdr   090300+210254  19   600   99    loopend    quicklook ok
+0913 0002  911200250  911200251
+0923 0003  911200252  911200253
+0933 0004  911200254  911200255
+0944 0005  911200256  911200257
+0954 0006  911200258  911200259
+1004 0007  911200260  911200261  strong FAA radar; RFI 8 present; quicklook ok otherwise
+1014 0008  911200262  911200263
+1024 0009  911200264  911200265
+1034 0010  911200266  911200267  interpolating and extrapolating warnings
+1044 0011  911200268  911200269  RFI 8 strong, 1425 MHz RFI showing up in bm 2 in quicklook
+1054 0012  911200270  911200271
+1104 0013  911200272  911200273
+1115 0014  911200274  911200275
+1125 0015  911200276  911200277
+1135 0016  911200278  911200279
+1145 0017  911200280  911200281  quicklook ok
+1155 0018  911200282  911200283
+1205 0019  911200284  911200285
+1215 0020  911200286  911200287
+1225 0021  911200288  911200289
+1235 0022  911200290  911200291  quicklook ok
+1246 0023  911200292  911200293
+1256 0024  911200294  911200295
+1306 0025  911200296  911200297
+1316 0026  911200298  911200299
+1326 0027  911200300  911200301
+1336 0028  911200302  911300001  quicklook ok
+1346 0000  911300002  911300003  FAA strong, RFI 8, quicklook ok
+1356 0001  911300004  911300005
+1406 0002  911300006  911300007
+1417 0003  911300008  911300009
+1427 0004  911300010  911300011
+1437 0005  911300012  911300013
+1447 0006  911300014  911300015  quicklook good
+1457 0007  911300016  911300017
+1507 0008  911300018  911300019
+1517 0009  911300020  911300021
+1527 0010  911300022  911300023
+1537 0011  911300024  Aborted
+
+END LST: 1537
+
+
+Notes:
+Running the new version of CIMA 3.1.03 "Smart"
+TOGS run at start and end
+Beam 6B dead
+FAA radar on
+
+WAPP-4 failed at start of night during restart after TOGS, 
+managed to restart itself.  (WAPPs were restarted to be safe.)
+
+
+RFI Note: The operator is leaving the cameras in the dome turned off.
+The installation of a new camera last week may be resulting in RFI in the L-band regime.
+This may be responsible for the newly noticed RFI (1403, 1425 MHz).
+
+
+
+WAPP Error Messages:
+2009-Apr-22 19:23:49 ERROR   WAPP4-wapp_watch: ERROR WAPP-program 'wappsnap' has died!
+2009-Apr-22 19:23:49 ERROR   wapp_failure: ERROR WAPP-4 has failed!
+2009-Apr-22 19:23:49 BEGIN   begin_task: Starting task 'handling WAPP failure'
+2009-Apr-22 19:23:50 ALERT   handle_wapp_failure: Restarting WAPP-4!
+2009-Apr-22 19:23:50 NOTE    handle_wapp_failure: Stand by for automatic WAPP-4 reconfiguration in 6 seconds!
+2009-Apr-22 19:23:50 END     end_task: Finishing task 'handling WAPP failure' with status 'OK'
+2009-Apr-22 19:23:52 ALERT   WAPP=4-wappcon: WAPP4 restarting
+2009-Apr-22 19:23:56 BEGIN   begin_task: Starting task 'handling WAPP failure'
+2009-Apr-22 19:23:56 ALERT   wapp_restart: Sending configuration information to WAPP-4
+2009-Apr-22 19:23:56 NOTE    wapp_restart: WAPP-4 should be ready now
+2009-Apr-22 19:23:56 END     end_task: Finishing task 'handling WAPP failure' with status 'OK'

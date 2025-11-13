@@ -1,0 +1,52 @@
+A2853   LBW   14.01.13      Observers: Greg H., Luke L. & the UAT
+
+CIMA version:          The Stable version (Default) (Ver 3.3.11 2013-09-23 10:36)  
+Configuration file:    a2853_jan14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140113.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.13jan14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H082135.2+041904  082137.0 +041901  j   800 H v   # A188955 calib  0813  14.2   1    401300001  Detected@1417MHz,800km/s; Galactic HI detected
+A092457.4+113231  092457.4 +113229  j  3700 H v   # A190273        0828  15.6   2    401300005  Detected@1403MHz,3700km/s
+A092510.7+113159  092510.7 +113159  j  3700 H v   # A192125        0840  13.0   3    401300009  Not Detected
+A092516.1+105314  092516.1 +105314  j  3600 H v   # A190279        0852  11.1   4    401300013  Possibly Detected@1403 MHz, 3700km/s
+A093323.4+092918  093323.4 +092918  j  3500 H v   # A192349        0904  11.4   5    401300017  Strong GPS RFI, no detection
+A093326.4+100041  093326.4 +100041  j  3300 H v   # A191996        0917   9.4   6    401300021  Not Detected
+A093450.0+100401  093450.0 +100401  j  3400 H v   # A192002        0929   8.5   7    401300025  Not Detected 
+A093934.3+112941  093934.3 +112941  j  5900 H v   # A193971        0941   6.9   8    401300029  Strong detection@1393MHz
+A094038.0+103506  094038.0 +103506  j  6100 H v   # A191863        0954   8.3   9    401300033  Weak Detection@#1392.3MHz
+A100551.3+135456  100551.3 +135456  j 10000 H v   # A734230        1007   4.5  10    401300037  Very negative strong continuum source, potential at 1375MHz
+A114603.2+143838  114603.2 +143838  j  3100 H v   # A215612        1027  19.6  11    401300041  Not Detected
+A113905.5+093707  113905.5 +093707  j  6100 H v   # A213101        1039  17.0  12    401300045  Weak detection@1392.5MHz 
+A114639.4+143338  114639.4 +143338  j  3200 H v   # A215614        1052  13.8  13    401300049  Detection@1406MHz
+A114817.8+124300  114817.8 +124300  j  4000 H v   # A219665        1104  12.1  14    401300053  Detection@1402MHz
+A114827.6+124338  114827.6 +124338  j  4100 H v   # A210802        1117   9.6  15    401300057  Strong detection at 1403MHz
+A121951.7+083253  121951.7 +083253  j  7300 H v   # A225009        1131  15.5  16    401300061  Maybe weak detection at 1387MHz
+A122026.7+092527  122026.7 +092527  j  7500 H v   # A220401        1144  12.7  17    401300065  Detection at 1386MHz, GPS in off, strong continuum emission in the on
+A122028.0+092428  122028.0 +092428  j  7800 H v   # A224499        1156  10.8  18    401300069  Detection at 1385MHz
+A122033.7+092755  122033.7 +092755  j  7600 H v   # A224422        1208   9.4  19    401300073  Strong RFI - bad baseline, strong continuum emission
+A122111.1+094758  122111.1 +094758  j  7700 H v   # A224424        1221   8.6  20    401300077  Not Detected, GPS interference
+A122220.2+090202  122220.2 +090202  j  5800 H v   # A220453        1233   9.6  21    401300081  detection 1394 MHz, baseline more normal looking.
+A122226.0+102112  122226.0 +102112  j  7600 H v   # A224503        1245   9.6  22    401300085  Not detected. Slope in baseline, which is slight negative
+A132654.1+113345  132654.1 +113345  j  6800 H v   # A230339        1300   9.4  23    401300089  Strong GPS in off: 1381 MHz. Ick.
+A132725.9+115049  132725.9 +115049  j  6800 H v   # A232219        1313   7.5  24    401300093  Strong GPS in ON.
+A132741.2+112027  132741.2 +112027  j  6800 H v   # A232381        1325   7.1  25    401300097  Normal baseline, weak detection.
+A132809.2+105817  132809.2 +105817  j  7200 H v   # A232287        1337   7.7  26    401300101  possible weak detection, baseline normal.
+A140031.0+085358  140031.0 +085358  j  5400 H v   # A230924        1351   9.8  27    401300105  detection @ 1396 MHz
+
+End
+A140144.1+095206  140144.1 +095206  j  6700 H v   # A230953  if time 
+
+
+Notes
+     Tiedowns disabled. Strong GPS wiped out several sources.
+

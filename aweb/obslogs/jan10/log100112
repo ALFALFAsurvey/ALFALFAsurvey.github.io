@@ -1,0 +1,70 @@
+Log for 01/12/10          Observers: Ann Martin + Undergrad ALFALFA Team
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version       			3.1.06 2009-11-22 11:19 "Smart" 
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20100112.a2010.****.fits
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0907 0001  327769  327770     drift82p1 fixAZdr   090700+194954  19  600   99  loopend  
+0917 0002  327771  327772 power levels ok; quicklook ok -- throughout night
+0928 0003  327773  327774
+0938 0004  327775  327776
+0948 0005  327777  327778
+0958 0006  327779  327780 strong cont src
+1008 0007  327781  327782
+1018 0008  327783  327784
+1028 0009  327785  327786 
+1038 0010  327787  327788
+1048 0011  327789  327790 strong cont src
+1058 0012  327791  327792 strong cont src
+1108 0013  327793  327794
+1118 0014  327795  327796
+1129 0015  327797  327798
+1139 0016  327799  327800
+1149 0017  327801  327802
+1159 0018  327803  327804
+1209 0019  327805  327806 
+1219 0020  327807  327808
+1229 0021  327809  327810
+1239 0022  327811  327812
+1249 0023  327813  327814
+1300 0024  327815  327816  AGC datablock error
+1310 0025  327817  327818  odd rfi at 1435 end of bandpass for about a minute
+1320 0026  327819  327820
+1330 0027  327821  327822
+1340 0028  327823  327824
+1350 0029  327825  327826
+1400 0030  327827  327828
+1410 0031  327829  Aborted
+
+LST stop:  1410
+
+NOTES:
+Still no radar!
+
+TOGS started fine -- we want to use the observing files command_galfasrc10.cmd
+and command_galfacurpost10.cmd from here on out.
+TOGS run at start and end.
+
+Scan numbers still wrong!
+
+
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 12.1   K2: 12.5   K3: 13.8   K4: 13.7   AT 19:32
+70K = K1: 69.7   K2: 79.0   K3: 86.3   K4: 93.4
+
+16K = K1: 12.4   K2: 12.5   K3: 13.8   K4: 13.7   AT 23:55
+70K = K1: 70.7   K2: 80.0   K3: 87.3   K4: 94.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________

@@ -1,0 +1,42 @@
+A2853   LBW   14.06.30      Observers: Mayra Lebron, Jonathan Perez, Jorge Padial
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140630.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.30jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A122736.1+091201  122736.1 +091201  j  7600 H v   # A224453    1312   1250  1      418100339  Telescope was not tracking the source. We restarted cima. No data for this source.
+A132929.4+113729  132929.4 +113729  j  6300 H v   # A008478    1332   678   2      418100343  GPS 1381 MHz, no detection
+A133009.6+105724  133009.6 +105724  j  7300 H v   # A232291    1345   817   3      418100347  GPS again.   
+A132929.4+113729  132929.4 +113729  j  6300 H v   # A008478    1357   940   4      418100351  No detection. This source is the same as the second on this list. 
+A141058.0+092242  141058.0 +092242  j  6870 H v   # A249588    1411   899   5      418100355 No detection.  
+A144029.3+032558  144029.3 +032558  j  7400 H v   # A241975    1425   1542  6      418100359 No detection.
+A144037.9+032237  144037.9 +032237  j  8000 H v   # A241622    1437   1502  7      418100363 GPS again. 
+A150442.7+011727  150442.7 +011727  j  2000 H v   # A252423    1450   1746  8      418100367 No detection.
+A150805.8+013905  150805.8 +013905  j  1800 H v   # A250103    1503   1677  9      418100371 No detection.Possible very weak signal 1412MHz.
+H150748.1+023318  150747.5 +023405  j  1600 H v   # A009726    1514   1587  10     418100375 Possible very weak detection 1413MHz.  
+A151131.4+071508  151131.4 +071508  j 13300 H v   # A250239    1528   1179  11     418100379 FAA 1350MHz.   
+H152834.9+061429  152834.9 +061429  j   500 H v   # A258472    1541   1246  12     418100383 No detention. 
+A161957.3+142102  161957.3 +142102  j  9000 H v   # A715327    1555   713   13     418100387 Weak detection 1379MHz. 
+A162559.0+135845  162559.0 +135845  j  9000 H v   # A715449    1607   626   14     418100391 GPS, Bad. 
+A162516.5+140017  162516.5 +140017  j  9000 H v   # A715436    1620   454   15     418100395 GPS 
+
+
+Notes :  Tiedowns enabled.Clear sky.
+Telescope was not tracking the first source. We stopped cima and restarted it. No data for first source. After restarting CIMA everything seems fine. GPS damaged many spectra (5 sources). 
+
+
+

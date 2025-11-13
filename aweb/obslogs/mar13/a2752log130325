@@ -1,0 +1,72 @@
+A2752 LBW   13.03.25      Observers: Parker Troischt, Ron Olowin, Ora Starcher, Joseph Serrano, Nathan Nichols, Kyle Murray
+
+CIMA version:          The Stable version (Default) (Ver 3.3.05 2013-02-22 15:46)
+Configuration file:    a2752_mar13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2752_130325.cmd
+Mode:                Doppler tracking
+                    ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.25mar13.a2752.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST    ZA   File#  ONScan     Status
+H075150.5+064455  075150.4 +064448  j   300 H v   # A174728          756   11.6 28     308400292  No detection, Ahead of schedule and redoing
+H075150.5+064455  075150.4 +064448  j   300 H v   # A174728          804   12.0 29     308400296  No detection
+H075812.4+110130  075812.3 +110114  j  2300 H v   # A171483  calib   814   8.2  30     308400300  Detection at 1409MHz, 2300km/s, very strong single peak
+H084608.1+183544  084610.3 +183504  j  6300 H v   # A716937          827   4.7  31     308400304  Detection at 1390-1391MHz, 6200-6500km/s, broad detection
+H085112.1+275248  085112.1 +275248  j   400 H v   # A182595  SHIELD  838   10.0 32     308400308  Detection at 1418MHz, 400km/s, strong single peak  
+H090231.7+303712  090233.2 +303718  j   500 H v   #                  847   12.8 33     308400312  No Detection
+H093049.6+245050  093050.4 +245056  j  2700 H v   # A749525          856   10.4 34     308400316  Detection at 1407-1408MHz, 2700-2800km/s, double horn profile
+H093738.6+261857  093739.5 +261915  j  2800 H v   # A198487          905   11.1 35     308400320  Detection at 1407MHz, 2700km/s, narrow single peak  
+H094320.8+244230  094319.3 +244218  j  2600 H v   # A749527          913   9.6  36     308400324  No Detection
+H101609.5+221855  101611.0 +221858  j  1000 H v   #                  922   13.4 37     308400328  No Detection
+H103654.8+215302  103655.9 +215256  j  1300 H V   # A005767  5 mins  932   15.9 38     308400332  Detection at 1414 MHz, 1300km/s
+H104107.0+212137  104109.6 +212143  j  1200 H v   # A200524          944   14.0 39     308400336  Detection at 1415 MHz, 1200km/s
+H104600.3+193318  104602.8 +193215  j  1300 H v   # A739908          952   13.1 40     308400340  No Detection
+H105146.3+194512  105148.6 +194605  j  1400 H v   # A740190         1000   12.5 41     308400344  Detection at 1414 MHz, 1400km/s
+A111257.3+184541  111257.3 +184541  j   800 H v   # A740637  5 mins 1009   15.4 42     308400348  No Detection
+A111701.8+181808  111701.8 +181808  j  1000 H v   # A219646  5 mins 1021   13.5 43     308400352  No Detection
+A111747.7+181502  111747.7 +181502  j  1000 H v   # A219647  5 mins 1033   10.7 44     308400356  No Detection
+H112502.5+170423  112501.6 +170510  j  1200 H v   # A210314         1046   9.6  45     308400360  Detection at 1414 MHz, 1200km/s
+H112918.8+195852  112917.0 +195913  j  1000 H v   # A741006         1054   8.6  46     308400364  No Detection ahead LST re-executed, checked tiedowns
+H112918.8+195852  112917.0 +195913  j  1000 H v   # A741006         1106   5.9  47     308400368  No Detection  
+H113928.8+191600  113932.2 +191548  j  1500 H v   # A219637         1114   6.2  48     308400372  Detection at 1404 MHz, 3,400 km/s NOT at expected value  
+HVC1151.4+203212  115122.8 +203212  j   200 H v   #          UCHVC  1123   7.2  49     308400376  Detection at 1419.5 MHz, 200 km/s
+H122112.2+182217  122112.3 +182255  j   900 H v   # A007405         1133  11.6  50     308400280  Detection at 1416MHz,1000 km/s (ID=? NGC4293, 893km/s)
+H122403.9+165030  122401.9 +165021  j  1700 H v   # A742300         1141  10.5  1      308400284  No Detection
+H123052.4+203428  123053.8 +203436  j  1300 H v   # A229383         1150  10.1  2      308500003  1414MHz, 1300km/s
+H123217.2+181412  123219.1 +181441  j   800 H v   # A007684         1158  8.2   3      308500007  1416MHz, 800km/s
+H123653.2+202355  123655.1 +202437  j  1800 H v   # A229382         1207  7.5   4      308500011  1412MHz, 1800km/s
+H123700.0+220033  123701.4 +220030  j  1300 H v   # A742507         1215  6.3   5      308500015  1414MHz, 1300km/s
+H123233.6+315603  123235.8 +315609  j   300 H v   #                 1226  13.6  6      308500019  No Detection
+H130010.3+234622  130012.1 +234633  j   700 H v   #                 1237  7.8   7      308500023  Possible Detection
+H133628.1+181837  133625.6 +181753  j   900 H v   # A743121         1246  12.1  8      308500027  1416MHz, 900km/s
+H134225.2+220541  134226.6 +220542  j  1000 H v   #                 1255  11.9  9      308500031  No Detection
+H134504.0+204526  134505.5 +204532  j   500 H v   #                 1303  10.3  10     308500035  No Detection
+A140536.0+274957  140536.0 +274957  j  4600 H v   # A732883         1313  15.4  11     308500039  Possible Detection
+H140800.9+251411  140802.5 +251507  j  3100 H v   # A732891         1322  12.8  12     308500043  1406MHz, 3100km/s
+A140928.1+254724  140928.1 +254724  j  3100 H v   # A732893         1330  11.9  13     308500047  Possible Detection 1406MHz, 3100km/s
+A141542.2+245402  141542.2 +245402  j  4500 H v   # A726317         1338  11.0  14     308500051  Bad Baseline Redoing  
+H141823.9+250647  141824.7 +250651  j  5000 H v   # A732910         1346  10.1  15     308500055  Aborted Redoing Previous
+A141542.2+245402  141542.2 +245402  j  4500 H v   # A726317         1349  9.0   16     308500056  1411MHz, 4400km/s narrow single band  
+H141823.9+250647  141824.7 +250651  j  5000 H v   # A732910         1357  8.4   17     308500060  1397MHz, 4900km/s
+H141854.7+210002  141854.9 +210017  j  2600 H v   # A744322         1407  4.0   18     308500064  1409MHz, 2800km/s  
+H142651.6+243003  142657.3 +243138  j  3300 H v   # A749563         1416  6.7   19     308500068  Possible Detection at 3200km/s  
+HVC1436.8+202522  143647.4 +202522  j  -200 H v   #          UCHVC  1425  3.5   20     308500072  1421MHz, -200km/s very strong narrow single peak
+H144202.6+190945  144205.4 +190839  j   800 H v   # A249548         1434  2.2   21     308500076  No Detection  
+A150012.3+280853  150012.3 +280853  j  6600 H v   # A733355         1445  10.4  22     308500080  1390MHz, 6600km/s narrow single peak
+A150207.7+241243  150207.7 +241243  j  5100 H v   # A733386         1455  6.1   23     308500084  Detection at 1397MHz, 5100km/s 
+A152621.3+264951  152621.3 +264951  j  5600 H v   # A733709         1504  9.9   24     308500088  Detection at 1395MHz, 5600km/s
+H153909.7+260133  153911.4 +260129  j  1800 H v   # A749349 calib   1513  9.9   25     308500092  Detection at 1412MHz, 1800km/s
+A154502.7+274940  154502.7 +274940  j   800 H v   # A727275         1521  11.0  26     308500096  Possible Detection at 1417MHz, 800km/s
+H155040.1+244023  155040.1 +244023  j  7100 H v   # A727317         1530  8.0   27     308500100  Detection at 1388MHz, 7100km/s
+H160013.1+175130  160013.8 +175053  j  2000 H v   # A747272         1540  4.9   28     308500104  Detection at 1411MHz, 2050km/s  
+H162126.6+283815  162128.3 +283824  j   900 H v   # A010351 calib   1552  12.4  29     308500108  Detection at 1416MHz, 900km/s
+H163802.5+262651  163802.9 +262710  j  4300 H v   # A262736 calib  (if time)
+
+Stop LST 411

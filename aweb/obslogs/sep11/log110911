@@ -1,0 +1,124 @@
+Log for 11/09/10     Observer: Greg Hallenbeck & Martha Haynes
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda3/wappdata/wapp.20110911.a2010.****.fits
+             /share/pserverf.sda3/wappdata/wapp.20110912.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=265.5   ALFAang=-67.0  ZA=4.0  AzG=264.82 ZAG=5.02
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2155  RA@end=0328
+      RA = LST + 20 min
+****
+During the night, please make occational notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the inner ZA limit
+is 1.1 deg. If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+LST  fits   Scan     calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2134 0027 125400391 125400392 drift77p1   fixAZdr   215500+183652  -67.0  600   99  loopend  ZAG=5.02 quicklook OK
+2144 0028 125400393 125400394 
+2154 0029 125400395 125400396
+2204 0030 125400397 125400398
+2214 0031 125400399 125400400
+2225 0032 125400401 125400402 ZAG=5.14 quicklook OK
+2235 0033 125400403 125400404 ZAG=5.16
+2245 0034 125400405 125400406
+2255 0035 125400407 125500001
+2305 0000 125500002 125500003 ZAG=5.19 quicklook OK
+2315 0001 125500004 125500005
+2325 0002 125500006 125500007 ZAG=5.20
+2335 0003 125500008 125500009 quicklook OK
+2346 0004 125500010 125500011
+2356 0005 125500012 125500013
+0006 0006 125500014 125500015 ZAG=5.19
+0016 0007 125500016 125500017
+0026 0008 125500018 125500019 WAPPS interpolating for 2 seconds at ~RA5200
+0036 0009 125500020 125500021 quicklook OK ZAG=5.15
+0046 0010 125500022 125500023
+0057 0011 125500024 125500025
+0107 0012 125500026 125500027 ZAG=5.09
+0117 0013 125500028 125500029
+0127 0014 125500030 125500031
+0137 0015 125500032 125500033
+0147 0016 125500034 125500035 quicklook OK; ZAG=4.97
+0157 0017 125500036 125500037
+0207 0018 125500038 125500039
+0217 0019 125500040 125500041 ZAG=4.87
+0228 0020 125500042 125500043
+0238 0021 125500044 125500045
+0248 0022 125500046 125500047
+0258 0023 125500048 125500049
+0308 0024 125500050 aborted
+
+LST@stop:0308       RA@stop: 0328
+
+NOTES:
+
+-- Using 'zenith strip' observing mode
+-- Beam 4A dead
+-- Tiedowns disabled
+-- Waterfall plot display working again!
+-- NO FAA radar!!
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+GREGORIAN DOME 16K TEMPERATURES
+
+AT 17:13      AT 21:56
+
+327 = 17.4    327 = 16.5
+430 = 16.3    430 = 15.8
+800 = 89.0    800 = 86.0
+LBW = 14.3    LBW = 14.3
+SBN = 13.6    SBN = 13.4
+SBW = 15.0    SBW = 14.7
+SBH = 18.0    SBH = 18.2
+CB  = 17.7    CB  = 17.3
+CBH = 23.3    CBH = 22.5
+XB  = 17.1    XB  = 17.1
+
+Floor Speed 3  AT 16:00
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 13.3   K2: 12.7   K3: 14.7   K4: 14.7   AT 17:14
+70K = K1: 77.2   K2: 78.0   K3: 83.9   K4: 90.2
+
+16K = K1: 13.8   K2: 13.2   K3: 14.7   K4: 14.9   AT 21:57
+70K = K1: 78.0   K2: 78.5   K3: 84.3   K4: 91.1
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT 
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:       AT 
+				=>certify our blanker is locking on
+_______________________________________________________________________________
+TIE DOWN STATUS AT 16:00
+
+TD12: 12.589
+TD4 : 12.837
+TD8 : 12.610
+
+Total Kips: 97.90
+
+Tie Down:   Disabled
+________________________________________________________________________________
+

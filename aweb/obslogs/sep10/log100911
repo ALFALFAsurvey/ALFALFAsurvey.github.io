@@ -1,0 +1,82 @@
+Log for 09/11/10     Observer: Becky Koopmann and Union College Physics 100 class
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100911.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100912.a2010.****.fits
+
+*****Zenith strip observing setup********
+****
+****   Az=232.74   ALFAang= -31.6  ZA=6.0  AzG=232.19  ZAG=5.86
+****
+****
+      RA@start=2125  RA@end=0329
+      RA = LST + 20 min
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome 
+2105 0027  25400159 25400160  drift90p1   fixAZdr   212500+214642  -31.6   600   99  loopend  ZAG=5.86 powerlevels, quicklook OK; 5B abnormal in waterfall plot   
+2115 0028  25400161 25400162   5B OK, cont src
+2125 0029  25400163 25400164   
+2135 0030  25400165 25400166  
+2145 0031  25400167 25400168   quicklook OK
+2155 0032  25400169 25400170   powerlevels OK 
+2206 0033  25400171 25400172   cont source, also during cal between this and previous
+2216 0034  25400173 25400174   5B goes into high power range (1.4)
+2226 0035  25400175 25400176   5B continues at high power
+2236 0036  25400177 25400178   quicklook OK
+2246 0037  25400179 25400180  
+2256 0038  25400181 25500001   GPS  5B continues at high power (1.41)  
+2306 0000  25500002 25500003  
+2317 0001  25500004 25500005   5B continuing high (1.42)  ZAG 5.88
+2327 0002  25500006 25500007  
+2337 0003  25500008 25500009   powerlevels OK (except 5B)
+2347 0004  25500010 25500011   quicklook OK ZAG 5.88  
+2357 0005  25500012 25500013   cont source
+0007 0006  25500014 25500015   cont source
+0017 0007  25500016 25500017   quicklook OK
+0027 0008  25500018 25500019   5B continuing high (1.43)
+0038 0009  25500020 25500021  
+0048 0010  25500022 25500023   quicklook OK, powerlevels OK (except 5B)
+0058 0011  25500024 25500025
+0108 0012  25500026 25500027
+0118 0013  25500028 25500029   powerlevels OK (except 5B)
+0128 0014  25500030 25500031   5B continues high (1.44)
+0138 0015  25500032 25500033   cont source
+0148 0016  25500034 25500035   quicklook OK  
+0158 0017  25500036 25500037  
+0209 0018  25500038 25500039    5B continues high (1.45)
+0219 0019  25500040 25500041   ZAG 5.85
+0229 0020  25500042 25500043   5B continues high (1.46-1.47)
+0239 0021  25500044 25500045   5B slightly lower (1.43-1.44)
+0249 0022  25500046 25500047   quicklook OK   ZAG 5.84
+0259 0023  25500048 25500049   
+0309 0024  25500050 -- abort
+
+LST@stop:0309     RA@stop: 0329
+
+NOTES:
+
+-- 5B abnormal at start, then in high power range over most of night.
+-- Long slew at beginning.
+-- TOGS run at beginning. ALFA Rotation timed out on first try; ALFA motor control window 
+   showed correct rotation angle, but script stalled. No problems on second attempt.
+-- Using 'zenith strip' observing mode
+-- CIMA extrapolating pnt-data warnings more frequent - in  drifts: 0036, 0038, 0001, 0002, 
+   0004 (twice), 0010, 0012, 0014 (twice), 0016, 0017, 0022, 0023  (twice)
+-- FAA radar ON
+-- Tiedowns active
+-- WAPP chip-count errors appear in cima log, but did not appear in log window during observing! 
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 15.3   K2: 15.7   K3: 17.0   K4: 17.2   AT 16:31
+70K = K1: 95.9   K2: 104.2  K3: 114.7  K4: 122.7
+
+16K = K1: 15.5   K2: 15.5   K3: 17.0   K4: 17.2   AT 21:29
+70K = K1: 94.4   K2: 104.2  K3: 114.7  K4: 123.3
+
+
+

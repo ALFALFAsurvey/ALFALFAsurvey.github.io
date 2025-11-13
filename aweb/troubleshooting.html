@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA Survey - Observational Troubleshooting for a2010</title>
+  </head>
+<body bgcolor="ffffff">
+<h2><font color=darkblue>ALFALFA Survey - Troubleshooting for a2010 Observations or Followup LBW
+<br>Last update Mar 26, 2013</font></h2>
+
+<b>This is a list of the issuess to date we have encountered during a2010 observations.  If you have a problem while observing, check this list for a possible solution.  The dates each problem was reported on are noted, so you can check the log files for further information. <font color=#cc0f14>NOTE:</font> If you abort an observation, be sure to create a new fits file before beginning again.  Otherwise the fresh data will be written to the same file as the aborted data.</b>
+
+<h2><font color=darkblue>LBW ON-OFF observations show strong 1 MHz baseline ripple</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> When the difference spectrum (ON-OFF) is calculated, it
+shows a strong baseline ripple with a 1 MHz periodicity.
+<li><font color=purple>What To Do:</font> Ask the operator to disable the tiedowns. Read
+Phil's explanataion <a href="phi_tiedowndisable.txt">here</a>
+<li><font color=purple>Reported On:</font> 13/03/22
+</p>
+</ul>
+
+
+<h2><font color=darkblue>ALFA won't rotate to the commanded rotation angle</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> ALFA won't rotate to our configuration (+19 degrees); instead it is
+     stuck at some other rotation angle.
+<li><font color=purple>What To Do:</font> Ask the operator is he/she is certain that the ALFA motor is on. When the cover
+     is taken off after an S-band radar run, someone is supposed to flip a switch activating the motor so ALFA can
+     rotate; once in a while, this step is missed and the motor remains off. It is also turned off when someone
+     is observing at 327 MHz because of RFI worries. 
+     If the motor is indeed on and ALFA still does not rotate, then
+     the operator needs to call someone (e.g. Ganesh, Phil, etc) to check the system further.
+<li><font color=purple>Reported On:</font> 09/02/15, 11/09/17
+</p>
+</ul>
+
+
+<h2><font color=darkblue>alfadatawin problems</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> When observing remotely you can't display data using alfadatawin.
+<li><font color=purple>What To Do:</font> Someone may have left the process running on dataview; check processes running on dataview (ps -ecf); if the alfa_data_grabber is running and owned by someone else (e.g. the previous observer), that's the problem. Call Mikael and ask him to kill the process.
+<li><font color=purple>Reported On:</font> 05/04/02, 08/04/18
+</p>
+</ul>
+
+<h2><font color=darkblue>Correlator Configuration</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> CIMA asks: "Correlator Configuration changed since last apply, continue?" when you attempt to begin observing.
+<li><font color=purple>What To Do:</font> Do not continue.  Go back and hit "Configure WAPP ALFA" again.  Either you did not configure the WAPPs or you hit the button too fast for CIMA to register the command.  In the future, make sure CIMA reports back after pressing each button so you know the command was sent.
+<li><font color=purple>Reported On:</font> 05/05/12
+</p>
+</ul>
+
+<h2><font color=darkblue>Frequency Axis Scale Problem</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> You notice that the
+frequency scale on the waterfall plots suddenly switches from center
+1385 MHz, range 1335-1435 Mhz, to some other range in one or more
+beams. This is due to a glitch in the WAPPs.  <li><font
+color=purple>What To Do:</font> Continue observing. The frequency
+range should return to normal in the next drift. However you will have
+to correct the fits file with the incorrect frequency scale. To do
+this, copy the affected file somewhere else. Use the program <b> fv
+</b> to edit the affected parameters: CRVAL1 should be 1385000000.00,
+UPPERSB should be 0, and correct the sign of CDELT1 (see note from
+Mikael in <a
+href="http://www.naic.edu/~a2010/obslogs/nov06/log061101">log061101</a>.) The
+easiest way to correct these parameters is to open the file in fv,
+click on ALL and then use the Calculate function to set the
+parameters. Run filecreator on the new file and replace .sav files 
+generated from the original file.
+<li><font color=purple>Reported On:</font> 061101, 061209, 070328
+</p>
+</ul>
+
+<h2><font color=darkblue>Internal RFI</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> You notice a lot of strong RFI at unexpected frequencies.
+<li><font color=purple>What To Do:</font> A transmitter may have been left on in the dome.  Check Rack 3 in the control room if you think this may be happening.  Make sure the light in the top/middle of the bottom panel is off. Also, if it persists, file an rfi report either using the CIMA tool to do so (go to "utilities" and click on "send email comment"), or by
+emailing rfi-grp_AT_naic.edu. Include in the message the AST time, frequency, description
+of the RFI.
+<li><font color=purple>Reported On:</font> 05/05/18
+</p>
+</ul>
+<b> Check out the A2010 <a href="rfi_common.htm">COMMONLY SEEN RFI</a> page</b>
+
+<h2><font color=darkblue>Strong RFI at 1367 and 1382 MHz</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> You notice strong RFI at 1367 and 1382 MHz frequencies. See an example
+<a href="images/puntassalinas.gif">here</a>.
+<li><font color=purple>What To Do:</font> The radar at Punta Salinas naval base has been mistakenly left on (see <a href='http://www.naic.edu/~rfiuser/smarg-coordPS.html'> this link</a>.) Tell the telescope operator to call Punta Salinas and tell them to turn off their equipment. Be insistent if necessary. 
+Also, if it persists, file an rfi report either using the CIMA tool to do so (go to "utilities"
+and click on "send email comment"), or by
+emailing rfi-grp_AT_naic.edu. Include in the message the AST time, frequency, description
+of the RFI.
+<li><font color=purple>Reported On:</font> 06/16/10
+</p>
+</ul>
+
+<h2><font color=darkblue>Network Failure</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> When observing remotely, you lose connection with AO.
+<li><font color=purple>What To Do:</font> Wait to regain connection and start over.  If you abort an observation, be sure to create a new fits file before beginning again.
+<li><font color=purple>Reported On:</font> 05/06/04
+</p>
+</ul>
+
+<h2><font color=darkblue>VNC Sessions Die</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> When connected via VNC from a remote site, VNC connection would drop.
+This occurred on a connection from Union College and is diagnosed as a local problem by Arun; see note below.
+<li><font color=purple>What To Do:</font> 
+<pre>
+Checking the logins on `remote' I find:
+ # last -10 a2010
+ a2010     pts/10       adjuntas.astro.c Fri Mar  7 16:07 - 16:12  (00:05)
+ a2010     pts/14       isp1-acad-nat1.u Fri Mar  7 15:13 - 15:14  (00:00)
+ a2010     pts/11       isp2-acad-nat1.u Fri Mar  7 14:41 - 15:41  (01:00)
+ a2010     pts/10       isp2-acad-nat1.u Fri Mar  7 14:34 - 15:18  (00:44)
+ a2010     pts/12       isp1-acad-nat1.u Fri Mar  7 12:30 - 13:38  (01:08)
+ a2010     pts/14       isp1-acad-nat1.u Fri Mar  7 12:28 - 13:37  (01:08)
+ a2010     pts/13       isp2-acad-nat1.u Fri Mar  7 12:17   still logged in
+ a2010     pts/12       caborojo.astro.c Fri Mar  7 12:16 - 12:28  (00:12)
+ a2010     pts/11       isp2-acad-nat1.u Fri Mar  7 12:10 - 14:19  (02:08)
+ a2010     pts/8        isp2-acad-nat1.u Fri Mar  7 11:15 - 11:48  (00:32)
+
+ Presumably the `isp[12]-acad-nat1.u[nion.edu]' logins are yours.
+ The names suggest that your Internet Service Provider (ISP) is using
+ a translated ("NAT") network address for your external access.  This is
+ usually implemented on a perimeter router, which could get overloaded
+ if there are too few address translations available in the pool.  It
+ may be worthwhile to check with your network people if this is happening,
+ and perhaps get them to increase the size of the NAT pool.
+
+ Regards,
+ -arun
+<li><font color=purple>Reported On:</font> 08/03/07
+</p>
+</ul>
+
+<h2><font color=darkblue>Disk quota exceeded/VNC viewer dies</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> When you log into remote.naic.edu, you get
+an error message that the "quota" is exceeded. It may also be that your VNC viewer locally
+disappears.
+<li><font color=purple>What To Do:</font> There is a disk quota system at Arecibo
+which restricts visitor accounts in size. It turns out that VNC sessions generate
+log files which start to get big after a while. If we run a lot of observing via VNC sessions,
+the ~a2010/.vnc directory can get filled up with these. So, first, look there, and
+remove (rm) any log files that aren't recent until the quota errors go away. Also,
+if people aren't careful running firefox/mozilla etc when they are at Arecibo, the
+cache areas get filled up. So look there (~a2010/mozilla and subdirectories)
+for abandoned files that aren't needed. We try to clean up this stuff regularly,
+but it helps if we all pay attention to the accumulation of junk
+files.
+<li><font color=purple>Reported On:</font> 09/03/05
+</p>
+</ul>
+
+<h2><font color=darkblue>Problems terminating VNC job</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> When you try to kill the VNC server,
+you get a message indicating that you must terminate it manually.
+<li><font color=purple>What To Do:</font> Log into "dataview" and check to see
+if any VNC processes are running that belong to user "a2010". To check, run
+the linux command "ps -ecf". Look for listings including something like:<br>
+<pre>
+UID        PID  PPID CLS PRI STIME TTY          TIME CMD
+a2010    18083 18081 TS   24 08:06 ?        00:00:00 Xvnc :4 -desktop dataview.naic.edu:4 (a2010) -httpd /usr/share/vnc/c
+</pre>
+Kill the job by typing "kill -9 18083", where you substitute the appropriate
+process ID number (PID) for 18083 in the example.
+Type "ps -ecf" again to see if the process is now gone and/or if there are any other 
+VNC processes belonging to "a2010". If there are, kill them likewise.
+Note that other users may have abandoned processes too; you can only clean up the ones belonging to
+"a2010", but your good housekeeping will be appreciated by others.</p>
+</ul>
+
+<h2><font color=darkblue>Linked files don't show up on Observing Log (loglinks.htm) page</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> Although the links appear to be correct in the
+</i>loglinks.htm</i> file, one or more
+of the files (the observing log, the CIMA log and the fits file list) don't show up when
+viewed by a web service.
+<li><font color=purple>What To Do:</font> If the problem is the CIMALOG, and you see an
+error message like:
+<pre>
+Internal Server Error
+The server encountered an internal error or misconfiguration and was unable to complete your request.
+Please contact the server administrator, webadmin@naic.edu and inform them of the time the error occurred, and anything you might have done that may have caused the error.</pre>
+this is occurring because the CIMALOG is very large, and the web service will not handle it. This often happens
+on runs of significant length when one or more beams are dead and lots of errors appear. Don't worry about it;
+there is nothing we can do about it.
+If you cannot view the observing file or the fits file lists, double check that the files are in
+the proper location and the read permissions are properly set to include "others". If the permissions are
+wrong, reset them using the linux command "chmod ogu+r FILE".
+<li><font color=purple>Reported On:</font> Ad infinitum, when there are lots of errors.
+</p>
+</ul>
+
+<h2><font color=darkblue>Can't run IDL on the usual fast linux machines</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> You can't find a machine to run "quicklook" or "filecreator" on,
+either because you cannot log into the usual machines, the linux license manager has crashed,
+or the needed disks can't be mounted.
+<li><font color=purple>What To Do:</font> Try other machines. Our favorite is "fusion00", but other machines
+you should be able to use include "aolc1", "aolc2", "aolc3", "kalkota", "mofongo", etc. If none of those
+work, ask the operator if he/she can suggest one. If you are still stuck, contact Arun.
+<li><font color=purple>Reported On:</font> 10/09/03 (after a power failure)
+</p>
+</ul>
+
+
+
+<h2><font color=darkblue>No Data</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> The telescope monitoring windows report that data is being taken, but your data files are empty.
+<li><font color=purple>What To Do:</font> Make sure you have control of the telescope.  The telescope operator may have pointed the telescope for you and then not given you back control.  If you abort an observation, be sure to create a new fits file before beginning again.
+<li><font color=purple>Reported On:</font>
+</p>
+</ul>
+
+<h2><font color=darkblue>Power - Switching power from emergency generator to commercial </font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> The telescope operator warns you that power will be switched from emergency generator to commercial.  You lose pointing for a few seconds during the switch.
+<li><font color=purple>What To Do:</font> You will lose the 10-minute drift during which the power is switched.  You may not have to restart CIMA if everything (power levels, tracking, pointing) looks normal after the switch.
+<li><font color=purple>Reported On:</font> 05/06/01
+</p>
+</ul>
+
+<h2><font color=darkblue>Power - Rising Power Levels</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> The power levels displayed for each beam and each polarization should remain blue.  For the power levels to occasionally flicker orange is normal.  But the power levels may begin to rise in one or more beam and continue rising.
+<li><font color=purple>What To Do:</font> Abort the observation, adjust power, and begin the observation again.  If you abort an observation, be sure to create a new fits file before beginning again.
+<li><font color=purple>Reported On:</font> 05/05/20
+</p>
+</ul>
+
+<h2><font color=darkblue>Swap Space</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> CIMA reports that observer2 is out of swap space.
+<li><font color=purple>What To Do:</font> Report the problem to Arun and wait until he has made more space.
+<li><font color=purple>Reported On:</font> 05/04/10
+</p>
+</ul>
+
+<h2><font color=darkblue>VLBI Warning</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> CIMA says:''WARN VLBI control initialized'' at the beginning of a run.
+<li><font color=purple>What To Do:</font> Nothing.  This seems to happen when one of the AO staff initiate
+something in preparation for a VLBI run.
+So far we have not noticed a problem when this occurs.  Emmanuel assures us everything is okay.
+<li><font color=purple>Reported On:</font> 05/06/12, 05/02/26, 09/01/12
+</p>
+</ul>
+
+<h2><font color=darkblue>WAPP chip error</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> CIMA says one of several things:
+<ul>
+  <li><font color=#cc0f14>WARN wappdata buildup logic error</font>
+  <li><font color=#cc0f14>WARN WAPPDATA confused cleared n dumps</font>
+  <li><font color=#cc0f14>WAPP(1) ERROR counts don't match for chip n</font>
+  <li><font color=#cc0f14>ERROR spectral line, read data error</font>
+</ul>
+<li><font color=purple>What To Do:</font> Abort your observation, exit CIMA and start over.  Be sure to restart the WAPPs.  If you abort an observation, be sure to create a new fits file before beginning again.  Often this will fix the problem, but sometimes nothing can be done to "unconfuse" the WAPPs (as on 05/05/09).  Giacomo replaced board on WAPP 3 in an attempt to fix the WAPP problem on 05/05/05.  As reflected in the dates below, this problem was much more frequent in the past than it is now. 
+<li><b>2008 Update:</b> &nbsp There are now warning messages which appear in orange and are not fatal.
+Keep an eye on the waterfall plots; if the beams all appear to be there, then probably everything is ok.
+Abort and restart only if beams disappear or you are uncertain. If you want to check records in a FITS
+file, you can follow the instructions on <a href="checkfitsnotes.txt">checking FITS records</a> in IDL.
+<li><font color=purple>Reported On:</font> 05/08/17,05/06/08, 05/05/31, 05/05/10, 
+05/05/09, 
+05/05/05, 05/04/09, 05/04/02, 05/03/28, 05/03/26, 05/03/22, 05/03/21p, 05/03/20, 05/02/26, 05/02/25, 05/02/21, 05/02/20, 05/02/18, 05/02/16, 05/02/14a and many, many other dates
+</p>
+
+
+</ul>
+
+<h2><font color=darkblue>WAPP not running</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> CIMA says: <font color=#cc0f14>WAPP not running</font>
+<li><font color=purple>What To Do:</font> Abort observation, restart the WAPPs, adjust power, and start a new fits file.  Then begin observing again.  If you abort an observation, be sure to create a new fits file before beginning again.
+<li><font color=purple>Reported On:</font> 05/04/02
+</p>
+
+
+</ul>
+
+<h2><font color=darkblue>WAPPs won't adjust power</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> One or more of the WAPPs fail to adjust power when you hit "Adjust Power".  CIMA gets hung: <font color=#cc0f14>WARN: Executive is busy, waiting WAPP adjust power</font>
+<li><font color=purple>What To Do:</font> You need to do more than simply restart the WAPPs.  Restart the executive, reapply the IF/LO setup, restart the WAPPs, configure WAPP ALFA and adjust power.
+<li><font color=purple>Reported On:</font> 05/02/16
+</p>
+
+
+</ul>
+
+<h2><font color=darkblue>Waterfall plots won't show up</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> The waterfall plots at AO show no data even though the telescope monitoring windows report data are being taken and spectra in FITS files look ok.
+<li><font color=purple>What To Do:</font> The data may be there, even if the waterfall plots aren't showing it.  Check the fits files directly.  The waterfall plots work best if they are started up after the observations begin.  You may have to restart them in the middle of a run if they stop showing data. 
+If the waterfall plots show blank after you abort or at the beginning of the run, it may be because
+the previous job got hung (this can happen if you start the "alfadatawin" job before you actually
+start taking data). The solution in that case is to close the "alfadatawin" window (upper right X)
+and look for jobs (e.g. "ps -ecf") still running on dataview associated with 
+"alfadatawin" (e.g., alfadatagrabber, etc.). Kill those jobs using the linux "kill" command (and
+be sure not to kill anything else!). Then restart "alfadatawin" and the waterfall plots should show
+up. As always, check the data integrity with "quicklook" or the quick IDL 
+<a href="http://www.naic.edu/~a2010/checkfitsnotes.txt">recipe</a> to check FITS files.
+<li><font color=purple>Reported On:</font> 05/05/22; 10/09/16
+</p>
+</ul>
+
+<h2><font color=darkblue>"filecreator" aborts without writing summary files</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> You ran "filecreator" and it successfully created
+all the d*.sav files, but it appears to have aborted unhappily and
+the summary calYYMMDD.list and driftYYMMDD.list were not created.
+<li><font color=purple>What To Do:</font> There is a blank line (one or more) at the end
+of the fitfilelist. Edit the file in <b>both locations</b>: /home/a2010/public_html/fitsfiles/MONTH
+and /share/a2010-2/data/yy.mm.dd. Then, in the latter, follow the commands given in 
+/share/a2010-2/data/makelist.csh (change the block designation as appropriate). Don't 
+be surprised if Martha fixes this while you are sleeping!
+<li><font color=purple>Reported On:</font>  Every now and then; often enough to have the
+quick fix ready at hand.
+</p>
+</ul>
+<h2><font color=darkblue>Miscellaneous issues regarding FITS file integrity: How to check the files</font></h2>
+<ul>
+<li><font color=purple>The Problem:</font> There might be several in this category. For example, the waterfall
+plots don't show data (See above) or GALSPECT seems to be missing some data or you get an error
+"Taking drift scan ...' should have finished x minutes ago!"
+<li><font color=purple>What To Do:</font> Continue observing, but check the file integrity several ways:
+     <ol><li>Simply list the relevant files files to see their size:<br>
+             ls -tal /share/pserverf.sda3/wappdata/wapp.20090121.a2010.****.fits<br>
+             (use the appropriate disk area, wherever the night's files are being written)<br>
+             Check that the file size of the file in question is the same as others.
+         <li>Follow the instructions in the <a href="checkfitsnotes.txt">'checkfitsnotes.txt'</a>
+             file (found in /share/obs4/usr/a2010/) to run IDL to check some arbitrary records 
+             in the FITS file. <i>Note:</i> This is like `quicklook', but allows you to check an
+             arbitrary record, not just the first one.
+      </ol>
+<li><font color=purple>Reported On:</font> 05/09/05, 05/09/12, 09/01/20
+</p>
+</ul>
+
+
+<hr>
+
+<font color=#cc0f14>
+Original page created and maintained members of the <a href="http://www.astro.cornell.edu/Galaxy/egg.html">Cornell ExtraGalactic Group</a> and the <a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA team</a></font><br>
+
+<i>Last modified: Sun Sep 25 11:41:23 EDT 2011 by martha</i>
+</html>

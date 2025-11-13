@@ -1,0 +1,214 @@
+A2010 observing schedule                                          last update: 10Nov26 mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing.
+--------------------------------------------
+COMPLETED OBSERVATIONS  
+------------------------------------------------------------------------------------------------
+      Block     Date    LMSTmidn      AST           LST       Drift   DecJ    Observers
+    10.08.17  T 17Aug    21h23    00h00-05h45   21h37-03h08    92p1  +221554  RK,PT,AM1,KO,MB,CW Az=180  started one night early
+    10.08.19  R 19Aug    21h27    00h00-05h45   21h27-03h12    93p1  +223030  RK,PT,RO,AM1,KO,MB,CW,VM,SF
+    10.08.20  F 20Aug    21h31    00h00-05h45   21h31-03h16    94p1  +224506  RK,PT,RO,AM1,KO,MB,CW,VM,SF
+    10.08.21  S 21Aug    21h35    00h00-05h45   21h35-03h20    95p1  +225942  RK,PT,RO,AM1,KO,MB,CW,VM,SF
+    10.08.22  S 22Aug    21h39    23h45-05h30   21h23-03h09    96p1  +231418  RK,PT,RO,AM1,KO,MB,CW,VM,SF
+    10.08.23  M 23Aug    21h43    23h45-05h30   21h27-03h13    97p1  +232854  RK,PT,RO,MB,CW,VM,SF
+    10.08.26  R 26Aug    21h55    23h00-05h15   20h53-03h10    98p1  +234330  LH,RP(R)  
+    10.08.27  F 27Aug    21h59    22h45-05h15   20h42-03h13    92p2  +222312  LH,RP(R)
+    10.08.28  S 28Aug    22h03    22h45-05h15   20h46-03h17    93p2  +223748  GH(R)  
+    10.08.29  S 29Aug    22h06    22h45-05h15   20h50-03h21    94p2  +225224  EP(R)
+    10.08.30  M 30Aug    22h10    22h45-05h00                                 Cancelled; Hurricane Earl
+    10.09.03a F 03Sep    22h26    02h00-05h00   00h22-03h22    95p2  +230700  GH(R)     Sband run cancellation
+    10.09.03p F 03Sep    22h26    22h30-04h45                                 Night lost due to AO power/network/WAPP problems
+    10.09.04  S 04Sep    22h30    22h15-04h45                                 Night lost due to WAPP computer problems
+    10.09.05  S 05Sep    22h34    22h15-04h45   20h48-03h19    98p2  +235048  SH2(R)   all ok now
+    10.09.06  M 06Sep    22h37    22h15-04h30   20h52-03h08    68p1  +162530  AM(R)     | 295.6  |  77.8 |  4.2 | 16min later than LST  | a2010_az265_2010.conf 
+    10.09.09  R 09Sep    22h49    22h00-04h30   20h48-03h20    68p2  +163248  EP(R)     | 294.1  |  79.5 |  4.2 | 16min later than LST  | a2010_az265_2010.conf 
+    10.09.10  F 10Sep    22h53    22h00-04h15   20h52-03h08    69p1  +164006  RK(R)     | 287.0  |  87.4 |  5.1 | 21min later than LST  | a2010_az265_2010.conf 
+    10.09.11  S 11Sep    22h57    22h00-04h15   20h56-03h12    90p1  +214642  RK(R)     | 232.74 | -31.6 |  6.0 | 20min later than LST  | a2010_az265_2010.conf
+    10.09.12  S 12Sep    23h01    21h45-04h15   20h45-03h16    90p2  +215400  AM(R)     | 231.80 | -30.6 |  5.9 | 20min later than LST  | a2010_az265_2010.conf
+    10.09.13  M 13Sep    23h05    21h45-04h15   20h49-03h20    91p1  +220118  AM(R)     | 230.88 | -29.7 |  6.1 | 20min later than LST  | a2010_az265_2010.conf
+    10.09.14  T 14Sep    23h09    21h45-04h00   20h53-03h09    91p2  +220836  AM(R)     | 229.96 | -28.8 |  6.2 | 20min later than LST   | a2010_az265_2010.conf
+    10.09.15  W 15Sep    23h13    21h30-04h00   20h42-03h12    69p2  +164724  AM(R)     |  72.62 | -49.5 |  4.9 | 20min earlier than LST | a2010_az85_2010.conf
+    10.09.16  R 16Sep    23h17    21h30-04h00   20h46-03h16    70p1  +165442  JR,DF,KH2,SH3,JO(R)|  73.99 | -51.1 |  4.9 | 20min earlier than LST | a2010_az85_2010.conf
+    10.09.17  F 17Sep    23h21    21h30-04h00   20h50-03h20    71p1  +170918  JR,DF,KH2,JO(R)|  76.79 | -54.3 |  4.8 | 20min earlier than LST | a2010_az85_2010.conf 
+    10.09.18  S 18Sep    23h25    21h30-03h45   20h54-03h10    72p1  +172354  GH(R)     |  79.65 | -57.5 |  4.8 | 20min earlier than LST | a2010_az85_2010.conf
+    10.09.19  S 19Sep    23h29    21h15-03h45   20h43-03h14    73p1  +173830  GH(R)     |  82.70 | -60.9 |  4.8 | 20min earlier than LST | a2010_az85_2010.conf
+    10.09.20  M 20Sep    23h33    21h15-03h45   20h47-03h18    74p1  +175306  MH(R)     |  85.60 | -64.2 |  4.8 | 20min earlier than LST | a2010_az85_2010.conf
+    10.09.21  T 21Sep    23h37    21h15-03h45   20h51-03h22    72p2  +173112  AM(R)     |  81.30 | -59.2 |  4.8 | 20min earlier than LST | a2010_az85_2010.conf
+    10.09.22  W 22Sep    23h41    21h15-03h30   20h55-03h11                   no data. The welding wasn't finished in time, so no telescope motion tonight.
+    10.09.23  R 23Sep    23h45    21h00-03h30   20h44-03h15    70p2  +170200  JR,JO,KH2,DF(R)|  75.70 | -52.6 |  4.9 | 20min earlier than LST | a2010_az85_2010.conf
+    10.09.24  F 24Sep    23h48    21h00-03h30   20h48-03h19    73p2  +174548  EP(R)     |  84.15 | -62.6 |  4.8 | 20min earlier than LST | a2010_az85_2010.conf
+    10.09.25  S 25Sep    23h52    21h00-03h30   20h52-03h23    74p2  +180024  MH(R)     |  87.07 | -66.0 |  4.8 | 20min earlier than LST | a2010_az85_2010.conf  
+    10.09.26  S 26Sep    23h56    21h00-03h15   20h56-03h11    75p1  +180742  MH,GH(R)  |  89.44 | -69.0 |  5.6 | 25min earlier than LST | a2010_az85_2010.conf  
+    10.09.27  M 27Sep    00h00    20h45-03h15   20h44-03h15    75p2  +181500  MH,BA(R)  |  89.5  | -69.0 |  5.7 | 27min earlier than LST | a2010_az85_2010.conf  
+    10.09.28  T 28Sep    00h04    20h45-03h15   20h48-03h19    71p2  +171636  BA(R)     |  78.50 | -55.5 |  4.8 | 20min earlier than LST | a2010_az85_2010.conf 
+    10.10.09  S 09Oct    00h47    20h00-02h30   20h46-03h18    96p2  +232136  DK(R)     Az=180.
+    10.10.10  S 10Oct    00h51    20h00-02h30   20h50-03h21    97p2  +233612  DK(R)     Az=180.
+    10.10.11  M 11Oct    00h55    19h45-02h15   20h39-03h10    89p1  +213206  MH(R)     | 234.7 | -33.6 | 5.8  | 20min later than LST | a2010_az265_2010.conf
+    10.10.12  T 12Oct    00h59    19h45-02h15   20h43-03h14    88p1  +211730  MH,AM(R)  | 236.7 | -35.7 | 5.6  | 20min later than LST | a2010_az265_2010.conf
+    10.11.23  T 23Nov    03h45    18h15-23h30   21h59-03h14    95p2  +230700  TB,AO,JM,RO,HC,PP    Az= 180   
+    10.11.24  W 24Nov    03h49    18h15-23h30   22h03-03h18    89p2  +213924  TB,AO,JM,RO,HC,PP    Az= 180
+    10.11.25  R 25Nov    03h53    18h15-23h30   22h07-03h22    88p2  +212448  TB,AO,JM,RO,HC,PP    Az= 180
+    10.11.26  F 26Nov    03h57    18h00-23h30   22h11-03h26    87p2  +211012  TB,AO,JM,RO,HC,PP    Az= 180
+  
+END OF THE FALL 2010 OBSERVING SEASON**********
+
+------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS  
+------------------------------------------------------------------------------------------------
+
+SPRING 2011 Season   
+********************     NOTICE      AST IS ONE HOUR AHEAD OF EST             ****************
+********************                Times for A2010 only                      ****************
+********************                TOGS scheduled at end of run only         ****************
+********************      Assumes ZA < 16 restriction in Jan  (Dec<34.3)      ****************  
+********************      stat=azdectozaha(180.0d,34.02d,za,ha,/verbose)      ****************      
+
+      Block     Date    LMSTmidn      AST           LST       Drift   DecJ    Observers 
+    10.12.26  S 26Dec    05h51    03h15-06h30   09h06-12h22    133p2 +322148  DK(R)      Az= 180  TOGS at end only        
+    10.12.27  M 27Dec    05h55    03h00-06h15   08h55-12h11    134p2 +323624  DK(R)      Az= 180  TOGS at end only
+    10.12.28  T 28Dec    05h59    03h00-06h15   08h59-12h15    135p2 +325100  MH(R)      Az= 180  TOGS at end only
+    10.12.29  W 29Dec    06h03    03h00-06h15   09h03-12h19    136p2 +330536  MH(R)      Az= 180  TOGS at end only
+    10.12.30  R 30Dec    06h07    03h00-06h15   09h07-12h23    137p2 +332012  MH(R)      Az= 180  TOGS at end only   
+    10.12.31  F 31Dec    06h11    02h45-06h00   08h56-12h11    138p2 +333448  MH(R)      Az= 180  TOGS at end only
+
+    11.01.04  T 04Jan    06h26    02h30-05h45   08h57-12h12    139p2 +334924  MH(R)      Az= 180  TOGS at end only
+    
+
+schedule after this point is not yet released so this is only very tentative
+
+    11.01.17  M 17Jan    07h17    01h45-06h30   09h03-13h48    134p1 +322906  UAT@AO workshop  Az= 180  TOGS at end only
+    11.01.18  T 18Jan    07h21    01h30-06h15                  138p1 +332730  UAT@AO workshop  Az= 180  TOGS at end only
+    11.01.19  W 19Jan    07h25    01h30-06h15                  136p1 +325818  UAT@AO workshop  Az= 180  TOGS at end only
+
+    11.01.27
+    11.01.28
+    11.01.29
+    11.01.30
+    11.01.31
+    11.02.01
+
+    11.02.05
+    11.02.06
+    
+    11.02.09
+    11.02.10
+    11.02.11
+    11.02.12  S 12Feb   09h00    00h15-06h45                                  MH,RG+grads@AO    
+    11.02.13  S 13Feb   09h04    00h00-06h30                                  MH,RG+grads@AO
+    11.02.14  M 14Feb   09h08    00h00-06h30                                  MH,RG+grads@AO
+    11.02.15  T 15Feb   09h12    00h00-04h30                   short          MH,RG+grads@AO
+    
+    11.02.16  W 16Feb   09h16    23h59-06h15                                  grads@AO
+    11.02.17  R 17Feb   09h20    23h45-06h15                                  grads@AO
+    11.02.18  S 19Feb   09h28    23h45-04h30                   short          grads@AO
+    11.02.19  S 19Feb   09h28    23h45-05h00                   short          grads@AO
+    11.02.20  S 20Feb   09h32    23h45-06h00
+    11.02.21
+    11.02.22
+    11.02.23
+    11.02.24
+
+
+-----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Fall 2010:  (updated Nov26)
+Still to do:         stat=azdectozaha(180.0d,21.5d,za,ha,/verbose) 
+      76 to 82 both passes (zenith strip observing)
+      83 to 86 both passes (meridian observing)
+      87p1 to finish
+     136-148 both passes   (need ZA restriction lifted)
+This makes 52 nights (plus 2 redo high ZA)
+ 
+Drift   Dec    |  Az    | RotAng|  ZA  |   RA vs LST         | conf file to use    
+76p1  +182218  | 90.4   | -70.0 | 5.0  | need to experiment  | a2010_az85_2010.conf
+76p2  +182936  | 92.8   | -70.0 | 5.0  | need to experiment  | a2010_az85_2010.conf
+
+Spring 2011:
+Still to do:
+   134p1,135p1,136p1,137p1,138p1,139p1,140p1,
+   133p2,134p2,135p2,137p2,137p2,138p2,139p2,140p2,
+   141p2,143p2 144p2,145p2,146p2,147p2,148p2,149p2,148p4        need full ZA
+   141p1,142p1,143p1,144p1,145p1,146p1,147p1,148p1,149p1,148p3  need full ZA
+   This is 35 nights.
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+AA: Adeel Altaf (Lafayette)
+CA: Cameron Arsenault (RMCC)
+TB: Tom Balonek
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+BC: Barbara Catinella
+BC2: Bret Comnes
+JC: John Cannon
+DC: David Craig
+HC: Heather Cutler (SLU)
+JD: Josh Davidson (GSU)
+AF: Amy Furniss (HSU)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+EG: Elena George (HSU)
+JG: Josh Goldstein (Lafayette)
+RG: Riccardo Giovanelli
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+MJ: Melissa Jacquart (UWisc)
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+EM: Emmanuel Momjian
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+VM: Victoria Mendoza (St.Marys)
+WM: Arik Mitschang (HSU)
+KN: Kim-Yen Nguyen
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+RP: Ryan Payne (Lafayette)
+DR: Daniel Richey (GSU)
+JR: Jessica Rosenberg
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+TS: Tess Senty (HSU)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+BW: Brian Walsh
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots
+

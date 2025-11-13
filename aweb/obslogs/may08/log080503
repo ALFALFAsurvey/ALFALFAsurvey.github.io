@@ -1,0 +1,35 @@
+Log for 080503       Observer: Rebecca Koopmann
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080503.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080504.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1344 0016 812400202 812400203  drift15p2   fixAZdr  134400+033900 19  600   99   loopend   
+                                     power levels OK, but looks like 0B still fluctuating
+1354 0017 812400204 812400205   GPS   cs in 6
+1404 0018 812400206 812400207  
+1414 0019 812400208 812500001   GPS 
+1424 0000 812500002 812500003   GPS (extending from previous - cal affected?) 
+1435 0001 812500004 812500005   
+1445 0002 812500006 812500007   power levels OK. 0B better,  fluctuations less extreme.
+1455 0003 812500008 812500009   
+1505 0004 812500010 812500011   strong GPS burst
+1515 0005 812500012 812500013 
+1525 0006 812500014 812500015  
+1535 0007 812500016 812500017
+1545 0008 812500018 812500019   power levels OK
+1555 0009 812500020 812500021 
+1606 0010 812500022 812500023
+1616 0011 812500024 812500025
+1626 0012 812500026 812500027
+1636 0013 812500028 -- aborted
+
+End LST: 1636
+
+Notes:
+
+Beam 0 Pol B continues to fluctuate as in previous runs, although power level stays mainly in 
+acceptable range.  
+TOGS cal run at the end.

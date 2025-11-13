@@ -1,0 +1,44 @@
+Log for 01/05/06
+Observer: Prasanth,Emmanuel
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20060105.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.01.05
+
+LST  fits Scan      calscan    Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+0701 0002 600501788 600502390 drift56p2  FixedAz 070100+133736 19 600 50
+0711 0003 600502393 600502995
+0722 0004 600502998 600503600  
+0732 0005 600503603 600504205
+0742 0006 600504208 600504810
+0752 0007 600504813 600505415
+0802 0008 600505418 600506020 
+0812 0009 600506023 600506625
+0822 0010 600506628 600507230
+0832 0011 600507233 600507835
+0842 0012 600507838 600508440
+0853 0013 600508443 600509045
+0903 0014 600509048 600509650
+0913 0015 600509653 600510255
+0923 0016 600510258 600510860
+0933 0017 600510863 600511465
+0943 0018 600511468 600512070
+0953 0019 600512073 600512675
+1003 0020 600512678 600512280
+1013 0021 600512283 600513885
+1024 0022 600513888 600514490
+1034 0023 600514493 CIMA not responding; cannot ABORT or EXIT; coudn't proceed with the observation. See below for more details.
+
+END LST: 1034
+
+
+
+Notes:
+--TOGS failed at the beginning; not enough time to rerun.
+-- CIMA froze, flushing water sound was heard, "time remining" was stuck at 1:03. CIMA is not responding; cannot ABORT or EXIT; cannot access (say, ls) on fits directory (/share/pserverf.sda2/). We had to exit the session on observer2; tried to restart CIMA but CIMA did not come up after asking for login and password. Called Mikael. CIMA log reports that CIMA had restarted, but except for the "Datataking" and "Executice" Windows, nothing came up. Mikael suggested that the problem could be associated with a disk that handles fits data, Arun is needed. Mikael cleared the processes om observer2, we were able to restart CIMA, and then resrated the WAPPS and tried to run the TOGS script as the observing session was nearing to end, but it got stuck at "WAPPCONFIG", and after few minutes CIMA reported that it failed to configure the WAPPS.
+-- TOGS at end failed (see the point above). 

@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA Remote Observing</title> 
+  </head>
+<body bgcolor="ffffff">
+
+
+<center><h2 style="color: rgb(10,10,150);">ALFALFA Remote Observing Checklist </h2>
+<h3>Current as of Jan 30, 2011</h3></center><br>
+<center><i>PLEASE NOTE:  These assume you use VNC (Virtual Network Computing)</i> (which you should!)</center>
+
+
+<br>
+<h3><font color=#cc0f14>Things needed before observing</font></h3>
+<ul>
+ <li> laptop (for comfortable viewing of the AO status display) or other workstation....
+      with VNC installed and working
+ <li> observing checklist
+ <li> this checklist
+ <li> coffee or Diet Pepsi(TM), prosciutto sandwich, wings, Doritos(TM)... your choice.
+</ul> 
+
+<h3><font color=#cc0f14>For Mac Users  **** NEW Jan 2011!!!</font></h3>
+<ul>
+<li>Rose Finn's hints on running <a href="docs/AORemoteObservingOnMac.pdf">VNC on MacOS</a> &nbsp -
+also available in your brower <a href="https://sites.google.com/site/alfalfaugradgroups/remote-observing-on-mac">
+here</a>. &nbsp Thanks, Rose!</p>
+</ul>
+
+<h3><font color=#cc0f14>Basic protocol for VNC users</font></h3>
+<ul>
+<li> If you are practicing CIMA, heed the instructions on the <a href="checklista2010.html">observing checklist</a>
+     for which machines to use and not use, and to avoid running the data monitoring routines.
+<li><b>NEVER EVER</b> reset the VNC password!
+<li>Clean up after yourself! See bottom of this file for instructions!</a>
+</ul>
+
+<h3><font color=#cc0f14>30 minutes before observing</font></h3>
+<ul>
+ <li><b>Call the telescope operator </b> at (+1) 787 878 2612, Ext. 211, and ask for the password for 
+     user "dtusr" at "Observer2". Ask also for the status of ALFA (cover off? amplifiers on?
+     all beams working? anything else new?...) </p>
+
+<li><b>   ssh -X a2010@remote.naic.edu</b>   and enter the account password
+<li>  <b>ssh dataview</b> and enter the account password once again
+<li>  You are now logged into dataview.  To facilitate using two screens on the Linux machines, it is best to startup 
+    two independent VNC server sessions. Enter the following at the command prompt TWICE:  
+<br> &nbsp &nbsp &nbsp <b>vncserver -geometry 1200x900</b> (or 1250x950 or 1250x1000 depending on desktop)
+<li>  You will get a messages detailing what your new X Desktop numbers are - NOTE THE
+ NUMBER AT THE END (e.g., 1 or 5 or 11 or some other small number).
+<li>  In another terminal window on YOUR local machine, issue this command
+ to open your desktop: <br>
+      &nbsp &nbsp &nbsp <b> vncviewer -shared -via a2010@remote.naic.edu dataview:N</b>
+ (<b>N</b> is the number of the X desktop noted above). 
+ <li>In yet another terminal window, again on YOUR local machine, issue the same command - just change <b>N</b> to 
+the other server desktop number.  In each instance, you will be prompted for two sequential passwords.  The first
+ is the normal a2010 account password.  The second is the VNCserver password for the server desktops.  In the case
+   of using two VNC server sessions, two desktops should pop up.  One session can be used to control CIMA, and the
+  other can be used for the waterfall plots and any realtime IDL analysis.
+
+<li>In another virtual window on your local machine or an a laptop, 
+     login to AO using the a2010 account, and start the AO status display and the IF/LO andPointing Monitors:<br>
+     &nbsp &nbsp &nbsp <b>ssh -X a2010@remote.naic.edu</b><br>
+	&nbsp &nbsp &nbsp <b>aostatus</b><br>
+	&nbsp &nbsp &nbsp <b>monpnt</b><br>
+       &nbsp &nbsp &nbsp  <b>rxview</b><br>
+    These three items are not critical if they crash, therefore, they do not need to be run in the remote desktop.
+    But, they are VERY useful so pay attention to them. They tell you what is **really** happening.<br>
+
+<i>Note: See <a href="http://www.naic.edu/%7Ephil/hardware/monitordoc.html"> Phil's web page</a> for how to access other telescope monitoring windows.</i></p>
+
+
+<li> Keep an eye on the aostatus window, and have the a2010.cat (located in /share/obs4/usr/a2010/a2010.cat) file open for editing in your text editor of choice (pico or vi work well over the network).
+As soon as the previous observer is out, check the LST, and estimate and add the slew time (usually around 5 minutes).
+Put this in for the RA in the <i>galfasrc</i> entry and save the file.</p>
+
+</ul> 
+
+<h3><font color=#cc0f14>Ready to go!</font></h3>
+<ul>
+ <li><b>Call the telescope operator and wait for the ok.</b> Only one session
+     of CIMA can run on observer2 at a given time. <b>Tell the operator the approximate AZ,ZA you want so that
+     he/she can start moving the telescope as soon as the previous program is done. Also ask him/her to
+     set up GALSPECT.</b> <b> <i> Don't start CIMA until the telescope is close to position (once you start
+    CIMA, the telescope motion will halt). </b></i>
+<li>Use a terminal in one remote desktop to connect to observer2:<br>
+         <b>ssh -X dtusr@observer2</b>  <br> and type in the password provided by the operator.
+         
+<li> Startup CIMA with the command <br> <b>cima --X</b> <br> and invoke the version we are currently using: 
+the <b>"The 'smart' version of CIMA (Ver 3.1.08 2010-02-01 17:44 "Smart")</b>  
+(Version updated frequently - this version number current as of 2010Feb)
+
+<li>After typing in <b>a2010</b> as the project name, your name as the observer name, and your phone number, 
+     you will be authorized by the operator.
+ <li>Follow the instructions in the <a href="checklista2010.html#cima">A2010 observing checklist </a> -
+ go to Data Taking section, 'Start New CIMA Session' instructions.
+ <li>If you have problems (e.g. CIMA does not start, you can't select the receiver, the telescope doesn't move...)
+     contact the telescope operator. 
+</ul> 
+
+<h3><font color=#cc0f14>While observing</font></h3>
+<ul>
+ <li> Make sure the IF/LO is set up properly; check out the <b>rxview</b> display (which you started
+      up at the beginning). You'd better be observing 100 MHz centered at 1385 MHz!
+ <li>Once data-taking has begun, open Mikael's software for data monitoring on the other vncserver window. (If these
+      tasks do not work, try restarting them.)<br>
+     &nbsp &nbsp &nbsp <b>alfaobswin &</b> - monitor the power in dB for each beam - leave this window up <br>
+     &nbsp &nbsp &nbsp <b>alfamotorwin &</b> - shows ALFA rotation angle - check at beginning of night<br>
+     &nbsp &nbsp &nbsp <b>alfabeamwin &</b> - opens alfabeampos widget, which shows ALFA beam positions - check at beginning of night<br>
+     &nbsp &nbsp &nbsp <b>alfadatawin &</b> -  waterfall, spectral, and total power plots. To see the waterfall plots, 
+     click on 'ALFA pattern' and then 'Plot Type' and select 'waterfall' Note that you will not be able to 
+     start <b>alfadatawin</b> if the process is already running on dataview (started
+    by one of the previous observers). If this happens, ask the telescope operator to kill the previous process or, if
+     he cannot, to contact Mikael, Arun, or Phil to do so.</p>
+
+  <li>On another terminal, you can start up an IDL session on one of the fast linux machines
+      (e.g. fusion00,aolc1,2,3,4) so that you can run "quicklook" as a backup to the waterfall plots. Note these instructions make use of the aliases
+      in the a2010 account.<br>
+     &nbsp &nbsp &nbsp <b>ssh -X a2010@remote.naic.edu</b><br>
+     &nbsp &nbsp &nbsp <b>ssh -X a2010@fusion00</b>  (or aolc1, etc)<br>
+     &nbsp &nbsp &nbsp <b>cd /share/a2010/idl/eggidl</b><br>
+     &nbsp &nbsp &nbsp <b>idl</b><br>
+     &nbsp &nbsp &nbsp <b>@wasinit2</b><br>
+     &nbsp &nbsp &nbsp <b>quicklook,'filename'</b><br>
+        where 'filename' is the complete name of the last complete FITS file,
+        e.g. '/share/pserverf.sda3/wappdata/wapp.20080822.a2010.0003.fits'. (The directory path is
+        specified in the log files - look at the previous night's log.) You have the option to display
+        the bandpasses for each beam, both pols of the first record of the file. Not as nice as
+        Mikael's data monitoring, but quick and convenient for remote observers as an extra check or as backup
+        if the data monitoring programs don't work.<br></p>
+
+       Or if you want to look at an arbitrary record, see the file "checkfitsnotes.txt" in
+         the /share/obs4/usr/a2010 directory.</p>
+
+
+
+<li>Keep an eye on the remaining time until the end of the scan on the AO
+    status display. Occasionally it might stop for no reason, meaning
+    that the WAPPs are no longer taking data, and you will receive no
+    error or warning messages from CIMA. <b> If WAPPS fail, see
+    WAPPS Failure Section in <a href="checklista2010.html#wapp">A2010 observing checklist. </a></p></b>
+ <li>Watch the "CIMA Observation Log Display" window, where error and
+     warning messages are displayed. When you see messages concerning
+     the WAPPs (e.g., <i>WAPP(N) DONE adjusting power</i>, 
+     <i>WAPP(N) DONE with spectral line observation</i>, etc.), make
+     sure that all four WAPPs are responding. Do not count on CIMA
+     letting you know that one of the WAPPs has stopped working...</p>
+ <li>Check periodically that the declination setting (J2000) is correct.
+     For this, look at the <b>monpnt</b> window to be sure that the line
+     starting with <b>Rslt:</b> shows the correct DecJ. Also check the
+     appearance of the array and its coordinates in the alfabeampos widget,
+     which is opened by the aflabeamwin task.
+     If anything looks amiss, discuss with the telescope operator. In particular,
+     <i> be sure that he has given you control of the telescope!</i></p>
+ <li>Restart the WAPPS (1) before TOGS at the beginning of the night; (2) at
+     A2010 startup; and (3) before TOGS at the end of the night.</p>
+<li> Maintain the log - see the <a href="checklista2010.html#log">A2010 observing checklist</a>.
+</ul> 
+
+<h3><font color=#cc0f14>Finishing Procedures, including VNC cleanup</font> </h3>
+
+<ul><li> Run TOGS if time is allocated for it. 
+     See instructions in <a href="checklista2010.html#finish">A2010 observing checklist</a>.
+
+<li> Exit out of CIMA, followed by exiting out of the observer2 computer. <i> It is important to do this
+   as quickly as possible, so that the next observer can log in. </i> 
+<li> Exit out of any IDL sessions and ALFA/CIMA utility programs 
+<li> Kill both remote desktops (X in the upper right hand corner).
+<li> In the window connected to dataview on your local machine where you started the VNC server, issue the following
+        command to kill the sessions (you MUST do this):
+       <b>vncserver -kill :N</b>
+       where N is the desktop number. If something goes wrong with this and you get a message indicating that
+you must kill the process manually, then follow the instructions on the <a href="troubleshooting.html">
+troubleshooting page</a> ("Problems terminating VNC job") which are summarized here:
+     <ul><li> Check what jobs are running on "dataview" via <b>"ps -ecf"</b>. If your VNC connection still appears
+              to be running (note its PID=process ID), 
+              then you need to <b> kill</b> it using the linux command (while in a window connected
+              to dataview) <b> "kill -9 PID"</b>. Run <b>"ps -ecf"</b>; make sure your VNC has disappeared.
+         </ul>
+<li>Exit out of dataview and remote.naic.edu
+<li>Carry on with post-observing procedures, summarized in <a href="http://www.naic.edu/%7Ea2010/todo_endrun.txt"> 
+list of tasks to do after each  
+run </a> and <a href="checklista2010.html#afterobs">A2010 observing checklist </a>.  
+Finish your soda and Doritos as necessary.
+</ul>
+
+
+<h3><font color=#cc0f14>Useful links</font></h3>
+<ul><li>The <a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA web page</a> at Cornell
+    <li>The <a href="docs/alfalfa_driftmaster.txt">master list of ALFALFA declination drift assignments</a>
+    <li>The <a href="scheds/a2010_schedcurrent.txt">Block allocation summary for current observing period</a>
+    <li><a href="a2010obs_instr.html">A2010 Observing cookbook</a>
+    <li><a href="checklista2010.html">A2010 Observing checklist</a>
+    <li><a href="troubleshooting.html">A2010 Observational troubleshooting</a>
+    <li><a href="useful_aliases.txt">Useful aliases</a> for a2010
+    <li><a href="a2010whereintheworldis.html">Where in the world is...</a>
+    <li><a href="http://www.naic.edu/~astro/remote.shtml">Remote Observing with
+    Arecibo</a> web page</p>
+</ul>
+
+
+<br><hr>
+<font color=#008800> This page maintained by members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA </a>Observing Team.</font>
+<br>
+<!-- hhmts start -->
+<b><font color="#008000"><bf>Last modified: Wed Feb  2 11:53:37 EST 2011 by martha </bf></font>
+<!-- hhmts end -->
+
+</body>
+</html>

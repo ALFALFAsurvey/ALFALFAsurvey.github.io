@@ -1,0 +1,107 @@
+Log for 10/10/12     Observer: Martha Haynes (starter), Ann Martin (relief)
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20101012.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20101013.a2010.****.fits
+
+*** *****Zenith strip observing setup********
+****
+****   Az=236.7   ALFAang= -35.6     ZAG=5.57   AzG=236.11
+****
+      RA@start=21h25m      RA@end=0330
+      RA = LST+20 min
+****
+
+Note that Beam 6.1 is bad. 2.0 is flakey. Have seen other issues with power levels.
+During TOGS getting error messages about WAPP power levels. Ditto A2010
+
+LST RANGE: 2105-0310
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.    ang  time loop  calmode  ZAdome
+2049 0015  28500057            drift88p1  fixAzdr   210900+211730    ABORT
+Serious looking WAPP logic error  Hmmmm; looks ominous; better restart
+   WAPPDATA-search_pnt: ERROR data in pnt-table is too old! (55482.000000 > 55481.000000)
+   ERROR   WAPPDATA-compute_interp: ERROR can't interpolate positions at 00:00:00.000 --- 
+           using the last positions written to FITS-file!
+   ERROR   WAPPDATA-search_pnt: ERROR interpolation of pnt-data over a too large time 
+           gap attempted (55481.000000 - 55482.000012) --- cancelling interpolation attempt!
+     WAPPDATA-interpolate: ERROR denominator is zero --- skipping interpolation!
+Restarting the WAPPS and reloading everything
+2105 0016  28500058 28500059   drift88p1  fixAzdr   212500+211730     19  600	99   Hcorcal  5.6  Beam 6b dead;4b=0.747 long GPS  
+2115 0017  28500060 28500061                        quicklook ok   FAA is not very strong
+2125 0018  28500062 28500063                         
+2135 0019  28500064 28500065                        
+2145 0020  28500066 28500067                        FAA shows clear 12sec pulse     4b=0.762
+2156 0021  28500068 28500069                        
+2206 0022  28500070 28500071                        ZA=5.58  4b=0.761
+2216 0023  28500072 28500073                        
+2226 0024  28500074 28500075                        
+2236 0025  28500076 28500077                        quicklook ok
+2246 0026  28500078 28500079                        
+2257 0027  28500080 28500081                        
+2307 0028  28500082 28500083
+2317 0029  28500084 28500085
+2327 0030  28500086 28500087
+2337 0031  28500088 28500089			    quicklook ok
+2347 0032  28500090 28500091
+2357 0033  28500092 28500093
+0007 0034  28500094 28500095
+0017 0035  28500096 28500097
+0028 0036  28500098 28500099
+0038 0037  28500100 28500101
+0048 0038  28500102 28500103			    4b up to 0.78
+0058 0039  28500104 28600001
+0108 0000  28600002 28600003
+0118 0001  28600004 28600005			    quicklook ok, power levels the same
+0128 0002  28600006 28600007
+0138 0003  28600008 28600009
+0148 0004  28600010 28600011
+0158 0005  28600012 28600013			    4b up to 0.79
+0209 0006  28600014 28600015
+0219 0007  28600016 28600017
+0229 0008  28600018 28600019
+0239 0009  28600020 28600021
+0249 0010  28600022 28600023
+0259 0011  28600024 28600025
+0309 0012  28600026 --aborted
+
+LST@stop:0310 => RA@stop: 0330
+
+NOTES:
+  
+-- Tiedowns disabled
+-- FAA isn't very strong (no complaints about that!)
+-- TOGS run at start of night only
+-- The first time through running TOGS, we get an error that TOGS aborts due to 
+       ERROR timed out waiting on ALFA rotation.
+   I reload and restart TOGS. All ok, and obviously ALFA was in the right place.
+     *** This is a similar occurrence to one several weeks back. ALFA actually
+         does get there, but somehow it doesn't communicate that it is in place
+         and hence the timeout.
+-- Getting lots of warnings of WAPP channels with too little power and WAPP power levels
+-- Beams 6B bad all night. Power levels low in beam 4B (warning range; see above). 
+-- Beam 4B power rose gradually over the night, but never to levels above 0.79
+
+
+(update below at end of night)
+-------------------------------------------------------
+
+ALFA INSTRUMENT STATUS
+
+ALFA TEMPERATURES
+
+16K = K1: 13.5   K2: 13.7   K3: 15.0   K4: 14.9   AT 18:40
+70K = K1: 80.0   K2: 85.3   K3: 93.7   K4: 101.2
+
+16K = K1: 13.6   K2: 13.7   K3: 15.0   K4: 15.2   AT 22:34
+70K = K1: 80.5   K2: 86.1   K3: 93.9   K4: 101.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+
+
+

@@ -1,0 +1,113 @@
+Log for 07/02/20      Observer: T. Balonek
+
+System Configuration:  FixedAZ Drift Map
+                       Cima version 2.2.17 (normal)
+
+Using: a2010_az180.gui as save state.
+
+Files:  /share/pserverf.sda2/wappdata/wapp.20070220.a2010.****.fits
+        /share/pserverf.sda2/wappdata/wapp.20070221.a2010.****.fits
+
+LST  fits   Scan    calscan    Source     Pattern  Start coords.   ang  time  loop  calmode
+0743 0051 705179679 705180281  drift130p1 FixedAz  074300+313042    19   600   99   loopend
+0753 0052 705180284 705180886  power levels ok, quicklook ok
+0803 0053 705180889 705181491
+0813 0054 705181494 705182096
+0823 0055 705182099 705182701
+0834 0056 705182704 705183306
+0844 0057 705183309 705183911
+0854 0058 705183914 705184516
+0904 0059 705184519 705185121
+0914 0060 705185124 705185726
+0924 0061 705185729 705186331  quicklook ok
+0934 0062 705186334 705200536  quicklook ok - rfi at 1382 MHz
+0944 0000 705200539 705201141  quicklook ok
+0954 0001 705201144 705201746
+1005 0002 705201749 705202351
+1015 0003 705202354 705202956
+1025 0004 705202959 705203561
+1035 0005 705203564 705204166
+1045 0006 705204169 705204771  power levels ok
+1055 0007 705204774 705205376
+1105 0008 705205379 705205981
+1115 0009 705205984 705206586
+1125 0010 705206589 705207191  quicklook ok
+1136 0011 705207194 --aborted (bad data; see notes)
+
+                             break run here.  WAPP power adjusted. (see notes)
+1158 0012 705208538 705209140  power levels ok, quicklook ok
+1208 0013 705209143 705209745  GPS at end, power levels ok, quicklook ok
+1218 0014 705209748 705210350  GPS, strong continuum source, power levels ok
+1228 0015 705210353 705210955  quicklook ok 
+1238 0016 705210958 705211560  power levels ok
+1249 0017 705211563 705212165
+1259 0018 705212168 705212770
+1309 0019 705212773 705213375
+1319 0020 705213378 705213980
+1329 0021 705213983 705214585  GPS
+1339 0022 705214588 705215190
+1349 0023 705215193 705215795
+1359 0024 705215798 705216400
+1409 0025 705216403 705217005  quicklook ok
+1420 0026 705217008 705217610  power levels ok
+1430 0027 705217613 705218215
+1440 0028 705218218 705218820
+1450 0029 705218823 705219425
+1500 0030 705219428 705220030
+1510 0031 705220033 705220635
+1520 0032 705220638 705221240
+1530 0033 705221243 705221845
+1540 0034 705221848 705222450  quicklook ok
+1551 0035 705222453 705223055
+1601 0036 705223058 705223660
+1611 0037 705223663 705224265  power levels ok
+1621 0038 705224268 705224870
+1631 0039 705224873 705225475
+1641 0040 705225478 705226080  *** data no good -- see note below ***
+
+END LST: 1641
+
+NOTES
+
+- Lost nearly 23 minutes of data, 1136-1158 LST (see below)
+
+- Bit late start for telescope to be moved to az/za and alfa receiver rotation.
+
+- Beam 1B off
+
+- Power levels ok all night, 6B stable.
+
+- San Juan airport rfi minimal / non-existent all night; 
+              barely (if at all) seen in either pol'n A or B
+
+- Some GPS.
+
+- TOGS run at start only (power failure at end of run)
+
+- The messages below received during drifts 0002, 0009 (1 sec gap), 0011, 0013,
+              0016, 0020, 0037
+WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock ...
+WAPPDATA WARNING extrapolating agc-data from ...
+WAPPDATA WARNING interpolating agc-data over 2.00 second time gap ...
+
+- Drift 0011 no good.
+    Drift 0011 started 01:59:55 AST (1136 LST).  
+    At 02:05:19 AST Arecibo operator inadvertently commanded telescope to AZ 360, 
+               so taking data when not on source.  
+    At 02:08:02 AST I aborted drift when I realized what problem was (confirmed by
+               phone call from operator).
+    02:09:15 and 02:10:14 and 02:11:15 tried starting drifts, but telescope not responding
+               (operator had stopped control), so aborted.
+    02:12:14 started drift, but (my error) I forgot to start new fits file,
+               so this drift is added to 0011 fits file -- no good.
+    02:22:19 started fits file 0012.  Back to observing.
+    I notice WAPP power adjusted during 0011 restarts, so will have to break run into
+               two parts at 0011.
+    Lost nearly 23 minutes of data, 1136-1158 LST.
+
+- drift 0040: power dip at 07:11:56 AST, 7 minutes into drift, so stopped tracking.  
+        Drift no good.  Looks like polarization B wasn't working after generator came on.
+        Tried several times to restart WAPPS (to do TOGS) but Pol'n B power levels low.
+        Operator said no signal in spectrum analyzer.  
+        So I end run and the engineering folks will figure out what happened. 
+        Unable to do TOGS at end.

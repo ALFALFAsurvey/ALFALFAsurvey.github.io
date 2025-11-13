@@ -1,0 +1,70 @@
+Log for 12.09.30 (30Sep2012)        Observers: Mike Jones
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20120930.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121001.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2133 0019  227400083 227400084 drift148p4  fixAzdr   213300+355709  19  600   99  loopend   power levels ok, FAA radar on - started late as operator didn't answer phone so no password (massive panic, which didn't help) - also not sure how to check exact start time, I'm not 100% sure I made the start time I entered
+2144 0020  227400085 227400086 
+2154 0021  227400087 227400088 finally got quicklook running, looks ok
+2204 0022  227400089 227400090 quicklook ok
+2214 0023  227400091 227400092 wapps interpolated 2s gap
+2224 0024  227400093 227400094 quicklook ok
+2234 0025  227400095 227400096 wapps interpolated 2s gap
+2244 0026  227400097 227400098 
+2254 0027  227400099 227400100 
+2304 0028  227400101 227400102 
+2314 0029  227400103 227400104 
+2325 0030  227400105 227400106 quicklook ok
+2335 0031  227400107 227400108 
+2345 0032  227400109 227400110
+2355 0033  227400111 227400112
+0005 0034  227400113 227500001
+0015 0000  227500002 227500003 quicklook ok
+0025 0001  227500004 227500005
+0035 0002  227500006 227500007
+0046 0003  227500008 227500009
+0056 0004  227500010 227500011
+0106 0005  227500012 227500013
+0116 0006  227500014 227500015
+0126 0007  227500016 227500017 quicklook ok
+0136 0008  227500018 227500019
+0146 0009  227500020 227500021
+0156 0010  227500022 227500023
+0206 0011  227500024 227500025 wapps interpolated 2s gap
+0217 0012  227500026 227500027
+0227 0013  227500028 227500029
+0237 0014  227500030 227500031
+0247 0015  227500032 227500033 quicklook ok
+0257 0016  227500034 227500035 wapps interpolated 2s gap
+0307 0017  227500036 227500037 -- aborted
+
+LST stop: 0307
+
+At the bottom, add notes regarding:
+-- FAA radar on.
+-- All ALFA beams working.
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 13.5   K3: 15.3   K4: 14.8   AT 20:00
+70K = K1: 80.7   K2: 80.5   K3: 88.1   K4: 96.4
+
+16K = K1: 14.1   K2: 13.3   K3: 15     K4: 14.7   AT 23:40
+70K = K1: 80.5   K2: 79.8   K3: 87.8   K4: 95.9
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered

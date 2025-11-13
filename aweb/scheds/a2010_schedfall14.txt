@@ -1,0 +1,180 @@
+A2010 observing schedule                                       last update:  17Dec2014  mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+------------------------------------------------------------------------------------------------
+COMPLETED OBSERVATIONS       LBW Followup Program A2899      FALL 2014  
+------------------------------------------------------------------------------------------------  
+   Block     Date    LMSTmidn      AST           LST         a2853 cmd file      Observers 
+    14.10.20  M 20Oct             20h00-01h30                                    RK(R)     rescheduled due to radar TOO
+    14.10.21  T 21Oct   01h35     20h00-01h45   21h34-03h20   a2899_141021.cmd   RK,GH(R)
+    14.10.22  W 22Oct             19h45-01h15   21h23-02h54   a2899_141022.cmd   RK,GH(R)
+    14.11.23  S 23Nov    03h45    17h45-23h15   21h29-03h00   a2899_141123.cmd   GH,RO,SS2,JR3,LM,GG,WH2
+    14.11.24  M 24Nov    03h49    17h45-23h15   21h33-03h04   a2899_141124.cmd   RO,GH,LM,JR3,SS2,WH2,GG
+    14.11.25  T 25Nov    03h58    17h30-23h15   21h21-03h07   a2899_141125.cmd   RO,GH,JR3,LM,SS2,GG,WH2
+    14.11.27  R 27Nov    04h01    17h30-23h00   21h29-03h00   a2899_141127.cmd   GH,WH2,GG (WAPPsearch)
+    14.11.28  F 28Nov    04h05    17h30-23h00   21h33-03h04   a2899_141128.cmd   GH,GG,WH2,EM2,JP2,JP3
+    14.11.29  S 29Nov    04h09    17h30-21h30   21h37-01h38   a2899_141129.cmd   GH,WH2,GG (WAPPsearch)
+
+That's it for A2899!
+
+----------------------------------------------------------------------------------------------------
+
+AO holidays 2015:
+01Jan   New Year's Day
+02Jan   granted by AO director
+06Jan   Three King's Day
+19Jan   Martin Luther King Day
+16Feb   President's Day
+22Mar   PR Slavery Abolition
+23Mar   PR Slavery Abolition (observed)
+02Apr   Holy Thurs/granted by AO Director
+03Apr   Good Friday
+25May   Memorial Day
+03Jul   Independence Day (observed)
+04Jul   Independence Day
+24Jul   PR Constitution Day (observed)
+25Jul   PR Constitution Day 
+07Sep   Labor Day
+12Oct   Columbus Day
+11Nov   Veteran's Day
+19Nov   PR Discovery Day
+26Nov   Thanksgiving Day
+27Nov   Day after Thanksgiving
+24Dec   granted by AO director
+25Dec   Christmas Day
+31Dec   granted by AO director
+
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+AA2: Andres Arrieta (UPR-RP)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+EB: Elijah Bernstein-Cooper (Macalester)
+AB: Anthony Braddock (St.Marys)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+MD: Maggie Dievendorf (Colgate)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+AF2: Alison Farrish (Cornell)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+BG: Bryan Geiger (St. Lawrence)
+EG: Elena George (HSU)
+GG: Genesis Guerra (Union)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+MG: Martin Garay-MacLean (Ithaca)
+RG: Riccardo Giovanelli
+SG: Steve Goldman (St. Lawrence)
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+WH2: Will Harney (Union)
+KI: Katie Iadanza (Colgate)
+MJ: Melissa Jacquart (UWisc)
+MJ2: Mike Jones
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+LL: Luke Leisman
+KL: Katelyn Leisman
+ML: Mayra Lebron
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+EM2: Evelin Mayens (UPR-RP)
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+VM: Victoria Mendoza (St.Mary's)
+WM: Arik Mitschang (HSU)
+LM: Leland Moore (St.Mary's)
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+CP: Carmen Pantoja
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+JP2: Jonathan Perez (UPR-RP)
+JP3: Jorge Padiel (UPR-RP)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+JR2: Jose Reyes (UPR-RP)
+JR3: Justin Robinson (St. Mary's)
+PR: Paola Rosa-Aquino (Cornell)
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+JS2: Joseph Serrano (UMET)
+TS: Thad Savery (Siena) 
+KS: Kristine Spekkens
+OS: Oded Spector
+OS2: Ora Starcher (St.Mary's)
+SS: Sabrina Stierwalt
+SS2: Samantha Schults (St.Mary's)
+TS: Tess Senty (HSU)
+BT: Blake Tormey (St.Mary's)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+MW: Michael Warrener (Union)
+JW: Jesse Watson (UWSP)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots
+

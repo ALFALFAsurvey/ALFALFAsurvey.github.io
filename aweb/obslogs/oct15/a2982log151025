@@ -1,0 +1,62 @@
+A2982 LBW   15.10.16   Observers: D. Craig, Jimmy Valdez, WTAMU (remote)
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_151025.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20151025.a2982.****.fits  
+                     /share/wappdata.now/wapp.20151026.a2982.****.fits   (after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+H215040.4+283617  215040.3 +283527  j     0 H v   # A310858cal   2138   10.7 0007       529800122 srcs at 1422, 1404? (strong) RFI at 1380 board 4 shows neg
+S220231.6+304902  220231.6 +304902  j     0 H v   # A322492      2147   12.8 0008            0126 double-horn at 1344 MHz? rfi in off at 1350?
+S222345.0+303131  222345.0 +303131  j     0 H v   # A322511      2200   13.0 0009            0130 RFI (1350,1380) IN OFF nothing obvious
+S223909.4+335954  223909.4 +335954  j     0 H v   # A322564      2214   16.7 0010            0134  radar in OFF (b4) src in off at 1362?
+S223922.7+340207  223922.7 +340207  j     0 H v   # A323052      2225   16.0 0011 	     0138  wapp 2.0 sec time interps radar in off, rfi at 1380, in off at 1363?
+S224945.8+332539  224945.8 +332539  j     0 H v   # A322605      2238   15.4 0012            0142  SN~5 source at 1390 MHz radar very strong at 1350, rfi 1363?
+S231636.4+321721  231636.4 +321721  j     0 H v   # A335323      2250   15.2 0013            0146  SN~4 at 1392MHz 6300km/s
+												    radar in off at 1350MHz, neg bump around 1360
+S232958.5+325923  232958.5 +325923  j     0 H v   # A335377      2303       0014             0150 strong radar. nothing obvious (unless board bad, but if so, do nothing
+   												  per checklist) rain on weather radar via www
+S235131.8+325011  235131.8 +325011  j     0 H v   # A335469      2315  16.8 0015             0154 nothing obvious but baselines wavy all boards, radar in off.
+S235225.3+321050  235225.3 +321050  j     0 H v   # A335522      2328  15.0 0016             0158 nothing obvious still strong rfi at 1350, 1380, 1363MHz
+                                                                                                  /gps in idl takes out the 1380, so it is gps?
+S000254.2+332953  000254.2 +332953  j     0 H v   # A104292      2340  16.1 0017             0162 sloping baselines b1,b2, NO 1380 Mhz rfi now. radar still strong b4
+S000438.6+332546  000438.6 +332546  j     0 H v   # A104296      2352  15.5 0018             0166 strong detection SN~10+ 10,400km/s  RFI in off b4 (radar)
+S002031.4+300048  002031.4 +300048  j     0 H v   # A104365      0005  12.3 0019             0170 possible src at 5800 km/s,b2 but baselines wavy. radar in off
+S002031.4+300048  002031.4 +300048  j     0 H v   # A104365      0017  11.8 0020             0174 REPEAT since we were almost a scan ahead in time from nominal
+                                                                                                  source above MAY be there but baselines still wavy, radar in off.
+S003644.2+303928  003644.2 +303928  j     0 H v   # A104429      0029  12.5 0021             0178 src SN~5 at 4500 km/s, gps? 1381MHz in off,radar in off
+S010323.9+332759  010323.9 +332759  j     0 H v   # A115357      0043  15.9 0022             0182 WAPPS failure in OFF, restarted WAPPS and re ran from GOTO line BAD FILE
+S010323.9+332759  010323.9 +332759  j     0 H v   # A115357      0050  15.5 0023             0184 rerun of above Definite src SN 10+ at 6300 km/s . Radar in on. src in off at 1372MHz
+S010550.5+344015  010550.5 +344015  j     0 H v   # A115367      0103  16.4 0024             0188 possible SN~3 at abt 10,000 km/s (maybe). Radar in on. Baselines still wavy
+S010909.5+345655  010909.5 +345655  j     0 H v   # A115374      0115  16.8 0025             0192 Detection SN 10+ at 10,300 km/s. Radar in ON.
+S012113.9+340055  012113.9 +340055  j     0 H v   # A115799      0127  15.8 0026             0196 no detections, radar in ON.
+S012248.4+343519  012248.4 +343519  j     0 H v   # A115420	 0137  16.8 0027	     0200 no detections. Radar in on. Maybe something at 1363MHz, maybe not.
+S012527.9+334823  012527.9 +334823  j     0 H v   # A115442      0152  16.6 0000       529900003 date change. Detection at 4900 km/s SN~6+, Something at 1345MHZ? RFI? Radar harmonic?     
+S015832.3+331621  015832.3 +331621  j     0 H v   # A115860      0204  15.1 0001             0007 Detection SN~10+ at 11,000 km/s. Radar in off.
+S021247.8+312350  021247.8 +312350  j     0 H v   # A124697      0217  13.2 0002             0011 Detecttion SN~6+ at 5100 km/s. 1381 RFI in off, Radar in off
+S021353.2+304108  021353.2 +304108  j     0 H v   # A124699      0229  13.0 0003             0015 Detection SN5+ at 1379 if it isnt gps. Radar in on
+S021047.0+281442  021047.0 +281442  j     0 H v   # A124683      0241  12.2 0004             0019 Low SN at 11000 km/s? Radar in on.
+S022240.3+285340  022240.3 +285340  j     0 H v   # A124721      0254  12.7 0005             0023 No detections. Radar in off.
+H030156.6+280042  030156.9 +280117  j     0 H v   # A131363      0307  09.8 0006             0027 SN~10+ at 5500 km/s, 1381MHz RFI in off. Radar in off.
+
+                                                   
+Notes:
+Weather unstable, some rain, operator had already disabled tiedowns: remained disabled all night.
+fusion00 is SLOW.
+Repeated one file because ahead of nominal.
+Had one WAPPs failure but was able to re-run.
+Made a VI editing error in log right around AST midnight, but think I have it all corrected. 
+Just in case, double check source names in FITS files.

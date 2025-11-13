@@ -1,0 +1,60 @@
+Log for 12/04/05
+Observer: SS
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20051204.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.04
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+2210 0003 aborted drift121p2  FixedAz 223030+292636 19 600  50
+2230 0006 533864950 533865551 
+2240 0007 533865555 533866156
+2250 0008 533866160 533866761
+2300 0009 533866765 aborted
+2304 0010 533866935 533867536
+2314 0011 533867540 533868141
+2324 0012 533868145 533868746
+2334 0013 533868750 533869351
+2344 0014 533869355 533869956
+2354 0015 533869960 533870562
+0004 0016 533870565 533871166
+0014 0017 533871170 533871772
+0024 0018 533871775 533872376
+0034 0019 533872380 533872981
+0044 0020 533872985 533873587
+0055 0021 533873590 533874191
+0105 0022 533874195 533874796
+0115 0023 533874800 533875401
+0125 0024 533875405 533876006
+0135 0025 533876010 533876612
+0145 0026 533876615 533877216
+0155 0027 533877220 533877821
+0205 0028 533877825 533878427
+0216 0029 533878430 533879031
+0226 0030 533879035 533879637
+0236 0031 533879640 533880241
+0246 0032 533880245 533880846
+0256 0033 533880850 533881451
+0306 0034 533881455 533882056
+
+END LST: 03:16:35
+Notes:
+An early start was foiled by the fact that the operator forgot to turn ALFA's amps on when he took off the 
+cover.  So fits file 0003 was aborted and the observations were restarted.
+
+The operator reports that although the aostatus window shows the telescope to be pointed at azimuth 180 
+and the current azimuth position reads 530 this discrepancy is okay.  The higher azimuth is the equivalent 
+position and enables the telescope to be at azimuth 180 without having to completely unwrap.
+
+During fits file 0009 CIMA gave the following error:
+wappdata buildup logic error
+WAPPDATA confused cleared 1 dumps
+WAPPDATA flushing 76 dumps
+
+I aborted the observation, restarted the WAPPs and adjusted power.  The calibration will have to be split.  
+CIMA noted that WAPP(2) never aborted, but they all restarted.

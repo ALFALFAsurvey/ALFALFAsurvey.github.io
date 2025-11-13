@@ -1,0 +1,46 @@
+A2853   LBW   14.06.25      Observers: GH + UAT
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140625.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.25jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+Telescope Operator let us start ~11 minutes early.
+A122401.8+085523  122401.8 +085523  j  7000 H v   # A224440    1242   10.40    1   417600384  Poor baseline, no detection
+A122413.3+093553  122413.3 +093553  j  7600 H v   # A224441    1255   11.55    2   417600388  Not detected
+A132654.1+113345  132654.1 +113345  j  6800 H v   # A230339    1310    7.92    3   417600392  Not detected
+A132622.0+115821  132622.0 +115821  j  6700 H v   # A232374    1322    6.49    4   417600396  Not detected
+A132741.2+112027  132741.2 +112027  j  6800 H v   # A232381    1335    7.21    5   417600400  Detection at 6800 km/s, SN~6
+A140156.7+093200  140156.7 +093200  j  5600 H v   # A230959    1348    9.45    6   417600404  Possible detection at 5600 km/s; one more pair
+A140224.3+092958  140224.3 +092958  j  6100 H v   # A231836    1401    8.88    7   417600408  Not detected
+A140925.5+080843  140925.5 +080843  j  7300 H v   # A713868    1413   10.26    8   417600412  Not detected    
+A141058.0+092242  141058.0 +092242  j  6870 H v   # A249588    1425    9.61    9   417600416  Not detected
+A150100.9+010050  150100.9 +010050  j  1800 H v   # A253623    1440   18.12   10   417600420  Detection at 1800 km/s, SN~8
+A151241.4+013724  151241.4 +013724  j  1900 H v   # A253667    1455   17.33   11   417600424  Possible detection near 1900 km/s; one more pair
+    Reobserving 150100.9+010050 because we're REALLY ahead and it was at high ZA
+A150100.9+010050                                               1506   17.40   12   417600428  Detection at 1800 km/s, SN~8
+    Reobserving 151241.4+013724 ""                                
+                                                               1518   16.80   13   417600432  Not detected after second pair
+A151208.2+013509  151208.2 +013509  j  2000 H v   # A253656    1530   17.37   14   417600436  Not detected
+A150635.8+131843  150635.8 +131843  j  6600 H v   # A736561    1545   10.46   15   417600440  Dubious detection at 6600 km/s; one more pair
+    Ahead of time. Re-observing A150635.8_131843               1557   13.08   16   417600444  Confirmed detection at 6600 km/s!
+A161735.9+135148  161735.9 +135148  j  9000 H v   # A738601    1613    4.64   17   417600448  Not detected; GPS Radar in OFF
+A161841.0+153823  161841.0 +153823  j  9000 H v   # A262410    1626    3.16   18   417600452  Not detected
+    Ahead of time. Re-observing                                1638    5.84   19   417600456  Not detected
+
+Notes  (please note anything of importance; here is an example)
+     Tiedowns enabled for first two observations, then disabled due to poor baselines.
+

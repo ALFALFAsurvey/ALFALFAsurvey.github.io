@@ -1,0 +1,60 @@
+A2707 LBW   12.11.19       Observers: Olowin, Kornreich, Garay-MacLean
+
+CIMA version:          The Stable version (Default) (Ver 3.3.03 2012-11-14 07:43)
+Configuration file:    a2707_highvelres.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2707_121119.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.19Nov2012.a2707.*    
+
+SRCNAME             RAJ     DECJ                     AGNnr         LST   ZA    File#  ONScan     Status
+H215040.4+283617  215040.3 +283527  j  3500 H v   # A310858 calib  2148  10.32  1     232463762  Slight Detection @1404 MHz 
+H215401.2+314227  215402.6 +314229  j -1600 H v   #                2158  13.5   2     232463766  Possible detection @1430 MHz
+H215549.4+303121  215551.0 +303119  j    20 H v   #                2206  12.44  3     232463770  No clear detection
+H220643.3+300045  220644.9 +300043  j   400 H v   #                2214  11.91  4     232463774  Possible wide detection @1412
+H222825.2+300927  222826.6 +300926  j  1000 H v   #                2223  11.95  5     232463778  Slight detection @1414
+H230540.5+285010  230541.8 +285008  j  -500 H v   #                2232  13.14  6     232463782  No clear detection
+H233826.6+252310  233827.9 +252312  j  -600 H v   #                2241  15.17  7     232463786  No clear detection 
+H233833.9+250751  233835.2 +250753  j -1300 H v   #                2249  13.42  8     232463790  No clear detection
+H234349.5+255219  234350.5 +255219  j   700 H v   #                2257  13.27  9     232463794  No clear detection
+H232752.7+314400  232754.0 +314402  j   900 H v   #                2306  14.35  10    232463798  No clear detection
+HVC103-29         233139.2 +310703  j  -436 H v   # A333484        2314  13.45  11    232463802  Possible detection @1422 MHz  5min ON/OFF
+H234703.0+313604  234704.4 +313606  j   700 H v   #                2326  14.14  12    232463806  Possible detection @ 1424 MHz
+H000823.0+281413  000824.9 +281418  j   300 H v   #                2335  12.58  13    232463810  No clear detection
+H000207.2+292130  000208.1 +292126  j   600 H v   #                2343  11.89  14    232463814  Possible detection @1422 MHz
+HVC112-37         001233.3 +250356  j  -149 H v   #                2353  8.23   15    232463818  No clear detection  5min ON/OFF
+H002331.9+294923  002332.8 +294920  j   500 H v   #                0006  12.17  16    232463822  No clear detection
+H003059.0+292113  003059.9 +292109  j   300 H v   #                0014  11.73  17    232463826  No clear detection
+H003925.3+295518  003926.2 +295514  j   500 H v   #                0023  12.29  18    232463830  Possible detection @1425 MHz
+H004129.1+295830  004129.9 +295826  j   600 H v   #                0031  11.97  19    232463834  No clear detection
+H004406.9+290730  004407.7 +290726  j  -600 H v   #                0039  10.94  20    232463838  Possible detection @1416 MHz
+A005135.0+294149  005135.0 +294149  j  -400 H v   # A102619        0047  11.49  21    232463842  No clear detection
+H014137.2+270256  014138.5 +270253  j   500 H v   #                0057  13.62  22    232463846  Possible detection @1425 MHz
+H014725.8+260617  014726.9 +260615  j   500 H v   #                0105  12.63  23    232463850  Possible detection @1426 MHz
+H014422.2+280219  014424.4 +280221  j   800 H v   #                0114  12.07  24    232463854  No clear detection
+H015720.0+284647  015720.9 +284644  j   100 H v   #                0121  13.35  25    232463858  Calibration Error? @1419 MHz
+H013724.7+305644  013726.2 +305643  j   500 H v   #                0130  12.78  26    232463862  No clear detection 
+H014222.4+300013  014223.3 +300009  j   600 H v   #                0138  11.77  27    232463866  No clear detection 
+H014815.6+310420  014817.1 +310420  j  -500 H v   #                0147  12.81  28    232463870  No clear detection 
+H015750.2+305522  015751.8 +305522  j   800 H v   #                0155  12.67  29    232463874  No clear detection
+H021617.2+252616  021618.5 +252618  j  9800 H v   # A122913        0205  7.66   30    232463878  No clear detection
+H022712.1+235639  022713.2 +235739  j  1500 H v   # A122939        0213  6.55   31    232463882  Strong detection @1413 MHz?
+H023735.0+295950  023736.6 +295948  j   600 H v   #                0223  12.17  32    232463886  No clear detection
+H025806.1+262638  025807.3 +262635  j   400 H v   #                0232  10.14  33    232463890  Strong detecyion @1413 MHz?
+H025959.8+255602  030001.3 +255603  j   800 H v   #                0240  8.91   34    232463894  No clear detection
+H030024.9+241314  030026.6 +241311  j  9900 H v   # A131374        0249  6.51   35    232463898  Detection @1383 MHz
+
+
+Stop LST: 0258
+
+
+Please record any notes of importance here. (Remember: you were there; we weren't.)
+
+Rain in early evening.

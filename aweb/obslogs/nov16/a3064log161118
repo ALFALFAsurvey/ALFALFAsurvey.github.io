@@ -1,0 +1,39 @@
+A3064 LBW   16.11.18 Observers: Miller & O'Donoghue
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161118.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161118.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161119.a3064.****.fits   (only if goes after midnight AST; probably no)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S010419.9+283521  010419.9 +283521  j     0 H v   # A114071    0100   10.4  0000  632300205    detection 11100 km/s, S/N ~2, GPS in off
+S011328.6+281958  011328.6 +281958  j     0 H v   # A116214    0112   10.1  0001  632300209    detection 7800 km/s, S/N ~2
+S012358.7+281544  012358.7 +281544  j     0 H v   # A116218    0125   10.0  0002  632300213    possible detection 6700 km/s, S/N ~1.5
+S013245.9+285237  013245.9 +285237  j     0 H v   # A115853    0137   10.7  0003  632300217    possible detection 9300 km/s, S/N ~1.5
+S014329.5+284633  014329.5 +284633  j     0 H v   # A115854    0149   10.6  0004  632300221    No apparent detection, GPS burst
+S014400.6+283600  014400.6 +283600  j     0 H v   # A115507    0201   11.0  0005  632300225    No apparent detection
+S014512.3+280008  014512.3 +280008  j     0 H v   # A116242    0213   11.6  0006  632300229    No apparent detection
+S014740.6+284013  014740.6 +284013  j     0 H v   # A116246    0225   13.4  0007  632300233    detection 7800 km/s, S/N ~2.5
+S015411.0+270724  015411.0 +270724  j     0 H v   # A115881    0238   13.4  0008  632300237    weak detection 5200 km/s, S/N ~1.5, GPS in off
+S020958.9+262021  020958.9 +262021  j     0 H v   # A125538    0251   12.2  0009  632300241    detection 4900 km/s, S/N ~1.5
+S022059.5+251712  022059.5 +251712  j     0 H v   # A124718    0303   12.1  0010  632300245    possible detection 11100 km/s, S/N ~1.25
+S025128.1+353104  025128.1 +353104  j     0 H v   # A125513    0317   18.1  0011  632300249    No apparent detection
+H030510.4+354946  030510.4 +354946  j     0 H v   # A132243cal    3 mins ON/OFF  if time
+                                                                
+                                                
+Notes (be sure to write notes here so we can keep track of anything relevant)
+Previous observers went long, then we had a long slew, so we got a late start.
+Went a couple minutes long to finish last source ... OK'd with operator (Jonathan)
+Smooth night, WAPPs behaved. Nice to have an early night ... long day!

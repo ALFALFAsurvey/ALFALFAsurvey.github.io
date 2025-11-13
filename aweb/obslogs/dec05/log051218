@@ -1,0 +1,45 @@
+Log for 12/18/05
+Observer: Amelie Saintonge
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20051218.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.18
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+0715 0004 535206873 535207475 drift44p2  FixedAz  071500+104224 19 600  50
+0725 0005 535207478 535208079
+0735 0006 535208083 535208684
+0745 0007 535208688 535209289
+0755 0008 535209293 535209894
+0805 0009 535209898 535210499
+0816 0010 535210503 535211105
+0826 0011 535211108 535211709
+0836 0012 535211713 535212314
+0846 0013 535212318 535212919
+0856 0014 535212923 535213524
+0906 0015 535213528 535214129
+0916 0016 535214133 535214734
+0926 0017 535214738 535215339
+0936 0018 535215343 535215944
+0947 0019 535215948 535216549
+0957 0020 535216553 535217154
+1007 0021 535217158 535217759
+1017 0022 535217763 535218364
+
+End LST: 1027
+
+Notes:
+
+TOGS ran at the beginning, but only on the second attempt.  The first time, the
+WAPPs got confused.  Restarting them fixed the problem.
+
+Experienced some minor network problems early in the night.  From time to time, all
+the displays would freeze for about a minute, and then everything would go back to
+normal.  Data appears unaffected.
+
+In the end, everything OK.  TOGS ran at the end of the night also.

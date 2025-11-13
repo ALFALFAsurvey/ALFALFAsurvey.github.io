@@ -1,0 +1,44 @@
+Log for 06/12/07      Observer: NB OS
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az360.gui as save state. -- Note, 360 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061207.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+0731 0001 634110484 634111086 drift19p2 FixedAz 073100+043724   19   600
+0741 0002 634111089 634111691 Power levels OK, but radar also at 1380MHz
+0751 0003 634111694 634112296
+0801 0004 634112299 634112901
+0811 0005 634112904 634113506
+0821 0006 634113509 634114111
+0831 0007 634114114 634114716 Some short pulses around 1400MHz
+0841 0008 634114719 634115321 Power levels OK
+0852 0009 634115324 634115926 Wide 1380MHz
+0902 0010 634115929 634116531
+0912 0011 634116534 634117136 Power levels OK
+0922 0012 634117139 634117741
+0932 0013 634117744 634118346 Wide 1380MHz
+0942 0014 634118349 634118951
+0952 0015 634118954 634119556 Power levels OK
+1002 0016 634119559 634120161 "Ladder" pattern present, see notes
+1013 0017 634120164 634120766
+1023 0018 634120769 634121371 Strong continuum source beams 1 and 6
+1033 0019 634121374 634121976
+1043 0020 634121979 634122581 Power levels OK
+1053 0021 634122584 634123186
+1103 0022 634123189 634123791 Twilight
+1113 0023 634123794 634124396  Fog. Laser ranging error
+1123 0024 Aborted
+99    loopend
+
+END LST: 1124
+
+
+NOTES: From the start saw sometimes "ladder" of ~4MHz wide pulses around 1400MHz,
+approximately synchronized with the radar 1350MHz pulses. Saw also 1380MHz fairly strong
+activity. Sometimes the 1380MHz activity was with a sharp 1380MHz peak and a wide ~2MHz wide peak
+to 1382MHz-when present this was noted as "wide 1380"

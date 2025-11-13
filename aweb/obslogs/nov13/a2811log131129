@@ -1,0 +1,68 @@
+A2811 LBW   13.11.28      Observers: Jorge Padial, Blake Tormey, Anthony Braddick, Jonathan Perez, Andres Arrieta, Ron Olowin
+
+
+CIMA version:          The Stable version (Default) (Ver 3.3.05 2013-02-22 15:46)
+Configuration file:    a2811_nov13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2811_131129.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.29nov13.a2811.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST      ZA       File#          ONScan        Status
+H214731.0+220950  214731.0 +220950  j  1800 H v   # A011813 calibif time   NO TIME TO MAKE RUN
+A214734.4+220909  214734.4 +220909  j  1800 H v   # A311162 compif time    NO TIME TO MAKE RUN    
+A214808.2+221735  214808.2 +221735  j  1800 H v   # A311164                NO TIME TO MAKE RUN    
+A214816.5+221651  214816.5 +221651  j  1800 H v   # A311166         2149     4.0        1           333300485    Posible detection at 1412 MHz, 1750 km/s (ondulating background noise)
+H222322.1+242708  222323.8 +242606  j  5300 H v   # A321510         2159     8.5        2           333300489    Possible detection at 1395.7 MHz, 5300 km/s (ondulating background noise with much scattering)
+H223556.4+220017  223556.0 +220023  j  5300 H v   # A322066         2208     7.7        3           333300493    No detection. 
+H225501.4+222721  225505.7 +222726  j  7800 H v   # A322079         2217    10.0        4           333300497    Detection at 1383.8 MHz, 7900 km/s. 
+H230234.8+224837  230236.6 +224852  j  8400 H v   # A334524         2225    10.1        5           333300501    Detection at 1381.2 MHz. 8700 km/s
+H230028.8+305200  230033.7 +305223  j  9000 H v   # A320938         2235    14.0        6           333300505    Detection at 1379 MHz, 9000 km/s
+A230428.2+272127  230428.2 +272127  j  7500 H v   # A331756abs      2244    10.3        7           333300509    Unusual inverse profile
+H231231.0+231413  231231.6 +231405  j  6100 H v   # A334535         2253     6.9        8           333300513    Detection at 1392.4 MHz, 6000 km/s
+H231726.7+231939  231727.1 +231938  j  6100 H v   # A334538         2301     6.4        9           333300517    Detection at 1392 MHz, 6050 km/s
+H231811.1+255017  231810.1 +255001  j  5800 H v   # A333330         2309     7.9       10           333300521    Detection at 1393.5 MHz, 5750 km/s
+H232755.7+234507  232758.0 +234508  j  8000 H v   # A334558         2318     6.0       11           333300525    No detection, 1387 MHz RFI observed
+H232810.8+265110  232815.7 +265044  j  7700 H v   # A332958         2327     8.6       12           333300529    Detection at 1384.5 MHz,7700 km/s; GPS at 1381 MHz in the offWe had aborted the next scan in order to be closer to time for the critical ones, this should have had no effect however for we aborted a few seconds into the ON scan in the next source. 
+H232925.8+252726  232927.3 +252641  j  8100 H v   # A333332         2335     7.3       13           333300533    Possible detection at 1383 MHz, 8100 km/s; GPS at 1381 MHz
+H233714.7+282225  233718.3 +282223  j  7000 H v   # A333588         2344    10.2       14           333300537    Detection at 1387.8 MHz, 7000 km/s
+H233817.8+254935  233816.9 +254853  j  8900 H v   # A331240         2353     8.2       15           333300541    Detection at 1379.5 MHz, 8850 km/s
+H234219.7+281520  234217.3 +281617  j  8700 H v   # A331287         0001    10.9       16           333300545    Detection at 1380 MHz, 8800 km/s
+H235546.5+265256  235546.5 +265250  j  7500 H v   # A333238         0010     9.2       17           333300549    Detection at 1385.5 MHz, 7500 km/s
+H235703.0+233918  235702.7 +233915  j  4500 H v   # A334594         0019     7.3       18           333300553    Detection at 1399 MHz, 4500 km/s
+H002700.7+311148  002701.8 +311204  j  9000 H v   # A102849         0029    13.0       19           333300557    No detection
+H003657.6+253903  003703.1 +253854  j  7100 H v   # A102710         0039     7.4       20           333300561    Detection at 1387.5 MHz, 7100 km/s
+H004901.0+274525  004901.4 +274520  j  7000 H v   # A102292         0047     9.5       21           333300565    Detection at 1387.8 MHz, 7000 km/s
+H005533.6+294454  005533.5 +294441  j  5100 H v   # A102972         0056    11.5       22           333300569    Detection at 1396.5 MHz, 5100 km/s
+H004614.0+230437  004615.7 +230439  j  7500 H v   # A103344         0106     6.5       23           333300573    Detection at 1385.5 MHz, 7450 km/s
+H004919.7+225918  004919.9 +225920  j  7200 H v   # A103504         0114     7.3       24           333300577    Detection at 1387.o MHz. 7150 km/s
+H005046.1+222118  005046.6 +222136  j  7300 H v   # A103505         0122     8.3       25           333300581    Detection at 1386.5 MHz, 7250 km/s
+H005821.5+230455  005822.6 +230501  j  8000 H v   # A103508         0130     8.7       26           333300585    No Detection--Aborted after so that the next source would be closer to time.
+H015123.7+235135  015125.5 +235118  j  8200 H v   # A114650         0154     5.6       27           333300589    Possible Detection at 1383.3 MHz, 8050 km/s, GPS burst at 1381 MHz, Another detection in the off at 1374 MHz, 1100 km/s
+H020426.1+221010  020425.8 +221011  j  4900 H v   # A124021         0203     3.9       28           333300593    Detection at 1397.5 MHz, 4850 km/s
+H020342.3+251600  020342.4 +251613  j  4800 H v   # A122926         0212     7.2       29           333300597    Detection at 1398.0 MHz, 4750 km/s
+H020501.5+262312  020503.3 +262247  j  5200 H v   # A122818         0220     8.8       30           333300601    Detection at 1395.8 MHz, 5250 km/s
+H021456.2+310630  021456.9 +310647  j  6800 H v   # A123079         0234    13.4       31/32        333300605/333300606    31 is Error with data, checklbw returned the error '(ON-OFF)/OFF', see notes for further explanation. 32 is no detection                              
+A025227.5+331939  025227.5 +331939  j  2000 H v   # A124226         0243    15.3       33           333300610    No Detection at center, Peak at 1421 MHz, -150 km/s
+A030305.8+334139  030305.8 +334139  j   300 H v   # A130770         0251    15.7       34           333300614    Detection at 1419.4 MHz, 200 km/s, Secondary peak at 1421 MHz, -150 km/s, (Possibly a Radiosource, from NED)???
+A030038.7+254701  030038.7 +254701  j   300 H v   # A131439         0302     7.5       35           333300618    Detection at 1419.0 MHz, 300 km/s, peculiar down peak near Galactic HI 
+H025944.6+301906  025948.4 +301838  j  6200 H v   # A123102         0315    12.5       36           333300622    Detection at 1391 MHz, 6300 km/s    
+H030156.6+280042  030156.9 +280117  j  5600 H v   # A131363         0324    11.1       37           333300626    Detection at 1394.3 MHz,5550 km/s     
+H025919.0+283235  025915.3 +283258  j  5600 H v   # A123213         0332    12.7       38           333300630    Detection at 1394 MHz, 5650 km/s
+A031330.3+191022  031330.3 +191022  j  3000 H v   # A132136         0343     6.8       39           333300634    No Detection 
+
+Notes:   
+Tiedowns disabled all night
+Previous observer finished after time. CIMA logup delayed. 
+high noise amplitude on the first sources
+unusual inverse profile on source 7 (333300509)
+
+Verbose Explanation of Line 52, file 31= 333300605. File 32 = 333300606. For file 31, The Off, Cal On/Off scans never occurred, this is evident by the change in scan number. The data returned a stricly positive graph, which leads me to suspect there was an error in the OFF. WE aborted at the beginning of scan number 333300605 in order to be on time for critical sources.(ten minutes ahead of schedule)we believe that the error is result of the abort at this time. 
+File number 31 and 32 are the same source identification number (H021456.2). we believe that 31 is the result of a few seconds of scan before we aborted and 32 is the full scan cycle.

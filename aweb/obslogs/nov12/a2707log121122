@@ -1,0 +1,61 @@
+A2707 LBW   12.11.22      Observers  Olowin, Kornreich
+
+CIMA version:          The Stable version (Default) (Ver 3.3.03 2012-11-14 07:43)
+Configuration file:    a2707_highvelres.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2707_121122.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.22nov12.a2707.*    
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA    File#  ONScan        Status
+H215040.4+283617  215040.3 +283527  j  3500 H v   # A310858 calib   2207  10.90   1    232700516    Detections @1410.9 MHz,@1404 MHz
+H215049.7+244524  215049.7 +244524  j   600 H v   #                 2215   8.56   2    232700520    No clear detection
+H221947.0+293125  221948.5 +293123  j  4400 H v   # A321502         2222  11.30   3    232700524    No clear detection
+H222353.2+305630  222354.8 +305629  j  6700 H v   # A321456         2233  12.84   4    232700528    Strong Detection @1389 MHz
+H222355.5+285930  222357.0 +285944  j  6900 H v   # A321503 calib   2242  11.44   5    232700532    Detection @1388.2, Distorted Spectrum
+H223941.0+242041  223942.6 +242040  j  7500 H v   # A321345         2251   6.62   6    232700536    1381 MHz Radar?
+H230001.1+253355  230002.4 +253356  j  7300 H v   # A333316         2301   7.29   7    232700540    Detection @1386.5 MHz
+H231744.2+275221  231745.3 +275220  j  7100 H v   # A333633         2309   9.80   8    232700544    1381 MHz Radar?
+H232752.8+284639  232754.1 +284637  j  3100 H v   # A333605         2318  10.78   9    232700548    Distorted Spectrum 
+H233848.8+241350  233853.4 +241354  j   700 H v   # A333337         2327   6.59  10    232700552    Detection @1417 MHz
+H234942.6+300713  234944.0 +300712  j  5100 H v   # A333631         2337  12.21  11    232700556    No clear detection
+H235426.6+290341  235428.3 +290339  j  6900 H v   # A333638         2345  11.00  12    232700560    Detection @1388 MHz
+H235329.0+250030  235331.2 +250028  j  -900 H v   #                 2355   6.76  13    232700564    No clear detection
+H000352.2+252735  000353.5 +252737  j -1700 H v   #                 0003   7.19  14    232700568    No clear detection
+H003336.8+284425  003337.6 +284421  j  3600 H v   # A102983         0013  11.52  15    232700572    Detection @1403.2 MHz
+H004922.8+315420  004924.1 +315422  j  4500 H v   # A102879         0022  14.99  16    232700576    Detection @1399.3 MHz
+H005646.6+302835  005648.2 +302833  j  6700 H v   # A102885         0030  13.64  17    232700580    1381 MHz Radar?, Weak peak @1389 MHz  
+H010101.7+304126  010103.3 +304124  j  4700 H v   # A113996         0038  13.49  18    232700584    Detection @1398.5MHz
+H010830.3+244009  010831.7 +244009  j  6600 H v   # A113841         0048   7.99  19    232700588    Detection @1389.8 MHz
+H012832.4+241114  012834.9 +241110  j  1400 H v   # A113861         0057   9.52  20    232700592    No clear detection
+H013310.9+284500  013310.5 +284455  j  1900 H v   # A114080         0106  12,22  21    232700596    No clear detection
+H014529.7+302639  014532.6 +302707  j  1400 H v   # A113989         0115  14.08  22    232700600    No clear detection
+H015837.7+250743  015839.0 +250727  j  1900 H v   # A113868         0124  10.65  23    232700604    No clear detection
+H020041.3+281053  020043.3 +281058  j  5300 H v   # A112474         0133  11.71  24    232700608    Strong detection @1395.5 MHz
+H020301.2+271426  020302.6 +271425  j  4800 H v   # A122180         0141  10.37  25    232700612    Strong detection @1398 MHz
+H020441.8+284825  020442.7 +284821  j  5100 H v   # A123216         0149  11.16  26    232700616    Detection @1336.8 MHz
+H021144.1+311142  021145.7 +311142  j  4800 H v   # A123103         0158  13.33  27    232700620    Strong detection @1398 MHz
+H021723.3+315921  021724.6 +315924  j  6100 H v   # A123104         0206  13.97  28    232700624    Strong detection @1392.2 MHz (Dbl Profile)
+H021729.6+292940  021730.5 +292936  j  5300 H v   # A123220         0215  11.24  29    232700628    Strong detection @1395.9 MHz
+H021925.2+294343  021926.5 +294231  j  1800 H v   # A123191         0223  11.45  30    232700632    Weak detection @1412.9 MHz (?)
+H022536.1+313850  022537.5 +313851  j  5200 H v   # A123105         0231  13.43  31    232700636    Detection @1396 MHz
+H023516.6+292702  023521.6 +292650  j  1700 H v   # A123200         0240  11.21  32    232700640    Detection @1412.5 MHz
+H030012.2+250310  030013.5 +250312  j 11300 H v   # A131373         0249   7.23  33    232700644    Detection @1368.8 MHz
+
+
+
+Stop LST: 0300
+
+
+Please record any notes of importance here. (Remember: you were there; we weren't.)
+Tiedowns active at start: LST 2205
+
+
+

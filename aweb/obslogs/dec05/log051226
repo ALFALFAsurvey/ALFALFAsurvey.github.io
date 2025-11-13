@@ -1,0 +1,51 @@
+Log for 12/26/05
+Observer: Emmanuel
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20051226.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.26
+
+LST  fits Scan      calscan    Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+0712 0003 536004837 536005439  drift54p2 FixedAz  071230+130824 19 600  50
+0723 0004 536005442 536006044
+0733 0005 536006047 536006649
+0743 0006 536006652 536007254
+0753 0007 536007257 536007859
+0803 0008 536007862 536008464
+0813 0009 536008467 536009069
+0823 0010 536009072 536009674
+0833 0011 536009677 536010279
+0843 0012 536010282 536010884
+0854 0013 536010887 536011489
+0904 0014 536011492 536012094
+0914 0015 536012097 536012699
+0924 0016 536012702 536013304
+0934 0017 536013307 536013909
+0944 0018 536013912 536014514
+0954 0019 536014517 536015119
+1004 0020 536015122 536015724
+1014 0021 536015727 536016329  WAPPDATA flushing 12 dumps, problem with WAPP2.
+1024                           Observation aborted. Restarting, and configuring the WAPPS, adjusting power
+                               before the start of the next scan. 				       	
+
+1031 0022 536016713 536017315 
+1041 0023 536017318 536017920 
+1051 0024 536017923 536018525 
+1101 0025 536018528 536019130
+1111 0026 536019133 536019735
+1121 0027 536019738 536020340
+1132 0028 536020343 536020945
+
+
+END LST: 1142
+
+Notes
+-- At the start, the operator reported that GALSPECT does not seem to be working properly. Only at 0123 AST GALSPECT started to work as expected.
+-- RFI at 1380 MHz at the start of FITS file 0013 for about 1.5 minutes (it was definitely not Santa-mobile!).
+-- FITS 0021, at the end and after the cal was fired, WAPP2 had a "read data error". However, FITS 0021 has the same size as the other good FITS files. The observation was aborted, WAPPs were restarted, and configured. After starting a "New FITS File" (FITS # 0022), power levels were adjusted, and observing re-started.
+-- TOGS at end of night OK.

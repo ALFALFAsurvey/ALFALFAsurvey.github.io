@@ -1,0 +1,109 @@
+Log for 03/22/10          Observer: Tom Balonek
+
+System Configuration:                   a2010_az85_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100322.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100323.a2010.****.fits
+          fits files start with 0035 in this set of drifts
+
+Zenith strip observing setup
+Az=75.55    ALFAang=-52.0  ZA=7.2
+RA@start=0723   RA@end=1639
+RA = LST - 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0752 0035 8100097   8100098       drift68p1 fixAZdr   072300+162530 -52.0 600 99 loopend
+                                  FAA radar, harmonic at 1380,
+                                  ZA at 7.26 deg, alfa sky angle +21.35
+                                  power levels: -4B at 0.77 (orange) but others ok
+                                  quicklook ok
+0803 0036 8100099   8100100       
+0813 0037 8100101   8100102
+0823 0038 8100103   8100104
+0833 0039 8100105   8100106       quicklook ok
+0843 0040 8100107   8100108       beam 4B power no longer low (now 0.80 in blue), power levels ok
+0853 0041 8100109   8100110        
+0903 0042 8100111   8100112
+0913 0043 8100113   8100114
+0923 0044 8100115   8100116       beam 4B power level now up to 0.819
+0934 0045 8100117   8100118
+0944 0046 8100119   8100120
+0954 0047 8100121   8100122       GPS burst at end of drift
+1004 0048 8100123   8100124       GPS burst at start of drift
+1014 0049 8100125   8100126
+1024 0050 8100127   8100128
+1034 0051 8100129   8100130
+1044 0052 8100131   8100132       power levels ok, ZA 7.37
+1055 0053 8100133   8100134
+1105 0054 8100135   8100136
+1115 0055 8100137   8100138
+1125 0056 8100139   8200001
+1135 0000 8200002   8200003       quicklook ok
+1145 0001 8200004   8200005       power levels ok, ZA 7.38
+1155 0002 8200006   8200007
+1205 0003 8200008   8200009
+1216 0004 8200010   8200011
+1226 0005 8200012   8200013
+1236 0006 8200014   8200015       continuun source during cal at end of drift, beams 0 & 5
+1246 0007 8200016   8200017       power levels ok, beam 4B at 0.888
+1256 0008 8200018   8200019
+1306 0009 8200020   8200021       strong continuum source -- gives yellow warning "there are WAPP channels
+                                      with too much power (2.054 > 2.0)" -- beam 3 (also strong in 5 & 4)
+1316 0010 8200022   8200023
+1326 0011 8200024   8200025
+1336 0012 8200026   8200027
+1347 0013 8200028   8200029
+1357 0014 8200030   8200031       power levels ok, quicklook ok
+1407 0015 8200032   8200033
+1417 0016 8200034   8200035
+1427 0017 8200036   8200037
+1437 0018 8200038   8200039
+1447 0019 8200040   8200041
+1457 0020 8200042   8200043
+1507 0021 8200044   8200045
+1518 0022 8200046   8200047
+1528 0023 8200048   8200049
+1538 0024 8200050   8200051
+1548 0025 8200052   8200053
+1558 0026 8200054   8200055
+1608 0027 8200056   8200057
+1618 0028 8200058   8200059
+1628 0029 8200060   8200061      power levels ok, quicklook ok
+1639 0030 8200062   8200063
+1649 0031 8200064   8200065
+1659 0032 8200066   8200067     ZA 7.26
+1709 0033 8200068   -- aborted
+
+LST stop: 1709     RA stop: 1639
+
+NOTES:
+
+Power level for beam 4B is low (orange) 0.77 at beginning, but fine (0.80) by fits file 0040
+
+FAA radar not as strong as last two nights, but still strong.
+
+Galspec started at beginning.  TOGS at end of night only.
+
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 13.6   K2: 13.8   K3: 15.3   K4: 15.2   AT 20:16
+70K = K1: 81.2   K2: 90.0   K3: 99.3   K4: 107.1
+
+16K = K1: 13.6   K2: 13.8   K3: 15.3   K4: 15.2   AT 23:55
+70K = K1: 81.7   K2: 89.1   K3: 98.6   K4: 106.7
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+

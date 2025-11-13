@@ -1,0 +1,57 @@
+A3064 LBW   16.11.15 Observers: Mike
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161115.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161115.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161116.a3064.****.fits   (only if goes after midnight AST; probably no)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S220048.2+265254  220048.2 +265254  j     0 H v   # A323398     2124   12.1 0000    632000163  No det, FAA on.
+								2136   10.5 0001    ------167  (Reobserved)
+S224143.5+271935  224143.5 +271935  j     0 H v   # A323411     2150   15.2 0002    ------171  No det. GPS and RFI @ 1388 MHz. 
+S224447.2+264907  224447.2 +264907  j     0 H v   # A323414     2202   13.2 0003    ------175  No det. GPS. 
+S224638.8+265114  224638.8 +265114  j     0 H v   # A323087     2214   11.5 0004    ------179  No det. 
+S225257.0+270934  225257.0 +270934  j     0 H v   # A323096     2226   10.9 0005    ------183  No det. 
+S230323.0+274300  230323.0 +274300  j     0 H v   # A336694     2238   11.2 0006    ------187  No det. GPS. 
+S233341.9+262224  233341.9 +262224  j     0 H v   # A336646     2251   12.9 0007    ------191  Det @ 9100 km/s SNR~3. GPS. 
+S234326.0+265527  234326.0 +265527  j     0 H v   # A335638     2303   12.8 0008    ------195  Strong det @ 8200 km/s (near GPS). GPS. 
+S235352.3+280717  235352.3 +280717  j     0 H v   # A335530     2316   13.3 0009    ------199  Marginal @ 7000 km/s (suspicious close to 1388 MHz). GPS. 
+S001354.2+273502  001354.2 +273502  j     0 H v   # A105241     2328   14.2 0010    ------203  No det. GPS. RFI @ 1388 MHz. 
+S001637.0+295242  001637.0 +295242  j     0 H v   # A104865     2341   14.3 0011    ------207  Marginal @ 4800 km/s SNR~2.
+								2353   12.9 0012    ------211  (Reobserved) Spectrum doesn't look the same, marginal may not be real. 
+S001650.4+291246  001650.4 +291246  j     0 H v   # A105261     0005   11.3 0013    ------215  No det. 
+S002151.9+272952  002151.9 +272952  j     0 H v   # A104889     0018   9.3  0014    ------219  No det.
+S002615.3+291013  002615.3 +291013  j     0 H v   # A105265     0030   10.9 0015    ------223  No det. 
+S010108.0+295604  010108.0 +295604  j     0 H v   # A115837     0043   12.4 0016    ------227  2 apparent dets @ 4900 km/s & 6800 km/s both SNR~3 - I've been seeing several strange things at about 4800 km/s though, so should be cautious.
+S011112.4+344157  011112.4 +344157  j     0 H v   # A116208     0057   16.8 0017    ------231  Det @ 4900 km/s SNR~3. GPS. 
+S011614.6+324155  011614.6 +324155  j     0 H v   # A114206     0110   14.5 0018    ------235  No det. 
+S012459.2+303652  012459.2 +303652  j     0 H v   # A116219     0123   12.4 0019    ------239  No det. 
+S012713.3+294330  012713.3 +294330  j     0 H v   # A115842     0135   11.6 0020    ------243  No det. 
+S013644.7+315403  013644.7 +315403  j     0 H v   # A115490     0147   13.8 0021    ------247  Marginal @ 1300 km/s SNR~2. 
+S021221.9+283427  021221.9 +283427  j     0 H v   # A124690     0200   10.7 0022    ------251  Marginal @ 10000 km/s SNR~3. GPS. 
+S021515.6+285438  021515.6 +285438  j     0 H v   # A125539     0213   10.7 0023    ------255  Marginals @ 5100 & 9500 km/s SNR~2.
+S022141.6+275852  022141.6 +275852  j     0 H v   # A124783     0225   9.7  0024    ------259  Strong det @ 5300 km/s SNR~6.
+S030253.7+282522  030253.7 +282522  j     0 H v   # A132288     0239   11.7 0025    ------263  Marginal @ 7700 km/s SNR~2.
+S030348.8+275441  030348.8 +275441  j     0 H v   # A132286     0251   10.2 0026    ------267  Det @ 11100 km/s SNR~4.
+H030215.5+303118  030215.5 +303118  j     0 H v   # A131380cal  0304   12.3 0027    ------271  Strong @ 6300 km/s. 
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal  if time 3 min ON/OFF -----------------------Not observed
+
+                                                
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+Started a little early as systems check finished early.
+FAA on. Tiedowns enabled.
+Fair amount of GPS and intermittent RFI at 1388 MHz.
+                                                                 

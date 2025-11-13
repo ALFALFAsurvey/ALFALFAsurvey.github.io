@@ -1,0 +1,54 @@
+3173 LBW   18.11.17   Observers: Carmen Pantojas, Mayra Lebron, Luis A. Flores, Rosemary Cortes, Dianaly Cortes, Rey A. Huertas, Elluz Pacheco, John Wilson
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3173.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3173_181117.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20181117.a3173.****.fits  
+                     /share/wappdata.now/wapp.20181118.a3173.****.fits   (if after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S221219.2+315328  221219.2 +315328  j     0 H v   # A321411    2235   14.56 wapp.20181117.a1373.0000.fits  832100175 Detection around 1398Mhz. Velocity around 4750Km/s. S/N ~3-4. 5min.
+S224202.4+304230  224202.4 +304230  j     0 H v   # A012159    2248   12.55 wapp.20181117.a1373.0001.fits  832100179 Detection around 1387MHz. Velocity around 7300Km/s. S/N ~3. 5min.
+S225524.5+315148  225524.5 +315148  j     0 H v   # A320446    2300   13.68 wapp.20181117.a1373.0002.fits  832100183 Detection around 1388MHz. Velocity around 7000Km/s. S/N ~3. 5min.     
+S225746.2+315923  225746.2 +315923  j     0 H v   # A321446    2312   14.13 wapp.20181117.a1373.0003.fits  832100187 Error data in pnt -table is too old. Can't interpolate positions. Error at LST 2321. Detection around 1388MHz. Velocity around 6900Km/s. S/N ~3-4. 5min.	      
+S231422.0+311505  231422.0 +311505  j     0 H v   # A333370    2325   13.22 wapp.20181117.a1373.0004.fits  832100191 No detection. Greater peak compared to others at 1368MHz. However, we can't determine if it's a source. 5min.  
+S234236.1+311035  234236.1 +311035  j     0 H v   # A335430    2337   13.02 wapp.20181117.a1373.0005.fits  832100195 Possible detection around 1397MHz. Velocity around 5000Km/s. S/N ~2-3. Source not clear. 5min. 
+S001837.0+320926  001837.0 +320926  j     0 H v   # A102759    2350   15.37 wapp.20181117.a1373.0006.fits  832100199 Detection around 1387MHz. Velocity around 7150Km/s. S/N ~3-4. 5min.      
+S001838.1+300835  001838.1 +300835  j     0 H v   # A104776    0003   12.47 wapp.20181117.a1373.0007.fits  832100203 No detection. 5min.  
+S002315.2+305158  002315.2 +305158  j     0 H v   # A104382    0015   12.69 wapp.20181117.a1373.0008.fits  832100207 Possible detection around 1386MHz. Velocity around 7200KM/s. Noisy spectrum with blended source. S/N ~2. 5min.  
+S002743.9+311557  002743.9 +311557  j     0 H v   # A102774    0027   13.04 wapp.20181117.a1373.0009.fits  832100211 Detection around 1392.5MHz. Velocity around 6000Km/s. S/N ~8. 5min.     
+S003212.1+312459  003212.1 +312459  j     0 H v   # A100291    0039   13.28 wapp.20181117.a1373.0010.fits  832100215 Detection around 1393MHz. Velocity around 6000Km/s. S/N ~4. 5min. Signal difficult to detect due to noise.      
+S004018.4+310641  004018.4 +310641  j     0 H v   # A102789    0051   13.10 wapp.20181117.a1373.0011.fits  832100219 Detection around 1393.7MHz. Velocity around 5700Km/s. S/N ~3. 5min. Signal difficult to detect due to noise.      
+S005141.5+310042  005141.5 +310042  j     0 H v   # A105513    0103   13.03 wapp.20181117.a1373.0012.fits  832100223 Detection around 1398.8MHz. Velocity around 4600Km/s. S/N ~3-4. 5min. Signal difficult to detect due to noise. Peak around 4600Km/s.  
+S005222.0+312632  005222.0 +312632  j     0 H v   # A102811    0116   14.17 wapp.20181117.a1373.0013.fits  832100227 Detection around 1399MHz. Velocity around 4500Km/s. S/N ~3-4. 5min.      
+S011038.7+314354  011038.7 +314354  j     0 H v   # A115382    0128   14.02 wapp.20181117.a1373.0014.fits  832100231 No detection. 5min.     
+S011549.5+314944  011549.5 +314944  j     0 H v   # A110169    0140   14.60 wapp.20181117.a1373.0015.fits  832100235 Detection around 1400MHz. Velocity around 4400Km/s. S/N ~4-5. 5min.     
+S012214.5+311517  012214.5 +311517  j     0 H v   # A112545    0152   14.59 wapp.20181117.a1373.0016.fits  832100239 Detection without gps around 1398MHz. Velocity around 4800Km/s. S/N ~4-5. 5min. Signal difficult to detect due to noise.     
+S022124.2+284940  022124.2 +284940  j     0 H v   # A123141    0206   11.21 wapp.20181117.a1373.0017.fits  832100243 Detection around 1393MHz. Velocity around 5850Km/s. S/N ~8. 5min.      
+S022306.4+314608  022306.4 +314608  j     0 H v   # A122993    0219   13.57 wapp.20181117.a1373.0018.fits  832100247 Detection around 1397MHz. Velocity around 4900Km/s. S/N ~2-3. 5min. Signal difficult to detect due to noise.     
+S023641.7+284701  023641.7 +284701  j     0 H v   # A123165    0232   10.61 wapp.20181117.a1373.0019.fits  832100251 Detection without gps around 1399MHz. Velocity around 4600Km/s. S/N ~4-5. 5min. 
+S024007.8+284217  024007.8 +284217  j     0 H v   # A123221    0244   10.47 wapp.20181117.a1373.0020.fits  832100255 Detection without gps around 1385MHz. Velocity around 7700Km/s. S/N ~2. 5min.    
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal 0257   12.25 wapp.20181117.a1373.0021.fits  832100259 Big emition at 1396.2MHz without gps. Possible galaxy. No image on SPSS catalog. Velocity around 5200Km/s. No estimation of S/N. 3min. 
+H030510.4+354946  030510.4 +354946  j     0 H v   # A132243cal 0307   17.58 wapp.20181117.a1373.0022.fits  832100263 Detection around 1402MHz. Velocity around 3850Km/s. S/N ~5. 3min.  
+                                       
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+Tiedowns were disabled at beginning due to humidity, rain and thunderstorms at the site.
+WAPPS crashed early but were fine after a restart.
+RFI at 1363 MHz and spikes at 1388 MHz were intermittent     
+
+

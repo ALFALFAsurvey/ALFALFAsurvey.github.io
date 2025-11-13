@@ -1,0 +1,43 @@
+Log for 12/12/05
+Observer: Bilal, Becky, Martha, Prasanth
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20051212.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.12
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+0703 0007 534607600 534608202 drift41p2  FixedAz 070330+095836 19 600  50
+0714 0008 534608205 534608807
+0724 0009 534608810 534609412 
+0734 0010 534609415 534610017      
+0744 0011 534610020 534610622    
+0754 0012 534610625 534611227 
+0804 0013 534611230 534611832
+0814 0014 534611835 534612437
+0825 0015 534612440 534613042
+0835 0016 534613045 534613647
+0845 0017 534613650 534614252
+0855 0018 534614255 534614857
+0905 0019 534614860 534615462
+0915 0020 534615465 534616067
+0925 0021 534616070 534616672
+0935 0022 534616675 534617277
+0945 0023 534617280
+
+
+End LST 0956
+
+Notes:
+- TOGS failed at the beginning. In the observation status monitor it said :
+ waiting for telescope to reach source; time remaining was stuck at 2 s. Also, 
+ operator reset the correlator. We tried restarting CIMA multiple times but 
+ still it was not fixed. 
+-TOGS ran for a while and then got WAPPs error. Letting it continue.. suggest
+someone check the CIMA logs.
+-TOGS ran successfully after restarting WAPPs.
+

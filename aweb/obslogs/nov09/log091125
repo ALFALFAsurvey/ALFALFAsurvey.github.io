@@ -1,0 +1,45 @@
+Log for 11/25/09          Observers: Colgate Students (Josh Adams and Phil Patrick), TB, TS, DK
+
+
+System Configuration:                   a2010_az360_2009.conf
+CIMA version       			3.1.06 2009-11-22 11:19 "Smart" 
+File(s):  /share/pserverf.sda3/wappdata/wapp.20091125.a2010.****.fits
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0015 0000 932900155  932900156 drift21p1 fixAZdr   001400+045918  19  600   99  loopend   quick look ok
+0025 0001 932900157  932900158            power levels ok
+0035 0002 932900159  932900160      
+0045 0003 932900161  932900162            power levels ok
+0055 0004 932900163  932900164            moderate continuum source in beams 5 & 6, quick look ok
+0105 0005 932900165  932900166
+0115 0006 932900167  932900168
+0125 0007 932900169  932900170            power levels ok
+0136 0008 932900171  932900172                                                           
+0146 0009 932900173  932900174
+0156 0010 932900175  932900176            power levels ok, quick look ok
+0206 0011 932900177  932900178
+0216 0012 932900179  932900180            
+0226 0013 932900181  932900182            power levels ok
+0236 0014 932900183  932900184            
+0246 0015 932900185  932900186            
+0256 0016 932900187  932900188            power levels ok, quick look ok
+0307 0017 932900189  932900190            quick look ok
+0317 0018 932900191  932900192            power levels ok                                          
+0327 0019 932900193  ABORTED           
+
+LST stop: 0327
+WAPP failures prevented an on time start.
+The failure was a file system error between the WAPPs and the file system.  Fixed by Phil.
+FAA radar active all night
+TOGS did not run at the start
+TOGS ran at end
+
+
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 13.5   K3: 15.3   K4: 15.5   AT 10:04
+70K = K1: 79.8   K2: 81.7   K3: 91.2   K4: 98.5
+
+16K = K1: 13.1   K2: 13.0   K3: 14.3   K4: 14.3   AT 14:02
+70K = K1: 80.1   K2: 82.2   K3: 91.5   K4: 99.1
+

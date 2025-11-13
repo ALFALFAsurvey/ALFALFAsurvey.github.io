@@ -1,0 +1,53 @@
+Log for 06/11/26      Observer: Tom Balonek
+on-site observing
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az180.gui as save state. -- Note, 180 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061126.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+0015 0001 633073153 633073755 drift133p1 FixedAz 001500+321430  19   600   99   loopend 
+0025 0002 633073758 633074360 Power levels ok; waterfalls, spectrum, total power plots ok
+0035 0003 633074363 633074965
+0045 0004 633074968 633075570
+0055 0005 633075573 633076175
+0105 0006 633076178 633076780 everything ok
+0116 0007 633076783 633077385
+0126 0008 633077388 633077990
+0136 0009 633077993 633078595
+0146 0010 633078598 633079200
+0156 0011 633079203 633079805
+0206 0012 633079808 633080410 Power levels ok
+0216 0013 633080413 633081015
+0226 0014 633081018 633081620
+0236 0015 633081623 633082225
+0247 0016 633082228 633082830
+0257 0017 633082833 633083435 Power levls ok
+0307 0018 633083438 633084040
+0317 0019 633084043 633084645
+0327 0020 633084648 633085250
+0337 0021 633085253 --aborted
+
+END LST: 0337
+
+
+NOTES:
+
+TOGS ran at end only (as scheduled).
+
+No problems.
+
+Quick start since scope already at 180 (540) degrees.
+
+Rain and lightning at start of run.  Frequent lightning shows up in
+total power and waterfall plots.
+
+Tie downs disabled at 00:18 LST (0:22 AST) near start of first drift due to frequent
+lightning.
+
+Tie downs enabled 02:08 LST, 02:12 AST during drift fits #0012.  Stopped raining and
+lightning about 15 minutes ago.  Radar map shows storm now out to sea.

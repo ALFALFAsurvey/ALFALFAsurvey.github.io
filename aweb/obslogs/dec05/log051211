@@ -1,0 +1,38 @@
+Log for 12/11/05
+Observer: Bilal, Becky, Martha
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20051211.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.11
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+0710 0004 534508254 534508856 drift40p1   FixedAz 071030+093642 19 600  50
+0720 0005 534508859 534509461
+0731 0006 534509464 534510066
+0741 0007 534510069 534510671
+0751 0008 534510674 534511276
+0801 0009 534511279 534511881
+0811 0010 534511884 534512486
+0821 0011 534512489 534513091
+0831 0012 534513094 534513696
+0841 0013 534513699 534514301 
+0851 0014 534514304 534514906
+0902 0015 534514909 534515511
+0912 0016 534515514 534516116
+0922 0017 534516119 534516721
+0932 0018 534516724 534517326
+0942 0019 534517329 534517931
+
+End LST 0952
+
+Notes:
+- Togs starting okay.
+- WAPP errors twice while starting up. Were going through too fast IF/LO
+control, not waiting till parameters were set.
+-WAPP error during togs at end. Attempted 3 times, did not run. WAPP error
+twice, hung third time. Could not perform togs. 

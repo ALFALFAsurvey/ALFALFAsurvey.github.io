@@ -1,0 +1,38 @@
+A2853   LBW   14.06.29      Observers: Becky Koopmann starts, Dave Kornreich continues
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140629.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.29jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A115924.4+245536  115924.4 +245536  j  4000 H v   # A731860   1311   17.7    1    418000502   high ZA; weak detection 1401 MHz, 4000 km/s, S/N~2.5
+A135707.5+264630  135707.5 +264630  j   200 H v   # A238822   1327   10.9    2    418000506   weak detection? 1419 MHz, 100 km/s, S/N < 2, not sure in both pols
+A142723.4+255240  142723.4 +255240  j  4000 H v   # A245754   1341   13.3    3    418000510   no detection
+A142728.7+253755  142728.7 +253755  j  4400 H v   # A245756   1353   10.9    4    418000514   no detection; Dave takes over
+A142813.2+255649  142813.2 +255649  j  4100 H v   # A241231   1405    9      5    418000518   no detection 
+A142846.6+271502  142846.6 +271502  j  4400 H v   # A240397   1417   9.26    6    418000522   good detection at 4500 km/s S/N about 3   
+A142922.6+273034  142922.6 +273034  j  4200 H v   # A726619   1430   9.10    7    418000526   no detection   
+A144533.6+315456  144533.6 +315456  j  1000 H v   # A245258   1443   13.5    8    418000530   very strong single-peak detection at 1200 km/s
+A143021.9+255446  143021.9 +255446  j  4800 H v   # A245833   1457   9.59    9    418000534   no detection
+A143226.3+231640  143226.3 +231640  j  1100 H v   # A245228   1509   9.80    10   418000538   very strong at 1200 km/s, single-peak
+A151832.1+310940  151832.1 +310940  j  1500 H v   # A254097   1523   12.8    11   418000542   very strong at 1700 km/s, single-peak   
+A151222.8+304856  151222.8 +304856  j  1400 H v   # A254090   1536   13.5    12   418000546   S/N=4 at 1600 km/s, single-peak   
+A153705.1+244644  153705.1 +244644  j  1600 H v   # A727206   1551   7.04    13   418000550   no detection
+A160958.5+224409  160958.5 +224409  j  4500 H v   # A261893   1605   4.58    14   418000554   strong at 4500 km/s, double-peak, S/N about 6   
+A165816.1+254902  165816.1 +254902  j   700 H v   # A262752   1619   11.8    15   418000558   no detection 
+
+Notes:
+   Tiedowns enabled.                                                                 

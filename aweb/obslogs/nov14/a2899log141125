@@ -1,0 +1,66 @@
+A2899  LBW   14.11.25      Observers: GH, RO, Leland & The Crew
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2899.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2899_141125.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT PPS code4 sources
+      
+Data written to: /share/olcor/corfile.25nov14.a2899.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include estimate of S/N ratio)
+A215851.3+302606  215851.3 +302606  j  2000 H v   # A311315   2127   14.7      1  432950302   no detection
+A222013.6+294325  222013.6 +294325  j  5000 H v   # A322664   2136   15.36     2  432950306   no detection
+H220535.2+335737  220535.5 +335753  j  4700 H v   # A322641   2144   16.43     3  432950310   detection at 1398Mhz sn=6 
+A223356.6+250939  223356.6 +250939  j  5000 H v   # A322642   2154   11.6      4  432950314   detection at 1401Mhz sn=4  
+A223241.2+311258  223241.2 +311258  j  -300 H v   # A321934   2203   14.6      5  432950318   no detection
+A224146.0+305223  224146.0 +305223  j  4000 H V   # A322645   2212   14.36     6  432950322   no detection
+H230557.1+231004  230558.3 +231011  j  6000 H v   # A334526   2221   11.69     7  432950326   detection at 1392Mhz sn=3
+H225320.5+290030  225323.4 +290051  j  2000 H v   # A321492   2230   12.02     8  432950330   no detection
+A224137.7+344918  224137.7 +344918  j  9800 H V   # A322586   2240   16.58     9  432950334   det @ 1375Mhz sn=4   
+A233905.9+263449  233905.9 +263449  j  7900 H v   # A330714   2250   14.11    10  432950338   rfi @ 1381Mhz, det @ 1384Mhz sn=2.5
+A234217.3+281623  234217.3 +281623  j  8700 H v   # A331287   2258   14.28    11  432950342   det @ 1380Mhz sn=1 
+A235318.4+274220  235318.4 +274220  j  7900 H v   # A330992   2306   14.40    12  432950346   no det  
+A235348.3+272504  235348.3 +272504  j  8000 H v   # A330996   2314   12.92    13  432950350   det @ 1384Mhz sn=4 
+A235456.7+274959  235456.7 +274959  j  8300 H v   # A332347   2322   12.17    14  432950354   no det
+A235616.2+292431  235616.2 +292431  j  7500 H v   # A331020   2331   12.63    15  432950358   detection at 1388Mhz sn=18, rfi in off at 1380Mhz
+A235616.6+292319  235616.6 +292319  j  7500 H v   # A332073   2339   11.87    16  432950362   rfi? at 1381Mhz,detections at 1379Mhz sn=12,1387Mhz sn=18  
+H000537.9+221656  000537.9 +221656  j  6700 H v   # A101201   2349   05.67    17  432950366   detection at 1390Mhz sn=4 
+H002133.4+223542  002133.6 +223535  j  6600 H v   # A100188   2357   07.17    18  432950370   rfi at 1380Mhz, detection? at 1390Mhz sn=4
+H002148.4+221805  002148.4 +221805  j  5700 H v   # A101070   0006   05.56    19  432950374   no detection
+H002213.5+222902  002213.5 +222858  j  5900 H v   # A100196   0014   04.68    20  432950378   detection at 1393Mhz sn=8
+A005755.5+302435  005755.5 +302435  j  4200 H v   # A104503   0026   14.23    21  432950382   detection at 1400Mhz sn=6
+H005240.1+321258  005240.1 +321258  j  4900 H v   # A101692   0034   14.61    22  432950386   detection at 1397Mhz sn=18
+A005439.8+315934  005439.8 +315934  j  6700 H v   # A101732   0042   14.06    23  432950390   detection at 1395Mhz sn=3.5
+A005731.8+330925  005731.8 +330925  j  5600 H v   # A101080   0050   15.01    24  432950394   no detection 
+A010440.4+321949  010440.4 +321949  j  4700 H v   # A112350   0058   14.16    25  432950398   detection at 1397Mhz sn=22.5
+A010708.8+331839  010708.8 +331839  j  4600 H v   # A114144   0106   15.07    26  432950402   possible detection at 1399? SN=1
+A010708.8+331839  010708.8 +331839  j  4600 H v   # A114144   0114   15.14    27  432950406   repeat prev. No detection
+A010858.9+321424  010858.9 +321424  j  4500 H v   # A111957   0123   14.31    28  432950410   detection at 1400Mhz sn=3
+A011509.8+334725  011509.8 +334725  j  4400 H v   # A110158   0131   15.92    29  432950414   detection at 1400Mhz sn=9
+A012320.8+332043  012320.8 +332043  j  5000 H v   # A114563   0139   14.47    30  432950418   detection at 1397Mhz sn=8
+A012337.5+323745  012337.5 +323745  j  4700 H v   # A000937   0147   15.28    31  432950422   detection at 1398Mhz sn=6.67
+A013421.4+323826  013421.4 +323826  j  4900 H v   # A110419   0155   15.11    32  432950426   detection at 1397Mhz sn=6
+A012448.8+311840  012448.8 +311840  j  2300 H v   # A113921   0204   15.67    33  432950430   detection at 1409Mhz sn=7
+H021137.9+255721  021140.6 +255735  j  4900 H v   # A122823   0215   07.71    34  432950434   detection at 1397Mhz sn=5  
+H022727.7+240734  022730.1 +240735  j  4300 H v   # A124030   0223   05.94    35  432950438   no detection   
+H022833.1+251947  022834.1 +251952  j  5900 H v   # A122941   0232   07.08    36  432950442   detection at 1393 sn=8
+H023036.7+254348  023038.1 +254407  j  5800 H v   # A123238   0240   07.73    37  432950446   detection at 1393Mhz sn=5
+H023036.7+254348  023038.1 +254407  j  5800 H v   # A123238   0248   08.44    38  432950450   repeat; detection at 1393Mhz sn=5
+H030248.5+350443  030247.9 +350428  j  4800 H v   # A131430   0259   16.84    39  432950454   no detection   
+H030543.3+361106  030541.3 +361033  j   500 H v   #           0308   17.91    40  432950458   no detection
+H030305.8+334139  030305.8 +334139  j   200 H v   # A130770cal0316   15.67    41  432950462   detection at 1419Mhz sn=40
+    
+Notes (be sure to write notes here so we can keep track of anything relevant)
+  The J-Man does not approve of the observers.
+  GPS radar in a few scans, but relatively clean of RFI overall.
+

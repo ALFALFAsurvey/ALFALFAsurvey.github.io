@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>ALFALFA LBW Followup Observing Modes</title> 
+  </head>
+<body bgcolor="ffffff">
+
+
+<center><h2 style="color: rgb(10,10,150);">The standard ALFALFA L-band Wide Followup Observing Mode</h2>
+<h3><font color=#cc0f14>Current as of Dec 18, 2013</font></h3></center><br>
+
+<li> Look here for the discussion of the setup used in <a href="lbw_observingmodes_2012.htm">Spring 2012</a></p>
+
+As discussed in the ALFALFA followup <a href="ALFALFA_lbwobserving.htm">background</a> page, 
+the spectrometer we use with LBW has more capability than we actually need for the followup
+observations. So, we are going to try to make best use of it! We also don't want to have too
+many different setups so that we don't waste time making too many changes, we can use the
+same calibrations, and we can monitor the system performance and the behavior of RFI. </p>
+
+In our first LBW observing runs, we used two distinct setups; you can read about them
+<a href="lbw_observingmodes_2012.htm">here</a>. Starting in March 2012, we adopted a single 
+setup for all LBW followup runs, regardless of the scientific aim of the program or the kind
+of sources we target. 
+We call this spectrometer setup the <b>"hybrid bandwidth, doppler tracking"</b>  mode.
+</p>
+<br>
+
+<font color=#cc0f14><b>Hybrid bandwidth, doppler tracking mode</b></font>:</p>
+    
+This correlator setup yields four separate spectra,
+in two pairs:
+<ul>
+<li> Two spectra, one for each of the two polarizations, of 2048 spectral channels covering a 25 MHz bandwidth,
+     centered at the frequency corresponding to the heliocentric velocity specified in the observing catalog.
+<li> Two spectra, one for each of the two polarizations, of 2048 spectral channels covering a 6.25 MHz bandwidth,
+     centered at the frequency corresponding to the heliocentric velocity specified in the observing catalog.
+</p></ul>
+The first set of spectra are referred to as the "low resolution" spectra; the second are the "high resolution" ones.</p>
+
+In terms of the correlator setup, we use 4 "boards", one for each of the four spectra.</p>
+Boards 1 and 2 record spectra at 9 level sampling from the two
+    polarizations separately. Each spectrum will cover 25 MHz with 2048 spectral pixels.
+    Spectra will be centered at the frequency corresponding to the HI doppler shift,
+    rounded to the nearest 100 km/s; this shifting will be done by reading the velocity
+    from the input target catalog file.</p>
+
+    Boards 3 and 4 are also samples at 9 levels and centered at the same velocity but 
+    produce the higher resolution spectra by covering only 6.25 MHz also with 2048 channels.</p>
+    We use the high resolution spectrum when the source emission is very narrow in velocity
+    and gaussian; then the higher resolution can help us measure the width more accurately,
+    if the signal-to-noise ratio is adequate.</p>
+   
+</p>
+<br>
+<br>
+<br><hr>
+<font color=#008800> This page maintained by members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA </a>Observing Team.</font>
+<br>
+<!-- hhmts start -->
+<b><font color="#008000"><b>Last modified: Wed Dec 18 14:38:53 EST 2013 by martha </b></font>
+<!-- hhmts end -->
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+Log for 01/09/06
+Observer: Prasanth
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20060109.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.01.09
+
+LST  fits Scan      calscan    Source    Pattern  Start coords. ang time
+loop   Notes
+______________________________________________________________________________
+7 00 6009 6009  drift45p2  FixedAz 07+124630 19 600 50
+NO DATA TAKEN TONIGHT, SEE NOTES
+
+
+
+END LST: 
+
+NOTES:
+--00:15 AST: Previous operator informs me (around 11:15 AST) that he saw sparks in the dome and
+hence decided to "shut down" the telescope.
+Operator has send notice to all concerned. Operator informs that most likely 
+the system will be back up only in the morning, as  maintenance may not be 
+able to find the problem until there is day light. Operator will notify me 
+when/if we are ready at some point before our time runs out.  
+--02:51 AST : Operator informs me that the sparks were created by the "480 Mega Watt" cable
+brushing against some surface. This was found out by someone from maintenance.
+He thinks it can be fixed during daytime and hence we should be able to observe tomorrow.
+

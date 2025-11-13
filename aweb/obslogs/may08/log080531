@@ -1,0 +1,33 @@
+Log for 080531      Observer: Lyle Hoffman
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080531.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20080601.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+1440 0006 815200039 815200040  drift1p4   fixAZdr  144000+001057  19  600   99   loopend 
+                               proceeding without WAPP-2 since it has failed
+                               WAPP-4 chip count errors  fits OK
+1450 0007 815200041 815200042  chip count errors  power OK beams 0 1 4 5 6
+1500 0008 815200043 815200044  chip count errors
+1510 0009 815200045 815200046  chip count errors
+1520 0010 815200047 815200048  chip count errors non-stop   power OK beams 0 1 4 5 6
+1530 0011 815200049 815200050  chip count errors
+1540 0012 815200051 815200052  chip count errors
+1551 0013 815200053 815200054  chip count errors  power OK beams 0 1 4 5 6
+1601 0014 815200055 815200056  chip count errors
+1611 0015 815200057 815300001  chip count errors
+1621 0000 815300002 815300003  chip count errors
+1631 0001 815300004 815300005  chip count errors
+1641 0002 815300006  aborted
+
+End LST:  1641
+
+Notes:  TOGS not run at start since AGES session was canceled and no time
+was left for TOGS.
+Late start -- WAPP-2 failed to adjust power at start of observing, and CIMA
+automatically stops all the WAPPs when that happens.  Mikael tried for ca.
+1 hr to solve the problem, then suggested I run without WAPP-2.  Beams 2 & 3
+have no data.
+TOGS not run at end because of WAPP-2 failure.

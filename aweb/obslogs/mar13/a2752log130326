@@ -1,0 +1,71 @@
+A2752 LBW   13.03.26      Observers: Ron Olowin, Parker Troischt, Ora Starcher, Kyle Murray, Nathan Nichols, Joseph Serrano
+
+CIMA version:          The Stable version (Default) (Ver 3.3.05 2013-02-22 15:46)
+Configuration file:    a2752_mar13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2752_130326.cmd
+Mode:                Doppler tracking
+                    ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.26mar13.a2752.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H084544.4+250816  084546.6 +250828  j  8300 H v   # A184204          836  7.2   30   308500402   Detection at 1382MHz, 8300km/s  
+H084654.1+251437  084655.9 +251446  j  7700 H v   # A184244          844  6.9   31   308500406   Detection at 1385MHz, 7700km/s
+H085112.1+275248  085112.1 +275248  j   400 H v   # A182595  SHIELD  852        32   308500410   Aborted to disable tiedowns
+H085112.1+275248  085112.1 +275248  j   400 H v   # A182595  SHIELD  854  9.5   33   308500411   Detection at 1418MHz, 400km/s
+H091917.8+253419  091920.4 +253459  j  7200 H v   # A194722          904  8.1   34   308500415   Detection at 1319MHz, 6500km/s
+H094635.8+250311  094637.4 +250348  j  8100 H v   # A721634          913  10.4  35   308500419   Detection at 1383MHz, 8000km/s  
+H095859.6+250537  095900.1 +250611  j  6600 H v   # A721804          921  11.2  36   308500423   Detection at 1389MHz, 6600km/s
+H100442.3+255844  100445.3 +255832  j  6300 H v   # A721902          929  11.3  37   308500427   Detection at 1390MHz, 6400km/s 
+H102112.0+253852  102114.9 +253901  j  5700 H v   # A722109          938  12.5  38   308500431   Detection at 1394MHz, 5700km/s
+H102358.8+254330  102400.5 +254326  j  6200 H v   # A722166          946  11.6  39   308500435   Detection at 1392MHz, 6200km/s
+H103109.4+255233  103105.6 +255258  j  6300 H v   # A722251          954  11.6  40   308500439   Detection at 1391MHz, 6200km/s
+H103937.2+250217  103938.4 +250306  j  8900 H v   # A722424         1002  11.1  41   308500443   Detection at 1379MHz, 9000km/s
+H104355.1+252116  104354.2 +252133  j  5500 H v   # A722502         1010  10.6  42   308500447   Detection at 1395MHz, 5500km/s
+H104641.0+255534  104642.6 +255552  j  6100 H v   # A005881         1018  10.2  43   308500451   Re-executing (File 45), Possible RFI
+H105950.1+251650  105952.5 +251633  j  6200 H v   # A722734         1026  10.5  44   308500455   Aborted. re-executing (File 46)
+H104641.0+255534  104642.6 +255552  j  6100 H v   # A005881         1032  8.3   45   308500456   Double Detection? at 1392MHz, 6200km/s
+H105950.1+251650  105952.5 +251633  j  6200 H v   # A722734         1040  8.3   46   308500460   Detection at 1391MHz, 6100km/s
+H110359.4+255408  110400.1 +255334  j  6700 H v   # A731543         1048  8.4   47   308500464   Detection at 1389MHz, 6700km/s
+H111745.1+253321  111746.0 +253332  j  7900 H v   # A723355         1057  8.7   48   308500468   Detection at 1384MHz, 6900km/s
+H112023.6+253258  112027.3 +253310  j  7100 H v   # A723453         1105  8.1   49   308500472   Detection at 1388MHz, 7100km/s
+H115311.8+253407  115313.1 +253358  j  8600 H v   # A724160         1114  11.6  50   308500476   Detection at 1381MHz, 8600km/s
+H115341.9+253427  115340.5 +253451  j  8600 H v   # A724172         1122  10.3  51   308500480   Detection at 1381MHz, 8700km/s
+H120811.2+253737  120809.8 +253648  j  6500 H v   # A731958         1131  11.4  52   308500484   Detection at 1390MHz, 6600km/s
+H121037.4+255552  121034.7 +255541  j  6400 H v   # A220170         1139  10.6  53   308500488   Detection at 1390MHz, 6400km/s
+H121050.9+251420  121054.3 +251510  j  6800 H v   # A731984         1147  8.9    1   308500492   Detection at 1389MHz, 6900km/s, checked tiedowns
+H121643.3+254211  121644.4 +254131  j  6400 H v   # A732034         1155  8.9    2   308600003   Detection at 1391MHz, 6500km/s
+H121652.9+254617  121654.9 +254631  j  6400 H v   # A732037         1203  8.1    3   308600007   Detection at 1391MHz, 6500km/s
+H121813.0+253636  121814.3 +253706  j  6900 H v   # A732049         1211  7.4    4   308600011   Detection at 1388MHz, 6900km/s
+H121906.8+251800  121909.7 +251749  j  6800 H v   # A222577         1219  6.9    5   308600015   Detection at 1389MHz, 6800km/s
+H121913.2+254215  121912.5 +254254  j  7500 H v   # A732059         1228  7.5    6   308600019   Detection at 1386MHz, 7500km/s
+H122622.9+255315  122627.8 +255320  j  7000 H v   # A732121         1236  7.7    7   308600023   Detection at 1388MHz, 6900km/s
+H122949.9+253748  122951.5 +253755  j  6800 H v   # A732146         1244  7.8    8   308600027   Detection at 1389MHz, 6850km/s
+H123122.2+255419  123122.9 +255450  j  7000 H v   # A732152         1251  8.8    9   308600031   Detection at 1388MHz, 7000km/s   
+H125548.5+251110  125552.4 +251058  j  6900 H v   # A732383         1300  6.8   10   308600035   Detection at 1388MHz, 6900km/s
+H130405.0+254421  130407.3 +254330  j  7300 H v   # A732489         1309  7.4   11   308600039   Detection at 1387MHz, 7250km/s
+H130626.0+251422  130626.0 +251417  j  7500 H v   # A732523         1317  7.2   12   308600043   Detection at 1386MHz, 7500km/s
+H133132.2+253650  133133.6 +253737  j  7700 H v   # A732661         1326  7.3   13   308600047   Detection at 1385MHz, 7700km/s
+H133216.2+255820  133218.0 +255835  j  7500 H v   # A732672         1334  7.6   14   308600051   Detection at 1386MHz, 7500km/s
+H133708.5+255923  133707.4 +255929  j  7800 H v   # A732710         1342  7.6   15   308600055   Detection at 1385MHz, 7800km/s 
+H134055.8+251307  134058.0 +251252  j  5100 H v   # A725686         1350  7.1   16   308600059   Detection at 1396MHz, 5100km/s
+H134653.2+252713  134652.5 +252715  j  8800 H v   # A235204         1358  7.5   17   308600063   Detection at 1380MHz, 8800km/s
+H134752.9+253250  134753.9 +253324  j  8500 H v   # A235239         1406  8.3   18   308600067   Detection at 1381MHz, 8550km/s
+H134920.0+252025  134921.8 +252025  j  8600 H v   # A235291         1415  8.9   19   308600071   Detection at 1381MHz, 8600km/s
+H134953.8+251117  134952.5 +251127  j  8800 H v   # A231508         1423 10.1   20   308600075   Detection at 1380MHz, 8700km/s
+H135147.3+252057  135149.8 +252139  j  8700 H v   # A235364         1431 11.3   21   308600079   Detection at 1380MHz, 8700km/s
+H135420.9+250952  135422.1 +250911  j  8800 H v   # A231550         1439 12.1   22   308600083   Detection at 1385MHz, 8700km/s
+H150100.9+252816  150059.9 +252842  j  6600 H v   # A733370         1450  7.6   23   308600087   Detection at 1390MHz, 6600km/s
+H150924.7+252730  150925.6 +252815  j  6600 H v   # A727014         1458  7.6   24   308600091   Detection at 1390MHz, 6600km/s   
+H154628.5+252558  154631.9 +252545  j  6800 H v   # A733787         1507 11.6   25   308600095   Detection at 1389MHz, 6800km/s
+H154500.1+244318  154502.5 +244326  j  6800 H v   # A254957         1516  9.4   26   308600099   Detection at 1389MHz, 6900km/s
+H154511.7+241635  154511.9 +241617  j  6600 H v   # A727279         1524  7.7   27   308600103   Detection at 1390MHz, 6600km/s
+H154623.6+241457  154626.2 +241523  j  6200 H v   # A733785         1532  6.7   28   308600107   Detection at 1391MHz, 6300km/s
+H162956.6+245630  163001.6 +245631  j  4200 H v   # A264684         1543 13.0   29   308600111   Detection at 1410MHz, 4200km/s  
+H163802.5+262651  163802.9 +262710  j  4300 H v   # A262736 calib   1551 13.6   30   308600115   Detection at 1400MHz, 4300km/s

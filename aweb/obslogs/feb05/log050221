@@ -1,0 +1,101 @@
+Log for 2/21/05 pm        Observers: RG,MPH,BK,KLM,SS,CS
+	2/22/05 am
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050021.A2010.****.fits   
+       /share/pserverf.sda3/wappdata/wapp.20050222.A2010.****.fits
+
+*****IMPORTANT NOTE ON LABELING FITS FILES*****
+Please see end of log file for note on capital "A" versus little "a" confusion with labeling fits files.
+
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+0711 0003 505278391 505278993 drift54p1 FixedAZ  072730+130106  19   600  2     
+     0004 505278996 505279598                                                           drift +9"
+
+     0005 505279605 505280207 drift54p1 FixedAz  074747+130106  19   600  3
+     0006 505280210 505280812
+     0007 505280815 505281417                                                           drift +12"
+
+     0008 505281423 505282025 drift54p1 FixedAz  081828+130106  19   600  3
+     0009 505282028 505282631 
+     0010 505282634 505283236                                                           drift +11"
+
+     0011 505283242 505283844 drift54p1 FixedAz  084851+130106  19   600  3
+     0012 505283847 505284449
+     0013 505284452 505285054                                                           drift +10"
+
+     0014 505285060 505285662 drift54p1 FixedAz  091914+130106  19   600  3
+     0015 505285665 505286267
+     0016 505286270 505300472                                                           drift +9"
+
+     0000 505300477 505301079 drift54p1 FixedAz  094936+130106  19   600  3 
+     0001 505301082 505301684
+     0002 505301687 505302289                                                           drift +8"
+
+     0003 505302295 505302897 drift54p1 FixedAz  102000+130106  19   600  3
+     0004 505302900 505303502
+     0005 505303505 505304107                                                           drift +6"
+
+     0006 505304113 505304715 drift54p1 FixedAZ  105022+130106  19   600  8     
+     0007 505304718 505305320
+     0008 505305323 505305925
+     0009 505305928 505306530
+     0010 505306533 505307135
+     0011 505307138 505307740
+     0012 505307743 505308345
+     0013 505308348 505308950								drift +8"
+
+     0014 505308956 505309558 drift54p1 FixedAZ  121118+130106  19   600  8  
+     0015 505309561 505310163
+     0016 505310166 505310768
+     0017 505310771 505311373
+     0018 505311376 505311978
+     0019 505311981 505312583
+     0020 505312586 505313188
+     0021 505313191 505313793 							        drift -3"
+
+     0022 505313799 505314401 drift54p1 FixedAZ  133215+130106  19   600  8
+     0023 505314404 505315006
+     0024 505315009 505315611
+     0025 505315614 505316216
+     0026 505316219 505316821
+     0027 505316824 505317462
+     0028 505317465 505318031
+     0029 505318034 505318636                                                           drift -14"
+
+     0030 505318643 505319245 drift54p1 FixedAZ  145311+130106  19   600  3 
+     0031 505319248 505319850
+     0032 505319853 505320455                                                           drift -9"
+
+     0033 505320461 505321063 drift54p1 FixedAZ  152336+130106  19   600  3
+     0034 505321066 505321668
+     0035 505321671 505322273								drift -10"
+
+     0036 505322279 505322881 drift54p1 FixedAZ 155358+130106        19   600  3
+     0037 505322884 505323486
+     0038 505323489 505324091							drift -11"
+
+     0039 505324098 505324700 drift54p1 FixedAZ 162421+130106        19   600  1
+
+     0040  blank
+     0041  blank
+
+
+
+Notes
+We had a few aborted scans in the beginning due to problems with the WAPPs (1a, 3a, and 3b were giving us no data).
+
+****IMPORTANT NOTE ON LABELING FITS FILES****
+The files for tonight are written to wapp.20050021.A2010.****.fits with a capital "A".  This is different from files taken on
+the morning of February 21 which are written to wapp.20050021.a2010.****.fits with a lowercase "a".  We should choose whichever 
+one has been used more frequently in the past and stick to it.
+
+
+Remote observing successful!!!!!

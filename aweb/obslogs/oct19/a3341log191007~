@@ -1,0 +1,57 @@
+A3341 LBW   19.10.07   Observers: {Mayra Lebron, Carmen Pantoja, Julian Ramos, Elluz Pacheco, Amanda Alvarado}
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3341.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1355.4057  1375.4057  1395.4057 (Changed board 2 with board 4)
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3341_191007.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20191007.a3341.****.fits  
+                     /share/wappdata.now/wapp.20191008.a3341.****.fits  after midnight AST
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST         ZA   File#   ONScan     Status (Pls include freq & S/
+N rat
+io)
+H215519.3+302924  215519.3 +302924  j     0 H v   # A011847cal  22:07:32   12.54  0012   928000049   @ 1394.5MHz, SN= 6  
+S222931.6+265815  222931.6 +265815  j     0 H v   # A321215     22:16:36   9.26   0013   928000053   @ 1400.5MHz, SN= 5, interference @ 1350MHz      
+S232142.0+273946  232142.0 +273946  j     0 H v   # A330281     22:30:59   15.14  0014   928000057   @ 1392.8MHz, SN= 8, interference @ 1349.5MHz & 1381MHz
+S232240.3+290013  232240.3 +290013  j     0 H v   # A333530     22:43:27   14.14  0015   928000061   @ 1393MHz, SN= 3,  interference @ 1350MHz & 1381MHz
+S231656.3+332857  231656.3 +332857  j     0 H v   # A335328     22:56:25   16.00  0016   928000065   @ 1395.5MHz, SN= 4, interference @ 1350MHz
+S232931.9+321636  232931.9 +321636  j     0 H v   # A335598     23:08:37   14.89  0017   928000069   @ 1393.5MHz, SN= 4, interferece @ 1345MHz,1350MHz,1363MHz
+S234825.2+291802  234825.2 +291802  j     0 H v   # A333572     23:21:10   12.81  0018   928000073   @ 1396MHz, SN= 3, interference @ 1345MHz, 1350MHz, 1363MHz
+S235519.2+324940  235519.2 +324940  j     0 H v   # A335541     23:34:22   15.42  0019   928000077   @ 1398MHz, SN=3, interferences @ 1345MHz, 1250MHz
+S000529.2+315143  000529.2 +315143  j     0 H v   # A102741     23:46:29   14.37  0020   928000081   @ 1397MHz, SN=3, interference @ 1381MHz
+S000509.7+331301  000509.7 +331301  j     0 H v   # A104298     23:58:46   15.09  0021   928000085   @ 1397.5MHz, SN=5, interference @ 1344MHz, 1350MHz, 1363MHz
+S004857.1+290346  004857.1 +290346  j     0 H v   # A102937     00:12:08   13.84  0022   928000089   @ 1396.3MHz, SN=5, interference @ 1344MHz, 1350MHz
+S005009.1+312954  005009.1 +312954  j     0 H v   # A102807     00:24:38   14.57  0023   928000093   @ 1396 MHz, SN= 5, interference @ 1344MHz, 1350 MHz
+S010020.5+305856  010020.5 +305856  j     0 H v   # A113887     00:36:43   13.93  0024   928000097   @ 1390MHz, 1395.8 MHz, SN=3, interference @ 1345 MHz, 1350 MHz, 1373 MHz Source shows two Galaxy signal
+S010020.7+312758  010020.7 +312758  j     0 H v   # A112533     00:48:53   13.54  0000   928100004   @ 1390.5 MHz,1394.3MHz, SN=5, SN=3, interference @ 1350MHz, Source shows two Galaxy signal
+S012533.9+293715  012533.9 +293715  j     0 H v   # A114043     01:01:37   12.73  0001   928100008   @ 1399MHz, SN=3, interference @ 1345MHz, 1350MHz, 1363MHz
+S013121.3+284812  013121.3 +284812  j     0 H v   # A112546     01:13:48   11.40  0002   928100012   @ 1398MHz, SN=4, interference @ 1350MHz
+S014512.9+254732  014512.9 +254732  j     0 H v   # A110509     01:26:30   8.82   0003   928100016   @ 1404.5MHz, SN=6, interference @ 1350MHz
+S014346.8+291000  014346.8 +291000  j     0 H v   # A110496     01:39:30   11.00  0004   928100020   @ 1401.5MHz, SN=7, interference @1344MHz, 1349.5Mhz, 1367MHz
+S022350.7+262938  022350.7 +262938  j     0 H v   # A122800     01:53:07   11.04  0005   928100024   @ 1395MHz, SN=2,interference @ 1344MHz, 1350MHz
+S022538.7+312320  022538.7 +312320  j     0 H v   # A123004     02:06:30   13.92  0006   928100028   @ 1397.5MHz, 1399.2MHz, SN both= 3, interference @ 1344.5MHz, 1350MHz,1366.5MHz, Emission and absortion together
+S023459.6+271321  023459.6 +271321  j     0 H v   # A122418     02:19:52    9.71  0007   928100032   @ 1396.5MHz SN=5, interference @1344.5MHz, 1350MHz
+S022510.4+244942  022510.4 +244942  j     0 H v   # A122871     02:32:51    6.75  0008   928100036   @ 1395.5MHz SN=4, interference @ 1381MHz, 1344.5MHz, 1350MHz
+H024853.4+281624  024853.4 +281624  j     0 H v   # A120529cal  02:45:57    10.06 0009   928100040   @ 1395.3MHz SN=5, interference 1350MHz, 1381 MHz
+H025141.5+320610  025141.5 +320610  j     0 H v   # A123057cal                3 mins if time   No time to be observed
+
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+ISSUES:
+Problems with WAPP Board 2 (same as last night; reported to Anish) so Boards 2-4 swapped
+Tie downs disabled because of lightning damage (same as last night)   
+
+

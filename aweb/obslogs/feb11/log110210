@@ -1,0 +1,72 @@
+Log for 11.02.10 (10Feb2011)        Observer: Becky Koopmann, Halley Darling
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110210.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0916 0000 104100001 104100002 drift141p1 fixAzdr   091600+341118  19   600 99 loopend   6b dead, power levels OK, rfi in beginning -
+faint GPS? ~1381MHz, cs
+0927 0001 104100003 104100004 faint rfi in beginning 0A ~1381 MHz, cs
+0937 0002 104100005 104100006 continuum source
+0947 0003 104100007 104100008 
+0957 0004 104100009 104100010 
+1007 0005 104100011 104100012  quicklook OK
+1017 0006 104100013 104100014  continuum source 
+1027 0007 104100015 104100016  contunuum source 
+1037 0008 104100017 104100018  continuum sources, very bright GPS (beam power into red), continues into cal
+1048 0009 104100019 104100020  GPS, continuum source, GPS dominates quicklook
+1058 0010 104100021 104100022  quicklook OK
+1108 0011 104100023 104100024  power levels OK, quicklook OK 
+1118 0012 104100025 104100026  cs 
+1128 0013 104100027 104100028 
+1138 0014 104100029 104100030  extrapolating pnt-data error, quicklook OK
+1148 0015 104100031 104100032  cs,  quicklook OK
+1158 0016 104100033 104100034  cs
+1208 0017 104100035 104100036  GPS through cal
+1218 0018 104100037 104100038  GPS, cs 
+1228 0019 104100039 104100040  extrapolating pnt-data error (twice)
+1239 0020 104100041 104100042  GPS (AGAIN!), cs 
+1249 0021 104100043 104100044  
+1259 0022 104100045 104100046  
+1309 0023 104100047 104100048  cs
+1319 0024 104100049 104100050  cs
+1330 0025 104100051 104100052  
+1340 0026 104100053 104100054  quicklook ok
+1350 0027 104100055 104100056  extrapolating pnt-data
+1359 0028 104100057 104100058  power levels OK, cs
+1410 0029 104100059 104100060  
+1420 0030 104100061 104100062  
+1430 0031 104100063 104100064 
+1440 0032 104100065 104100066  power levels ok
+1450 0033 104100067 104100068  quicklook OK
+1501 0034 104100069 104100070
+1511 0035 104100071 104100072 
+1521 0036 104100073 104100074  GPS through cal (AGAIN!)
+1531 0037 104100075 104100076  GPS
+1541 0038 104100077 -- abort
+
+LST stop: 1541
+
+At the bottom, add notes regarding:
+--Beam 6B dead entire night.
+--FAA Radar ON and bright
+--TOGS at end only
+--note several GPS bursts, some through cals: report sent to rfi-grp@naic.edu
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 29.4   K2: ?      K3: 33.3   K4: 33.1   AT 17:11
+70K = K1: 124.0  K2: 132.0  K3: 141.1  K4: 148.6
+
+16K = K1: 30.2   K2: ?      K3: 34.6   K4: 34.1   AT 22:34
+70K = K1: 124.7  K2: 132.6  K3: 141.8  K4: 149.4
+
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+

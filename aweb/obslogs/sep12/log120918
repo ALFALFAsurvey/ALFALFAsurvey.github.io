@@ -1,0 +1,98 @@
+Log for 12.09.18 (18Sep2012)        Observers: JO & DF
+
+System Configuration:  {a2010_az180_2012.conf}
+CIMA version           {CIMA version: Stable Ver 3.3.02 2012-06-07 17:14}
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20120918.a2010.****.fits
+	  /share/pserverf.sdb1/wappdata/wapp.20120919.a2010.****.fits	
+     
+
+Normal meridian observing setup (Fall 2012)
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+2132 0023  226200459 226200460 drift140p2 fixAzdr  213045+340358  19  600   99  loopend    All beams on, power levels good, quickook good 
+2142 0024  226200461 226200462 quicklook good 
+2152 0025  226200463 226200464
+2202 0026  226200465 226200466 power levels good                                                
+2212 0027  226200467 226200468 quicklook ok
+2222 0028  226200469 226200470 quicklook ok, power levels fine 
+2232 0029  226200471 226200472 quicklook ok 
+2242 0030  226200473 226200474 
+2252 0031  226200475 226200476 quicklook ok 
+2302 0032  226200477 226200478
+2312 0033  226200479 226200480 quicklook ok 
+2322 0034  226200481 226300001 
+2332 0000  226300002 226300003 quicklook ok 
+2342 0001  226300004 226300005 
+2352 0002  226300006 226300007 quicklook ok 
+0002 0003  226300008 226300009 
+0012 0004  226300010 226300011 quicklook ok 
+0022 0005  226300012 226300013 
+0032 0006  226300014 226300015 quicklook ok 
+0042 0007  226300016 226300017 
+0052 0008  226300018 226300019 quicklook ok 
+0103 0009  226300020 226300021 
+0113 0010  226300022 226300023 quicklook ok 
+0123 0011  226300024 226300025 
+0133 0012  226300026 226300027 quicklook ok 
+0143 0013  226300028 226300029 power levels ok, 2 second WAPP extrapolation at 0143
+0153 0014  226300030 226300031 quicklook ok 
+0203 0015  226300032 226300033 
+0214 0016  226300034 226300035 quicklook ok 
+0224 0017  226300036 226300037 
+0234 0018  226300038 226300039 quicklook ok, power levels ok 
+0244 0019  226300040 226300041 
+0254 0020  226300042 226300043 quicklook ok 
+0304 0021  226300044 226300045 
+0314 0022  aborted  
+                                                              
+                                                   
+                                                             
+                                                   
+                           
+
+
+
+LST stop:      0314
+
+At the bottom, add notes regarding:
+-- TOGS run at start
+-- FAA radar on
+-- Minor FAA harmonic at 1381 MHz. Az=540. 
+     
+
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 13.8  K3: 15.7   K4: 15.2   AT 18:02
+70K = K1: 84.2  K2: 84.1  K3: 92.5  K4: 100.5
+
+16K = K1: 13.8   K2: 13.3  K3: 14.8   K4: 14.5   AT 22:01
+70K = K1: 84.4  K2: 83.4  K3: 91.7  K4: 100.1
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT n/a
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  N/A   AT n/a
+				=>certify our blanker is locking on
+
+TIE DOWN STATUS AT 16:20
+
+TD12: 12.360
+TD4: 13.757
+TD8: 14.049
+
+Total Kips: 112.62
+
+Tie Down: Disabled 

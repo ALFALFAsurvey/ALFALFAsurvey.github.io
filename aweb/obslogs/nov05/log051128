@@ -1,0 +1,30 @@
+Log for 11/28/05
+Observer: SS
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20051128.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.11.28
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+2145 0003 533263673 533264274 drift100p2  FixedAz 214530+242000 19 600  50
+2155 0004 533264278 533264879
+2206 0005 533264883 533265485
+2216 0006 533265488 533266090
+2226 0007 533266093 533266694
+2236 0008 533266698 533267299
+2246 0009 533267303 533267904
+2256 0010 533267908 533268509
+2307 0011 533268513 533269115
+2317 0012 533269118 533269719
+2327 0013 533269723 533270324
+2337 0014 533270328 533270929
+2347 0015 533270933 533271534
+
+END LST: 23:57:07
+Notes:
+TOGS run at the beginning and end of the night.

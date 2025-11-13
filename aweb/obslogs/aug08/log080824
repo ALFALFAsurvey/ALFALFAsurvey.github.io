@@ -1,0 +1,50 @@
+Log for 080824      Observer: Rebecca Koopmann
+
+System Configuration: a2010_az360.conf
+
+File:        /share/pserverf.sda3/wappdata/wapp.20080824.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2202 0001  823700029 823700030 drift20p1 fixAZdr  220230+044442  19   600   99 loopend - power levels okay
+GPS and cont src
+2213 0002  823700031 823700032 
+2223 0003  823700033 832700034
+2233 0004  823700035 832700036
+2243 0005  823700037 832700038
+2254 0006  823700039 832700040    power levels OK
+2304 0007  823700041 832700042
+2314 0008  823700043 832700044 
+2324 0009  823700045 832700046    GPS + cont srcs
+2334 0010  823700047 832700048
+2344 0011  823700049 832700050    weird rfi appears again at ~1347MHz in beams 3 and 2
+2354 0012  823700051 832700052    power levels OK
+0004 0013  823700053 832700054 
+0014 0014  823700055 832700056 
+0025 0015  823700057 832700058
+0035 0016  823700059 832700060       internet freezes with 2m58 to go on this drift
+0045 0017  823700061 832700062        (was able to see in waterfalls when internet back up: cont src)
+0055 0018  823700063 832700064       	internet back at beginning of this drift     cont src
+0105 0019  823700065 832700066   power levels OK   internet freezes 3m57s before end of drift
+0115 0020  823700067 832700068       internet back ~1 min before end of this drift. Checked in waterfalls.
+0125 0021  823700069 832700070 
+0135 0022  823700071 832700072   cont src
+0145 0023  823700073  -- aborted
+
+END LST: 0145 
+
+Notes: 
+** TOGS run at beginning and end.
+** Late start due to long unwrap. No rotation problems. Operator reports that Phil found and fixed a
+software problem.
+** Restarted WAPPS several times before starting a2010. Note that you must exit utilities window after
+each WAPPS restart or WAPPS will complain! Restarts did not solve chip count error reports:
+**Almost continuous orange WAPP chip count mismatch errors throughout nite (numbers off by a little more
+than 2000): WAPP=3-chip_count: WARNING counts don't match between chip 0 and chip 6 (99999966 !=
+100002014)! 
+**bandpass for beam 6B continues to drop for frequencies lower than 1380 MHz. Power levels were within
+range.
+** No FAA radar
+** Internet outage from 2m58 before end of fits0016 to beginning of fits0018, so could not
+monitor. Failed again 3m57 before end of fits0018 and back up ~1min before end of fits0020
+Could see data in waterfall plots when internet came back up. (Isn't VNC great?) But 
+doublecheck these files.

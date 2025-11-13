@@ -1,0 +1,61 @@
+A2853   LBW   14.04.12      Observers: Aileen, Jeff, Bryan Geiger + StLawU ugrads
+
+CIMA version:          The Stable version (Default)  Ver 3.3.12 2014-03-20 17:38
+Configuration file:    a2853_apr14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140412.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.12apr14.a2853.*
+         and     /share/olcor/corfile.13apr14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST   	ZA    File#  ONScan    		Status
+A092457.4+113231  092457.4 +113229  j  3700 H v   # A190273	    0835   13.89	1	410200429	detection 1403 MHz, 3600 km/s  SNR ~5
+A092516.1+105314  092516.1 +105314  j  3600 H v   # A190279     0848   11.87    2   410200433   weak detection? 1403.5 MHz, 3500 km/s, SNR ~1.5
+A093323.4+092918  093323.4 +092918  j  3500 H v   # A192349     0900   12.16    3   410200437   detection 1403.5 MHz, 3500 km/s, SNR ~3
+A093326.4+100041  093326.4 +100041  j  3300 H v   # A191996     0912   09.80    4   410200441   no detection
+A093450.0+100401  093450.0 +100401  j  3400 H v   # A192002     0925   08.71    5   410200445   no detection
+A094005.6+120016  094005.6 +120016  j  6600 H v   # A192147     0937   06.41    6   410200449   detection 1390 MHz, 6600 km/s, SNR ~4
+A094038.0+103506  094038.0 +103506  j  6100 H v   # A191863     0950   08.04    7   410200453   spiral 1392.3 MHz, 6050 km/s, SNR ~4
+A094217.5+111833  094217.5 +111833  j  6300 H v   # A192154     1002   08.42    8   410200457   no detection
+A094150.9+121101  094150.9 +121101  j  6500 H v   # A190732     1014   09.83    9   410200461   GPS burst 1381 MHz,detection 1389 MHz,6900 km/s, SNR ~7
+A114404.7+090953  114404.7 +090953  j  6000 H v   # A213164     1034   19.56   10   410200465   ahead of time, ZA warnings, detection 1392.3 MHz, 6050 km/s
+A114404.7+090953  114404.7 +090953  j  6000 H v   # A213164     1046   16.97   11   410200469   repeat previous, detection 1392.3 MHz, 6050 km/s, SNR ~5
+A114407.0+132027  114407.0 +132027  j  3200 H v   # A213527     1059   12.05   12   410200473   detection 1406 MHz, 3075 km/s, SNR ~5
+A114457.7+090348  114457.7 +090348  j  5900 H v   # A213115     1112   12.39   13   410200477   weak detection 1393 MHz, 5940 km/s, SNR ~2.5
+A114521.2+094808  114521.2 +094808  j  6300 H v   # A213118     1124   10.05   14   410200481   no detection
+A114541.2+090355  114541.2 +090355  j  6300 H v   # A213121     1137   09.62   15   410200485   detection 1391 MHz, 6350 km/s, SNR ~4
+A122202.3+103716  122202.3 +103716  j  7700 H v   # A220444     1150   11.05   16   410200489   RFI 1381 MHz, detection 1385 MHz, 7650 km/s, SNR ~3
+A122226.0+102112  122226.0 +102112  j  7600 H v   # A224503     1202   08.91   17   410200493   weak detection? 1390.5 MHz, 6500 km/s, SNR ~2ish
+A122226.0+102112  122226.0 +102112  j  7600 H v   # A224503     1215   08.28   18   410200497   repeat previous, RFI 1381 MHz, 1390.5 MHz, 6500 km/s SNR ~2.5
+A122257.8+102839  122257.8 +102839  j  7700 H v   # A222720     1227   07.96   19   410200501   spiral 1387.7 MHz, 7050 km/s, SNR ~5
+A122344.6+092017  122344.6 +092017  j  7100 H v   # A220497     1240   09.76   20   410200505   weak detection 1387.2 MHz, 7150 km/s, SNR ~2
+A122402.6+105054  122402.6 +105054  j  8400 H v   # A222732     1252   10.05    1   410200509   detection 1385.5 MHz, SNR ~2
+A122414.7+091600  122414.7 +091600  j  6800 H v   # A220511     1305   14.08    2   410300004   no detection
+A132722.6+122117  132722.6 +122117  j  6500 H v   # A230344     1326   06.33    3   410300008   spiral 3190 MHz, 6500 km/s (6300-6700!), SNR ~3
+A132848.6+110157  132848.6 +110157  j  6200 H v   # A232222     1332   07.37    4   410300012   detection 1392 MHz, 6150 km/s, SNR ~4
+A132848.6+110157  132848.6 +110157  j  6200 H v   # A232222     1344   08.20    5   410300016   RFI 1381 MHz, detection 1391.8 MHz, 6150 km/s, SNR ~3
+A132902.4+105456  132902.4 +105456  j  7100 H v   # A232290     1357   09.95    6   410300020   RFI 1382 MHz, spiral 1387.6 MHz, 7100 km/s, SNR ~4
+A144037.9+032237  144037.9 +032237  j  8000 H v   # A241622     1412   16.67    7   410300024   no detection
+A144059.3+030812  144059.3 +030812  j  8000 H v   # A009463     1424   15.86    8   410300028   no detection
+A150100.9+010050  150100.9 +010050  j  1800 H v   # A253623     1437   18.41    9   410300032   RFI 1408 MHz, detection 1412.2 MHz, 1750 km/s,SNR ~6
+A150001.3-010528  150001.3 -010528  j  1900 H v   # A540166     1456   19.51   10   413300036   paused 7 minutes to start at correct LST, detections 1408 & 1411.5 (RFI?) MHz, 2650 & 1900 km/s, SNR ~8 & 20
+A150805.8+013905  150805.8 +013905  j  1800 H v   # A250103     1509   16.72   11   413300040   detection 1410.5 MHz, 2120 km/s, SNR ~4
+A150809.3+013632  150809.3 +013632  j  2200 H v   # A250105     1521   17.04   12   413300044   detections 1408 & 1410.5 (RFI?) MHz, 2650 & 2100 km/s, SNR ~4 & ~10
+A151509.4+024506  151509.4 +024506  j  1800 H v   # A253506     1534   16.22   13   413300048   unsure SNR ~2 spikes at 1412.2 & 1413.5 MHz, not unsimilar to noise ... its late, mind is foggy
+A151913.3+023241  151913.3 +023241  j  1900 H v   # A733977     1546   17.07   14   413300052   detection 1411.6 MHz, 1900 km/s, SNR ~6
+A161735.9+135148  161735.9 +135148  j  9000 H v   # A738601     1602   05.94   15   413300056   weak detection at 1379.5 MHz, 8900 km/s, SNR ~3
+A161941.4+131458  161941.4 +131458  j  9000 H v   # A260426     1614   05.27   16   413300060   spiral 1377.5 MHz, 9400 km/s, SNR ~6
+A162516.5+140017  162516.5 +140017  j  9000 H v   # A715436      								ran out of time for last two sources.
+A162559.0+135845  162559.0 +135845  j  9000 H v   # A715449 if time
+
+
+Notes  (please note anything of importance; here is an example)
+     Tiedowns disabled. RFI showed up at 1381 MHz, didn't wipe out sources.
+

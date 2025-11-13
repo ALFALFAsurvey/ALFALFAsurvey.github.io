@@ -1,0 +1,100 @@
+Spring A2010 status                      last update 07Apr04 martha
+Complete ALFALFA coverage will cover drifts from 1 to 148 in 2 passes.
+Map coverage intended to be complete between 07h30m and 16h30m in R.A.
+Drifts NEEDED TO FILL IN GAPS FROM SPRING 2005,6,7
+ 
+           PASS #1                                                        PASS #2
+        Drift    DecJ   start stop                        ||           Drift    DecJ   start stop
+
+         16p1  +034618  1313  1315 (stitch gap)           ||            16p2  +035336  1258 1320   (stitch gap)
+         17p1  +040054  **complete                        ||            17p2  +040812  **complete
+         18p1  +041530  **complete                        ||            18p2  +042248  **complete
+         19p1  +043006  **complete                        ||            19p2  +043724  **complete
+         20p1  +044442  **complete                        ||            20p2  +045200  **complete
+         21p1  +045918  **complete                        ||            21p2  +050636  1550 1630       
+         22p1  +051354  **complete                        ||            22p2  +052112  1557 1630       
+         23p1  +052830  **complete                        ||            23p2  +053548  1555 1630
+         24p1  +054306  **complete                        ||            24p2  +055024  **complete
+         25p1  +055742  **complete                        ||            25p2  +060500  **complete
+         26p1  +061218  **complete                        ||            26p2  +061936  **complete
+         27p1  +062654  **complete                        ||            27p2  +063412  **complete
+         28p1  +064130  **complete                        ||            28p2  +064848  **complete
+         29p1  +065606  **complete                        ||            29p2  +070324  **complete
+         30p1  +071042  **complete                        ||            30p2  +071800  **complete
+         31p1  +072518  **complete                        ||            31p2  +073236  **complete
+         32p1  +073954  **complete                        ||            32p2  +074712  **complete
+         33p1  +075430  **complete                        ||            33p2  +080148  1251  1316  stitch in redo/lousy
+         34p1  +080905  1159  1208                        ||            34p2  +081624  **complete
+         35p1  +082342  1158  1211                        ||            35p2  +083100  1120  1158
+         36p1  +083818  **complete                        ||            36p2  +084536  **complete
+         37p1  +085254  **complete                        ||            37p2  +090012  **complete          
+         38p1  +090730  1033  1045  (wapp gap)            ||            38p2  +091448  **complete
+         39p1  +092206  1549  1605                        ||            39p2  +092924  **complete   
+         40p1  +093642  **complete                        ||            40p2  +094400  **complete
+ 33p2    41p1  +095118  **complete                        ||            41p2  +095836  **complete
+         42p1  +100554  0730  0842    1231  1337          ||            42p2  +101312  **complete
+         43p1  +102030  **complete                        ||            43p2  +102748  0730  0825  
+         44p1  +103506  **complete                        ||            44p2  +104224  **complete
+         45p1  +104942  **complete                        ||            45p2  +105700  1147  1159  
+         46p1  +110418  **complete                        ||            46p2  +111136  **complete
+         47p1  +111854  **complete                        ||            47p2  +112612  0730  0738
+         48p1  +113330  0730  0808                        ||            48p2  +114048  **complete
+         49p1  +114806  **complete                        ||            49p2  +115524  **complete
+         50p1  +120242  **complete                        ||            50p2  +121000  **complete
+         51p1  +121718  0730  0826                        ||            51p2  +122436  **complete
+         52p1  +123154  0730  0829                        ||            52p2  +123912  **complete
+         53p1  +124630  **complete                        ||            53p2  +125348  **complete
+         54p1  +130106  0730  0711                        ||            54p2  +130824  **complete
+         55p1  +131542  0730  0842                        ||            55p2  +132300  **complete
+         56p1  +133018  0730  0755    1509  1630          ||            56p2  +133736  0730  1035  (check jan05)
+         57p1  +134454  **complete                        ||            57p2  +135212  **complete 
+         58p1  +135930  **complete                        ||            58p2  +140648  **complete  
+         59p1  +141406  **complete                        ||            59p2  +142124  0730  0941   
+         60p1  +142842  1538-1630                         ||            60p2  +143600  **complete
+         61p1  +144318  0811-0819; 0950-1002; 1200-1300   ||            61p2  +145036  **complete
+         62p1  +145754  **complete                        ||            62p2  +150512  1517  1630
+         63p1  +151230  **complete                        ||            63p2  +151948  **complete
+         64p1  +152706  **complete                        ||            64p2  +153424  1153  1200
+         65p1  +154142  **complete                        ||            65p2  +154900  **complete  
+         66p1  +155618  **complete                        ||            66p2  +160336  **complete
+         67p1  +161054  **complete                        ||          
+
+
+         98p1  +234330                                    ||            98p2  +235048
+         99p1  +235806  1309-1324 WAPP gap                ||            99p2  +240524
+        100p1  +241242  **complete                        ||           100p2  +242000
+        101p1  +242718  **complete                        ||           101p2  +243436
+        102p1  +244154  0730-0759                         ||           102p2  +244912
+        103p1  +245630  0730-0756                         ||           103p2  +250348
+        104p1  +251106  1158-1208 WAPP gap                ||           104p2  +251824
+        105p1  +252542  **complete                        ||           105p2  +253300
+        106p1  +254018  0730-0736                         ||           106p2  +254736
+        107p1  +255454  0730-0735                         ||           107p2  +260212
+        108p1  +260930  **complete                        ||           108p2  +261648
+        109p1  +262406  1254-1313 (stitch)                ||           109p2  +263124  **complete
+        110p1  +263842  **complete                        ||           110p2  +264600  **complete
+        111p1  +265318  0730-0740 (stitch)                ||           111p2  +270036  **complete
+        112p1  +270754  **complete                        ||           112p2  +271512  **complete
+        113p1  +272230  **complete                        ||           113p2  +272948  **complete
+        114p1  +273706  **complete                        ||           114p2  +274424  1141-1157 WAPP gap
+        115p1  +275142  **complete                        ||           115p2  +275900  1519-1530 WAPP gap
+        116p1  +280618  **complete                        ||           116p2  +281336  **complete
+        117p1  +282054  **complete                        ||           117p2  +282812
+        118p1  +283530  0730-0741 (stitch)                ||           118p2  +284248
+        119p1  +285006  0730-0740 stitch; 0931-0938 WAPP  ||           119p2  +285724
+        120p1  +290442  **complete                        ||           120p2  +291200
+        121p1  +291918  **complete                        ||           121p2  +292636
+        122p1  +293354  **complete                        ||           122p2  +294112
+        123p1  +294830  **complete                        ||           123p2  +295548 
+        124p1  +300306  **complete                        ||           124p2  +301024
+        125p1  +301742  **complete                        ||           125p2  +302500
+        126p1  +303218  **complete                        ||           126p2  +303936
+        127p1  +304654  **complete                        ||           127p2  +305412
+        128p1  +310130  **complete                        ||           128p2  +310848
+        129p1  +311606  **complete                        ||           129p2  +312324
+        130p1  +313042  1125-1158  op err                 ||           130p2  +313800
+        131p1  +314518  **complete                        ||           131p2  +315236
+        132p1  +315954  **complete                        ||           132p2  +320712 
+        133p1  +321430                                    ||           133p2  +322148
+
+

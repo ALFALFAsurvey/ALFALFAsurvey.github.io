@@ -1,0 +1,83 @@
+A2669 LBW   12.03.23        Observers:Rebecca Koopmann, Rachel Almodovar, Halley Darling, Lucas Viani, Parker Troischt, Jaclyn Patterson, Kyle Murray, Ron Olowin
+
+CIMA version:          A `smart' version of CIMA (3.1.08 2010-02-01 17:44 "Smart")
+Configuration file:    a2669_highvelres.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait       
+Command file:        a2669_120323.cmd  
+Mode:                Doppler tracking                            
+                     High velocity sources cz > 2000 km/s
+
+Data written to: /share/olcor/corfile.23mar2012.a2669.*    (watch for switch at midnight)
+
+SRCNAME             RAJ     DECJ       vhel          AGNnr    Block      LST     ZA     File#  ONScan        Status
+H073112.3+240742  073113.7 +240730  j  7700 H v   # A749372   12.03.23   0745    6.5    32     208300125     Detection at f=1385 MHz
+H074441.1+250833  074443.7 +250826  j   800 H v   # A171459   12.03.23   0753    7.0    33     208300129     Detection at f=1417 MHz
+H074426.8+273319  074431.9 +273311  j  2600 H v   # A174749   12.03.23   0802   10.0    34     208300133     Target Not Detected; Signal at f=1396 MHz
+H075148.7+272417  075149.9 +272421  j  8000 H v   # A174744   12.03.23   0810    9.9    35     208300137     Not Detected; Bad Baseline and GPS
+H081850.4+262330  081852.5 +262353  j  3700 H v   # A189045   12.03.23   0820    8.0    36     208300141     Not Detected; Bad Baseline
+H082047.4+253730  082046.1 +253812  j  8300 H v   # A749516   12.03.23   0828    7.4    37     208300145     Detection at f=1382 MHz; Weak
+H083442.0+272034  083446.1 +271947  j  3600 H v   # A189048   12.03.23   0836    8.9    38     208300149     Detection at f=1403 MHz
+H083646.2+272000  083647.2 +271957  j  6100 H v   # A180649   12.03.23   0844    9.1    39     208300153     Detection at f=1392 MHz; Strong spiral
+H090746.8+235434  090748.4 +235514  j  2700 H v   # A749519   12.03.23   0853    6.4    40     208300157     Detection at f=1407 MHz
+H091309.4+244115  091310.4 +244104  j  6300 H v   # A198509   12.03.23   0902    6.9    41     208300161     Not Detected
+H091509.8+294527  091511.5 +294534  j  6200 H v   # A198579   12.03.23   0912   11.4    42     208300165     Possible Detection at f=1391 MHz
+H093205.5+281837  093206.9 +281847  j  8200 H v   # A198580   12.03.23   0920   10.3    43     208300169     Not Detected
+H094131.3+255640  094129.9 +255620  j  3000 H v   # A198490   12.03.23   0929    8.1    44     208300173     Not Detected
+H094703.4+251114  094704.4 +251049  j 14300 H v   # A749529   12.03.23   0937    7.2    45     208300177     Detection at f=1355 MHz
+H095243.8+274826  095244.9 +274907  j  6000 H v   # A198492   12.03.23   0946    9.6    46     208300181     Detection at f=1393 MHz 
+H095536.1+244708  095537.6 +244718  j  6500 H v   # A198513   12.03.23   0955    6.4    47     208300185     Not Detected    
+H102215.6+274032  102215.0 +274022  j 15200 H v   # A208478   12.03.23   1004   10.2    48     208300189     Possible Detection at f=1351 MHz; radar
+H103038.6+255257  103040.4 +255337  j  6200 H v   # A208480   12.03.23   1013    8.6    49     208300193     Detection at f=1392 MHz
+H103356.9+273727  103357.8 +273702  j 12100 H v   # A208481   12.03.23   1021    9.7    50     208300197     Detection at f=1365 MHz   
+H104259.4+244019                    j       H v   #           12.03.23   1030    7.0    51     208300197     Possible Detection at f=1348 MHz; radar (source was in command file but not in the log) 
+H105548.8+280915  105550.0 +280925  j  3600 H v   # A208581   12.03.23   1040   10.5    52     208300205     Not Detected 
+H110251.5+260021  110253.6 +260024  j 16100 H v   # A219312   12.03.23   1048    8.4    53     208300209     Not Detected; radar
+H110407.5+280624  110409.5 +280538  j  2900 H v   # A219313   12.03.23   1056    9.9    54     208300213     Not Detected at center frequency but signal detected at f=1414 MHz  
+H110450.1+260026  110458.2 +255946  j 16800 H v   # A219315   12.03.23   1105    7.6    55     208300217     Not Detected at center frequency but signal detected at f=1335 MHz
+H112716.1+273258  112721.1 +273314  j  8200 H v   # A749205   12.03.23   1114    9.7    56     208300221     Not Detected
+H112832.7+265605  112831.1 +265502  j  9900 H v   # A219331   12.03.23   1122    8.6    57     208300225     Not Detected
+H113043.4+242930  113045.6 +242953  j  6400 H v   # A749542   12.03.23   1131    6.1    58     208300229     Detection at f=1391 MHz 
+H113413.8+265521  113416.1 +265539  j 15100 H v   # A219359   12.03.23   1140    8.6     1     208300233     Detection at f=1353 MHz; Secondary Detection at f=1359 MHz
+H114139.9+261026  114138.8 +261002  j  8800 H v   # A219360   12.03.23   1148    7.9     2     208400004     Detection at f=1380 MHz
+H114231.3+272818  114232.0 +272924  j  3000 H v   # A219342   12.03.23   1156    9.7     3     208400008     Not Detected
+H115415.7+255922  115414.7 +255924  j  3000 H v   # A749222   12.03.23   1205    7.9     4     208400012     Detection at f=1407 MHz
+H121201.6+265034  121202.6 +265155  j  3000 H v   # A229006   12.03.23   1214    8.5     5     208400016     Not Detected
+H122047.0+253809  122048.7 +253819  j  7100 H v   # A229101   12.03.23   1222    7.2     6     208400020     Detection at f=1387 MHz
+H123800.2+260609  123804.1 +260531  j  4400 H v   # A229020   12.03.23   1231    7.9     7     208400024     Not Detected
+H124014.8+261941  124016.2 +261948  j  9100 H v   # A732219   12.03.23   1239    7.9     8     208400028     Not Detected
+H124457.2+244719  124501.2 +244726  j  4900 H v   # A749551   12.03.23   1247    6.4     9     208400032     Detection at f=1398 MHz
+H125153.5+260642  125155.0 +260649  j  7800 H v   # A229065   12.03.23   1255    7.8    10     208400036     Detection at f=1384 MHz   (missed starting ZA)
+H125651.1+273658  125648.9 +273651  j  9000 H v   # A229030   12.03.23   1304    9.3    11     208400040     Not Detected
+H130102.8+274830  130100.0 +274826  j  6000 H v   # A238876   12.03.23   1312    9.7    12     208400044     Not Detected
+H132921.3+285642  132922.9 +285651  j  2600 H v   # A239057   12.03.23   1321   10.7    13     208400048     Not Detected
+H133258.9+274258  133302.4 +274233  j  8900 H v   # A238863   12.03.23   1329    9.3    14     208400052     Detection at f=1379 MHz
+H135042.2+245627  135043.7 +245637  j  9200 H v   # A238908   12.03.23   1338    7.2    15     208400056     Detection at f=1378 MHz 
+H142212.5+250456  142212.0 +250508  j  2300 H v   # A749561   12.03.23   1347   10.5    16     208400060     Not Detected
+H142651.6+243003  142657.3 +243138  j  3300 H v   # A749563   12.03.23   1356    9.6    17     208400064     Not Detected
+H144740.5+254530  144742.1 +254539  j  6900 H v   # A249394   12.03.23   1405   12.5    18     208400068     Not Detected
+H145228.6+280747  145230.0 +280756  j 14500 H v   # A249375   12.03.23   1413   13.3    19     208400072     Detection at f=1355 MHz; Secondary Detection at f=1365 MHz
+H150342.9+252930  150344.2 +253041  j  9200 H v   # A749569   12.03.23   1422   12.1    20     208400076     Detection at f=1378 MHz
+H150433.8+240308  150434.5 +240342  j 12500 H v   # A733450   12.03.23   1430    9.9    21     208400080     Possible Detection at f=1364 MHz; Secondary Detection at f=1375 MHz
+H153037.2+272859  153036.9 +272855  j 11400 H v   # A733731   12.03.23   1440   14.8    22     208400084     Detection at f=1363 MHz
+H153923.2+245821  153924.7 +245831  j  6900 H v   # A258553   12.03.23   1449   13.6    23     208400088     Detection at f=1389 MHz
+H154645.8+280930  154643.4 +280943  j  2100 H v   # A749350   12.03.23   1457   15.0    24     208400092     Detection at f=1411 MHz
+H155117.3+253917  155119.0 +253927  j  6400 H v   # A258554   12.03.23   1506   12.9    25     208400096     Detection at f=1391 MHz
+H155335.7+242206  155337.3 +242143  j 11500 H v   # A749576   12.03.23   1514   11.1    26     208400100     Detection at f=1364 MHz
+H161042.8+263302  161041.8 +263258  j 16300 H v   # A268246   12.03.23   1523   13.7    27     208400104     Detection at f=1345, f=1339, f=1358 MHz
+H161554.8+272600  161558.0 +272607  j 10000 H v   # A268248   12.03.23   1531   13.8    28     208400108     Not Detected
+H163218.4+241617  163220.4 +241655  j 13100 H v   # A749582   12.03.23   1540   13.6    29     208400112     Not Detected
+H163350.0+261134  163351.4 +261141  j 15200 H v   # A268243   12.03.23   1548   13.2    30     208400116     Detected at f=1352 MHz
+H163802.5+262651  163802.9 +262710  j  4300 H v   # A262736   12.03.23   1556   12.7    31     208400120     Detected at f=1400 MHz
+
+LST Stop: 1604
+
+
+Notes
+
+H104259.4+244019 was in command file, but not in log. 
+Starting LST and ZA of 10 was missed. LST approximate.

@@ -1,0 +1,67 @@
+Log for 11.02.12 (12Feb2011)        Observer: Aileen O'Donoghue, Jeff Miller 
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110212.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restriction lifted!
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0917 0000 104300007 104300008 drift142p1 fixAzdr   091754+342554  19   600 99 loopend 6b dead, power levels OK, FAA on
+0927 0001 104300009 104300010 power levels OK, quicklook OK  
+0938 0002 104300011 104300012 quicklook OK 
+0948 0003 104300013 104300014 cs, 
+0958 0004 104300015 104300016 
+1008 0005 104300017 104300018 quicklook OK, power levels OK  
+1018 0006 104300019 104300020 GPS, quicklook OK
+1028 0007 104300021 104300022 two dim cs 
+1038 0008 104300023 104300024   
+1048 0009 104300025 104300026 bright cs, GPS (AST 1:54-1:55), quicklook OK 
+1058 0010 104300027 104300028 power levels OK
+1109 0011 104300029 104300030 cs
+1119 0012 104300031 104300032  
+1129 0013 104300033 104300034     
+1139 0014 104300035 104300036  
+1149 0015 104300037 104300038 quicklook OK
+1159 0016 104300039 104300040    
+1209 0017 104300041 104300042 power levels OK, GPS (AST 3:16-end)  
+1219 0018 104300043 104300044 GPS continues (to AST 3:19), cs
+1230 0019 104300045 104300046 quicklook OK  
+1240 0020 104300047 104300048 power levels OK 
+1250 0021 104300049 104300050 quicklook OK  
+1300 0022 104300051 104300052 quicklook OK 
+1310 0023 104300053 104300054 power levels OK, cs
+1320 0024 104300055 104300056 cs
+1330 0025 104300057 104300058 
+1340 0026 104300059 104300060 quicklook OK  
+1351 0027 104300061 104300062 cs, quicklook has weird (green) spikes in B7 & B8
+1401 0028 104300063 104300064 cs, quicklook OK
+1411 0029 104300065 104300066  
+1421 0030 104300067 104300068 power levels OK, 2cs
+1431 0031 104300069 104300070  
+1441 0032 104300071 104300072  
+1451 0033 104300073 104300074  
+1501 0034 104300075 104300076 power levels OK, quicklook OK 
+1511 0035 104300077 104300078  
+1522 0036 104300079 104300080 strong GPS (AST 6:28-end) - power levels on 4,5,6 jumped to orange briefly, quicklook OK 
+1532 0037 104300081 104300082 strong GPS continued (to AST 3:31), power levels OK
+1542 0038 104300083 104300084 cs 
+1552 0039 104300085 -- abort  
+
+LST stop: 1552
+
+At the bottom, add notes regarding:
+--Beam 6B dead entire night.
+--FAA Radar ON and bright
+--TOGS at end only
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 31.9   K2: 195.3  K3: 36.3   K4: 35.5   AT 18:01
+70K = K1: 128.4  K2: 136.4  K3: 145.5  K4: 152.8
+
+16K = K1: 33.4   K2: 210.0  K3: 38.0   K4: 37.3   AT 23:01
+70K = K1: 129.4  K2: 137.4  K3: 146.8  K4: 154.1
+
+			=>temperatures of the 8 sensors within ALFA housing

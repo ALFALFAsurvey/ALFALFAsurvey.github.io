@@ -1,0 +1,72 @@
+A2669 LBW   12.03.26        Observers: Parker Troischt, Ron Olowin, Jaclyn Patterson, Kyle Murray
+
+CIMA version:          A `smart' version of CIMA (3.1.08 2010-02-01 17:44 "Smart")
+Configuration file:    a2669_highvelres.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2669_120326.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+
+Data written to: /share/olcor/corfile.26mar2012.a2669.*    (watch for switch at midnight)
+                 /share/olcor/corfile.27mar2012.a2669.*
+
+SRCNAME             RAJ     DECJ       vhel          AGNnr     Block      LST    ZA    File#  ONScan        Status
+H090457.1+100446  090457.9 +100451  j  2100 H v   # A198362    12.03.26   0837  10.7    32    208600146     Not Detected
+H091324.5+072835  091323.8 +072938  j  3800 H v   # A198459    12.03.26   0846  12.8    33    208600150     Not Detected
+H091401.1+070147  091400.7 +070147  j 16300 H v   # A198461    12.03.26   0854  12.4    34    208600154     Detection at f=1347 MHz
+H092626.6+122930  092627.5 +122911  j 11600 H v   # A193947    12.03.26   0904   8.1    35    208600158     Detection at f=1365 MHz
+H093429.8+122304  093430.1 +122256  j  2600 H v   # A193953    12.03.26   0912   8.2    36    208600162     Detection at f=1408 MHz
+H100802.4+062103  100802.4 +062103  j -1200 H v   # JKD        12.03.26   0923  16.3    37    208600166     5min ON-OFF; Not Detected
+PMNJ1009+0600     100955.6 +060120  j -1200 H v   # Cont       12.03.26   0935  15.1    38    208600170     5min ON-OFF cont source; Not Detected
+H100802.4+062103  100802.4 +062103  j -1200 H v   # JKD        12.03.26   0948  13.1    39    208600174     5min ON-OFF repeat
+PMNJ1009+0600     100955.6 +060120  j -1200 H v   # Cont       12.03.26   1000  12.6    40    208600178     5min ON-OFF cont source
+H101223.9+112643  101224.1 +112634  j  3600 H v   # A207038    12.03.26   1014   6.9    41    208600182     Not Detected     
+H102039.6+080914  102039.6 +080906  j  5300 H v   # A208312    12.03.26   1023  10.2    42    208600186     Not Detected
+H102359.0+165427  102358.2 +165257  j   650 H v   #            12.03.26   1034   2.7    43    208600190     Not Detected
+H111126.2+052051  111126.0 +052044  j 13100 H v   # A219215    12.03.26   1046  14.5	44    208600194     Detection at f=1353 MHz and 1361 MHz
+O112147.5+115250  112151.5 +115324  j 12100 H v   # A219254OC  12.03.26   1056   9.1    45    208600198     Detection at f=1365, 1369 MHz
+S112147.5+115250  112147.7 +115242  j 12100 H v   # A219254cen 12.03.26   1104   7.9    46    208600202     Detection at f=1365, 1369 MHz
+C112147.5+115250  112149.6 +115408  j 12100 H v   # A219254com 12.03.26   1112   6.9    47    208600206     Detection at f=1365, 1369 MHz
+H121424.1+140330  121424.4 +140323  j 12900 H v   # A226043    12.03.26   1123  13.3    48    208600210     Not Detected
+H122829.2+112458  122829.4 +112450  j 16300 H v   # A224046    12.03.26   1132  15.5    49    208600214     Detection at f=1339, 1345, 1347, 1358 MHz
+H123437.2+140642  123437.5 +140635  j  7000 H v   # A226117    12.03.26   1140  13.9    50    208600218     Not Detected; Bad Baseline
+H121424.1+140330  121424.4 +140323  j 12900 H v   # A226043    12.03.26   1150   7.4     1    208600222     Not Detected
+H122829.2+112458  122829.4 +112450  j 16300 H v   # A224046    12.03.26   1159  10.0     2    208700004     Detection at f=1347 MHz         
+H123437.2+140642  123437.5 +140635  j  7000 H v   # A226117    12.03.26   1208   7.8     3    208700008     Not Detected         
+H125713.4+035546  125713.0 +035541  j   900 H v   #            12.03.26   1220  17.2     4    208700012     Not Detected
+H122829.2+112458  122829.4 +112450  j 16300 H v   # A224046    12.03.26   1233   7.0     5    208700016     Detection at f=1345 MHz (real source) and 1339 MHz (RFI?)
+H125713.4+035546  125713.0 +035541  j   900 H v   #            12.03.26   1245  14.8     6    208700020     Not Detected 
+H124853.9+155930  124852.5 +155950  j   400 H v   # rg+l3      12.03.26   1257   3.0     7    208700024     5min ON-OFF; Not Detected
+H130227.0+135524  130227.3 +135517  j 13000 H v   # JKD        12.03.26   1310   4.8     8    208700028     5min ON-OFF; Not Detected
+H134330.3+111234  134330.5 +111225  j  1150 H v   # JKD        12.03.26   1325   8.5     9    208700032     5min ON-OFF; Not Detected
+H135509.0+100224  135510.4 +100136  j  4500 H v   # A238656    12.03.26   1337   9.5    10    208700036     Not Detected
+H140927.7+151857  140929.9 +151736  j 12100 H v   # A249022    12.03.26   1347   6.0    11    208700040     Detection at f=1361, 1366, 1369, and 1373 MHz
+H141017.2+071213  141015.5 +071213  j  9200 H v   # A249165    12.03.26   1359  11.7    12    208700044     (Estimation of LST and ZA due to closed file) Not Detection
+H140927.7+151857  140929.9 +151736  j 12100 H v   # A249022    12.03.26   1409   3.1    13    208000048     Detection at f=1366 and 1369 MHz
+H145743.2+141708  145743.6 +141657  j   300 H v   #            12.03.26   1421   9.9    14    208000052     Not Detected
+H150633.9+065556  150635.4 +065519  j 13700 H v   # A258438    12.03.26   1431  14.5    15    208000056     Detection at f=1357
+H152933.3+150734  152933.9 +150721  j  5400 H v   # JKD        12.03.26   1440  12.3    16    208000060     5min ON-OFF; Not Detected
+H153050.1+123632  153050.4 +123624  j   700 H v   # JKD        12.03.26   1453  10.9    17    208000064     5min ON-OFF; Not Detected
+H153726.7+124840  153727.0 +124831  j  -900 H v   #            12.03.26   1505   9.7    18    208000068     Not Detected
+H153614.7+153955  153615.4 +153941  j  -300 H v   #            12.03.26   1514   6.1    19    208000072     Not Detected
+H155522.8+062854  155521.6 +062809  j 11800 H v   # A258453    12.03.26   1525  14.1    20    208000076     Possible Detection at f=1366 MHz
+H161220.6+063225  161220.5 +063237  j  1700 H v   # A268216    12.03.26   1534  15.2    21    208000080     Detection at f=1408, 1412 MHz   
+H161220.6+063225  161220.5 +063237  j  1700 H v   # A268216    12.03.26   1543  13.6    22    208000084     Detection at f=1412 MHz
+H161220.6+063225  161220.5 +063237  j  1700 H v   # A268216    12.03.26   1552  12.7    23    208000088     Detection at f=1412 MHz
+
+Stop LST: 1600
+
+
+Please record any notes of importance here. (Remember: you were there; we weren't.)
+Throughout the night we were continuously ahead in LST. We therefore completed a series of repeated runs:
+
+We were ahead 50 min LST, so we reran H121424.1+140330,H122829.2+11245, and H123437.2+140642.
+Zenith angle was getting too high. Reran H122829.2+112458 and H125713.4+035546
+For H140927.7+151857, ran twice and potential RFI was diminished in the second run
+Ran H161220.6+063225  161220.5 +063237  j  1700 H v   # A26821 three times because we had extra time
+

@@ -1,0 +1,76 @@
+Log for 091105     Observer: Manolis Papastergis
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20091105.a2010.****.fits 
+Files:       /share/pserverf.sda3/wappdata/wapp.20091106.a2010.****.fits 
+
+     ****
+LST  fits  Scan       calscan        Source      Pattern   Start coords.  ang  time  loop  calmode 
+2140 0007  930900180  930900181      drift0p2    fixAZdr   214000+000001   19   600   99   loopend          everything ok!
+2150 0008  930900182  930900183      cima message:received duplicate AGC datablock   quicklooked 0007;ok
+2200 0009  930900184  930900185
+2211 0010  930900186  930900187
+2221 0011  930900188  930900189      cima message:received duplicate AGC datablock; beam 6 may have blacked out for 1 sec 
+2231 0012  930900190  930900191      20:00:00 cima warning: received duplicate PNT
+2241 0013  930900192  930900193
+2251 0014  930900194  930900195
+2301 0015  930900196  930900197
+2311 0016  930900198  930900199
+2321 0017  930900200  930900201
+2331 0018  930900202  930900203      everything ok; rfi at 1375 MHz persists
+2342 0019  930900204  930900205
+2352 0020  930900206  930900207
+0002 0021  930900208  930900209
+0012 0022  930900210  930900211
+0022 0023  930900212  930900213
+0032 0024  930900214  930900215
+0042 0025  930900216  930900217      everything ok
+0052 0026  930900218  930900219
+0103 0027  930900220  930900221
+0113 0028  930900222  930900223
+0123 0029  930900224  930900225
+0133 0030  930900226  930900227
+0143 0031  930900228  930900229      horizontal streaks in beam 6b(only). The baseline level jumps around.
+0153 0032  930900230  930900231      lst 1h55: streak pattern in 6b ends.
+0203 0033  930900232  930900233
+0213 0034  930900234  930900235 
+0223 0035  930900236  930900237
+0234 0036  930900238  931000001 
+0244 0000  931000002  931000003      incredibly strong cont. source; cima warning, too much power in beam 5 & 0!! 
+0254 0001  931000004  931000005      6b shows some streaks again    quicklooked fits 0000;ok
+0304 0002  931000006  931000007      cima message:received duplicate AGC datablock
+0314 0003  931000008  931000009
+0324 0004  931000010  aborted
+
+
+END LST: 0324
+
+
+
+Notes:
+
+-- New rfi at 1375 MHz, persistent throughout the observation. Filed report at rfi-grp@naic.edu.
+
+-- All beams working. Beam 6b displayed streak pattern in waterfall plot from time to time.
+
+-- FAA radar ON (1380 harmonic also present)
+
+-- a few cima messages: "received duplicate AGC datablock..."
+
+-- TOGS run at START and END
+
+-- Night fine overall.
+
+
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 13.1   K2: 12.8   K3: 14.3   K4: 14.5   AT 17:23
+70K = K1: 72.6   K2: 75.6   K3: 83.9   K4: 91.0
+
+16K = K1: 13.3   K2: 13.0   K3: 14.6   K4: 14.5   AT 22:41
+70K = K1: 73.2   K2: 75.4   K3: 83.4   K4: 91.0
+

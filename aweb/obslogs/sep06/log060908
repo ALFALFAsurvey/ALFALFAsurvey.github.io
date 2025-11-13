@@ -1,0 +1,38 @@
+Log for 06/09/08      Observer: Ann and Tom
+
+System Configuration:
+FixedAZ Drift Map Cima version 2.2.07 (normal)
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20060908.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20060909.a2010.****.fits
+
+LST  fits  Scan      calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+2120 0012 625181318 625181920 drift31p1 FixedAz  2120000+072518  19   600    99  loopend
+2130 0013 625181923 625182525  power levels ok but beam 5B acting up -- low this time, around 0.65-0.73, over a couple minutes toward the end of the
+scan 
+2140 0014 625182528 625183130
+2150 0015 625183133 625183735 beam 5B dipped again about 6 minutes in
+2200 0016 625183738 625184340
+2210 0017 625184343 625184945
+2220 0018 625184948 625185550
+2231 0019 625185553 625186155
+2241 0020 625186158 625200360  quicklook fine
+2251 0000 625200363 625200965  quicklook fine
+2301 0001 625200968 625201570
+2311 0002 625201573 625202175  beam 5B much better behaved
+2321 0003 625202178 625202780
+2331 0004 625202783 625203385
+2341 0005 625203388 625203990
+2351 0006 625203993 625204595
+0002 0007 625204598 625205200 5B in the safe zone, but hovering near the very bottom
+0012 0008 625205203 -- aborted                                                                                                                         
+
+END LST: 0012
+
+Notes:
+Early start
+TOGS run at start only (no time allocated at end)
+The operator made a note in the log of the issues with beam 5B
+

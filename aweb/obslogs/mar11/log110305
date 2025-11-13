@@ -1,0 +1,71 @@
+Log for 11.03.05 (05Mar2011)        Observers:Parker Troischt, Ron Olowin, Catherine Weigel, Michelle Brault, Jaclyn Patterson
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110305.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110306.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+LST  fits    Scan      calscan    Source    Pattern   Start coords. ang  time loop calmode
+0838 0032  106400241  106400242  drift140p1   fixAzdr   083823+335642  19   600  99   loopend 
+0849 0033  106400243  106400244  continuum source in beams 4,3  radar is strong
+0859 0034  106400245  106400246  6b is dead still
+0910 0035  106400247  106400248
+0920 0036  106400249  106400250  power levels ok
+0930 0037  106400251  106400252  
+0940 0038  106400253  106400254  
+0950 0039  106400255  106400256  quicklook ok
+1000 0040  106400257  106400258  
+1010 0041  106400259  106400260  power levels ok
+1020 0042  106400261  106500001  continuum source in beams 4,3. Quicklook ok. 
+1030 0000  106500002  106500003  continuum source in beam 1
+1040 0001  106500004  106500005  
+1051 0002  106500006  106500007  
+1101 0003  106500008  106500009  quicklook ok
+1111 0004  106500010  106500011  
+1121 0005  106500012  106500013  
+1131 0006  106500014  106500015  
+1141 0007  106500016  106500017
+1151 0008  106500018  106500019  quicklook ok
+1201 0009  106500020  106500021  GPS in beams 3,5,0,2,6,1.quicklook ok
+1212 0010  106500022  106500023  continuum source in beams 1,2,6.
+1222 0011  106500024  106500025  
+1232 0012  106500026  106500027
+1242 0013  106500028  106500029  
+1252 0014  106500030  106500031  continuum source in beam 0, faint in 2 and 5. quicklook OK
+1302 0015  106500032  106500033  
+1312 0016  106500034  106500035  display anomaly around 1410 MHz; resolution? vertical banded quicklook OK
+1322 0017  106500036  106500037 
+1333 0018  106500038  106500039
+1343 0019  106500040  106500041  power levels OK cs in beam 0 and 2 faint cs in 3 & 4
+1353 0020  106500042  106500043  
+1403 0021  106500044  106500045  "broken" cs in beam 0 (?)  quicklook OK power levels OK
+1413 0022  106500046  106500047
+1423 0023  106500048  106500049 faint cs in beams 0 & 2
+1433 0024  106500050  106500051 cs in 1 & 6
+1443 0025  106500052  106500053 anomaly at 1407 MHz "broken" cs in beam 0 
+1453 0026  106500054  106500055 
+1504 0027  106500056  106500057 "broken" cs seen in 0,2,3, & 6
+1514 0028  106500058  106500059 
+1524 0029  106500059  106500060
+1534 0030  106500061  --abort
+
+LST stop: 1534
+
+-- FAA radar ON. 1380MHz harmonic present.
+-- Beam 6b dead
+-- TOGS at END only.
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 28.7   K2: 26.7   K3: 32.2   K4: 31.9   AT 16:19
+70K = K1: 126.0  K2: 133.8  K3: 142.9  K4: 149.9
+
+16K = K1: 31.2   K2: 31.4   K3: 35.5   K4: 35.0   AT 23:32
+70K = K1: 125,9  K2: 133.8  K3: 143.1  K4: 150.9
+
+			=>temperatures of the 8 sensors within ALFA housing
+

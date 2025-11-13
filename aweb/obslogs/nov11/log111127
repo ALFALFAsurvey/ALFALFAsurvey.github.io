@@ -1,0 +1,78 @@
+Log for 11.11.27(27Nov2011)        Observers: Tom Balonek, Damian Roesler,
+                              Michael Fusco, Kevin McCullough, Katie Iadanza, 
+                              Ajay Chahar, Lauren Bearden (all from Colgate Univ.)
+
+System Configuration:  a2010_az180_2010.conf
+CIMA version           {Record the FULL name of the CIMA version, e.g., 
+                             3.1.08 2010-02-01 17:44 "Smart"}
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111127.a2010.****.fits
+
+Normal meridian observing setup (AZ = 180)
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+
+
+2106 0000 133100268 133100269 drift141p1 fixAzdr 210600+341118 19 600 99 loopend
+2116 0001 133100270 133100271 FAA radar on, harmonic visible but faint 
+2127 0002 133100272 133100273 quicklook ok
+2137 0003 133100274 133100275
+2147 0004 133100276 133100277
+2157 0005 133100278 133100279 FAA radar higher than usual
+2207 0006 133100280 133100281
+2217 0007 133100282 133100283 quicklook ok
+2227 0008 133100284 133100285
+2237 0009 133100286 133100287
+2248 0010 133100288 133100289
+2258 0011 133100290 133100291 quicklook ok
+2308 0012 133100292 133100293
+2318 0013 133100294 133100295  
+2328 0014 133100296 133100297 FAA radar higher than usual
+2338 0015 133100298 133100299 
+2348 0016 133100300 133100301 
+2358 0017 133100302 133100303  
+0008 0018 133100304 133100305 quicklook ok
+0018 0019 133100306 133100307 
+0028 0020 133100308 133100309 
+0038 0021 133100310 133100311 
+0048 0022 133100312 133100313 
+0059 0023 133100314 133100315 quicklook ok 
+0109 0024 133100316 133100317 
+0119 0025 133100318 133100319 
+0129 0026 133100320 133100321 
+0139 0027 133100322 133100323
+0149 0028 133100324 133100325
+0159 0029 133100326 133100327
+0209 0030 133100328 133100329 foggy; can barely see platform
+0220 0031 133100330 133100331
+0230 0032 133100332 133100333
+0240 0033 133100334 133100335
+0250 0034 133100336 133100337
+0300 0035 133100338 133100339
+0310 0036 133100340 133100341
+0320 0037 aborted
+
+LST stop:  0320  {Be sure to record the LST stop time of the last GOOD record)
+
+
+At the bottom, add notes regarding:
+-- Beam 6B dead; 4A reported running hot (42K as per Dana in advance) [sometimes power level below 0.8]
+-- TOGS run at end.
+-- fits filter error level changed from 5 to 3
+-- FAA radar on, higher than average in several scans
+-- 1380 harmonic visible.
+-- check many scans with quicklook.  all looks ok to us!
+-- power level checked most drifts, looked fine
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 14.8   K2: 14.2   K3: 15.7   K4: 15.9   AT 10:11
+70K = K1: 86.4   K2: 86.1   K3: 93.9   K4: 102.7
+
+16K = K1: 14.6   K2: 14.0   K3: 15.7   K4: 15.9   AT 14:01
+70K = K1: 86.8   K2: 86.8   K3: 94.6   K4: 103.2
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________

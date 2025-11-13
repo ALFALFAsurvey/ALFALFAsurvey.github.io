@@ -1,0 +1,85 @@
+Log for 080328       Observer: Becky Koopmann
+
+
+System Configuration: FixedAZ Drift Map
+		      Cima version 2.3.xx  Unusable Engineering Version
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080328.a2010.****.fits
+	/share/pserverf.sdb1/wappdata/wapp.20080329.a2010.****.fits
+
+LST  fits   Scan     calscan    Source     Pattern   Start coords. ang  time loop calmode
+0720 0030 808800113 808800114  drift130p2  fixAZdr  072000+313800 19  600 3  loopend data ok
+0730 0031 808800115 808800116     power levels OK
+0740 0032 808800117 808800118    strong continuum source in beams 3 and 4
+0750 0033 808800119 808800120
+0800 0034 808800121 808800122
+0810 0035 808800123 808800124
+0820 0036 808800125 808800126
+0830 0037 808800127 808800128
+0841 0038 808800129 808800130  power levels OK
+0851 0039 808800131 808800132 
+0901 0040 808800133 808800134 
+0911 0041 808800135 808800136
+0921 0042 808800137 808800138
+0931 0043 808800139 808800140
+0941 0044 808800141 808800142   power levels OK
+0951 0045 808800143 808800144
+1002 0046 808800145 808800146
+1012 0047 808800147 808800148   bright continuum source in 0, 2, maybe on cal for 5
+1022 0048 808800149 808800150
+1032 0049 808800151 808800152   GPS
+1042 0050 808800153 808800154    bright continuum source
+1052 0051 808800155 808800156    power levels OK
+1102 0052 808800157 808800158   
+1112 0053 808800159 808800160 
+1122 0054 808800161 808800162     GPS
+1133 0055 808800163 808800164
+1143 0056 808800165 808800166    high power level warnings due to very bright continuum source, esp
+6 
+1153 0057 808800167 808900001    WAPP-4 failed on cal scan - read timeout and self-abort. 
+                                 Restarted, configured, adjusted power.
+1207 0000 808900002 808900003    power levels OK 
+1218 0001 808900004 808900005
+1228 0002 808900006 808900007    GPS
+1238 0003 808900008 808900009  
+1248 0004 808900010 808900011  
+1258 0005 808900012 808900013   GPS
+1308 0006 808900014 808900015   GPS
+1318 0007 808900016 808900017   strong continuum source
+1329 0008 808900018 808900019   continuum source
+1339 0009 808900020 808900021   continuum source
+1349 0010 808900022 808900023   power levels OK
+1359 0011 808900024 808900025   
+1409 0012 808900026 808900027
+1419 0013 808900028 808900029
+1429 0014 808900030 808900031   power levels OK,  continuum source
+1439 0015 808900032 808900033 
+1450 0016 808900034 808900035 
+1500 0017 808900036 808900037
+1510 0018 808900038 808900039
+1520 0019 808900040 808900041   continuum source
+1530 0020 808900042 808900043   power levels OK
+1540 0021 808900044 808900045
+1550 0022 808900046 808900047  
+1600 0023 808900048 808900049
+1610 0024 808900050 808900051
+1620 0025 808900052 808900053 -- WAPP error closing 808900053 - similar to problem above. Aborted.
+ END LST: 1620 (or maybe 1630 if we can rescue data?)
+
+NOTES:
+
+Repeated "check_wapp levels" messages (in grey), plus a couple orange warning messages,
+during TOGS, but no messages in red, so did not abort. 
+
+WAPP-4 failure at 00:02:15 in cal scan: From log:
+        ERROR   WAPP=4-read_timeout: ERROR time-out while waiting for data from the correlator!
+        ERROR   wapp_failed: ERROR WAPP-4 failed to complete its current task!
+        ALERT   handle_wapp_failure: Aborting due to WAPP failure!
+ Quicklook program reports that 808900001 has single partial record, brd 7 & 8 have incorrect # of rows.
+ Can data before cal be saved??
+
+Another WAPP-4 failure after next to last planned drift. Aborted at that point since not worth doing more.
+
+
+
+

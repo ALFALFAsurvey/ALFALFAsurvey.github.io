@@ -1,0 +1,49 @@
+Log for 12.10.20 (20oct2012)        Observers: Mike Jones
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121020.a2010.****.fits
+          #/share/pserverf.sdb1/wappdata/wapp.20121021.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2305 0013  229400146  229400147 drift146p3  fixAzdr   230500+352757  19  600   99 power levels ok, waterfalls look ok, no FAA, can't get quicklook up idl not finding wasinit2 on fusion01?
+2315 0014  229400148  229400149 quicklook ok (on fusion00)
+2325 0015  229400150  229400151 WAPPs extrapolated 2s gap
+2336 0016  229400152  229400153
+2346 0017  229400154  229400155 quicklook ok
+2356 0018  229400156  229400157
+0006 0019  229400158  229400159
+0016 0020  229400160  229400161
+0026 0021  229400162  229400163 quicklook ok
+0036 0022  229400164  229400165
+0046 0023  229400166  229400167
+0056 0024  229400168  229400169 WAPPS extrapolated 2s gap, quicklook ok
+0107 0025  229400170  229400171
+0117 0026  229400172  229400173
+0127 0027  229400174  aborted
+
+LST stop: 0127
+
+At the bottom, add notes regarding:
+- No FAA!
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 14.4   K2: 13.5   K3: 15.3   K4: 14.8   AT 08:22
+70K = K1: 83.0   K2: 82.7   K3: 90.6   K4: 98.9
+
+16K = K1: 14.6   K2: 13.8   K3: 15.5   K4: 15.0   AT 15:08
+70K = K1: 84.1   K2: 84.2   K3: 92.2   K4: 100.0
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered

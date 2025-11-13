@@ -1,0 +1,36 @@
+A2707 LBW   13.01.14D       Observers: UAT
+
+THIS IS THE UAT13 DEMO RUN DURING DAYTIME
+
+CIMA version:          The Stable version (Default) (Ver 3.3.04 2012-11-29  16:58)
+Configuration file:    a2707_jan13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2707_uat13demo.cmd 
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.14jan13.a2707.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H215040.4+283617  215040.3 +283527  j  3500 H v   # A310858 calib  2235  14.4    49  301400317  detected @ 1405 MHz
+H222353.2+305630  222354.8 +305629  j  6700 H v   # A321456        2244  13.5    50  301400321  detected @ 1389 MHz
+A222337.0+305124  222337.0 +305124  j  6700 H v   # A012018        2252  14.1    51  301400325  detected @ 1389 MHz    
+A222354.3+305446  222354.3 +305446  j  6700 H v   # A320635        2300  15.0    52  301400329  detected @ 1389 MHz
+A222403.4+305720  222403.4 +305720  j  6700 H v   # A321554        2308  16.1    53  301400333  detected @ 1389 MHz  
+HVC103-29         233139.2 +310703  j  -400 H v   # A333484        2318  13.2    54  301400337  detected @ 1422 MHz
+H233848.8+241350  233853.4 +241354  j   700 H v   # A333337        2328   6.5    55  301400341  detected @ 1417 MHz
+H233833.9+250751  233835.2 +250753  j -1300 H v   #		   2336   6.9    56  301400345  not detected
+H234349.5+255219  234350.5 +255219  j   700 H v   #                2345   7.6    57  301400349  not detected  
+H235426.6+290341  235428.3 +290339  j  6900 H v   # A333638	   2354  10.8    58  301400353  detected @ 1388 MHz
+H000207.2+292130  000208.1 +292126  j   600 H v   #		   0002  11.1    59  301400357	detected
+
+Stop LST:  0009
+
+Observed during the day.
+Everyone laughed at us.
+

@@ -1,0 +1,57 @@
+A3341 LBW   19.11.25  Observers: Olivia Jo Dickinson, Haille Perkins, and Joseph Ribaudo
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3341.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3341_191125.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20191125.a3341.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA     File#   ONScan     Status (Pls include freq & S/N ratio)
+S220801.7+291527  220801.7 +291527  j     0 H v   # A323400     2206   11.04  0       932900091  Detection 1406 Mhz, 2900 m/s S/N ~4 in board 1 and 4
+S223805.5+325646  223805.5 +325646  j     0 H v   # A322548     2220   15.31  1       932900095  Possible detection 1381 Mhz, 8500 km/s in board 3, gps interference maybe 
+S223658.5+352746  223658.5 +352746  j     0 H v   # A322486     2233   17.28  2       932900099  Detection 1416 Mhz, 800 km/s S/N ~6 in board 1
+S231422.0+311505  231422.0 +311505  j     0 H v   # A333370     2246   14.61  3       932900103  Detection 1387 Mhz, 7100 km/s S/N ~5 in board 3 and 4  
+S233903.5+312825  233903.5 +312825  j     0 H v   # A336100     2259   16.19  4       932900107  Possible detection 1402 Mhz, 3900 km/s S/N ~4 in board 4, rough baseline 
+S233921.4+314205  233921.4 +314205  j     0 H v   # A333466     2311   15.02  5       932800111  Detection 1401 Mhz, 4100 km/s S/N ~6 in board 4
+S235519.2+324940  235519.2 +324940  j     0 H v   # A335541     2323   16.36  6       932800115  Detection 1398 Mhz, 4800 km/s S/N ~5 in board 4 
+S000032.0+305209  000032.0 +305209  j     0 H v   # A102729     2336   13.88  7       932800119  Disable tiedowns, detection 1399 Mhz, 4600 km/s in board, wavy baseline  
+S000551.1+312743  000551.1 +312743  j     0 H v   # A104299     2348   13.88  8       932800123  WAPPs died, had to restart
+S000032.0+305209  000032.0 +305209  j     0 H v   # A102729     2356   12.71  9       932800124  RFI 1395 Mhz, 5400 km/s, Detection 1399 Mhz, 4600 km/s S/N ~12 in board 4  
+S000551.1+312743  000551.1 +312743  j     0 H v   # A104299     0007   13.25  10      923800128  Detection 1397 Mhz, 5000 km/s S/N ~7 in board 4
+S001627.5+330322  001627.5 +330322  j     0 H v   # A104590     0020   14.85  11      923800132  Detection 1398 Mhz, 4800 km/s S/N ~11 in board 4
+S001117.5+353145  001117.5 +353145  j     0 H v   # A104327     0033   17.92  12      923800136  Detection 1398 Mhz, 5000 km/s S/N ~8 in board 4  
+S002232.2+354708  002232.2 +354708  j     0 H v   # A104538     0045   18.22  13      923800140  Detection 1397 Mhz, 5000 km/s S/N ~5 in board 4
+S004710.4+324139  004710.4 +324139  j     0 H v   # A100557     0058   14.67  14      923800144  Detection 1396 Mhz, 5000 km/s S/N ~10 in board 4, oddly shaped 2 horn with gaussian on top 
+S005236.4+320332  005236.4 +320332  j     0 H v   # A102812     0111   14.37  15      923800148  Detection 1395 Mhz, 5400 km/s S/N ~10 in board 4, 2 horned 
+S005645.1+311436  005645.1 +311436  j     0 H v   # A101239     0123   14.20  16      923800152  Detection 1395 Mhz, 5500 km/s S/N ~6 in board 4 
+S012214.5+311517  012214.5 +311517  j     0 H v   # A112545     0135   13.32  17      923800156  Detection 1397 Mhz, 4900 km/s S/N ~5 in board 4
+S020427.0+310734  020427.0 +310734  j     0 H v   # A122960     0157   13.42  18      923800160  Detection 1398 Mhz, 4800 km/s S/N ~8 in board 4, strong detection in the off 1397 Mhz,  5100 km/s S/N ~22 
+S022524.7+313624  022524.7 +313624  j     0 H v   # A123001     0201   14.56  19      923800164  Detection 1396 Mhz, 5300 km/s S/N ~4 in board 4 
+S022534.2+310937  022534.2 +310937  j     0 H v   # A123003     0213   13.28  20      923800168  Detection 1398 Mhz, 5800 km/s S/N ~4 in board 4 
+S022555.8+322046  022555.8 +322046  j     0 H v   # A124948     0225   14.11  21      923700172  Detection 1399 Mhz, 4500 km/s S/N ~11 in board 4  
+S022804.6+310146  022804.6 +310146  j     0 H v   # A123016     0238   12.94  22      923800176  Detection 1398 Mhz, 4800 km/s S/N ~5 in board 4
+S023556.8+333155  023556.8 +333155  j     0 H v   # A124958     0250   15.68  23      923800180  Detection 1396 Mhz, 5300 km/s S/N ~8 in board 4 
+S023603.8+321651  023603.8 +321651  j     0 H v   # A124959     0302   15.17  24      923800184  Detection 1397 Mhz, 4700 km/s S/N ~12 in board 4 
+H025141.5+320610  025141.5 +320610  j     0 H v   # A123057cal  0315   14.73  25      923800188  Detection 1414 Mhz, 1400 km/s S/N ~14 in board 1
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal  0324   12.42  26      923800192  Detection 1396 Mhz, 5200 km/s S/N ~40 in board 4 
+
+
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+NOTES:
+Started with boards 2 and 4 swapped
+WAPPS crash on file 8, decided to go back to look at the file with the wavy baseline 
+Tiedowns disabled in the middle of file 7 hence the decision to look back at the wavy baseline 

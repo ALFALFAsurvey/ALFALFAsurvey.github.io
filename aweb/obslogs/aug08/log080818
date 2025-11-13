@@ -1,0 +1,48 @@
+Log for 080818      Observer: Ann Martin
+
+System Configuration: a2010_az360.conf
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080818.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2132 0001 823100029 823100030  drift27p2   fixAZdr  213200+063412  19  600  99   loopend  -- power OK but beam 6B down, 2B low (see note)
+2142 0002 823100031 823100032  operator working on beam 2A, affecting records ~500-550
+2152 0003 823100033 823100034
+2202 0004 823100035 823100036 -- chip count errors! 
+2212 0005 823100037 --aborted, restarted, power adjusted
+
+2222 0007 823100039 823100040 -- chip count errors cease after ~100 records, so I'm continuing!
+2232 0008 823100041 823100042
+2242 0009 823100043 823100044
+2252 0010 823100045 823100046
+2302 0011 823100047 823100048
+2313 0012 823100049 823100050
+2323 0013 823100051 823100052
+2333 0014 823100053 823100054
+2343 0015 823100055 823100056
+2353 0016 823100057 823100058
+0003 0017 823100059 823100060
+0013 0018 823100061 823100062
+0023 0019 823100063 823100064 
+0033 0020 823100065 823100066
+0043 0021 823100067 823100068
+0053 0022 823100069 823100070 
+0104 0023 823100071 823100072 
+0114 0024 823100073 823100074 -- chip count errors start again around record 180
+0124 0025 823100075 -- aborted, restarted, power adjusted
+* see note
+0206 0029 823100079 823100080
+0216 0030 823100081 823100082
+0227 0031 823100083 823100084
+0237 0032 823100085 823100086
+0247 0033 823100087 823100088
+0257 0034 823100089 823100090
+0307 0035 823100091 -- aborted
+
+End LST: 0307
+
+Notes: TOGS run at start and end.
+Beam 6B down; power a little low in beam 2B (~.89, but still within acceptable levels)
+Had to restart again due to WAPP 3 chip errors; then there was a problem with CIMA at Arecibo (operator unable
+to approve a new session for the remote observer). So, I had to talk Norberto through our startup procedure! We should pay special
+attention to FITS files 0029 through the end, to make sure everything appears normal.

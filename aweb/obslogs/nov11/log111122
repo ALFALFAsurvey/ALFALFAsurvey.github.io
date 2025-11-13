@@ -1,0 +1,74 @@
+Log for 11.11.22(22Nov2011)        Observers: Rose Finn, Michele McColgan, Laura Apicello, Steve 
+Atkinson, Ian Gilchrest, Alissa Earle, Thad Savery, Amy McCann!
+
+System Configuration:  a2010_az180_2010.conf
+CIMA version           {Record the FULL name of the CIMA version, e.g., 3.1.08 2010-02-01 17:44 "Smart"}
+File(s):  /share/pserverf.sda2/wappdata/wapp.20101122.a2010.****.fits
+
+Normal meridian observing setup (AZ = 540)
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+
+2133 0000 132600173 aborted  because alfadatawin not working
+2148 0001 132600174 132600175 drift137p1 fixAzdr  214850+331254 19  600 99 loopend 
+2158 0002 132600176 132600177 radar can be seen at 1350 harmonic at 1380 and 1340, started alfadatawin on dataview rather than fusion00 and now it works
+2208 0003 132600178 132600179
+2218 0004 132600180 132600181
+2229 0005 132600182 132600183 GPS at 1381MHz at LST=22:34
+2239 0006 132600184 132600185 GPS at 1381MHz at LST=22:41
+2249 0007 132600186 132600187
+2259 0008 132600188 132600189
+2309 0009 132600190 132600191
+2319 0010 132600192 132600193
+2329 0011 132600194 132600195 GPS at 1381MHz at LST=23:37
+2339 0012 132600196 132600197
+2349 0013 132600198 132600199
+2359 0014 132600200 132600201 GPS at 1381MHz at  00:29:07 and 00:29:17  
+0009 0015 132600202 132600203
+0020 0016 132600204 132600205
+0030 0017 132600206 132600207
+0040 0018 132600208 132600209 GPS at 1381MHz at 01:08:06 and 01:09:16
+0050 0019 132600210 132600211
+0100 0020 132600212 132600213 
+0110 0021 132600214 132600215
+0120 0022 132600216 132600217quick looks look ok
+0131 0023 132600218 132600219  LST 015815 in 2 and 015830 for 1
+0142 0024 132600220 132600221 
+0151 0025 132600222 132600223 in 6B there is noise when displayed in quicklook
+0201 0026 132600224 132600225 
+0211 0027 132600226 132600227
+0221 0028 132600228 132600229 6B has noise when displayed in quicklook
+0231 0029 132600230 132600231
+0241 0030 132600232 132600233
+0251 0031 132600234 132600235 6B has noise when displayed in quicklook
+0302 0032 132600236 132600237
+0312 0033 132600238 132600239
+0322 0034 aborted
+
+
+
+
+LST stop: 0322      {Be sure to record the LST stop time of the last GOOD 
+record}
+
+At the bottom, add notes regarding:
+-- Beam 6B dead; 4A reported running hot (42K as per Dana in advance)
+-- TOGS run at end.
+-- FAA radar on
+-- check each scan with quicklook.  all looks ok to us!
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 14.8   K2: 14.2   K3: 15.7   K4: 15.9   AT 10:07
+70K = K1: 86.6   K2: 86.6   K3: 94.2   K4: 103.2
+
+16K = K1: 14.6   K2: 14.2   K3: 16.0   K4: 16.2   AT 14:04
+70K = K1: 86.8   K2: 86.8   K3: 94.9   K4: 103.4
+
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

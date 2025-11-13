@@ -1,0 +1,80 @@
+A2010 observing schedule                                          last update: 05Nov29 mph
+
+Use searchable schedule on AO web page to get date,AST
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of
+      observations on given day.
+-------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS  (Schedule subject to change. If a session is missed, retain order
+                        of drifts, sliding schedule to the next date.)
+**********************************            IMPORTANT            **********************
+The times below refer to time allocated to A2010 exclusively. Time should also be allocated before
+and after to allow for TOGS startup and calibration. We have agreed to run the TOGS calibration scripts
+for the TOGS team. Please check the final AO schedule and be prepared to start observing at least
+15 minutes prior to the times listed here. 
+
+--------------------------------------------------------------------------------------------------
+Note here that "short" runs begin at drift 106p2 and proceed southward, while the full length
+runs begin at drift 107p2 and proceed northward. Should you lose a night, just skip to the next
+one on the schedule that covers the same block of LST; refer to the graphical schedules to see
+how the map is intended to be filled.
+
+Note: times here do NOT include 15 minutes for TOGS calib before/after runs
+
+      Block     Date    LMSTmidn      AST            LST      Des    DecJ   Observers/DataMonitors
+                                                         ********Remember TIME difference vs EST
+    05.12.04  S 04Dec     04h29   18h00-22h45   22h28-03h14  121p2  +292636  EGGs (R)
+    05.12.05  M 05Dec     04h33   18h00-22h45   22h32-03h17  122p2  +294112  EGGs (R)          
+    05.12.06  T 06Dec     04h37   18h00-22h45   22h36-03h21  123p2  +295548  EGGs (R)   
+    05.12.07  W 07Dec     04h41   18h00-22h45   22h40-03h25  124p2  +301024  EGGs (R)  
+    05.12.08  R 08Dec     04h45   18h00-22h30   22h44-03h14  125p2  +302500  MH,RK,BM  AZ=180! BE SURE TO GET THE AZ RIGHT!
+    05.12.09a F 09Dec             02h15-04h45   07h00-09h30   39p2  +092924  MH,RK,BM  AZ=360!
+    05.12.09p F 09Dec     04h49   20h00-22h30   00h48-02h00  121p1  +291918  MH,RK,BM **short AZ=180 special night
+                                                02h05-03h18  138p1  +332730           (special; may change)
+    05.12.10a S 10Dec             02h15-04h45   07h04-09h34   38p2  +091448  MH,RK,BM  AZ=360!
+    05.12.10p S 10Dec     04h53   18h00-22h30   22h51-03h22  126p2  +303936  MH,RK,BM,PN AZ=180        
+
+END OF "FALL" ALLOCATION; 
+
+From this point, if a night is missed, skip it; stick to assignments by specific date.  
+    05.12.11  S 11Dec     04h53   02h15-05h00   07h08-09h53   40p1  +093642  MH,RK,BM,PN AZ=360 from now on!
+    05.12.12  M 12Dec     04h57   02h00-05h00   06h57-09h57   41p2  +095836  MH,RK,BM,PN     
+    05.12.13  T 13Dec     05h01   02h00-05h00   07h01-10h01   60p2  +143600  MH,RK,BM,PN     
+    05.12.14  W 14Dec     05h05   02h00-05h00   07h05-10h05   42p2  +101312  MH,RK,BM,PN        
+    05.12.15  R 15Dec     05h08   01h45-05h00   06h53-10h09   57p1  +134454  MH,RK,BM,PN         
+    05.12.16  F 16Dec     05h12   01h45-04h45   06h57-09h58   61p2  +145036  MH,RK,BM,PN         
+    05.12.17  S 17Dec     05h16   02h00-04h45   07h16-10h02   62p2  +150512  EGGs (R)
+    05.12.18  S 18Dec     05h20   01h45-05h00   07h05-10h21   44p2  +104224  EGGs (R)
+    05.12.19  M 19Dec     05h24   01h30-05h45   06h54-11h10   46p2  +111136  EGGs (R)
+    05.12.20  T 20Dec     05h28   01h30-05h45   06h58-11h14   48p2  +114048  EGGs (R)  
+    05.12.21  W 21Dec     05h32   01h30-05h45   07h02-11h18   49p2  +115524  MH,RG (R)
+    05.12.22  R 22Dec     05h36   01h30-05h45   07h06-11h22   50p2  +121000  MH,RG (R)
+    05.12.23  F 23Dec     05h40   01h15-05h30   06h55-11h11   51p2  +122436  MH,RG (R)
+    05.12.24  S 24Dec     05h44   01h15-05h30   06h59-11h14   52p2  +123912  MH,RG (R)            
+
+    05.12.26  M 26Dec     05h52   01h15-05h45   07h07-11h37   54p2  +130824  EM
+    05.12.27  T 27Dec     05h56   01h00-06h15   06h56-12h11   53p2  +125348  EM    
+
+END OF 2005 ALLOCATION!  HAPPY NEW YEAR!                                                
+-------------------------------------------------------------------------------
+Schedule here is tentative only and subject to change
+Note: times here do NOT include 15 minutes for TOGS calib before/after runs
+
+    06.01.04  W 04Jan            00h30-04h45                                 PN,EM
+    06.01.05  R 05Jan            00h30-04h45                                 PN
+    06.01.06  F 06Jan            00h30-05h45                                 PN
+    06.01.07  S 07Jan            00h15-06h30                                 PN
+    06.01.08  S 08Jan            00h15-07h15                                 PN
+    06.01.09  M 09Jan            00h15-07h15                                 PN
+    06.01.10  T 10Jan            00h15-07h15                                 PN
+    06.01.11  W 11Jan            00h00-07h15                                 PN
+
+    06.01.15  S 15Jan            23h00-04h00                                 SS,TB,BW
+    06.01.16  M 16Jan            23h00-03h45                                 SS,TB,BW
+    06.01.17  T 17Jan            23h00-03h30                                 SS,TB,BW
+    06.01.18  W 18Jan            23h00-03h30                                 SS,TB,BW
+    06.01.19  R 19Jan            23h00-03h30                                 SS,TB,BW
+    06.01.20  F 20Jan      gone?                                             SS,TB,BW
+    06.01.21  S 21Jan      gone?                                             SS,TB,BW
+    06.01.22  S 22Jan      gone?                                             SS,TB,BW

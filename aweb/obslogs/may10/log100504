@@ -1,0 +1,70 @@
+Log for 05/04/10          Observer: Manolis Papastergis & Greg Hallenbeck
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100504.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100505.a2010.****.fits
+
+LST@start: 0943
+
+LST  fits   Scan    calscan   Source     Pattern   Start coords. ang   time  loop  calmode    
+0943 0011  12400068 12400069  drift112p3 fixAZdr   094300+270415 19.0  600   99    loopend  started about ~20 mins late. Long slew took ~7mins
+                                                                                            and receiver could not rotate to 19 deg for ~10 mins
+0953 0012  12400070 12400071  power ok
+1003 0013  12400072 12400073
+1013 0014  12400074 12400075  pointing ok
+1024 0015  12400076 12400077  quicklooked fits 0012:ok
+1034 0016  12400078 12400079
+1044 0017  12400080 12400081
+1054 0018  12400082 12400083
+1104 0019  12400084 12400085
+1114 0020  12400086 12400087
+1125 0021  12400088 12400089
+1135 0022  12400090 12400091
+1145 0023  12400092 12400093
+1155 0024  12400094 12400095
+1205 0025  12400096 12400097
+1215 0026  12400098 12400099
+1225 0027  12400100 12400101
+1235 0028  12400102 12400103
+1245 0029  12400104 12400105
+1255 0030  12400106 12400107  Greg takes over here; quicklook OK
+1306 0031  12400108 12400109
+1316 0032  12400110 12400111
+1326 0033  12400112 12400113
+1336 0034  12400114 12400115
+1346 0035  12400116 12400117
+1356 0036  12400118 12400119
+1406 0037  12400120 12400121
+1416 0038  12400122 12500001
+1427 0000  12500002 12500003  quicklook OK
+1437 0001  12500004 12500005
+1447 0002  12500006 12500007
+1457 0003  12500008 12500009
+1507 0004  12500010 12500011
+1517 0005  12500012 12500013
+1527 0006  12500014 12500015
+1537 0007  12500016 aborted
+
+LST@stop:1538
+
+NOTES:
+
+- Lost ~20mins at start of drift due to long slew time, and a problem with receiver rotation.
+
+- TOGS only at END
+
+- FAA radar ON
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+16K = K1: 13.6   K2: 13.7   K3: 15.0   K4: 15.2   AT 16:45
+70K = K1: 82.0   K2: 88.8   K3: 98.6   K4: 106.6
+
+16K = K1: 13.6   K2: 13.8   K3: 15.0   K4: 15.2   AT 23:55
+70K = K1: 81.9   K2: 88.5   K3: 98.6   K4: 106.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________

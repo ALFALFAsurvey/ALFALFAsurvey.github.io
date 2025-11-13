@@ -1,0 +1,72 @@
+Log for 5/05/09 pm
+Observers: RG, MH
+
+System Configuration:
+
+FixedAZ Drift Map Cima new version 1.2.02 (new)
+Using: a2010_fixedfrq_may05.gui as save state.
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050509.a2010.****.fits
+
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+0933 0014 512967774 512968376 drift62p2 FixedAz  093340+150512  19  600  50    150315     1          
+power levels (dB): 0.96 0.92 1.00 0.95 1.06 1.00 0.94 1.09 0.94 0.97 0.88 0.91 1.07 0.94
+0944 0015 512968379 512968981 
+0954 0016 512968984 512969586 
+1004 0017 512969589 512970191 
+1014 0018 512970194 512970796
+1024 0019 512970799 512971401
+1034 0020 512971404 512972006
+1044 0021 512972009 512972611
+1054 0022 512972614 512973216
+1104 0023 512973219 512973821
+1115 0024 512973824 512974426 
+1125 0025 512974429 512975031
+1135 0026 512975034 512975636
+1145 0027 512975639 512976241
+1155 0028 512976244 512976846
+1205 0029 512976849 512977451 
+1215 0030 512977454 512978056
+power levels (dB): 0.98 0.94 1.04 0.99 1.08 1.02 0.95 1.10 0.97 1.00 0.89 0.92 1.08 0.96
+1225 0031 512978059 512978661
+1235 0032 512978664 512979266
+1245 0033 512979269 512979871
+1255 0034 512979874 512980476
+1305 0035 512980479 512981081
+1316 0036 512981084 512981686
+1326 0037 512981689 512982291 
+1336 0038 512982294 512982896
+1346 0039 512982899 512983501
+1356 0040 512983504 512984106
+1406 0041 512984109 512984711
+1416 0042 512984714 512985316 
+1426 0043 512985319 512985921
+1437 0044 512985924 513000126 
+1447 0000 513000129 513000731
+1457 0001 513000734 513001336
+1507 0002 513001339 513001941
+power levels [dB): 1.01 0.96 1.05 0.99 1.11 1.04 0.98 1.12 0.99 1.01 0.92 0.94 1.11 0.98
+1517 0003 513001944                                                                   aborted 
+     cima bad chip read errors restart WAPPs; exit CIMA and start again         
+     crash again on
+     05/10/05  4:43:13  WAPP(1) ERROR spectral line, read data error , WAPP confused...
+     We see nothing in the observer's quick display (waterfall plots)
+     05/10/05  4:48:26  WARN WAPPDATA flushing 74 dumps 
+     05/10/05  4:48:31  WARN wappdata buildup logic error 
+     05/10/05  4:48:31  WARN WAPPDATA confused cleared 3 dumps 
+     05/10/05  4:48:31  WARN WAPPDATA flushing 75 dumps 
+     problems with network?...
+
+
+
+Notes:
+
+1 Power a bit low in Beam 5A. This has been true last couple of nights. No big deal.
+  Tiedowns are disabled.
+2 Just before this crash, we noticed that we could not access www.cornell.edu, and
+  that connects internal to AO seemed sluggish; it takes ~1 min to log into a machine
+  in Building 2. When we try to log into rutados, we get "temporary failure in name 
+  resolution". Norberto called Arun. We all think it is a network problem.

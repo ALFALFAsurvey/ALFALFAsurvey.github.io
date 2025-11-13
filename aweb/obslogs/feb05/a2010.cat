@@ -1,0 +1,21 @@
+# Drifts for the ALFALFA A2010 program
+#
+# You need to change the start LST as appropriate
+#
+#drift59p1   112000.0 +141406 j 0 # 04Feb2005
+#drift58p1   112400.0 +135930 j 0 # 05Feb2005
+#drift57p1   111200.0 +134454 j 0 # 06Feb2005
+#drift38p1   111600.0 +090730 j 0 # 07Feb2005
+#drift52p1   085000.0 +123154 j 0 # 08Feb2005
+#drift51p1   085400.0 +121718 j 0 # 09Feb2005
+#
+drift60p1   105400.0 +142842 j 7663 heliocentric # 14Feb2005 am
+drift49p1   075000.0 +114806 j 7663 heliocentric # 14Feb2005 eve
+drift48p1   072400.0 +113330 j 7663 heliocentric # 15Feb2005
+drift47p1   072800.0 +111854 j 7663 heliocentric # 16Feb2005
+drift50p1   070000.0 +120242 j 7663 heliocentric # 17Feb2005
+drift56p1   073500.0 +133018 j 7663 heliocentric # 18Feb2005
+drift55p1   083800.0 +131542 j 7663 heliocentric # 19Feb2005
+drift42p1   072600.0 +100554 j 7663 heliocentric # 20Feb2005
+drift54p1   071600.0 +130106 j 7663 heliocentric # 21Feb2005
+drift53p1   072000.0 +124630 j 7663 heliocentric # 22Feb2005

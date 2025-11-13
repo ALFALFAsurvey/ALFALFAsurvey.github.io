@@ -1,0 +1,52 @@
+Log for 02/22/06
+Observer: Arik, Shea, Amy, Dave, Martha
+
+System Configuration:
+FixedAz Drift Map CIMA evolved version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20060222.a2010.****.fits
+       /share/pserverf.sda2/wappdata/wapp.20060223.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.02.22
+
+LST  fits Scan      calscan   Source    Pattern Start coords. ang time loop Notes
+______________________________________________________________________________ 
+0732 0000 605378484 605379086 drift37p1 FixedAz 073221+085254  19 600   50
+0742 0001 605379089 605279691                                               power levels ok
+0752 0002 605379694 605280296
+0802 0003 605380299 605380901
+0812 0004 605380904 605381506
+0822 0005 605381509 605382111
+0832 0006 605382114 605382716                    power levels ok
+0842 0007 605382719 605383321
+0852 0008 605383324 605383926
+0903 0009 605383929 605384531
+0914 0010 605384534 605385136
+0923 0011 605385139 605385741
+0933 0012 605385744 605386346                   power levels ok
+0943 0013 605386349 605400551                   S-band alarm went off; A2010 appears ok
+0954 0000 605400554 605401156
+1004 0001 605401159 605401761
+1014 0002 605401764 605402366
+1024 0003 605402369 605402971                   power levels ok
+1034 0004 605402974 605403576
+1044 0005 605403579 605404181
+1054 0006 605404184 605404786
+1105 0007 605404789 605405391
+1110 0008 605405394 605405996
+              
+END LST:1120
+
+
+Notes:
+-- At the begininng of the night, the operator could not start the GALFA spectrometer.
+   It appeared to be running already, and job could not be killed. Operater called Josh. 
+   When TOGS time past, operator indicated we should begin A2010. So, no TOGS at start.
+-- Around midnight, Mary Putman called and operator started GALFA spectrometer ok.
+-- Ran TOGS successfully at end.
+
+-- Around midnight, the S-band alarm in the radar room went off. Operator called Joe Greene,
+   and went to check transmitter. All appeared ok to us.
+
+-- Otherwise uneventful night for A2010.
+

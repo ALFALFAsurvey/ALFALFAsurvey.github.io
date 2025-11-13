@@ -1,0 +1,40 @@
+Log for 11/29/09          Observers: AM
+
+
+System Configuration:                   a2010_az360_2009.conf
+CIMA version       			3.1.06 2009-11-22 11:19 "Smart" 
+File(s):  /share/pserverf.sda3/wappdata/wapp.20091129.a2010.****.fits
+
+LST  fits   Scan        calscan       Source    Pattern   Start coords. ang  time loop calmode
+0121 0001 933300188 933300189     drift17p1 fixAZdr  012100 +040054  19  600   99  loopend          
+0131 0002 933300190 933300191   power levels ok
+0141 0003 933300192 933300193
+0151 0004 933300194 933300195
+0202 0005 933300196 933300197
+0212 0006 933300198 933300199
+0222 0007 933300200 933300201
+0232 0008 933300202 933300203
+0242 0009 933300204 933300205
+0252 0010 933300206 933300207
+0302 0011 933300208 933300209 v. strong cont src (increased power levels)
+0313 0012 933300210 933300211
+0324 0013 933300212 -- aborted
+
+
+
+LST stop:  0324
+
+Overall uneventful night.
+FAA radar active all night
+Togs ran at start and end
+
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 14.2   K3: 15.5   K4: 15.7   AT 08:28
+70K = K1: 81.9   K2: 83.4   K3: 93.7   K4: 101.5
+
+16K = K1: 14.1   K2: 14.2   K3: 15.5   K4: 15.7   AT 14:50
+70K = K1: 82.2   K2: 83.9   K3: 93.7   K4: 101.5
+

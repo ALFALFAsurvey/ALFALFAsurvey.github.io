@@ -1,0 +1,95 @@
+Log for 080312         Observers: Brian Kent
+
+
+System Configuration: FixedAZ Drift Map
+		      Cima version 2.3.xx  Unusable Engineering Version
+
+File:   /share/pserverf.sdb1/wappdata/wapp.20080312.a2010.****.fits
+	/share/pserverf.sdb1/wappdata/wapp.20080313.a2010.****.fits
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0718 0027 807200178 807200179 drift122p2  fixAZdr 071810+294112  19  512   3  loopend     FAA radar showing up again
+0728 0028 807200180 807200181
+0738 0029 807200182 807200183
+0748 0030 807200184 807200185  Power levels OK
+0758 0031 807200186 807200187
+0808 0032 807200188 807200189
+0818 0033 807200190 807200191
+0828 0034 807200192 807200193
+0839 0035 807200194 807200196
+0849 0036 807200196 807200197  Power levels OK
+0859 0037 807200198 807200199
+0909 0038 807200200 807200201
+0919 0039 807200202 807200203 
+0929 0040 807200204 807200205 
+0939 0041 807200206 807200207  Radar off 
+0949 0042 807200208 807200209
+1000 0043 807200210 807200211
+1010 0044 807200212 807200213
+1020 0045 807200214 807200215
+1030 0046 807200216 807200216  1380 MHz GPS turns on
+1040 0047 807200218 807200219  1380 MHz GPS turns off
+1050 0048 807200220 807300001  Power levels OK
+1100 0000 807300002 807300003
+1111 0001 807300004 807300005
+1121 0002 807300006 807300007
+1131 0003 807300008 807300009
+1141 0004 807300010 807300011
+1151 0005 807300012 807300013 Intermittent RFI at 1340?
+1201 0006 807300014 807300015
+1211 0007 807300016 807300017
+1221 0008 807300018 807300019
+1231 0009 807300020 807300021  Power levels OK
+1242 0010 807300022 807300023
+1252 0011 807300024 807300025
+1302 0012 807300026 807300027
+1312 0013 807300028 807300029
+1322 0014 807300030 807300031
+1332 0015 807300032 807300033  Power levels OK
+1343 0016 807300034 807300035
+1353 0017 807300036 807300037
+1403 0018 807300038 807300039
+1413 0019 807300040 807300041
+1423 0020 807300042 807300043
+1433 0021 807300044 807300045
+1444 0022 807300046 807300047
+1454 0023 807300048 807300049
+1504 0024 807300050 807300051
+1514 0025 807300052 807300053  Bad file Abort at the end of the file
+               BK attempts to assess problem.  Orignally thought that
+               things were OK.  Waterfall looked OK, beams 4 and  5 were OK, despite
+               red WAPP errors at end of this file.  Examines file
+               to see what happened before proceeding.  
+               File 25 is 65kB smaller than other files, and is ruled suspect.  
+               All beams then died
+               in the waterfall AFTER completion of file, even though
+               CIMA reports "calibration error", although error is reported
+                 for only WAPP 3.  Decided to continue and restart.  Elliot reports no beeping this time.
+
+1546 0026 807300054 807300055
+1557 0027 807300056 807300057
+1608 0028 807300058 807300059
+1618 0029 807300060 807300061
+1628 0030 807300062 807300063  Elliot reports intermittent beeps.  Data looks OK.
+1638 0031 807300062 807300063
+1648 0032 ABORT
+
+NOTES: 1648
+
+TOGS was run at the beginning and end.
+
+BK sees *RED* error:
+
+   WAPP=3-read_timeout:  ERROR time out while waiting for data from the correlator!
+   WAPP=3-start_spectra: Error failed to read spectra line data!
+ 
+   WAPP=3-start_spectra:  ERROR faile dto read spectral line data!
+
+   finish_task:  ERROR failed calibration: WAPP calibration
+   finish_task:  ERROR failed pattern:  fixed azimuth drift map
+
+
+in additon to "counts don't match" warning...
+
+
+

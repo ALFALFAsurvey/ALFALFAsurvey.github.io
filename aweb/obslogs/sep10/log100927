@@ -1,0 +1,96 @@
+Log for 09/27/10     Observer: Martha Haynes, Betsey Adams
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20100927.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20100928.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=89.7 =449.7  ALFAang= -69.0  ZA=5.58   AzG=449.65         very close to zenith
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2052          RA@end=0247
+      RA = LST-24 min
+****
+During the night, please make occasional notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the ZA limits
+are (3.5,12.0). If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.    ang  time loop  calmode  ZAdome
+2116 0023 27000120  27000121   drift75p2  fixAzdr   205200+181122  -69.0   600   99  loopend  ZAG=5.58
+2126 0024 27000122  27000123              ZAG=5.42            +181136     powerlevels ok   quicklook ok 
+2136 0025 27000124  27000125                  5.34            +181139     "obs when not onsource" 5 sec
+2146 0026 27000126  27000127                  5.27            +181142
+2156 0027 27000128  27000129                  5.21            +181144     extrap/interp AGC-datablock
+2206 0028 27000130  27000131                  5.14            +181147     "obs when not onsource" 5 sec
+2216 0029 27000132  27000133                  5.08            +181149     3 secs
+2226 0030 27000134  27000135                  5.03            +181151     4 secs
+2237 0031 27000136  27000138                  4.97            +181153     Long GPS burst here
+2247 0032 27000138  27000139                  4.93            +181155     Still seeing GPS 
+2257 0033 27000140  27000141                  4.88            +181157     shuts off at end of drift
+2307 0034 27000142  27000143                  4.84            +181158       
+2317 0035 27000144  27000145                  4.81            +181159                  
+2327 0036 27000146  27000147                  4.78            +181200
+2337 0037 27000148  27000149                  4.76            +181201
+2347 0038 27000150  27000151                  4.74            +181202
+2357 0039 27000152  27100001                  4.73            +181203
+0008 0000 27100002  27100003                  4.72            +181203
+0018 0001 27100004  27100005                  4.72            +181203   quicklook ok
+0028 0002 27100006  27100007                  4.72            +181203
+0038 0003 27100008  27100009                  4.73            +181203
+0048 0004 27100010  27100011                  4.74            +181202
+0058 0005 27100012  27100013                  4.76            +181201   low strength GPS/FAA harmonic?
+0108 0006 27100014  27100015                  4.79            +181200
+0119 0007 27100016  27100017                  4.82            +181159
+0129 0008 27100018  27100019                  4.85            +181158
+0139 0009 27100020  27100021                  4.89            +181157   3 sec
+0149 0010 27100022  27100023                  4.93            +181155   3 sec  quicklook ok
+0159 0011 27100024  27100025                  4.98            +181153   4 sec
+0209 0012 27100026  27100027                  5.03            +181151   6 sec
+0219 0013 27100028  27100029                  5.09            +181149   6 sec
+0229 0014 27100030  27100031                  5.14            +181147   5 sec
+0240 0015 27100032  27100033                  5.20            +181145   6 sec
+0250 0016 27100034  27100035                  5.27            +181142   6 sec  quicklook ok
+0300 0017 27100036  27100037                  5.33            +181140   6 sec
+0310 0018 27100038  ABORTED
+
+
+LST@stop: 0310      RA@stop: 0247   (enter at top of page too, please)
+
+NOTES:
+-- For this decl, the Az is very close to 90 degrees. This declination is as close as I can get
+   after numerous iterations. It wants to go to lower decl or else negative ZA (which doesn't work too well!)
+-- Previous observer went overtime.... my hand was starting to dial the phone....   
+-- TOGS : start at za=5.6 degrees; takes 1min29 sec to rotate ALFA at which point it is already 6.0 deg.
+    The azimuth is creeping up too.....  
+-- Using 'zenith strip' observing mode, close to zenith!
+-- TOGS at START only. 
+-- Occasional cima warnings: extrapolating pnt-data... or AGC-datablock. As long as over only 2sec, ok.
+-- Regularly getting "observing when not on source" messages at the start of each drift. That's  
+   going to happen for the duration......... Not a big deal. It's only a couple of seconds and the
+   error is only some arcseconds.
+-- FAA radar ON
+-- All beams OK
+-- Tiedowns fine
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 14.3   K3: 15.5   K4: 15.7   AT 18:00
+70K = K1: 84.6   K2: 91.7   K3: 103.0  K4: 111.3
+
+16K = K1: 14.1   K2: 14.0   K3: 15.1   K4: 15.7   AT 22:15
+70K = K1: 85.1   K2: 92.2   K3: 103.2  K4: 111.5
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+

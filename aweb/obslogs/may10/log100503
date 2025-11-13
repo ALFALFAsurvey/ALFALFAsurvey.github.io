@@ -1,0 +1,75 @@
+Log for 05/03/10          Observer: Manolis Papastergis (Greg Hallenbeck after 1214 LST)
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100503.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100504.a2010.****.fits
+
+LST@start: 0912
+
+LST  fits   Scan    calscan   Source     Pattern   Start coords. ang   time  loop  calmode    
+0912 0011  12300098 12300099  drift113p3 fixAZdr   091200+271851 19.0  600   99    loopend   started about ~8 mins early :)
+0922 0012  12300100 12300101  power ok; pointing ok; quicklooked fits 0011:ok
+0932 0013  12300102 12300103
+0942 0014  12300104 12300105
+0953 0015  12300106 12300107  GPS 'trail'
+1003 0016  12300108 12300109
+1013 0017  12300110 12300111
+1023 0018  12300112 12300113
+1033 0019  12300114 12300115
+1043 0020  12300116 12300117
+1053 0021  12300118 12300119
+1103 0022  12300120 12300121
+1113 0023  12300122 12300123
+1124 0024  12300124 12300125
+1134 0025  12300126 12300127
+1144 0026  12300128 12300129
+1154 0027  12300130 12300131 
+1204 0028  12300132 12300133
+1214 0029  12300134 12300135 Greg takes over at start of 12300134, quicklook OK, radar is extremely strong
+1224 0030  12300136 12300137
+1234 0031  12300138 12300139
+1245 0032  12300140 12300141
+1255 0033  12300142 12300143
+1305 0034  12300144 12300145
+1315 0035  12300146 12300147
+1325 0036  12300148 12300149 quicklook OK
+1335 0037  12300150 12300151
+1345 0038  12300152 12300153
+1355 0039  12300154 12300155
+1406 0040  12300156 12300157
+1416 0041  12300158 12400001
+1426 0000  12400002 12400003
+1436 0001  12400004 12400005
+1446 0002  12400006 12400007
+1456 0003  12400008 12400009
+1506 0004  12400010 12400011
+1516 0005  12400012 12400013 quicklook OK; radar weak enough that galactic hydrogen clearly seen in quicklook
+1526 0006  12400014 12400015
+1536 0007  12400016 12400017
+1547 0008  12400018 12400019
+1557 0009  12400020 aborted
+
+LST@stop:1559
+
+NOTES:
+
+- Occasional "duplicate AGC datablock"s
+
+- No TOGS at start, TOGS run at end
+- FAA radar ON
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+16K = K1: 13.3   K2: 13.5   K3: 15.0   K4: 15.2   AT 18:02
+70K = K1: 80.7   K2: 87.3   K3: 97.4   K4: 105.4
+
+16K = K1: 13.4   K2: 13.5   K3: 15.0   K4: 15.0   AT 23:55
+70K = K1: 80.7   K2: 87.3   K3: 97.4   K4: 105.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

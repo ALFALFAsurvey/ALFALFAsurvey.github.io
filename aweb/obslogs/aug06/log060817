@@ -1,0 +1,64 @@
+Log for 06/08/17 am
+Observer: Ann
+                                                                                
+System Configuration:
+                                                                                
+FixedAZ Drift Map Cima version 2.2.06 (normal)
+Using: a2010_aug2006.gui as save state.
+                                                                                
+Files: /share/pserverf.sdb1/wappdata/wapp.20060817.a2010.****.fits
+                                                                                
+                                                                                
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time
+loop
+$_______________________________________________________________________________$                                                                                
+2129 0003 622900880 622901482 drift130p2 FixedAz  212900+313800  19  600 99 power levels ok
+2139 0004 622901485 622902087
+2149 0005 622902090 622902692
+2159 0006 622902695 622903297
+2209 0007 622903300 622903902
+2219 0008 622903905 622904507
+2229 0009 622904510 622905112
+2239 0010 622905115 622905717
+2249 0011 622905720 622906322 power levels ok
+2259 0012 622906325 622906927
+2310 0013 622906930 622907532
+2320 0014 622907535 622908137
+2330 0015 622908140 622908742
+2340 0016 622908745 622909347
+2350 0017 622909350 622909952
+0000 0018 622909955 622910557
+0010 0019 622910560 622911162
+0021 0020 622911165 622911767
+0031 0021 622911770 622912372 power levels ok
+0041 0022 622912375 622912977 
+0051 0023 622912980 622913582
+0101 0024 622913585 -- aborted 
+0110 0025 622914126 622914728 power levels ok
+0120 0026 622914731 622915333
+0130 0027 622915336 622915938
+0140 0028 622915941 622916543
+0151 0029 622916546 662917148
+0201 0030 622917151 622917753
+0211 0031 622917756 622918358
+0221 0032 622918361 622918963
+0231 0033 622918966 622919568
+0241 0034 622919571 622920173
+0251 0035 622920176 622920778
+0301 0036 622920781 622921383
+0311 0037 622921386 --aborted
+
+END LST: 0311
+
+NOTES:
+TOGS run at start and end ok.
+
+Several minutes into FITS 0024, we briefly lost our network connection to AO.
+When VNC was accessible again, the WAPPS were (very) confused -- see cimalog around 03:45 a.m.
+
+I aborted the obs, restarted the WAPPs but lost the network connection again in the middle
+of trying to reconfigure, so some time was lost (and because I had aborted the scan, the advantage
+of using VNC when the network acts up was lost too), but the restart & reconfig seemed to work out just 
+fine (FITS 0025 looked ok). There were several more brief losses of network connection
+throughout the rest of the night (last time at 6 a.m.) but the WAPPs didn't get confused after
+the first time. I emailed Mikael & Arun at the operator's suggestion. 

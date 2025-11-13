@@ -1,0 +1,68 @@
+Log for 06/11/22      Observers: Tom Balonek and
+                      Jamie Lomax, Aileen O'Donoghue, Jeff Miller (SLU)
+on-site observing
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az360.gui as save state.
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061122.a2010.****.fits
+
+
+LST  fits   Scan     calscan   Source   Pattern  Start coords.  ang  time  loop calmode
+     0002-0004 --aborted / no drifts (beam 2B no power)
+2149 0005 632665359 632665961 drift51p2 FixedAz 214900+122436   19   600   99  loopend
+2159 0006 632665964 632666566
+2209 0007 632666569 632667171
+2219 0008 632667174 632667776
+2229 0009 632667779 632668381
+2239 0010 632668384 632668986
+2249 0011 632668989 632669591
+2259 0012 632669594 632670196
+2309 0013 632670199 632670801
+2320 0014 632670804 632671406
+2330 0015 632671409 632672011
+2340 0016 632672014 632672616
+2350 0017 632672619 632673221
+0000 0018 632673224 632673826
+0010 0019 632673829 632674431
+0020 0020 632674434 632675036
+0030 0021 632675039 632675641
+0041 0022 632675644 632676246
+0051 0023 632676249 632676851
+0101 0024 632676854 632677456
+0111 0025 632677459 632678061
+0121 0026 632678064 632678666
+0131 0027 632678669 632679271
+0141 0028 632679274 632679876
+0151 0029 632679879 632680481
+0201 0030 632680484 632681086
+0212 0031 632681089 632681691
+0222 0032 632681694 632682296
+0232 0033 632682299 632682901
+0242 0034 632682904 632683506
+0252 0035 632683509 632684111 Strong continuum source beam 4 during cal
+0302 0036 632684114 632684716
+0312 0037 632684719 632685321
+0322 0038 632685324 632685926
+0333 0039 632685929 --aborted 
+
+END LST: 0333
+
+
+NOTES:
+TOGS ran at start and end.
+
+During TOGS, aborted twice (wrong start RA -- TB errors.)
+
+At the begining of the run we weren't getting any data from channel
+2B, so aborted first drift. Phil Perillat found a cable unplugged from
+WAPP in WAPP room. He plugged it back in!  We were able to start before 22
+LST, which is fine.  This did NOT affect the beginning of run TOGS.  
+
+Checked Power Levels almost continuously throughout night (with four
+observers, someone was checking it nearly every drift!!).
+
+Beam 1 Pol B now fine - power levels fine and stable (system was warmed
+up, then recooled, since last run).

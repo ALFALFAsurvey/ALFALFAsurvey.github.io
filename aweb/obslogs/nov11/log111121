@@ -1,0 +1,68 @@
+Log for 11.11.21(21Nov2011)        Observers: Rose Finn, Michele McColgan, Laura Apicello, Steve 
+Atkinson, Ian Gilchrest, Alissa Earle, Thad Savery, Amy McCann!
+
+System Configuration:  a2010_az180_2010.conf
+CIMA version           {Record the FULL name of the CIMA version, e.g., 3.1.08 2010-02-01 17:44 "Smart"}
+File(s):  /share/pserverf.sda2/wappdata/wapp.20101122.a2010.****.fits
+
+Normal meridian observing setup
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+2132 0000  132500286 132500287 drift136p1 fixAzdr   213200+325818  19  600   99 loopend can see 1350 radar  and harmonic at 1410
+2142 0001 132500288 132500289 drift136p1 fixAzdr    213200+325818  19 600   99 
+2153 0002 132500290 132500291 
+2202 0003 132500292 132500293 1350 radar and harmonic at 1380 and something at 1340 only in 1, 5 and 3
+2213 0004 132500294 132500295
+2223 0005 132500296 132500297 radar is still strong
+2233 0006 132500298 132500299 
+2243 0007 132500300 132500301
+2253 0008 132500302 132500303
+2303 0009 132500304 132500305
+2313 0010 132500306 132500307
+2323 0011 132500308 132500309
+2333 0012 132500310 132500311 wapp error that seemed to go away, wide peak at 1381 from 20:00 local time to 20:05
+2343 0013 132500312 132500313
+2353 0014 132500314 132500315 beam 2 power dipping low but coming back up
+0004 0015 132500316 132500317
+0014 0016 132500318 132500319 in quicklook channel 6B shows noise
+0024 0017 132500320 132500321
+0034 0018 132500322 132500323
+0044 0019 132500324 132500325 in quicklook channel 6B shows noise
+0054 0020 132500326 132500327
+0104 0021 132500328 132500329
+0114 0022 132500330 132500331
+0125 0023 132500332 132500333
+0135 0024 132500334 132500335 in quicklook channel 4B shows power at 1.4dB 
+0145 0025 132500336 132500337 
+0155 0026 132500338 132500339 
+0205 0027 132500340 132500341
+0215 0028 132500342 132500343
+0225 0029 132500344 132500345
+0235 0030 132500346 132500347
+0245 0031 132500348 132500349
+0256 0032 132500350 132500351
+0306 0033 132500352 132500353
+0316 0034  ABORTED !
+
+LST stop: 0316      {Be sure to record the LST stop time of the last GOOD record}
+
+At the bottom, add notes regarding:
+-- Beam 6B dead; 4A reported running hot (42K as per Dana in advance)
+-- TOGS run at end.
+-- FAA radar on
+-- check each scan with quicklook.  all looks ok to us!
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 14.9   K2: 13.6   K3: 14.9   K4: 15.1   AT 08:14
+70K = K1: 86.7   K2: 86.7   K3: 94.3   K4: 103.1
+
+16K = K1: 14.8   K2: 14.0   K3: 15.7   K4: 15.9   AT 15.11
+70K = K1: 86.8   K2: 87.3   K3: 94.9   K4: 103.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+

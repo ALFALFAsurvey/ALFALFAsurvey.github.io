@@ -1,0 +1,95 @@
+Log for 04/08/10          Observer: Betsey Adams
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100408.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100409.a2010.****.fits
+
+Zenith strip observing setup
+Az=267.0   ALFAang=-69.2  ZA=7.5   AzG=266.46
+
+RA@start=0820   RA@end=1645
+RA = LST + 31 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode       ZAdome
+0749 0024  9800110  9800111       drift77p1 fixAZdr   082000+183654 -69.2 600   99   loopend       ZA=7.52d
+0759 0025  9800112  9800113       quicklook, power levels ok; continuum source          ha=30 min; ZA=7.13
+0809 0026  9800114  9800115                                                 azG=266.44; ha=29 min; za=6.98
+0819 0027  9800116  9800117                                                 azG=266.43; ha=28 min; za=6.82
+0829 0028  9800118  9800119                                                 azG=266.43; ha=28 min; za=6.68
+0839 0029  9800120  9800121       continuum source                          azG=266.42; ha=27 min; za=6.55
+0849 0030  9800122  9800123       quicklook ok                              azG=266.41; ha=27 min; za=6.43
+0900 0031  9800124  9800125                                                 azG=266.41; ha=26 min; za=6.33
+0910 0032  9800126  9800127    odd continuum rfi source near end of drift   azG=266.40; ha=26 min; za=6.23
+0920 0033  9800128  9800129                                                 azG=266.40; ha=25 min; za=6.13
+0930 0034  9800130  9800131                                                 azG=266.39; ha=25 min; za=6.04
+0940 0035  9800132  9800133       quicklook ok                              azG=266.39; ha=24 min; za=5.97
+0950 0036  9800134  9800135                                                 azG=266.38; ha=24 min; za=5.90
+1000 0037  9800136  9800137                                                 azG=266.37; ha=24 min; za=5.84
+1010 0038  9800138  9800139                                                 azG=266.37; ha=24 min; za=5.78
+1020 0039  9800140  9800141                                                 azG=266.37; ha=24 min; za=5.73
+1031 0040  9800142  9800143                                                 azG=266.36; ha=23 min; za=5.69
+1041 0041  9800144  9800145       quicklook ok                                  266.36     23         5.65
+1051 0042  9800146  9800147                                                     266.36     23         5.61
+1101 0043  9800148  9800149                                                     266.35     23         5.59
+1111 0044  9800150  9800151                                                     266.35     23         5.56
+1121 0045  9800152  9800153                                                     266.35     23         5.55
+1131 0046  9800154  9800155                                                     266.35     23         5.54
+1141 0047  9800156  9800157                                                     266.35     23         5.53
+1152 0048  9800158  9800159                                                     266.35     23         5.53
+1202 0049  9800160  9800161                                                     266.35     23         5.54
+1212 0050  9800162  9800163                                                     266.35     23         5.55
+1222 0051  9800164  9800165                                                                           5.56
+1232 0052  9800166  9900001                                                                           5.59
+1242 0000  9900002  9900003      quicklook ok                                   266.36                5.62
+1252 0001  9900004  9900005                                                                           5.65
+1302 0002  9900006  9900007                                                                           5.69
+1312 0003  9900008  9900009                                                     266.37     24         5.74
+1322 0004  9900010  9900011                                                                           5.80
+1333 0005  9900012  9900013                                                     266.38                5.86
+1343 0006  9900014  9900015                                                                           5.93
+1353 0007  9900016  9900017      quicklook ok                                   266.39     25         6.01
+1403 0008  9900018  9900019                                                                           6.09
+1413 0009  9900020  9900021                                                     266.40     26         6.19
+1423 0010  9900022  9900023                                                     266.41                6.29
+1433 0011  9900024  9900025                                                                           6.41
+1443 0012  9900026  9900027                                                     266.42     27         6.54
+1453 0013  9900028  9900029                                                     266.43     28         6.68
+1504 0014  9900030  9900031                                                                           6.84
+1514 0015  9900032  9900033                                                     266.44     29         7.02
+1524 0016  9900034  9900035                                                     266.45     30         7.23
+1534 0017  9900036  9900037                                                     266.46     31         7.48
+1544 0018  9900038  9900039     quicklook ok                                    266.47     32         7.81
+1554 0019  9900040  9900041                                                     266.49     34         8.30
+1604 0020  9900042  Aborted
+
+
+LST stop: 1604        RA stop: 1639
+
+NOTES:
+This drift is close to zenith.
+Tried an initial az=267.2 but ran into issues with requested za of -0.0...
+Settled on an azimuth of 267.0 with initial za of 7.5 and ha of 30 minutes
+
+On the last, aborted drift, CIMA tried to send telescope to za=-0.02 again
+I was waiting for that all night - glad it waited until I was already done.
+
+TOGS run at end -- not run at start!
+
+FAA radar ON
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.6   K2: 14.5   K3: 16.0   K4: 16.2   AT 16:18
+70K = K1: 83.9   K2: 91.5   K3: 101.3  K4: 108.8
+
+16K = K1: 14.8   K2: 14.8   K3: 16.2   K4: 16.2   AT 23:17
+70K = K1: 85.2   K2: 93.2   K3: 102.5  K4: 110.3
+
+			=>temperatures of the 8 sensors within ALFA housing
+

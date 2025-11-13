@@ -1,0 +1,92 @@
+Log for 10/10/11     Observer: Martha Haynes
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda2/wappdata/wapp.20101011.a2010.****.fits
+             /share/pserverf.sda2/wappdata/wapp.20101012.a2010.****.fits
+
+*** *****Zenith strip observing setup********
+****
+****   Az=234.7   ALFAang= -33.6  ZA=5.8   
+****
+      RA@start=20h55m      RA@end=03h29m
+      RA = LST+20 min
+****
+
+Note that Beam 6.1 is bad. 2.0 is flakey. Have seen other issues with power levels.
+During TOGS getting error messages about WAPP power levels.
+For this reason, I decide to skip the near-zenith drift and go for a more conservative one.
+
+LST RANGE: 2051-0316
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.    ang  time loop  calmode  ZAdome
+2035 0016 28400067  28400068   drift89p1  fixAzdr   205500+213206     19  600	99   Hcorcal  5.7  Beam 6b dead;  4b=0.737
+2045 0017 28400069  28400070                                          quicklook ok
+2055 0018 28400071  28400072   
+2106 0019 28400073  28400074                                          quicklook ok
+2116 0020 28400075  28400076                                          
+2126 0021 28400077  28400078
+2137 0022 28400079  28400080                                          za=5.72
+2147 0023 28400081  28400082                                         
+2157 0024 28400083  28400084                                         
+2207 0025 28400085  28400086                                          za=5.73     4b = 0.749
+2217 0026 28400087  28400088                                          
+2227 0027 28400089  28400090                                          Duplicate AGC datablock warning
+2237 0028 28400091  28400092                                         
+2247 0029 28400093  28400094                             
+2258 0030 28400095  28400096                                          za=5.73     4b = 0.752
+2308 0031 28400097  28400098                                          VNC window goes black for 1-2 secs
+2318 0032 28400099  28400100                             
+2328 0033 28400101  28400102                             
+2338 0034 28400103  28400104                                          za=5.74     4b = 0.756
+2348 0035 28400105  28400106                                          
+2358 0036 28400107  28400108                                          
+0009 0037 28400109  28400110                                          
+0019 0038 28400111  28400112                                          
+0029 0039 28400113  28400114                                          
+0039 0040 28400115  28400116                                          za=5.73     4b = 0.764
+0049 0041 28400117  28500001
+0059 0000 28500002  28500003
+0109 0001 28500004  28500005
+0119 0002 28500006  28500007
+0129 0003 28500008  28500009
+0140 0004 28500010  28500011
+0150 0005 28500012  28500013
+0200 0006 28500014  28500015                                          za=5.72     4b = 0.785
+0210 0007 28500016  28500017                                          Extra/inter pnt-data
+0220 0008 28500018  28500019
+0230 0009 28500020  28500021
+0240 0010 28500022  28500023                                          za=5.70     4b = 0.781  Extra/inter pnt-data
+0250 0011 28500024  28500025
+0300 0012 28500026  28500027
+
+LST@stop:0310 => RA@stop 0329
+
+NOTES:
+  
+-- Tiedowns disabled
+-- TOGS run at start of night only
+-- Beams 6B bad all night. Power levels low in beam 4B (warning range; see above). 
+-- Beam 4B power rose gradually over the night, but never to levels above 0.79
+
+-- Notice that 16K ALFA temp for K2 last night was much higher than tonight
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 13.8   K2: 14.2   K3: 15.5   K4: 15.7   AT 16:40
+70K = K1: 86.5   K2: 92.7   K3: 102.5  K4: 112.7
+
+16K = K1: 13.6   K2: 13.8   K3: 15.0   K4: 15.2   AT 2109
+70K = K1: 82.2   K2: 87.8   K3: 96.6   K4: 105.9
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+
+

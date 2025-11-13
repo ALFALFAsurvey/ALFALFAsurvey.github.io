@@ -1,0 +1,58 @@
+Log for 11.04.19 (19Apr2011)        Observer: Martha Haynes
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110418.a2010.****.fits
+          /share/pserverf.sda2/wappdata/wapp.20110419.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+
+LST  fits    Scan      calscan    Source    Pattern   Start coords. ang  time loop calmode
+1305 0000  110800289 110800290  drift148p3   fixAzdr  130500+354949  19   600  99  loopend 
+1315 0001  110800291 110900001	                       Beams other than 6 look ok  quicklook ok
+1325 0000  110900002 110900003
+1335 0001  110900004 110900005
+1345 0002  110900006 110900007
+1356 0003  110900008 110900009
+1406 0004  110900010 110900011
+1416 0005  110900012 110900013                        all looks ok
+1426 0006  110900014 110900015
+1436 0007  110900016 110900017
+1446 0008  110900018 110900019
+1456 0009  110900020 110900021
+1506 0010  110900022 110900023
+1517 0011  110900024 110900025                        all looks ok
+1527 0012  110900026 110900027                        GPS burst
+
+LST stop: 1537
+
+-- started few early due to change of schedule (LBW down)
+-- Block is called 11.04.19; it was supposed to start at midnight
+-- Beam 6 is now dead in both pols.
+-- FAA radar OFF! That's nice...
+-- TOGS at END only.
+_____________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 15.1   K2: 14.5   K3: 15.7   K4: 15.7   AT 16:11
+70K = K1: 74.1   K2: 80.5   K3: 87.8   K4: 95.9
+
+16K = K1: 14.1   K2: 14.5   K3: 15.7   K4: 15.7   AT 22:38
+70K = K1: 74.8   K2: 81.2   K3: 89.1   K4: 97.4
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT 16:11
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:11
+				=>certify our blanker is locking on
+

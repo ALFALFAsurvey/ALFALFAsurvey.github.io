@@ -1,0 +1,65 @@
+Log for 08/23/10          Observer:Michelle Brault, Catherine Weigel, Parker Troischt, Victoria Mendoza, Seth Felix,, Ron Olowin, Becky Koopmann
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100822.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100823.a2010.****.fits
+
+LST  fits   Scan    calscan    Source    Pattern   Start coords. ang  time loop  calmode
+
+2125 0034 23500148  23500149   drift97p1  fixAZdr   212500+232854  19  600   99  loopend; power levels ok, faint cs beam 3
+2135 0035 23500150  23500001	quicklook ok
+2145 0000 23600002  23600003	quicklook ok
+2155 0001 23600004  23600005
+2205 0002 23600006  23600007	quicklook ok
+2215 0003 23600008  23600009	cs beam 6
+2225 0004 23600010  23600011   
+2235 0005 23600012  23600013	quicklook ok
+2245 0006 23600014  23600015	cs beams 2,0,6
+2255 0007 23600016  23600017
+2306 0008 23600018  23600019 
+2316 0009 23600020  23600021	extrapolating pnt-data error
+2326 0010 23600022  23600023   
+2336 0011 23600024  23600025	quicklook ok  
+2346 0012 23600026  23600027  
+2356 0013 23600028  23600029	power levels ok
+0006 0014 23600030  23600031	quicklook ok
+0016 0015 23600032  23600033  
+0026 0016 23600034  23600035	extrapolating pnt-data error quicklook ok
+0036 0017 23600036  23600037	power levels ok 
+0047 0018 23600038  23600039	cs beams 4 and 3
+0057 0019 23600040  23600041  
+0107 0020 23600042  23600043 	cs beams 6 and 0 quicklook ok
+0117 0021 23600044  23600045
+0127 0022 23600046  23600047	extrapolating pnt-data error, cs 4 and 3
+0137 0023 23600048  23600049	faint continuum scource in 5
+0147 0024 23600050  23600051	faint cs 4 and 3
+0157 0025 23600052  23600053  
+0208 0026 23600054  23600055  
+0218 0027 23600056  23600057	Faint cs in 6, power levels okay
+0228 0028 23600058  23600059	CS in 6, and faintly in 0
+0238 0029 23600060  23600061	
+0248 0030 23600062  23600063	
+0258 0031 23600064  23600065
+0308 0032 23600066-- abort
+
+LST@stop: 0308
+
+NOTES:
+- TOGS run at beginning 
+- FAA radar ON, harmonic also visible
+- Tiedowns disabled
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+16K = K1: 15.5   K2: 15.9   K3: 17.2   K4: 17.4   AT 16:51
+70K = K1: 94.9   K2: 102.9  K3: 114.2  K4: 122.5
+
+16K = K1: 15.8   K2: 15.7   K3: 17.2   K4: 17.4   AT 22:03
+70K = K1: 95.2   K2: 103.0  K3: 114.2  K4: 122.8
+
+
+=>temperatures of the 8 sensors within ALFA housing
+

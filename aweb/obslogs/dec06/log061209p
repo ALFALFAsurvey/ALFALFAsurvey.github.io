@@ -1,0 +1,45 @@
+Log for 06/12/09 PM      Observer: BC
+
+System Configuration:  FixedAZ Drift Map 
+                       Cima version 2.2.12 (normal)
+
+Using: a2010_az360.gui as save state. -- Note, 360 deg
+
+Files:  /share/pserverf.sda3/wappdata/wapp.20061209.a2010.****.fits
+
+LST  fits   Scan     calscan   Source    Pattern  Start coords.  ang  time  loop calmode
+0014 0026 634370026 634370628 drift31p1  FixedAz 001400+072518   19   600    99  loopend
+0024 0027 634370631 634371233
+0034 0028 634371236 634371838	RFI at 1381
+0044 0029 634371841 634372443
+0054 0030 634372446 634373048
+0104 0031 634373051 634373653	GPS at 1381
+0115 0032 634373656 634374258
+0125 0033 634374261 634374863
+0135 0034 634374866 634375468
+0145 0035 634375471 634376073
+0155 0036 634376076 634376678
+0205 0037 634376681 634377283
+0215 0038 634377286 634377888
+0225 0039 634377891 634378493
+0235 0040 634378496 634379098
+0246 0041 634379101 634379703	PROBLEMS!! This FITS needs to be fixed; see note 1.
+0256 0042 634379706 634380308
+0306 0043 634380311 634380913
+0316 0044 634380916 634381518
+0326 0045 634381521 		aborted
+
+
+
+NOTES:
+1. beam 4 and 5: freq. range appears to be -50 to 50 MHz, all other beams ok. 
+   Everything looks ok in other screens (no errors or warnings). I can see the FAA radar
+   and the Galaxy, but the spectrum looks reversed -- it looks like the same 
+   freak incident that happened on Nov. 1 2006. Exactly like last time, things went back 
+   to normal with the beginning of the next drift. 
+   ** FITS header fixed by BC on 2006.12.10.
+2. Power levels OK.
+3. TOGS run at end.
+
+
+

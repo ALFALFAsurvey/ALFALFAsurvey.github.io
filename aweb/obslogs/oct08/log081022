@@ -1,0 +1,56 @@
+Log for 081022     Observer: Arsenault and Spekkens
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.04  "next generation"
+File:        /share/pserverf.sda3/wappdata/wapp.20081022.a2010.****.fits 
+File:        /share/pserverf.sda3/wappdata/wapp.20081023.a2010.****.fits 
+
+
+LST  fits  Scan      calscan   Source     Pattern  Start coords. ang  time loop calmode
+2127 0011  829600256  829600257 drift43p1  fixAZdr  212700+102030  19  600   99 loopend   **
+2137 0012  829600258  829600259
+2147 0013  829600260  829600361
+2157 0014  829600262  829600363             **          
+2207 0015  829600264  829600365
+2217 0016  829600266  829600367
+2227 0017  829600268  829600369            Power levels ok except for 6B
+2237 0018  829600270  829600371
+2248 0019  829600272  829600273
+2258 0020  829600274  829600275
+2308 0021  829600276  829600277
+2318 0022  829600278  829600279
+2328 0023  829600280  829600281            Power levels ok except for 6B
+2338 0024  829600282  829600283            duplicate AGC datablock LST ~2345
+2348 0025  829600284  829600285
+2358 0026  829600286  829600287            duplicate AGC datablock LST ~0000
+0008 0027  829600288  829600289            duplicate AGC datablock LST ~0015   
+0018 0028  829600290  829600291
+0029 0029  829600292  829600293            duplicate AGC datablock LST ~0030
+0039 0030  829600294  829600295            duplicate AGC datablock LST ~0045
+0049 0031  829600296  829600297
+0059 0032  829600298  829600299            Power levels ok except for 6B
+0109 0033  829600300  829600301
+0119 0034  829600302  829600303
+0129 0035  829600304  829600305
+0140 0036  829600306  829700001
+0150 0000  829700002  829700003
+0200 0001  829700004  829700005
+0210 0002  829700006  829700007            Power levels ok except for 6B
+0220 0003  829700008  829700009
+0230 0004  829700010  829700011
+0240 0005  829700012  829700013
+0250 0006  829700014  829700015
+0300 0007  829700016  829700017
+0310 0008  829700018 - Aborted 
+
+END LST: 0311
+
+Notes:
+Beam 6B bad again
+Started at 2127, long slew at start and previous observation went over time.
+TOGS ran at end
+weak FAA radar and CH2 synthesizer (1350)
+**RFI at 1362 intermittent: from RFI ID list could be 1362.8 bw=78-156kHz  Very time variable
+WAPP warning "chip count: WARNING counts don't match between chip 0 and chip#' message received all night
+
+

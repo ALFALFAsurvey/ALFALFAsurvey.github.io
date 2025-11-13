@@ -1,0 +1,73 @@
+Log for 01/13/10          Observers: Tom Balonek + Undergrad ALFALFA Team
+                                     (Ron Olowin, Jill Eyeman, Seth Felix - St. Mary's College
+                                      
+
+System Configuration:                   a2010_az180_2010.conf
+CIMA version       			3.1.06 2009-11-22 11:19 "Smart" 
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20100113.a2010.****.fits
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0851 0001  1300053  1300054     drift83p1 fixAZdr   085100+200430  19  600   99  loopend  
+0901 0002  1300055  1300056   power levels ok; quicklook ok
+0911 0003  1300057  1300058
+0922 0004  1300059  1300060
+0932 0005  1300061  1300062
+0942 0006  1300063  1300064
+0952 0007  1300065  1300066
+1002 0008  1300067  1300068
+1012 0009  1300069  1300070
+1022 0010  1300071  1300072
+1032 0011  1300073  1300074   quicklook ok, power level ok
+1042 0012  1300075  1300076
+1053 0013  1300077  1300078   
+1103 0014  1300079  1300080   quicklook ok, power levels ok
+1113 0015  1300081  1300082   INTENSE GPS burst (1381 MHz) for about minute near drift end
+1123 0016  1300083  1300084
+1133 0017  1300085  1300086
+1143 0018  1300087  1300088
+1153 0019  1300089  1300090
+1203 0020  1300091  1300092   two continuum sources
+1213 0021  1300093  1300094
+1223 0022  1300095  1300096
+1234 0023  1300097  1300098
+1244 0024  1300099  1300100
+1254 0025  1300101  1300102
+1304 0026  1300103  1300104   weak cont. src
+1314 0027  1300105  1300106
+1324 0028  1300107  1300108
+1334 0029  1300109  1300110
+1344 0030  1300111  1300112  GPS burst
+1355 0031  1300113  1300114
+1405 0032  1300115  1300116  GPS burst
+1415 0033  1300117  -- aborted
+
+
+LST stop: 1415
+
+NOTES:
+Started 10 minutes early; TOGS run @ start and end
+
+Scan numbers still wrong
+FAA radar is back on - weak at times, strong at others
+
+INTENSE GPS burst drift (fits) 0015
+
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 10.5   K2: 10.4   K3: 11.6   K4: 11.3   AT 16.12
+70K = K1: 55,6   K2: 63.9   K3: 71.3   K4: 79.1
+
+16K = K1: 10.4   K2: 10.6   K3: 12.1   K4: 12.8   AT 22:47
+70K = K1: 52.2   K2: 60.2   K3: 66.8   K4: 73.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   Off
+Alfa Covers: Covered
+LBW Covers:  
+__________________________________

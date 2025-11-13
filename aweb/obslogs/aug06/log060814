@@ -1,0 +1,59 @@
+Log for 06/08/14 am
+Observers: Sabrina
+                                                                                
+System Configuration:
+                                                                                
+FixedAZ Drift Map Cima version 2.2.06 (normal)
+Using: a2010_aug2006.gui as save state.
+                                                                                
+Files: /share/pserverf.sdb1/wappdata/wapp.20060814.a2010.****.fits
+                                                                                
+                                                                                
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time
+loop
+$_______________________________________________________________________________$                                                                                
+2209 0005 622603947 622604549 drift127p2 FixedAz  220900+305412  19  600
+99
+2219 0006 622604553 622605154 power levels ok
+2229 0007 622605158 622605759
+2239 0008 622605763 622606364
+2249 0009 622606368 622606969
+2259 0010 622606973 622607574  
+2309 0011 622607578 622608179 
+2319 0012 622608183 622608784 
+2329 0013 622608788 622609389 power levels ok
+2339 0014 622609393 622609994
+2349 0015 622609998 622610599
+2359 0016 622610603 622611204
+0009 0017 622611208 622611809
+0019 0018 622611813 622612414
+0030 0019 622612418 622613019
+0040 0020 622613023 622613624
+0050 0021 622613628 622614229
+0100 0022 622614233 622614834
+0110 0023 622614838 622615439
+0120 0024 622615443 622616044
+0130 0025 622616048 aborted (WAPP error at 0137LST)
+0139 0026 622616530 622617132 
+0149 0027 622617135 622617736 power levels ok
+0159 0028 622617740 622618341
+0209 0029 622618345 622618946
+0219 0030 622618950 622619551
+0229 0031 622619555 622620156
+0239 0032 622620160 622620761
+0249 0033 622620765 622621366
+0259 0034 622621370 622621971
+
+END LST: 0310
+
+NOTES:
+Due to problems with dataview I could not use the vncserver (and thus
+could not monitor the waterfall plots).  Dataview was extremely slow
+(taking four or five minutes to execute each command) as noted both on the
+Cornell end and by the operator in the control room.  The operator was
+unable to get TOGS running on dataview, so he ran it on observer2 instead.
+
+Tiedowns were disabled.
+
+WAPP errors took place during fits file 25 (at 0137 LST).
+Error read "counts dont match for chip"

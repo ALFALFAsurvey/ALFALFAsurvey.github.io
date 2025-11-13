@@ -1,0 +1,68 @@
+Log for 090830     Observers: Betsey Adams
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20090830.a2010.****.fits 
+Files:       /share/pserverf.sda3/wappdata/wapp.20090831.a2010.****.fits 
+
+     ****
+LST  fits  Scan       calscan    Source     Pattern   Start coords.  ang  time  loop  calmode 
+2141 0033 924200200  924200201   drift5p1  fixAZdr   214100+010542   19   600   99    loopend   fits file ok
+2151 0034 924200202  924200203   Warning observing when not on source error message, back on source after 4 seconds (2-6s of drift,recs look okay)
+2201 0035 924200204  924300001                                ****SEE IMPORTANT NOTED ADDED LATER BY MARTHA AT BOTTOM
+2211 0000 924300002  924300003   fits file ok
+2221 0001 924300004  924300005
+2231 0002 924300006  924300007
+2241 0003 924300008  924300009
+2251 0004 924300010  924300011
+2302 0005 924300012  924300013
+2312 0006 924300014  924300015
+2322 0007 924300016  924300017
+2332 0008 924300018  924300019
+2342 0009 924300020  924300021
+2352 0010 924300022  924300023
+0002 0011 924300024  924300025
+0012 0012 924300026  924300027  fits file ok
+0023 0013 924300028  924300029
+0033 0014 924300030  924300031
+0043 0015 924300032  924300033
+0053 0016 924300034  924300035
+0103 0017 924300036  924300037
+0113 0018 924300038  924300039 
+0123 0019 924300040  924300041
+0133 0020 924300042  924300043
+0144 0021 924300044  924300045
+0154 0022 924300046  924300047
+0204 0023 924300048  924300049
+0214 0024 924300050  924300051
+0224 0025 924300052  924300053
+0234 0026 924300054  924300055
+0244 0027 924300056  924300057		fits file ok
+0254 0028 924300058  924300059
+0304 0029 924300060  924300061
+0315 0030 924300062  924300063
+0325 0031 924300064  Aborted
+
+END LST: 0325
+
+
+Notes:
+TOGS run at start and end
+Beam 6B is on!
+FAA radar on
+
+**** Martha notices later that this drift was actually at the position of 12p1 +023318.
+The cimalog contains lots of VLBA ON-SOURCE references. 
+The cause of this is unknown; the proper coordinates were entered before TOGS and
+at some later point too. The positions clearly correspond to 12p1 not 5p1.
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 7.1  K2: 8.3  K3: 14.0  K4: 10.9  AT 16:13
+70K = K1: 69.1  K2: 74.8  K3: 88.0  K4: 95.8
+
+16K = K1 7.7   K2 8.6   K3 14.2   K4 11.5   AT 23:25
+70K = K1 69.4   K2 75.3   K3 88.7   K4 96.3
+

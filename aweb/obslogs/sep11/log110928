@@ -1,0 +1,97 @@
+Log for 09/28/11 (28Sep2011)     Observer: Jess O'Connor & Derek Fertig
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda3/wappdata/wapp.20110928.a2010.****.fits
+             /share/pserverf.sda3/wappdata/wapp.20110929.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=245.0   ALFAang= -44.0  ZA=4.1  AzG=244.21  ZaG=4.02
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2148  RA@end=0333
+      RA = LST + 16 min
+****
+During the night, please make occational notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the inner ZA limit
+is 1.1 deg. If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2134 0021 127100148 127100149   drift82p2  fixAZdr  214900+195713  -44.0                           Power levels and rotation angle are good. 
+2144 0022 127100150 127100151                                                                      ZA=4.02 RA=2200 Quicklook okay.   
+2154 0023 127100152 127100153
+2204 0024 127100154 127100155
+2214 0025 127100156 127100157 
+2224 0026 127100158 127100159 
+2234 0027 127100160 127100161  
+2244 0028 127100162 127100163
+2255 0029 127100164 127100165 									    Quicklook okay. 
+2305 0030 127100166 127100167 									    ZA=4.04 RA=2321 
+2315 0031 127100168 127100169 
+2325 0032 127100170 127100171   							             
+2335 0033 127100172 127100173
+2345 0034 127100174 127100175
+2355 0035 127100176 127200001										quicklook okay. ZA=4.03 
+0006 0000 127200002 127200003
+0016 0001 127200004 127200005										Power levels okay.
+0026 0002 127200006 127200007
+0036 0003 127200008 127200009
+0046 0004 127200010 127200011
+0056 0005 127200012 127200013
+0106 0006 127200014 127200015										Quicklook looks good. 
+0116 0007 127200016 127200017
+0126 0008 127200018 127200019
+0137 0009 127200020 127200021
+0147 0010 127200022 127200023										Quicklook is fine. ZA=4.02 
+0157 0011 127200024 127200025
+0207 0012 127200026 127200027
+0217 0013 127200028 127200029
+0227 0014 127200030 127200031
+0237 0015 127200032 127200033
+0247 0016 127200034 127200035										Quicklook okay. ZA=4.0 
+0258 0017 127200036 127200037
+0308 0018 127200038 127200039							
+0318 0019 127200040 ABORTED 
+
+LST@stop:0318       RA@stop:0333 
+
+NOTES: Mostly uneventful night. Beam 4A is still dead and there were some FAA harmonics. 
+
+-- Using 'zenith strip' observing mode
+-- TOGS run at beginning.  
+-- FAA radar ON
+-- Beam 4A dead. 
+-- Tiedowns fine
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 13.5   K3: 15.5   K4: 15.4   AT 18:00
+70K = K1: 86.5   K2: 87.3  K3: 94.1  K4: 102.4
+
+16K = K1: 13.8   K2: 13.2   K3: 15.2   K4: 15.2   AT 23:00
+70K = K1: 86.3   K2: 86.5  K3: 93.7  K4: 102
+
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT 16:00
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:  ON   AT 16:00
+				=>certify our blanker is locking on
+
+

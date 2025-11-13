@@ -1,0 +1,57 @@
+A2982 LBW   15.11.20  Observers: Leland Moore, Justin Robinson, R Olowin
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2982.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2982_151120.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+ 
+Data written to:     /share/wappdata.now/wapp.20151120.2982.****.fits  (this run ends before midnight)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+H215519.3+302924  215519.3 +302924  j     0 H v   # A011847cal 21:30  13.68 0000  532400279    Source board 2, 1394 MHz v=5500, S/N 8.5, RFI at 1450 MHz
+S215651.8+302512  215651.8 +302512  j     0 H v   # A311350    21:37  12.99 0001  532400283    Source board 4, 1350 MHz v=1.58x10^4, S/N 13 
+S221124.6+244136  221124.6 +244136  j     0 H v   # A322498    21:51  08.06 0002  532400287    Source board 2, 1387 MHz, v=7100, S/N 3.5
+S224458.8+232512  224458.8 +232512  j     0 H v   # A322990    22:04  10.84 0003  532400291    Ambiguous source board 4
+S224047.0+260356  224047.0 +260356  j     0 H v   # A323065    22:17  09.59 0004  532400295    No detections
+S224219.7+255343  224219.7 +255343  j     0 H v   # A323069    22:29  08.23 0005  532400299    RFI 1350 MHz, detection? board 4, 1344 MHz, v=1.57x10^4, S/N=5
+S224405.5+264344  224405.5 +264344  j     0 H v   # A323009    22:42  08.49 0006  532400303    Source board 4, 1363 MHz, v=1.26x10^4, S/N=3
+S230014.0+251556  230014.0 +251556  j     0 H v   # A336089    22:54  07.14 0007  532400307    bad baseline, source? 1374MHz 
+S232845.8+273539  232845.8 +273539  j     0 H v   # A335376    23:08  10.57 0008  532400311    Source board 3, 1377 Mhz, v=9.5x10^3, S/N=4.5
+S234957.4+264925  234957.4 +264925  j     0 H v   # A336102    23:20  10.98 0009  532400315    RFI source board 3 at 1381 MHz
+S001031.5+284418  001031.5 +284418  j     0 H v   # A104325    23:34  13.51 0010  532400319    RFI source board 4 at 1349 MHz
+S001313.2+274951  001313.2 +274951  j     0 H v   # A104337    23:46  11.38 0011  532400323    RFI source board 4 at 1350 MHz
+S002125.1+285312  002125.1 +285312  j     0 H v   # A108427    23:59  11.91 0012  532400327    Source board 2, 1398 MHz, v=4700, S/N=2.75
+S003803.4+292457  003803.4 +292457  j     0 H v   # A104962    00:11  12.70 0013  532400331    source? board 2 1396 Mhz v=5250km/s s/n=2
+S010438.6+273003  010438.6 +273003  j     0 H v   # A115360    00:24  13.24 0014  532400335    source board 4 1356 MHz v=14000km/s s/n=2.5  
+S011629.9+283801  011629.9 +283801  j     0 H v   # A115399    00:36  13.91 0015  532400339    spike 1389?, source? 1369MHz v=11000km/s s/n=3
+S012512.7+291152  012512.7 +291152  j     0 H v   # A115841    00:49  13.78 0016  532400343    source board 4 1386MHz v=7400km/s  s/n=2.5
+S013042.9+294705  013042.9 +294705  j     0 H v   # A115806    01:01  13.44 0017  532400347    source? board 3 1367Mhz v=11600km/s  s/n=1.5
+S014248.8+294942  014248.8 +294942  j     0 H v   # A115500    01:13  13.47 0018  532400351    source? board 4 1360MHz v=13200km/s s/n=1.5 
+S015015.7+315128  015015.7 +315128  j     0 H v   # A115873    01:26  14.73 0019  532400355    no detections
+S015242.0+304442  015242.0 +304442  j     0 H v   # A115878    01:38  12.94 0020  532400359    Anomalous
+S015253.6+305012  015253.6 +305012  j     0 H v   # A115880    01:50  12.60 0021  532400363    GPS 1380 MHz, RFI 1350 MHz
+S020405.1+275923  020405.1 +275923  j     0 H v   # A125244    02:04  09.73 0022  532400367    No detections
+S020412.1+272328  020412.1 +272328  j     0 H v   # A124660    02:16  09.47 0023  532400371    Source board 1396 MHz, v=5200, N/S=2.5
+S020738.8+290150  020738.8 +290150  j     0 H v   # A124667    02:28  11.72 0024  532400375    No detections
+S022621.3+252359  022621.3 +252359  j     0 H v   # A122936    02:43  08.25 0025  532400379    Source board 3 1372 MHz, v=1.06x10^4, S/N=5
+S022621.3+252359  022621.3 +252359  j     0 H v   # A122936    02:54  09.54 0026  532400383    REPEAT OF s022621.3+252359
+S022647.8+252024  022647.8 +252024  j     0 H v   # A124642    03:07  11.52 0027  532400387    GPS 1381 MHz, RFI 1350 MHz
+S030038.7+254701  030038.7 +254701  j     0 H v   # A131439    03:20  08.68 0028  532400391    RFI 1350 MHz
+                                                                 
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+  Tiedowns disabled. Rain in the region and possibilty of fog.
+  1363MHz has been found in every scan, believed to be an rfi*
+  1345 and 1350 are as well rfi found in every scan
+
+  All systems nominal

@@ -1,0 +1,48 @@
+A2941 LBW   15.03.31a     Observers:  Aparna, Ron, Blake, Leland, Alyssa, Monica, Catlan
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2941.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.40575  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2941_150331a.cmd    **notice the "a" in the filename***
+Mode:                WAPP search mode   
+                     ALFALFA/UAT Spring SDSS Search Pilot program
+
+Data written to:     /share/pserverf.sda3/wappdata/wapp.20150331.a2941.****.fits  
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+THIS IS A SHORT RUN.... THE ONE that starts just AFTER MIDNIGHT! 
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S132401.8+265446  132401.8 +265446  j     0 H v   # A239150   12:44 12.63  0000    509000001  board 2 possible double horn detection at 1387MHz S/N=1.5 vel=7200km/s
+S132031.9+282741  132031.9 +282741  j     0 H v   # A239149   12:56 11.5   0001    509000005  board 1 source at 1409MHz S/N=6 vel=2300km/s
+S132801.8+270555  132801.8 +270555  j     0 H v   # A239152   13:08 09.80  0002    509000009  no source detected
+S134109.0+250903  134109.0 +250903  j     0 H v   # A239153   13:21 08.26  0003    509000013  no source detected
+S140603.1+252510  140603.1 +252510  j     0 H v   # A249595   13:34 10.28  0004    509000017  board 3 source at 1380MHz S/N=2.6 vel=8700km/s, excessive fog in the dish, disabled tie downs
+S140626.8+261847  140626.8 +261847  j     0 H v   # A249597   13:46 09.20  0005    509000021  no source detected
+S141121.9+263845  141121.9 +263845  j     0 H v   # A249598   13:58 08.78  0006    509000025  board 3 source at 1379MHz S/N=5 vel=9000km/s
+S141906.0+261353  141906.0 +261353  j     0 H v   # A732915   14:10 08.08  0007    509000029  board 2 source at 1400MHz S/N=4 vel=4500km/s
+S142940.6+263820  142940.6 +263820  j     0 H v   # A249608   14:30 08.40  0008    509000033  board 2 possible detection at 1401MHz S/N=2 vel=4400km/s
+S142910.6+281542  142910.6 +281542  j     0 H v   # A249606   14:35 09.93  0009    509000037  no source detected
+S143558.6+272251  143558.6 +272251  j     0 H v   # A249609   14:47 09.32  0010    509000041  no source detected
+S144526.4+260007  144526.4 +260007  j     0 H v   # A733082   15:00 08.25  0011    509000045  no source detected
+S145808.5+272308  145808.5 +272308  j     0 H v   # A249614   15:12 09.52  0012    509000049  no source detected
+S151217.0+263142  151217.0 +263142  j     0 H v   # A258701   15:25 08.59  0013    509000053  Possible detection, board 4 @ 1364MHz, 1270km/s, s/n = 2
+S151341.7+254308  151341.7 +254308  j     0 H v   # A258702                                   Ran out of time, no measurement taken
+A153911.4+260129  153911.4 +260129  j     0 H v   # A749349calib   if time
+
+
+Notes (be sure to write notes here so we can keep track of anything relevant)
+For example:
+Rfi all night long. Many non-detections. Tiedowns disabled due to fog in dish. Done during the fifth source, approx 13:50 LST.  
+
+This is a short run starting after midnight on Mar 31 (night of Mar 30-1);
+the run called 15.03.31a ("am").
+                                                                 
+                                                                 

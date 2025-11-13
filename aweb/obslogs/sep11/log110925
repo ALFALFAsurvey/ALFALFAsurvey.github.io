@@ -1,0 +1,132 @@
+Log for 09/25/11     Observers: Crystal Moorman
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sda3/wappdata/wapp.20110925.a2010.****.fits
+             /share/pserverf.sda3/wappdata/wapp.20110926.a2010.****.fits
+
+*****Zenith strip observing setup********
+Be sure to note here the Az and ALFA rotation angles you specified at the start,
+   along with the resultant ZA and Azimuth of the Gregorian Dome (AzG)
+****
+****   Az=257.0   ALFAang= -57.0  ZA=4.5  ZAG=4.37  AzG=256.23
+****
+Be sure to note here the actually RA at start and stop; this is not the same 
+   as the LST when we are in off-meridian mode.
+****
+      RA@start=2154  RA@end=0337
+      RA = LST + 18 min
+****
+During the night, please make occational notes of the ZA of the dome (ZAG). You may see
+that it changes, due to the precession and pointing corrections. Remember the inner ZA limit
+is 1.1 deg. If you are doing one of the strips within a few degrees of AO zenith,
+you will notice that the ZA changes in a systematic fashion during the night. Any ideas
+as to why that is?
+
+
+LST  fits   Scan    calscan    Source     Pattern   Start coords.   ang  time loop  calmode ZAdome
+2136 0024 126800193 126800194  drift79p2  fixAzdr   215400+191324   -57  600  99    loopend  4.5  
+                               FAA radar ON, Beam 4A dead.
+			       power levels ok alfamotorwin shows -57.00
+2146 0025 126800195 126800196 quicklook OK  ZAG=4.37
+2156 0026 126800197 126800198 
+2206 0027 126800199 126800200 ZAG=4.39 quicklook OK, weak harmonic present at 1380MHz
+2217 0028 126800201 126800202 
+2227 0029 126800203 126800204 
+2237 0030 126800205 126800206 ZAG=4.40 quicklook OK
+2247 0031 126800207 126800208 
+2257 0032 126800209 126800210 ZAG=4.41 weak cs at 23:04 LST
+2307 0033 126800211 126800212 
+2317 0034 126800213 126800214 quicklook OK
+2327 0035 126800215 126800216 
+2338 0036 126800217 126800218 
+2348 0037 126800219 126900001 
+2358 0000 126900002 126900003 starting files for 110926, quicklook OK
+0008 0001 126900004 126900005 
+0018 0002 126900006 126900007 
+0028 0003 126900008 126900009 ZAG=4.40
+0038 0004 126900010 126900011 quicklook OK
+0048 0005 126900012 126900013 ZAG=4.39
+0058 0006 126900014 126900015 
+0109 0007 126900016 126900017 weak cs at 01:10 LST, quicklook OK, ZAG=4.38
+0119 0008 126900018 126900019 
+0129 0009 126900020 126900021 
+0139 0010 126900022 126900023 
+0149 0011 126900024 126900025 ZAG=4.35, quicklook OK
+0159 0012 126900026 126900027
+0209 0013 126900028 126900029 ZAG=4.34
+0219 0014 126900030 126900031 ZAG=4.33 
+0230 0015 126900032 126900033 ZAG=4.32, quicklook OK
+0240 0016 126900034 126900035 extrap/interp warning 02:46 and 02:49 LST, quicklook: spike in beam 4a, power levels OK
+0250 0017 126900036 126900037 ZAG=4.30, quicklook OK
+0300 0018 126900038 126900039 ZAG=4.28
+0310 0019 126900040 126900041 ZAG=4.27, extrap/inter warnings 03:17 LST, quicklook: spike in beam 4a, power levels OK
+0320 0020 126900042      ABORTED 
+
+
+
+LST@stop:0320       RA@stop:0337
+
+NOTES:
+-- Using 'zenith strip' observing mode
+-- TOGS at beginning 
+-- FAA radar ON, weak harmonic present 
+-- Beam 4A dead. Amplifier off.
+-- Tiedowns Disabled
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+                         <<< ARECIBO OBSERVATORY >>>
+                                OPERATORS LOG
+                               AS OF 9/25/2011 
+________________________________________________________________________________
+GREGORIAN DOME 16K TEMPERATURES
+
+AT 18:00      AT 22:00
+
+327 = 15.3    327 = 15.1
+430 = 16.3    430 = 16.7
+800 = OFF     800 = OFF
+LBW = 14.3    LBW = 14.0
+SBN = 14.1    SBN = 14.0
+SBW = 14.9    SBW = 15.0
+SBH = 20.4    SBH = 19.9
+CB  = 15.5    CB  = 15.5
+CBH = OFF     CBH = OFF
+XB  = 14.1    XB  = 14.0
+
+Floor Speed 3  AT 16:00
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+16K = K1: 14.1   K2: 13.5   K3: 15.2   K4: 15.2   AT 18:00
+70K = K1: 83.9   K2: 84.1   K3: 91.0   K4: 98.8
+
+16K = K1: 13.6   K2: 13.0   K3: 14.8   K4: 15.0   AT 22:00
+70K = K1: 83.4   K2: 83.9   K3: 90.5   K4: 98.8
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No   AT 
+				=>is Punta Salinas following our schedule
+FAA Radar Blanking Lock:       AT /
+				=>certify our blanker is locking on
+_______________________________________________________________________________
+TIE DOWN STATUS AT 16:00
+
+TD12: 12.589
+TD4 : 12.837
+TD8 : 12.610
+
+Total Kips: 111.42
+
+Tie Down:   Disabled
+________________________________________________________________________________

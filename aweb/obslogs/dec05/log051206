@@ -1,0 +1,55 @@
+Log for 12/06/05
+Observer: Brian Kent
+
+System Configuration:
+FixedAz Drift Map CIMA normal version
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20051206.a2010.****.fits
+
+filecreator: /share/a2010-2/data/05.12.06
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang time
+loop   Notes
+_______________________________________________________________________________
+2251 0004 534065716 534066318 drift123p2  FixedAz 225130+295548 19 600  50
+2301 0005 534066321 534066923
+2311 0006 534066926 534067527
+2321 0007 534067531 534068133
+2331 0008 534068136 534068737
+2342 0009 534068741 534069342
+2352 0010 534069346 534069947
+0002 0011 534069951 534070552
+0012 0012 534070556 534071157
+0022 0013 534071161 534071762
+0032 0014 534071766 534072367
+0042 0015 534072371 534072972
+0052 0016 534072976 534073577
+0102 0017 534073581 534074182
+0113 0018 534074186 534074787
+0123 0019 534074791 534075392
+0133 0020 534075396 534075997
+0143 0021 534076001 534076602
+0153 0022 534076606 534077207
+0203 0023 534077211 534077812
+0213 0024 534077816 534078418
+0223 0025 534078421 534079022  Spectral line error - cleared and kept going
+0233 0026 534079124 534079726  WAPP Error - error in file
+0244 0027 534079729 534080330  Resume - File OK
+0254 0028 534080334 534080935
+0304 0029 534080939 534081540
+0314 0030 534081544 534082145
+0324 0031 534082149 534082750
+0335 0032 534082754 Abort
+
+END LST: 0335
+
+Notes:
+
+- WAPP Errors at beginning during TOGS.  Had to abort, restart, and skip TOGS.
+
+- "Error - Spectral line flushing problem" at 21:58:06 - 
+  problems "seemed to clear itself" and kept going.  
+  However, files, 25 and 26 have, acoording to
+  the waslist routine, "single partial records" on some of the boards.  File 27 appears OK.
+
+- Due to previous WAPP Error at beginning, TOGS not completed at end.

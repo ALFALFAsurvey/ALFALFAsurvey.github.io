@@ -1,0 +1,87 @@
+Log for 12.09.29 (29Sep2012)        Observers: Parker Troischt
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20120929.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20120930.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180. (540)
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2202 0011 227300076  227300077  drift149p2  fixAzdr   213900+360427  19  600   99  loopend   power levels ok, quicklook ok, FAA radar on
+2213 0011 227300078  227300079  power levels ok, quicklook ok, FAA radar on
+2223 0012 227300080  227300081  power levels ok, quicklook ok, FAA radar on
+2233 0013 227300082  227300083  continuum source (cs)
+2243 0014 227300084  227300085  cs
+2253 0015 227300086  227300087  
+2303 0016 227300088  227300089  quickook ok, FAA radar strong
+2314 0017 227300090  227300091  cs
+2324 0018 227300092  227300093  
+2334 0019 227300094  227300095  
+2344 0020 227300096  227300097  cs beam 3,4,6
+2354 0021 227300098  227300099  
+0004 0022 227300100  227400001  quicklook ok 
+0014 0000 227400002  227400003  quicklook ok, FAA radar strong
+0024 0001 227400004  227400005  
+0034 0002 227400006  227400007  cs beam 0,5
+0045 0003 227400008  227400009  power levels ok
+0055 0004 227400010  227400011  cs beam 3   quicklook ok
+0105 0005 227400012  227400013  cs beam 6   
+0115 0006 227400014  227400015  cs beam 1,6
+0125 0007 227400016  227400017  power levels ok
+0135 0008 227400018  227400019  
+0145 0009 227400020  227400021  quicklook ok
+0155 0010 227400022  227400023  
+0206 0011 227400024  227400025 
+0216 0012 227400026  227400027  cs beam 1,6   power levels ok
+0226 0013 227400028  227400029  
+0236 0014 227400030  227400031 
+0246 0015 227400032  227400033  cs beam 0,1,2,5,6  power levels ok
+0256 0016 227400034  227400035  
+0306 0017 227400036 -- aborted
+
+LST stop: 0306
+
+At the bottom, add notes regarding:
+-- Initally, couldn't log into arecibo remotely, neither could Becky, Israel or Arun.  Israel called Arun who instructed him to 
+reset the server maunabo.  Started a tad late due to remote connection problems.
+-- TOGS skipped at beginning due to trouble getting in remotely
+-- FAA radar on.
+-- All ALFA beams working.
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 14.3   K2: 13.8   K3: 15.8   K4: 14.7   AT 16:26
+70K = K1: 81.7   K2: 81.2   K3: 89.3   K4: 97.8
+
+16K = K1: 14.3   K2: 13.6   K3: 15.3   K4: 15.0   AT 22:53
+70K = K1: 81.2   K2: 80.7   K3: 89.3   K4: 97.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered
+________________________________________________________________________________
+RFI INTERFERENCE STATUS
+
+RFI Radar Status Check:   No  AT 16:27
+				=>is Punta Salinas following our schedule
+TIE DOWN STATUS AT 16:27
+
+TD12: 10.586
+TD4 : 11.984
+TD8 : 12.276
+
+Total Kips: 94.52
+
+Tie Down:   Enabled
+________________________________________________________________________________
+
+
+
+

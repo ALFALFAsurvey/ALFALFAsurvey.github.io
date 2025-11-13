@@ -1,0 +1,93 @@
+Log for 07/02/18      Observer: T. Balonek
+
+System Configuration:  FixedAZ Drift Map
+                       Cima version 2.2.16 (normal)
+
+Using: a2010_az180.gui as save state.
+
+Files:  /share/pserverf.sda2/wappdata/wapp.20070218.a2010.****.fits
+        /share/pserverf.sda2/wappdata/wapp.20070219.a2010.****.fits
+
+LST  fits   Scan    calscan    Source     Pattern  Start coords.   ang  time  loop  calmode
+0735 0052 704979672 704980274  drift128p1 FixedAz  073500+310130    19   600   99   loopend
+0745 0053 704980277 704980879  power levels ok, quickview ok
+0755 0054 704980882 704981484 
+0805 0055 704981487 704982089
+0815 0056 704982092 704982694
+0826 0057 704982697 704983299  GPS two intervals < one minute each
+0836 0058 704983302 704983904  power levels ok, quickview ok
+0846 0059 704983907 704984509
+0856 0060 704984512 704985114 
+0906 0061 704985117 704985719 
+0916 0062 704985722 704986324 
+0926 0063 704986327 705000529
+0936 0000 705000532 705001134  power levels ok, quicklook ok
+0946 0001 705001137 705001739
+0957 0002 705001742 705002344
+1007 0003 705002347 705002949
+1017 0004 705002952 705003554  power levels ok, quicklook ok
+1027 0005 705003557 705004159  strong smooth total power dip in 6B for about 15-20 seconds
+1037 0006 705004162 705004764
+1047 0007 705004767 705005369 
+1057 0008 705005372 705005974 
+1107 0009 705005977 705006579 
+1117 0010 705006582 705007184 
+1128 0011 705007187 705007789  power levels ok
+1138 0012 705007792 705008394  total power fluctuations in 6B
+1148 0013 705008397 705008999 
+1158 0014 705009002 705009604  6-10% total power fluctuations with minute timescale in 6B for 
+                                 several minutes, followed by intervals of stability 
+1208 0015 705009607 705010209  6B stable
+1218 0016 705010212 705010814  GPS two intervals < one minute each
+1228 0017 705010817 705011419
+1238 0018 705011422 705012024 
+1248 0019 705012027 705012629
+1259 0020 705012632 705013234  6B total power fluctuations
+1309 0021 705013237 705013839  GPS
+1319 0022 705013842 705014444  power levels ok
+1329 0023 705014447 705015049
+1339 0024 705015052 705015654
+1349 0025 705015657 705016259
+1359 0026 705016262 705016864  6B 4% total power fluctuations
+1409 0027 705016867 705017469
+1419 0028 705017472 705018074
+1430 0029 705018077 705018679  6B 3% drop near end of drift
+1440 0030 705018682 705019284  power levels ok
+1450 0031 705019287 705019889 
+1500 0032 705019892 705020494 
+1510 0033 705020497 705021099 
+1520 0034 705021102 705021704  6B 6% total power fluctuation
+1530 0035 705021707 705022309
+1540 0036 705022312 705022914  6B 8% total power fluctuation
+1550 0037 705022917 705023519 
+1601 0038 705023522 705024124  6B 9% total power fluctuation
+1611 0039 705024127 705024729 
+1621 0040 705024732 705025334  GPS
+1631 0041 705025337 705025939 
+1641 0042 705025942 705026544  6B 9% total power fluctuation
+1651 0043 705026547 705027149
+1701 0044 705027152 --aborted
+
+END LST: 1701
+
+NOTES
+
+- Beam 1B off
+
+- Power levels ok all night, except 6B:
+      from few up to 10% total power fluctuations with minute timescale in 6B 
+           for several minutes, followed by intervals of stability
+           [There were probably more periods of instability than indicated in log above.]
+
+- San Juan airport rfi minimal (and near constant) all night; 
+              barely seen in pol'n A, bit stronger in pol'n B
+
+- occasional moderate GPS
+
+- TOGS run at start + end
+
+- The messages below received during drifts 0052, 0001, 0020, 0023, 0025, 0028
+WAPPDATA-queue_agcdata: WARNING received duplicate AGC-datablock ...
+WAPPDATA WARNING extrapolating agc-data from ...
+WAPPDATA WARNING interpolating agc-data over 2.00 second time gap ...
+

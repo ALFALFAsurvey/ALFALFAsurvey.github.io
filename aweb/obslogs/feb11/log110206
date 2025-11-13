@@ -1,0 +1,53 @@
+Log for 11.02.06 (6Feb2011)        Observer: Becky Koopmann
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110206.a2010.****.fits
+
+Normal meridian observing setup (Spring 2010) with Z.A.G. restricted to 16 degrees
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0916 0000 103700019 103700020 drift139p2 fixAzdr   091600+334924  19   600 99 loopend   6b dead
+0927 0001 103700021 103700022  power levels OK, quicklook OK
+0937 0002 103700023 103700024  
+0947 0003 103700025 103700026   cs: 2
+0957 0004 103700027 103700028
+1007 0005 103700029 103700030   quicklook OK
+1017 0006 103700031 103700032
+1028 0007 103700033 103700034   power levels OK
+1038 0008 103700035 103700036   quicklook OK
+1048 0009 103700037 103700038   extrapolating pnt-data
+message
+1058 0010 103700039 103700040  
+1108 0011 103700041 103700042   power levels OK
+1118 0012 103700043 103700044   cs, quicklook OK
+1128 0013 103700045 103700046   cs
+1138 0014 103700047 103700048   quicklook OK
+1148 0015 103700049 103700050   power levels OK, 
+1159 0016 103700051 103700052   cs during cal (end of drift)
+1209 0017 103700053 103700054   GPS through cal (end of drift)
+1219 0018 103700055 103700056   GPS + bright cs
+1229 0019 103700057 -- abort
+
+LST stop: 1229
+
+At the bottom, add notes regarding:
+--Beam 6B dead entire night.
+--FAA Radar ON and bright
+--TOGS at end only
+--no problems with vnc
+--note GPS and cs through last couple of cals
+
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+ALFA TEMPERATURES
+
+16K = K1: 24.6   K2: 24.7   K3: 27.7   K4: 28.2   AT 16:28
+70K = K1: 116.1  K2: 124.0  K3: 133.8  K4: 140.4
+
+16K = K1: 24,8   K2: 25.5   K3: 28.7   K4: 28.4   AT 23:04
+70K = K1: 117.6  K2: 125.0  K3: 134.0  K4: 141.6
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+

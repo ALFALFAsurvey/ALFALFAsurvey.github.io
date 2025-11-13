@@ -1,0 +1,63 @@
+Log for 19 Jun 2006
+Observer: Sabrina
+
+System Configuration:
+FixedAz Drift Map CIMA More Capable Version 2.2.03
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20060619.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.06.19
+
+LST  fits Scan      calscan   Source    Pattern Start coords. ang time loop Notes
+______________________________________________________________________________
+1109 0003 617063893 617064495 drift116p1 FixedAz 110900+280618  19  600 99
+1119 0004 617064499 617065100
+1129 0005 617065104 617065705
+1140 0006 617065709 617066310
+1150 0007 617066314 617066915
+1200 0008 617066919 617067520
+1210 0009 617067524 617068125
+1220 0010 617068129 617068730
+1230 0011 617068734 617069336
+1240 0012 617069339 617069940
+1250 0013 617069944 617070545
+1301 0014 617070549 617071151 Power levels okay
+file 0015 aborted (to switch positions)
+1313 0016 617071284 6170 drift109p1 FixedAz 131300+262406  19  600 99
+1323 0017 617071889 617072490
+1333 0018 617072494 617073096
+1343 0019 617073099 617073700
+1353 0020 617073704 617074305
+1404 0021 617074309 617074910
+1414 0022 617074914 617075515
+1424 0023 617075519 617076120
+1434 0024 617076124 617076725
+1444 0025 617076729 617077331
+1454 0026 617077334 617077935
+1504 0027 617077939 617078540
+1514 0028 617078544 617079145 Power levels okay
+1524 0029 617079149 617079750
+1535 0030 617079754 617080355
+1545 0031 617080359 617080960
+1555 0032 617080964 617081565
+1605 0033 617081569 617082170
+1615 0034 617082174 617082775
+1625 0035 617082779 617083380
+1635 0036 617083384 617083985
+1645 0037 617083989 617084590
+
+END LST: 1655
+
+NOTES:
+The telescope operator reported having problems getting TOGS to start but Mikael was able
+to resolve the issue.  The spectrometer was on throughout the night, but I was unable
+to run the calibration at the beginning of the run.  The 'command_galfasrc' file kept
+coughing on line 11 noting that it could not continue because one of the WAPPs was not 
+restarting (see the CIMA log for more details).  The WAPPs restarted okay when done manually 
+(i.e. the option under Utilities) but the command file still would not work.  TOGS ran fine at
+the end of the run.
+
+The tiedowns were disabled because the AD to DA converter was malfunctioning which the operator 
+suspected was due to lightning strikes in the past few days.
+
+Two declinations were observed tonight and the power was adjusted so calibration needs to be split.

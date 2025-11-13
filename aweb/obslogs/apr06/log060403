@@ -1,0 +1,37 @@
+Log for 03 April 2006
+Observer: Brian Kent
+
+System Configuration:
+FixedAz Drift Map CIMA normal version 2.1
+
+Files: /share/pserverf.sda2/wappdata/wapp.20060403.a2010.****.fits
+       /share/pserverf.sda2/wappdata/wapp.20060404.a2010.****.fits
+
+filecreator: /share/a2010-2/data/06.04.03
+
+LST  fits Scan      calscan   Source    Pattern Start coords. ang time loop Note
+______________________________________________________________________________
+1158 0007 609384959 609385561 drift35p2 FixedAz 115750+083100  19  600  99 Power levels OK
+1208 0008 609385564 609386165
+1218 0009 609386169 609400370
+1228 0000 609400374 609400976
+1238 0001 609400979 609401580
+1248 0002 609401584 609402185
+1258 0003 609402189 609402790
+1308 0004 609402794 609403395 Power levels OK
+1319 0005 609403399 609404000
+1329 0006 609404004 609404605
+1339 0007 609404609 609405210
+1349 0008 609405214 609405816
+1359 0009 609405819 Abort
+ 
+END LST: 1359
+
+NOTES:
+
+Errors:
+-WAPP errors for the first hour.  Buildup logic and flushing errors displayed.  Phil Perillat
+on hand to get wapps working. Email sent to M. Lerner concerning that "wapprt" would not
+restart on wapp1.
+
+-TOGS not run

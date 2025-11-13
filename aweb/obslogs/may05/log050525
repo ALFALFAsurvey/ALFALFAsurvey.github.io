@@ -1,0 +1,86 @@
+Log for 05/05/25 pm
+Observers: SS
+
+System Configuration
+
+FixedAz Drift Map CIMA new version 1.2.02 (normal default)
+Using: a2010_fixedfrq_may05.gui as save state
+
+Files: /share/pserverf.sdb1/wappdata/wapp.20050525.a2010.****.fits
+       /share/pserverf.sdb1/wappdata/wapp.20050526.a2010.****.fits
+    *****NOTE THE DIFFERENT LOCATION!!*****
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________ 
+
+1038 0012 514567849 514568451 drift51p2 FixedAz 103817+122436  19  600  50
+1048 0013 514568454 514569056
+
+power levels (dB):0.943 1.050 0.936 0.887 1.029 0.909 1.099 1.013 0.900 1.101
+1.020 1.092 1.027 0.913
+
+1058 0014 514569059 514569661
+1108 0015 514569664 514570266
+1118 0016 514570269 514570871
+1128 0017 514570874 514571476
+1139 0018 514571479 514572081
+1149 0019 514572084 514572686
+1159 0020 514572689 514573291
+1209 0021 514573294 514573896
+1219 0022 514573899 514574501
+1229 0023 514574504 514575106
+1239 0024 514575109 514575711
+1249 0025 514575714 514576316
+1259 0026 514576319 514576921
+1310 0027 514576924 514577526
+1320 0028 514577529 514578131
+1330 0029 514578134 514578736
+1340 0030 514578739 514579341
+1350 0031 514579344 514579946
+1400 0032 514579949 514580551
+1410 0033 514580554 514581156
+
+power levels (dB): 1.007 1.135 1.000 0.938 1.086 0.959 1.161 1.060 0.928 1.176
+1.080 1.139 1.069 0.940
+
+1420 0034 514581159 514581761
+1430 0035 514581764 514582366
+1440 0036 514582369 514582971
+1451 0037 514582974 514583576
+1501 0038 514583579 514584181
+1511 0039 514584184 514584786
+1521 0040 514584789 514585391
+1531 0041 514585394 514585996
+1541 0042 514585999 514600201
+1551 0000 514600204 514600806
+1601 0001 514600809 514601411
+1611 0002 514601414 514602016
+1622 0003 514602019 514602621
+1632 0004 514602624 514603226
+file 0005 aborted (no time left)
+
+END LST:164212
+
+Notes:
+
+Tiedowns active.
+
+I was given the following information on possible GPS Testing for this night:
+DATE (UTC)      TIME (UTC)      Comments
+(YYYYMMDD)      (HHMM)          (TEXT)
+-----------------------------------------------------------
+20050525        2200 - 2400     Possible: Quarterly RAZAP tests
+20050526        0000 - 0600     Possible: Quarterly RAZAP tests
+
+
+Note from Mikael on fits file changes and data file locations:
+"The Arecibo CIMAFITS-format was updated on 25 May 2005 to version 1.02. The
+upgrade includes a correction of the calculation of the parameter
+'BEAM_OFFRAJ' which up until now has been incorrect, as well as some cosmetic
+changes of some comments.
+Also starting today, WAPP FITS-files are no longer written to the directory
+/share/pserverf.sda3/wappdata, since that file system is full. The new disk
+is /share/pserverf.sdb1/wappdata. HOWEVER, all WAPP users are encouraged not
+to use any of these addresses directly, but instead use the general directory
+/share/wappdata which contains links to all FITS-files regardless of were
+they are located physically."

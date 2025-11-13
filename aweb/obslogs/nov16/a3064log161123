@@ -1,0 +1,66 @@
+A3064 LBW   16.11.23   Observers: Craig, Ribaudo, Denn, Hoover, Johnson, Wallace 
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3064.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3064_161123.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program 
+
+Data written to:     /share/wappdata.now/wapp.20161123.a3064.****.fits  
+                     /share/wappdata.now/wapp.20161124.a3064.****.fits   (only if goes after midnight AST; probably no)
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio) 
+S214737.5+255317  214737.5 +255317  j     0 H v   # A310476    2127    9.0  0000    632800113  tiedowns active,Radar (on) 
+S220842.2+245624  220842.2 +245624  j     0 H v   # A321315    2139    9.6  0001          117  radar(on), s/n15 src @6350Km/s  
+S223003.4+245040  223003.4 +245040  j     0 H v   # A323034    2152   11.0  0002          121  radar(off), weak src @1366MHz, baseline @80mJy
+											       s/n6, 1388 rfi  
+S224638.8+265114  224638.8 +265114  j     0 H v   # A323087    2205   12.9  0003          125  radar(on), 1388 rfi, spike@600km/s,noisybaseline
+S232127.1+251621  232127.1 +251621  j     0 H v   # A336698    2219   16.2  0004          129  radar(off),s/n2 src@ 8300&15000 km/s questionable
+S232219.3+264958  232219.3 +264958  j     0 H v   # A336635    2231   14.7  0005          133  GPS, radar(on), src@6000km/s s/n10 w /gps  
+S233427.1+235045  233427.1 +235045  j     0 H v   # A334657    2244   13.2  0006          137  radar(on),gps(on)
+S233516.2+261902  233516.2 +261902  j     0 H v   # A336650    2256   12.2  0007          141  tiedowns disabled(rain),gps(on),Radar(off)
+											       1388 rfi, src@8000km/s w /gps (close to gps)s/n6
+S233516.2+261902  233516.2 +261902  j     0 H v   # A336650    2309   10.2  0008          145  repeat:1388rfi, radar, src@8000km/s confirmed 007  nogps
+S233602.8+261048  233602.8 +261048  j     0 H v   # A336011    2321    8.8  0009          149  radar(on),src@8100km/s s/n3
+S235352.3+280717  235352.3 +280717  j     0 H v   # A335530    2334   11.0  0010          153  radar(off) 
+S000730.5+244839  000730.5 +244839  j     0 H v   # A104735    2346    8.3  0011          157  radar(off) gps, src@6450km/s s/n6
+											       src@ 11200 maybe s/n2  
+S001103.3+242314  001103.3 +242314  j     0 H v   # A104849    2358    6.9  0012          161  1388rfi, radar(off)
+S001235.3+234433  001235.3 +234433  j     0 H v   # A103315    0011    5.5  0013          165  radar(on), 1388rfi, strong src11800km/s   
+S003045.3+254028  003045.3 +254028  j     0 H v   # A104414    0024    7.7  0014          169  1388rfi,GPS,Radar, src@10200km/s s/n2 w /gps
+S005412.2+285600  005412.2 +285600  j     0 H v   # A102971    0037   11.5  0015          173  radar(off)
+S005910.5+291002  005910.5 +291002  j     0 H v   # A104508    0049   11.2  0016          177  1388rfi,radar(off)  
+S010159.2+290144  010159.2 +290144  j     0 H v   # A116197    0101   10.8  0017          181  radar(on),src@8400km/s s/n5  
+S010419.9+283521  010419.9 +283521  j     0 H v   # A114071    0113   10.5  0018          185  radar(on), src@11100km/s s/n3
+S010419.9+283521  010419.9 +283521  j     0 H v   # A114071    0125   11.3  0019          189  repeat:radar(on), confirmed possible src@~11100km/s 
+											       s/n:4, board=2 contains odd thing at 1388MHz
+S011707.1+313047  011707.1 +313047  j     0 H v   # A115302    0138   14.0  0020          193  radar(on), no src obvious
+S013737.4+291408  013737.4 +291408  j     0 H v   # A116233    0151   11.4  0021          197  radar(off)    
+S013959.8+294806  013959.8 +294806  j     0 H v   # A114081    0204   12.6  0022          201  radar(off), 1417 weak rfi, s/n3 src@10900km/s  
+S015108.1+310503  015108.1 +310503  j     0 H v   # A115533    0216   13.9  0023          205  radar(off), src@4600km/s s/n8
+s014358.0+284709  014358.0 +284709  j     0 H v   # A115506    0228   14.5  0024          209  radar(on),src@7900km/s s/n10 
+S020958.9+262021  020958.9 +262021  j     0 H v   # A125538    0242   10.8  0025          213  strong gps, radar(off), noisy baseline w /gps
+S022141.6+275852  022141.6 +275852  j     0 H v   # A124783    0254   12.1  0026          217  radar(on), src@5250km/s s/n7  
+S023928.2+264537  023928.2 +264537  j     0 H v   # A125543    0307   10.5  0027          221  radar(on) s/n`4 src at 10000km/s  
+S025422.0+284559  025422.0 +284559  j     0 H v   # A125528       if time  **NO TIME**
+                                                                
+                                                
+Notes (be sure to write notes here so we can keep track of anything relevant)
+
+-Ran ahead on time and did a few repeats.  
+
+-Coqui frogs suspiciously quiet, we suspect an uprising...
+
+-Radar consistent through our observations grrr
+
+-Due to rain, tie downs disabled during observations
+
+-

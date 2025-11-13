@@ -1,0 +1,25 @@
+Log for 05/07/06
+Observers: Union Undergrad Workshop Attendees
+
+System Configuration
+
+FixedAz Drift Map CIMA expanded version
+
+Files:/share/pserverf.sdb1/wappdata/wapp.20050706.a2010.****.fits
+
+
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_______________________________________________________________________________________________
+
+1331 0000 518768307 518768909 drift22p1 FixedAz  133115+051354 19 600 50
+1341 0001 518768912 518769514
+1351 0002 518769517 518770119
+1401 0003 518770122 518770724
+1412 0004 518770727 518771329
+1422 0005 518771332 518771934
+1432 0006 518771937 518772539
+1442 0007 518772542 518773144
+1452 0008 518773147 518773749
+file 0009 aborted (no time left)
+
+END LST: 150228

@@ -1,0 +1,69 @@
+Log for 11.10.04 (04Oct2011)        Observers: Lyle Hoffman 
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version            3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda3/wappdata/wapp.20111004.a2010.****.fits
+         /share/pserverf.sda3/wappdata/wapp.20111005.a2010.****.fits     
+
+Normal meridian strip observing.
+
+LST  fits     Scan    calscan    Source    Pattern   Start coords. ang  time loop calmode
+2131 0018 127700273 127700274  drift 83p2 fixAzdr   213002+201148  19  600   99  loopend 4a dead, FAA strong, power levels OK, strong cs tiedowns active  quicklook OK
+2141 0019 127700275 127700276  power OK (6b power 1.61)
+2151 0020 127700277 127700278  power OK (6b power 1.63)  quicklook OK
+2201 0021 127700279 127700280  power OK (6b power 1.64)
+2211 0022 127700281 127700282  power OK (6b power 1.65)
+2221 0023 127700283 127700284  power OK (6b power 1.66)  quicklook OK
+2231 0024 127700285 127700286  power OK (6b power 1.66)
+2241 0025 127700287 127700288  power OK (6b power 1.66)
+2251 0026 127700289 127700290  power OK (6b power 1.66)
+2302 0027 127700291 127700292  power OK (6b power 1.66)  quicklook OK
+2312 0028 127700293 127700294  power OK (6b power 1.67)
+2322 0029 127700295 127700296  power OK (6b power 1.67)
+2332 0030 127700297 127700298  power OK (6b power 1.68)
+2342 0031 127700299 127700300  power OK (6b power 1.69)  GPS at start of drift  quicklook OK
+2352 0032 127700301 127700302  power OK (6b power 1.70)
+0002 0033 127700303 127700304  power OK (6b power 1.69)
+0012 0034 127700305 127700306  power OK (6b power 1.69)
+0022 0035 127700307 127800001  power OK (6b power 1.70)
+0033 0000 127800002 127800003  power OK (6b power 1.70)  quicklook OK
+0043 0001 127800004 127800005  power OK (6b power 1.70)
+0053 0002 127800006 127800007  power OK (6b power 1.71)
+0103 0003 127800008 127800009  power OK (6b power 1.71)
+0113 0004 127800010 127800011  power OK (6b power 1.72)
+0123 0005 127800012 127800013  power OK (6b power 1.72)  quicklook OK
+0133 0006 127800014 127800015  power OK (6b power 1.73)
+0143 0007 127800016 127800017  power OK (6b power 1.76)
+0154 0008 127800018 127800019  power OK (6b power 1.73)
+0204 0009 127800020 127800021  power OK (6b power 1.75)
+0214 0010 127800022 127800023  power OK (6b power 1.77)
+0224 0011 127800024 127800025  power OK (6b power 1.76)
+0234 0012 127800026 127800027  power OK (6b power 1.76)  quicklook OK
+0244 0013 127800028 127800029  power OK (6b power 1.76)
+0254 0014 127800030 127800031  power OK (6b power 1.76)
+0304 0015 127800032 aborted
+
+LST stop: 0304, AST Stop=0237 
+
+At the bottom, add notes regarding:
+-- TOGS run at beginning.
+-- FAA radar (1350) ON.
+-- Beam 4A dead.  
+-- Beam 6B power unstable -- <0.5 after adjust power, then mostly >1.5.
+-- "Power Levels OK" means all but 4a&6b.
+
+
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+
+ALFA TEMPERATURES
+
+16K = K1: 15.8   K2: 15.7   K3: 17.0   K4: 17.4   AT 16:12
+70K = K1: 92.4   K2: 102.6  K3: 103.4  K4: 110.0
+
+16K = K1: 16.5   K2: 16.7   K3: 18.0   K4: 18.4   AT 22:34
+70K = K1: 100.0  K2: 111.5  K3: 112.0  K4: 119.5
+
+

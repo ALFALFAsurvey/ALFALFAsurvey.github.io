@@ -1,0 +1,62 @@
+A2853   LBW   14.04.15      Observers: MGJ,LL,AF
+
+CIMA version:          The Stable version (Default)  Ver 3.3.12 2014-03-20 17:38
+Configuration file:    a2853_apr14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140415.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.15apr14.a2853.*
+         and     /share/olcor/corfile.16apr14.a2853.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H090852.2+143530  090853.7 +143501  j   300 H v   # A191791 calib   0821  12.2 19     410500353  Good Det. @300km/s
+                                                                    0833  9.4  20     410500357  As above
+A092457.4+113231  092457.4 +113229  j  3700 H v   # A190273         0846  11.6 21     410500361  No detection
+H092734.6+121609  092734.6 +121609  j  8800 H v   # A190299 calib   0859  9.3  22     410500365  Massive wow! (Detection)
+A092516.1+105314  092516.1 +105314  j  3600 H v   # A190279         0911  8.2  23      410500369    No detection
+A093323.4+092918  093323.4 +092918  j  3500 H v   # A192349         0924  9.2  24     410500373  No detection  
+H093852.2+112918  093852.2 +112918  j  5900 H v   # A193832         0936  6.9  25     410500377  Good Det. @5900km/s
+A094038.0+103506  094038.0 +103506  j  6100 H v   # A191863         0949  8.0  26     410500381  Marginal Det. @6000km/s
+A094150.9+121101  094150.9 +121101  j  6500 H v   # A190732         1001  7.7  27     410500385  Good Det. @6800km/s
+A094217.5+111833  094217.5 +111833  j  6300 H v   # A192154         1013  10.2 28     410500389  No Detection - Large baseline fluct.
+A100944.0+140535  100944.0 +140535  j  9000 H v   # A202145         1028  6.0  29     410500393  Good Det. @9100km/s
+A100952.9+144347  100952.9 +144347  j  9100 H v   # A734286         1040  8.0  30     410500397  No det.
+A114404.7+090953  114404.7 +090953  j  6000 H v   # A213164         1057  14.8 31     410500401  No det. - Baseline fluct.
+A114407.0+132027  114407.0 +132027  j  3200 H v   # A213527         1110  9.3  32     410500405  Good det. @3000
+A121951.7+083253  121951.7 +083253  j  7300 H v   # A225009         1125  16.6 33     410500409  No det.
+A122026.7+092527  122026.7 +092527  j  7500 H v   # A220401         1138  13.7 34     410500413  Good det. @7600km/s - Cont. source in ON - Baseline fluct.
+A122033.7+092755  122033.7 +092755  j  7600 H v   # A224422         1150  11.7 35     410500417  Nothing - Cont. of 700 mJy!
+A122111.1+094758  122111.1 +094758  j  7700 H v   # A224424         1202  9.8  36     410500421  No det.
+A122202.3+103716  122202.3 +103716  j  7700 H v   # A220444         1215  8.0  37     410500425  No det.
+A122402.6+105054  122402.6 +105054  j  8400 H v   # A222732         1227  7.6  38     410500429  Very strong det. @8500km/s
+A132722.6+122117  132722.6 +122117  j  6500 H v   # A230344         1242  12.6 39     410500433  No det.
+A132848.6+110157  132848.6 +110157  j  6200 H v   # A232222         1254  11.2 40     410500437  Weak det. @6100km/s
+A132855.5+110149  132855.5 +110149  j  6200 H v   # A239137         1306  9.2  1      410500441  No det. - Interloper at 4200km/s
+A132902.4+105456  132902.4 +105456  j  7100 H v   # A232290         1319  7.9  2      410600004  No det.
+A132914.8+113560  132914.8 +113560  j  6700 H v   # A232398         1331  6.8  3      410600008  No det.
+                                                                    1343  7.5  4      410600012  No det. - Interloper at 8600km/s (Strange it wasn't seen before?)
+A144037.9+032237  144037.9 +032237  j  8000 H v   # A241622         1359  18.2 5      410600016  No det.
+A144059.3+030812  144059.3 +030812  j  8000 H v   # A009463         1411  16.9 6      410600020  No det.
+A145201.9+025842  145201.9 +025842  j  1800 H v   # A242989         1423  17.0 7      410600024  No det - Interloper at 2600km/s
+A150100.9+010050  150100.9 +010050  j  1800 H v   # A253623         1436  18.4 8      410600028  No det. - Source in off at 2700km/s
+A150111.2+014206  150111.2 +014206  j  2000 H v   # A009655         1448  17.0 9      410600032  No det. - Source in off at 2600km/s
+A150115.3+012954  150115.3 +012954  j  2200 H v   # A253624         1501  16.9 10     410600036  No det. - Source in off at 2500km/s - RFI? at 1408MHz
+A150528.5+011733  150528.5 +011733  j  2300 H v   # A252398         1512  17.2 11     410600040  Good det. @2300km/s
+A150444.0+123903  150444.0 +123903  j  6600 H v   # A251599         1528  8.0  12     410600044  Weak det. @6600km/s - Strong interloper at 8600km/s
+A150624.8+124524  150624.8 +124524  j  6500 H v   # A736557         1540  9.8  13     410600048  No det.
+A150605.7+132119  150605.7 +132119  j  6900 H v   # A258002         1552  12.2 14     410600052  No det.
+A162559.0+135845  162559.0 +135845  j  9000 H v   # A715449         1609  6.0  15     410600056  Weak det. @9000km/s - Baseline fluct.
+A162516.5+140017  162516.5 +140017  j  9000 H v   # A715436  if time ---- not observed
+
+Notes  (please note anything of importance; here is an example)
+     Tiedowns disabled.
+
+
+

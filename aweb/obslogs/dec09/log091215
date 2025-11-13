@@ -1,0 +1,82 @@
+Log for 12/15/09          Observers: MH
+
+System Configuration:                   a2010_az360_2009.conf
+CIMA version       			3.1.06 2009-11-22 11:19 "Smart" 
+File(s):  /share/pserverf.sda3/wappdata/wapp.20091215.a2010.****.fits
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang  time loop calmode
+0712 0003 934900043 934900044     drift67p2 fixAZdr   071200+161812  19  600   99  loopend  
+0722 0004 934900045 934900046         power ok except Bm 5b, quicklook ok.
+0733 0005 934900047 934900048         WAPPdata-queue _agcdata warning
+0743 0006 934900049 934900050
+0753 0007 934900051 934900052         CIMA freezes during this scan, then comes back (also terminals)
+   Operator says things seem ok, but waterfall and monitoring also freeze. Furthermore
+   observing seems to stop; at least, I cannot tell, so I stop/restart gracefully & quickly
+   Power readjusted however, so it will be necessary to run 2 cal periods
+0805 0008 934900053 934900054         power ok except 5b; quicklook ok
+0815 0009 934900055 934900056    
+0825 0010 934900057 934900058   
+0835 0011 934900059 934900060 
+0845 0012 934900061 934900062 
+0855 0013 934900063 934900064         ditto 
+0905 0014 934900065 934900066       
+0915 0015 934900067 934900068   
+0925 0016 934900069 934900070   
+0935 0017 934900071 934900072         power ok except 5b; quicklook ok
+0946 0018 934900073 934900074  
+0956 0019 934900075 934900076  
+1006 0020 934900077 934900078         P-S turns on; asking operator to contact them
+1016 0021 934900079 934900080         
+1026 0022 934900081 934900082         Radar turns off
+1037 0023 934900083 934900084         
+1047 0024 934900085 934900086      
+1057 0025 934900087 934900088     
+1107 0026 934900089 934900090     
+1118 0027 934900091 934900092     
+1128 0028 934900093 934900094    
+1138 0029 934900095 934900096
+1148 0030 934900097 934900098
+1158 ABORT
+
+LST stop:  1158
+
+Picked up this night at last minute because of cancelled radar run.
+During TOGS noticing: WAPP power levels are between 0.073 and 1.1.06 (still bad) messages
+and sometimes" There are WAPP channels with too little power"
+After starting first drift, decided to check power again, so restarted WAPPS,
+manually adjusted power and started again. Problem still there. It seems to be
+beam 5b. Lots of WAPP error warnings....
+
+Then, at around 07:55, the CIMA timer froze. Nothing updated including aostatus running
+on another workstation. I could not get a response to command prompts run on remoto
+on my laptop. After 3-4 minutes it seemed to refresh, but I saw briefly a message
+stating "stop encountered" in the CIMA window. Asked the operator if all ok; he indicated
+it was. But waterfall plots are dark. At end of drift, program stops. I restart WAPPS
+adjust power and restart. Have to terminate and restart alfadatawin twice to get correct
+display.
+
+Around 0508 AST the Puntas Salinas radar turned on at 1367 and 1382 MHz. Asked
+T.O. to contact them by phone; at 0521: "I just talked to Martinez from
+Puntas Salinas... everything should be back to normal in about 2 minutes".
+
+A not-boring-enough night...
+FAA radar active all night
+Togs ran at start and end
+
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+ALFA TEMPERATURES
+
+16K = K1: 9.9    K2: 9.9    K3: 11.3   K4: 11.3   AT 16:18
+70K = K1: 43.1   K2: 50.6   K3: 55.8   K4: 61.2
+
+16K = K1: 9.7    K2: 10.3   K3: 11.3   K4: 11.3   AT 22:41
+70K = K1: 43.1   K2: 50.4   K3: 55.6   K4: 60.9
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   
+Alfa Covers: Not Covered
+

@@ -1,0 +1,62 @@
+Log for 12.10.23 (23oct2012)        Observers: Mike Jones
+
+System Configuration:   a2010_az180_2012.conf
+CIMA version        3.3.02 2012-06-07 17:14 "Stable"
+File(s):  /share/pserverf.sdb1/wappdata/wapp.20121023.a2010.****.fits
+          /share/pserverf.sdb1/wappdata/wapp.20121024.a2010.****.fits 
+Normal meridian observing setup (Fall 2012) Az=180.
+
+LST  fits   Scan      calscan   Source     Pattern   Start coords. ang  time loop calmode
+2305 0001  229700043  229700044 drift134p1  fixAzdr   230500+322906  19  600   99 started a minute or two later than planned (communication issue with observer2 password), FAA on, waterfalls ok, power levels ok, quicklook ok
+2315 0002  229700045  229700046 quicklook ok
+2325 0003  229700047  229700048
+2336 0004  229700049  229700050
+2346 0005  229700051  229700052
+2356 0006  229700053  229700054 quicklook ok
+0006 0007  229700055  229700056
+0016 0008  229700057  229700058
+0026 0009  229700059  229700060
+0036 0010  229700061  229700062 continuum source, quickllok ok
+0046 0011  229700063  229700064
+0056 0012  229700065  229700066
+0107 0013  229700067  229700068 continuum source
+0117 0014  229700069  229700070 quicklook ok
+0127 0015  229700071  229700072
+0137 0016  229700073  aborted - wapps failure - two waterfalls vanished - exited cima - restarted the wapps
+
+0152 0000  229800001  229800002 waterfalls ok, quicklook ok, power levels ok
+0202 0001  229800003  229800004 quicklook ok
+0212 0002  229800005  229800006
+0222 0003  229800007  229800008
+0233 0004  229800009  229800010
+0243 0005  229800011  229800012 wapp failure at very end - scan probably bad - gaps appeared in waterfalls
+0253 0006  229800013  aborted - power failure at arecibo - telescope reset - excited cima - restarted wapps
+
+0258 0007  229800014  229800015 power levels ok, waterfalls ok
+0308 0008  229800015  aborted
+
+LST stop: 0308
+
+At the bottom, add notes regarding:
+- FAA & harmonics
+- WAPPs failure on scan 229700073
+- Power failure at end of scan 229800011 - aborted at start of 229800013
+
+And also, copy the ALFA temperatures  and ALFA instrument status from the AO Operator's log
+(Cut and paste from http://www.naic.edu/~operator/oplogs/alfatemps/latest)
+
+ALFA TEMPERATURES
+
+16K = K1: 15.1   K2: 14.3   K3: 16.2   K4: 15.7   AT 18:30
+70K = K1: 82.7   K2: 82.9   K3: 91     K4: 99.1
+
+16K = K1: 14.6   K2: 13.5   K3: 15.3   K4: 15     AT 23:00
+70K = K1: 82.9   K2: 82.7   K3: 91     K4: 99.1
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+ALFA INSTRUMENT STATUS
+
+Alfa Amps:   On
+Alfa Covers: Not Covered
+LBW Covers:  Not Covered

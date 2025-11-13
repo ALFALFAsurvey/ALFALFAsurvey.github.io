@@ -1,0 +1,71 @@
+Log for 11.02.23 (23Feb2011)        Observers: Derek Fertig & Jessica O'Connor
+(remote)
+
+System Configuration:  a2010_az180_2011.conf
+CIMA version           3.1.08 2010-02-01 17:44 "Smart"
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110223.a2010.****.fits
+File(s):  /share/pserverf.sda2/wappdata/wapp.20110224.a2010.****.fits
+
+Normal meridian observing setup (Spring 2011) with Z.A.G. restrictions lifted
+
+LST  fits   Scan      calscan  Source    Pattern   Start coords. ang  time loop calmode
+0924 0036  105400266  105400267 drift142p2 fixAzdr   092400+343312  19  600   99
+loopend, power levels ok, FAA on, quicklook OK.
+0934 0037  105400268  105400269
+0944 0038  105400270  105500001		quicklook ok
+0954 0000  105500002  105500003		power outage in our building.  Called operator, cima still running fine.  Everything seems ok, we will just have a hard time monitoring from laptops.
+1004 0001  105500004  105500005
+1014 0002  105500006  105500007
+1024 0003  105500008  105500009
+1034 0004  105500010  105500011
+1045 0005  105500012  105500013		quicklook ok, still cannot see anything.  VNCVIEWER not installed on laptop
+1055 0006  105500014  105500015		quicklook ok
+1105 0007  105500016  105500017
+1116 0008  105500018  105500019		vncviewer working on laptop, cima is good.  Can only open one vnc window.  Cannot view waterfall plots.
+1126 0009  105500020  105500021
+1136 0010  105500022  105500023		quicklook ok
+1146 0011  105500024  105500025
+1156 0012  105500026  105500027		quicklook ok
+1206 0013  105500028  105500029
+1216 0014  105500030  105500031
+1226 0015  105500032  105500033
+1236 0016  105500034  105500035		quicklook ok, FAA looks like its gone but I only have quicklook
+1247 0017  105500036  105500037
+1257 0018  105500038  105500039
+1307 0019  105500040  105500041		quicklook ok
+1317 0020  105500042  105500043
+1327 0021  105500044  105500045
+1337 0022  105500046  105500047
+1347 0023  105500048  105500049		quicklook ok
+1357 0024  105500050  105500051
+1407 0025  105500052  105500053
+1418 0026  105500054  105500055
+1428 0027  105500056  105500057
+1438 0028  105500058  105500059		quicklook ok
+1448 0029  105500060  105500061
+1458 0030  105500062  105500063
+1508 0031  105500064  105500065
+1518 0032  105500066  105500067
+1528 0033  105500068  105500069
+1538 0034  105500070  105500071
+1548 0035  ABORTED
+LST stop: 1550
+
+-- Beam 6B dead.
+-- TOGS at end.
+-- FAA radar on. Beam 0 showing very slight 1380 harmonic
+-- Unable to properly shut down waterfall plot.  Next observer might have to ask operator to kill process
+________________________________________________________________________________
+ALFA TEMPERATURES
+
+
+16K = K1: 29.7   K2: 29.7   K3: 33.4   K4: 33.1   AT 18:01
+70K = K1: 123.2  K2: 131.5  K3: 140.6  K4: 147.9
+
+16K = K1: 29.2   K2: 29.4   K3: 32.9   K4: 32.9   AT 22:06
+70K = K1: 123.0  K2: 131.1  K3: 139.9  K4: 148.0
+
+			=>temperatures of the 8 sensors within ALFA housing
+
+
+

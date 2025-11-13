@@ -1,0 +1,72 @@
+Log for 090909     Observer: Becky Koopmann
+
+System Configuration: a2010_az360_2009.conf
+CIMA version  3.1.05 2009-05-18 09:44 "Smart"   
+Files:       /share/pserverf.sda3/wappdata/wapp.20090901.a2010.****.fits 
+Files:       /share/pserverf.sda3/wappdata/wapp.20090902.a2010.****.fits 
+
+     ****
+LST  fits  Scan       calscan    Source     Pattern   Start coords.  ang  time  loop  calmode 
+2137 0032 924400223  924400224   drift3p1  fixAZdr   213700+003630   19   600   99    loopend   fits file ok
+2148 0033 924400225  924400226     power level of beam 6A low in alfaobswin,  extrapolation/interpolation message        
+2158 0034 924400227  924400228
+2208 0035 924400229  924400230     6A briefly in normal range
+2218 0036 924400231  924500001
+2228 0000 924500002  924500003     extrapolation/interpolation message
+2238 0001 924500004  924500005     power levels (except 6A) OK
+2248 0002 924500006  924500007     cont src
+2258 0003 924500008  924500009     
+2309 0004 924500010  924500011     6A fluctuating to normal
+2319 0005 924500012  924500013 
+2329 0006 924500014  924500015     6A continues to improve
+2339 0007 924500016  924500017  
+2349 0008 924500018  924500019     GPS  6A normal over much of drift
+2359 0009 924500020  924500021     cont src
+0009 0010 924500022  924500023    
+0020 0011 924500024  924500025 
+0030 0012 924500026  924500027
+0040 0013 924500028  924500029     6A mostly normal
+0050 0014 924500030  924500031
+0100 0015 924500032  924500033
+0110 0016 924500034  924500035     rfi burst at ~1430MHz
+0120 0017 924500036  924500037     6A appears stable in normal range
+0130 0018 924500038  924500039     extrapolating/interpolating warning, cont src
+0140 0019 924500040  924500041   
+0150 0020 924500042  924500043     power levels ok
+0201 0021 924500044  924500045
+0211 0022 924500046  924500047     extrapolating/interpolating warning
+0221 0023 924500048  924500049
+0231 0024 924500050  924500051     power levels ok
+0241 0025 924500052  924500053
+0251 0026 924500054  924500055
+0301 0027 924500056  924500057
+0311 0028 924500058  924500059     power levels ok
+0321 0029 924500060 --Aborted
+
+END LST: 0321
+
+
+Notes:
+
+--TOGS run at start and end
+
+--Beam 6B OK.
+
+--Beam 6A at slightly low power (0.787 lowest) and fluctuating in alfaobswin 
+  through first part of run. No messages from CIMA. Operator reports that 
+  ALFA monitor reading OK. Improved throughout night, stabalizing within normal range.
+
+--FAA radar on; 1380 harmonic also present
+
+
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+ALFA TEMPERATURES
+
+16K = K1: 7.7  K2: 8.5  K3: 14.2  K4: 11.2  AT 17:00
+70K = K1: 70.1  K2: 76.2  K3: 89.7  K4: 97.5
+
+16K = K1 7.6   K2 8.5   K3 14.2   K4 11.4   AT 23:35
+70K = K1 70.1   K2 76.2   K3 89.7   K4 97.5
+
+

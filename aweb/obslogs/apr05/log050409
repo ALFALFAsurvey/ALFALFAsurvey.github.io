@@ -1,0 +1,26 @@
+Log for 4/4/05 pm           
+Observers:  RG, MH, BK
+
+System Configuration:
+
+FixedAZ Drift Map Cima pattern; with "new Fits file each loop" = 1
+calibration mode: "loopend", 1sec CalON at the end of each drift segment
+
+Files: /share/pserverf.sda3/wappdata/wapp.20050409.a2010.****.fits
+       /share/pserverf.sda3/wappdata/wapp.20050410.a2010.****.fits
+LST  fits Scan      calscan   Source    Pattern  Start coords. ang  time loop  DecJ off  Notes
+_____________________________________________________________________________________________________________________
+
+1247 0003  drift42p1 FixedAz 124700+103506  19   600  35	aborted
+
+There is nothing worth keeping!
+
+This night was a complete bust. First, we tried to run a command file
+using LBW on the VLA target, but had weird CIMA problems. So, rather than
+waste time, we decided to switch to drifts. Started up, but had repeated
+WAPP errors every 4-7 minutes. Arun was working on one of the WAPPS (3).
+He did a hard reboot of WAPP1 also. After almost 3 hours of repeated
+failures we gave up. Apparently this is a more serious WAPP problem as
+several other programs have also been cancelled.    
+
+

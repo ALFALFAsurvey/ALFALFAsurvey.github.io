@@ -1,0 +1,51 @@
+Log for 07/02/08      Observer: Ann
+
+System Configuration:  FixedAZ Drift Map
+                       Cima version 2.2.14 (normal)
+
+Using: a2010_az180.gui as save state.
+
+Files:  /share/pserverf.sda2/wappdata/wapp.20070208.a2010.****.fits
+        /share/pserverf.sda2/wappdata/wapp.20070209.a2010.****.fits
+
+LST  fits   Scan    calscan    Source   Pattern  Start coords.   ang  time  loop  calmode
+0741 0001 703982393 703982996  drift118p1 FixedAz 074130+283530   19   600   99    loopend
+0752 0002 703982999 703983601
+0802 0003 703983604 703984206 power levels ok
+0812 0004 703984209 703984811
+0822 0005 703984814 703985416
+0832 0006 703985419 703986021 RFI burst at 1380
+0842 0007 703986024 704000226
+0852 0000 704000229 704000831
+0902 0001 704000834 704001436
+0912 0002 704001439 704002041
+0922 0003 704002044 704002646
+0932 0004 704002649 704003251
+0943 0005 704003254 704003856
+0953 0006 704003859 704004461
+1003 0007 704004464 704005066
+1013 0008 704005069 704005671 power levels ok
+1023 0009 704005674 704006276
+1033 0010 704006279 704006881
+1043 0011 704006884 704007486
+1053 0012 704007489 704008091
+1103 0013 704008094 704008696
+1113 0014 704008699 704009301
+1124 0015 704009304 704009906
+1134 0016 704009909 --aborted
+
+End LST: 1134
+
+NOTES:
+Bit of a late start due to TOGS/GALSPECT problem.
+Unable to run TOGS cal at start.
+
+Beam 1B is no good.
+
+Example of "Extra" WAPP messages (as per Mikael's message):
+
+Fri Feb 09 00:09:05 AST 2007 exec evaluating message from SCRAMWAPPDATA : log_message WARNING WAPPDATA-queue_agcdata {WARNING received duplicate AGC-datablo$Fri Feb 09 00:09:05 AST 2007 WAPPDATA-queue_agcdata: WARNING received duplicate
+AGC-datablock at 00:09:05.300 (seconds: 545.300)!
+Fri Feb 09 00:09:06 AST 2007 WARNING  WAPPDATA-WAPPDATA-search_agc: WARNING extrapolating agc-data from 544.0 to 545.0!
+Fri Feb 09 00:09:07 AST 2007 WARNING  WAPPDATA-WAPPDATA-search_agc: WARNING interpolating agc-data over 2.00 second time gap (544.0 - 546.0)!
+

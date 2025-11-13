@@ -1,0 +1,83 @@
+Log for 090414     Observer: Drew Brisbin
+
+System Configuration: a2010_az180_2009.conf
+CIMA version  3.1.03 2008-1-20 13:50 "Smart"   
+File:       /share/pserverf.sda3/wappdata/wapp.20090414.a2010.****.fits 
+            /share/pserverf.sda3/wappdata/wapp.20090415.a2010.****.fits
+
+     ****
+LST  fits  Scan       calscan    Source     Pattern   Start coords.  ang  time  loop  calmode 
+0903 0018 910400228   910400229  drift94p1  fixAZdr   090300+224506  19   600   99    loopend   beam 6B dead
+0913 0019 910400230   910400231  power levels OK, fits files OK
+0923 0020 910400232   910400233
+0933 0021 910400234              WAPP failure! Shan helps Drew restart and start new fits file
+
+0948 0022 910400236   910400237  power adjusted, fits files OK
+0958 0023 910400238   910400239  power levels OK
+1009 0024 910400240   910400241  fits files OK
+1019 0025 910400242   910400243
+1029 0026 910400244   910400245
+1040 0027 910400246   910400247
+1050 0028 910400248   910400249
+1100 0029 910400250   910400251
+1110 0030 910400252   910400253
+1120 0031 910400254   910400255
+1130 0032 910400256   910400257
+1140 0033 910400258   910400259
+1150 0034 910400260   910400261
+1200 0035 910400262   910400263  Wapp failure! Observation restarted, this fits file is damaged
+
+1212 0036 910400264   910400265  power adjusted
+1222 0037 910400266   910400267
+1232 0038 910400268   910400269
+1242 0039 910400270   910400271
+1252 0040 910400272   910400273
+1303 0041 910400274   910400275
+1313 0000 910500002   910500003
+1323 0001 910500004   910500005
+1333 0002 910500006   910500007
+1343 0003 910500008   910500009
+1353 0004 910500010   910500011  power levels OK
+1403 0005 910500012   910500013
+1413 0006 910500014   910500015
+1424 0007 910500016   910500017
+1434 0008 910500018   910500019
+1444 0009 910500020   910500021
+1454 0010 910500022   910500023
+1504 0011 910500024              WAPP failure! Observations restarted
+
+1506 0012 910500025   910500026  power adjusted
+1516 0013 910500027   910500028
+1516 0014 910500029   910500030  power levels OK
+1537 0015 910400032 --aborted
+
+
+END LST: 1537
+
+
+Notes:
+Running the new version of CIMA 3.1.03 "Smart"
+TOGS run at start and end
+FAA radar on
+Beam 6B dead
+Sporadic RFI at 1356, 1424, 1425, 1426 -Operator sez "Spectrum manager schedule - Only Mode A channels 3 & 4 only... Also the
+FAA Radar blocking is ON, Blanking Pulse at 400"
+
+http://www.naic.edu/~operator/oplogs/alfatemps/14Apr2009_0800_1600.txt
+________________________________________________________________________________
+                           <<< ALFA TEMPERATURES >>>
+
+                                   AT 16:42
+
+                 16K = K1 17.7   K2 18.6   K3 19.1   K4 18.3
+                 70K = K1 88.5   K2 86.3   K3 96.5   K4 103.9
+
+                                   AT 21:56
+
+                 16K = K1 17.9   K2 16.6   K3 19.3   K4 18.8
+                 70K = K1 89.0   K2 86.5   K3 97.3   K4 105.2
+
+			=>temperatures of the 8 sensors within ALFA housing
+________________________________________________________________________________
+
+

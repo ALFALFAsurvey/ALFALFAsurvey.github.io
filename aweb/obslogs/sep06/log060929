@@ -1,0 +1,91 @@
+Log for 06/09/29      Observer: Tom Balonek
+
+System Configuration:
+FixedAZ Drift Map Cima version 2.2.09 (normal)
+
+Using: a2010_aug2006.gui as save state.
+
+Files:  /share/pserverf.sdb1/wappdata/wapp.20060929.a2010.****.fits
+        /share/pserverf.sdb1/wappdata/wapp.20060930.a2010.****.fits
+
+LST  fits Scan      calscan   Source    Pattern  Start coords.  ang  time  loop calmode
+2203 0025 627278936 --aborted  WAPP ERROR
+2205 0026 627279061 627279663 drift54p1 FixedAz  2205200+130106  19   600    99 loopend
+2215 0027 627279666 627280268    Power levels ok
+2225 0028 627280271 627280873
+2235 0029 627280876 627281478
+2245 0030 627281481 627282083
+2256 0031 627282086 627282688
+2306 0032 627282691 627283293
+2316 0033 627283296 627283898
+2326 0034 627283901 627284503 
+2336 0035 627284506 627285108
+2346 0036 627285111 627285713
+2356 0037 627285716 627286318  Power levels and quicklook ok
+0006 0038 627286321 627300523
+0016 0000 627300526 --aborted  WAPP ERROR
+0022 0001 627300855 --aborted  WAPP ERROR
+0029 0002 627301288 627301891  Power levels and quicklook ok
+0039 0003 627301894 627302496
+0049 0004 627302499 627303101
+0059 0005 627303104 627303706
+0110 0006 627303709 627304311
+0120 0007 627304314 627304916  Power levels and quicklook ok
+0130 0008 627304919 627305521
+0140 0009 627305524 627306126
+0150 0010 627306129 627306731
+0200 0011 627306734 627307336
+0230 0012 627307339 627307941
+0240 0013 627307944 627308546  Power levels and quicklook ok
+0241 0014 627308549 627309151
+0251 0015 627309154 627309756
+0301 0016 627309759 627310361
+0311 0017 627310364 627310966
+0321 0018 627310969 627311571
+0331 0019 627311574 627312176
+0341 0020 627312179 627312781  Power levels and quicklook ok
+0351 0021 627312784 627313386
+0401 0022 627313389 627313991
+0411 0023 627313994 627314596
+0422 0024 627314599 627315201  Power levels ok
+0432 0025 627315204 --aborted
+
+END LST: 0432  
+
+
+Notes:
+
+TOGS run at start (no good? -- see comments below) and end of run.
+
+The TOGS at start of run looked fine from Cornell (no error messages), but Willy (operator)
+   reported after TOGS sequence completed that he thought there was a problem.
+    operator chat window comments:
+      21:48:04>I had to restart TOGS, the values didn't look right at first.
+      21:49:28>Are you sure the TOGS is running? It's not putting out the 5, 10, 15 etc
+      21:50:19>I also get an "address already in use" message.
+      21:51:05>the full message was as follows:
+      21:51:32-55>"Listen on TCPPort: address already in use" "thread exit" "running in frame buffer"
+      21:53:50>vncviewer isn't running either. No plot.
+      22:14:07>Snezana is going to check out togs.
+    operator later reported that Snezana had fixed problem that our beginning TOGS weren't good, 
+       but this shouldn't affect our drifts.
+Operator said TOGS at end of night looked fine.
+
+WAPP ERROR three times during our drifts.  First one comes on first drift, 
+    second and third come back to back, so only one break in data.
+    Gap in RA coverage 00:16 - 00:29
+
+0025 --aborted 21:56:03
+        -- 21:55:39 WAPP ERROR right at start of drift -- WAPP(3) [1 error message]
+        then started new FITS
+
+0000 --aborted 00:12:36
+        -- 00:12:17 WAPP ERROR 3 1/2 minutes into drift -- WAPP(1), WAPP(4) [4 error messages]
+        then started new FITS 
+
+0001 --aborted 00:19:49 
+        -- 00:18:45 WAPP ERROR 4 1/2 minutes into drift -- WAPP(3), WAPP(4), WAPP(1), WAPP(2)
+                               [multitude of error messages]
+        then started new FITS
+
+no other problems after 0001

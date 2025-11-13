@@ -1,0 +1,83 @@
+A2707 LBW   13.01.13       Observers: Tom Balonek, Margaret Dievendorf, Luke Leisman, Katelyn Leisman 
+
+CIMA version:          The Stable version (Default) (Ver 3.3.04 2012-11-29  16:58)
+Configuration file:    a2707_jan13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2707_130113.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.13jan13.a2707.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan       Status
+H072538.9+091104  072538.8 +091058  j  1200 H v   # A170328 calib   0716  9.4    1    301300001 Strong detection 1415
+H073952.9+164504  073953.4 +164520  j   200 H v   #                 0727  3.4    2    301300005 No detection 
+H081700.9+170356  081701.4 +170413  j   400 H v   # A189207         0737  9.2    3    301300009 No detection
+                                                                                                   Unwrapped azimuth 360 degrees
+H075524.6+035950  075523.5 +035824  j  3000 H v   # A174692         0757  14.4   4    301300013 No detection 
+H074744.0+033713  074744.1 +033715  j 10800 H v   # A174804         0805  15.4   5    301300017 Strong Detection at 1371 
+H080231.8+013747  080234.7 +013706  j  1000 H v   # A189099         0814  17.0   6    301300021 No detection 
+H081801.6+004057  081801.7 +004109  j -1300 H v   #                 0822  17.7   7    301300025 No detection
+H085631.7+105420  085631.8 +105412  j   500 H v   #                 0833  9.4    8    301300029 No detection 
+H083034.2+032747  083034.4 +032750  j   500 H v   #                 0844  15.3   9    301300033 No detection (except wishful 
+thinking)
+H084530.2+012448  084530.4 +012459  j   200 H v   #                 0852  17.0   10   301300037 No detection
+H090102.2+035227  090101.9 +035221  j   900 H v   #                 0901  14.5   11   301300041 May be weak detection at 1415
+H085337.7+001420  085337.8 +001432  j  8600 H v   # A189124 t=4min  0910  18.6   12   301300045 No detection
+H091958.4+005152  091958.5 +005203  j  5100 H v   # A198525         0921  17.5   13   301300049 Strong detection at 1396
+A102214.0+180622  102214.0 +180622  j  1000 H v   # A208686                                     **** Skipped to make up time ****
+H093940.2+015225  093940.5 +015235  j   700 H v   #                 0932  16.6   14   301300053 No detection
+H094328.7+001125  094330.0 +001153  j  1700 H v   # A198522 t=4min  0941  18.2   15   301300057 No detection
+H095406.2+014146  095408.4 +014254  j  1900 H v   # A198523         0951  16.7   16   301300061 Oscillating baseline
+H101503.8+015539  101504.1 +015550  j   100 H v   #                 0959  16.9   17   301300065 Detection at 1420
+H102140.1+010311  102140.2 +010322  j   200 H v   #                 1007  17.7   18   301300069 No detection
+H102719.4+011502  102719.6 +011513  j  6800 H v   # A208522         1015  17.4   19   301300073 Strong detection 1389!!!
+H102801.5+030900  102801.7 +030904  j   200 H v   #                 1024  15.3   20   301300077 No detection 
+H104006.0+000245  104006.0 +000257  j -1300 H v   #         t=4min  1033  18.4   21   301300081 No detection
+H104157.8+030447  104158.1 +030451  j   600 H v   #                 1044  15.3   22   301300085 No detection
+H105518.3+034121  105518.3 +034123  j   900 H v   #                 1053  14.7   23   301300089 No detection
+H112404.0+000830  112404.1 +000842  j   600 H v   #         t=4min  1102  19.0   24   301300093 Possible HVC detection at 1420. We didn't 
+see what Riccardo saw. 
+H112433.1+005004  112433.3 +005016  j   900 H v   #         t=4min  1112  17.8   25   301300097 No detection
+H112931.5+003416  112931.6 +003428  j   900 H v   #         t=4min  1122  17.9   26   301300101 We did not detect what Riccardo saw.
+H115759.4+031218  115759.6 +031222  j   600 H v   #                 1133  16.4   27   301300105 No detection
+A123417.0+082113  123417.0 +082113  j  1000 H v   # A229343         1142  16.1   28   301300109 Detection at 1412 
+H123720.4+064957  123728.2 +153313  j  -500 H v   #                 1152  11.3   29   301300113 No detection 
+H122210.5+011719  122210.7 +011731  j   700 H v   #                 1203  17.8   30   301300117 Oscillating baseline
+H122322.7+000620  122322.8 +000632  j   900 H v   #         t=4min  1211  18.6   31   301300121 No detection
+H122657.0+012423  122657.2 +012434  j  1300 H v   # A229196         1221  17.0   32   301300125 Strong detection at 1415. Confirmed what 
+Riccardo saw. 
+H122720.3+013110  122720.5 +013121  j  1300 H v   # A229197         1229  16.9   33   301300129 Strong detection at 1415. Confirmed what 
+Riccardo saw.  
+H122815.1+001133  122815.1 +001145  j  -800 H v   #         t=4min  1238  18.3   34   301300133 Strong detection in the offbeam at 1416
+H125449.8+024936  125450.0 +024940  j  1000 H v   # A229215         1249  15.6   35   301300137 No detection
+H130233.8+005519  130233.9 +005530  j   900 H v   #         t=4min  1257  17.5   36   301300141 No detection 
+H131623.5+013835  131623.7 +013846  j   900 H v   #                 1308  16.9   37   301300145 Detection at 1408
+H132408.8+001535  132408.9 +001547  j  1000 H v   #         t=4min  1316  18.2   38   301300149 Oscillating baseline 
+H140908.2+093141  140908.4 +093133  j  1200 H v   #                 1328  13.4   39   301300153 No detection
+H142321.7+043455  142321.4 +043449  j   200 H v   # A249282         1338  17.7   40   301300157 No detection, on-off issue
+H141755.3+010423  141755.2 +010458  j  1700 H v   # A249436         1346  18.9   41   301300161 No detection
+H142730.5+005107  142730.6 +005118  j   100 H v   #         t=4min  1354  19.4   42   301300165 
+
+
+%H143134.5+025607  143134.7 +025611  j  1400 H v   # A249462                if time
+
+
+Stop LST: 1404  
+
+
+Please record any notes of importance here  (Remember: you were there; we weren't.)
+Notes
+
+**** Skipped A102214.0+180622 to make up time. ****
+
+* H095406.2+014146 has an oscillating baseline.  We may need to redo it.
+
+* H122210.5+011719 has an oscillating baseline. We may need to redo it.
+
+* H132408.8+001535 has an oscillating baseline. We may need to redo it.

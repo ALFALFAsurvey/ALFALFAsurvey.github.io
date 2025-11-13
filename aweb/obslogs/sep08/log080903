@@ -1,0 +1,43 @@
+Log for 080903      Observer:  Rebecca Koopmann
+
+System Configuration: a2010_az360.conf
+
+File:        /share/pserverf.sda3/wappdata/wapp.20080903.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20080904.a2010.****.fits
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2202 0021  824700262 824700263 drift36p1  fixAZdr  220230+083818 360   600   99 loopend   - power levels
+okay
+2213 0022  824700264 824700265 
+2223 0023  824700266 824800001
+2233 0000  824800002 824800003
+2243 0001  824800004 824800005   power levels OK
+2253 0002  824800006 824800007   continuum source
+2303 0003  824800008 824800009   
+2313 0004  824800010 824800011
+2323 0005  824800012 824800013 
+2333 0006  824800014 824800015
+2344 0007  824800016 824800017   power levels OK
+2354 0008  824800018 824800019
+0004 0009  824800020 824800021
+0014 0010  824800022 824800023   continuum source  
+0024 0011  824800024 824800025
+0034 0012  824800026 824800027   power levels OK
+0044 0013  824800028 824800029
+0055 0014  824800030 824800031
+0105 0015  824800032 824800033
+0115 0016  824800034 824800035
+0125 0017  824800036 824800037
+0135 0018  824800038 824800039    power levels OK
+0145 0019  824800040  -- aborted
+
+END LST: 0145
+
+Notes: 
+** TOGS run at start and end.
+** Started ~2 mins late due to long slew.
+** Beam 6B has low power
+**  Since Beam 6B dead, there were regular check_wapp_levels grey and
+orange messages: WAPP power levels are between 0.098 and 1.076 (still bad).
+**** No WEIRD RFI tonight! 
+** interpolating pnt-data over 2:00 secs errors:  fits 0022, 0001, 0009, 0012

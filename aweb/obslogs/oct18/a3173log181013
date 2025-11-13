@@ -1,0 +1,62 @@
+A3173 LBW   18.10.13   Observers: Gregory Hallenbeck, Eun Ju Jong, Gracy Frost
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a3173.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend:           WAPP 1+2+3+4 '2 chan, 9-level' --- 25 MHz
+                     IFLOrest= 1415.4057  1395.4057  1375.4057  1355.4057
+                     IFLO    = 275 MHz
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a3173_181013.cmd
+Mode:                WAPP search mode   
+                     APPS Survey program
+
+Data written to:     /share/wappdata.now/wapp.20181013.a3173.****.fits  
+                     /share/wappdata.now/wapp.20181014.a3173.****.fits   (if after midnight AST)
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr      LST    ZA   File#   ONScan     Status (Pls include freq & S/N ratio)
+S223616.1+293146  223616.1 +293146  j     0 H v   # A321481      2209 12.88 0008 828600075  no detection 
+S231953.9+253648  231953.9 +253648  j     0 H v   # A335332      2223 15.15 0009 828600079  no detection
+S225746.2+315923  225746.2 +315923  j     0 H v   # A321446      2236 14.64 0010 828600083  detection at 7000km/s(1388MHz) S/N = 5  
+S232459.9+312212  232459.9 +312212  j     0 H v   # A333385      2249 15.52 0011 828600087  detection at 5400km/s(1395MHz) S/N = 10
+											    second detection at 9400km/s(1378MHz) S/N = 6  
+S232617.0+291513  232617.0 +291513  j     0 H v   # A332164      2301 12.45 0012 828600091  detection at 5700km/s(1394MHz) S/N = 6
+S233903.5+312825  233903.5 +312825  j     0 H v   # A336100      2315 14.23 0013 828600095  board 2 baseline is ~100 mJy lower than other boards
+                                                                                            WAPPS restarted + configuation re-loaded after file 14 completed.
+											    possible detection at 1402MHz(if board is to be trusted)
+S234658.4+292732  234658.4 +292732  j     0 H v   # A012779      2327 12.15 0014 828600099  same isue as 13.
+											    at 1386MHz and 1390MHz, RFI or spikes from board failing.
+S001600.2+300257  001600.2 +300257  j     0 H v   # A102314      2342 14.12 0015 828600103  first observation after restarting WAPPS
+                                                                                            same issue as 13 still occured.
+											    switching center frequencies of boards 2 and 4 
+S001837.0+320926  001837.0 +320926  j     0 H v   # A102759      2357 14.50 0016 828600107  a lot of waviness on the baseline.
+											    a possible detection at 1387MHz.
+S002146.6+300458  002146.6 +300458  j     0 H v   # A102763      0010 12.05 0017 828600111  detetion 6500km/s(1390MHz) S/N = 14
+S002725.7+311533  002725.7 +311533  j     0 H v   # A102773      0022 13.10 0018 828600115  detection at 6000km/s(1392MHz) S/N = 11
+S002743.9+311557  002743.9 +311557  j     0 H v   # A102774      0033 13.11 0019 828600119  detection at 6000km/s(1392MHz) S/N = 8 
+S004434.1+302117  004434.1 +302117  j     0 H v   # A102797      0046 12.13 0020 828600123  detection at 5200km/s(1396MHz) S/N = 8 
+S005222.0+312632  005222.0 +312632  j     0 H v   # A102811      0058 13.28 0021 828600127  detection at 4500km/s(1399MHz) S/N = 8
+S005750.0+312903  005750.0 +312903  j     0 H v   # A000598      0111 13.56 0000 828700004  no detection
+S010000.4+302411  010000.4 +302411  j     0 H v   # A113884      0123 13.20 0001 828700008  detection at 5000km/s(1397MHz) S/N = 13
+S012214.5+311517  012214.5 +311517  j     0 H v   # A112545      0135 13.31 0002 828700012  detection at 4800km/s(1397MHz) S/N = 7  
+S014812.0+295138  014812.0 +295138  j     0 H v   # A113947      0148 11.62 0003 828700016  detection at 7400km/s(1387MHz) S/N = 10
+S021206.3+313511  021206.3 +313511  j     0 H v   # A120093      0202 13.58 0004 828700020  detection at 8400km/s(1380MHz) S/N = 11
+S021514.0+310534  021514.0 +310534  j     0 H v   # A122979      0213 12.87 0005 828700024  detection at 4900km/s(1398MHz) S/N = 12
+S022542.4+313723  022542.4 +313723  j     0 H v   # A123005      0225 13.38 0006 828700028  detection at 5200km/s(1397MHz) S/N = 7
+S023029.3+302254  023029.3 +302254  j     0 H v   # A123020      0237 12.20 0007 828700032  detection at 5200km/s(1396MHz) S/N = 11
+S023436.2+295754  023436.2 +295754  j     0 H v   # A120354      0249 12.12 0008 828700036  detection at 5200km/s(1397MHz) S/N = 11
+H030802.9+301229  030802.9 +301229  j     0 H v   # A131387cal   if time (3 mins)           aborted immediately after starting ON scan.
+H030510.4+354946  030510.4 +354946  j     0 H v   # A132243cal   if time (3 mins)
+
+                                                    
+Notes (be sure to write notes here so we can keep track of anything relevant!!!! 
+pls delete lines below that aren't relevant. Remember: only you know what happened 
+unless you record notes here)
+-----
+Tie downs were enabled. 
+Occasional GPS.
+Board 2 failed around midnight, fixed by swapping it with board 4. 

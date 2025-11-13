@@ -1,0 +1,91 @@
+Log for 04/04/10          Observer: Shan Huang
+
+System Configuration:                   a2010_az265_2010.conf
+CIMA version                            3.1.08 2010-02-01 "Smart"
+File(s):     /share/pserverf.sdb1/wappdata/wapp.20100404.a2010.****.fits
+             /share/pserverf.sdb1/wappdata/wapp.20100405.a2010.****.fits
+
+Zenith strip observing setup
+Az=259.60   ALFAang=-61.9  ZA=7.3
+RA@start=0815   RA@end=1641
+RA = LST + 30 min
+
+LST  fits   Scan    calscan       Source    Pattern   Start coords. ang   time loop  calmode
+0747 0025  9400075  9400076       drift80p2 fixAZdr   080400+192800 -61.9 600   99   loopend
+0757 0026  9400077  9400078       quicklook ok, power ok except for 2A
+0807 0027  9400079  9400080
+0817 0028  9400081  9400082
+0828 0029  9400083  9400084
+0838 0030  9400085  9400086
+0848 0031  9400087  9400088
+0858 0032  9400089  9400090
+0908 0033  9400091  9400092
+0918 0034  9400093  9400094       quicklook ok
+0928 0035  9400095  9400096
+0938 0036  9400097  9400098
+0949 0037  9400099  9400100
+0959 0038  9400101  9400102
+1009 0039  9400103  9400104
+1019 0040  9400105  9400106
+1029 0041  9400107  9400108
+1039 0042  9400109  9400110
+1049 0043  9400111  9400112
+1059 0044  9400113  9400114
+1109 0045  9400115  9400116       quicklook ok, beam 2A still down
+1120 0046  9400117  9400118
+1130 0047  9400119  9400120
+1140 0048  9400121  9400122
+1150 0049  9400123  9400124
+1200 0050  9400125  9400126
+1210 0051  9400127  9400128
+1220 0052  9400129  9500001
+1230 0000  9500002  9500003       quicklook ok
+1240 0001  9500004  9500005
+1251 0002  9500006  9500007
+1301 0003  9500008  9500009
+1311 0004  9500010  9500011
+1321 0005  9500012  9500013
+1331 0006  9500014  9500015
+1341 0007  9500016  9500017
+1351 0008  9500018  9500019
+1401 0009  9500020  9500021
+1411 0010  9500022  9500023
+1422 0011  9500024  9500025       quicklook ok
+1432 0012  9500026  9500027
+1442 0013  9500028  9500029
+1452 0014  9500030  9500031
+1502 0015  9500032  9500033
+1512 0016  9500034  9500035
+1522 0017  9500036  9500037
+1532 0018  9500038  9500039
+1543 0019  9500040  9500041       quicklook ok
+1553 0020  9500042  9500043
+1603 0021  9500044  9500045
+1613 0022  9500046  Aborted
+
+LST stop: 1613        RA stop: 1641
+
+NOTES:
+
+Lost ~10mins at the beginning. Forget to 'accept' after drift number selected. 
+Abort when notice wrong dec and start all over again.
+
+TOGS run at end -- not run at start!
+
+Beam 2A power consistenly low. 
+
+FAA radar ON
+
+
+(update below at end of night)
+-------------------------------------------------------
+http://www.naic.edu/~operator/oplogs/alfatemps/latest
+
+16K = K1: 13.6   K2: 13.8   K3: 14.8   K4: 14.8   AT 18:01
+70K = K1: 84.7   K2: 92.5   K3: 101.8  K4: 109.2
+
+16K = K1: 14.6   K2: 14.5   K3: 16.2   K4: 16.2   AT 22:03
+70K = K1: 85.4   K2: 93.0   K3: 102.8  K4: 110.1
+
+			=>temperatures of the 8 sensors within ALFA housing
+

@@ -1,0 +1,43 @@
+pwdA2853   LBW   14.06.22      Observers: O'Donoghue & Miller
+
+CIMA version:          The Stable version (Default)  Ver 3.3.13 2014--05-08 17:14
+Configuration file:    a2853_jun14.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 300-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2853_140622.cmd
+Mode:                Doppler tracking
+                     ALFALFA/UAT cluster sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.22jun14.a2853.*
+
+In this period, please record the signal-to-noise ratio of any detections or
+indicate how many additional ON-OFF pairs are required to achieve adequate SNR.
+
+SRCNAME             RAJ     DECJ                     AGNnr     LST    ZA   File#   ONScan     Status
+A131503.4+243707  131503.4 +243707  j  3600 H v   # A230196  13:01   6.32    1   417300478   NON-Detection (of IC860) @ 1402 MHz, 3900 km/s SNR ~10 (OFF scan)
+A131503.4+243707  131503.4 +243707  j  3600 H v   # A230196  13:13   8.84    2   417300482   Repeated 1st source for time
+A132047.4+220216  132047.2 +220216  j   800 H v   # A742920  13:26   3.78    3   417300486   No detection
+A142639.9+255136  142639.9 +255136  j  4400 H v   # A726560  13:42  12.80    4   417300490   No detection
+A142860.0+264746  142900.0 +264746  j  4400 H v   # A726610  13:54  11.77    5   417300494   Detection @ 1389.5 MHz,4450 km/s SNR ~2
+A143038.3+250949  143038.3 +250949  j  4400 H v   # A732951  14:07   8.81    6   417300498   No detection
+A143102.2+260027  143102.2 +260027  j  4400 H v   # A732952  14:19   8.13    7   417300502   Detection at 1399.5 MHz, 4600 km/s SNR ~1 to 2
+A143344.8+251034  143344.8 +251034  j  4500 H v   # A726703  14:31   6.81    8   417300506   No detection
+A143414.6+253543  143414.6 +253543  j  4800 H v   # A732971  14:43   7.44    9   417300510   Detection 1397.8 MHz,4800 km/s SNR ~3
+A142813.2+255649  142813.2 +255649  j  4100 H v   # A241231  14:56   9.75   10   417300514   Detection 1401 MHz, 4200 km/s SNR ~3
+A142829.9+255136  142829.9 +255136  j  4900 H v   # A245785  15:08  11.68   11   417300518   Detection 1399 MHz, 4550 km/s SNR ~2
+A142829.9+255136  142829.9 +255136  j  4900 H v   # A245785  15:20  14:00   12   417300522   Repeated for time, detection weaker
+A153440.2+251355  153440.2 +251355  j 10000 H v   # A727175  15:36   6.84   13   417300526   Detection 1374 MHz, 9900 km/s SNR ~2
+A153437.6+251311  153437.6 +251311  j 10000 H v   # A258623  15:48   7.41   14   417300530   Detection 1374.5 MHz, 9900 km/s SNR ~4 + negative signal
+A153434.8+251330  153434.8 +251330  j 10000 H v   # A727172  16:00   8.92   15   417300534   Detection 1374.8 MHz, 9950 km/s SNR ~5 + negative signal
+A162557.4+203933  162557.4 +203933  j  2000 H v   # A260509  16:16   3.43   16   417300538   Strong RFI at 1411 MHz, no detection apparent
+H163802.5+262651  163802.9 +262710  j  4300 H v   # A262736  16:30   8.33   17   417300542   Operator (Elliot) permission to go a few minutes past 11 pm, strong detection 1401 MHz, 4300 km/s SNR ~20
+
+Notes  (please note anything of importance; here is an example)
+     Tiedowns enabled. Strong RFI wiped out one source. Smooth night otherwise!!
+
+
+

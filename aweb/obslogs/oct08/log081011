@@ -1,0 +1,28 @@
+Log for 081011      Observers: Ann Martin
+
+System Configuration: a2010_az360.conf
+CIMA version  3.0.04  "next"
+File:        /share/pserverf.sda3/wappdata/wapp.20081011.a2010.****.fits
+File:        /share/pserverf.sda3/wappdata/wapp.20081012.a2010.****.fits (no files here last night!)
+
+NOTE: The schedule changed! We were only on until 1:00 a.m. AST, so we would not complete the full RA block.
+I made sure tomorrow's observers know!
+
+LST  fits   Scan      calscan  Source     Pattern  Start coords. ang  time loop calmode
+2223 0000 828500162 828500163 drift39p2  fixAZdr  222300+092924 360   600   99 loopend power levels OK; beam 6B back!; chip count errors
+2233 0001 828500164 828500165
+2243 0002 828500166 828500167
+2253 0003 828500168 -- aborted -- technician needs to go up on the platform to replace motor amplifier
+
+
+END LST: 2253
+
+Notes: 
+TOGS not run at beginning due to late start.
+Problem with ALFA motor; operators were able to manually rotate ALFA to 19 degrees, but had to call
+a technician to replace the motor amplifier. Delayed until 9:20 AST/22:23 LST. Technician
+could arrive at any time, so we started observing just in case we could get a little good data.
+
+Was able to complete 3 drifts but then the technician arrived and  needed to go up on the platform.
+They were still working on it within 20 minutes of the end of the A2010 observing
+period, so I shut down and went home.
