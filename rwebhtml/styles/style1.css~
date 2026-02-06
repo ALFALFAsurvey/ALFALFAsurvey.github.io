@@ -1,0 +1,40 @@
+body {
+	line-height: 1.3em;
+	font-size: 1.0em;
+	background-color: #FFFFFF;
+	font-family: roman, 'times new roman', times, serif;
+	color: #1A1A1A;
+	padding: 1em;
+	text-align: left;
+}
+
+a:link {
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #0000FF;
+}
+
+a:hover {color: #FF0000;text-decoration: underline;font-family: sans-serif;
+}
+
+a:active {
+	font-family: sans-serif;
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+a:visited {color: #0000FF;
+text-decoration: none;font-family: sans-serif;
+}
+
+h1 {font-size: 2em;font-family: Times, "Times New Roman", serif;font-weight: bold;}h2 {font-size: 1.3em;font-family: Times, "Times New Roman", serif;font-weight: bold;}h3 {font-size: 1.2em;font-family: Times, "Times New Roman", serif;font-weight: bold;}h4 {font-size: 1.1em;font-family: Times, "Times New Roman", serif;font-weight: bold;}h5 {font-size: 1em;font-family: Times, "Times New Roman", serif;font-weight: bold;}
+
+
+div#navbar {font-family: roman, 'times new roman', times, serif;font-size: 1.0em;font-weight: bold;text-align: center;background-color: #FFFFFF;font-weight: bold;padding: 0px;
+}#navbar a:link, #navbar a:visited {color: #FF0000;text-decoration: none;border: 0px #FF0000 solid;padding-top: 1px;padding-left: 5px;padding-bottom: 1px;padding-right:5px;display: run-in;
+}#navbar a:hover {color: #FFFFFF;background-color: #FF0000;text-decoration: underline;
+font-weight: italic;border: solid #1E90FF 1px
+padding-top: 1px;padding-left: 5px;padding-bottom: 1px;padding-right:5px;
+display: run-in;
+}
+
