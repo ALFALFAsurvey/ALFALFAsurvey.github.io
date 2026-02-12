@@ -1,0 +1,313 @@
+/* =========================
+   Base & Variables
+   ========================= */
+
+:root {
+  --forest: #4f6f5a;
+  --forest-dark: #3e5a49;
+  --background: #f7f8f6;
+  --card-bg: #ffffff;
+  --border: #e2e6e3;
+  --text: #1f2a24;
+  --muted: #5f6f66;
+  --radius: 10px;
+  --max-width: 1100px;
+  --paper: #ffffff;
+  --paper-soft: #f7f9f8;
+  --paper-warm: #faf9f7;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.has-banner .hero {
+  display: block;
+}
+
+.no-banner .hero {
+  display: none;
+}
+
+
+.section {
+  padding: 3.5rem 1.5rem;
+}
+
+.section--paper {
+  background: var(--paper);
+}
+
+.section--soft {
+  background: var(--paper-soft);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.section--warm {
+  background: var(--paper-warm);
+}
+
+
+
+/* =========================
+   Top Navigation
+   ========================= */
+
+.site-header {
+  background: white;
+}
+
+.top-nav {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--forest);
+  font-size: 0.95rem;
+}
+
+.site-title a {
+  color: var(--forest);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.site-title a:hover {
+  text-decoration: underline;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--forest);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Hero
+   ========================= */
+
+.hero {
+  height: 260px;
+  background-image: url("../mjonesarecibo2copy.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+   z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  color: #ffffff;
+  z-index: 1;
+
+  background: rgba(0,0,0,0.25);
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+
+}
+
+
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: 0.04em;
+  color: white;
+}
+
+.hero-content h1 {
+  color: #ffffff;
+}
+
+/* =========================
+   Main Content Layout
+   ========================= */
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+.content p {
+  max-width: 100%;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--forest);
+  max-width: 820px;
+  margin: 2rem auto;
+}
+
+
+.statement {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--forest);
+  border-left: 4px solid var(--sage);
+  padding-left: 1.25rem;
+  margin: 3rem auto;
+  max-width: 820px;
+}
+
+
+.split {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 4rem auto;
+  align-items: center;
+}
+
+.split img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* =========================
+   Cards
+   ========================= */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+
+.cards a.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cards a.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: var(--forest);
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Citation Section
+   ========================= */
+
+.citation {
+  margin: 4rem 0;
+  padding: 2rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.citation h2,
+.citation h3 {
+  color: var(--forest);
+}
+
+.citation h3 {
+  margin-top: 2rem;
+  font-size: 1.05rem;
+}
+
+.acknowledgement {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  background: #f3f5f4;
+  border-left: 4px solid var(--forest);
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+  border-top: 1px solid var(--border);
+  background: white;
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
