@@ -40,6 +40,10 @@ Trims `rwebhtml/` to fit within GitHub's size limits and rewrites links to point
 
 Again, run with `DRY_RUN = True` to preview, then `DRY_RUN = False` to apply.
 
+**Utility — `test_drive.py`**
+
+A small helper script for verifying Google Drive API connectivity and OAuth credentials before running `gdrive_sort.py`. Run it first if you're setting up credentials on a new machine.
+
 ---
 
 ## Setting up the Google Drive API

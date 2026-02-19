@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Google Drive API credentials (never commit these)
+client_secret*.json
+token.json
+
+# Generated artifacts from gdrive_sort.py (large, not needed in repo)
+drive_index_cache.json
+drive_url_map.json
+drive_url_map_dryrun.json
+
+# Editor backups
+*~
