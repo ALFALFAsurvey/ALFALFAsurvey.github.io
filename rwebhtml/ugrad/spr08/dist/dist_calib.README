@@ -1,0 +1,47 @@
+List of updates to dist_calib.dat.
+
+Feb 25th 2003: Version 1 (MPH)
+Apr 23rd 2003: Update (MPH)
+May  2nd 2003: Update and reformat (KLM)
+May 16th 2003: Added NGC 1637 with new Cepheid distance from LK03 (KLM)
+Aug 28th 2003: Added new galaxies from KK03d (KLM)
+Nov  3rd 2003: Added 13 new galaxies from MH03 (KLM)
+Nov 10th 2003: Added Draco Dwarf and Andromeda II, and 15 SBF measurements in 
+	       Virgo. (KLM) Now 493 galaxies.
+Nov 20th 2003: Added 5 new galaxies from J00, also distances from J98.(KLM)
+	       Now 498 galaxes.
+Nov 21st 2003: Added J01a,b, K99 and K00. Now 505 galaxies. (KLM)
+Nov 23rd 2003: Added J03. Now 512 galaxies. (KLM)
+Dec 1st  2003: Added TT03 and K02b (previous K02b changed to K02c). 526 gals.
+Jan 28th 2004: Added T04 which has Cepheid distance to NGC 4395. 
+Feb 27th 2004: Checked F01 against database and updated where neccessary.
+Mar 5th  2004: Added TRGB and Ceph distances from SF04.
+May 25th 2004: Finished adding/updating distances from K04. Also added new 
+               distances to HoIX and M33. Format of file changed to include 
+	       flag for note/multiple distances and J2000 co-ords. N=567. (KLM)
+Jun  1st 2004: Added new improved Cepheid distance to NGC 300.
+Jun  3rd 2004: Finished updating format to include flag for note and
+	       multiple distances. New format is now default. Old format
+               moved to "version2" folder. (KLM). N=567.
+Jun  8th 2004: Checked SKT99 and Ma98 against table. N=568.
+Jun 14th 2004: Check Ma97, and added NGC4693 from NZ99. N=569.
+Jun 16th 2004: Added TRGB distance to SGR dSph. N=570 (KLM)
+Jul 23rd 2004: Added new PNLF distance to NGC55. N=570 (KLM)
+Jul 26th 2004: Added new TRGB distance to LeoI and geometric distance to M33.
+Sep 1st  2004: Added new Ceph distance to NGC 6822. 
+Sep 20th 2004: Added new TRGB distance to NGC 6822. 
+Nov 1st  2004: Added new TRGB distances to 17 LG galaxies. N=572 (KLM)
+Nov 18th 2004: 2nd distance for DDO154 (thanks to Sabrina, KLM).
+Jan 26th 2005: New distance for AndIX. (KLM)
+Jan 27th 2005: Added HIZSS3 in ZoA (N=573, KLM)
+Mar  4th 2005: Added updated geometric distance to M33. (KLM) 
+Mar 23rd 2005: Added new TRGB dist for LEOII (KLM)
+Mar 24th 2005: Added new TRGB dist for NGC 2633. Found error in method listed for W03 ref 
+               it was Cepheid dist not stars. (KLM)
+May 12th 2005: Added 16 new galaxies in Hydra from MHI05 (KLM, N=589)
+Jun 28th 2005: Added new SBF distances for 10 nearby dwarfs from RJ05. (KLM, N=594). 
+Jul 14th 2005: Added new TRGB distance for Draco Dwarf. (KLM)
+Oct 12th 2005: Added distances in MF05 and RB05 (KLM, N=595).
+Dec 2nd  2005: Added distances in K06 (K05) (KLM, N=611).
+Jun 2nd  2006: Added new distances. Mostly multiples, but a few new ones. (KLM, N=614)
+Aug 31st 2006: Added new cepheid distances. (KLM, N=614)

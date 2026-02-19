@@ -1,0 +1,146 @@
+<html>
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+<body bgcolor=white>
+<!-- PAGE CONTENT BEGINS HERE -->
+
+<h3><font color=#008000>Lamarr's Spring 2008 page</font></h3>
+
+<ul>
+<li> What is your project?
+<li> What observables do you need (i.e. what quantities need to be available) for your project?
+<li> What observables does ALFALFA produce?
+<li> Read about the Sloan Digital Sky Survey in order to answer these questions. Some useful links
+are given here:<br>
+<a href="http://www.sdss.org/">Main SDSS site</a> &nbsp &nbsp &nbsp &nbsp
+<a href="http://www.sdss.org/dr6/">DR6 site</a>&nbsp &nbsp &nbsp &nbsp
+<a href="http://www.sdss.org/dr6/instruments/imager/index.html"> Imaging camera parameters and description</a><br>
+<ul>
+<dd>a. What is the operational status of the SDSS?
+<dd>b. What are the central wavelengths of the filters used to produce SDSS images?
+<dd>c. Why is it useful to obtain images in 5 filters simultaneously?
+<dd>d. Over what portion of the galaxy is the spectrum obtained? Why might that be important?</p>
+</ul>
+<li> Make a web page for yourself to keep track of what you are doing;you should
+     put it in the directory called <i> /home/hatillo/lamarrp/spr08</i>. See
+     my <a href="starthtml.htm">hints</a> on how to get started.</p>
+<li> <b> Numerical integration of an HI profile</b>
+      <ol>
+      <li> Use our links to find the ALFALFA data entry for AGC/UGC 7192. Put the
+           link on your webpage.
+      <li> On your webpage, record for yourself the ALFALFA catalog information 
+           for this object. Do you understand what the parameters mean? Add notes
+           for your own reference, as needed. If possible,
+           enter the data as a table on your webpage; if you don't know how to do
+           it, ask for a hint.
+      <li> Make a link on your web page to the journal article containing the
+           ALFALFA publication of this spectrum.
+      <li> Download the spectrum (ASCII file format) to your disk area on hatillo.
+      <li> Write an IDL routine to calculate the integral under the profile. <i>
+           If you run into "issues", ask!</i></p>
+      </ol>
+
+<li> Before you delve into SDSS and ALFALFA, you can check out some of our recent work
+     using the Tully-Fisher relation using I-band magnitudes and both 21-cm HI line and
+     optical rotation curve data which is presented in 
+     <a href="http://adsabs.harvard.edu/abs/2007ApJS..172..599S">
+     Springob et al. 2007</a>. The <a href="http://arecibo.tc.cornell.edu/hiarchive/sfiplusplus.php">
+     datasets</a> are available through the Cornell Digital Archive and includes a set
+     of cluster galaxies ("template sample") and others ("non-template sample"). Check it out.
+     Perhaps you can begin your explorations of the methodology using those data?</p>
+
+<li> <b> Least squares fitting</b> exercise: &nbsp &nbsp <i> Kim and Jae Hwan
+      will also be working on this exercise.</i>
+     <ol><li> Read about least squares in the 
+      <a href="http://www.nrbook.com/a/bookcpdf.php">on-line guide</a> to <i>Numerical Recipes</i>.
+      The section on least-squares is Chapter 15.1; there is a copy of the book in the Camuy Cave.
+      Prof. Saul Teukolsky is one of the authors of this book, so computers at Cornell can
+      access the code.
+         <li> Look at the Astronomy IDL routine 
+<a href="http://idlastro.gsfc.nasa.gov/ftp/pro/math/fitexy.pro">FITEXY</a>. Be sure that you
+      understand what the routine does.
+         <li> Download <a href="http://arecibo.tc.cornell.edu/hiarchive/sfi++data/table2.txt">
+              Table 2</a> of <a href="http://adsabs.harvard.edu/abs/2007ApJS..172..599S">
+              Springob et al. 2007</a> from the Cornell EGG Digital Archive.
+         <li> Use <b>FITEXY</b> to fit the relation between x = column (6) [log of corrected
+              line width] versus y = column (10) [corrected absolute magnitude]
+         <li> Fit y = ax + b and x = cy + d; do you get the same result?
+              Make some plots. Think about and discuss your
+              results.</p>
+      </ol>
+
+<li><b> The Hercules Supercluster</b> 
+     <ol>
+     <li> Check out <a href="http://www.iop.org/EJ/abstract/1538-3881/115/1/6/">Barmby et al 1998</a>
+     <li> Learn to read the <a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agcinfo.php">AGC</a>. 
+          You can experiment with and expand on this <a href="readagc.pro">IDL program</a>.</p>
+     </ol>
+<li><b> Assignment for next few weeks (Progress report due Mar 24; 2nd report due Apr 14):</b>
+     <ol>
+     <li> Prepare a short presentation for the class on the Tully-Fisher relation and rotation curves
+          to be given on April 14th.
+     <li> Devise a plan for how to move forward; what data do you need? Discuss with Martha.
+     </ol>
+</ul>
+
+<h3><font color=#cc0f14>Summer Fun!</font></h3>
+<ul>
+<li> Learn to use the ALFALFA catalogs.
+     <ul><li>Here is a <a href="highmasscat.txt">small ALFALFA </a> catalog. Practice with this one first.
+     <li> Here is a bigger spring sky <a href="master0803.txt">Mar08 ALFALFA </a> catalog. <br>
+          You need to understand what is in the catalog, what the codes mean, etc. 
+     <li> Read the first ALFALFA catalog paper <a href="http://www.iop.org/EJ/abstract/1538-3881/133/6/2569/">
+          Giovanelli et al. 2007</a> AJ 133, 2559 which describes the survey and how the catalogs are
+          constructed. Take notes. Ask questions!
+     <li> Since it isn't documented
+     elsewhere, make up a web page which <i> explains everything you (or anyone) needs to know
+     about what's in an ALFALFA catalog</i>. </ul>
+<li> Read the IDL version of the AGC. You can find the IDL structure (save file) of the
+     AGC at: "/home/dorado3/galaxy/idl_alfa/agctotal.sav".
+     <ul><li>Find the AGC galaxies that occupy the same (3-D) volume as the master0803 ALFALFA catalog (above).<br>
+             07h30m to 16h30m and +04deg to +16deg and cz < 18000 km/s.
+     </ul>
+<li> Learn to use Ann's IDL program to calculate the distance to a galaxy starting from its position
+     and heliocentric velocity. 
+     <ul>
+     <li> See the file:///home/dorado3/galaxy/leggweb/distcalib.html for info.
+     <li> Why do we have to correct the observed heliocentric velocity in order to calculate distance?
+          <i> Write up a section on this issue on your web page, and for your paper</i>
+     </ul>
+<li> Write a program to calculate the HI masses of the galaxies in the ALFALFA catalog.<br>
+     See the "Using ALFALFA for Science" page on computing the
+     <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/himass.htm">HI mass</a>.
+<li> Nearest neighbors: continue working on your nearest neighbor routine.
+     <ul>
+     <li> Check the angular units you are using! 
+     <li> Check some by hand!
+     <li> Once you have calculated the distances to your objects, you can
+          convert from angular distance to linear distance.
+     <li> Think about how you are going to correct for incompleteness at large distances.
+          <i> Do you understand the problem of incompleteness?</i>
+<li>Start writing the background for your paper. Some sections you should be able 
+    to write already:
+    <ul>
+    <li> What is ALFALFA? What is a blind survey? How does ALFALFA differ from
+         a survey like SDSS? 
+    <li> What is the HI 21 cm line? 
+    <li> Where is HI found in the universe? In a galaxy? (i.e. all parts, some parts?)
+    <li> What are the parameters of the 21 cm line that we measure?
+    <li> How can we calculate (a) HI mass, (b) distance, (c) dynamical mass....?
+         Anything else?
+    <li> Why would anyone want to determine the "local environment" of a galaxy?
+    <li> What is a nearest neighbor analysis?
+    <li> What is a luminosity function? an HI mass function? a selection function?
+         (for the latter, pick Jae Hwan's brain...)
+</ul>
+<br>
+To access Lamarr's progress page, type file:///home/hatillo/lamarrp/spr08/progress.html
+into your browser.</p>
+<br>
+<br>
+<hr>
+<i>Last modified: Thurs Jul 17 14:12:10 EDT 2008 by martha</i>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+A2010 observing schedule                                          last update: 12Mar28 mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+
+In Spring 2012, we are conducting LBW followup observations under program A2669
+------------------------------------------------------------------------------------------------
+COMPLETED OBSERVATIONS  
+------------------------------------------------------------------------------------------------
+    Block     Date    LMSTmidn      AST           LST          LBW cmd file   Observers 
+    12.01.16  M 16Jan    07h13    00h00-07h00   07h13-14h13    a2669_120116   UAT workshop   LBW lowv mode
+    12.01.17  T 17Jan    07h17    00h00-07h00   07h17-14h17    a2669_120117   UAT workshop   LBW lowv mode  (MLK Day)
+    12.01.18  W 18Jan    07h21    00h00-07h00   07h21-14h22    a2669_120118   UAT workshop   LBW highv mode
+    12.03.04  S 04Mar    10h26    21h00-06h00   07h25-16h27    a2664_120304   EA(R)  A2664 program
+    12.03.21  W 21Mar    11h33    20h15-04h45   07h47-16h19    a2669_120321   RK,HD,LV2,RA   a2669_lowvel.conf
+    12.03.22  R 22Mar    11h37    20h00-04h30   07h36-16h07    a2669_120322   RK,HD,LV2,RA,PT,JP,KM2   a2669_highvelres.conf  NB: AO holiday
+    12.03.23  F 23Mar    11h39    20h00-04h30   07h40-16h11    a2669_120323   RK,HD,LV2,RA,PT,RO,JP,KM2   a2669_highvelres.conf
+    12.03.24  S 24Mar    11h43    20h00-04h30   07h44-16h15    a2669_120324   PT,RO,JP,KM2   a2669_lowvel.conf
+    12.03.25  S 25Mar    11h47    20h00-04h30   07h49-16h19    a2669_120325   PT,RO,JP,KM2   a2669_highvelres.conf
+    12.03.26  M 26Mar    11h49    20h45-04h15   08h37-16h08    a2669_120326   PT,RO,JP,KM2   a2669_highvelres.conf
+    12.03.27  T 27Mar    11h53    19h45-04h15   07h41-16h12    a2669_120327   PT,RO,JP,KM2   a2669_highvelres.conf
+
+------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS  
+------------------------------------------------------------------------------------------------
+FALL 2012 Season    NOTHING YET SCHEDULED 
+********************     NOTICE      AST is the SAME as EDT                   ****************
+********************                 Times for A2010                          ****************  
+               *** Remember: the date refers to the day when the runs starts in AST!!!    ****
+
+    Block     Date    LMSTmidn      AST           LST        Drift   DecJ     Observers
+
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Fall 2012: drift scan A2010
+             ***  All observing for A2010 drift scans in meridian mode at Az=180 (or 540)     ****
+     Block     Date    LMSTmidn      AST           LST        Drift   DecJ     Observers
+Fall 2012:  (updated Nov11)
+Still to do:    
+     134p1 after 2330 
+     135p1 after 0000
+     136p2 to 141p2
+     142 both passes 
+     143p1, 144p1, 145p1 after 2330
+     143p2, 144p2, 145p2
+     146-149; 148p3,4 both passes
+
+That makes:   22 complete nights
+              5 nights from 2300-0300  
+And that will complete the ALFALFA legacy survey!
+              
+
+----------------------------------------------------------------------------------------------------
+AO Holidays 2012:
+Mon 02 Jan   New Year's
+Fri 06 Jan   3 Kings
+Mon 09 Jan   De Hostos Day
+Mon 16 Jan   MLK Day
+Mon 20 Feb   Pres Day
+Thu 22 Mar   Abolicion de la Esclavitud
+Fri 06 Apr   Good Friday
+Mon 16 Apr   de Diego Day
+Mon 28 May   Memorial Day
+Wed 04 Jul   July 4th
+Mon 16 Jul   Munoz Rivera Day
+Wed 25 Jul   PR Constitution Day
+Fri 27 Jul   Celso Barbosa Day
+Mon 03 Sep   Labor Day
+Fri 12 Oct   Discovery of America
+Mon 19 Nov   PR Discovery Day
+Thu 22 Nov   Tday
+Fri 23 Nov   day after Tday
+Tue 25 Dec   Christmas
+Mon 31 Dec   New Year's Eve
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+EG: Elena George (HSU)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+RG: Riccardo Giovanelli
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+KI: Katie Iadanza (Colgate)
+MJ: Melissa Jacquart (UWisc)
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+VM: Victoria Mendoza (St.Marys)
+WM: Arik Mitschang (HSU)
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+TS: Thad Savery (Siena) 
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+TS: Tess Senty (HSU)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots

@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+<body bgcolor=white>
+<!-- PAGE CONTENT BEGINS HERE -->
+
+<h3><font color=#008000>YOURNAME's Fall 2010 Progress page</font></h3>
+
+<ul>
+<li> Put here some details of your work. 
+<li> It's best if you record the date when you make an entry.
+<ul>
+
+
+<br>
+<br>
+
+</body>
+
+</html>

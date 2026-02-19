@@ -1,0 +1,559 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<br>
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<font color=#008000><b> Try to finish this hunt by 5pm so your group can make its presentation right after dinner.</b></font></p>
+<font color=#cc0f14><b> Those people who are not going on the GBT tour should work
+on this scavenger hunt Wednesday morning and be ready to help others go through it quickly. 
+We also suggest that groups may want to have different members work on the different sections
+and then share results.</b></font><br>
+
+</td></tr></table></center></p><br><br>
+<b><font color=#008000> Useful links:</font></b> <br>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">Using Arecibo for ALFALFA</a>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalpha.php">Using ALFALFA
+for science</a>
+<li> <a href="http://www.naic.edu/vscience/schedule/scedfra2.htm">AO telescope schedule</a>
+<li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observer's page</a>
+<li> <a href="http://www.naic.edu/~a2010/checklist_lbw.html">Observing checklist for LBW observing</a>
+<li> <a href="http://www.naic.edu/~a2010/ALFALFA_lbwobserving.htm">L-band wide (LBW) observing</a> for ALFALFA followup
+<li> <a href="http://www.naic.edu/~a2010/lbw_observingmodes.htm">Standard ALFALFA LBW followup observing modes</a>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/lbw/lbw_reduction.htm" target=new>Instructions
+on reducing LBW data</a> using IDL_LBW</p>
+<li> <a href="http://www.star.bristol.ac.uk/~mbt/topcat/" target=new>TOPCAT</a> 
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/data/" target=new>ALFALFA data release</a> page</p>
+</ul><br>
+
+<b><font color=#008000> Rules of the scavenger hunts:</b> You may consult any
+source anywhere but please be sure to indicate where you got your information.
+And watch out
+for bad websites!</font></p>
+
+<br>
+<h3><font color=#cc0f14> UAT17.06 Scavenger Hunt #2: </font> &nbsp 
+<font color=#008000>Introduction to useful tools to use ALFALFA for science!</font></h3>
+
+This scavenger hunt will provide an introduction to our SKYD utility to generate links to 
+public databases and
+the <a href="http://www.star.bris.ac.uk/~mbt/topcat/">
+TOPCAT</a>, the <b>T</b>ool for <b>OP</b>erations on <b>C</b>atalogues <b>A</b>nd <b>T</b>ables.
+Then we'll look at some more LBW spectra to investigate some of the objects observed by the awesome
+UAT over the past few years.
+</p></p>
+
+<br>
+<b><font color=#ccof14>ALFALFA observers' favorite quote</font></b><br>
+<center width=400>
+<i>"A hypothesis or theory is clear, decisive, and positive, but it
+is believed by no one but the [person] who created it. Experimental
+findings, on the other hand, are messy, inexact things, which are
+believed by everyone except the [person] who did the work."</i><br>
+ -- Harlow Shapley, "Through Rugged Ways to the Stars"</p>
+</center>
+<br>
+
+
+<center>
+<table cellpadding=3 border=5 bordercolor=#cc0f14>
+<tr><td>
+<b>Note:</b> &nbsp
+We have developed some simple <b>IDL</b> utilities which you can use to generate a set of links to
+public databases, notably the Sloan Digital Sky Survey (SDSS), SkyView/the Digital Sky survey (DSS) and
+the NASA Extragalactic Database (NED).  These are also available as <b>Python</b> scripts.
+<b>SKYD</b> and <b>SKYDEG</b> are similar routines which
+take input coordinates (RA and Dec). Both of them generate an output file called <b>skylinks.html</b>
+in the directory in which you run IDL (... so you need to pay attention). There is an option
+to append the file or start a new one but the file always has the same name, so take that into
+account. There are also small differences in their usage, so learn which is
+better for what application. In either case, the input coordinates must always be in 
+epoch J2000.0; the difference between them is whether the input format is in decimal degrees
+(<b>SKYDEG</b>) or as given in the ASCII version of the AGC (<b>SKYD</b>). <b>SKYD</b> can also read
+a list of positions from an input file in standard AGC format.</p>
+<dl>
+<dd><b>SKYD</b>: Works on single entries from the command line or alternatively an AGC-style input file. The format
+             for input is hhmmsss+ddmmss just as in the ASCII version of the AGC.<br>
+<dd><b>SKYDEG</b>: Works on single entries from the command line where the positions are given in decimal degrees.</p>
+</dl>
+If you have access to either IDL or PYTHON and would like to get these routines for
+yourself, ask your mentor or other faculty, Luke or Greg for how to get
+hold of these routines. You don't need them today, but they could be very useful in the future.</p>
+
+Various people in the UAT have developed other software or know how to do many things, so
+don't forget to ask around before you reinvent the wheel. That's what a collaboration is all about!
+</td></tr></table></center></p>
+
+<br>
+<b><font color=#ccof14> 2.0</font> &nbsp <font color=#008000>
+Introduction to our favorite links to public databases</font></b></p>
+
+In both <a href="hunt0_17.htm">SH #0</a> and <a href="hunt1_17.htm">SH #1</a>, we used links to
+the public databases of SDSS, SkyView/DSS and the NED. Here we'll provide you with links that
+you can use to explore some interesting galaxies.
+
+Here are links to the front pages of the SDSS, SkyView/DSS and the NED:
+<ul>
+<li><a href="http://www.sdss.org/" target=new>SDSS</a> main page
+<li><a href="http://skyview.gsfc.nasa.gov/" target=new>Skyview</a> main page at GSFC (including DSS2)
+<li><a href="http://ned.ipac.caltech.edu/" target=new>NED</a> main page
+</ul>
+If you are not already familiar with these really useful
+websites, we suggest that you should become more familiar with them tonight, tomorrow or after
+you return from the workshop. Here, we'll hope that someone in your group knows enough to
+use them to answer the questions below about some of interesting galaxies.</p>
+
+
+<ul>
+<li> Obj #1: The galaxy UGC 615 at RA,Dec = 14.9171 15.3308 <br>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra= 14.9171&dec= 15.3308&opt=glsi&scale=0.39617" target=new>DR9Navi</a>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra= 14.9171&dec= 15.3308&opt=GILS&scale=0.39617" target=new>DR12Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon= 14.9171d&lat= 15.3308d&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1 </a></p>
+
+<li> Obj #2: The galaxy AGC 102145 at RA,Dec = 12.2654 15.4856 <br>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra= 12.2654&dec= 15.4856&opt=glsi&scale=0.39617" target=new>DR9Navi</a>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra= 12.2654&dec= 15.4856&opt=GILS&scale=0.39617" target=new>DR12Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon= 12.2654d&lat= 15.4856d&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1 </a>
+</p>
+
+<li> Obj #3: The galaxy AGC 122941 at RA,Dec = 37.142083   25.331111<br>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra= 37.1421&dec= 25.3311&opt=glsi&scale=0.39617" target=new>DR9Navi</a>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra= 37.1421&dec= 25.3311&opt=GILS&scale=0.39617" target=new>DR12Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon= 37.1421d&lat= 25.3311d&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1 </a>
+</p>
+
+
+</ul></p>
+
+
+
+
+<!--AGC 102145  0049037+152908   12.2654 15.4856  -->
+<!--UGC 615     0059401+151951   14.9171 15.3308  -->
+<!--AGC 122941  37.142083   25.331111         -->
+
+Consider <b>Object #1:</b><br>
+&nbsp &nbsp <b><font color=#cc0f14> a.</font></b> &nbsp 
+       This object has lots of cross-identifications. What do "UGC", "CGCG", "MCG" and "2MASS" refer to?</p>
+&nbsp &nbsp <b><font color=#cc0f14> b.</font></b> &nbsp 
+       What is the recessional velocity given by the SDSS spectrum?  <!-- 5487 pm 8 is best value from NED--> </p>
+&nbsp &nbsp <b><font color=#cc0f14> c.</font></b> &nbsp 
+       ALFALFA measures a heliocentric velocity of the HI from this galaxy of 5495 km/s. Comment on the comparison with the SDSS value. </p>
+&nbsp &nbsp <b><font color=#cc0f14> d.</font></b> &nbsp 
+       What spectral classification (as given on the image of the spectrum) is assigned 
+to this galaxy by the SDSS? What is the classification based on?</p>
+<br>
+
+
+Consider <b>Object #2:</b><br>
+&nbsp &nbsp <b><font color=#cc0f14> e.</font></b> &nbsp 
+       How does this object compare with Object #1 as a target for SDSS spectroscopy?</p>
+&nbsp &nbsp <b><font color=#cc0f14> f.</font></b> &nbsp 
+       What spectral classification (as given on the image of the spectrum) is assigned 
+       to this galaxy by the SDSS? What is the classification based on?</p>
+&nbsp &nbsp <b><font color=#cc0f14> g.</font></b> &nbsp 
+       How does the SDSS spectrum of this object compare with that of Object #1</p>
+&nbsp &nbsp <b><font color=#cc0f14> h.</font></b> &nbsp 
+       The ALFALFA database lists this as a "Code 2" signal with a recessional velocity from the HI spectrum
+       of 5483 and a signal-to-noise ratio of 4.9. What is a "Code 2" ALFALFA source? </p>
+<br>
+Consider <b>Object #3:</b><br>
+&nbsp &nbsp <b><font color=#cc0f14> i.</font></b> &nbsp 
+       What is the best SDSS name to identify with our LBW target (Obj #3)? Why isn't this a trivial question?</p>
+<!-- <br> SDSS  J022833.89+251952.0; there are several photometric objects; pick the best/brightest one.-->
+&nbsp &nbsp <b><font color=#cc0f14> j.</font></b> &nbsp 
+       This galaxy is not an SDSS spectroscopic target. Is that a surprise?</p>
+&nbsp &nbsp <b><font color=#cc0f14> k.</font></b> &nbsp 
+       Is a redshift available from NED for this object? </p>
+&nbsp &nbsp <b><font color=#cc0f14> l.</font></b> &nbsp 
+       The ALFALFA database lists this as a "Code 4" signal with a recessional velocity from the HI spectrum
+       of 5862 and a signal-to-noise ratio of 5.8. What is a "Code 4" ALFALFA signal?</p>
+<br>
+<hr>
+
+<b><font color=#ccof14> 2.1</font> &nbsp <font color=#008000> Using TOPCAT to match two catalogs
+</font></b></p>
+We hope that you have already had a chance to play with <b>TOPCAT</b>; here we have designed a quick exercise
+to show how you can use it to match entries in two catalogs. Here are two files for you to work with:<br>
+<center><a href="files/uat15.hipos.csv">HI positions</a> and <a href="files/uat15.oc.csv">OC positions</a>
+</center><br>
+The first one contains a long list of the HI positions of ALFALFA detections; the second one contains
+the optical coordinates of a subset of the first. Use these two files to answer the questions below.
+If you have not used TOPCAT before, check out the links
+given in 0.0 in <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt17/hunt0_17.htm">SH#0</a>.</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> a. </font></b> &nbsp How many objects are contained in each of the two catalogs?</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> b. </font></b> &nbsp How does the sky distribution of the first set (HIpos) compare to that of the subset (OCpos)?</p>
+
+Crossmatch the two catalogs by AGC number; use the "Joins" function with the "Pair Match" option
+in TOPCAT. How many matches do you get?</p>
+<!-- You should find all the OCs in HIpos since the OC set is just every third entry in the HIpos set -->
+
+&nbsp &nbsp <b><font color=#cc0f14> c. </font></b> &nbsp Going back to the original catalogs, make a crossmatch using the "Sky" algorithm. Why don't the positions
+match exactly? How large must "Max Error" be to get the same number of matches that you found when
+you cross matched by AGC number? Explain your answer.</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> d. </font></b> &nbsp What is the mean separation between the HI and OC positions? What is the median value? &nbsp <i> Hint: Think about which of
+the cross-matched catalogs you should use for this; some of them already include the separation. And, you should be able to find the mean and median values
+easily using built-in functions; ask for advice if you get stuck here.</i></p>
+
+&nbsp &nbsp <b><font color=#cc0f14> e. </font></b> &nbsp For the 2nd file, make a plot of distance versus HI mass. Examine the result and comment on it.</p>
+<br>
+<hr>
+<b><font color=#ccof14> 2.2</font> &nbsp <font color=#008000> The color-magnitude diagram and how
+galaxy color correlates with morphology
+</font></b></p>
+Probably you are familiar with the Hertzsprung-Russell diagram for stellar classification.
+We can make a similar "color-magnitude" diagram for galaxies using TOPCAT and the photometric
+data from the SDSS. For nearby galaxies, there are problems with the standard SDSS
+photometric pipeline, so we use the ones available through the
+<a href="http://www.nsatlas.org/" target=new>NASA-Sloan Atlas</a> (N-S Atlas).
+We can also look at the morphological classification provide by the citizen science
+project <a href="http://www.galaxyzoo.org/" target=new>Galaxy Zoo</a>. </p>
+
+For this exercise, we have put together a useful dataset in 
+<a href="files/nsa+gzoo1.face.short.csv" target=new>CSV format</a> 
+<!-- I had to remove some Inf points in the file 
+or <a href="files/nsa+gzoo1.face.short.txt" target=new>ASCII format</a>
+-->
+from a combination of the N-S Atlas
+and the Galaxy Zoo 1 data release. It does not cover the whole sky 
+because each galaxy has to be included in both catalogs. 
+The file contains the basic information plus we have calculated a color (called "gminusi")
+and an absolute magnitude ("absmagi") as well as an indicator of morphology.
+Note that the way the morphological type is identified is by having a flag set to "1" according
+to whether the galaxy was classified as "spiral", "elliptical" or "uncertain". In fact, most
+galaxies are typed "uncertain".</p>
+
+<!--&nbsp &nbsp a. &nbsp  What wavelengths correspond to the SDSS g and i-band filters? &nbsp </p>
+-->
+
+&nbsp &nbsp <font color=#cc0f14><b> a.</b></font> &nbsp Why do we call the difference between the magnitude measured in the SDSS-g band and that
+in the SDSS-i band a "color"?</p>
+
+&nbsp &nbsp <font color=#cc0f14><b> b.</b></font> &nbsp Because we wanted to keep things simple, using only the raw data as they are included
+in the compilations, we have limited this subset to galaxies which 
+are viewed face-on. Why does that make things simpler?</p>
+
+&nbsp &nbsp <font color=#cc0f14><b> c.</b></font>&nbsp First, using the N-S Atlas magnitudes, make a color-magnitude diagram using 
+the absolute magnitude and color given here.
+Be sure that luminosity increases from left to right and that blue galaxies are towards the botton,
+red towards the top. What do you notice about the distribution of galaxies? &nbsp <i>(Note: this diagram
+will be useful to some of the teams in SH#3)</i>.</p>
+
+
+Next, let's add the information about morphology from the GZ.</p>
+&nbsp &nbsp <font color=#cc0f14><b> d.</b></font> &nbsp Use the "column statistics" capability to figure out quickly
+the fraction of the galaxies which are classified as ellipticals? As spirals? As uncertain?</p>
+
+&nbsp &nbsp <font color=#cc0f14><b> e.</b></font>&nbsp Using the <b>TOPCAT</b> subsets capability, plot the spirals and ellipticals
+separately, using different symbols/colors. Superpose the spirals on the ellipticals <i>(be sure to
+do it in that order)</i>. What do you conclude?</p>
+
+<br>
+<br>
+<b><font color=#ccof14> 2.3</font> &nbsp <font color=#008000> Interesting LBW targets!
+</font></b></p>
+
+In this part, you should investigate some interesting LBW spectra observed in the our various
+LBW observing runs in the last couple of years. Each team is assigned two objects to investigate.
+Your job is to use whatever methods/links you can to interpret the LBW spectrum and determine
+the nature of the extragalactic source detected by LBW. What can you tell
+us about the objects assigned to your team? At the end of the day, each team will
+present its results (in 3 minutes or less total....  so SUMMARIZE!)</p>
+
+<b>Note:</b> Clicking on the link to each spectrum will open it in a new tab.</p>
+
+
+<table cellpadding=3 border=4>
+<tr><th> Team</th><th align=center> AGC number</th> <th>LBW Spectrum</th><th> Links </th> <th>Notable information/conclusions/oddities/questions</th></tr>
+<tr><td align=center> A</td><td align=center>208583 </td> 
+<td align=center> <a href="images17/hunt2A.1.jpg" target=new><img src="images17/hunt2A.1.jpg" height=30"></a></td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=155.4371&dec= 18.08945&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=155.4371&dec= 18.08945&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+<a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=155.4371, 18.08945&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=10+21+44.9&lat=+18+05+22&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+   </td>
+    <td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+<!--  Team A
+<td align=center> /proj/a2669/corfile.22mar12.a2669.52</td>
+      corfilename='/proj/a2669/corfile.22mar12.a2669.52'
+      readlbw, corfilename, lbwsrc
+      print,lbwsrc.ra
+      print,lbwsrc.dec
+      155.43709   18.088610
+      This is Leo P 
+208583 1021449+180522   70  50 180 0  0dI      200     0  0    0    0  0Leo P     131 231  263  24 2 A50J87542470 00 005000 0
+        H102144.7+180438  102144.9 +180519   260 HH                 LeoP      12.03.22/corfile.22mar12.a2669.52  det@1419                   
+-->
+
+<tr><td align=center>&nbsp </td><td align=center> 8847 </td> 
+<td align=center> <a href="images17/hunt2A.2.jpg" target=new><img src="images17/hunt2A.2.jpg" height=30"></a></td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=209.0304&dec=  5.25472&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=209.0304&dec=  5.25472&opt=GILS&scale=0.39617" target=new>DR12Navi</a>
+<br>
+ <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=209.0304,  5.25472&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=13+56+07.3&lat=+05+15+17&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+    </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+<!--  name
+<td align=center> /proj/a2752/corfile.22mar13.a2752.17 </td>
+      corfilename='/proj/a2752/corfile.22mar13.a2752.17'
+      readlbw, corfilename, lbwsrc
+      print,lbwsrc.ra
+      print,lbwsrc.dec
+      155.43709   18.088610
+  This is UGC 8847 = NGC 5363 and it has absorption!
+  8847 1356073+051517  550 350 114 0135        100  1092 22   40   27 -1N5363     187 276 1132 57727 A50J8754 530 01 046010 0
+  8847  H135602.6+051549  135607.3 +051517  1100 HH   1132  1415.1  c2        13.03.21/corfile.22mar13.a2752.17  det@1415 in ABS; YES! cont+220 mJy ACCUM
+-->
+
+<tr><td align=center> B </td><td align=center> 229196 </td> 
+<td align=center> <a href="images17/hunt2B.1.jpg" target=new><img src="images17/hunt2B.1.jpg" height=30"></a></td>
+<td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=186.7383&dec=  1.40944&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=186.7383&dec=  1.40944&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+<a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=186.7383,  1.40944&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+26+57.2&lat=+01+24+34&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+</td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+
+<!--   corfilename='/proj/a2707/corfile.13jan13.a2707.32'
+<td align=center> /proj/a2707/corfile.13jan13.a2707.32 </td>
+229196 1226572+012434    0   0   0 0  0HIonly    0     0  0    0    0  0HI1225b   924 293 1255  36 2 A50J87549990 00 000000 0
+229196  H122657.0+012423  122657.2 +012434  1300 HH   1255  1414.5  d1        13.01.13/corfile.13jan13.a2707.32  det@1415  HI1225+01
+-->
+
+<tr><td align=center>&nbsp </td><td align=center> 180545 </td> 
+<td align=center> <a href="images17/hunt2B.2.jpg" target=new><img src="images17/hunt2B.2.jpg" height=30"></a></td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=133.8883&dec= 31.21167&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=133.8883&dec= 31.21167&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+<a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=133.8883, 31.21167&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=08+55+33.2&lat=+31+12+42&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+    </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+
+<!--  corfilename='/proj/a2752/corfile.20mar13.a2752.6'
+<td align=center> /proj/a2752/corfile.20mar13.a2752.6 </td>
+      readlbw, corfilename, lbwsrc
+      print,lbwsrc.ra
+      print,lbwsrc.dec
+180545  H085532.3+311230  085533.2 +311242  2100 HH   2086  1410.6  spr31_2   13.03.20/corfile.20mar13.a2752.6   det@1411 asym? blend CHECK    
+180545 0855332+311242   42  30 150 0  0HIIpec  420  1982 15    0   27 36CG 4        0   0    0   0 0    00 00  00 01 000000 0
+-->
+
+<tr><td align=center> C </td><td align=center> 182595 </td> 
+<td align=center> <a href="images17/hunt2C.1.jpg" target=new><img src="images17/hunt2C.1.jpg" height=30"></a></td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=132.8004&dec= 27.88000&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=132.8004&dec= 27.88000&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+ <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=132.8004, 27.88000&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=08+51+12.1&lat=+27+52+48&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+    </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+<!--  corfilename='/proj/a2752/corfile.25mar13.a2752.32'
+<td align=center> /proj/a2752/corfile.25mar13.a2752.32</td>
+      readlbw, corfilename, lbwsrc
+      print,lbwsrc.ra
+      print,lbwsrc.dec
+      132.80042   27.88002
+      This is AGC 182595, a SHIELD object
+182595 0851121+275248   43  32 171 0  0        420   396  2    0    0-99           42 203  398  20 4 A50J1759 960 01 029000 0
+182595  H085110.6+275230  085112.1 +275248   400 HH    398          SHIELD    13.03.25/corfile.25mar13.a2752.32  det@1418
+
+-->
+
+<tr><td align=center>&nbsp </td><td align=center> 193949 </td> 
+<td align=center><a href="images17/hunt2C.2.jpg" target=new><img src="images17/hunt2C.2.jpg" height=30"></a>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=146.4842&dec= 13.04056&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=146.4842&dec= 13.04056&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+<a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=146.4842, 13.04056&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=09+45+56.2&lat=+13+02+26&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+    </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+<!--
+       corfilename='/proj/a2669/corfile.18jan12.a2669.16'
+<td align=center> /proj/a2669/corfile.18jan12.a2669.16 </td>
+193949 0945562+130226   35  15 165 0  0        300     0  0    0    0-98            0   0    0   0 0    J2759  00 01 005000 0
+193949  H094556.8+130330  094556.3 +130226 13200 HH  13154  1360.7  n4        12.01.18/corfile.18jan12.a2669.16  det@1361  
+This is hard; there is RFI as well as a galaxy at 13100
+-->
+
+<tr><td align=center> D </td><td align=center> 223819 </td> 
+<td align=center> <a href="images17/hunt2D.1.jpg" target=new><img src="images17/hunt2D.1.jpg" height=30"> </td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=187.9746&dec=  5.17222&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=187.9746&dec=  5.17222&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+<a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=187.9746,  5.17222&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+31+53.9&lat=+05+10+20&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+    </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+<!--  corfilename='/proj/a2669/corfile.18jan12.a2669.36'
+<td align=center>/proj/a2669/corfile.18jan12.a2669.36 </td>
+      readlbw, corfilename, lbwsrc
+      print,lbwsrc.ra
+      print,lbwsrc.dec
+223819  H123154.9+051030  123153.9 +051020  2300 HH   2308  1409.6  de        12.01.18/corfile.18jan12.a2669.36  det@1410 
+223819 1231539+051020   31  31 185 0  0dE1      11     0  0    0   23-99VCC1391    38 237 2308  42 9 A50J1759 540 01 029000 0
+This is a dE in Virgo = VCC 1391
+-->
+
+<tr><td align=center>&nbsp </td><td align=center> 732152 </td> 
+<td align=center> <a href="images17/hunt2D.2.jpg" target=new><img src="images17/hunt2D.2.jpg" height=30"> </td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=187.8454&dec= 25.91389&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=187.8454&dec= 25.91389&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+<a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=187.8454, 25.91389&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+31+22.9&lat=+25+54+50&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+    </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+
+<!--  corfilename='/proj/a2752/corfile.27mar13.a2752.9'
+<td align=center> /proj/a2752/corfile.27mar13.a2752.9 </td>
+732152 1231229+255450   25  10 164 0157        410  6954 27    0    0-98           43 195 6952  82 8 A50J8754 540 00 028000 0
+732152  H123122.2+255419  123122.9 +255450  7000 HH   6952  1388.2  c2        13.03.26/corfile.27mar13.a2752.9   det@1388    cont -107 mJy in OFF
+-->
+
+<tr><td align=center> E </td><td align=center>331756 </td> 
+<td align=center> <a href="images17/hunt2E.1.jpg" target=new><img src="images17/hunt2E.1.jpg" height=30"></td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=346.1175&dec= 27.35750&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=346.1175&dec= 27.35750&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+<a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=346.1175, 27.35750&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=23+04+28.2&lat=+27+21+27&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+   </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+
+<!-- corfilename='/share/olcor/corfile.29nov13.a2811.7
+<td align=center> /share/olcor/corfile.29nov13.a2811.7 </td>
+331756  A230428.2+272127  230428.2 +272127  7500 HH                 abs       13.11.29/corfile.29nov13.a2811.7   det in em/abs@1385 7500
+331756 2304282+272127   75  47 160 0  0        300  7698  0    0   71-99M+454023   57 213 7521 23713 A50J4754 390 00 029000 0
+This is detected both in emission and absorption. There is 113 mJy continuum.
+-->
+
+<tr><td align=center>&nbsp </td><td align=center> 222391 </td> 
+<td align=center> <a href="images17/hunt2E.2.jpg" target=new><img src="images17/hunt2E.2.jpg" height=30"></td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=181.4487&dec= 16.85222&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=181.4487&dec= 16.85222&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+<a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=181.4487, 16.85222&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+05+47.7&lat=+16+51+08&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+    </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+<!--  corfilename='/proj/a2707/corfile.15jan13.a2707.28'
+<td align=center> /proj/a2707/corfile.15jan13.a2707.28 </td>
+      readlbw, corfilename, lbwsrc
+      print,lbwsrc.ra
+      print,lbwsrc.dec
+      
+      This is AGC 222391, an OHM 
+222391 1205477+165108   18  11 190 0  0        700 65291 48    0   43-99OHM         0   0    0   0 0    00 00  00 00 008000 0
+222391  H120548.1+165100  120548.2 +165106 10500 HH  10501          OHM       13.01.15/corfile.15jan13.a2707.28  deOHM@1370; broad; double!
+-->
+
+<tr><td align=center> F </td><td align=center> 225406</td> 
+<td align=center> <a href="images17/hunt2F.1.jpg" target=new><img src="images17/hunt2F.1.jpg" height=30"></a></td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=191.6379&dec=  3.29833&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=191.6379&dec=  3.29833&opt=GILS&scale=0.39617" target=new>DR12Navi</a><br>
+ <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=191.6379,  3.29833&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+46+33.1&lat=+03+17+54&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+    </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+
+<!--   corfilename='/proj/a2752/corfile.22mar13.a2752.10'    
+<td align=center> /proj/a2752/corfile.22mar13.a2752.10</td>  
+This is AGC 225406 a CODE 5 which proves real.
+225406 1246331+031754   56  22 174 0  0          0   773 32    0    0-99            0   0    0   0 0    00 00  00 00 009000 0
+225406  H124635.2+031737  124633.1 +031754   800 HH    751  1416.9  l5        13.03.21/corfile.22mar13.a2752.10  det@1417     
+-->
+
+<tr><td align=center>&nbsp </td><td align=center> 322050 </td> 
+<td align=center> <a href="images17/hunt2F.2.jpg" target=new><img src="images17/hunt2F.2.jpg" height=30"></td>
+    <td> 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=333.2763&dec=  1.27417&opt=glsi&scale=0.39617" target=new>DR9Navi</a> &nbsp &nbsp
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=333.2763&dec=  1.27417&opt=GILS&scale=0.39617" target=new>DR12Navi</a> <br>
+<a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=333.2763,  1.27417&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=22+13+06.3&lat=+01+16+27&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a>
+    </td><td> &nbsp <br>  &nbsp <br>  &nbsp <br> </td></tr>
+
+<!--  corfilename='/share/olcor/corfile.25nov13.a2811.6'
+<td align=center> /share/olcor/corfile.25nov13.a2811.6 </td>
+      readlbw, corfilename, lbwsrc
+      print,lbwsrc.ra
+      print,lbwsrc.dec
+      
+      This is AGC 322050, an OHM at redshift of 0.18
+322050 2213063+011626    0   0   0 0  0OHM       0     0  0    0    0  0OHM       246 294 1882 37313 A50J6750 970 00 000000 0
+322050  H221306.0+011700  221306.2 +011711  1900 HH   1882          dark09    13.11.25/corfile.25nov13.a2811.6   det@1411   OHM@z=0.18
+-->
+</table>
+</p>
+<br>
+
+<hr>
+<b><font color=#ccof14> 2.4 </font> &nbsp <font color=#008000>
+More (important) questions for the UAT in 2016:</font></b></p>
+
+&nbsp &nbsp <b><font color=#cc0f14> a. </font></b> &nbsp What former Arecibo atmospheric scientist is the author of the (classic)
+mystery novel "<i>Murder at Arecibo</i>"?</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> b. </font></b> &nbsp What famous radio engineer played hockey at the University of Wisconsin
+in the 1920's?</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> c. </font></b> &nbsp What telescope is named for Cornelius Calvin Sale Jr.? </p>
+
+&nbsp &nbsp <b><font color=#cc0f14> d. </font></b> &nbsp In what movie is it noted that the Parkes Telescope <i>"remains a part
+of NASA missions to this day. And it's still in the middle of a sheep paddock"</i>? </p>
+
+&nbsp &nbsp <b><font color=#cc0f14> e. </font></b> &nbsp When awakened from sleep by a superior 
+officer who asked if he was indeed holding a teddy bear, what MASH character replied: <i>"Uh, yes, sir. Regulations
+against having the real kind".</i></p>
+
+
+<!--
+<b><font color=#cc0f14> a. </font></b> &nbsp Which Arecibo staff member spent 8 years with the Klamath Indians in Oregon 
+(rustling cattle, so the rumor goes) before moving to Puerto Rico?</p> 
+
+<b><font color=#cc0f14> b. </font></b> &nbsp Who is perfecting a new drink called the "avocalada"? </p>
+
+<b><font color=#cc0f14> c. </font></b> &nbsp What was the traditional sumptuous delicacy made by Martha and savored by Willy
+                     during late night observing runs over the Christmas and New Year's holidays? </p>
+
+<b><font color=#cc0f14> d. </font></b> &nbsp Who played Carl Sagan wandering around the observatory during the filming of the <i>Cosmos</i> 
+                     series, when Carl did not make the trip to Arecibo? </p>
+
+<b><font color=#cc0f14> e. </font></b> &nbsp What former Arecibo atmospheric scientist is the author of the (classic)
+mystery novel "<i>Murder at Arecibo</i>"?</p>
+-->
+<br>
+
+
+<br>
+<hr>
+<font color=#cc0f14>
+Last updated <i>  Tue May 31 21:33:32 CEST 2016
+</i> by martha </font>
+<!-- hhmts end -->
+</body>

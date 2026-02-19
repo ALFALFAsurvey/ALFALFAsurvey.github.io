@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<br>
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<font color=#008000><b> In development</b></font>
+</td></tr></table></p>
+<b><font color=#cc0f14> A work in progress</font> <br>
+<font color=#008000>
+Exercise using actual LBW data</font></b></p></center>
+
+
+
+<h3><font color=#cc0f14> A demonstration of remote observing using Arecibo </font></h3>
+<br>
+
+The LBW program consists of a series of ON-OFF pairs of observations of each HI target 
+as specified in a "command file" which has been generated in advance by Martha, 
+the czar of ALFALFA observing. Normally, each pair consists of a 180 second observation 
+on the target ("ON-source") followed by a 180 second observation of an "OFF-source" 
+position which follows the (presumably) blank sky (over the same frequency range) 
+over an identical track in telescope coordinates (azimuth, zenith angle). The ON- and 
+OFF- source exposures are separated by 60 seconds. Once the pair sequence for a given 
+target is executed, the telescope slews to the next source. The program for a whole
+night is detailed in the command file so, unless something goes wrong, we just have
+to set up the observing configuration, load the command file, start it running,
+and then watch the data get collected.</p>
+
+In setting up the command file for each observing run, Martha uses a program which 
+estimates the start time of each target's observation, taking into account the time 
+it takes to do a pair and to slew the telescope between sources. A few seconds of padding 
+are inserted because it takes the telescope time to "settle" on source, to balance the 
+power, etc. The program isn't perfectly accurate (and isn't intended to be... so CAVEAT 
+EMPTOR!) and of course, we never know exactly when our observing sequence will begin, 
+but it allows us to see whether we are far off from "the plan".</p>
+
+<b> Checking the telescope status: AOSTATUS </b></p>
+
+<b> Getting ready for remote observing: setup the VNC sessions</b>: Rather than use
+a direct connection to Arecibo which may be slow, we use a graphical desktop sharing
+session called VNC.
+<br>
+<hr>
+<font color=#cc0f14>
+This page created by and for the members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> 
+Survey Undergraduate team</font></address>
+</p>
+<!-- hhmts start -->
+<font color=#008000><i>Last modified: Tue Apr  9 15:07:32
+</i> by Martha </font>
+<!-- hhmts end -->
+</body>

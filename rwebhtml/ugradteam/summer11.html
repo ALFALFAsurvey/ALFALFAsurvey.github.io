@@ -1,0 +1,110 @@
+<html>
+<head>
+  <title>The Arecibo Legacy Fast ALFA Survey</title>
+  <!-- CSS for page -->
+  <link rel="stylesheet" type="text/css" href="styles/style1.css">
+</head>
+<body>
+
+<center><img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg" 
+width="690" height="80" border="0" alt="ALFALFA"></center>
+
+<hr color=#008000>
+<font color=#008000>
+The NSF-sponsored <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/ugradteam.php">
+Undergraduate ALFALFA Team </a> program promotes
+undergraduate research within the <a href="http://egg.astro.cornell.edu/alfalfa/"> ALFALFA </a>
+project. </font></p>
+
+<h3><font color=#cc0f14> The ZwCl1400.4+0949 Summer 2011 Page</font></h3>
+
+<ul>
+<li><a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/uatgroups.php">UAT groups project</a>
+<li><a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/uatgroups_files.php">Working files</a> for all groups
+<li><a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/zw1400_files.htm">Working files</a> for Zw1400 (more coming)
+</ul>
+
+This page is designed to lead us through some of the basic analysis that we should try to
+accomplish for each group of galaxies. We use as an example the poor cluster/rich group known
+as Zw1400.4+0949 also known as MKW 12.</p>
+
+<br>
+<h3><font color=#cc0f14> Getting started: analyze the group structure and determine its mass</font></h3>
+We need to define group membership and anlysis the properties of the group. So here are some things to do:
+<ul>
+<li>We can use the AGC to examine the distribution of galaxies on the sky and in redshift. So learn about
+ <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/agcintro.htm">using the AGC</a>.
+<li>Learn how to use the LOVEDATA utilities <b>AGCBROWSE</b> and <b>PLOTALFA</b>.
+<li>Use NED to find other names for ZwCl1400.4+0949. 
+<li>We have to decide on the central position and redshift distribution of ZwCl1400.4+0949. 
+    Look up information about it in:<br>
+    <a href="http://iopscience.iop.org/1538-3881/123/1/100/fulltext">Koranyi & Geller 2002</a> AJ 123, 100<br>
+    <a href="http://adsabs.harvard.edu/abs/1991AJ....102...14P">Price et al. 1991</a> AJ 123, 10<br>
+    Aileen: would you hunt around for more recent X-ray info? Can you look up the ROSAT reference too?<br>
+    The answer: Let's adopt the center to be <b>RA = 14h02m48s = +09d19'40"   =  (210.70,9.33)</b>.
+<li>Most galaxy redshifts given in the literature/AGC/NED are quoted in the heliocentric rest frame. We need
+    to correct for the motion of the Milky Way with respect to the Cosmic Microwave Background. Learn about
+    the CMB and its dipole. What is the correction we need to apply in the direction of ZwCl1400.4+0949?
+<li>Here are two interesting "cone diagrams" displaying the redshift distribution of galaxies 
+    in a "slice" from RA,Dec = (7.5-16.5) and (5.86-12.15), Vhelio < 18200 (from the AGC)<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/cone_slice.jpg">Cone diagram</a>, full velocity range, all RA's, 6 deg in Decl.<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/cone_slicenr.jpg">Cone diagram</a>, zoomed in on the velocity range < 9000 km/s<br>
+    Try to understand and interpret what you see in these diagrams.
+<li>Here is a <a href="https://drive.google.com/file/d/1rKkXEzz0q2lARrqmUrZRAqmCcWcj08No/view"> plot</a> of the redshift distribution as a function of
+    radial separation from the center of the group for galaxies within 5 degrees of its center.
+    What can you infer from this?
+<li>Let's examine the distribution of galaxies on the sky. Here are three plots:<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="https://drive.google.com/file/d/1d2pfAsN2ShdjQyI9zZaxdsw_hmBOStUH/view">plot</a> of all galaxies, color coded by redshift<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/skyplotcolor_gps.jpg"> plot</a> of galaxies with redshifts between 
+       4500 and 8000 km/s, color coded by redshift. Filled symbols are galaxies detected by ALFALFA. 
+       The dashed circles trace out radial distances of 1 degree and 2 degrees centered on (210.70,9.33).
+<li>Now let's look at the distribution in redshift by examining some histograms.<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/histo.jpg">histogram</a> for all galaxies within 1.3 degrees of center<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/histo2.jpg">histogram</a> only from 4000 to 8800 km/s<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/histo3.jpg">histogram</a> only from 5500-6000 km/s<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/hist12.jpg">histogram</a> only from 3000-9000 km/s, R < 1.36 deg<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/hist13.jpg">histogram</a> only from 3000-9000 km/s, R < 0.68 deg<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/histmkw12.0.68deg.jpg">histogram</a> only from 5600-6600 km/s, 
+       R < 0.68 deg; this is the main MKW12/WBL486 group. The fit for 45 galaxies is: Vmean = 5861, sigma = 241 km/s<br>
+    &nbsp &nbsp &nbsp &nbsp <a href="projfiles/histbackgp.0.68deg.jpg">histogram</a> only from 6600-7600 km/s, 
+       R < 0.68 deg; this is the background group. The fit for 29 galaxies is: Vmean = 6890, sigma = 201 km/s<br>
+<li><i>Advanced Reading</i>: <br>
+     <a href="http://adsabs.harvard.edu/abs/1988AJ.....95..985D">Dressler & Shectman 1988</a>
+       AJ 95, 985 &nbsp &nbsp &nbsp &nbsp Test for substructure in clusters from radial velocity measurements<br>
+     <a href="http://adsabs.harvard.edu/abs/1985ApJ...298....8H">Heisler, Tremaine and Bahcall 1985</a> 
+       ApJ 298, 8 &nbsp &nbsp &nbsp &nbsp The projected mass estimator.<br>
+     <a href="http://adsabs.harvard.edu/abs/1994AJ....108.2348A">Ashman, Bird & Zepf 1994</a>	
+	AJ 108, 2348 &nbsp &nbsp &nbsp &nbsp Statistical tests for substructure
+<li> What can we conclude about the structures in the region of Zw1400.4+0949?
+</p> 
+</ul>
+<br>
+<h3><font color=#cc0f14> Properties of the stellar populations </font></h3>
+We need to understand more about the stellar populations, star formation rates etc derived from the SDSS data.
+At this time, all the groups we are investigating are covered by SDSS-I through DR7, and I propose that we
+stick to that. As we all appreciate, legacy survey data, be it from SDSS or ALFALFA, have to be understood
+and real data always is uglier than ideal data. So, we need to pay attention to corrections, limitations,
+biases, incompleteness and all that jazz.</p>
+
+A fairly simple approach to calculating stellar masses from SDSS photometry is discussed
+on one of the 
+<a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalfa.php">
+"Using ALFALFA for Science"</a> pages, specifically the one called 
+<a href="http://egg.astro.cornell.edu/alfalfa/ugrad/stellarmass.htm">
+Deriving the stellar mass</a>. That is a first place to start.</p>
+
+At least for the more distant clusters, we may want to use the compilation of derived
+properties of DR7 galaxies available from the <a href="http://www.mpa-garching.mpg.de/SDSS/">MPA/JHU</a> folks.
+They use more sophisticated methods of SED-fitting (what's that? you ask)
+of the photometry to derive stellar masses and re-process the SDSS spectroscopic data to calculate
+star formation rates (SFRs). We need to study up more on this. </p>
+
+MORE COMING!!!!!!!!
+
+<br>
+<br>
+<hr color=#008000>
+The UAT Groups Project is coordinated by Martha Haynes.<br>
+<i>Last modified: Fri Jun 10 09:31:23 EDT 2011 </i> by martha </p>
+</body>
+</html>

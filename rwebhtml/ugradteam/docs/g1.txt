@@ -1,0 +1,63 @@
+MPH 08Jan19
+
+The StLU folks have the grid 1148+13; it includes HCG059
+   HCG059                     1148266+124240  cz= 4047    grid 1148+13
+
+RASSCALS:
+   MKW10   HCG058   NRGb151   1142094+101630  cz= 6158    Lx=42.04
+   MKW11   MGBR     NRGb247   1329312+114719  cz= 6850    Lx=42.67
+
+SPITZER:
+
+   HCG033 (not alfalfa)
+   HCG037                     0913350+300054  cz= 6685
+   HCG055 (not alfalfa)
+
+WIRC+ALFALFA
+   HCG047 
+   HCG054
+   HCG057
+   HCG061
+   HCG071
+   HCG075
+   HCG079
+   
+
+MKW in ALFALFA range (from NED)
+MKW 01s  WBL 217  09h19m58.6s +01d00m16s GClstr   5168  0.017239         0.0   18     1    0    0     0    0     0  
+MKW 10   HCG 058  11h42m10.8s +10d18m21s GClstr   6158  0.020541         0.0   51     3    1    0     1    0     0    
+MKW 04   WBL 372  12h03m57.7s +01d53m18s GClstr   5996  0.020000         0.0   82     1    2    1     0    0     0 
+MKW 04s  WBL 378  12h06m32.9s +28d11m18s GClstr   8495  0.028336         0.0   41     4    1    1     0    0     2
+MKW 11   WBL 447  13h29m31.2s +11d47m19s GGroup   6850  0.022849         0.0   36     1    0    0     0    0     1 
+MKW 12   WBL 486  14h02m46.1s +09d19m35s GClstr   5696  0.019000         0.0   33     2    0    0     0    0     1 
+MKW 06   WBL 498  14h17m38.3s +02d02m10s GClstr  16818  0.056100         0.0   13     0    0    0     0    0     0
+MKW 07   WBL 514  14h34m00.9s +03d46m52s GClstr   8694  0.029000         0.0   18     1    0    0     0    0     0
+MKW 08   WBL 518  14h40m43.1s +03d27m11s GClstr   8094  0.027000         0.0   33     2    1    1     1    0     0
+MKW 03s  WBL 564  15h21m50.0s +07d42m32s GClstr  13491  0.045000         0.0  116     1    3    1     1    0     0
+MKW 09   WBL 574  15h32m29.3s +04d40m54s GClstr  11902  0.039700         0.0   37     0    0    0     0    0     0
+
+AWM in ALFALFA range (from NED)
+
+AWM 01   WBL 213  09h17m07.8s +20d02m25s GClstr   8694  0.029000         0.0   22     2    0    0     0    0     0 
+AWM 02   WBL 389  12h15m37.9s +23d58m20s GClstr   6535  0.021800         0.0   15     1    0    0     0    0     0 
+AWM 03   WBL 509  14h28m20.3s +25d50m38s GClstr   4497  0.015000         0.0   30     1    0    0     0    0 
+AWM 04            16h04m57.0s +23d55m14s GClstr   9520  0.031755         0.0   56     1    1    1     3    0
+AWM 05   WBL 625  16h58m02.4s +27d51m42s GClstr  10320  0.034424         0.0   32     2    1    1     2    0     0  
+
+
+MH Streams
+deV40   N 470 0119449+032434
+deV 7   N 672 0147539+272555
+        N 697 0151176+222128 
+        N2775 0910201+070218 
+        N3166 1013456+032528 
+deV47   N3189 1018055+214951  
+deV49   N3607 1116547+180305
+deV 9   N3627 1120150+125921 
+        N4411 1226300+085218 
+deV13   N4725 1250266+253001 
+        N5363 1356073+051517 
+        N5576 1421035+031614 
+        N5953 1534323+151136  
+        N7332 2237245+234754
+        N7448 2300037+155848   (no SDSS)

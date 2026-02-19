@@ -1,0 +1,182 @@
+                    RA,Dec       nz  nopt  cz   sig  logsig sig   logLx       dist*
+A779    NRGb032  0919480+334532   5   24  7473  360  2.92  0.11   42.69 0.07   110   A779/MGBR      **Siena; not in current ALFALFA catalog  
+WBL226  NRGb041  0925122+111649   5    6  3616   84  2.32  0.14  <41.50 0.00    55                  **GSU
+        NRGb054  0941167+113316   5   13  6460  145  2.52  0.12  <41.80 0.00    97         
+MKW10   NRGb151  1142094+101630  12   34  6265   74  2.41  0.13   42.04 0.19    94   MKW10/HCG058   **Siena               
+HCG59   NRGb157  1147518+131633   9   11  3745  152  2.66  0.07  <41.50 0.00    56   HCG059         **SLU; maybe Lafayette too
+WBL368  NRGb168  1158305+250823  10   18  4789   53  2.21  0.08  <41.60 0.00    71                  **Hartwick     
+WBL404  NRGb206  1224026+092125   7   27  7256  166  2.66  0.09  <41.90 0.00   108                  **UWSP  
+MKW11   NRGb247  1329312+114719  12   46  7056   79  2.43  0.08   42.67 0.09   105    MKW11/MGBR    **Skidmore  
+MKW12   NRGb282  1405570+090758  41  136  6872  102  2.82  0.04  <42.00 0.00   (102)  MKW12         **several                                
+WBL509  NRGb301  1428019+253410  15   24  4819   81  2.48  0.07  <41.70 0.00    72     AWM3         **St Mary's
+WBL518  MKW 8    1440431+032711           8094                                 119
+        NGC 5846 1505325+014147           1749                                 (28)
+        NRGb331  1506414+124413   8   31  6904   69  2.31  0.08  <42.20 0.00   101
+
+
+I looked into a few different cluster catalogs for X-ray numbers, here's what I found:
+Archives I looked at:
+ - ACCEPT - a slightly outdated archive of chandra observations of galaxy clusters. (based on Chandra)
+	- I didn't turn up a lot here... MKW8 is defnitely in it...
+ - MCXC - Piffaretti+2011 - The Meta Catalog of X-ray detected Clusters of galaxies (based on ROSAT)
+	-I didn't find much here, even though they have 1700 clusters...
+ - HEASARC - a big meta catalog of everything (theoretically)...
+	http://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3query.pl 
+	Enter this into the query: 
+	09 19 48.0 +33 45 32; 09 25 12.2 +11 16 49; 09 41 16.7 +11 33 16; 11 42 09.4 +10 16 30; 11 47 51.8 +13 16 33; 11 58 30.5 +25 08 23; 12 24 02.6 +09 21 25; 13 29 31.2 +11 47 19; 14 05 57.0 +09 07 58; 14 28 01.9 +25 34 10; 14 40 43.1 +03 27 11; 15 05 32.5 +01 41 47; 15 06 41.4 +12 44 13
+	And expand the default search radius...
+ - BAX - a french X-Ray Galaxy Clusters Database, PI Alain Blanchad; > 2000 clusters/groups 
+	http://bax.ast.obs-mip.fr/html/COMMUN/Contents.html - most XMM-Newton papers
+The BAX results:
+Name;RA;DEC;z;Fx;Reference-Fx;Lx;Reference-Lx;Bande-Inf;Bande-Sup;Tx;E.Tx;Reference-Tx;Instrument
+ABELL0779;139.961779;33.771421;0.022;3.8;2000MNRAS.318..333E;0.082841;2000MNRAS.318..333E;0.1;2.4;2.97;(-0.39,+0.39);2001ApJ...555..191F;ASCA
+RXJ1142.2+1026;175.6199;10.439219;0.07;0.922075;2000ApJS..126..209R;0.194843;2000ApJS..126..209R;0.1;2.4;-9999.99;none;none;ASCA
+ABELL1354;175.544849;10.155915;0.118;0.622133;1999ApJ...511...65J;0.375061;1999ApJ...511...65J;0.1;2.4;-9999.99;none;none;ASCA
+HCG058;175.544912;10.305915;0.021;-9999.99;none;-9999.99;none;0.1;2.4;0.64;(-0.19,+0.19);1996MNRAS.283..690P;ROSAT
+400DJ1142+1027;175.569167;10.450556;0.117;0.559743;2010ApJ...708.1376V;0.333293;2010ApJ...708.1376V;0.1;2.4;-9999.99;none;none;ROSAT
+400DJ1142+1008;175.52625;10.147778;0.119;0.310662;2010ApJ...708.1376V;0.192914;2010ApJ...708.1376V;0.1;2.4;-9999.99;none;none;ROSAT
+NGC5171GROUP;202.38;11.788611;0.023;3.259452;1999ApJ...511...65J;0.073397;1999ApJ...511...65J;0.1;2.4;0.96;(-0.04,+0.04);2004MNRAS.355...11O;XMM
+VMF98136;202.38;11.788611;0.023;2.604413;2007ApJS..172..561B;0.058704;2007ApJS..172..561B;0.1;2.4;-9999.99;none;none;XMM
+MKW08;220.179616;3.452979;0.027;25.1;2002A&A...383..773I;0.781216;2002A&A...383..773I;0.1;2.4;3.29;(-0.13,+0.14);2002A&A...383..773I;ASCA
+MKW8;220.179616;3.452979;0.027;-9999.99;none;-9999.99;none;0.1;2.4;3.29;-9999.99;2009ApJS..182...12C;Chandra
+NGC5846GROUP;226.385284;1.696288;0.006;8.3;2002A&A...383..773I;0.012167;2002A&A...383..773I;0.1;2.4;0.64;-9999.99;2009ApJS..182...12C;Chandra
+
+SUMMARY:
+5 X-ray positions
+7 Optical positions that are just averages based on 13 year old data...
+
+
+Use as above except new coords for MKW8 and NGC5856
+Source: 	Position: 	X/O?: 	Reference:	XFlux:	Reference:	Note:
+WBL226		0925122+111649	Opt	Mahdavi+00
+NRGb054		0941167+113316	Opt	Mahdavi+00				Calculated w/only 6 galaxies...
+MKW10		1142094+101630	X-ray	Mahdavi+00	42.04 0.19		
+HCG59		as above	Opt 	Mahdavi+00	as above
+WBL368		as above	Opt	Mahdavi+00	"
+WBL404		"		Opt
+MKW11				X-ray	Mahdavi+00			*This has Chandra and XMM, but I can't find a position
+MKW12				Opt
+WBL509				Opt
+WBL518		1440396+032814	X-ray	Cavagnolo+09
+NGC 5846	1506293+013620	X-ray	Cavagnolo+09
+
+Details from RASSCALS: Mahdavi+2000 2000ApJ...534..114M 
+ - Note: The data in this table replace the preliminary analysis of the X-ray data in Mahdavi et al. 1999.
+ - For the 59 groups with a listed X-ray luminosity, we report the X-ray centroid; for the others we report the mean R.A. and decl. of the galaxies in the group. Units of right ascension are hours, minutes, and seconds, and units of declination are degrees, arcminutes, and arcseconds.
+ - Luminosity in the 0.1–2.4 keV band within an aperture of 0.5 h Mpc.
+
+
+
+**********************************************************************
+WBL226 NRGb041: 
+The only reference in NED is to the WBL paper, White+1999, which is optically selected.
+Current NED position reference: 1999AJ....118.2014W - White+1999
+09h33m58.9s +10d06m38s (these are the same source??)
+Our current position reference: Mahdavi+2000 (NED doesn't cross match these)
+I think that's the best we've got for now...
+
+I downloaded the image from NED, and did a chandra chaser search, and got nothing.
+I looked in rosat, and did a quick visual centroid of: 
+9:33:55.600+10:07:48.16, but don't trust this..., it was just around the closest peak to the center after some smoothing...
+The only source returned w/in 15' in a search of HEASARC was:
+1RXS J092543.2+112545	09 25 43.20	+11 25 45.5	3.434e-02	1.260e-02	 --	RASSFSC	ROSAT	11.735 (09 25 12.2 +11 16 49)
+
+
+***********************************************************************
+USGC U248                      09h41m16.7s +11d33m16s GGroup   6384  0.021296
+X-ray data in http://adsabs.harvard.edu/cgi-bin/bib_query?2000ApJ...534..114M Mahdavi+2000 /RASSCALS
+Current NED position reference:  2000ApJ...534..114M Mahdavi+2000
+Our current position reference: the same, Mahdavi+2000  
+ - even though it's ROSAT, I think it's the best we've got...
+everything in that publication: http://ned.ipac.caltech.edu/cgi-bin/objsearch?refcode=2000ApJ...534..114M&search_type=Search&of=pre_text
+NRGb054 is the RASSCALS identification. It appears that that is the source of our coordinates. Probably we just want to go with these, unless
+if we can find better for a given cluster (i.e. XMM newton or chandra)
+
+The two closest sources returned in the HEASARC search were:
+EXSS 0938.3+1150	09 41 04.85	+11 36 31.0	5.000e-03	 	 	EXSS	EINSTEIN	4.357 (09 41 16.7 +11 33 16)
+2E 0938.3+1150	09 41 02.25	+11 36 58.8	2.920e-03	8.282e-04	 	IPC	EINSTEIN	5.129 (09 41 16.7 +11 33 16)
+And the only one with a listed flux:
+MS0937.8+1153	09 40 30.11	+11 39 35.6	8.190e-03	 	2.140e-13	EMSS	EINSTEIN	13.045 (09 41 16.7 +11 33 16)
+
+***********************************************************************
+MKW10 had lots of returned results...
+Entry in BAX:
+HCG058;175.544912;10.305915;0.021;-9999.99;none;-9999.99;none;0.1;2.4;0.64;(-0.19,+0.19);1996MNRAS.283..690P;ROSAT
+NED position reference:  Position Reference:1999AJ....118.2014W (the WBL paper)
+Our Position reference: Mahdavi+2000
+
+The closest XMM-Newton source:
+3XMM J114211.1+101639	11 42 11.11	+10 16 40.0	2.889e+00	2.775e-02	6.897e-12	XMMSSC	XMM-NEWTON	0.452 (11 42 09.4 +10 16 30)
+perhaps look at the XMM Newton image of this area??? [I have to learn how to do this...]
+
+Is Freeland, E.; Stilp, A.; Wilcots, E. 2009 HI observations related to us? VLA and ATCA data, WIYN 0.9m observations...
+http://adsabs.harvard.edu/cgi-bin/bib_query?2009AJ....138..295F - Martha notes crappy b/c don't account for cosmic variance; that is, they don't
+sample a large enough volume/correct for the fact that there is large scale structure in the universe, so their particular measurement isn't necessarily like any other group measurement.
+
+http://iopscience.iop.org/0067-0049/145/1/39/fulltext/ (Mulchaey +2003) just give a ROSAT upper limit...
+
+
+***********************************************************************
+HCG59   NRGb157
+
+Didn't return any results in any queries... though a decent number of references in NED.
+There defnitely are ROSAT upper limits... http://adsabs.harvard.edu/cgi-bin/bib_query?1996MNRAS.283..690P
+The ned position reference is 1996AJ....112..871B which is optical, barton+1996, and doen't match our position
+Our position is also an optical average, from Mahdavi+2000
+
+
+***********************************************************************
+WBL368  NRGb168  1158305+250823
+Our positon: Mahdavi+2000
+NED position: 1998Afz....41..308M - Mahtessian 1998  - no access through ADS...
+http://adsabs.harvard.edu/cgi-bin/bib_query?1998Afz....41..308M
+11h58m10.2s +25d10m18s GGroup   4732  0.015784
+
+************************************************************************
+WBL404 - coming soon
+
+
+***********************************************************************
+MKW11 - NGC4171 group
+NED position reference:  13h29m31.2s +11d47m19s 2004ApJ...607..202M Andisheh Mahdavi and Margaret J. Geller - same ROSAT coords
+Our position reference: NRGb247  1329312+114719 Mahdavi+2000 (ROSAT)
+Entry in BAX catalog:
+NGC5171GROUP;202.38;11.788611;0.023;3.259452;1999ApJ...511...65J;0.073397;1999ApJ...511...65J;0.1;2.4;0.96;(-0.04,+0.04);2004MNRAS.355...11O;XMM
+WELL DARN. This definitely has both Chandra and XMM data, but I can't find a position. grrrrr.
+Anyway, my rough guess from ds9 is: 13:29:24.341+11:44:37.99
+
+http://adsabs.harvard.edu/cgi-bin/bib_query?2007MNRAS.374..737F - offensive...
+http://adsabs.harvard.edu/abs/2004MNRAS.355...11O - how can you have so much time and no centers????!!!!
+This has centers, and above references claimed it had this group, but I don't think it does. It does have a position for 
+NGC5846 though, so worth a peak:
+http://adsabs.harvard.edu/abs/2007MNRAS.380.1554R
+***********************************************************************
+MKW12.... let's just use ROSAT peeps # again?
+WBL509  NRGb301  1428019+253410 - just use the ROSAT peeps # again?
+***********************************************************************
+
+MKW8
+NED position: 14h40m43.1s +03d27m11s, which is our position, based on the position in morgan, kayser, and white:
+1975ApJ...199..545M
+US: 1440431+032711
+ACCEPT: 14:40:39.633 	+03:28:13.61 - this is based on Chandra, let's use it instead...
+
+
+Entries in the BAX catalog:
+Name;RA;DEC;z;Fx;Reference-Fx;Lx;Reference-Lx;Bande-Inf;Bande-Sup;Tx;E.Tx;Reference-Tx;Instrument
+MKW08;220.179616;3.452979;0.027;25.1;2002A&A...383..773I;0.781216;2002A&A...383..773I;0.1;2.4;3.29;(-0.13,+0.14);2002A&A...383..773I;ASCA
+MKW8;220.179616;3.452979;0.027;-9999.99;none;-9999.99;none;0.1;2.4;3.29;-9999.99;2009ApJS..182...12C;Chandra
+
+***********************************************************************
+NGC5846: 
+NED: 15h05m32.5s +01d41m47s Garcia 1993 an ESO optical paper
+US: 1505325+014147 NED coords
+ACCEPT: 15:06:29.289 	+01:36:20.13 - more closely related to the coords of NGC5846 the galaxy...
+After looking at http://iopscience.iop.org/0004-637X/743/1/15/fulltext/apj_743_1_15.html, we definitely want to use the 
+galaxy/accept coordinates, NOT the NED coordinates.
+Position in Rasmussen+2007: 150629.4+013623.3  (http://adsabs.harvard.edu/abs/2007MNRAS.380.1554R)
+Entry in the BAX catalog:
+15h05m32.5s 	1d41m47s
+NGC5846GROUP;226.385284;1.696288;0.006;8.3;2002A&A...383..773I;0.012167;2002A&A...383..773I;0.1;2.4;0.64;-9999.99;2009ApJS..182...12C;Chandra
+
+

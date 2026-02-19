@@ -1,0 +1,140 @@
+<html>
+<head>
+  <title>Undergraduate ALFALFA Observing Project</title>
+  <!-- CSS for page -->
+  <link rel="stylesheet" type="text/css" href="styles/style1.css">
+</head>
+<body bgcolor="ffffff">
+
+<center> <img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg" width="690" height="80" border=
+"0"
+alt="ALFALFA"></center>
+
+
+<center>
+<hr align= center  color=#008000 width= 700 >
+<h1><font color= #cc0f14 > Things to do to get science out of ALFALFA</font></h1>
+</center>
+<br>
+
+<h3><font color=#cc0f14>Note: see also "Computing Galaxy Properties for ALFALFA" internal link (ask Becky for link) for detailed directions to use existing programs. </font></h3>
+
+<h3><font color=#cc0f14>Available datasets</font></h3>
+<ul>
+<li><b>ALFALFA grids</b><br>
+Martha will provide you with the ALFALFA Level II data products 
+corresponding to several ALFALFA grids which cover the region
+of your target group. These will include the grids themselves as
+well as the "src" and "ps" files and that source catalog. So the first
+thing to do is to learn what all these things are, what they contain,
+and how to use them. Among other things, learn to use "gridview"
+and "galcat".</p>
+
+<li><b>The AGC</b><br>
+Your IDL installation comes with a recent version of the AGC
+the misuse of which will insure you a free delivery of a pair
+of cement shoes. Make sure you understand what the AGC is (and 
+isn't!). Among other things, learn to use "agcbrowse" and 
+"plotalfa".</p>
+
+<li><b>The SDSS</b><br>
+In order to be able to understand the history and environment of
+the galaxies that ALFALFA does and does not detect, it is really
+useful to study the same region using the SDSS. So learn to use
+it and understand what it contains.
+   <ul><li>The EGG ALFALFA-SDSS cross table (coming soon)
+       <li>The AGC-SDSS cross table (coming later)
+       <li>Jessica's cross list?</ul></p>
+</ul>
+
+<h3><font color=#cc0f14>Things we need to do</font> </h3>  
+
+
+<ul>
+<li><b>Understand ALFALFA's limitations</b>
+<ul><li>What are the limitations of ALFA's angular resolution? What
+        is the **linear** angular resolution at the distance of your
+        group?
+    <li>Why might you "find" a galaxy in a grid but not in the
+        ALFALFA catalog?
+    <li>What are sidelobes? What impact can sidelobes have?</ul></p>
+<li><b>Determine group membership</b> <font color=#008000> Mary </font>
+<ul><li> Using the AGC and NED to identify structures
+    <li> See <a href="http://adsabs.harvard.edu/abs/1997AJ....113...22G">
+         Giovanelli et al 1997</a> (Figures 2+) and apply their method on your
+         group/cluster.
+     </ul></p>
+<li><b>Calculate distances</b> 
+<ul><li> Understand when and why Hubble's law doesn't work!
+    <li> Understand what primary and secondary distance indicators are.
+    <li> Understand what the velocity frame of the CMB is and how it is
+         determined.
+    <li> Understand what a peculiar velocity is.
+    <li> Understand what a flowmodel is.
+    <li> The EGG flowmodel routines<font color=#008000> now in LoveData</font></ul></p>
+<li><b>Correct optical magnitudes for various effects</b>
+<ul><li><b>Correct for galactic extinction</b>
+    <ul><li> Understand what galactic extinction is and what methods are used
+         to derive it.
+        <li> Understand the DIRBE instrument and data set and how it can be
+         used for galactic extinction.
+        <li> The EGG DIRBE routine (coming soon)<font color=#008000> EGG </font></ul>
+        <li><b>Correct for internal extinction</b>
+    <ul><li> Understand what the correction for internal external extinction is.
+       </ul>
+    <li><b>Correct for K-correction</b> <font color=#008000> Rose </font>
+    <ul><li> Understand what the K-correction is.
+       <li> KCORRECT courtesy of Mike Blanton et al. but interpreted
+         for ALFALFA (coming soon)
+    </ul></p>
+</ul>
+<li><b>Find the X-ray data</b> <font color=#008000> Aileen </font>
+<ul><li>RASSCALS
+    <li>Other
+    <li>What does X-ray tell us?
+    </ul></p>
+
+
+<li><b>Find HI deficiencies </b> <font color=#008000> Becky </font>
+<ul> <li>References 
+      <ul><li> <a href="http://adsabs.harvard.edu/abs/1984AJ.....89..758H">
+        Haynes & Giovanelli 1984</a>
+      <li><a href="http://adsabs.harvard.edu/abs/1988ApJ...333..136M">
+        Magri et al 1988</a>
+      <li><a href="http://adsabs.harvard.edu/abs/1996ApJ...461..609S">
+        Solanes et al. 1996</a>
+      <li><a href="http://adsabs.harvard.edu/abs/2001ApJ...548...97S">
+        Solanes et al. 2001</a></ul>
+       </p>
+</ul>
+
+<li><b>Calculate properties</b>
+<ul><li> Distances
+    <li> HI masses
+    <li> Optical luminosities
+    <li> Global colors
+    <li> Stellar masses <font color=#008000> Rose </font>
+    <li> Radio continuum luminosities <font color=#008000> Aileen and Martha</font>
+    <li> Starburst or AGN? <font color=#008000> Kelley </font>
+    <li> Local environment
+         <ul><li> Nearest Nth neighbor <font color=#008000> Mary </font>
+             <li> Local velocity dispersion <font color=#008000> Mary </font>
+             <li> Local ICM density <font color=#008000> Aileen </font>
+             <li> Local ICM temperature <font color=#008000> Aileen </font>
+         </ul>
+    </ul>
+
+<li><b>Documention for everything </b>
+</ul>
+<br>
+<br>
+
+Comments, suggestions, corrections, additions always welcome; write Martha.
+But, Martha would also like some help writing documentation for all this!</p>
+
+<br>
+<hr align= center color=#008000 width= 700 ></center>
+<i>Last modified: Sun Jan 10 11:40:47 EST 2010 by becky</i>
+</body>
+
+</html>

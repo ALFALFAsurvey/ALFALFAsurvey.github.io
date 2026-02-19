@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>Astro 4940 Class Project</title>
+</head>
+<body bgcolor=#ffffff>
+<h3><font color=#cc0f14> 
+    Return to the <a href="proj_a4940.notes.htm">Project notes</a>
+</font></h3>
+<br>
+
+<h3><font color=#cc0f14>ASTRONOMY 4940 &nbsp &nbsp &nbsp Spring 2011 &nbsp &nbsp &nbsp Class Project </font></h3>
+
+Here are the data files with which we will work. I will make more as time goes by, generating
+ones of particular interest/more use. In particular, if you want me to make a plot for you, I can help; you just
+need to tell me what to do (or I can help you make the plot yourself).</p>
+
+<h3> Files</h3>
+<table width=700 border=3 cellpadding=3>
+<tr><th>File</th><th># objects</th><th> Description</th></tr>
+<tr><td><a href="projfiles/zw1400_slice_summ.txt">File</a> </td>
+    <td> 13347 </td><td> Position and redshift data for all galaxies in 
+                       a "slice" from RA,Dec = (7.5-16.5) and (5.86-12.15), Vhelio < 18200 from AGC</td></tr>
+<tr><td><a href="projfiles/zw1400_allvel_summ.txt">File</a> </td>
+    <td> 813 </td><td> Position and redshift data for all galaxies in AGC database in region</td></tr>
+<tr><td><a href="projfiles/zw1400_dr7+spec081209.txt">File</a> </td>
+    <td> 731 </td><td> Photometric and spectroscopic data for objects in the SDSS DR7 photometric 
+                                                          and spectroscopic databases</td></tr>
+<tr><td><a href="projfiles/zw1400_alfalfasumm.txt">File</a> </td>
+    <td> 262 </td><td> ALFALFA HI data for objects in same region</td></tr>
+<tr><td><a href="projfiles/zw1400_dr7+spec+alfalfa081117.txt">File</a> </td>
+    <td> 213 </td><td> Photometric and spectroscopic data for objects in the ALFALFA dataset 
+                               and also in the SDSS DR7 spectroscopic database</td></tr>
+<tr><td><a href="projfiles/zw1400_alfalfa+dr7photoonly.txt">File</a> </td>
+    <td> 48 </td><td> Photometric data for objects in the ALFALFA dataset but not in the
+                                                          SDSS DR7 spectroscopic database</td></tr>
+<tr><td><a href="projfiles/zw1400_alfalfa+photoparms.txt">File</a> </td>
+    <td> 261 </td><td> Photometric and spectroscopic data for objects in the ALFALFA dataset in either
+                       SDSS DR7 photometric and/or spectroscopic database; parameters set to zero where
+                       galaxy is not in the spectroscopic database.</td></tr>
+<tr><td><a href="projfiles/zw1400_habo5007nii6585.txt">File</a> </td>
+    <td> 727 </td><td> Line dispersions and equivalent width data for objects SDSS DR7 spectroscopic database</td></tr>
+<tr><td><a href="projfiles/zw1400_alfalfa_habo5007nii6585.txt">File</a> </td>
+    <td> 212</td><td> Line dispersions and equivalent width data for objects SDSS DR7 spectroscopic and ALFALFA databases</td></tr>
+<tr><td><a href="projfiles/zw1400_alfalfa_habo5007nii6585.txt">File</a> </td>
+    <td> 212</td><td> Line dispersions and equivalent width data for objects SDSS DR7 spectroscopic and ALFALFA databases</td></tr>
+<tr><td><a href="projfiles/zw1400_alfalfa_habo5007nii6585.txt">File</a> </td>
+    <td> 212</td><td> Line dispersions and equivalent width data for objects SDSS DR7 spectroscopic and ALFALFA databases</td></tr>
+<tr><td><a href="projfiles/zmakelum.out.txt">File</a> </td>
+    <td> 727</td><td> File containing corrected magnitudes/colors, absolute magnitudes, inclinations, stellar masses</td></tr>
+<tr><td><a href="projfiles/zmake3lum_alfalfa.out.txt">File</a> </td>
+    <td> 261</td><td> Same as above for ALFALFA catalog sources only</td></tr>
+<tr><td><a href="projfiles/zw1400.makelum.out2.081209.txt">File </a></td>
+    <td> 728</td><td> File containing many derived properties for DR7 spectroscopic sample<br>
+                      I make a correction for stellar absorption and an aperture correction in calculating the SFR (See notes)</td></tr>
+<tr><td><a href="projfiles/zw1400.alfalfa.makelum3.out2.081209.txt">File</a></td>
+    <td> 258</td><td> File containing many derived properties, as above, but also the HI and dynamical masses, for ALFALFA sources</td></tr>
+
+</table>
+<br>
+<h3> Plots</h3>
+<table width=700 border=3 cellpadding=3>
+<tr><th>File</th><th> Description</th></tr>
+<tr><td><a href="projfiles/cone_slice.jpg">cone_slice.jpg</a></td><td> Cone diagram, full velocity range, all RA's, 6 deg in Decl.</td></tr>
+<tr><td><a href="projfiles/cone_slicenr.jpg">cone_slice.jpg</a></td><td> Cone diagram, V < 9100 km/s, all RA's, 6 deg in Decl.</td></tr>
+<tr><td><a href="projfiles/zw6deg_make1s.jpg">zw6deg_make1s.jpg</a></td><td> Velocity versus radial distance from center, 6 degree radial region </td></tr>
+<tr><td><a href="projfiles/skyplotcolor.jpg">skyplotcolor.jpg</a></td><td> RA,Decl plot for galaxies, color coded by velocity range</td></tr>
+<tr><td><a href="projfiles/skyplotcolor4500-8000.jpg">skyplotcolor4500-8000.jpg</a></td>
+                            <td> RA,Decl plot for galaxies, color coded by velocity range, restricted range</td></tr>
+<tr><td><a href="projfiles/skyplotcolor_gps.jpg">skyplotcolor_gps.jpg</a></td>
+                            <td> RA,Decl plot for galaxies, color coded by velocity range, 
+                                 restricted range corresponding to MKW12 and the background group<br>
+                                 Filled symbols identify galaxies also in ALFALFA catalog.<br>
+                                 The small circle is 0.68 deg; the large one is 1.3 deg.</td></tr>
+<tr><td><a href="projfiles/histo.jpg">histo.jpg</a></td><td> Histogram for all galaxies within 1.3 degrees of center</td></tr>
+<tr><td><a href="projfiles/histo2.jpg">histo2.jpg</a></td><td>  Histogram only from 4000 to 8800</td></tr>
+<tr><td><a href="projfiles/histo3.jpg">histo3.jpg</a></td><td>  Histogram only from 5500-6000</td></tr>
+<tr><td><a href="projfiles/hist12.jpg">hist12.jpg</a></td><td>  Histogram only from 3000-9000, R < 1.36 deg</td></tr>
+<tr><td><a href="projfiles/hist13.jpg">hist13.jpg</a></td><td>  Histogram only from 3000-9000, R < 0.68 deg</td></tr>
+<tr><td><a href="projfiles/histmkw12.0.68deg.jpg">histmkw12.0.68deg.jpg</a></td>
+     <td>  Histogram only from 5600-6600, R < 0.68 deg; this is the main MKW12/WBL486 group<br>
+           The fit for 45 galaxies is: Vmean = 5861, sigma = 241 km/s</td></tr>
+<tr><td><a href="projfiles/histbackgp.0.68deg.jpg">histbackgp.0.68deg.jpg</a></td>
+     <td>  Histogram only from 6600-7600, R < 0.68 deg; this is the background group<br>
+           The fit for 29 galaxies is: Vmean = 6890, sigma = 201 km/s</td></tr>
+<tr><td><a href="projfiles/lineratios.jpg">lineratios.jpg</a></td>
+     <td>  BPT/Osterbrock diagram for the sample. Filled symbols identify galaxies in ALFALFA catalog.</td></tr>
+<tr><td><a href="projfiles/himass_spanh.jpg">himass_spanh.jpg</a></td>
+     <td>  Spanhauer diagram of HI mass versus distance.</td></tr>
+<tr><td><a href="projfiles/lum_spanh.jpg">lum_spanh.jpg</a></td>
+     <td>  Spanhauer diagram of r-band luminosity versus distance.</td></tr>
+<tr><td><a href="projfiles/baldryplot.jpg">baldryplot.jpg</a></td>
+     <td>  Color-magnitude diagram, using corrected colors and magnitudes, with the Baldry et al. divider superposed. In this
+    <font color=#cc0f14>newer</font> version, filled symbols identify the ALFALFA detections.</td></tr>
+<tr><td><a href="projfiles/tfplot.jpg">tfplot.jpg</a></td>
+     <td>  Tully-Fisher diagram for the ALFALFA catalog sample.</td></tr>
+<tr><td><a href="projfiles/hizb1.jpg">hizb1.jpg</a></td>
+     <td>  Same as above but with color coding by morphological type, and the big filled cirecles
+           identify galaxies which are members of ZwCl400.4+0949=MKW 12</td></tr>
+<tr><td><a href="projfiles/hizmorphb.gif">hizmorphb.gif</a></td>
+     <td>  Log linear diam versus log HI mass for ALFALFA catalog sample; different colors
+           denote different morphological types. Large filled circles identify galaxies which
+           are members of ZwCl400.4+0949=MKW 12.</td></tr>
+<tr><td><a href="projfiles/histlogL.jpg">histlogL.jpg</a></td>
+     <td>  Histogram of Log L(rband). The shaded portion shows galaxies in the ALFALFA subsample</td></tr>
+<tr><td><a href="projfiles/histlogMstar.jpg">histlogMstar.jpg</a></td>
+     <td>   Histogram of Log stellar mass. The shaded portion shows galaxies in the ALFALFA subsample</td></tr>
+<tr><td><a href="projfiles/histlogSFR.jpg">histlogSFR.jpg</a></td>
+     <td>   Histogram of Log SFR. The shaded portion shows galaxies in the ALFALFA subsample</td></tr>
+<tr><td><a href="projfiles/histcolor.jpg">histcolor.jpg</a></td>
+     <td>   Histogram of (u-r)<sub>corr</sub>. The shaded portion shows galaxies in the ALFALFA subsample</td></tr>
+<tr><td><a href="projfiles/alfalfa_notdr7_1.gif">alfalfa_notdr7_1.gif</a><br>
+        <a href="projfiles/alfalfa_notdr7_2.gif">alfalfa_notdr7_2.gif</a><br>
+        <a href="projfiles/alfalfa_notdr7_3.gif">alfalfa_notdr7_3.gif</a></td>
+     <td>SDSS mosaic images of the galaxies detected by ALFALFA not in the SDSS spectroscopic sample</td></tr>
+<tr><td><a href="projfiles/baldryoutliers.gif">baldryoutliers.gif</a><br>
+     <td>SDSS mosaic images of the galaxies which are outliers in the Baldry et al. color-magnitude diagram</td></tr>
+</table>
+
+<br>
+<h3> References</h3>
+<table width=700 border=3 cellpadding=3>
+<tr><th>ADS link</th><th> Description</th></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/1978ApJ...222..784G">Gregory & Thompson 1978</a> ApJ 222, 784</td>
+    <td> <i>The Coma/A1367 supercluster and its environs</i>, including ZW1400.4+0949</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/1984AJ.....89..758H">Haynes & Giovanelli 1984</a>  AJ 89,758</td>
+    <td> <i>Neutral hydrogen in isolated galaxies. IV - Results for the Arecibo sample</i>, defines the standard
+        of normal HI content</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/2005AJ....130.2598G">Giovanelli et al 2005</a> AJ 130, 2598</td>
+    <td> <i>The Arecibo Legacy Fast ALFA Survey. I. Science Goals, Survey Design, and Strategy</i>, describing
+    the ALFALFA survey strategy</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/2007AJ....133.2569G">Giovanelli et al 2007</a> AJ 133, 2569</td>
+    <td> <i>The Arecibo Legacy Fast ALFA Survey. III. H I Source Catalog of the Northern Virgo Cluster Region</i>,
+     first catalog of ALFALFA data including a few galaxies in the Zw1400 region</td></tr>
+<tr><td><a href="http://arxiv.org/abs/astro-ph/0410603">Baldry <i> et al</i> 2004</a> astro-ph/0410603</td>
+    <td> <i>Color bimodality: Implications for galaxy evolution</i>, a conference proceedings paper reviewing SDSS 
+        results </td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/2004ApJ...600..681B">Baldry <i> et al</i> 2004</a> ApJ 600, 681</td>
+    <td> <i>Quantifying the Bimodal Color-Magnitude Distribution of Galaxies</i>, the longer paper on which the
+        one above is based</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/2003ApJ...597..142M">Miller<i> et al</i> 2003</a> ApJ 597, 142</td>
+    <td> <i>The Environment of Active Galactic Nuclei in the Sloan Digital Sky Survey</i>, analyzing the
+        observed AGN fraction of AGN as a function of environment based on early SDSS results</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/2003ApJ...599..971H">Hopkins<i> et al</i> 2003</a> ApJ 599, 971</td>
+    <td> <i>Star Formation Rate Indicators in the Sloan Digital Sky Survey</i>, describing methods
+         of deriving the SFR from available SDSS data</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/2006MNRAS.372..961K">Kewley<i> et al</i> 2006</a> MNRAS 372, 961</td>
+    <td> <i>The host galaxies and classification of active galactic nuclei</i>,  more discussion of SDSS
+        spectroscopic diagnostics</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/cgi-bin/bib_query?2002ApJ...569..720G"> Girardi et al. 2002</a> ApJ 569, 720</td>
+    <td> <i>Observational Mass-to-Light Ratio of Galaxy Systems from Poor Groups to Rich Clusters</i> including MKW 12</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/cgi-bin/bib_query?2002AJ....123..100K"> Koranyi & Geller 2002</a> AJ 123, 100</td>
+    <td> <i>Kinematics of AWM and MKW Poor Clusters</i> including MKW 12</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/1998ApJ...500..525S"> Schlegel, Finkbeiner & Davis 1998</a> ApJ 500, 525</td>
+    <td> <i>Maps of Dust Infrared Emission for Use in Estimation of Reddening and Cosmic Microwave Background Radiation Foregrounds</i>,
+         including conversions to calculate extinctions in different wavelength/filter bands.</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/2003AJ....125.2348B"> Blanton <i>et al.</i> 2003</a> AJ 125, 2348</td>
+    <td> <i>Estimating Fixed-Frame Galaxy Magnitudes in the Sloan Digital Sky Survey</i>, which actually suggests
+         that maybe we should apply no correction since our objects are so nearby. </td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/1995AJ....110.1059G"> Giovanelli <i>et al</i> 1995</a> AJ 110, 1059</td>
+    <td> <i>Dependence on Luminosity of Photometric Properties of Disk Galaxies: Surface Brightness, Size, and Internal Extinction<i>
+        giving internal extinction correction, according to axial ratio and luminosity, for I-band</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/1995PASP..107..945F">Fukugita, Shimasaku, & Ichikawa, T. 1995</a> PASP 107, 945</td>
+    <td> <i>Galaxy Colors in Various Photometric Band Systems</i>, including conversion relations for different filter systems</td></tr>
+<tr><td><a href="http://adsabs.harvard.edu/abs/2003ApJS..149..289B">Bell <i>et al</i> 2003</a> ApJS 149, 289</td>
+    <td> <i>The Optical and Near-Infrared Properties of Galaxies. I. Luminosity and Stellar Mass Functions</i>, including
+            appendix with relationship between M/L ratios and stellar masses. See also the ALFALFA U-grad page</a>
+</table>
+
+<br>
+<br>
+For reference, here is the query used to extract the <a href="http://cas.sdss.org/dr7/en/tools/search/sql.asp">SDSS DR7 
+</a>sample:
+<pre>
+SELECT
+ p.ra, p.dec,s.z,s.zerr,p.petroR90_r,p.petroR50_r,p.expAB_r,
+ p.petroMag_u,p.petroMag_g,p.petroMag_r,p.petroMag_i,p.petroMag_z,
+ p.fiberMag_r,
+ p.lnLExp_r, p.lnLDeV_r, p.isoA_r, p.isoPhi_r, l.sigma, l.sigmaErr,
+  l.ew, l.ewErr, l.continuum, l.chisq, l.nu, s.zWarning,p.objID
+FROM PhotoObj p, SpecObj s, SpecLine l
+WHERE
+ p.SpecObjID = s.SpecObjID AND
+ p.SpecObjID = l.specobjID AND
+ s.specClass=2 AND
+ l.lineID = dbo.fSpecLineNames('Ha_6565') AND
+ p.ra >=207.95 AND p.ra <= 214.15 AND
+ p.dec >= 5.86 AND p.dec <=12.15 AND
+ s.z <= 0.061
+order by p.ra
+</pre>
+
+It is sometimes useful to run a query using <a href="http://casjobs.sdss.org/CasJobs/">CasJobs</a>.</p>
+</body>
+</html>

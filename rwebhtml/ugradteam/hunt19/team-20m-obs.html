@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<title> 20 m Observations for Teams </title>
+</head>
+<body>
+
+<h1>Data from Green Bank 20 meter telescope</h1>
+<p>Here are some galaxies observed with the Green Bank 20 m telescope today.
+They were observed with repeated 5 minute on/off position switching. All were
+repeated three times with the exception of UGC 1149 which was only repeated 
+twice since its flux is largest.</p>
+<p>The data from the 20 m are placed on a public website. Here are direct links
+to the data pages for each team:</p>
+<ul>
+<li>Team A: <a href="http://www.gb.nrao.edu/20m/idlinks/39957.htm">UGC 5873</a></li>
+<li>Team B: <a href="http://www.gb.nrao.edu/20m/idlinks/39956.htm">UGC 1149</a></li>
+<li>Team C: <a href="http://www.gb.nrao.edu/20m/idlinks/39960.htm">UGC 1201</a></li>
+<li>Team D: <a href="http://www.gb.nrao.edu/20m/idlinks/39966.htm">UGC 6079</a></li>
+<li>Team E: <a href="http://www.gb.nrao.edu/20m/idlinks/39970.htm">UGC 8490</a> </li>
+</ul>
+<p>These are basic text (ASCII) files, and TOPCAT will open these if you let it
+know you are opening an ASCII table. They can also be opened in Python (I
+recommend the <code>astropy.io.ascii</code> package) but that will require a bit of
+tweaking to handle the header at top of the data files.</p>
+<p><strong>Note that there are links on these Green Bank data 
+pages to other useful information.</strong></p>
+<h2>Some things to note:</h2>
+<ul>
+<li>
+<p>The 20m has dual receivers with two polarizations. It appears that one
+  polarization is dead or has problems. On one or two of these I shifted one
+  receiver to a different frequency band, but on most the two receivers
+  are covering the same (or nearly the same) bandwidth.</p>
+</li>
+<li>
+<p>One of the receivers has a higher system temperature than the other.</p>
+</li>
+<li>
+<p>There are spikes that may be RFI, birdies, or spectrometer errors. You will
+  have to zoom in to "see around" these in TOPCAT. Also note you have real raw
+  baselines!</p>
+</li>
+<li>
+<p>The units of flux are kelvin (K) in the data files.</p>
+</li>
+</ul>
+<h2>Questions and things to do:</h2>
+<ol>
+<li>
+<p>Because your author likes to say 'Uppsala' he used UGC numbers. These are all
+relatively bright nearby galaxies. What are some more common/famous names for 
+your galaxy? Find a pretty optical, infrared, or UV (or all of these) 
+picture of it.</p>
+</li>
+<li>
+<p>Load the calibrated ON/OFF spectrum into TOPCAT and make plots of flux vs.
+frequency. Which polarizations/receivers are good or bad? </p>
+</li>
+<li>
+<p>Find the galaxy!  Does the profile look reasonable given the baseline?
+Remember these are short, noisy observations. Also, which spikes are the Milky
+Way and which are due to problems noted above?</p>
+</li>
+<li>
+<p>Use the calculated column facility to make a velocity column in TOPCAT so 
+that you can plot your galaxy's flux vs. velocity.</p>
+</li>
+<li>
+<p>Can you remove the baseline? (digitally or mentally?) In TOPCAT you can 
+fit a linear function (see the Forms in the X-Y plotting menus). You may be
+able to remove a linear baseline using a fit and a calculated column.</p>
+</li>
+<li>
+<p>Similarly, convert the flux to Jy. I have found or made estimates of the
+gain of the 20 m as 13.65 K/Jy and 14.64 K/Jy. Extra bonus points if you justify
+this with radiometer equations.</p>
+</li>
+<li>
+<p>Estimate the total flux of your galaxy in Jy km/s. This will be easy if
+you have somehow removed the baseling If not, eyeball the baseline and
+estimate! (There are easy ways to crudely integrate using the idea of FWHM, W50,
+etc.)</p>
+</li>
+<li>
+<p>Look up HI spectra of your galaxy in NED and compare. You may find familiar
+names in the references of these spectra.</p>
+</li>
+</ol>
+<p></body></p>

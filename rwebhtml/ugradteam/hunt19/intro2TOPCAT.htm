@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title>A quick into to TOPCAT by martha</title> 
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=#ccof14> A Brief Introduction to TOPCAT</font></h3>
+
+
+<hr>
+<li> Link to <a href="http://www.star.bris.ac.uk/~mbt/topcat/">TOPCAT</a></p>
+
+<img src="images13/topcat_front.jpg" height=200></p><br>
+<hr>
+<b> Getting ready for TOPCAT</b></p>
+<a href="http://www.star.bris.ac.uk/~mbt/topcat/">TOPCAT</a> is a JAVA utility
+developed under the auspices of the international "Virtual Observatory" concept
+which enables the manipulation, display and analysis of datasets, specifically
+astronomical ones. Please refer to the above link for detailed information
+and downloading instructions. Note that <b>TOPCAT</b> can be installed on
+Windows, MacOS and Linux platoforms that are also Java-enabled.</p>
+
+Here, I assume that you have already installed <b>TOPCAT</b> successfully.</p>
+<br><hr>
+<table><tr><td valign=top>
+<b> Getting a dataset for TOPCAT</b></p>
+
+Many astronomical datasets are publicly available on the internet. As an introduction
+to <b>TOPCAT</b>, let's make use of a catalog of 87,000 stars 
+with measured distances, spectra and radial velocities contained in the HYG database
+at <a href="http://www.astronexus.com/node/34" target=new><i>http://wwwtronexus.com/node/34</i></a>.
+The database is a subset of data contained in three large catalogs of stars: the Hipparcos Catalog,
+the Yale Bright Star Catalog, and the Gliese Catalog of Nearby Stars. For convenience, we have made
+a simple version of the database
+which you can find <a href="files/hyg_simple16.csv">here</a>. 
+Be sure you know in what directory it is located after you download it.
+Now, let's make the plot shown on the right.</p>
+</td><td valign=top>
+<a href="images16/hipparcos_cmd16.gif" target=new>
+<img src="images16/hipparcos_cmd16.gif" height=260></a>
+</td></tr></table>
+
+<li> &nbsp Start <b>TOPCAT</b>. On Windows machines, that means clicking on the file "topcat-full"
+in the directory where you have downloaded the executable jar file of that name.
+The <b>TOPCAT</b> window will appear.</p>
+<img src="images13/topcat1.jpg" height=260></a></p>
+<li> &nbsp Click on "File" (upper left) and then "Load Table". A new "Load New Table" window will appear.
+Choose the appropriate "Format", here "CSV".</p>
+<li> &nbsp Click on "System browser". Find the datafile of stars that you download. Click on it so that its
+name appears under "File name" at the bottom of the "Load Table" menu. On Windows machines, be sure that the bottom
+file type says "All Files". Click on "Open" and the file should load. It might take some seconds. The file name should 
+appear in the "Table List".</p>
+<li>  &nbsp Left click on "Views" and then "Column Info". A new window will open which lists the Names of each
+column in the table. Notice what they are. </p>
+<img src="images16/topcat2.jpg" height=260></a></p>
+<li>  &nbsp Back in the main menu, left click on "Graphics" and then on "Plane Plot". A new window will appear.
+By default, it has plotted column 1 ("StarID") on the X axis and column 2 ("Hip") on the Y axis. What we want
+however is to plot "BminusV" on the X axis and "AbsMag" on the Y axis. Left click on the downward arrow next
+to "StarID" and select "BminusV"; then do the same for "AbsMag". This plot should appear.</p>
+<img src="images16/topcat3.jpg" height=400></a></p>
+Notice that it bears some resemblance to the plot we wanted to make (shown above on the right), but (a)
+the data points appear are denoted by red symbols not black ones, (b) it seems to have the Y axis scale flipped and (c) the range 
+of X and Y values is not what we want. We need to fix those things.
+</p>
+<li>  &nbsp As you may already know, astronomers measure the brightnesses of objects using a system
+of "magnitudes" that is logarithmin and inverse, that is a larger magnitude means a fainter object. So for our
+plot, we want to flip the Y axis of the plot. First, click on the "Axes" icon on the left and then
+click on the small box next to "Y Flip". That looks better!</p>
+<li> &nbsp Next, let's change the color of the data point symbols. Click on the name of the table again
+and then, on "Subsets". You will see
+an entry labelled "Color" which is set to red. 
+Click on the down arrow to the right of the red "Color" bar. Scroll down and select the black bar.
+The color of the points will change!</p>
+<li> &nbsp To finish the job, we need to reset the range of the X and Y values. 
+Click again on "Axes" and then on "Range". In this case, set X range
+from -0.5 to 2.5 and the Y range to -6 to 16 and then click "Submit"; the plot will
+rescale. </p>
+
+
+Finally, let's add a title to the plot. Click on "Frame" and then on "Title". Enter "Hipparcos Color-Magnitude Diagram"
+and hit "Enter". You should see:</p>
+
+
+<img src="images16/topcat4.jpg" height=350></a></p>
+Notice that some of the points disappear because they lie outside the specified
+ranges. We'll talk about that later....</p>
+<li>  &nbsp As one final step in this example, let's save the plot by exporting a copy to your
+machine's disk. At the top of the "Scatter Plot" window, left click on "Export" and then "Export as gif"
+(or other format if you want). A window will open which allows you to specify the file name
+and directory where it will be saved. When you have specified them, click on "Write gif" and
+you should now have a copy of the plot you have made. When you open the file, select your browser (or
+other image display utility) when asked for what program to open it with.
+</p>
+
+
+
+<b>TOPCAT</b> has many more features, so we invite you to explore its capabilities further.
+Lots of astronomers use <b>TOPCAT</b>, so you are now in good company!</p>
+
+<br>
+<hr>
+<font color=#008000><i>Last modified: Thu May 12 18:28:33 EDT 2016
+</i> by martha </font>
+</body>
+</html>

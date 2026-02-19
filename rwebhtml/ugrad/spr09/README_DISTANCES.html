@@ -1,0 +1,197 @@
+<html><head>
+
+<title>Distance Documentation</title></head>
+
+ 
+<body>
+<h1>Estimating Galaxy Distances</h1><h2> (using the flow model, distance calibrators, and group assignments)</h2>
+<strong>Last modified: </strong>September 2 2007.<p>
+ 
+</p><hr>
+
+<h2><font color="red">Note: exercise extreme caution in calculating
+distances, especially when using the flow model.</font> Results are not equally accurate in all areas of the sky and
+are highly uncertain for distances less than 5 Mpc. Always consult error messages & flags before using estimated distances for science!</h2>
+
+<p>To learn more about the SFI++ flow model implemented in these
+codes, and for caveats on the use of flow model distances, see KLM's
+thesis.</p> 
+
+<h3>Contents:</h3><p>
+
+These notes have been assembled to allow ALFALFA team members to easily estimate distances for their objects, whether in an AGC-formatted catalog
+or a GALCAT-formatted catalog. Starting from basic measured parameters, the code in egggen (compiled by calling @egggeninit) can help you
+produce tables in the ALFALFA paper format (including a TEX table that can easily be inserted) including distance and mass estimates for
+your objects. There are several caveats, however, so it is recommended that you fully read this documentation before proceeding. Keep in mind that the adopted ALFALFA value for the Hubble parameter is 70.0 km/s/Mpc.
+
+<h4><ul>
+<li><a href="#summary">Summary</a><p>
+<li><a href="#sources">Sources of Distance Information</a><p>
+<li><a href="#overview">Overview of Code: distance_catalog.pro and distance_subroutines</a><p>
+<li><a href="#distancecatalog">Using distance_catalog.pro</a><p>
+<li><a href="#products">Products of distance_catalog.pro</a><p>
+<li><a href="#notes">Special Notes and Hints</a><p>
+</ul></h4>
+
+<hr>
+
+<h3><a name="summary">Summary</a></h3><p>
+<p> The egggen directory (/home/dorado3/galaxy/eggidl/gen) contains many files that are useful for the calculation of distances. The main program for distance calculation is <a href="distance_catalog.pro">distance_catalog.pro</a>; this will calculate distances for each object in a catalog. There are also several useful subroutines in <a href="distance_subroutines.pro">distance_subroutines.pro</a>, used by distance_catalog.pro but potentially useful for other purposes. The directory also contains grp_assign.gals and dist_calibs.dat, lists of AGC objects that are members of known groups or have a primary distance measurement. The flowmodel (<a href="flowmodel_dist.pro">flowmodel_dist.pro</a>) is used in distance_catalog.pro, and has its own set of useful subroutines. To read about the main program, see the <a href="/home/dorado3/galaxy/eggidl/gen/egggenlist.html#MYFLOWMODELCALL">myflowmodel call documentation</a>. Finally, you can also find the function vhel_to_cmb, which converts heliocentric velocities to CMB rest frame velocities, which is very handy.
+
+<p>distance_catalog accepts a (headerless) catalog in either AGC or GALCAT format; the output depends on which option is chosen. For each object, a distance and error are calculated, and two flags are assigned: the flow model flag (which tells you whether the flow model was used to calculate the distance, and if so, whether any problems were encountered) and the distance source flag (which tells you what information was used to estimate the distance; see <a href="#sources">Sources of Distance Information</a> for more info). For an AGC-formatted catalog, the output is "*.agc," a file with 7 columns: AGC number, coordinates (HHMMSSS+DDMMSS), heliocentric velocity, distance (Mpc), distance error (Mpc), flow model flag, and distance source flag. For a GALCAT-formatted catalog, there are three output files: *.info, *.table, and *.tex. The *.info file contains the same information as described for the *.agc case. The two other files, *.table and *.tex, are almost identical, except that the *.tex file includes the markup necessary to make a TEX table of the information. These files are in the table format used in ALFALFA papers: 
+
+<br><br><font face="monospace">object number, AGC #, HI RA and Dec, Optical Counterpart RA & Dec, cz (km/s), W50, Sint (integrated flux, Jy km/s), Serr (Jy km/s), S/N, RMS, distance (Mpc), log(M/Msun), and code. </font> <br><br> Only objects with code 1, 2 and 9 end up in this table; distances are only estimated for code 1 and 2.
+
+
+<p>Distances are <a name="rules">estimated as follows</a>:
+<ol>
+	<li>If an object has a primary distance measurement, that value is adopted. The primary distances file also includes a distance error.
+	<li>If an object belongs to a group, that group's CMB rest-frame velocity is adopted for the object, replacing the measured heliocentric velocity, and then the distance is calculated following the next rules.
+	<li>If an object has a CMB rest-frame velocity greater than 6000 km/s, then the distance is estimated using pure Hubble flow: d= cz / H_0. 6000 km/s is chosen as the cutoff since this is around when the fractional distance errors from using a flow model become roughly equivalent to the errors from assuming 0 peculiar velocity.
+	<li>If an object has a CMB rest-frame velocity less than 6000 km/s, then the distance and error is estimated using the flow model. The flow model returns, in addition to a distance and error, an error flag which lets you know if any problems cropped up for a particular object. Pay attention to your flow model flags!
+</ol>
+
+<p>In case (3) above, no measurement error is currently calculated, so the error columns in output files will read "0" for objects whose distance is estimated using pure Hubble flow.
+
+<hr>
+
+<h3><a name="sources">Sources of Distance Information</a></h3><p>
+<p>There are several sources of distance information that are useful in estimating distances.
+<p> Most useful are dist_calibs.dat and grp_assign.gals. These files reflect the most recent versions of the distance calibrator & group assignment files, and any older versions floating around in the directory should have their effective date in the name (i.e. dist_calibs_Sept07.gals).
+
+<p>The dist_calibs.dat <a href="distcalib.html">documentation</a> explains the columns in dist_calibs.dat (or <a 
+href="/home/dorado3/galaxy/esp3/distcalib/distcalib.html">see it here, in its home 
+directory</a> which includes some other helpful files and information), and can help you figure out where a 
+given primary distance measurement comes from and whether you should trust it. More files can be found at 
+home/dorado3/galaxy/esp3/distcalib/.
+
+<p>The grp_assign.gals <a href="/home/dorado3/galaxy/esp3/groups/group_code.doc">documentation</a> explains the columsn in grp_assign.gals, and also explains the grouping algorithms used for this version of grp_assign.gals. This could be changing in the near future, when new algorithms and datasets are used for the group assignments, so watch out for that as well.
+
+<p>The distance estimation code also makes use of the flowmodel (take a look at the <a href="/home/dorado3/galaxy/eggidl/gen/egggenlist.html#MYFLOWMODELCALL">flowmodel documentation</a>). It's important to remember that the flowmodel doesn't work equally well in different parts of the sky, and that large scale structure is a problem. The Virgo cluster is especially troubling. To help deal with these kinds of issues, any run of the flow model code produces a "flag." A flag of 1 means everything is fine, but there are also cases where a distance can't be found (0), where the distance solution is multiply-valued (2 and 3), or when Virgo or the Great Attractor is a potential source of trouble. Before you publish your distances, <i>you should check your flags</i>.
+
+<hr>
+<h3><a name="overview">Overview of Code: distance_catalog.pro and distance_subroutines</a></h3><p>
+
+<p>The main piece of code is contained in distance_catalog.pro; all subroutines necessary are in a separate file, distance_subroutines.pro. These subroutines & procedures might be helpful in other applications, so their use is outlined here.
+
+<p>distance_subroutines.pro includes
+<ul>
+	<li>knowndistances: This procedure gathers all the known distance information -- it opens dist_calibs.dat and grp_assign.gals, reads these files into arrays, and returns the necessary information to the calling program. The arrays can then be used to assign group and primary distances. From dist_calibs.dat, knowndistances produces the array CALIBAGCNUMBER (a list of the AGC numbers of galaxies with known primary distances) and the arrays CALIBDIST (primary distances in Mpc) and CALIBEDIST (errors, in Mpc). From grp_assign.gals, knowndistances producdes GRPAGCNUMBER (a list of the AGC numbers of galaxies known to belong to groups) and GRPCMBVEL (the CMB-frame velocity of the group to which an object belongs). Called as <font face="monospace">"IDL> knowndistances,calibagcnumber,calibdist,calibedist,grpagcnumber,grpcmbvel."</font>
+	<li>distcalibs_check: This procedure requires an agcnumber as an input; it then uses the results of knowndistances (specifically, calibagcnumber, calibdist, and calibedist) to determine whether the agcnumber belongs to an object with a known primary distance. If so, it assigns the distance & distance error, as well as a distance source flag (98). Called as <font face="monospace">"IDL> distcalibs_check,agcnumber,calibagcnumber,calibdist,calibedist,distcalib,edistcalib,distflagcalib."</font>
+	<li>grpassign_check: This procedure also requires an agcnumber as an input; it then uses the results of knowndistances (specifically, grpagcnumber and grpcmbvel) to determine whether the agcnumber belongs to an object that is a member of a known group. If so, it assigns the group's CMB-frame velocity to the object. The object's distance must then be assessed using rules (3) and (4) <a href="#rules">above</a>. Also, this sets the distance source flag to 97 temporarily; in distance_catalog.pro, this flag is changed to 96 in the case where the group velocity is below 6000 km/s and the object's distance is estimated with the flow model. Called as <font face="monospace">"IDL> grpassign_check,agcnumber,grpagcnumber,grpcmbvel,velgrp_cmb,distflaggroup."</font>
+</ul>
+
+<hr>
+<h3><a name="distancecatalog">Using distance_catalog.pro</a></h3><p>
+
+<p>Call distance_catalog as:
+<pre>IDL> distance_catalog,input_file_type,input_file_name,output_file_string</pre>
+
+<p>The "input file type" is a code to let distance_catalog know whether you are using an AGC formatted catalog (in which case the input_file_type is 0) or a GALCAT formatted catalog (in which case the input_file_type is 1). Remember that the <a href="#products">output products</a> will depend on the catalog type. Also remember to remove header information from your catalog!
+
+<p>The "input file name" is simply the name of the input file; if it's not in your current directory, include the directory structure.
+<p>The "output file string" tells distance_catalog how to name the output files. It has a standard set of outputs -- including *.info -- and the "output file string" will replace the "*" in the name of each output files. If you want to place your output files outside of your current directory, include the directory structure.
+
+<p><b>Examples:</b><br>
+<font face="monospace">IDL> distance_catalog,1,'mycatalog.cat','mycatalog'</font>: Will read "mycatalog.cat" and output mycatalog.info, mycatalog.tex, and mycatalog.table<p>
+<font face="monospace">IDL> distance_catalog,1,'27degstrip/mycatalog.cat','27degstrip/distances/mycatalog</font>: Will read "mycatalog.cat" in the subdirectory "27degstrip," and will place output files mycatalog.info, mycatalog.tex, and mycatalog.table into the sub-subdirectory "distances."
+
+<p><b>Please note</b> that in some cases distances and masses will need to be investigated by hand. One particular example occurs when the flow model returns a distance of 0 (which will lead to a log(himass) of -Inf). In this case, a warning is printed to the screen: "WARNING! Object number ## has 0 distance and infinite mass!" These incorrect values are indeed printed to the .tex and .table files, as another strong reminder that this object warrants further investigation. It's wise to try to figure out why the distance was found to be zero, and to consult the EGG grup about a better estimate.
+
+<p>It is also worth noticing that HVCs will have neither distances nor masses estimated.
+
+<hr>
+<h3><a name="products">Products of distance_catalog.pro</a></h3><p>
+<h4>For an AGC-formatted input catalog:</h4>
+
+<p>The output file will be OUTPUT_FILE_STRING.agc. This file's columns are AGC number, coordinates, adopted heliocentric velocity, calculated distance, the distance error, and 2 flags. The first flag indicates the <a href="#flags">"flow model" flag</a>; if this is any value other than -1, it means that a flow model was used to calculate the distance, and care should be taken. The second flag is the <a href="#flags">"distance source" flag</a>, which indicates how the distance was estimated. Note that in some cases, a distance cannot be measured for an AGC source. This happens when there is not adequate velocity information in a given AGC entry. In such a case, the line is skipped, and a warning is printed to the screen. This could be changed (so that a line is printed for every AGC entry) if it starts to become a problem.
+
+<p>The print statement is reproduced here, so that the file can be read easily:
+<pre>                           
+                                printf,distlun,agcnumber,rah,ram,ras10,sign,decd,decm,decs,pickvel,distgal,edistgal,$
+				flowmodelflag,distflaggal,format='(I6,1X,2I02,I03,A1,3I02,1X,I5,1X,F8.2,1X,F8.2,1X,I2,1X,I2)'
+</pre>
+<br>Before reading, remember to pre-define the strings: sign='', etc.
+
+<h4>For a GALCAT-formatted input catalog:</h4>
+<p>There will be three output files: OUTPUT_FILE_STRING.tex, OUTPUT_FILE_STRING.table, and OUTPUT_FILE_STRING.info.
+
+<p>The .tex and .table files contain the same information, but the .tex file has all the formatting necessary for creating a .tex table out of the results. The table will look like those in the published versions of ALFALFA papers. There are some special notes to keep in mind. In the case where no optical counterpart is identified, blank spaces are printed in the table (rather than zeroes). Blank spaces are also printed for the OC, distance, & mass estimates in the case of a high velocity cloud. The columns are: catalog number, AGC number, HI right ascension, HI declination, Optical R.A., Optical Dec, cz (km/s), W50, integrated flux (Jy km/s), integrated flux error, SNR, RMS, D (Mpc), log (Himass) (Msun), and the detection code.
+
+<p>Note that in <em>published catalogs</em>, each catalog number should be prefixed by the Catalog Release code, i.e. Riccardo's paper was CR1, so his sources were 1-1, 1-2, 1-3.... etc. To see how this is done, take a look at the format statement for *.tex. You would need to change the format statement in each section of the code where lines are written to "texlun", from 
+<pre>                         printf,texlun,catnr,agcnumber . . . format="(i5,'  & ',i6,' . . . . . . . </pre>
+to 
+<pre>                         printf,texlun,catnr,agcnumber . . . format="('2-',i5 . . . .</pre>
+Then the table will read 2-    1 through 2-xxxxx.
+
+<p>OUTPUT_FILE_STRING.table contains the same information as .tex, but without the TEX markup. Here are the column names and the format statement for reading the table file (before reading, remember to pre-define strings: sign='' and optsign='', and to remove the header lines from the file):
+
+<pre>
+			     readf,newlun,catnr,agcnumber,rah,ram,ras,sign,decd,decm,decs,optrah,optram,optras,optsign,$
+			     optdecd,optdecm,optdecs,cz,w50,werr,flux,fluxerr,snr,rms,distmpc,loghimass,code,$					
+			     format='(i5,2x,i6,7x,i2,1x,i2,1x,f4.1,8x,a1,i2,1x,i2,1x,i2,7x,i2,1x,i2,1x,f4.1,8x,a1,i2,1x,i2,$
+			     1x,i2,2x,i6,2x,i5,2x,i3,2x,f6.2,2x,f4.2,2x,f7.1,2x,f6.2,2x,f6.1,2x,f6.2,2x,i1)'
+</pre>
+
+<p>OUTPUT_FILE_STRING.info is an informative table for internal use only that provides information on the source of the distances that appear in the other two tables. This file is identical in format to OUTPUT_FILE_STRING.agc, and includes the following columns: AGC number, coordinates (hhmmss.s+ddmmss), heliocentric velocity, distance (Mpc), distance error (Mpc), flowmodel flag, distance source flag.
+
+<h4><font color="red"><a name="flags">Flag codes:</a></font></h4>
+<p>Flags are defined as follows:
+
+<p><b>Flow model flag</b>: The flow model uses codes 0,1,2,3,10,11,12,13,20,21,22,23 and 30. If the flowmodel flag is -1, that means the flowmodel was not at all employed in the distance determination for that object. Flow model flags indicate possible problems with the distance and error obtained using the flow model. IF the flow model flag is anything other than a 1, 10 or 20 is is probably worth investigating and thinking about. The flowmodel flags are defined as follows:
+<pre>
+                       0: No distance found. Usually close to D=0Mpc
+                       1: Everything is fine, single valued distance
+                      2: Double valued distance
+                      3: Triple valued distance
+                      10: Assigned to Virgo Core
+                      11: Near Virgo (within 6Mpc which is region where SB00 
+                          claim that model is "uncertain"), single valued 
+                      12: Near Virgo (within 6Mpc which is region where SB00 
+                          claim that model is "uncertain"), double valued 
+                      13: Near Virgo (within 6Mpc which is region where SB00 
+                          claim that model is "uncertain"), triple valued 
+                      20: Assigned to GA Core
+                      21: Near GA (within 10Mpc which is region where SB00 
+                          claim that model is "uncertain"), single valued
+                      22: Near GA (within 10Mpc which is region where SB00 
+                          claim that model is "uncertain"), double valued
+                      23: Near GA (within 10Mpc which is region where SB00 
+                          claim that model is "uncertain"), triple valued
+                      30: Assigned to Core of Fornax cluster
+</pre>
+
+<p><b>Distance source flag</b>:
+<p>The second flag indicates the source of the distance. Since each method has its advantages and disadvantages, it's wise to pay attention to this flag, especially for nearby objects.
+<pre>
+	-1 - no distance (High Velocity Cloud)	
+	99 - distance estimated using pure Hubble flow, using the object's CMB rest frame velocity and a
+		Hubble parameter H_0 = 70.0 km/s/Mpc. This applies to objects (or groups) with CMB frame
+		velocities greater than 6000 km/s. At the moment, the error on such a distance is given as 0.
+	98 - distance is from a primary distance measurement.
+	97 - object belongs to a group with a CMB rest frame velocity greater than 6000 km/s, so the distance
+		to the object was estimated using pure Hubble flow from the object's CMB frame velocity.
+	96 - object belongs to a group with a CMB rest frame velocity less than 6000 km/s, so the distance to
+		the object was estimated using the flow model and using the group's velocity.
+	95 - object belongs to a group, and one member has a primary distance, so all objects in the group
+		are assigned to that distance. ***THIS IS NOT EMPLOYED AT THE MOMENT BUT WILL BE IN THE FUTURE.***
+	94 - the object does not have a primary distance measurement, and does not belong to a group, so a flow
+		model distance is given.
+</pre>
+<hr>
+<h3><a name="notes">Special Notes and Hints</a></h3><p>
+
+
+</p><b>If you are writing your own wrapper routines it is important to
+update them to reflect the decision to use Hubble flow distances for
+CMB-frame velocities greater than 6000 km/s.</b> The <a href="#rules">"rules"</a> for determining distances should be followed even in a case where distance_catalog.pro is for some reason not used.
+
+
+<p>The .info (and .agc) files can be very useful -- using the flags can help you determine how "trustworthy" a given distance and mass estimate are. Be sure to take advantage of this extra information!
+
+<p>There will soon be a utility to take a *.table file and convert it to a .tex file <i>including</i> asterisks for entries with footnotes and TEX-formatted footnotes. Watch this space!
+
+</p><hr>
+<font color="red"><i>Written by amartin, 5 September 2007.</i></font>
+ 
+</body></html>

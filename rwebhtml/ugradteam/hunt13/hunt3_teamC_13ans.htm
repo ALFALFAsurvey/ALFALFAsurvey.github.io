@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<br>
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<font color=#008000><b> Try to finish this hunt by 7pm on Wednesday evening</b></font>
+</td></tr></table></p>
+<b><font color=#cc0f14> UAT13.01 Scavenger Hunt #3:</font> <br>
+<font color=#008000>
+Introduction to how we can use ALFALFA in combination
+with other datasets to explore the local galaxy population</font></b></p></center>
+
+This scavenger hunt will provide an introduction to the ALFALFA and SDSS catalogs, deriving 
+galaxy properties from observational data, what the ALFALFA galaxy population is like
+compared to an optically selected one and investigating the large scale structure. 
+As an example of the kind of science the UAT groups project is doing,
+we will take a quick look at the galaxy population in ALFALFA, in the SDSS database
+and in the vicinity of the nearby "poor" cluster known as MKW 11. </p><br>
+
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<b><font color=#ccof14> In a departure from previous Scavenger Hunts, each team will be
+assigned a separate project dealing with the use of ALFALFA data to learn about galaxies in the local universe.
+We will then reassemble Wednesday evening when team will have 10 minutes to present their results.
+</font> </b></td></tr></table></center></p><br><br>
+
+<h3><font color=#ccof14> Team C:</font> &nbsp &nbsp &nbsp <font color=#008000>Large scale structure around
+the poor cluster MKW 11</h3></font></p><br>
+
+
+The Undergraduate ALFALFA Team groups project is a joint effort to explore how local galaxy 
+environment impact the evolution of galaxies. In this activity, you will examine the large scale structure
+and membership of the nearby "poor" cluster known as MKW 11. One of the other teams will be looking 
+at the properties of the galaxies in the region of the cluster. Your task is to study the
+structure of the cluster itself and its position within the local large scale structure.</p>
+
+<b>3.C.1 &nbsp &nbsp The cluster MKW 11</b></p>
+Use this <a href="http://ned.ipac.caltech.edu/cgi-bin/nph-objsearch?objname=MKW11&extend=no&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=RA+or+Longitude&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES#ObjNo1">link</a> to the NASA
+Extragalatic Database (NED)
+to find out some of the basic information about MKW 11 that you will need. Notice that it has numerous
+other names include the "NGC 5171 group". </p>
+
+<table border=4 cellpadding=5>
+<tr><td> R.A.(J2000) </td><td width=500> &nbsp </td></tr>
+<tr><td> Dec.(J2000) </td><td> &nbsp </td></tr>
+<tr><td> Recessional velocity in heliocentric rest frame </td><td> &nbsp </td></tr>
+<tr><td> Recessional velocity in CMB rest frame </td><td> &nbsp </td></tr>
+<tr><td> Distance to the cluster (quoted in NED)</td><td> &nbsp </td></tr>
+<tr><td> Galactic latitude </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in g-band </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in i-band </td><td> &nbsp </td></tr>
+</table></p><br>
+
+Using the information and links in NED, learn what you can about the cluster.
+Here are some questions to get you started.
+
+<ul>
+<li> What is a "poor" cluster?</p>
+<li> What does "MKW" stand for?
+<br>
+<b><font color=#cc0f14> Morgan, Kayser and White: see ApJ 199, 545 (1975).
+</font></b>
+</p>
+
+<li> What are other names for this same group?
+<br>
+<b><font color=#cc0f14>
+NGC 5171 Group; NGC 5176 group; WBL 447; RASSCALS NRGb 247 and others...
+</font></b></p>
+
+<li> What is the basic difference between the frame B1950.0 and J2000.0?
+<br>
+<b><font color=#cc0f14> Reference epoch for coordinates. 
+</font></b></p>
+</ul>
+
+To review the large scale structure in and around MKW 11, we can use the "Arecibo General Catalog", the private database
+of galaxies maintained by Martha and Riccardo at Cornell which is made available to members of the ALFALFA team with
+the usual caveat that you get what you pay for: be sure to understand the limitations of the AGC and read about its
+<a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agccontract.php">conditions of use</a>.</p>
+
+We have used the AGC to create two CSV files for use in this activity: 
+<ul>
+<li> <a href="files/MKW11.6deg.vopt.radec.csv">galaxies with optical heliocentric velocities</a> within 6 degrees of the center of MK W11
+<li> <a href="files/MKW11.6deg.v21a40.radec.csv">galaxies in &alpha;.40 with HI 21cm line heliocentric velocities</a> within 6 degrees of the center of MKW 11
+</ul>
+The files contain the galaxy AGC number, RA, Dec, Vhelio and the projected separation of the galaxy from the cluster center in arcminutes.
+You can use these files to explore the structure of the cluster.</p><br>
+
+
+<br>
+<b>3.C.2 &nbsp &nbsp The sky distribution of galaxies in the cluster MKW 11</b></p><br> 
+
+First, let's take a look at the distribution of galaxies in the vicinity of MKW 11. 
+Using the AGC/&alpha;.40 data files (linked above), plot (on the same graph)
+the sky distribution of galaxies in the (a)
+optical sample and (b) the &alpha;.40 galaxies. Plot the optical sample first, since it is much bigger.
+Be sure to plot the distribution so that east is to the left and west is the right; why do we do that?
+Consider the result: what do you notice and how can you explain what you see? </p>
+
+Clusters of galaxies have a typical radius of 2 Mpc. At the distance of MKW 11, what
+is the angular extent of 2 Mpc?</p>
+
+<br>
+<b><font color=#cc0f14>
+<img src="files/MKW11.6deg.opt+hi.allvel.radec.gif" height=300></p>
+
+The NED CMB distance is 97.8 Mpc. At that distance, 2 Mpc is about 70 arcmin.
+So we really ought to be looking only at the objects within that separation from the
+center of the cluster. You can see here that there are a lot more galaxies in the optical sample
+than in the HI same. The cluster is almost visible.</p></font></b>
+
+</p>
+
+Make a second plot, zooming in on the region around the center. 
+Comment on what you see. Is the cluster evident in both samples?</p>
+
+<br>
+<b><font color=#cc0f14>
+<img src="files/MKW11.6deg.opt+hi.allvel.radec.zoom.gif" height=300></p>
+The cluster is visible in the optical sample but not the &alpha;.40 one.</p></font></b>
+
+</font></b></p>
+<br>
+
+<b>3.C.3 &nbsp &nbsp The distribution of heliocentric velocity with projected separation</b></p><br> 
+In the previous plots, we did not make use of the redshift information; it's time to do that.
+Using the same data files (linked above), plot (on the same graph)
+the variation in heliocentric velocities (y-axis) with the projected separation from the
+cluster center (x-axis) for the (a) optical sample and (b) the &alpha;.40 galaxies. 
+Consider the result: what do you notice and how can you explain what you see? </p>
+
+<br>
+<b><font color=#cc0f14>
+<img src="files/MKW11.6deg.opt+hi.allvel.sepvsvel.gif" height=300></p>
+
+Who are those guys in the background?
+</font></b></p>
+<br>
+
+
+<b>3.C.4 &nbsp &nbsp The velocity structure of MKW 11</b></p><br> 
+
+Now, let's focus on the cluster itself. Using the same data files again, plot
+(on the same graph)
+the distribution of heliocentric velocities (using the histogram option)
+for the (a) optical sample and (b) the &alpha;.40 galaxies. 
+Consider the result: what do you notice and how can you explain what you see? 
+</p>
+Now let's examine just the galaxies within 2 Mpc of the cluster center.
+If time permits, try to figure out how you can generate the file you need
+within TOPCAT. If you are rushed for time, you can use these two files
+already made up for you:
+<ul>
+<li> <a href="files/MKW11.1.17deg.vopt.radec.csv">galaxies with optical heliocentric velocities</a> within 2 Mpc of the center of MK W11
+<li> <a href="files/MKW11.1.17deg.v21a40.radec.csv">galaxies in &alpha;.40 with HI 21cm line heliocentric velocities</a> within 2 Mpc of the center of MKW 11</p>
+</ul>
+
+Comment on what you see and discuss how you might use this result.</p>
+<br>
+<b><font color=#cc0f14>
+<img src="files/MKW11.6deg.opt+hia40.allvel.histovel.gif" height=250></p>
+
+<img src="files/MKW11.1.17deg.opt+hia40.allvel.histovel.gif" height=250></p>
+
+</font></b></p>
+
+
+Next focus in on the cluster itself to make a histogram of 
+only the galaxies within 2 Mpc of MKW 11 and in the velocity range
+Vhelio: (5850 to 7850 km/s), for either Vopt or V21. Again, you can
+figure out how to generate the file you need in TOPCAT or if time is short, use
+<a href="files/MKW11.1.17deg.vhelio.5850to7850.radec.csv">this one</a>.</p>
+
+Again comment on what you see and discuss how you might use this result.</p>
+
+<br>
+<b><font color=#cc0f14>
+<img src="files/MKW11.1.17deg.eithervel.histovelzoom.gif" height=250></p>
+</font></b></p>
+<br>
+
+<b>3.B.5 &nbsp &nbsp The large scale structure around MKW 11</b></p><br> 
+
+Now, let's examine the very large scale structure you see. A convenient way to
+examine large scale structure is to make a "cone diagram" of an almost-2-D
+"slice". For this purpose, there are two more files containing galaxies in
+a 5 degree wide "slice" of the universe: RA: (7.5 to 16.5 hours), Dec: (10.5 to 15.5deg),
+Vhelio: (0, 18000 km/s). As before, there are two files:
+<ul>
+<li> <a href="files/slice.7.5to16.5.10.5to15.vopt.csv">galaxies with optical velocities</a> in the slice crossing MKW 11
+<li> <a href="files/slice.7.5to16.5.10.5to15.v21a40.csv">galaxies in &alpha;.40</a> in the slice crossing MKW 11
+</ul>
+
+
+Consider the results: what do you notice and how can you explain what you see? What are the typical sizes of
+structures that are visible?
+<ul>
+<li> Identify a filamentary structure. How long (in Mpc) is it (assuming it is real)?
+<li> In what movie is Clark Gable's character determined to return to the Bungo Straights?
+<li> Identify a void in the distribution. How big (in Mpc) is it?
+</ul></br>
+
+<br>
+<b><font color=#cc0f14>
+
+<img src="files/sliceMKW11.vopt+v21a40.gif" height=300></p>
+
+In this case, I have already flipped the x axis, so no need to flip again.
+</font></b></p>
+<br>
+
+
+<b>3.C.6 &nbsp &nbsp Make an image of the MKW 11 cluster using Montage</b></p>
+<i>Note: this may take a little while to run, because system use at IPAC is
+unpredictable. We suggest you not wait until the last minute to start it.</i></p>
+
+<i>Note also: Someone in your group will have already be registered
+to use this facility, or else one of you will have to setup up
+an account; find someone in your group to be the registered user and
+then proceed. We suggest you not wait until the last minute to start it.</i></p>
+
+<b> Montage</b> is a Virtual Observatory tool that allows you to make 
+images up to 1 degree in size from selected public databases via a 
+<a href="http://hachi.ipac.caltech.edu:8080/montage/">
+web-based interface</a>. Read about the full capabilities of the service
+<a href="http://montage.ipac.caltech.edu/">here</a>.
+</p>
+
+
+Use the <b> Montage</b> <a href="http://hachi.ipac.caltech.edu:8080/montage/"> web service</a>
+to create a 1 degree image of the SDSS i-band data for MKW 11. How many original
+SDSS images go into making up this mosaic? How long does it take for the job to run (seconds,
+minutes, hours, days)?
+What kinds of output are produced? Figure out a way to show us the "result page".</p>
+
+<b>Note</b>: during UAT13, we are having some trouble access the Montage Web service.
+If that is the case, you can download the resulting FITS file
+ <a href="montagefits/mkw11_1deg_iband.mosaic.fits">here</a>,
+keeping in mind that it is a fairly large file (618 MB).</p>
+
+
+Team D is going to be looking at the g-band image of the
+inner 0.5 degrees of the cluster; it will be interesting
+to compare results with them.</p>
+
+<i>If someone in your group has access to 
+<a href="http://hea-www.harvard.edu/RD/ds9/site/Home.html"><b>ds9</b></a>, you can examine the FITS image.</i></p>
+
+
+<br>
+<b> <font color=#cc0f14>
+When I am running this (Wed am 10:15), I just input MKW 11 (not coords) into the
+object/coordinate field. There were 60 images to be reprojected; background correction
+analysis done on 217 overlaps; then background correcting 60 images; then
+coadding 60 images for the final mosaic; then creating presentation
+It took 1308 seconds to run, but then I didn't see the result right away...
+If you "save as", it creates an html file that includes a subdirectory with
+the "mosaic.jpg" image:</p>
+
+<img src="files/MKW11_montagemosaic.jpg" height=300></p>
+
+</font></b></p>
+<br>
+
+<br>
+<br>
+
+<hr>
+<h3><font color=#cc0f14> Assignments given to the other teams:</h3>
+<ul>
+<li> <b><font color=#ccof14> Team A: &nbsp &nbsp &nbsp </b></font>
+<a href="hunt3_teamA_13.htm">The population of galaxies detected by ALFALFA</a></p>
+
+<li> <b><font color=#ccof14> Team B: &nbsp &nbsp &nbsp</b></font>
+<a href="hunt3_teamB_13.htm">A quick look at the Virgo cluster</a></p>
+
+<li> <b><font color=#ccof14> Team D: &nbsp &nbsp &nbsp </b></font>
+<a href="hunt3_teamD_13.htm">The galaxies in the MKW 11 cluster</a></p>
+</ul>
+
+<br>
+<hr>
+<font color=#cc0f14>
+This page created by and for the members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> 
+Survey Undergraduate team</font></address>
+</p>
+<!-- hhmts start -->
+<font color=#008000><i>Last modified: Thu Jan 10 08:37:45 EST 2013
+</i> by Martha </font>
+<!-- hhmts end -->
+</body>

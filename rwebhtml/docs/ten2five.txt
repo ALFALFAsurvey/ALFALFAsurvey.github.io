@@ -1,0 +1,82 @@
+22 December 2011
+
+To:         NSF-AST Portfolio Review Committee
+From:       M.P. Haynes, R. Giovanelli, D.B. Campbell, G. Cortes-Medellin,
+            R.A. Koopmann and the ALFALFA Extragalactic HI Survey Team
+            http://egg.astro.cornell.edu/alfalfa/people.php
+
+Questions:  How do baryons cycle in and out of galaxies?
+            What is dark matter?
+Approach:   Counting the Leo T analogs in nearby groups by detecting their
+            atomic gas cores via the HI 21cm line
+Context:    Outside the virial radii of large galaxies, low mass halos may 
+            either retain their baryons post-reionization or re-accrete gas at
+            recent epochs. Most of the baryons would reside in a warm ionized
+            envelope surrounding a cooler core of atomic gas, and few, if any,
+            stars. Leo T serves as the prototype of such objects. The robust
+            counting of low mass dwarfs in groups could potentially constrain
+            dark matter decay models (decay injects kinetic energy that can
+            unbind dwarfs).
+Needs:      Arecibo's collecting area and survey capability, enhanced by a
+            cooled 40-beam phased array feed ("AO40"; in development), will
+            enable a survey of Leo T analogs out to 7-10 Mpc. No other survey
+            previous, on-going or planned for this decade will achieve comparable
+            capability to detect such a population of low mass dwarfs beyond 
+            the Local Group.
+                 
+**  Overview: 
+
+One of the Astro2010 science frontier questions related to "Understanding the Cosmic Order" asks how baryons cycle in and out of galaxies. Dark matter halos of mass below log Mtot/Msun < 10 (e.g. <a href="http://adsabs.harvard.edu/abs/2006MNRAS.371..401H">Hoeft+ 2006</a>) are baryon-poor. Studying the process(es) which impose this depletion requires advances in (g)astrophysics (reionization, feedback, etc) and better observational constraints on the baryon content of low mass dwarfs. Exploiting a cooled 40-beam focal plane phased array feed (PAF) now in development, an Arecibo survey of several hundred square degrees around 2-3 nearby groups of galaxies would detect and catalog their population of HI-bearing dwarfs with log MHI > 5, comparable to the HI mass of the Local Group dwarf Leo T. The combination of sensitivity, modest resolution and survey speed made possible by a 40-beam PAF on the Arecibo antenna ("AO40") will enable such a survey in <2000 hours of telescope time starting in 2014. The observing program and software pipeline will rely on the extension of the infrastructure already developed for the ALFALFA survey (to be completed in 2012) using the 7-beam feed horn array (ALFA). A PAF on a single dish can be cooled, and its data reduction requires greatly reduced computational power than does an antenna array. In addition, a drift scan survey conducted with a PAF on a single dish employs a simple, extremely efficient technique that, as demonstrated clearly by ALFALFA, delivers high quality data with >97% "open shutter" time and can be easily and intuitively understood by students at all levels, making it an excellent platform for the active engagement of a broad collaborative team.
+
+
+**  Background: 
+
+-- A widely adopted explanation of the mismatch between the predictions of numerical simulations and the observed census of low mass dwarf galaxies, the "missing satellites" problem, is that gas accretion onto low mass halos is suppressed by reionization. However, <a href="http://adsabs.harvard.edu/abs/2002ApJS..143..419S">
+Sternberg, McKee & Wolfire (2002)</a> argue that even dark matter halos of mass well below log Mtot/Msun < 10 can retain a fraction of their baryons. These would largely be in the form of ionized gas surrounding a central region of atomic HI. Furthermore, <a href="http://adsabs.harvard.edu/abs/2009MNRAS.392L..45R">Ricotti (2009)</a> points out that, as the intergalactic medium cools and the degree of central concentration of halos increases, gas accretion onto small halos might resume.
+
+-- Most of the ultra faint Local Group dwarfs discovered in recent years are gas-poor dwarf spheroidals located close to the Milky Way and Andromeda. The Local Group shows strong morphological segregation; the dwarfs with gas are widely distributed throughout the group (Grebel, Gallagher & Harbeck 2003: http://adsabs.harvard.edu/abs/2003AJ....125.1926G; Grcevich & Putman 2010: http://adsabs.harvard.edu/abs/2009ApJ...696..385G; corrected figure at http://adsabs.harvard.edu/abs/2010ApJ...721..922G; cartoon at http://ned.ipac.caltech.edu/level5/Grebel/Figures/figure1.jpeg). The best place to look for low mass gas-bearing halos is in the less hostile environments outside the virial radii of the large galaxies in loose groups.
+
+-- Just outside the virial radius of the Milky Way at a distance of 420 kpc, the recently discovered dwarf Leo T (Ryan-Weber+ 2008: http://adsabs.harvard.edu/abs/2008MNRAS.384..535R) is a star forming galaxy with log MHI/Msun = 5.4, an HI radius of 300 pc, an optical luminosity log Lopt/Lsun = 5.1 and a dynamical mass within the HI radius of log Mdyn/Msun = 6.5. Most of its baryonic mass is in the form of cool HI gas. Leo T thus serves as the prototype of a class of (nearly) starless but gas-bearing low mass dark matter halos whose existence we aim to quantify.
+
+
+**  What We Know Today about Gas-Bearing Low Mass Dark Matter Halos 
+
+-- The precipitous drop in the cold baryon fraction for halos of mass log Mtot/Msun < 10 proposed by the simulations of Hoeft+ and the models of Sternberg, McKee & Wolfire can explain the shallow slopes of the low end of the optical luminosity and HI mass functions. The model emerges of a low mass dark matter halo containing a core of cooler HI gas surrounded by a warmer envelope. In such cases, rotational velocities derived from the HI distribution would systematically underestimate the maximum rotational velocities of their host dark matter halos (Papastergis+ 2011: http://adsabs.harvard.edu/abs/2011ApJ...739...38P).
+
+-- The ALFALFA extragalactic HI survey has identified a set of ultracompact (sizes less than 4 to 15 arcmin) HI high velocity (do not follow galactic rotation) clouds (HVCs) which have HI properties comparable to that of Leo T if they lie at 1 Mpc and which do not violate astrophysical contraints on their concentration or gas fragility. The trick is determining their distances; with gas-to-stellar ratios comparable to Leo T, their stellar counterparts would not have been detectable in the current generation of optical surveys (e.g. SDSS). Complicating matters, their velocities overlap those of the general HI HVC population and the Magellanic Stream. On-going work (E. Adams 2012: PhD thesis in prep) is investigating a set of these, found using an optimally-designed signal extractor and isolation criteria in the ALFALFA dataset, to look for optical counterparts, cold cores and/or diffuse Halpha (which might put them in the Milky Way). See: Giovanelli+ (2010: http://adsabs.harvard.edu/abs/2010ApJ...708L..22G).
+
+-- Because of the uncertainties in distances within the Local Group in the absence of a detectable stellar counterpart, the clinching evidence that the lowest HI mass clouds are in fact the cores of isolated low mass dark matter halos will require a census of Leo T analogs in other very nearby volumes. At distances of 5-10 Mpc, low HI mass dwarfs will separate in velocity from the range of galactic and perigalactic phenomena, thereby allowing a direct estimate of distance without requiring the detection of stellar counterparts. No on-going (ALFALFA or other ALFA surveys) or previous (e.g. Pisano+ 2011: http://adsabs.harvard.edu/abs/2011ApJS..197...28P) blind HI surveys have the combination of sensitivity and solid angle coverage required to detect and quantify a distributed population of Leo T analogs beyond the Local Group. 
+
+
+** Design of a Survey for Low Mass Dark Matter Halos in Nearby Groups
+
+-- To survey a required volume once the HI mass is detectable at an astrophysically interesting distance, it is more important to maximize solid angle than to increase the survey depth (c.f. Sect. 4 of Giovanelli+ 2005: http://adsabs.harvard.edu/abs/2005AJ....130.2598G). A survey of very nearby groups with sensitivity about 10X that of ALFALFA (with its ~40 sec/beam integration time) and covering a few 100 square degrees will deliver the required sampling.
+       
+-- The design of astronomical surveys should be optimized for their science goals. To look for dwarfs with HI masses in the range 5 < log MHI/Msun < 7 in a few very nearby groups, the primary considerations are (1) sensitivity and (2) sky coverage. So the question is: how can a modest (few 100 sqd) sky area be surveyed with optimum sensitivity and efficiency? Arecibo's unmatched instantaneous sensitivity is optimal for such detection experiments. Its modest resolution (3.5 arcmin) is not an issue for a detection experiment; most of the surveyed volume will in fact be empty, and source confusion is not important at the low redshift of the volume surveyed. Since AO40 will be cryogenically cooled, it will have a survey speed comparable to, or exceeding, any of the proposed SKA pathfinder arrays (ASKAP, APERTIF, MeerKAT). Even if the design and detection goals of the SKA pathfinders are met, the wide-field HI surveys being planned with SKA pathfinders will not detect a significant population of log MH/Msun~5 HI sources beyond the Local Group. Before the full SKA is built, the only potential competitor to Arecibo for such a survey might be FAST (the Chinese fixed spherical antenna) but only when its very complex active control systems eventually works; a 19-horn feed array is planned for FAST, not a 40-beam PAF. Moreover, Arecibo already exists, and a proto-type PAF (uncooled, with 19 beams) will be tested in 2012. With luck, we could start this survey in 2014.
+
+-- Not only can such a survey address the "missing satellites" problem (which may not actually be a problem), but a simple, robust counting of low mass dwarfs in groups can constrain dark matter decay models (Peter, Moody & Kamionkowski 2010: http://adsabs.harvard.edu/abs/2010PhRvD..81j3501P). While this test may more speculative, an HI survey would be much cheaper than many dark matter physics experiments.
+
+-- Furthermore, while there is some question about whether Leo T is even bound to the Local Group; such a survey can really dig into the population of marginally bound or infalling low mass dwarfs in groups.  There is a large body of theory requiring cold gas flows into galaxies and groups, but these are very difficult to observe (and planned facilities are very expensive). But why wouldn't high density peaks in these flows condense and be revealed by such low mass dwarfs?  Perhaps Leo T analogs might be a tracer of these flows? A statistical sample with good velocities and distances from group centers could address this question.
+
+-- In addition to probing the lowest HI mass dwarf galaxies, such a survey would also provide a wealthy dataset of more massive objects detected in the background of the target groups. The need to overcome cosmic variance here is another reason why we propose to observe 2-3 fields of >100 sqd each.
+
+-- One of the most remarkable aspects of the Arecibo ALFA surveys is their "commensal" nature: the signal can be sent to multiple backends with no loss of photons, enabling the simultaneous acquisition of data for entirely different science programs. Since 2006, while the ALFALFA observations have been collected, a separate signal path has enabled the TOGS ("Turn on the GALFA Spectrometer") galactic HI survey (e.g. Peek+ 2011: http://adsabs.harvard.edu/abs/2011ApJS..194...20P). To date, practical limitations on the volume of acquired data and the required computational processing power have stood in the way of a commensal high latitude pulsar/transient survey. A deep survey of a few hundred sqd with many repeat passes of the same area offers a more interesting cadence for a pulsar/transient high latitude survey than does ALFALFA. As before, the design and execution of commensal programs would be part of the advanced planning for a future HI survey with AO40.
+
+
+** The ALFALFA survey as a paradigm for a future AO40 survey:
+
+-- ALFALFA (the Arecibo Legacy Fast ALFA Survey) aims to conduct a robust census of HI-bearing objects over a cosmologically significant volume in the local universe (Giovanelli+ 2005: http://adsabs.harvard.edu/abs/2005AJ....130.2598G). Begun in 2005, ALFALFA is covering ~7000 sqd of high galactic latitude sky. As of Dec 2011, 95% of the observations are complete, 50% of the acquired data have been fully processed and a catalog of 40% of the final area has been published (Haynes+ 2011: http://adsabs.harvard.edu/abs/2011AJ....142..170H). Actually exceeding our pre-survey expectations, ALFALFA yields a factor of 29 improvement in source density compared to HIPASS (e.g. Meyer+ 2004: http://adsabs.harvard.edu/abs/2004MNRAS.350.1195M).
+
+-- As of Dec 2011, 43 papers based on ALFALFA have been published in or submitted to the refereed literature; see the ALFALFA publications web page: http://egg.astro.cornell.edu/alfalfa/pubs.php
+
+-- ALFALFA has detected a population of very high HI mass (log MHI/Msun > 10) galaxies which are exceptionally gas rich for their stellar masses, unrecognized in previous surveys because of their lack of volume sensitivity (Martin+ 2011: http://adsabs.harvard.edu/abs/2010ApJ...723.1359M; Haynes+2011). At the low mass end, ALFALFA has already detected more than 10 times as many galaxies with log MHI/Msun < 8 than did HIPASS. Preliminary results of the Survey of HI in Extremely Low-mass Dwarfs (SHIELD; Cannon+ 2011: http://adsabs.harvard.edu/abs/2011ApJ...739L..22C) already suggest that these systems form their stars under different conditions than in more massive galaxies.
+
+-- ALFALFA makes use of the 7-feed ALFA array in J2000 drift-scan mode. Science data are acquired in > 97% of each observing block (2% lost to setup/shutdown). Data are processed using a pipeline developed in IDL which runs on modest platforms (2005-era hardware) and has been exported to more than 30 sites. VO-tools embedded in the processing software permit examination of and cross-correlation with other public datasets simultaneously with the HI spectral data. As a result, ALFALFA catalogs include not just the HI detection but also an assignment of the most probable optical counterpart and cross-reference to SDSS. Extending the existing software to 40 beams should be fairly easy and easily-accommodated by 2014-era hardware; future software development will focus on RFI (radio interference) identification and excision.
+
+-- The ALFALFA collaboration is open; many new members, especially students, have joined since the survey began, expanding the survey's scientific and educational reach. Many of the ALFALFA follow-up programs have matured into complex, multiwavelength endeavors that involve many students and postdocs. ALFALFA is a university and college based collaboration; there are no professional full-time ALFALFA staff.
+
+-- As of Dec 2011, 7 ALFALFA-based PhDs have been completed; 10 more are underway. 
+
+-- The Undergraduate ALFALFA team (UAT) is a consortium of 18 institutions engaged in a separately NSF-funded program to promote undergraduate research within the ALFALFA project: http://egg.astro.cornell.edu/alfalfa/ugradteam/ugradteam.php. As of Jan 2012, 145 undergraduates and 21 faculty have participated in some aspect (e.g., workshops, summer research, senior thesis, observing) of the UAT program. For example, in Fall 2011, the observations on 21 of the 33 observing nights allocated to ALFALFA were conducted via remote observing from UAT institutions (15 sessions) or by UAT faculty and students on site at Arecibo (6 sessions). The others were conducted remotely by graduate students from 4 different institutions. 
+
+-- The model we have developed for ALFALFA will apply equally well to AO40 science. Undergraduates, graduate students, postdocs and faculty at a diverse set of US institutions will participate directly and collaboratively in a cutting-edge observational program using a major national observatory and results will be disseminated via Team EPO efforts (e.g., see: http://alfalfasurvey.wordpress.com/). 

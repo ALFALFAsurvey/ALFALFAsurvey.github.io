@@ -1,0 +1,116 @@
+<html>
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+
+<!-- PAGE CONTENT BEGINS HERE -->
+
+
+<b>Note: Martha needs to check this Sep 13, 2009, to make sure the database hasn't
+been changed....</b>
+
+<h3><font color=#008000>Getting started running SQL on SDSS</font></h3>
+
+<ul>
+Learn about <a href="http://dev.mysql.com/doc/refman/5.0/en/tutorial.html" target=new>"Structured Query Language"</a> tools.</p>
+<li> Find some high redshift quasars by running a query as follows:
+  <ul>
+  <li>-- Go to the SDSS DR7 SQL server, where we will run a query to identify a set of distant quasars.
+         Click on
+        <a href="http://cas.sdss.org/dr7/en/tools/search/sql.asp" target=new>http://cas.sdss.org/dr7/en/tools/search/sql.asp</a>
+  <li>-- Read the "Please Note" at the top of this page. The query we've selected won't
+   stretch the system, but please follow the rules if you try one on your own!
+  <li>-- Erase the words written in the white window and replace them with the following
+   query; set the output format to HTML.<br>
+<pre>
+SELECT
+  p.ra, p.dec, s.z, p.petroMag_r,
+  p.petroR90_r, p.lnLExp_r, p.lnLDeV_r, p.expAB_r, p.isoPhi_r
+FROM PhotoObj p, SpecObj s, SpecLine l
+WHERE
+  p.SpecObjID = s.SpecObjID AND
+  p.SpecObjID = l.specobjID AND
+  l.lineID = dbo.fSpecLineNames('CIV_1549') AND
+  p.ra >= 120 AND p.ra <= 150 AND
+  p.dec >= 5 AND p.dec <=10 AND
+  s.z >= 5.0
+order by p.ra
+</pre>
+
+This will run for a short time. It should return you exactly 4 objects.</p>
+
+<li> Understand the criteria that are being used by this query to identify objects
+      in the database. This will require you to explore the syntax of the
+      query --- but it should be pretty obvious!</p>
+
+<li> Check out the <a href="http://cas.sdss.org/dr7/en/tools/chart/navi.asp" target=new>
+   DR7 Navigator and Explore Tools</a>  (http://cas.sdss.org/dr7/en/tools/chart/navi.asp)
+   to investigate the image and spectrum of each object. Learn to use those tools to examine
+   the images and spectra of the quasars found above.</p>
+</ul>
+<li> Check out these sample queries used by your friends in the Cornell EGG.
+Understand for yourself what they do.</p>
+<pre>
+*************
+Select a set of inclined disk galaxies by H-alpha redshift
+SELECT
+  p.ra, p.dec, s.z, p.expAB_r, p.fiberMag_r, p.petroMag_r, 
+  p.petroR90_r, p.lnLExp_r, p.lnLDeV_r, l.sigma, l.sigmaErr, 
+  l.ew, l.ewErr, l.chisq, l.nu, s.zWarning, p.isoPhi_u, 
+  p.isoPhi_g, p.isoPhi_r, p.isoPhi_i, p.isoPhi_z
+FROM PhotoObj p, SpecObj s, SpecLine l
+WHERE 
+  p.SpecObjID = s.SpecObjID AND
+  p.SpecObjID = l.specobjID AND
+  s.specClass=2 AND
+  l.sigma >= 2.1897 AND l.sigma <= 15.3280 AND
+  p.lnLExp_r > (13.81+p.lnLDeV_r) AND
+  l.lineID = dbo.fSpecLineNames('Ha_6565') AND
+  (p.ra >= 345 OR p.ra <= 45 ) AND
+  p.dec >= 5 AND p.dec <=35 AND
+  s.z <= 0.003
+order by p.lnLExp_r desc
+
+**********
+
+Select by velocity dispersion:
+
+SELECT
+  p.ra, p.dec, s.z, p.expAB_r, p.petroMag_r,
+  p.petroR90_r, p.lnLExp_r, p.lnLDeV_r, l.sigma, l.sigmaErr,
+  l.ew, l.ewErr, l.chisq, l.nu, s.zWarning, p.isoPhi_r, p.isoPhi_i
+FROM PhotoObj p, SpecObj s, SpecLine l
+WHERE
+  p.SpecObjID = s.SpecObjID AND
+  p.SpecObjID = l.specobjID AND
+  s.eClass < 0 AND
+  p.fracDev_r > 0.8 AND
+  l.lineID = dbo.fSpecLineNames('H_3970') AND
+  l.sigma*300000.0/l.wave > 350 AND
+  (p.ra >= 170 AND p.ra <= 210 ) AND
+  p.dec >= 5 AND p.dec <=15 AND
+  s.z <= 0.03
+order by p.ra
+
+Notice that sigma is expressed in weird units. To convert
+to km/s you multiply by c and divide by the rest wavelength.
+See the expression above.
+
+************
+
+Note that the SDSS folks use "weird" wavelength units.
+
+Go to the Schema Browser;
+Search for "wavelength";
+Click on Columns, table SpecLineAll, Line rest wavelength
+Scoll down to "lineID" and click there on "i";
+</pre>
+
+</ul>
+<br>
+<br>
+<hr>
+<i>Last modified: Sun Sep 13 15:35:50 EDT 2009 by martha</i>
+</body>
+
+</html>

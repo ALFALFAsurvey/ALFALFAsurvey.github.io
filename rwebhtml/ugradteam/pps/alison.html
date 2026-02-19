@@ -1,0 +1,253 @@
+<HTML>
+<head>
+  <title> Alison's PPS project pages</title>
+</head>
+<body bgcolor="ffffff">
+<h3><font color=#cc0f14>Alison's PPS page Spring 2014</font></h3>
+<br>
+
+<b>The Search for Galaxies in the Pisces-Perseus Void</b><br>
+A challenge to current cosmological models of structure
+formation is the apparent discrepancy between the number
+of observed galaxies in voids and the number of low mass
+dark matter halos predicted by simulations to reside in 
+them. In this project Alison will investigate the distribution
+of galaxies in the region of the Pisces-Perseus supercluster (PPS)
+and its foreground void which is one of the most prominent
+"empty" structures in the local universe. Alison will use public
+databases as well as the ALFALFA catalog and ALFALFA team
+followup observations to define the void (with the help
+of grad student Mike Jones) and the search for galaxies
+within it.</p>
+
+Goals for this semester include:
+<ul>
+<li> To understand the cosmological significance of the "Void Phenomenon"
+<li> To understand the large scale structure in and around the PPS
+     and its foreground void and the methods used to define that structure.
+<li> To analyze the L-band wide spectral data taken in Nov 13 to extract
+     the HI properties of detections
+<li> To become sufficiently familiar with IDL that I understand the 
+     routines that fit baselines and measure RMS values ("lbwbaseline")
+     and extract the HI parameters ("lbwmeasure") so that I can contribute
+     to making them more robust and useful to the ALFALFA team.
+<li> To begin learning PYTHON.</p>
+</ul>
+<br>
+
+
+<b> A CSV file with interesting data</b><br>
+<a href="https://drive.google.com/file/d/1k0eorAyBZgAXkyoq6s749kUO5N4c5tqf/view">Here</a> is a CSV file for your use. 
+It contains all the entries of known redshift (recessional velocity,
+c<i>z</i>) in our AGC database as of 11March2014 with the
+following selection criteria: (1) 315 deg < R.A. < 50 deg; (2)
+-1 deg < Dec. < +50 deg; (3) +200 km/s < Vhelio < +18000 km/s (where the
+recessional velocity comes from any source, optical or radio).
+Columns are as follows.
+<ol>
+<li> <b>AGCnr</b>:  &nbsp &nbsp Identification number in the AGC (our database)
+<li> <b>radeg:</b>  &nbsp &nbsp Right ascension (J2000.0) in decimal degrees
+<li> <b>ppsradeg</b>:  &nbsp &nbsp Right ascension (J2000.0) in decimal degrees, except
+                 wrapped around so that if R.A. > 315., ppsradeg = radeg-360.0
+<li> <b>decdeg</b>: &nbsp &nbsp Declination (J2000.0) in decimal degrees
+<li> <b>a</b>:&nbsp &nbsp major diameter of galaxy, in arcminutes (where available)
+<li> <b>b</b>: &nbsp &nbsp minor diameter of galaxy, in arcminutes (where available)
+<li> <b>zmag</b>: &nbsp &nbsp optical magnitude (where available; not very precise)
+<li> <b>vopt</b>: &nbsp &nbsp recessional velocity from optical spectrum in km/s (where available)
+<li> <b>hiflux</b>: &nbsp &nbsp HI line flux density in Jy-km/s (where available)
+<li> <b>rms</b>: &nbsp &nbsp rms noise in the HI line spectrum in mJy/channel  (where available)
+<li> <b>v21</b>: &nbsp &nbsp recessional velocity from HI spectrum in km/s (where available)
+<li> <b>width</b>: &nbsp &nbsp width of the HI line in km/s  (where available)
+<li> <b>widtherr</b>: &nbsp &nbsp error on width in km/s  (where available)
+<li> <b>snr</b>: &nbsp &nbsp signal-to-noise ratio of the HI line emission  (where available)
+<li> <b>hisrc</b>: &nbsp &nbsp code referring to the source of the HI spectrum 
+<li> <b>vhelagc</b>: &nbsp &nbsp heliocentric recessional velocity in km/s either from 
+          vopt or v21 (v21 preferred if available and good quality)
+</ol>
+Use the file and <b>TOPCAT</b> to explore the volume which ALFALFA explores
+in the fall sky. I'm going to leave this open ended for now; we'll need to discuss
+how to proceed. For starters, remake the plots you <a href="PPS.html">
+     made before</a> and this about making others that seem informative
+     and relevant.</p>
+
+
+<b> More questions to ponder (of relevance to the above):</b>
+
+<ul>
+<li> Learn to use the <a href="http://ned.ipac.caltech.edu/">NASA Extragalactic Database</a>.
+
+<li> Learn to use the <a href="http://adsabs.harvard.edu/abstract_service.html">SAO/NASA Astrophysics
+Data System</a>.
+
+
+<li> In the CSV file above, why did I bother to include the parameter <b>ppsradeg</b>?
+
+<li> How "deep" is the survey in terms of redshift/distance? What does the redshift distribution
+     look like? Is it what you expect? Are the galaxies with optical redshifts distributed in
+     the same way as one with HI line redshifts? What does this tell you?
+
+<li> What is an Abell cluster? How did George Abell originally identify and categorize
+     these clusters?
+
+<li> Research the clusters in the region of PPS that are listed in <a href="PPS.html">
+     the table we made before</a>. 
+     What is the difference between the "clusters" and the "groups" listed in the table?
+     What more would you like to know about them? Try to see if you can find some additional
+     information.
+
+<li> Are there other obvious clusters or groups in the volume? If so, add them to the table
+     with similar information to what's already there.
+
+<li> The typical radius of a group or cluster is about 2 Mpc. 
+<ol>
+<li> How far is Andromeda from the Milky Way? (Wikipedia is not a scholarly source;
+you need to find a recent high-precision distance).
+<li> At 70 Mpc, what angular separation corresponds to 2 Mpc?
+</ol>
+
+
+<li> Given the CSV data file, how can we decide whether or not a galaxy is a member
+     of one of those clusters? Use <b>TOPCAT</b> to explore ways to find all
+     the "members" of a cluster.
+
+<li> Suppose you observe one of the galaxies in the CSV file. How would you go about
+     deciding whether or not it was in the Pisces-Perseus
+     supercluster? Or in a void? What criteria would you use? What data?
+</p>
+</ul>
+
+
+
+<br><br>
+<b> Earlier questions to ponder:</b>
+<ul>
+<li> How do we identify voids?
+<li> What is a luminosity function? How do we express the luminosity function of galaxies?
+<li> How is the galaxy population found in void regions different from the galaxy population
+found in wall regions?
+<li> What is the Sloan Digital Sky Survey (SDSS)? How were the SDSS spectroscopic targets selected
+from the photometric SDSS catalog?
+<li> What is the Two Micron All Sky Survey (2MASS)? How were the targets selected from 2MASS
+for redshift measurements in the 2MASS redshift survey?
+<li> What biases affect large surveys of galaxies? What can be the effects of these biases?
+<li> Suppose we get redshifts for all the galaxies brighter than some apparent magnitude. How will
+     the absolute magnitudes (luminosities) of the galaxies for which we measure redshifts
+     vary with redshift (distance from us)?</p>
+<li> One of the galaxies we have detected in the ALFALFA survey is AGC 103402 at RA = 005713.8
+Dec=+225239. The parameters derived from the ALFALFA HI line profile are: 
+  <ul>
+  <li>HI line flux density = 0.67 Jy km/s
+  <li>Heliocentric radial velocity = 1705 km/s
+  <li>HI line width (at 50% of peak) = 87 km/s
+  </ul> 
+-- How can we derive the distance to this galaxy? What is it?<br>
+-- How can we derive the HI mass of this galaxy? What is it?<br>
+-- What other properties of this galaxy can you calculate? What more do we know
+about this galaxy? <i>Hint: it won't be easy.... you will probably have
+to ask for help (we won't mind...)</i></p>
+
+<li><b>Coordinates</b>, coordinates, coordinates: Make sure you understand what is meant
+by the different coordinate systems we use in astronomy and how they map onto
+the PPS region:  22h < R.A.< 03h, and 0d< Dec. < 50d. Terms to review include:
+  <ul>
+  <li> Right ascension and declination: R.A., Dec.
+  <li> J2000.0
+  <li> Galactic longitude and latitude:  L, B
+  <li> Supergalactic longitude and latitude:  SGL, SGB
+  <li> Supergalactic cartesian: SGX, SGY, SGX
+  </ul></p>
+
+<li><b>The astronomical rainbow</b> particularly as viewed by the SDSS
+<table> <tr><td valign=top>
+-- Remind yourself of the meaning of the terms apparent and absolute magnitude, color index, 
+extinction and other relevant quantities.</p><br>
+-- To the right is the diagram showing the wavelength response of the
+five SDSS filters. Which one is g? which is i?</p><br>
+-- Explain why lower values of the (g-i) color index indicate bluer galaxies.<br><br><br>
+<!--<li> &nbsp In a very famous movie, what would be the (g-i) color index
+         of Mary Kate Danaher's hair?</p>-->
+</td>
+<td valign=top align=right>
+<a href="images13/SDSS_filters.png" target=new>
+<img src="images13/SDSS_filters.png" height=250></a><br>
+Credit: SDSS
+</td> </tr></table>
+
+<li><b>A color magnitude diagram of SDSS galaxies in the Coma supercluster</b>
+<table>
+<tr><td valign=top>
+A common way to explore the properties of a population of galaxies involves constructing
+its color-magnitude diagram (CMD). A nice example which we will use for reference
+is the work of ALFALFA team member Peppo
+Gavazzi and his co-workers who constructed the CMD of a large sample of galaxies within 
+420 square degrees of sky covering
+the Coma supercluster and its member groups and clusters of galaxies as presented
+in <a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G" target=new>
+Gavazzi <i>et al</i> (2010)</a>, A&A 517, 73 and shown here to the right. Taken from Fig. 3 of
+that paper, the figure shows the "<i>g-i color versus i-band absolute magnitude 
+relation of all galaxies in the C[oma]S[upercluster] coded according to Hubble type: red = early-
+type galaxies (dE-E-S0-S0a); blue = disk galaxies (Sbc-Im-BCD); green = bulge 
+galaxies (Sa-Sb)... Contours of equal 
+density are given. The continuum line g-i =
+-0.0585 *(M<sub>i</sub> + 16) + 0.78 represents the empirical separation between the 
+red-sequence and the remaining galaxies.
+The dashed line illustrates the effect of the limiting magnitude r=17.77 of the 
+spectroscopic SDSS database, combined with the
+color of the faintest E galaxies g-i ~0.70 mag.</i>."</p>
+
+Be sure you understand this diagram and what it shows.</p>
+
+</td><td align=right>
+<a href="https://drive.google.com/file/d/12CtCqlaDYakdA3YONdQCmIB8UVYkI2ke/view" target=new>
+<img src="https://drive.google.com/file/d/12CtCqlaDYakdA3YONdQCmIB8UVYkI2ke/view" height=350>
+</a> <br>
+<a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G" target=new>Figure 3 from Gavazzi
+<i>et al</i> (2010)</a><br>
+</td></tr>
+</table></p>
+</ul></p>ls
+<br>
+
+<b>Readings:</b>
+<ul>
+<li><a href="http://adsabs.harvard.edu/abs/2001ApJ...557..495P">Peebles (2001)</a>
+<li><a href="http://adsabs.harvard.edu/abs/2009ApJ...691..633T">Tinker & Conroy (2009)</a>
+<li><a href="http://adsabs.harvard.edu/abs/1994AJ....108..491S">Szomoru et al. (1994)</a>&nbsp (VLA survey looking for galaxies in the void
+    in front of PPS)
+<li><a href="http://adsabs.harvard.edu/abs/1993AJ....105.1251W">Wegner, Haynes & Giovanelli (1993)</a> &nbsp (PPS as a supercluster filament)
+<li><a href="http://adsabs.harvard.edu/abs/2012MNRAS.421..926P">Pan et al. (2012)</a> &nbsp (Voids in the Sloan Digital Sky Survey DR7 and how they were
+    identified)
+<li><a href="http://adsabs.harvard.edu/abs/2012MNRAS.426.3041H">Hoyle, Vogeley & Pan (2012)</a> &nbsp (Properties of void galaxies in SDSS-DR7; note that 
+the introduction to this paper has a nice summary worth reading.
+
+<li><a href="http://adsabs.harvard.edu/abs/2000AJ....120.1579Y">York+ (2000)</a> &nbsp (Technical summary of the SDSS)
+<li><a href="http://adsabs.harvard.edu/abs/2012ApJS..199...26H">Huchra+ (2012)</a> &nbsp (2MASS redshift survey description and data release)</p>
+
+</ul></p>
+
+<br><br>
+<b>Useful links</b>
+<ul> 
+<li>The <a href="PPS.html"> PPS page</a> &nbsp (from last semester)
+<li>The <a hreg="http://www.sdss.org/">SDSS</a> home page
+<li>Useful pages associated with Arecibo LBW observing:
+    <ul>
+    <li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">ALFALFA Observer's page</a>
+    <li> Explanation of <a href="http://www.naic.edu/~a2010/ALFALFA_lbwobserving.htm">LBW observing</a> 
+         for ALFALFA
+    <li> Explanation of <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/lbw/lbw_reduction.htm">
+          LBW data reduction</a>
+    <li> The <a href="https://drive.google.com/file/d/1iU0vVUpuy_EtRTbvVfw1EowBuUdc-T3f/view" target=new>Arecibo proposal</a></p>
+    </ul></p>
+<li>Some python links:
+<ul>
+<li><a href="http://learnpythonthehardway.org/book/">learn python</a>
+<li><a href="http://cens.ioc.ee/~pearu/papers/IJCSE4.4_Paper_8.pdf">link</a>
+</ul>
+</ul>
+<br>
+<br>
+<hr>
+Last updated <i>Tue Mar 11 13:21:55 EDT 2014 </i>by martha
+</body>
+</html>

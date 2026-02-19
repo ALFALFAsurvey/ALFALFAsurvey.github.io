@@ -1,0 +1,255 @@
+;Opens up a window to pick out an ALFALFA catalog to be read
+;(Code to read ALFALFA catalog extracted from Tess Senty's coneplot.pro)
+catname=dialog_pickfile(/read, filter='*.dat')
+
+if (catname eq '') then begin
+    print, 'no catalog defined'
+    cat=''
+    read, 'define catalog yourself? (y/n):', cat
+    if (cat eq 'y') then begin
+        catname=''
+        read, 'Which catalog?', catname
+    endif
+    if (cat ne 'y') then begin
+        print, 'no catalog to plot'
+        return
+    endif
+endif
+
+;Asks if the catalog has a header. Default value is no.
+header=''
+read, 'Does catalog have a header? (y/n):', header
+
+;Reading in the catalog of galaxies
+print,'reading the galaxy catalog'
+
+;Adjust NGAL upward for plots with more than 2000 galaxies.
+ngal=2000
+openr,lun,catname,/get_lun
+
+;This portion reads non-public catalogs (WEBARCH can be defined as keyword)
+if not keyword_set(WEBARCH) then begin
+  ;Read catalog with header information at the top. If your catalog has more than
+  ;3 lines of header, adjust.
+    if (header eq 'y') then begin
+        junk='junk'
+       for i=0,2 do readf,lun,junk,format='(1a1)' 
+    endif
+
+  HIname=strarr(ngal)
+  agc=lonarr(ngal)
+  othername=strarr(ngal)
+  HIcoords=strarr(ngal)
+  dra=intarr(ngal)
+  ddec=intarr(ngal)
+  optcoords=strarr(ngal)
+  hsize=fltarr(ngal)
+  v50=intarr(ngal)
+  verr=intarr(ngal)
+  w50=intarr(ngal)
+  werr=intarr(ngal)
+  sint=fltarr(ngal)
+  serr=fltarr(ngal)
+  sintmap=fltarr(ngal)
+  sn=fltarr(ngal)
+  rms=fltarr(ngal)
+  code=intarr(ngal)
+  grid=strarr(ngal)
+
+  f1='HI230252.5+260100'
+  f2=0L
+  f3='FGC2452'
+  f4='230252.5+260100'
+  f5=0
+  f6=0
+  f7='230253.7+260052'
+  f8=0.0
+  f9=0
+  f10=0
+  f11=0
+  f12=0
+  f13=0.0
+  f14=0.0
+  f15=0.0
+  f16=0.0
+  f17=0.0
+  f18=0
+  f19='2308+27'
+
+  i=0
+  while (eof(lun) ne 1) do begin
+      readf,lun,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15,f16,f17,f18,f19, $
+            format='(1a17, 1i7, 1a9, 1a17, 2i4, 1a17, 1f7.1, 2(1i6,1i5), 1f8.2, 1f6.2, 1f8.2, 1f7.1, 1f6.2, 1i4, 1a12)'
+      HIname[i]=f1
+      agc[i]=f2
+      othername[i]=f3
+      HIcoords[i]=f4
+      dra[i]=f5
+      ddec[i]=f6
+      optcoords[i]=f7
+      hsize[i]=f8
+      v50[i]=f9
+      verr[i]=f10
+      w50[i]=f11
+      werr[i]=f12
+      sint[i]=f13
+      serr[i]=f14
+      sintmap[i]=f15
+      sn[i]=f16
+      rms[i]=f17
+      code[i]=f18
+      grid[i]=f19
+      i=i+1
+  endwhile
+  close,lun
+  free_lun,lun
+
+  HIname=HIname[0:i-1]
+  agc=agc[0:i-1]
+  othername=othername[0:i-1]
+  HIcoords=HIcoords[0:i-1]
+  dra=dra[0:i-1]
+  ddec=ddec[0:i-1]
+  optcoords=optcoords[0:i-1]
+  hsize=hsize[0:i-1]
+  v50=v50[0:i-1]
+  verr=verr[0:i-1]
+  w50=w50[0:i-1]
+  werr=werr[0:i-1]
+  sint=sint[0:i-1]
+  serr=serr[0:i-1]
+  sintmap=sintmap[0:i-1]
+  sn=sn[0:i-1]
+  rms=rms[0:i-1]
+  code=code[0:i-1]
+  grid=grid[0:i-1]
+  ;choose only 1 and 2 and ignore any without optical counterparts
+  cindex=where(code lt 3 and optcoords ne 0)
+  cHIname=HIname[cindex]
+  cagc=agc[cindex]
+  cothername=othername[cindex]
+  cHIcoords=HIcoords[cindex]
+  cdra=dra[cindex]
+  cddec=ddec[cindex]
+  coptcoords=optcoords[cindex]
+  chsize=hsize[cindex]
+  cv50=v50[cindex]
+  cverr=verr[cindex]
+  cw50=w50[cindex]
+  cwerr=werr[cindex]
+  csint=sint[cindex]
+  cserr=serr[cindex]
+  csintmap=sintmap[cindex]
+  csn=sn[cindex]
+  crms=rms[cindex]
+  ccode=code[cindex]
+  cgrid=grid[cindex]
+endif else begin
+; This portion reads web-archive ALFALFA catalog
+  ;Read catalog with header information at the top. If your catalog has more than
+  ;3 lines of header, adjust.
+    if (header eq 'y') then begin
+        junk='junk'
+       for i=0,12 do readf,lun,junk,format='(1a1)' 
+    endif
+
+  agc=lonarr(ngal)
+  catnum=strarr(ngal)
+  othername=strarr(ngal)
+  HIcoords=strarr(ngal)
+  optcoords=strarr(ngal)
+  v50=intarr(ngal)
+  verr=intarr(ngal)
+  w50=intarr(ngal)
+  werr=intarr(ngal)
+  sint=fltarr(ngal)
+  serr=fltarr(ngal)
+  sn=fltarr(ngal)
+  rms=fltarr(ngal)
+  code=intarr(ngal)
+  catdist=fltarr(ngal)
+  cathimass=fltarr(ngal)
+  grid=strarr(ngal)
+
+  f1=0L
+  f2='3-183'
+  f3='FGC2452'
+  f4='230252.5+260100'
+  f5='230252.5+260100'
+  f6=0
+  f7=0
+  f8=0
+  f9=0
+  f10=0.0
+  f11=0.0
+  f12=0.0
+  f13=0.0
+  f14=0.0
+  f15=0
+  f16=0
+  f17='2308+27'
+
+  i=0
+  while (eof(lun) ne 1) do begin
+      readf,lun,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15,f16,f17, $
+            format='( 1i7,1a8, 1a10, 1a17,1a17, 1i7,1i3,1i5,1i4, 1f7.2, 1f5.2, 1f7.2, 1f5.2, 1i3, f8.2,f7.2, 1a9)'
+      agc[i]=f1
+      catnum[i]=f2
+      othername[i]=f3
+      HIcoords[i]=f4
+      optcoords[i]=f5
+      v50[i]=f6
+      verr[i]=f7
+      w50[i]=f8
+      werr[i]=f9
+      sint[i]=f10
+      serr[i]=f11
+      sn[i]=f12
+      rms[i]=f13
+      code[i]=f14
+      catdist[i]=f15
+      cathimass[i]=f16
+      grid[i]=f17
+      i=i+1
+  endwhile
+  close,lun
+  free_lun,lun
+
+
+  agc=agc[0:i-1]
+  catnum=catnum[0:i-1]
+  othername=othername[0:i-1]
+  HIcoords=HIcoords[0:i-1]
+  optcoords=optcoords[0:i-1]
+  v50=v50[0:i-1]
+  verr=verr[0:i-1]
+  w50=w50[0:i-1]
+  werr=werr[0:i-1]
+  sint=sint[0:i-1]
+  serr=serr[0:i-1]
+  sn=sn[0:i-1]
+  rms=rms[0:i-1]
+  code=code[0:i-1]
+  catdist[i]=catdist[0:i-1]
+  cathimass[i]=cathimass[0:i-1]
+  grid=grid[0:i-1]
+  ;choose only 1 and 2 and ignore any without optical counterparts
+  cindex=where(code lt 3 and optcoords ne 0)
+  cagc=agc[cindex]
+  ccatname=catname[cindex]
+  cothername=othername[cindex]
+  cHIcoords=HIcoords[cindex]
+  coptcoords=optcoords[cindex]
+  cv50=v50[cindex]
+  cverr=verr[cindex]
+  cw50=w50[cindex]
+  cwerr=werr[cindex]
+  csint=sint[cindex]
+  cserr=serr[cindex]
+  csn=sn[cindex]
+  crms=rms[cindex]
+  ccode=code[cindex]
+  ccatdist=catdist[cindex]
+  ccathimass=cathimass[cindex]
+  cgrid=grid[cindex]
+endelse

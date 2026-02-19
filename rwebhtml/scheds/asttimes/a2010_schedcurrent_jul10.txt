@@ -1,0 +1,79 @@
+A2010 observing schedule                                          last update: 06Jul15 mph
+
+Use searchable schedule on AO web page to get date,AST
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+
+(R) indicates remote observing.
+-------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS  (Schedule subject to change. If a session is missed, retain order
+                        of drifts, sliding schedule to the next date.)
+**********************************            IMPORTANT            **********************
+The times below refer to time allocated to A2010 exclusively. Time should also be allocated before
+and after to allow for TOGS startup and calibration. We have agreed to run the TOGS calibration scripts
+for the TOGS team. Please check the final AO schedule and be prepared to start observing at least
+15 minutes prior to the times listed here. 
+--------------------------------------------------------------------------------------------------
+FALL 2006!
+
+**************** Note: the Azimuth in this period can be either 180 or 360!!! Remember to inform
+                       the operator well in advance where you want him/her to position the telescope.
+
+    06.08.11  F 11Aug      20h51  00h45-06h30   21h36-03h21    99p1  +235806  EGGs(R)       AZ=180
+    06.08.12  S 12Aug      20h56  00h30-06h15   21h24-03h10   120p2  +291200  EGGs(R)       AZ=180
+    06.08.13  S 13Aug      21h00  00h30-05h15   21h28-02h14    34p1  +080905  EGGs(R)       AZ=360
+    06.08.14  M 14Aug      21h04  00h30-06h15   21h32-03h18   127p2  +305412  EGGs(R)       AZ=180
+    06.08.15  T 15Aug      21h08  00h30-03h00   21h36-00h07    33p1  +075430  EGGs(R)       AZ=360
+    06.08.16  W 16Aug      21h12  00h15-02h45   21h25-23h56    32p1  +073954  EGGs(R)       AZ=360
+    06.08.17  R 17Aug      21h16  00h15-02h45   21h29-00h00    31p1  +072518  EGGs(R)       AZ=360
+    06.08.18  F 18Aug      21h20  00h15-02h45   21h33-00h03    30p1  +071042  JC, JS, EM
+    06.08.19  S 19Aug      21h24  00h15-02h30   21h37-23h52    29p1  +065606  JC, JS
+    06.08.20  S 20Aug      21h28  00h00-02h30   21h26-23h56    28p1  +064130  JC, JS
+
+    06.08.22  T 22Aug      21h36  00h00-05h45   21h34-03h20   128p2  +310848  JC
+    06.08.23  W 23Aug      21h40  00h00-05h30   21h38-03h09   129p2  +312324  JC
+    06.08.24  R 24Aug      21h44  00h00-05h30   21h42-03h13   130p2  +313800  JC
+    06.08.25  F 25Aug      21h48  00h00-05h30   21h46-03h17   131p2  +315236  JC
+
+    06.08.31  R 31Aug      22h13  23h15-05h00   21h28-03h14   132p2  +320712
+    06.09.01  F 01Sep      22h17  23h15-05h00   21h32-03h18    99p2  +240524
+    06.09.02  S 02Sep      22h21  23h15-05h00   21h36-03h22    67p1  +161054
+    06.09.03  S 03Sep      22h25  23h15-05h00   21h40-03h26    66p1  +155618
+    06.09.04  M 04Sep      22h29  23h00-04h45   21h29-03h15    65p1  +154142
+    06.09.05  T 05Sep      22h33  23h00-04h45   21h33-03h19    64p1  +152706
+    06.09.06  W 06Sep      22h37  23h00-01h45   21h37-00h22    27p1  +062654
+    06.09.07  R 07Sep      22h41  23h00-01h30   21h41-00h11    26p1  +061218 
+    06.09.08  F 08Sep      22h45  22h45-01h30   21h30-00h15    25p1  +055742
+    06.09.09  S 09Sep      22h49  22h45-01h30   21h34-00h19    24p1  +054306
+    06.09.10  S 10Sep      22h53  22h45-0       21h38-
+
+-------------------------------------------------------------------------------   
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+TB: Tom Balonek
+NB: Noah Brosch
+SB: Shea Brown
+BC: Barbara Catinella
+JC: John Cannon
+AF: Amy Furniss
+JG: Josh Goldstein
+RG: Riccardo Giovanelli
+MH: Martha Haynes
+LH: Lyle Hoffman
+WH: Walter Hopkins
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+BM: Bilal Mahmood
+AM: Ann Martin
+WM: Arik Mitschang
+EM: Emmanuel Momjian
+PN: Prasanth Nair
+AP: Adeel Altaf
+JR: Jessica Rosenberg
+AS: Amelie Saintonge
+JS: John Salzer
+SS: Sabrina Stierwalt
+BW: Brian Walsh
+

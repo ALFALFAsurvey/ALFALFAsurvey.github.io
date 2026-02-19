@@ -1,0 +1,145 @@
+A2010 observing schedule                                          last update: 08Sep23 mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+Az: should be 180 for Decs north of zenith and 360 for Decs south of zenith.
+(R) indicates remote observing.
+-----------------------------------------------------------------------------------------------------
+COMPLETED observations   (none yet)
+     Block      Date      LSTmid     AST           LST        drift    DecJ         Azimuth
+    08.08.14  R 14Aug      21h04  00h30-06h15   21h34-03h35    31p2  +073236  BA(R)  AZ=360  
+    08.08.15  F 15Aug      21h08  00h00-06h00   21h23-03h09    30p2  +071800  BA(R)  
+    08.08.16  S 16Aug      21h12  00h15-06h00   21h27-03h13    29p2  +070324  AM(R)      
+    08.08.17  S 17Aug      21h16  00h15-06h00   21h31-03h17    28p2  +064848  AM(R)  
+    08.08.18  M 18Aug      21h20  00h15-05h45   21h35-03h06    27p2  +063412  AM(R)  
+    08.08.19  T 19Aug      21h24  00h30-05h45   21h44-03h10    26p2  +061936  AM(R) 
+    08.08.20  W 20Aug      21h28  00h30-05h45   21h58-03h14    25p2  +060500  MH(R)
+    08.08.21  R 21Aug      21h32  00h30-05h45   22h01-03h18    24p2  +055024  KS(R) 
+    08.08.22  F 22Aug      21h36  00h15-05h30   21h51-03h07    23p2  +053548  SS(R) 
+    08.08.23  S 23Aug      21h40  00h00-05h30   21h40-03h11    22p2  +052112  RK(R)  
+    08.08.24  S 24Aug      21h44  00h15-04h00   21h59-01h44    20p1  +044442  RK(R) 
+    08.08.25  M 25Aug      21h48  00h15-04h00   22h03-01h48    19p1  +043006  RK(R)  
+    08.08.26  T 26Aug      21h52  00h00-03h45   21h52-01h37    41p1  +095118  RK(R)  
+    08.08.27  W 27Aug      22h00  00h00-03h45   21h56-01h41    18p1  +041530  KS(R) 
+    08.08.28a R 28Aug      22h04  00h00-03h45   22h00-01h45    17p1  +040054  KS(R) 
+    08.08.28p R 28Aug      22h08  23h30-03h45   21h33-01h49    16p1  +034618  AM(R)
+    08.09.02  T 02Sep      22h24  23h45-03h15   22h08-01h39    35p1  +082342  KS(R) 
+    08.09.03  W 03Sep      22h28  23h30-03h15   21h57-01h43    36p1  +083818  RK(R)
+    08.09.04  R 04Sep      22h32  23h30-03h15   22h01-01h47    37p1  +085254  MH(R)
+    08.09.05  F 05Sep      22h36  23h00-03h00   21h35-01h35    38p1  +090730  SH2(R)
+    08.09.06  S 06Sep      22h40  23h30-03h00   22h09-01h39    39p1  +092206  SH2(R) 
+    08.09.07  S 07Sep      22h44  23h15-03h00   21h58-01h43    40p1  +093642  SH2(R)
+    08.09.10  W 10Sep      22h55  23h00-04h15   21h55-03h10    21p2  +050636  SS(R)
+    08.09.11  R 11Sep      22h59  23h00-04h15   21h59-03h14    48p2  +114048  SS,DB(R) 
+    08.09.12  F 12Sep      23h03  22h30-03h45   21h32-02h48    47p2  +112612  BK(R)     
+    08.09.13  S 13Sep      23h07  22h30-04h00   21h36-03h07    46p2  +111136  SH2(R)
+    08.09.19  F 19Sep      23h30  22h00-03h45   21h30-03h16    45p2  +105700  BA(R)
+    08.09.21  S 21Sep      23h38  22h30-03h30   22h08-03h09    44p2  +104224  AM(R)
+    08.09.22  M 22Sep      23h42  22h15-03h30   21h57-03h13    43p2  +102748  AM(R)
+
+-----------------------------------------------------------------------------------------------------
+FALL 2008 season 
+**************  NOTICE:  DURING THIS PERIOD AST = EDT                  **************************
+**************           AND THE AZIMUTH IS SET TO 360                 **************************
+These runs start before midnight, so date refers to evening date.
+    Block      Date      LSTmid     AST           LST        drift    DecJ    Who    Azimuth
+ 
+    08.10.02  R 02Oct      00h22  22h00-02h45   22h21-03h07    42p2  +101312  MH(R)  AZ = 360
+    08.10.03  F 03Oct      00h26  21h45-02h45   22h10-03h11    20p2  +045200  BA(R)
+    08.10.04  S 04Oct      00h30  21h15-02h45   21h44-03h15    19p2  +043724  BA(R)
+    08.10.05  S 05Oct      00h34  21h45-02h45   22h18-03h19    18p2  +042248  AM(R)
+    08.10.06  M 06Oct      00h38  21h45-02h30   22h22-03h08    17p2  +040812  AM(R)
+    08.10.07  T 07Oct      00h42  21h30-02h30   22h11-03h12    16p2  +035336  AM(R)
+    08.10.08  W 08Oct      00h45  21h30-02h30   22h15-03h15    41p2  +095836  AM(R)
+    08.10.09  R 09Oct      00h49  21h30-02h30   22h19-03h19    40p2  +094400  AM(R)    
+                           
+    08.10.10  F 10Oct      00h53  21h30-02h15   22h23-03h08    39p2  +092924  AM(R)  vanished..........
+
+    08.10.11  S 11Oct      00h57  20h30-02h15   21h26-03h12    38p2  +091448  AM(R)
+    08.10.12  S 12Oct      01h01  20h30-02h15   21h30-03h16    37p2  +090012  KH,EW,MJ(R)
+    08.10.13  M 13Oct      01h05  20h30-02h15   21h34-03h20    36p2  +084536  KH,EW,MJ(R)
+    08.10.14  T 14Oct      01h09  20h30-02h00   21h38-03h09    35p2  +083100  KH,EW,MJ(R)
+    08.10.15  W 15Oct      01h13  20h15-02h00   21h27-03h12    48p1  +113330  KH,EW,MJ(R)
+    08.10.16  R 16Oct      01h17  20h15-02h00   21h31-03h16    47p1  +111854  
+    08.10.17  F 17Oct      01h21  20h15-01h45   21h35-03h06    46p1  +110418  SH2(R)
+
+    08.10.19  S 19Oct      01h29  20h00-01h45   21h28-03h14    45p1  +104942  SS(R)
+    08.10.20  M 20Oct      01h33  20h00-01h45   21h32-03h18    44p1  +103506  SS(R)
+    08.10.21  T 21Oct      01h37  19h45-01h30   21h21-03h07    43p1  +102030  KS,CA
+    08.10.22  W 22Oct      01h41  19h45-01h30   21h25-03h11    42p1  +100554  KS,CA
+    08.10.23  R 23Oct      01h45  19h45-01h30   21h29-23h00    55p2  +132300  KS,CA  **special night
+                after  LST = 23h00 switch Dec   23h10-01h15    33p1  +075430
+                after  LST = 01h15 switch Dec   01h25-03h15    50p1  +120242
+    08.10.24  F 24Oct      01h49  19h45-01h30   21h32-23h00    52p2  +123912  KS,CA  **special night
+                after  LST = 23h00 switch Dec   23h05-00h55    29p2  +070324                                    
+                after  LST = 00h55 switch Dec   01h00-03h00    28p1  +064130  
+    08.10.25  S 25Oct      01h52  19h30-01h15   21h21-23h40    24p2  +055024  KS,CA  **special night
+                after  LST = 23h40 switch Dec   23h50-03h07    25p1  +055742
+
+Here we probably change azimuth, assuming runs are long and we have not lost previous nights
+**************           THE AZIMUTH IS SET TO 180                 **************************
+    08.10.26  S 26Oct      01h56  19h30-01h15   21h25-03h11   133p2           KS,CA  Az=180                  
+    08.10.27  M 27Oct      02h00  19h30-01h15   21h29-03h15   134p2           KS,CA
+
+    08.10.30  R 30Oct      02h12  19h15-01h00   21h26-03h12   135p2
+    08.10.31  F 31Oct      02h16  19h15-01h00   21h30-03h16   136p2
+    08.11.01  S 01Nov      02h20  19h15-01h00   21h34-03h20   137p2
+
+Change to Standard time here! AST = EST+1
+    08.11.02  S 02Nov      02h24  19h00-00h45   21h23-03h09   138p2       
+
+    08.11.04  T 04Nov             19h00-00h45                 139p2           RK(R)
+
+No time scheduled between Nov 04 and (at least) Dec 2.
+
+Note: Daylight Savings time will end on Nov 2, 2008.
+Becky could go to PR with students in early Dec.
+-----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+AA: Adeel Altaf
+DB: Drew Brisbin
+CA: Cameron Arsenault
+TB: Tom Balonek
+NB: Noah Brosch
+SB: Shea Brown
+BC: Barbara Catinella
+JC: John Cannon
+JD: Josh Davidson
+AF: Amy Furniss
+JG: Josh Goldstein
+RG: Riccardo Giovanelli
+MH: Martha Haynes
+KH: Kelley Hess
+SH: Sarah Higdon
+SH2: Shan Huang
+LH: Lyle Hoffman
+WH: Walter Hopkins
+MJ: Melissa Jacquart
+SK: Shelvean Kapita
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax
+BM: Bilal Mahmood
+AM: Ann Martin
+JM: Jeff Miller
+WM: Arik Mitschang
+EM: Emmanuel Momjian
+PN: Prasanth Nair
+AO: Aileen O'Donoghue
+DR: Daniel Richey
+JR: Jessica Rosenberg
+AS: Amelie Saintonge
+JS: John Salzer
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+MT: Mari Carmen Toribio
+LV: Liese van Zee
+BW: Brian Walsh
+EW: Eric Wilcots

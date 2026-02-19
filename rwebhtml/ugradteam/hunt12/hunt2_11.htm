@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<br>
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<font color=#008000><b> Try to finish this hunt by 5:15pm on Tuesday afternoon</b></font>
+</td></tr></table></center></p><br><br>
+<b><font color=#008000> Useful links:</font></b> <br>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">Using Arecibo for ALFALFA</a><br>
+<li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observer's page</a><br>
+<li> <a href="http://www.naic.edu/~a2010/idl_instruct1.htm">Instructions for Level I processing of ALFALFA
+drift data</a></p>
+
+<b><font color=#008000> Rules of the scavenger hunts:</b> You may consult any
+source anywhere but please be sure to indicate where you got your information.
+And watch out
+for bad websites!</font></p>
+
+<br>
+<h3><font color=#cc0f14> UAT11.01 Scavenger Hunt #2: Introduction to ALFALFA Drift Scan Data</font></h3>
+
+This scavenger hunt will provide an introduction to the raw ALFALFA drift scan data,
+how we process it to Level I and other related trivia. </p>
+
+<br>
+<b><font color=#ccof14> Special question!!</font></b> &nbsp 
+At the end of last night's run, the observing team started "filecreator" in IDL; this routine
+converts the fits files into IDL structures so we can work with them using LOVEDATA. As happens
+every now and then, the job aborted unhappily at the end. Where can you find this problem
+reported and diagnosed, and its easy fix described?</p>
+
+<br
+<b><font color=#ccof14>A2010 observers' favorite quote</font></b><br>
+<center width=400>
+<i>"A hypothesis or theory is clear, decisive, and positive, but it
+is believed by no one but the [person] who created it. Experimental
+findings, on the other hand, are messy, inexact things, which are
+believed by everyone except the [person] who did the work."</i><br>
+ -- Harlow Shapley, "Through Rugged Ways to the Stars"</p>
+</center>
+Another favorite ALFALFA quote is "Real astronomers need more than a cell
+phone to conduct a survey."</p>
+
+<br>
+<b><font color=#ccof14> 2.0</font></b> &nbsp 
+<font color=#008000>Temperatures, temperatures, temperatures</font>...</p> 
+Radio astronomers are always talking about
+temperatures. But, what are they talking about? </p>
+a. &nbsp What do we mean by "system temperature"?</p>
+
+b. &nbsp What is the temperature in the ALFA dewar?</p>
+
+d. &nbsp How are the ALFA amplifiers kept that cold? (i.e. what refrigerant is used)</p>
+
+e. &nbsp What do 21 cm HI line astronomers mean when they talk about the "spin temperature"?</p>
+
+f. &nbsp What is the "brightness temperature" of a radio source?</p>
+
+g. &nbsp What is the "antenna temperature" of a radio source?</p>
+
+h. &nbsp What is the typical temperature and density of a diffuse HI cloud in the Milky Way?</p>
+
+i. &nbsp What is the typical temperature and density of a molecular H<sub>2</sub> cloud in the Milky Way?</p>
+
+j. &nbsp What is the typical temperature and density of an ionized HII cloud in the Milky Way?</p>
+
+k. &nbsp What is the temperature of the Cosmic Microwave Background radiation?</p>
+
+l. &nbsp What is the temperature in Ithaca, NY right now? </p>
+
+<br>
+<b><font color=#ccof14> 2.1</font></b> &nbsp 
+<font color=#008000>Calibrating ALFALFA</font> using <b>CALIB2</b></p>
+<table cellpadding=3 border=3>
+<tr><td>
+We use a very simple scheme, the <i>LOOP-END calibration</i> 
+to calibrate the ALFALFA data in system temperature units (kelvin).
+At the end of every 600 second drift scan, we stop the data taking and
+then fire a calibration noise diode for 1 second; this is referred
+to as the <i> CAL-ON</i> scan.</p>
+
+a. &nbsp CALIB2 is the process by which we fit a function to the
+values of the <i>CRAT</i> derived from each firing of the noise
+diode. Examine the sample CALIB2 display window shown
+to the right. What is the "CRAT" and what are its units? 
+Click<a href="http://www.naic.edu/~a2010/calfit.gif"> here</a>
+for a larger version of the CALIB2 display.</p>
+
+b. &nbsp Under what circumstances do we expect our calibration mode
+to give a bogus value of the CRAT, which we then exclude from the fit? </p>
+
+c. &nbsp How hot was it in the famous futuristic 1967 film starring Julie Christie
+and Oskar Werner?</p>
+
+d. &nbsp Which Arecibo staff member spent 8 years (rustling cattle, so the rumor
+goes) with the Klamath Indians in Oregon before moving to Puerto Rico?</p>
+
+</td>
+<td> <img src="http://www.naic.edu/~a2010/calfit.gif" height=150></p></td></tr>
+</table>
+<br>
+<br>
+<b><font color=#ccof14> 2.2</font></b> &nbsp 
+<font color=#008000>Running the Bandpass Subtraction and Calibration routine
+</font> <b>BPDGUI</b></p>
+<table cellpadding=3 border=3>
+<tr><td>
+Here is the BPD gui when it is running. Refer to this figure in answering the following questions.
+Click <a href="gifs/bpd18.gif">here</a> for a larger view of the screen.</p>
+
+a. &nbsp On what date (year, month, day) were these data taken?</p>
+
+b. &nbsp What is the ALFALFA drift designation for this dataset?</p>
+
+c. &nbsp What is the typical system temperature of an ALFALFA spectrum?</p>
+
+d. &nbsp What do astronomers mean by the "gain" of the system?</p>
+
+e. &nbsp What do astronomers mean when they measure the "flux density"
+   (rather than the antenna temperature) of a source?</p>
+
+e. &nbsp The rms noise on an ALFALFA spectrum is typically about
+         2 mJy per channel. For the central beam (Bm 0), what fraction
+         of the system temperature is that? </p>
+
+f. &nbsp What is the name of the popular Puerto Rico "delicacy" made with mashed 
+         bananas (plaintains), pork and garlic?</p>
+
+</td><td> <img src="gifs/bpd18.gif" height=400></td></tr></table></p>
+
+<br>
+<b><font color=#ccof14> 2.3</font></b> &nbsp 
+<font color=#008000>The ALFALFA bandpass viewed in </font> <b>BPDGUI</b></p>
+
+We use a sequential integer number to refer to each frequency
+unit, also called a <b>"channel"</b>. Each ALFALFA spectrum has
+4096 spectral channels, or pixels in frequency-space.</p>
+
+<table cellpadding=3 border=3>
+<tr><td>
+Here is display of the full ALFALFA bandpass for one beam and
+one drift. Refer to this figure in answering the following questions.
+Click <a href="gifs/bpd9.gif">here</a> for a larger view of the screen.</p>
+
+a. &nbsp What is the channel separation in frequency units? </p>
+
+b. &nbsp Why does the channel separation in velocity units change across
+the bandpass?</p>
+
+c. &nbsp Why isn't the bandpass reponse flat (i.e. constant with frequency)?</p>
+
+d. &nbsp Notice that the intensity of the bandpass falls off at the extreme
+edges. How many channels on each side would you discard because of this reduced
+sensitivity? </p>
+
+e. &nbsp Assuming that you discard those channels, what is the final
+useful spectral range? Give your answer both in frequency units and
+in the corresponding velocity units (assume v = cz).</p>
+
+f. &nbsp Who is perfecting a new drink called the "avocalada"? </p>
+
+</td><td> <img src="gifs/bpd9.gif" height=400></td></tr></table></p>
+
+
+<br>
+
+<b><font color=#ccof14> 2.4</font></b> &nbsp 
+<font color=#008000>The Galactic Hydrogen in </font> <b>BPDGUI</b></p>
+
+<table cellpadding=3 border=3>
+<tr><td>
+Here is BPD gui zoom in of the region around the Galactic hydrogen for
+one of the scans. Refer to this figure in answering the following question.
+Click <a href="gifs/bpd10.gif">here</a> for a larger view of the screen.</p>
+
+a. &nbsp What channel corresponds to the rest frequency of the HI 21
+         cm line?</p>
+
+b. &nbsp Towards what galactic longitude is the Sun moving in its orbit around
+   the galactic center? </p>
+
+c. &nbsp Why doesn't the Galactic HI always appear in the same channels?</p>
+
+d. &nbsp Why are there two peaks in this spectrum?</p>
+
+
+
+</td><td> <img src="gifs/bpd10.gif" height=400></td></tr></table></p>
+
+<br>
+
+<b><font color=#ccof14> 2.5</font></b> &nbsp <b>FLAGBB</b>: 
+<font color=#008000>Don't flag those High Velocity Clouds!</font></p>
+
+<table cellpadding=3 border=3>
+<tr><td>
+Here is FLAGBB display of one drift. 
+Refer to this figure in answering the following question.
+Click <a href="gifs/flagbb_poshvc_09.gif">here</a> for a larger view of the screen.</p>
+
+a. &nbsp  What do the yellow boxes represent on this diagram and how do we know
+   where to place them on the display?</p>
+
+b. &nbsp  Why don't we flag the bright white vertical stripe toward
+   the right side?</p>
+
+c. &nbsp  What is a "high velocity cloud"? </p>
+
+d. &nbsp  Where is the high velocity cloud in this frame?</p>
+
+e. &nbsp  If "you don't know clouds at all", what instead do you "recall"?</p>
+
+</td><td> <img src="gifs/flagbb_poshvc_09.gif" height=350></td></tr></table></p>
+
+
+<br>
+
+<b><font color=#ccof14> 2.6</font></b> &nbsp <b>FLAGBB</b>: 
+<font color=#008000>Don't flag those continuum sources!</font></p>
+
+<table cellpadding=3 border=3>
+<tr><td>
+Here is FLAGBB display of one drift. 
+Refer to this figure in answering the following question.
+Click <a href="gifs/flagbb_cont_09.gif">here</a> for a larger view of the screen.</p>
+
+a. &nbsp  How do we know that the horizontal alternating white/dark band
+          is most likely a continuum source?</p>
+
+b. &nbsp  Why does it appear to have two peaks (in the right hand total power
+          display)?</p>
+
+c. &nbsp  Who noted the presence of the source 3C273 in the flagbb log file
+          of the observations conducted on the early morning of 11 January 2009?</p>
+
+d. &nbsp  Did the UAT observers notice the continuum source 3C273 while they
+          were observing on 11 January 2009? </p>
+
+e. &nbsp  How many seconds does it take for ALFA to drift across a point source?
+</td><td> <img src="gifs/flagbb_cont_09.gif" height=300></td></tr></table></p>
+
+
+<br>
+
+<b><font color=#ccof14> 2.7</font></b> &nbsp <b>FLAGBB</b>: <font color=#008000>Ugly stuff!</font></p>
+
+<table cellpadding=3 border=3>
+<tr><td>
+Here is FLAGBB display of one drift. 
+Three bright spots are flagged in the center of the frame. They arise from the
+Nuclear Detection (NUDET) system aboard the Global Positioning System (GPS)
+satellites. Refer to this figure in answering the following question.
+Click <a href="gifs/flagbb_gps_09.gif">here</a> for a larger view of the screen.</p>
+
+a. &nbsp  What is the approximate frequency of the NUDET transmissions? </p>
+
+b. &nbsp  How many GPS satellites are there? </p>
+
+c. &nbsp What is the orbital period of a GPS satellite?</p>
+
+d. &nbsp  How could you find out how many GPS satellites there are
+          above Puerto Rico now? You don't have to do this; just tell us
+          how you would go about it.</p>
+
+e. &nbsp In the movie "Some Like It Hot", who (what actor) utters the famous
+closing words "Well, nobody's perfect."</p>
+
+</td><td> <img src="gifs/flagbb_gps_09.gif" height=350></td></tr></table></p>
+
+<br>
+<b><font color=#ccof14> 2.8</font></b> &nbsp <b>FLAGBB</b>: 
+<font color=#008000>More fun than human beings should be allowed to have!</font></p>
+
+But, sometimes, we find galaxies and interesting stuff around them!</p>
+
+<table cellpadding=3 border=3>
+<tr><td>
+Here is FLAGBB display of the data for beam 4 associated with the
+drift d100658+033142.809100305.sav obtained on 08.03.31.
+Refer to this figure in answering the following question.
+Click <a href="gifs/flagbb1_09.gif">here</a> for a larger view of the screen.</p>
+
+a. &nbsp Who flagged these data? (We suggest you thank her!)</p>
+
+b. &nbsp This drift goes almost precisely across what galaxy?</p>
+
+c. &nbsp What actor delivered the line: "My Mama always said, 'Life was like a 
+box of chocolates; you never know what you're gonna get.'"</p>
+
+</td><td> <img src="gifs/flagbb1_09.gif" height=350></td></tr></table></p>
+
+<br>
+<hr>
+<font color=#cc0f14>
+This page created by and for the members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> Survey Undergraduate team</font></addres
+s>
+</p>
+<!-- hhmts start -->Tue Jan 18 14:01:33 AST 2011
+</i> by Martha </font>
+<!-- hhmts end -->
+</body>

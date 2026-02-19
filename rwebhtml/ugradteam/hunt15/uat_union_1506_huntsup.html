@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <title>Undergraduate ALFALFA team</title> 
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=#cc0f14>Union UAT Workshop June 2015 &nbsp &nbsp &nbsp &nbsp Group Project</font></h3>
+<font color=#008000>Color Magnitude Diagrams and GalaxyZoo</font></h3>
+
+<p>
+<b>The color-magnitude diagram and how galaxy color correlates with morphology
+</font></b></p>
+Probably you are familiar with the Hertzsprung-Russell diagram for stellar classification.
+We can make a similar "color-magnitude" diagram for galaxies using TOPCAT and the photometric
+data from the SDSS. For nearby galaxies, there are problems with the standard SDSS
+photometric pipeline, so we use the ones available through the
+<a href="http://www.nsatlas.org/" target=new>NASA-Sloan Atlas</a> (N-S Atlas).
+
+<!--<hr>
+<table>
+<tr><td valign=top>
+<b>The astronomical rainbow</b> particularly as viewed by the SDSS</p>
+<li> &nbsp Remind yourself of the meaning of the terms magnitude, color index, 
+and other relevant quantities.</p><br>
+<li> &nbsp To the right is the diagram showing the wavelength response of the
+five SDSS filters. Which one is g? which is i?</p><br>
+<li> &nbsp Explain why lower values of the (g-i) color index indicate bluer galaxies.<br><br><br>
+</td>
+<td valign=top align=right>
+<a href="images13/SDSS_filters.png" target=new>
+<img src="images13/SDSS_filters.png" height=250></a><br>
+Credit: SDSS
+</td>
+</tr></table>-->
+
+
+We can also look at the morphological classification provide by the citizen science
+project <a href="http://www.galaxyzoo.org/" target=new>Galaxy Zoo</a>. </p>
+
+For this exercise, we have put together a useful dataset in 
+<a href="https://drive.google.com/file/d/12NRh0Pn8T8lnPIF0q3gSo79Fh2WM-XEm/view" target=new>CSV format</a> 
+<!-- I had to remove some Inf points in the file 
+or <a href="https://drive.google.com/file/d/1L__r0oRLIT-vsGTeA7LahDhpEaLYxgBx/view" target=new>ASCII format</a>
+-->
+from a combination of the N-S Atlas
+and the Galaxy Zoo 1 data release. It does not cover the whole sky 
+because each galaxy has to be included in both catalogs. 
+The file contains the basic information plus we have calculated a color (called "gminusi")
+and an absolute magnitude ("absmagi") as well as an indicator of morphology.
+Note that the way the morphological type is identified is by having a flag set to "1" according
+to whether the galaxy was classified as "spiral", "elliptical" or "uncertain". In fact, most
+galaxies are typed "uncertain".</p>
+
+
+
+
+
+
+
+<!--&nbsp &nbsp a. &nbsp  What wavelengths correspond to the SDSS g and i-band filters? &nbsp </p>
+-->
+
+<font color=#cc0f14><b> a.</b></font> &nbsp Why do we call the difference between the magnitude measured in the SDSS-g band and that
+in the SDSS-i band a "color"?</p>
+
+<font color=#cc0f14><b> b.</b></font> &nbsp Because we wanted to keep things simple, using only the raw data as they are included
+in the compilations, we have limited this subset to galaxies which 
+are viewed face-on. Why does that make things simpler?</p>
+
+ <font color=#cc0f14><b> c.</b></font>&nbsp First, using the N-S Atlas magnitudes, make a color-magnitude diagram using 
+the absolute magnitude and color given here.
+Be sure that luminosity increases from left to right and that blue galaxies are towards the botton,
+red towards the top. What do you notice about the distribution of galaxies? &nbsp <i>(Note: this diagram
+will be useful to some of the teams in SH#3)</i>.</p>
+
+
+Next, let's add the information about morphology from the GZ.</p>
+<font color=#cc0f14><b> d.</b></font> &nbsp Use the "column statistics" capability to figure out quickly
+the fraction of the galaxies which are classified as ellipticals? As spirals? As uncertain?</p>
+
+
+ <font color=#cc0f14><b> e.</b></font>&nbsp Using the <b>TOPCAT</b> subsets capability, plot the spirals and ellipticals
+separately, using different symbols/colors. Superpose the spirals on the ellipticals <i>(be sure to
+do it in that order)</i>. What do you conclude?</p>
+
+
+<hr>
+<b>A color magnitude diagram of SDSS galaxies in the Coma supercluster</b></p>
+A common way to explore the properties of a population of galaxies uses
+the color-magnitude diagram (CMD). Such a diagram shows that most galaxies inhabit one of
+two main regions on the diagram: the "red sequence" and the "blue cloud".
+A nice example which we will use for reference
+is the work of ALFALFA team member Peppo
+Gavazzi and his co-workers who constructed the CMD of a large sample of galaxies within 
+420 square degrees of sky covering
+the Coma supercluster and its member groups and clusters of galaxies as presented
+in <a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G" target=new>
+Gavazzi <i>et al</i> (2010)</a>, A&A 517, 73.</p>
+<table>
+<tr><td valign=top>
+Taken from Fig. 3 of
+that paper, the figure shows the "<i>g-i color versus i-band absolute magnitude 
+relation of all galaxies in the C[oma]S[upercluster] coded according to Hubble type: red = early-
+type galaxies (dE-E-S0-S0a); blue = disk galaxies (Sbc-Im-BCD); green = bulge 
+galaxies (Sa-Sb)... Contours of equal 
+density are given. The continuum line g-i =
+-0.0585 *(M<sub>i</sub> + 16) + 0.78 represents the empirical separation between the 
+red-sequence and the remaining galaxies.
+The dashed line illustrates the effect of the limiting magnitude r=17.77 of the 
+spectroscopic SDSS database, combined with the
+color of the faintest E galaxies g-i ~0.70 mag.</i>."
+</p>
+<li> Be sure you understand this diagram and what it tells us about galaxies.</p>
+
+</td><td align=right>
+<a href="https://drive.google.com/file/d/1fqFofMNFbjrgmZshsj24RJ3giP4vWMM_/view" target=new>
+<img src="https://drive.google.com/file/d/1fqFofMNFbjrgmZshsj24RJ3giP4vWMM_/view" height=320>
+</a> <br>
+<a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G" target=new>Figure 3 from Gavazzi
+<i>et al</i> (2010)</a><br>
+</td></tr>
+</table></p>
+
+<li> Compare this diagram to the one you made in the last part. In what ways
+is it different/similar?</p>
+<hr>
+
+
+
+<b> Comparison of the ALFALFA and Coma supercluster populations</b></p>
+
+Now, you are ready to make a color-magnitude diagram for the α.40-SDSS sample. We suggest that you make a first plot with free scaling and a second using the scaling x-axis (-14, -24), y-axis (-1.0, 2.0). Notice that a few points drop out, but some of them may be reflect some failure in the data anyway. Large samples are powerful because they allow us to focus on the overall trends in the sample population. (On the other hand, at some point, we should probably check those outliers to see whether their deviation is real; what might be wrong?)
+
+Compare this diagram to the one you made in the last part. In what ways
+is it different/similar?</p>
+
+<p>Now compare with the Gavazzi CM
+       set the axes to be: x-axis (-16, -23.5), y-axis 
+       (0.0, 1.5). Note that when you restrict the scaling, the
+       plot contains 11343 points within the area; we
+       have lost (12469-11343) = 1126 out of 12469 = 9% of the points.</p>
+
+<li> &nbsp Compare the &alpha;.40 CMD with the one presented by <a href="https://drive.google.com/file/d/1fqFofMNFbjrgmZshsj24RJ3giP4vWMM_/view" target=new>Gavazzi <i>et al</i>
+ (2010)</a>. Explain
+       the differences in terms of the galaxy populations included in the
+       two datasets and the depth of the samples.</p>
+<!--
+<b><font color=#cc0f14>
+ALFALFA clearly is biased AGAINST the red cloud. It also seems to contain more luminous blue galaxies than
+Gavazzi et al
+</font></b></p>
+-->
+<br>
+
+
+
+
+<br>
+<hr>
+<font color=#008000><i>Last modified: Mon Jun 22 07:29:06 EDT 2015
+</i> by becky </font>
+</body>
+</html>

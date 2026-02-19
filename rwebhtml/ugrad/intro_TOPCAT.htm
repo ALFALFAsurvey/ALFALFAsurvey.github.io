@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <title>Undergraduate ALFALFA team </title> 
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=#ccof14> A Brief Introduction to TOPCAT</font></h3>
+
+
+<hr>
+<li> Link to <a href="http://www.star.bris.ac.uk/~mbt/topcat/">TOPCAT</a></p>
+
+<img src="images13/topcat_front.jpg" height=200></p><br>
+<hr>
+<b> Getting ready for TOPCAT</b></p>
+<a href="http://www.star.bris.ac.uk/~mbt/topcat/">TOPCAT</a> is a JAVA utility
+developed under the auspices of the international "Virtual Observatory" concept
+which enables the manipulation, display and analysis of datasets, specifically
+astronomical ones. Please refer to the above link for detailed information
+and downloading instructions. Note that <b>TOPCAT</b> can be installed on
+Windows, MacOS and Linux platoforms that are also Java-enabled.</p>
+
+Here, I assume that you have already installed <b>TOPCAT</b> successfully.</p>
+<br><hr>
+<b> Getting datasets ready for TOPCAT</b></p>
+
+To make things easy, we generate files in "CSV" format --- "Comma Separated
+Variables" --- because that format is simple, well-defined and platform-independent. 
+It is definitely the preferred format. However, it seems that Internet Explorer, 
+which some of you may use as your browser, corrupts the pristine format of these 
+files when it downloads them
+(totally defeating the whole purpose of having machine-independent files).
+So, unfortunately, there are different instructions depending on the browser
+you use.
+<ul>
+<li> Firefox (and other users):<br>
+Please chose the "CSV" file to download. 
+   <ul>
+   <li> Click on the "CSV" file you want to download
+   <li> After it loads, click on "File" (upper left) and then "Save Page as"
+   <li> Make sure the file is to be saved in the proper directory; I suggest you leave the name
+        as I have set it. Note that the file type (lower right) should read "plain text document"
+   <li> Click "save".
+   <li> Check that the file exists in the right directory. If it's there, you are ready to 
+        load it into <b>TOPCAT</b>.
+</p>
+   </ul>
+<li> Internet explorer users:<br>
+     Because of the issues with Internet Explorer, you have to select the "ASCII"
+     file version, not the CSV. And then, we have to fool Microsoft a bit.... 
+   <ul>
+   <li> Click on the "ASCII" file you want to download
+   <li> After it loads, click on "File" and then "Save Page as". Save it as a
+        "plain text document" and be sure to specify that its name ends in ".txt".
+   <li> Make sure the file is to be saved in the proper directory, and that it is a "text document".
+   <li> Open the file with "WordPad". To do this, you may need to point at the file and right click
+        to that a menu appears; selected "Open with" and then to the right "WordPad".
+   <li> Once the file loads, then click on the menu at the top left, then on "Save as" and
+        "Plain text document". Be sure the "Save as type" is set to "Text Document".
+   <li> Click "save".
+   <li> Check that the file exists in the right directory. If it's there, (we hope that) you are ready to 
+        load it into <b>TOPCAT</b>.</p>
+   </ul>
+</ul>
+<br><hr>
+<b> A simple example of using TOPCAT</b></p>
+
+<table><tr><td valign=top>
+Below are links to two files containing the different versions (CSV and ASVII) of
+a catalog of 38,000 stars with measured apparent 
+magnitudes at both B and V band, parallaxes and radial velocities from the 
+Hipparcos satellite catalog which we downloaded from 
+<a href="http://www.pas.rochester.edu/~emamajek/coolplots.html">Eric Mamajek's </a> 
+page at URochester.</p>
+
+<li> &nbsp <a href="files/hipparcosdata.csv"  target=new>CSV</a> Version<br>
+<li> &nbsp <a href="files/hipparcosdata_ascii.txt" target=new>ASCII</a> Version</p>
+
+Download the file following the instructions above. Be sure you know in what directory it is located.
+Now, let's make the plot shown on the right.</p>
+</td><td valign=top>
+<a href="images13/hipparcos_cmd.gif" target=new>
+<img src="images13/hipparcos_cmd.gif" height=260></a>
+</td></tr></table>
+
+<li> &nbsp Start <b>TOPCAT</b>. On Windows machines, that means clicking on the file "topcat-full"
+in the directory where you have downloaded the executable jar file of that name.
+The <b>TOPCAT</b> window will appear.</p>
+<img src="images13/topcat1.jpg" height=260></a></p>
+<li> &nbsp Click on "File" (upper left) and then "Load Table". A new "Load New Table" window will appear.
+Choose the appropriate "Format", either "CSV" or "ASCII"..</p>
+<li> &nbsp Click on "System browser". Find the star data file you download. Click on it so that its
+name appears under "File name" at the bottom of the "Load Table" menu. On Windows machines, be sure that the bottom
+file type says "All Files". Click on "Open" and the file should load. It might take some seconds. The file name should 
+appear in the "Table List"..</p>
+<li>  &nbsp Left click on "Views" and then "Column Info". A new window will open which lists the Names of each
+column in the table. Notice what they are. </p>
+<img src="images13/topcat2.jpg" height=260></a></p>
+<li>  &nbsp Back in the main menu, left click on "Graphics" and then on "Plot". A new window will appear.
+By default, it has plotted column 1 ("StarID") on the X axis and column 2 ("Hip") on the Y axis. What we want
+however is to plot "BminusV" on the X axis and "AbsMag" on the Y axis. Left click on the downward arrow next
+to "StarID" and select "BminusV"; then do the same for "AbsMag". This plot should appear.</p>
+<img src="images13/topcat3.jpg" height=350></a></p>
+Notice that it bears some resemblance to the plot we wanted to make (shown above on the right), but (a)
+the data points appear are denoted by red symbols not black ones, (b) it seems to have the Y axis scale flipped and (c) the range 
+of X and Y values is not the same. We need to fix those things.
+</p>
+<li>  &nbsp Astronomers measure the brightnesses of objects using a system
+of "magnitudes" that is inverse, that is a larger magnitude means a fainter object. So for our
+plot, we want to flip the Y axis of the plot. Simple click on the small box next to "Flip" on
+the row for the Y axis. That looks better!</p>
+<li> &nbsp Next, let's change the color of the data point symbols. On the right, under "Row subsets", there
+is a small box with a red dot in its center. Click on the red dot. A new "Plot Style Editor" window appears. Left
+click on the down arrow to the right of the red "Colour" bar. Scroll down and select the black bar.
+The color of the points will change! You can dismiss this window by clicking on "ok".</p>
+<li> &nbsp To finish the job, we need to reset the range of the X and Y values. At the top of the "Scatter Plot"
+window, left click on "Plot" and then on "Configure Axes and Title". A new "Axis Configuration"
+window will appear. You can now give the plot a Title (for example, "Hipparcos Color-Magnitude
+Diagram") and set the ranges. In this case, set X range
+from -0.5 to 2.5 and the Y range to -6 to 16 and then click "Apply"; the plot will
+rescale. </p>
+<img src="images13/topcat4.jpg" height=250></a></p>
+Notice that some of the points disappear because they lie outside the specified
+ranges. We'll talk about that later....</p>
+<li>  &nbsp As one final step in this example, let's save the plot by exporting a copy to your
+machine's disk. At the top of the "Scatter Plot" window, left click on "Export" and then "Export as gif"
+(or other format if you want). A window will open which allows you to specify the file name
+and directory where it will be saved. When you have specified them, click on "Write gif" and
+you should now have a copy of the plot you have made. When you open the file, select your browser (or
+other image display utility) when asked for what program to open it with.
+</p>
+
+<b>TOPCAT</b> has many more features, so explore its capabilities further!
+Lots of astronomers use <b>TOPCAT</b>, so you are now in good company!</p>
+
+<br>
+<hr>
+<font color=#008000><i>Last modified: Fri Sep 20 15:57:35 EDT 2013
+</i> by martha </font>
+</body>
+</html>

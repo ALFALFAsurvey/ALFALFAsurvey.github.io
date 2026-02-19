@@ -1,0 +1,4 @@
+cp a2010_schedcurrent.txt a2010_schedspr09.txt
+cp a2010_schedspr_needed.txt a2010_schedspr_needed09.txt
+cp a2010_schedsprstatus.txt a2010_schedsprstatus09.txt
+scp a2010_sched*.txt a2010@remoto.naic.edu:/home/a2010/public_html/scheds

@@ -1,0 +1,23 @@
+Graduate student PhD project
+
+Project title:  Environmental effects on HI and star formation properties of nearby galaxies from stacking of ALFALFA data
+Student:        Toby Brown
+Institution:    Swinburne University of Technology        
+Context:        Part of PhD thesis
+Adviser:        Barbara Catinella         
+Time frame:     end 2013-
+
+Other collaborators:      Virginia Kilborn, Luca Cortese, David Schiminovich, Martha Haynes, Riccardo Giovanelli
+Publication expected?     yes, 2014+
+
+
+Description:
+This project is a natural extension of the work carried out by Silvia Fabello during her PhD thesis at the MPA.
+Silvia developed a software tool to extract and co-add spectra from the ALFALFA data cubes, and study the average HI properties of selected subsamples of massive galaxies (extracted from the GASS parent sample). 
+We will apply the same stacking technique to study the effects of the environment on the HI and star formation properties of galaxies, with the goal of quantifying the amount of HI removal and star formation quenching in groups, or if possible as a function of environmental density. This project requires very large statistics in order to sample the various environments at fixed stellar mass, and obtain stacked HI detections or at least meaningful upper limits. This work will be based on a well-defined volume-limited, stellar-mass selected sample extracted from SDSS/GALEX/WISE that will encompass both the GASS parent sample (limited to stellar masses > 10^10 Msun and redshifts z=0.025-0.05) and the GASS low-mass extension sample (limited to stellar masses between 10^9 and 10^10.2 Msun and redshifts z=0.01-0.02).
+
+
+ALFALFA region:               Overlap area between ALFALFA and SDSS.
+ALFALFA data to be used:      Grids and catalogs.
+Other data sets to be used:   SDSS, GALEX, WISE and other datasets as available.
+Products to be delivered:     Possible improvement of stacking software, catalogs of parent sample.

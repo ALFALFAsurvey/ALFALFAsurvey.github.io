@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<br>
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<font color=#008000><b> Try to finish this hunt by 7pm on Wednesday evening</b></font>
+</td></tr></table></p>
+<b><font color=#cc0f14> UAT13.01 Scavenger Hunt #3:</font> <br>
+<font color=#008000>
+Introduction to how we can use ALFALFA in combination
+with other datasets to explore the local galaxy population</font></b></p></center>
+
+This scavenger hunt will provide an introduction to the ALFALFA and SDSS catalogs, deriving 
+galaxy properties from observational data, what the ALFALFA galaxy population is like
+compared to an optically selected one and investigating the large scale structure. 
+As an example of the kind of science the UAT groups project is doing,
+we will take a quick look at the galaxy population in ALFALFA, in the SDSS database
+and in the vicinity of the nearby "poor" cluster known as MKW 11. </p><br>
+
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<b><font color=#ccof14> In a departure from previous Scavenger Hunts, each team will be
+assigned a separate project dealing with the use of ALFALFA data to learn about galaxies in the local universe.
+We will then reassemble Wednesday evening when team will have 10 minutes to present their results.
+</font> </b></td></tr></table></center></p><br><br>
+
+<h3><font color=#ccof14> Team A:</font> &nbsp &nbsp &nbsp <font color=#008000>
+  The population of galaxies detected by ALFALFA</h3></font></p><br>
+
+<table><tr><td>
+A common way to explore the properties of a population of galaxies involves constructing
+its color-magnitude diagram (CMD). A nice example which we will use for reference
+is the work of ALFALFA team member Peppo
+Gavazzi and his co-workers who constructed the CMD of a large sample of galaxies within 
+420 square degrees of sky covering
+the Coma supercluster and its member groups and clusters of galaxies as presented
+in <a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G">
+Gavazzi+ (2010)</a>, A&A 517, 73 and shown here to the right. Taken from Fig. 3 of
+that paper, the figure shows the "<i>g-i color versus i-band absolute magnitude 
+relation of all galaxies in the C[oma]S[upercluster] coded according to Hubble type: red = early-
+type galaxies (dE-E-S0-S0a); blue = disk galaxies (Sbc-Im-BCD); green = bulge 
+galaxies (Sa-Sb)... Contours of equal 
+density are given. The continuum line g-i =
+-0.0585 *(M<sub>i</sub> + 16) + 0.78 represents the empirical separation between the 
+red-sequence and the remaining galaxies.
+The dashed line illustrates the effect of the limiting magnitude r=17.77 of the 
+spectroscopic SDSS database, combined with the
+color of the faintest E galaxies g-r ~0.70 mag.</i>."
+</p>
+
+Your task is to construct a CMD for the &alpha;.40 population using colors and
+magnitudes derived from the Sloan Digital Sky Survey (SDSS) Data Release 7 (DR7).
+Luckily for you, we will provide you with the data you need, but before you begin,
+you should understand a bit about the SDSS photometric dataset.</p>
+</td><td width=320>
+<img src="files/gavazzi2010_cmd.png" height=300><br>
+<a href="files/gavazzi2010_cmd.png" height=300">Click</a> for a larger view.</br>
+Figure 3 from Gavazzi+ (2010)<br>
+</p>
+</td></tr></table><br>
+
+
+<b>3.A.0 &nbsp &nbsp The astronomical rainbow</b><br> 
+Remind yourself of the meaning of the terms magnitude, color index, 
+extinction and other relevant quantities.</p>
+
+<ul>
+<li> Explain why lower (g-i) colors indicate bluer galaxies.
+<li> In a very famous movie, what would be the (g-i) color index
+         of Mary Kate Danaher's hair?</p>
+</ul><br>
+
+<b>3.A.1 &nbsp &nbsp Intro to colors and magnitudes from the SDSS</b><br> 
+First, you need to investigate what magnitudes are given in the SDSS. In fact,
+determining a magnitude for a galaxy is not trivial. See, for example,  
+the <a href="http://www.sdss.org/dr6/algorithms/photometry.html">SDSS photometry page</a>.
+<ul>
+<li> What is meant by an "exponential profile"? A "deVaucouleurs" profile?
+<li> What is a Petrosian magnitude as derived by the SDSS?
+<li> What is a "model" magnitude as derived by the SDSS?
+<li> Which one is used to compute luminosities? Which one is better for colors?
+</ul></p><br>
+
+<b>3.A.2 &nbsp &nbsp SDSS data for the &alpha;.40 galaxies</b><br> 
+Find here the CSV <a href="files/a40.plusSDSS.csv">file</a> containing useful information
+extracted from the population of galaxies included in both the 
+2011 public ALFALFA survey catalog (&alpha;.40 
+<a href="http://adsabs.harvard.edu/abs/2011AJ....142..170H">Haynes+ 2011</a>) and the
+SDSS DR7 database. You can use this file to explore some interesting characteristics of
+the population of galaxies detected by ALFALFA. Examine the contents of the file before
+you start working with it and be sure that you understand what all the columns mean;
+if you don't understand any of them, ask. Note that (1) there is a lot more here than you 
+actually need because, we've done you a big favor in generating the file for you
+and (2) we are deliberately not telling you what everything is so you'll have to
+ask. For example, in practice, to calculate colors,
+you need to correct the observed apparent magnitudes
+at both bands for Galaxtic and internal extinction; those corrections are given in the table.
+See if you can figure out what you've got and what you need before you ask us for help.
+</p><br>
+
+<b>3.A.3 &nbsp &nbsp The CMD for the &alpha;.40 galaxies</b><br> 
+Using the data provided in the file, use <b>TOPCAT</b> to
+construct the CMD for the &alpha;.40 galaxies.
+In order to compare what you find with Figure 3
+of Gavazzi+ (2010) be sure to generate the plot with the 
+same filters (that is, (g-i) versus M<sub>I</sub>), scaling and orientation 
+they use. You can use the arithmetic capability
+of <b>TOPCAT</b> to apply the corrections you need. What are they? Especially: 
+what is the K-correction? Do we need to worry about it?</p>
+
+<br>
+<b><font color=#cc0f14>
+First, correct the colors for both galactic and internal extinction:<br>
+corr_modelmag_g = ModelMag_g - Gext_g - Iext_g <br>
+corr_modelmag_i = ModelMag_i - Gext_i - Iext_i <br>
+corr_PetroMag_i = PetroMag_i - Gext_i - Iext_i <br>
+gminusi=corr_modelmag_g - corr_modelmag_i <br>AbsMag_i = corr_PetroMag_i + 5. - 5.0* log10 (dist*1000000.)<br>     
+<a href="files/alph40.sdss.CMD.full.gif"><img src="files/alph40.sdss.CMD.full.gif" height=300></a><br>
+This plot contains 12469 points....
+</p> Then scale as suggested :<br>
+<a href="files/alph40.sdss.CMD.scale1.gif"><img src="files/alph40.sdss.CMD.scale1.gif" height=300></a><br>
+This plot contains 12173 within the visible area. So we didn't lose too many points.
+</font></b></p>
+<br>
+
+We suggest that you make a first plot with free scaling and a second
+       using the scaling x-axis (-14, -24), y-axis
+       (-1.0, 3.0). Then, to compare with the Gavazzi CMD
+       set the axes to be: x-axis (-16, -23.5), y-axis 
+       (0.0, 1.5). How many points (a few? a lot? any particular ones?)
+       get lost when you restrict the axis scales?<br>
+<br>
+<b><font color=#cc0f14>
+<a href="files/alph40.sdss.CMD.restrictedaxes.gif"><img src="files/alph40.sdss.CMD.restrictedaxes.gif" height=300></a><br>
+This one contains 11343 points within the area. So we have lost (12469-11343) = 1126 out of 12469 = 9% of the points.
+</font></b></p>
+<br>
+
+Compare the &alpha;.40 CMD with that presented by <a href="files/gavazzi2010_cmd.png">Gavazzi+ (2010)</a>. Explain
+       the differences in terms of the galaxy populations included in the
+       two datasets.</p>
+<br>
+<b><font color=#cc0f14>
+ALFALFA clearly is biased AGAINST the red cloud. It also seems to contain more luminous blue galaxies than
+Gavazzi et al.
+</font></b></p><br>
+
+
+<b>3.A.4 &nbsp &nbsp Gas and stars in the &alpha;.40 galaxies</b><br> 
+
+Now let's look at how the gas and stars are connected in the &alpha;.40 galaxy population. 
+To make the previous graph, you calculated the i-band absolute magnitude. Use the arithmetic
+function in <bTOPCAT</b> to calculate the associated luminosity (logL) 
+and the "gas fraction" (gas2L = log MH - log L) for each &alpha;.40 galaxy which also
+has SDSS photometry. To calculate the i-band luminosity, assume that the absolute
+magnitude of the Sun at i-band is +4.58.</p>
+
+Using your results, plot the optical luminosity (x axis, in log units) 
+versus the HI mass (y axis, in log units) and, separately, the optical luminosity 
+(x axis, in log units) versus the gas fraction parameter.
+Consider the results: what do you notice about the scaling with optical luminosity
+and how can you explain what you see? </p>
+
+<br>
+<b><font color=#cc0f14>
+<img src="files/LumivsHImass.a40.gif" height=300></p>
+<img src="files/Lumivsgas2L.a40.gif" height=300></p>
+</br>
+
+Just in case, here is the data <a href="files/a40.opthi.csv">file</a>.</font></b>
+</p>
+<br>
+<br>
+<b>3.A.5 &nbsp &nbsp Make a cool image of NGC 3166 using Montage</b></p>
+
+<i>Note: this may take a little while to run, because system use at IPAC is
+unpredictable. We suggest you not wait until the last minute to start it.</i></p>
+
+<i>Note also: Someone in your group will have already be registered
+to use this facility, or else one of you will have to setup up
+an account; find someone in your group to be the registered user and
+then proceed. </i></p>
+
+<b> Montage</b> is a Virtual Observatory tool that allows you to make 
+images up to 1 degree in size from selected public databases via a 
+<a href="http://hachi.ipac.caltech.edu:8080/montage/">
+web-based interface</a>. Read about the full capabilities of the service
+<a href="http://montage.ipac.caltech.edu/">here</a>.
+</p>
+
+Use the <b> Montage</b> <a href="http://hachi.ipac.caltech.edu:8080/montage/"> web service</a>
+to create a 0.5 degree image of the SDSS g-band data for NGC 3169, an interesting
+ALFALFA galaxy which you can read more about in
+<a href="http://adsabs.harvard.edu/abs/2012MNRAS.427.2314L">Lee-Waddell+ 2012</a>. 
+
+How many original
+SDSS images go into making up this mosaic? How long does it take for the job to run (seconds,
+minutes, hours, days)?
+What kinds of output are produced? Figure out a way to show us the "result page".</p>
+
+<b>Note</b>: during UAT13, we are having some trouble access the Montage Web service.
+If that is the case, you can download the resulting FITS file
+ <a href="montagefits/N3169_gband.mosaic.fits">here</a>,
+keeping in mind that it is a fairly large file (155 MB).</p>
+
+<i>If someone in your group has access to 
+<a href="http://hea-www.harvard.edu/RD/ds9/site/Home.html"><b>ds9</b></a>, you can examine the FITS image.</i></p>
+
+<br>
+<b> <font color=#cc0f14>
+When I am running this (Wed am 10:53), I just input NGC 3169 (not coords) into the
+object/coordinate field. There were 22 images to be reprojected; background correction
+analysis done on 59 overlaps; then background correcting 22 images; then
+coadding 22 images for the final mosaic; then creating presentation
+It took 509 seconds to run.
+If you "save as", it creates an html file that includes a subdirectory with
+the "mosaic.jpg" image:</p>
+
+<img src="files/N3169_montagegmosaic.jpg" height=300></p>
+
+</font></b></p>
+
+</p>
+<br><br><hr>
+
+<h3><font color=#cc0f14> Assignments given to the other teams:</h3>
+<ul>
+<li> <b><font color=#ccof14> Team B: &nbsp &nbsp &nbsp </b></font>
+<a href="hunt3_teamB_13.htm">A quick look at the Virgo cluster</a></p>
+
+<li> <b><font color=#ccof14> Team C: &nbsp &nbsp &nbsp</b></font>
+<a href="hunt3_teamC_13.htm">Large scale structure around the poor cluster MKW 11</a></p>
+
+<li> <b><font color=#ccof14> Team D: &nbsp &nbsp &nbsp </b></font>
+<a href="hunt3_teamD_13.htm">The galaxies in the MKW 11 cluster</a></p>
+</ul>
+
+<br>
+<hr>
+<font color=#cc0f14>
+This page created by and for the members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> 
+Survey Undergraduate team</font></address>
+</p>
+<!-- hhmts start -->
+<font color=#008000><i>Last modified: Wed Jan  9 09:48:31 EST 2013
+</i> by Martha </font>
+<!-- hhmts end -->
+</body>

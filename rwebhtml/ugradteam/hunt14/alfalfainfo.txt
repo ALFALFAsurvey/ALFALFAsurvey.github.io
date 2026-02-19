@@ -1,0 +1,5 @@
+What is this new indentation thing in VIM?
+For 2014, we need the position of NGC 5846 
+as the centroid:  A_1506+01  in order to
+update the workshop pages.
+

@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>Documentation for distcalib file</title>
+  </head>
+
+  <body bg color=ffffff>
+    
+<h3>Documentation for distcalib file</h3>
+
+Files can be found at /home/dor3/gal/idl_alfa, the master versions are located in: /home/dor3/gal/esp3/distcalib
+and /home/dor3/gal/esp3/groups</p>
+
+Notes from the old version:
+<li>1st version of the files is in /home/dor3/gal/esp3/distcalib/version1.<br>
+<li>2nd version of the files is in /home/dor3/gal/esp3/distcalib/version2 (B1950 co-ords)</p>
+
+
+<p>The relevant files are:
+<table>
+<tr><td valign=top><font color=#cc0f14>dist_calibs.dat</font></td><td> Contains the list. Columns are
+<ol>
+<li>AGC No.
+<li>Alternative name
+<li>RA and DEC (J2000 from AGC file)
+<li>Heliocentric radial velocity.
+<li>Distance in Mpc
+<li>Error in distance
+<li>Primary reference
+<li>Secondary reference (if there is one)
+<li>Distance modulus
+<li>Error on distance modulus
+<li>Method for getting distance. [SBF, TRGB, ceph, cmult (average calibrated by cepheids), mult (average), stars, RRLy (from RR Lyraes)]
+<li>Reliability code. 1=Probably good, 2=OK, 3=probably dodgy, 4=unknown
+<li>Flag for note. 1=note related to this distance, 0=no note. See dist_calibs.notes
+<li>Number of distances on record for this galaxy (other entries in dist_calibs.notes)
+</ol>
+
+</td>
+
+</table>
+
+<h3>Information</h3>
+<p><b>Acronymns:</b>
+<ul>
+<li><font color=green>TRGB:</font> Tip of the Red Giant Branch</li>
+<li><font color=green>SBF:</font> Surface Brightness Fluctuations</li>
+<li><font color=green>PNLF:</font> Planetary Nebula Luminosity Function</li>
+<li><font color=green>GCLF:</font> Globular Cluster Luminosity Function</li>
+<li><font color=green>EcBin: </font> Eclipsing Binary</li>
+<li><font color=green>LG: </font> Local Group</li>
+<li><font color=green>CVn: </font> Can Ven or Canes Venacti</li>
+
+</ul>
+
+<p><b>Distance methods:</b> Check out Lisa Wei's <a href="http://www.astro.cornell.edu/~masters/lisadistances/">notes on distance indicators</a>.
+<h3>References:</h3>
+
+<table>
+
+<tr><td valign=top><a href="http://xxx.lanl.gov/abs/astro-ph/0407486">AG04:</a></td><td> A. L. Argon (1), L. J. Greenhill (1), J. M. Moran (1), M. J. Reid (1),
+  K. M. Menten (2), M. Inoue (3) astro-ph/0407486 ApJ in press.
+<br><font color=red>Geometric distance to M33 (NGC 598), also see BR05 below which supercedes this? </font>
+</td></tr>
+
+<tr><td valign=top><a href="http://xxx.lanl.gov/abs/astro-ph/0407444">BG04:</a></td><td> M. Bellazzini (INAF-OAB), N. Gennari (Bologna Univ.), F.R. Ferraro (Bologna Univ.), A. Sollima (Bologna Univ.) astro-ph/0407444. MNRAS in press.
+<br><font color=red>New TRGB distance to LeoI 254+/-18 kpc.</font>
+</td></tr>
+
+<tr><td valign=top><a href="http://xxx.lanl.gov/abs/astro-ph/0503418">BG05:</a></td><td> M. Bellazzini (INAF-OAB), N. Gennari (Bologna Univ.), F.R. Ferraro (Bologna Univ.), astro-ph/0503418. MNRAS in press.
+<br><font color=red>New TRGB distance to LeoII 233+/-15 kpc.</font>
+</td></tr>
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0503058">BR05:</a></td><td> A. Brunthaler, M.J. Reid, H. Falcke, L.J. Greenhill, C. Henkel 2005 astro-ph/0503058. Science, Vol. 307 (4 March 2005)
+<br><font color=red>Geometric distance to M33 from same observations as AG04? Slightly different answer.</font>
+</td></tr>
+
+<tr><td valign=top><a href="http://xxx.lanl.gov/abs/astro-ph/0310477">BS04:</a></td><td> A. Z. Bonanos, K. Z. Stanek, A.H. Szentgyorgyi, D.D. Sasselov, G.A. Bakos, astro-ph/0310477. Should be Feb 2004 AJ.  
+<br><font color=red>Distance to the Draco Dwarf Spheroidal galaxy from RR Lyrae stars is 75.7+/-5.4 kpc.</font>
+</td></tr>
+
+<tr><td valign=top><a href="http://xxx.lanl.gov/abs/astro-ph/0507329">CH05:</a></td><td> Cioni, M.-R.L, Habing, H.J. A&A in press (astro-ph/0507329)
+<br><font color=red>TRGB Distance to Draco Dwarf (dM = 19.49+/-0.162)</font>
+</td></tr>
+
+<tr><td valign=top><a href="http://xxx.lanl.gov/abs/astro-ph/0310477">CH04:</a></td><td> Cioni, M.-R.L, Habing, H.J. A&A in press (astro-ph/0409294)
+<br><font color=red>TRGB Distance to NGC 6822 23.34+/-0.12.</font>
+</td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1989ApJ...347..760C&amp;db_key=AST&amp;high=40c4b2f14d09020">CB89:</a></td><td> Carignan, C & Beaulieu, S. 1989, AJ 347, 760.
+<br><font color=red>Brightes blue star distance to DDO 154 is 3.2+/-1Mpc.</font>
+</td></tr>
+
+
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2003AJ....125.1261D&db_key=AST&high=3e8c5307ff10156">Do02:</a></td><td>   Dolphin, A.E., Saha, A., Skillman, E.D., Dohm-Palmer, R.C., Tolstoy, E.,
+       Cole, A.A., Gallagher, J.S., Hoessel, J.G., \& Mateo, M.
+       2003, AJ 125, 1261
+<br><font color=red>Distance to Sextan A is found from Cepheids and compared to TRGB, red clump and RR Lyrae methods. Relative distances of  Sextans A, Leo A, IC 1613, and the Magellanic Clouds are presented (some combination of RR Lyrae, LP Cepheid, SP Cepheid, TRGB and Red clump methods).</font>
+</td></tr>
+
+      <tr><td valign="top"><a href="">F01 (FMG01):</a></td><td>
+Wendy L. Freedman , Barry F. Madore , Brad K. Gibson , Laura Ferrarese , Daniel D. Kelson , Shoko Sakai , Jeremy R. Mould , Robert C. Kennicutt, Jr. , Holland C. Ford , John A. Graham , John P. Huchra , Shaun M. G. Hughes , Garth D. Illingworth , Lucas M. Macri , and Peter B. Stetson. ApJ 2000, 553, 47 
+<br><font color=red>HST Key Project Paper. Rederives calibration for Cepheid distances to ~25 galaxies.</font>
+</td></tr>
+
+<tr><td valign="top"><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2000ApJ...529..745F&db_key=AST&high=3e8c5307ff24948">Fe00a:</a></td><td>
+Ferrarese, L., Mould, J.R., Kennicutt, R.C.Jr., Huchra, J., Ford, H.C., 
+Freedman, W.L., Stetson, P.B., Madore, B.F., Sakai, S., Gibson, B.K.,
+Graham, J.A., Hughes, S.M., Illingworth, G.D., Kelson, D.D.,
+Macri, L., Sebo, K., Silbermann, N.A. 2000a, \apj, 529, 745.
+<br><font color=red>Derives Cepheid based calibration for 4 distance indicators that use old stellar populations -- TRGB, PNLF, GCLF and SBF and presents distance moduli to galaxies combining multiple methods.</font>
+</td></tr>
+
+<tr><td valign="top"><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2000ApJS..128..431F&db_key=AST&high=3e8c5307ff24948">Fe00b:</a></td><td>
+Ferrarese, L., Ford, H.C., Huchra, J., Kennicutt, R.C.Jr., Mould, J.R., Sakai, S.,
+Freedman, W.L., Stetson, P.B., Madore, B.F., Gibson, B.K.,
+Graham, J.A., Hughes, S.M., Illingworth, G.D., Kelson, D.D.,
+Macri, L., Sebo, K., Silbermann, N.A. 2000b, \apjs, 128, 431.<br><font color=red>More data using the above method. </font></td></tr>
+
+<tr><td valign="top"><a href="http://arxiv.org/abs/astro-ph/0605707">Fe06:</a></td><td>
+ Ferrarese, L., Mould, J.R, Stetson, P.B., Tonry, J.L., Blakeslee, J.P., Ajhar, E.A. ApJ in press, astro-ph/0605707
+<br><font color=red> Cepheid distances to NGC 5128</font></td></tr>
+
+
+
+
+<tr><td valign="top"><a href="http://xxx.lanl.gov/abs/astro-ph/0405367">GB04:</a></td><td> Georgiev et al. 2004 astroph/0405367 (A&A in press)
+<br><font color=red>New distance for HoIX (DDO 66) based on method of brightest stars is &mu=27.58+/-0.4 (3.28+/-0.60 Mpc)</font></td></tr>
+
+<tr><td valign="top"><a href="http://xxx.lanl.gov/abs/astro-ph/0405465">GBF04:</a></td><td> Galleti et al. 2004 astroph/0405465 (A&A in press)
+<br><font color=red> New distance to M33 (NGC 598) from TRGB &mu=24.64 +- 0.15 (D=847 +- 60 Kpc)
+</font></td></tr>
+
+<tr><td valign="top"><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1997AstL...23..514G&amp;db_key=AST&amp;high=40c4b2f14d27955">GKT97:</a></td><td> Georgiev, T. B., Karachentsev, I. D., & Tikhonov, N. A., Astronomy Letters <br><font color=red> Distances to 13 nearby galaxies from "stars" (referenced in W03).
+</font></td></tr>
+
+<tr><td valign="top"><a href="http://xxx.lanl.gov/abs/astro-ph/0405581">GP04:</a></td><td> Gieren et al. 2004 astroph/0405581 (AJ in press)
+<br><font color=red> Improved Cepheid distance to NGC 300 &mu=  26.43 +- 0.04 (random) +- 0.05 (systematic)
+</font></td></tr>
+
+<tr><td valign="top"><a href="http://arxiv.org/abs/astro-ph/0605231">GP06:</a></td><td> Gieren et al. 2006 astroph/0605231 (ApJ in press)
+<br><font color=red> Improved Cepheid distance to NGC 6822 &mu=  23.312+/-0.021 (random) +/- 0.07 (systematic)
+</font></td></tr>
+
+<tr><td valign="top"><a href="http://arxiv.org/abs/astro-ph/0501439">HG05:</a></td><td>
+Harbeck, D., Gallagher, J., Grebel, E.K., Koch. A., Zucker, D. astro-ph/0501439. Schedule for ApJ v623
+<br><font color=red>Deeper TRGB distance to And IX.</font></td></tr>
+
+<tr><td valign="top"><a href="http://www.nature.com/cgi-taf/DynaPage.taf?file=/nature/journal/v400/n6744/full/400539a0_fs.html">H99:</a></td><td>
+Herrnstein, J. R.; Moran, J. M.; Greenhill, L. J.; Diamond, P. J.; Inoue, M.; Nakai, N.; Miyoshi, M.; Henkel, C.; Riess, A. 
+Nature, 400, 539-541 (1999)
+<br><font color=red>Geometric distance to NGC 4258 (motions of water masers) </font></td></tr>
+
+<tr><td valign="top"><a href="http://www.journals.uchicago.edu/AJ/journal/issues/v116n6/980204/980204.html">J98:</a></td><td>
+Jerjen, H., Freeman, K.C., Binggeli, B. 1998 AJ 116, 2873 <br><font color=red>Distances to 5 dwarf ellipticals in the Sculptor group from SBF (first paper with distances to dEs from SBF). This reference is included in W02 (below).</font></td></tr>
+
+<tr><td valign="top"><a href="http://www.journals.uchicago.edu/AJ/journal/issues/v119n1/990392/990392.html">J00:</a></td><td>
+Jerjen, H., Freeman, K.C., Binggeli, B. 2000 AJ 119, 166 <br><font color=red>Distances to 5 dwarf ellipticals in the region of Centaurus A from SBF.</font></td></tr>
+
+<tr><td valign="top"><a href="http://www.edpsciences.org/journal/index.cfm?v_url=aa/full/2001/20/aah2646/aah2646.html">J01a:</a></td><td>
+Jerjen, H. & Rejkuba, M. A&A 371, 487.<br><font color=red>TRGB distance for ES0 540-032. This galaxy also has a TRGB distance in K03c, and an SBF distance in J98. Call into question the use of SBF for intermediate type dwarfs. This applies also to ESO 540-030, and ESO 294-010 in database.</font></td></tr>
+
+<tr><td valign="top"><a href="http://www.edpsciences.org/journal/index.cfm?v_url=aa/full/2001/46/aah3001/aah3001.html">J01b:</a></td><td>
+Jerjen, H. & Rejkuba, M. A&A 371, 487.<br><font color=red>SBF distances to 3 nearby dwarf ellipticals (using theoretical models and TRGB distances to calibrate).</font></td></tr>
+
+<tr><td valign="top"><a href="http://www.edpsciences.org/journal/index.cfm?v_url=aa/full/2003/04/aah3995/aah3995.html">J03:</a></td><td>
+Jerjen, H.  A&A 398, 63.<br><font color=red>SBF distances to 8 dwarf ellipticals in the Fornax cluster.</font></td></tr>
+
+<tr><td valign="top"><a href="http://xxx.lanl.gov/abs/astro-ph/0310779">J04:</a></td><td>
+Jerjen, H., Binggeli, B., Barazza, F.D. 2004 AJ (astro-ph/0310779) <br><font color=red>Distances to 16 dwarf ellipticals in the Virgo cluster from SBF. </font></td></tr>
+
+<tr><td valign=top><a href="http://aa.springer.de/bibs/9352002/2300399/small.htm">K99:</a> </td><td>   Karachentsev, I.D., Sharina, M. E., Grebel, E.K., Dolphin,A.E., Geisler, D., Guhathakurta, P., Hodge, P.W., Karachentseva, V.E, Sarajedini, A. & Seitzer, P. 1999 A&A, 352, 399.<br><font color=red> TRGB distance to DDO 44.</font></td></tr>
+
+<tr><td valign=top><a href="http://aa.springer.de/bibs/0363001/2300117/small.htm">K00:</a> </td><td> Karachentsev, I.D., Karachentseva, V.E, Dolphin,A.E., Geisler, D.,Grebel, E.K.,  Guhathakurta, P., Hodge, P.W., Sarajedini, A., Seitzer, P. &  Sharina, M. E.,  2000 A&A, 363, 117.<br><font color=red> TRGB distances to 6 dShps in M81 group. Also lists distances to 5 other galaxies near M81. Some of these distances in W02.</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/bib_query?2000A&A...362..544K">KSH00:</a></td><td>Karachentsev,I.D.; Sharina,M.E.; Huchtmeier,W.K, Astronomy and Astrophysics, v.362, p.544-556 (2000) <br><font color=red>UGC 11583, kk251, kk252, kkr55, kkr56, and kkr59 are dwarf irregular galaxies resolved into stars. We determined their distances from the luminosity of the brightest blue stars</font></td></tr>
+
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2002A%26A...383..125K&db_key=AST&high=3dc7e8d58126457">K02a:</a> </td><td>   Karachentsev, I.D., Dolphin, A.E.,Grebel, E.K., Geisler, D., Guhathakurta, P., Hodge, P.W., Karachentseva,
+       E.W., Sarajedini, A., Seitzer, P. \& Sharina, M. E. 2002, \aap, 383, 125.<br><font color=red> 13 galaxies in M81 group observed with HST to get TRGB distances. Also lists 37 other galaxies near M81.  .</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2002A%26A...385...21K&amp;db_key=AST&amp;high=3dc7e8d58122194">K02b:</a> </td><td>   Karachentsev, I.D., Sharina, M. E., Dolphin, A.E.,Grebel, E.K., Geisler, D., Guhathakurta, P., Hodge, P.W., Karachentseva, V.E., Sarajedini, A., & Seitzer, P.  2002, A&A, 385, 21.<br><font color=red> Distances to 17 dwarf galaxies around Cen A. </font></td></tr>
+
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2002A%26A...389..812K&db_key=AST&high=3e8c5307ff06351">K02c:</a> </td><td>   Karachentsev, I.D., Sharina, M.E., Makarov, D.I., Dolphin, A.E.,
+       Grebel, E.K., Geisler, D., Guhathakurta, P., Hodge, P.W., Karachentseva,
+       E.W., Sarajedini, A. \& Seitzer, P. 2002, \aap, 389, 812.<br><font color=red>18 galaxies observed with HST to derive TRGB distances. Combined with the 20 other galaxies close to LG (within 3 Mpc) which have distances from various <a href="K02.html">sources</a>.</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2003A%26A...398..467K&db_key=AST&high=3e8c5307ff06351">K03b:</a> </td><td>  Karachentsev, I.D., Sharina, M.E., Dolphin, A.E., 
+       Grebel, E.K., Geisler, D., Guhathakurta, P., Hodge, P.W., Karachentseva,
+       E.W., Sarajedini, A. \& Seitzer, P. 2003a, \aap, 398, 467.<br><font color=red>TRGB distances (from HST) of 18 galaxies in Can Ven.</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2003A%26A...398..479K&db_key=AST&high=3e8c5307ff06351">K03a:</a> </td><td>  Karachentsev, I.D., Makarov, D.I., Sharina, M.E., Dolphin, A.E.,
+       Grebel, E.K., Geisler, D., Guhathakurta, P., Hodge, P.W., Karachentseva,
+       E.W., Sarajedini, A. \& Seitzer, P. 2003b, \aap, 398, 479. <br><font color=red>TRGB distances (from HST) to 16 galaxies within 5 Mpc. </font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2003A%26A...404...93K&db_key=AST&high=3ef8b63f7712699">K03c:</a>  </td><td> Karachentsev, et al. 2003c, A&A 404, 93 <br><font color=red>TRGB distances (from HST) for 9 galaxies in Sculptor combined with information on distances to 12 other galaxies in Sculptor from various sources. </font></td></tr>
+
+<tr><td valign=top><a href="http://www.edpsciences.org/articles/aa/full/2003/34/aa3887/aa3887.html">K03d:</a>  </td><td> Karachentsev, et al. 2003d, A&A 408 <br><font color=red>TRGB distances (from HST) for 5 galaxies near IC 342. </font></td></tr>
+
+<tr><td valign=top><a href="http://www.journals.uchicago.edu/AJ/journal/issues/v127n4/203472/203472.html">K04:</a>  </td><td> Karachentsev, et al. 2004, AJ 127 <br><font color=red>Catalogue of galaxies with D<10Mpc or vLG < 550 km/s. <a href="K04.html">Sources</a> of distances.</font></td></tr>
+
+<tr><td valign=top><a href="http://xxx.lanl.gov/abs/astro-ph/0511648">K06:</a>  </td><td> Karachentsev, et al. 2006, AJ 131, 1361, astro-ph/0511648 <br><font color=red>Distances to 25 galaxies with vLG < 550 km/s. All new, or replacements for "star" distances. (entered as K05 initially) </font></td></tr>
+
+<tr><td valign=top><a href="http://xxx.lanl.gov/abs/astro-ph/0601225">KW06:</a>  </td><td> S. C. Keller, P. R. Wood 2006, ApJ in press (astro-ph/0601225)<br><font color=red>Cepeid distances to LMC and SMC</font></td></tr>
+
+<tr><td valign=top><a href="http://arXiv.org/abs/astro-ph/0305259">LK03:</a></td><td>Douglas C. Leonard, Shashi M. Kanbur, Choong C. Ngeow, Nial R. Tanvir, 2003, ApJ <br><font color=red>The Cepheid Distance to NGC 1637 </font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1997AstL...23..378M&db_key=AST&high=3e8c5307ff06553">Ma97:</a></td><td>  Makarova L.N., Karachentsev, I. D., Georgiev, Ts. B. 1997, Astrophys. Lett. 23, 378
+       <br><font color=red>5 Irr galaxies in CVn from brightest stars.</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1998A%26AS..128..459M&db_key=AST&high=3e8c5307ff06592">Ma98:</a></td><td>  Makarova L.N., Karachentsev, I., Takalo, L.O., Heinamaki, P. \& Valtonen, M.
+       1998 \aaps, 128, 459.<br><font color=red>18 Irr galaxies in CVn from brightest stars.</font></td></tr>
+
+<tr><td valign="top"><a href="http://adsabs.harvard.edu/abs/2007ApJ...655..144M">Mei07:</a></td><td>
+Mei, S., Blakeslee, J.P., Cote, P., Tonry, J.L., West, M.J., Ferrarese, L., Jordan, A., Peng, E.W., Anthony, A. &  Merritt, D.
+2007, ApJ 655, 144
+<br><font color=red>The ACS Virgo Cluster Survey. XIII. SBF Distance Catalog and the Three-dimensional Structure of the Virgo Cluster</font></td></tr>
+
+<tr><td valign="top"><a href="http://arxiv.org/abs/astro-ph/0510253">MF05:</a></td><td>
+Mouhcine, M., Ferguson, H.C., Rich, R.M., Brown, T.M. & Smith, T.E. astro-ph/0510253
+<br><font color=red>TRGB distances to NGC 253, NGC 4244, NGC 4945 and NGC 4258 </font></td></tr>
+
+<tr><td valign="top"><a href="http://arxiv.org/abs/astro-ph/0505399">MH05:</a></td><td>
+Y. Momany, E.V. Held, I. Saviane, Rolly Bedin, M. Gullieuszik, M. Clemens, L. Rizzi, M. Rich, K. Kuijken, A&A (in press), astro-ph/0505399
+<br><font color=red>TRGB distance to SagDIG </font></td></tr>
+
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0406350">MB04:</a></td><td> L. Monaco, M. Bellazzini, F.R. Ferraro, E. Pancino. 2004. astro-ph/040635 (MNRAS in press) <br><font color=red>TRGB distance to SGR dSph galaxy.</font></td></tr>
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0410489">MI04:</a> </td><td> A.W. McConnachie, M.J Irwin, A.M.N. Ferguson, R.A. Ibata, G.F. Lewis, N. Tanvir 2004, MNRAS (in press) astro-ph/0410489  <br><font color=red>Consistent TRGB distances to 17 LG galaxies.</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005astro.ph..3647M&amp;db_key=PRE&amp;high=40c4b2f14d23347">MHI05:</a></td><td> Mieske, S. Hilker, M. & Infante, L<br><font color=red>SBF distances to 16 galaxies in Hydra cluster.</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2003A%26A...410..445M&amp;db_key=AST&amp;high=3dc7e8d58112309">MH03:</a></td><td>  Mieske, S. & Hilker, M. 2003 A&A, 410, 445 <br><font color=red>SBF distances to 15 galaxies in Centaurus (2 of which are also studied in To01).</font></td></tr>
+
+<tr><td valign=top><a href="http://www.journals.uchicago.edu/ApJ/journal/issues/ApJ/v523n2/40071/40071.html">NZ99:</a></td><td>  Newman, J., Zepf, Stephen E.; Davis, Marc; Freedman, Wendy L.; Madore, Barry F.; Stetson, Peter B.; Silbermann, N.; Phelps, R. 1999 ApJ 523, 506 <br><font color=red>Cepheid distance to NGC 4603 in Centaurus cluster.</font></td></tr>
+
+<tr><td valign=top><a href="http://xxx.lanl.gov/abs/astro-ph/0310620">PA04:</a></td><td>  Pritzl, B.J., Armandroff, T.E., Jacoby, G.H., da Costa, G.S. 2004 AJ (astro-ph/0310620) <br><font color=red>Distance to Andromeda II from RR Lyraes is 665+/-20 kpc.</font></td></tr>
+
+<tr><td valign=top><a href="http://www.journals.uchicago.edu/cgi-bin/resolve?AJ204296">PG04:</a>
+</td><td>G. Pietrzynski, W. Gieren, A. Udalski, F. Bresolin, R. P. Kudritzki, I. Soszynski, M. Szymanski, M. Kubiak 2004 AJ 128, 2815<br><font color=red> Cepheid distance to NGC 6822.</font></td></tr>
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0601309">P06a:</a>
+</td><td>G. Pietrzynski, W. Gieren, I. Soszynski, F. Bresolin, R.P. Kudritzki, M. Dall'Ora, J. Storm, G. Bono, ApJ 2006.<br><font color=red> Improved cepheid distance to IC1613.</font></td></tr>
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0605226">P06b:</a>
+</td><td>G. Pietrzynski, W. Gieren, A. Udalski, I. Soszynski, F. Bresolin, R.P. Kudritzki, R. Mennickent, M. Szymanski ApJ 2006 in press.<br><font color=red> New cepheid distance to NGC 3109.</font></td></tr>
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0506638">RJ05:</a>
+</td><td> Rekola, R., Jerjen, H. \& Flynn, C. A&A in press, astro-ph/0506638<br><font color=red>SBF distances to 9 nearby dwarfs and S0 galaxy NGC 4150. </font></td></tr>
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0511045">R05:</a> </td>
+<td> Ribas etal. 2005  Astrophys.J. 635 (2005) L37-L40<br><font color=red> Eclipsing binary distance to M31</font></td></tr>
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0510298">RB05:</a>
+</td><td>Rizzi, L., Bresolin, F., Kudritzki,  R-P, Gieren, W. & Pietrzynski, G. ApJ in press astro-ph/0510298<br><font color=red> New TRGB distance for NGC 300.</font></td></tr>
+
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0501545">SM05:</a> </td><td> Silva, D.R., Massey, P., DeGioia-Eastwood, K., Henning, P.A. 2005 ApJ 623 <br><font color=red>Distance to HIZSS3 in zone of avoidance from TRGB. </font></td></tr>
+
+<tr><td valign=top><a href="http://www.journals.uchicago.edu/AJ/journal/issues/v124n2/202097/202097.html">S02:</a> </td><td> Saha, A.; Claver, J.; Hoessel, J. G. 2002AJ....124..839<br><font color=red>Distance to IC 342 using several Cepheids. </font></td></tr>
+
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2004ApJ...608...42S&amp;db_key=AST&amp;high=40c4b2f14d22537">SF04:</a> </td><td>Sakai, S., Ferrarese, L., Kennicutt, R.C.Jr., Saha, A. 2004 ApJ 608, 42 <br><font color=red> Comparison between Cepheid and TRGB distances with 7 new TRGB distances. There is a metallicity dependence of the Cepheid calibration.</font></td></tr>
+
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/bib_query?1996A&AS..119..499S">S96:</a>
+</td><td> 	Sharina et al. 1996<br><font color=red>istance moduli for NGC 628 and its dwarf irregular companions: DDO 13, UGC 1171, UGC 1104, and K 10 (stars) </font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1996AJ....112.2559S&db_key=AST&high=3e8c5307ff16240">So96:</a>
+</td><td> Sohn, Young-Jong; Davidge, T. J. 1996AJ....112.2559S<br><font color=red>Distance to NGC 672 using supergiant stars. </font></td></tr>
+
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2004AJ....127.2322T&amp;db_key=AST&amp;high=40c4b2f14d09170">T04:</a></td><td> Thim, F., Hoessel J.G., Saha, A., Claver, J., Dolphin, A., Tammann, G.A. 2004 AJ 127, 2322 <br><font color=red>Cepheid distance to NGC 4395 (AGC 7524)</font></td></tr>
+
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0503429">TI05:</a></td><td> T.X.Thuan, Y.I.Izotov 2005, AJ in press (astro-ph/0503429)<br><font color=red>TRGB distance for NGC 2366</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1998A%26AS..128..325T&db_key=AST&high=3e8c5307ff06677">TK98:</a></td><td>  Tikhonov, N.A. & Karachentsev, I.D. 1998, A&AS, 128, 32 <br><font color=red>6 gals in CVn from brightest stars</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/bib_query?1995AJ....110.1640T">TS95:</a></td><td>
+	Tolstoy, Eline; Saha, A.; Hoessel, John G.; McQuade, K. 1995 AJ, 110.1640  <br><font color=red>Ref in W03 below. Cepheid distance to NGC 2366.</font></td></tr>
+
+<tr><td valign=top><a href="http://www.journals.uchicago.edu/ApJ/journal/issues/ApJ/v590n1/57383/57383.html">TT03:</a></td><td> Thim, F., Tammann, G.A., Saha, A., Dolphin, A., Snadage, A., Tolstoy, E., Labhardt, L. 2003, ApJ 590, 256. <br><font color=red>Cepheid distance to M83 (NGC 5236).</font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2001ApJ...546..681T&db_key=AST&high=3e8c5307ff06705">To01</a></td><td>  Tonry J.L., Dressler A., Blakeslee J.P., Ajhar E.A., Fletcher A.B., 
+       Luppino G.A., Metzger M.R., \& Moore C.B. 2001, \apj 546, 681.<br><font color=red>SBF distances to 300 galaxies (complete for Es to 2000 km/s, with some sampling out to 4000 km/s</font> </td></tr> 
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0603380">T06</a></td><td>  R B Tully, L Rizzi, A E Dolphin, I D Karachentsev, V E Karachentseva, D I Makarov, L Makarova, S Sakai, E J Shaya, AJ (submitted; astro-ph/0603380) <br><font color=red>TRGB distances to nearby galaxies. I think some might be repeats, but all are in there like they are new.</font> </td></tr> 
+
+<tr><td valign=top><a href="http://arxiv.org/abs/astro-ph/0407348">VdS04:</a> </td><td> G. C. Van de Steene, G. H. Jacoby, C. Praet, R. Ciardullo, H. Dejonghe 2004 (A contribution to the ESO Intl. Workshop on "Planetary Nebulae beyond the Milky Way", Garching (Germany), May 19-21, 2004 - Conference proceedings will appear in the Springer-Verlag series of ESO Astrophysics Symposia (eds. J.R. Walsh & L. Stanghellini))  <br><font color=red> PNLF distance to NGC 55. </font></td></tr>
+
+<tr><td valign=top><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2003ApJ...587..186W&db_key=AST&high=3e8c5307ff06731">W03:</a> </td><td>   Whiting, A.B. 2003, ApJ 587, 186<br><font color=red>Compilation of distances from the literature to 98 galaxies within 10 Mpc </font></td></tr>
+
+</table>
+
+<hr>
+<br>
+This documentation and the associated routines are brought to you by the friendly 
+folks associated with the Cornell University ExtraGalactic Group as part of their effort
+in support of the <a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA survey</a> and its team.<br>
+<font color=#008000><i> Last modified: Thu Mar  4 11:10:30 by martha</i>
+</font>
+  </body>
+</html>

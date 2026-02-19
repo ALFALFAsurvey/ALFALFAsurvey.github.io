@@ -1,0 +1,14 @@
+-->Proposal title: HI Content of Local Group Dwarf Spheroidal Galaxies
+-->Project Leader: Kristine Spekkens
+-->Institution: RMCC
+-->Co-authors: Brian Mason (NRAO), James Aguirre (UPenn), Beth Willman (Haverford). Interested ALFALFA folks are welcome to join
+-->Time-Frame: April 2014 - October 2014
+-->Publication: Part of AJ/MNRAS paper about HI content of dSphs, to be submitted in the summer/fall of 2014
+
+-->Description: This project will mine the ALFALFA dataset to place upper limits on the HI content of local group dSph galaxies. The upper limits should be an order of magnitude more sensitive than existing constraints for the ultra-faint dSphs (e.g. Grcevich+Putman 2009), and will be combined with new upper limits/tentative detections from our GBT observations as well as upper limits mined from the GASS survey (McClure-Griffiths+2009). The ALFALFA results will form part of a paper revising the HI content estimates of local group dSphs. 
+
+
+ -->ALFALFA region: <1 deg^2 around each of ~20 dSphs in the ALFALFA footprint. A list of specific RA, dec, and Vsys locations will be supplied.
+-->ALFALFA data to be used: HI spectra along the line of sight to each dSph.
+Other datasets to be used: our own GBT data (in-hand), as well as publicly available GASS data.
+--> Products to be delivered: 5-sigma, 10km/s  HI upper limits for all dSphs in the ALFALFA volume. 

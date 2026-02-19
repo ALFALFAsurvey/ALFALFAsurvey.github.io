@@ -1,0 +1,80 @@
+
+Let's focus on the UATAPPS datasets
+
+filename='/share/wappdata.now/wapp.20150902.a2982.0001.fits'
+lbwfromwapps, filename, 1, lbwsrc              where 1 is the board
+
+
+lbwquicklook, file='/share/wappdata.now/wapp.20150903.a2982.0000.fits'
+lbwquicklook, file='/share/wappdata.now/wapp.20150902.a2982.0001.fits',smo=5,/vel,board=1,
+lbwquicklook, file='/share/wappdata.now/wapp.20150902.a2982.0001.fits',smo=5,/vel,board=1,xrange=[700,1100]
+
+
+
+
+Or for some of the older datasets which were taken with LBW,
+@corinit
+@lbwinit
+
+corfilename = '/proj/a2669/corfile.22mar12.a2669.52/'
+lbwfromcorfile,corfilename, lbwsrc
+lbwfromcorfile,corfilename, lbwsrc,/hires
+
+lbwbaseline, lbwsrc
+Give [min, max] range to vertically rescale plot.
+Plotting a 1st order fit.
+RMS of Hanning smoothed spectrum:        1.33604558
+lbwmeasure,lbwsrc,/gaussian
+lbwsmooth, lbwsrc, 'b3'  
+
+lbwtoascii,lbwsrc
+
+save, lbwsrc, filename=lbwsrc.LBWsrcname + '.sav'
+
+
+I am saving unbaselined spectra.
+We will have to give them the extracted parameters
+Need to make the point to them that our setup sometimes changes
+
+A.1  /proj/a2669/corfile.22mar12.a2669.52     hunt2A.1.jpg  H102144.7+180428    Leo P
+a2669/a2669_master.obslog_121218.txt:        H102144.7+180438  102144.9 +180519   260 HH                 LeoP      12.03.22/corfile.22mar12.a2669.52
+
+A.2  /proj/a2752/corfile.22mar13.a2752.17      hunt2A.1.jpg  H                   absorption
+a2752/a2752_mar13_obslog.txt:  8847  H135602.6+051549  135607.3 +051517  1100 HH   1132  1415.1            13.03.21/corfile.22mar13.a2752.17   HI abs A1415; YES! cont+220
+C
+
+B.1  /proj/a2707/corfile.13jan13.a2707.32 	   hunt2B.1.jpg  H122657.0+012423    HI1225+01
+master/a2707_jan13_master.obslog.txt:229196  H122657.0+012423  122657.2 +012434  1300 HH   1255  1414.5  d1        13.01.13/corfile.13jan13.a2707.32  det@1415  HI1225+01
+
+B.2  /proj/a2752/corfile.20mar13.a2752.6   	   hunt2B.2.jpg  H085532.3+311230    108545
+a2752/a2752_mar13_obslog.txt:180545  H085532.3+311230  085533.2 +311242  2100 HH   2086  1410.6  spr31_2   13.03.20/corfile.20mar13.a2752.6    det@1411 asym? blend CHECK
+  
+C.1  /proj/a2752/corfile.25mar13.a2752.32 	   hunt2C.1.jpg  H085112.1+275238    
+a2752/a2752_mar13_obslog.txt:182595  H085112.1+275248  085112.1 +275248   400 HH    398  1418.5  SHIELD    13.03.25/corfile.25mar13.a2752.32   det@1418
+
+C.2  /proj/a2669/corfile.18jan12.a2669.16	   hunt2C.2.jpg  H094556.8+130330      
+193949  H094556.8+130330  094556.3 +130226 13200 HH  13154  1360.7  n4        12.01.18/corfile.18jan12.a2669.16  det@1361
+
+Enhanced above here; need to do below here
+
+D.1  /proj/a2669/corfile.18jan12.a2669.36 	   hunt2D.1.jpg  H123154.9+051030
+223819  H123154.9+051030  123153.9 +051020  2300 HH   2308  1409.6  de        12.01.18/corfile.18jan12.a2669.36  det@1410 
+
+D.2  /proj/a2752/corfile.27mar13.a2752.9 	   hunt2D.2.jpg  H123122.2+255419
+a2752/a2752_mar13_obslog.txt:732152  H123122.2+255419  123122.9 +255450  7000 HH   6952  1388.2  c2        13.03.26/corfile.27mar13.a2752.9    det@1388    cont -107 mJy in OFF
+E.1  /proj/a2811/corfile.29nov13.a2811.7 	   hunt2E.1.jpg  A230428.2+272127
+a2811/a2811_nov13.obslog.txt:331756  A230428.2+272127  230428.2 +272127  7500 HH                 abs     13.11.29/corfile.29nov13.a2811.7   det in em/abs@1385 7500
+
+E.2  /proj/a2707/corfile.15jan13.a2707.28	   hunt2E.2.jpg  A120548.1+165100
+master/a2707_jan13_master.obslog.txt:222391  H120548.1+165100  120548.2 +165106 10500 HH  10501          OHM       13.01.15/corfile.15jan13.a2707.28  deOHM@1370; broad; double!
+
+F.1  /proj/a2752/corfile.22mar13.a2752.10	   hunt2F.1.jpg  H124635.2+031737
+a2752/a2752_mar13_obslog.txt:225406  H124635.2+031737  124633.1 +031754   800 HH    751  1416.9  l5        13.03.21/corfile.22mar13.a2752.10   det@1417
+
+F.2  /proj/a2811/corfile.25nov13.a2811.6 	   hunt2F.2.jpg  H221306.0+011700
+a2811/a2811_nov13.obslog.txt:322050  H221306.0+011700  221306.2 +011711  1900 HH   1882          dark09  13.11.25/corfile.25nov13.a2811.6   det@1411   OHM@z=0.18
+
+
+
+
+

@@ -1,0 +1,12 @@
+macro read oster1.sm
+plot
+macro read oster1.sm
+plot
+erase
+plot
+erase
+macro read oster1.sm
+plot
+erase
+macro read oster1.sm
+plot

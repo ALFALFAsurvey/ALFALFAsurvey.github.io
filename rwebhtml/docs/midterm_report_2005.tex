@@ -1,0 +1,283 @@
+\documentstyle{article}
+%\documentclass[11pt,aaspp4,flushrt]{aastex}
+\def\@tightleading{0.95}
+\def\baselinestretch{\@tightleading}\normalsize
+\textwidth 6.4in
+\textheight 8.8in
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\topmargin -0.3truein
+\raggedbottom
+\parskip 8pt
+\parindent 0pt
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\etal{{\it et al. }}
+\def\kms{km~s$^{-1}$~}
+\def\kmsm{km~s$^{-1}$~Mpc$^{-1}$~}
+\def\Hnot{H$_\circ$}
+\def\dhh{$\Delta H_\circ/H_\circ$}
+\def\figwidth{1~}
+\def\I{{\cal I}~}
+\def\Wopt{W$_{opt}$~}
+\def\Whi{W$_{21}$~}
+\def\W50{W$_{50}$~}
+\def\L{$\cal\char'114$}
+\def\M{$\cal\char'115$}
+\def\LL{{\cal\char'114}}
+\def\MM{{\cal\char'115}}
+\def\ts{$T_{sys}$}
+\def\plotfiddle#1#2#3#4#5#6#7{{\centering \leavevmode \vbox to#2{\rule{0pt}{#2}}\special{psfile=#1 voffset=#7 hoffset=#6 vscale=#5 hscale=#4 angle=#3}}}
+
+%\pagestyle{empty}
+\begin{document}
+\begin{center}
+\fboxsep0.2cm
+\fbox{\rule[0.0cm]{0.0cm}{0.0cm}{\parbox{16cm} 
+{
+\centerline{\bf ALFALFA Year 1: Midterm Report}
+}}}
+\end{center}
+
+\centerline {R. Giovanelli for the ALFALFA Collaboration}
+\centerline{15 July 2005}
+
+
+ALFALFA, the Arecibo Legacy Fast ALFA survey of extragalactic HI, initiated
+observations in February 2005. Among its scientific goals are those of delivering 
+an unbiased view of the local, extragalactic Universe and providing a legacy tool 
+for the astronomical community at large.
+
+\noindent {\bf Scheduling Status.}
+In the five months up to the end of June of 2005, about 400 hours of telescope
+time have been scheduled, of which 367 hours were succesfully used for
+observations, the rest lost to hardware and system failures or practical
+''overheads'' (e.g. removal of ALFA cover). We have verified that, under
+normal circumstances, the ALFALFA strategy gives a science data to observing
+run duration efficiency of 97\%. Scheduling of individual observing blocks
+is undertaken in a deliberate, stategic manner, reviewed almost daily based
+on data quality verification. The second pass of each area of sky is 
+scheduled more than 2 months after the first (so that the heliocentric
+doppler shift can be exploited as a signal reality check).
+For reference, see the internal A2010 observing team website:
+{\it http://www.naic.edu/$\sim$a2010/galaxy\_a2010.html}.
+
+The request submitted in October 2004
+for the first survey year asked for 990 hours, or 66 observing sessions between 
+07.2 and 16.7 hrs, 21.7 to 03.2 hrs, LST. This request was motivated by the
+plan to complete mapping of 2 strips of ``tiles'', each 4$^\circ$ wide in 
+Declination. Figure 1 shows the final status of the spring 2005 A2010 
+observations. As evident in the figure, the
+observations made so far cover the northern galactic cap, or the
+``Spring extragalactic sky'' but with a large degree of unevenness.
+We hope that time allocations towards the
+end of 2005 and beginning of 2006 will allow us to complete coverage.
+At the current rate of time allocation, completion of the targeted tiles
+will not be possible. 
+
+\noindent {\bf Team Constitution and Governance.}
+ALFALFA is an open group, which currently includes 48 members from 11 countries
+and 32 different institutions. Team expertise includes all areas deemed 
+necessary for the succesful management of the survey and the achievement of
+its stated science goals. 
+As stated in the observing proposal, the ALFALFA team has organized its governance
+by forming an Oversight Committee, which includes the P.I. (Riccardo Giovanelli),
+a member from a foreign institution (Noah Brosch), a graduate student (Brian Kent), 
+a member of the NAIC staff (Emmanuel Momjian) and two other US--based scientists 
+(Martha Haynes and
+Lyle Hoffman). A set of guidelines that will regulate the various projects'
+development, within and around ALFALFA, inclduing criteria for authorship, 
+has been developed and posted. Several
+task groups have been formed, which contribute to the coordination of the
+observations, bookkeeping, software development, data processing, follow-up
+work, public access to the data, research involvement of students and public 
+outreach. Particular attention to the protection of students' thesis projects
+has been given in the drafting of those guidelines.
+
+\noindent {\bf Team Activities.} 
+While observing procedures have been carefully streamlined and documented ---
+and observations can be and have been safely carried out remotely ---, the 
+team has given strong
+preference to the option of observing on site, while minimizing the use
+of AO team members for that purpose. In doing so, we have appreciated NAIC's
+support in waving our team's, especially students', lodging expenses. This 
+practice ensures a more productive and higher
+rate of utilization of the scheduled telescope time, more effective communication
+with Observatory staff and shorter response times to equipment failures, more
+effective training of students and faster adaptation to Observatory dynamics.
+The role of ``designated observer'' has been utilized, which stimulates a
+heightened sense of responsibility for the quality of the survey data and
+has an invaluable impact on the training of students.
+
+Software development is still under way, but all the fundamental pieces of
+data processing software are now operational. This development has taken 
+place within the IDL environment at Cornell. The software has been exported 
+to and is being succesfully used by
+other extragalactic HI teams, such as the NGC 2903 group. Processing of the
+data to the Level I, as defined in the ALFALFA proposal (noise, bandpass 
+calibrated and baselined drift scans), has been carried out for all the data
+taken so far. Demonstrations of data processing at institutions other than
+Cornell, such as AO, Lafayette College and Union College, have been completely
+succesful, showing the easy exportability of the software.
+
+A website is maintained, with mirror sites at Cornell 
+({\it http://www.egg.astro.cornell.edu/alfalfa}) and Arecibo 
+({\it http://www.naic.edu/$\sim$a2010/galaxy\_a2010.html}), where updated reports
+of future scheduling and observing plans, actual observations, sky coverage,
+technical memos, manuals, guidelines, science and other activities are
+regularly posted. Scientific results of the survey precursor observations
+are also posted: papers, data tables, catalogs and, for each source, 
+cross--references to optical and other catalogs. We have made an effort to
+make our results available to the community and the public in a mode
+compatible with National Virtual Observatory standards. We have
+obtained NSF funding to develop the necessary software and 3 of our graduate
+students (Kent, Masters and Spekkens) have attended the 2004 Aspen NVO School.
+Kent will return for a second year to the 2005 NVO School.
+The presentation of the precursor observations data set at
+{\it http://www.egg.astro.cornell.edu/precursor}, as developed by team member
+B. Kent, is a preliminary demonstration of those efforts.
+
+\noindent {\bf Team Meetings.}
+In order to foster team participation, to maintain team coordination and 
+proper dissemination of results and progress updates, several ALFALFA
+workshops have been held, namely: 
+\begin {enumerate}
+\item 30 May 2005 at the Brera Observatory
+downtown Milan, Italy, which saw the participation of 15 team members from
+Italy, France and Spain and several other researchers interested in the 
+project (taking advantage of RG's and MH's vacation in Europe); 
+\item June 23-24
+at Cornell in Ithaca, NY, which saw the participation of 24 researchers; 
+\item 
+July 6-7 at Union College in Schenectady, NY, with the participation of 
+faculty from Union, Cornell,
+Lafayette, Wesleyan, Colgate, U. of Puerto Rico and St. Lawrence, 2
+Cornell graduate students, and 14 undergraduates from Union, Cornell,
+Lafayette, Colgate and UPR. This
+meeting, which focussed on research experience for undergraduates and
+public outreach, was also attended by the Director of the AO Angel Ramos
+Visitor Center, Dr. Jos\'e Alonso. The highlight of the meeting was
+an ALFALFA observing session of 90 minutes, carried out remotely by the
+students themselves and succcesfully processed and analyzed by them during
+the day which followed the observations. Before the meeting, the students
+had communicated by email to develop a proposal, submitted to NAIC,
+for how they would use the allocated time, and remain in communication
+as the data are processed and analyzed. See
+{\it http://caborojo.astro.cornell.edu/alfalfalog/ualfa}. It is hoped
+that the students will present a poster on their results at the Jan 2006
+AAS meeting.
+\end{enumerate}
+
+\noindent{\bf Science Results.}
+The observations carried out between August 2004 and January 2005, as part
+of the shared--risk survey precursor effort, have been fully processed and
+analyzed. Two papers have been submitted for publication to the Astronomical
+Journal in May 2005, and are currently in the refereeing process. The two
+papers are: 
+\begin{itemize}
+\item {\it The Arecibo Legacy Fast ALFA Survey: I. Science Goals, 
+Survey Design and Strategy} and 
+\item {\it The Arecibo Legacy Fast ALFA Survey: 
+II Results of Precursor Observations}. 
+\end{itemize}
+Copies of the papers will be made public at the completion of the refereeing 
+process, presumably by late Summer. The precursor observations were mainly
+used to `shake down' the system. However, a fraction of the telescope time
+yielded science grade data. Those data allowed the detection of 166 
+extragalactic HI sources. Of those, 62 coincide with previously known HI sources,
+while optical redshifts were available for an additional 18 galaxies; thus, 52\%
+of the redshifts reported were previously unknown. Of the 166 sources, 51 are
+previously unidentified objects. For comparison with the HIPASS survey,
+at the sensitivity levels of that survey, {\it only about half dozen of the
+166 detected precursor observation sources would have been detected by HIPASS, 
+had it surveyed the same region as our precursor observations covered}.
+Three of these objects had HI masses less than 10$^7$ $M_\odot$.
+
+In the data obtained in February--March 2005, a new exciting source was found
+in the general region of the Virgo cluster: an assembly of several HI clouds  
+with no optical counterpart. The total HI mass is quite large, approaching
+10$^9$ M$_\odot$, exceeding the masses of the neighboring optically
+identified galaxies. We have confirmed the reality of the detection at
+Arecibo, and through the ``rapid response'' procedure enacted at NRAO, we 
+have applied for and obtained VLA C--configuration time to follow up on 
+our discovery. VLA observations were made on July 11 and are being reduced.
+
+Our team has also produced a number of technical memos, which have been
+posted at the AO ALFA website, as well as in the ALFALFA website, illustrating
+various aspects, concerns and results of our share of the commissioning effort. 
+The Cornell Ph.D. theses of K.L. Masters (July 2005) and C.M. Springob
+(Aug 2005) contain substantial work of direct relevance to ALFALFA,
+including software tools for the derivation of HI mass functions, local
+flow field models and survey simulations.
+
+\noindent {\bf Utilization of Observatory Resources.}
+ALFALFA has aimed to minimize the need for Observatory support. Once the 
+data taking observing modes were developed and tested, no further software
+development was required of Observatory staff. All the data processing
+and bookkeeping software has been developed at Cornell. Four members of the
+AO staff are also part of the ALFALFA team: Mikael Lerner and Phil Perillat
+have provided very valuable assistance in implementing the desired features
+in the observing mode, as well as in understanding the characteristics of
+ALFA and as consulting sources for our data processing development. As
+full members of the science team, Barbara
+Catinella and Emmanuel Momjian have participated in the observations, in the
+development and maintenance of web tools and as members of team working
+groups but their involvement in observations has been less than that of a number
+of team members. During observations, an ALFALFA ``designated
+observer'' is always either at the Control Room or observing remotely. In
+particular, the burden of data quality is always on an ALFALFA team member
+who is also conducting the observations in real time; we have not requested 
+absentee or service observing. The raw data of ALFALFA is maintained 
+in storage at AO; the data rate is about 1 GB per observing hour. We have
+made requests from the Computer Division for use of high end workstations  
+whenever observing at AO, in order to meet the moderately high demands of
+processing software. All processed data is maintained in storage at Cornell.
+
+
+\noindent {\bf Recommendations for the Future.}
+\begin {enumerate}
+\item We appreciate the efforts of AO in allocating substantial amounts of telescope
+time for this project. We wish to underscore that an effort of the magnitude
+required to make ALFALFA a success requires high coordination between the 
+Observartory scheduling team and the observing team. Given the observing mode
+adopted, which reinforces the limitations of the telescope as a transit device,
+filling in gaps in the sky coverage created by the vagaries of the start time
+of each observing session, is a difficult task. That task can be helped with
+``look-ahead'' scheduling, so that the observing team can plan for optimal
+allocation of observing time. This is particularly important with the scheduling
+of the second pass of the survey, which is ideally made at a difference of
+$\sim 1/4$ or 3/4 in seasonal phase. We strongly recommend that an effort be
+made to accomodate this scheduling request.
+
+\item Given the sky coverage of the survey, separated by galactic caps, the most
+intense observing seasons are January to May for the northern cap, centered at
+LST of 12$^h$, and August to December for the southern cap, centered at LST of
+$0^h$. A ``natural low'' in the observing thus takes place in the Summer months.
+Our initial proposal was submitted on October 1st, 2004, for an observing cycle
+starting in February. We would propose that the cycle be shifted by 4 months,
+and that the new proposal for continuation of the survey be submitted by Feb 1, 
+2006, and yearly continuation requests be submitted each year following that 
+date. This would allow a seamless scheduling of the
+all--important northern cap time centered at 12$^h$ LST. This proposal would
+require that the currently approved proposal be extended in a ``continuing
+resolution'' mode through June 1st, 2006, rather than to February 1st of that
+year, and that time allocation for the February--to--June period continue to
+be allocated at the same sustained rate as in 2005. Were this adjustment 
+granted, the project would resume at the survey yearly cycle stated by NAIC.
+\end{enumerate}
+
+\eject
+\begin{figure}[ht]
+\plotfiddle{sched_05_75.eps}{2.0in}{0}{36}{36}{-360}{-50}
+\plotfiddle{sched_05_60.eps}{2.0in}{0}{36}{36}{-355}{-110}
+\plotfiddle{sched_05_45.eps}{2.0in}{0}{36}{36}{-360}{-182}
+\vskip 2.45in
+\caption[]{\small
+{Actual A2010 sky coverage for Feb-July 2005. Ideally, ALFALFA
+would have covered homogeneously the region extending
+from $7^h30^m <$R.A.$<16^h30^m$, $+8^\circ<$ Dec.$< +16^\circ$.
+By the nature of ALFALFA science, survey completion of contiguous areas
+is strongly desired.}}
+\end{figure}
+
+\end{document}

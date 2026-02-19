@@ -1,0 +1,166 @@
+A2010 observing schedule                                          last update: 11Aug25 mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing.
+
+COMPLETED OBSERVATIONS FOR THIS SEASON
+------------------------------------------------------------------------------------------------
+FALL 2011 - not started yet
+
+------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS  
+------------------------------------------------------------------------------------------------
+ALFA was taken down on July 27th for servicing (to fix the dead beams)
+It is due to be reinstalled on Thurs Sep 1
+
+FALL 2011 Season  
+********************     NOTICE      AST IS THE SAME AS EDT                   ****************
+********************                 Times for A2010 only                     ****************  
+********************  Run TOGS starting 15 min before time listed below       ****************
+               *** Remember: the date refers to the day when the runs starts in AST!!!    ****
+     Block     Date    LMSTmidn      AST           LST       Drift   DecJ     Observers
+    11.09.05  M 05Sep    22h33    23h00-04h45   21h32-03h18     5p1  +010542  MH(R)         Meridian observing       TOGS at start only
+    
+    11.09.07a W 07Sep    22h40    01h15-04h30   23h51-03h07   134p1  +322906  MH,BA(R)      Meridian observing       TOGS at start only
+    11.09.07p W 07Sep    22h40    23h00-04h30   21h40-03h11    76p1  +182218  MH,BA(R)      Zenith strip observing   TOGS at start only
+    11.09.08  R 08Sep    22h44    22h45-04h30   21h29-03h15    76p2  +182936  MH,BA(R)      Zenith strip observing   TOGS at start only
+    11.09.09  F 09Sep    22h48    22h45-04h30   21h33-03h19    77p1  +183654  MH,BA(R)      Zenith strip observing   TOGS at start only
+    11.09.10  S 10Sep    22h52    22h45-04h30   21h37-03h23    77p2  +184412  MH,BA(R)      Zenith strip observing   TOGS at start only
+    11.09.11  S 11Sep    22h56    22h30-04h15   21h25-03h11    78p1  +185130  MH+EGGs(R)    Zenith strip observing   TOGS at start only
+    11.09.12  M 12Sep    23h00    22h30-04h15   21h29-03h15    79p1  +190606  MH+EGGs(R)    Zenith strip observing   TOGS at start only
+
+    11.09.15  R 15Sep    23h12    22h15-01h15   21h26-00h23   135p1  +324342  DF(R)         Meridian observing SHORT TOGS at start only
+    11.09.16  F 16Sep    23h16    22h15-04h00   21h30-03h16    80p1  +192042  AO,JM,HC(R)   Zenith strip observing   TOGS at start only
+    11.09.17  S 17Sep    23h20    22h15-04h00   21h34-03h20    81p1  +193518  DC(R)         Zenith strip observing   TOGS at start only
+    11.09.18  S 18Sep    23h24    22h15-03h45   21h38-03h09    82p1  +194954                Zenith strip observing   TOGS at start only
+    11.09.19  M 19Sep    23h28    22h00-03h45   21h27-03h13    78p2  +185848  DC(R)         Zenith strip observing   TOGS at start only
+    11.09.20  T 20Sep    23h32    22h00-03h45   21h31-03h17    79p2  +191324  CM(R)         Zenith strip observing   TOGS at start only
+
+    11.09.23  F 23Sep    23h43    21h45-03h30   21h28-03h14    80p2  +192800  PT(R)         Zenith strip observing   TOGS at start only
+    11.09.24  S 24Sep    23h47    21h45-03h30   21h32-03h18    81p2  +194236  PT(R)         Zenith strip observing   TOGS at start only
+    11.09.25  S 25Sep    23h51    21h45-03h30   21h36-03h22    82p2  +195712  CM(R)         Zenith strip observing   TOGS at start only
+    11.09.26  M 26Sep    23h55    21h45-03h15   21h40-03h10    83p1  +200430  CM(R)         Meridian observing       TOGS at start only
+    11.09.27  T 27Sep    23h59    21h30-03h15   21h28-03h14    84p1  +201906  DF(R)         From here on, meridian observing
+    11.09.28  W 28Sep    00h03    21h30-03h15   21h32-03h18    85p1  +203342  DF(R)
+    11.09.29  R 29Sep    00h07    21h30-03h00   21h36-03h07    86p1  +204818  DF(R)
+    11.09.30  F 30Sep    00h11    21h30-03h00   21h40-03h11    87p1  +210254  AO,JM,HC(R) 
+    11.10.01  S 01Oct    00h15    21h15-03h00   21h29-03h15    83p2  +201148  LH(R)
+    11.10.02  S 02Oct    00h19    21h15-03h00   21h33-03h19    84p2  +202624  LH(R)
+    11.10.03  M 03Oct    00h23    21h15-02h45   21h37-03h08    85p2  +204100  LH(R)
+    11.10.04  T 04Oct    00h27    21h00-02h45   21h26-03h12    86p2  +205536  LH(R)
+    11.10.05  W 05Oct    00h31    21h00-02h45   21h30-03h16   136p1  +330536  RK(R)
+    11.10.06  R 06Oct    00h35    21h00-02h45   21h34-03h20   137p1  +332012  RK(R)
+
+SCHEDULE AFTER HERE IS TENTATIVE ONLY (and there is only one known date)
+    11.10.18  R 18Oct              20h15-22h30  21h36-23h51                               SHORT
+    
+
+-- Lyle can take any date Sep 15th - mid Oct
+-- David S. cannot do Oct 18; best dates Oct 2-8
+-- Derek has classes MT so perfers to avoid those and 1st weekend in Oct
+-- Crystal can observing anytime from Sep 20th on.
+                  
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Fall 2011:  (updated Dec17)
+Still to do:         stat=azdectozaha(180.0d,21.5d,za,ha,/verbose) 
+      5p1 needs to be redone (09.08.30)
+      76 to 82 both passes (zenith strip observing)
+      83 to 86 both passes (meridian observing)
+      87p1 to finish
+     134p1 after 2330 
+     135p1
+     136-148 both passes   (need ZA restriction lifted)
+This makes 56 nights including p3/p4
+ 
+Drift   Dec    |  Az    | RotAng|  ZA  |   RA vs LST         | conf file to use    
+76p1  +182218  | 90.4   | -70.0 | 5.0  | need to experiment  | a2010_az85_2010.conf
+76p2  +182936  | 92.8   | -70.0 | 5.0  | need to experiment  | a2010_az85_2010.conf
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+AA: Adeel Altaf (Lafayette)
+CA: Cameron Arsenault (RMCC)
+TB: Tom Balonek
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+BC: Barbara Catinella
+BC2: Bret Comnes
+JC: John Cannon
+DC: David Craig
+HC: Heather Cutler (SLU)
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+AF: Amy Furniss (HSU)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+EG: Elena George (HSU)
+JG: Josh Goldstein (Lafayette)
+RG: Riccardo Giovanelli
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+MJ: Melissa Jacquart (UWisc)
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+VM: Victoria Mendoza (St.Marys)
+WM: Arik Mitschang (HSU)
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+JR: Jessica Rosenberg
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+TS: Tess Senty (HSU)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots

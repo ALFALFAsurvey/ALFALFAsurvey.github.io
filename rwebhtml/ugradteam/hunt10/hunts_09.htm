@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<h3><font color=#008000>UAT 09 Scavenger Hunts Notes for Team Leaders</font></h3>
+<br>
+
+<h3><font color=#008000> Useful links:</font></h3> 
+<ul>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">Using Arecibo for ALFALFA</a>
+<li>Using ALFALFA for <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalfa.php">science</a>
+<li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observer's page</a><br>
+<li> <a href="http://www.naic.edu/~a2010/idl_instruct1.htm">Instructions for Level I processing of ALFALFA
+drift data</a><br>
+<li> <a href="http://arecibo.tc.cornell.edu/hiarchive/">Cornell Digital HI archive</a>
+<li> <a href="http://arecibo.tc.cornell.edu/hiarchive/alfalfa/">ALFALFA data releases</a>
+</p>
+</ul>
+
+<br>
+<h3><font color=#008000>The UAT09 Scavenger Hunts:</font></h3> 
+<ul>
+<li> <a href="hunt0_09.htm">Hunt #0</a><br>
+This exercise is designed to introduce the layout of the
+Arecibo dish, platform, the different feeds, Carriage House #1, the
+azimuth-zenith angle system and the sky as viewed from Arecibo.
+It requires no software or datasets, but an internet connection will
+help with the answer to the movie questions.....</p>
+<ul>
+<li><a href="http://setiathome.berkeley.edu/forum_thread.php?id=38178">Contact answer</a>
+</ul></p>
+
+<font color=#cc0f14> This hunt should be printed and included with welcome packet</font>
+</p>
+
+<li> <a href="hunt1_09.htm">Hunt #1</a><br>
+This exercise is designed to introduce the strategies used by ALFALFA,
+the beam layout, spectrometer setup, sidereal time, precession, etc.
+It requires only basic calculations which can be done using a calculator,
+IDL or even a pencil and brain.</p>
+
+Laptop/internet connection is required so that the galaxy can be investigated.
+BTW, there is nothing special about these galaxies other than that they
+have spectra both in the ALFALFA dataset and in the Cornell Digital HI Archive.
+Be sure to check out both!</p>
+
+<li> <a href="hunt2_09.htm">Hunt #2</a><br>
+This exercise will be designed to introduce the concepts associated with
+Level I processing, system temperature, calibration, drift scanning,
+RFI, lots of jargon etc. It requires examination of BPD and FLAGBB screenshots.</p>
+<ul>
+<li><a href="http://www.globalsecurity.org/space/systems/gps.htm">NUDET-GPS</a>
+<li> For the question about finding out how many GPS satellites there are,
+     see the link on the A2010 observers' page to Phil's IDL routines.</p>
+</ul>
+</p>
+
+<li> <a href="hunt3_09.htm">Hunt #3</a><br>
+This exercise will focus on ALFALFA grids, source extraction, use
+of the ALFALFA catalog, the AGC, ALFALFA_IDL, SDSS, etc. TBD.</p>
+
+<ul>
+<li><a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=168.7283&dec=  3.83583&opt=glsi" target=new>DR7Navigate</a></p>
+<li> Run the SQL query to get photometric parameters at:
+<a href="http://cas.sdss.org/dr7/en/tools/search/sql.asp">SQL for DR7</a></p>
+
+<pre>
+SELECT
+ p.ra, p.dec,s.z,s.zerr,p.petroR90_r,p.petroR50_r,p.expAB_r,
+ p.petroMag_u,p.petroMag_g,p.petroMag_r,p.petroMag_i,p.petroMag_z,
+ p.fiberMag_r,
+ p.lnLExp_r, p.lnLDeV_r, p.isoA_r, p.isoPhi_r, l.sigma, l.sigmaErr,
+  l.ew, l.ewErr, l.continuum, l.chisq, l.nu, s.zWarning,p.objID
+FROM PhotoObj p, SpecObj s, SpecLine l
+WHERE
+ p.SpecObjID = s.SpecObjID AND
+ p.SpecObjID = l.specobjID AND
+ s.specClass=2 AND
+ l.lineID = dbo.fSpecLineNames('Ha_6565') AND
+ p.objID=588010358007595145
+
+or for now:
+
+SELECT
+ p.ra, p.dec,s.z,s.zerr,p.petroR90_r,p.expAB_r,
+ p.petroMag_u,p.petroMag_r,
+ p.objID
+FROM PhotoObj p, SpecObj s, SpecLine l
+WHERE
+ p.SpecObjID = s.SpecObjID AND
+ p.SpecObjID = l.specobjID AND
+ s.specClass=2 AND
+ l.lineID = dbo.fSpecLineNames('Ha_6565') AND
+ p.objID=588010358007595145
+</pre>
+<li> The group at ~12<sup>h</sup>04<sup>m</sup>,
+         cz ~ 5800 km/s may include part of MKW 04; look
+<a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+04+00.0&lat=%2B02+00+00&radius=60&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&in_objtypes1=GGroups&ex_objtypes1=Galaxies&nmp_op=ANY&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES">here</a>
+.
+<li> The one at 14<sup>h</sup>40<sup>m</sup>,
+         is probably a mix including <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+40+00.0&lat=%2B03+00+00&radius=60&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&in_objtypes1=GGroups&ex_objtypes1=Galaxies&nmp_op=ANY&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES"</a> these.</p>
+
+</p>
+
+</ul>
+<br>
+<hr>
+<br>
+<font color=#008000><i>Last modified: Wed Dec 31 10:10:34 EST 2008
+</i> by Martha </font>
+<!-- hhmts end -->
+</body>

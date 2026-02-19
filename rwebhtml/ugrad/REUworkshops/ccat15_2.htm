@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<TITLE>REU 2015 CCAT WORKSHOP</TITLE>
+</HEAD>
+
+<BODY bgcolor="ffffff">
+
+<h1> <font color=#cc0f14>Exploring Early Galaxies with the CCAT </font></h1><br>
+
+<h2> <font color=#cc0f14>Activity: WIDE AREA GALAXY SURVEYS</font></h2>
+The wide area capability of CCAT will make it especially useful to conduct deep, large
+area surveys of the submillimeter sky. In this activity, we will explore a few datasets
+gleaned from existing large area surveys at optical and radio wavelengths to explore
+in general terms how surveys of large numbers of galaxies can be used to learn about
+their formation and evolutionary history.</p>
+
+<br>
+<b><font color=#cc0f14> Interpreting the full multiwavelength spectral energy distribution (SED)</font></b></p><br>
+
+We can use the broadband fluxes measured by different surveys to measure the <b>spectral energy distribution</b> or SED.
+We can then compare the observed SED to that expected from models of the origin of emission at different wavelengths 
+(or frequencies) to figure out what gives rise to
+the photons we detect. Again, as a very simple example (which we have overtrivialized significantly), let's plot the 
+SED of two "mystery" objects using the files below; then we'll look to see
+what they actually are. As in Sudoku or a crossword puzzle, no looking at the answers until after you make the plots
+and discuss the observed SEDs. Download the two CSV files which give frequency, flux at that frequency, and a
+filter/band indicator for the
+two objects.</p>
+
+<ul>
+<li> <a href="objectA.csv">Object A</a> 
+<li> <a href="objectB.csv">Object B</a>
+</ul>
+
+In both cases, the flux values at various wavelength bands have been compiled from public datasets; in reality,
+what you've got is a subset of the photometric values listed for each object at the <a href="http://ned.ipac.caltech.edu/">NED</a>,
+and the available measurements for the two sources don't always overlap.
+Notice that each file contains a third column with a somewhat crytpic 
+alphanumeric code which is supposed to indicate the wavelength/frequency range
+of the measurement. The first column always contains a frequency even when the code indicates a
+wavelenght:  500 nm = 5000 Angstroms = 0.5 micron ~ 6.E+04 GHz (you can find converters on the web).</p>
+
+Use TOPCAT to construct the SED of each (though maybe you want to overplot them?); be sure to set the axes 
+to display log quantities. We suggest that you set the axes to be: x-axis=(1e07,1e19) and y-axis=(1e-06,1e05).
+
+What differences do you notice? How might you explain them?
+</p>
+<br>
+And when you're really done and you want to see what the mystery objects are, follow the links below:
+<ul>
+<li> Object A = Messier 87, the giant elliptical in the Virgo cluster<br>
+&nbsp   123049.4+122328 &nbsp  187.7058   12.3911  &nbsp 
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=187.7058&dec= 12.39111&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="https://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_red&r=187.7058&d=12.3911+&e=J2000&h=15.0&w=15.0&f=gif&c=none&fov=NONE&v3=" target=new>DSS2red</a>
+&nbsp <a href="https://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_blue&r=187.7058&d=12.3911+&e=J2000&h=15.0&w=15.0&f=gif&c=none&fov=NONE&v3=" target=new>DSS2blue</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+30+49.4&lat=+12+23+28&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a><br>
+<a href="http://apod.nasa.gov/apod/ap110828.html"><img src="http://apod.nasa.gov/apod/image/1108/m87jet_hst_1222.jpg" height=150>APOD110828</a> &nbsp &nbsp &nbsp
+<a href="http://apod.nasa.gov/apod/ap100520.html"><img src="http://apod.nasa.gov/apod/image/1005/m87jet_block.jpg" height=150>APOD100520</a> &nbsp &nbsp &nbsp
+<a href="http://apod.nasa.gov/apod/ap990216.html"><img src="http://apod.nasa.gov/apod/image/9902/m87s_vla_big.gif" height=150>APOD990216</a></p>
+<!-- <a href="http://www.aanda.org/index.php?option=com_image&format=raw&url=/articles/aa/full/2004/10/aa0020/img64.gif">
+<img src="http://www.aanda.org/index.php?option=com_image&format=raw&url=/articles/aa/full/2004/10/aa0020/img64.gif" height=150>SED of M87</a> from Xilouis+ 2004, A&A 416, 41; you ought to go read the paper and understand where this comes from. Remember, we did things
+in a trivial way...!</p>
+-->
+<br>
+
+<li> Object B = Arp 220, a nearby Ulraluminous Infrared Galaxy (ULIRG) merger <br>
+&nbsp   153457.1+233011 &nbsp  233.7379   23.5031  &nbsp 
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=233.7379&dec= 23.50306&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="https://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_red&r=233.7379&d=23.5031+&e=J2000&h=15.0&w=15.0&f=gif&c=none&fov=NONE&v3=" target=new>DSS2red</a>
+&nbsp <a href="https://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_blue&r=233.7379&d=23.5031+&e=J2000&h=15.0&w=15.0&f=gif&c=none&fov=NONE&v3=" target=new>DSS2blue</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=15+34+57.1&lat=+23+30+11&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a><br>
+<a href="http://apod.nasa.gov/apod/ap970617.html"><img src="http://apod.nasa.gov/apod/image/9706/arp220_hst_big.jpg" height=150>APOD970617</a> &nbsp &nbsp &nbsp
+<a href="http://irsa.ipac.caltech.edu/data/SPITZER/GOALS/galaxies/Arp220.html">
+<img src="http://irsa.ipac.caltech.edu/data/SPITZER/GOALS/galaxies/Arp220/irac/Arp220_irac_3color.jpg" height=150>Spitzer GOALS</a> </p>
+</ul>
+Do the differences in the SED of the two objects make sense to you now that you know what they are?</p>
+<br>
+We hope we have demonstrated that wide area surveys open doors to the exploration of galaxies in many different ways.</p>
+</body>
+</htm>

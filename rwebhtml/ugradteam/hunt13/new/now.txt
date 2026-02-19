@@ -1,0 +1,12 @@
+vcmb = vhelio + (7138. - 6850.)
+distance=vcmb/73. (to match the CMB in Gavazzi, Fumagalli et al.)
+
+From NED:
+
+vhelio = 6850
+vcmb =   7138
+Distance = 98.7 Mpc
+
+
+At a distance of 98.7 Mpc, 2 Mpc is about 70 arcmin.
+                           1 Mpc is       35 arcmin.

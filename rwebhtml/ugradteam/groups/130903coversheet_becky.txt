@@ -1,0 +1,243 @@
+http://www.naic.edu/science/proposals/cover.html
+
+Section I - General Information
+
+Proposal submitted for:  Sep 3, 2013 deadline
+
+Has this same proposal been submitted previously?
+No.
+
+Type of Proposal:   Regular
+Proposal Category:  Non-Pulsar Astronomy, Spectroscopy
+
+Auxiliary Category Information:(check all that apply):
+Extragalactic
+
+Observing Mode
+Plan to travel to Arecibo.
+
+No Service Observing
+
+Proposal title:
+L-Band Wide  Observations of Star-Forming Galaxies in X-ray Selected Groups:
+The Quenching of Star Formation in the Group Environment 
+
+Abstract:
+We propose targeted L-band wide observations to measure HI gas content
+of group galaxies known to be star forming from optical data but which
+were not detected by the ALFALFA survey.  This work is part of a
+detailed multiwavelength study of a set of nearby groups within 120 Mpc
+spanning a range of X-ray luminosity, velocity dispersion, and
+richness.  We aim to measure the gas fraction and star formation
+efficiency of all star forming group members to determine the threshold of
+gas depletion, star formation quenching, and morphological
+transformation within intermediate density environments.  The proposed LBW
+observations will provide the critically important gas fractions of
+star-forming low mass and environmentally gas-depleted group galaxies
+whose HI fluxes fall below ALFALFA's sensitivity.  The observations
+will be conducted by members of the Undergraduate ALFALFA Team mostly
+onsite.
+
+
+EPO Abstract:
+
+Galaxies come in an astounding variety of shapes and sizes, and they
+change their appearance over time as their hydrogen gas reservoirs are
+gradually converted to stars via star formation.  Astronomers know
+that galaxies in the crowded, "urban" environment of a cluster are
+redder and have less gas than their isolated "country" cousins, but
+they don't know why. Is the gas prematurely stripped from galaxies by
+environmental influences like galaxy collisions, or are galaxies in
+clusters simply born with less gas? This proposal will address these
+questions by exploring the less studied "suburban" environments of
+galaxy groups. Interactions in these regions may accelerate the loss
+of gas and quenching of star formation as a galaxy falls into a
+cluster.  The sensitive Arecibo telescope will measure the amount of
+gas in galaxies that have ongoing star formation, to determine when
+and where galaxies start losing gas and prematurely halt star
+formation.
+
+Author Information
+
+PI Rebecca Koopmann (Union College) koopmanr@union.edu
+CoI * Gregory Hallenbeck (Cornell PhD student) ghallenbeck@astro.cornell.edu
+* Michael Jones (Cornell PhD student) jonesmg@astro.cornell.edu
+* Lukas Leisman (Cornell PhD student) leisman@astro.cornell.edu
+Martha Haynes (Cornell University) haynes@astro.cornell.edu
+Riccardo Giovanelli (Cornell University) riccardo@astro.cornell.edu
+Thomas Balonek (Colgate U.) tbalonek@mail.colgate.edu
+John Cannon (Macalester Coll.) jcannon@macalester.edu
+Kim Coble (Chicago State U.) kcoble@csu.edu
+Mary Crone Odekon (Skidmore) mcrone@skidmore.edu
+David Craig (West Texas A&M U) dcraig@mail.wtamu.edu
+Adriana Durbala (U. Wisconsin-Stevens Point) Adriana.Durbala@uwsp.edu
+Rose Finn (Siena Coll.) rfinn@siena.edu
+James Higdon (Georgia Southern U.) jhigdon@georgiasouthern.edu
+Sarah Higdon (Georgia Southern U.) shigdon@georgiasouthern.edu
+Lyle Hoffman (Lafayette Coll.) hoffmang@lafayette.edu
+Katherine Jore (U. Wisconsin-Stevens Point) kjore@uwsp.edu
+David Kornreich (Ithaca College) dkornreich@ithaca.edu
+Mayra Lebron (U. Puerto Rico-Arecibo) mayra.lebron3@upr.edu
+Jeffrey Miller (St. Lawrence U.) jeff@stlawu.edu
+Aileen O'Donoghue (St. Lawrence U.) aodonoghue@stlawu.edu
+Ronald Olowin (St. Mary's Coll. California) rpolowin@stmarys-ca.edu
+Carmen Pantoja (U. Puerto Rico-Rio Piedras) carmen.pantoja1@upr.edu
+Jessica Rosenberg (George Mason U.) jrosenb4@gmu.edu
+Parker Troischt (Hartwick College) TroischtP@hartwick.edu
+Aparna Venkatesan (U. San Francisco) avenkatesan@usfca.edu
+Eric Wilcots (U. Wisconsin-Madison) ewilcots@astro.wisc.edu
+
+
+Rebecca Koopmann (Union College) koopmanr@union.edu
+* Gregory Hallenbeck (Cornell PhD student) ghallenbeck@astro.cornell.edu 607 255-6472
+* Michael Jones (Cornell PhD student) jonesmg@astro.cornell.edu
+* Lukas Leisman (Cornell PhD student) leisman@astro.cornell.edu
+
+Due to the character limit on the on-line coversheet form, find the complete list at
+http://egg.astro.cornell.edu/alfalfa/docs/prop.sep13.authorlist.html
+*Graduate Student
+
+
+koopmanr@union.edu,haynes@astro.cornell.edu,riccardo@astro.cornell.edu,TroischtP@hartwick.edu,ghallenbeck@astro.cornell.edu,jonesmg@astro.cornell.edu,leisman@astro.cornell.edu,tbalonek@mail.colgate.edu,jcannon@macalester.edu,kcoble@csu.edu,mcrone@skidmore.edu,dcraig@mail.wtamu.edu,Adriana.Durbala@uwsp.edu,rfinn@siena.edu,jhigdon@georgiasouthern.edu,shigdon@georgiasouthern.edu,hoffmang@lafayette.edu,kjore@uwsp.edu,dkornreich@ithaca.edu,mayra.lebron3@upr.edu,jeff@stlawu.edu,aodonoghue@stlawu.edu,rpolowin@stmarys-ca.edu,carmen.pantoja1@upr.edu,jrosenb4@gmu.edu,avenkatesan@usfca.edu,ewilcots@astro.wisc.edu
+
+
+Section II: Time Request
+
+A time request is required for this semester. If you also require (and justify in the proposal) time for next semester, please enter it in the second box below. Please address any questions to Fernando Camilo
+Total hours requested for this semester: 122
+Hours for next semester, if relevant:  0
+How many hours have already been used for this project?  0
+
+**If this project continues beyond one year, please estimate total additional 
+hours to complete it (not including this request)**: 0? 
+
+Time Distribution:
+
+Use more than one line only if necessary. If this format does not suit your needs, 
+please describe time requirements in the area below.
+
+Specify Time system:   LST Local Sidereal Time 
+
+Times requested in first semester (hours, or hh:mm if appropriate)
+Interval Start	Interval Stop	Days Needed at this time interval
+ Begin 8	 End 14	 	 Number of Days 3
+ Begin 8	 End 16.5	 Number of Days 4
+ Begin 10	 End 16.5	 Number of Days 12
+ Begin	 End	 Number of Days
+
+Describe constraints on the days requested. For example: range of
+calendar dates preferred, or 2 runs of 3 days, spaced 5 days apart,
+etc. If your observations are triggered by special circumstances or
+require certain conditions, describe them here. Scientific reasons for
+the time distribution should also be described and justified in your
+proposal.
+-------------
+Considering the sky distribution of the target fields and in order to
+allow UAT faculty and students to participate in on-site observing,
+our request of 122 hours is distributed as follows:
+
+3 sessions  08h < LST < 14 h  coincident with the UAT workshop (Jan 12-15, 2014) (onsite)
+4 sessions  08h30m < LST < 16h30m  in late March 2014, to coincide with "spring break" (onsite)
+12 sessions 10h30m < LST < 16h30m  some of which would be in late March 2014 (at scheduler's convenience, with some onsite in late March and the rest remote)
+--------------
+
+
+minimum: 2 hours
+
+Data < 100 GB 
+
+Section III Instruments
+LBW
+
+Night-time required
+
+Section IV- Special RFI Considerations
+
+1375-1430 MHz
+
+You MUST check either yes or no for each item below:
+
+  No, I do not need protection from IRIDIUM.
+
+ Yes, I need coordination with Punta Salinas radar for my observation within the band 1222-1381 MHz. More Information
+
+  Yes, I need coordination with GPS L3 at 1381 MHz. More Information
+
+ Section V. List of Targets
+
+
+LST Visibility: 8h < RA < 16.5h  
+
+235 galaxy targets selected to be star-forming via Halpha imaging and from 
+the NASA-Sloan Atlas and not detected by the ALFALFA survey.
+Please see proposal for target details.
+
+Not requested in coversheet:??
+
+The NAIC requests that you provide the following with your proposal submission:
+
+# List any NEW publications from the past 2 years (including recent submissions 
+& conference proceedings) not included in previous proposals, that have resulted 
+from observations made at the Arecibo Observatory NEW: Just list DOI index 
+number, or briefly author and conference for proceedings or presentations.
+
+These are newly published since Mar 1, 2013; only refereed papers:
+
+A Catalog of Ultra-compact High Velocity Clouds from the ALFALFA Survey: Local Group Galaxy Candidates?
+   Adams, E.A.K., Giovanelli, R. & Haynes, M.P. 2013, ApJ 768, 77
+
+ALFALFA Discovery of the Nearby Gas-Rich Dwarf Galaxy Leo P: I. HI Properties
+   Giovanelli, R., Haynes, M.P., Adams, E.A.K., Cannon, J.M., Rhode, K.L.,
+   Salzer, J.J., Skillman, E.D., Berstein-Cooper, E.Z., & McQuinn, K.B. 2013, AJ 145, XXX
+
+ALFALFA Discovery of the Nearby Gas-Rich Dwarf Galaxy Leo P: II. Distance Estimate and Results from 
+   Optical Imaging
+   Rhode, K.L., Salzer, J.J., Haurberg, N.C., Van Sistine, A., Young, M.D., 
+   Haynes, M.P., Giovanelli, R., Cannon, J.M., Skillman, E.D., 
+   McQuinn, K.B.W., & Adams, E.A.K.  2013, AJ 145, 149
+
+ALFALFA Discovery of the Nearby Gas-Rich Dwarf Galaxy Leo P: III. An Extremely Metal Deficient Galaxy
+   Skillman, E.D., Salzer, J.J., Berg, D.A., Pogge, R.W., Haurberg, N.C., Cannon, J.M.,
+   Aver, E., Olive, K.A. Giovanelli, R., Haynes, M.P., Adams, E.A.K., McQuinn, K.B.W. & Rhode, K.L.
+   2013, AJ 146, 3
+
+The Clustering of ALFALFA Galaxies: Dependence on HI Mass, Relationship to Optical Samples and 
+   Clues on Host Halo Propert
+   Papastergis, E., Giovanelli, R., Haynes, M.P., Rodríguez-Puebla, A. & Jones, M.G. 2013 Ap.J (submitted)
+
+ALFALFA Discovery of the Nearby Gas-Rich Dwarf Galaxy Leo P: IV. Distance Measurement from LBT Optical Imaging
+   McQuinn, K.B.W., Skillman, E.D., Berg, D., Cannon, J.M., Adams, E.A.K., Dolphin, A.,
+   Giovanelli, R., Haynes, M.P., Rhode, K.L. & Salzer, J.J. 2013, (submitted)
+
+
+
+# List all NEW undergraduate or graduate students who participated in the 
+observations, data reductions or analyses leading to those publications if not 
+listed on previous proposals (include institution, degree (undergrad, MS, PhD) 
+and expected year of graduation). 
+
+
+UNDERGRADUATE STUDENTS:
+The number of students involved in the Undergraduate ALFALFA team is 
+too large to include here. However, such information has been provided
+to NAIC in annual reports and the annual observing "proposal" associated with
+the UAT workshop. Please see the observing proposals and the summer research 
+lists on the UAT webpage for full details:
+     http://egg.astro.cornell.edu/alfalfa/ugradteam/ugradteam.php
+
+-183 individual students in UAT first 6 years
+-106 students at first 6 workshops, all of whom were 
+      on the student-written observing proposals.
+- 47 students observed onsite (some repeats)
+-109 summer projects
+- 81 academic year projects
+- 139 individual students have done a research project
+- 40% participation by women
+- 88% of workshop students are involved in research project, 40% are involved in >1
+
+
+# Have any of these observations contributed to completed thesis work? Please 
+include student name, and institution, title of thesis, year, degree (BA, BS, 
+MS, MEng, PhD). 
+
+I LIST: all students already reported; see A2669/A2707

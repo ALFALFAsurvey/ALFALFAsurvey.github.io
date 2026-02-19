@@ -1,0 +1,195 @@
+<HTML>
+<HEAD>
+<TITLE>ASTRO 3303</TITLE>
+</HEAD>
+
+<BODY bgcolor="ffffff">
+
+<h3> <font color=#cc0f14>ASTRONOMY 3303 &nbsp ALFALFA Portfolio Exercise &nbsp &nbsp Wed Apr 10, 2013</font></h3>
+<br>
+<b>Useful links:</b>
+<ul>
+<li><a href="http://egg.astro.cornell.edu/alfalfa/">main ALFALFA page</a>
+<li><a href="http://www.naic.edu/~a2010/galaxy_a2010.html">ALFALFA team observers' page</a> (at Arecibo)
+<li><a href="http://www.naic.edu/~a2010/ALFALFA_lbwobserving.htm">ALFALFA team LBW observing page</a> (at Arecibo)
+</ul>
+
+<br>
+<b>A quick look at some ALFALFA data and selected targets</b><br>
+<!--
+198305 0934534+170305  400 400 160 0  0         90    35  0    0    0-99Leo T    1137 245   37  21 1 A50J87549990 00 000000 0
+181310 0823126+275140   21  13 182 0  0HII     420 50215300    0   33-38OHMcand   217 218-1515 19326 A50J87541590 01 009000 0
+208583 1021449+180522   70  50 180 0  0dI      200     0  0    0    0  0Leo P     131 231  263  24 2 A50J87542470 00 005000 0
+198305  L093453.4+170305  093453.4 +170305   100 HH                 LeoT      12.03.27/corfile.27mar12.a2669.35  det@1421; confused w. galHI; check highres spect
+        H102144.7+180438  102144.9 +180519   260 HH                 LeoP      12.03.22/corfile.22mar12.a2669.52  det@1419
+
+See: http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/hunt3_demo_obskey.htm
+-->
+Although we cannot conduct any actual observations in real time during class, we can simulate what an observing run of
+ALFALFA followup observations would be like using the off-line version of CIMA, the Arecibo telescope control and data
+acquisition system. </p>
+
+And, since we have already acquired a lot of data, we can look at some of it!</p>
+
+<b>1.</b> &nbsp On the night of 13.01.15, we detected a source at 1408 MHz. Here is the entry in the 
+<a href="http://www.naic.edu/~a2010/obslogs/jan13/a2707log130115">log file</a>:<br>
+H142852.9+164502  142853.4 +164518  j  2600 H v   # A249534         1324 15.49   41   301500161  Detection at 1408 MHz</p>
+And here is the high resolution LBW spectrum</p>
+ <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/files/H142852.9+164502.hires.jpg">
+<img src="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/files/H142852.9+164502.hires.jpg" height=150></a><br>
+Click on the image to see a larger version.</p>
+
+We can also take a look at the data on disk. First let's look at the full bandwidth (low spectral resolution) spectrum:<br>
+checklbw,file='/share/olcor/corfile.15jan13.a2707.41'
+<br>
+and now, let's look at the higher resolution spectrum, converting frequency to velocity:<br>
+checklbw,file='/share/olcor/corfile.15jan13.a2707.41',/vel,/hires,yrange=[-10,25],smo=5
+<br>
+<br>
+Here is a search of the 1 degree field around this positions for objects in our database (the "Arecibo General
+Catalog" = AGC) with cz < 3000 km/s or no known redshift.
+</p>
+<pre>
+-999 3000
+ Enter center position as:  hhmmsssSddmmss 
+1428534+164518
+ Opened northminus1 file correctly                  Vopt                V21                                sep in arcmin
+249043          1428336+160735   21  16 186   300      0-99      0   0    0   0     00 0  0  0    0  9  0  38.01
+249534 HIdet    1428534+164518    0   0   0     0      0  0    129 234 2633  32  A50J875  0  0    0  0  0   0.00
+248946          1429139+161020   30  30 175   100      0-98      0   0    0   0     00 0  0  0    0  8  0  35.31
+242120 FGC2790  1431238+171713   65   8 170   170      0  0      0   0    0   0     00 0  0  0   70  0  0  48.08
+</pre>
+</p>
+Use these links to investigate this field; what do you think about it?</p>
+AGC 249534
+&nbsp   1428534+164518 &nbsp  217.2225   16.7550  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=217.2225&dec= 16.75500&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=217.2225&dec= 16.75500&opt=glsi&scale=0.39617" target=new>DR9Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=217.2225, 16.75500&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=217.2225, 16.75500&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=217.2225, 16.75500&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=217.2225, 16.75500&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=217.2225, 16.75500&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=217.2225, 16.75500&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+28+53.4&lat=+16+45+18&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+<br>
+--------------
+<br>
+<b>2.</b> &nbsp On the night of 12.03.27, we detected a source at 1421 MHz. It is very strong, but it is confused with the
+Galactic hydrogen emission. Here is the entry from the <a href="http://www.naic.edu/~a2010/obslogs/mar12/a2669log120327">logfile</a>:<br>
+<pre>
+L093453.4+170305  093453.4 +170305  j   100 H v   # A198305   12.03.26   0925    2.7    35    208700297     Not Detected
+</pre>
+Here is the high resolution LBW spectrum</p>
+ <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/files/L093453.4+170305_hires.jpg">
+<img src="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/files/L093453.4+170305_hires.jpg" height=150></a><br>
+Click on the image to see a larger version.</p>
+Oops! Our observers, not knowing what to look for (deliberately, we don't tell them what to expect), didn't realize there was an 
+extragalactic source!</p>
+
+We can also take a look at the data on disk. First let's look at the full bandwidth (low spectral resolution) spectrum:<br>
+checklbw,file='/share/olcor/corfile.27mar12.a2669.35'
+<br>
+and now, let's look at the higher resolution spectrum, converting frequency to velocity:<br>
+checklbw,file='/share/olcor/corfile.27mar12.a2669.35',/vel,/hires,yrange=[-25,325],smo=5,xrange=[-200,200]
+<br>
+<br>
+Why does the flux density scale (y axis) alternate between 
+positive and negative values near 0 km/s?</p>
+Use the links below to investigate this object; what is it? 
+</p>
+
+AGC 198305 &nbsp   0934534+170305 &nbsp  143.7225   17.0514  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=143.7225&dec= 17.05139&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=143.7225&dec= 17.05139&opt=glsi&scale=0.39617" target=new>DR9Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=143.7225, 17.05139&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCO
+ORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=143.7225, 17.05139&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCO
+ORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=143.7225, 17.05139&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatori
+al&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=143.7225, 17.05139&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equator
+ial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=143.7225, 17.05139&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatori
+al&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=143.7225, 17.05139&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equator
+ial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equ
+atorial&in_equinox=J2000.0&lon=09+34+53.4&lat=+17+03+05&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pr
+e_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+<br>
+--------------
+<br>
+<b>3.</b> &nbsp On the night of 12.03.22, we detected a source at 1419 MHz. It is quite strong and clearly  but also close in velocity to
+the Galactic HI emission. Here is the entry from the <a href="http://www.naic.edu/~a2010/obslogs/mar12/a2669log120322">logfile</a>:<br>
+<pre>
+H102144.7+180438  102144.9 +180519  j   260 H v   # highres   12.03.22   1035    3.0  52     208200433   Detection at f=1419 MHz
+</pre>
+Here is the high resolution LBW spectrum</p>
+ <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/files/H102144.7+180438_hires.jpg">
+<img src="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/files/H102144.7+180438_hires.jpg" height=150></a><br>
+Click on the image to see a larger version.</p>
+
+We can also take a look at the data on disk. First let's look at the full bandwidth (low spectral resolution) spectrum:<br>
+checklbw,file='/share/olcor/corfile.22mar12.a2669.52'
+<br>
+and now, let's look at the higher resolution spectrum, converting frequency to velocity:<br>
+checklbw,file='/share/olcor/corfile.22mar12.a2669.52',/vel,/hires,yrange=[-5,50],smo=3,xrange=[-100,500]
+<br>
+<br>
+</p>
+Use the links below to investigate this object; what is it? </p>
+AGC 208583 &nbsp   1021449+180519 &nbsp  155.4371   18.0886  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=155.4371&dec= 18.08861&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=155.4371&dec= 18.08861&opt=glsi&scale=0.39617" target=new>DR9Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=155.4371, 18.08861&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatori
+al&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=155.4371, 18.08861&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatori
+al&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=155.4371, 18.08861&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=20
+00&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=155.4371, 18.08861&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2
+000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=155.4371, 18.08861&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=20
+00&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=155.4371, 18.08861&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2
+000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_e
+quinox=J2000.0&lon=10+21+44.9&lat=+18+05+19&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.
+0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+<br>
+--------------
+<br>
+<b>4.</b> &nbsp On the morning of 13.01.15, we detected a source at 1371 MHz with an unusual emission profile.
+Here is the entry from the <a href="http://www.naic.edu/~a2010/obslogs/jan13/a2707log130115">logfile</a>:<br>
+
+<pre>
+H120548.1+165100  120548.2 +165106  j 10500 H v   # A222391 OHM     1128  9.14   28   301500109  Detection at 1371 MHz
+                    - Very wide, two fully separate peaks with additional flat emission
+</pre>
+ <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/files/OHM_jan15.jpg">
+<img src="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/files/OHM_jan15.jpg" height=150></a><br></p>
+We can also take a look at the data on disk. First let's look at the full bandwidth (low spectral resolution) spectrum:<br>
+checklbw,file='/share/olcor/corfile.15jan13.a2707.28'
+<br>
+and now, let's look at the spectrum again but this time converting frequency to velocity and smoothing:<br>
+checklbw,file='/share/olcor/corfile.15jan13.a2707.28',/vel,yrange=[-45,-15],smo=5<br>
+(Note: the low resolution spectrum does not cover the full signal!)
+<br>
+</p>
+Use the links below to argue your interpretation of what the source is:</p>
+
+AGC 222391
+&nbsp   1205482+165106 &nbsp  181.4508   16.8517  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=181.4508&dec= 16.85167&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=181.4508&dec= 16.85167&opt=glsi&scale=0.39617" target=new>DR9Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=181.4508, 16.85167&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=181.4508, 16.85167&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=181.4508, 16.85167&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=181.4508, 16.85167&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=181.4508, 16.85167&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=181.4508, 16.85167&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+05+48.2&lat=+16+51+06&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+<!-- there is a 2MASS spectrum of the object with cz=65291 = 0.2177 -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+The drift 22p1 scheduled for July 6, 2005 is centered at
++05d13'54"; that means that Beam 0 (the central pixel), will
+drift along that declination. The other beams are offset in
+increments of 2.1 arcmin. So the 7 drift tracks will be located at:
+     Beam 1  +05d20'12"
+          6  +05d18'06"
+          2  +05d16'00"
+          0  +05d13'54"
+          5  +05d11'48"
+          3  +05d09'42"
+          4  +05d07'36"
+Remember than since each beam covers about 3.3 x 3.8 arcmin,
+we may detect extended sources that are located somewhat to the
+north of Beam 1 or south of Beam 4.
+
+********   AGC   *****************
+
+So, let's investigate what objects are found in the box:
+    RA ~ 13h20m to 15h00m    Dec +05d00m to 05d27m  (5.0-5.45)
+
+d22p1.agc     contains all galaxies; note that A1809 lies in the field but at
+              higher redshift.
+d22p1.list    contains a subset of above for v<18000 km/s or unknown z
+
+
+********   SDSS DR4   *****************
+SDSS uses RA in degrees, so the boundaries are:
+     RA = 200 to 225.0     5.0-5.45
+
+Go to the SDSS SQL server:
+
+http://cas.sdss.org/astro/en/tools/search/SQl.asp
+
+SELECT
+  p.ra, p.dec, s.z, p.expAB_r, p.fiberMag_r, p.petroMag_r, p.petroR90_r,
+  p.lnLExp_r, p.lnLDeV_r, l.sigma, l.sigmaErr, l.ew, l.ewErr,
+  l.chisq, l.nu, s.zWarning
+
+FROM PhotoObj p, SpecObj s, SpecLine l
+WHERE
+  p.SpecObjID = s.SpecObjID AND
+  p.SpecObjID = l.specobjID AND
+  s.specClass=2 AND
+  l.ew > 5 AND
+  p.ra >= 200.0 AND p.ra <= 225.0 AND
+  p.dec >= 5.0 AND p.dec <=5.45 AND
+  s.z <= 0.06
+order by p.ra
+
+

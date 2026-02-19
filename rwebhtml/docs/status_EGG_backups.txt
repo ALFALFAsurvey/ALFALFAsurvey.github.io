@@ -1,0 +1,186 @@
+Last update:    07 April 2013
+
+
+Normally, I dismount most of the remote disks from dorado,
+but they can be easily restored after editting the fstab file.
+
+See also the file status_wherearethedata.txt in the cweb directory.
+
+-----------------------------------------------------------------------------
+dorado3   
+
+The partition dorado3/galaxy is backed up nightly onto arecibo2/backup
+
+The full disk is backed up occasionally onto:
+ /home/culebra/backup/dorado3            (Last update  => 28Dec2011! see below!)
+ /home/dorado3 > ls
+bin  bin64 camuy-backup  cb4  dorado1  dorado13  dorado2  dorado4  dorado5  galaxy  haynes  lost+found
+As root on dorado:
+cd /home/culebra/backup/
+*** NOT THIS ONE *****rsync -av /home/arecibo2/backup/galaxy .
+rsync -av /home/dorado3/bin /home/culebra/backup/dorado3         Apr07
+rsync -av /home/dorado3/bin64 /home/culebra/backup/dorado3       Apr07
+rsync -av /home/dorado3/cb4 /home/culebra/backup/dorado3         Apr07
+rsync -av /home/dorado3/dorado1 /home/culebra/backup/dorado3     Apr07
+rsync -av /home/dorado3/dorado13 /home/culebra/backup/dorado3    AM SKIPPING
+rsync -av /home/dorado3/dorado2 /home/culebra/backup/dorado3     Apr07
+rsync -av /home/dorado3/dorado4 /home/culebra/backup/dorado3     Apr07
+rsync -av /home/dorado3/dorado5 /home/culebra/backup/dorado3     Apr07
+rsync -av /home/dorado3/haynes /home/culebra/backup/dorado3      Apr07
+
+-----------------------------------------------------------------------------
+Raw ALFALFA data:    see also status_wherearethefiles.txt on cabo/html/alfalfalog
+  Main directory is: dorado3/dorado13/galaxy/idlraw
+  Backup is:         /home/culebra/backup/dorado3/dorado13/galaxy/idlraw
+
+
+-----------------------------------------------------------------------------
+Level I archive:     see also status_wherearethefiles.txt on cabo/html/alfalfalog
+  Main directory is:  /home/culebra/galaxy/flagbb
+  Backup is:          /home/esperanza/galaxy/flagbb
+  2nd backup is:      /home/rutados/flagbb   (in progress 3/20)
+
+------------------------------------------------------------------------------
+ALFALFA grids :      see also status_wherearethefiles.txt on cabo/html/alfalfalog
+  on dorado (as root)
+/home/vieques2/galaxy> rsync -av MASTER_cats /home/dorado/galaxy   04Apr13
+/home/vieques2/galaxy> rsync -av grids /home/dorado/galaxy         04Apr13
+
+Other ALFALFA stuff on vieques2
+  on dorado (as root)
+
+/home/vieques2/galaxy>  rsync -av proc /home/dorado/galaxy       05Apr13
+/home/vieques2/galaxy>  rsync -av HI0141+27 /home/dorado/galaxy  05Apr13
+
+
+Li's grids are in:     /home/vieques2/galaxy/xiaoli   (and also on cb3 and toro3) 24Apr13
+David's grids are in:  /home/vieques2/galaxy/dstark    also on toro2  24Apr13
+Mike's grids are in:   /home/camuy/galaxy/mike         also on toro3  24Apr13
+Luke's grids are in:   /home/dorado/galaxy/luke        also on toro3  24Apr13
+
+
+April 5, 2013
+As root, in /home/rutados/backup
+
+rsync -av /home/dorado3/bin .                 05Apr13    also /home/dorado/backup 07Apr13
+rsync -av /home/hatillo .                     05Apr13    also /home/dorado/backup 07Apr13
+rsync -av /home/caborojo1 .                   05Apr13    also /home/dorado/backup 07Apr13
+rsync -av /home/caborojo2 .                   05Apr13    also /home/dorado/backup 07Apr13   CHECK IDLR FALL11
+rsync -av /home/caborojo3 .                   05Apr13    
+rsync -av /home/toro1 .                       05Apr13    should also put this on dor 
+rsync -av /home/humacao6 .                    06Apr13    should also put this on dor
+rsync -av /home/humacao .                      Apr13     should also put this on dor
+rsync -av /home/adjuntas .
+
+rsync -av /home/dorado/backup/cb4 .           05Apr13    
+rsync -av /home/dorado/backup/esperanza4 .    05Apr13
+rsync -av /home/dorado/backup/esperanza5 .    05Apr13
+rsync -av /home/dorado/backup/esperanza6 .    05Apr13
+rsync -av /home/dorado/backup/esperanza7 .    05Apr13
+rsync -av /home/dorado/backup/gmrt11 .        05Apr13 
+rsync -av /home/dorado/backup/kpno_feb11 .    05Apr13 
+rsync -av /home/dorado/backup/palomar .       05Apr13 
+rsync -av /home/dorado/backup/wsrt11 .        05Apr13
+rsync -av /home/dorado/backup/
+
+
+------------------------------------------------------------------------------
+All current user files as well as older archive ones
+
+/home/arecibo/backup> rsync -av bin /home/dorado/backup/       (old stuff; NOT DONE)
+/home/arecibo/backup> rsync -av cb4 /home/dorado/backup/       (old stuff; NOT DONE)
+/home/arecibo/backup> rsync -av esp* /home/dorado/backup/      (old stuff; NOT DONE)
+/home/arecibo/backup> rsync -av rut* /home/dorado/backup/      (old stuff; NOT DONE)
+/home/arecibo/backup> rsync -av palomar /home/dorado/backup/
+/home/arecibo/backup> rsync -av savedata /home/dorado/backup/
+/home/culebra/galaxy> rsync -av gmrt11 /home/dorado/backup 
+/home/caborojo3/galaxy> rsync -av kpno_feb11 /home/dorado/backup
+/home/toro4/backup> rsync -av flipvideo /home/dorado/backup
+/home/toro4/backup> rsync -av culebra1 /home/dorado/backup
+/home/toro4/backup> rsync -av savevla /home/dorado/backup
+
+/home/hatillo> rsync -av * /home/dorado/backup/hatillo
+/home/hatillo2> rsync -av * /home/dorado/backup/hatillo2
+/home/hatillo3> rsync -av galaxy /home/dorado/backup/hatillo3
+/home/hatillo3> rsync -av sabrina /home/dorado/backup/hatillo3
+
+/home/toro1> rsync -av * /home/dorado/backup/toro1
+/home/toro3> rsync -av betsey /home/dorado/backup/toro3    (EVLA/spr10)
+/home/toro3> rsync -av shan /home/dorado/backup/toro3      (misc stuff)
+
+/home/caborojo1> rsync -av  * /home/dorado/backup/caborojo1
+/home/caborojo2> rsync -av  * /home/dorado/backup/caborojo2
+/home/caborojo3> rsync -av  * /home/dorado/backup/caborojo3
+
+
+/home/humacao/humacao> rsync -av humacao1 /home/dorado/backup   
+/home/humacao/humacao> rsync -av humacao2 /home/dorado/backup  (also on are2)
+/home/humacao/humacao> rsync -av humacao3 /home/dorado/backup  (also on are2)
+/home/humacao/humacao> rsync -av humacao4 /home/dorado/backup  (also on are2)
+/home/humacao/humacao> rsync -av humacao5 /home/dorado/backup 
+/home/humacao6> rsync -av *  /home/dorado/backup/humacao6
+
+/home/humacao/humacao> rsync -av data /home/dorado/backup/humacao   (betseys stuff)
+
+/home/adjuntas> rsync -av * /home/dorado/backup/adjuntas (yes this is correct!; also on are2; see the /data/ partition for old stuff)
+du -hs gmrt11 /home/dorado/backup/gmrt11
+121G	gmrt11
+122G	/home/dorado/backup/gmrt11
+GMRT data      /home/culebra/galaxy;                           /home/dorado/backup
+    du -hs gmrt11 /home/dorado/backup/gmrt11
+    121G	gmrt11
+    122G	/home/dorado/backup/gmrt11
+WSRT data      /home/culebra/galaxy                            /home/dorado/backup
+    du -hs wsrt11 /home/dorado/backup/wsrt11
+    7.9G	wsrt11
+    7.9G	/home/dorado/backup/wsrt11
+
+  calibrated  /home/humacao6/betsey/observing_runs/wsrt11      /home/dorado/backup
+Halpha   toro1; hum6 (looks like hum6 has also the NEDFITS stuff)
+Galex    toro1??
+Palomar  => palomar directory
+
+--------------------------------------------------------------------------------
+EVLA stuff:
+
+Greg is using rincon
+
+Betsey is using maricao
+
+--------------------------------------------------------------------------------
+ALFALFA web stuff         23Dec2012
+   on cabo (as root)
+cd /var/www
+rsync -av html /home/dorado/cweb
+cd /var/lib
+rsync -av mysql /home/culebra/backup/cweb
+
+   on hatillo (as root)
+cd /var/www
+rsync -av html /home/dorado/hweb
+cd /var/www
+rsync -av mysql /home/culebra/backup/hweb
+
+
+   on culebra (as root)    23Dec2012
+cd /home/culebra/backup
+rsync -av -e ssh haynes@caborojo:/var/www/html cweb
+rsync -av -e ssh haynes@caborojo:/var/lib/mysql cweb (No get permission denied on this)
+
+--------------------------------------------------------------------------------
+
+PC backups
+sarig/martha (windows)                   /home/dor/pcsarigwin110318  also are/backup
+sarig/haynes (linux)                     /home/dor/pcsariglin110318  also are/backup
+
+(2nd laptop is just called laptop2 but I call it sarig2)
+sarig2/martha (windows)  rsync -av Documents haynes@rutados:/home/rutados/haynes/pcback/pcsarig2win110721
+                         rsync -av Pictures haynes@rutados:/home/rutados/haynes/pcback/pcsarig2win110721
+sarig2/haynes (redhat)   rsync -av martha haynes@rutados:/home/rutados/haynes/pcback/pcsarig2linux110721
+Then copy those to dor
+cd /home/rutados/haynes/pcback
+rsync -av pcsarig2win110721 /home/dorado/backup
+rsync -av pcsarig2linux110721 /home/dorado/backup
+**** On Feb 17, 2013 I copy /home/rutados/haynes/pcback to /home/toro2/haynes/pcback  !!
+     and mv /home/rutados/haynes/pcback  /home/rutados/backup   (a new location)
+

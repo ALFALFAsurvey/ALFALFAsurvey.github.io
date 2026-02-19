@@ -1,0 +1,50 @@
+
+Cookbook recipe:
+
+0.  Have a browser open; in the location where you want to work
+    with your catalog, start IDL as usual.
+
+1.  @wasinit2
+    @alfinit
+
+2.  Use READ_CAT.PRO to read in a formatted catalog proceduced by
+    GALCAT.PRO
+    {MH did not find this routine in IDL_ALFA; but she stole one
+     from caborojo4/bkent for the moment; BK: please check}
+
+    .comp read_cat.pro
+    cat="highmass+sdss+cat.txt"
+    read_cat,set,cat=cat
+    {This loads the catalog into a structure called "set"}
+
+3.  Use NAMERES.PRO:
+
+IDL>  nameres, set
+
+    This saves a file called 'set.sav'.  It is saved at each loop element
+    so you don't lose your work.  Have your browser open and at the ready
+    before you begin
+
+    NAMERES loops through the list opening a browser on the SDSS
+    Explore Tool Window if it thinks it has found a match. You need
+    to "copy and paste" the SDSS name at the prompt (including SDSS JNNN etc).
+   
+    I am noticing that some of the coordinates are getting garbled here.
+    This seems to occur if the ASCII table contains blanks instead of
+    "0" in the ra,dec coordinates. I fixed the file and it runs fine now.
+    BK will check this when he gets back.
+
+4.  Restore, the 'set.sav' file.
+
+5.  Run the CHECKSLOAN.PRO procedure:
+
+IDL>  checksloan, set
+
+   This saves a file called sloantable.sav and also an ascii file 
+   called "sloancross.txt". This has all your appended
+   Sloan information.
+
+Brian has also left spaces for LEDA ID and diameter info.
+
+
+

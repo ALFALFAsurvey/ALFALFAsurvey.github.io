@@ -1,0 +1,32 @@
+;************************************************************************
+;FOR REFERENCE, these were the inputs used to create bigimg.sav:
+;IDL> imgUR=mrdfits('mosaicUR.fits',0,hdr)
+;IDL> imgUL=mrdfits('mosaicUL.fits',0,hdr)
+;IDL> imgLL=mrdfits('mosaicLL.fits',0,hdr)
+;IDL> imgLR=mrdfits('mosaicLR.fits',0,hdr)
+
+;IDL> imgURtrim=imgUR[126:8875,*]
+;IDL> imgULtrim=imgUL[127:8874,*]
+;IDL> imgLLtrim=imgLL[110:8891,*]
+;IDL> imgLRtrim=imgLR[109:8892,*]
+
+;IDL> xsmall=1000
+;IDL> ysmall=1000
+;IDL> imgURsmall=congrid(imgURtrim,xsmall,ysmall)
+;IDL> imgULsmall=congrid(imgULtrim,xsmall,ysmall)
+;IDL> imgLLsmall=congrid(imgLLtrim,xsmall,ysmall)
+;IDL> imgLRsmall=congrid(imgLRtrim,xsmall,ysmall)
+
+;IDL> imgULsmall=imgULsmall*mean(imgURsmall)/mean(imgULsmall)
+;IDL> imgLRsmall=imgLRsmall*mean(imgURsmall)/mean(imgLRsmall)
+;IDL> imgLLsmall=imgLLsmall*mean(imgURsmall)/mean(imgLLsmall)
+
+;IDL> save,imgURsmall,imgULsmall,imgLLsmall,imgLRsmall,filename='smalls.sav'
+
+;IDL> bigimg=fltarr(2000,2000)
+;IDL> bigimg[0:999,0:999]=imgLLsmall
+;IDL> bigimg[1000:1999,1000:1999]=imgURsmall
+;IDL> bigimg[0:999,1000:1999]=imgULsmall
+;IDL> bigimg[1000:1999,0:999]=imgLRsmall
+;IDL> save,bigimg,filename='bigimg.sav'
+;

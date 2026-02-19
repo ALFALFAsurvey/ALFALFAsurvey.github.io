@@ -1,0 +1,312 @@
+<html>
+  <head>
+    <title>Undergraduate ALFALFA team</title> 
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=#cc0f14>SH #3: Understanding Galaxies &nbsp &nbsp &nbsp &nbsp Group Project</font></h3>
+<h3><font color=#ccof14> Team A:</font> &nbsp &nbsp &nbsp <font color=#008000>The populations of galaxies
+    detected by ALFALFA and by SDSS</font></h3>
+
+
+The task of your team is to explore the differences in the populations of galaxies
+detected by the two surveys: ALFALFA and the SDSS. Note that here we use only a subset of the full
+ALFALFA dataset (smaller files: less work).</p>
+
+Specifically, you will construct a color-magnitude diagram for the galaxies included in the 
+2011 ALFALFA data release (<a href="http://adsabs.harvard.edu/abs/2011AJ....142..170H"
+target=new>Haynes <i>et al</i> 2011</a>) using colors and
+magnitudes derived from the Sloan Digital Sky Survey (SDSS).
+We will provide you with all the data you need, but you'll have to try
+to understand some of what we have done to get the data ready to use. 
+Keep in mind that the ultimate goal is for the
+team to present your results Wednesday evening.
+You will need to explain everything that you have done, all the assumptions you have
+made and what uncertainties remain.</p>
+
+<hr>
+<table>
+<tr><td valign=top>
+<b>The astronomical rainbow</b> particularly as viewed by the SDSS</p>
+<li> &nbsp Remind yourself of the meaning of the terms magnitude, color index, 
+extinction and other relevant quantities.</p><br>
+<li> &nbsp To the right is the diagram showing the wavelength response of the
+five SDSS filters. Which one is g? which is i?</p><br>
+<li> &nbsp In a very famous movie, what would be the (g-i) color index
+         of Mary Kate Danaher's hair?</p><br>
+<li> &nbsp Explain why lower values of the (g-i) color index indicate bluer galaxies.<br><br><br>
+</td>
+<td valign=top align=right>
+<a href="images17/SDSS_filters.png" target=new>
+<img src="images17/SDSS_filters.png" height=250></a><br>
+Credit: SDSS
+</td>
+</tr></table>
+<br><hr>
+<b> Star forming galaxies have a healthy interstellar medium</b></p>
+Using the Arecibo telescope,
+ALFALFA detects the cool hydrogen gas (HI) in and around galaxies in the local universe. While stars in
+galaxies like the Milky Way form from the very cold clouds of molecular gas, most galaxies contain
+a lot more hydrogen in the form of diffuse cool atomic gas. Atomic hydrogen then is one step
+removed from the star formation process, but its abundance in a galaxy is a good metric of the
+fertility of the galaxy to make stars in the future. Hence, ALFALFA aims to take a robust
+census of atomic hydrogen gas bearing galaxies in the local universe and to explore how the
+gas content relates to the stellar population in those galaxies and how variations
+in gas content reflect difference in galaxy environment. Someday, when the Square Kilometre Array
+is built, our students and their students will study how the hydrogen content of galaxies has
+changed over cosmic time. Today we have more modest goals: here, we will use the ALFALFA and SDSS
+datasets to compare the populations of galaxies detected by the two surveys.</p>
+
+<li> &nbsp What is the typical temperature of a <i>cool</i> interstellar cloud in which the hydrogen
+is mainly neutral (atomic)?</p><br>
+
+
+<li> &nbsp What is the typical temperature of a <i>cold</i> interstellar cloud in which the hydrogen
+is mainly molecular?</p><br>
+
+
+<li> &nbsp What is the typical temperature of a <i>ionized</i> HII region?</p><br>
+
+<hr>
+<b>A color magnitude diagram of SDSS galaxies in the Coma supercluster</b></p>
+A common way to explore the properties of a population of galaxies involves constructing
+its color-magnitude diagram (CMD). Such a diagram shows that most galaxies inhabit one of
+two main regions on the diagram: the "red sequence" and the "blue cloud".
+A nice example which we will use for reference
+is the work of ALFALFA team member Peppo
+Gavazzi and his co-workers who constructed the CMD of a large sample of galaxies within 
+420 square degrees of sky covering
+the Coma supercluster and its member groups and clusters of galaxies as presented
+in <a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G" target=new>
+Gavazzi <i>et al</i> (2010)</a>, A&A 517, 73.</p>
+<table>
+<tr><td valign=top>
+Taken from Fig. 3 of
+that paper, the figure shows the "<i>g-i color versus i-band absolute magnitude 
+relation of all galaxies in the C[oma]S[upercluster] coded according to Hubble type: red = early-
+type galaxies (dE-E-S0-S0a); blue = disk galaxies (Sbc-Im-BCD); green = bulge 
+galaxies (Sa-Sb)... Contours of equal 
+density are given. The continuum line g-i =
+-0.0585 *(M<sub>i</sub> + 16) + 0.78 represents the empirical separation between the 
+red-sequence and the remaining galaxies.
+The dashed line illustrates the effect of the limiting magnitude r=17.77 of the 
+spectroscopic SDSS database, combined with the
+color of the faintest E galaxies g-i ~0.70 mag.</i>."
+</p>
+<li> Be sure you understand this diagram and what it tells us about galaxies.</p>
+
+</td><td align=right>
+<a href="images17/gavazzi_cmd.png" target=new>
+<img src="images17/gavazzi_cmd.png" height=320>
+</a> <br>
+<a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G" target=new>Figure 3 from Gavazzi
+<i>et al</i> (2010)</a><br>
+</td></tr>
+</table></p>
+
+<li> Compare this diagram to the one you made in <a href="hunt1_19.htm">SH #1</a>. In what ways
+is it different/similar?</p>
+
+<br>
+<hr>
+<b> The ALFALFA &alpha;.40 dataset</b>: </p> 
+The ALFALFA catalog data are available either as part of the publication in the
+Astronomical Journal or from our own <a href="http://egg.astro.cornell.edu/alfalfa/data" target=new>
+data products</a> page. It is now standard practice in astronomy to provide
+data for use by others in standard formats such as "CSV", so we have done that. Note that this is
+the same file you used in the SH#1 activity.</p>
+<li> &nbsp If you haven't already, download the file in <a href="files/Haynes_datafile1.csv" target=new>CSV format</a> 
+or <a href="files/Haynes_datafile1.txt" target=new>ASCII text format</a> and then use
+TOPCAT to generate the plots. </p>
+
+Be sure you also know where to find the final (&alpha;.100) dataset....<br>
+<hr>
+
+<b>Distance bias</b>: </p>
+First, let's examine how the HI masses of galaxies detected by ALFALFA differ 
+as we move from the very nearby galaxies to more distant ones. Use TOPCAT to
+make the plot of Distance (horizontal axis) versus log HI mass. This type of
+plot is called a
+Spanhauer diagram.</p>
+
+<li> &nbsp What are your impressions of this plot? </p><br>
+
+<li> &nbsp There are two "gaps" (fewer than expected) at 
+distances of about 85 Mpc and 230 Mpc. For the HI 21 cm line, what
+frequencies do these gaps correspond to? Any ideas on what causes the gaps?</p><br>
+<!-- The gaps appear at frequencies corresponding to 1390 and 1350 MHz, due to RFI in the band.<br>
+For 85 Mpc => cz ~ 6000 km/s => z = 0.0198 => 1420.4058/(1+z) ~1390 MHz <br>
+For 230 Mpc => cz ~ 16100 km/s => z = 0.054 => 1420.4058/(1+z) ~ 1350 (won't be exact)<br>
+Cause: RFI. In particular see <a href="http://www.naic.edu/~phil/rfi/rfilist.html">Phil's list</a>.
+The fairly broad band at 230 MHz is the FAA/SJU radar at 1350 MHz; note that it is not on all
+the time. The other feasture is probably the dome camera, which was a problem during part of
+the ALFALFA data taking (until identified and fixed). -->
+
+<li> &nbsp There appears to be a vertical line-up of (more than expected)
+                 points at a distance of 17 Mpc. 
+                 What might cause this?</p><br>
+
+<li> &nbsp Why does the distribution of points appear as it does? Why is it important to keep this diagram in mind
+as we explore galaxies detected by ALFALFA? </p>
+
+<!-- <br> <b><font color=#cc0f14>
+They should discuss the facts that (a) faint objects are visible in a flux limited sample only nearby
+and (b) luminous/massive objects, being rare, are visible only over large volumes. Therefore the average
+mass (or luminous) at nearer distances is biased relative to that at larger distances (Malmquist bias).
+</font></b>
+-->
+
+
+<br><hr>
+<b>SDSS data for the &alpha;.40 galaxies</b><br> 
+Find here the file in <a href="files/a40.plusSDSS.short.csv" target=new>CSV format</a> 
+or <a href="files/a40.plusSDSS.short.txt" target=new>ASCII text format</a>  containing useful information
+extracted from the population of galaxies included in both the 
+2011 public ALFALFA survey catalog (&alpha;.40 
+<a href="http://adsabs.harvard.edu/abs/2011AJ....142..170H">Haynes <i>et al</i> (2011)</a>) and the
+SDSS DR7 database. </p>
+
+Examine the contents of the file before
+you start working with it and be sure that you understand what all the columns mean;
+if you don't understand any of them, ask. Note that (1) there is a lot more here than you 
+actually need (but we want you to try to understand more than the minimum) and 
+(2) we are deliberately not telling you what everything is so you'll have to
+try to figure it out (and, of course, you can ask for help). For example, in practice, to calculate colors,
+you need to correct the observed apparent magnitudes
+at both bands for Galactic and internal extinction; those corrections are given in the table.
+See if you can figure out what the table contains.
+</p>
+
+<li> &nbsp While you might think that it would be easy to measure all the light, and hence the magnitude,
+it turns out that it's easier said than done, because the outer regions of the galaxy are fainter than
+the brightness of the night sky. So astronomers measure magnitudes in different ways. There are whole papers
+written on the subject of how to calculate magnitudes! We rely on the recommendations of the SDSS staff to
+use "model magnitudes" when we want to calculate colors and "Petrosian magnitudes" when we want to calculate
+luminosities or absolute magnitudes. Investigate the difference between the two for the  observed
+i band magnitudes by plotting the residual PetroMag_I - ModelMag_I versus
+the Petrosian magnitude; examining residuals is a good way to look for trends. &nbsp
+<i>Hint: Use the arithmetic capability
+in TOPCAT to generate a new columns as needed.</i></p>
+
+<li> &nbsp Which is brighter, the Petrosian or the model magnitude? &nbsp (<i>Remember how brightness goes
+with magnitude.</i>)</p>
+<li> &nbsp What is Galactic extinction? What does it depend on?</p>
+<li> &nbsp What is internal extinction? Is it more important in face-on or edge-on galaxies?</p>
+<li> &nbsp What is the "K-correction"? I have ignored it; why can we do that?</p>
+
+<table cellpadding=5><tr><td valign=top>
+<li> &nbsp The table to the right gives estimates of the Galactic and internal extinction. Consider the first
+galaxy in the sample: <b>AGC 331061</b>. Use the values in the table (notice I have rounded off the numbers)
+to calculate the extinction-corrected values and enter them in the table below.</p>
+
+<table border=3 cellpadding=5>
+<tr><td>Corrected ModelMag_g</td><td width=100 align=right> &nbsp </td></tr>
+<tr><td>Corrected ModelMag_i</td><td align=right> &nbsp </td></tr>
+<tr><td>Corrected PetroMag_i</td><td align=right> &nbsp </td></tr>
+<tr><td>Corrected (g-i) color</td><td align=right> &nbsp</td></tr>
+</table>
+</td><td align=right>
+<table border=3 cellpadding=5>
+<tr><td>ModelMag_g</td><td valign=right> 15.47</td></tr>
+<tr><td>ModelMag_i</td><td valign=right> 14.64</td></tr>
+<tr><td>PetroMag_i</td><td valign=right> 14.65</td></tr>
+<tr><td>Gext_g    </td><td valign=right>  0.19</td></tr>
+<tr><td>Gext_i    </td><td valign=right>  0.10</td></tr>
+<tr><td>Iext_g    </td><td valign=right>  0.41</td></tr>
+<tr><td>Iext_i    </td><td valign=right>  0.22</td></tr>
+</table>
+</td></tr></table>
+<br>
+<li> We need to calculate the galaxy's absolute magnitude, corrected for extinction.
+How would you do that for AGC 331061?</p><br><br>
+
+<hr>
+<b>The CMD for the &alpha;.40 galaxies</b><br> 
+You can use the data provided in the file and <b>TOPCAT</b> to
+construct the CMD for the &alpha;.40 galaxies. The first step
+is to work through the problem understanding what needs to be done.
+Notice that since we want to compare our results with Figure 3
+of Gavazzi <i>et al</i> (2010), we have to generate the plot with the 
+same filters (that is, (g-i) versus M<sub>I</sub>), scaling and orientation 
+they use. </p>
+
+<li> &nbsp
+Use the arithmetic capability
+of <b>TOPCAT</b> to apply the corrections to the whole sample as you have just done
+for the single galaxy. </p>
+<!-- <b><font color=#cc0f14>
+First, correct the colors for both galactic and internal extinction:<br>
+corr_modelmag_g = ModelMag_g - Gext_g - Iext_g <br>
+corr_modelmag_i = ModelMag_i - Gext_i - Iext_i <br>
+corr_PetroMag_i = PetroMag_i - Gext_i - Iext_i <br>
+corr_gminusi=corr_modelmag_g - corr_modelmag_i <br>AbsMag_i = corr_PetroMag_i + 5. - 5.0* log10 (distMpc*1000000.)<br>     
+-->
+
+<li> &nbsp Now, you are ready to make a color-magnitude diagram
+for the &alpha;.40-SDSS sample. 
+We suggest that you make a first plot with free scaling and a second
+       using the scaling x-axis (-14, -24), y-axis
+       (-1.0, 2.0). Notice that a few points drop out, but some of them
+may be reflect some failure in the data anyway. Large samples are powerful
+because they allow us to focus on the overall trends in the sample population. 
+(On the other hand, at some point, we should probably
+check those outliers to see whether their deviation is real; what might be wrong?)</p>
+
+
+<li> How does the CMD of the &alpha;.40 galaxies compare to the one you 
+made in <a href="hunt1_19.htm">SH #1</a>. In what ways
+is it different/similar?</p>
+<br><br>
+<hr>
+<b> Comparison of the ALFALFA and Coma supercluster populations</b></p>
+Let's compare the two populations!</p>
+<li> &nbsp Then, to compare with the Gavazzi CMD
+       set the axes to be: x-axis (-16, -23.5), y-axis 
+       (0.0, 1.5). Note that when you restrict the scaling, the
+       plot contains 11343 points within the area; we
+       have lost (12469-11343) = 1126 out of 12469 = 9% of the points.</p>
+
+<li> &nbsp Compare the &alpha;.40 CMD with the one presented by <a href="images17/gavazzi_cmd.png" target=new>Gavazzi <i>et al</i>
+ (2010)</a>. Explain
+       the differences in terms of the galaxy populations included in the
+       two datasets and the depth of the samples.</p>
+<!--
+<b><font color=#cc0f14>
+ALFALFA clearly is biased AGAINST the red cloud. It also seems to contain more luminous blue galaxies than
+Gavazzi et al
+</font></b></p>
+-->
+<br>
+<hr>
+<b>Gas and stars in the &alpha;.40 galaxies</b></p> 
+
+Now let's look at how the gas and stars are connected in the &alpha;.40 galaxy population. 
+To make the previous graph, you calculated the i-band absolute magnitude. If you want to,
+you can use the arithmetic
+functions in <bTOPCAT</b> to calculate the associated luminosity (logL_i) 
+and the "gas fraction" (gas2L = log MH - log L_i) for each &alpha;.40 galaxy which also
+has SDSS photometry. To calculate the i-band luminosity, assume that the absolute
+magnitude of the Sun at i-band is +4.58.
+Save your work by exporting the new table in <b>TOPCAT</b>. </p>
+
+Note that the table contains parameters for both V-band and i-band, but let's stick to 
+the i-band for this exercise. Using your results, plot the i-band optical luminosity (x axis, in log units) 
+versus the HI mass (y axis, in log units) and, separately, the optical luminosity 
+(x axis, in log units) versus the gas fraction parameter. For the first plot,
+We suggest you scale the axes as log L_i=[6,12] and log MH = [6,12].
+</p>
+
+<li> &nbsp Consider the results: what do you notice about the scaling with optical luminosity
+and how can you explain what you see? </p>
+<br><br>
+<hr>
+<b> Other things to consider</b></p>
+
+<li> &nbsp What other issues/questions are raised in your mind?</p><br><br>
+
+
+<br>
+<hr>
+<font color=#008000><i>Last modified: Mon Jun  3 09:47:15 EDT 2019
+</i> by becky </font>
+</body>
+</html>

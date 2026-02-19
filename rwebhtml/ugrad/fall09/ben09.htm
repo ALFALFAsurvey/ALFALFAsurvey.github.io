@@ -1,0 +1,127 @@
+<html>
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+
+<!-- PAGE CONTENT BEGINS HERE -->
+
+<h3><font color=#008000>Ben's 2009 page</font></h3>
+
+<li>The <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/fall09/">Fall 2009 front page</a>
+     &nbsp <i> Don't forget to look at the links on that page</i></p>
+<br>
+<h3> Stuff to do</h3>
+<ul>
+<li> Learn about the <a href="http://egg.astro.cornell.edu/alfalfa"> ALFALFA survey</a>
+     and, especially, take a look at the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalfa.php">
+     Using ALFALFA for science</a> page. What does ALFALFA detect? How can we use ALFALFA to learn
+     about galaxies?</p>
+<li> Read about the Sloan Digital Sky Survey in order to answer these questions. Some useful links
+are given here:<br>
+<a href="http://www.sdss.org/">Main SDSS site</a> &nbsp &nbsp &nbsp &nbsp
+<a href="http://www.sdss.org/dr6/">DR6 site</a>&nbsp &nbsp &nbsp &nbsp
+<a href="http://www.sdss.org/dr6/instruments/imager/index.html"> Imaging camera parameters and description</a><br>
+<ul>
+<dd>a. What is the operational status of the SDSS?
+<dd>b. What are the central wavelengths of the filters used to produce SDSS images?
+<dd>c. Why is it useful to obtain images in 5 filters simultaneously?
+<dd>d. Over what portion of the galaxy is the spectrum obtained? Why might that be important?</p></ul>
+<li> Make a web page for yourself to keep track of what you are doing; you should
+     put it in the directory called <i> /home/hatillo/katieh/spr08</i> (actually we will need to
+     get you a computer account for this...). See
+     my <a href="starthtml.htm">hints</a> on how to get started.</p>
+<li> <b> Get started with IDL</b><br>
+    See especially the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/intro2idlalfa.php">
+    Intro to IDL for ALFALFA</a> page</p>
+
+<li> <b>The Arecibo General Catalog (AGC)</b> is our private database containing
+        basic data on several hundred thousand galaxies. It is not intended to be
+        used by or distributed to people outside the ALFALFA collaboration.
+       <ol> <li>What are the conditions of use? &nbsp &nbsp 
+     Look <a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agccontract.php">
+     here</a> for the answer and follow the link to answer the next questions.
+     <li> What is the "UGC"?
+     <li> When is the AGC entry number equal to the UGC entry number?
+     <li> What is the "position angle"?
+     <li> What is the "TELCODE" for Arecibo+ALFA?
+     <li> Some galaxies have two velocity measurements: "VOPT" and "V21".
+          In that case, what should you adopt as the recessional velocity
+          for the galaxy?</p>
+     </ol>
+
+<li> <b> Reading ALFALFA catalogs</b>: &nbsp &nbsp ALFALFA produces catalogs 
+containing a source name, the AGC number (where there is one), the HI centroid
+and the position of the optical counterpart, and then various parameters measured
+from the HI line. 
+      <ol>
+      <li> Learn what 
+          <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/NotesOnALFALFAcatalog.html">measurements</a>
+          are contained in an ALFALFA catalog.
+      <li> Write yourself a short IDL routine to read this
+           <a href="highmass+sdss+cat.txt">test catalog</a>,
+           and try to calculate the HI mass from the parameter SintP  </p>
+      </ol>
+
+<li> <b> Groups of Galaxies</b>: Some galaxies are isolated, some are found in rich clusters,
+and the majority reside in groups. Groups themselves come in different varieties including
+"loose groups", "rich groups", "poor clusters", "compact groups", "fossil groups". 
+For a science topic, it might be interesting
+for you to learn about groups of galaxies, how they are defined and indentified and how their
+properties are derived. Here are some references (this list will grow):
+      <ul>
+      <li> Giuricin et al. 2000, Astrophys. J. 543, 178 (NOG group catalog)
+           &nbsp &nbsp<a href="http://adsabs.harvard.edu/abs/2000ApJ...543..178G"> ADS link</a>
+      <li> Garcia, 1993, Astron. Astrophys. Suppl. 100, 47  (Lyon group catalog)
+           &nbsp &nbsp<a href="http://adsabs.harvard.edu/abs/1993A%26AS..100...47G"> ADS link</a>
+      <li> Mulchaey, 2000, Annu. Rev. Astron. Astrophys. 38, 289 (X-ray properties of groups)
+      <li> Hickson, 1997, Annu. Rev. Astron. Astrophys. 35, 357 (compact groups)
+      </p>
+      Find papers yourself: &nbsp <a href="http://adsabs.harvard.edu/abstract_service.html">Link</a> to the 
+       ADS abstract query form</p>
+     </ul>
+You might want to ask yourself some questions and start compiling their answers: 
+     <ul><li> What distinguishes among the different
+              kinds of groups (loose, compact, rich, etc)? 
+         <li> What are characteristic group properties (linear extent, number
+              of galaxies, morphological mix, velocity dispersion, X-ray luminosity, X-ray temperature)?
+         <li> What is the morphological appearance of a group in (a) optical light? (b) X-rays?
+         <li> How can we estimate the total mass of a group?
+         <li> How do groups compare to clusters in terms of the properties you mention above?
+         <li> Tabulate comparative information on (a) the Local Group, (b) the Virgo cluster, 
+              (c) the Coma cluster. (<i> more later...</i>)
+         </ul>
+And, learn about the GEMS survey. (more coming here............)
+    <ul><li><a href="http://astronomy.swin.edu.au/gems/catalogue.html">catalog</a> with links.</p>
+    </ul>
+
+<li> <b> SQL and the SDSS</b>: Check out the EGG  introductory notes<a href="sqlintro.htm">
+   running SDSS queries in SQL</a><br>
+   We want to be able to figure out how to identify galaxies that are group members. One way
+   of course is to use the redshifts. But we should also be able to find potential/likely
+   group members from looking at the photometric database; we need to set the search parameters
+   to do that. There are two different problems to contemplate: (1) defining a magnitude-limited
+   sample and (2) looking for low surface brightness objects that are potentially dwarf members
+   of the group. Think about these issues. Then we can discuss....</p>
+<li><b>Training set of dwarf galaxies in Leo I</b>: <a href="trainleo.skylinks.html">Here</a>
+are links to the KK04 Leo dwarfs in the AGC. Think about ways to extract from the SDSS
+database the SDSS photometric (and where applicable, spectroscopic) objects and their
+basic parameters for these galaxies. The idea is to find common properties which distinguish
+the dwarf galaxies from other objects. My first suggestion is that you try to identify the
+dwarfs by looking at the stellar mass surface density: we would expect them to have a
+very low value of that property, so think about how to devise a measure of observables
+(we observe the optical apparent brightness and size, not the stellar mass surface density)
+which might work. For some notes on stellar mass, see: 
+the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/stellarmass.htm">
+ALFALFA for science</a> page for some ideas; we may also look elsewhere for others (Bell et al.
+2003,5 for example). We might use either PetroR50 or PetroR90 for the radius to get the
+surface area. Your first task will be to see what kinds of values you get for the dwarfs in the 
+training set.</p>
+
+</ul>
+<br>
+<br>
+<hr>
+<i>Last modified: Sun Sep 13 15:35:50 EDT 2009 by martha</i>
+</body>
+
+</html>

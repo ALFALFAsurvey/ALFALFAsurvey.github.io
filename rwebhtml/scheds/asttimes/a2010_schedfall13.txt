@@ -1,0 +1,141 @@
+A2010 observing schedule                                       last update: 13Dec2013  mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+
+------------------------------------------------------------------------------------------------
+COMPLETED OBSERVATIONS       LBW Followup Program A2811      FALL 2013  
+------------------------------------------------------------------------------------------------  
+    Block     Date    LMSTmidn      AST           LST         a2752 cmd file      Observers  
+    13.11.24  S 24Nov             17h45-23h45   21h33-03h34   a2811_131124.cmd    RK,AO,JM,MW,LV2
+    13.11.25  M 25Nov             17h45-23h45   21h37-03h38   a2811_131125.cmd    RK,AO,JM,MW,JP2,AA2,JP3,LV2
+    13.11.26  T 26Nov             17h30-23h45   21h26-03h42   a2811_131126.cmd    RK,AO,JM,MW,JP2,AA2,JP3,LV2
+    13.11.27  W 27Nov             17h30-23h30   21h30-03h31   a2811_131127.cmd    RK,AO,JM,MW,RO,AB,BT,JP2,AA2,JP3
+    13.11.28  R 28Nov             17h30-23h30   21h34-03h35   a2811_131128.cmd    RO,AB,BT,JP2,AA2,JP3
+    13.11.29  F 29Nov             17h30-23h30   21h38-03h39   a2811_131129.cmd    RO,AB,BT,JP2,AA2,JP3
+    13.11.30  S 30Nov             17h15-23h30   21h27-03h28   a2811_131130.cmd    RO,AB,BT
+
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+AA2: Andres Arrieta (UPR-RP)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+EB: Elijah Bernstein-Cooper (Macalester)
+AB: Anthony Braddock (St.Marys)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+MD: Maggie Dievendorf (Colgate)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+EG: Elena George (HSU)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+MG: Martin Garay-MacLean (Ithaca)
+RG: Riccardo Giovanelli
+SG: Steve Goldman (St. Lawrence)
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+KI: Katie Iadanza (Colgate)
+MJ: Melissa Jacquart (UWisc)
+MJ2: Mike Jones
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+LL: Luke Leisman
+KL: Katelyn Leisman
+ML: Mayra Lebron
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+VM: Victoria Mendoza (St.Marys)
+WM: Arik Mitschang (HSU)
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+CP: Carmen Pantoja
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+JP2: Jonathan Perez (UPR-RP)
+JP3: Jorge Padiel (UPR-RP)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+JR2: Jose Reyes (UPR-RP)
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+JS2: Joseph Serrano (UMET)
+TS: Thad Savery (Siena) 
+KS: Kristine Spekkens
+OS: Oded Spector
+OS2: Ora Starcher (St.Marys)
+SS: Sabrina Stierwalt
+TS: Tess Senty (HSU)
+BT: Blake Tormey (St.Marys)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+MW: Michael Warrener (Union)
+JW: Jesse Watson (UWSP)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots
+

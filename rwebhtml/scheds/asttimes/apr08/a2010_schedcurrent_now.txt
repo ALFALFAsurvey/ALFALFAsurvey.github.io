@@ -1,0 +1,176 @@
+A2010 observing schedule                                          last update: 06Apr15 mph
+
+Use searchable schedule on AO web page to get date,AST
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of
+      observations on given day.
+
+(R) indicates remote observing.
+
+-------------------------------------------------------------------------------------------------
+COMPLETED OBSERVATIONS      SPRING 2006  (starts in Dec 2005)
+-------------------------------------------------------------------------------------------------
+      Block     Date    LMSTmidn      AST            LST      Des    DecJ    Observers/DataMonitors
+
+    05.12.09a F 09Dec             02h15-04h45   07h00-09h30   39p2  +092924  MH,RK,BM  AZ=360!
+    05.12.10a S 10Dec             02h15-04h45   07h04-09h34   38p2  +091448  MH,RK,BM  AZ=360!
+    05.12.11  S 11Dec     04h53   02h15-05h00   07h08-09h53   40p1  +093642  MH,RK,BM,PN AZ=360 from now on!
+    05.12.12  M 12Dec     04h57   02h00-05h00   06h57-09h57   41p2  +095836  MH,RK,BM,PN 
+    05.12.13  T 13Dec     05h01   02h00-05h00   07h01-10h01   60p2  +143600  MH,RK,BM,PN     
+    05.12.14  W 14Dec     05h05   02h00-05h00   07h05-10h05   42p2  +101312  MH,RK,BM,PN        
+    05.12.15  R 15Dec     05h08   01h45-05h00   06h53-10h09   57p1  +134454  MH,RK,BM,PN         
+    05.12.16  F 16Dec     05h12   01h45-04h45   06h57-09h58   61p2  +145036  MH,RK,BM,PN         
+    05.12.17  S 17Dec     05h16   02h00-04h45   07h16-10h02   62p2  +150512  BK (R)   
+    05.12.18  S 18Dec     05h20   01h45-05h00   07h05-10h21   44p2  +104224  AS (R)
+    05.12.19  M 19Dec     05h24   01h30-05h45   06h54-11h10   46p2  +111136  AS (R)
+    05.12.20  T 20Dec     05h28   01h30-05h45   06h58-11h14   48p2  +114048  SS (R)
+    05.12.21  W 21Dec     05h32   01h30-05h45   07h02-11h18   49p2  +115524  MH,RG (R)
+    05.12.22  R 22Dec     05h36   01h30-05h45   07h06-11h22   50p2  +121000  MH,RG (R)
+    05.12.23  F 23Dec     05h40   01h15-05h30   06h55-11h11   51p2  +122436  MH,RG (R)
+    05.12.24  S 24Dec     05h44   01h15-05h30   06h59-11h14   52p2  +123912  MH,RG (R)            
+    05.12.26  M 26Dec     05h52   01h15-05h45   07h07-11h37   54p2  +130824  EM
+    05.12.27  T 27Dec     05h56   01h00-06h15   06h56-12h11   53p2  +125348  EM    
+    06.01.04  W 04Jan     06h27   00h30-04h45   06h57-11h13   55p2  +132300  PN,EM
+    06.01.05  R 05Jan     06h31   00h30-04h45   07h01-11h17   56p2  +133736  PN,EM early stop, disk crash
+    06.01.06  F 06Jan     06h35   00h30-05h45   07h05-12h21   58p1  +135930  PN
+    06.01.07  S 07Jan     06h40   00h15-06h30   06h54-13h10   38p1  +090730  PN
+    06.01.08  S 08Jan     06h43   00h15-07h15   06h58-13h59   45p2  +105700  PN
+    06.01.09  M 09Jan     06h47   00h15-07h15   07h02-14h03                  PN    night lost, no data
+    06.01.10  T 10Jan     06h51   00h15-07h15   07h06-14h07   37p2  +090012  PN
+    06.01.11  W 11Jan     06h55   00h00-07h15   06h55-14h11   36p2  +084536  PN
+    06.01.15  S 15Jan     07h14   23h30-04h00   06h44-11h15   61p1  +144318  SS,TB,BW
+    06.01.16  M 16Jan     07h18   23h30-03h45   06h48-11h04   63p1  +151230  SS,TB,BW
+    06.01.17  T 17Jan     07h22   23h30-03h30   06h52-10h53   36p1  +083818  SS,TB,BW
+    06.01.18  W 18Jan     07h26   23h30-03h30   06h56-10h57   39p1  +092206  SS,TB,BW
+    06.01.19  R 19Jan     07h30   23h30-03h30   07h00-11h01   40p2  +094400  SS,TB,BW
+    06.02.15  W 15Feb     09h17   22h15-06h45   07h31-16h02   62p1  +145754  SS
+                                      after 13h00m switch to  22p2  +052112 
+    06.02.16  R 16Feb     09h21   22h15-06h30   07h35-15h51   57p2  +135212  AS
+                                      after 11h40m switch to  59p2  +142124
+    06.02.17  F 17Feb     09h25   22h00-06h30   07h24-15h55   58p2  +140648  AM, BK
+                                      after 13h00m switch to  21p2  +050636
+    06.02.18  S 18Feb     09h29   22h00-06h30   07h28-15h59   59p1  +141406  MH, DK, WM, AF    
+                                      after 13h00m switch to  23p2  +053548
+    06.02.22  W 22Feb     09h44   21h45-01h45   07h29-11h29   37p1  +085254  WM, AF, SB, DK, MH
+    06.02.23  R 23Feb     09h48   21h45-01h45   07h33-11h33   64p1  +152706  AF, WM, SB, DK, MH
+    06.02.24  F 24Feb     09h52   21h45-01h45   07h37-11h37   65p1  +154142  SB, AF, WM, DK, MH
+    06.02.25  S 25Feb     09h56   21h15-07h00   07h11-16h49   53p1  +124630  SB, AF, WM, DK, MH 
+                                      after 13h20m switch to  45p2  +105700               2nd drift
+    06.02.26  S 26Feb     10h00   21h30-07h00   07h29-17h01   65p2  +154900  SB       
+    06.02.27  M 27Feb     10h04   21h30-06h45   07h33-16h50   66p2  +160336  SB 
+    06.02.28  T 28Feb     10h08   21h30-06h30   07h37-16h39   63p2  +151948  SS (R)             
+    06.03.01  W 01Mar     10h12   21h15-06h30   07h26-16h43   49p1  +114806  SS (R)      2 drifts this night
+                                      after 13h20m switch to  55p1  +131542              2nd drift
+    06.03.02  R 02Mar     10h16   21h00-02h25   07h15-12h41   66p1  +155618  BK, AM (R)  2 drifts this night    
+                                      after 11h05m switch to  61p2  +145036              2nd drift
+    06.03.03  F 03Mar     10h24   21h00-03h15   07h23-13h39   60p1  +142842  AS, AM (R)
+    06.03.05  S 05Mar     10h28   20h45-06h15   07h12-16h44   34p2  +081624  BK (R)  
+    06.03.06  M 06Mar     10h32   20h45-06h15   07h16-16h49   33p1  +075430  BK (R)         
+    06.03.07  T 07Mar     10h36   20h45-06h15   07h20-16h53   32p1  +073954  AS (R)                  
+    06.03.09  R 09Mar     10h40   20h30-06h00   07h13-16h44   31p1  +072518  LH    
+    06.03.10  F 10Mar     10h47   20h30-05h00   07h17-15h48   41p1  +095118  LH
+    06.03.11  S 11Mar     10h51   20h30-05h15   07h21-16h07   17p1  +040054  LH       
+    06.03.12  S 12Mar     10h55   20h30-05h45   07h25-16h41   30p1  +071042  LH
+    06.03.13  M 13Mar     10h59   20h15-05h45   07h13-16h45   29p1  +065606  LH
+    06.03.14  T 14Mar     11h03   20h15-05h45   07h17-16h49   28p1  +064130  LH
+    06.03.15  W 15Mar     11h07   20h15-05h30   07h21-16h38   27p1  +062654  LH
+    06.03.16  R 16Mar     11h11   20h15-05h30   07h25-16h42   26p1  +061218  LH
+    06.03.17  F 17Mar     11h15   20h00-05h30   07h14-16h46   25p1  +055742  LH
+    06.03.18  S 18Mar     11h19   20h00-03h00   07h19-14h19   35p2  +083100  BK,AM  (BC backup)
+    06.03.20  M 20Mar     11h27   19h45-05h15   07h11-16h42   24p1  +054306  BK,AM  
+    06.03.21  T 21Mar     11h31   19h45-05h15   07h15-16h46   23p1  +052830  BK,AM 
+    06.03.22  W 22Mar     11h35   19h45-05h15   07h19-16h50   22p1  +051354  BK,AM CIMA/FITS POSITION ERRORS all night
+    06.03.23  R 23Mar     11h39   19h30-05h00   07h08-16h39   21p1  +045918  BK,AM     
+    06.03.24  F 24Mar     11h43   19h30-05h00   07h12-16h42   20p1  +044442  BK,AM  
+    06.03.25  S 25Mar     11h47   19h30-05h00   07h16-16h46   19p1  +043006  MH,RG (R)
+    06.03.26  S 26Mar     11h51   19h30-05h00   07h20-16h50   18p1  +041530  SS (R)
+    06.03.27  M 27Mar     11h55   19h15-04h45   07h08-16h40   32p2  +074712  BK (R)  
+    06.03.28  T 28Mar     11h59   19h15-04h45   07h12-16h44   33p2  +080148  BK (R)         
+    06.04.03  M 03Apr     12h22   22h45-01h45   11h07-14h07   35p2  +083100  BK (R) last minute add;  Xmitter change
+    06.04.05  W 05Apr     12h30   00h00-04h15   12h26-16h41   25p2  +060500  SS (R) pair with 06.04.11
+    06.04.06  R 06Apr     12h34   00h00-04h15   12h30-16h45   24p2  +055024  SS (R) pair with 06.04.15
+    06.04.07a F 07Apr     12h38   00h00-04h15   12h34-16h49   17p2  +040812  AM (R)
+    06.04.07p F 07Apr     12h38   18h45-04h00   07h22-16h38   67p1  +161054  AM (R) to complete +15d grids 
+    06.04.08  S 08Apr     12h42   18h30-04h00   07h11-16h42   31p2  +073236  BK (R)
+    06.04.09  S 09Apr     12h46   18h30-04h00   07h15-16h46   30p2  +071800  BK (R)
+    06.04.10  M 10Apr     12h50   18h30-04h00   07h19-16h50   29p2  +070324  BK (R)
+    06.04.11  T 11Apr     12h54   18h15-00h00   07h07-12h52   25p2  +060500  BK (R)  pair with 06.04.05
+    06.04.12  W 12Apr     12h58   18h15-23h00   07h11-11h57   64p2  +153424  AS (R) (go as close to end as possible)
+    06.04.13  R 13Apr     13h02   18h15-23h00   07h15-12h01   35p1  +082342  AS (R) (go as close to end as possible)
+    06.04.14  F 14Apr     13h06   18h15-23h00   07h19-12h05   34p1  +080905  AS (R) (go as close to end as possible)
+-------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS  (Schedule subject to change. If a session is missed, retain order
+                        of drifts, sliding schedule to the next date.)
+**********************************            IMPORTANT            **********************
+The times below refer to time allocated to A2010 exclusively. Time should also be allocated before
+and after to allow for TOGS startup and calibration. We have agreed to run the TOGS calibration scripts
+for the TOGS team. Please check the final AO schedule and be prepared to start observing at least
+15 minutes prior to the times listed here. 
+--------------------------------------------------------------------------------------------------
+
+*** Until further notice, do the drift assigned to the night. If a night is missed,
+*** skip that drift; it will be put back into the queue for observation later.
+*** Note: times here do NOT include 15 minutes for TOGS calib before/after runs.
+
+      Block     Date    LMSTmidn      AST            LST      Des    DecJ   Observers/DataMonitors                   
+                                                   ALWAYS check for schedule updates in control room/with op.
+                           ********Remember AST is the SAME as EST!!!!! 
+
+
+    06.04.15  S 15Apr     13h10   18h00-00h00   07h08-13h08   24p2  +055024  AS (R)  pair with 06.04.06
+Happy Easter EGGs....!
+    06.04.18  T 18Apr     13h21   18h00-03h30   07h20-16h52   28p2  +064848  EGGS(R)
+    06.04.19  W 19Apr     13h25   17h45-03h15   07h09-16h40   27p2  +063412  EGGS(R)
+
+    06.04.22  S 22Apr     13h37   17h45-00h00   07h21-13h37   23p2  +053548  EGGS(R)
+    06.04.23  S 23Apr     13h41   17h30-21h00   07h10-10h40   19p2  +043724  EGGS(R) (go as close to end as possible)
+    06.04.24  M 24Apr     13h45   17h30-03h00   07h14-16h45   26p2  +061936  EGGS(R)
+    06.04.25  T 25Apr     13h49   17h30-03h00   07h18-16h49   20p2  +045200  EGGS(R)           
+    06.04.26  W 26Apr     13h53   17h30-02h45   07h22-16h38   21p2  +050636  EGGS(R) 2 decs this night
+                                  after 1310 switch to        16p2  +035336  
+    06.04.27  R 27Apr     13h57   17h15-23h30   07h10-13h26   22p2  +052112  EGGS(R) 
+
+
+    06.05.16  T 16May     15h12m  19h45-01h30   10h56-16h42   19p2  +043724  EGGS(R) pair with 06.04.23; start asap
+
+-------------------------------------------------------------------------------
+Schedule here is tentative only and subject to change
+Note: times here do NOT include 15 minutes for TOGS calib before/after runs
+
+
+-----
+Martha's  notes.... still to sched:
+    18p2  +042248    **** need to fill
+    64p2 from 07h30 to 12h    (06.04.12)
+    35p1      07h30 to 12h11  (06.04.13)
+    34p1      07h30 to 12h08  (06.04.14) 
+    62p2      15h00 to 16h30
+    59p2      07h30 to 09h41  
+    57p2      07h30 to 09h50
+
+-------------------------------------------------------------------------------   
+Who's who:
+TB: Tom Balonek
+NB: Noah Brosch
+SB: Shea Brown
+BC: Barbara Catinella
+AF: Amy Furniss
+JG: Josh Goldstein
+RG: Riccardo Giovanelli
+LH: Lyle Hoffman
+MH: Martha Haynes
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+BM: Bilal Mahmood
+AM: Ann Martin
+WM: Arik Mitschang
+EM: Emmanuel Momjian
+PN: Prasanth Nair
+AP: Adeel Altaf
+JR: Jessica Rosenberg
+AS: Amelie Saintonge
+SS: Sabrina Stierwalt
+BW: Brian Walsh
+

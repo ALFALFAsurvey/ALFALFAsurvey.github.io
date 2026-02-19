@@ -1,0 +1,127 @@
+<html>
+<head>
+  <title>Undergraduate ALFALFA Groups Project</title>
+  <!-- CSS for page -->
+  <link rel="stylesheet" type="css" href="http://egg.astro.cornell.edu/alfalfa/styles/style1.css">
+</head>
+<body bgcolor="ffffff">
+
+<center> <img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg" width="690" height="80" border="0"
+alt="ALFALFA"></center>
+
+
+<center>
+<hr color=#008000>
+<h3><font color= #cc0f14 > LBW Observations of Galaxies in X-ray Selected Groups:<br> The Threshold of HI Deficiency in the Group Environment</font></h3>
+</center>
+<br>
+The UAT H&alpha; imaging project undertaken at KPNO has images of the following groups/clusters:
+<pre>
+                    RA,Dec          RA,Dec(deg)     R(2Mpc)  nz  nopt  cz   sig  logsig sig   logLx       dist*
+A779    NRGb032  0919480+334532  139.9500 33.75889            5   24  7473  360  2.92  0.11   42.69 0.07   110   A779/MGBR      **Siena; not in current ALFALFA catalog  
+WBL226  NRGb041  0925122+111649  141.3008 11.28028   2.1d     5    6  3616   84  2.32  0.14  <41.50 0.00    55                  **GSU
+        NRGb054  0941167+113316  145.3196 11.55444   1.2      5   13  6460  145  2.52  0.12  <41.80 0.00    97         
+MKW10   NRGb151  1142094+101630  175.5392 10.27500   1.2     12   34  6265   74  2.41  0.13   42.04 0.19    94   MKW10/HCG058   **Siena               
+HCG59   NRGb157  1147518+131633  176.9658 13.27583   2.1      9   11  3745  152  2.66  0.07  <41.50 0.00    56   HCG059         **SLU; maybe Lafayette too
+WBL368  NRGb168  1158305+250823  179.6271 25.13972   1.7     10   18  4789   53  2.21  0.08  <41.60 0.00    71                  **Hartwick     
+WBL404  NRGb206  1224026+092125  186.0108  9.35695   1.2      7   27  7256  166  2.66  0.09  <41.90 0.00   108                  **UWSP  
+MKW11   NRGb247  1329312+114719  202.3800 11.78861   1.2     12   46  7056   79  2.43  0.08   42.67 0.09   105    MKW11/MGBR    **Skidmore  
+MKW12   NRGb282  1405570+090758  211.4875  9.13278   1.2     41  136  6872  102  2.82  0.04  <42.00 0.00   (102)  MKW12         **several      
+WBL509  NRGb301  1428019+253410  217.0079 25.56944   1.7     15   24  4819   81  2.48  0.07  <41.70 0.00    72     AWM3         **St Mary's, Hartwick
+WBL518  MKW 8    1440396+032814  220.1650  3.47056   1.0              8094                    43.93 ?      119
+        NGC 5846 1506293+013620  226.6221  1.60556   4.0              1749                    42.28 ?      (28)
+        NRGb331  1506414+124413  226.6725 12.73695   1.2      8   31  6904   69  2.31  0.08  <42.20 0.00   101
+</pre>
+</p>
+<ul>
+<li>Here is a <a href="skylinks_clucent.html" target=new>SKYLINKS</a> file for the cluster centers.
+<li>Here is the g,i color magnitude diagram <a href="images13/gavazzi_cmd.png" target=new>Figure 3</a>
+from <a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G" target=new>Gavazzi+ 2010</a>
+<li>Here is the BPT diagram <a href="images13/Kewley2006.fig1.png" target=new>Figure 1</a> 
+from <a href="http://adsabs.harvard.edu/abs/2006MNRAS.372..961K" target=new>Kewley <i>et al</i> 2006</a>
+</p>
+</ul>
+
+<p>*Notes: <ul>
+<li>Here, R(2 Mpc) is calculated approximately with the result in degrees. For objects with distances 
+  90<dist<110, I use the same number (for D=100).
+<li>All positions and X-ray luminosities for galaxies with a NRGb number come from the RASSCALS study
+ (<a href="http://adsabs.harvard.edu/abs/2000ApJ...534..114M">Mahdavi et al. 2000</a>). 
+<li>Of these, the positions of groups with a listed X-ray luminosity (not just an upper limit), are X-ray centroids; 
+for the others the positions are the mean R.A. and decl. of the galaxies in the group (can we do better?). 
+<li> RASSCALS luminosities are taken from the 0.1–2.4 keV band within an aperture of 0.5 h Mpc
+<li>The positions and X-ray luminosities for MKW8 and NGC 5846 are taken from The Archive of Chandra Cluster Entropy Profiles 
+<a href="http://www.pa.msu.edu/astro/MC2/accept/">(ACCEPT)</a>. These luminosities are bolometric luminosities based off 
+measurements in the 0.7-2kev energy band, and should be updated later so they are a more consistant measure with the 
+RASSCALS measurements.
+<li> This is a dynamic table. The old version of the table can be found here: <a href="oldtable.txt">oldtable.txt</a>
+<li> Additional, incomplete notes on positions can be found here: <a href="LLXraynotes.txt">LLXraynotes.txt</a>
+<li> Useful (gzipped) CSV files which Martha made on Aug 22, 2013:<br>
+     <a href="files/agcnorthminus1.csv.gz">AGC from -1 north; generated 21Aug2013</a><br>
+     <a href="files/nsa.v0.1.2.unpack.mags+lines_appmags.csv.gz">NSA file with some useful columns added</a><br>
+     <a href="files/agc+nsa.v012.mags+lines.appmags+faceHalpha.csv.gz">AGC+NSA+face-on+Ha.gt.5</a><br>
+     <a href="files/a57+agc+nsa.v012.mags+lines.appmags+faceHalpha.csv.gz">a57+AGC+NSA+face-on+Ha.gt.5</a><br>
+     <a href="files/a57_1245wOC.full.csv">a57catalog file (Caveat emptor!) codes 1,2,4,5</a><br>
+</ul>
+</p>
+-- Abell 779 is not in the current ALFALFA catalog, so we should skip it for the purposes of the Sep 1, 2013 LBW proposal.</p>
+
+-- The idea is that we would propose to observe all of the galaxies in the NASA-Sloan Atlas which lie within some metric
+radial distance (e.g. 6 Mpc?) and velocity range (&plusmn; 3&sigma;) of the cluster center and which are not detected by
+ALFALFA. Or, perhaps we should stick to all the **blue** galaxies in that region. Add also any galaxies with detectable H&alpha; 
+emission in the KPNO images. Or H&alpha; EW in SDSS spectroscopy?
+Need to see how many galaxies we
+are talking about for each cluster/group. </p>
+<br>
+<font color=#cc0f14><b>Science Justification</b>:</font>
+<ul>
+<li> Poorer groups/clusters than previous studies (MPH/RG+; Solanes+)
+<li> Makes use of existing ALFALFA, N-SAtlas (GALEX-SDSS) and Halpha (UAT) imaging.
+<li> All have X-ray measurements (detections or limits); span a range of X-ray luminosities
+<li> Need to extend to lower HI fluxes than ALFALFA in order to probe gas-poor galaxies
+     which are *not* detected by ALFALFA.
+</ul>
+<br>
+<font color=#cc0f14><b>Info on each cluster</b></font><br>
+We need to find the most recent measurements of X-ray centroid/flux, systemic velocity and velocity dispersion,
+morphological fraction, other details of cluster.</p>
+<table cellpadding=3 border=3 bordercolor=red>
+<tr><th>Cluster/group</th><th>Link</th><th># 1,2</th><th># 4,5</th><th> # H&alpha;<br> not HI</th><th> # +SF</th> <th>#LBWtargs</th><th>Comment</th></tr>
+<tr><td>NRGb041 = WBL 226 </td><td> <a href="nrgb041.html">Link</a> </td><td> 10 </td><td> 0 </td><td> 2 </td><td> 3 </td><td> 5 </td><td> Two clumps at similar velocities </td></tr>
+<tr><td>NRGb054           </td><td> <a href="nrgb054.html">Link</a>  </td><td> 11 </td><td> 0 </td><td> &nbsp </td><td> 9 </td><td> 9
+</td><td> &nbsp </td></tr>
+<tr><td>NRGb151 = MKW10   </td><td> <a href="mkw10.html">Link</a> </td><td> 13 </td><td> 0 </td><td> 0 </td><td> 3</td><td> 3 </td><td> &nbsp </td></tr>
+<tr><td>NRGb157 = HCG59   </td><td> <a href="hcg59.htm">Link</a> </td><td> 31 </td><td> 0</td><td> 1 </td><td> 5 </td><td> 6 </td><td> &nbsp </td></tr>
+<tr><td>NRGb168 = WBL368  </td><td> <a href="nrgb168.html">Link</a> </td><td> 8 </td><td> 0 </td><td> 7 </td><td> 5 </td><td> 12 </td><td> &nbsp </td></tr>
+<tr><td>NRGb206 = WBL404  </td><td> <a href="wbl404.htm">Link</a> </td><td> 21 </td><td> 2 </td><td> 23 </td><td> 9 </td><td> 32</td><td> &nbsp </td></tr>
+<tr><td>NRGb247 = MKW11   </td><td> <a href="mkw11.html">Link</a> </td><td> 22 </td><td> 2 </td><td> 15 </td><td> 9 </td><td> 28 </td><td> 
+Count includes 2 galaxies with HI, but no Ha </td></tr>
+<tr><td>NRGb282 = MKW12   </td><td> <a href="mkw12.html">Link</a> </td><td> 22 </td><td> 0 </td><td> 35 </td><td> 5 </td><td> 40 </td><td> Not a single structure;</br>crossing of filaments </td></tr>
+<tr><td>NRGb301 = WBL509  </td><td> <a href="nrgb301.html">Link</a> </td><td> 24 </td><td> 0 </td><td> 8 </td><td> 10 </td><td> 18 </td><td> &nbsp </td></tr>
+<tr><td> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp MKW 8 = WBL518</td><td> <a href="mkw8.htm">Link</a> </td><td>10 </td><td> 0 </td><td> 19 </td><td> 10 </td><td> 29 </td><td> &nbsp </td></tr>
+<tr><td> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp NGC 5846</td><td> <a href="n5846.html">Link</a></td><td> 7 </td><td> 4 </td><td> 9 </td><td> 8 </td><td> 18 </td><td> Well-isolated;  may be incomplete for dec<-1 </td></tr>
+<tr><td>NRGb331           </td><td> <a href="nrgb331.html">Link</a> </td><td> 9 </td><td> 0 </td><td> &nbsp </td><td> 3 </td><td> 3 </td><td> &nbsp </td></tr>
+</table>
+# above for 1,2,4,5 refers to number with ALFALFA code based on current "a57.txt".
+</p>
+<br>
+<br>
+<font color=#cc0f14><b>General References (ADS links)</b></font>
+<ul>
+<li><a href="http://adsabs.harvard.edu/cgi-bin/bib_query?2002AJ....123..100K"> Koranyi & Geller, 2002</a>
+"Kinematics of AWM and MKW Poor Clusters", AJ 123, 100<br>
+MKW 8, 10, 12.
+
+</ul>
+</p>
+
+<br>
+<br>
+<br>
+<hr color=#008000></center>
+<i>Last modified: Thu Dec  5 08:23:24 EST 2013
+by becky </i>
+
+</body>
+
+</html>

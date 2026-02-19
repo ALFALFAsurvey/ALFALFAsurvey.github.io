@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Simple IDL programs</title>
+</head>
+<body>
+
+<center>
+<p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600"></center>
+
+<b>A quick intro to IDL</b></p>
+
+IDL is the program environment we work in when we monitor,
+reduce and analyze ALFALFA data. IDL is also useful for many other things,
+so if you can learn how to use it, it can solve problems for you to.</P>
+
+Rather than writing code interactively but then losing it when you exit
+IDL, you can write your own IDL programs in a text editor, save them outside
+IDL, and then, inside IDL, compile and use them. Here, we will give you
+an example of that.</p>
+
+<ul>
+<li> 
+Locate yourself in an appropriate directory
+in your working area (e.g. /home/hatillo/galaxy/YOURNAME/idl).</p>
+<li> Open an editor on your machine, e.g. <b> gedit testprog.pro &</b></p>
+<li> Copy and paste the text below into the textedit window:<br>
+<table>
+<tr bgcolor=lightyellow><td>
+<pre>
+; Convert from channel number to frequency and velocity for a2010
+; based on EGG a2010fv.f
+; Translated by Schuyler Smith 6-22-09
+; ** NOTE THIS IS ONLY APPROXIMIATE FOR VELOCITIES!
+
+pro testprog, channel
+
+        restf=1420.405752D
+        c=299792.458D
+        centerf=1385.0D
+        bw=100.0D
+        nchans=4096
+        deltaf=bw/nchans
+        startf=centerf-deltaf*nchans/2.
+
+        freq=startf+channel*deltaf
+        z=(restf/freq)-1
+        vel=c*z
+        print, '    frequency = ', freq, format = '(a,d9.2)'
+        print, 'velocity (cz) = ', vel, format = '(a,d9.2)'
+        return
+        end
+</pre>
+</td></tr>
+</table>
+<i> Note: this program is a little one written by our friend
+    Schuyler Smith. It's based on one Martha wrote long ago in 
+    FORTRAN. For signal in a given ALFALFA frequency "channel" (i.e. pixel),
+    it calculates the approximate HI line velocity. Note very tough,
+    but serving as a good example for you!</i></p>
+<li> Try to understand exctly what the code does.</p>
+<li> Save the file for yourself, with the code in it.</p>
+<li> In a terminal in the same directory where the file testprog.pro now
+resides, start up IDL. We hope you remember how to do that!?</p>
+<li> Compile the program within IDL by typing:<br>
+    <b> .compile testprog.pro</b></p>
+<li> Now run the program within IDL by typing:<br>
+    <b> testprog,500</b></p>
+</ul>
+
+Congratulations. You have now written, compiled and executed an IDL program!</p>
+
+Notice what this program does. It computes for the ALFALFA spectrometer setup
+the frequency and velocity (defined simply here as <i>cz</i>) in km/s for each channel
+(i.e. pixel in the frequency domain). Knowing that, figure out:
+<ul> 
+<li> What is the range of velocity covered by the ALFALFA frequency setup?
+<li> What channel corresponds to 0 velocity? This, of course, is the channel
+     nearest to the rest frequency of the HI line, 1420.4058 MHz.</p>
+<li> Adapt the program to write another one which calculates the frequency and channel
+     if you input the velocity.</p>
+<li> Read through chapters 1 and 2 of Gumley's book <i> Practical IDL Programming</i>.
+     Be sure you understand what is meant by <i> array </i> and <i> structure</i>. It undoubtedly
+     helps to follow along as the book guides you through some of the operations.</p>
+</ul>
+
+Now see if you can write some programs on your own, following this example.
+We hope IDL makes your life easier and your research more powerful!</p>
+<br>
+<br>
+<hr>
+<font color=#008000><b>Last modified: Mon Oct  4 17:41:20 EDT 2010 </b>
+by martha </font>
+</body>
+</html>
+
+    

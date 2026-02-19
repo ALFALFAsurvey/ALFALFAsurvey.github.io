@@ -1,0 +1,172 @@
+28-9Dec2011
+
+as root, on esperanza
+
+cd data/backup
+
+rsync -av /home/dorado3/bin /data/backup/dorado3
+rsync -av /home/dorado3/bin64 /data/backup/dorado3
+rsync -av /home/dorado3/haynes /data/backup/dorado3
+rsync -av /home/dorado3/camuy-backup /data/backup/dorado3
+rsync -av /home/dorado3/cb4 /data/backup/dorado3
+rsync -av /home/dorado3/dorado1 /data/backup/dorado3
+rsync -av /home/dorado3/dorado2 /data/backup/dorado3
+rsync -av /home/dorado3/dorado4 /data/backup/dorado3
+rsync -av /home/dorado3/dorado5 /data/backup/dorado3
+rsync -av /home/dorado/cweb /data/backup/dorado
+rsync -av /home/dorado/haynes /data/backup/dorado
+rsync -av /home/dorado/hweb /data/backup/dorado
+rsync -av /home/dorado/pcsariglin110318 /data/backup/dorado
+rsync -av /home/dorado/backup/esperanza*  /data/backup/dorado
+rsync -av /home/dorado/backup/rut*  /data/backup/dorado
+rsync -av /home/dorado/backup/kpno*  /data/backup/dorado
+rsync -av /home/dorado/backup/palomar  /data/backup/dorado
+rsync -av /home/dorado/backup/savedata /data/backup/dorado
+rsync -av /home/dorado/backup/savevla /data/backup/dorado
+rsync -av /home/dorado/pcsarigwin110318 /data/backup/dorado
+rsync -av /home/dorado/galaxy/HI0141+27 /data/backup/dorado/galaxy
+rsync -av /home/dorado/galaxy/montage_jan11 /data/backup/dorado/galaxy
+rsync -av /home/dorado/backup/culebra1 /data/backup
+
+
+rsync -av /home/hatillo /data/backup
+rsync -av -e ssh haynes@toronegro:/home/toro1/papastergis /data/backup/toro1     
+
+
+esp7 is no longer needed => sf2editted
+rut5 => move all the images to separate directories
+rsync -av -e ssh haynes@adjuntas:/home/adjuntas  /data/backup
+      then clean this up; very little is needed!
+
+rsync -av /home/caborojo1 /data/backup
+rsync -av /home/caborojo2 /data/backup
+rsync -av /home/caborojo3 /data/backup
+rsync -av /home/humacao6/galaxy/halpha/nedfits  /data/backup/halpha
+rsync -av /home/humacao6/galaxy/halpha/WIYN/A112521 /data/backup/halpha/WIYN
+rsync -av /home/humacao6/galaxy/halpha/WISE/NOAH1 /data/backup/halpha/WISE
+rsync -av /home/humacao6/galaxy/halpha/VATT /data/backup/halpha/
+rsync -av /home/humacao/humacao4/galaxy/Palomar/apr06 /data/backup/palomar
+rsync -av /home/humacao/humacao4/galaxy/Palomar/nov06 /data/backup/palomar
+rsync -av /home/humacao/humacao4/galaxy/SEPT05_KPNO /data/backup/kpno_sep05
+rsync -av /home/humacao/humacao2/amelie  /data/backup/amelie/humacao2
+rsync -av /home/humacao/humacao3/amelie  /data/backup/amelie/humacao3
+rsync -av /home/humacao/humacao4/amelie  /data/backup/amelie/humacao4
+rsync -av /home/humacao6/galaxy/pointed /data/backup/lbw
+
+rsync -av /home/humacao/humacao5/amelie  /data/backup/amelie/humacao5
+rsync -av /home/humacao6/betsey /data/backup/humacao6
+rsync -av /home/humacao/data /data/backup/humacao
+rsync -av /home/hatillo2 /data/backup
+
+on caborojo, as root, mount /home/esperanza and then
+in /var/www
+rsync -av html /home/esperanza/backup/cweb
+in /var/lib
+rsync -av mysql /home/esperanza/backup/cweb
+then, dismount /home/esp
+
+on hatillo, as root, mount /home/esperanza and then
+in /var/www
+rsync -av html /home/esperanza/backup/hweb
+(ran into a I/O error and crashed in the middle of this....)  
+   rsync: read errors mapping "/var/www/html/hiarchive/alfalfa/DSS/741072.jpg": Input/output error (5)
+    html/hiarchive/alfalfa/DSS/741613.jpg
+    html/hiarchive/alfalfa/DSS/741763.jpg
+    html/hiarchive/alfalfa/DSS/741992.jpg
+    html/hiarchive/alfalfa/DSS/742008.jpg
+    html/hiarchive/alfalfa/DSS/742129.jpg
+    html/hiarchive/alfalfa/DSS/742152.jpg   hangs ... again, then recovers
+Then another one:
+html/hiarchive/alfalfa/spectraASCII/A749512.txt
+html/hiarchive/alfalfa/DSS/741072.jpg       hangs .... again, then recover
+rsync: read errors mapping "/var/www/html/hiarchive/alfalfa/DSS/741072.jpg": Input/output error (5)
+html/hiarchive/alfalfa/DSS/742152.jpg
+rsync: read errors mapping "/var/www/html/hiarchive/alfalfa/DSS/742152.jpg": Input/output error (5)
+html/hiarchive/alfalfa/spectraFITS/
+   There are more too...
+in /var/lib
+rsync -av mysql /home/esperanza/backup/hweb
+
+rsync -av -e ssh galaxy@toronegro:/home/toro3/galaxy/idlraw/06.09.08 /data/backup/idlraw
+rsync -av /home/dorado3/dorado13/galaxy/idlraw/08* /data/backup/idlraw
+rsync -av /home/dorado3/dorado13/galaxy/idlraw/09* /data/backup/idlraw
+rsync -av /home/dorado3/dorado13/galaxy/idlraw/1* /data/backup/idlraw
+
+still to do:
+toros?
+hat3
+gmrt11
+wsrt11
+evla11
+
+
+
+
+** check esp6/sf2fits
+
+NOTE: toro3/betsey        no need to backup
+NOTE: toro3/shan          no need to backup
+NOTE: hat3  seems to contain only backup stuff (except for VLA2006data) so not backing up
+      (if we need VLA2006, get it from archive....)
+
+
+------------------------------------------------------------------------------
+
+Now, let's remove the dorado links and organize by main directory
+This way we can avoid all the duplications
+Also renaming some to make shorter (esperanza=> esp)
+
+These remain permanently archived as of Dec 30, 2011
+1.5G	1404+09
+56G     adjuntas
+6.4G	brinchmann
+60G	caborojo1
+84G	caborojo2
+5.2G	caborojo3
+12G	cb4
+    culebra1
+48M	dad
+472M	dorado1
+371M	dorado2
+71M	dorado3/haynes
+1.3G	dorado4
+53G	dorado5
+6.8G	esp4
+6.4G	esp5
+7.2G	esp6
+16G	gadget2sim
+143G	galex
+4.1G	halpha
+64M	HI0141+27
+
+1.1G	jayce
+5.2G	kpno_feb11
+48M	montage_jan11
+4.7G	palomar        
+347M	rbandfits
+2.3G	rut
+414M	rut1
+3.7G	rut2
+6.0G	rut3
+855M	rut4
+19G	rut5
+17G	savevla
+4.4M	sf2edims
+2.3G	sf2edit0
+6.1G	sf2editted
+12G	sf2fits
+2.5G	sfieditted
+1.4G	sfifits
+
+
+
+These should get backed up more regularly
+hatillo
+dorado3/galaxy
+dorado3/bin
+dorado3/bin64
+toro1/papastergis
+humacao/betsey
+cabo1/shan
+pcbackups (as needed)
+

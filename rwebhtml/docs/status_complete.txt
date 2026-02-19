@@ -1,0 +1,399 @@
+LAST UPDATE  30Aug2013
+Master file in /home/r/h/a/a2010/datared
+
+Status of Kelley's processing:
+06.12.08a  completed; in archive 08.03.21  
+06.12.09a  completed; in archive 08.03.21 
+06.12.11a  in checkout              
+07.02.14   in checkout               
+07.02.28   completed; in archive 08.01
+07.03.22   in checkout              
+07.03.26   in checkout              
+07.03.27   in checkout              
+07.04.03   in checkout            ***TB
+
+Status of Barbara's processing
+06.09.05  completed; in archive 06.06.27
+06.10.17  completed; in archive 08.01
+06.10.30  completed; in archive 08.01
+06.11.03  completed; in archive 08.01
+06.11.05  completed; in archive 08.10
+
+Status of GMU processing
+06.06.19  completed; in archive 08.01
+06.06.21  completed; in archive 08.01
+06.09.01  completed; in archive 08.01
+07.02.08  completed; in checkout
+07.02.09  completed; in archive 08.01
+06.12.10a completed; in checkout
+06.12.12a completed; in checkout
+06.12.13  completed; in checkout
+07.02.18  out May 08 2010 in 31 Jan 2011
+07.02.19  ditto; completed
+07.02.20  ditto; completed
+
+Status of Tom's processing:
+Nothing I am sure of at the moment.
+
+Status of GSU's processing 
+07.02.25  completed; in checkout    on are12/proc (hum6)  ???
+07.02.27  completed; in checkout
+08.05.09  completed; in checkout
+07.02.10  completed; in checkout   10.01.20
+07.02.11  completed; in checkout   10.01.20
+
+Status of Betsey's processing:
+06.06.20   completed; in archive 08.01 
+06.12.14a  completed; in archive 08.03.2
+07.03.28   completed; in archive
+07.04.02   completed; in archive
+07.03.29   completed by Shan; in archive
+06.09.15   complete    in checkout  09.02.01
+06.09.16   complete    in checkout  "
+08.08.21   complete    in checkout  "
+08.10.31   complete    in checkout  "
+08.08.20   complete    in checkout  09.03.28 
+06.12.08p  complete    in checkout  09.03.28 
+06.09.14   complete    in checkout  09.03.28 
+08.08.19   complete    in checkout  09.03.28
+06.12.06p  complete    in checkout    3/28
+06.09.13   complete    in checkout 
+08.08.18   complete    in checkout
+08.10.26   complete    in checkout 
+08.08.17   complete    in checkout    6/08
+06.12.07p  complete    in checkout 
+08.08.16   complete    in checkout    
+08.10.27   complete    in checkout    
+06.09.08   complete    in checkout  
+06.11.25   complete    in checkout  
+06.12.11p  complete    in checkout  
+08.08.14   complete    in checkout 
+06.12.10p  complete    in checkout  
+06.09.09   complete    in checkout  
+08.08.15   complete    in checkout  
+06.12.09p  complete    in checkout  
+
+Status of Shan's processing:
+08.01.14   completed; in checkout
+08.04.15   completed; in checkout 
+06.11.24   completed; in checkout
+09.01.11p  completed; in checkout
+09.01.10   completed; in checkout
+08.09.02   completed; in checkout
+08.10.25   completed; 09.03.24
+09.01.08p  completed; 09.03.24
+08.09.03   completed; 09.04.21   
+08.10.14   completed; 09.04.21    
+09.01.07p  completed; 09.04.21 
+08.09.04   completed; 09.04.21   
+08.10.13   completed; 09.04.21  
+08.09.05   completed; 09.05.06
+08.10.12   completed; 09.05.06
+09.01.06p  completed; 09.05.06
+08.09.06   completed; 09.05.06
+08.10.24   completed; 09.06.21
+08.09.07   completed; 09.06.21
+08.10.09   completed; 09.06.21
+08.08.26   completed; 09.06.21
+08.10.08   completed; 09.06.23
+08.10.02   completed; 09.06.23
+
+Status of Drew's processing 
+06.10.07   completed; in checkout
+
+Status of Manolis' processing
+06.10.08   completed; in checkout
+06.10.10   completed; in checkout
+06.11.22   completed; in checkout 09.03.25
+06.11.08   completed; in checkout 09.04.03  
+08.11.01   completed; in checkout 4/21
+06.11.16   completed; in checkout 4/21
+06.09.28   completed; in checkout 4/21
+06.09.27   completed; 09jun06
+06.09.29   completed; 09jun06
+06.11.06   completed; 09jun06
+06.11.07   completed; 09jun06
+06.10.11   needs to do
+
+Status of Greg's processing 
+07.02.22   completed; 29Jan2010
+07.03.18   completed; 02Feb2010
+08.03.14   completed
+
+Status of David K's processing
+08.02.29   completed; in archive 08.03.21
+08.03.03   completed; in archive 08.04.11
+08.03.27   completed; in archive 08.04.11
+09.03.15   completed; in archive 16aug09  ** Tess did it
+09.03.16   completed; in archive 16aug09  ** Tess did it
+09.03.17   completed; in archive 16aug09  ** Tess did it
+
+Status of Mari Carmen's processing 
+07.02.12   completed; in archive 08.03.21
+07.02.13   completed; in archive 08.03.21
+
+Status of Becky's processing
+07.04.01   completed; in checkout
+08.03.13   completed; in checkout  
+08.05.04   completed; in checkout
+08.05.13   completed; in checkout
+08.05.11   completed; in checkout
+08.03.31   completed; in checkout
+08.04.26p  completed; in checkout
+08.04.26a  completed; in checkout
+08.04.16   completed; 09.03.24
+08.04.27   completed; 09.06.06
+08.05.16   completed   "
+08.05.15   completed  09.06.08
+08.04.24   completed  09.12.18
+08.04.25   completed  09.12.18
+10.04.23   completed  10.08.25
+10.04.22   completed  10.09.01
+10.04.21   completed  10.10.18
+09.04.19   completed  11.02.09
+11.02.25              01Mar2012
+10.12.28              26Apr2012
+10.12.29              26Apr2012
+11.01.24              26Apr2012
+11.01.30              26Apr2012
+11.02.05              26Apr2012
+11.03.06              26Apr2012
+11.03.07              26Apr2012
+11.03.08              26Apr2012
+11.02.16p             21Dec2012
+11.11.24              06Aug2013
+11.11.25              06Aug2013
+
+
+Status of Aileen's processing
+08.05.03   completed; in checkout    
+08.04.18   completed; in checkout  
+08.04.01   completed; in checkout  
+08.04.02   completed; in checkout    
+09.02.07   completed; in checkout   26apr09
+09.02.18   completed; in checkout   21jun09
+09.02.03   completed                27jul09
+08.03.29   completed 10Jan2010       May 14 2010
+
+
+Status of Lyle's processing 
+08.03.16   completed; in archive    on are10
+08.03.19   completed; in archive    on are10
+06.09.11   completed; in archive    on are10
+06.09.12   completed; in archive    on are10
+09.02.06   completed; in archive    25jun09
+08.03.20   completed; in archive    03jul09
+07.03.01   completed; in archive    23jul09
+07.03.02   completed; in archive    ditto
+07.03.19   completed; in archive    ditto
+08.03.21   completed; in archive    27jul09
+08.03.22   completed; in archive    16aug09
+08.03.23   completed; in archive    16aug09
+08.03.24   completed; in archive    19aug09
+07.03.21   completed; in archive    08sep09
+08.03.26   completed; in archive    11oct09
+09.02.02   completed; in archive    19nov09
+09.02.01   completed; in archive    13dec09  
+08.03.12   RG/MH finished it  
+09.02.28   completed; in archive    16mar10
+09.04.10   completed; in archive    01apr10
+09.03.01   completed; in archive    12apr10 
+09.04.12   completed; in archive    01may10
+09.03.02   completed; in archive    14may10
+09.04.13   completed; in archive    15may10
+08.03.28   completed; in archive    10jun10
+08.03.30   completed; in archive    10jun14
+09.04.11   completed; in archive    10jun20
+08.03.17   completed; in archive    10jun22
+09.03.14   completed; in archive    10jun27
+09.04.17   completed; in archive    10jul01
+09.03.13   completed; in archive    10jul08
+10.04.24   completed; in archive    10aug06
+10.05.03   completed; in archive    10aug06
+10.05.04   completed; in archive    10aug06   
+10.05.05   completed; in archive    10aug18 
+10.05.02   completed; in archive    10sep18
+10.04.28   completed; in archive    10oct18
+10.04.30   ditto                    10dec02
+09.03.30   ditto                    11jan15
+09.03.31   ditto                    11mar16
+09.04.07   ditto                    11jun10
+09.04.09   ditto                    11jun10
+09.04.22   ditto                    11jun10
+09.04.29   ditto                    11jun19
+09.04.30   ditto                    11jun21
+10.01.11   ditto                    11jul02
+10.04.01                            11jul18
+10.04.05                            11aug12
+10.04.19                            11aug12
+10.04.20                            11aug19
+11.01.13                            11aug23
+10.03.22                            11sep05
+10.03.23                            11sep20
+10.03.20                            11oct11
+10.03.21                            11oct25
+10.03.25                            11nov08
+10.03.19                            11nov28
+10.03.26                            11dec05
+10.03.31                            11dec28
+11.01.08                            12jan06
+11.03.12                            12feb03
+11.01.17                            12mar01
+10.04.02                            12apr03
+11.03.01                            12may08
+11.01.10                            12may31
+11.03.19                            12jun07
+11.03.20                            12jun14
+11.01.09                            12jun22
+11.01.18                            12jun29
+11.01.19                            12jul17
+11.03.14                            12aug01
+11.03.10                            12aug02
+11.02.26                            12sep03
+11.03.05                            12oct11
+11.03.03                            12dec17
+09.11.18                            03jan13
+09.11.19                            09jan13
+09.11.20                            22jan13
+12.10.05                            15Feb13
+12.10.09                              May13
+12.10.10                              May13
+12.10.11                            06Jun13
+12.10.08                            14Jun13
+12.10.13                            22Jun13
+12.10.19                            27Jun13
+12.10.20                            03Jul13
+12.09.29                            06Aug13                          
+12.09.30                            06Aug13
+12.10.21                            06Aug13
+12.10.04                            07Aug13
+12.09.27                            17Aug13
+12.09.28                            23Aug13
+
+Status of Noah's processing
+10.11.24                            05Jun13
+10.11.25                            06Jun13
+10.11.26                            14Jun13
+11.09.15                            22Jun13
+11.09.24                            22Jun13
+11.09.30                            22Jun13
+11.10.02                            22Jun13
+11.10.06                            22Jun13
+11.10.01                            22Jun13
+11.10.03                            22Jun13
+11.10.04                            27Jun13
+11.10.05                            27Jun13
+10.09.20                            06Aug13
+10.09.21                            06Aug13
+10.09.23                            06Aug13
+10.09.25                            06Aug13
+10.09.28                            06Aug13
+11.09.10                            06Aug13
+11.09.11                            06Aug13
+11.09.12                            06Aug13
+11.09.17                            06Aug13
+11.09.19                            06Aug13
+11.09.20                            06Aug13
+11.09.23                            06Aug13
+11.09.25                            06Aug13
+11.09.26                            06Aug13
+11.09.27                            06Aug13
+11.09.28                            06Aug13
+11.09.29                            06Aug13
+
+ 
+
+Status of Parker's processing
+10.04.26     Sep 18,2010
+
+Status of Carlo's processing:
+09.01.13p  completed; in checkout
+09.01.20   completed; in checkout   21jun09
+09.02.17   completed; in checkout   02dec09
+09.04.18   completed; in checkout   10jun10
+10.04.17   completed                11jun10
+10.04.04   completed                16oct11
+10.04.09   completed                22nov11
+10.04.25   completed                07dec11
+10.04.03                            11jan12
+11.02.27   completed                13feb12
+11.03.04                            02mar12
+10.03.29   completed                07jun12
+11.03.02   completed                01aug12
+11.02.28   completed                10Oct12
+11.02.14   completed                06Oct12
+11.02.01   completed                10Dec12
+11.02.06                            13Dec12
+12.09.10                            20Jan13
+12.09.12                            27Feb13
+12.10.06   completed                03Apr13
+12.09.15                            08Apr13
+12.09.17                            22Jun13
+12.09.18                            28Jun13
+12.09.19                            20Aug13
+12.09.20                            30Aug13
+
+Status of Li Xiao's processing 
+11.02.23   completed                15mar12
+10.09.05   completed                15mar12 
+10.09.11   completed                15mar12  
+10.09.12   completed                15mar12          
+10.09.13   completed                15mar12  
+10.09.14   completed                19mar12
+10.08.17   completed                19mar12
+10.08.27   completed                19mar12
+10.08.19   completed                23mar12
+10.08.28   completed                23mar12
+10.08.29   completed                23mar12
+10.08.20   completed                28mar12                 
+10.08.21   completed                28mar12           
+10.11.23   completed                28mar12             
+10.10.09   completed                28mar12             
+10.08.23   completed                28mar12
+10.10.10   completed                28mar12
+10.08.26   completed                28mar12
+
+Status of Luke's processing
+11.02.13   completed                02jul12      
+08.10.22   completed                02jul12       
+08.10.21   completed                02jul12       
+08.09.21   completed                02jul12       
+
+Status of Mike's processing
+11.02.24   completed                02jul12       
+08.09.13   completed                02jul12       
+08.10.17   completed                02jul12       
+08.09.12   completed                02jul12       
+
+
+
+Status of David Stark's processing:
+09.02.15   completed; in checkout   06sep09
+09.08.18   completed; in checkout 
+09.08.19   completed; in checkout   
+09.08.21   completed; in checkout   11oct09
+09.09.06   completed; in checkout   04Nov09
+09.09.07   completed; in checkout   28Dec09
+09.09.08   completed; in checkout   18Jan10
+09.08.22   completed; in checkout   23Feb10
+09.08.28   completed; in checkout   12Apr10
+09.09.09   completed                10Jun10
+09.08.29   completed                15Jun10
+09.09.10   completed                11Jul10
+09.08.30   completed                06Aug10
+09.08.31   completed                10Aug10
+09.09.11   completed                10Aug16
+09.09.01   completed                10Aug23
+09.09.12   completed                10Sep01
+09.11.17   completed                10Sep27
+09.09.02   completed                10Oct01
+09.11.04   completed                10Oct10
+11.09.16   completed                07Jun12
+
+Status of Martha's processing:
+08.03.01   completed; in archive 08.03.12
+08.05.21   completed; in archive 08.06
+08.09.22   completed; in archive 
+08.05.31   completed; in archive
+09.01.14   completed; in archive
+This list is incomplete. I don't worry about myself.

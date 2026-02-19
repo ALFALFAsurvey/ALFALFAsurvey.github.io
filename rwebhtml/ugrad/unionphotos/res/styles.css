@@ -1,0 +1,98 @@
+/*
+ * Combined style sheet for the index pages and the slide pages.
+ */
+
+/* Style for all bodies. */
+body {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 13px;
+	background-color: #ccccff;
+	color: #000000;
+}
+
+img {
+	border-color: #8e8eb2;
+}
+
+/* Custom link styles */
+a:active {
+	text-decoration: none;
+	color: #FFAAAA;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #AAAAAA;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: white
+}
+
+a:link {
+	text-decoration: none;
+	color: #FFFFFF
+}
+
+.comment {
+	font-weight: bold;
+
+}
+
+/* Put a border on all generated images */
+.image {
+	border-width: 2;
+	border-style: solid;
+	margin: 5;
+}
+
+/* Align the content of the cells on the index pages to the center and bottom. */
+#index td {
+	text-align: center;
+	vertical-align: bottom;
+}
+
+/* Style for all table cells. */
+td {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+.camera {
+	font-size: 11px;
+}
+
+/* Remove the margin under the images on the index pages. */
+#index .image {
+	margin-left: 2;
+	margin-right: 2;
+	margin-bottom: 0;
+}
+
+/* Don't have margins on the slide pages. */
+body#slide {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+}
+
+/* Highlight the image name on the slide pages. */
+#slide .name {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/* Header */
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+#imageinfo {
+
+	font-size: 11px;
+}
+

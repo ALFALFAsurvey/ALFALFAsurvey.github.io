@@ -1,0 +1,98 @@
+<html>
+<head>
+  <title> Documentation of the ALFALFA Catalog</title>
+</head>
+
+<body bgcolor="ffffff">
+
+<h2><font color=#cc0f14>The ALFALFA Catalog Data</font></h2>
+
+All sources have been extracted from three-dimensional spectral data cubes exploiting a matched filtering technique and then examined interactively to yield global HI parameters. Catalog details can be found in the first ALFALFA catalog paper <a href="http://www.iop.org/EJ/abstract/1538-3881/133/6/2569/"> Giovanelli <i>et al.</i> 2007 </a>AJ 133, 2559 which describes the survey and how the catalogues are constructed.
+<br>
+<br>
+<font color=#cc0f14><b>Catalog Contents</b></font><br>
+
+<pre>
+	Variable Name	Format	Data Content
+
+	  Object	  A17	  A temporary entry identifier for this Catalog. Note:
+                                  Since the astrometry may be updated after the source is extracted,
+                                  this designation is for INTERNAL PURPOSES only!
+	  AGC		  A6	  The source number in the AGC, a private database
+ 				  of extragalactic objects maintained by M.P.H. and 
+				  R.G. The AGC entry normally correspnds to the optical 
+				  counterpart except in the cases of HI sources that 
+				  cannot be associated with and optical object with any 
+				  high degree of probability.
+	  Other		  A8	  Alternative source name.
+	  Ellipse Center  A15	  Center (J2000) of the ellipse bounding the HI source after 	
+				  correction for systematic telescope pointing errors, with a 
+				  range between a few and about a dozen arcseconds. On average, 
+				  the positional accuracy is about 24". Measured in RA and DEC, 
+				  where the units of right ascension are hours, minutes, and 	
+				  seconds, and units of declination are degrees, arcminutes, 
+				  and arcseconds.
+	  dRA		  I3	  Difference in the degrees RA of the Ellipse Center and the 
+				  Optical Center.
+	  dDEC		  I3	  Difference in the degrees DEC of the Ellipse Center and the 
+				  Optical Center.
+	  Optical Center  A15	  Center (J2000.0) of the optical galaxy found to provide a 
+				  reasonable optical counterpart. For objects with no 
+				  discernible optical counterpart and those for which such 
+				  assignment is ambiguous, due to the presence of more than 
+				  one equally possible optical counterpart, no optocal 
+				  position is listed. The latter set includes HVCs.
+	  hSize		  F3.1
+	  v50		  I5	  Heliocentric velocity, in km/s, of the HI source 
+				  measured as the midpoint between the channels at 
+ 				  which the flux density drops to 50% of the two peaks.
+	  Verr		  I2	  The error of v50 adopted as half the error on the 
+				  width, tabulated in W50
+	  W50		  I3	  Velocity width of the source line profile, W50, 
+				  measured at 50% level of each two peaks.
+	  Werr		  I3	  Error in W50 measured as the sum in quadrature of two 
+				  components: the first is a statistical error, the 
+				  second is a systematic error associated with the 
+				  subjective guess with which the observer estimates 
+				  the spectral boundaries of the feature.
+	  SintP		  F5.2	  Integrated HI line flux density in Jy-km/s
+	  Serr		  F4.2	  Error of the integrated flux density.
+	  Sintmap	  F5.2    (in general, not of use)
+	  S/N		  F5.1	  S/N of the detection
+	  rms		  F4.2	  Noise figure of the spatially integrated spectral 
+				  profile in mJy. The noise figure as tabulated is 
+				  the rms and measured over the signal- and RFI-free 
+				  portions of the spectrum, after Hanning smooting to 
+				  a spectral resolution of 10 km/s
+	  code		  I1	  Object code defined as follows:
+				  <i>Code 1</i> refers to sources of S/N and general quantities 
+				  that make it a reliable detection.
+				  <i>Code 2</i> refers to sources of low S/N (<6.5), which 
+				  would ordinarily not be considered reliable detections 
+				  by the criteria set for code 1.
+				  <i>Code 9</i> refers to objects assumed to be HVC's; no 
+				  estimate of their distances is made.
+	  Grid		  A8	  grid of pre-processed raw data on which the source can
+				  be found.
+
+	
+ALFALFA Catalog records are now 156 characters in length:
+
+
+</pre>
+
+<hr align="center" width="600">
+<center>
+<font color=#cc0f14>
+This page maintained by members of the
+<a href="http://www.astro.cornell.edu/Galaxy/egg.html">Cornell
+ExtraGalactic Group</a>.
+</font></p>
+
+<font color=#008000>
+<b>Last modified: Fri Jun 24 18:06:37 EDT by martha</font>
+</center>
+
+</body>
+
+</html>

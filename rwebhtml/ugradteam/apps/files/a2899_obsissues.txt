@@ -1,0 +1,34 @@
+
+In Fall 2014, we undertook LBW observations of low SNR ALFALFA candidate detections
+in the region of PPS under AO program A2899. A copy of the proposal can be
+found at: 
+   http://egg.astro.cornell.edu/ugradteam/apps/docs/Koopmann_140302181023.pdf
+
+Check out the log files at:
+   http://www.naic.edu/~a2010/logs_fall14.htm
+
+During the November run, we used two nights (11.27 and 11.29) to test out the
+new "search" mode using the WAPPS; the other nights used the interim correlator
+in the old mode. Check out the separate modes at:
+   http://www.naic.edu/~a2010/lbw_observingmodes.htm
+(should check that these are correct!)
+This means that the code used to reduce the data taken with IC/WAPPs needs to
+be reduced using the appropriate LBW_alfalfa software.
+
+There were issues with both sets of observations:
+(1) The CORFILE (interim correlator) data taken on Nov 23 (and maybe 24?) was affected
+    by an error in the data taking.
+    http://www.naic.edu/~phil/software/datataking/aoscramnet.html#25nov14
+    http://www.naic.edu/~a2010/nov14_icerror.txt
+(Wonder if Phil fixed this, or if problem still persists and needs to be fixed...)
+
+(2) One of the WAPP boards (3) was not working so in the middle of the first night in
+    search mode 11.27, Greg swapped boards 3 and 4 so that the bad board was assigned
+    to the lowest frequency range (lower priority). See his note at:
+    http://www.naic.edu/~a2010/obslogs/nov14/a2899log141127
+    This means that the velocities of those boards are non-standard. 
+(Maybe the software is smart enough to figure that out.... should check).
+
+
+
+

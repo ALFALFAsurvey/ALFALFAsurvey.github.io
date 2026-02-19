@@ -1,0 +1,352 @@
+<html>
+  <head>
+    <title>Undergraduate ALFALFA Team</title> 
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=#cc0f14>SH #3: Understanding Galaxies &nbsp &nbsp &nbsp &nbsp Group Project</font></h3>
+<h3><font color=#ccof14> Team C:</font> &nbsp &nbsp &nbsp <font color=#008000>Large scale structure around
+the poor cluster MKW 11</h3></font></p><br>
+
+As we have discussed, a galaxy's evolution depends on its environment, especially in regions of higher
+density like groups and clusters. In this activity, you will examine the large scale structure in the
+vicinity of the nearby "poor" cluster (or "rich" group) known as MKW 11. Several other teams are looking
+at other issues related to the local large scale structure in general and how it plays a role in galaxy surveys
+and the Virgo cluster in particular (Team B). Also, not that 
+Team D is going to look at the galaxies that inhabit MKW 11, whereas your job is
+to understand how it fits into the structures surrounding it and to look at what a "poor cluster" is in comparison
+with the Coma cluster.
+</p>
+<hr>
+<b>The cluster MKW 11</b></p>
+
+The E-S0 galaxy NGC 5171 lies at the rough center of a bunch of galaxies of similar redshift; take a look at the galaxy
+via the SDSS Navigator tool. 
+<!--
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=202.3396&dec= 11.73472&opt=gls&scale=1.0" target=new>DR9 Navigator</a>
+link to it.-->
+Use the scale adjustment to examine the surrounding field, containg the structure known as the MKW 11 cluster which is
+the target of your investigation. Then
+<!--
+Use this <a href="http://ned.ipac.caltech.edu/cgi-bin/nph-objsearch?objname=MKW11&extend=no&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=RA+or+Longitude&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES#ObjNo1" target=new>link</a>--> use the NASA
+Extragalatic Database (NED)
+to find out some of the basic facts about MKW 11. Notice that it has numerous
+other names. </p>
+
+<table border=4 cellpadding=5>
+<tr><td> R.A.(J2000) </td><td width=500> &nbsp </td></tr>
+<tr><td> Dec.(J2000) </td><td> &nbsp </td></tr>
+<tr><td> Recessional velocity in heliocentric rest frame </td><td> &nbsp </td></tr>
+<tr><td> Recessional velocity in CMB rest frame </td><td> &nbsp </td></tr>
+<tr><td> Distance to the cluster (quoted in NED)</td><td> &nbsp </td></tr>
+<tr><td> Galactic latitude </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in g-band </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in i-band </td><td> &nbsp </td></tr>
+</table></p><br>
+
+Using the information and links in NED, learn what you can about the cluster.
+Here are some questions to get you started.</p>
+
+<li>  &nbsp What is a "poor" cluster?</p>
+<li>  &nbsp What does "MKW" stand for?
+<!--
+<b><font color=#cc0f14> Morgan, Kayser and White: see ApJ 199, 545 (1975).
+</font></b>
+-->
+</p>
+<li> &nbsp What are other names for this same group?<br>
+<!--
+<b><font color=#cc0f14>
+NGC 5171 Group; NGC 5176 group; WBL 447; RASSCALS NRGb 247 and others...
+</font></b>
+-->
+</p>
+
+<li>  &nbsp What is the basic difference between the frame B1950.0 and J2000.0?
+<!--
+<b><font color=#cc0f14> Reference epoch for coordinates. 
+</font></b>
+-->
+</p><br><br>
+<hr>
+<b>Getting ready to explore the environment of MKW 11</b></p>
+To review the large scale structure in and around MKW 11, we can use the "Arecibo General Catalog", the private database
+of galaxies maintained by the Cornell EGG which is made available to members of the ALFALFA team with
+the usual caveat that you get what you pay for. Remind yourself what you learned about the AGC in SH#0.</p>
+
+We have used the AGC to create two CSV files for use in this activity.
+<ul>
+<li> <a href="files/MKW11.6deg.vopt.radec.csv" target=new>CSV format</a> or
+     <a href="files/MKW11.6deg.vopt.radec.txt" target=new>ASCII text format</a>: &nbsp &nbsp
+galaxies with optical heliocentric velocities</a> within 6 degrees of the center of MKW 11
+<li> <a href="files/MKW11.6deg.v21a40.radec.csv" target=new>CSV format</a> or
+     <a href="files/MKW11.6deg.v21a40.radec.txt" target=new>ASCII text format</a>: &nbsp &nbsp
+galaxies in &alpha;.40 with HI 21cm line heliocentric velocities</a> within 6 degrees of the center of MKW 11
+</ul>
+The files contain the galaxy AGC number, RA, Dec, Vhelio and the projected separation of the galaxy from the cluster center in arcminutes.
+Use <b>TOPCAT</b> and these files to explore the structure of the cluster. </p>
+<br><br>
+<hr>
+<b>The sky distribution of galaxies in the cluster MKW 11</b></p>
+
+First, let's take a look at the distribution of galaxies in the vicinity of MKW 11. 
+Using the AGC/&alpha;.40 data files (linked above), plot (on the same graph)
+the sky distribution of galaxies in the (a)
+optical sample and (b) the &alpha;.40 galaxies. Assign the optical sample red symbols
+and the radio 21cm line one, blue ones. Plot the optical sample first, since it is much bigger.</p>
+
+<li> &nbsp Be sure to plot the distribution so that east is to the left and west is the right; why do we do that?</p>
+<li> &nbsp Consider the result: what do you notice and how can you explain what you see? </p><br>
+
+<li> &nbsp Clusters of galaxies have a typical radius of 2 Mpc. At the distance of MKW 11, what
+is the angular extent of 2 Mpc?</p><br>
+
+
+<!--
+</td><td valign=top align=right>
+<a href="images17/MKW11.6deg.opt+hi.allvel.radec.gif" target=new>
+<img src="images17/MKW11.6deg.opt+hi.allvel.radec.gif" height=320>
+</td></tr></table>
+-->
+
+<!-- The NED CMB distance is 97.8 Mpc. At that distance, 2 Mpc is about 70 arcmin.
+So we really ought to be looking only at the objects within that separation from the
+center of the cluster. You can see here that there are a lot more galaxies in the optical sample
+than in the HI same. The cluster is almost visible.</p></font></b>
+-->
+</p>
+<li> &nbsp Make a second plot, zooming in on the region containing the cluster itself (to 2 Mpc).</p>
+
+<li> &nbsp Comment on what you see. Is the cluster evident in both samples (the optical one
+and &alpha;.40)?</p><br>
+
+<!--
+</td><td valign=top align=right>
+<a href="images17/MKW11.6deg.opt+hi.allvel.radec.zoom.gif" target=new>
+<img src="images17/MKW11.6deg.opt+hi.allvel.radec.zoom.gif" height=300>
+<!--
+The cluster is visible in the optical sample but not the &alpha;.40 one.</p></font></b>
+</font></b>
+-->
+<br>
+<hr>
+<b>The distribution of heliocentric velocity with projected separation</b></p>
+
+In the previous plots, we did not make use of the redshift information; it's time to do that.
+Using the same data files (linked above), plot (on the same graph)
+the variation in heliocentric velocities (y-axis) with the projected separation from the
+cluster center (x-axis) for the (a) optical sample (red) and (b) the &alpha;.40 galaxies (blue). </p>
+
+<!--
+<a href="images17//MKW11.6deg.opt+hi.allvel.sepvsvel.gif" target=new>
+<img src="images17/MKW11.6deg.opt+hi.allvel.sepvsvel.gif" height=320></a></p>
+-->
+
+<li> &nbsp What do you notice and how can you explain what you see? </p>
+
+<li> &nbsp Why are there more red points than blue points at large heliocentric velocities?</p>
+
+<li> &nbsp There seem to be a lot of red points at separations of greater than 200 arcminutes.
+Why?</p>
+
+<!-- Who are those guys in the background?
+</font></b>-->
+<hr>
+<b>A quick comparison with the Coma cluster</b></p>
+
+The richest cluster in the local universe is the Coma cluster, also known as Abell 1656.
+<!--
+We investigated Coma during <a href="cau13_env.htm" target=new>Activity #2</a> on Tuesday afternoon.
+-->
+Look up the cluster in NED and find the same information you recorded before for MKW 11:
+<table border=4 cellpadding=5>
+<tr><td> R.A.(J2000) </td><td width=500> &nbsp </td></tr>
+<tr><td> Dec.(J2000) </td><td> &nbsp </td></tr>
+<tr><td> Recessional velocity in heliocentric rest frame </td><td> &nbsp </td></tr>
+<tr><td> Recessional velocity in CMB rest frame </td><td> &nbsp </td></tr>
+<tr><td> Distance to the cluster (quoted in NED)</td><td> &nbsp </td></tr>
+<tr><td> Galactic latitude </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in g-band </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in i-band </td><td> &nbsp </td></tr>
+</table></p><br>
+<li> &nbsp Based on the information you can find in NED, in what ways are Coma and MKW 11 similar? 
+In what ways are they different?
+</p><br>
+
+Below is a diagram showing the distribution of heliocentric velocities for all galaxies
+in the EGG-AGC with measured redshifts less than 18,000 km/s found within a 6 degree
+radius of Coma. Compare the distribution for Coma with that for MKW 11 above.</p>
+
+<a href="images17/coma6deg.allvel.sepmin.gif" target=new>
+<img src="images17/coma6deg.allvel.sepmin.gif" height=320></a></p>
+
+<li> &nbsp What do you notice and how can you explain what you see? </p>
+
+<li> &nbsp In what ways are the distributions different in the inner regions of
+each cluster (at small separations)?</p>
+
+<li> &nbsp What property(ies) of the two clusters might explain the difference?</p><br>
+
+<hr>
+<b>The velocity structure of MKW 11</b></p> 
+Now, let's focus on the cluster itself. Using the same data files again, plot
+(on the same graph)
+the distribution of heliocentric velocities (using the TOPCAT histogram option)
+for the (a) optical sample (red) and (b) the &alpha;.40 galaxies (blue). </p>
+
+<li> &nbsp
+What do you notice and how can you explain what you see? </p>
+<!--
+</td><td valign=top align=right>
+<a href="images17/MKW11.6deg.opt+hia40.allvel.histovel.gif" target=new>
+<img src="images17/MKW11.6deg.opt+hia40.allvel.histovel.gif" height=300>
+</td></tr>
+</table>
+-->
+</p>
+Now examine just the galaxies within 2 Mpc of the cluster center.
+You can generate the file you need using the ROW SUBSETS option in TOPCAT.
+<!--
+within TOPCAT or you can use these two files
+already made up for you:<br>
+<li> <a href="files/MKW11.1.17deg.vopt.radec.csv" target=new>CSV format</a> or
+     <a href="files/MKW11.1.17deg.vopt.radec.txt" target=new>ASCII text format</a>: &nbsp &nbsp
+     galaxies with optical heliocentric velocities</a> within 2 Mpc of the center of MKW 11
+<li> <a href="files/MKW11.1.17deg.v21a40.radec.csv" target=new>CSV format</a> or
+     <a href="files/MKW11.1.17deg.v21a40.radec.txt" target=new>ASCII text format</a>: &nbsp &nbsp
+     galaxies in &alpha;.40 with HI 21cm line heliocentric velocities</a> within 2 Mpc of the center of MKW 11</p>
+
+<table>
+<tr><td valign=top>
+-->
+</p>
+
+<li> &nbsp Estimate the mean velocity of the cluster and its velocity dispersion. </p>
+
+
+<li> &nbsp Comment on the determination on the membership of this cluster and your ability to estimate
+its mean velocity and velocity dispersion.</p>
+
+<!--
+</td><td valign=top align=right>
+<a href="images17/MKW11.2Mpc.opt+hia40.allvel.histovel.gif" target=new>
+<img src="images17/MKW11.2Mpc.opt+hia40.allvel.histovel.gif" height=300></p>
+</td></tr>
+</table>
+-->
+
+<br><hr>
+<b> Another comparison with Coma</b></p>
+<table>
+<tr><td valign=top>
+To the right is a similar histogram made for the Coma cluster. It contains all galaxies within
+6 degrees of the center of the cluster which have measured heliocentric radial velocities.</p>
+
+<li> &nbsp Compare this histogram to the one shown above for MKW 11. 
+Comment on the differences and possible reasons for them.
+</td><td valign=top>
+<a href="images17/coma6deg.allvels.histo.gif" target=new>
+<img src="images17/coma6deg.allvels.histo.gif" height=300></a>
+</td></tr></table>
+
+<br><hr>
+<b>The MKW cluster itself</b></p>
+
+Next focus in on the cluster itself to make a histogram of 
+only the galaxies within 2 Mpc of MKW 11 and in the velocity range
+Vhelio: (5850 to 7850 km/s), for either Vopt or V21. Again, you can
+generate the file you need in TOPCAT.
+<!-- or use this one in
+<a href="files/MKW11.1.17deg.vhelio.5850to7850.radec.csv" target=new>CSV format</a> or
+<a href="files/MKW11.1.17deg.vhelio.5850to7850.radec.txt" target=new>ASCII text format</a>
+-->
+</p>
+
+<li> &nbsp Compare this histogram to the plot of heliocentric velocity versus distance from
+the center of MKW 11 that we looked at before. Does it behave as you expected?</p>
+<li> &nbsp How you might use this result?</p>
+<!--
+</td><td valign=top align=right>
+<a href="images17/MKW11.2Mpc.eithervel.histovelzoom.gif" target=new>
+<img src="images17/MKW11.2Mpc.eithervel.histovelzoom.gif" height=260>
+</td></tr></table>
+-->
+</p>
+<br>
+<hr>
+
+<b>The large scale structure around MKW 11</b></p>
+
+Now, let's examine the very large scale structure in the general surrounding of
+MKW 11. A convenient way to
+examine large scale structure is to make a "cone diagram" of an almost-2-D
+"slice". For this purpose, there are two more files containing galaxies in
+a 5 degree wide "slice" of the universe: R.A:. (7.5 to 16.5 hours), Dec: (10.5 to 15.5 deg),
+Vhelio: (0, 18000 km/s). In this case, we are converting RA,Dec and heliocentric velocity
+to "radial coordinates" radx and rady, centered on the 12 hours RA (radx=0.). 
+<!--Notice
+that in this convention, radX increases with Right Ascension, so you should flip the
+radx axis. </p>-->
+
+
+As before, there are two files:
+<ul>
+<li> <a href="files/slice.7.5to16.5.10.5to15.vopt.csv" target=new>CSV format</a> or
+     <a href="files/slice.7.5to16.5.10.5to15.vopt.txt" target=new>ASCII text format</a>: &nbsp &nbsp
+      galaxies with optical velocities</a> in the slice crossing MKW 11
+<li> <a href="files/slice.7.5to16.5.10.5to15.v21a40.csv" target=new>CSV format</a> or
+     <a href="files/slice.7.5to16.5.10.5to15.v21a40.txt" target=new>ASCII text format</a>: &nbsp &nbsp
+      galaxies in &alpha;.40</a> in the slice crossing MKW 11
+</ul>
+
+In this region, there are three rich clusters of galaxies worthy of note:</p>
+<table cellpadding=5 border=3>
+<tr><th> Cluster </th><th> R.A.,Dec.</th> <th> Helio. velocity <br> km/s</th></tr>
+<tr><td> Abell 999         </td><td> 155.8, 12.8 </td><td align=center>  9683 </td></tr>
+<tr><td> Abell 1016         </td><td> 156.8, 11.0 </td><td align=center>  9653 </td></tr>
+<tr><td> Abell 1142          </td><td> 165.23, 10.5 </td><td align=center> 10463 </td></tr>
+</table> &nbsp &nbsp Values from NED
+</p>
+<br><br>
+<li> &nbsp Make separate cone diagrams for the galaxies with optical redshifts and the galaxies
+with HI redshifts. Then make one with the two superposed. What are your impressions of structure
+in this region?</p><br>
+
+<li> &nbsp Where do the three other clusters lie in these diagrams?</p>
+
+<!--
+<table><tr><td valign=top align=center>
+<a href="images17/slice.7.5to16.5.10.5to15.5.vopt.gif" target=new>
+<img src="images17/slice.7.5to16.5.10.5to15.5.vopt.gif" height=330><br>
+optical only</p> </td></tr>
+<tr><td valign=top align=center>
+<a href="images17/slice.7.5to16.5.10.5to15.5.v21a40.gif" target=new>
+<img src="images17/slice.7.5to16.5.10.5to15.5.v21a40.gif" height=330><br>
+21 cm only</p></td></tr>
+<tr><td valign=top align=center>
+<a href="images17/slice.7.5to16.5.10.5to15.5.vopt+v21a40.gif" target=new>
+<img src="images17/slice.7.5to16.5.10.5to15.5.vopt+v21a40.gif" height=330><br>
+Both</p>
+</td></tr></table></p>
+-->
+<li> &nbsp Consider the results: what do you notice and how can you explain what you see? </p><br>
+<li> &nbsp Identify a filamentary structure. How long (in Mpc) is it (assuming it is real)? </p><br>
+<li> &nbsp Identify a void in the distribution. How large (in Mpc) is it?</p><br>
+</p>
+<hr>
+<b> Other things to consider</b></p>
+
+<li> &nbsp
+Using the information you have and making reasonable assumptions, how
+could you estimate
+the mass of the MKW11 cluster? </p>
+
+<li> &nbsp Investigate some other comparisons of MKW 11 to other nearby clusters
+in the UAT groups project.</p>
+
+
+<br>
+<hr>
+
+<font color=#008000><i>Last modified: Mon Jun 18 12:37:24 EDT 2018
+</i> by martha </font>
+</body>

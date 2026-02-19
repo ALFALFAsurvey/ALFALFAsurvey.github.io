@@ -1,0 +1,38 @@
+A2707 LBW   13.01.14p       Observers: 
+
+THIS IS THE UAT13 DEMO RUN DURING DAYTIME
+
+CIMA version:          The Stable version (Default) (Ver 3.3.04 2012-11-29  16:58)
+Configuration file:    a2707_jan13.conf
+  Receiver: L-Band Wide   ---   Linear  '1320-hipass'
+  IF/LO: standard '750 narrow band' at 1420.41 MHz      60 MHz; center varies
+  Backend: ICORR 1+2+3+4 'multi-config' --- 25 MHz
+      Boards 1&2  Pols A/B  9-level 2048 chans/25 MHz Doppler tracking at heliovel
+      Board  3&4  Same as above except 6.25 MHz per board.
+  Obsmode: Standard on/off   ---   one 180-sec loop with 'hcorcal' and 60-sec wait
+Command file:        a2707_130114.cmd
+Mode:                Doppler tracking
+                     ALFALFA sources (velocities vary)
+      
+Data written to: /share/olcor/corfile.14Jan2013.a2707.*
+
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H215040.4+283617  215040.3 +283527  j  3500 H v   # A310858 calib  
+H222353.2+305630  222354.8 +305629  j  6700 H v   # A321456
+A222337.0+305124  222337.0 +305124  j  6700 H v   # A012018
+A222354.3+305446  222354.3 +305446  j  6700 H v   # A320635
+A222403.4+305720  222403.4 +305720  j  6700 H v   # A321554
+HVC103-29         233139.2 +310703  j  -400 H v   # A333484
+H233848.8+241350  233853.4 +241354  j   700 H v   # A333337 
+H233833.9+250751  233835.2 +250753  j -1300 H v   #
+H234349.5+255219  234350.5 +255219  j   700 H v   # 
+H235426.6+290341  235428.3 +290339  j  6900 H v   # A333638
+H000207.2+292130  000208.1 +292126  j   600 H v   #
+H003336.8+284425  003337.6 +284421  j  3600 H v   # A102983
+
+
+Stop LST:  
+
+
+Please record any notes of importance here  (Remember: you were there; we weren't.)
+Notes

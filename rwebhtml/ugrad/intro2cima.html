@@ -1,0 +1,220 @@
+<html>
+
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+<body bgcolor=white>
+
+<center><p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600">
+</center>
+
+<h3><font color=#cc0f14><i>A work in progress....</i></font></h3><br>
+
+<h2><font color=#008000>Using CIMA for ALFALFA</font></h2>
+
+Let's explore how we use the <b>C</b>ontrol <b>I</b>Interface <b>M</b>odule
+for <b>A</b>Arecibo to conduct the ALFALFA observations.</p>
+
+<a name="0">
+<ul>
+<li> The official <a href="http://www.naic.edu/~cima/">CIMA</a> page at Arecibo
+<li> The <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observers'</a> page.
+Look there for observing instructions. We don't reproduce those here, but rather
+only try to explain options.</p>
+Click below to skip forward to the relevant section.
+<li> <a href="intro2cima.php#1">CIMA Version</a>
+<li> <a href="intro2cima.php#2">Main menu widget</a>
+<li> <a href="intro2cima.php#3">CIMA log display</a>
+<li> <a href="intro2cima.php#4">Receiver selection menu</a>
+<li> <a href="intro2cima.php#5">IF/LO and backend control</a>
+<li> <a href="intro2cima.php#6">Utilities menu</a>
+<li> <a href="intro2cima.php#7">CIMA observing menu</a> and associated widgets
+<li> <a href="intro2cima.php#10">Monitoring and status tools</a>
+</ul>
+
+
+<h3><font color=#008000>CIMA Options for ALFALFA</font></h3>
+<ul>
+<li><a name="1"> <b>CIMA Version</b>
+<table cellpadding=3>
+<tr><td> The CIMA wizard at Arecibo is Mikael Lerner. 
+    Mikael is an astronomer by training, and he is constantly
+    improving CIMA, making it smarter, more robust and more user-proof.
+    We try to work with Mikael to use the version that he suggests. Our setup
+    (fixed azimuth drift mode) is so simple that he likes us to test out
+    new versions before they are released publicly. </p>
+    In January 2008, we worked with him to test the major post-painting project
+    upgrade version, so right now (Mar 2008) we are using the
+    <b> unusuable engineering version</b>.</p></td>
+    <td> <a href="cima-screenshots/CIMAVersion.gif"><img src="cima-screenshots/CIMAVersion.gif"
+         height=100><br>(click for larger version)</td></tr>
+</table>
+
+<li><a name="2">  <b>Main menu widget</b>
+<table cellpadding=3>
+<tr><td> CIMA widgets allow you to control the observing mode 
+         and the setup of the receiver (also called the "frontend") 
+         and the spectrometer (also called the "backend"). Parameters can be
+         entered either interactively via the widgets or by loading files which
+         have been setup previously. You get access to the different widgets
+         via the one labeled the "CIMA Main Menu".</p>
+         On this widget, buttons highlighted in black are operative.</td>
+    <td> <a href="cima-screenshots/MainMenu.gif"><img src="cima-screenshots/MainMenu.gif"
+         height=100><br>(click for larger version)</td></tr>
+</table>
+<br>
+<li> <a name="3"> <b>CIMA log window</b>
+<table cellpadding=3>
+<tr><td>During your observing session, CIMA checks and records a lot of useful information
+        which is displated in the "CIMA observation log display." Mikael makes use of color
+        here - <font color="#cc0f14">red</font> refers to <font color="#cc0f14">serious failures</font>.
+        Watch for those! <font color="#ff6600">Orange</font> denotes <font color="#ff6600">warnings</font>.
+        Watch for those too, and make a note in the A2010 log if you aren't sure of their significance.
+    </p></td>
+    <td> <a href="cima-screenshots/Log.gif"><img src="cima-screenshots/Log.gif"
+         height=100><br>(click for larger version)</td></tr>
+</table><br>
+
+<li> <a name="4"> <b>Receiver selection menu</b>
+<table cellpadding=3>
+<tr><td>Arecibo is equipped with different receivers which operate in different 
+        frequency bands or have other differences.</p>
+        <b>L-band</b> is technical name for the range of frequencies from 1.0 to 1.8 GHz,
+        (covering the 18 and 21 cm bands). Arecibo has 2 receivers which operate in this
+        band, <b>ALFA</b>, with its 7 beams, and a single beam receiver called
+        <b>LBW</b>, "L-band Wide". It is somewhat more sensitive than ALFA and covers
+        a broader range of frequencies; it is better for targeted observations when you
+        know exactly where you want to look.</p>
+     We of course use <b>ALFA</b>.
+    </p></td>
+    <td> <a href="cima-screenshots/ReceiverSelection.gif"><img src="cima-screenshots/ReceiverSelection.gif"
+         height=100><br>(click for larger version)</td></tr>
+</table>
+<br>
+<li> <a name="5"> <b>Receiver IF/LO selection menu</b> and <b>Backend Control = WAPP configuration menu</b>
+<table cellpadding=3>
+<tr><td>At Arecibo, a single set of cables is used to bring down the signals from
+        different receivers up in the dome to the shielded room where the 
+        spectrometers are located. Therefore, we have to "convert" the frequency of the spectrum  we want
+        to study to one which can be fed over the cable to other amplifiers and mixers, without of
+        course forgetting what we have done. Therefore we make use of the <b>intermediate frequency (or IF)</b> 
+        (the standard one used to transfer the signal down from the platform) which is fixed and a
+        second, the <b> local oscillator (or LO)</b> which is tunable. By varying the LO frequency, we are then
+        able to track the changes due to, for example, the rotation of the Earth on its axis and
+        the revolution of the Earth around the barycenter of the Solar System. </p>
+
+        Under normal conditions, when you select a receiver, the IF/LO selections go along with it.
+        For ALFA, the IF frequency is 260 MHz; can you figure out what the multiplier and LO frequency are?</p>
+
+        In order to set up the different receivers, you need to specify these two frequencies so that
+        the frequency at the center of the band can be expressed in terms of them as:<br>
+        <center>
+        f<sub>sky</sub> = N ** f<sub>IF</sub> + f<sub>LO</sub><br>
+        </center>
+        where N is an integer multiplier.</p>
+
+        In the case of ALFALFA, we prefer not to track the Earth's motion around the Solar System
+        barycenter; hence our LO depends the IF frequency (fixed for ALFA) and the frequency we want
+        at the center of our bandpass, for ALFALFA <b>1385.0 MHz</b>.</p>
+  
+        We do not use any filters with ALFA so the <b>Filter choice</b>
+         =is <b>"Full width"</b>.</p>
+
+        For ALFALFA, we set the <b>Center frequency</b>
+        to <b>1385.0 MHz</b>.</p>
+  
+        There are several spectrometers available at Arecibo
+        We use the four (4) WAPPs as the spectrometer; the choice of backend is specified in the configuration
+        file so if you load that first, the <b>Backend control</b> will have already been set. </p>
+
+        For ALFALFA, we use a <b>100 MHz</b> bandwidth, so that our spectra cover from 
+        1335 to 1435 MHz.</p>
+    </td>
+    <td> <a href="cima-screenshots/IFLO_0.gif"><img src="cima-screenshots/IFLO_0.gif"
+         height=100><br>(click for larger version)<br>
+         <a href="cima-screenshots/IFLO.gif"><img src="cima-screenshots/IFLO.gif"
+         height=100><br>(click for larger version)<br>
+         <a href="cima-screenshots/WAPPs.gif"><img src="cima-screenshots/WAPPs.gif"
+         height=100><br>(click for larger version)</td>
+
+</p>
+</tr>
+</table>
+<br>
+<li><a name="6">  <b>CIMA utilities menu</b>
+<table cellpadding=3>
+<tr><td>This little widget allows you to reset preferences, restart programs, or start up
+        the display monitors (see below).</p>
+    </td>
+    <td> <a href="cima-screenshots/Utilities.gif"><img src="cima-screenshots/Utilities.gif"
+         height=100><br>(click for larger version)</td></tr>
+</table>
+
+<li> <a name="7"> <b>CIMA observing menu and associated widgets</b>
+<table cellpadding=3>
+<tr><td>Once you set up the observing mode, for ALFALFA by loading the <b>configuration file</b>
+the observing parameters associated with the <b>Fixed azimuth drift map</b> mode should be set.</p>
+
+To change the position of the first source, you can access the current A2010 source
+       catalog by locking on <b>Start position</b> in the <b>CIMA observing menu</b>. This 2nd
+       widget will open, allowing you to choose a new source and/or modify parameters.</p>
+
+You can see what sources are currently visible by clicking on <b>Show graphically</b>.</p>
+    </td>
+    <td> <a href="cima-screenshots/ObservingMenuDrift.gif"><img src="cima-screenshots/ObservingMenuDrift.gif"
+         height=100><br>(click for larger version)</td>
+
+    <td><a href="cima-screenshots/Pointing_a2010cat.gif"><img src="cima-screenshots/Pointing_a2010cat.gif"
+         height=100><br>(click for larger version)</td>
+   <td><a href="cima-screenshots/GraphicPointing.gif"><img src="cima-screenshots/GraphicPointing.gif"
+         height=100><br>(click for larger version)</td>
+    </tr>
+</table>
+
+</ul>
+  
+<br>
+
+<h3><font color=#008000>Other CIMA and Monitoring Widgets</font></h3>
+<ul>
+<li> <a name="10"> <b>CIMA observation status</b>
+<table cellpadding=3>
+<tr><td>This little widget lets you keep track of what's going on.
+    </p></td>
+    <td> <a href="cima-screenshots/Status.gif"><img src="cima-screenshots/Status.gif"
+         height=100><br>(click for larger version)</td></tr>
+</table>
+<li> <b>AO status display</b>
+<table cellpadding=3>
+<tr><td>This little widget lets you keep monitor the position of the telescope.</p>
+    When the display was captured, ALFA wasn't being used. (<i> we should replace this!</i>)
+    </p></td>
+    <td> <a href="https://drive.google.com/file/d/1pP6wPYsaNgG33HeiwMeJLq3ponFHxlq_/view"><img src="https://drive.google.com/file/d/1pP6wPYsaNgG33HeiwMeJLq3ponFHxlq_/view"
+         height=100><br>(click for larger version)</td></tr>
+</table>
+<li> <b>ALFA rotation display</b>
+<table cellpadding=3>
+<tr><td>This little widget lets you keep monitor the position of ALFA. For ALFALFA's
+        meridian drift scan mode, when the azimuth is either 180<sup>o</sup> or 360<sup>o</sup>,
+        a rotation angle of 19<sup>o</sup> yields beam tracks that are equally spaced
+        in declination.</p>
+    </td>
+    <td> <a href="cima-screenshots/ALFARotation.gif"><img src="cima-screenshots/ALFARotation.gif"
+         height=100><br>(click for larger version)</td></tr>
+</table>
+</ul>
+
+<br>
+<br>
+Back to <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">ALFA for ALFALFA</a> </p>
+Back to the <a href="intro2cima.php#0">top</a>.
+<br>
+<hr width="800">
+<br>
+<i>Last modified: Mon Mar 10 12:30:45 EDT 2008  by martha</i>
+
+
+</body>
+
+</html>

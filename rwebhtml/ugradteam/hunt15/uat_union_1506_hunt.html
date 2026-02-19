@@ -1,0 +1,416 @@
+<html>
+  <head>
+    <title>Undergraduate ALFALFA team</title> 
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=#cc0f14>Union UAT Workshop June 2015 &nbsp &nbsp &nbsp &nbsp Group Project</font></h3>
+<font color=#008000>The populations of galaxies detected by ALFALFA and by SDSS and why we want to do APPSS</font></h3>
+
+
+<p> In this exercise, you will explore the differences in the populations of galaxies
+detected by the two surveys: ALFALFA and the SDSS.</p>
+
+<!--Specifically, you will construct a color-magnitude diagram for the galaxies included in the 
+2011 ALFALFA data release (<a href="http://adsabs.harvard.edu/abs/2011AJ....142..170H"
+target=new>Haynes <i>et al</i> 2011</a>) using colors and
+magnitudes derived from the Sloan Digital Sky Survey (SDSS).-->
+We will provide you with all the data you need. We hope that you have already had a chance to play with TOPCAT.
+If you have not used TOPCAT before, check out the links on the <a href="http://uat.union.edu"> UAT Groups Google Site </a> and/or find someone who has used it before. </p>
+
+<br>
+<h2> 1. Datasets </h2>
+<hr>
+<b> 1.1 The ALFALFA &alpha;.40 dataset</b>: </p> 
+The ALFALFA catalog data are available either as part of the publication in the
+Astronomical Journal or from our own <a href="http://egg.astro.cornell.edu/alfalfa/data" target=new>
+data products</a> page. It is now standard practice in astronomy to provide
+data for use by others in standard formats such as "CSV", so we have done that. </p>
+<li> &nbsp Download the file in <a href="https://drive.google.com/file/d/1OcudS8h6P8VoiG7K_ZgvRVGx91XmUus8/view" target=new>CSV format</a> 
+or <a href="https://drive.google.com/file/d/12ZavoDAHgdCnWmKWfNKCqUnzb9lsUmbN/view" target=new>ASCII text format</a> and then use
+TOPCAT to generate the plots. </p><br>
+
+<b>Distance bias</b>: </p>
+First, let's examine how the HI masses of galaxies detected by ALFALFA differ 
+as we move from the very nearby galaxies to more distant ones. Use TOPCAT to
+make the plot of Distance (horizontal axis) versus log HI mass. This type of
+plot is called a
+Spanhauer diagram.</p>
+
+<li> &nbsp What are your impressions of this plot? </p>
+
+<li> &nbsp There are two "gaps" (fewer than expected) at 
+distances of about 85 Mpc and 230 Mpc. For the HI 21 cm line, what
+frequencies do these gaps correspond to? Any ideas on what causes the gaps?</p>
+<!-- The gaps appear at frequencies corresponding to 1390 and 1350 MHz, due to RFI in the band.<br>
+For 85 Mpc => cz ~ 6000 km/s => z = 0.0198 => 1420.4058/(1+z) ~1390 MHz <br>
+For 230 Mpc => cz ~ 16100 km/s => z = 0.054 => 1420.4058/(1+z) ~ 1350 (won't be exact)<br>
+Cause: RFI. In particular see <a href="http://www.naic.edu/~phil/rfi/rfilist.html">Phil's list</a>.
+The fairly broad band at 230 MHz is the FAA/SJU radar at 1350 MHz; note that it is not on all
+the time. The other feasture is probably the dome camera, which was a problem during part of
+the ALFALFA data taking (until identified and fixed). -->
+
+<li> &nbsp There appears to be a vertical line-up of (more than expected)
+                 points at a distance of 17 Mpc. 
+                 What might cause this?</p>
+
+<li> &nbsp Why does the distribution of points appear as it does? Why is it important to keep this diagram in mind
+as we explore galaxies detected by ALFALFA? </p>
+
+<br><hr>
+<b>1.2 SDSS data for the &alpha;.40 galaxies</b><br> 
+
+This <a href="files/a40.plusSDSS.short.withmags.csv" target=new>CSV with SDSS data </a> file 
+contains useful information extracted from the population of galaxies included in both the
+2011 public ALFALFA survey catalog (&alpha;.40
+<a href="http://adsabs.harvard.edu/abs/2011AJ....142..170H">Haynes <i>et al</i> (2011)</a>) and the
+SDSS DR7 database. </p>
+
+Examine the contents of the file before and see if you can figure out what the table contains.
+Be sure that you understand what all the columns mean;
+if you don't understand any of them, ask. Note that there is a lot more here than you 
+actually need (but we want you to try to understand more than the minimum). A longer version of this
+exercise, which includes calculation of some of the magnitudes you will use, is provided <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt15/hunt3_15teamA.htm"> here; </a> we encourage you to run through this
+on your own.</p>
+
+<li>How does the sky distribution of galaxies from the &alpha;.40 (HIpos) compare to that of the SDSS data (OCpos)?</p>
+ 
+</p>
+<br>
+<hr>
+<b> 1.3 Combining ALFALFA and SDSS Data </b>
+</p><br>
+
+
+<b>Using TOPCAT to match two catalogs</b>
+
+
+<p> Next we will use TOPCAT to match entries in the two catalogs.
+Crossmatch the two catalogs by AGC number; use the "Joins" function with the "Pair Match" option
+in TOPCAT. 
+
+<li> How many matches do you get?</p>
+
+<p> Going back to the original catalogs, make a crossmatch using the "Sky" algorithm.</p> 
+
+<li> Now how many matches do you get? Why don't the positions
+match exactly? How large must "Max Error" be to get the same number of matches that you found when
+you cross matched by AGC number? Explain your answer.</p>
+
+<!--<li> What is the mean separation between the HI and OC positions? What is the median value? &nbsp <i> Hint: Think about which of
+the cross-matched catalogs you should use for this; some of them already include the separation. And, you should be able to find the mean and median values
+easily using built-in functions; ask for advice if you get stuck here.</i></p> -->
+
+
+
+
+
+<br>
+<hr>
+<h2> 2.0 ALFALFA-SDSS Scaling Relations </h2>
+<b>2.1 Gas and stars in the &alpha;.40 galaxies</b></p> 
+
+<p>Now let's look at how the gas and stars are connected in the &alpha;.40 galaxy population. 
+Note that the SDSS file contains parameters for both V-band and i-band, but let's stick to 
+the i-band for this exercise. Plot the i-band optical luminosity, log L_i, on the x axis
+versus the HI mass, logM_HI, on the y axis. We suggest you scale the axes as log L_i=[6,12] 
+and log MH = [6,12].</p>
+
+<p>Now let's plot the optical luminosity and the gas fraction parameter. You will need to calculate
+the "gas fraction" (gas2L = log M_HI - log L_i) for each α.40 galaxy which also has SDSS photometry. 
+Use TOPCAT to do this, by adding a column and typing in the formula. Then plot the i-band optical 
+luminosity, log L_i, on the x axis versus the gas fraction, logMsun, on the y axis.
+</p>
+
+Consider the results:
+
+<ul>
+<li> What do you notice about how the HI mass scales with optical luminosity
+(and therefore stellar mass of the galaxy)? </p>
+
+<li> What do you notice about how the gas fraction scales with optical luminosity? </p> 
+
+<li> How can you explain what you see? </p>
+</ul>
+<br>
+<hr>
+
+<b> 2.2 Scaling Relations </b>
+
+<p> The plots you made above are called "scaling relations" because they illustrate how
+one property of a galaxy scales (is related to) another. The optical luminosity that you 
+plotted may also be converted to an estimate of the stellar mass in the galaxy (i.e., how
+much mass produces the light) using stellar evolution and population models. Plots 
+illustrating the scaling relations between gas, stars, and star formation can be found
+in Figure 2 of <a href="http://adsabs.harvard.edu/abs/2012ApJ...756..113H"> Huang et al. 2012, </a>
+for example. 
+
+<ul> 
+
+<li> What quantities are plotted in each of the four plots in Huang et al. Figure 2? </p>
+
+<li> What is used to trace the star formation and why? </p>
+
+<li> What do these plots tell you about the relationships between gas mass, star formation, and
+stellar mass? </p>
+
+<li> For what range of HI masses are the scaling relations well defined? </p>
+
+<li> Why do you think they are not well-defined outside that range?
+</ul>
+
+
+
+<hr>
+<h2> 3.0 The Arecibo Pisces Perseus Supercluster Survey (APPSS) </h2>
+
+<b> 3.1 Motivation and design of the survey </b> 
+
+<p> The UAT is embarking on a new survey designed to extend the HI mass scaling relations
+to lower HI mass. Consider what we need to do to build up our sample of low mass galaxies:
+
+<ul> 
+<li> Why are we biased against lower mass galaxies? Use relevant plots from above to illustrate. </p>
+
+<li> What do we need to do to observe galaxies of lower mass at a given distance? </p>
+
+<li> We could try to observe much of the sky again to try to find lower mass galaxies, but this
+takes a lot of telescope time. Also ALFALFA has shown us that most galaxies with gas also have
+stars and star formation. How might we design a survey to target as many lower mass galaxies
+as possible, using the scaling relations that have been derived based on ALFALFA and SDSS?
+</ul>
+
+
+<hr>
+<b> 3.2 Exploring the Pisces Perseus Supercluster with the AGC </b>
+
+<p><a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/apps/files/ppsagc_21june15.csv"> Download this csv file,
+</a> containing data from the <a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agccontract.php"> Arecibo General Catalog (AGC) </a> (read about the catalog in the link). The file contains data extracted from the vicinity of the Pisces Perseus Supercluster. Load it into TOPCAT.
+
+<li> Make a sky plot of the data and examine the results. </p>
+
+<li> Make a plane plot of the data, using radeg and decdeg. What do you notice?</p>
+
+<li> Now make a secod plane plot of the data, but substitue rawrap for radeg. What does rawrap represent and why is it helpful?</p>
+
+<li> Plots using right ascension should plot east on the left, west on the right. Which of the above plots does this? Fix any that do not.</p>
+
+<li> Do you see any oddities in the distribution of points? Can you explain any inhomogeneities? </p>
+
+<li> Make a plot of rawrap versus vhelagc, the heliocentric velocity from the AGC. What does this plot tell you?</p>
+
+<li> Use the TOPCAT subsets tool to restrict the sample to galaxies with declinations greater than 20 degrees. To do
+this, select the subsets button and hit the plus sign. Name your sample something like north20, and enter "decdeg > 20.0" in the expression line. Plot this subset as a different color than the main sample in the plots that you made above.</p>
+
+<table>
+<tr>
+<td align="top">
+<li> Make a third subset "appsallvel" with declinations between 23 and 35. 
+Make the plots over again with this subset as a separate color. How does your diagram compare with the
+overdensity plot from the 2MRS survey shown at right? What can you conclude?</p>
+
+<li> Optional if time: try to identify the clusters/groups of galaxies in the data.</td>
+
+
+
+<td align="right">
+<a href="files/2MRSpp.png" target=new>
+<img src="files/2MRSpp.png" height=100>
+</td>
+</tr>
+</table>
+
+<hr>
+<b> 3.3 Querying the SDSS </b>
+
+<p> The UAT Groups Google Site (needs link) provides an example query that we can use to extract
+galaxies from the SDSS site. Your group will be assigned a range in right ascension and declination
+to test. Edit the query appropriately and run from TOPCAT, following the directions below 
+(a nicer summary written by David Craig can be found in our <a href="https://sites.google.com/a/union.edu/uat/programs/uat-topcat-docs"> UAT TOPCAT docs page, </a>
+under <href="https://sites.google.com/a/union.edu/uat/programs/uat-topcat-docs/sdss-dr7-tap-query-example"> SDSS DR7 TAP Query </a>:
+
+<li> Click on the 'VO' tab in TOPCAT, then the Table Access Protocol (TAP) Query option. In the window that 
+pops up, type 'sdss' in the Keyword box, then 'Submit Query'. This will return a set of SDSS tables to
+search. Select SDSS DR8, then 'Enter Query' at the bottom right. At the bottom, there is an ADQL Text box,
+where you can enter your query. ADQL is similar to the SQL search data available straight from SDSS, e.g.,
+<a href="http://skyserver.sdss.org/dr10/en/tools/search/sql.aspx"> the DR10 SQL Search, </a> with a few
+important differences. Another option is to use <a href="http://skyserver.sdss3.org/CasJobs/"> CasJobs
+batch query service </a> for longer jobs. You will need an account (free) for CasJobs. Each option has its "features."
+Simple searches can probably be done from TOPCAT, but TOPCAT is not kept as up to date in routines or data
+releases. If you have time, experiment with all three services. </p>
+
+<li> Enter your query in TOPCAT or the SDSS SQL Search. When it returns, load into TOPCAT (if applicable) and
+examine the results. To see what kind of galaxies were found, examine them in SDSS images. You can do this by
+extracting the name, ra, dec from the file and pasting these into the <a href="http://skyserver.sdss.org/dr10/en/tools/chart/list.aspx"> SDSS List tool. </a> Comment on what you see. </p>
+
+<li> Another way to look at images is to set TOPCAT to display the SDSS image of a region around a given RA and Dec. To do this, click on your table in the main TOPCAT window, then click on the box next to 'Activation Action', which will say '(no action)' if not already activated. In the window that pops up, click 'Display Cutout Image', then select SDSS Colour Images' from the pulldown menu next to Cutout Service.  Then click OK. Open a window showing your table and click on a galaxy. The image from SDSS should appear. </p>
+
+<li> Match your SDSS targets with the ALFALFA HI catalog. Were any of the targets found by ALFALFA? </p>
+
+<li> Plot your targets on the sky plots you made for the Pisces Perseus supercluster and comment on their
+locations. </p>
+
+
+<hr> 
+
+
+
+<hr>
+<hr>
+<P> 
+<b>Supplementary Section for further study/review </B>
+
+
+<p>
+<b>The color-magnitude diagram and how galaxy color correlates with morphology
+</font></b></p>
+Probably you are familiar with the Hertzsprung-Russell diagram for stellar classification.
+We can make a similar "color-magnitude" diagram for galaxies using TOPCAT and the photometric
+data from the SDSS. For nearby galaxies, there are problems with the standard SDSS
+photometric pipeline, so we use the ones available through the
+<a href="http://www.nsatlas.org/" target=new>NASA-Sloan Atlas</a> (N-S Atlas).
+
+<!--<hr>
+<table>
+<tr><td valign=top>
+<b>The astronomical rainbow</b> particularly as viewed by the SDSS</p>
+<li> &nbsp Remind yourself of the meaning of the terms magnitude, color index, 
+and other relevant quantities.</p><br>
+<li> &nbsp To the right is the diagram showing the wavelength response of the
+five SDSS filters. Which one is g? which is i?</p><br>
+<li> &nbsp Explain why lower values of the (g-i) color index indicate bluer galaxies.<br><br><br>
+</td>
+<td valign=top align=right>
+<a href="images13/SDSS_filters.png" target=new>
+<img src="images13/SDSS_filters.png" height=250></a><br>
+Credit: SDSS
+</td>
+</tr></table>-->
+
+
+We can also look at the morphological classification provide by the citizen science
+project <a href="http://www.galaxyzoo.org/" target=new>Galaxy Zoo</a>. </p>
+
+For this exercise, we have put together a useful dataset in 
+<a href="https://drive.google.com/file/d/12NRh0Pn8T8lnPIF0q3gSo79Fh2WM-XEm/view" target=new>CSV format</a> 
+<!-- I had to remove some Inf points in the file 
+or <a href="https://drive.google.com/file/d/1L__r0oRLIT-vsGTeA7LahDhpEaLYxgBx/view" target=new>ASCII format</a>
+-->
+from a combination of the N-S Atlas
+and the Galaxy Zoo 1 data release. It does not cover the whole sky 
+because each galaxy has to be included in both catalogs. 
+The file contains the basic information plus we have calculated a color (called "gminusi")
+and an absolute magnitude ("absmagi") as well as an indicator of morphology.
+Note that the way the morphological type is identified is by having a flag set to "1" according
+to whether the galaxy was classified as "spiral", "elliptical" or "uncertain". In fact, most
+galaxies are typed "uncertain".</p>
+
+
+
+
+
+
+
+<!--&nbsp &nbsp a. &nbsp  What wavelengths correspond to the SDSS g and i-band filters? &nbsp </p>
+-->
+
+<font color=#cc0f14><b> a.</b></font> &nbsp Why do we call the difference between the magnitude measured in the SDSS-g band and that
+in the SDSS-i band a "color"?</p>
+
+<font color=#cc0f14><b> b.</b></font> &nbsp Because we wanted to keep things simple, using only the raw data as they are included
+in the compilations, we have limited this subset to galaxies which 
+are viewed face-on. Why does that make things simpler?</p>
+
+ <font color=#cc0f14><b> c.</b></font>&nbsp First, using the N-S Atlas magnitudes, make a color-magnitude diagram using 
+the absolute magnitude and color given here.
+Be sure that luminosity increases from left to right and that blue galaxies are towards the botton,
+red towards the top. What do you notice about the distribution of galaxies? &nbsp <i>(Note: this diagram
+will be useful to some of the teams in SH#3)</i>.</p>
+
+
+Next, let's add the information about morphology from the GZ.</p>
+<font color=#cc0f14><b> d.</b></font> &nbsp Use the "column statistics" capability to figure out quickly
+the fraction of the galaxies which are classified as ellipticals? As spirals? As uncertain?</p>
+
+
+ <font color=#cc0f14><b> e.</b></font>&nbsp Using the <b>TOPCAT</b> subsets capability, plot the spirals and ellipticals
+separately, using different symbols/colors. Superpose the spirals on the ellipticals <i>(be sure to
+do it in that order)</i>. What do you conclude?</p>
+
+
+<hr>
+<b>A color magnitude diagram of SDSS galaxies in the Coma supercluster</b></p>
+A common way to explore the properties of a population of galaxies uses
+the color-magnitude diagram (CMD). Such a diagram shows that most galaxies inhabit one of
+two main regions on the diagram: the "red sequence" and the "blue cloud".
+A nice example which we will use for reference
+is the work of ALFALFA team member Peppo
+Gavazzi and his co-workers who constructed the CMD of a large sample of galaxies within 
+420 square degrees of sky covering
+the Coma supercluster and its member groups and clusters of galaxies as presented
+in <a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G" target=new>
+Gavazzi <i>et al</i> (2010)</a>, A&A 517, 73.</p>
+<table>
+<tr><td valign=top>
+Taken from Fig. 3 of
+that paper, the figure shows the "<i>g-i color versus i-band absolute magnitude 
+relation of all galaxies in the C[oma]S[upercluster] coded according to Hubble type: red = early-
+type galaxies (dE-E-S0-S0a); blue = disk galaxies (Sbc-Im-BCD); green = bulge 
+galaxies (Sa-Sb)... Contours of equal 
+density are given. The continuum line g-i =
+-0.0585 *(M<sub>i</sub> + 16) + 0.78 represents the empirical separation between the 
+red-sequence and the remaining galaxies.
+The dashed line illustrates the effect of the limiting magnitude r=17.77 of the 
+spectroscopic SDSS database, combined with the
+color of the faintest E galaxies g-i ~0.70 mag.</i>."
+</p>
+<li> Be sure you understand this diagram and what it tells us about galaxies.</p>
+
+</td><td align=right>
+<a href="https://drive.google.com/file/d/1fqFofMNFbjrgmZshsj24RJ3giP4vWMM_/view" target=new>
+<img src="https://drive.google.com/file/d/1fqFofMNFbjrgmZshsj24RJ3giP4vWMM_/view" height=320>
+</a> <br>
+<a href="http://adsabs.harvard.edu/abs/2010A%26A...517A..73G" target=new>Figure 3 from Gavazzi
+<i>et al</i> (2010)</a><br>
+</td></tr>
+</table></p>
+
+<li> Compare this diagram to the one you made in the last part. In what ways
+is it different/similar?</p>
+<hr>
+
+
+
+<b> Comparison of the ALFALFA and Coma supercluster populations</b></p>
+
+Now, you are ready to make a color-magnitude diagram for the α.40-SDSS sample. We suggest that you make a first plot with free scaling and a second using the scaling x-axis (-14, -24), y-axis (-1.0, 2.0). Notice that a few points drop out, but some of them may be reflect some failure in the data anyway. Large samples are powerful because they allow us to focus on the overall trends in the sample population. (On the other hand, at some point, we should probably check those outliers to see whether their deviation is real; what might be wrong?)
+
+Compare this diagram to the one you made in the last part. In what ways
+is it different/similar?</p>
+
+<p>Now compare with the Gavazzi CM
+       set the axes to be: x-axis (-16, -23.5), y-axis 
+       (0.0, 1.5). Note that when you restrict the scaling, the
+       plot contains 11343 points within the area; we
+       have lost (12469-11343) = 1126 out of 12469 = 9% of the points.</p>
+
+<li> &nbsp Compare the &alpha;.40 CMD with the one presented by <a href="https://drive.google.com/file/d/1fqFofMNFbjrgmZshsj24RJ3giP4vWMM_/view" target=new>Gavazzi <i>et al</i>
+ (2010)</a>. Explain
+       the differences in terms of the galaxy populations included in the
+       two datasets and the depth of the samples.</p>
+<!--
+<b><font color=#cc0f14>
+ALFALFA clearly is biased AGAINST the red cloud. It also seems to contain more luminous blue galaxies than
+Gavazzi et al
+</font></b></p>
+-->
+<br>
+
+
+
+
+<br>
+<hr>
+<font color=#008000><i>Last modified: Mon Jun 22 07:29:06 EDT 2015
+</i> by becky </font>
+</body>
+</html>

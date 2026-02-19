@@ -1,0 +1,9 @@
+http://python-astro.blogspot.mx/
+
+https://alexandria.astro.cf.ac.uk/Joomla-python/index.php/week1-pycalc
+
+http://nbviewer.ipython.org/urls/ttt.astro.su.se/~trive/teaching/tools-package/PlottingWithMatplotlib.ipynb
+nbviewer.ipython.org/urls/ttt.astro.su.se/~trive/teaching/tools-package/NumpyArrays.ipynb
+https://astro.uni-bonn.de/~dapple/imprs/
+
+

@@ -1,0 +1,731 @@
+<html>
+<head>
+<title>ALFALFA IDL documents</title>
+</head>
+
+<body bgcolor="ffffff">
+
+<center><p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600">
+</center>
+
+<h2><font color=#cc0f14>The AGC</font></h2>
+
+The AGC, or Arecibo General Catalog, contains information about the positions,
+sizes, magnitudes, morphologies, redshifts and HI properties of lots of
+galaxies. It is very heterogeneous, so it shouldn't be used as the ultimate
+authority on anything! But, here is some info on its status and 
+a summary of what it contains; formats
+refer to the ASCII text version available to the CU EGG.</p>
+
+<font color=#cc0f14><b>Latest news</b></font><br>
+<b>This version dates from 2018.... BUT ALWAYS ASK MARTHA</b> &nbsp &nbsp
+The June 2018 version is more-or-less up to date in the north out to cz=18000,
+as of May 2018, but since new objects get added fairly regularly,
+it is not perfectly up to date. We make changes as time permits, and make big
+updates 1-2 times per year. A serious caveat: to avoid duplicate entries, our algorithm
+does not add an object to the AGC if there is already one there within 2'.
+So it is probably not complete in crowded regions.</p>
+
+<br>
+<font color=#cc0f14><b>Even this documentation is incomplete! And imperfect! For more details,
+you will have to ask Martha.</b></font></p>
+
+<br>
+<font color=#cc0f14><b>Remember the 
+<a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agccontract.php">
+rules</a> of use.</b></font></p>
+
+<pre>
+AGC DOCUMENTATION FILE:      15 June 2018    by mph
+
+           THIS IS A PRIVATE VERSION. YOU SHOULD NOT BE USING IT UNLESS
+	   MARTHA OR RICCARDO SPECIFICALLY INSTRUCTED YOU TO USE THIS ONE.
+	   UNDER ABSOLUTELY NO CIRCUMSTANCES SHOULD YOU COPY THIS VERSION!!!
+
+                          The AGC files:
+
+     The AGC files contain all of the information from D. Burstein's version
+     of the UGC plus all galaxies with known redshift from the privately
+     circulated catalogs of J. Huchra, L. daCosta and Giovanelli-Haynes.
+     The file also contains HI data from the Fisher and Tully catalog
+     (published) and other selected sources. The status of coverage is
+     as follows:
+         (For details, see AGCUPDATES.DOC)
+
+     **********************************************************************
+     **** Many of the data contained herein are not published.        *****
+     **** Many parameters are proprietary and should not be cited     *****
+     **** or used without permission.                                 *****
+     **** Please note that this file is not for public distribution   *****
+     **** without the expressed consent of R. Giovanelli or M. Haynes *****
+     **********************************************************************
+     I. AGC.NORTH  -  Northern celestial hemisphere: Dec. >= 0.
+          - all UGC galaxies included
+          - other galaxies with redshifts from Huchra (Mar89 version)
+          - all CGCG galaxies in PP region
+          - all CGCG galaxies in +12d strip
+          - selected other CGCG fields
+          - cluster galaxies from Dressler for most clusters
+          - HI from all of our sources, plus FT plus others (see list below)
+          - HI from Richter and Huchtmeier
+          - many, many entries from NED and SDSS (via NED); generally
+            restricted to cz < 180000 km/s
+
+    II. AGC.SOUTH  -  Southern celestial hemisphere:  Dec < 0.
+          - all UGC galaxies
+          - any galaxy with known redshift from Cfa (Mar89 version)
+          - additional galaxies with redshifts from LN da Costa and
+            Dressler's G.A. Survey and Pellegrini list.
+          - MCG galaxies from Schuster-Haynes list (18-4 hours)
+          - all MCG galaxies larger than 1.3
+          - Galaxies from Corwin's ESGC
+          - Galaxies in ESO catalog
+          - HI from FT and 300' and 140', Effelsberg and Nancay surveys: 
+            May88(140),Aug88(300),Feb89(140),Jul89(140),Oct89(E),Mar90(N),
+            Sep90(N).
+          - HI from Richter-Huchtmeier compilation
+          - entries from NED (not as complete as north)
+
+---------------------------------------------------------------------------------
+-------  LOCATION:   Master versions of all files are found in ------------------
+-------  the directory:  /home/dorado3/galaxy/esp3/cats        ------------------
+---------------------------------------------------------------------------------
+    There are several other ancillary files that work with the
+    AGC files to include additional information (these are not
+    yet released).
+    AGC.NUMBERS contains records of last AGCNUMBER assigned per
+                hour of RA for north and south separately (see below -
+                BUT DO NOT ALTER THIS FILE WITHOUT CONSULTING MH!)
+
+*****  AGC CONTENTS AND FORMAT FOR  agc.north   AND  agc.south  ***********
+
+     Variable name     Format     Data Content
+
+       AGCNUMBER        I6        AGC entry number. See note 1.
+                                  1-12943:     UGC galaxy (corresponds to UGC number)
+                                  20001-33656: ESO sequence number
+                                  100000 - 399999 northern hemisphere
+                                  400000 - 699999 southern hemisphere
+                                  700000 - 999999 northern hemisphere
+       WHICH            A1        Identifier for multiple systems: a,b etc.
+       RAH              I2        R.A. hours
+       RAM              I2        R.A. minutes
+       RAS10            I3        R.A. seconds *10.
+       SIGN             A1        Dec. sign
+       DECD             I2        Dec. degrees
+       DECM             I2        Dec. minutes
+       DECS             I2        Dec. seconds
+       A100             I5        Blue major diameter *100. See note 15. 
+       B100             I4        Blue minor diameter *100.
+       MAG10            I4        Zwicky magnitude *10. or RC3 ApparentBmag for decl<-3. See note 15
+       INCCODE          I2        Nilson's inclination code
+       POSANG           I3        Nilson's position angle (or other measure on same system)
+       DESCRIPTION      A8        Morphological description
+       BSTEINTYPE       I3        Burstein type code  (see gallib/sgal/typeesgc.f)
+       VOPT             I6        Radial velocity (helio)
+       VERR             I3        Error in radial velocity
+       EXTRC3           I5        Galactic extinction *1000 either directly from RC3
+                                  or derived from nearest RC3 galaxy, following
+                                  Burstein&Heiles (1978) & RC3. See note 17.
+       EXTDIRBE         I5        Galactic extinction ext*1000 from the DIRBE dust
+                                  maps following Schlegel et al. 1998
+                                  Value is: E(B-V) in mags (*1000). See note 17.
+       VSOURCE          I3        Source for radial velocity measurement
+                                  (follows Huchra for < 50; > 50 = H-G, probably out of date;
+                                  -99 stands for NED; other negatives: see note (7).)
+       NGCIC            A8        NGC or IC number from Dressel and Condon
+                                  or Fisher and Tully or other name from ZCAT
+                                  or MGC name abbreviated (SEZ strip) as
+                                     MsLNNMMM where M denotes MCG
+                                                   s is sign of strip
+                                                   L indicates 6 deg strip (as in MCG)
+                                                   NN is which field along strip
+                                                   MMM is galaxy entry number in field.
+                                  The MCG would have listed sLLNNMMM.
+       FLUX100          I5        Observed (uncorrected) 21 cm line
+                                  flux (in Jy-km/s) * 100.
+       RMS100           I4        Rms noise in mJy *100.
+       V21              I5        21 cm heliocentric velocity.
+       WIDTH            I4        21 cm profile width.
+       WIDTHERR         I2        Error in 21 cm width.
+       WIDTHCODE        A4        Code for type of width measurement. See
+                                  note (2).
+       TELCODE          A1        Telescope code. See note (3).
+       DETCODE          I1        Detection code. See note (4).
+       HISOURCE         I2        Code for source of 21 cm data. See note (5).
+       STATUSCODE       I1        Code for status of data. See note (6).
+       SNRATIO          I3        Signal-to-noise ratio*10 for 21 cm feature
+       IBANDQUAL        I1        Quality of I-band data. See note (8)
+       IBANDSRC         I2        Code for source of I-band data. See note (9).
+       SDSSFLAG         I1        FLAG indicating present in SDSS crosstable. See note(10).
+       ICLUSTER         I2        Cluster membership. See note (11).
+       HIDATA           I1        FLAG for inclusion in HI database (not yet
+                                  implemented). See note (12).
+       IPOSITION        I1        A flag to indicate the source of the coordinates
+                                  used in the AGC. See note (13).
+       IPALOMAR         I1        A flag to indicate that long slit spectroscopy has
+		 		  been obtained at Palomar. See note (14).
+       RC3FLAG          I1        A flag to indicate that the galaxy is included
+                                  in the RC3. See note (15).
+       IROTCAT          I1        Included in rotcurve.cat rotation curve database
+                                  See note (16)
+       NEWSTUFF         I2        UNUSED
+
+AGC records are now 125 characters in length:
+
+      CHARACTER DESCRIPTION*8,NGCIC*8,WHICH*1,TELCODE*1,WIDTHCODE*4,
+     *  SIGN*1
+      INTEGER AGCNUMBER,RAH,RAM,RAS10,DECD,DECM,DECS,
+     *  A100,B100,MAG10,INCCODE,POSANG,BSTEINTYPE,
+     *  VOPT,VERR,EXTRC3,EXTDIRBE,VSOURCE,
+     *  FLUX100,RMS100,V21,WIDTH,WIDTHERR,
+     *  DETCODE,HISOURCE,STATUSCODE,SNRATIO,
+     *  IBANDQUAL,IBANDSRC,SDSSFLAG,ICLUSTER,HIDATA,
+     *  IPOSITION,IPALOMAR,RC3FLAG,IROTCAT,NEWSTUFF
+   
+      READ(10,125) AGCNUMBER,WHICH,RAH,RAM,RAS10,SIGN,DECD,DECM,DECS,
+     *  A100,B100,MAG10,INCCODE,POSANG,DESCRIPTION,BSTEINTYPE,
+     *  VOPT,VERR,EXTRC3,EXTDIRBE,VSOURCE,NGCIC,
+     *  FLUX100,RMS100,V21,WIDTH,WIDTHERR,WIDTHCODE,TELCODE,
+     *  DETCODE,HISOURCE,STATUSCODE,SNRATIO,
+     *  IBANDQUAL,IBANDSRC,SDSSFLAG,ICLUSTER,HIDATA,
+     *  IPOSITION,IPALOMAR,RC3FLAG,IROTCAT,NEWSTUFF
+  125 FORMAT(I6,A1,2I2.2,I3.3,A1,3I2.2,I5,2I4,I2,I3,A8,I3,I6,I3,
+     *      2I5,I3,A8,I5,I4,I5,I4,I2,A4,A1,i1,I2,I1,I3,I1,I2,I1,
+     *  I2,5I1,I2)
+
+Note 1  The UGC is the Uppsala General Catalog (Nilson, 1973); a copy
+        is available in the reading room. Further information on the entries
+        can be obtained from reading Nilson's introduction to his catalog.
+        The ESO catalog is a version based on Vince Ford's catalog and
+        the entry number is simply a sequence number within that catalog
+        (note it is meant to be used only as a pointer privately).. The
+        ESGC catalog has been privately communicated by Harold Corwin.
+        A permanent AGC is assigned when an object is added to the catalog.
+        Sequencing is not retained if a position is updated, but assignment
+        of numbers is made per hour of right ascension:
+        100001-109999  0-1h north     400001-409999 0-1h south
+        110001-119999  1-2h north     410001-419999 1-2h south
+         etc. until
+        330001-339999 23-24h north    630001-639999 23-24h south
+        ****  NOTE
+        Effective 2007 Jan 04
+        Numbers above 700000 are used for objects in the north where there are
+        >10000 galaxies per hour of RA. These are added sequentially without
+        consideration of RA. ****
+        The last number assigned per hour per catalog is listed in
+        AGC.NUMBERS and AGC700000.NUMBERS
+        Assignment of new numbers is done regularly using the program
+        assign.f. Additional entries to the AGC should be entered
+        first with sequence number "0". Assignment of new numbers should
+        only be performed by MH.
+
+Note 2  Widths measured as follows:
+               Code         Measurement
+              ' M50'        50% of the mean flux density
+              ' P20'        20% of the peak flux density
+              ' P50'        50% of peak flux density
+              '5M2P'        average of (50% of mean) and (20% of peak) widths
+              '2P50'        50% of each of the two peaks (if double-horned)
+              ' F50'        50% level of fit to slope on either side 
+			    (using 1991 msr algorithm .825 .5 .5 .2 .5)
+              ' A50'        Similar to above, but using IDL_ALFALFA code
+
+Note 3  Telescope code:
+               0  - Arecibo circular feed - no corrections applied
+               1  - NRAO 91 m. - no corrections
+               2  - Bonn 100 m. - no corrections
+               3  - NRAO 42 m. - no corrections
+               4  - Arecibo flat feed. - no corrections
+               5  - Nancay. - corrected flux
+               6  - Parkes. - observed flux
+               7  - Hybrid - corrected flux
+               8  - Optical, or else unspecified radio dish (see Note 5,
+                                                             HI Source = 69)
+               9  - No observations made
+               A  - Arecibo non-detection WITHOUT known optical redshift
+               B  - Arecibo flat feed, corrected flux (normally mapping)
+               C  - Nancay, uncorrected flux (we should change this)
+	       D  - VLA
+	       E  - WSRT
+	       F  - Australia Compact Array
+               G  - Arecibo Gregorian, 3.5arcmin beam, uncorrected.
+               H  - HIPASS/Parkes multibeam
+               I  - HIJASS/Jodrell multibeam
+               J  - AO/ALFA
+               K  - GBT
+               L  - ATCA
+               M  - GMRT
+
+Note 4  HI detection code:
+               0  - not detected/not observed
+               1  - detected.
+                    This is equivalent to CODE=1 in the ALFALFA scheme.
+               2  - marginally detected; everything uncertain.
+                    This is equivalent to CODE=3 in the ALFALFA scheme
+               3  - detection, but inadequate for FT purposes. This
+                    may mean width cannot be measured because of baseline
+                    or noise on edge, or the profile is very asymmetric or
+                    weird, or confusion is suspected. In this case, the flux
+                    and velocity are usually measured ok, but one is not
+                    certain what they all refer to.
+               4  - HI profile shows absorption. Flux certainly affected.
+               5  - Confused with obvious optical companion (i.e. confusion
+                    is certain).
+               6  - This means the width has been BOXCAR+HANNING not just simple
+                    Hanning. NOTE THIS IS AN UPDATE TO PREVIOUS DOCUMENTATION!
+               7  - Used for ALFALFA detections to indicate an object which is
+                    detected at low SN but with apriori redshift. This is 
+                    equivalent to CODE=2 in the ALFALFA scheme.
+               8  - Profile obtained by some of us, but parameters not final
+               9  - preliminary measurement
+
+Note 5  Source for 21 cm data:
+              -3  - Misc from NED
+              -2  - Entry from RC3
+              -1  - Entry from Richter catalog of March 1989. You must go
+                    look this reference up in the catalog and then in the
+                    original publication to be sure the number is right.
+               2  - Fisher and Tully 1981 Ap. J. Suppl. 47, 139.
+              10  - Hoffman et al. 1986, preprint
+		    Hoffman et al. 1994 (great wall preprint) etc.
+              11  - Bothun et al. 1985, A.J., 90, 2487  (redshifts only)
+              12  - Thuan et al. 1987, Ap.J.(Lett.) 315, L93 (redshifts
+                    only),Thuan and Seitzer, Thuan and Schneider
+              13  - Huchtmeier, various publications from old days
+              14  - Hoffman, Lewis, Helou & Salpeter 1987  (priv.comm.)
+                    (selected Sa's & Sc's only)
+                    Misc Hoffman et al. publications (mainly Virgo)
+              15  - Giovanardi 1987 (priv.comm.): selected Sa's & Sc's
+              16  - Lewis, Helou and Salpeter 1986, Ap.J.Suppl., 59, 161
+              17  - Salzer, Gavazzi and Murray 1989, preprint.
+              18  - Eder et al. 1989 Ap.J. 340, 29. (Dwarfs in PP)
+                    Eder, Schomber LSB's 2000 ApJSupp 
+              19  - Schneider et al. 1990 Ap.J.Suppl. 72, 245.
+                    Note fluxes here are corrected for pointing because
+                    of poor coordinates.
+                    Schneider et al. 1991 Ap.J.Suppl. 
+              20  - Balkowski et al. ZOA reference
+              21  - Chamaraux, south strip survey, private comm.
+              22  - Misc pub by Gavazzi
+                    Gavazzi 1989 ApJ 346, 59.
+                    Scodeggio and Gavazzi 1993 ApJ 409 110
+                    Gavazzi et al 2000 Astro-ph
+                    Also GOLDMINE compilation
+              23  - Eder, Giovanelli and Haynes 1990 (High L S0's)
+              24  - B.Williams and Lynch, 1991, AJ 101, 1969
+              25  - Fouque et al. HI Survey of SGC sample (1990, AASup 86,473)
+		      Bottinelli et al. 1992 AASup 93, 173.
+              26  - Misc pubs by Lu et al.
+                    Hoffman, Lu and Salpeter 1991  (Gas Rich dwarfs outside LScl)
+		    Lu Ph.D. thesis
+	      27  - Misc pubs by Bothun et al.
+		    Bothun et al. (Coma bubble) 1992 preprint
+                    Bothun et al. GA region ApJ 388 253
+              28  - Entry in RC3
+              29  - HI data from Mathewson et al. (1992) ApJS  81, 413. (Sheriff's data)
+              30  - MSR private comm early types
+              31  - Misc pub by Mould et al.
+                    Mould et al northern clusters ApJ 409 14
+              32  - Freudling A+AS 
+              33  - Pantoja et al 1994 AJ108
+		    Pantoja et al 1997 AJ113
+              34  - Gallagher, Mathews, etc southern dwarfs
+  		    Mathews and Gallagher 1996, AJ 111, 1098
+              35  - Dickey, J.D. 1996 AJ (Hercules)
+              36  - Theureau et al. 1998 A&AS 130, 333.
+                    diNella et al. 1996 A&AS 118, 311
+              37  - WHISP database or publications:
+		       Kamphuis et al, 1996, A&AS 116, 15.
+                    Also WSRT 
+                       Braun et al.
+              38  - Rosenberg & Schneider 2000 ApJS 130, 177  (ADBS)
+                    Note that parms can either be from ADBS or VLA obs.
+                    Also AHISS Zwaan et al 1997 
+                    Note that the fluxes for AHISS are unclear as they
+                    give MH and don't say how they calculated distances, Hnot etc.
+              39  - HIPASS (Parkes multibeam)
+                    HICAT Meyer et al. 2004
+                    BGC Koribalski et al 2004
+                    HIZOA Donley et al 2005
+              40  - Huchtmeier/Karachentsev dwarfs
+                    Huchtmeier et al. 2000 A&AS 141, 469
+                    Huchtmeier et al. 2000, A&AS 147, 187.
+                    Huchtmeier et al. 2005, A&A 434, 887
+                    Huchtmeier et al. 2009, A&A 506, 677
+              41    Misc LSB pubs by KO & friends
+                    Monnier Ragaigne et al. 2003 A&A 408, 67
+                    Conselice et al 2003 ApJ 591
+                    or NIBLES 2016 stuff
+              42    HIJASS (Jodrell multibeam)
+              43    various GBT 
+                    Garland et al. 2004
+              44    Slaz et al. KISS
+              45    Other ALFA: AGES, ZOA etc
+              46    Chengalur, Begum, et al. GMRT obs
+              47    2MTF 
+                    Masters+ 2014 (GBT); Hong+ 2015(Parkes)  --- this in progress....
+                    
+
+              50  - Haynes and Giovanelli 1984, A.J., 89, 758
+              51  - Giovanelli and Haynes 1983, A.J., 88, 881
+                    Haynes and Giovanelli 1986, Ap.J. (to appear) VIRGO
+              52  - Haynes and Giovanelli 1986, A.J.  (Pisces-Perseus)
+                    + data added in November 1986
+              53  - Giovanelli and Haynes 1985, Ap.J., 292, 404
+                                          (A1367/Coma, A2147/2151)
+              54  - Bicay and Giovanelli  1986, A.J. 91, 705-750
+                                          1987, A.J. 93, 1326
+                                          (Cancer region)
+              55  - Chincarini et al. 1979, A.J., 84, 1500 (N5416 group)
+                    Giovanelli and Haynes  unpublished data in N5846 region
+              56  - Giovanelli and Haynes  Green Bank 300-foot data (both
+                                           high and low declinations)
+                    Haynes et al. 1988, A.J. 95, 607. - PP north
+                                           + unpublished 10-22 hours.
+              57  - Freudling, Haynes, Giovanelli   A.J. Dec. 1988
+                                           Hercules Supercluster
+              58  - Haynes 1981, A.J., 86, 1126  (HI streams)
+                    Giovanelli and Haynes  unpublished maps of large angular
+                                           diameter galaxies
+              59  - Magri and Haynes       unpublished RSA Sa's and Sc's
+              60  - Haynes                 ZoA and IRAS extension
+                                           (not included yet)
+              61  - Giovanelli and Helou   IRAS galaxies (not included yet)
+              62  - Freudling, Haynes, Giovanelli   Hercules Supercluster
+              63  - Cast of thousands Sc project. (This will be final code)!
+              64  - Cast of thousands Abell clusters project.
+              65  - Marcio's +12d slice
+              66  - Karachentsev thin galaxies.
+                    See also Kara Astro-ph/0107058 for compilation
+                    (may also include a few done by ORCs rather than HI)
+                    May also include Mathews et al flatgals in Kara compilation
+              67  - BCD/LSB/high M(HI)/L objects by vanZee, Haynes and Giovanelli.
+              
+              Next ones to be recoded as Mathewson:
+              67  - Preliminary results from Parkes/SS0 surveys. Some
+                    objects may be optical V(rot) not HI (can't tell from
+                    DSM's bookkeeping...)
+              68  - Preliminary results from 1988 GB surveys. Note that
+                    parameters may be changed later. (Both 140 and 300')
+              69  - Unspecified (i.e. an HI redshift is listed, and the
+                                 rest of the HI parameters will be entered
+                                 when we get around to it....)
+                    Starting in 2011, check NED
+              70  - H293
+              71  - H304
+              72  - AO band
+                       Apr-May 2001  (BC)
+                       Sep 2001      (CS & BC: PPS)
+                       Nov 2001      (CS & BC: PPS)
+              73  - our VLA stuff
+              74  - Higher redshift AO observations
+                       March,October 2003    (BC & JG: SDSS)
+              75  - ALFA a1946 or a2010(!)
+              76  - Misc AO Gregorian, including A2010 followup
+                    a1904 Jan 2005 (Leo Group)
+              77  - GASS project
+              78  - ALFALFA LBW followup
+
+Note 6  21 cm data status:
+               0  - No data.
+               1  - Published.
+               2  - Unpublished but available.
+               4  - Observed by source in reference but not available
+                    to public.
+               5  - Obtained from on-line compilation, such as GOLDMINE etc,
+                    may not be original source.
+
+Note 7  Extra codes used for velocity where not in ZCAT
+
+          **  Watch out that code "6" is from ZCAT, misc AO fluxes (21cm!)
+
+             -11  - From McGraw-Hill observations - PP only for now
+             -12  - MDM Sc observations; maybe very rough; or Palomar rot curve.
+             -13  - Pierre, private comm.
+             -14  - (Need to check)
+             -15  - From lists sent by Pellegrini
+             -16  - From RC3
+             -17  - Palomar redshifts, RG, GW, SS
+             -18  - Palomar redshifts: Scodeggio, RG
+
+             -20  - Willick et al. (1990) ApJ 355, 393.
+             -21  - Moss and Dickens 1988, MN 232, 381.
+             -22  - Lucey et al. 1991, MNRAS 248, 804.
+             -23  - Cappi et al. 1991, AASupp 88, 349.
+             -24  - Beers et al. 1991, AJ 102, 1581.
+             -25  - Capelato et al. 1991, AASupp 90, 355.
+             -26  - from Markarian listing. 
+             -27  - from Mathewson et al. 1992, ApJS 81, 413.
+		    or MFB96 (ORCs)
+             -28  - RC3 
+             -29  - Courteau thesis
+             -30  - Pinkney et al. 1993, ApJ (A2634)
+	     -31  - Bottinelli et al 1992 AASup 93, 173.
+		  - Quintana,Fouque and Way 1994 A&A 283, 722
+             -32  - Tarenghi et al 1994 AJ 107, 1659. (Hercules)
+             -33  - Palomar rotation curves
+                    Vogt or DD
+	     -34  - Thorstensen et al. CFA slice fainter 1995 preprint
+             -35  - Marco's work
+	     -36  - SSRS2
+             -37  - Updated ZCAT '99 Falco et al. misc
+	     -38  - PSC-zed 
+             -39  - Gavazzi et al 2000 Astroph
+             -40  - 2DF data release 7/01
+             -41  - RESOLVE (sep11)
+             -42  - 2MRS compilation (Huchra et al. 2012)
+
+             -98  - SDSS SQL/explore
+             -99  - NED
+
+Note 8  IBANDQUAL - I1 - quality/status flag:
+
+        0  -  Not observed
+        1  -  Observed with photometric high quality
+               (zpc*error < 0.05 mag)
+        2  -  Observed; zpc error 0.05-0.10 mag
+        3  -  Observed; zpc error 0.10-0.20 mag
+        4  -  Observed; zpc error > 0.20 mag
+
+        6  -  Fit performed on extant image is poor; image itself prob ok.
+	      Usually means that fit cannot be done well because of bar,
+	      face-on, asymm, etc. Correponds mostly to Q_EFIT=4.
+        7  -  Unacceptable for imaging because of superimposed star,
+              wrong morphology, etc.
+        8  -  Observed; status unknown (data not yet
+               reduced or unknown from other source)
+        9  -  Must be reobserved for reasons other than poor
+              photometry. Examples are:
+                1) Object too close to edge of frame
+                2) Image is trailed significantly
+                3) Background level is too high (moon)
+                4) Bad column of CCD passes through galaxy.
+
+     *zpc = nightly photometric zero-point constant
+
+Note 9  Source for I-band ccd data
+       01 - Pierce and Tully, 1988Ap.J. 330, 579
+       02 - Bothun and Mould
+       03 - Willick (Pisces-Perseus)
+       04 - Courteau 
+       05 - Mathewson et al.
+       06 - Han 1992 ApJS 81, 35
+       07 - Bernstein et al. (us!) Coma paper
+
+       50 - Sc primary sample (edge-ons only!)
+       51 - Pisces-Perseus sample
+       52 - Hercules data
+       53 - Within field of Sc2 images (This changed 11/30/00)
+       54 - Various multicolor (not I) from KPNO/CTIO
+            e.g. Rband face/edge, BVR/Halpha Sa's etc.
+
+       60 - included on Sc2 skyfit tapes  (jan98.agc)
+       61 - Jeremy
+       62 - Archive of multicolor (not I) from KPNO/CTIO
+            e.g. Rband face/edge, BVR/Halpha Sa's etc.
+
+       90 - in final SFI table = opt980107 (agc980107)
+       91 - in final MFB reprocessed table = mfbagc97
+            (not id'd if also in SFI table)
+       92 - in final DD table  (that's Danny "Arlo" Dale)
+       93 - in final MS table  (that's Marco Scodeggio)    
+       94 - in SF2 photometric sample (NB not final: beware!)
+
+Note 10: Flag indicating membership in SDSS crosslist.
+        THIS IS IN PROGRESS: Dec 2009
+        This reused Dec 2009 to cross reference; was previously out of 
+        date IRAS flag used in 1980s, aka IRASFLAG
+
+Note 11: Cluster membership. 
+       BEWARE: Code assignments may not be up to date! If you wish to
+       use this for scientific purposes, discuss with MPH.
+       The code refers to the cluster according to the following:
+       1 -    76   003712.0  063022  .0416   4         ad     001111
+       2 -   119   005351.0 -013203  .0440  21  778    ad     001001
+       3 -   151   010623.9 -154129  .0526   2         ad     000000
+       4 -   154   010821.0  172426  .0658  11  862    ad     000010   
+       5 -   168   011233.7 -000144  .0452  13  581    ad     001111
+       6 -   189   012104.7  012353  .0335   3                000101
+       7 -   194   012302.3 -014612  .0178  60  435 1  ad     111001
+       8 -   260   014858.3  325523  .0348   2                000101
+       9 -   262   014957.0  355420  .0161  38  415 1         100101
+      10 -   347   022244.1  413901  .0187  19  586 1         100001
+      11 -   376   024240.1  363920  .0489   1         ad     001110
+      12 -   397   025409.0  154515  .0325   6                000101
+      13 -   400   025500.5  055010  .0232  21  423 1  ad     111111
+      14 -   426   031520.4  412013  .0183 108 1308 1         100001
+      15 -   484   041354.2 -074732  .0386   4                000001
+      16 -   496   043117.8 -132144  .0320  32  657    ad     011001
+      17 -   539   051353.7  062441  .0205   3      1  ad     111111
+      18 -   548   054503.0 -253840  .041    9         ad     001000
+      19 -   569   070523.6  484233  .0196  12  444 1         100001
+      20 -   576   071720.0  555000  .0381  47  914           000001
+      21 -   592   073953.5  092956  .0624   2         ad     000010
+      22 -   634   081029.2  581221  .0267  35  309 1         100001
+      23 -   754   090625.5 -092650  .0528  35 1048    ad     000000
+      24 -   779   091649.0  335914  .0226  13  755 1         100101
+      25 -   838   093433.8 -044722  .0507   1         ad     000000
+      26 -   957   101121.4 -004005  .044    1         ad     001110
+      27 -   978   101758.0 -061630  .0527   2         ad     000000
+      28 -   979   101756.6 -073830  .055    2         ad     000000
+      29 -   999   102040.8  130621  .0318   2                000101               
+      30 -  1016   102426.7  111407  .0321   2                000101
+      31 -  1060   103427.7 -271626  .0114  78  676           000001
+      32 -  1069   103721.3 -082135  .063    2         ad     000000
+      33 -  1139   105529.2  014636  .0383   2         ad     011111
+      34 -  1142   105816.8  104930  .0353  35  417    ad     011111
+      35 -  1177   110646.4  215812  .0316   2                000101
+      36 -  1185   110808.6  285709  .0304   5  785 1  ad     111111
+      37 -  1213   111349.2  293258  .0468  12  598 1         100100
+      38 -  1228   111850.7  343650  .0350   6  306 1         100101
+      39 -  1257   112325.5  353643  .0339   1                100101
+      40 -  1267   112520.5  270841  .0321   2                100101
+      41 -  1314   113205.7  491932  .0341  16  701 1         100001
+      42 -  1367   114156.1  200723  .0215  75  832 1         100101
+      43 -  1377   114419.0  560122  .0514  13  488    ad     000000
+      44 -  1631   125010.9 -131003  .0508   4         ad     000000
+      45 -  1644   125436.5 -170555  .0449   3         ad     001000
+      46 -  1656   125723.5  281510  .0232 226  880 1  ad     111111
+      47 -  1736   132408.0 -265145  .035    2         ad     011001
+      48 -  1836   135858.0 -112244  .0363   1                000001
+      49 -  1837   135903.5 -105544  .0376   1                000001
+      50 -  1913   142429.1  165411  .0533   1         ad     000010
+      51 -  1983   145025.6  165726  .0441   8  433    ad     001110
+      52 -  1991   145210.3  185036  .0586   2         ad     000010
+      53 -  2040   151015.1  073721  .0456   1         ad     001110
+      54 -  2052   151415.7  071145  .0348  37  576           000101
+      55 -  2063   152036.6  084925  .0337  21  521    ad     011111
+      56 -  2147   160002.1  160252  .0356  30 1148 1         100101
+      57 -  2151   160258.0  175314  .0371  42  887 1  ad     111111
+      58 -  2152   160306.8  163515  .0374  22 1244           111111
+      59 -  2162   161029.6  294010  .0320   4                000101
+      60 -  2197   162628.4  410112  .0303  46  593 1         100001
+      61 -  2199   162651.2  393815  .0303  70  807 1         100001
+      62 -  2247   165157.8  813919  .0392  14  370           000001
+      63 -  2256   170635.8  784703  .0601  15 1257    ad     000000
+      64 -  2572   231555.5  182805  .0395   4                000101
+      65 -  2589   232127.3  163314  .0421  13  602    ad     001110
+      66 -  2634   233550.6  264532  .0312  17  899 1  ad     111111
+      67 -  2657   234220.2  085237  .0414  12  667    ad     001110
+      68 -  2666   234824.0  265241  .0265  15  261 1         111111
+      69 -  3381 
+      70 -  3407 
+      71 -  3528 
+      72 -  3558 
+      73 -  3656 
+      74 -  3667
+      75 -  2295 
+      76 -  3744
+      77 -  2457
+      78 -   114
+      79 -   160
+      80 -   505
+      81 -   295
+      82 -  2806
+      83 -  3193
+      84 -  3266
+      85 -   671
+      86 -  3408
+      87 -  3581
+      88 -  3571/2
+      89 -  3564/6
+      90 -  3716
+      91 -  2022
+      92 -  2593
+      93 -  2670
+      94 -  2870
+      95 -  2877
+      96 -  4038
+      97 -  2029
+      98 -  2218
+      99 -  1413
+      -1    -507   012048.0  330000  .02     3500  7000 2
+      -2           081730.0  211400  .02     3000  7000 3
+      -3           115400.0  493000  .01    -1000  3000 5
+      -4           122818.0  124000  .01    -1000  3000 5
+      -5           140000.0  094900  .01     5000  9000 2
+      -6           150357.0  114800  .01    -1000  3000 5
+
+Note 12:  Flag indicating existence of digital spectrum.
+      1 -- Spectrum of galaxy in the EGG HI pointed observations digital archive
+      2 -- Spectrum available in ALFALFA archive (no ALFALFA 3s should be here)
+      3 -- 1+2 i.e., both (no ALFALFA 3s should be here)
+      4 -- Spectrum available in ALFALFA plus literature flux measurement
+
+Note 13:  It is beneficial to know where the coordinates listed in the
+AGC came from. This 1-digit code will allow us to identify the
+source and hence the expected accuracy of the position entered into the
+AGC. We should make use of this code in the future.
+      1 -- From measurements made using digital pad
+      2 -- From POSS prints with OVERLAY only (either 
+           OSU overlays or our own).
+      3 -- From DSS by DD
+      5 -- Found using SKYVIEW
+      6 -- Published positions
+           UGC objects: Cotton et al. 1999 ApJS 125, 409.
+
+      8 -- From SDSS SQL
+      9 -- NED positions with accuracy quoted to be <2"
+
+Note 14:  Identifier for existence of data in Palomar long-slit DBS
+database. 9 means marginal or suspect data. Now updated so that
+highest number from below is set in AGC:
+      1 -- From Vogt thesis sample
+      2 -- From Dale thesis
+      3 -- From Jore thesis or misc Palomar Sa's 
+      4 -- From Palomar band survey or other associated stuff
+      5 -- Included in MFB rotcurve database
+      6 -- TF scaling relations project (>= sep01), JD extinction etc 
+      7 -- High z ORC's, either Palomar or KPNO
+      8 -- Observed and detected but only 300 seconds or not extended
+           {This code not consistently implemented, but will be someday...}
+      9 -- ATTEMPT TO GET ORC FOUND NO LINES
+
+Note 15:  Flag for objects that are listed in the RC3. A cross reference
+file is maintained in /galaxy/rc3/rc3agc.cross. It should be accurate
+except in some cases of confusion in multiple systems. In July 00, we 
+updated magnitudes and diameters in the agc.south using RC3 scaling so
+that 
+   (a) for galaxies in the MCG strip with RC3FLAG=1 (-18<Dec<-3)
+   diameters come from D25 but are scaled to the UGC system, following
+   the introduction to the RC3.
+   (b) for all galaxies south of Dec<-3, magnitudes come from the RC3
+   (apparent Bmag as given). This added roughly 4400 new magnitudes.
+See mph/cats/rc3_mcg/ for details and logs.
+If RC3FLAG=2, the galaxy is in the RC3, but the magnitude is explicitly
+set to BTOT as given in the ESO-LV (should be the same as RC3, but just
+in case, we set the flag to indicate so).
+
+Note 16:  Flag that indicates entry in the rotcurve.cat database.
+      1 -- In database, with at least one V(R) available in the database
+           for which PolyEx is derived from Palomar/CTIO (i.e. our) ORC
+      2 -- In database, with at least one V(R) available in the database
+           for which PolyEx is derived from MFB ORC
+      3 -- In database, with at least one V(R) available in the database
+           for which PolyEx is derived from some other source
+      4 -- In database, with at least one V(R) available in the database
+           but not run through PolyEx fit.
+      8 -- In database with bibliographic reference only
+     [This code was performed on 25Jun02]
+
+Note 17:  The tabulated extinctions can be converted to I-band via
+          RC3:     A_B   ==>  ext_I = 0.45*extrc3
+          DIRBE   E(B-V) ==>  ext_I = 1.962*extdirbe
+          NOTE: THIS HAS NOT BEEN UPDATED LATELY!!! MANY OBJECTS MISSING THESE VALUES!
+</pre>
+<hr>
+<center>
+<font color=#cc0f14>
+This page maintained by members of the
+<a href="http://www.astro.cornell.edu/Galaxy/egg.html">Cornell
+ExtraGalactic Group</a>.
+</font></p>
+
+<font color=#008000>
+<b>Last modified: Fri Jun 15 15:45:23 EDT 2018 by martha</font>
+</center>
+
+</body>
+</html>

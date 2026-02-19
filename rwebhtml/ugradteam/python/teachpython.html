@@ -1,0 +1,180 @@
+<HTML>
+<HEAD>
+<TITLE>Python Tutorial</TITLE>
+</HEAD>
+
+<BODY bgcolor="ffffff">
+
+<h2> <font color=#008000>A Brief Introduction to Python</font></h2>
+
+<p>This page is intended to serve as an outline for the python REU discussion on
+Thursday, June 9, 2016, and as a useful reference for folks trying to learn python.
+<hr>
+<h3> Resources </h3>
+<p>There are lots of resources out there to help one learn python.
+<ul>
+<li> For the complete beginner, and for those with only a small amount of experience: 
+<a href="http://www.codecademy.com/tracks/python">http://www.codecademy.com/tracks/python</a>
+<li><a href="http://www.sthurlow.com/python/lesson01/">http://www.sthurlow.com/python/lesson01/</a> - This is another helpful tutorial for those who would like things explained in a slightly different way. This is more text and less actual coding than codecademy, and is a decent reference.
+<li> Another thorough textual reference is <a href="http://en.wikibooks.org/wiki/Python_Programming"> http://en.wikibooks.org/wiki/Python_Programming</a>
+<li> For intermediate problem solving, check out <a href="https://projecteuler.net/problems">https://projecteuler.net/problems</a>
+<li> Another excellent reference that includes lots of hands on workshops, and tutorials on how to do many astronomy related tasks is
+<a href="https://python4astronomers.github.io/index.html">Python For Astronomers</a>
+<li> Also at the intermediate level, for people who know idl but want to switch to python, this is a super helpful page that steps you through the switch to python (I've also linked it below): <a href="http://www.astrobetter.com/wiki/tiki-index.php?page=Python+Tutorial+For+Astronomers+Who+Use+IDL">http://www.astrobetter.com/wiki/tiki-index.php?page=Python+Tutorial+For+Astronomers+Who+Use+IDL</a>
+<li> For those who really know what they are doing, try learning more through data analysis (actually work on a data set). Some useful references include  <a href="http://docs.scipy.org/doc/scipy/reference/optimize.html">http://docs.scipy.org/doc/scipy/reference/optimize.html</a> which lists of algorithms to solve a problems, and the <a href="http://wiki.scipy.org/Cookbook">scipy cookbook</a>.
+</ul>
+Most of the code I write I don't go digging through tutorials to remember snippets of how
+to do things instead, I use google, old code, and some good reference websites as detailed below:
+<ul>
+<li>Google is usually the fastest way to get to your answer, so usually use google first.
+<li><a href="http://docs.python.org/2/tutorial/index.html">http://docs.python.org/2/tutorial/index.html</a> - this is the main python guide, and has everything you could want and more.
+<li><a href="http://stackoverflow.com/">http://stackoverflow.com/</a> - usually the best answers to questions are here. Google your question, then click on stackoverflow links.
+<li><a href="http://matplotlib.org/gallery.html">http://matplotlib.org/gallery.html</a> - whenever I want to make a complicated plot I look through the matplotlib gallery for something similar and copy the bits I need from the source code there. This is a super helpful resource.
+<li><a href="http://www.sthurlow.com/python/lesson01/">http://www.sthurlow.com/python/lesson01/</a> - Sometimes it's still useful to have a look back at lessons previously learned...
+<li>- I also find it very useful to search through old code using the grep command:
+<pre>grep 'bit of code I’m looking for' /directory/of/code/*</pre>
+<li> You can also check out Luke's python notes (under development): <a href="http://astro.cornell.edu/~leisman/main/helpfiles/pythonhelp.html">http://astro.cornell.edu/~leisman/main/helpfiles/pythonhelp.html</a>
+</ul>
+<p> Many (older) astronomers are used to using idl. There are lots of good resources for idl users
+who want to switch to python:
+<ul>
+<li><a href="http://www.astrobetter.com/learning-python-the-diy-way/"> http://www.astrobetter.com/learning-python-the-diy-way/</a> This points to:
+<li><a href="http://www.astrobetter.com/wiki/tiki-index.php?page=Python+Tutorial+For+Astronomers+Who+Use+IDL">http://www.astrobetter.com/wiki/tiki-index.php?page=Python+Tutorial+For+Astronomers+Who+Use+IDL</a> Which is a super useful tutorial for working through if you are an astronomer who used to use idl.
+<li><a href="http://www.astrobetter.com/wiki/tiki-index.php?page=Python+Switchers+Guide"> http://www.astrobetter.com/wiki/tiki-index.php?page=Python+Switchers+Guide</a> - lists related astronomy functions.
+<li><a href="http://mathesaurus.sourceforge.net/idl-numpy.html"> http://mathesaurus.sourceforge.net/idl-numpy.html</a> - a list of syntax differences between idl and python
+<li><a href="http://www.scicoder.org/mapping-idl-to-python/"> http://www.scicoder.org/mapping-idl-to-python/</a> - an amazing list of idl commands and how to execute them in python
+</ul>
+<hr>
+<h3> Some example code </h3>
+
+<p>Michael will talk through some example code, which can be downloaded <a href='https://drive.google.com/file/d/1AWrJtrlaEd55NhPPJcfNV9bdCYRFbkvj/view'>here</a> (if you prefer an ipython notebook) or <a href='Example.py'>here</a> (if you'd prefer just a normal python script). You can download the data used in the example <a href='https://drive.google.com/file/d/1SUB9CMa8Miav3qyiVuHzjoA5H91h6OlW/view'>here</a>. Note that there is also a nice <a href='https://drive.google.com/file/d/1evsZRh8jaGfFPXrRQ60re0aF51qUb9w0/view'>html page</a> with the same information, along with both a <a href='https://drive.google.com/file/d/1fM2R6_bxXNeS0NPQG8n3AT7UPwqviw07/view'>color</a> or <a href='https://drive.google.com/file/d/1cjXKx7YgSiqxi97cyH_DrjN3ssW6QNI7/view'>large print</a> pdf.
+
+<p> For those very new to python, one of the most important things to 
+understanding python syntax is that python is an object oriented programming 
+language. This means that python focuses around "objects," like say a list of
+numbers:
+<pre>
+>>> mylist = [1,2,3,4]
+</pre>
+mylist is a list object, which has certain properties and can be manipulated in certain ways.
+These manipulations, called methods, are properties of the list object, and thus are 
+accessed by calling object.method(). So, for example, if you wanted to add the value 5 to the list, you
+do:
+<pre>
+>>> mylist.append(5)
+[1,2,3,4,5]
+</pre>
+
+In addition to methods <em>of</em> objects, you also can have functions that operate <em>on</em> objects. An example of this is if I want to know the length of mylist I can use the length
+function:
+<pre>
+>>>len(mylist)
+5
+</pre>
+<p>With this in mind, have a go at Michael's example and the example exercises below. Good luck!
+
+<hr>
+<h3> Demonstration exercises</h3>
+
+Here are some sample exercises to work through. They demonstrate many techniques that
+we use all the time. 
+
+<h4> Beginner Level </h4>
+<p> This exercise is designed for those who are fairly new to python and coding
+in general. It asks you to read in a list of numbers from a file and to write an
+algorithm to sort the list.
+<ol> 
+<li> Using the techniques described in the example code above, read in <a href='beginner.txt'>this file</a>
+and store its contents as a list (f.readlines() will be useful). Print your list.
+<li>The list you've read in will be a list of strings. Write a for loop that converts
+each string in the list to an integer (using range(len(list))...). Print your updated list.
+<li> Next, create a second, empty list to store the sorted data in. 
+<li> Now write a for loop that loops over the list you read in from file and:
+	<ul>
+	<li> stores the first entry
+	<li> looks at each sucessive entry in the list and compares it to the
+		stored entry. 
+	<li>If an entry is less than the stored entry, replace the stored entry
+		with this new lowest value.
+	</ul>
+<li>Congratulations, you've now found the lowest value in the list. Take the value stored in your for loop and add it to your second list (using the list.append() method). Use the list.remove(x) method to remove the value you've just added to the second list from the first list.
+<li> Now repeat the process in steps 4 and 5 for each value in the initial list (do this by embedding steps 4 and 5 in a for loop; the syntax range(len(list)) will be useful here). [Note, you also could use a while statement, but we'll stick with for loops].
+<li> Print out your newly sorted list to make sure your algorithm worked.
+<li> If time permits, add a variable verbose, that when it's true you print out the list at each
+step of the way.
+<li> If time permits, come up with a more efficient method for sorting the list
+(there are many: it's fine to use google to see what sorting algorithms are out
+there. And of course, there's a python sort command - see if you can figure out how it works).
+</ol>
+<p> Once you have finished the exercise you can compare your answers 
+to my code <a href="beginner.py">here</a>.
+<h4> Intermediate Level </h4>
+<p> This exercise is designed for those who are already somewhat comfortable with
+python and want to learn more about exploiting its capabilities. It asks you to 
+read in a file containing 10 time series, each containing a gaussian radio pulse.
+Then, using numpy and matplotlib, it asks you to plot the pulse, measure the pulse's signal to noise ratio, and output values in a nicely formatted table.
+
+<ol> 
+<li>Read in <a href="intermediate.txt">this file</a>. 
+<li> The file contains 10 rows of comma separated numbers. Each row represents the amount 
+of signal output from a radio antenna as a function of time (in 1 second time intervals). 
+Loop through the lines in the file (f.readlines() will be useful here). For each line, do
+the following:
+	<ol type='a'>
+	<li> Convert the line from one long string into a numpy array of floats.
+	<li>  Using matplotlib.pyplot make a plot of the data you just read in 
+		as a function of time (hint: you'll have to figure out how many 
+		time steps are present in the data).
+	<li>Using the capabilities of numpy, find the value of the maximum flux in your
+		time series. 
+	<li> Excluding your pulse, (the pulse is in the first half of the time series, 
+	so you can cheat and just limit yourself to the second half of the time series)
+	calculate the rms noise in your spectrum. (Recall that the rms is the root mean 
+	square - find the mean of the squares of all the points, then take the square root. 
+	You might also use np.std() and compare the results (and think about why they are
+	different, if they are different)).
+	<li> Do a simple estimate of the signal to noise ratio of the pulse as peakflux/rms.
+	<li> Using a formatted string, print the output signal to noise, peakflux and rms to 
+	a descriptive table, rounding each number to two decimal places.
+	</ol>
+<li> If time permits figure out how to display all your time series on top of one another
+at the end, rather than having the plots pop up one at a time.	
+<li> If time permits mess around with fitting the gaussian pulse and come up with other estimates 
+of the signal to noise ratio.
+</ol>
+<p> Once you have finished the exercise you can compare your answers 
+to my code <a href="intermediate.py">here</a>.
+
+<h4> Advanced Level </h4>
+<p> This exercise is for those who really know what they are doing in python and would
+like a challenge. Given a low signal to noise pulse series you're asked to determine the pulse frequency, and then pull the pulse out of the noise by smoothing the time series and folding the data.
+<ol>
+<li> Read in the data in <a href="https://drive.google.com/file/d/1QyJPyap380GBqWT5SHYAUDHIwInj08nm/view">this file</a> using whatever method you'd like.
+<li> Using the capabilities of scipy, take the fourier transform of the data and plot to
+determine the pulse frequency. 
+<li> Smooth the spectrum using 3 channel hanning smoothing.
+<li> Fold the data to the period you determined earlier, and plot.
+<li> iterate as necessary.
+</ol>
+
+<p> As an alternative exercise, use aplpy ("apple pie") to make an image of a field
+of ALFALFA data. 
+<ol>
+<li>Download <a href="https://drive.google.com/file/d/1Co57bfzhc_uh7HM3sLSZctUi1ZqeXJS3/view">this</a> fits file, and plot it in inverted greyscale.
+<li> Overplot a contour at 0.13 mJy/beam.
+<li> There are two groups of galaxies in the image. Put a box around each one.
+<li> Label the lower left group NGC 3227 group, and the upper right group the NGC 3190 group
+<li> Make your axis labels bold, and give the figure a thick border
+<li> Save a .png and .eps version of the figure
+</ol>
+<p> Compare to my <a href="https://drive.google.com/file/d/1gM4tjhiMGqA5BbqiIkszsBcLaki82Lbr/view">code</a> to make a figure from one of my recent papers!
+<br>
+<hr>
+<address><font color=#cc0f14>
+This page was created by Luke for anyone to reference, specifically those in the 
+Cornell astronomy community. Please contact him with questions or comments.  
+<br> Last updated by Luke on June 9, 2016 at 1:38pm.
+</font></address>
+
+</body>
+</html>

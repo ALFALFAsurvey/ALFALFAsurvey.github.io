@@ -1,0 +1,457 @@
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg" height=50>
+<br>
+<hr>
+
+<br>
+<b><font color=#008000> Rules of the scavenger hunts:</font></b> &nbsp 
+(0): These are scavenger hunts, not tests. Don't expect all the answers to be obvious
+or google-able.
+(1): In all cases, 
+<b><font color=#cc0f14>return attendees shall not
+reveal the answers to first timers</font> </b> until sufficient effort is 
+expended.  (2): Any bribes must be shared 50:50 with the Scavenger Hunt creators.
+(3): You may consult any
+source anywhere but please be sure to indicate where you got your information.
+<b><font color=#cc0f14>And watch out
+for bad websites!</font></b> Actually, if you find any mis-information, make a note
+of it and report to Martha and Becky.</p>
+<br>
+<h3><font color=#cc0f14> UAT2020 Scavenger Hunt #1: </font> &nbsp 
+  <font color=#008000>Using Arecibo and the GBT for UAT HI Line Observations and an Introduction to some of our favorite databases
+<!--    LBW for the Arecibo Pisces-Perseus Supercluster Survey--></font></h3>
+
+This scavenger hunt will explore some details of the HI spectral observations
+we are conducting 
+for the Arecibo Pisces-Perseus Supercluster Survey (APPSS) and the observations we will be doing at Green Bank during this workshop. 
+<!--Be sure to familiarize
+yourself with the various links below in order to figure out the answers to these questions.--></p>
+<hr>
+
+<b><font color=#cc0f14> 1.0 &nbsp Position-switched observing with single dish telescopes</font></b></p>
+
+ALFALFA itself was a "blind drift scan" survey in which we positioned the Arecibo telescope on the meridian,
+pointed it at a particular declination, started taking data and let the sky drift by. For our APPSS and GBT observations,
+we point the telescope towards targets identified by the optical and UV emission. The HI line signals that we are
+trying to detect are billions of times weaker than the radio noise contributed by the radio receiver, the electronics,
+the antenna, the cosmic microwave background and the sky overall. So, somehow, we have to subtract off all
+of those unwanted contributions to find the HI signal from the target galaxy.
+We can do this by assuming that any random position in the sky does not contain an HI line source at the
+exact same velocity as our target source and that the <b>difference</b> between the spectra obtained
+in the direction of our target and some suitably chosen random position will yield the signal we are after.
+The mode of observing we use for the L-band observations is called <b> position switching</b>, where 
+we switched between "ON source" and "OFF source" positions. Thus each observation is actually
+an ON/OFF pair of observations.
+Review with your group this link to  <a href="http://www.naic.edu/~a2010/ALFALFA_lbwobserving.htm">L-band wide 
+(LBW) observing</a> for ALFALFA followup and APPSS.
+</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> a. </font></b> &nbsp What do we mean by <b>system temperature</b>?</p><br>
+
+
+&nbsp &nbsp <b><font color=#cc0f14> b. </font></b> &nbsp  What is the typical system temperature of the Arecibo L-band receiver system?</p><br>
+
+
+&nbsp &nbsp <b><font color=#cc0f14> c. </font></b> &nbsp What is the typical system temperature of the L-band receiver system on the GBT?</p><br>
+
+
+&nbsp &nbsp <b><font color=#cc0f14> d. </font></b> &nbsp  Why is the GBT able to deliver a lower system temperature on its L-band system
+than Arecibo can?</p><br>
+
+
+&nbsp &nbsp <b><font color=#cc0f14> e. </font></b> &nbsp  For our Arecibo position-switched observations for APPSS, a source with 
+a peak flux density of 30 mJy per spectral channel would be easily detected. How does 30 mJy compare with
+the system temperature you found above? </p><br>
+
+
+<table>
+<tr><td valign=top> 
+    We also need a way to figure out the intensity calibration of the system noise. At the GBT,
+    we observe a continuum source (quasar) at the start of the observing run. At Arecibo,
+we inject the noise from a diode (whose noise has been measured by the engineers in the lab)
+into the system and also record the noise when the diode is "off". This sequence is referred
+to as the "CAL ON/CAL OFF" sequence; we perform this measurement at the end of every
+target galaxy position-switched
+ON/OFF pair. A single observation of an APPSS target source then includes both the ON/OFF source 
+observation and the CAL ON/OFF calibration sequence, as summarized by
+the panel to the right. </p>
+
+Often we observe a source more than once, often on a different day,
+for example, if there is a marginal detection whose reality we would like
+to confirm.
+It is possible to combine multiple observations of the same source to
+improve the signal-to-noise ratio.</p>
+
+<p>
+
+<b><font color=#008000> Useful links related to Arecibo observing:</font></b> <br>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">Using Arecibo for ALFALFA</a>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalfa.php">Using ALFALFA
+for science</a>
+<!--<li> <a href="http://www.naic.edu/vscience/schedule/scedfra2.htm">AO telescope schedule</a>-->
+<li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observer's page</a>
+<li> <a href="http://www.naic.edu/~a2010/checklist_lbw.html">Observing checklist for LBW observing</a>
+<li> <a href="http://www.naic.edu/~a2010/ALFALFA_lbwobserving.htm">L-band wide (LBW) observing</a> for ALFALFA followup
+<li> <a href="http://www.naic.edu/~a2010/lbw_observingmodes.htm">Standard ALFALFA LBW followup observing modes</a>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/lbw/lbw_reduction.htm" target=new>Instructions on reducing LBW data</a> using IDL_LBW to analyze Arecibo L-band wide spectra taken for ALFALFA followup programs</p><br>
+
+</td><td>
+<a href="images17/LBWobservingseqcrop2.jpg" target=new>
+<img src="images17/LBWobservingseqcrop2.jpg" height=300></a>
+</td></tr></table>
+
+<hr>
+
+<b><font color=#ccof14> 1.1</font> &nbsp <font color=#cc0f14>
+The galaxy hosting the HI signal</font></b></p>
+
+Our observations are directed towards detecting the radio HI line signal from the target
+galaxies, and we also need to understand the stellar population associated with the HI gas.
+In <a href="hunt0_18.htm">SH #0</a>, we used links to
+the public databases of SDSS, SkyView/DSS and the NED. Here we'll provide you
+with links that
+you can use to explore some interesting galaxies.
+
+Here are links to the front pages of the SDSS, SkyView/DSS and the NED:
+<ul>
+<li><a href="http://www.sdss.org/" target=new>SDSS</a> main page
+<li><a href="http://skyview.gsfc.nasa.gov/" target=new>Skyview</a> main page at GSFC (including DSS2)
+<li><a href="http://ned.ipac.caltech.edu/" target=new>NED</a> main page
+</ul>
+If you are not already familiar with these really useful
+websites, we suggest that you should become more familiar with them while you are at
+and after
+you return from the workshop. Here, we'll hope that someone in your group knows enough to
+use them to answer the questions below about some interesting galaxies.</p>
+
+
+<ul>
+<li> Obj #1: The galaxy UGC 615 at RA,Dec = 14.9171 15.3308 <br>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra= 14.9171&dec= 15.3308&opt=GILS&scale=0.39617" target=new>DR15Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 14.9171, 15.3308&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon= 14.9171d&lat= 15.3308d&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1 </a></p>
+
+<li> Obj #2: The galaxy AGC 102145 at RA,Dec = 12.2654 15.4856 <br>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra= 12.2654&dec= 15.4856&opt=GILS&scale=0.39617" target=new>DR15Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 12.2654, 15.4856&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon= 12.2654d&lat= 15.4856d&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1 </a>
+</p>
+
+<li> Obj #3: The galaxy AGC 122941 at RA,Dec = 37.142083   25.331111<br>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra= 37.1421&dec= 25.3311&opt=GILS&scale=0.39617" target=new>DR15Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 37.1421, 25.3311&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon= 37.1421d&lat= 25.3311d&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1 </a>
+</p>
+
+<li> Obj #4: the galaxy LSBG-750 at RA,Dec = 179.9317, -0.7727 <br>
+
+  &nbsp<a href="http://skyserver.sdss.org/dr15/en/tools/chart/navi.aspx?ra=179.9317&dec=-0.7727&opt=GILS&scale=0.39617" target=new>DR15Nav</a>
+  &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 179.9317, -0.7727&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 179.9317, -0.7727&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 179.9317, -0.7727&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 179.9317, -0.7727&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 179.9317, -0.7727&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 179.9317, -0.7727&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=11+59+43.6&lat=-00+46+22&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+
+</ul></p>
+
+
+
+
+<!--AGC 102145  0049037+152908   12.2654 15.4856  -->
+<!--UGC 615     0059401+151951   14.9171 15.3308  -->
+<!--AGC 122941  37.142083   25.331111         -->
+
+Consider <b>Object #1:</b><br>
+&nbsp &nbsp <b><font color=#cc0f14> a.</font></b> &nbsp 
+       This object has lots of cross-identifications. What do "UGC", "CGCG", "MCG" and "2MASS" refer to?</p>
+&nbsp &nbsp <b><font color=#cc0f14> b.</font></b> &nbsp 
+       What is the recessional velocity given by the SDSS spectrum?  <!-- 5487 pm 8 is best value from NED--> </p>
+&nbsp &nbsp <b><font color=#cc0f14> c.</font></b> &nbsp 
+       ALFALFA measures a heliocentric velocity of the HI from this galaxy of 5495 km/s. Comment on the comparison with the SDSS value. </p>
+&nbsp &nbsp <b><font color=#cc0f14> d.</font></b> &nbsp 
+       What spectral classification (as given on the image of the spectrum) is assigned 
+to this galaxy by the SDSS? What is the classification based on?</p>
+<br>
+
+
+Consider <b>Object #2:</b><br>
+&nbsp &nbsp <b><font color=#cc0f14> e.</font></b> &nbsp 
+       How does this object compare with Object #1 as a target for SDSS spectroscopy?</p>
+&nbsp &nbsp <b><font color=#cc0f14> f.</font></b> &nbsp 
+       What spectral classification (as given on the image of the spectrum) is assigned 
+       to this galaxy by the SDSS? What is the classification based on?</p>
+&nbsp &nbsp <b><font color=#cc0f14> g.</font></b> &nbsp 
+       How does the SDSS spectrum of this object compare with that of Object #1</p>
+&nbsp &nbsp <b><font color=#cc0f14> h.</font></b> &nbsp 
+       The ALFALFA database lists this as a "Code 2" signal with a recessional velocity from the HI spectrum
+       of 5483 and a signal-to-noise ratio of 4.9. What is a "Code 2" ALFALFA source? </p>
+<br>
+Consider <b>Object #3:</b><br>
+&nbsp &nbsp <b><font color=#cc0f14> i.</font></b> &nbsp 
+       What is the best SDSS name to identify with our LBW target (Obj #3)? Why isn't this a trivial question?</p>
+<!-- <br> SDSS  J022833.89+251952.0; there are several photometric objects; pick the best/brightest one.-->
+&nbsp &nbsp <b><font color=#cc0f14> j.</font></b> &nbsp 
+       This galaxy is not an SDSS spectroscopic target. Is that a surprise?</p>
+&nbsp &nbsp <b><font color=#cc0f14> k.</font></b> &nbsp 
+       Is a redshift available from NED for this object? </p>
+&nbsp &nbsp <b><font color=#cc0f14> l.</font></b> &nbsp 
+       The ALFALFA database lists this as a "Code 4" signal with a recessional velocity from the HI spectrum
+       of 5862 and a signal-to-noise ratio of 5.8. What is a "Code 4" ALFALFA signal?</p>
+<br>
+
+Consider <b>Object #4:</b><br>
+
+This galaxy was detected in our current Green Bank observing project at a heliocentric 
+recessional velocity of 2275 km/s on Feb. 23, 2019. </p>
+
+&nbsp &nbsp <b><font color=#cc0f14> m.</font></b> &nbsp
+Compare the SDSS view of this galaxy to the red and blue DSS views.
+Which is best at detecting the galaxy? Why might this be?</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> n.</font></b> &nbsp
+What other survey provides data for this galaxy?</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> o.</font></b> &nbsp
+This galaxy is part of a sample of very low surface brightness galaxies
+discovered in the Hyper-Subprime Camera (HSC) survey
+(<a href="https://arxiv.org/abs/1709.04474">Greco et al. 2018 </a>).
+A deep image from the HSC survey can be found in this set of 
+<a href="https://arxiver.moonhats.com/2017/09/15/illuminating-low-surface-brightness-galaxies-with-the-hyper-suprime-cam-survey-ga/#jp-carousel-265802"> example images. </a>
+&nbsp Comment on the shape of this galaxy in comparison to the others you have looked at. </p>
+
+&nbsp &nbsp <b><font color=#cc0f14> p.</font></b> &nbsp
+How does the size of this galaxy compare to that of the Milky Way? </p>
+
+
+<hr>
+<b><font color=#ccof14>1.2 &nbsp Using TOPCAT to match two catalogs
+</font></b></p>
+We hope that you have already had a chance to play with <b>TOPCAT</b>; here we have designed a quick exercise
+to show how you can use it to match entries in two catalogs. Here are two files for you to work with:<br>
+<center><a href="files/uat15.hipos.csv">HI positions</a> and <a href="files/uat15.oc.csv">OC positions</a>
+</center><br>
+The first one contains a long list of the HI positions of ALFALFA detections; the second one contains
+the optical coordinates of a subset of the first. Use these two files to answer the questions below.
+If you have not used TOPCAT before, check out the links
+given in 0.0 in <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt17/hunt0_17.htm">SH#0</a>.</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> a. </font></b> &nbsp How many objects are contained in each of the two catalogs?</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> b. </font></b> &nbsp How does the sky distribution of the first set (HIpos) compare to that of the subset (OCpos)?</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> c. </font></b> &nbsp Crossmatch the two catalogs by AGC number; use the "Joins" function with the "Pair Match" option and "Exact Value" algorithm
+in TOPCAT. How many matches do you get?</p>
+<!-- You should find all the OCs in HIpos since the OC set is just every third entry in the HIpos set -->
+
+&nbsp &nbsp <b><font color=#cc0f14> d. </font></b> &nbsp Going back to the original catalogs, make a crossmatch using the "Sky" algorithm. Why don't the positions
+match exactly? How large must "Max Error" be to get the same number of matches that you found when
+you cross matched by AGC number? Explain your answer.</p>
+
+&nbsp &nbsp <b><font color=#cc0f14> e. </font></b> &nbsp What is the mean separation between the HI and OC positions? What is the median value? &nbsp <i> Hint: Think about which of
+the cross-matched catalogs you should use for this; some of them already include the separation. And, you should be able to find the mean and median values
+easily using built-in functions; ask for advice if you get stuck here.</i></p>
+
+&nbsp &nbsp <b><font color=#cc0f14> f. </font></b> &nbsp For the 2nd file, make a plot of HI mass versus distance. Examine the result and comment on it.</p>
+<br>
+<hr>
+<b><font color=#ccof14> 1.3 &nbsp The color-magnitude diagram and how
+galaxy color correlates with morphology
+</font></b></p>
+Probably you are familiar with the Hertzsprung-Russell diagram for stellar classification.
+We can make a similar "color-magnitude" diagram for galaxies using TOPCAT and the photometric
+data from the SDSS. For nearby galaxies, there are problems with the standard SDSS
+photometric pipeline, so we use the ones available through the
+<a href="http://www.nsatlas.org/" target=new>NASA-Sloan Atlas</a> (N-S Atlas).
+We can also look at the morphological classification provide by the citizen science
+project <a href="http://www.galaxyzoo.org/" target=new>Galaxy Zoo</a>. </p>
+
+For this exercise, we have put together a useful dataset in 
+<a href="files/nsa+gzoo1.face.short.csv" target=new>CSV format</a> 
+<!-- I had to remove some Inf points in the file 
+or <a href="files/nsa+gzoo1.face.short.txt" target=new>ASCII format</a>
+-->
+from a combination of the N-S Atlas
+and the Galaxy Zoo 1 data release. It does not cover the whole sky 
+because each galaxy has to be included in both catalogs. 
+The file contains the basic information plus we have calculated a color (called "gminusi")
+and an absolute magnitude ("absmagi") as well as an indicator of morphology.
+Note that the way the morphological type is identified is by having a flag set to "1" according
+to whether the galaxy was classified as "spiral", "elliptical" or "uncertain". In fact, most
+galaxies are typed "uncertain".</p>
+
+<!--&nbsp &nbsp a. &nbsp  What wavelengths correspond to the SDSS g and i-band filters? &nbsp </p>
+-->
+
+&nbsp &nbsp <font color=#cc0f14><b> a.</b></font> &nbsp Why do we call the difference between the magnitude measured in the SDSS-g band and that
+in the SDSS-i band a "color"?</p>
+
+&nbsp &nbsp <font color=#cc0f14><b> b.</b></font> &nbsp Because we wanted to keep things simple, using only the raw data as they are included
+in the compilations, we have limited this subset to galaxies which 
+are viewed face-on. Why does that make things simpler?</p>
+
+&nbsp &nbsp <font color=#cc0f14><b> c.</b></font>&nbsp First, using the N-S Atlas magnitudes, make a color-magnitude diagram using 
+the absolute magnitude and color given here.
+Be sure that luminosity increases from left to right and that blue galaxies are towards the botton,
+red towards the top. What do you notice about the distribution of galaxies? &nbsp <i>(Note: this diagram
+will be useful to some of the teams in SH#3)</i>.</p>
+
+
+Next, let's add the information about morphology from the GZ.</p>
+&nbsp &nbsp <font color=#cc0f14><b> d.</b></font> &nbsp Use the "column statistics" capability to figure out quickly
+the fraction of the galaxies which are classified as ellipticals? As spirals? As uncertain?</p>
+
+&nbsp &nbsp <font color=#cc0f14><b> e.</b></font>&nbsp Using the <b>TOPCAT</b> subsets capability, plot the spirals and ellipticals
+separately, using different symbols/colors. Superpose the spirals on the ellipticals <i>(be sure to
+do it in that order)</i>. What do you conclude?</p>
+<br>
+
+
+<hr>
+
+
+<b><font color=#cc0f14> 1.4 &nbsp The Pisces-Perseus Supercluster</font></b> </p>
+Filamentary structures are predicted to be pervasive throughout the cosmic web, but they 
+have received relatively little observational attention in comparison to other cosmic overdensities 
+such as clusters. The Pisces-Perseus Supercluster (PPS) forms a strong linear density enhancement, 
+stretching more than 50&deg; across the Arecibo sky. This filament is fortuitously oriented 
+perpendicular to the line-of-sight and separated from surrounding structures by foreground and 
+background voids. PPS serves as a laboratory for studies of how the HI content of galaxies may
+vary depending on the location of a galaxy within its large scale structure. Because it is a
+strong overdensity in the local universe, galaxies in its foreground and background should be
+gravitationally pulled towards it, inducing "peculiar velocities" of infall and backflow onto
+their Hubble flow velocities.</p>
+
+
+&nbsp &nbsp a. &nbsp Use the <a href="http://ads.harvard.edu/"> NASA Astrophysics Data System (ADS) </a> bibliographic service 
+to find the (ancient and
+honorable) paper on the PPS by Wegner, Haynes & Giovanelli (1993; Astron.J. 105, 1251). <i> If you have never used the ADS abstract server before, take the opportunity to learn how to use it now. It will find you scholarly references that Google and Wikipedia won't necessarily.
+</i></p>
+
+&nbsp &nbsp b. &nbsp What is the epoch in which coordinates are presented (e.g. Table 1)
+in this paper?
+What does "coordinate epoch" refer to and why do we have to pay attention to this detail?</p>
+<br>
+
+The figure below shows the distribution of galaxies with known recessional velocity (abbreviated as cz, with c<i>z</i> <12000 km/s here) in a wide area of sky around PPS.
+The superposed dark lines outline the region of the main ridge of the PPS.</p>
+<img src="images17/pps.radec.png" height=300></p>
+
+&nbsp &nbsp c. &nbsp Which figure in the Wegner <i>et al.</i> paper is similar to this figure? 
+What is different about the one displayed here?</p><br>
+
+&nbsp &nbsp d. &nbsp Why do we display Right Ascension increasing towards the left?</p><br>
+
+&nbsp &nbsp e. &nbsp Draw on the diagram the northern declination limit of the Arecibo telescope.</p>
+
+
+The figure below also resembles (deliberately) a figure presented in the 
+Wegner <i>et al.</i> paper. Take note of the similarities and differences.
+<img src="images17/pps.ravel.ridge.png" height=300></p>
+
+
+&nbsp &nbsp f. &nbsp What do we mean by "heliocentric velocity"?</p><br>
+
+The table below, based in large part on Table 3 of the Wegner <i>et al.</i> paper, lists the main galaxy groups and clusters associated with PPS.</p>
+<table bordercolor=red border=3 cellpadding=3>
+<tr><th> Name      </th> <th>Common Name</th><th> R.A.(J2000) <br> (deg)</th><th> Dec(J2000) <br> (deg) </th> 
+    <th> c<i>z</i> <br> (km/s)</th></tr
+<tr><td> N7343     </td> <td>Pegasus </td> <td align=center> 339.7</td> <td align=center> 34.0</td><td> &nbsp 6000.</td></tr>
+<tr><td> Abell 2634</td> <td>&nbsp   </td> <td align=center> 354.6</td> <td align=center> 27.0</td><td> &nbsp 9400.</td></tr>
+<tr><td> Abell 2666</td> <td>Pegasus </td> <td align=center> 357.7</td> <td align=center> 27.2</td><td> &nbsp 8000.</td></tr>
+<tr><td> N 383     </td> <td>Pisces  </td> <td align=center>  16.9</td> <td align=center> 32.4</td><td> &nbsp 4800.</td></tr>
+<tr><td> N 507     </td> <td> &nbsp   </td> <td align=center>  20.5</td> <td align=center> 33.3</td><td> &nbsp 4700.</td></tr>
+<tr><td> Abell 262 </td> <td> &nbsp  </td> <td align=center>  28.2</td> <td align=center> 36.2</td><td> &nbsp 4800.</td></tr>
+<tr><td> Abell 347 </td> <td> &nbsp  </td> <td align=center>  36.5</td> <td align=center> 41.9</td><td> &nbsp 5600.</td></tr>
+<tr><td> Abell 426 </td> <td>Perseus </td> <td align=center>  49.7</td> <td align=center> 41.5</td><td> &nbsp 5500.</td></tr>
+</table>
+</p>
+
+<i>Note:</i> The values in the above table are taken various sources (including the
+Wegner+ paper) and have been rounded off;
+we should derive new ones someday using the ALFALFA and APPSS data and any other more recent data
+taken from the literature.</p><br>
+
+&nbsp &nbsp g. &nbsp Mark and label each of the groups/clusters on the two Figures above.</p><br>
+
+&nbsp &nbsp h. &nbsp Discuss your impressions of the PPS within your group.
+Make a mental picture of PPS and keep it in mind when we discuss the APPS Survey. We'll return to PPS in
+later Scavenger Hunts.</p>
+
+<br>
+
+
+<br>
+<hr>
+<b> <font color=#cc0f14> 1.5 </font> &nbsp <font color=#cc0f14>ALFALFA Team Trivia: Part II</b></font> &nbsp (Some of us think this is important too!)<br> 
+</p>
+<b><font color=#cc0f14> a. </font></b> &nbsp In what 1984 movie did the unsympathetic government agent say: "<i> Do you 
+seriously expect me to tell the 
+President that an alien has landed, assumed the identity of a dead housepainter from Madison Wisconsin and 
+is presently out tooling around the countryside in a hopped up orange and black 1977 Mustang?</i>"</p>
+<b><font color=#cc0f14> b. </font></b> &nbsp  In the movie "Some Like It Hot", who (what actor) utters the famous closing words "Well, nobody's perfect."?</p>
+<b><font color=#cc0f14> c. </font></b> &nbsp  What is the temperature at which paper burns, according to
+the famous futuristic 1967 film starring Julie Christie and Oskar Werner?</p>
+<b><font color=#cc0f14> d. </font></b> &nbsp  What is odd about the rotation of Venus, and how and when was that determined?</p>
+
+<hr>
+<b><font color=#cc0f14> 1.6 (Extra) &nbsp HI emission from the Milky Way itself</font></b></p>
+
+The Milky Way Galaxy contains about 3 x 10<sup>9</sup> solar masses of HI. We detect it in all of the Arecibo 
+spectra (and would if we used a much smaller telescope too!).</p>
+
+&nbsp &nbsp a. &nbsp Where is most of the neutral atomic hydrogen in the Milky Way found?</p><br>
+
+&nbsp &nbsp b. &nbsp At what velocities should we expect to see HI emission from the Milky Way? <i>
+&nbsp Hint: refer back to SH #0</i>.</p><br>
+
+&nbsp &nbsp c. &nbsp What is a High Velocity Cloud?</p><br>
+
+&nbsp &nbsp d. &nbsp What is the recessional velocity of Andromeda (Messier 31)?</p><br>
+
+&nbsp &nbsp e. &nbsp What is the recessional velocity of the Triangulum Galaxy (Messier 33)?</p><br>
+
+&nbsp &nbsp f. &nbsp What is the recessional velocity of Leo P?</p><br>
+
+
+
+
+</p>
+<br>
+<hr>
+<font color=#008000>
+This page created by and for the members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> Survey Undergraduate team</font>
+</p>
+
+<font color=#cc0f14>Last modified: Wed May 27 14:29:33 EDT 2020 
+  by martha</font>
+
+</body>
+</html>
+
+
+<!--
+checklbw,file='/proj/a2669/corfile.22mar12.a2669.52
+H102144.7+180438  102144.9 +180519   260 HH  LeoP-->

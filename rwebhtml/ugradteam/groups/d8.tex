@@ -1,0 +1,449 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage[left=1in,right=1in,top=1in]{geometry}
+
+\newcommand{\nhours}{??}
+\newcommand{\nsessions}{??}
+\newcommand{\hourspersession}{??}
+
+%\newenvironment{itemize*}%
+%  {\vspace{-3.5mm} \begin{itemize}%
+%    \setlength{\itemsep}{0pt}%
+%    \setlength{\parskip}{0pt}%
+%    \setlength{\itemindent}{-1cm}}%
+%  {\end{itemize}}
+
+\textwidth 6.5in
+\textheight 8.95in
+\oddsidemargin -0.1in
+%\evensidemargin 0.0in
+%\topmargin -0.2truein
+\raggedbottom
+\pagestyle{empty}
+
+\newcolumntype{d}[1]{D{.}{.}{-#1} }
+
+\newcommand{\Halpha}{H$\alpha$}
+\newcommand{\kms}{km s$^{-1}$}
+\newcommand{\etal}{et al.}
+\newcommand{\msun}{M$_{\odot}$}
+\newcommand{\czhelio}{cz$_{\odot}$}
+\newcommand{\pmpc}{Mpc$^{-1}$}
+\newcommand{\sqd}{deg$^{2}$}
+\newcommand{\HI}{H\textsc{i}}
+
+\def\plotfiddle#1#2#3#4#5#6#7{{\centering \leavevmode \vbox to#2{\rule{0pt}{#2}}
+     \special{psfile=#1 voffset=#7 hoffset=#6 vscale=#5 hscale=#4 angle=#3}}}
+
+%\pagestyle{empty}
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{6pt}
+%\linespread{0.85}
+
+\begin{document}
+\parindent 0pt
+\baselineskip 12pt
+\parskip 8pt
+\null
+\begin{center}
+\vskip -1.2cm
+\bf L-Band Wide Observations of Star-forming Galaxies in X-ray Selected Groups: \\
+The Quenching of Star Formation in the Group Environment \rm
+\end{center}
+
+
+{\bf Overview:} \hskip 5pt
+It is well-established that galaxies in cluster environments have less \HI\ gas (e.g., Solanes {et al} 2011),
+%Giovanelli \& Haynes 1985)
+lower star formation rates (e.g. Tanaka {et al} 2004), and earlier morphological
+types (e.g., Budav\'{a}ri  {et al} 2003) than galaxies in the field.
+%Dressler 1980),
+These trends appear to hold true also in group environments. Of particular relevance here,
+Rasmussen {et al} (2012) have shown that, at fixed
+stellar mass, the fraction of group galaxies which are star forming is
+lower relative to the comparable fraction in the field.
+While physical mechanisms responsible for gas removal
+such as ram pressure sweeping and harassment
+are understood to be operative in the rich clusters, it is less clear that
+these same processes can lead to reduced star formation rates in the lower density environment
+of groups.
+To constrain these processes requires a robust determination of the threshold in galaxy density,
+intracluster medium properties and dark matter halo mass
+above which star formation shows evidence of quenching. To this end,
+we are undertaking a detailed multiwavelength study of
+a set of nearby groups spanning a range of X-ray luminosity, velocity dispersion and richness.
+With this proposal, we request time to obtain L-band Wide (LBW) HI observations of star-forming group galaxies
+of star forming galaxies which lie below the detection threshhold of the ALFALFA survey. More sensitive
+LBW observations will permit us to measure HI masses and star formation efficiences in galaxies
+observed to be star-forming but which are
+of lower mass and/or gas fraction than those detected by ALFALFA. The study of the full sample
+will provide the statistical basis for the determination of the quenching threshold. This proposal requests an
+allocation of 122 hours of LBW observations. So that members of the UAT can conduct observations
+on-site at Arecibo, we request that some of the time be scheduled to coincide with
+the Jan 2014 Undergraduate ALFALFA Team (UAT) workshop and during the ``spring break'' period
+in Mar 2014.
+
+{\bf Gas Content and Star Formation:} \hskip 5pt Numerous authors
+(e.g. Mahajan {et al} 2010) have presented evidence of the suppression of star
+formation in low mass galaxies in both groups and clusters.
+Exploring the role of environment on the \HI\ content of galaxies is a
+goal of many on-going studies at Arecibo (e.g. Catinella {et al} 2013). For comparative purposes,
+the \HI\ masses, gas fractions
+(GF; $\equiv$ M$_\text{HI}/$M$_*$), star formation rates
+(SFRs), and star formation efficiencies (SFE; $\equiv$ SFR$/$M$_\text{HI}$) have been
+quantified for galaxies in the least dense environments and in the
+ALFALFA population as a whole (Toribio {et al} 2011; Huang {et al} 2012).
+However, investigation of the environmental effects on the links between gas content
+and star formation is complicated by known scaling relations: galaxies in denser
+environments tend to be higher in stellar mass and
+galaxies higher in stellar mass tend to have smaller gas fractions and
+less star formation (e.g., Cortese {et al} 2011). These and other
+scaling relations between fundamental properties like
+stellar mass surface density, star formation rate, and halo spin parameter
+(e.g. Huang {et al} 2012), as well as the bias towards higher HI masses
+when only detections are included,
+must be accounted for in reaching a full
+understanding of the mechanisms responsible for altering galaxy evolution
+in the group and cluster environment.
+
+
+Only a few studies
+(e.g. Gavazzi {et al} 2013) have attempted to link direct measures of
+current star formation to gas content in the same galaxies across a
+sufficient range of stellar mass and environment.
+To complement the larger statistical
+studies being undertaken with the full ALFALFA dataset, we are
+investigating the detailed distribution and properties of the
+population of galaxies {\it known to be star-forming}
+in a sample of groups (see Table 1) in the sky area covered by ALFALFA
+but of varying
+richness, morphological type mix, X-ray luminosity, and velocity
+dispersion. We use not only the \HI\ measures from ALFALFA but also
+complementary data available in the literature and in digital
+databases such as the NASA-Sloan Atlas (NSA; Blanton {et al}
+2011). Additionally, in order to explore specifically the quenching of
+star formation on the scale of these groups, we have obtained
+wide-field ($\ge$ 1 \sqd) \Halpha\ and broadband R images using the
+MOSAIC camera on the
+KPNO 0.9m telescope; multiple offset fields were observed to give
+radial extent.  The wide-field
+\Halpha\ imaging allows us to establish the rate of
+on-going massive star formation as well as its distribution in group
+member galaxies. Still, because the \Halpha\ does not generally cover
+the whole group, we supplement the sample with additional star forming
+galaxies chosen on their basis of line ratios extracted from the
+NSA following the diagnostic scheme of Kewley {et al} (2006).
+With this wealth of optical data on our groups we can use the
+\Halpha\ and UV
+fluxes in combination with \HI\ measures to determine the SFEs. However,
+at the distances of many of these groups,
+the lower mass galaxies as well as gas-depleted ones,
+are expected to have \HI\ fluxes below ALFALFA's
+well-behaved sensitivity limits (Haynes {et al} 2011) so that ALFALFA
+measures alone are insufficient to establish the GFs and SFEs for many
+galaxies which have known \Halpha\ emission, but are not yet detected
+in \HI\. To rectify this
+limitation, we propose L-band wide (LBW) observations to obtain
+measures of \HI\ gas content of a complete set of galaxies
+known to be star forming from the optical data but which were {\it not}
+detected by ALFALFA, thereby allowing us to measure the GF and SFE to
+lower \HI\ masses, into the regime of gas deficiency. The increased
+sensitivity is critical to establish the threshold of gas depletion, star
+formation quenching, and morphological transformation within these
+intermediate density environments and their surrounding extended
+supercluster substructures. The results of the statistical study of the 12 groups
+will inform us on the choice of selected fields which we intend
+to propose to map in \HI\ in greater detail with the VLA to see how the
+distribution of the \HI\ and \Halpha\ correlates in individual galaxies
+close to the quenching threshold.
+
+\begin{center}
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.25]{n5178R.eps}
+\hspace{0.1in}
+\includegraphics[scale=0.25]{n5178Ha.eps}
+\caption{NGC 5178 imaged at R (left) and \Halpha\ (right) wavelengths
+at the WIYN 0.9m telescope at KPNO.
+The galaxy is classified as S0 and is located in the MKW11 group. It
+has clear star formation, but it is not detected by ALFALFA. The star
+formation is truncated, reminiscent of environmentally altered
+Virgo Cluster galaxies in Koopmann \& Kenney (2004).
+\label{haimage}}
+\end{figure}
+\end{center}
+\vskip -1.5cm
+
+{\bf Sample Selection:} \hskip 5pt The target group sample (Table 1) has been selected to meet the
+following criteria: (i) in the ALFALFA-SDSS overlap region available to us in January 1, 2013;
+(ii) cz $<$ 8500 km/s (Dist$<$ 120Mpc); (iii) surveyed at
+X-ray wavelengths; (iv) excluding rich clusters such as Coma; and (v) observed by us in
+\Halpha\ in April 2013. The target list of star-forming galaxies has been drawn up by searching
+the NSA, the ALFALFA catalog and the list of \Halpha\ detections in our
+images and which lie within 2 Mpc of the group center and 5$\sigma$
+of its systemic velocity. The LBW target list consists of those galaxies which are
+{\it not} detected by ALFALFA but which {\it are classified} as star-forming either by
+the detection of H$\alpha$ emission in our KPNO images or
+based on the NSA emission line flux ratio "star forming" classification according
+to Kewley {et al} (2006).
+The broadband R and narrowband H$\alpha$ image of a typical H$\alpha$ {\it but
+not} ALFALFA detection is shown in Figure 1. In Table 1,
+we include the principal properties of each group as well as the number of galaxies
+including in the various subsets: detected by ALFALFA, detected in the H$\alpha$
+images but not by ALFALFA, exhibiting central star-forming characteristics but
+not detected by ALFALFA and the total number of LBW targets.
+
+{\bf Observing Strategy:} \hskip 5pt The proposed LBW pointed observations consist of 5 minute ON-OFF total
+power pairs with the interim correlator covering a 25 MHz bandwidth
+with 9-level sampling. We use doppler tracking and center the spectra
+at the frequency appropriate to each target's redshift. In order to optimize the observing
+schedule, we will adopt a flexible multiple-pass strategy designed to minimize slew time
+and to integrate deeper only when needed.
+Each galaxy will be observed once during a first night, with
+subsequent nights used to perform additional ON-OFF observations of galaxies which
+remain undetected in \HI. We expect many galaxies to be detectable with a single
+ON-OFF pair, which, assuming a system temperature of 27K and a velocity resolution of
+10 km/s, should attain an rms value of $\sim0.65$ mJy. A maximum of 3 ON-OFF pairs
+gives an rms of $\sim0.37$ mJy which, assuming a detection limit S/N of $\sim5$
+translates to an estimated \HI\ mass limit of
+$10^{7.4}$ M$_\odot$ in the
+closest group ($\sim25$ Mpc) and $10^{8.7}$ M$_\odot$ in the furthest ($\sim100$ Mpc).
+These observations would represent up to a factor of 6 improvement in rms flux over
+ALFALFA observations. Physically this means that while ALFALFA could detect a galaxy of
+normal HI content (GF $\sim 2$ as given by Eqn. 1 of Huang {et al} 2012) of stellar mass
+$10^9$ M$_\odot$ at 100 Mpc, these observations will detect such galaxies
+with gas fractions of as low as 1/3.
+On average, we expect to require two ON-OFF pairs
+per galaxy, which, with slew and calibration time, require slightly less than 30 minutes
+per galaxy.
+
+
+\bf Observing Request: \rm Our target list includes 235 sources within 12 groups. Given the
+practical rate of a bit more than 2 sources/hour plus startup/end overhead, we request an allocation
+of 122 hours with LBW and the interim correlator. The UAT will be heavily involved in all aspects
+of this program; we would like to conduct a significant fraction of the
+observations at Arecibo. Considering the sky distribution of the
+target fields and in order to allow UAT faculty and students to participate in on-site observing,
+our request of 122 hours is distributed as follows:
+\begin{center}
+\vskip -8pt
+\begin{tabular}{rcl}
+3 sessions  & 08$^h <$ LST $< 14^h$             & coincident with the UAT workshop (Jan 12-15, 2014)\\
+4 sessions  & 08$^h30^m <$ LST $< 16^h30^m$      & in late March 2014\\
+12 sessions & 10$^h30^m <$ LST $< 16^h30^m$      & some of which would be in late March 2014
+\end{tabular}
+\end{center}
+
+{\bf ALFALFA and LBW Status/Productivity Report}:\hskip 5pt
+The legacy ALFALFA survey drift scan observations were completed in October 2012; all
+data have been Level I processed; gridding, source extraction, catalog and data product
+production continues
+with a next significant data release expected in the 2nd quarter of 2014. The paper associated with the
+next data release will include the statistical analysis of the low signal-to-noise ALFALFA
+sources which have been the targets of the LBW programs conducted in 2012 and spring 2013
+(A2669, A2707 and A2752).
+
+{\bf Broader Impact:}\hskip 5pt The UAT is a consortium of
+19 undergraduate-focused institutions that provides undergraduate research
+experiences centered on the ALFALFA survey to their students. 183 undergraduates have
+participated during the 6 years of the program, including 106 students who
+attended workshops at Arecibo and 47 who have observed onsite for ALFALFA
+and LBW runs. Multiple UAT institutions
+collaborate on a common project (the UAT Groups Project) to quantify the impact of environment
+on galaxies in groups; this proposal is directly related to that project. Team members
+identify analysis methods and needed software and commit
+to producing and sharing software tools and analysis results.
+Students have written and documented many of the software tools, and a number
+have been incorporated in the general ALFALFA-IDL package distributed to the larger
+ALFALFA collaboration. In addition to the undergraduate involvement,
+three Cornell University Ph.D. theses were completed in summer 2013: E. Adams (now at ASTRON),
+S. Huang (now at ASIAA), E. Papastergis (now at U. Groningen). Three continuing Cornell
+graduate students are co-Is on the current proposal because of their involvement with
+UAT activities.
+
+
+{\bf ALFALFA-Based Refereed Publications (Since Mar 1, 2013 Only):}\\
+\parskip 0pt
+\parindent 0pt
+$\bullet$ \hskip 3pt {\it A Catalog of Ultra-compact High Velocity Clouds from the ALFALFA Survey: Local Group Galaxy Candidates?},
+Adams, E.A.K.$^\dagger$, Giovanelli, R. \& Haynes, M.P. 2013, ApJ 768, 77.
+
+$\bullet$ \hskip 3pt {\it ALFALFA Discovery of the Nearby Gas-Rich Dwarf Galaxy Leo P: \HI\ Properties},
+Giovanelli, R., Haynes, M.P., Adams, E.A.K.$^\dagger$, Cannon, J.M., Rhode, K.L.,
+Salzer, J.J., Skillman, E.D., Berstein-Cooper, E.Z.$^*$, \& McQuinn, K.B. 2013, AJ 146, 15
+
+$\bullet$ \hskip 3pt {\it ALFALFA Discovery of the Nearby Gas-Rich Dwarf Galaxy Leo P:
+Distance Estimate and Results from Optical Imaging of Leo P},
+Rhode, K.L., Salzer, J.J., Haurberg, N.C.$^\dagger$,
+Van Sistine, A.$^\dagger$, Young, M.D.$^\dagger$, Haynes, M.P., Giovanelli, R.,
+Cannon, J.M., Skillman, E.D., McQuinn, K.B.W., \& Adams, E.A.K.$^\dagger$ 2013, AJ 145, 149
+
+$\bullet$ \hskip 3pt {\it ALFALFA Discovery of the Nearby Gas-Rich Dwarf Galaxy Leo P: An Extremely Metal Deficient Galaxy},
+Skillman, E.D., Salzer, J.J., Berg, D.A.$^\dagger$, Pogge, R.W., Haurberg, N.C.$^\dagger$, Cannon, J.M.,
+Aver, E., Olive, K.A. Giovanelli, R., Haynes, M.P., Adams, E.A.K.$^\dagger$, McQuinn, K.B.W. \& Rhode, K.L.
+2013, AJ 146, 3
+
+$\bullet$ \hskip 3pt {\it The Clustering of ALFALFA Galaxies: Dependence on \HI\ Mass, Relationship to Optical Samples
+and Clues on Host Halo Properties},
+Papastergis, E.$^\dagger$, Giovanelli, R., Haynes,
+   M.P., Rodriguez-Puebla, A. \& Jones, M.G.$^\dagger$ 2013 Ap.J (in press)
+
+$\bullet$ \hskip 3pt {\it ALFALFA Discovery of the Nearby Gas-Rich Dwarf Galaxy Leo P: IV. Distance Measurement from LBT Optical Imaging},
+McQuinn, K.B.W., Skillman, E.D., Berg, D.$^\dagger$ , Cannon, J.M., Adams,
+E.A.K.$^\dagger$ , Dolphin, A., Giovanelli, R., Haynes, M.P., Rhode, K.L. \&
+Salzer, J.J. 2013 (submitted)
+
+\vskip 5pt {\bf $^\dagger$ Graduate student; $^*$ Undergraduate student}
+
+%\newpage
+\vskip 12pt
+\begin{table}[h!]
+\begin{center}
+\small
+\caption{Properties of the UAT Group Sample}
+\begin{tabular}{lccccccccd{2}}
+\hline
+ \small{Group} & \small{RA} & \small{Dec} & \small{$v_{\odot}$} & \small{$\sigma_v$} & \small{N$_\text{HI}$} & \small{N$_{\text{H}\alpha}$} & \small{N$_\text{SF}$} & \small{N$_\text{LBW}$} & \multicolumn{1}{c}{{\small log L$_\text{x}$}} \\
+  &  & & \small{(\kms)} & \small{(\kms)} & &  & & & \multicolumn{1}{c}{\small (ergs s$^{-1}$)}\\
+	& \small (1) & \small (2) & \small (3) & \small (4) & \small (5) & \small (6) & \small (7) & \small (8) &  \multicolumn{1}{c}{\small (9)} \\
+	\hline
+NRGb041 &  09 25 12.2 & +11 16 49 &   3616 & 208 & 10 & 2 & 3 &	5   &<41.50  \\
+NRGb054 &  09 41 16.7 & +11 33 16 &   6460 & 331 & 11 & 10 & 11 & 21  & <41.80 \\
+NRGb151 &  11 42 09.4 & +10 16 30 &   6265 & 257 & 13 & 1 & 4  & 5   &  42.04 \\
+NRGb157 &  11 47 51.8 & +13 16 33 &   3745 & 457 & 31 & 1 & 6  & 7   &<41.50 \\
+NRGb168 &  11 58 30.5 & +25 08 23 &   4789 & 162 &  8 & 7 & 5  & 12  &<41.60  \\
+NRGb206 &  12 24 02.6 & +09 21 25 &   7256 & 457 & 21 & 8 & 19 & 27  &<41.90 \\
+NRGb247 &  13 29 31.2 & +11 47 19 &   7056 & 269 & 22 & 15& 14 & 29  &  42.67 \\
+NRGb282 &  14 05 57.0 & +09 07 58 &   6872 & 660 & 22 & 33& 8  & 41  &<42.00 \\
+NRGb301 &  14 28 01.9 & +25 34 10 &   4819 & 302 & 24 & 9 & 12 & 22  & <41.70 \\
+MKW 8   &  14 40 49.1 & +03 24 11 &   8100 & 325 & 10 & 21& 18 & 39  & 41.98 \\
+NGC 5846&  15 05 32.0 & +01 41 48 &   1749 & 322 &  7 & 9 & 13 & 22  &  42.00  \\
+NRGb331 & 15 06 41.4 & +12 44 13 &   6904 & 204 &  9 & 2 & 3  & 5  & <42.20 \\
+\hline
+\end{tabular}
+\end{center}
+\small
+{\bf Notes:} \hskip 5pt
+Columns 1 and 2: Positions of cluster center;
+Columns 3 and 4: Heliocentric cluster central velocity and velocity dispersions;
+Column 5: Number of group galaxies detected in \HI\ by the ALFALFA survey;
+Column 6: Number detected in \Halpha\ imaging but not ALFALFA (numbers in parentheses are preliminary); Column 7: Number classified by emission line ratios in the NASA-Sloan Atlas as star-forming,
+but not detected in ALFALFA or \Halpha\ images;
+Column 8: Number of group galaxies we propose to observe, the sum of columns 6 and 7;
+Column 9: X-ray luminosities. Properties in Columns 1-4 and 9 are from
+Mahdavi {et al} (2000), except for NGC 5846 which has X-ray
+luminosity from Boehringer {et al} (2000) and velocity and dispersion
+from Mahdavi, Trentham, \& Tully (2005).
+%N$_{H\alpha}$: Number of group galaxies detected in \Halpha\ images but not in ALFALFA\\
+%N$_{H\alpha}$: Number of group galaxies in the NASA-Sloan Atlas and classified by
+%their line ratios as star-forming but not detected in ALFALFA or in our \Halpha\ images
+%(Note that our \Halpha\ images do not generally span the full $4\times4$ Mpc region sampled by
+%the NASA-Sloan Atlas.) \\
+%Positions (X-ray centroids where detected), central velocities
+%($v_{he}$) , velocity dispersions ($\sigma_v$), and X-ray luminosities
+%are from Mahdavi {et al} (2000) except for NGC 5846, which has X-ray
+%luminosity from Boehringer {et al} (2000) and velocity and dispersion
+%from Mahdavi, Trentham, \& Tully (2005)}
+\end{table}
+
+
+
+\begin{center}
+\bf References:\\
+\end{center}
+\begin{multicols}{2}
+%\parskip 0pt
+%\parindnt 0pt
+\small
+
+%\noindent Balogh, M. L.  et al. 1997, ApJ, 488, 75
+
+\noindent Blanton, M. et al. 2011, AJ, 142, 31
+
+\noindent Boehringer, H. et al. 2000, ApJS, 129, 435
+
+\noindent Budav\'{a}ri, T. et al. 2003, ApJ 595, 59
+
+\noindent Catinella, B. et al. 2013, MNRAS (in press); astro-ph 13.08,1676
+
+%\noindent Chung, A. et al. 2007, ApJ, 659, L1
+
+\noindent Cortese, L. et al. 2011, MNRAS, 415, 1797
+
+%\noindent Cortese, L. \& Hughes, T.M. 2009, MNRAS 400, 1225
+
+%\noindent Dale, D. A. et al. 2001, AJ, 121, 1886
+
+%\noindent Fabello, S. et al. 2012, MNRAS, 427, 2841
+
+%\noindent Fosatti, M. et al. 2013, A\&A, 553, 91
+
+\noindent Gavazzi. G. et al. 2013, A\&A, 553, 89
+
+%\noindent Giovanelli, R. \& Haynes M. P. 1983, AJ, 88, 881
+
+%\noindent Giovanelli, R. et al. 2005, AJ, 130, 2598
+
+%\noindent Gomez, P. L., et al. 2003, ApJ, 584, 210
+
+%\noindent Gunn, J. E. \& Gott, J. R, ApJ, 176, 1
+
+\noindent Haynes, M.P., et al. 2011, AJ 142, 170
+
+\noindent Huang, S., et al. 2012, ApJ. 756, 113
+
+%\noindent Johnson, K. E. et al. 2007, AJ, 134, 1522
+
+%\noindent Kilborn, V.A. et al. 2009, MNRAS, 400, 1962
+
+\noindent Kewley, L.J. et al. 2006, MNRAS, 372, 961
+%Groves, B., Kauffmann, G., \& Heckman, T.
+
+\noindent Koopmann, R.A. \& Kenney, J.D.P. 2004, ApJ, 613, 851
+
+%\noindent Koopmann, R. A. \& Kenney, J. D. P. 2006, ApJs, 162, 97
+
+%\noindent Koopmann, R. A., Kenney, J. D. P., \& Young 2001, ApJs, 135, 125
+
+%\noindent Larson, R. B., Tinsley, B. M., Caldwell, C. N. 1980, ApJ, 237, 692
+
+%\noindent Lewis, I., et al. 2002, MNRAS, 334, 673
+
+%\noindent Lu, T. et al.  2012, MNRAS, 24, 126
+
+\noindent Mahajan, S. et al.  2010, MNRAS 404, 1745
+
+\noindent Mahdavi, A. et al. 2000, ApJ, 534, 114
+
+\noindent Mahdavi, A., Trentham, N., Tully, R.B. 2005, AJ, 130, 1502
+
+%\noindent Moore, B. et al. 1996, Nature, 379, 613
+
+%\noindent Poggianti, B. et al. 1999, ApJ, 518, 576
+
+%\noindent Postman, M. et al. 2005, ApJ, 623, 721
+
+\noindent Rasmussen, J. et al. 2012, ApJ 757, 122
+
+%\noindent Rose, J.A., Robertson, P., Miner, J., \& Levy, L. 2010, AJ, 139, 765
+
+%\noindent Sakai, S., Kennicutt, R. C., van der Hulst, J. M., \& Moss, Chris 2002, ApJ, 578, 842
+
+\noindent Solanes, J.M. et al. 2001, ApJ, 548, 97
+
+\noindent Tanaka, M. et al. 2004, AJ 128, 2677
+
+\noindent Toribio, M.C., et al.  2011, ApJ 732, 92\\
+
+%\noindent Tzanavaris, P. et al 2010, ApJ, 716, 556
+
+%\noindent Verdes-Montenegro, L., et al.  2001, A\&A, 377, 812
+
+%\noindent York, D. G. 2000, AJ, 120, 1579
+
+\end{multicols}
+
+\end{document}

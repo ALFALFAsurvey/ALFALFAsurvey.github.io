@@ -1,14 +1,0 @@
-div#navbar {font-family: Verdana, Helvetica, Arial, sans-serif;font-size: 1.1em;font-weight: bold;text-align: left;background-color: #FFFFFF;font-weight: bold;padding: 10px;
-}#navbar a:link, #navbar a:visited {color: #FF0000;text-decoration: none;border: 0px #FF0000 solid;padding-top: 1px;padding-left: 1px;padding-bottom: 1px;padding-right:1px;display: run-in;
-}#navbar a:hover {color: #FFFFFF;background-color: #FF0000;text-decoration: underline;
-font-weight: italic;border: solid #FFFFFF 1px
-padding-top: 1px;padding-left: 1px;padding-bottom: 1px;padding-right:1px;
-display: run-in;
-}
-<a href="index.php" class="current">Main</a><br><p>
-  <a href="./../alfalfalog/">Observation Logs</a><br><p>
-  <a href="./people.php">People</a><br><p>
-  <a href="./science.php">Academic</a><br><p>
-  <a href="./scheds/">Schedule</a><br><p>
-  <a href="./docs/">Documentation</a><br><p>
-  <a href="./links.php">Links</a><br><p>

@@ -1,0 +1,94 @@
+ALFALFA-SDSS cross tablew            last update 12Jul2010 by martha
+
+Stern warnings are meant to get your attention:
+POINT #1:    These crosslists may be very useful to you but you didn't make them. 
+             It has taken considerable time, effort and thought to generate them;
+             guess who is responsible for that?
+             You should treat them as intellectual property. 
+             Do not pass them on to others or use it for non-ALFALFA-related
+             work without permission. 
+             And thank the person(s) who got you this far.
+    
+POINT #2.    As is the case with every large database, you need to understand
+             the good and bad aspects of this crosslist. Both the ALFALFA 
+             and SDSS datasets have their quirks. It is YOUR RESPONSIBILITY
+             to understand them. If you find this crosslist faulty, then don't 
+             use it. On the other hand, if you find errors that should be corrected
+             discuss with Martha how best to go about doing that.
+
+POINT #3     The AGC is a great database. But it is EXTREMELY inhomogeneous and
+             incomplete in random ways. So, if you plan to use samples drawn from
+             it, investigate how its quirks affect your data. In particular,
+                 -- the accuracy of positions are of variable quality
+                 -- it has a tendency to include more spirals than early types
+                    especially for galaxies without redshifts or beyond 18,000 km/s
+                 -- For small/faint objects most morphologies, mags and sizes are
+                    ballpark only.
+
+POINT #4     The SDSS is a great database. But the pipeline used to process SDSS images,
+             is meant to be optimized for galaxies as the SDSS median redshift (z~0.11)
+             NOT nearby objects. So there are serious issues with extended objects,
+             especially ones with low surface brightness or clumpy structure (i.e. just
+             the objects ALFALFA detects by the truckload). So watch out.
+                  -- The PhotoObjs listed here are meant to be the brightest "child"
+                     but that depends on whether the positional accuracy was good when
+                     the match was made. There is also in many cases a "ParentObjID"
+                     which could be a better magnitude (the sum of all the "children").
+                     However, sometimes foreground stars get added in. So watch and
+                     test for outliers!
+                  -- We have tried to identify spectra which are either clearly bogus
+                     or lie off-center from the galaxy but we haven't checked every
+                     case. So likewise, watch out for bad stuff. Surely, there are
+                     still some skeletons lurking about.
+
+
+             These are works in progress. Always more to do. Never perfect. Caveat emptor.
+             You get what you pay for.
+
+Each cross list begins with a header which records its origin; we suggest that you do **not** remove 
+what's there but add to it if you want. Here is an example
+
+#   ALFALFA-SDSS cross table           GROUPsdss.cross100707.txt    last update:   07Jul2010 by Martha                         
+#   ALFALFA catalog:    master100627.txt                (this is Martha's version)                                             
+#   Documentation:      alfalfasdsscrossnotes.txt                                                                              
+#AGCnr     HI source       OC position   I P       SDSSname           PhotObjID             SpecObjID                cz        
+
+
+Columns are:
+      AGCnr     
+      HI source       From ALFALFA src/catalog file if applicable
+      OC position     From ALFALFA src/catalog file if applicable
+      ICODE           HI det code from src/catalog file
+      PCODE           Code relevant to SDSS match    
+                      U = no optical counterpart
+                      J = PhotoID set
+                      O = out of range
+                      N = no photometric source identified (should probably be checked)
+                          Can be due to bright star, satellite trails, incomplete coverage
+                          or sometimes, no apparent reason
+                      P = photometry suspect for some reason
+                          Note: if set, someone has done it by intentionally by hand
+                             presumably for some good reason.
+                      D = clear displacement of Photo/SpectID from optical center
+                          Note: if set, someone has done it intentionally by hand
+                             PhotoID may be ok (often this is brightest child), but you 
+                             should check. 
+                      T = displacement of Photo vs SpectID, i.e. they do not coincide
+                          but the spectrum probably arises from within (offcenter) the
+                          galaxy.
+                          Note: if set, someone has done it intentionally by hand;
+                          cases like this need to be checked.  
+                      S = redshift is of superposed star or QSO
+                      B = redshift is bogus for some reason
+
+                      Notice that the PCODE is set to O,N,P,D,T,S,B by hand. Not all objects have
+                      been checked, so the setting of PCODE should not be considered complete or
+                      uniform. It is only intended to record where a person has noted something.  
+      SDSSname        J+position
+      PhotObjID       This of the individual source (CHILD); use this to find the PARENTOBJID for 
+                      photometric parameters
+      SpecObjID       The spectroscopic target closest to the center of the galaxy    
+      cz(SDSS)        cz from above; these don't always have required precision so don't use
+                      this value.
+
+Note: At this point, galaxies with HI code = 4,5 have not been checked. Do not use them!

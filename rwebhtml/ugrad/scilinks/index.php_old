@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>ALFALFA science links</title>
+</head>
+
+<body
+ style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 102);"
+ link="#ff0000" vlink="#ff0000" alink="#00cccc">
+
+<center><p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600">
+</center>
+
+<center><h1>ALFALFA Science Links</h1></center>
+<center>
+<ul>
+<h2><li>Links related to <a href="virgostructure.php"> the structure of the 
+Virgo cluster</a></h2>
+<h2><li>Links related to 
+<a href="http://www1.union.edu/~readj/virgoHI.html"> 
+HI studies of the Virgo cluster</a> (Thanks to Jay!)</h2>
+<h2><li>Links related to <a href="cloudlinks.php"> intergalactic HI clouds</a>,
+including tidal bridges and tails</h2>
+<h2><li>Links related to the relationship between <a href="Halpha.php">
+H&alpha and HI</a> in galaxies</h2>
+<h2><li>Links related to <a href="processes.php"> processes</a> of gas removal,
+tides, stripping, etc</h2>
+
+<br><br>
+
+<h2><li>Bibliography of <a href="refs_HIsurveys.php">HI surveys</a> (Needs someone to
+update it!)</h2></p>
+</ul>
+</center>
+<br>
+<br>
+<hr align="center" width="600">
+<center>
+<font color=#cc0f14>
+This page maintained by members of the ALFALFA undergraduate teams at
+<a href="http://www.astro.cornell.edu/Galaxy/egg.html">the Cornell
+ExtraGalactic Group</a> and at Union College.
+</font></p>
+
+<font color=#008000><b>Last modified: Fri Jun 10 11:23:37 EDT 2005</b>
+by martha </font>
+</center>
+
+</body>
+</html>

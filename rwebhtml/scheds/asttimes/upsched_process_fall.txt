@@ -1,0 +1,34 @@
+Find this file at: 
+/home/web/research/projects/egg/alfalfa/scheds/asttimes/upsched_process.txt
+
+I.  Review the observing log; make sure all is ok.
+    Note the start-end times (for use later)
+
+
+II. Update the schedule at:
+/home/web/research/projects/egg/alfalfa/scheds/asttimes
+
+emacs a2010_schedcurrent.txt &
+       -- change the date at the top
+       -- move the current line from UPCOMING to COMPLETED
+       -- add azimuth on RHS of first line (next night)
+       -- change EGGs to indicate the appropriate EGGs, e.g. AM,BK(R)
+cp a2010_schedcurrent.txt a2010_schedupcoming.txt
+y
+
+emacs a2010_schedupcoming.txt &
+       -- delete COMPLETED OBSERVATIONS block
+
+emacs a2010_schedfall_needed.txt &
+       -- change the date at the top
+       -- if incomplete run, add time still needed
+       -- if completed, indicate that
+
+emacs a2010_schedfallstatus.txt &
+       -- change the date at the top
+       -- add block ID and LST coverage of run
+       -- add note in any time lost. Next "Note number" is: 31
+
+source upsched.csh
+{enter password when prompted}
+

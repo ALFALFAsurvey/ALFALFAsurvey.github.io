@@ -1,0 +1,122 @@
+A2010 observing schedule                                          last update: 09Dec01   mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+Az: should be 180 for Decs north of zenith and 360 for Decs south of zenith.
+(R) indicates remote observing.
+
+FALL 2009
+----------------------
+COMPLETED OBSERVATIONS
+-------------------------------------------------------------------------------------------------
+      Block     Date    LMSTmidn      AST           LST       Drift   DecJ    Observers
+    09.08.14  F 14Aug    21h04    00h30-06h15   21h34-03h20    15p1  +033142  RG,AM(R)  
+    09.08.16  S 16Aug    21h12    00h15-06h00   21h27-03h13    14p1  +031706  AM,KN(R)  
+    09.08.17  M 17Aug    21h16    00h15-06h00   21h31-03h17    13p1  +030230  AM,DS(R)   
+    09.08.18  T 18Aug    21h20    00h15-06h00   21h35-03h21    12p1  +024754  MH,DS,KN(R) 
+    09.08.19  W 19Aug    21h24    00h00-05h45   21h19-03h10    11p1  +023318  DS,KN(R)  
+    09.08.20  R 20Aug    21h27    00h00-05h45   21h24-03h14    10p1  +021842  DS,KN(R) 
+    09.08.21  F 21Aug    21h31    00h00-05h45   21h28-03h18     9p1  +020406  SH2(R)  
+    09.08.22  S 22Aug    21h39    23h45-05h30   21h24-03h10     8p1  +014930  LH,PM(R)
+    09.08.28  F 28Aug    22h03    23h30-05h15   21h32-03h18     7p1  +013454  EP(R)  
+    09.08.29  S 29Aug    22h07    23h30-05h15   21h36-03h22     6p1  +012018  BA(R)   
+    09.08.30  S 30Aug    22h11    23h30-05h15   21h40-03h26     5p1  +010542  BA(R)  
+    09.08.31  M 31Aug    22h15    23h15-05h00   21h29-03h15     4p1  +005106  BA(R)          
+    09.09.01  T 01Sep    22h19    23h15-05h00   21h33-03h19     3p1  +003630  RK(R) 
+    09.09.02  W 02Sep    22h23    23h15-05h00   21h37-03h23     2p1  +002154  RK(R) 
+    09.09.03  R 03Sep    22h27    23h15-05h00                                 Run cancelled TS Erika
+    09.09.04  F 04Sep    22h31    23h00-04h45   21h30-03h16     1p1  +000718  AM(R)      
+    09.09.05  S 05Sep    22h34    23h00-04h45   21h34-03h20     0p1  -000718  AM(R)     
+    09.09.06  S 06Sep    22h38    23h00-04h30   21h38-03h09     9p2  +021124  SH2(R)  
+    09.09.07  M 07Sep    22h42    23h00-04h30   21h42-03h13     8p2  +015648  SH2(R)
+    09.09.08  T 08Sep    22h46    22h45-04h30   21h31-03h17     7p2  +014212  SH2(R)          
+    09.09.09  W 09Sep    22h50    22h45-04h30   21h35-03h21     6p2  +012736  BA(R)        
+    09.09.10  R 10Sep    22h54    22h45-04h15   21h39-03h09     5p2  +011300  EP(R)   
+    09.09.11  F 11Sep    22h58    22h30-04h15   21h42-03h13     4p2  +005824  EP(R) 
+    09.09.12  S 12Sep    23h02    22h30-04h15   21h46-03h17     3p2  +004348  EP(R) 
+    09.11.03  T 03Nov    02h27    19h00-00h45                         Run cancelled; ALFA not ready
+    09.11.04  W 04Nov    02h31    19h00-00h45   21h45-03h16     1p2  +001436  RK,RF(R)
+    09.11.05  R 05Nov    02h35    19h00-00h45   21h49-03h20     0p2  +000001  EP(R)
+    09.11.06  F 06Nov    02h39    19h00-00h45   21h51-03h24    24p1  +054306  RG(R) freebie; transmitter down
+    09.11.10  T 10Nov    02h55    20h30-00h30   23h24-03h24    15p2  +033900  JR(R)  
+    09.11.11  W 11Nov    02h59    18h30-00h15   21h27-03h13     1p3  +000339  RF,RK(R) 
+    09.11.12  R 12Nov    03h03    18h30-00h15   21h31-03h17     0p3  -000339  BA,MH(R)      
+    09.11.17  T 17Nov    03h22    18h15-00h00   21h36-03h22     2p2  +002912  KH(R)
+    09.11.18  W 18Nov    03h26    18h00-23h45   21h25-03h26    14p2  +032424  KH(R) 
+    09.11.19  R 19Nov    03h30    18h00-23h45   21h29-03h30    13p2  +030948  KH(R)  
+    09.11.20  F 20Nov    03h34    18h00-23h45   21h33-03h34    12p2  +025512  DK,TS,BC2,DS2,NB2,EG
+    09.11.21  S 21Nov    03h38    18h00-23h45   21h37-03h38    11p2  +024036  DK,TS,BC2,DS2,NB2,EG
+    09.11.22  S 22Nov    03h42    17h45-23h45   21h25-03h41    10p2  +022600  DK,TS,BC2,DS2,NB2,EG
+    09.11.23  M 23Nov    03h46    20h00-23h30   23h45-03h15    23p1  +052830  DK,TS,BC2,DS2,NB2,EG
+    09.11.24  T 24Nov    03h50    20h00-23h30   23h49-03h19    22p1  +051354  DK,TB et al.
+    09.11.25  W 25Nov    03h54    20h00-23h30   23h53-03h23    21p1  +045918  TB,DK,TS,JA,PP
+    09.11.26  R 26Nov    03h58    21h30-23h30   01h27-03h27    20p1  +044442  TB,JA,PP
+    09.11.27  F 27Nov    04h02    21h15-23h15   01h16-03h16    19p1  +043006  TB,JA,PP  
+    09.11.28  S 28Nov    04h06    21h15-23h15   01h20-03h20    18p1  +041530  AM(R)       
+    09.11.29  S 29Nov    04h10    21h15-23h15   01h24-03h24    17p1  +040054  AM(R)    
+    09.11.30  M 30Nov    04h14    21h00-23h00   01h13-03h13    16p1  +034618  AM(R) 
+
+     THIS IS THE END OF THE FALL 2009 TIME ALLOCATION
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+AA: Adeel Altaf
+DB: Drew Brisbin
+CA: Cameron Arsenault
+TB: Tom Balonek
+NB2: Noah Billings
+NB: Noah Brosch
+SB: Shea Brown
+BC: Barbara Catinella
+JC: John Cannon
+BC2: Bret Comnes
+JD: Josh Davidson
+AF: Amy Furniss
+RF: Rose Finn
+EG: Elena George
+JG: Josh Goldstein
+RG: Riccardo Giovanelli
+MH: Martha Haynes
+KH: Kelley Hess
+SH: Sarah Higdon
+SH2: Shan Huang
+LH: Lyle Hoffman
+WH: Walter Hopkins
+MJ: Melissa Jacquart
+SK: Shelvean Kapita
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax
+BM: Bilal Mahmood
+PM: Peiyuan Mao
+SM: Steven Margell
+AM: Ann Martin
+JM: Jeff Miller
+WM: Arik Mitschang
+EM: Emmanuel Momjian
+PN: Prasanth Nair
+KN: Kim-Yen Nguyen
+AO: Aileen O'Donoghue
+EP: Manolis Papastergis
+PP: Phil Patrick
+DR: Daniel Richey
+JR: Jessica Rosenberg
+AS: Amelie Saintonge
+JS: John Salzer
+DS2: David Shook
+KS: Kristine Spekkens
+OS: Oded Spector
+DS: David Stark
+SS: Sabrina Stierwalt
+TS: Tess Senty
+MT: Mari Carmen Toribio
+LV: Liese van Zee
+BW: Brian Walsh
+EW: Eric Wilcots

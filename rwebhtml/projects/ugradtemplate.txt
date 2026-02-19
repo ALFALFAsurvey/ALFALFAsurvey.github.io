@@ -1,0 +1,25 @@
+Template for undergraduate student project related to ALFALFA:
+
+
+Proposal Title:
+Student Name:
+Adviser:
+Other Collaborators (if any):
+Context: (e.g. Senior Thesis, Summer research project, etc.)
+Institution:
+Time frame: (e.g. Summer 2006, end of AY 2007, etc.)
+Publication expected?
+
+Description: (up to ~ 500 words)
+
+ALFALFA region: (e.g. RA 23 to 24 hrs, Dec 10 to 20 deg)
+
+ALFALFA data to be used: (e.g. raw data, Level I data, ALFALFA Catalog)
+
+Other data sets to be used: (e.g. optical spectroscopy to be obtained at XXX
+Observatory)
+
+Products to be delivered: (e.g. HI catalog of region as defined above; optical
+identification
+                of all ALFALFA sources in region; cross-reference with catalogs X, Y and Z;
+                other data sets produced)

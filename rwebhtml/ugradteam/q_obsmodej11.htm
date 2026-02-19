@@ -1,0 +1,144 @@
+<html>
+
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+<center><p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600">
+</center>
+
+<h2><font color=#cc0f14>Calculating Observing Parameters for the ALFALFA January 2011 observing
+</font></h2>
+
+<h3> Background Reading </h3>
+Review your understanding of the equatorial coordinate system (right ascension
+and declination). See first bullet in <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/ugradprep.php"> Things to Know </a> for help.
+<br> Review the 
+<a href="http://www.astro.cornell.edu/~galaxy/docs/figbeams.pdf">
+memo</a> on ALFA beam rotation and <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/observingmode.htm"> ALFALFA Observing Mode </a> </p>
+
+<h3> Calculations </h3>
+
+Three target drifts are <a href="http://www.naic.edu/~a2010/scheds/a2010_schedupcoming.txt"> listed </a> for the Workshop:
+<ul>
+<li> &nbsp; &nbsp;M 17Jan &nbsp;134p1 &nbsp; +322906   from AST 01h45-06h30
+<li> &nbsp; &nbsp;T 18Jan &nbsp;138p1 &nbsp; +332730   from AST 01h30-06h15  
+<li> &nbsp; &nbsp;W 19Jan &nbsp;136p1 &nbsp; +325818   from AST 01h30-06h15
+</ul>
+
+Let's look at drift 134p1, at declination +322906, to be observed  from AST0145-0630, i.e., 1:45 - 6:30AM
+ Arecibo time, on Jan 17. 
+<br> <font color="#990000"> Detailed instructions courtesy Catherine </font>
+</p> 
+
+<ol>
+
+<li> For this drift, list the resultant seven declinations covered by
+ALFA's seven beams, in order, from south to north.
+Visit <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/observingmode.htm">
+this page </a>
+and <a href="http://www.astro.cornell.edu/~galaxy/docs/figbeams.pdf">
+this memo </a> for help. Note the central beam (designated Beam "0")
+is the one that is set to the declination listed.
+<br>
+<font color="#990000"> 
+The central beam (beam 0) is the starting point for this
+calculation. The declination for beam 0 is given in
+the <a href="http://www.naic.edu/~a2010/scheds/a2010_schedupcoming.txt">
+observing schedule. </a> Beam 1 is the most southern and beam 4 is the
+most northern. This is based on the central beam being above +18d,
+indicating that the dec. range is north of the zenith. The offset
+between the beams is 2.1 arcmin (2 arcmin 6 arcsec). By taking beam 0
+and adding 2.1 arcmin the resultant declination is projected for beam
+5. From there you would add 2.1 arcmin to the results for beam 5 to
+get the declination for 3 and then add 2.1 to the declination of beam
+3 to get the declination at beam 4. To get the more southern
+declinations start from beam 0 and subtract 2.1 arcmin from beam 0 to
+get declination at beam 2 then subtract 2.1 arcmin from that to get
+declination at beam 6 and then once more for the declination from beam
+1.
+</font>
+<br><br>
+<li> What is the resultant declination range covered by the 7 beams of
+ALFA for this drift? (Hint: consider the full width of each beam, 
+the figures on 
+<a href="http://egg.astro.cornell.edu/alfalfa/ugrad/observingmode.htm">
+this page </a> are helpful.) 
+
+<br>
+<font color="#990000"> 
+The declination range is basically accounted for based on the
+results obtained from question 1. All that needs to be taken into
+account to get the full range is the ends of beams 1 and 4. Looking at
+the graphs from <a href="http://www.astro.cornell.edu/~galaxy/docs/figbeams.pdf"> the memo <i>ALFA Beam Configurations on the
+Sky</i></a> one can see that to account for the ends of beams 1 and 4, 2.1
+arcmins need to added to the declination of beam 4 and subtract 2.1
+arcmins from the declination of beam 1.
+</font>
+
+<br><br>
+
+<li> What is the range in local sidereal time (LST) over the course of the run? 
+This is approximately the right ascension range that we will cover. 
+(Hint: look again at the 
+<a href="http://www.naic.edu/~a2010/scheds/a2010_schedupcoming.txt"> 
+summary of upcoming observing </a> page.) 
+
+<br><font color="#990000"> 
+The LST (local sidereal time) range which is approximately the RA
+range that will be covered. There are two ways in which we can
+calculate this. 
+<br>Method 1 is using the program blocksched.pro from
+IDL. The command for this is<i>blockshed, yymmdd, ast1HHMM,
+ast2HHMM</i>. For the first drift we would enter into the command line:
+<i>blockshed,100117L,0145L,0630L </i>.
+<br>Method 2 has the initial starting point given to us by
+Martha in <a href="http://www.naic.edu/~a2010/scheds/a2010_schedupcoming.txt"> 
+summary of upcoming observing </a>. 
+Using this reference point the next two LST ranges can be
+calculated. The starting time (AST in the observing schedule) is 15
+minutes earlier for the second drift compared with the first
+drift. This difference must be accounted for when calculating the
+range. The starting time stays the same for the third drift compared
+with the second drift and therefore a difference is not accounted
+for. For each day the LST differs by 4mins and must be accounted for
+in the LST range calculations (through addition).
+</font>
+
+<br><br>
+<li> What is the zenith angle of this drift as observed with ALFA beam
+0?
+
+<font color="#990000"> 
+<br>The zenith angle is calculated by taking the declination value at beam 0 and subtracting it from the latitude line of Arecibo (+18d21).
+</font>
+<br><br>
+<li> At what azimuth will we orient the azimuth arm so that ALFA
+can observe this declination strip? 
+<font color="#990000"> 
+<br>First answer: is this declination north or south of the zenith at
+Arecibo? Then look at the explanation on the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/observingmode.htm">
+ALFALFA Observing Mode page </a> to figure out the answer.
+</font>
+<br><br>
+<li> What are the redshift and velocity ranges covered by ALFALFA?
+
+<font color="#990000"> 
+<br>Check out the table at the very bottom of the <a href="http://egg.astro.cornell.edu/alfalfa/science.php"> ALFALFA Science page </a>.
+</font>
+<br>
+<li> <a href="ugradobsprop.php"> Go back and search for targets! </a>
+ 
+</ol>
+
+<br>
+<br>
+<hr align="center" width="800">
+
+<i>Last modified: Thu Dec  2 08:32:50 EST 2010
+ by becky and catherine </i>
+
+
+</body>
+
+</html>

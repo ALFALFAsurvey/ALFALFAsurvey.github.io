@@ -1,0 +1,284 @@
+<HTML>
+<HEAD>
+<TITLE>REU 2012 CCAT WORKSHOP</TITLE>
+</HEAD>
+
+<BODY bgcolor="ffffff">
+
+<h1> <font color=#cc0f14>Exploring Early Galaxies with the CCAT </font></h1><br>
+
+<h2> <font color=#cc0f14>Activity: WIDE AREA GALAXY SURVEYS</font></h2>
+The wide area capability of CCAT will make it especially useful to conduct deep, large
+area surveys of the submillimeter sky. In this activity, we will explore a few datasets
+gleaned from existing large area surveys at optical and radio wavelengths to explore
+in general terms how surveys of large numbers of galaxies can be used to learn about
+their formation and evolutionary history.</p>
+
+Find this activity at: <a href="http://www.astro.cornell.edu/specialprograms/reu2012/workshops/ccat12_1.htm">
+http://www.astro.cornell.edu/specialprograms/reu2012/workshops/ccat12_1.htm</a></p>
+
+<b><font color=#cc0f14> Useful links</font></b>
+<ul>
+<li> <a href="http://www.ccatobservatory.org/index.cfm">CCAT</a>
+<li> <a href="http://www.sdss.org/">SDSS</a>, the Sloan Digital Sky Survey
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/">ALFALFA</a>, the Arecibo Legacy Fast ALFA extragalactic HI survey
+<li> <a href="http://irsa.ipac.caltech.edu/">NASA/IPAC</a> infrared science archive
+<li> <a href="http://archive.stsci.edu/">MAST</a>, the Mikulski archive for space telescopes
+<li> <a href="http://ned.ipac.caltech.edu/">NED</a>, the NASA extragalactic database
+<li> <a href="http://www.usvao.org/">VAO</a>, the US Virtual Astronomical Observatory
+<li> <a href="http://www.star.bris.ac.uk/~mbt/topcat/">TOPCAT</a>, 
+     the <b>T</b>ool for <b>OP</b>erations on <b>C</b>atalogues <b>A</b>nd <b>T</b>ables
+<li> <a href="http://hea-www.harvard.edu/RD/ds9/site/Home.html">DS9</a>, astronomical
+      imaging and data visualization application (we won't use this today, but it's good to know about)</p>
+</ul>
+<br>
+
+<b><font color=#cc0f14> Using TOPCAT (Excel for Astronomers)</b></font></p>
+During this activity, we will use <a href="http://www.star.bris.ac.uk/~mbt/topcat/">TOPCAT</a> to generate some plots.
+Developed as part of the <a href="http://www.ivoa.net/">international virtual observatory</a> effort, TOPCAT is
+a java application that is specifically designed for astronomical use and it should run on any platform.
+     If possible, download it on your laptop before coming to the workshop. Then let's use it!</p>
+
+
+<br>
+<b><font color=#cc0f14> Demonstrating TOPCAT: Exploring the ALFALFA universe</font></b><br>
+On Tuesday, Riccardo Giovanelli gave an introduction to the ALFALFA survey. Here, we will use TOPCAT
+explore a few things about the ALFALFA dataset which will likewise provide some insight into any
+flux/magnitude limited survey. 
+<ul>
+<li> Go to the
+<a href="http://egg.astro.cornell.edu/alfalfa/data/index.php">ALFALFA data page</a>. Take a quick look at the
+ASCII version of Table 1 (N.B. it has a description of the table contents) and then
+download Table 1 in CSV format. What does "csv" stand for?</p> 
+<li> One of the features of TOPCAT as an astronomical tool is that it understands what
+right ascension and declination are. The CSV format includes a first line which contains column headers.
+As long as we have been clever enough (and of course, we have been) to label the columns for RA,Dec intelligently
+(e.g., RAdeg_HI, Decdeg_HI), TOPCAT will quickly realize these are astronomical coordinates.
+Load the CSV table into TOPCAT and make a SKY plot. What do you notice?</p> 
+<li> Next, make a <a href="http://adsabs.harvard.edu/abs/1978A%26A....65..313S">Spaenhauer diagram</a>, plotting
+on the x-axis the distance to the galaxy and on the y-axis the log of the HI mass. What do you notice?
+How can you interpret the various structural features that are evident? </p> 
+</p>
+</ul>
+<br>
+While we might spend the rest of the day exploring ALFALFA data (and many of us do, every day...), let's move on
+to learn a bit about the optical <a href="http://www.sdss.org/">SDSS</a>. As we move forward, we need to keep
+in mind the lesson about survey depth that the Spaenhauer diagram teaches us.</p>
+
+<br>
+<b><font color=#cc0f14> Demonstrating SQL: Finding a few, very massive galaxies (in a very small volume)</font></b></p><br>
+
+The <a href="http://skyserver.sdss.org/public/en/">SDSS Data Release 7 (DR7) database</a> contains 
+images and photometry in five optical bands (u, g, r, i, z) for 357 million objects and
+spectroscopy for a million objects (930,000 galaxies, 120,000 quasars and lots of stars!).
+Notice also that SDSS continues, and there is already <a href="http://www.sdss3.org/dr8/data_access.php">
+DR8</a>. DR9 is on the way, too! The DR8 extension improves on the pipeline photometric reduction and
+includes more coverage of the imaging-only part of the survey (for galaxies at least). If you want to 
+know more, read about the different surveys in <a href="http://www.sdss3.org/index.php">SDSS-III</a> at its website.
+Its datasets are available through an extensive set of tools and can be searched using
+SQL queries (as discussed by Adam Brazier in his talk on June 19th). Queries can be run in TOPCAT,
+using interactive set up by the SDSS folks (short queries) or using a batch job process (longer ones).</p>
+
+The SDSS spectroscopic survey measures spectra using optical fibers with an aperture of about 3 arcseconds.
+For nearby galaxies, this means that it can measure the stellar velocity disperion of the central regions 
+(within 3 arcsec) 
+In this example, let's find all the most massive galaxies, as indicated by their central velocity dispersion,
+within a small (carefully chosen) area of the sky and recessional velocity range. 
+Because we are most interested in using the spectroscopic dataset, we are going
+to use the <a href="http://cas.sdss.org/astrodr7/en/">DR7 tools</a>. Go to the 
+<a href="http://cas.sdss.org/astrodr7/en/tools/search/sql.asp">DR7 SQL search tool</a>
+and enter the following query command. Be sure you follow its logic.
+
+<pre>
+SELECT
+  p.ra, p.dec, s.z, p.expAB_r, p.petroMag_g,p.petroMag_r,
+  p.lnLExp_r, p.lnLDeV_r, l.sigma, l.sigmaErr,
+  l.ew, l.ewErr
+FROM PhotoObj p, SpecObj s, SpecLine l
+WHERE
+  p.SpecObjID = s.SpecObjID AND
+  p.SpecObjID = l.specobjID AND
+  s.eClass < 0 AND
+  p.fracDev_r > 0.8 AND
+  l.lineID = dbo.fSpecLineNames('H_3970') AND
+  l.sigma*300000.0/l.wave > 500 AND
+  (p.ra >= 194 AND p.ra <= 196) AND
+  p.dec >= 27 AND p.dec <=29 AND
+  s.z >= 0.02 AND s.z <= 0.03
+order by p.ra
+</pre>
+Notice that the velocity dispersion parameter sigma is expressed in weird units. To convert to km/s you multiply by c and 
+divide by the rest wavelength. See the expression above. Also, notice that we have searched
+only a very small area of the sky and for an extreme set of object; if you run a wider area search, you'll need to 
+use the batch job server! Also, we strongly advise that the
+first time you try a query you should select "Check syntax only" and hit "submit". It should tell you that
+your SQL syntax was ok; it will, in this case.</p>
+
+Since the above query is just intended to
+demonstrate the process, leave the output at HTML. Hit submit and wait until the query is returned.
+How many objects do you find?</p>
+
+<!--
+194.7662467   28.12369826  0.026472  0.861946  14.267691  13.435334  -3.949238E4  -1189.98633  6.878028  0.12762  -10.720854  0.136425
+194.87252654  27.85013256  0.022679  0.439834  15.396414  14.568633  -1.862603E4  -789.236206  6.954906  0.14263  -10.857817  0.143996
+195.48989376  28.00584015  0.025783  0.756632  14.41211   13.556781  -2.670218E4  -4208.06201  6.979746  0.170404 -10.345199  0.167828
+-->
+<! -- N4874 is at: 194.8992  27.9583 -->
+
+Let's take a look at those objects in various extragalactic databases:<br>
+&nbsp   125903.9+280725 &nbsp  194.7663   28.1236  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=194.7663&dec= 28.12361&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=194.7663&dec= 28.12361&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=194.7663, 28.12361&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=194.7663, 28.12361&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+59+03.9&lat=+28+07+25&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a> (search NED within 1')<br>
+&nbsp   125929.4+275100 &nbsp  194.8725   27.8500  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=194.8725&dec= 27.85000&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=194.8725&dec= 27.85000&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=194.8725, 27.85000&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=194.8725, 27.85000&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+59+29.4&lat=+27+51+00&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a> (search NED within 1')<br>
+&nbsp   130157.6+280021 &nbsp  195.4900   28.0058  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=195.4900&dec= 28.00583&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=195.4900&dec= 28.00583&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=195.4900, 28.00583&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=195.4900, 28.00583&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=13+01+57.6&lat=+28+00+21&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a> (search NED within 1')</p>
+
+What can you say about them based on their images? They are all pretty near each other on the sky; why is this field interesting?</p>
+
+How do the objects above compare to the objects below? Try to make some generalized comments on their photometric and spectral properties.<br>
+&nbsp   125902.1+280656 &nbsp  194.7588   28.1156  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=194.7588&dec= 28.11556&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=194.7588&dec= 28.11556&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=194.7588, 28.11556&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=194.7588, 28.11556&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+59+02.1&lat=+28+06+56&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a> &nbsp &nbsp
+(This is the bluer object SW of the 1st one above.)<br>
+&nbsp   130037.8+280329 &nbsp  195.1575   28.0581  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=195.1575&dec= 28.05805&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=195.1575&dec= 28.05805&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=195.1575, 28.05805&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=195.1575, 28.05805&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=13+00+37.8&lat=+28+03+29&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a><br>
+&nbsp   125757.7+280342 &nbsp  194.4904     28.0618  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=194.4904&dec=   28.061773&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=194.4904&dec=   28.061773&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=194.4904,   28.061773&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=194.4904,   28.061773&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+57+57.7&lat=+28+03+39&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a><br>
+&nbsp   130006.2+281508 &nbsp  195.0256   28.2522  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=195.0256&dec= 28.25167&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=195.0256&dec= 28.25167&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=195.0256, 28.25167&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=195.0256, 28.25167&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=13+00+06.0&lat=+28+15+06&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+
+<br>
+The above was just intended to show you the power of SQL and how the datasets obtained by the SDSS can be used to
+give valuable insight into the stellar populations and star formation histories of galaxies. We have already used it to create a few interesting
+datasets for you to learn more about galaxy populations from wide area surveys.</p><br><br>
+
+
+<br>
+<b><font color=#cc0f14> Comparing optically selected and HI selected populations via the color-magnitude diagram (CMD)</font></b><br>
+Analogous to the Hertsprung-Russel (HR) diagram used to characterize the nature and evolutionary state of stars, the SDSS photometric database can
+be used to construct a color-magnitude diagram for galaxies. Based on SDSS, authors such as <a href="http://adsabs.harvard.edu/abs/2004ApJ...600..681B">
+Baldry et al. (2004)</a> have separated the SDSS population into the "red sequence" and the "blue cloud", with a smaller number of objects in
+the intermediate "green valley". Astronomers 
+Here is a figure from the Baldry et al. (2004) paper on the left and two cartoon illustrations describing possible evolutionary paths to the 
+right (click to enlarge):</p>
+<table cellpadding=10>
+<tr><td> <a href="http://iopscience.iop.org/0004-637X/600/2/681/fulltext/fg9.h.jpg">
+<img src="http://iopscience.iop.org/0004-637X/600/2/681/fulltext/fg9.h.jpg"" height=200></a></td>
+<td> <a href="http://upload.wikimedia.org/wikipedia/en/f/f9/Galaxy_color-magnitude_diagram.jpg"">
+<img src="http://upload.wikimedia.org/wikipedia/en/f/f9/Galaxy_color-magnitude_diagram.jpg" height=200></a></td>
+<td> <a href="http://www.aanda.org/index.php?option=com_image&format=raw&url=/articles/aa/full/2008/42/aa09839-08/img155.gif">
+<img src="http://www.aanda.org/index.php?option=com_image&format=raw&url=/articles/aa/full/2008/42/aa09839-08/img155.gif" height=200></a></td>
+</td></table></p>
+Notice that sometimes the horizontal axis is presented in different ways; the choice here is deliberate to illustrate the confusion.
+Does optical luminosity directly translate into stellar mass? What assumptions do you need to make?
+</p><br>
+
+Here are the optical luminosities and optical colors of two sets of galaxies which are contained within the **exact** same sky
+area and velocity range (i.e., they are similarly "volume-limited"). Note that we have "massaged" these data for you
+(we have calculated distances using a model of the local universe velocity field and have corrected the
+magnitudes for Galactic and internal extinction and for redshift). Download the CSV files for the two samples:
+<ul>
+<li> <a href="Sweight_prior.csv">SDSS spectroscopic sample</a>
+<li> <a href="HIweight_prior.csv">ALFALFA HI line sample </a>
+</ul>
+Use TOPCAT to construct the CMD of each. Set the axis limits to 
+be x=(-24.,-15.) and y=(-0.5,3.5); any large sample will always contain some outliers most of which 
+are probably bogus data points, so we toss them out here. Can you make a plot superposing the two on the same graph? 
+What do you conclude?</p>
+<br>
+While you are at it, we suggest you compare the distribution of the galaxy distances in each sample; make histograms.
+What does the difference between the two samples tell us?</p>
+ 
+<br>
+<b><font color=#cc0f14> Interpreting the full multiwavelength spectral energy distribution (SED)</font></b><br>
+
+We can use the broadband fluxes measured by different surveys to measure the <b>spectral energy distribution</b> or SED.
+We can then compare the observed SED to that expected from models of the origin of emission at different wavelengths 
+(or frequencies) to figure out what gives rise to
+the photons we detect. Again, as a very simple example (which we have overtrivialized significantly), let's plot the 
+SED of two "mystery" objects using the files below; then we'll look to see
+what they actually are. As in Sudoku or a crossword puzzle, no looking at the answers until after you make the plots
+and discuss the observed SEDs. Download the two CSV files which give frequency, flux at that frequency, and a
+filter/band indicator for the
+two objects.</p>
+
+<ul>
+<li> <a href="objectA.csv">Object A</a> 
+<li> <a href="objectB.csv">Object B</a>
+</ul>
+
+In both cases, the flux values at various wavelength bands have been compiled from public datasets; in reality,
+what you've got is a subset of the photometric values listed for each object at the <a href="http://ned.ipac.caltech.edu/">NED</a>,
+and the available measurements for the two sources don't always overlap.
+Notice that each file contains a third column with a somewhat crytpic 
+alphanumeric code which is supposed to indicate the wavelength/frequency range
+of the measurement. The first column always contains a frequency even when the code indicates a
+wavelenght:  500 nm = 5000 Angstroms = 0.5 micron ~ 6.E+04 GHz (you can find converters on the web).</p>
+
+Use TOPCAT to construct the SED of each (though maybe you want to overplot them?); be sure to set the axes 
+to display log quantities. We suggest that you set the axes to be: x-axis=(1e07,1e19) and y-axis=(1e-06,1e05).
+
+What differences do you notice? How might you explain them?
+</p>
+<br>
+And when you're really done and you want to see what the mystery objects are, follow the links below:
+<ul>
+<li> Object A = Messier 87, the giant elliptical in the Virgo cluster<br>
+&nbsp   123049.4+122328 &nbsp  187.7058   12.3911  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=187.7058&dec= 12.39111&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=187.7058&dec= 12.39111&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=187.7058, 12.39111&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=187.7058, 12.39111&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=12+30+49.4&lat=+12+23+28&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a><br>
+<a href="http://apod.nasa.gov/apod/ap110828.html"><img src="http://apod.nasa.gov/apod/image/1108/m87jet_hst_1222.jpg" height=150>APOD110828</a> &nbsp &nbsp &nbsp
+<a href="http://apod.nasa.gov/apod/ap100520.html"><img src="http://apod.nasa.gov/apod/image/1005/m87jet_block.jpg" height=150>APOD100520</a> &nbsp &nbsp &nbsp
+<a href="http://apod.nasa.gov/apod/ap990216.html"><img src="http://apod.nasa.gov/apod/image/9902/m87s_vla_big.gif" height=150>APOD990216</a></p>
+<!-- <a href="http://www.aanda.org/index.php?option=com_image&format=raw&url=/articles/aa/full/2004/10/aa0020/img64.gif">
+<img src="http://www.aanda.org/index.php?option=com_image&format=raw&url=/articles/aa/full/2004/10/aa0020/img64.gif" height=150>SED of M87</a> from Xilouis+ 2004, A&A 416, 41; you ought to go read the paper and understand where this comes from. Remember, we did things
+in a trivial way...!</p>
+-->
+<br>
+
+<li> Object B = Arp 220, a nearby Ulraluminous Infrared Galaxy (ULIRG) merger <br>
+&nbsp   153457.1+233011 &nbsp  233.7379   23.5031  &nbsp 
+&nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=233.7379&dec= 23.50306&opt=glsi" target=new>DR7Navigate</a>
+&nbsp <a href="http://skyserver.sdss3.org/dr8/en/tools/chart/navi.asp?ra=233.7379&dec= 23.50306&opt=glsi&scale=0.39617" target=new>DR8Navigate</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=233.7379, 23.50306&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=233.7379, 23.50306&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=15+34+57.1&lat=+23+30+11&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a><br>
+<a href="http://apod.nasa.gov/apod/ap970617.html"><img src="http://apod.nasa.gov/apod/image/9706/arp220_hst_big.jpg" height=150>APOD970617</a> &nbsp &nbsp &nbsp
+<a href="http://irsa.ipac.caltech.edu/data/SPITZER/GOALS/galaxies/Arp220.html">
+<img src="http://irsa.ipac.caltech.edu/data/SPITZER/GOALS/galaxies/Arp220/irac/Arp220_irac_3color.jpg" height=150>Spitzer GOALS</a> </p>
+</ul>
+Do the differences in the SED of the two objects make sense to you now that you know what they are?</p>
+<br>
+We hope we have demonstrated that wide area surveys open doors to the exploration of galaxies in many different ways.</p>
+</body>
+</htm>

@@ -1,0 +1,51 @@
+;set up arrays to contain desired quantities from AGC
+diam1=fltarr(5000)
+type1=fltarr(5000)
+agcnum=fltarr(5000)
+
+ ;Prepare to read AGC
+
+        DESCRIPTION = ''
+        NGCIC = ''
+        WHICH = ''
+        TELCODE = ''
+        WIDTHCODE = ''
+        SIGN = ''
+        AGCNUMBER = 0L
+        outputstr = ''
+
+;Opens up a window to pick out AGC catalog to be read
+catname_agc=dialog_pickfile(/read,filter='*.txt')
+
+if (catname_agc eq '') then begin
+    print, 'no catalog defined'
+    cat=''
+    read, 'define catalog yourself? (y/n):', cat_agc
+    if (cat_agc eq 'y') then begin
+        catname_agc=''
+        read, 'Which catalog?', catname_agc
+    endif
+    if (cat_agc ne 'y') then begin
+        print, 'no catalog to plot'
+        return
+    endif
+endif
+
+        ;READ AGC
+print,'reading the AGC catalog'
+openr,agclun,catname_agc,/get_lun
+
+count=0
+ while(EOF(agclun) ne 1) do begin 
+  readf, agclun, AGCNUMBER,WHICH,NGCIC,RAH,RAM,RAS10,SIGN,DECD,DECM,$
+      DECS,A100,B100,MAG10,BSTEINTYPE,VOPT,VSOURCE,FLUX100,RMS100,$
+      V21,WIDTH,WIDTHCODE,TELCODE,DETCODE,HISOURCE,IBANDQUAL,IBANDSRC,$
+      POSANG,IPOSITION,ipalomar,$
+      format = '(I6,A1,A8,1x,2I2.2,I3.3,A1,3I2.2,I5,2I4,i6,2x,I5,I3,2x,I5,I7,1x,I7,I4,1x,A4,A4,i1,1x,I3,2i3,i5,2i3)' 
+
+; add desired elements to arrays
+  agcnum(count)=agcnumber
+  diam1(count)=a100/100
+  type1(count)=bsteintype
+  count=count+1
+endwhile

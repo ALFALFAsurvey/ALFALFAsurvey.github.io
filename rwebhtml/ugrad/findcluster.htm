@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>ALFALFA Undergraduate Website</title>
+</head>
+<body
+
+<center>
+<p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600"></center>
+
+<ul>
+<li>Go to the <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 page</a> at NAIC
+<li>View the main <a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA page</a>
+<li>Back to the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">ALFA for ALFALFA</a>
+
+</ul>
+<hr>
+
+<font color=#cc0f14><b>1. &nbsp Estimating the mass of the cluster of galaxies Abell 1238</b></font></p>
+
+In the 1950's, George Abell performed a systematic visual examination of the Palomar Observatory
+Sky Survey photographic plates to identify rich clusters of galaxies. Practically no redshifts were measured
+for galaxies at the time, so it was all based on his ability to estimate galaxy distances from the visible
+images. It turns out he did a fantastic job of identifying only real 3-d structures; there are some
+that turned out to be the chance projection of structures at different distances, but not many.
+His original catalog of 2712 northern hemisphere clusters is known as the "Abell Catalog"
+(Abell 1958, <a href="
+http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1958ApJS....3..211A&amp;db_key=AST&amp;data_type=HTML&amp;format=&amp;high=42a8b3a4c131127
+" target=new>ApJS 3, 211</a>). He later extended this work to
+a similar survey of the southern sky which was completed by his colleagues after his untimely death.</p>
+
+In this exercise, we will use the NASA Extragalactic Database, NED to find a sample of
+clusters of galaxies and then to make an estimate of the mass of the cluster Abell 1238.
+We try to provide specific instructions to guide you through the exercise, but you are
+invited to explore this database and its tools yourself.</p>
+   <ul>
+   <li>-- Go to the NED home page <a href="http://nedwww.ipac.caltech.edu/" target=new>http://nedwww.ipac.caltech.edu/</a>. You
+          may wish to bookmark this for yourself.
+   <li>-- Click on <font color=#cc0f14>"Advanced AllSky"</font>. We want to restrict some, but not all, options.
+   <li>-- Restict a redshift range to <font color=#cc0f14>BETWEEN 0.05 and 0.1</font>
+   <li>-- Restrict Object Typeto: <font color=#cc0f14>Galaxy Cluster</font>
+   <li>-- Include objects with the Name Prefix: <font color=#cc0f14>ABELL</font>
+   <li>-- Restrict the RA range to <font color=#cc0f14>between 10h and 14</font>; &nbsp (units here are hours)
+   <li>-- Restrict the Dec range to <font color=#cc0f14>between 0 and +3</font>; &nbsp (units here are degrees)
+   <li>-- Submit the query. Depending on traffic on the NED system, it may take a while to run, so be patient.
+   As of June 2006, should get back 9 objects. If not, you've done something
+   wrong, and you should try again until you find exactly 9 objects. If you get more than 9, then 
+   new redshifts may have been added to NED since we wrote up this exercise!</p>
+   </ul>
+
+We've been (deliberately) selective in restricting the volume searched so that you only
+would find a few objects, and in particular, so that the region searched is contained in the current data release of the
+Sloan Digital Sky Survey (SDSS) which we will use in another exercise. Of the 9 clusters, 
+let's explore Abell 1238. You may wish
+to note the basic information returned by this NED query on that one cluster for future reference. </p>
+   <ul>
+   <li>-- Go back to the <a href="http://nedwww.ipac.caltech.edu/" target=new>NED home page</a>.
+   <li>-- Click on <font color=#cc0f14>"By Name"</font>
+   <li>-- Enter <font color=#cc0f14>"Abell 1238"</font>
+   <li>-- Click <font color=#cc0f14>"yes"</font> for <font color=#cc0f14>"Extended Name Search"</font>
+   <li>-- Submit the query; you should get back a list of 42 objects. If not, you've done something
+   wrong, and you should try again until you find exactly 42 objects.</p>
+
+<font color=blue>
+   1.1. &nbsp For 20 objects (in June 2006) designated as "G" (galaxies), there are redshifts. Are there some that are
+   probably not cluster members? Explain your answer.</p>
+</font>
+
+   <li>-- Go back to the <a href="http://nedwww.ipac.caltech.edu/" target=new>NED home page</a>.
+   <li>-- Click on <font color=#cc0f14>"Near Name"</font>
+   <li>-- Enter <font color=#cc0f14>"Abell 1238"</font>
+   <li>-- Enter <font color=#cc0f14>30</font> arcmin for the <font color=#cc0f14>"Search Radius"</font>
+   <li>-- Submit the query; you should find a lot more objects.  It will be advantageous to
+          refine the search a bit, so let's invoke more options.</p>
+
+You found more objects this time, because you did not require that the object be identified (by someone)
+as a member of the cluster A1238; it is important in using a database <i> to understand its limitations</i>. In
+this case, it is safer to perform a thorough search than assuming that someone interested in studying
+Abell clusters has made the linkage between a galaxy and the cluster. </p>
+
+   <li>-- Go back to the <font color=#cc0f14>"Near Name"</font> page and add a selection in
+          redshift to <font color=#cc0f14>"less than 0.1"</font> but make the search radius
+          <font color=#cc0f14>30</font> arcmin and set<font color=#cc0f14>"Object Type"</font> to
+          <font color=#cc0f14>Galaxies</font>.
+   <li>-- Submit the query; you should get back a list of 106 objects (in June 2006). If not, you've done something
+   wrong, and you should try again until you find exactly 106 objects. If you find more than 106 objects, it
+may be that more redshifts have been added to NED since we made up this exercise. NED is a dynamic database!
+   </ul></p>
+
+  <ul>
+<font color=blue>
+   1.2. &nbsp Use the <font color=#cc0f14>"SKYPLOT"</font> facility (at the top of the page; it will
+only plot the first 100 objects, but ignore that detail. Use the default scale but say "No" to the
+SAO stars option.) What do you note about the distribution?</p>
+
+   1.3. &nbsp In order to determine the membership of the cluster, we can examine how the observed
+heliocentric velocities are distributed as a function of radial distance from the central position (given
+in the column labeled "Dist. arcmin".)
+Make such a plot, with radial distance of the X-axis, and heliocentric velocity on the Y-axis.
+(<i>Hint: &nbsp There are various ways you can download the data
+(e.g. cut and paste), but if you can't figure out easily how to do
+it yourself, you are welcome to use this <a href="a1238dat.txt" target=new>file</a>.</i>)
+&nbsp
+Comment on how this method allows you to identify outliers.</p>
+
+   1.4. &nbsp Supppose you could observe the radial velocity of every galaxy in the cluster; assume
+the cluster is spherical and the orbital motions are isotropic (randomly oriented). How do you expect
+the observed velocity distribution of cluster members to change with radial distance from the center?
+Why? (<i> Hint: this is not what you see in this case. We'll see why shortly.</i>)</p>
+
+   1.5. &nbsp Make a histogram of the heliocentric velocities, exclude the outliers and
+calculate the mean heliocentric velocity and its standard deviation. How does your mean velocity
+compare to that given in NED for Abell 1238?</p>
+
+   1.6. &nbsp The conversion of angular scale to linear distance depends on the geometry of the
+universe; we will discuss these relations in a couple of weeks. For the moment, we can use
+Ned Wright's JavaScript <a href="http://www.astro.ucla.edu/~wright/CosmoCalc.html" target=new> cosmology
+calculator</a> to find the angular to linear conversion scale. Using the CosmoCalc tool with its
+default parameters for a <i> flat</i> universe, what is the angular extent corresponding to
+2 Mpc at the distance of Abell 1238?</p>
+
+   1.7. &nbsp Suppose the cluster has a radius of 2 Mpc; estimate its mass. Explain your methodology.
+</font>
+   </ul>
+
+<br>
+<br>
+<hr>
+<font color=#008000><b>Last modified: Tue Jan 23 08:58:34 2007 </b>
+by martha </font>
+</body>
+</html>

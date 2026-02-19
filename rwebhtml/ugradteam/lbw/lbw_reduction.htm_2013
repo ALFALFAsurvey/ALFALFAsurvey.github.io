@@ -1,0 +1,376 @@
+<html>
+  <head>
+    <title>ALFALFA Followup - Data Reductions for LBW Data</title>
+  </head>
+<body bgcolor="ffffff">
+
+<h1> L-Band Wide ALFALFA Followup Data Reduction Instructions </h1>
+
+<P> This page documents the procedure for reducing LBW data. 
+
+<P>
+Here is a short command summary for experienced LBW data reducers.
+<pre>
+idl
+@corinit
+@lbwinit
+
+corfilename = '/share/olcor/corfile.DDmmmYY.a2752.N'
+readlbw, corfilename, lbwsrc
+baselinelbw, lbwsrc
+
+measurelbw,lbwsrc [Only if you have a detection!!!!]
+or
+measurelbw,lbwsrc,/gaussian [Only if you have a gaussian detection!!!!]
+
+writesrclbw, lbwsrc, filename=filename
+save, lbwsrc, filename=lbwsrc.LBWsrcname + '.sav'
+
+*note: We have several lbw followup proposals, so the corfile name might be a2669.N, or a2707.N, etc.
+*note: if you are working on data stored at Cornell, your corfile will will be called something like this:
+corfilename = '/home/dorado3/dorado13/galaxy/corfiles/YY.MM.DD/corfile.DDMMMYY.a2669.N'
+</pre>
+
+<P>
+<FONT SIZE="+1"><B>0.Setting your IDL path</B></FONT>
+
+<P>
+If you haven't reduced LBW data before, make sure that idl can find the lbw reduction routines. You only need to do this once.
+
+<ul>
+<li>Open the file ~/.idlstartup
+<li>Add the following line (if you are working with code stored at Cornell):
+<PRE>
+    !path = expand_path('+/home/dorado3/galaxy/idl_lbw')+':'+ !path
+</PRE>
+</ul>
+<P>This will add the idl_lbw directory to your IDL path on startup.
+<b>Note that this is not necessary if you are working at Arecibo or as 
+"galaxy" at Cornell.</b>
+
+<P>
+<FONT SIZE="+1"><B>1.Setup</B></FONT>
+<P> To get started, open an idl session (type idl in a terminal). 
+<PRE>
+&gt;idl
+</PRE>
+Note that if you are working on data at Arecibo for March 2013, be sure to do your work in the correct directory, e.g.:
+<PRE>
+IDL&gt; cd,'/share/a2010-2/work/mar2013/teamA' 
+</PRE>
+Compile the software that we will need to reduce the data:
+<PRE>
+IDL&gt; @corinit
+IDL&gt; @lbwinit
+</PRE>
+Now you have all the programs you should need at your disposal. 
+For example, you can now view the data using the quicklook command as 
+described on the <a href="http://www.naic.edu/~a2010/checklist_lbw.html">lbw observing cookbook page</a>. 
+
+<P>
+<FONT SIZE="+1"><B>2. Examine source data: READLBW </B></FONT>
+<P>
+The data from each observed source is saved in a "corfile," which is the output from the interim correlator (the backend that we use for LBW observations). These files are in  a format not fit for human consumption, so the first thing is to transform it into something intelligible. To do this, we use readlbw, which inputs the name of the corfile, and outputs an understandable idl structure that contains all the information about the observation.
+
+<PRE>
+IDL&gt; corfilename = '/home/dorado3/dorado13/galaxy/corfiles/12.03.24/corfile.24mar12.a2669.38'
+IDL&gt; readlbw, corfilename, lbwsrc
+</PRE>
+<p>
+*Note: for reduction at Arecibo, your command will look something more like this:
+<PRE>
+IDL&gt; corfilename = '/share/olcor/corfile.24mar12.a2669.38'
+IDL&gt; readlbw, corfilename, lbwsrc
+</PRE>
+
+<p>
+The lbwsrc structure contains 23 tags. It includes the source name (e.g. 'H084515.8+250538'), the original corfile name, and then information about the source, like the ra and dec. You can see these by typing (for example): 
+<PRE>
+IDL&gt; print,lbwsrc.ra
+       131.32250
+</PRE>
+It also includes tags that we will edit below, like the baseline, the rms, and the velocity width (w50).  For a full listing of the contents of the structure type:
+<PRE>
+IDL&gt; help, lbwsrc,/st
+</PRE>
+<P>
+<FONT SIZE="+1"><B>3. Fit a source baseline: BASELINELBW </B></FONT>
+
+<P>
+
+In order to make a proper measurement, we first need to fit a baseline to the data. To do this, we use baselinelbw.
+<PRE>
+IDL&gt; baselinelbw, lbwsrc
+</PRE>
+
+When you type this command, an image of your spectrum, will pop up that looks something like this:
+<p align="center">
+<img src="lbwbaseline1.png" height="50%" alt="…">
+<br clear="all">
+<font size="1">LBW Spectrum</font>
+
+<p>
+Note the dashed white line at a flux of 0 mJy. Any points where the flux density is negative means that the off observation had a greater flux than the on observation.
+
+<P> The image is autoscaled to your lowest and highest peak, so you will likely need to rescale it to something more reasonable. The code will ask you to give a scale for the vertical axis of the plot:
+<PRE>
+IDL&gt; baselinelbw, lbwsrc
+
+Find a good range for plot:
+
+  Give [min, max] range to vertically rescale plot.
+  Press [enter] to accept ranges.
+:
+</PRE>
+If you like the plotted y-range, you can just hit enter. Else, type the the min and max of you would like to see (in mJy). The code is smart and accepts several input formats, but the simplist is to just type two numbers:
+<PRE>
+: -10 10
+</PRE>
+
+then hit enter. If you don't like the range you chose, choose a different range and hit enter. Hit enter again to accept the range you chose.
+If you choose a bad range so that you can't accurately complete the steps below, kill baselinelbw (ctrl+C) and start again.
+
+<P> The next step in baselinelbw is to choose the area of lbw to include in the baseline fit. The code now instructs you to:
+
+<PRE>
+Mark the region(s) without the source or RFI.
+Baseline fitting will be performed in these regions.
+
+  Left-click to add region boundary
+  Right-click to finish adding regions.
+
+</PRE>
+
+<P>Mark the regions you want by left clicking on the right and left sides of the bit of the spectrum you want to include in the fit. You want to include any bit of the spectrum that is just noise (don't include any sources, RFI, or galactic hydrogen). Be sure to include a wide enough range of channels that the program can get a good fit, but not too wide so that you include the areas of low sensitivity at the edges. 
+(Recall that the LBW bandpass looks like this):
+<p align="center">
+<img src="bandpass.png" height="50%" alt="…">
+<br clear="all">
+<p>
+Usually you will want multiple bits of spectrum, so mark as many regions as you need.
+
+<p align="center">
+<img src="lbwclicks.png" height="50%" alt="…">
+<br clear="all">
+
+<P> When you have selected your boundaries, right click to move on. 
+The areas that will be used to calculate the baseline fit should turn blue, and your terminal will display the following: 
+<PRE>
+Colored regions are masked.
+There should be no emission or RFI in the masked regions.
+
+  Do you accept these masks? [Y/n]
+: 
+</PRE>
+
+<p align="center">
+<img src="lbwbaseline3ss2.png" height="50%" alt="…">
+<br clear="all">
+
+<P>If you like your boundaries, type Y and hit enter. If you'd like to try again, type n, and hit enter.
+
+<P> Note that you can click in any order. More, note that if you mess up, make sure you have an even number of boundaries marked, then simply reject your fit and try again.
+
+<P> After you've selected masked regions (the regions used to fit the baseline),
+baselinelbw calculates a polynomial fit to the regions you've chosen,
+interpolating over any areas not included in the fit. It fits polynomials of 0th order through 6th order, calculates an RMS for each fit, and then recommends and plots a fit. The screen output will look something like this:
+
+<p align="center">
+<img src="lbwwithfit.png" height="50%" alt="…">
+<br clear="all">
+
+<P>
+<PRE>
+Statistics for each fit order:
+ order  rms(mJy)
+  0th    1.3131 
+  1st    1.3105 *
+  2nd    1.3099 
+  3rd    1.3000 
+  4th    1.2984 
+  5th    1.2984 
+  6th    1.2980 
+Plotting a fit of the recommended order (1st).
+  Enter an order [0-6] to plot and select.
+  Press [enter] to accept.
+:
+</PRE>
+If you like the recommended fit, hit enter. Else, enter a different order [0-6]. The program will display the new fit. If you like it hit enter. Else try again.
+<P> The final output to the screen will look something like this:
+<p align="center">
+<img src="lbwbaseline5.png" height="50%" alt="…">
+<br clear="all">
+<P>
+<PRE>
+RMS values for Hanning smoothed spectra
+width  rms(mJy)
+  3     1.3105
+  5     1.0775
+  7     0.9453
+  9     0.8593
+Plotting baseline-subtracted spectrum...
+% Program caused arithmetic error: Floating underflow
+</PRE>
+Don't worry about the arithmetic error. You've now successfully baseline subtracted an LBW spectrum.
+
+
+<P> 
+<FONT SIZE="+1"><B>4. Fit the Spectral Line </B></FONT>
+<P><b> ONLY DO THIS STEP IF YOU HAVE A DETECTION. If no detection you may skip ahead to
+step 5, Recording the Information. </b>
+<p> If you have a detection, you now need to measure that detection, i.e., the flux, velocity, and velocity width of your spectral
+line. To do this we use measurelbw. 
+<p> First decide if your line is better fit by a gaussian (one peak) or a 2-horned profile (double peak).
+If it is a gaussian, type:
+<pre> IDL> measurelbw,lbwsrc,/gaussian</pre>
+
+Else type:
+<pre> IDL> measurelbw,lbwsrc </pre>
+<p> The first thing the code will do is ask you to zoom in on the source
+itself. 
+<pre>
+Find a good zoom level to view the source.
+  Left-button drag to move the box.
+  Right-click to accept.
+  Middle-button drag to resize box.
+    (For mice without middle button, click right+left simultaneously)
+       395.65827       74.003253       263.42987       532.00001
+</pre>
+It will pop up a window that looks like this:
+<p align="center">
+<img src="measurelbw1.png" height="50%" alt="…">
+<br clear="all">
+<p>Center the white box on your source by left clicking on the box and moving
+it around. You can resize the box by holding down the middle mouse button and dragging at any of the corners 
+(or holding left and right mouse buttons together if the mouse doesn't have a middle button). It takes a little
+getting used to, but that's the way the codes has to be since we are using idl. Try to make your box centered
+on the source, and big enough that it includes the entire source plus some baseline, but small enough
+that you will be able to see the details of the fit.
+When you like your box, right click, and then left click to confirm.
+<p align="center">
+<img src="measurelbw2.png" height="50%" alt="…">
+<br clear="all">
+</p>
+<pre>
+Use this zoom level?
+  Left-click to accept.
+  Right-click to choose again.
+</pre>
+
+<p> <b>The next step depends on whether or not you are doing a gaussian fit.</b> 
+<hr>
+<p><b>If you are doing
+a gaussian fit</b>, you need to select a region around the spectral line, that is, click once
+on each side of the line. The code will attempt a gaussian fit to the profile, which will
+appear in dark blue.
+<pre>
+Click ONCE on EACH SIDE of the emission line.
+  Left-click to select region boundaries.
+  Right-click to start over.
+
+Is this fit OK?
+  Left-click to approve
+  Right-click to try again
+</pre>
+<p align="center">
+<img src="measurelbwG1.png" height="50%" alt="…">
+<br clear="all">
+<p> After you ok the fit to the right side of the spectral line, the code will print
+its calculated parameters to the screen, and update them in the structure lbwsrc.
+<p>You now can proceed to
+step 5, recording the information you've just measured.
+
+<hr>
+<p><b>If you are NOT doing a gaussian fit </b>(that is, if you are doing a fit to a double horned profile,
+you now need to tell the code where the edges of the source are. The code prints:
+<pre>
+Select a region around the left edge of emission.
+  Left-click to select region boundaries.
+  Right-click to start over.
+</pre> 
+Click to the left and to the right of the LEFT EDGE of the spectral line. After two clicks the code
+will attempt to fit a line to the left edge of the profile, which will appear in yellow:
+<p align="center">
+<img src="measurelbw3.png" height="50%" alt="…">
+<br clear="all">
+<p>If the fit looks fine to you, then left click, and repeat the same procedure for the right edge
+of the spectral line.
+<pre>
+Is this fit OK?
+  Left-click to approve
+  Right-click to try again
+
+Select a region around the right edge of emission.
+  Left-click to select region boundaries.
+  Right-click to start over.
+
+Is this fit OK?
+  Left-click to approve
+  Right-click to try again
+</pre>
+
+<p> After you ok the fit to the right side of the spectral line, the code will print
+its calculated parameters to the screen, and update them in the structure lbwsrc. It also will
+display the final fit, which should look something like this:
+<p align="center">
+<img src="measurelbw4.png" height="50%" alt="…">
+<br clear="all">
+<p>You now can proceed to
+step 5, recording the information you've just measured.
+<P>
+<FONT SIZE="+1"><B>5. Record the information </B></FONT>
+
+<P> Now that we've edited the idl structure to include a baseline fit, and, if we have a detection, line parameters, we want to save what we've done. 
+First we want to write out the information about the LBW source to a text file. To do this type:
+<PRE> 
+IDL&gt; writesrclbw, lbwsrc, filename=filename
+</PRE>
+the filename input to writesrclbw is optional. By default, it generates a filename based on the lbw sourcename and saves it in the current directory.
+
+<P> We also want to save a .sav file that we can easily read back into idl later. To do this type:
+<PRE>
+IDL&gt; save, lbwsrc, filename=lbwsrc.LBWsrcname + '.sav'
+</PRE>
+
+<P> That's it, you've sucessfully reducted an L-band Wide Spectrum!
+<p>
+<FONT SIZE="+1"><B>6. (Optional) Outputting plots </B></FONT>
+
+<P>If you want to make a plot of what you've done scaled to your specifications,
+use plotlbw:
+<PRE>
+IDL&gt; plotlbw, lbwsrc, xrange=xrange, yrange=yrange
+</PRE>
+The xrange and yrange are both optional parameters. Scale them to your specifications, e.g.:
+
+<PRE>
+IDL&gt; plotlbw, lbwsrc, xrange=[-1000,1000], yrange=[-10,10]
+</PRE>
+Syntax does matter here - be sure to input the x and y ranges as arrays.
+
+<!--<P>
+<FONT SIZE="+1"><B>7. Things to watch out for </B></FONT>
+Coming soon...
+We need to figure out a consistant way to choose baseline - how high an order?
+Just use the software's recommendation?
+
+The next step is determining whether or not we have a source.
+
+We should establish naming guidelines.
+
+How else to crash the system?
+-->
+
+<br>
+<hr>
+
+<font color=#cc0f14>
+Page created by Luke Leisman and maintained by the members
+of the <a href="http://www.astro.cornell.edu/Galaxy/egg.html"> Cornell
+ExtraGalactic Group</a> <font><br>
+
+<!-- hhmts start -->
+<font color=#008000><i>Last modified: Sat Apr 12 10:53;09 EDT 2014 by martha</i></font>
+<!-- hhmts end -->
+</body>
+</html>

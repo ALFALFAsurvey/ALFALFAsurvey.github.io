@@ -1,0 +1,188 @@
+A2010 observing schedule                                       last update: 26 Oct 2018
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+------------------------------------------------------------------------------------------------
+** COMPLETED OBSERVATIONS              LBW Followup Program   A3173  APPSS  FALL 2018
+    Block     Date    LMSTmidn      AST           LST         a3064_cmd file     Observers 
+    18.10.04  R 04Oct   00h24     22h15-02h30  22h42-02h58    a3173_181004.cmd   RK(R)
+    18.10.12  F 12Oct   00h59     21h00-01h45  21h59-02h44    a3173_181012.cmd   RK(R)
+    18.10.13  S 13Oct   01h04     21h00-02h00  22h03-03h03    a3173_181013.cmd   GH(R)
+
+------------------------------------------------------------------------------------------------
+
+** Upcoming scheduled observations     LBW Followup Program   A3173  APPSS  FALL 2018
+    Block     Date    LMSTmidn      AST           LST         a3173_cmd file     Observers 
+    18.11.17  S 17Nov   03h21     19h00-24h00  22h20-03h21                       ML,JR4
+    18.11.18  S 18Nov   03h25     19h15-24h00  22h39-03h25                       ML,JR4
+    18.11.19  M 19Nov   03h29     18h30-23h30  21h59-03h00                       JR4,GD
+    18.11.20  T 20Nov   03h33     18h30-23h30  22h02-03h04                       JR4,GD
+
+    18.11.22  R 22Nov   03h41     18h30-23h30  22h10-03h12                       GH,GD
+    18.11.23  F 23Nov   03h45     18h30-23h15  22h14-03h01                       GH
+   
+    18.11.25  S 25Nov   03h53     18h30-23h15  22h22-03h09                       GH
+
+----------------------------------------------------------------------------------------------------
+
+AO holidays 2018: (this is max number UCF+YEU+UMET)
+http://www.naic.edu/~phil/aoholidays.2018.pdf
+
+03Sep   Labor Day
+08Oct   Columbus Day
+12Nov   Veteran's Day
+19Nov   PR Discovery Day 
+22Nov   Thanksgiving Day
+23Nov   Day after Thanksgiving
+24Dec   Christmas Eve
+25Dec   Christmas Day
+
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+AA2: Andres Arrieta (UPR-RP)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+EB: Elijah Bernstein-Cooper (Macalester)
+AB: Anthony Braddock (St.Marys)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+CC: Catlen Camacho-Light
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+JC2: Jean Casellas (UPR)
+CD: Colby Dennis (WTAMU)
+GD: Grant Denn (MSUDenver)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+MD: Maggie Dievendorf (Colgate)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+AF2: Alison Farrish (Cornell)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+BG: Bryan Geiger (St. Lawrence)
+EG: Elena George (HSU)
+GG: Genesis Guerra (Union)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+MG: Martin Garay-MacLean (Ithaca)
+RG: Riccardo Giovanelli
+SG: Steve Goldman (St. Lawrence)
+GH: Greg Hallenbeck
+JH: Jonathan Hoover (Utica)
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+WH2: Will Harney (Union)
+KI: Katie Iadanza (Colgate)
+CJ: Cory Johnson (WTAMU)
+MJ: Melissa Jacquart (UWisc)
+MJ2: Mike Jones
+YJ: Yenuel Jones (UPR)
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+MK: Maddy Kilgore (Hartwick)
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+LL: Luke Leisman
+KL: Katelyn Leisman
+ML: Mayra Lebron
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+EM2: Evelin Mayens (UPR-RP)
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+RM: Ryan Muther (Union)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+AM3: Alyssa McElroy (WTAM)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+MM2: Mariella Mestres (UPR)
+VM: Victoria Mendoza (St.Mary's)
+WM: Arik Mitschang (HSU)
+LM: Leland Moore (St.Mary's)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+CP: Carmen Pantoja
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+JP2: Jonathan Perez (UPR-RP)
+JP3: Jorge Padiel (UPR-RP)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+JR2: Jose Reyes (UPR-RP)
+JR3: Justin Robinson (St. Mary's)
+JR4: Joe Ribaudo (Utica)
+PR: Paola Rosa-Aquino (Cornell)
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+ES: Evan Smith (StLawrence)
+JS: John Salzer
+JS2: Joseph Serrano (UMET)
+TS: Thad Savery (Siena) 
+SS2: Samantha Schults (St.Mary's)
+TS: Tess Senty (HSU)
+KS: Kristine Spekkens
+KS2: Kamin Sylvia (Union)
+MS: Monica Smith (USF)
+OS: Oded Spector
+OS2: Ora Starcher (St.Mary's)
+SS: Sabrina Stierwalt
+BT: Blake Tormey (St.Mary's)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+AV: Aparna Venkatesan
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+MW: Michael Warrener (Union)
+JW: Jesse Watson (UWSP)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots
+RW: Rosa Wallace (MSU-D)
+

@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+
+  <!-- CSS for page -->
+  <link rel="stylesheet" type="text/css" href="../styles/style1.css">
+
+</head>
+<body bgcolor=white>
+<?php
+include "http://egg.astro.cornell.edu/alfalfa/bannermenu.php";
+?> 
+<!-- PAGE CONTENT BEGINS HERE -->
+
+<h2><font color=#008000>Summer 2009 Undergrad ALFALFA page</font>
+
+<h3><font color=#008000>Principal ALFALFA links</font></h3>
+<ul><li>The <a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA web page</a> at Cornell
+    <li>The <a href="http://www.naic.edu"> NAIC web page</a>
+    <li>The <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observers'</a> page at Arecibo
+    <li>The ALFALFA page on 
+    <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">Using Arecibo for ALFALFA</a>
+    <li>The ALFALFA page on 
+    <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalfa.php">Using ALFALFA for science</a>
+    <li>The <a href="http://arecibo.tc.cornell.edu/hiarchive/">Cornell Digital HI Archive</a>
+    <li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/NotesOnALFALFAcatalog.html">ALFALFA catalog data</a>
+    <li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/alfalfadata.html">Learn to use the ALFALFA digital data archive</a>
+    <li>More about <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/agcintro.htm">using the AGC</a>
+    <li><a href="http://arecibo.tc.cornell.edu/hiarchive/alfalfa/">ALFALFA data releases</a></p>
+
+    <li>Intro to <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/intro2idlalfa.php">IDL for ALFALFA</a></p>
+
+    <li>Internal <a href="file:///home/dorado3/galaxy/leggweb/start.htm">EGG</a> documents (you have to  be
+        on one of our computers to access this).</p>
+
+    
+    <li> We refer to the EGG workroom, SSB 521/3, as the "Camuy Cave. Check out the real 
+             <a href="http://www.topuertorico.org/city/camuy.shtml">Camuy Cave</a>.
+</ul>
+
+<h3><font color=#008000>Individual pages</font></h3>
+<ul>
+<li><a href="tess09.htm">Tess's page</a>
+<li><a href="file:///home/hatillo/galaxy/tess/progress.htm">Tess's progress page</a></p>
+
+<li>Download a <a href="progress.txt">sample</a> HTM file for keeping
+track. Be sure to put it in the right directory; for some hints, look 
+<a href="starthtml.htm">here</a></p>
+</ul>
+<br>
+<br>
+<hr width="800">
+
+<i>Last modified: Sat Jun 20 14:57:10 EDT 2009 by martha</i>
+</body>
+
+</html>

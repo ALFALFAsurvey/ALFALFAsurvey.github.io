@@ -1,0 +1,57 @@
+
+                ALFALFA at Brera: Tentative Agenda
+                __________________________________
+
+                          May 30, 2005
+
+
+0. ALFALFA                                                        - rg
+        - who we are  
+        - other extragalactic HI surveys
+        - ALFALFA, NAIC and the NSF Senior Review framework  
+
+1. ALFALFA science goals and sensitivities                         - rg
+
+2. ALFA and ALFA backends                                         - rg
+
+3. Observing                                                           - mh
+        - Fixed azimuth drifts
+        - Calibration
+        - Observing practices and rules
+
+4. Tiling the Sky                                                     - mh
+        - Survey plan
+        - Current Status
+        - Expectations for 2005
+        - Request for 2006
+
+5. Processing the Data                                          - rg
+        - IDL environment
+        - Noise, bandpass, baseline calibration
+        - Flagging, visual inspection
+        - Continuum sources
+        - Gridding, tile cubes
+        - Signal extraction
+        - Tasks needed                                                - discussion
+
+6. Science Analysis & Follow-up work                                - discussion
+        - at Arecibo
+        - at VLA
+        - at optical & other facilities
+        - guidelines
+
+7. Education & Outreach                                                - discussion
+        - thesis projects
+        - undergraduate participation
+        - public outreach
+
+8. Data Products                                                - discussion
+        - types
+        - public access
+        - group access
+
+9. Authorship Guidelines                                        - discussion
+
+10. Funding                                                        - discussion
+
+11. Other Topics (suggestions welcome)                                                

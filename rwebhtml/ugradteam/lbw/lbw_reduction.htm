@@ -1,0 +1,668 @@
+<html>
+  <head>
+    <title>ALFALFA Followup - Data Reductions for LBW Data</title>
+  </head>
+<body bgcolor="ffffff">
+
+<h1> L-Band Wide ALFALFA Followup Data Reduction Instructions </h1>
+
+<P> This page documents the procedure for reducing data taken with LBW and the
+<b>interim correlator</b>. <b><font color=#cc0514>If you are instead working with data from the WAPPS, 
+see the WAPPS version of these instructions</font> <a href="lbw_reduction_wapps.htm">here</a>.</b></p>
+
+If you are using MacOS and have problems with the mouse clicks, see if David's
+<a href="macmouseclicks.htm">suggested fix</a> works for you.</p>
+<hr>
+<hr>
+<P>
+Here is a short command summary for <b>experienced</b> LBW data reducers.
+If you are not one of those, be sure to read through the rest of the document
+first!
+
+<pre>
+; ***** Reduce an individual source: *****
+idl
+@corinit
+@lbwinit
+
+corfilename = '/share/olcor/corfile.DDmmmYY.a2752.N'
+lbwfromcorfile, corfilename, lbwsrc
+
+lbwbaseline, lbwsrc
+
+lbwmeasure,lbwsrc [Only if you have a non-gaussian detection!!!!]
+or
+lbwmeasure,lbwsrc,/gaussian [Only if you have a gaussian detection!!!!]
+
+lbwtoascii, lbwsrc
+save, lbwsrc, filename=lbwsrc.LBWsrcname + '.sav'
+
+; ***** Creating a Catalog: *****
+
+@lbwcatinit
+
+lbwcatalog
+or
+lbwcsvcatalog
+
+lbwcatalog, /dist
+or
+lbwcsvcatalog, /dist
+
+*note: We have several lbw followup proposals, so the corfile name might be a2669.N, or a2707.N, or a2853.N etc.
+*note: if you are working on data stored at Cornell, your corfile will will be called something like this:
+corfilename = '/home/dorado3/dorado13/galaxy/corfiles/YY.MM.DD/corfile.DDMMMYY.a2669.N'
+</pre>
+<hr>
+<hr>
+<FONT SIZE="+2"><B>Introduction to LBW Data Reduction</B></FONT>
+<p> Below is a detailed explanation of the steps involved in reducing LBW data. Like ALFALFA data reduction,
+these steps aren't hard, but things can go wrong if they aren't done with care. If you have questions, please ASK.
+The outline of what we are going to do:
+<ol>
+<li><a href="#0">Load</a> the software we need.
+<li><a href="#2">Load</a> in the raw data
+<li><a href="#3">Fit</a> the source baseline
+<li><a href="#4">Measure</a> the parameters of the source (if there's a source)
+<li><a href="#5">Record/save</a> what we've done
+</ol>
+These instructions also give some guidance on other things you may want to do
+to the LBW data from time to time:
+<ol>
+<li> Boxcar <a href="#6">smooth</a> the data (the data are automatically hanning smoothed)
+<li> <a href="#7">Plot</a> the data
+<li> <a href="#8">Update or read</a> comments on the data
+<li> <a href="#9">Combine</a> multiple observations of a single source
+<li> <a href="#10">Recall</a> the plot of a source after you have reduced and saved it
+</ol>
+After you have reduced all of your LBW sources, you may want to put the data from these sources into a catalog.
+This page can also tell you how to:
+<ol>
+<li> Create an easily readable <a href="#11">ASCII catalog</a>
+<li> Create a <a href="#12">CSV catalog</a> which can be manipulated in programs like TOPCAT
+<li> <a href="#13">Include</a> derived parameters like distances and HI masses in your catalog
+</ol>
+<hr>
+<hr>
+<FONT SIZE="+2"><B>Part I: Data Reduction of Individual Sources</B></FONT>
+<p>These instructions detail the steps involved in the reduction of a single source.
+<hr>
+<P>
+<FONT SIZE="+1"><a name="0"></a><B>0. Setting your IDL path</B></FONT>
+
+<P>
+If you haven't reduced LBW data before, make sure that idl can find the lbw reduction routines. You only need to do this once.
+
+<ul>
+<li>Open the file ~/.idlstartup
+<li>Add the following line (if you are working with code stored at Cornell):
+<PRE>
+    !path = expand_path('+/home/dorado3/galaxy/idl_lbw')+':'+ !path
+</PRE>
+</ul>
+<P>This will add the idl_lbw directory to your IDL path on startup.
+<b>Note that this is not necessary if you are working at Arecibo or as 
+"galaxy" at Cornell.</b>
+
+<P>
+<FONT SIZE="+1"><B>1.Setup</B></FONT>
+<P> To get started, open an idl session (type idl in a terminal). 
+<PRE>
+&gt;idl
+</PRE>
+Note that if you are working on data at Arecibo, be sure to do your work in the correct directory, e.g.:
+<PRE>
+IDL&gt; cd,'/share/a2010-2/work/mar2013/teamA' 
+</PRE>
+Compile the software that we will need to reduce the data:
+<PRE>
+IDL&gt; @corinit
+IDL&gt; @lbwinit
+</PRE>
+Now you have all the programs you should need at your disposal. 
+For example, you can now view the data using the quicklook command as 
+described on the <a href="http://www.naic.edu/~a2010/checklist_lbw.html">lbw observing cookbook page</a>. 
+
+<P>
+<a id="2"><FONT SIZE="+1"><B>2. Examine source data: lbwfromcorfile </B></FONT></a>
+<P>
+The data from each observed source is saved in a "corfile," which is the output from the interim correlator (the backend that we use for LBW observations). These files are in  a format not fit for human consumption, so the first thing is to transform it into something intelligible. To do this, we use lbwfromcorfile, which inputs the name of the corfile, and outputs an understandable idl structure that contains all the information about the observation.
+
+<PRE>
+IDL&gt; corfilename = '/home/dorado3/dorado13/galaxy/corfiles/12.03.24/corfile.24mar12.a2669.38'
+IDL&gt; lbwfromcorfile, corfilename, lbwsrc
+</PRE>
+<p>
+*Note: for reduction at Arecibo, your command will look something more like this:
+<PRE>
+IDL&gt; corfilename = '/share/olcor/corfile.24mar12.a2669.38'
+IDL&gt; lbwfromcorfile, corfilename, lbwsrc
+</PRE>
+If you are reducing data from an older observing run (a year or two later), the corfiles may have been moved to another location
+under its designated projectname, e.g., <b>/proj/a2669</b>. Then the commands will look like:
+<PRE>
+IDL&gt; corfilename = '/proj/a2752/corfile.24mar12.a2669.38'
+IDL&gt; lbwfromcorfile, corfilename, lbwsrc
+</PRE>
+<p>
+The lbwsrc structure contains 32 tags. It includes the source name (e.g. 'H084515.8+250538'), the original corfile name, and then information about the source, like the ra and dec. You can see these by typing (for example): 
+<PRE>
+IDL&gt; print,lbwsrc.ra
+       131.32250
+</PRE>
+It also includes tags that we will edit below, like the baseline, the rms, and the velocity width (w50).  For a full listing of the contents of the structure type:
+<PRE>
+IDL&gt; help, lbwsrc,/st
+</PRE>
+<P>
+<a name="3"></a><FONT SIZE="+1"><B>3. Fit a source baseline: lbwbaseline </B></FONT>
+
+<P>
+
+In order to make a proper measurement, we first need to fit a baseline to the data. To do this, we use lbwbaseline.
+<PRE>
+IDL&gt; lbwbaseline, lbwsrc
+</PRE>
+
+When you type this command, an image of your spectrum will pop up that looks something like this:
+<p align="center">
+<img src="lbwbaseline1.png" height="50%" alt="…">
+<br clear="all">
+<font size="1">LBW Spectrum</font>
+
+<p>
+Note the dashed white line at a flux of 0 mJy. Any points where the flux density is negative means that the off observation had a greater flux than the on observation.
+
+<P> The image is autoscaled to your lowest and highest peak, so you will likely need to rescale it to something more reasonable. The code will ask you to give a scale for the vertical axis of the plot:
+<PRE>
+IDL&gt; lbwbaseline, lbwsrc
+
+Find a good range for plot:
+
+  Give [min, max] range to vertically rescale plot.
+  Press [enter] to accept ranges.
+:
+</PRE>
+If you like the plotted y-range, you can just hit enter. Else, type the the min and max that you would like to see (in mJy). The code is smart and accepts several input formats, but the simplest is just to type two numbers:
+<PRE>
+: -10 10
+</PRE>
+
+then hit enter. If you don't like the range you chose, choose a different range and hit enter. Hit enter again to accept the range you chose.
+If you choose a bad range so that you can't accurately complete the steps below, kill lbwbaseline (ctrl+C) and start again.
+
+<P> The next step in lbwbaseline is to choose the area of your spectrum to include in the baseline fit. The code now instructs you to:
+
+<PRE>
+Mark the region(s) without the source or RFI.
+Baseline fitting will be performed in these regions.
+
+  Left-click to add region boundary
+  Right-click to finish adding regions.
+
+</PRE>
+
+<P>Mark the regions you want by left clicking on the right and left sides of the bit of the spectrum you want to include in the fit. You want to include any bit of the spectrum that is just noise (don't include any sources, RFI, or galactic hydrogen). Be sure to include a wide enough range of channels that the program can get a good fit, but not too wide so that you include the areas of low sensitivity at the edges. 
+(Recall that the LBW bandpass looks like this):
+<p align="center">
+<img src="bandpass.png" height="50%" alt="…">
+<br clear="all">
+<p>
+Usually you will want multiple bits of spectrum, so mark as many regions as you need. 
+Note that you can click in any order. If you mess up, make sure you have an even number of boundaries marked, then simply reject your fit (see below) and try again.
+
+<p align="center">
+<img src="lbwclicks.png" height="50%" alt="…">
+<br clear="all">
+
+<P> When you have selected your boundaries, right click to move on. 
+The areas that will be used to calculate the baseline fit should turn blue, and your terminal will display the following: 
+<PRE>
+Colored regions are masked.
+There should be no emission or RFI in the masked regions.
+  Left-Click to try again
+  Right-Click to accept masks
+
+</PRE>
+
+<p align="center">
+<img src="lbwbaseline3ss2.png" height="50%" alt="…">
+<br clear="all">
+
+<P>If you like your boundaries, right click. If you'd like to try again, left click.
+
+<P> After you've selected masked regions (the regions used to fit the baseline),
+lbwbaseline calculates a polynomial fit to the regions you've chosen,
+interpolating over any areas not included in the fit. It fits polynomials of 0th order through 9th order, calculates an RMS for each fit, and then recommends and plots a fit. The screen output will look something like this:
+
+<p align="center">
+<img src="lbwwithfit.png" height="50%" alt="…">
+<br clear="all">
+
+<P>
+<PRE>
+Statistics for each fit order:
+ order  rms(mJy)
+  0th    1.3068 
+  1st    1.3015 
+  2nd    1.2916 
+  3rd    1.2867 
+  4th    1.2845 *
+  5th    1.2845 
+  6th    1.2833 
+  7th    1.2736 
+  8th    1.2736 
+  9th    1.2718 
+Plotting a fit of the recommended order (4th).
+  Enter an order [0-9] to plot and select.
+  Press [enter] to accept.
+:
+</PRE>
+If you like the recommended fit, hit enter. Else, enter a different order [0-9]. Go for the lowest order you can that still gives a reasonable fit. 
+The recommended fit order is usually reasonable, but is not always the best choice. The program will display the new fit. If you like it hit enter. Else try again.
+<P> The output to the screen will look something like this:
+<p align="center">
+<img src="lbwbaseline5.png" height="50%" alt="…">
+<br clear="all">
+<P>
+<PRE>
+RMS of Hanning smoothed spectrum:        1.2742205
+
+Plotting baseline-subtracted spectrum...
+</pre>
+<P> The code will now ask you to enter comments.
+<pre>
+Please enter any comments on baseline fitting and subtraction:
+:
+</pre>
+Type your comments, if any, and hit enter. If the source isn't detected, say so.
+If the baseline is severely affected by RFI, has major or rapid variations, or 
+displays anything else unusual, say so. Example useful comments:
+<pre>
+: No detection, but strong RFI emission at 1300km/s. Waves in the baseline due to that rfi, use fit with caution.
+: Strong continuum source in off - 250mJy
+: Continuum source in on - 50 mJy 
+</pre>
+The program should now finish. Don't worry if you get an arithmetic error. 
+<pre>
+% Program caused arithmetic error: Floating underflow
+</PRE>
+You've now successfully baseline subtracted an LBW spectrum.
+
+
+<P> 
+<a name="4"></a><FONT SIZE="+1"><B>4. Fit the Spectral Line: lbwmeasure </B></FONT>
+<P><b> ONLY DO THIS STEP IF YOU HAVE A DETECTION. If no detection you may skip ahead to
+step 5, Recording the Information. </b>
+<p> If you have a detection, you now need to measure that detection, i.e., the flux, velocity, and velocity width of your spectral
+line. To do this we use lbwmeasure. 
+<p> First decide if your line is better fit by a gaussian (one peak) or a 2-horned profile (double peak).
+If it is a gaussian, type:
+<pre> IDL> lbwmeasure,lbwsrc,/gaussian</pre>
+
+Else type:
+<pre> IDL> lbwmeasure,lbwsrc </pre>
+<p> The first thing the code will do is ask you to zoom in on the source
+itself. 
+<pre>
+Find a good zoom level to view the source.
+  Left-button drag to move the box.
+  Right-click to accept.
+  Middle-button drag to resize box.
+    (For mice without middle button, click right+left simultaneously)
+       395.65827       74.003253       263.42987       532.00001
+</pre>
+It will pop up a window that looks like this:
+<p align="center">
+<img src="measurelbw1.png" height="50%" alt="…">
+<br clear="all">
+<p>Center the white box on your source by left clicking on the box and moving
+it around. You can resize the box by holding down the middle mouse button and dragging at any of the corners 
+(or holding left and right mouse buttons together if the mouse doesn't have a middle button). It takes a little
+getting used to, but that's the way the codes has to be since we are using idl. Try to make your box centered
+on the source, and big enough that it includes the entire source plus some baseline, but small enough
+that you will be able to see the details of the fit.
+When you like your box, right click, and then left click to confirm.
+<p align="center">
+<img src="measurelbw2.png" height="50%" alt="…">
+<br clear="all">
+</p>
+<pre>
+Use this zoom level?
+  Left-click to accept.
+  Right-click to choose again.
+</pre>
+
+<p> <b>The next step depends on whether or not you are doing a gaussian fit.</b> 
+<hr>
+<p><b>If you are doing
+a gaussian fit</b>, you need to select a region around the spectral line, that is, click once
+on each side of the line. The code will attempt a gaussian fit to the profile, which will
+appear in dark blue or yellow.
+<pre>
+Click ONCE on EACH SIDE of the emission line.
+  Left-click to select region boundaries.
+  Right-click to start over.
+
+Is this fit OK?
+  Left-click to approve
+  Right-click to try again
+</pre>
+<p align="center">
+<img src="measurelbwG1.png" height="50%" alt="…">
+<br clear="all">
+<p> After you ok the fit to the right side of the spectral line, the code will print
+its calculated parameters to the screen, and update them in the structure lbwsrc.
+<p>You now can proceed to
+step 5, recording the information you've just measured.
+
+<hr>
+<p><b>If you are NOT doing a gaussian fit </b>(that is, if you are doing a fit to a double horned profile,
+you now need to tell the code where the edges of the source are. The code prints:
+<pre>
+Select a region around the left edge of emission.
+  Left-click to select region boundaries.
+  Right-click to start over.
+</pre> 
+Click to the left and to the right of the LEFT EDGE of the spectral line. After two clicks the code
+will attempt to fit a line to the left edge of the profile, which will appear in yellow:
+<p align="center">
+<img src="measurelbw3.png" height="50%" alt="…">
+<br clear="all">
+<p>If the fit looks fine to you, then right click, and repeat the same procedure for the right edge
+of the spectral line.
+<pre>
+Is this fit OK?
+  Left-click to try again
+  Right-click to approve
+
+Select a region around the right edge of emission.
+  Left-click to select region boundaries.
+  Right-click to start over.
+
+Is this fit OK?
+  Left-click to try again
+  Right-click to approve
+</pre>
+
+<p> After you ok the fit to the right side of the spectral line, the code will print
+its calculated parameters to the screen, and update them in the structure lbwsrc. It also will
+display the final fit, which should look something like this:
+<p align="center">
+<img src="measurelbw4.png" height="50%" alt="…">
+<br clear="all">
+<P> The code will now again ask you to enter comments.
+<pre>
+Please enter any comments:
+:
+</pre>
+Type your comments, if any, and hit enter. If you don't trust your fit, say so, and why.
+If the fit parameters don't seem quite right, make a note. If you had to do something special to make the fit work, explain.
+ Example useful comments:
+<pre>
+: blended profile, large noise levels on low velocity horn
+: source confused with galactic hydrogen 
+: low signal to noise detection
+: weird asymmetric profile
+: large systematic error: fit chooses wider of 2 possible profiles
+</pre>
+The program should now finish.
+<p>You now can proceed to
+step 5, recording the information you've just measured.
+<P>
+<a name="5"></a><FONT SIZE="+1"><B>5. Record the information </B></FONT>
+
+<P> Now that we've edited the idl structure to include a baseline fit, and, if we have a detection, line parameters, we want to save what we've done. 
+First we want to write out the information about the LBW source to a text file. To do this type:
+<PRE> 
+IDL&gt; lbwtoascii, lbwsrc
+</PRE>
+By default, the code generates a text file with name based on the lbw source name and saves it in the current directory. 
+If you would prefer a different filename or a different directory, you can use the optional filename parameter:
+<PRE> 
+IDL&gt; lbwtoascii, lbwsrc, filename='/home/myfavoritedirectory/examplefilename.txt'
+</PRE>
+
+<P> We also want to save a .sav file that we can easily read back into idl later. To do this type:
+<PRE>
+IDL&gt; save, lbwsrc, filename=lbwsrc.LBWsrcname + '.sav'
+</PRE>
+Note that here we give it a filename based on the lbw source name because save is a generic IDL
+function. If you would prefer your own name to our default name, just change the file name:
+<PRE>
+IDL&gt; save, lbwsrc, filename='/home/myfavoritedirectory/examplefilename.sav'
+</PRE>
+
+<P> That's it, you've sucessfully reduced an L-band Wide Spectrum!
+
+<p>
+<a name="6"></a><FONT SIZE="+1"><B>6. (Optional) Boxcar smoothing the spectrum: lbwsmooth </B></FONT>
+<p>There will be occasions where you may need to smooth your spectrum to reduce
+the noise in the spectrum. To do this we use lbwsmooth, which has syntax:
+<pre>
+IDL&gt; lbwsmooth, lbwsrc, smoothtype
+</pre>
+The smooth type should be a string, either 'h' for 3 channel Hanning smoothing, or
+'bX' for X channel boxcar smoothing. Box car smoothing first Hanning
+smoothes the data, then applies the boxcar smoothing (this is to be consistent with Springob 2005 (e.g. Table 2)).
+So, if you would like to apply a boxcar smoothing of width 5, you would type:
+<pre>
+IDL&gt; lbwsmooth, lbwsrc, 'b5'
+</pre>
+The smoothing procedure updates the spectrum and rms in lbwsrc, so after smoothing
+you can rerun lbwmeasure, etcetera.
+
+<p>
+<a name="7"></a><FONT SIZE="+1"><B>7. (Optional) Outputting plots: lbwplot </B></FONT>
+
+<P>If you want to make a plot of what you've done scaled to your specifications,
+use lbwplot:
+<PRE>
+IDL&gt; lbwplot, lbwsrc, xrange=xrange, yrange=yrange
+</PRE>
+The xrange and yrange are both optional parameters. Scale them to your specifications, e.g.:
+
+<PRE>
+IDL&gt; lbwplot, lbwsrc, xrange=[-1000,1000], yrange=[-10,10]
+</PRE>
+Syntax does matter here - be sure to input the x and y ranges as arrays.
+
+<p>If you would like to save the plot that you've made as a png file, you can
+use the following command:
+<pre>
+IDL&gt; lbwtopng, lbwsrc, xrange=[-1000,1000],yrange=[-10,10]
+</pre>
+<p>
+<a name="8"></a><FONT SIZE="+1"><B>8. (Optional) Viewing or Updating comments: lbwcomments </B></FONT>
+<p> If you would like to view comments on an individual source, you can use
+lbwcomments. If you would like to view the existing comments on a source, type:
+<pre>
+IDL&gt; lbwcomments, lbwsrc, /view
+</pre>
+
+If you would like to add an additional comment
+<pre>
+IDL&gt; lbwcomments,lbwsrc,'this is a comment',/add
+</pre>
+If you would like to edit an existing comment, give the text of the comment, the
+line of the comment you would like to edit (as an int), and set the /edit keyword:
+<pre>
+IDL&gt; lbwcomments,lbwsrc,'newcomment',commentline,/edit
+</pre>
+
+<p> Below is full example of how this feature works:
+<pre>
+IDL&gt; lbwcomments,lbwsrc,/view                   
+0 these should be good comments/not bad ones
+1 not a very good two horned fit
+IDL&gt; lbwcomments,lbwsrc,'this is a comment',/add
+IDL&gt; lbwcomments,lbwsrc,/view                   
+0 these should be good comments/not bad ones
+1 not a very good two horned fit
+2 this is a comment
+IDL&gt; lbwcomments,lbwsrc,'this is a better comment',2,/edit
+IDL&gt; lbwcomments,lbwsrc,/view                             
+0 these should be good comments/not bad ones
+1 not a very good two horned fit
+2 this is a better comment
+</pre>
+
+<a name="9"></a><FONT SIZE="+1"><B>9. (Optional) Combining multiple observations of a single source: lbwcoadd </B></FONT>
+<p>You may have multiple observations of the same source from different nights 
+of observing. It is possible to combine these observations into a single 
+spectrum using lbwcoadd.</p>
+<p>First, you will have to create a structure for each of your observations. Be
+sure to name each structure something different (don't name them all lbwsrc):
+<pre>
+IDL&gt; corfilename='/home/dorado3/dorado13/galaxy/corfiles/14.04.12/corfile.12apr14.a2853.10'
+IDL&gt; lbwfromcorfile, corfilename, struct1
+IDL&gt;
+IDL&gt; corfilename='/home/dorado3/dorado13/galaxy/corfiles/14.04.12/corfile.12apr14.a2853.11'
+IDL&gt; lbwfromcorfile, corfilename, struct2
+IDL&gt;
+IDL&gt; corfilename='/home/dorado3/dorado13/galaxy/corfiles/14.04.15/corfile.15apr14.a2853.31'
+IDL&gt; lbwfromcorfile, corfilename, struct3
+</pre>
+Next, you will need to fit a baseline to each source:
+<pre>
+IDL&gt; lbwbaseline, struct1
+IDL&gt; lbwbaseline, struct2
+IDL&gt; lbwbaseline, struct3
+</pre>
+Then, you will have to put these structures together in an array:
+<pre>
+IDL&gt; input=[struct1,struct2,struct3]
+</pre>
+Finally, you are ready to run lbwcoadd. Type:
+<pre>
+IDL&gt; lbwcoadd, input, lbwsrc
+</pre>
+The program will average together the spectra from your input sources and plot 
+the combined spectrum. Data for the combined spectrum will be stored in a
+structure called lbwsrc.</p>
+<p>Just like lbwbaseline and lbwmeasure, lbwcoadd will prompt you for comments:
+<pre>
+Please enter any comments on spectrum combination:
+:
+</pre>
+You may type any comment you wish; if you do not wish to comment, press enter.</p>
+<p>You have now succesfully combined multiple observations into a single spectrum!
+The combined spectrum can now be measured using lbwmeasure (see Step 4).</p>
+
+<a name="10"></a><FONT SIZE="+1"><B>10. (Optional) Recalling the plot of a previously reduced source: lbwrecallplot</B></FONT>
+<p>You may wish to go back and look at the spectrum of a source after you have reduced it and saved it. You can do
+this using lbwrecallplot. This program works much the same as lbwplot, but it has a few different keywords.</p>
+<p>Calling lbwrecallplot with no keywords plots your baselined source in velocity space:
+<pre>
+IDL&gt; lbwrecallplot
+</pre>
+The freq keyword will plot your spectrum in frequency space. The raw keyword signifies that you wish to view the raw,
+unbaselined spectrum of your source. The freq and raw keywords can be used in conjunction to produce the raw spectrum
+in frequency space. The mask keyword plots the spectrum and reproduces the masks that the user selected
+during the lbwbaseline process. The measure keyword plots the spectrum and reproduces the fit (either two-horn or gaussian) 
+that the user generated during the lbwmeasure process.
+<pre>
+IDL&gt; lbwrecallplot, /freq
+IDL&gt; lbwrecallplot, /raw
+IDL&gt; lbwrecallplot, /freq, /raw
+IDL&gt; lbwrecallplot, /mask
+IDL&gt; lbwrecallplot, /measure
+</pre>
+<br>
+<hr>
+<hr>
+<FONT SIZE="+2"><B>Part II: Manipulating a Set of Sources</B></FONT>
+<p>This section describes the steps you may take once you have reduced a whole set of LBW sources
+using the instructions from Part I.
+<p>Before you can begin any of the steps in this section, you will have to compile a few more programs. Type:
+<pre>
+IDL&gt; @lbwcatinit
+</pre>
+Then press enter. You may now move on to the following steps.
+<hr>
+<a name="11"></a><FONT SIZE="+1"><B>11. Creating an ASCII catalog of sources: lbwcatalog</B>
+<p>Once you have reduced all of your LBW sources, you can create a catalog of the data from these sources using
+lbwcatalog. This program will create an ASCII catalog file of your LBW reduction data.
+<p>Before you run lbwcatalog, make sure that your current directory contains all
+the .sav files of the LBW sources you want to include in your catalog. Also make
+sure that your current directory doesn't contain any .sav files that you <em>
+don't</em> want in your catalog file; lbwcatalog will grab every .sav file it 
+sees in the current directory and try to add it to the catalog.</p>
+<p>Once your directory contains the correct files, simply type:
+<pre>
+IDL&gt; lbwcatalog
+</pre>
+The program will print out the name of each source as it adds it to the catalog
+file. Once lbwcatalog is finished, a .txt catalog file will appear in your
+current directory. lbwcatalog sets the default name of the catalog as 
+'catalog.txt'. If you want to specify a different file name, you can type:
+<pre>
+IDL&gt; lbwcatalog, filename='yourfilenamehere.txt'
+</pre>
+<a name="12"></a><FONT SIZE="+1"><B>12. Creating a CSV catalog of sources: lbwcsvcatalog</B>
+<p>You can also create a catalog of your LBW sources using lbwcsvcatalog. This program will create a CSV catalog
+file containing the data from your LBW sources.
+<p>lbwcsvcatalog runs much like lbwcatalog. Again, make sure that your current directory contains all the .sav files
+that you want to include in your catalog and none of the ones you don't. Then type:
+<pre>
+IDL&gt; lbwcsvcatalog
+</pre>
+The program will print out the name of each source as it adds it to the catalog file.
+Once lbwcsvcatalog is finished, a .csv catalog file will appear in your current directory.
+lbwcsvcatalog sets the default name of the catalog as 'catalog.csv'. If you wish
+to save your catalog under a different name, you can run the program using the 'filename' keyword:
+<pre>
+IDL&gt; lbwcsvcatalog, filename='yourfilenamehere.csv'
+</pre>
+<a name="13"></a><FONT SIZE="+1"><B>13. Creating an ASCII catalog with derived parameters</B>
+<p>You may wish to include the derived parameters of distance and HI mass in your catalog. Adding the keyword
+'dist' when you call lbwcatalog will tell the function to include these data. Type:
+<pre>
+IDL&gt; lbwcatalog, /dist
+</pre>
+When lbwcatalog is called using the 'dist' keyword, the program must run a few extra steps, so some new files will be created in your current directory.
+A file called 'distcatalog.csv' will appear, containing only the right ascension, declination, and velocity values of each of your sources.
+This file is not of much use to a human reader but it is correctly formatted to be read by the distance_catalog procedure, a program which calculates the distance to each of your sources.
+Two more files will appear under the names 'lbwdistances.agc' and 'lbwdistances.sav'. These are files output by the distance_catalog program.
+They contain structures with data on the distances to each of your LBW sources, but they are not easily read by a human. lbwcatalog converts the data in
+these files into a much more readable format in your catalog file.
+<p>When you call lbwcatalog with the 'dist' keyword, the program sets the default name of the catalog as 'catalog_derived.txt'. If you wish to specify a different file name,
+use the 'filename' keyword:
+<pre>
+IDL&gt; lbwcatalog, /dist, filename='yourfilenamehere.txt'
+</pre>
+It is a good idea to make sure that you save the catalog containing the derived parameters under a different name than the catalog without these parameters.
+<p>
+<a name="14"></a><FONT SIZE="+1"><B>14. Creating a CSV catalog with derived parameters</B>
+<p>To make a catalog in CSV format which includes the derived parameters of distance and HI mass, use lbwcsvcatalog with the keyword 'dist':
+<pre>
+IDL&gt; lbwcsvcatalog, /dist
+</pre>
+Just like lbwcatalog, lbwcsvcatalog will create some extra files when called using the 'dist' keyword. You should notice that the files 'distcatalog.csv', 'lbwdistances.agc', and 'lbwdistances.sav'
+will have appeared in your current directory. As usual, lbwcsvcatalog will also output a CSV catalog file. Its default name is 'catalog_derived.csv' but you can change this using the 'filename' keyword if you so choose (see above).
+<!--<P>
+<FONT SIZE="+1"><B>7. Things to watch out for </B></FONT>
+Coming soon...
+We need to figure out a consistant way to choose baseline - how high an order?
+Just use the software's recommendation?
+
+The next step is determining whether or not we have a source.
+
+We should establish naming guidelines.
+
+How else to crash the system?
+-->
+
+<br>
+<hr>
+
+<font color=#cc0f14>
+Page created by Luke Leisman and maintained by the members
+of the <a href="http://www.astro.cornell.edu/Galaxy/egg.html"> Cornell
+ExtraGalactic Group</a> <font><br>
+
+<!-- hhmts start -->
+<font color=#008000><i>Last modified: Tue Sep 15 16:39:19 EDT 2015</i> by martha</font>
+<!-- hhmts end -->
+</body>
+</html>

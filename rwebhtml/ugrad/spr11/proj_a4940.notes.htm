@@ -1,0 +1,611 @@
+<html>
+<head>
+<title>Astro 4940 ZwCl 1400.4+0949 Project</title>
+</head>
+<body bgcolor=#ffffff>
+
+<h3><font color=#cc0f14> 
+    Return to the <a href="project_files.htm">Project files</a></font></h3>
+<br>
+
+<h3><font color=#cc0f14> ASTRONOMY 4940 Spring 2011 &nbsp &nbsp Project notes</font></h3>
+<hr align=left width=800>
+
+
+<b>Redshifts</b>
+We are using the H&alpha; redshift. Note that we should drop ones with
+zConf > 0.35 which have bad measures. We should also look at ones which have
+Z_WARNING set to something other than blank.</p>
+<br>
+
+<b>Correction of velocities to the rest frame of the CMB:</b></p>
+
+Kogut et al. 1993 give the motion of the Sun wrt the CMB is
+V = 369.0+/-2.5 km/s in direction of l = 264.31+/-0.19 degrees and
+b = 48.05 +/- 0.1 degrees. From NED, we find for the direction of
+Zw1400.4+0949, this translates to a correction to the observed
+heliocentric velocity of +260 km/s.</p>
+
+The CMB correction applies to objects beyond the local flow field.
+For the moment, we won't worry about it for Zw1400.4+0949.</p>
+
+<br>
+<b>Calculation of distances:</b></p>
+
+For most galaxies, we use the CMB velocity and divide by the Hubble
+constant, which we adopt to be 70 km/s/Mpc.</p>
+
+However, for galaxies believed to be a member of the ZwCl 1400.4+0949
+cluster, we assign the distance using the mean redshift of the cluster.
+</p>
+
+<br>
+<b>Group/cluster membership:</b></p>
+
+Refer to the discussion in Koranyi & Geller (2002, AJ 123, 100).
+As in that reference, we adopt the center to be the peak of the
+ROSAT X-ray emission, RA = 14h02m48s = +09d19'40"   =  (210.70,9.33).
+<i>We should look up the ROSAT  reference in Price et al. (1991).</i>
+This is virtually identical to the position for WBL 486 given in
+NED.</p>
+
+To determine the mean distance and membership, we examine the
+histogram of CMB velocities for galaxies within 0.68 and 1.36 degrees
+of the cluster X-ray position. I settle on those regions iteratively,
+noting that at 83.7 Mpc, 1 Mpc = 41 arcmin = 0.68 degrees.</p>
+
+<table cellpadding=3 border=3>
+<tr><th> Radius </th><th> Vcmb range </th><th>Group</th><th> # of galaxies </th><th> Vsys </th><th> sigma </th></tr>
+<tr><td> 0.68deg </td><td> 5600-6600 </td><td>Zw1400+09 </td><td> 45 </td><td> 5861 </td><td> 241 </td></tr>
+<tr><td> 0.68deg </td><td> 6600-7600 </td><td>Background</td><td> 29 </td><td> 6890 </td><td> 201 </td></tr>
+</table>
+</p>
+Following Koranyi & Geller, we assume objects at 5000 km/s are in the foreground.
+We use Hubble flow correction to CMB velocities for those objects.</p>
+
+<br>
+<b>Mass of the cluster:</b>
+Methods of estimating the masses of groups of galaxies are discussed in a paper
+by Heisler, Tremaine & Bahcall, 1985, ApJ 298, 8. As mentioned there, most estimates of
+the mass of groups are based on application of the Virial Theorem. The trick is that,
+in practical applications, we
+observe only radial velocities and projected (on the sky) positions, and we have to
+deal with "interlopers", unrelated objects projected onto the group as it appears
+to us.</p>
+
+For each object which we designate as a cluster member, we have (a) the line-of-sight
+velocity relative to the cluster mean and (b) the projected separation from the
+centroid. Equation (11) of Heisler, Tremaine & Bahcall (1985) can then be used
+to estimate the mass, since they discuss exactly what correction factors to use
+to deal with projected quantities.</p>
+
+
+<br>
+<b>HI mass:</b>
+</p>
+The HI mass is calculated simply from the HI flux in Jy-km/s and the distance in Mpc.<br>
+is given by:<br>
+<center>
+HI mass (solar masses) = 2.36E+06 * Dist<sup>2</sup> * HI line flux.
+</center>
+<br>
+</p>
+
+<br>
+<b>Linear diameters:</b>
+</p>
+We can calculate the linear diameter from one of the radii given in the SDSS photometric
+database. But see the note on HI deficiency, below.</p>
+
+For the angular diameter, we start with the DR7 value <b>petroR90_r</b>,
+the radius, in arcsec, encompassing 90% of the Petrosian magnitude. You should
+probably find out what a "Petrosian magnitude" is.</p>
+
+The linear diameter then is calculated from simple geometry, using 2X petroR90_r,
+and adopting the distance to each galaxy.</p>
+
+<b>Note</b> &nbsp In round 1, I find 4 galaxies with anomalously low diameters
+(D < 3 kpc). Check them out below; these clearly demonstrate the pitfalls of SDSS pipeline catalogs.</p>
+<table cellpadding=3 border=3>
+<tr>
+<td> AGC 238643   &nbsp &nbsp 1355583+085936 &nbsp &nbsp 208.9929    8.99333  </td>
+<td> <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=208.9929&dec=  8.99333&opt=glpsi" target=new>SDSSNavigate</a> </td>
+<td> <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=13+55+58.3&lat=+08+59+36&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a></td>
+<td>off center knot in LSB object; petroR90 not good</td></tr>
+<tr>
+<td> AGC 249100   &nbsp &nbsp 1402578+103713 &nbsp &nbsp 210.7408   10.62028    </td>
+<td> <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.7408&dec= 10.62028&opt=glpsi" target=new>SDSSNavigate</a></td>
+<td> <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+02+57.8&lat=+10+37+13&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a></td>
+<td> 2 photoObjs in center of late-type barred spiral; replacing 587736477051322652 instead of 587736477051322663<br> This works and this galaxy
+appears to get fixed!  </td></tr>
+  
+<tr>
+<td> AGC 243852   &nbsp &nbsp 1407045+104245 &nbsp &nbsp 211.7688   10.71250 </td>   
+<td> <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=211.7688&dec= 10.71250&opt=glpsi" target=new>SDSSNavigate</a></td>
+<td> <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+07+04.5&lat=+10+42+45&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a></td>
+<td>  Blue knot in LSB object</td></tr>
+
+<tr>
+<td> AGC 243830   &nbsp &nbsp 1414435+100429 &nbsp &nbsp 213.6812   10.07472 </td>
+<td> <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=213.6812&dec= 10.07472&opt=glpsi" target=new>SDSSNavigate</a></td>
+<td> <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+14+43.5&lat=+10+04+29&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a></td>
+<td> In the glare of a very bright star.</td></tr>
+</table>
+
+
+<br>
+<b>HI Deficiency:</b>
+</p>
+We will following the thinking in Haynes & Giovanelli (1984) and Solanes
+et al. (1996). The trick is that the diameters we are using are different
+from the ones employed in those studies, so we should check the calibration
+of the relation.
+<i> We have to work a little more on this.</i></p>
+Here is a <a href="projfiles/himasslindiam.jpg">
+first crack</a> at looking at how the HI mass varies with linear diameter.
+It is a log-log plot; the filled blue symbols represent galaxies identified with
+MKW 12 (sepdeg< 1.36, 5600 < vcmb < 6600) while the red ones show galaxies
+in the background group in the same sky region (sepdeg< 1.36, 6600 < vcmb < 7600).
+I need to remove those anomalous points (with bad linear diameters petroR90_r, 
+as discussed above).
+</p>
+
+<br>
+<b>Inclinations:</b>
+</p>
+The inclination can be derived from the observed axial ratio b/a where
+b is the minor axis and a is the major axis. We adopt from SDSS DR7 the
+observed expAB_r which is the axial ratio in the R-band. The inclination
+is given by:<br>
+<center>
+cos<sup>2</sup>i = (r<sup>2</sup> - p<sup>2</sup>)/(1 - p<sup>2</sup>)
+</center>
+<br>
+where r = b/a, the observed axial ratio,  and p = c/a, the intrinsic
+axial ratio. The intrinsic axial ratio is probably dependent on the
+morphological type, and we adopt p = 0.2 for types Sbc and earlier,
+and 0.12 for later types.</p>
+
+<br>
+<b>Correction of magnitudes for galactic extinction:</b></p>
+
+NED gives a value of the (B-V) color excess, E(B-V), of 0.031;
+this comes from the DIRBE sky maps of interstellar dust
+emission made by the COBE satellite
+as understood by Schlegel, Finkbeiner and Davis (1998, 
+ApJ 500, 525). 
+We need to know how to apply that to SDSS magnitudes.</p>
+
+Table 6 of Schlegel, Finkbeiner and Davis (1998)
+gives the exinction A_lambda relative to E(B-V) for the SDSS filters,
+namely:</p>
+<table cellpadding=3 border=3>
+<tr><th> Filter </td><td>  L_eff </td><td> A/A_V </td><td> A/E(B-V)</td></tr>
+<tr><td> Sloan u </td><td> 3546  </td><td> 1.579 </td><td> 5.155</td></tr>
+<tr><td> Sloan g </td><td> 4925  </td><td> 1.161 </td><td> 3.793</td></tr>
+<tr><td> Sloan r </td><td> 6335  </td><td> 0.843 </td><td> 2.751</td></tr>
+<tr><td> Sloan i </td><td> 7799  </td><td> 0.639 </td><td> 2.086</td></tr>
+<tr><td> Sloan z </td><td> 9294  </td><td> 0.453 </td><td> 1.479</td></tr>
+</table>
+<br>
+The SDSS correction for E_BminusV = 0.031 therefore is for u,g,r,i,z respectively:   
+0.160, 0.118, 0.085, 0.065 and 0.046 magnitudes.</p>
+
+<br>
+<b>Correction of magnitudes for internal extinction:</b></p>
+
+This is a little messy, because the correction depends on the
+inclination of the galaxy and the adopted extinction law.
+I have not been able to find a reference which explains this well for 
+SDSS filters, so I am depending on the (exhaustive) discussion carried
+out for (Landolt-based) I-band
+by Giovanelli et al. (1995, Astro J 110, 1059).
+We use the basic result given in that paper and their formula
+which gives the internal extinction depending on the observed axial
+ratio (inclination) and on galaxy
+luminosity. This is discussed further in Giovanelli et al. (1997, 
+Astro J.  113, 22; here is what they say:</p>
+
+<img src="projfiles/gio97a_intexteq.gif" height=150></p>
+
+We will use their basic values for I-band and then adopt the same relationships
+among the other wavelengths as given by Schlegel et al. (1998; see above).</p>
+
+To perform this correction, we have to calculate the Landolt I-band absolute magnitude 
+for each galaxy, starting with the SDSS i-band magnitude and the distance.
+The SDSS website gives a conversion relation (admittedly for stars, not galaxies)<br>
+<center>I = r - 1.2444*(r - i) - 0.382</center><br>
+(See also the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/stellarmass.htm">
+ALFALFA U-grad page</a>.)
+Let's convert using the galactic extinction corrected magnitudes at the r and i bands.
+Once we calculate the I-band magnitude, we can calculate the I-band absolute
+magnitude simply.</p>
+
+Schlegel, Finkbeiner and Davis (1998) also give conversions for Milky Way extinction
+in  Landolt I-band (as for Sloan; see the discussion of galactic extinction above). Assuming
+the same relationship applies in other galaxies as in the MW, we can use their
+value of Landolt I in their Table 6 :</p>
+
+<table cellpadding=3 border=3>
+<tr><th> Filter </td><td>  L_eff </td><td> A/A_V </td><td> A/E(B-V)</td></tr>
+<tr><td> Landolt I </td><td> 8090  </td><td> 0.594 </td><td> 1.940</td></tr>
+</table></p>
+The internal extinction correction at SDSS i band &Delta;m<sub>i</sub>
+then is just (2.086/1.940)*&Delta;m<sub>I</sub>. We can similarly calculate the
+internal extinction corrections for u, g, r, z by scaling to the i band
+value, using the relations given in Table 6, e.g. &Delta;m<sub>u</sub>
+= (5.155/2.086)*&Delta;m<sub>i</sub>, etc.</p>
+
+
+<br>
+<b>Correction of magnitudes for K-correction:</b></p>
+
+Blanton et al (2003), AJ 125, 2348 discuss the K-corrections for 
+SDSS data in great detail; they also provide a library of appropriate
+IDL code which can be downloaded from Mike's web page. The median
+redshift of galaxies in the SDSS spectroscopic sample is 0.11, much
+higher than that of our sample. We expect that the K-correction
+will be very small. In fact, they state (Section 2.2, p124): </p>
+
+"...We want to emphasize here that, while K-correcting to a fixed-frame
+bandpass is <i>sometimes</i> necessary in order to achieve a scientific
+objective, it is not <i>always</i> necessary or appropriate. Because
+K-corretions are inherently uncertain (the broadband magnitudes do
+not uniquely determine the SED), they should be avoided or minimized
+when possible..."</p>
+
+So, since our sample is at such low redshift, I suggest we
+not apply a K-correction.</p>
+
+We now can calculate the corrected apparent magnitude in each filter band as:</br>
+m<sub>corr</sub>_f = petromag_f - &Delta;m(galext) - &Delta;m(intext) &nbsp &nbsp
+<b>Whoopee, now we can calculate absolute magnitudes!</b></p>
+
+<br>
+<b>Calculation of Absolute Magnitudes:</b></p>
+
+The absolute magnitude for each filter f is given by the simple expression:<br>
+absMag_f = m<sub>corr</sub>_f + 5. - 5.* alog10(dist*1.0E+06)<br>
+and then the luminosity at that filter is:<br>
+luminosity_f = 10.**[0.4(absMag_Sun_f - absMag_f)]</p>
+
+We note the values given for the urgiz colors of the Sun at:
+<a href="http://www.sdss.org/dr6/algorithms/sdssUBVRITransform.html">SDSS</a>:
+<pre>
+Assuming M(V)=+4.82, U-B=+0.195, B-V=+0.650, V-Rc=+0.36, and Rc-Ic=+0.32, the Sun has
+    M(g)=   (+/-0.02)
+    u-g = +1.43  (+/-0.05)
+    g-r = +0.44  (+/-0.02)
+    r-i = +0.11  (+/-0.02)
+    i-z = +0.03  (+/-0.02)
+</pre>
+so, we adopt M(r)= +5.12 - 0.44 = +4.68.</p>
+
+<br>
+<b>Calculation of stellar masses:</b></p>
+
+Once we have corrected magnitudes, we can calculate the stellar masses
+associated with the observed luminosity. We adopt need to adopt a stellar
+M/L according to the galaxy color. See Bell et al. 2003:<br>
+<pre>
+TABLE 7
+Stellar Mass-to-Light Ratio as a Function of Color 
+(here _f refers to SDSS or 2MASS filter)
+Color   a_g     b_g      a_r     b_r      a_i     b_i      a_z     b_z      a_J     b_J      a_H     b_H      a_H     b_H
+u-g   -0.221   0.485   -0.099   0.345   -0.053   0.268   -0.105   0.226   -0.128   0.169   -0.209   0.133   -0.260   0.123
+u-r   -0.390   0.417   -0.223   0.299   -0.151   0.233   -0.178   0.192   -0.172   0.138   -0.237   0.104   -0.273   0.091
+u-i   -0.375   0.359   -0.212   0.257   -0.144   0.201   -0.171   0.165   -0.169   0.119   -0.233   0.090   -0.267   0.077
+u-z   -0.400   0.332   -0.232   0.239   -0.161   0.187   -0.179   0.151   -0.163   0.105   -0.205   0.071   -0.232   0.056
+g-r   -0.499   1.519   -0.306   1.097   -0.222   0.864   -0.223   0.689   -0.172   0.444   -0.189   0.266   -0.209   0.197
+g-i   -0.379   0.914   -0.220   0.661   -0.152   0.518   -0.175   0.421   -0.153   0.283   -0.186   0.179   -0.211   0.137
+g-z   -0.367   0.698   -0.215   0.508   -0.153   0.402   -0.171   0.322   -0.097   0.175   -0.117   0.083   -0.138   0.047
+r-i   -0.106   1.982   -0.022   1.431    0.006   1.114   -0.052   0.923   -0.079   0.650   -0.148   0.437   -0.186   0.349
+r-z   -0.124   1.067   -0.041   0.780   -0.018   0.623   -0.041   0.463   -0.011   0.224   -0.059   0.076   -0.092   0.019
+                                                         
+Color                                          
+B-V   -0.942   1.737   -0.628   1.305   -0.520   1.094   -0.399   0.824   -0.261   0.433   -0.209   0.210   -0.206   0.135
+B-R   -0.976   1.111   -0.633   0.816   -0.523   0.683   -0.405   0.518   -0.289   0.297   -0.262   0.180   -0.264   0.138
+
+Notes. Stellar M/L ratios are given by log(M/L) = a_f + b_f x color, 
+where the M/L ratio is in solar units. 
+If all galaxies are submaximal, then the above zero points a_f should be modified by 
+subtracting an IMF dependent constant as follows: 0.15 dex for a Kennicutt or 
+Kroupa IMF, and 0.4 dex for a Bottema IMF. Scatter in the above correlations 
+is 0.1 dex for all optical M/L ratios, and 0.1-0.2 dex for NIR M/L ratios 
+(larger for galaxies with blue optical colors). SDSS filters are in AB magnitudes; 
+Johnson BVR and JHK are in Vega magnitudes.</pre>
+</p>
+For our purposes, let's stick to the r-band and hence use:<br>
+log M/L(rband) = -0.306 + 1.097*(corrmag_g - corrmag_r) <br>
+M(stars) = L_r * M/L(rband)</p>
+<br>
+
+<b>Color-magnitude diagram</b></p>
+
+Ok, so now we can try to make a color-magnitude plot like the one in Baldry et al.
+which plots AbsMag_r versus (u - r) color. Note that I use now corrected
+magnitudes and colors (with corrections for galactic and internal extinction).</p>
+
+Baldry et al present a functional divider between the red and blue sequence given by:<br>
+divider= 2.06 - 0.244*dtanh(factor)<br>
+which I can include on the <a href="projfiles/baldryplot.jpg">plot</a>.</p>
+
+There are a few weird outliers on this diagram, and it is worth taking a look at
+them so, here they are. See also the SDSS mosaic of their
+<a href="projfiles/baldryoutliers.gif">images</a>.</p>
+
+<table cellpadding=3 border=1>
+<tr><td> ALFALFA    </td><td>  Too faint/blue? </td><td>238636 &nbsp &nbsp 
+    <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=208.4754&dec=  9.50444&opt=glsi" target=new>SDSSNavigate</a></td>
+    <td> very low surface brightness faint object</td></tr>
+<tr><td> ALFALFA    </td><td>  Too blue?       </td><td>232563  &nbsp &nbsp
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=209.5146&dec= 12.15083&opt=glsi" target=new>SDSSNavigate</a> 
+     </td><td> interacting system </td></tr>
+<tr><td> ALFALFA    </td><td>  Too faint?      </td><td>243859 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.0208&dec=  9.31167&opt=glsi" target=new>SDSSNavigate</a>
+     </td><td> very low surface brightness faint object</td></tr>
+<tr><td> ALFALFA    </td><td>  Too faint?      </td><td>243835 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.5338&dec= 11.11750&opt=glsi" target=new>SDSSNavigate</a>
+     </td><td> very diffuse low surface brightness object</td></tr>
+<tr><td> DR7 spect  </td><td>  Too blue?       </td><td>243916 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.5358&dec=  6.34028&opt=glsi" target=new>SDSSNavigate</a>
+     </td><td> small, compact galaxy</td></tr>
+<tr><td> ALFALFA    </td><td>  Too faint?      </td><td>249095 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.5542&dec=  8.08694&opt=glsi" target=new>SDSSNavigate</a>
+     </td><td> very low surface brightness faint object </td></tr>
+<tr><td> DR7 spect  </td><td>  Too red?        </td><td>730099 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.6708&dec=  8.24972&opt=glsi" target=new>SDSSNavigate</a>
+     </td><td> early type galaxy in pair; but watch nearby star </td></tr>
+<tr><td> DR7 spect  </td><td>  Too red?        </td><td>249364 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=211.7433&dec=  8.23917&opt=glsi" target=new>SDSSNavigate</a>
+     </td><td> interacting system </td></tr>
+<tr><td> DR7 spect & ALFALFA </td><td>Too faint?</td><td>243852 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=211.7688&dec= 10.71250&opt=glsi" target=new>SDSSNavigate</a>
+     </td><td> HII knot in galaxy? </td></tr>
+<tr><td> ALFALFA    </td><td>  Too faint?      </td><td>249109 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=211.7767&dec=  8.98944&opt=glsi" target=new>SDSSNavigate</a>
+     </td><td> very diffuse low surface brightness object </td></tr>
+<tr><td> ALFALFA    </td><td>  Too faint?      </td><td>249118 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=212.6350&dec=  8.59472&opt=glsi" target=new>SDSSNavigate</a>
+    </td><td> very diffuse low surface brightness blue object </td></tr>
+<tr><td> DR7 spect  </td><td>  Too red?        </td><td>244010 &nbsp &nbsp 
+     <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=213.4850&dec= 11.98694&opt=glsi" target=new>SDSSNavigate</a>
+     </td><td> early type in glare of nearby star; color probably contaminated </td></tr>
+</table><br>
+
+<br>
+<b>Starbursts versus AGN:</b></p>
+
+Samantha is investigating the ratios of emission line equivalent widths for galaxies in our
+region and how they can be used to discriminate starburst from AGN.
+The basic method of performing such classification is to examine the location
+of each galaxy on an "Osterbrock diagram" as discussed in the book
+"Astrophysics of Gaseous Nebulae and Active Galactic Nuclei" by 
+Donald Osterbrock (and the 2008 new edition of the same by
+Osterbrock and Ferland; see Chapter 14 especially).
+</p> 
+
+
+Kauffmann et al (2003 MNRAS, 346, 1055) select AGNs from the SDSS using:<br>
+
+log([OIII]&lambda;5007/H&beta;) >= {0.61/[log([NII]&lambda;6583/H&alpha;)-0.05]} + 1.3.</p>
+
+Here is the <a href="projfiles/lineratios.jpg">lineratios</a> plot.
+There are a few outliers; we should take a look to see if we understand what's up.<br>
+<pre>
+These objects have strange lineratios compared to Osterbrock & Ferland 
+yratio > 1.4 or < -1
+xratio > 1 
+ yratio 713708     2.00399804    2.28546691    0.69992298    0.02398900  -0.06   1.47 587736543625871510
+ yratio 713771     1.84882700    4.10145998    1.91484499    0.07510300  -0.35   1.41 587736477587734736
+ xratio 243884    54.40460205    3.20507312   98.11115265   51.38726425   1.23   0.28 588017726558830607
+ yratio 243860     1.30253100    4.78960323    3.74071908    0.00986084  -0.57   2.58 587736542553178754
+ yratio 713819     3.76380396    6.83772182    8.32061577    0.27839500  -0.26   1.48 587736478662131825
+ yratio 240082     2.03377104    4.15707493    0.00469569    0.20766100  -0.31  -1.65 587736543090311257
+ yratio 730130     8.12229824    5.26415014    6.16007423    0.02006800   0.19   2.49 587736478125719660
+ yratio 715930     4.19501305    4.44104195    5.93706417    0.16350999  -0.02   1.56 587736540943548456
+ yratio 713892     1.32766998    5.30448103    3.52231598    0.05954200  -0.60   1.77 587736478126047320
+</pre>
+
+AGC 713708   &nbsp &nbsp 208.3308   10.12167  &nbsp  &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=208.3308&dec= 10.12167&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=13+53+19.4&lat=+10+07+18&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  <br>
+AGC 713771   &nbsp &nbsp 209.6637   11.07639  &nbsp  &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=209.6637&dec= 11.07639&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=13+58+39.3&lat=+11+04+35&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  <br>
+AGC 243884   &nbsp &nbsp 210.0008    7.76444  &nbsp  &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.0008&dec=  7.76444&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+00+00.2&lat=+07+45+52&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  <br>
+AGC 243860   &nbsp &nbsp 210.7525    9.04944  &nbsp  &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.7525&dec=  9.04944&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+03+00.6&lat=+09+02+58&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  <br>
+AGC 713819   &nbsp &nbsp 211.2933   11.77111  &nbsp  &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=211.2933&dec= 11.77111&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+05+10.4&lat=+11+46+16&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  <br>
+AGC 240082   &nbsp &nbsp 211.4288    9.51222  &nbsp  &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=211.4288&dec=  9.51222&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+05+42.9&lat=+09+30+44&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  <br>
+AGC 730130   &nbsp &nbsp 212.2192   11.17778  &nbsp  &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=212.2192&dec= 11.17778&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+08+52.6&lat=+11+10+40&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  <br>
+AGC 715930   &nbsp &nbsp 212.9183    7.80222  &nbsp  &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=212.9183&dec=  7.80222&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+11+40.4&lat=+07+48+08&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  <br>
+AGC 713892   &nbsp &nbsp 212.9717   11.20917  &nbsp  &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=212.9717&dec= 11.20917&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+11+53.2&lat=+11+12+33&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  </p>
+<br> 
+<b>Star formation rates</b></p>
+The H&alpha; equivalent width (EW) provides a measure of the current rate of massive star formation.
+A measure of the star formation rate SFR in solar masses per year is given by<br>
+SFR(M<sub>solar</sub>/yr) = 7.9 x 10<sup>-42</sup> L(H&alpha;)<br>
+where L(H&alpha;) is the luminosity in the H&alpha; line in erg/s. Remember the 
+definition of equivalent width:<br>
+
+EW (Angstroms)  = &int; (F<sub>cont</sub> - F<sub>&lambda;</sub>)/F<sub>cont</sub> * d&lambda;</p>
+
+with F<sub>cont</sub> = 1 the continuum level unit normalized,  F<sub>&lambda;</sub> the line profile 
+level, and d&lambda; the sampling in wavelength units (Angstroms). 
+Also remember that EW < 1 for an absorption line and EW > 1 for an emission line.
+</p>
+
+We should be able to compute the flux of the H&alpha; line from the EW via:<br>
+F<sub>line</sub>(H&alpha;) = EW(H&alpha;) X F<sub>cont</sub>(H&alpha;). <br>
+so we need to find F<sub>cont</sub> from the SDSS. We can get the value of
+continuum flux at the line center from the SDSS database, F<sub>cont</sub>, in
+units of 10<sup>-17</sup> ergs/s/cm^2/per Angstrom. We then can calculate
+the H&alpha; luminosity just by 4&pi;Distance**2/Flux, using the proper units, of course.</p>
+
+There are several additional corrections we need to make: (1) for stellar absorption;
+(b) for internal extinction and (3) for SDSS aperture (the fibers)
+for internal extinction to the measured Balmer line equivalent
+widths. These corrections are discussed by Nakamura et al. (2004, AJ 127, 2511) and
+in Hopkins et al. (2003, ApJ 599, 971; this is the paper I am using now).
+I am applying a straight correction for stellar H&alpha; absorption
+of 1.3 Angstroms; this seems to be an intermediate value and we should probably
+investigate it further someday. I am not here making a correction for internal
+extinction, but we could do that using the ratio of H&beta; to H&alpha.
+For the aperture correction, it is conventional practice to use a correction
+based on scaling from the fiber magnitude to the Petrosian magnitude. 
+There is another discussion in the Appendix to the Hopkins et al. paper,
+but I am not sure it will apply to this nearby sample. For the moment,
+I use the fiber-to-Petrosian scaling aperture correction but this too is
+work for the future.</p>
+
+<br>
+<b> Rotational velocities</b></p>
+The ALFALFA catalog gives values of the HI line profile width, measured at 50% of the peak, in km/s;
+the observed full width W50 is related to twice the rotational velocity projected along the l.o.s.
+To convert this to a disk rotational velocity, we have to first correct for the inclination of the disk,
+using the inclination we derived above. V<sub>rot</sub> = 1/2 * W50/sin(i).</p>
+
+<br>
+<b> Velocity dispersions</b></p>
+
+The SDSS dataset includes measures of the velocity dispersion of spectral lines, the parameter l.sigma in SDSS nomenclature.
+The units of sigma are a bit weird, so that to convert to km/s you have to multiply by the speed of light and then
+divide by the rest wavelength (l.sigma*300000.0/l.wave). Notice too that they are measured only over the aperture of
+the optical fibers used: 3 arcseconds.</p>
+
+First, let's use the H-alpha line (rest wavelength 656.281 nm); when we do, we find a few bogus values (sigma = -99999.) which need to be checked out;
+It turns out they all have problems with their spectra in the region of H-alpha.<br>
+<ul>
+<li>AGC 715896   &nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=208.0992&dec=  6.79417&opt=glsi" target=new>SDSSNavigate</a>
+                 &nbsp &nbsp no Halpha
+<li>AGC 730083   &nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.2846&dec=  6.55611&opt=glsi" target=new>SDSSNavigate</a>
+                 &nbsp &nbsp no Halpha
+<li>AGC 243969   &nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=212.5717&dec=  6.14611&opt=glsi" target=new>SDSSNavigate</a>
+                 &nbsp &nbsp no Halpha
+<li>AGC 713930   &nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=213.5104&dec=  8.05306&opt=glsi" target=new>SDSSNavigate</a>
+                 &nbsp &nbsp no Halpha
+</ul>
+</p>
+
+We should also take note of the SDSS warning regarding velocity dispersion measurements for
+low signal-to-noise < 10 and velocity dispersion estimates smaller than about 70 km/s given the 
+typical S/N and the instrumental resolution of the SDSS spectra.</p>
+
+We might also try a stellar absorption line .... haven't yet though.</p>
+
+<br>
+<b> Dynamical masses</b></p>
+
+The dynamical mass within some radius R can be defined as M(r<R) = RV<sup>2</sup>/G.</p>
+
+
+<br>
+<b> Tully-Fisher relation</b></p>
+
+The Tully-Fisher relation is a well known scaling relation between the rotational velocity
+and optical luminosity. Since we calculate both of those, we can see if our galaxies follow the 
+T-F relation and ask if some are outliers.</p>
+
+<br>
+<b>Dark Galaxies(!):</b></p>
+
+There are two objects in the ALFALFA catalog in our box which do not have
+optical counterparts. They are AGC 238652 and AGC 249137. </p>
+
+AGC 238652 &nbsp &nbsp   1358170+070848 &nbsp &nbsp  209.5708    7.1467
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/explore/obj.asp?ra=209.5708&dec=  7.14667" target=new>Explore ObjID</a>&nbsp &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=209.5708&dec=  7.14667&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=209.5708,  7.14667&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=209.5708,  7.14667&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=209.5708,  7.14667&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=209.5708,  7.14667&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=209.5708,  7.14667&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=209.5708,  7.14667&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=13+58+17.0&lat=+07+08+48&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+ </p>
+AGC 249137 &nbsp &nbsp   1400571+083333 &nbsp &nbsp 210.2379    8.55917  
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/explore/obj.asp?ra=210.2379&dec=  8.55917" target=new>Explore ObjID</a>&nbsp &nbsp 
+&nbsp &nbsp <a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=210.2379&dec=  8.55917&opt=glsi" target=new>SDSSNavigate</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=210.2379,  8.55917&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.03</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=210.2379,  8.55917&NWINDOW=on&SURVEY=Digitized+Sky+Survey&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>SkyView.10</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=210.2379,  8.55917&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.03</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=210.2379,  8.55917&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=210.2379,  8.55917&NWINDOW=on&SURVEY=DSS2+Red&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2red.10</a>
+&nbsp &nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=210.2379,  8.55917&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.10&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.10</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=14+00+57.1&lat=+08+33+33&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a>
+  </p>
+
+</p>
+Here are quick plots of the distribution of galaxies in the vicinity of the two objects: <a href="projfiles/plot30_238652.gif">
+238652</a> and <a href="projfiles/plot30_249137.gif">AGC 249137</a>. BTW, the circles here represent the ALFA beams if ALFA
+were staring at the central object; don't take them too seriously. But remember about sidelobes? What about them?
+</p>
+
+<b> AGC 238652</b>: &nbsp &nbsp
+In the vicinity of 238362, there are several galaxies within 5 arcminutes and at similar velocities.
+<pre>
+ AGC#  Name        RA,Dec          THESE VALUES COME FROM THE AGC database                  separation
+  8881 046-018  1357588+070941  120  20 152   160   7084  0    774 206 7051 413  A50J875     4.60
+238653          1358088+070921   28  18 177   100   7252-98      0   0    0   0     00 0     2.11
+238652 HIdet    1358170+070848    0   0   0     0      0  0     43 209 7317  39  A50J875     0.00
+231119 046-025  1358201+071328   80  50 151   300   7390-99     80 209 7283  73  A50J875     4.73
+
+ALFALFA catalog entries:
+HI source ID      AGC                  RA,Dec (HI)             no opt id            V21          W21        Flux                  SNR   RMS  Code   gridname  
+HI135758.5+070952   8881  046-018  135758.5+ 7 952  -4  10  135758.8+ 7 941    1.1  7051    3   413    5    7.74  0.11    7.49   40.6  2.06   1     1356+07  
+HI135817.0+070848 238652           135817.0+ 7 848   0   0  0000 0.0+ 0 0 0    1.1  7317    5    39   10    0.43  0.04    0.45    7.2  2.09   1     1356+07
+HI135819.0+071300 231119  046-025  135819.0+ 713 0 -15 -28  135820.1+ 71328    1.2  7283    3    73    7    0.80  0.05    0.72    9.9  2.09   1     1356+07
+</pre>
+Here are links to the ALFALFA spectra for these galaxies:<a href="projfiles/HI135758.5+070952_1356+07b.jpg">UGC 8881</a>,
+<a href="projfiles/HI135817.0+070848_1356+07b.jpg">AGC 238652</a> and <a href="projfiles/HI135819.0+071300_1356+07b.jpg">
+AGC 231119</a>.</p>
+
+It is likely that the HI source 238652 is related in some way to the other two objects 231119 and 238653.
+There may be some kind of interaction going on. We'd need to map with higher resolution to find out.
+Anyway, this is <i>NOT</i> an isolated "dark galaxy".</p>
+
+<b> AGC 249137</b>: &nbsp &nbsp
+In the vicinity of 249137, there are several galaxies within 5 arcminutes and at similar velocities.
+<pre>
+ AGC#  Name        RA,Dec          THESE VALUES COME FROM THE AGC database                  separation
+230925 074-035  1400310+083901  110  20 156   160   4593-99    339   0 4363 620  P200255     8.46  
+249137 HIdet    1400571+083333    0   0   0     0      0  0     53 225 4702  33  A50J875     0.00
+231601 074-038  1401089+083500   53  22 153   120   4876-99    155 226 4864 400  A50J875     3.26
+
+ALFALFA catalog entries:
+HI source ID      AGC                  RA,Dec (HI)             no opt id            V21          W21        Flux                  SNR   RMS  Code   gridname  
+HI140031.3+083900 230925  074-035  140031.4+ 83852   6  -8  140031.0+ 839 1    1.4  4572    2   180    5    2.62  0.06    2.62   26.3  1.65   1     1356+09
+HI140057.0+083341 249137           140057.1+ 83333   0   0  0000 0.0+ 0 0 0    2.5  4702    3    33    6    0.53  0.04    0.54    8.8  2.25   1     1404+09
+HI140111.9+083500 231601  074-038  140112.0+ 83452  45  -7  1401 8.9+ 835 0    1.2  4864    8   400   15    1.55  0.11    1.13    7.7  2.26   1     1404+09
+</pre>
+Here are links to the ALFALFA spectra for these galaxies: <a href="projfiles/HI140031.3+083900_1356+09b.jpg">AGC 230925</a>,
+<a href="projfiles/HI140057.0+083341_1404+09b.jpg">AGC 249137</a> and <a href="projfiles/HI140111.9+083500_1404+09b.jpg">AGC 231601</a>.</p>
+
+It is likely that the HI source 249137 is related in some way to the other two objects 230295 and 231601.
+There may be some kind of interaction going on. We'd need to map with higher resolution to find out.
+Anyway, this is <i>NOT</i> an isolated "dark galaxy".</p>
+</body>
+</html>

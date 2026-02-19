@@ -1,0 +1,318 @@
+<html>
+  <head>
+    <title>Undergraduate ALFALFA Team</title> 
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=#cc0f14>SH #3: Understanding Galaxies &nbsp &nbsp &nbsp &nbsp Group Project</font></h3>
+<h3><font color=#ccof14> Team C:</font> &nbsp &nbsp &nbsp <font color=#008000>The structure of the Virgo
+Cluster and its galaxy population</font></h3>
+
+As we have mentioned befpre, the Virgo Cluster is the nearest cluster of 
+galaxies, at a distance of about 16.7 Mpc. A large portion of the cluster
+is included in the region covered by the completed ALFALFA survey &alpha;.40 and
+it is wholly included in the SDSS (and will be in the next ALFALFA data release). 
+Your task here
+is to consider some of the important issues related to observing Virgo.
+We will provide you with all the data you need, but you'll have to try
+to understand some of what we have done to get the data ready to use. 
+Then, you can use <b>TOPCAT</b> to explore the galaxy distribution and what
+it reveals about the cluster.
+Keep in mind that the ultimate goal is for the
+team to present your results to the other participants tomorrow evening.
+You will need to explain everything that you have done, all the assumptions you have
+made and what uncertainties remain.</p>
+
+<b> Note</b>: Team B is also looking into some aspects of the Virgo cluster, notably how
+we can measure the "peculiar velocities" of galaxies to detect the perturbations on the
+Hubble expansion caused by galaxies being locally attracted to the cluster overdensity.
+</p>
+<hr>
+<b>Facts about the Virgo cluster</b></p>
+
+Use 
+<!-- this <a href="http://ned.ipac.caltech.edu/cgi-bin/nph-objsearch?objname=VirgoCluster&extend=no&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=RA+or+Longitude&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES#ObjNo1" target=new>link</a>
+-->
+the NASA
+Extragalactic Database (NED)
+to find out some of the basic information about the Virgo that you will need. Record here
+the parameters given in NED.</p>
+
+<table border=4 cellpadding=5>
+<tr><td> R.A.(J2000) </td><td width=500> &nbsp </td></tr>
+<tr><td> Dec.(J2000) </td><td> &nbsp </td></tr>
+<tr><td> Heliocentric radial velocity </td><td> &nbsp </td></tr>
+<tr><td> Recessional velocity in CMB rest frame </td><td> &nbsp </td></tr>
+<tr><td> Distance to the cluster (quoted in NED)</td><td> &nbsp </td></tr>
+<tr><td> Angular size corresponding to 2 Mpc</td><td> &nbsp </td></tr>
+<tr><td> Galactic latitude </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in V-band </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in I-band </td><td> &nbsp </td></tr>
+</table></p><br>
+
+<li> &nbsp Why do you think the distance given in NED is different from 16.7 Mpc, the commonly accepted value?</p><br>
+
+<li> &nbsp What does the value of the Galactic extinction suggest about the location of Virgo relative to the plane of the Milky Way? </p><br>
+<hr>
+<b> Getting ready to look at Virgo</b></p>
+Because the Virgo cluster is so close to us, it extends over a very large region of the sky and its galaxies can be large
+in angular extent. To review the structure of the cluster, we can use the "Arecibo General Catalog", the private database
+of galaxies maintained by the ExtraGalactic Group (EGG) at Cornell which is made available to members of the ALFALFA team with
+the usual caveat that "you get what you pay for".</p>
+
+It is now standard practice in astronomy to provide
+data for use by others in standard formats such as "CSV", so we have done that. 
+We have used the AGC to create two CSV files for use in this activity which you can use if you want to explore
+on your own; otherwise, try to understand what the files contain.
+<ul>
+<li> &nbsp <a href="files/virgo7.5deg.voptlt3000.csv" target=new>CSV format</a> or
+           <a href="files/virgo7.5deg.voptlt3000.txt" target=new>ASCII text format</a>: &nbsp &nbsp
+           galaxies with optical heliocentric velocities < 3000 km/s</a> 
+     within 7.5 degrees of the center of Virgo
+<li> &nbsp <a href="files/virgo7.5deg.a40lt3000.csv">CSV format</a> or
+           <a href="files/virgo7.5deg.a40lt3000.txt" target=new>ASCII text format</a>: &nbsp &nbsp
+           galaxies in &alpha;.40 with HI 21cm line heliocentric velocities 
+     < 3000 km/s</a> within 7.5 degrees of the center of Virgo
+</ul>
+The files contain the galaxy AGC number, RA, Dec, Vhelio and the projected separation of the galaxy from the Virgo Cluster center in arcminutes.
+You can use these files to explore the structure of the cluster as seen be the two surveys.</p>
+
+<!--Here are the first 10 lines of the two files:<br>
+<pre>
+All galaxies with optical heliocentric velocities < 3000 km/s</a> within 7.5 degrees of the center of Virgo:
+
+agcnum,radeg,decdeg,vhel,sepmin
+213385,179.4504,12.0400, 2767,422.9651
+215740,179.6683,15.5928,  561,440.2495
+210968,179.8908,13.8875, 1450,399.8616
+224386,180.0433, 9.0614,  464,446.0865
+224234,180.2337,10.4986, 2657,399.1001
+226564,180.2833,14.1183, 1421,379.9525
+  7001,180.2933,14.1039, 1505,379.2042
+  7003,180.3396,14.4497, 1287,381.4115
+  7002,180.3492,13.4003,  936,369.5634
+</pre
+<br>
+<pre>
+All galaxies with radio 21 cm HI line heliocentric velocities < 3000 km/s</a> within 7.5 degrees of the center of Virgo and contained within the ALFALFA 2011 Data Release.
+
+agcnum,radeg,decdeg,vhel,sepmin
+213385,179.4504,12.0400, 2761,422.9651
+210968,179.8908,13.8875, 1448,399.8616
+224234,180.2337,10.4986, 2656,399.1001
+  7001,180.2933,14.1039, 1509,379.2042
+  7003,180.3396,14.4497, 1287,381.4115
+  7002,180.3492,13.4003,  930,369.5634
+211006,180.3646,14.0344, 1479,374.3021
+224978,180.4379, 8.6831, 2192,438.3299
+224235,180.8129,10.1078, 2547,376.5669
+</pre>
+-->
+<br>
+
+<li> &nbsp Why did we restrict the heliocentric velocity to be less than 3000 km/s?</p>
+
+<li> &nbsp What is the recessional velocity corresponding to a distance of Virgo? </p>
+
+<li> &nbsp What angular scale will you adopt for the radius of the Virgo cluster?
+<!-- <br> At 16.7 Mpc, 2 Mpc corresponds to about 420 arcmin, so that 7.5 degrees is about 2.2 Mpc. -->
+</p><br><hr> 
+
+<b>The structure of the Virgo cluster on the sky</b></p>
+<table>
+<tr>
+<td valign=top>
+An important compilation of galaxies in the Virgo cluster was presented by 
+<a href="http://articles.adsabs.harvard.edu/full/1985AJ.....90.1681B">Binggeli, Sandage and Tammann</a>
+1985, Astron. J. 90, 1681. Their Virgo Cluster Catalog (VCC) consists of 2096 galaxies which they believed,
+based on examination of high quality photographic plates, are likely cluster members.
+Note that their investigation of the cluster
+was based on many fewer redshifts than are available today. 
+To the right is the sky distribution of possible cluster
+members as appeared in their paper. </p>
+
+<li> &nbsp Using the Virgo AGC/&alpha;.40 data files (linked above), plot (on the same graph)
+the sky distribution of galaxies in the (a)
+optical sample and (b) the &alpha;.40 galaxies. Assign red symbols to the optical sample
+and blue ones to the &alpha;.40 galaxies. Keep in mind that the &alpha;.40 sample is limited
+to the Dec = +15 deg strip of grids so it stops at +16 degrees. </p>
+
+<td valign=top align=left>
+<a href="images13/vccsky.gif" target=new>
+<img src="images13/vccsky.gif" height=380></a><br>
+From Figure 2 of <a href="http://adsabs.harvard.edu/abs/1985AJ.....90.1681B" target=new>
+Binggeli, Sandage & Tammann 1985</p>
+</td>
+</tr></table>
+
+<!--
+<a href="images13/Virgo7.5deg.vlt3000.opt+a40.gif" target=new>
+<img src="images13/Virgo7.5deg.vlt3000.opt+a40.gif" height=280>
+</td>
+-->
+<li> &nbsp Be sure to plot the distribution so that east is to the left and west is the right; why do we do that?</p>
+<li> &nbsp Consider the result: what do you notice and how can you explain what you see? 
+How does our diagram compare to that seen in Fig 2. of Binggeli, Sandage & Tammann (1985)?</p>
+<hr>
+
+<b>The distribution of heliocentric velocity with projected separation</b></p>
+Using the Virgo AGC/&alpha;.40 data files (linked above), plot (on the same graph)
+the variation in heliocentric velocities (y-axis) with the projected separation from the
+cluster center (x-axis) for the (a) optical sample and (b) the &alpha;.40 galaxies.
+Again, plot the optical sample with red symbols and the  &alpha;.40 galaxies as blue ones.</p>
+
+<li> &nbsp Consider the result: what do you notice and how can you explain what you see? </p>
+
+<li> &nbsp Why can't we use Hubble's Law to derive distances in the Virgo region?</p>
+
+
+<li> &nbsp Why do some galaxies have <b>negative</b> heliocentric velocities?</p>
+
+<li> &nbsp What is a "peculiar velocity"?</p>
+
+<!--
+<a href="images13/Virgo7.5deg.vlt3000.opt+a40.sepvsvhel.gif" target=new>
+<img src="images13/Virgo7.5deg.vlt3000.opt+a40.sepvsvhel.gif" height=300>
+-->
+<br>
+Rather than simply using Hubble's law to derive distances, we use a model of the
+local velocity field to estimate distances to galaxies, and the &alpha;.40
+catalog includes the distance assumed in the derivation of HI masses. This model was
+derived by my former PhD student Karen Masters, now at the Institute for
+Gravitation and Cosmology at the University of Portsmouth (UK).  Team B is going to report
+more about peculiar velocities and the flow in the Local Supercluster as part of
+their project.</p>
+
+<li> &nbsp Suppose a galaxy lies directly in front of the Virgo cluster (i.e., between
+the Local Group and the Virgo cluster) at a distance (from the Milky Way) of
+12 Mpc. What recessional velocity would it have if Virgo were not there? Would
+you expect its observed recessional velocity to be higher or lower than that?
+Why?</p>
+
+<!--
+<b><font color=#cc0f14>
+<img src="files/Virgo7.5deg.vlt3000.opt+a40.sepvsvhel.gif" height=300></p>
+The &alpha;.40 galaxies avoid the center of the cluster. There is some tendency for 
+galaxies further from the center to have higher velocities; the negative velocity
+galaxies are found only in the cluster center.
+</font></b></p>
+-->
+
+<br>
+<hr>
+
+<b>The velocity distribution of galaxies in the Virgo cluster</b></p>
+Using the Virgo AGC/&alpha;.40 data files (linked above), plot (on the same graph)
+the distribution of heliocentric velocities (using the histogram option)
+for the (a) optical sample and (b) the &alpha;.40 galaxies. Again, using
+different color codings, red and blue. </p>
+
+<li> &nbsp Consider the result: what do you notice and how can you explain what you see? </p><br>
+<li> &nbsp Take a careful look at the histogram for the optical sample. 
+Why do there seem to be more galaxies at higher velocities than 
+at lower ones, i.e. the histogram is skewed and not a perfectly smooth
+and symmetric
+(Gaussian) function?</p>
+
+<!--
+<a href="images13/Virgo7.5deg.vlt3000.opt+a40.histovhel.gif" target=new>
+<img src="images13/Virgo7.5deg.vlt3000.opt+a40.histovhel.gif" height=250></a><br>
+Both optical (red) and &alpha;.40 (blue)
+-->
+
+<!--
+<b><font color=#cc0f14>
+The &alpha;.40 galaxies are much more broadly distributed in velocity while
+the optical sample shows a peak at the cluster systemic velocity. The
+non-Gaussian shape arises from the fact that we are looking along a filament
+and the volume in the background of Virgo is larger than that in the foreground.
+</font></b></p>
+-->
+<br>
+<hr>
+<b>The properties of local &alpha;.40 galaxies in Virgo and outside Virgo</b></p>
+
+Let's take a look at the HI properties of galaxies detected by ALFALFA in the Virgo cluster in
+comparison with ones at similar distances but outside Virgo. Here are two useful files:
+<ul>
+<li> <a href="files/Virgo7.5deg.opthi.csv" target=new>CSV format</a> or
+     <a href="files/Virgo7.5deg.opthi.txt" target=new>ASCII text format</a> or
+         &alpha;.40 within 7.5 degrees of Virgo</a> and V_cmb < 3200 km/s and with SDSS photometry
+<li> <a href="files/notVirgo7.5deg.opthi.csv" target=new>CSV format</a> or
+     <a href="files/notVirgo7.5deg.opthi.txt" target=new>ASCII text format</a>: &nbsp &nbsp
+      &alpha;.40 beyond 7.5 degrees of Virgo</a> and V_cmb < 3200 km/s and with SDSS photometry
+</ul></p>
+
+<br>
+
+In both files, we have calculated the optical luminosity for each galaxy (given in logarithmic units
+as logL) and the "gas fraction" (gas2L = log MH - log L). Note that we do this for both the V-band
+and the i-band. What are they? In what ways might we expect them to give different results? Why?</p>
+
+
+Using these files, plot (on the same graph)
+the optical luminosity (x axis, in log units) versus the HI mass (y axis, in log units)
+for (a) the Virgo &alpha;.40 galaxies and (a) the non-Virgo ones. Assign red symbols to
+the Virgo &alpha;.40 galaxies and blue ones to the non-cluster galaxies. Keep in mind though,
+that galaxies in both of these samples have been detected by ALFALFA and therefore 
+contain some interstellar hydrogen. Additionally, examine the histograms of the gas 
+fraction parameter.</p>
+
+You could do this for either filter band in the files, but first use the V-band plot.</p>
+
+<!--
+<table><td valign=top>
+
+</td><td valign=top align=right>
+<a href="images13/LumvslogHI_Virgoonly.gif" target=new>
+<img src="images13/LumvslogHI_Virgoonly.gif" height=250></a><br>
+Virgo cluster galaxies shown in red
+</td><td valign=top align=right>
+<a href="images13/LumvslogHI_VirgononVirgo.gif" target=new>
+<img src="images13/LumvslogHI_VirgononVirgo.gif" height=250></a><br>
+Galaxies outside Virgo shown in blue
+</td></tr></table>
+-->
+
+<br>
+<li> &nbsp What do you notice and how can you explain what you see? </p><br>
+
+Make a similar plot, investigating how the gas fraction (gas2L_V)
+varies with luminosity.</p>
+
+<!--
+<table><td valign=top align=left>
+<a href="images13/Lumvsgasfraction_Virgoonly.gif" target=new>
+<img src="images13/Lumvsgasfraction_Virgoonly.gif" height=240></a><br>
+
+Virgo cluster galaxies shown in red
+</td><td valign=top align=right>
+<a href="images13/Lumvsgasfraction_VirgononVirgo.gif" target=new>
+<img src="images13/Lumvsgasfraction_VirgononVirgo.gif" height=240></a><br>
+Galaxies outside Virgo shown in blue
+</td></tr></table>
+-->
+
+<br>
+<li> &nbsp What do you notice and how can you explain what you see?
+</p>
+ Feel free to make 
+any other plots that might be interesting/useful.</p>
+<br>
+<hr>
+<b> Other things to consider</b></p>
+
+<li> &nbsp
+Using the information you have and making reasonable assumptions, how
+could you estimate
+the mass of the Virgo cluster? </p>
+
+<li> &nbsp Look up some more information about galaxies in the Virgo cluster
+and find some interesting images of its notable members.</p>
+<br>
+
+<br>
+<hr>
+<font color=#008000><i>Last modified: Sat Jun 11 10:33:28 EDT 2016
+</i> by martha </font>
+</body>
+</html>

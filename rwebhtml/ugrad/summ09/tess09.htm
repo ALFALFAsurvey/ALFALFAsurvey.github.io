@@ -1,0 +1,260 @@
+<html>
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+
+<!-- PAGE CONTENT BEGINS HERE -->
+
+<h3><font color=#008000>Tess' Summer 2009 page</font></h3>
+
+<li>The <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/summ09/">2009 front page</a>
+     &nbsp <i> Don't forget to look at the links on that page</i></p>
+<br>
+<h3> Stuff to do</h3>
+<ul>
+<li> Learn about the <a href="http://egg.astro.cornell.edu/alfalfa"> ALFALFA survey</a>
+     and, especially, take a look at the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalfa.php">
+     Using ALFALFA for science</a> page. What does ALFALFA detect? How can we use ALFALFA to learn
+     about galaxies?</p>
+<li> Read about the Sloan Digital Sky Survey in order to answer these questions. Some useful links
+are given here:<br>
+<a href="http://www.sdss.org/">Main SDSS site</a> &nbsp &nbsp &nbsp &nbsp
+<a href="http://www.sdss.org/dr6/">DR6 site</a>&nbsp &nbsp &nbsp &nbsp
+<a href="http://www.sdss.org/dr6/instruments/imager/index.html"> Imaging camera parameters and description</a><br>
+<ul>
+<dd>a. What is the operational status of the SDSS?
+<dd>b. What are the central wavelengths of the filters used to produce SDSS images?
+<dd>c. Why is it useful to obtain images in 5 filters simultaneously?
+<dd>d. Over what portion of the galaxy is the spectrum obtained? Why might that be important?</p></ul>
+<li> Make a web page for yourself to keep track of what you are doing; you should
+     put it in the directory called <i> /home/hatillo/katieh/spr08</i> (actually we will need to
+     get you a computer account for this...). See
+     my <a href="../spr08/starthtml.htm">hints</a> on how to get started.</p>
+
+<li> <b> Get started with IDL</b><br>
+    See especially the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/intro2idlalfa.php">Intro to IDL for ALFALFA</a> page</p>
+
+<li> <b> The EGGGEN utilities</b>: &nbsp &nbsp 
+     <ol> <li> Learn how to start up <i>IDL</i> accessing the Arecibo and ALFALFA utilities.
+For this, you'll have to ask one of the local experts.
+     <li> "<b>plotalfa</b>" <br>
+     "plotalfa" allows you to explore how ALFA scans accross a region of the sky
+     using the ALFALFA observing mode. In IDL, it is developed as a widget
+     which allows for more flexibility in specifying the region plotted. You can
+     elect to see the galaxies and ALFA beams/tracks in a square box of variable
+     size from 30 arcmin (0.5 degrees) to 10 degrees with allowed values of
+     0.5, 1.0, 2.0, 3.0 ...10.0  . The bigger the region,
+     the more galaxies that are plotted.
+     <ul>
+     <li> Investigate the 10h13m45s,+03d24'00" field. Here, enter the coordinates ("AGC style")
+      and specify the box size to be 0.5 degrees; this is the same as "plot30".
+      <li>How many galaxies do you find?
+      <li>As you increase the box size, see how the number and distribution
+         of galaxies change. What do you notice about the distribution of galaxies?
+         How might this be explained? 
+      <li>Set the box size to 5 degrees. How many objects do you find?</p>
+       </ul>
+      </ol>
+
+<li> <b>The Arecibo General Catalog (AGC)</b> is our private database containing
+        basic data on several hundred thousand galaxies. It is not intended to be
+        used by or distributed to people outside the ALFALFA collaboration.
+       <ol> <li>What are the conditions of use? &nbsp &nbsp 
+     Look <a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agccontract.php">
+     here</a> for the answer and follow the link to answer the next questions.
+     <li> What is the "UGC"?
+     <li> When is the AGC entry number equal to the UGC entry number?
+     <li> What is the "position angle"?
+     <li> What is the "TELCODE" for Arecibo+ALFA?
+     <li> Some galaxies have two velocity measurements: "VOPT" and "V21".
+          In that case, what should you adopt as the recessional velocity
+          for the galaxy?</p>
+     </ol>
+
+<li> <b> Numerical integration of an HI profile</b>
+      <ol>
+      <li> Use our links to find the ALFALFA data entry for AGC/UGC 7192. Put the
+           link on your webpage.
+      <li> On your webpage, record for yourself the ALFALFA catalog information 
+           for this object. Do you understand what the parameters mean?  Add notes
+           for your own reference, as needed. If possible,
+           enter the data as a table on your webpage; if you don't know how to do
+           it, ask for a hint.
+      <li> Make a link on your web page to the journal article containing the
+           ALFALFA publication of this spectrum.
+      <li> Download the spectrum (ASCII file format) to your disk area on hatillo.
+      <li> Write an IDL routine to calculate the integral under the profile. <i>
+           If you run into "issues", ask!</i> This will probably take you some
+           time as you need to know how to read in a file, among other things.</p>
+      </ol>
+
+<li> <b> Reading ALFALFA catalogs</b>: &nbsp &nbsp ALFALFA produces catalogs 
+containing a source name, the AGC number (where there is one), the HI centroid
+and the position of the optical counterpart, and then various parameters measured
+from the HI line. 
+      <ol>
+      <li> Learn what 
+          <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/NotesOnALFALFAcatalog.html">measurements</a>
+          are contained in an ALFALFA catalog.
+      <li> Write yourself a short IDL routine to read this
+           <a href="highmass+sdss+cat.txt">test catalog</a>,
+           and try to calculate the HI mass from the parameter SintP  </p>
+      </ol>
+
+<li> <b> A cone diagram widget for IDL_ALFA:</b> <br>
+         To keep herself out of trouble and to make herself indispensible to
+         the ALFALFA team, Tess is extending the cone diagram program, making a widget that
+         will be of incredible use to all. When it is ready, we will add it to IDL_ALFA.</p>
+
+<li> <b> Tracing Galaxy Interactions with HI: Science Background</b><br>
+         Learn about galaxy-galaxy interactions and what HI can teach us about them. In other
+         words, do some reading!
+      <ol>
+      <li><a href="http://arxiv.org/abs/astro-ph/0002263"> Schweizer, F., 2000</a>,
+     <font color=#cc0f14><i>"Interactions as a Driver of Galaxy Evolution"</i></font>,
+      Philosophical Transations of the Royal Society of London, Series A, Vol. 358, no. 1772, pp. 2063-2076,
+      (retrieve paper from astro-ph archive).
+      <li> <a href="http://adsabs.harvard.edu/abs/1972ApJ...178..623T">
+     Toomre, A. & Toomre, J. 1972</a>, <font color=#cc0f14><i>"Galactic Bridges and Tails"</i></font>,
+     Astrophys. J. 178, 623.
+      <li><a href="http://www.nature.com/doifinder/10.1038/360715a0">Barnes, J.E. & Hernquist, L., 1992</a>,
+     <font color=#cc0f14><i>"Formation of Dwarf Galaxies in Tidal Tails"</i></font>, Nature, 360, pp. 715-717. 
+     <li><a href="http://arxiv.org/abs/astro-ph/9510034"> Moore et al., 1995</a>,
+     <font color=#cc0f14><i>"Galaxy Harassment and the Evolution of Clusters of Galaxies"</i></font>, Nature 379, 613,
+     (retrieve paper from astro-ph archive)
+     <li><a href="http://adsabs.harvard.edu/abs/2001AJ....122.2969H">Hibbard, J.E. <i>et al</i> 2001</a>
+     <font color=#cc0f14><i>"High-Resolution H I Mapping of NGC 4038/39 ("The Antennae") and Its Tidal Dwarf Galaxy Candidates"</i></font>,
+     Astron. J. 122, 2969.</p>
+     <li>Sabrina's map of the Leo Triplet can be found as Figure 4 of
+     <a href="http://adsabs.harvard.edu/abs/2009AJ....138..338S">Stierwalt <i>et al</i> 2009</a>
+     Astron. J. 138 338. You may also want to take a look at the other papers about the Leo Triplet 
+     which are referenced in that paper.</p>
+     
+     And check out some cool links:
+     <li><a href="http://www.nrao.edu/astrores/HIrogues/RoguesLiving.shtml"> John Hibbard's HI Rogues' Gallery</a>
+     <li>Chris Mihos'<a href="http://burro.astr.cwru.edu/JavaLab/web/main.html">JavaLab Applets</a>
+     </p>
+      </ol>
+
+<li> <b> ALFALFA maps of interacting galaxies, extended HI distributions, etc.</b><br>
+      OK, now it's your turn to learn about what grids are like, what they contain and
+      how to use them. Fortunately, there are some experts around, and even more people who WILL be experts soon!
+      <ol>
+      <li><a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/idldocs.php">ALFALFA IDL documents</a> 
+      <li> We will show you were to find the grids. Learn how to use gridview and galflux on HI sources.
+      <li> Learn about and practice using <a href="http://montage.ipac.caltech.edu/">MONTAGE</a>. Bug Manolis to help
+           you if you need help; it will be **good** for him.
+      <li> Pick Sabrina's brain on how to make contour diagrams and how to overlay them on SDSS or DSS images.
+           (Better do this soon!) Your job will be to pick up where she left off.<br>
+           <ul><li>Sabrina's <a href="ssstuff/makeimage.txt"> notes on making images
+               <li>Sabrina's <a href="ssstuff/makeoverlay.pro"> makeoverlay.pro</a>
+               <li>Sabrina's <a href="ssstuff/makeringplot.pro"> makering.pro</a>
+           </ul>
+      <li> Learn what is meant by:
+           <ul> <li> HI column density
+                <li> antenna temperature, system temperature, brightness temperature 
+                <li> HI line flux density
+                <li> moment map
+                <li> mJy/beam
+                <li> beam pattern, sidelobe, come lobe, confusion, sidelobe contamination
+                <li> deconvolution, clean image
+            </ul>
+      <li> Write an IDL routine that returns the ALFALFA grid at a given position (RA,Dec) and velocity
+           and whether that grid exists. Some ideas on things to incorporate:
+           <ul><li>Here is the file containing the list of <a href="gridmaster090701.list">archived grids</a>; it
+           lists the name of each grid file in the ALFALFA grid archive. You can also find this file
+           <a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/gridmasterlist.txt"> here</a> (use that
+           URL for a call in IDL_ALFA).
+           <li> Since the archive moves around, include a keyword for the disk location of the grid
+           archive. For the moment, set that to be "/home/vieques2/galaxy/grids/". Then you can concatenate
+           the name of the grid to the disk location to get the full filename.
+           </ul>
+      <li> Try to make an ovelay of the ALFALFA contours on the SDSS image of the region around NGC 5701.
+           (I'll let you find its position, but yes, it is in a grid in the archive.)
+           It is one of Dave's favorite galaxies; why don't you ask him why? (You could also ask him
+           to explain another of his favorites, the "hamburger galaxy"; I wonder if he remembers about that...
+           ah, late nights at the telescope on Kitt Peak...)
+           We don't know if NGC5701 is an interacting system, but it sure is BIG!
+           Make Dave a pretty picture and I bet he'll be really happy.
+      <li> Write up a guide on how to make contour diagrams and overlays for the ALFALFA team.</p>
+      </ol>
+
+<li>Here is the current
+     work-in-progress <a href="master129_090726.txt">catalog</a>. Note: this catalog isn't perfect;
+     there may be errors/duplicates. BEWARE!</p>
+
+<li>Some cryptic notes on the group around NGC 5701<br>
+    NGC 5701 is listed as a member of LGG 386 in the groups catalog of Garcia, 1993, A&Ap Suppl. 100, 47.
+    Here is the list of members. Note that the coordinates are B1950, not J2000 and the data are oldish.
+<pre>
+     LGG 386 PGC51895 IC  1024     142855.5+031348 L 1386
+     LGG 386 PGC52273 NGC 5690     143509.3+023014 S 1689
+     LGG 386 PGC52456 NGC 5725     143826.0+022401 S 1564
+     LGG 386 PGC52641 NGC 5740     144152.1+015325 S 1508
+     LGG 386 PGC52665 NGC 5746     144224.2+020953 S 1662
+     LGG 386 PGC52317 NGC 5692     143546.9+033732 S 1597
+     LGG 386 PGC52291 NGC 5691     143519.6-001053 S 1770
+     LGG 386 PGC52395 NGC 5705     143715.6-003013 S 1692
+     LGG 386 PGC52412 NGC 5713     143737.6-000435 S 1809
+     LGG 386 PGC52455 NGC 5719     143822.8-000615 S 1667
+     LGG 386 PGC52495 UGC 9470     143915.4+005400 S 1817
+     LGG 386 PGC52735 NGC 5750     144337.4-000045 S 1605
+     LGG 386 PGC52491 UGC 9469     143909.1-013543 I 1757
+     LGG 386 PGC51785 NGC 5636     142707.7+032917 L 1675
+     LGG 386 PGC51787 NGC 5638     142709.0+032723 E 1746
+     LGG 386 PGC51809 UGC 9310     142730.0+032600 S 1783
+     LGG 386 PGC52018 NGC 5668     143054.4+044011 S 1524
+     LGG 386 PGC52092 UGC 9380     143206.0+042900 I 1634
+     LGG 386 PGC52141 UGC 9385     143254.0+053000 I 1584
+     LGG 386 PGC52365 NGC 5701     143641.5+053450 S 1456
+     LGG 386 PGC52564 IC  1048     144027.4+050608 S 1583
+     LGG 386 PGC52574 UGC 9485     144036.0+045900 S 1648
+     LGG 386 PGC51808 IC  1022     142730.0+035900 S 1649+
+     LGG 386 PGC51971 MCG 1-37- 25 143012.0+030800 S 1456+
+     LGG 386 PGC52178 UGC 9392     143318.0+031500 I 1700+
+     LGG 386 PGC52256 PGC52256     143448.0+031600   1456+
+     LGG 386 PGC52356 UGC 9432     143630.0+030900 I 1510+
+     LGG 386 PGC52500 UGC 9472     143924.0-011300 S 1720+
+     LGG 386 PGC52558 UGC 9482     144018.0+005300 S 1734+
+     LGG 386 PGC51780 UGC 9299     142700.9+001213 S 1471+
+     LGG 386 PGC51957 NGC 5658     142955.0+003050 L 1594+
+</pre>
+     NGC 5701 is included in nog3.group as 30830 which translates to our SFI++ group as<br>
+<pre>
+  9436 30830  14.64292   5.34139  14.61150   5.57806  31.5  1790 p2                    
+  9483 30830  14.64292   5.34139  14.67445   5.10194  31.7  1790 p2                    
+  9485 30830  14.64290   5.34139  14.67578   4.97694  36.7  1792 CS    
+</pre
+    </p>
+
+<li>Some cryptic notes on the group around NGC 876/7<br>
+    NGC 876 is listed as a member of LGG 53 in the groups catalog of Garcia, 1993, A&Ap Suppl. 100, 47.
+    Here is the list of members. Note that the coordinates are B1950, not J2000 and the data are oldish.
+<pre>
+     LGG  53 PGC 8412 UGC 1693     020912.0+135200 S 3972
+     LGG  53 PGC 8722 NGC  871     021427.1+141905 S 3885
+     LGG  53 PGC 8739 UGC 1761     021442.0+142100 I 4147
+     LGG  53 PGC 8770 NGC  876     021510.0+141726 S 4008
+     LGG  53 PGC 8775 NGC  877     021515.3+141901 S 4061
+     LGG  53 PGC 8964 UGC 1817     021848.0+135900 S 3887
+     LGG  53 PGC 8758 IC  1791     021500.0+121500 L 3891
+     LGG  53 PGC 8788 UGC 1773     021532.8+125834 S 3765
+</pre>
+    NGC 877 is included in nog3.group as 30139 which translates to our SFI++ group as<br>
+<pre>
+  1759 30139   2.25353  14.30389   2.24094  14.31722  10.9  3543 p2                    
+  1761 30139   2.26524  14.22444   2.24525  14.34944  19.0  3555 CS                    
+  1766 30139   2.25353  14.30389   2.25275  14.29083   0.0  3543 p2                    
+  1768 30139   2.25353  14.30389   2.25453  14.31361   1.2  3543 p2                    
+  1817 30139   2.25353  14.30389   2.31328  13.97028  55.9  3543 p2  
+</pre>     
+
+    </p>
+</ul>
+<br>
+<br>
+<hr>
+<i>Last modified: Tue Jul 28 16:51:15 EDT 2009 by martha</i>
+</body>
+
+</html>

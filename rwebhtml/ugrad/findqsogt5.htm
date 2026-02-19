@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>ALFALFA Undergraduate Website</title>
+</head>
+<body
+
+<center>
+<p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600"></center>
+
+<ul>
+<li>Go to the <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 page</a> at NAIC
+<li>View the main <a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA page</a>
+<li>Back to the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">ALFA for ALFALFA</a>
+</ul>
+<hr>
+
+<font color=#cc0f14><b> Finding z > 5 Quasars in the SDSS </b></font></p>
+
+In this exercise, we'll find ourselves some high redshift quasars in the SDSS database using database
+<a href="http://dev.mysql.com/doc/refman/5.0/en/tutorial.html" target=new>"Structured Query Language"</a> tools.
+Let's focus on some really high redshift objects, with z > 5.</p>
+<ul><font color=blue>
+    3.1 &nbsp At what wavelength will the Lyman-alpha line be observed in a quasar at a redshift of
+    z = 5.1?</p>
+    3.2 &nbsp Use the <a href="http://www.astro.ucla.edu/~wright/CosmoCalc.html" target=new>CosmoCalc</a>
+    tool again (default parameters for a <i>flat</i> universe) to calculate the "look back" time for a
+    quasar at a redshift of z = 5.1. This is called the "light travel time" on the calculator tool; it
+    refers to the time it has taken the light emitted to reach us. Compare that time to the age of
+    the universe. <i>Hint: the age of the universe described by the input parameters
+    is given by the CosmoCalc tool</i>.</p>
+
+</font></ul>
+
+<ul>
+
+  <li>-- Go to the SDSS DR4 SQL server, where we will run a query to identify a set of distant quasars.
+         Click on
+        <a href="http://cas.sdss.org/dr4/en/tools/search/sql.asp" target=new>http://cas.sdss.org/dr4/en/tools/search/sql.asp</a>
+
+  <li>-- Read the "Please Note" at the top of this page. The query we've selected won't
+   stretch the system, but please follow the rules if you try one on your own!
+
+  <li>-- Erase the words written in the white window and replace them with the following
+   query; set the output format to HTML.<br>
+<pre>
+SELECT
+  p.ra, p.dec, s.z, p.petroMag_r,
+  p.petroR90_r, p.lnLExp_r, p.lnLDeV_r, p.expAB_r, p.isoPhi_r
+FROM PhotoObj p, SpecObj s, SpecLine l
+WHERE
+  p.SpecObjID = s.SpecObjID AND
+  p.SpecObjID = l.specobjID AND
+  l.lineID = dbo.fSpecLineNames('CIV_1549') AND
+  p.ra >= 120 AND p.ra <= 180 AND
+  p.dec >= 0 AND p.dec <=10 AND
+  s.z >= 5.0
+order by p.ra
+</pre><br>
+
+This will run for a short time. It will return you a very few (exactly 4) objects.
+Use the query itself and what it returns to answer a few questions:</p>
+
+  <font color=blue>
+  3.3 &nbsp  Explain the criteria that are being used by this query to identify objects
+      in the database. (This will require you to explore the syntax of the
+      query --- but it should be pretty obvious!)</p>
+
+  3.4 &nbsp  Make a table containing the returned properties, and refer to this table
+  as you answer the next three questions.</p>
+</font>
+Use the <a href="http://cas.sdss.org/dr4/en/tools/chart/navi.asp" target=new>
+   DR4 Navigator and Explore Tools</a>  (http://cas.sdss.org/dr4/en/tools/chart/navi.asp)
+   to investigate the image and spectrum of each object.  As before, here are handy links for you to use.</p>
+<table border=2>
+<tr>
+<td width=150 align=center>E. &nbsp &nbsp J084627.8+080052 </td><td width=100 align=center> 131.6160, 8.0144</td>
+<td width=100 align=center><a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=131.616017&dec=  8.014376&opt=gli" target=new>DR3Navigate</a></td>
+<td width=100 align=center><a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=08+46+27.8&lat=+08+00+52&radius=0.1&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a></td>
+</tr>
+<tr>
+<td width=150 align=center>F. &nbsp &nbsp J0902458+085116 </td><td width=100 align=center> 135.6907, 8.8544  </td>
+<td width=100 align=center><a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=135.690688&dec= 8.8544&opt=gli" target=new>DR3Navigate</a> </td>
+<td width=100 align=center><a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=09+02+45.8&lat=+08+51+16&radius=0.1&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a></td>
+</tr>
+<tr>
+<td width=150 align=center>G. &nbsp &nbsp J0957077+061100 </td><td width=100 align=center>149.2820, 6.1832         </td>
+<td width=100 align=center><a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=149.282&dec=  6.183222&opt=gli" target=new>DR3Navigate</a> </td>
+<td width=100 align=center><a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=09+57+07.7&lat=+06+11+00&radius=0.1&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a></td>
+</tr>
+<tr>
+<td width=150 align=center>H. &nbsp &nbsp J115013.2+052012</td><td width=100 align=center>177.5549, 5.3368 </td>
+<td width=100 align=center><a href="http://cas.sdss.org/astro/en/tools/chart/navi.asp?ra=177.554898&dec= 5.336754&opt=gli" target=new>DR3Navigate</a></td>
+<td width=100 align=center><a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=11+50+13.2&lat=+05+20+12&radius=10.0&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED</a></td>
+</tr>
+</table></p>
+
+  <font color=blue>
+  3.5 &nbsp  Explain as best you can what quantities are returned by the SQL query for
+  each object. You do not have to give precise definitions; rather the images to help you figure out
+  what the parameters measure. (<i>Hint: "Petro" stands for
+  "Petrosian", "__r" means quantities derived from the r-band filter images, "phi" refers to a "position
+  angle", "Exp" and "DeV" refer to exponential and deVaucouleurs' fits to the surface brightness profile,
+  "iso" stands for "isophote", "AB" refers to the ratio a/b of the major to minor axis.</i>) </p>
+
+  3.6 &nbsp Comment on the appearance of each object, and its surroundings, in the SDSS image.</p>
+  3.7  &nbsp Note the lines present in each spectrum and
+   discuss the similarities and differences among the spectra of the four objects.</p>
+</font>
+
+<br>
+<br>
+<hr>
+<font color=#008000><b>Last modified: Sun Oct  7 11:30:88 2007 </b>
+by martha </font>
+</body>
+</html>

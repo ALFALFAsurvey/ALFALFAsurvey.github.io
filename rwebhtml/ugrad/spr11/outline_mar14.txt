@@ -1,0 +1,50 @@
+Fundamental Science Questions About Zw1400.4+0949, Its Galaxy Population,
+And Its Environment:
+
+(1)
+How do galaxies differ?
+      What are their rotational velocities and what does that tell us about
+their relative abundances of light and dark matter?
+      What star formation is happening? As measured by abundances of HII
+(immediate formation) and H2 (potential short term formation) and HI (long
+term formation)
+
+
+How/why do isolated galaxies evolve with time?
+      What are the necessary boundary conditions for considering a galaxy
+isolated?
+      Does lack of potentially replenishing gas from neighbors give isolated
+galaxies a definite lifespan?  Aka HI depletion?
+      How do galaxies in cluster's (ie Zw's members) compare to those we
+observe in isolation.
+      What types of stars are there in isolated galaxies?  Old or young?
+ (we can use wavelength, temp, and luminosity to figure out) Are they mostly
+spirals or ellipticals?
+
+(2)
+How might local environment affect galaxy evolution?
+     Are there any signs of tidal interacts?
+            Those could serve to replenish gas, make a galaxy bigger or
+small, distort shape, cause a merger, or explode.
+     How close and under what conditions do tidal interactions occur?  When
+do galaxies simply start orbiting a barycenter?
+     Neighbors could alter other neighbors peculiar velocities?
+
+(3)
+What are the physical environmental conditions around Zw1400+09 and how do
+they compare to others ?
+     What effect does Zw1400+09's cluster nature have on its member
+galaxies?
+     What are the relative abundances of gas / matter / dark matter in Zw
+compared to in other clusters?
+     Can/do we want to observe the IGM in Zw?  If so, how?
+     What is the local IGM, and can we detect the HII of which it is mostly
+comprised?  (Probably not...)
+
+(4)
+Fundamental properties of galaxies to be measured:
+      Velocity dispersion from the HI line data
+      Gas masses from velocity dispersion
+      Radial velocity and distance from dispersion and redshift of HI line
+      Linear size from distance (from redshift) and angular diameter
+      Spectral energy distribution (to get collective temp of galaxies)

@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+<center><p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600">
+</center>
+
+<h3><font color=#cc0f14>Exercises related to the ALFALFA observing
+mode</font></h3>
+
+Review the 
+<a href="http://www.astro.cornell.edu/~galaxy/docs/figbeams.pdf">
+memo</a> we wrote on ALFA beam rotation.</p>
+
+Suppose the ALFALFA schedule for a given day (see February 8, 2007 at the
+team <a href="http://www.naic.edu/~a2010/scheds/a2010_schedspr07.txt">
+http://www.naic.edu/~a2010/scheds/a2010_schedspr07.txt</a> schedule page)
+targets the drift at +28d35'30"; therefore, the central beam 
+(designated Beam "0") is the one
+which is set to declination of +28d35'30".</p> 
+
+<ol>
+<li> What is the zenith angle of this drift as observed with ALFA beam
+0?
+
+<li>
+
+<li> List the resultant seven declinations covered by
+the seven beams, in order, from south to north.
+
+<li> Assuming a mean effective HPBW of the telescope at 1.4 GHz 
+(the frequency of the HI line) is about 3.5 arcminutes, how long does
+it take for a source to traverse the beam?
+</ol>
+
+<br>
+<br>
+<hr align="center" width="800">
+
+<i>Last modified: Sun Oct  7 09:41:14 EST 2007  by martha</i>
+
+
+</body>
+
+</html>

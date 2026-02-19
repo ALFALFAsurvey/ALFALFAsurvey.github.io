@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>The Arecibo Pisces-Perseus Supercluster Survey</title>
+</head>
+
+<body bgcolor="white">
+<center> <img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg" alt="ALFALFA" border="0" height="60" width="490">
+</center><br>
+<hr>
+
+This site is forever a work in progress.</p><br><br>
+
+<b> Useful links</b>
+<ul> 
+<li> Instructions on <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/lbw/lbw_reduction.htm">
+reducing LBW data</a> for ALFALFA/APPS 
+<li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">
+ALFALFA/APPS observers' site</a> at Arecibo</p>
+<li> <a href="https://drive.google.com/file/d/1jHiO9IDrU5hgYNBu2FO-NCj2_7jbwB0c/view" target=new> APPSS LBW proposal</a> (March 2015)</p>
+
+<li> A CSV file of some possible <a href="https://drive.google.com/file/d/1Q1qJkGNJEEQOsr2j-Hta3Slmll25AQG_/view">targets</a> for APPSS
+<li> A simple text file of the same list of possible <a href="files/appstargets.list150622.imlist">targets</a> for APPSS;
+     You can paste this into the SDSS 
+   <a href="http://skyserver.sdss.org/dr12/en/tools/chart/listinfo.aspx">Image List tool</a>. Don't forget to invert the
+   image display; it is a lot easier to see low surface brightness galaxies in dark-on-light.</p>
+
+<li> An example of a CIMA <a href="files/a2899_14nov29.cat">source catalog</a> used to schedule the
+A2899 LBW program executed by us on 29 Nov 2014. 
+<li> A <a href="files/sched_mar15.f">FORTRAN program</a> that does the job.
+<li> A <a href="files/sub_azza.f">FORTRAN subroutine</a> needed for the above. </p>
+
+<li> Some eager person could make a shade image (where the darkness indicates the degree of extinction) of the
+galactic extinction as discussed in the 2011 paper by Schlafly and Finkbeiner, which builds on the
+earlier work of Schlegel, Finkbeiner and Davis (1998). See the <a href=
+"http://irsa.ipac.caltech.edu/applications/DUST/">IPAC dust</a>. It would be nice to have
+a high quality jpg image covering the range from 21h < RA < 04h, 0 < Dec < 50 deg. If you
+are thinking about tackling this, let us know.</p>
+
+<li> Evan at SLWU is tackling the reduction of the LBW data from the spring 2015 A2941 program,
+but if others want to look at the data, here are two relevant files:<br>
+     <a href="files/a2941.redlog.txt">a2941.redlog.txt</a>: &nbsp ASCII version of data log, sorted by RA<br>
+     <a href="https://drive.google.com/file/d/1naRr2uqx08nBFrw3OPm1Q6-VyTheRm7Z/view">a2941.lbwrec.csv</a>: &nbsp CSV version of data log, sorted by RA, 
+        including multiple observations of single source where relevant</p>.
+
+<li> Lyle has volunteered to tackle the reduction of the LBW data from the fall 2014 A2899 program.
+That run is a bit more complicated because (1) we tried out the WAPP search mode during two nights
+in November, but the rest of the observations used the Interim Correlator and (2) the run in 
+November had some hardware issues that require some extra understanding and need to be dealt with. 
+Here are two relevant files:<br>
+     <a href="files/a2899.redlog.txt">a2899.redlog.txt</a>: &nbsp ASCII version of data log, sorted by RA<br>
+     <a href="files/a2899_obsissues.txt">a2899_obsissues.txt</a>: &nbsp Some notes on problems and where to learn about them.</p>.
+
+<li> Ron and the St. Mary's team are going to check some positions for us. The problem here is that not all of the SDSS
+photometric survey was completed when we did SDSS matching for the data taken early on. We need to recheck whether or
+not there is SDSS photometry and whether the positions are good. This is not a particularly fun job, but it is an important
+one! Here are two files: <a href="files/positioncheck.150629.agclist.txt">positioncheck.150629.agclist.txt</a> and
+<a href="files/positioncheck.150629.sdss.txt">positioncheck.150629.sdss.txt</a>. Use the first file to record the
+outcomes; the second one just contains the list of galaxies for use with the 
+<a href="http://skyserver.sdss.org/dr12/en/tools/chart/listinfo.aspx">SDSS image list</a> server. See the top of the first
+file for instructions on what to do.</p>
+
+<li> Here is a <a href="https://drive.google.com/file/d/1ghcqRs76UjRg4OFuo66ydiIEdipSfQe0/view">file</a> which contains the SDSS and ALFALFA parameters for galaxies
+in &alpha;.70 with log M<sub>HI</sub>:[8.0,8.8]. It would useful is someone explored the parameter space in various
+bands including colors in SDSS only and incorporating GALEX-NUV, notably the (NUV-r) vs r-band color-magnitude diagram.
+Corrections need to be made for galactic and internal extinction before making the CMDs. Anyone game? &nbsp <i>Keep in mind
+that real data are likely to contain bogus numbers; I'm sure there are some herein.</i></i></p>
+
+<li> Team SMCC: &nbsp Here are two related files: <a href="https://drive.google.com/file/d/1qeMfWYOi43Y_MvmJ6pg7x-QJc-iWyKBh/view"> a csv file</a> 
+and <a href="files/agcppsnovel_spir150708.list">simple list </a> for you to work with. 
+This sample contains all current (as of 8Jul2015) entries in the AGC which (1) lie in the proposed Arecibo APPSS region,
+(2) have no measured redshift; (3) are either unclassified or classified as spiral (BSTEINTYPE:[120-420]) and (4)
+have not been flagged (manually, in the AGC) as being too close to a bright star (IBANDQUAL=7).
+Note that the classifications are pretty crude, so don't take them too literally. However, this provides a starting
+point; there are almost 2400 objects. Things to do include:
+<ul>
+<li> Use the list file and the SDSS image list tool
+to identify any galaxies that look "funny" or "bad" e.g., ones that are multiple with several galaxies within 3 armins,
+very peculiar morphologies, uncertain identifications, etc. Separate the original list into "good" and "bad"
+galaxies. Be sure to make new files giving them names that are easy to identify ("good", "bad" and include the date).
+<li> Once you have a "good" file, use TOPCAT to match it with the csv file, and generate a new csv file with
+only the "good" galaxies.
+<li> Try to match this list with both the SDSS and GALEX. I, David and others can help you figure out how to do this.
+(I'll try to suggest instructions for SDSS soon but maybe someone else can help.)
+</p>
+</ul>
+
+</ul>
+</p>
+
+
+<br><br>
+<hr><br>
+<font color=#008000>This page last updated on 
+<i>Wed Jul  8 21:20:44 EDT 2015 </i> by martha.
+</body>
+</html>

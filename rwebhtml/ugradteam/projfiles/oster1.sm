@@ -1,0 +1,18 @@
+plot
+      data zw1400_dr7_lineratios.dat
+      read r1 6
+      read r2 7
+      limits r1 r2
+      box
+      ptype 9 3
+      ctype red
+      points r1 r2
+
+      data zw1400_alfalfa_lineratios.dat
+      read r1 6
+      read r2 7
+      ptype 4 0
+      ctype blue
+      points r1 r2
+      
+      ctype default

@@ -1,0 +1,98 @@
+\documentclass[10pt]{article}
+\textwidth 6.5in
+\textheight 8.8in
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\topmargin -0.3truein
+\raggedbottom
+\parskip 8pt
+\def\eg{{\it e.g.}}
+\def\etal{{\it et al.}}
+\def\kms{{km~s$^{-1}$}}
+\def\sqd{{deg$^{2}$}}
+\def\arcmin{$^{\prime}$}
+\def\arcsec{$^{\prime\prime}$}
+\def\msun{$M_\odot$}
+\def\mhi{$M_{HI}$}
+\def\lsun{$L_\odot$}
+\def\gtrsim{$>$}
+\def\lesssim{$<$}
+\def\h70i{{$h_{70}^{-1}$}}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\apjl{{Ap.J.(Lett)}}
+\def\apj{{Ap.J.}}
+\def\apjs{{Ap.J.Suppl}}
+\def\aj{{A.J.}}
+\def\aap{{A.Ap.}}
+\def\aaps{{A.Ap.Suppl.}}
+\def\apss{{Ap.Sp.Sci.}}
+\def\araa{{Ann.Rev.Astron.Ap.}}
+\def\mnras{{Mon.Not.Roy.Astr.Soc.}}
+\def\nat{{Nature}}
+
+\def\plotfiddle#1#2#3#4#5#6#7{{\centering \leavevmode \vbox to#2{\rule{0pt}{#2}}\special{psfile=#1 voffset=#7 hoffset=#6 vscale=#5 hscale=#4 angle=#3}}}
+\def\@tightleading{0.95}
+\def\baselinestretch{\@tightleading}\normalsize
+% temp id is:
+
+\begin{document}
+
+\pagestyle{plain}
+\parindent 0pt
+\parskip 8pt
+\baselineskip 12pt
+\null
+
+\begin{center}
+\vskip -2cm
+\Large{ALFALFA: The Arecibo Legacy Fast ALFA Survey\\
+       The 2005 Summer Undergraduate Observing Program\\
+                     {\it 30 June 2005}}
+
+\begin{tabular}{||l|l||} \hline
+Adrienne Stilp    & Cornell \& U. Wisconsin ('06)\\
+Neil Patel & Cornell ('07) \\
+Adeel Altaf            & Lafayette   \\
+John Ayala         & U. Puerto Rico \\ 
+Christi Forsyth                & Colgate \& Bryn Mawr ('07)\\
+Michael Gillin        & Union   \\
+Josh Goldstein           & Lafayette \\
+Bilal Mahmood           & Union \\
+Brendan Mullan             & Colgate  \\
+Jay Read                & Union  \\
+Brian Walsh       & Colgate \\
+Steph Wortel           & Colgate    \\
+\hline
+\end{tabular}
+
+\end{center}
+
+\vskip 12pt
+{\large{\bf Abstract}}
+Write an abstract here.
+
+\vskip 12pt
+{\large{\bf Scientific Background}}
+Give the scientific background here.
+
+\vskip 12pt
+{\large{\bf Request and Plan for July 6 Observations}}
+
+The observing time is scheduled for July 6 from 18h45m to 20h30m AST.
+Here you should stake exactly what you plan to do with the observing
+time, including both the technical details and the scientific objective.
+
+\vskip 12pt
+{\large{\bf References Cited}}
+\vskip 8pt
+\small{
+\parskip 4pt
+Include any other references which you cite elsewhere in the proposal;
+these are included just as examples:
+
+Davies, J., Minchin, R., Sabatini, S., \etal ~2004, \mnras, 349, 922.
+
+Karachentsev, V.E. \& Karachentseva, I.D. 1998, \aaps, 127, 409.
+
+\end{document}

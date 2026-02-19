@@ -1,0 +1,196 @@
+A2010 observing schedule                                          last update: 06Dec15 mph
+
+Use searchable schedule on AO web page to get date,AST
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+
+(R) indicates remote observing.
+
+------------------------------------------------------------------------------------------------
+COMPLETED OBSERVATIONS (For the current season)
+
+    06.08.11  F 11Aug      20h51  00h45-06h30   21h36-03h25    99p1  +235806  EGGs(R)       AZ=180
+    06.08.12  S 12Aug      20h56  00h30-06h15   21h24-03h14   120p2  +291200  BK/RK(R)      AZ=180
+    06.08.13  S 13Aug      21h00  00h30-05h15   21h28-02h18    34p1  +080905  AS(R)         AZ=360
+    06.08.14  M 14Aug      21h04  00h30-06h15   21h32-03h22   127p2  +305412  SS(R)         AZ=180
+    06.08.15  T 15Aug      21h08  00h30-06h15   21h36-03h26   128p2  +310848  AM(R)         AZ=180         
+    06.08.16  W 16Aug      21h12  00h15-06h00   21h25-03h15   129p2  +312324  AM(R)         AZ=180
+    06.08.17  R 17Aug      21h16  00h15-06h00   21h29-03h19   130p2  +313800  AM(R)         AZ=180
+    06.08.18  F 18Aug      21h20  00h15-06h00   21h33-03h23   131p2  +315236  JC, JS, EM    AZ=180
+    06.08.19  S 19Aug      21h24  00h15-05h45   21h37-03h12   132p2  +320712  JC, JS        AZ=180
+    06.08.20  S 20Aug      21h28  00h00-05h45   21h26-03h16    67p1  +161054  JC, JS        AZ=360 
+    06.08.22  T 22Aug      21h36  00h00-05h45   21h34-03h24    66p1  +155618  JC            AZ=360
+    06.08.23  W 23Aug      21h40  00h00-05h30   21h38-03h13    65p1  +154142  JC            AZ=360
+    06.08.24  R 24Aug      21h44  00h00-05h30   21h42-03h17    64p1  +152706  JC            AZ=360
+    06.08.25  F 25Aug      21h48  00h00-05h30   21h46-03h21    63p1  +151230  JC            AZ=360
+    06.08.31  R 31Aug      22h13  23h15-05h00   21h28-03h14    62p1  +145754  BK, TB(R)     AZ=360
+    06.09.01  F 01Sep      22h17  23h15-05h00   21h32-03h18    61p1  +144318  AM, TB(R)     AZ=360 
+    06.09.02  S 02Sep      22h21  23h15-05h00   21h36-03h22    60p1  +142842  EM            AZ=360
+    06.09.03  S 03Sep      22h25  23h15-05h00   21h40-03h26    59p1  +141406  EM            AZ=360
+    06.09.04  M 04Sep      22h29  23h00-04h45   21h29-03h15    58p1  +135930  EM            AZ=360
+    06.09.05  T 05Sep      22h33  23h00-04h45   21h33-03h19    57p1  +134454  SS, RK(R)     AZ=360    
+    06.09.06  W 06Sep      22h37  23h00-01h30   21h37-00h07    33p1  +075430  SS(R)         AZ=360   
+    06.09.07  R 07Sep      22h41  23h00-01h30   21h41-00h11    32p1  +073954  SS(R)         AZ=360 
+    06.09.08  F 08Sep      22h45  22h45-01h30   21h30-00h15    31p1  +072518  AM, TB(R)     AZ=360 
+    06.09.09  S 09Sep      22h49  22h45-01h30   21h34-00h19    30p1  +071042  AM(R)         AZ=360
+    06.09.10  S 10Sep      22h53  22h45-01h15   21h38-00h08    29p1  +065606  TB, RK(R)     AZ=360
+    06.09.11  M 11Sep      22h57  22h45-02h00   21h41-00h57    28p1  +064130  TB, RK(R)     AZ=360
+    06.09.12  T 12Sep      23h01  22h30-03h45   21h30-02h46    49p1  +114806  TB, RK(R)     AZ=360
+    06.09.13  W 13Sep      23h05  22h30-01h15   21h34-00h20    27p1  +062654  TB, RK(R)     AZ=360
+    06.09.14  R 14Sep      23h09  22h30-01h00   21h38-00h09    26p1  +061218  TB, RK(R)     AZ=360
+    06.09.15  F 15Sep      23h13  22h15-01h00   21h27-00h13    25p1  +055742  RK(R)         AZ=360
+    06.09.16  S 16Sep      23h17  22h15-01h00   21h31-00h17    24p1  +054306  AS(R)         AZ=360
+    06.09.17  S 17Sep      23h21  22h15-01h00   21h35-00h21    23p1  +052830  AS(R)         AZ=360
+    06.09.18  M 18Sep      23h25  22h15-00h45   21h39-00h09    22p1  +051354  AS(R)         AZ=360
+    06.09.19  T 19Sep      23h29  22h00-00h45   21h28-00h13    21p1  +045918  BK(R)         AZ=360
+    06.09.26  T 26Sep      23h56  21h45-03h15   21h40-03h11    99p2  +240524  TB(R)         AZ=180
+    06.09.27  W 27Sep      00h00  21h30-03h15   21h29-03h15    56p1  +133018  TB(R)         AZ=360 
+    06.09.28  R 28Sep      00h04  21h30-03h15   21h33-03h19    55p1  +131542  AS(R)         AZ=360
+    06.09.29  F 29Sep      00h08  21h30-03h00   21h37-03h08    54p1  +130106  TB(R)         AZ=360
+    06.10.01  S 01Oct      00h16  23h15-03h00   23h30-03h16   104p2  +251824  AM(R)    **NOTE AZ = 180!!!
+    06.10.06  F 06Oct      00h36  21h00-01h45   21h35-02h20    67p2  +161812  AM, KH, NB, MH, RG(R)  AZ=360
+    06.10.07  S 07Oct      00h40  21h00-01h30   21h39-02h09    34p2  +081624  AM, KH(R)     AZ=360  beware GPS!
+    06.10.08  S 08Oct      00h44  20h45-01h45   21h28-02h28    50p1  +120242  SS(R)         AZ=360 
+    06.10.09  M 09Oct      00h48  20h45-01h45   21h32-02h32    51p1  +121718  SS(R)         AZ=360
+    06.10.10  T 10Oct      00h52  20h45-01h45   21h36-02h36    52p1  +123154  TB(R)         AZ=360
+    06.10.11  W 11Oct      00h56  20h45-01h30   21h39-02h25    49p2  +115524  TB, NB(R)     AZ=360
+    06.10.13  F 13Oct      01h03  20h30-01h30   21h32-02h33    53p1  +124630  EM            AZ=360
+    06.10.14  S 14Oct      01h07  20h30-01h30   21h36-02h37    66p2  +160336  EM            AZ=360
+    06.10.15  S 15Oct      01h11  20h30-01h15   21h40-02h26    65p2  +154900  EM            AZ=360
+    06.10.16  M 16Oct      01h15  20h15-02h00   21h29-03h15    64p2  +153424  RK(R)         AZ=360
+    06.10.17  T 17Oct      01h19  20h15-02h00   21h33-03h19    63p2  +151948  RK, NB(R)     AZ=360
+    06.10.18  W 18Oct      01h23  20h15-01h45   21h37-03h08                   RK(R)         RUN CANCELED; MAINTENANCE
+    06.10.19  R 19Oct      01h27  20h15-01h45   21h41-03h12    62p2  +150512  BK(R)         AZ=360
+    06.10.30  M 30Oct      02h10  19h15-01h15   21h24-03h25    61p2  +145036  RB,NB(R)      AZ=360
+    06.10.31  T 31Oct      02h14  19h15-01h00   21h28-03h14    60p2  +143600  RB,NB(R)      AZ=360
+    06.11.01  W 01Nov      02h18  19h15-01h00   21h32-03h18    59p2  +142124  BC            AZ=360
+    06.11.02  R 02Nov      02h22  19h15-01h00   21h36-03h22    58p2  +140648  BC            AZ=360
+    06.11.03  F 03Nov      02h26  19h00-01h00   21h25-03h26    57p2  +135212  AM(R)         AZ=360
+    06.11.05  S 05Nov      02h33  19h00-00h45   21h33-03h18    56p2  +133736  TB(R)         AZ=360
+    06.11.06  M 06Nov      02h37  18h45-00h45   21h22-03h22    55p2  +132300  TB(R)         AZ=360
+    06.11.07  T 07Nov      02h41  18h30-00h30   21h10-03h11    54p2  +130824  BC            AZ=360
+    06.11.08  W 08Nov      02h45  18h30-00h30   21h14-03h15    53p2  +125348  BK(R)         AZ=360
+    06.11.16  R 16Nov      03h17  18h15-00h00   21h31-03h17    52p2  +123912  SS(R)         AZ=360
+    06.11.22  W 22Nov      03h41  17h45-23h45   21h24-03h25    51p2  +122436  TB,AO,JL,JM   AZ=360
+    06.11.23  R 23Nov      03h45  17h45-23h30   21h28-03h14    50p2  +121000  TB,AO,JL,JM   AZ=360
+    06.11.24  F 24Nov      03h49  17h45-23h30   21h32-03h18    33p2  +080148  TB,AO,JL,JM   AZ=360
+    06.11.25  S 25Nov      03h53  17h45-23h30   21h36-03h22    32p2  +074712  TB,AO,JL,JM   AZ=360
+    06.11.26  S 26Nov      03h57  20h15-23h30   00h11-03h26   133p1  +321430  TB            AZ=180 ** note AZ
+    06.11.27  M 27Nov      04h00  20h00-23h15   00h00-03h15   105p2  +253300  TB            AZ=180 ** note AZ
+    06.11.28  T 28Nov      04h04  20h00-23h15   00h03-03h19   101p2  +243436  TB            AZ=180 ** note AZ
+    06.11.29  W 29Nov      04h08  20h00-23h15   00h07-03h23   103p2  +250348  TB            AZ=180 ** note AZ
+    06.11.30  R 30Nov      04h12  19h45-23h00   23h56-03h12   102p2  +244912  AM(R)         AZ=180 ** note AZ
+    06.12.01  F 01Dec      04h16  19h45-23h00   00h00-03h16   100p2  +242000  AM(R)         AZ=180 ** note AZ      
+    06.12.02  S 02Dec      04h20  19h45-23h00   00h04-03h20   132p1  +315954  AM(R)         AZ=180 ** note AZ
+    06.12.05  T 05Dec      04h32  02h45-06h45   07h13-11h14    22p2  +052112  NB,OS,EM      AZ=360
+    06.12.06a W 06Dec      04h36  02h45-06h45   07h17-11h18    21p2  +050636  NB,OS         AZ=360
+    06.12.06p                     19h30-22h45   00h05-03h20    27p1  +062654  RK(R)         AZ=360** GPS test alert!
+    06.12.07a R 07Dec      04h40  02h45-06h45   07h21-11h22    19p2  +043724  NB,OS         AZ=360
+    06.12.07p                     19h15-22h45   23h54-03h24    29p1  +065606  RK(R)         AZ=360
+    06.12.08a F 08Dec      04h44  02h30-06h30   07h10-11h11   110p1  +263842  OS            AZ=180 ** note Az
+    06.12.08p                     19h15-22h30   23h58-03h13    26p1  +061218  OS,BC         AZ=360
+    06.12.09a S 09Dec      04h48  02h30-06h30   07h14-11h15   111p1  +265318  NB            AZ=180 ** note Az
+    06.12.09p                     19h15-22h30   00h02-03h17    31p1  +072518  BC            AZ=360
+    06.12.10a S 10Dec      04h52  02h30-06h30   07h18-11h19   114p1  +273706  NB,OS         AZ=180 ** note Az
+    06.12.10p                     19h15-22h30   00h06-03h21    30p1  +071042  BC            AZ=360
+    06.12.11a M 11Dec      04h56  02h30-06h15   07h22-11h07   112p1  +270754  NB,OS         AZ=180 ** note Az
+    06.12.11p                     19h00-22h30   23h55-03h25    32p1  +073954  EM            AZ=360
+    06.12.12a T 12Dec      05h00  02h15-06h15   07h11-11h11   113p1  +272230  NB,OS         AZ=180 ** note Az
+    06.12.12p                     19h00-22h15   23h58-03h14   132p1  +315954  EM            AZ=180 ** note Az
+    06.12.13  W 13Dec      05h04  02h15-06h15   07h15-11h15   115p1  +275142  NB,OS         AZ=180 ** note Az
+    06.12.14a R 14Dec      05h08  02h15-06h15   07h19-11h19   116p1  +280618  NB,OS         AZ=180 ** note Az
+    06.12.14p                                   00h00-03h15    33p1  
+    06.12.15  F 15Dec      05h12  02h00-06h00                                               cancelled TOA
+
+    END OF 2006 ALLOCATION
+
+-------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS  (Schedule subject to change. If a session is missed, retain order
+                        of drifts, sliding schedule to the next date.)
+**********************************            IMPORTANT            **********************
+The times below refer to time allocated to A2010 exclusively. Time should also be allocated before
+and after to allow for TOGS startup and calibration. We have agreed to run the TOGS calibration scripts
+for the TOGS team. Please check the final AO schedule and be prepared to start observing at least
+15 minutes prior to the times listed here. 
+-------------------------------------------------------------------------------------------------
+**************** Note: the Azimuth in this period can be either 180 or 360!!! Remember to inform
+                       the operator well in advance where you want him/her to position the telescope.
+
+                    **********NOTE:   AST is 1 hour AHEAD of EST!!!!!!!!!!!!!!
+
+                                  AST = EST+1      LST   
+   
+***  Be careful to note Azimuth below, as it jumps around!
+
+
+    07.01.12  F 12Jan      06h58  00h15-06h00   07h13-12h59   17p2  +040812   MH,SH,JD,DR   AZ=360
+    07.01.13  S 13Jan      07h02  00h15-06h00   07h17-13h03   16p2  +035336   MH,SH,JD,DR,LV   
+    07.01.14  S 14Jan      07h06  00h15-05h45   07h21-12h51   18p2  +042248   MH,SH,JD,DR,LV   
+    07.01.15  M 15Jan      07h10  00h00-05h45   07h09-12h55   33p2  +080148   MH,SH,JD,DR   AZ=360
+
+    07.01.21  S 21Jan      07h37  23h30-03h30   07h07-11h08                   RK,KS
+    07.01.22  M 22Jan      07h41  23h30-03h30   07h11-11h12                   RK,KS
+    07.01.23  T 23Jan      07h45  23h30-03h30   07h15-11h16                   RK,KS
+    07.01.24  W 24Jan      07h49  23h30-03h30   07h19-11h20                   RK,KS
+    07.01.25  R 25Jan      07h53  23h30-03h15   07h08-11h08                   RK,KS
+    07.01.26  F 26Jan      07h57  23h15-03h15   07h12-11h12                   RK,KS
+    07.01.27  S 27Jan      08h01  23h15-03h15   07h16-11h16                   RK,KS
+    07.01.28  S 28Jan      08h05  23h15-03h15   07h20-11h20
+    07.01.29  M 29Jan      08h09  23h00-        07h08-11
+
+-------------------------------------------------------------------------------
+Schedule here is tentative only and subject to serious revision.
+
+NEED TO DO
+ 16p2  +035336  0730 1320
+ 17p2  +040812  0730 1215
+ 18p2  +042248  0730 1218
+ 16p1  +034618  0730 1315 
+
+if possible:   
+ 33p2  +080148  0730 1630  (poor data)
+ 25p1  +055742  0000 0314
+132p1  +315954  0000 0314   redo because of 1 hour wap gap in middle (arrgh!)
+    
+117p1  cancelled 06.12.15
+-------------------------------------------------------------------------------   
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+AP: Adeel Altaf
+TB: Tom Balonek
+NB: Noah Brosch
+SB: Shea Brown
+BC: Barbara Catinella
+JC: John Cannon
+JD: Josh Davidson
+AF: Amy Furniss
+JG: Josh Goldstein
+RG: Riccardo Giovanelli
+MH: Martha Haynes
+KH: Kelley Hess
+SH: Sarah Higdon
+LH: Lyle Hoffman
+WH: Walter Hopkins
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax
+BM: Bilal Mahmood
+AM: Ann Martin
+JM: Jeff Miller
+WM: Arik Mitschang
+EM: Emmanuel Momjian
+PN: Prasanth Nair
+AO: Aileen O'Donoghue
+DR: Daniel Richey
+JR: Jessica Rosenberg
+AS: Amelie Saintonge
+JS: John Salzer
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+LV: Liese van Zee
+BW: Brian Walsh
+

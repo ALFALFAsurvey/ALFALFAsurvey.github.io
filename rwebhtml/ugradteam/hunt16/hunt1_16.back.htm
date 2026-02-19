@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg" height=50>
+<br>
+<hr>
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<font color=#008000><b> Try to finish this activity by 4pm on Wednesday afternoon</b></font>
+</td></tr></table></center></p><br><br>
+<b><font color=#008000> Useful links:</font></b> <br>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">Using Arecibo for ALFALFA</a>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalfa.php">Using ALFALFA
+for science</a>
+<li> <a href="http://www.naic.edu/vscience/schedule/scedfra2.htm">AO telescope schedule</a>
+<li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observer's page</a>
+<li> <a href="http://www.naic.edu/~a2010/checklist_lbw.html">Observing checklist for LBW observing</a>
+<li> <a href="http://www.naic.edu/~a2010/ALFALFA_lbwobserving.htm">L-band wide (LBW) observing</a> for ALFALFA followup
+<li> <a href="http://www.naic.edu/~a2010/lbw_observingmodes.htm">Standard ALFALFA LBW followup observing modes</a>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/lbw/lbw_reduction.htm" target=new>Instructions on reducing LBW data</a> using IDL_LBW</p>
+<br>
+<b><font color=#008000> Rules of the scavenger hunts:</font></b> &nbsp 
+(1): In all cases, 
+<b><font color=#cc0f14>return attendees shall not
+reveal the answers to first timers</font> </b> until sufficient effort is 
+expended.  (2): Any bribes must be shared 50:50 with the Scavenger Hunt creators.
+(3): You may consult any
+source anywhere but please be sure to indicate where you got your information.
+<b><font color=#cc0f14>And watch out
+for bad websites!</font></b> Actually, if you find any mis-information, make a note
+of it for the blog.</p>
+<br>
+<h3><font color=#cc0f14> UAT16.01 Scavenger Hunt #1: </font> &nbsp 
+<font color=#008000>Using Arecibo and LBW for the Arecibo Pisces-Perseus Supercluster Survey</font></h3>
+
+This scavenger hunt will explore some details of the L-band wide observations we are conducting 
+for the Arecibo Pisces-Perseus Supercluster Survey (APPSS) and the HI spectra we obtain.
+Be sure to familiarize
+yourself with the various links above in order to figure out the answers to these questions.</p>
+
+
+
+<hr>
+<pre>
+@wasinit
+@lbwinit
+filename='/share/wappdata.now/wapp.20150902.a2982.0001.fits'
+lbwfromwapps, filename, 1, lbwsrc              where 1 is the board
+
+
+lbwquicklook, file='/share/wappdata.now/wapp.20150903.a2982.0000.fits'
+lbwquicklook, file='/share/wappdata.now/wapp.20150902.a2982.0001.fits',smo=5,/vel,board=1,
+lbwquicklook, file='/share/wappdata.now/wapp.20150902.a2982.0001.fits',smo=5,/vel,board=1,xrange=[700,1100]
+</pre>
+
+<li> AGC 310858 is a calibrator with GPS<br>
+310858  H215040.4+283617  215040.3 +283527     0 SW   3476          calib   15.10.25/wapp.20151025.a2982.0007   det@3500 + GPS<br>
+wapp.20151025.a2982.0007<br>
+310858 2150403+283527   12  10 190 0  0ext?    170     0  0    0    0  0           39 204 3476  28 6 A50J1759 770 00 025000 0<br>
+lbwquicklook, file='/share/wappdata.now/wapp.20151025.a2982.0007.fits'<br>
+<a href="images16/hunt1.A310858.quick.freq.jpg"><img src="images16/hunt1.A310858.quick.freq.jpg" height=200></a></p>
+lbwquicklook, file='/share/wappdata.now/wapp.20151025.a2982.0007.fits',/vel<br>
+<a href="images16/hunt1.A310858.quick.vel.jpg"><img src="images16/hunt1.A310858.quick.vel.jpg" height=200></a></p>
+lbwquicklook, file='/share/wappdata.now/wapp.20151025.a2982.0007.fits',/vel,board=1<br>
+<a href="images16/hunt1.A310858.b1.jpg"><img src="images16/hunt1.A310858.b1.jpg" height=200></a></p>
+lbwquicklook, file='/share/wappdata.now/wapp.20151025.a2982.0007.fits',/vel,board=2<br>
+<a href="images16/hunt1.A310858.b2.jpg"><img src="images16/hunt1.A310858.b2.jpg" height=200></a></p>
+lbwquicklook, file='/share/wappdata.now/wapp.20151025.a2982.0007.fits',/vel,board=3<br>
+<a href="images16/hunt1.A310858.b3.jpg"><img src="images16/hunt1.A310858.b3.jpg" height=200></a></p>
+lbwquicklook, file='/share/wappdata.now/wapp.20151025.a2982.0007.fits',/vel,board=4,yrange=[-200,100]<br>
+<a href="images16/hunt1.A310858.b4.jpg"><img src="images16/hunt1.A310858.b4.jpg" height=200></a></p>
+lbwquicklook, file='/share/wappdata.now/wapp.20151025.a2982.0007.fits',/vel,board=3,yrange=[-30,-10],/gps<br>
+<a href="images16/hunt1.A310858.b3.nogps.jpg"><img src="images16/hunt1.A310858.b3.nogps.jpg" height=200></a></p>
+</p>
+
+<!--
+<li> AGC 336082 APPS<br>
+336082  S233042.8+233231  233042.8 +233231     0 SW      0  1420.4  APPS    15.10.24/wapp.20151024.a2982.0014   det@2600<br>
+336082 2330428+233231   25  18 178 0  0        301     0  0    0    0  0            0   0    0   0 0    00 00  00 00 008000 0<br>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=352.6783&dec= 23.54194&opt=glsi&scale=0.39617" target=new>DR9Navi</a>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=352.6783&dec= 23.54194&opt=GILS&scale=0.39617" target=new>DR12Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=352.6783, 23.54194&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=23+30+42.8&lat=+23+32+31&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+-->
+
+<li> AGC 335430 APPS  &nbsp &nbsp<br>
+335430  S234236.1+311035  234236.1 +311035     0 SW      0  1420.4  APPS    15.10.06/wapp.20151006.a2982.0011   det@2350<br>
+335430 2342361+311035   22  18 175 0  0        310     0  0    0    0  0            0   0    0   0 0    00 00  00 00 008000 0</br>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=355.6504&dec= 31.17639&opt=glsi&scale=0.39617" target=new>DR9Navi</a>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=355.6504&dec= 31.17639&opt=GILS&scale=0.39617" target=new>DR12Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=355.6504, 31.17639&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=23+42+36.1&lat=+31+10+35&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+<a href="images16/hunt1.S234236.1+311035.freq.jpg"><img src="images16/hunt1.S234236.1+311035.freq.jpg" height=200></a></p>
+lbwquicklook, file='/share/wappdata.now/wapp.20151006.a2982.0011.fits',/vel<br>
+<a href="images16/hunt1.A335430.quick.vel.jpg"><img src="images16/hunt1.A335430.quick.vel.jpg" height=200></a></p> l
+lbwquicklook, file='/share/wappdata.now/wapp.20151006.a2982.0011.fits',/vel,board=1<br>
+<a href="images16/hunt1.A335430.b1.jpg"><img src="images16/hunt1.A335430.b1.jpg" height=200></a></p> 
+lbwquicklook, file='/share/wappdata.now/wapp.20151006.a2982.0011.fits',/vel,board=1,xrange=[1000,3000],yrange=[-10,0]<br>
+<a href="images16/hunt1.A335430.b1.zm.jpg"><img src="images16/hunt1.A335430.b1.zm.jpg" height=200></a></p>
+
+<pre>
+@wasinit2
+@lbwinit
+
+wappfile='/share/pserverf.sda3/wappdata/wapp.2015MMDD.a2941.****.fits'
+;or, if the files were just observed:
+wappfile='/share/wappdata.now/wapp.2015MMDD.a2982.****.fits'
+board = 1
+lbwfromwapps,wappfile,board, lbwsrc
+lbwbaseline, lbwsrc
+
+lbwmeasure,lbwsrc [Only if you have a non-gaussian detection!!!!]
+;or
+lbwmeasure,lbwsrc,/gaussian [Only if you have a gaussian detection!!!!]
+
+FOR ABOVE*************
+wappfile='/share/wappdata.now/wapp.20151006.a2982.0011.fits'
+board = 1
+lbwfromwapps,wappfile,board, lbwsrc
+lbwbaseline, lbwsrc
+1
+
+lbwsmooth, lbwsrc, 'b5'
+</pre>
+
+<li>
+<pre>
+131387  H030801.4+301230  030802.9 +301229     0 SW   5195  1420.4  calib   15.11.30/wapp.20151130.a2982.0027   det@5200
+                                                                            15.11.07/wapp.20151108.a2982.0002   det@5200 strong GPS
+
+lbwquicklook, file='/share/wappdata.now/wapp.20151130.a2982.0027.fits'
+lbwquicklook, file='/share/wappdata.now/wapp.20151130.a2982.0027.fits',/vel,board=2,yrange=[-10,50]
+lbwquicklook, file='/share/wappdata.now/wapp.20151130.a2982.0027.fits',/vel,board=2,yrange=[-10,50],xrange=[4500,6000]
+wappfile='/share/wappdata.now/wapp.20151130.a2982.0027.fits'
+board=2
+lbwfromwapps,wappfile,board, lbwsrc
+lbwbaseline, lbwsrc
+</pre>
+
+<--
+<li> AGC 115791 APPS<br>
+115791  S011501.5+302042  011501.5 +302042     0 SW      0  1420.4  APPS    15.10.07/wapp.20151008.a2982.0002   det@2800<br>
+115791 0115015+302042   20  17 180 0  0        301     0  0    0    0  0            0   0    0   0 0    00 00  00 00 008000 0<br>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra= 18.7563&dec= 30.34500&opt=glsi&scale=0.39617" target=new>DR9Navi</a>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra= 18.7563&dec= 30.34500&opt=GILS&scale=0.39617" target=new>DR12Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD= 18.7563, 30.34500&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=01+15+01.5&lat=+30+20+42&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+lbwquicklook, file='/share/wappdata.now/wapp.20151008.a2982.0002.fits',/vel<br>
+
+</p>
+-->
+
+<li> AGC 104214 APPS<br>
+104214  S000738.0+332025  000738.0 +332025     0 SW      0  1420.4  mhpps   15.11.07/wapp.20151107.a2982.0016   det@4700<br>
+104214 0007380+332025   30  25 185 0  0        180     0  0    0    0  0mph         0   0 4700   0 0    G8789  00 00 008000 0<br>
+&nbsp <a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=  1.9083&dec= 33.34027&opt=glsi&scale=0.39617" target=new>DR9Navi</a>
+&nbsp <a href="http://skyserver.sdss3.org/public/en/tools/chart/navi.aspx?ra=  1.9083&dec= 33.34027&opt=GILS&scale=0.39617" target=new>DR12Navi</a>
+&nbsp <a href="http://skyview.gsfc.nasa.gov/cgi-bin/nnskcall.pl?Interface=bform&VCOORD=  1.9083, 33.34027&NWINDOW=on&SURVEY=DSS2+Blue&SCOORD=Equatorial&EQUINX=2000&MAPROJ=Gnomonic&SFACTR=0.03&GRIDDD=Yes&COLTAB=Stern+Special" target=new>DSS2blu.03</a>
+&nbsp &nbsp <a href="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?search_type=Near+Position+Search&in_csys=Near+Position=+Search&in_csys=Equatorial&in_equinox=J2000.0&lon=00+07+38.0&lat=+33+20+25&radius=1.00&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=Distance+to+search+center&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES&z_constraint=Unconstrained&z_value1=&z_value2=&z_unit=z&ot_include=ANY&nmp_op=AN" target=new>NED1.0</a></p>
+lbwquicklook, file='/share/wappdata.now/wapp.2015
+
+
+
+
+<hr>
+<b> <font color=#cc0f14> 1.7 </font> &nbsp <font color=#008000>ALFALFA Team Trivia: Part II</b></font> &nbsp (Some of us think this is important too!)<br
+> 
+</p>
+<b><font color=#cc0f14> a. </font></b> &nbsp In what 1984 movie did the unsympathetic government agent say: "<i> Do you seriously expect me to tell the 
+President than an alien has landed, assumed the identity of a dead housepainter from Madison Wisconsin and 
+is presently out tooling around the countryside in a hopped up orange and black 1977 Mustang?</i>"</p>
+<b><font color=#cc0f14> d. </font></b> &nbsp  In the movie "Some Like It Hot", who (what actor) utters the famous closing words "Well, nobody's perfect."?</p>
+<b><font color=#cc0f14> e. </font></b> &nbsp  What is the temperature at which paper burns, according to
+the famous futuristic 1967 film starring Julie Christie and Oskar Werner?</p>
+<b><font color=#cc0f14> c. </font></b> &nbsp  What is odd about the rotation of Venus, and how and when was that determined?</p>
+
+
+</p>
+<br>
+<hr>
+<font color=#008000>
+This page created by and for the members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> Survey Undergraduate team</font>
+</p>
+
+<font color=#cc0f14>Last modified: Fri May 13 18:59:59 EDT 2016 by martha</font>
+
+</body>
+</html>
+
+
+<!--
+checklbw,file='/proj/a2669/corfile.22mar12.a2669.52
+H102144.7+180438  102144.9 +180519   260 HH  LeoP-->

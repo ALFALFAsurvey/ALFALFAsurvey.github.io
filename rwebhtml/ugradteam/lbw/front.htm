@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<br>
+Analyzing the LBW
+data from A2669 and A2707.</p>
+<ul>
+<li> <a href="lbw_reduction.htm"> LBW reduction notes</a></p>
+<li> <a href="a2707fall_lbwred.txt"> template redlog file</a> of all fall A2707 observations. Use this file
+to log the reduction of the LBW data from Fall 2012.</p>
+<li> <a href="a2707fall_lbwred_skylinks.html"> links</a> to SDSS/SkyView/DSS2/NED for each targeted position.</p>
+</ul>
+
+<br>
+The first step is to identify which sources
+are detected and which ones are not; the two classes will 
+be treated differently. 
+<table>
+<tr><td> <b>Non-detections</b>:</td><td>We want to measure the rms noise in 
+                    the baseline-subtracted, smoothed spectrum.</td></tr>
+ <tr><td> <b>Detections</b>:</td><td> We want to measure the HI line flux, 
+                    systemic velocity and velocity width
+                    and their errors, as well as the rms noise.</td></tr>
+</table></p>
+In both cases, we want to store the output in an IDL-readable
+file (akin to a "src" file in IDL_ALFA) and also to an ASCII
+version so that we can archive the output once and for all time.
+Once we get everything in place, reduction should go quickly.</p>
+
+
+<br>
+More to come here as time permits and we think through the process.</p>
+<br>
+<hr>
+<br>
+<font color=#008000><i>Last modified: Wed Jan 23 08:15:01 EST 2013
+</i> by Martha </font>
+</body>

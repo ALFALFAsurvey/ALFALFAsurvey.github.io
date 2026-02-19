@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Undergraduate ALFALFA team</title> 
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=#cc0f14>Union UAT Workshop June 2015 &nbsp &nbsp &nbsp &nbsp Group Project</font></h3>
+<font color=#008000>The APPSS survey </font></h3>
+
+
+<hr>
+<h2> 3.0 The Arecibo Pisces Perseus Supercluster Survey (APPSS) </h2>
+
+<b> 3.1 Motivation and design of the survey </b> 
+
+<p> The UAT is embarking on a new survey designed to extend the HI mass scaling relations
+to lower HI mass. Consider what we need to do to build up our sample of low mass galaxies:
+
+<ul> 
+<li> Why are we biased against lower mass galaxies? Use relevant plots from Activity 1 to illustrate. </p>
+
+<li> What do we need to do to observe galaxies of lower mass at a given distance? </p>
+
+<li> We could try to observe much of the sky again to try to find lower mass galaxies, but this
+takes a lot of telescope time. Also ALFALFA has shown us that most galaxies with gas also have
+stars and star formation. How might we design a survey to target as many lower mass galaxies
+as possible, using the scaling relations that have been derived based on ALFALFA and SDSS?
+</ul>
+
+
+<hr>
+<b> 3.2 Exploring the Pisces Perseus Supercluster with the AGC </b>
+
+<p><a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/apps/files/ppsagc_21june15.csv"> Download this csv file,
+</a> containing data from the <a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agccontract.php"> Arecibo General Catalog (AGC) </a> (read about the catalog in the link). The file contains data extracted from the vicinity of the Pisces Perseus Supercluster. Load it into TOPCAT.
+
+<li> Make a sky plot of the data and examine the results. </p>
+
+<li> Make a plane plot of the data, using radeg and decdeg. What do you notice?</p>
+
+<li> Now make a secod plane plot of the data, but substitue rawrap for radeg. What does rawrap represent and why is it helpful?</p>
+
+<li> Plots using right ascension should plot east on the left, west on the right. Which of the above plots does this? Fix any that do not.</p>
+
+<li> Do you see any oddities in the distribution of points? Can you explain any inhomogeneities? </p>
+
+<li> Make a plot of rawrap versus vhelagc, the heliocentric velocity from the AGC. What does this plot tell you?</p>
+
+<li> Use the TOPCAT subsets tool to restrict the sample to galaxies with declinations greater than 20 degrees. To do
+this, select the subsets button and hit the plus sign. Name your sample something like north20, and enter "decdeg > 20.0" in the expression line. Plot this subset as a different color than the main sample in the plots that you made above.</p>
+
+<table>
+<tr>
+<td align="top">
+<li> Make a third subset "appsallvel" with declinations between 23 and 35. 
+Make the plots over again with this subset as a separate color. How does your diagram compare with the
+overdensity plot from the 2MRS survey shown at right? What can you conclude?</p>
+</td>
+<td align="right">
+<a href="files/2MRSpp.png" target=new>
+<img src="files/2MRSpp.png" height=100>
+</td>
+</tr>
+</table>
+
+<hr>
+<b> 3.3 Querying the SDSS </b>
+
+<p> The UAT Groups Google Site (needs link) provides an example query that we can use to extract
+galaxies from the SDSS site. Your group will be assigned a range in right ascension and declination
+to test. Edit the query appropriately and run from TOPCAT, following the directions below 
+(a nicer summary written by David Craig can be found in our <a href="https://sites.google.com/a/union.edu/uat/programs/uat-topcat-docs"> UAT TOPCAT docs page, </a>
+under <href="https://sites.google.com/a/union.edu/uat/programs/uat-topcat-docs/sdss-dr7-tap-query-example"> SDSS DR7 TAP Query) </a>:
+
+<li> Click on the 'VO' tab in TOPCAT, then the Table Access Protocol (TAP) Query option. In the window that 
+pops up, type 'sdss' in the Keyword box, then 'Submit Query'. This will return a set of SDSS tables to
+search. Select SDSS DR8, then 'Enter Query' at the bottom right. At the bottom, there is an ADQL Text box,
+where you can enter your query. ADQL is similar to the SQL search data available straight from SDSS, e.g.,
+<a href="http://skyserver.sdss.org/dr10/en/tools/search/sql.aspx"> the DR10 SQL Search, </a> with a few
+important differences. Another option is to use <a href="http://skyserver.sdss3.org/CasJobs/"> CasJobs
+batch query service </a> for longer jobs. You will need an account (free) for CasJobs. Each option has its "features."
+Simple searches can probably be done from TOPCAT, but TOPCAT is not kept as up to date in routines or data
+releases. If you have time, experiment with all three services. </p>
+
+<li> Enter your query in TOPCAT or the SDSS SQL Search. When it returns, load into TOPCAT (if applicable) and
+examine the results. To see what kind of galaxies were found, examine them in SDSS images. You can do this by
+extracting the name, ra, dec from the file and pasting these into the <a href="http://skyserver.sdss.org/dr10/en/tools/chart/list.aspx"> SDSS List tool. </a> Comment on what you see. </p>
+
+<li> Another way to look at images is to set TOPCAT to display the SDSS image of a region around a given RA and Dec. To do this, click on your table in the main TOPCAT window, then click on the box next to 'Activation Action', which will say '(no action)' if not already activated. In the window that pops up, click 'Display Cutout Image', then select SDSS Colour Images' from the pulldown menu next to Cutout Service.  Then click OK. Open a window showing your table and click on a galaxy. The image from SDSS should appear. </p>
+
+<li> Match your SDSS targets with the ALFALFA HI catalog. Were any of the targets found by ALFALFA? </p>
+
+<li> Plot your targets on the sky plots you made for the Pisces Perseus supercluster and comment on their
+locations. </p>
+
+
+<hr> 
+
+<b> 4.0 Optional Activities </b>
+
+<li> Try to identify the clusters/groups of galaxies in the Pisces Perseus Supercluster
+data.
+
+<li> Check out the <a href="uat_union_1506_huntsup.html"> GalaxyZoo  and Color Magnitude Activity </a>
+
+<hr>
+<hr>
+
+
+
+
+
+<br>
+<hr>
+<font color=#008000><i>Last modified: Mon Jun 22 07:29:06 EDT 2015
+</i> by becky </font>
+</body>
+</html>

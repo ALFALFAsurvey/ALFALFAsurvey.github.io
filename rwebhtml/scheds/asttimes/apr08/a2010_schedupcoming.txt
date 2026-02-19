@@ -1,0 +1,79 @@
+A2010 observing schedule                                          last update: 08Apr04 am
+
+Use searchable schedule on AO web page to get date,AST
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+Az: should be 180 for Decs north of zenith and 360 for Decs south of zenith.
+(R) indicates remote observing.
+
+-----------------------------------------------------------------------------------------------------
+UPCOMING observations
+For all A2010 observations in this period, Az should be 360.
+
+**************  NOTICE:  DURING THIS PERIOD AST = EST        ************************************
+*************   Actual start time may/may not include TOGS; double check start time with operator
+*************   If possible, do TOGS calib even if TOGS time is not allocated.
+*************   Remember: ALFALFA map area is 07h30 to 16h30 ************************************
+
+      Block    Date       LMST0h      AST           LST      Drift   DecJ     Observer   Az
+After this point, position azimuth at 360 degrees and use "360" configuration file!
+    08.04.15  T 15Apr      13h11  22h00-03h30   11h11-16h42   11p1  +023318           Az=360
+    08.04.16  W 16Apr      13h15  22h00-03h30   11h15-16h46   10p1  +021842   
+    08.04.17  R 17Apr      13h19  22h00-03h30   11h19-16h50    9p1  +020406 
+    08.04.18  F 18Apr      13h23  22h00-03h15   11h23-16h39    8p1  +014930   AM(R)
+
+Schedule uncertain after here...
+
+
+Still need to fill gaps:
+  North AZ=180:    106p2 0730-0848
+                   107p2 0730-0800   1345-1630
+                   118p2             1424-1630
+                   
+
+-----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+EA: Betsey Adams
+AP: Adeel Altaf
+TB: Tom Balonek
+NB: Noah Brosch
+SB: Shea Brown
+BC: Barbara Catinella
+JC: John Cannon
+JD: Josh Davidson
+AF: Amy Furniss
+JG: Josh Goldstein
+RG: Riccardo Giovanelli
+MH: Martha Haynes
+KH: Kelley Hess
+SH: Sarah Higdon
+SH2: Shan Huang
+LH: Lyle Hoffman
+WH: Walter Hopkins
+MJ: Melissa Jacquart
+SK: Shelvean Kapita
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax
+BM: Bilal Mahmood
+AM: Ann Martin
+JM: Jeff Miller
+WM: Arik Mitschang
+EM: Emmanuel Momjian
+PN: Prasanth Nair
+AO: Aileen O'Donoghue
+DR: Daniel Richey
+JR: Jessica Rosenberg
+AS: Amelie Saintonge
+JS: John Salzer
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+MT: Mari Carmen Toribio
+LV: Liese van Zee
+BW: Brian Walsh
+EW: Eric Wilcots

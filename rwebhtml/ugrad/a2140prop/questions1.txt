@@ -1,0 +1,44 @@
+
+20 June:  Today's questions/issues/tasks....
+
+
+I. Multiwavelength studies of galaxies
+
+Take a look at the web links page, created by Martha's FORTRAN program
+driftlinks.f, which is on the website:
+
+http://caborojo.astro.cornell.edu/alfalfalog/props/union05/d22p1_1356.html
+
+It contains links to several databases for images/information 12
+galaxies which are in the field of the drift we're discussing. 
+Follow the links to the various databases and compare what you
+find for the different galaxies. Here are a few specific questions:
+
+1. Learn about the Sloan Digital Sky Survey and its photometric and
+   spectroscopic components. What can you learn about the galaxies
+   in question from the SDSS data?
+
+2. SDSS will produce optical fluxes and positions for 100 million
+   objects and will obtain spectra for 1 million objects. How do
+   the SDSS folks decide which of the 100 million objects to target
+   for the spectroscopic observations? In fact, Martha tells us that 
+   (a) not all galaxies end up in the SDSS spectroscopic target
+   lists; even bright ones sometimes don't make it; (b) sometimes,
+   more than one spectroscopic object is contained within a single
+   galaxy. Why might this happen?
+
+3. Over what portion of the galaxy are the spectra obtained? Is the
+   answer important to us?
+
+4. What spectral features are found in the spectra of the 12 galaxies?
+   How can you interpret the spectra in terms of the probability that
+   the galaxy will be detected by ALFALFA?
+
+5. Comment separately on the appearance of the SDSS (a) image(s) and
+   spectra for each of the 12 galaxies. Do you expect to detect all
+   12? Why or why not?
+
+6. Investigate the information contained at the other links. What's
+   useful about them? Is there anything that is particularly unusual
+   or noteworthy about any of the galaxies?
+

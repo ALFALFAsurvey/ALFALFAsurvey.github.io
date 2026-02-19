@@ -1,0 +1,18 @@
+
+A1946 observing schedule
+
+Use searchable schedule on AO web page to get date,AST
+Use blocksched.pro in eggidl/gen to get LST
+
+      Block     Date    LMSTmidn      AST            LST
+
+    05.01.22  S 22Jan     07h39   15h45-17h15   23h27-00h57
+    05.01.23  S 23Jan     07h43   15h45-17h15   23h30-01h01
+
+    05.01.27  R 27Jan     07h59   16h00-18h15   00h01-02h17
+    05.01.28  F 28Jan     08h03   16h30-18h15   00h35-02h21    
+    05.01.29  S 29Jan     08h07   16h30-18h15   00h39-02h25
+    
+    05.02.03  R 03Feb     08h27   17h00-19h45   01h29-04h14
+    05.02.04  F 04Feb     08h31   17h00-19h45   01h33-04h18
+   

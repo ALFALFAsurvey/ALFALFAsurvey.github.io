@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Undergraduate ALFALFA team</title> 
+  </head>
+<body bgcolor="ffffff">
+<h3><font color=#cc0f14>Union UAT Workshop June 2015 &nbsp &nbsp &nbsp &nbsp Group Project</font></h3>
+<font color=#008000>The APPSS survey </font></h3>
+
+
+<hr>
+<h2> 3.0 The Arecibo Pisces Perseus Supercluster Survey (APPSS) </h2>
+
+<b> 3.1 Motivation and design of the survey </b> 
+
+<p> The UAT is embarking on a new survey designed to extend the HI mass scaling relations
+to lower HI mass. Consider what we need to do to build up our sample of low mass galaxies:
+
+<ul> 
+<li> Why are we biased against lower mass galaxies? Use relevant plots from Activity 1 to illustrate. </p>
+
+<li> What do we need to do to observe galaxies of lower mass at a given distance? </p>
+
+<li> We could try to observe much of the sky again to try to find lower mass galaxies, but this
+takes a lot of telescope time. Also ALFALFA has shown us that most galaxies with gas also have
+stars and star formation. How might we design a survey to target as many lower mass galaxies
+as possible, using the scaling relations that have been derived based on ALFALFA and SDSS?
+</ul>
+
+
+<hr>
+<b> 3.2 Exploring the Pisces Perseus Supercluster with the AGC </b>
+
+<p><a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/apps/files/ppsagc_27june15.csv"> Download this csv file,
+</a> containing data from the <a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agccontract.php"> Arecibo General Catalog (AGC) </a> (read about the catalog in the link). The file contains data extracted from the vicinity of the Pisces Perseus Supercluster for galaxies that have known velocities in the AGC. Load it into TOPCAT.
+
+<li> Make a sky plot of the data and examine the results. </p>
+
+<li> Make a plane plot of the data, using radeg and decdeg. What do you notice?</p>
+
+<li> Now make a second plane plot of the data, but substitue rawrap for radeg. What does rawrap represent and why is it helpful?</p>
+
+<li> Plots using right ascension should plot east on the left, west on the right. Which of the above plots does this? Fix any that do not.</p>
+
+<li> Do you see any oddities in the distribution of points? Can you explain any inhomogeneities? (Hint: some are intrinsic to the Universe, some are not!)</p>
+
+<li> Make a plot of rawrap versus vhelagc, the heliocentric velocity from the AGC. What does this plot tell you?</p>
+
+<li> Use the TOPCAT subsets tool to restrict the sample to galaxies with declinations greater than 20 degrees. To do
+this, select the subsets icon from the Main window (this looks like a purple ellipse containing a red circle). Hit the plus sign in the window that opens to add a subset. Name your sample something like north20, and enter "decdeg > 20.0" in the expression line. Plot this subset as a different color than the main sample in the plots that you made above.</p>
+
+<table>
+<tr>
+<td align="top">
+<li> Make a third subset "appsallvel" with declinations between 23 and 35. 
+Make the plots over again with this subset as a separate color. How does your diagram compare with the
+overdensity plot from the 2Mass Redshift survey (2MRS) shown at right? What can you conclude? </p>
+
+
+</td>
+<td align="right">
+<a href="https://drive.google.com/file/d/1jVvesXwUxIiZE3ZVwazMoM19rrzC6daV/view" target=new>
+<img src="https://drive.google.com/file/d/1jVvesXwUxIiZE3ZVwazMoM19rrzC6daV/view" height=100>
+</td>
+</tr>
+</table>
+
+<hr>
+<b> 3.3 Querying the SDSS </b>
+
+<p> The UAT Groups Google Site provides an <a href="https://sites.google.com/a/union.edu/uat/union-2015-workshop/sdss-sample-queries"> example query </a> that we can use to extract
+galaxies from the SDSS site. Your group will be assigned a range in right ascension and declination
+to test. Edit the query appropriately and run from TOPCAT, following the directions below 
+(a nicer summary written by David Craig can be found in our <a href="https://sites.google.com/a/union.edu/uat/programs/uat-topcat-docs"> UAT TOPCAT docs page, </a>
+under <href="https://sites.google.com/a/union.edu/uat/programs/uat-topcat-docs/sdss-dr7-tap-query-example"> SDSS DR7 TAP Query) </a>:
+
+<li> Use one of the following methods to access the SDSS query. Simple searches can often be done from TOPCAT, but TOPCAT is not kept as up to date in routines or data releases. Select one method to try today, but when you have time, experiment with all three services. It helps to know the different methods in case one or more are down. Note that each option has its "features."
+
+<br> &nbsp; &nbsp;(1) Click on the 'VO' tab in TOPCAT, then the Table Access Protocol (TAP) Query option. In the window that 
+pops up, type 'sdss' in the Keyword box, then 'Submit Query'. This will return a set of SDSS tables to
+search. Select SDSS DR8, then 'Enter Query' at the bottom right. At the bottom, there is an ADQL Text box,
+where you can enter your query. ADQL is similar to the SQL search data available straight from SDSS
+with a few important differences in syntax and functionality. 
+<br>&nbsp; &nbsp;(2) Use the <a href="http://skyserver.sdss.org/dr10/en/tools/search/sql.aspx"> SDSS SQL Search, </a> this one linked to DR10. Enter the query in the box, select 'fits' as the save option.
+<br> &nbsp; &nbsp;(3) Another option is to use <a href="http://skyserver.sdss3.org/CasJobs/"> CasJobs
+batch query service </a> for longer jobs. You will need an account (free) for CasJobs. 
+ </p>
+
+<li> Enter your query in TOPCAT or the <a href="http://skyserver.sdss.org/dr10/en/tools/search/sql.aspx"> SDSS SQL Search. </a> When it returns, load into TOPCAT (if applicable) and
+examine the results. To see what kind of galaxies were found, examine some of their SDSS images. 
+You can do this by
+extracting the name, ra, dec from the file in TOPCAT and pasting these into the <a href="http://skyserver.sdss.org/dr10/en/tools/chart/list.aspx"> SDSS List tool. </a> Comment on what you see. What do we need to be aware of when we use data from SDSS?</p>
+
+<li> Another way to look at images is to set TOPCAT to display the SDSS image of a region around a given RA and Dec. To do this, click on your table in the main TOPCAT window, then click on the box next to 'Activation Action', which will say '(no action)' if not already activated. In the window that pops up, click 'Display Cutout Image', then select SDSS Colour Images' from the pulldown menu next to Cutout Service.  Then click OK. Open a window showing your table and click on a galaxy. The image from SDSS should appear. 
+This should also work from your sky plot - click on a point to see the galaxy. </p>
+
+<li> Match your SDSS targets with the ALFALFA HI catalog. Were any of the targets found by ALFALFA? What do these targets look like?</p>
+
+<li> Plot your targets on the sky plots you made for the Pisces Perseus supercluster and comment on their
+locations. </p>
+
+
+<hr> 
+
+<b> 4.0 Other Activities (as time allows) </b>
+
+<li> Try to identify the clusters/groups of galaxies in the Pisces Perseus Supercluster
+data.
+
+<li> Check out the <a href="uat_union_1506_huntsup.html"> GalaxyZoo and Color Magnitude Diagram Activity </a>
+
+<hr>
+<hr>
+
+
+
+
+
+<br>
+<hr>
+<font color=#008000><i>Last modified: Sun Jun 28 14:00:52 EDT 2015
+</i> by becky </font>
+</body>
+</html>

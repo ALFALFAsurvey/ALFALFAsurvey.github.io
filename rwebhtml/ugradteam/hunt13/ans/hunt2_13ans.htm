@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<br>
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<font color=#008000><b> Try to finish this hunt by 5:15pm on Tuesday afternoon</b></font>
+</td></tr></table></center></p><br><br>
+<b><font color=#008000> Useful links:</font></b> <br>
+<li> <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">Using Arecibo for ALFALFA</a><br>
+<li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observer's page</a><br>
+<li> <a href="http://www.naic.edu/~a2010/idl_instruct1.htm">Instructions for Level I processing of ALFALFA
+drift data</a></p>
+
+<b><font color=#008000> Rules of the scavenger hunts:</b> You may consult any
+source anywhere but please be sure to indicate where you got your information.
+And watch out
+for bad websites!</font></p>
+
+<br>
+<h3><font color=#cc0f14> UAT13.01 Scavenger Hunt #2: </font> &nbsp 
+<font color=#008000>Introduction to LBW spectra and TOPCAT</font></h3>
+
+This scavenger hunt will provide an introduction to the spectra we obtain from the L-band wide observations
+and also get you to use the <a href="http://www.star.bris.ac.uk/~mbt/topcat/">
+TOPCAT</a>, the <b>T</b>ool for <b>OP</b>erations on <b>C</b>atalogues <b>A</b>nd <b>T</b>ables.
+</p></p>
+
+<br>
+<b><font color=#ccof14>A2010 observers' favorite quote</font></b><br>
+<center width=400>
+<i>"A hypothesis or theory is clear, decisive, and positive, but it
+is believed by no one but the [person] who created it. Experimental
+findings, on the other hand, are messy, inexact things, which are
+believed by everyone except the [person] who did the work."</i><br>
+ -- Harlow Shapley, "Through Rugged Ways to the Stars"</p>
+</center>
+Another favorite ALFALFA quote is "Real astronomers need more than a cell
+phone to conduct a survey."</p>
+
+<br>
+<b><font color=#ccof14> 2.0</font> &nbsp 
+<font color=#008000>Temperatures, temperatures, temperatures</font>...</b></p> 
+Radio astronomers are always talking about
+temperatures. But, what are they talking about? </p>
+&nbsp &nbsp a. &nbsp What do we mean by "system temperature"?</p><br>
+
+&nbsp &nbsp b. &nbsp What is the temperature in the LBW dewar?</p><br>
+
+&nbsp &nbsp c. &nbsp How are the LBW amplifiers kept that cold? (i.e. what refrigerant is used)</p><br>
+
+&nbsp &nbsp d. &nbsp What do 21 cm HI line astronomers mean when they talk about the "spin temperature"?</p><br>
+
+&nbsp &nbsp e. &nbsp What is the "brightness temperature" of a radio source?</p><br>
+
+&nbsp &nbsp f. &nbsp What is the "antenna temperature" of a radio source?</p><br>
+
+&nbsp &nbsp g. &nbsp What do astronomers mean by the "system gain"?</p><br>
+
+&nbsp &nbsp h. &nbsp What is the flux density (in Janskies) of the Sun at 1.4 GHz? How does that compare
+with the system temperature of ALFA? &nbsp (<i>Hint: Think about how bright it would appear
+if we pointed LBW at it.</i>)</p><br>
+
+&nbsp &nbsp i. &nbsp What is the typical temperature and density of a diffuse HI cloud in the Milky Way?</p><br>
+
+&nbsp &nbsp j. &nbsp What is the typical temperature and density of a molecular H<sub>2</sub> cloud in the Milky Way?</p><br>
+
+&nbsp &nbsp k. &nbsp What is the typical temperature and density of an ionized HII cloud in the Milky Way?</p><br>
+
+&nbsp &nbsp l. &nbsp What is the temperature of the Cosmic Microwave Background radiation?</p><br>
+
+&nbsp &nbsp m. &nbsp What is the temperature in Ithaca, NY right now? </p><br>
+
+&nbsp &nbsp n. &nbsp How hot was it in the famous futuristic 1967 film starring Julie Christie
+and Oskar Werner?</p><br>
+
+<br>
+<b><font color=#ccof14> 2.1 </font> &nbsp <font color=#008000>ALFALFA followup: Why bother?...</font></b></p>
+Now that we have completed the ALFALFA drift scan observations, we are conducting
+targeted observations of interesting
+ALFALFA detections or possible detections. We call this program "Harvesting ALFALFA".</p>
+
+&nbsp &nbsp a. &nbsp How long does it take a point source to drift across an ALFA beam? &nbsp <i>Hmmm... seems like we've
+thought about this one somewhere else..</i></p><br>
+
+&nbsp &nbsp b. &nbsp We say that the "effective" integration time for ALFALFA is about 40 seconds per beam. How do we get the
+answer "40 seconds", i.e. what considerations apply?</p><br>
+
+&nbsp &nbsp  c. &nbsp The <a href="http://www.naic.edu/~ages">AGES program<a/> maps small areas (~10-20 square degrees
+each vs. 7000 for ALFALFA) using ALFA with an
+effective integration time of 300 seconds. For the same spectral resolution, how much more sensitive (lower rms) is
+AGES than ALFALFA? &nbsp <i>Hint: use simple scaling!</i></p><br>
+
+&nbsp &nbsp d. &nbsp We might imagine that if we observe for a really long time, the noise in the spectrum
+would continue to decrease. In practice, this is not the case. Why not?</p><br>
+
+&nbsp &nbsp e. &nbsp What rms noise (in mJy) will we expect our 3-minute ON-OFF observations to
+give us, at a velocity resolution of 10 km/s? How does that compare to ALFALFA?</p><br>
+
+&nbsp &nbsp f. &nbsp The ALFALFA bandpass covers 1335-1435 MHz. What spectral line has a rest frequency of about 1424 MHz? If
+         we wanted (deliberately) to observe emission from that line close to its rest frequency, where (in the sky) might
+         we look? </p><br>
+
+&nbsp &nbsp g. &nbsp Suppose we observe a source with a frequency that, if the line is HI, is -1515 km/s. Why don't we think
+         this is an HI source? If it is an OH megamaser, what is its redshift?</p><br>
+<br>
+<br>
+
+<b><font color=#ccof14> 2.2</font> &nbsp <font color=#008000>The dreaded RFI: ugly GPS stuff!</font></b></p>
+
+<table cellpadding=3 border=3>
+<tr><td>
+Here is FLAGBB display of one 10-minute drift scan observations from the main ALFALFA 
+survey. The horizontal axis shows frequency and the vertical axis shows the successive
+1-sec records. The blue scale reflects the intensity at each frequency pixel in the map,
+with white meaning higher flux. </p>
+
+Three bright spots are flagged in the center of the frame. They arise from the
+Nuclear Detection (NUDET) system aboard the Global Positioning System (GPS)
+satellites. Refer to this figure in answering the following question.
+Click <a href="gifs/flagbb_gps_09.gif">here</a> for a larger view of the screen.</p>
+
+a. &nbsp  What is the approximate frequency of the NUDET transmissions? </p>
+
+b. &nbsp  What is the radial velocity of a galaxy whose HI line emission 
+          will be observed at that same frequency? </p>
+
+c. &nbsp  How many GPS satellites are there? </p>
+
+d. &nbsp What is the orbital period of a GPS satellite?</p>
+
+e. &nbsp  How could you find out how many GPS satellites there are
+          above Puerto Rico now? You don't have to do this; just tell us
+          how you would go about it.</p>
+
+f. &nbsp In the movie "Some Like It Hot", who (what actor) utters the famous
+closing words "Well, nobody's perfect."?</p>
+
+</td><td> <img src="gifs/flagbb_gps_09.gif" height=350></td></tr></table></p>
+
+<br>
+<b><font color=#ccof14> 2.3</font> &nbsp <font color=#008000> Enigmatic ALFALFA sources
+</font></b></p>
+
+Let's look at some of the spectra taken during last spring's LBW followup 
+observations, under AO program A2669. <font color=#008000>
+You can click on each spectrum to view a larger version.</font></p>
+
+
+THIS PART IS IN DEVELOPMENT; ESP NEED TO CHECK LETTER DESIGNATIONS OF QUESTIONS</p>
+
+<table cellpadding=8 border=1>
+<tr><td valign=top><li>To the right is the LBW spectrum of the galaxy AGC 749542, a code 4 detection
+in ALFALFA.</p>
+&nbsp &nbsp &nbsp a. &nbsp What is a "code 4" detection?</p>
+
+&nbsp &nbsp &nbsp b. &nbsp Based on your examination of the spectrum alone, what is the
+approximate recessional velocity of this galaxy?
+<!-- Spectum centered at 1390.9 corresponds to cz = 6357 km/s
+-->
+</p>
+
+&nbsp &nbsp &nbsp c. &nbsp Using only your answer to a., make 
+a "back of the envelope" calculation of the distance to the galaxy. What more would you need
+to know to get a more accurate answer?
+<!-- Spectum centered at 1390.9 corresponds to cz = 6357 km/s so distance = 6357/70 = 91 Mpc
+-->
+</p>
+
+</td><td>
+<a href="gifs/H113043.4+242930_lbw.jpg"><img src="gifs/H113043.4+242930_lbw.jpg" height=150></a></p>
+</td></tr>
+
+<tr><td valign=top><li>To the right is a spectrum of the galaxy AGC 198363, a code 4 detection in ALFALFA observed
+in the standard doppler tracking mode.</p>
+&nbsp &nbsp &nbsp d. &nbsp Explain what the two features evident in the spectrum are likely to be.</p>
+</td><td>
+<a href="gifs/H091132.7+082830_lbw.jpg"><img src="gifs/H091132.7+082830_lbw.jpg" height=150></a></p>
+</td></tr>
+
+<tr><td valign=top><li> For our doppler tracking LBW observations, we actually
+obtain <b> four</b> different spectra of each target and in the end wind up with <b> two</b>
+different final ones.</p>
+
+&nbsp &nbsp &nbsp e. &nbsp Explain the differences among first the four, and then, the two.
+Be quantitative where relevant (e.g. bandwidth, number of channels, velocity coverage, frequency resolution,
+velocity resolution etc.). Remind yourself how the spectral resolutions of these spectra compare to that
+of the main ALFALFA survey.
+<!-- The four include both polarizations which are then combined to make two. The two
+are 25 MHz/2048 chans and 6.25 MH/2048 chans. ALFALFA yields 100 MHz/2048 chans and 5.5 km/s/chan at z=0.
+Once they realize that, the numerics become simple.
+-->
+--></p><br><br><br>
+</td><td> &nbsp </td></tr>
+
+
+<tr><td valign=top><li> To the right are the two different final spectra of AGC 198305. </p>
+
+&nbsp &nbsp &nbsp f. &nbsp How do the two spectra correspond to the final spectra referred
+to in the previous question?</p>
+
+
+
+&nbsp &nbsp &nbsp g. &nbsp Based on your
+examination of the spectra, what is the recessional velocity of this object?
+&nbsp <font color=#008000> Please, no cheating by consulting other sources!</font></p>
+
+For fun, take a look at the 
+<a href="http://skyserver.sdss3.org/dr9/en/tools/chart/navi.asp?ra=143.7225&dec=%2017.05139&opt=glsi&scale=0.39617">
+SDSS-DS9 image</a> of this object.</p>
+
+</td><td>
+<a href="gifs/LeoT_lowres.jpg"><img src="gifs/LeoT_lowres.jpg" height=100></a> &nbsp
+<a href="gifs/LeoT_highres_full.jpg"><img src="gifs/LeoT_highres_full.jpg" height=100 align=top></a><br>
+Click <a href="gifs/LeoT_highres_zoom.jpg">here</a> to see a zoomed in version of the 2nd one.</p>
+</td></tr>
+
+
+
+<tr><td valign=top><li> To the right is the LBW spectrum of the galaxy AGC 174577 which was easily detected
+by ALFALFA and which was observed by A2669 as a calibrator (i.e., to check that everything was working
+and giving the right velocity and flux scales).</p>
+
+&nbsp &nbsp &nbsp h. &nbsp What is unusual about the y-axis scale? Why is it that way?</p>
+
+</td><td>
+<a href="gifs/H072122.4+075526_lbw.jpg"><img src="gifs/H072122.4+075526_lbw.jpg" height=150></a></p>
+</td></tr>
+<tr><td>
+&nbsp &nbsp &nbsp i. &nbsp What actor delivered the line: "My Mama always said, 'Life was like a 
+box of chocolates; you never know what you're gonna get.'"?</p></td><td> &nbsp </td></tr>
+</table>
+
+
+<br><br>
+
+<br>
+<b><font color=#ccof14> 2.4</font> &nbsp <font color=#008000>
+Introduction to TOPCAT</font></b>: the <b>T</b>ool for <b>OP</b>erations on <b>C</b>atalogues <b>A</b>nd <b>T</b>ables,
+an interactive java graphical program which has been developed by astronomers at the Virtual Astronomical Observatory.</p>
+<ul>
+<li> TOPCAT home: &nbsp <a href="http://www.star.bristol.ac.uk/~mbt/topcat/">http://www.star.bristol.ac.uk/~mbt/topcat/</a>
+<li> TOPCAT manual: &nbsp <a href="http://www.star.bristol.ac.uk/~mbt/topcat/sun253/index.html">http://www.star.bristol.ac.uk/~mbt/topcat/sun253/index.html</a>
+<li> TOPCAT tutorial: &nbsp <a href="http://andromeda.star.bris.ac.uk/topcat/tutorial/">http://andromeda.star.bris.ac.uk/topcat/tutorial/</a></ul>
+</p>
+
+&nbsp &nbsp a. &nbsp Do you have access to the <a href="https://sites.google.com/site/alfalfaugradgroups">
+UAT groups Google sites page</a>?. &nbsp <i>Hint: Find it at:
+https://sites.google.com/site/alfalfaugradgroups/</i>.
+If you do, go there and log in. If not, send email to Becky or David's 
+gmail account. David's is jblxdwc@gmail.com.  They can add you to the 
+site. When you reach the site, look the bar on the left. Under **Programs**
+you will see UAT TOPCAT Docs, click there. If you have not visited this
+site recently (or at all), briefly review the documents there; refer to
+them as needed as we proceed.</p>
+
+&nbsp &nbsp b. &nbsp Start up <b>TOPCAT</b> on your machine.
+&nbsp <i> If you have not installed TOPCAT on your laptop or local machine, follow the 
+steps in **Installing and Getting Started** for your system.  Java web start is generally
+the easiest, or Mac disk images, but TOPCAT is also easy to install on Windows machines.</i></p>
+
+&nbsp &nbsp c. &nbsp In the latter part of the **Installing and getting started** on the UAT wiki, read section on the
+2.1 **Loading data from a CSV file**. What does "CSV" stands for?</p>
+
+&nbsp &nbsp d. &nbsp Go to the public <a href="http://egg.astro.cornell.edu/alfalfa/data">
+ALFALFA catalog release</a> page.  
+If you have not already committed it to perfect memory, peruse the &alpha;.40 paper.
+You will find detailed information on the content and format of the three
+data files in the header of the ASCII versions of the data files. What does "ASCII"
+stand for?</p>
+
+&nbsp &nbsp e. &nbsp Right-click (or whatever) to download the .csv file associated with Table
+1 of the &alpha;.40 paper to you computer
+using the **CSV** link. Be sure you know where it is located on your disk. Then, 
+using <b>TOPCAT</b>, load the .csv file into a table. How do you let <b>TOPCAT</b>
+know that it is a .csv file?</p>
+
+&nbsp &nbsp f. &nbsp Review the column headers in the Table within <b>TOPCAT</b>. They
+should match the descriptions in the header of its ASCII file. At what resolution
+is the <i>rms</i> calculated?</p>
+
+&nbsp &nbsp g. &nbsp Make a plot of distance (x-axis) versus log Msun for the &alpha;.40 database. What
+is log Msun?</p><br>
+
+<br>
+<b><font color=#cc0f14> Here is the Spanhauer diagram for &alpha;.40: (click for larger version)<br>
+<a href="files/alph40.sdss.spanhauer.gif"><img src="files/alph40.sdss.spanhauer.gif" height=300></a><br>
+</font></b></p>
+<br>
+
+&nbsp &nbsp h. &nbsp Why are the points distributed so that they spread out in the vertical
+   direction at nearer distances but are more confined in log Msun as the
+   distance increases?</p><br>
+
+&nbsp &nbsp g. &nbsp There appears to be a gap in the distribution near the right at
+   a distance of about 220 Mpc. What causes that gap?</p><br>
+
+&nbsp &nbsp h. &nbsp There is a less obvious gap at a distance of about 80 Mpc. What causes that gap?</p>
+
+&nbsp &nbsp i. &nbsp There appears to be a vertical line of points at a distance of about 17 Mpc.
+   What causes the apparent line?</p><br>
+
+<br>
+<b><font color=#cc0f14>
+The gaps appear at frequencies corresponding to 1390 and 1350 MHz, due to RFI in the band.<br>
+For 85 Mpc => cz ~ 6000 km/s => z = 0.0198 => 1420.4058/(1+z) ~1390 MHz <br>
+For 230 Mpc => cz ~ 16100 km/s => z = 0.054 => 1420.4058/(1+z) ~ 1350 (won't be exact)<br>
+Cause: RFI. In particular see <a href="http://www.naic.edu/~phil/rfi/rfilist.html">Phil's list</a>.
+The fairly broad band at 220 Mpc is the FAA/SJU radar at 1350 MHz; note that it is not on all
+the time. The other feature is probably the dome camera, which was a problem during part of
+the ALFALFA data taking (until identified and fixed). The line-up at 17 Mpc is the Virgo cluster;
+we assign all galaxies believed to be members to a single distance.</font></b></p>
+<br>
+
+There are lots of other things you can do with <b>TOPCAT</b>. We encourage you to learn
+how to exploit its capability!</p><br>
+</ul>
+<br>
+<br>
+
+<b><font color=#ccof14> 2.5 </font> &nbsp <font color=#008000>
+(Important) questions about the Arecibo staff</font></b></p>
+&nbsp &nbsp a. &nbsp Which Arecibo staff member spent 8 years with the Klamath Indians in Oregon 
+(rustling cattle, so the rumor goes) before moving to Puerto Rico?</p> <br>
+
+&nbsp &nbsp b. &nbsp Who is perfecting a new drink called the "avocalada"? </p><br>
+
+&nbsp &nbsp c. &nbsp What was the traditional sumptuous delicacy made by Martha and savored by Willy
+                     during late night observing runs over the Christmas and New Year's holidays? </p><br>
+
+&nbsp &nbsp d. &nbsp Who played Carl Sagan wandering around the observatory during the filming of the <i>Cosmos</i> 
+                     series, when Carl did not make the trip to Arecibo? </p><br>
+
+<br>
+
+
+<br>
+<hr>
+<font color=#cc0f14>
+This page created by and for the members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> Survey Undergraduate team</font></addres
+s>
+</p>
+<!-- hhmts start -->Sun Dec 12 12:51:08 EST 2012 
+</i> by Martha </font>
+<!-- hhmts end -->
+</body>

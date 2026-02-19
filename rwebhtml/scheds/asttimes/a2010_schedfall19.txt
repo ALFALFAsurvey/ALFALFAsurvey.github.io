@@ -1,0 +1,187 @@
+A2010 observing schedule                                       last update: 14 Nov 2019
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+
+****************  COMPLETED OBSERVATIONS        A3341  APPSS  FALL 2019
+    Block     Date    LMSTmidn      AST           LST         a3341_cmd file     Observers 
+    19.10.06  S 06Oct   00h35     21h30-02h30  22h04-03h05    a3341_191006.cmd   RK,JR4,OD,AG,ZZ(R)
+    19.10.07  M 07Oct   00h39     21h15-02h15  21h53-02h54    a3341_191007.cmd   ML,CP,EP2,AA2,JR
+
+
+
+**************** UPCOMING OBSERVATIONS          A3341  APPSS  FALL 2019
+    Block     Date    LMSTmidn      AST           LST         a3341_cmd file     Observers 
+    19.11.24  S 24Nov   03h48     18h15-23h15  22h02-03h03    a3341_191124.cmd   JR4,OD,HP
+    19.11.25  M 25Nov   03h52     18h15-23h15  22h06-03h07    a3341_191125.cmd   JR4,OD,HP
+    19.11.26  T 26Nov   03h56     18h00-23h15  21h55-03h10    a3341_191126.cmd   JR4,OD,HP
+    19.11.27  W 27Nov   04h00     18h00-23h00  21h59-02h59    a3341_191127.cmd   JR4,OD,HP
+    19.11.28  R 28Nov   04h04     18h00-23h00  22h03-03h03    a3341_191128.cmd   JR4,OD,HP
+
+----------------------------------------------------------------------------------------------------
+
+AO holidays 2019: (this is max number UCF+YEU+UMET)
+Don't know about 2019; here are 2018. Better check...
+http://www.naic.edu/~phil/aoholidays.2018.pdf
+
+03Sep   Labor Day
+08Oct   Columbus Day
+12Nov   Veteran's Day
+19Nov   PR Discovery Day 
+22Nov   Thanksgiving Day
+23Nov   Day after Thanksgiving
+24Dec   Christmas Eve
+25Dec   Christmas Day
+
+
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+AA2: Andres Arrieta (UPR-RP)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+EB: Elijah Bernstein-Cooper (Macalester)
+AB: Anthony Braddock (St.Marys)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+CC: Catlen Camacho-Light
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+JC2: Jean Casellas (UPR)
+CD: Colby Dennis (WTAMU)
+GD: Grant Denn (MSUDenver)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+MD: Maggie Dievendorf (Colgate)
+OD: Olivia Dickinson (Providence Coll)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+AF2: Alison Farrish (Cornell)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+AG: Anhad Gande (Union)
+BG: Bryan Geiger (St. Lawrence)
+EG: Elena George (HSU)
+GG: Genesis Guerra (Union)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+MG: Martin Garay-MacLean (Ithaca)
+RG: Riccardo Giovanelli
+SG: Steve Goldman (St. Lawrence)
+GH: Greg Hallenbeck
+JH: Jonathan Hoover (Utica)
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+WH2: Will Harney (Union)
+KI: Katie Iadanza (Colgate)
+CJ: Cory Johnson (WTAMU)
+MJ: Melissa Jacquart (UWisc)
+MJ2: Mike Jones
+YJ: Yenuel Jones (UPR)
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+MK: Maddy Kilgore (Hartwick)
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+LL: Luke Leisman
+KL: Katelyn Leisman
+ML: Mayra Lebron
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+EM2: Evelin Mayens (UPR-RP)
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+RM: Ryan Muther (Union)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+AM3: Alyssa McElroy (WTAM)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+MM2: Mariella Mestres (UPR)
+VM: Victoria Mendoza (St.Mary's)
+WM: Arik Mitschang (HSU)
+LM: Leland Moore (St.Mary's)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+CP: Carmen Pantoja
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+JP2: Jonathan Perez (UPR-RP)
+JP3: Jorge Padiel (UPR-RP)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+HP: Haille Perkins (StLU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+JR2: Jose Reyes (UPR-RP)
+JR3: Justin Robinson (St. Mary's)
+JR4: Joe Ribaudo (Utica/Providence)
+PR: Paola Rosa-Aquino (Cornell)
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+ES: Evan Smith (StLawrence)
+JS: John Salzer
+JS2: Joseph Serrano (UMET)
+TS: Thad Savery (Siena) 
+SS2: Samantha Schults (St.Mary's)
+TS: Tess Senty (HSU)
+KS: Kristine Spekkens
+KS2: Kamin Sylvia (Union)
+MS: Monica Smith (USF)
+OS: Oded Spector
+OS2: Ora Starcher (St.Mary's)
+SS: Sabrina Stierwalt
+BT: Blake Tormey (St.Mary's)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+AV: Aparna Venkatesan
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+MW: Michael Warrener (Union)
+JW: Jesse Watson (UWSP)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots
+RW: Rosa Wallace (MSU-D)
+ZZ: Zihui "Cathy" Zeng

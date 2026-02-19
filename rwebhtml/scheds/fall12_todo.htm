@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<TITLE>ALFALFA Fall 2012</TITLE>
+</HEAD>
+
+<BODY bgcolor="ffffff">
+
+<br>
+<h2><font color="#008000"><li> ALFALFA Fall Semester 2012: What needs to be done!</font></h2>
+
+
+<b>Useful links</b>
+<ul>
+<li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observers' page</a>
+<li> <a href="http://www.naic.edu/~a2010/scheds/a2010_schedupcoming.txt">Upcoming schedule page</a>
+<li> <a href="http://www.naic.edu/~a2010/loglinks.htm"> Logs and lists </a>
+<li> <a href="http://www.naic.edu/~a2010/idl_instruct1.htm">Instructions for Level I processing</a>
+</ul>
+</p>
+
+<br>
+<b>Things to do (more or less) daily </b>
+<ol>
+<li> Check the observing log.<br>
+-- Read the observer comments and make a note of any weird occurrences.
+If there were hardware issues, send an email to Dana Whitlow and Phil Perillat asking for updates.
+(Note: I may do this also, in which case I will cc you on the email. Please cc me if you write.)<br>
+-- Check that the observing log is correct in its basics, e.g., that the coordinates are correct,
+etc. If you don't understand what the observer has written, send him/her/them a message asking them
+to clarify (and correct the files!). Better to catch oversights/typos/errors now than to be 
+confused later.</p>
+
+<li> Transfer the raw IDL files from AO to CU:</br>
+The observer runs <b>filecreator</b> in the directory: <b>/share/a2010-2/data/YY.MM.DD</b>. You need
+to copy them to <b>/home/dorado3/dorado13/galaxy/idlraw</b>. There is a script there that will copy
+the files for you:<br>
+<dl> <dd> <b>cd /home/dorado3/dorado13/galaxy/idlraw</b>
+<dd> Edit the rsync.csh file to update the block designation.
+<dd> Type: &nbsp &nbsp <b>source rsync.csh</b></p>
+</dl>
+
+<li> Run the calibration and BPD processes:</br>
+Work in <b>/home/palfa/galaxy/fall12/</b>, creating a directory for each observing block and
+following the <a href="http://www.naic.edu/~a2010/idl_instruct1.htm">Instructions for Level I processing</a>
+as abbreviated in the log_processing file we create the first night.</p>
+</ol>
+
+<br>
+<br>
+<b>Check for abandoned VNC sessions (occasionally) </b></p>
+
+If the observer, or others practicing CIMA, do not exit their VNC sessions cleanly, then
+the sessions get abandoned. This happens fairly often (despite all the instructions...).
+So, every few days, we need to clean things up. Do this when no one should be running
+a VNC session.
+<ol>
+<li> Check for abandoned sessions and clean up the ~a2010/.vnc area.
+<dl><dd> <b>cd ~a2010/.vnc</b>
+    <dd> <b>ls</b><br>
+       If there are files there, e.g. dataview.naic.edu:13.pid, then there may be an abandoned VNC session e.g. on dataview.
+    <dd> Remove the files here<br>
+         <b>rm *log *pid</b></p></dl>
+<li> Kill the abandoned sessions on the machine where they are running.
+<dl><dd> <b>ssh -X a2010@dataview</b>
+    <dd> <b>ps -ecf | grep a2010</b><br>
+       Check to see if the output list contains any reference to <b>Xvnc :NN</b><br>
+a2010    10261     1 TS   24 Sep10 ?        00:01:22 Xvnc :13 -desktop dataview.naic.edu:13 (a2010) -httpd /usr/share/vnc/classes -auth /home/a2010/.Xauthority -geometry 1200x900 -depth 16 -rfbwait 30000 -rfbauth /home/a2010/.vnc/passwd -rfbport 5913 -pn
+    <dd> If so, then kill the job by its PID<br>
+         <b> kill -9 10261</b><br>
+         Make sure there is nothing left running that shouldn't be there.</p></dl>
+ 
+</ol>
+<br>
+<br>
+<hr align="center" width="800">
+
+<i>Last modified: Tue Sep 11 09:25:23 EDT 2012 by martha</i>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<html>
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+<body bgcolor=white>
+
+<!-- PAGE CONTENT BEGINS HERE -->
+
+<h3><font color=#008000>Hong's Spring 2008 page</font></h3>
+
+<ul>
+<li> Learn about the <a href="http://egg.astro.cornell.edu/alfalfa"> ALFALFA survey</a>
+     and, especially, take a look at the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalfa.php">
+     Using ALFALFA for science</a> page. What does ALFALFA detect? How can we use ALFALFA to learn
+     about galaxies?</p>
+<li> Read about the Sloan Digital Sky Survey in order to answer these questions. Some useful links
+are given here:<br>
+<a href="http://www.sdss.org/">Main SDSS site</a> &nbsp &nbsp &nbsp &nbsp
+<a href="http://www.sdss.org/dr6/">DR6 site</a>&nbsp &nbsp &nbsp &nbsp
+<a href="http://www.sdss.org/dr6/instruments/imager/index.html"> Imaging camera parameters and description</a><br>
+<ul>
+<dd>a. What is the operational status of the SDSS?
+<dd>b. What are the central wavelengths of the filters used to produce SDSS images?
+<dd>c. Why is it useful to obtain images in 5 filters simultaneously?
+<dd>d. Over what portion of the galaxy is the spectrum obtained? Why might that be important?</p></ul>
+<li> Make a web page for yourself to keep track of what you are doing; you should
+     put it in the directory called <i> /home/hatillo/hongyuxiao2000/spr08</i>. See
+     my <a href="starthtml.htm">hints</a> on how to get started.</p>
+
+<li> <b> Numerical integration of an HI profile</b>
+      <ol>
+      <li> Use our links to find the ALFALFA data entry for AGC/UGC 7192. Put the
+           link on your webpage.
+      <li> On your webpage, record for yourself the ALFALFA catalog information 
+           for this object. Do you understand what the parameters mean?  Add notes
+           for your own reference, as needed. If possible,
+           enter the data as a table on your webpage; if you don't know how to do
+           it, ask for a hint.
+      <li> Make a link on your web page to the journal article containing the
+           ALFALFA publication of this spectrum.
+      <li> Download the spectrum (ASCII file format) to your disk area on hatillo.
+      <li> Write an IDL routine to calculate the integral under the profile. <i>
+           If you run into "issues", ask!</i> This will probably take you some
+           time as you need to know how to read in a file, among other things.</p>
+      </ol>
+
+<li> <b>The Arecibo General Catalog (AGC)</b> is our private database containing
+        basic data on several hundred thousand galaxies. It is not intended to be
+        used by or distributed to people outside the ALFALFA collaboration.
+       <ol> <li>What are the conditions of use? &nbsp &nbsp 
+     Look <a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agccontract.php">
+     here</a> for the answer and follow the link to answer the next questions.
+     <li> What is the "UGC"?
+     <li> When is the AGC entry number equal to the UGC entry number?
+     <li> What is the "position angle"?
+     <li> What is the "TELCODE" for Arecibo+ALFA?
+     <li> Some galaxies have two velocity measurements: "VOPT" and "V21".
+          In that case, what should you adopt as the recessional velocity
+          for the galaxy?</p>
+     </ol>
+
+<li> <b> The EGGGEN utilities</b>: &nbsp &nbsp <i>Hong, you should learn to use these
+     utilities and then we'll have you demonstate them to the rest of the group.</i>
+     <ol> <li> Learn how to start up <i>IDL</i> accessing the Arecibo and ALFALFA utilities.
+For this, you'll have to ask one of the local experts.
+     <li> "<b>plotalfa</b>" <br>
+     "plotalfa" allows you to explore how ALFA scans accross a region of the sky
+     using the ALFALFA observing mode. In IDL, it is developed as a widget
+     which allows for more flexibility in specifying the region plotted. You can
+     elect to see the galaxies and ALFA beams/tracks in a square box of variable
+     size from 30 arcmin (0.5 degrees) to 10 degrees with allowed values of
+     0.5, 1.0, 2.0, 3.0 ...10.0  . The bigger the region,
+     the more galaxies that are plotted.
+     <ul>
+     <li> Investigate the 12h41m30s,+26d02'12" field. Here, enter the coordinates ("AGC style")
+      and specify the box size to be 0.5 degrees; this is the same as "plot30".
+      <li>How many galaxies do you find?
+      <li>As you increase the box size, see how the number and distribution
+         of galaxies change. What do you notice about the distribution of galaxies?
+         How might this be explained? 
+      <li>Set the box size to 5 degrees. How many objects do you find?
+      <li>Recenter the box to 12h57m00s, +26d02'12". How many objects do you find?
+          Why is the number so much larger?
+      <li>Recenter the box to 10h30m00s, +26d02'12", and set the box size to 1 degree.
+          Make note of the AGC numbers of a few of the galaxies; we'll use those
+          numbers to test out "uagcbrowse" below. Include (a) the very edge-on galaxy
+          to the east, and (b) the pair of galaxies just west of the beam 5 indicator.
+      </ul></p>
+     <li>"<b>agcbrowse</b>" <br>
+          "agcbrowse" allows you to explore the entries in the "AGC" database for
+           individual objects and/or to find all the AGC entries around a position.
+           In this case, just to make things more "fun", the entry positions need
+           to be in decimal hours and degrees hh.h, dd.d. It also retrieves the DSS2(blue)
+           image at a position and displays its location of an aitoff map in
+           galactic coordinates
+        <li> What's a "aitoff projection"? Why do we use it?
+        <li> What do you think causes the strong inhomogeneity in the source
+             population distribution seen in the galactic coordinate aitoff plot?
+        <li> Enter the AGC number of the very edge-on galaxy to the east of the
+             frame you explored with "plotalfa".
+             <ul>
+             <li> Has it been observed in HI before?
+             <li> What telescope was used to observe it before?
+        <li> Once you entered the AGC number, the
+             coordinates in the "search by" widget will update. You can now
+             query around that position; find the galaxies within 30 arcminutes.
+             <i>Experiment and learn to use this widget</i>!</p></ul>
+</ol>
+<li> <b>Investigating the IDL code for "agcbrowse"</b>: &nbsp &nbsp Try to understand
+what the IDL routine "agcbrowse.pro" actually does.<br> 
+         <ol> <li>
+          Click <a href="agcbtest.pro">here</a> to download your own 
+          version of "agcbrowse"; save it to a file called "agcbtest.pro".
+         <li> Study the code and try to understand what each segment does.
+         <li> You can run it by compiling it within IDL<br>
+              .compile agcbtest.pro
+         <li> See if you can write a separate routine which reads the AGC
+              and plots variables from it (x versus y).
+         </ol></p>
+
+<li> <b> Reading ALFALFA catalogs</b>: &nbsp &nbsp ALFALFA produces catalogs 
+containing a source name, the AGC number (where there is one), the HI centroid
+and the position of the optical counterpart, and then various parameters measured
+from the HI line. Write yourself a short IDL routine to read this
+<a href="highmass+sdss+cat.txt">test catalog</a> (this is the one Kim is also using),
+and try to calculate the HI mass from the parameter SintP (which is the HI line flux
+density in units of Jy-km/s). The column labeled "v50" is the heliocentric recessional
+velocity in km/s. If you have questions, you might ask Kim, since she is also using
+this file.</p>
+
+</ul>
+</p>
+<br>
+To access Hong's progress page, type file:///home/hatillo/hongyuxiao2000/spr08/progress.htm
+into your browser.
+<br>
+<br>
+<hr>
+<i>Last modified: Tue Mar 25 14:38:44 EDT 2008 by martha</i>
+</body>
+
+</html>

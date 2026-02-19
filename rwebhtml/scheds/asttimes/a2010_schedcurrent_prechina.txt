@@ -1,0 +1,223 @@
+A2010 observing schedule                                          last update: 15Aug12mph
+
+Use searchable schedule on AO web page to get date,AST ... but check posted scheds too.
+Use blocksched.pro in eggidl/gen to get LST
+
+Note: Block designation assigned according to time at START of observations on given day.
+(R) indicates remote observing
+
+------------------------------------------------------------------------------------------------
+UPCOMING OBSERVATIONS  
+------------------------------------------------------------------------------------------------
+FALL 2012 Season     
+********************     NOTICE      AST is the SAME as EDT                   ****************
+*****************   Remember: the date refers to when the A2010 runs starts in AST!!!*********
+*****************                 TOGS starts 15 min earlier                  ****************
+*************  All observing for A2010 drift scans in meridian mode at Az=180 (or 540)    ****
+
+                         TENTATIVE ONLY:     CHECK BACK TO VERIFY!
+
+    Block     Date    LMSTmidn      AST           LST         Drift  DecJ     Observers
+    12.09.10  M 10Sep    22h55    22h30-04h15   21h25-03h10   136p2  +330536  MH,EGGs(R), TOGS at start always
+    12.09.11  T 11Sep    22h59    22h30-04h15   21h28-03h14   137p2  +332012  BA,EGGs(R) 
+    12.09.12  W 12Sep    23h03    22h30-04h15   21h32-03h18   138p2  +333448  BA,EGGs(R)
+    12.09.13  R 13Sep    23h11    23h00-03h45   22h06-02h52   UCHVC targets   BA(R):  LBW A2664
+
+    12.09.15  S 15Sep    23h15    22h15-04h00   21h29-03h15   139p2  +334924  
+   
+    12.09.17  S 17Sep
+    12.09.18  T 18Sep    23h27    22h00-03h45   21h26-03h12   140p2  +340400  DF,JO(R)
+    12.09.19  W 19Sep    23h31    22h00-03h45   21h30-03h16   141p2  +341836  DF,JO(R)
+    12.09.20  R 20Sep    23h35    22h00-03h45   21h35-03h20   142p2  +343312   
+
+    12.09.22  S 22Sep    23h43    21h45-03h30   21h27-03h12   143p2  +344748  PT(R)
+    12.09.23  S 23Sep    23h47    21h45-03h30   21h31-03h16   144p2  +350224
+    12.09.24  M 24Sep    23h50    21h45-03h30   21h35-03h21   145p2  +351700   
+    12.09.25  T 25Sep    23h54    21h45-03h15   21h39-03h10   146p2  +353136  RK(R) + class
+    12.09.26  W 26Sep    23h58    21h30-03h15   21h27-03h13   147p2  +354612  RK(R) + class
+    12.09.27  R 27Sep    00h02    21h30-03h15   21h31-03h17   148p2  +360048      
+
+    12.09.29  S 29Sep    00h10    21h30-03h00   21h39-03h06   149p2  +360427
+    12.09.30  S 30Sep    00h14    21h15-03h00   21h28-03h10   148p4  +355709
+
+    12.10.05  F 05Oct    00h34    21h00-02h45   21h33-03h19   142p1  +342554  AO,JM(R)
+    12.10.06  S 06Oct    00h38    21h00-02h45   21h37-03h23   146p1  +352418  LH(R)
+    12.10.07  S 07Oct    00h42    20h45-02h30   21h26-03h12   147p1  +353854  LH(R)
+    12.10.08  M 08Oct    00h46    20h45-02h30   21h30-03h16   148p1  +355330  LH(R)
+
+SCHEDULE BEYOND HERE STILL NOT CERTAIN
+
+    12.10.10  W 10Oct    00h54    20h45-02h15   21h38-03h08   149p1  +360806
+    12.10.11  R 11Oct    00h58    20h30-01h00   21h26-01h57                             short run
+    12.10.12  F 12Oct    01h01    20h30-02h15   21h30-03h16   148p3  +354951  AO,JM(R)  Note: AO holiday
+    12.10.13  S 13Oct    01h05    20h30-02h15   21h34-03h20
+    
+    12.10.20  S 20Oct    01h33    21h30-01h45   23h02-03h18   144p1  +345506            short runs after here
+    12.10.21  S 21Oct    01h37    21h30-01h30   23h06-03h07   145p1  +350942                              
+    12.10.22  M 22Oct    01h41    21h15-01h30   22h55-03h07   143p1  +344030
+    12.10.23  T 23Oct    01h45    21h15-01h30   22h59-03h11   134p1  +322906
+    12.10.24  W 24Oct    01h49    21h15-01h30   23h03-03h15   135p1  +324342  MH,RG (big celebration)
+
+
+The following is a VERY TENTATIVE plan for LBW followup A2707 as requested over T-day
+We hope this will be used by the UAT for on-site observing. 
+    12.11.18  S 18Nov             18h30-23h30                                 DK,RO@AO   LBW under A2707
+    12.11.19  M 19Nov             18h30-23h30                                 DK,RO      Note: AO holiday
+    12.11.20  T 20Nov             18h30-23h30                                 DK,RO      
+    12.11.21  W 21Nov             18h15-23h30                                 DK,RO                    
+    12.11.22  R 22Nov             18h15-23h15                                 DK,RO      Note: AO holiday
+
+    12.11.24  S 24Nov             18h15-23h15
+
+
+This should do it for ALFALFA for 2012!
+
+
+------------------------------------------------------------------------------------------------
+Volunteers
+Aileen & Jeff: Fri Oct 5 and Oct 12
+Becky:  T Sept 25 and W Sept 26
+Crystal: Anytime beginning Sept 24th. 
+Derek & Jessica can do Sep 18, 19
+Lyle: Oct 6, 7 or 8
+Luke: anytime but Oct 5-8
+Parker: Fri and Sat Sep 21 and 22 .. . new sched 21 has disappeared.
+
+------------------------------------------------------------------------------------------------
+Fall 2012:  (updated Nov11)
+Still to do:    
+     134p1 after 2330 
+     135p1 after 0000
+     136p2 to 141p2
+     142 both passes 
+     143p1, 144p1, 145p1 after 2330
+     143p2, 144p2, 145p2
+     146-149; 148p3,4 both passes
+
+That makes:   22 complete nights
+              5 nights from 2300-0300  
+And that will complete the ALFALFA legacy survey!
+              
+----------------------------------------------------------------------------------------------------
+AO Holidays 2012:
+Mon 02 Jan   New Year's
+Fri 06 Jan   3 Kings
+Mon 09 Jan   De Hostos Day
+Mon 16 Jan   MLK Day
+Mon 20 Feb   Pres Day
+Thu 22 Mar   Abolicion de la Esclavitud
+Fri 06 Apr   Good Friday
+Mon 16 Apr   de Diego Day
+Mon 28 May   Memorial Day
+Wed 04 Jul   July 4th
+Mon 16 Jul   Munoz Rivera Day
+Wed 25 Jul   PR Constitution Day
+Fri 27 Jul   Celso Barbosa Day
+Mon 03 Sep   Labor Day
+Fri 12 Oct   Discovery of America
+Mon 19 Nov   PR Discovery Day
+Thu 22 Nov   Tday
+Fri 23 Nov   day after Tday
+Tue 25 Dec   Christmas
+Mon 31 Dec   New Year's Eve
+----------------------------------------------------------------------------------------------------
+Who's who:
+EGGs: One of the Cornell EGG folks TBD
+
+BA: Betsey Adams
+JA: Josh Adams
+RA: Rachel Almodovar (Union)
+AA: Adeel Altaf (Lafayette)
+LA: Laura Apicello (Siena)
+CA: Cameron Arsenault (RMCC)
+SA: Steve Atkinson (Siena)
+TB: Tom Balonek
+LB: Lauren Bearden (Colgate)
+MB: Michelle Brault (Hartwick)
+DB: Drew Brisbin
+NB: Noah Brosch
+NB2: Noah Billings
+SB: Shea Brown (UMinn)
+AC: Ajay Chahar(Colgate)
+BC: Barbara Catinella
+BC2: Bret Comnes
+DC: David Craig
+HC: Heather Cutler (SLU)
+JC: John Cannon
+CD: Colby Dennis (WTAMU)
+HD: Halley Darling (Union)
+JD: Josh Davidson (GSU)
+AE: Alissa Earle (Siena)
+AF: Amy Furniss (HSU)
+DF: Derek Fertig (GMU)
+RF: Rose Finn
+SF: Seth Felix (St. Marys)
+MF: Michael Fusco (Colgate)
+EG: Elena George (HSU)
+IG: Ian Gilchrest (Siena)
+JG: Josh Goldstein (Lafayette)
+RG: Riccardo Giovanelli
+GH: Greg Hallenbeck
+KH: Kelley Hess
+KH2: Korey Haynes (GMU)
+MH: Martha Haynes
+SH: Sarah Higdon
+SH2: Shan Huang
+SH3: Sukbum Hong (GMU)
+LH: Lyle Hoffman
+WH: Walter Hopkins  (RIT)
+KI: Katie Iadanza (Colgate)
+MJ: Melissa Jacquart (UWisc)
+MJ2: Mike Jones
+SK: Shelvean Kapita  (Lafayette)
+BK: Brian Kent
+RK: Becky Koopmann
+DK: Dave Kornreich
+JL: Jamie Lomax (StLU)
+LL: Luke Leisman
+AM: Ann Martin
+AM1: Ana Mikler (Union)
+BM: Bilal Mahmood (Union)
+CM: Crystal Moorman
+EM: Emmanuel Momjian
+JM: Jeff Miller
+PM: Peiyuan Mao (Lafayette)
+SM: Steven Margell (HSU)
+AM2: Amy McCann (Siena)
+KM: Kevin McCullough (Colgate)
+KM2: Kyle Murray (Hartwick)
+MM: Michele McColgan 
+VM: Victoria Mendoza (St.Marys)
+WM: Arik Mitschang (HSU)
+KN: Kim-Yen Nguyen (CU)
+NN: Nathan Nichols (Hartwick)
+PN: Prasanth Nair  (IU)
+AO: Aileen O'Donoghue
+JO: Jessica O'Connor (GMU)
+KO: Katie O'Brien (Union)
+RO: Ron Olowin
+EP: Manolis Papastergis
+PP: Phil Patrick (Colgate)
+JP: Jaclyn Patterson (Hartwick)
+RP: Ryan Payne (Lafayette)
+TP: Tharaka Peiris (WTAMU)
+DR: Daniel Richey (GSU)
+DR2: Damian Roesler (Colgate)
+JR: Jessica Rosenberg
+AS2: Alexandrea Safiq (Union)
+AS: Amelie Saintonge
+DS: David Stark
+DS2: David Shook
+JS: John Salzer
+TS: Thad Savery (Siena) 
+KS: Kristine Spekkens
+OS: Oded Spector
+SS: Sabrina Stierwalt
+TS: Tess Senty (HSU)
+MT: Mari Carmen Toribio
+PT: Parker Troischt
+LV: Liese van Zee
+LV2: Lucas Viani (Union)
+BW: Brian Walsh (Colgate)
+CW: Catherine Weigel (Hartwick)
+EW: Eric Wilcots

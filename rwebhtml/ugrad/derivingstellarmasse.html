@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Comprendiendo ALFALFA</title>
+</head>
+<body bgcolor="#ffffff">
+<center><p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600">
+</center>
+
+
+<h2><font color=#008000>Derivando la masa estelar de una galaxia a partir de observaciones fotom&eacute;tricas </font></h2>
+
+Antes de empezar, usted tiene que preocuparse por hacer una correcci&oacute;n a la magnitud aparente observada (en cualquier filtro) para (1) la extinci&oacute;n gal&aacute;ctica, (2) la extinci&oacute;n interna, y (3) K-correctiva. Y si dependen de nosotros para una receta para hacer frente a esas correcciones, tendr&aacute; que esperar un poco a que nosotros lo intentemos primero.</p>
+
+Una  receta popular para derivar la masa estelar de una galaxia a partir de observaciones de sus colores se da del ensayo por Bell <i> et al</i> 2005, ApJ 625, 23.
+Su equaci&oacute;n 2 lee as&iacute;:<br>
+<center>  log<sub>10</sub> M<sub>*</sub> = -0.4 (V - 4.82) + [ -0.628 + 1.305 (B-V) -0.15]</center>
+Donde el t&eacute;rmino dex -0.15, es empleado para convertir a masas estelares bajo la suposici&oacute;n de la funci&oacute;n Kroupa (2001) de la masa inicial.  Esta conversion, que asume una amplia gama en edades estelares dentro de la poblaci&oacute;n , es solamente una aproximaci&oacute;n y no toma en cuenta una amplia variedad de historias de formaci&oacute;n estelar. El lector debe consultar el art&iacute;culo completo y las referencias citadas en &eacute;l para obtener m&aacute;s detalles.</p>
+
+<br>
+
+<b>Conversi&oacute;n de magnitudes SDSS a UBVRI</b></p>
+
+Transformaciones de magnitudes SDSS a UBVRI son discutidas en Ingles en la p&aacute;gina web de SDSS
+<a href="http://www.sdss.org/dr6/algorithms/sdssUBVRITransform.html">
+SDSS website</a>. Como se se&ntilde;al&oacute; en el mismo, no hay transformaciones expl&iacute;citas de las galaxias, pero simples relaciones para las estrallas derivadas de Lupton (2005):</p>
+
+<center>
+<table width=500 cellpadding=3 border=3 bordercolor=darkred>
+<tr><td> B = u - 0.8116*(u - g) + 0.1313 </td><td> sigma = 0.0095</td></tr>
+<tr><td> B = g + 0.3130*(g - r) + 0.2271 </td><td> sigma = 0.0107</p></td></tr>
+
+<tr><td> V = g - 0.2906*(u - g) + 0.0885 </td><td> sigma = 0.0129</td></tr>
+<tr><td> V = g - 0.5784*(g - r) - 0.0038 </td><td> sigma = 0.0054</p></td></tr>
+
+<tr><td> R = r - 0.1837*(g - r) - 0.0971 </td><td> sigma = 0.0106</td></tr>
+<tr><td> R = r - 0.2936*(r - i) - 0.1439 </td><td> sigma = 0.0072</p></td></tr>
+
+<tr><td> I = r - 1.2444*(r - i) - 0.3820 </td><td> sigma = 0.0078</td></tr>
+<tr><td> I = i - 0.3780*(i - z)  -0.3974 </td><td> sigma = 0.0063</p></td></tr>
+</table>
+</center>
+
+<br>
+
+<b>Que es el sistema de magnitud "AB"?</b></p>
+
+El sistema de magnitud AB de Oke and Gunn (1983 se basa en la presunci&oacute;n que un objeto estelar de magnitud 0 debe tener la misma cuenta como fuente de F<sub>&nu;</sub>.
+EN otras palabras, en el sistema de AB, todos los filtros tienen una densidad flux de punto cero de 3631 Jy (1 Jy = 1 Jansky = 10<sup>-26</sup> W Hz<sup>-1</sup> m<sup>-2</sup> = 
+10<sup>-23</sup> erg s<sup>-1</sup> Hz<sup>-1</sup> cm<sup>-2</sup>).</p>
+<br>
+
+A los lectores de esta p&aacute;gina se les recomienda consultar las publicaciones m&aacute;s recientes y que se den cuenta de las limitaciones de las relaciones anteriores discutidas en la p&aacute;gina web de SDSS.</p>
+
+<br>
+Back to <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">Using ALFA for ALFALFA</a><br>
+Back to <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/usingalfalfa.php">Using ALFALFA for science</a></p>
+<br>
+<hr>
+<br>
+<i> Last updated Wed Jun 20 15:58:03 EDT 2012 by rachel</i>
+
+</body>
+</html>

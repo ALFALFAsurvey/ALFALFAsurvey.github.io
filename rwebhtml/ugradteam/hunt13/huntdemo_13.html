@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<br>
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<font color=#008000><b> Review this sheet while we demonstrate the observing on Monday afternoon. There aren't
+any questions for you to answer, but if you have questions about the observing, you should ask us!!!</b></font>
+</td></tr></table></center></p><br><br>
+
+<h3><font color=#cc0f14> UAT13.D: Demo of observing for A2707 on Monday afternoon </font></h3>
+<br>
+On Monday afternoon, we have been allocated a short observing session to demonstrate and discuss the
+LBW observing technique. This sheet is intended to help you understand the observing technique and
+procedure. Use it to follow along with the observing, to learn your way around the observing
+documentation, and to understand how we keep track of our many (many!) observing sessions by
+many (many!) different observers.</p>
+<br>
+<b><font color=#008000> Useful links:</font></b> <br>
+<li> <a href="http://www.naic.edu/~a2010/ALFALFA_lbwobserving.htm">L-band wide observing</a>
+<li> <a href="http://www.naic.edu/~a2010/galaxy_a2010.html">A2010 observer's page</a></p><br>
+
+
+<b><font color=#ccof14> D.0</font> &nbsp <font color=#008000> Setting up CIMA for LBW observing</font></b> </p>
+Follow along what Greg and Luke do to start up the observing using the ALFALFA observers' <a href=
+"http://www.naic.edu/~a2010/checklist_lbw.html">LBW checklist</a>.</p><br>
+
+<b><font color=#ccof14> D.1</font> &nbsp <font color=#008000> Position switching for ALFALFA: Follow along as we observe!</font></b> </p>
+
+The LBW program consists of a series of ON-OFF pairs of observations of each HI target as specified in
+a "command file" which has been generated in advance by Martha, the czar of ALFALFA observing. 
+Normally, each pair consists of a 180 second observation on the target ("ON-source") followed by a 180 second observation of 
+an "OFF-source" position which follows the (presumably) blank sky (over the same frequency range) over an identical
+track in telescope coordinates (azimuth, zenith angle). The ON- and OFF- source exposures are separated by 60 seconds.
+Once the pair sequence for a given target is executed, the telescope slews to the next source. You may want
+to review the answers to <a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/hunt1_13.htm">SH #1</a>,
+particularly 1.10 where we discussed position switching.</p>
+
+Look over the command file that we are using for the UAT demo session <a href="obsfiles/a2707_uat13demo.cmd">
+here</a>. Be sure you understand what it does.</p>
+
+In setting up the command file for each observing run, Martha uses a program which estimates the start time of each 
+target's observation, taking into account the time it takes to do a pair and to slew the telescope between sources.
+A few seconds of padding are inserted because it takes the telescope time to "settle" on source, to balance the
+power, etc. The program isn't perfectly accurate (and isn't intended to be... so CAVEAT EMPTOR!) and of 
+course, we never know exactly when our observing
+sequence will begin, but it allows us to see whether we are far off from "the plan".
+<a href="obsfiles/a2707_uat13demo_nominal.txt">Here</a> is a file which keeps track of the approximate
+sequence in the demo run this afternoon.</p><br>
+
+
+<b><font color=#ccof14> D.2</font> &nbsp <font color=#008000> The key to a long-term program: Bookkeeping, bookkeeping, bookkeeping!</font></b></p>
+
+Between the ALFALFA drift scan survey and the followup LBW observations, we have had almost 850 observing runs in the last 8 years and more
+than 200 people have been involved in actually conducting the observations (including attendees of previous UAT workshops). A big survey
+effort like ALFALFA requires a systematic approach to keeping track of the observing, and we do that by having the observers keep
+a log record, in the same format, of what happened during the observing. You can find all of the logs of past observing runs,
+since Spring 2005, <a href="http://www.naic.edu/~a2010/loglinks.htm">here</a>.</p>
+
+To keep track of this, a template log file is generated for each observing session;  <a href="obsfiles/a2707loguat13demo">here</a> is
+the (currently incomplete) one for this afternoon's demonstration run, and <a href=
+"http://www.naic.edu/~a2010/obslogs/mar12/a2669log120321">here</a> is one from March 21, 2012. 
+The idea is that the observers fill in the blanks, keep track of the observations, take a quick look at the data and make notes of anything
+usual.</p></br>
+
+<b><font color=#ccof14> D.3</font> &nbsp <font color=#008000> Instant gratification: Let's look at the data!</font></b></p>
+
+<b>NOTE:</b> We don't normally observing the afternoon; the spectra may not be up to our usual standards!</p>
+
+At the end of each target's ON-OFF pair sequence, we can take a quick look at the resulting difference spectra to
+see if there is a signal. We do this in a quick way by executing some simple scripts, written in IDL by Greg.
+You can read more about how to do this on the LBW observing <a href="http://www.naic.edu/~a2010/checklist_lbw.html">checklist</a>.
+We will learn more about this tomorrow in 
+<a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/hunt2_13.htm"> SH#2</a>. We hope that 
+<a href="http://egg.astro.cornell.edu/alfalfa/ugradteam/hunt13/hunt1_13.htm"> SH#1</a> has given you a chance to learn
+a bit about the spectra we obtain. For now, let's just take a quick look at a couple of the observations we plan
+to do this afternoon:</p><br>
+
+To look at a night's data, we have to start up IDL and use the commands Greg has written (see the 
+<a href="http://www.naic.edu/~a2010/checklist_lbw.html">checklist</a>. Then, to
+see the final (ON-OFF/OFF) spectrum of the first 2 boards of the first object, we use a command like<br>
+<li><b>checklbw, file='/share/olcor/corfile.DDmmmYY.a2707.N'</b></p><br>
+
+Since it is always a good idea to make sure that the system is set up and working properly, we deliberately
+picked a first source (assuming we start on time) which we already know has a detectable HI line signal.
+In the current sesssion's <a href="obsfiles/a2707loguat13demo">log file</a>, we see this entry:<br>
+<pre>
+SRCNAME             RAJ     DECJ                     AGNnr          LST   ZA   File#  ONScan     Status
+H215040.4+283617  215040.3 +283527  j  3500 H v   # A310858 calib  
+</pre>
+
+<br>
+You all realize that this sheet was made up before the observing run, and since we are observing in the afternoon
+for demonstration purposes, the spectra may not be ideal. In the interest of testing the system as well as
+explaining to you what we might expect to see, we chose a source which we have observed before. In fact,
+Ron O. and friends observed this target on November 19th; 
+see the <a href="http://www.naic.edu/~a2010/obslogs/nov12/a2707log121119">log file</a>
+for 12.11.19. The log record of the observation for that session reads:<br>
+<pre>
+SRCNAME             RAJ     DECJ                     AGNnr         LST   ZA    File#  ONScan     Status
+H215040.4+283617  215040.3 +283527  j  3500 H v   # A310858 calib  2148  10.32  1     232463762  Slight Detection @1404 MHz 
+</pre>
+We can take a look at those data (just as Ron and friends did). To view the final spectrum, we can just type:<br>
+&nbsp &nbsp &nbsp <b>checklbw, file='/share/olcor/corfile.19nov12.a2707.1'</b></p>
+And, this is what we get:<br>
+<a href="gifs/H215040.4+283617_nov12.gif">
+<img src="gifs/H215040.4+283617_nov12.gif" height=150></a> (click on the image to see a bigger version)</p><br>
+or, to zoom in on the y-scale</br>
+&nbsp &nbsp &nbsp <b>checklbw, file='/share/olcor/corfile.19nov12.a2707.1',yrange=[-55,-35]</b></p><br>
+gets us:<br>
+<a href="gifs/H215040.4+283617_nov12_zoom.gif">
+<img src="gifs/H215040.4+283617_nov12_zoom.gif" height=150></a> (click on the image to see a bigger version)</p>
+
+<br><br>
+We hope that this short demonstration helps to give you a better sense of what the observing and spectra data are about.
+And, if you have questions, ask someone: We are here for <b>you</b>!</p>
+<br>
+<hr>
+<font color=#008000><i>Last modified: Mon Jan  7 15:29:37 EST 2013
+</i> by martha </font>
+</body>
+

@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+    <title>The Arecibo Legacy Fast ALFA (ALFALFA) Survey</title> 
+  </head>
+<body bgcolor="ffffff">
+
+<img src="http://egg.astro.cornell.edu/alfalfa/alfalfabanner.jpg">
+<br>
+<hr>
+<br>
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<font color=#008000><b> Try to finish this hunt by 7pm on Wednesday evening</b></font>
+</td></tr></table></p>
+<b><font color=#cc0f14> UAT13.01 Scavenger Hunt #3:</font> <br>
+<font color=#008000>
+Introduction to how we can use ALFALFA in combination
+with other datasets to explore the local galaxy population</font></b></p></center>
+
+This scavenger hunt will provide an introduction to the ALFALFA and SDSS catalogs, deriving 
+galaxy properties from observational data, what the ALFALFA galaxy population is like
+compared to an optically selected one and investigating the large scale structure. 
+As an example of the kind of science the UAT groups project is doing,
+we will take a quick look at the galaxy population in ALFALFA, in the SDSS database
+and in the vicinity of the nearby "poor" cluster known as MKW 11. </p><br>
+
+<center>
+<table bordercolor=#008000 cellpadding=3 border=3>
+<tr><td>
+<b><font color=#ccof14> In a departure from previous Scavenger Hunts, each team will be
+assigned a separate project dealing with the use of ALFALFA data to learn about galaxies in the local universe.
+We will then reassemble Wednesday evening when team will have 10 minutes to present their results.
+</font> </b></td></tr></table></center></p><br><br>
+
+<h3><font color=#ccof14> Team B:</font> &nbsp &nbsp &nbsp <font color=#008000>A quick look at the Virgo Cluster</h3></font></p><br>
+
+The Virgo Cluster is the nearest cluster of galaxies, at a distance of 16.7 Mpc. A large portion of the cluster
+is included in the region covered by &alpha;.40. Here, your task is to consider a few
+issues associated with observing Virgo.</p>
+
+
+<b>3.B.1 &nbsp &nbsp The Virgo cluster</b></p><br> 
+
+Use this <a href="http://ned.ipac.caltech.edu/cgi-bin/nph-objsearch?objname=VirgoCluster&extend=no&hconst=73&omegam=0.27&omegav=0.73&corr_z=1&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=RA+or+Longitude&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES#ObjNo1">link</a> to the NASA
+Extragalatic Database (NED)
+to find out some of the basic information about the Virgo that you will need. Record here
+the parameters given in NED.</p>
+
+<table border=4 cellpadding=5>
+<tr><td> R.A.(J2000) </td><td width=500> &nbsp </td></tr>
+<tr><td> Dec.(J2000) </td><td> &nbsp </td></tr>
+<tr><td> Recessional velocity in heliocentric rest frame </td><td> &nbsp </td></tr>
+<tr><td> Recessional velocity in CMB rest frame </td><td> &nbsp </td></tr>
+<tr><td> Distance to the cluster (quoted in NED)</td><td> &nbsp </td></tr>
+<tr><td> Galactic latitude </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in V-band </td><td> &nbsp </td></tr>
+<tr><td> Galactic extinction in I-band </td><td> &nbsp </td></tr>
+</table></p><br>
+
+Why do you think the distance given in NED is different from 16.7 Mpc, the commonly accepted value?</p><br>
+
+Because the Virgo cluster is so close to us, it extends over a very large region of the sky and its galaxies can be large
+in angular extent. To review the structure of the cluster, we can use the "Arecibo General Catalog", the private database
+of galaxies maintained by Martha and Riccardo at Cornell which is made available to members of the ALFALFA team with
+the usual caveat that you get what you pay for: be sure to understand the limitations of the AGC and read about its
+<a href="http://caborojo.astro.cornell.edu/alfalfalog/idldocs/agccontract.php">conditions of use</a>.</p>
+
+We have used the AGC to create two CSV files for use in this activity: 
+<ul>
+<li> <a href="files/virgo7.5deg.voptlt3000.csv">galaxies with optical heliocentric velocities < 3000 km/s</a> within 7.5 degrees of the center of Virgo
+<li> <a href="files/virgo7.5deg.a40lt3000.csv">galaxies in &alpha;.40 with HI 21cm line heliocentric velocities < 3000 km/s</a> within 7.5 degrees of the center of Virgo
+</ul>
+The files contain the galaxy AGC number, RA, Dec, Vhelio and the projected separation of the galaxy from the cluster center in arcminutes.
+You can use these files to explore the structure of the cluster.</p><br>
+
+
+<b>3.B.2 &nbsp &nbsp The structure of the Virgo cluster on the sky</b></p><br> 
+
+<table>
+<tr><td>
+An important compilation of galaxies in the Virgo cluster was presented by 
+<a href="http://articles.adsabs.harvard.edu/full/1985AJ.....90.1681B">Binggeli, Sandage and Tammann</a>
+1986, Astron. J. 90, 1681. Their Virgo Cluster Catalog consists of 2096 galaxies which they believed,
+based on examination of high quality photographic plates, are likely cluster members.
+Note that their investigation of the cluster
+was based on many fewer redshifts than are available today. 
+To the right is the sky distribution of possible cluster
+members as appeared in their paper. (If you click on the image, a larger
+version will be displayed.)</p>
+
+Using the Virgo AGC/&alpha;.40 data files (linked above), plot (on the same graph)
+the sky distribution of galaxies in the (a)
+optical sample and (b) the &alpha;.40 galaxies. 
+Be sure to plot the distribution so that east is to the left and west is the right; why do we do that?
+Consider the result: what do you notice and how can you explain what you see? How does your diagram
+compare to that seen in Fig 2. of Binggeli+ (1986)?</p>
+
+Clusters of galaxies have a typical radius of 2 Mpc. At the distance of 16.7 Mpc, what
+is the angular extent of 2 Mpc?</p>
+
+</td><td>
+<a href="gifs/vccsky.gif">
+<img src="gifs/vccsky.gif" height=300></a></p>
+</td></tr></table><br>
+
+
+<!--
+<b><font color=#cc0f14>
+<img src="files/Virgo7.5deg.vlt3000.opt+a40.gif" height=300></p>
+
+At 16.7 Mpc, 2 Mpc corresponds to about 420 arcmin, so that 7.5 degrees is about 2.2 Mpc.</p>
+
+The &alpha;.40 galaxies avoid the center of the cluster. The &alpha;.40 sample is limited
+to the +15deg strip of grids so it stops at +16 degrees.
+</font></b></p>
+-->
+
+<br>
+
+<b>3.B.3 &nbsp &nbsp The distribution of heliocentric velocity with projected separation</b></p><br> 
+
+Using the Virgo AGC/&alpha;.40 data files (linked above), plot (on the same graph)
+the variation in heliocentric velocities (y-axis) with the projected separation from the
+cluster center (x-axis) for the (a) optical sample and (b) the &alpha;.40 galaxies. 
+Consider the result: what do you notice and how can you explain what you see? </p>
+
+Why do some galaxies have <b>negative</b> heliocentric velocities?</p>
+
+Can you use Hubble's Law to derive distances in the Virgo region?</p>
+
+Rather than simply using Hubble's law to derive distances, we use a model of the
+local velocity field to estimate distances to galaxies, and the &alpha;.40
+catalog includes the distance assumed in the derivation of HI masses. What is a 
+"peculiar velocity"? What is a "flow model"? What is the "triple valued region"
+around the Virgo cluster? How does
+our distance calculation routine work, that is, how do we assign the distance
+to a galaxy? &nbsp <i>Hint: Look at the description of the entry for distance in
+the &alpha;.40 catalog presented in the <a href="http://adsabs.harvard.edu/abs/2011AJ....142..170H">
+Haynes+<a/> (2011) paper</i>.</p>
+
+In what favorite ALFALFA team movie does the physicist hero say:
+   "You know, there's such a very thin dividing line between 'inspiration' and 'obsession',
+   that sometimes it's very hard to decide which side we're really on!"?</p>
+
+<!--
+<b><font color=#cc0f14>
+<img src="files/Virgo7.5deg.vlt3000.opt+a40.sepvsvhel.gif" height=300></p>
+The &alpha;.40 galaxies avoid the center of the cluster. There is some tendency for 
+galaxies further from the center to have higher velocities; the negative velocity
+galaxies are found only in the cluster center.
+</font></b></p>
+-->
+
+<br>
+
+<b>3.B.4 &nbsp &nbsp The velocity distribution of galaxies in the Virgo cluster</b></p><br> 
+
+Using the Virgo AGC/&alpha;.40 data files (linked above), plot (on the same graph)
+the distribution of heliocentric velocities (using the histogram option)
+for the (a) optical sample and (b) the &alpha;.40 galaxies. 
+Consider the result: what do you notice and how can you explain what you see? 
+</p>
+
+Take a careful look at the histogram for the optical sample. 
+Why do there seem to be more galaxies at higher velocities than 
+at lower ones, i.e. the histogram is skewed and not a perfectly symmetric
+Gaussian function?</p>
+
+What character in a famous film said: "Well, the universe is everything, 
+         and if it's expanding, some day it will break apart and that will be 
+         the end of everything."</p><br>
+
+<!--
+<b><font color=#cc0f14>
+<img src="files/Virgo7.5deg.vlt3000.opt+a40.histovhel.gif" height=200></p>
+
+<img src="files/Virgo7.5deg.vlt3000.optonly.histovhel.gif" height=200></p>
+
+The &alpha;.40 galaxies are much more broadly distributed in velocity while
+the optical sample shows a peak at the cluster systemic velocity. The
+non-Gaussian shape arises from the fact that we are looking along a filament
+and the volume in the background of Virgo is larger than that in the foreground.
+</font></b></p>
+-->
+<br>
+
+<br>
+<b>3.B.5 &nbsp &nbsp The properties of local &alpha;.40 galaxies in Virgo and outside Virgo</b></p><br> 
+
+Let's take a look at the HI properties of galaxies detected by ALFALFA in the Virgo cluster in
+comparison with ones at similar distances but outside Virgo. Here are two useful files:
+<ul>
+<li> <a href="files/Virgo7.5deg.opthi.csv">&alpha;.40 within 7.5 degrees of Virgo</a> and V_cmb < 3200 km/s and with SDSS photometry
+<li> <a href="files/notVirgo7.5deg.opthi.csv">&alpha;.40 beyond 7.5 degrees of Virgo</a> and V_cmb < 3200 km/s and with SDSS photometry
+</ul></p>
+
+In both files, we have calculated the optical luminosity for each galaxy (given in logarithmic units
+as logL) and the "gas fraction" (gas2L = log MH - log L). Note that we do this for both the V-band
+and the i-band. What are they? In what ways might we expect them to give different results? Why?</p>
+
+Using these files, plot (on the same graph)
+the optical luminosity (x axis, in log units) versus the HI mass (y axis, in log units)
+for (a) the Virgo &alpha;.40 galaxies and (a) the non-Virgo ones.</p>
+
+Additionally, examine the histograms of the gas fraction parameter.</p>
+
+Do this for both filter bands you are given, V and i.</p>
+
+Consider the results: what do you notice and how can you explain what you see? Feel free to make 
+any other plots that might be interesting/useful.</p>
+</p>
+
+<!--
+<b><font color=#cc0f14>
+<img src="files/LumvslogHI_Virgoonly.gif" height=200></p>
+
+<img src="files/LumvslogHI_VirgononVirgo.gif" height=200></p>
+
+</font></b></p>
+-->
+<br>
+
+<!--
+<b>3.B.6 &nbsp &nbsp The mass of the Virgo cluster</b></p><br> 
+
+Using the information you have and making reasonable assumptions, estimate
+the mass of the Virgo cluster.</p><br>
+-->
+
+<br>
+<b>3.B.6 &nbsp &nbsp Make a cool image of NGC 4438 using Montage</b></p>
+<i>Note: this may take a little while to run, because system use at IPAC is
+unpredictable. We suggest you not wait until the last minute to start it.
+</i></p>
+
+<i>Note also: Someone in your group will have already be registered
+to use this facility, or else one of you will have to setup up
+an account; find someone in your group to be the registered user and
+then proceed. </i></p>
+
+<b> Montage</b> is a Virtual Observatory tool that allows you to make 
+images up to 1 degree in size from selected public databases via a 
+<a href="http://hachi.ipac.caltech.edu:8080/montage/">
+web-based interface</a>. Read about the full capabilities of the service
+<a href="http://montage.ipac.caltech.edu/">here</a>.
+</p>
+
+Use the <b> Montage</b> <a href="http://hachi.ipac.caltech.edu:8080/montage/"> web service</a>
+to create a 0.5 degree image of the SDSS r-band data for NGC 4438, near the center of the
+Virgo cluster. How many original
+SDSS images go into making up this mosaic? How long does it take for the job to run (seconds,
+minutes, hours, days)?
+What kinds of output are produced? Figure out a way to show us the "result page".</p>
+
+<b>Note</b>: during UAT13, we are having some trouble access the Montage Web service.
+If that is the case, you can download the resulting FITS file
+<a href="montagefits/N4438_rband.mosaic.fits">here</a>,
+keeping in mind that it is a fairly large file (155 MB).</p>
+
+
+<i>If someone in your group has access to 
+<a href="http://hea-www.harvard.edu/RD/ds9/site/Home.html"><b>ds9</b></a>, you can examine the FITS image.</i></p>
+
+
+<!--
+<b> <font color=#cc0f14>
+When I am running this (Wed am 11:10), I just input NGC 4438 (not coords) into the
+object/coordinate field. There were 12 images to be reprojected; background correction
+analysis done on ?? overlaps; then background correcting 12 images; then
+coadding 12 images for the final mosaic; then creating presentation
+It took only 258 seconds to run!
+If you "save as", it creates an html file that includes a subdirectory with
+the "mosaic.jpg" image:</p>
+
+<img src="files/N4438_montagermosaic.jpg" height=300></p>
+
+</font></b>
+-->
+</p>
+
+<br><br>
+<hr>
+
+<h3><font color=#cc0f14> Assignments given to the other teams:</h3>
+<ul>
+<li> <b><font color=#ccof14> Team A: &nbsp &nbsp &nbsp </b></font>
+<a href="hunt3_teamA_13.htm">The population of galaxies detected by ALFALFA</a></p>
+
+<li> <b><font color=#ccof14> Team C: &nbsp &nbsp &nbsp</b></font>
+<a href="hunt3_teamC_13.htm">Large scale structure around the poor cluster MKW 11</a></p>
+
+<li> <b><font color=#ccof14> Team D: &nbsp &nbsp &nbsp </b></font>
+<a href="hunt3_teamD_13.htm">The galaxies in the MKW 11 cluster</a></p>
+</ul>
+
+<br>
+<hr>
+<font color=#cc0f14>
+This page created by and for the members of the
+<a href="http://egg.astro.cornell.edu/alfalfa">ALFALFA</a> 
+Survey Undergraduate team</font></address>
+</p>
+<!-- hhmts start -->
+<font color=#008000><i>Last modified: Thu Jan 10 08:33:44 EST 2013
+</i> by Martha </font>
+<!-- hhmts end -->
+</body>

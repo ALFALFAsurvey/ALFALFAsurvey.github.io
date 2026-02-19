@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <title> The Arecibo Legacy Fast ALFA Survey</title>
+</head>
+<center><p><img src="../alfalfabanner.jpg" border="0" alt="Arecibo Observatory">
+<hr align="center" width="600">
+</center>
+
+<h3><font color="#cc0f14">The complications of precession for ALFALFA
+</font></h3>
+
+Here's a quick calculation that might help to demonstrate why
+it is necessary to track in J2000 instead of leaving the telescope
+completely fixed.</p>
+
+Approximate values for precessed coordinates are given by the equations:<br>
+<center> RA = RA(J2000) + (3.075 + 1.336 * sin(RA) * tan(Dec)) * T<br>
+	Dec = Dec(J2000) + 20.04 * cos(RA) * T</center>
+where T is the time since the time from January 1, 2000 in fractional 
+years, and the offsets in RA and Dec are in seconds of time and 
+arcseconds, respectively. Because we are drifting,
+we don't care about the precession in RA. We are, of course, 
+interested in delta(Dec) over periods of hours (during a single
+observing session) and from session to session, possibly spanning
+a period of several years. Note that it is dependent on both the
+RA and on the observing epoch. Tracks in Dec(Current Epoch) will not 
+be parallel to tracks in Dec (J2000) because of the RA term.</p>
+
+<font color=#cc0f14><i>See for yourself the convenient 
+<a href="http://nedwww.ipac.caltech.edu/forms/calculator.html">
+Coordinate Transformation Calculator</a> at the NASA Extragalactic 
+Database <a href="http://nedwww.ipac.caltech.edu/">NED</a></i></font></p>
+
+For the spring observing time, we want to map the whole AO sky between
+07h30 and 16h30 RA(J2000). Sometimes we might get assigned the full
+block, but more likely, we will end up with many partial blocks which
+then have to be stitched together. Also observations will be conducted 
+over a 4-5 year period.</p>
+
+Let's say that at epoch J2005.0, we are assigned a block of time that
+covers part of this RA range. We can consider two examples (a) a 5
+hour block and (2) one that covers the whole 9 hours. The Fixed Az
+mode takes the input Az (0 or 180d for transit observations), and uses 
+the input Dec(J2000) to calculate an associated ZA. The drift begins
+when a source of input RA, Dec. (J2000) crosses Beam 0 at that Az,ZA.
+Currently the telescope then remains at that fixed Az, ZA until commanded
+otherwise. For ALFALFA, the data taking is continuous (virtually 100%
+efficient) for many loops of scans of 600 sec 
+each for the entire observing session.</p>
+
+Consider first a drift lasting 5 hours = 18K secs. The track starts at
+a commanded Az, Dec, and begins taking data when the commanded RA
+crosses Beam 0. In this example:<br>
+-- Track starts at 073000.0 +100000 (J2000) = 073016.5 +095921 (J2005.0)<br>
+5 hours later, data taking stops:<br>
+-- Track ends at   123016.5 +095921 (J2005.0) = 123001.3 +100100 (J2000)<br>
+   The ending Dec. is 1' off the starting one in J2000 coords.</p>
+
+[Note: We are ignored the pointing model (which accounts for known
+offsets of the telescope point due to gravity, etc) but they can be
+accounted for and are small.]</p>
+
+On the other hand, if we actually observe the full track, then the<br>
+-- Track ends at   163016.5 +095921 (J2005) == 1630022 +095959(J2000)<br>
+  We are lucky to end up at the same place!
+  But the track has not been parallel in Dec (J2000).</p>
+
+ALFALFA will take 6-7 years to complete, and it may be that we end
+up with gaps in the map that need to be filled in at a later time.
+Now consider that we come back at J2008.0 to finish the second part
+of the scan. Unless we keep track of exactly where we left off, we 
+might simply plan to pick up where we "left off" in J2000 coords.<br>
+-- Track starts at 123000.0 +100000 (J2000) = 123024.3 +095721 (J2008.0)<br>
+and, at the end of that drift series lasting 4 hours = 14.4K sec we have<br>
+-- Track stops at 163024.0 +095721 (J2008.0) = 163001.1 +095822 (J2000)<br>
+  We are off where we want to be in Dec (J2000) by 1'38".</p>
+
+Of course, we could have kept track of where we left off, and thus
+positioned the telescope at the start of the scan at <br>
+-- Track starts at 123001.3 +100100 (J2000) = 123025.6 +095821 (J2008.0)<br>
+4 hours later, we stop at<br>
+-- Track ends at 163025.6 +095821 (J2008.0) = 1630027 +095922 (J2000)<br>
+  We are still off by 38".</p>
+
+Hence, unless we apply the small correction which takes us from "truly"
+fixed azimuth in current epoch coordinates back to J2000, we end up with
+a mess. Note that even 7 years makes a noticeable difference.</p>
+
+It is for this reason that Mikael Lerner has introduced into CIMA 
+the option of the "almost" fixed azimuth drift. (Thanks, Mikael!)</p>
+
+<br>
+Back to the <a href="http://egg.astro.cornell.edu/alfalfa/ugrad/ALFAforalfalfa.php">ALFA for ALFALFA</a> page</p>
+<br>
+<hr align="center" width="800">
+<br>
+<i>Last modified:   Wed Jan  2 11:31:10 EST 2008 by martha</i>
+
+
+</body>
+
+</html>
