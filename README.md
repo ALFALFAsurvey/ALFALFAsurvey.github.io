@@ -8,3 +8,59 @@ The purpose of the website is to:
 Note that github limits sites to 1GB, so large files will be held separately on a google drive and linked from this site.
 
 If you have ideas for updating the site, please create an issue/ branch, and then merge in your updates with a pull request when ready.
+
+---
+
+## Archival Site (`rwebhtml/`)
+
+The `rwebhtml/` folder contains a static HTML archive of the original ALFALFA rweb PHP site, converted for hosting on GitHub Pages. Large data files (PDFs, FITS, CSVs, etc.) are stored on Google Drive and linked directly from the HTML pages; only small files (HTML, CSS, text, images under 100 KB) live in this repository.
+
+### Conversion workflow
+
+The archive was built in two phases:
+
+**Phase 1 — `convert_alfalfa.py`**
+
+Converts the original PHP source tree (from a local copy of the rweb archive) into a static HTML site:
+- PHP files that include `bannermenu.php` (in any form — bare, relative `../`, or absolute URL) have the banner replaced with inlined HTML and are renamed `.html`
+- PHP files with no PHP content are renamed `.html` as-is
+- All other files are copied unchanged
+- A second pass rewrites internal `.php` links to `.html`
+
+Run with `DRY_RUN = True` (the default) to preview actions, then set `DRY_RUN = False` to write files.
+
+**Phase 2 — `gdrive_sort.py`**
+
+Trims `rwebhtml/` to fit within GitHub's size limits and rewrites links to point to Google Drive:
+- Files with large/data extensions (`.pdf`, `.fits`, `.csv`, `.ppt`, etc.) or over 100 KB are deleted from `rwebhtml/` — they stay on Google Drive
+- Small files (HTML, CSS, small text/images) stay in `rwebhtml/` and are removed from Drive
+- Junk files (`.DS_Store`, editor backups `*~`) are deleted from both places
+- Links in all HTML files are rewritten to point to the Google Drive sharing URLs
+- Progress is saved incrementally to `drive_url_map.json` so the script is safe to interrupt and resume
+
+Again, run with `DRY_RUN = True` to preview, then `DRY_RUN = False` to apply.
+
+---
+
+## Setting up the Google Drive API
+
+To run `gdrive_sort.py` you need to enable the Google Drive API and obtain OAuth credentials.
+
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/) and create a new project (the project used here is **ALFALFAwebsite**; direct link: https://console.cloud.google.com/apis/dashboard?project=alfalfawebsite).
+2. Under **APIs & Services → Library**, search for **Google Drive API** and enable it.
+3. Under **APIs & Services → OAuth consent screen**, configure the consent screen (choose **External**) and follow the prompts.
+4. Under **APIs & Services → Credentials**, click **+ Create Credentials → OAuth client ID**. Set the application type to **Desktop App** and download the resulting JSON file.
+5. Save the downloaded JSON as the filename referenced by `CREDS_FILE` in `gdrive_sort.py` (do not commit this file — it contains your client secret).
+6. Install the required Python packages:
+
+   ```bash
+   pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+   ```
+
+   Or with conda:
+
+   ```bash
+   conda install -c conda-forge google-api-python-client google-auth-httplib2 google-auth-oauthlib
+   ```
+
+7. On first run, a browser window will open for OAuth authorization. After completing it, a `token.json` file is saved locally for future runs (do not commit this file either).
