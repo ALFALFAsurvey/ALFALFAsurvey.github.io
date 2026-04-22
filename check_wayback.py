@@ -44,7 +44,10 @@ SCAN_DIRS  = ("aweb", "rwebhtml")   # sub-dirs to scan (plus root *.html)
 
 # ─── URL collection ──────────────────────────────────────────────────────────
 
-URL_RE     = re.compile(r'https?://[^\s"\'<>]+', re.IGNORECASE)
+ATTR_URL_RE = re.compile(                          # URLs in href/src/action attributes
+    r'(?:href|src|action)=["\'](\s*https?://[^"\']+)["\']', re.IGNORECASE
+)
+URL_RE     = re.compile(r'https?://[^\s"\'<>]+', re.IGNORECASE)   # URLs in text
 NAIC_RE    = re.compile(r'naic', re.IGNORECASE)
 A2010_RE   = re.compile(r'(?:~|%7[Ee])a2010', re.IGNORECASE)
 
@@ -86,8 +89,15 @@ def collect_urls_from_repo(naic_only: bool = False) -> list[str]:
 
 def _harvest(path: Path, urls: set[str], naic_only: bool) -> None:
     text = path.read_text(encoding="utf-8", errors="replace")
-    for m in URL_RE.finditer(text):
-        url = normalize(m.group(0))
+    # ATTR_URL_RE captures the full attribute value (may contain spaces in query params).
+    # URL_RE catches bare URLs in text content (stops at whitespace).
+    # Using both and deduplicating via the set is safe.
+    raw: list[str] = [m.group(1) for m in ATTR_URL_RE.finditer(text)]
+    raw += [m.group(0) for m in URL_RE.finditer(text)]
+    for raw_url in raw:
+        url = normalize(raw_url.strip())
+        if not url.startswith("http"):
+            continue
         if A2010_RE.search(url):
             continue
         if naic_only and not NAIC_RE.search(url):
