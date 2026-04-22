@@ -29,6 +29,21 @@ Converts the original PHP source tree (from a local copy of the rweb archive) in
 
 Run with `DRY_RUN = True` (the default) to preview actions, then set `DRY_RUN = False` to write files.
 
+**Phase 1b — `fix_cornell_links.py`**
+
+Rewrites all `http://egg.astro.cornell.edu/alfalfa/PATH` links in `rwebhtml/` and `aweb/` HTML files:
+- Path exists in `rwebhtml/` → relative link
+- Path found in `drive_url_map.json` → Google Drive URL
+- Neither → original Cornell URL left unchanged (logged)
+
+**Phase 1c — `fix_naic_links.py`**
+
+Rewrites all `http://www.naic.edu/~a2010/PATH` (and `%7Ea2010` URL-encoded variant) links in `aweb/` and `rwebhtml/` HTML files:
+- Path exists in `aweb/` → relative link (computed per source file, works across directories)
+- Path not found → original NAIC URL left unchanged (logged)
+
+Other NAIC URLs (e.g. `alfa.naic.edu`, `~cima`, `~phil`) are not touched by this script.
+
 **Phase 2 — `gdrive_sort.py`**
 
 Trims `rwebhtml/` to fit within GitHub's size limits and rewrites links to point to Google Drive:
