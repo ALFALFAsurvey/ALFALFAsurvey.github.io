@@ -1,0 +1,79 @@
+url	available	snapshot_url	timestamp
+http://www.naic.edu	YES	https://web.archive.org/web/19961111202245/http://naic.edu:80/	19961111202245
+http://alfa.naic.edu	YES	https://web.archive.org/web/20020604043334/http://alfa.naic.edu:80/	20020604043334
+http://www.naic.edu/alfa	YES	https://web.archive.org/web/20060615151323/http://www.naic.edu:80/alfa/	20060615151323
+http://www.naic.edu/~ages	YES	http://web.archive.org/web/20220629111347/http://www.naic.edu/~ages/	20220629111347
+http://www.naic.edu/~cima	YES	http://web.archive.org/web/20230421001019/http://www2.naic.edu/~cima/	20230421001019
+http://www.naic.edu/~phil	YES	https://web.archive.org/web/20010223212823/http://www.naic.edu:80/~phil/	20010223212823
+http://alfa.naic.edu/data	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~auds	YES	http://web.archive.org/web/20080820052057/http://www.naic.edu/~auds/	20080820052057
+http://www2.naic.edu/~cima	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~astro	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://alfa.naic.edu/memos	YES	http://web.archive.org/web/20060207204205/http://alfa.naic.edu:80/memos/	20060207204205
+http://www.naic.edu/%7Ecima	YES	https://web.archive.org/web/20050206065401/http://www.naic.edu:80/~cima/	20050206065401
+http://www.naic.edu/~alfalfa	YES	https://web.archive.org/web/20090830225627/http://www.naic.edu:80/~alfalfa/	20090830225627
+http://www.naic.edu/aomenu.htm	YES	https://web.archive.org/web/19991007081944/http://www.naic.edu:80/aomenu.htm	19991007081944
+http://www.naic.edu/ao/landing	YES	http://web.archive.org/web/20230807151456/https://www.naic.edu/ao/landing	20230807151456
+http://www.naic.edu/alfa/ealfa	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://alfa.naic.edu/memos/02-07.pdf	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~phil/gendoc.html	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~phil/satdoc.html	YES	https://web.archive.org/web/20090209000234/http://www.naic.edu:80/~phil/satdoc.html	20090209000234
+http://www.naic.edu/~phil/pntdoc.html	YES	http://web.archive.org/web/20211019064156/http://www.naic.edu/~phil/pntdoc.html	20211019064156
+http://www.naic.edu/~phil/cordoc.html	YES	http://web.archive.org/web/20211019061228/http://www.naic.edu/~phil/cordoc.html	20211019061228
+http://www.naic.edu/~phil/wasdoc.html	YES	http://web.archive.org/web/20211019045704/http://www.naic.edu/~phil/wasdoc.html	20211019045704
+http://www.naic.edu/~astro/hiconference	SKIP		
+http://alfa.naic.edu/data/fits_header.h	SKIP		
+http://www.naic.edu/~astro/remote.shtml	SKIP		
+http://www.naic.edu/~nolan/wappfits.html	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/%7Ephil/cormapdoc.html	YES	https://web.archive.org/web/20010409061733/http://www.naic.edu:80/~phil/cormapdoc.html	20010409061733
+http://www.naic.edu/~phil/rfi/rfilist.html	YES	https://web.archive.org/web/20030722192524/http://www.naic.edu:80/~phil/rfi/rfilist.html	20030722192524
+http://www.naic.edu/~alfalfa/ualfalfa.html	YES	http://web.archive.org/web/20110805172014/http://www.naic.edu/~alfalfa/ualfalfa.html	20110805172014
+http://www.naic.edu/~phil/mbeam/mbeam.html	YES	https://web.archive.org/web/20010409192700/http://www.naic.edu:80/~phil/mbeam/mbeam.html	20010409192700
+http://alfa.naic.edu/data/wappfits_doc.html	SKIP		
+http://www.naic.edu/~cima/cimafits_log.html	YES	https://web.archive.org/web/20050206070010/http://www.naic.edu:80/~cima/cimafits_log.html	20050206070010
+http://www.naic.edu/~alfalfa/ualfalfa10.html	YES	http://web.archive.org/web/20220629184236/http://www.naic.edu/~alfalfa/ualfalfa10.html	20220629184236
+http://www.naic.edu/~alfalfa/ualfalfa11.html	YES	https://web.archive.org/web/20220629181813/http://www.naic.edu/~alfalfa/ualfalfa11.html	20220629181813
+http://www.naic.edu/%7Ephil/mbeam/mbeam.html	YES	https://web.archive.org/web/20010409192700/http://www.naic.edu:80/~phil/mbeam/mbeam.html	20010409192700
+http://www.naic.edu/~astro/guide/node14.html	SKIP		
+http://www.naic.edu/science/proposals_set.htm	YES	http://web.archive.org/web/20230626064647/http://www.naic.edu/science/proposals_set.htm	20230626064647
+http://www.naic.edu/~cima/cima_users_log.html	YES	https://web.archive.org/web/20050219123307/http://www.naic.edu:80/~cima/cima_users_log.html	20050219123307
+http://www.naic.edu/~operator/oplogs/alfatemps	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~bcatinel/alfalfa_jun05.htm	NO		
+http://www.naic.edu/~rfiuser/smarg-coordPS.html	YES	http://web.archive.org/web/20201201220233/http://www.naic.edu/~rfiuser/smarg-coordPS.html	20201201220233
+http://www.naic.edu/~phil/stokes/stokescal.html	YES	http://web.archive.org/web/20200223081242/http://www.naic.edu:80/~phil/stokes/stokescal.html	20200223081242
+http://www.naic.edu/~phil/notes/idlspcproc.html	YES	http://web.archive.org/web/20220629200030/http://www.naic.edu/~phil/notes/idlspcproc.html	20220629200030
+http://alfa.naic.edu/extragal/alfa_extragal.html	YES	http://web.archive.org/web/20060503031106/http://alfa.naic.edu:80/extragal/alfa_extragal.html	20060503031106
+http://www.naic.edu/~auds/doc/driftchasemap.html	YES	https://web.archive.org/web/20041123203110/http://www2.naic.edu:80/~auds/doc/driftchasemap.html	20041123203110
+http://www.naic.edu/%7Erfiuser/smarg-coordPS.html	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/vscience/schedule/scedfra2.htm	YES	https://web.archive.org/web/19991013063627/http://naic.edu:80/vscience/schedule/scedfra2.htm	19991013063627
+http://www.naic.edu/~phil/mbeam/mbeamrotation.html	YES	http://web.archive.org/web/20211016045548/http://www2.naic.edu/~phil/mbeam/mbeamrotation.html	20211016045548
+http://www.naic.edu/vscience/schedule/Mar_26_05.gif	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/vscience/schedule/Feb_26_05.gif	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~phil/sysperf/sysperf.html#alfa	YES	https://web.archive.org/web/20040703233454/http://www.naic.edu:80/%7Ephil/sysperf/sysperf.html	20040703233454
+http://www.naic.edu/vscience/schedule/Mar_12_05.gif	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/vscience/schedule/Feb_12_05.gif	NO		
+http://www.naic.edu/vscience/schedule/Jan_29_05.gif	NO		
+http://www.naic.edu/vscience/schedule/Apr_09_05.gif	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/vscience/schedule/Jan_15_05.gif	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~phil/software/hdrs/fitspos.html	YES	http://web.archive.org/web/20200219020536/http://www.naic.edu:80/~phil/software/hdrs/fitspos.html	20200219020536
+http://www.naic.edu/%7Ephil/hardware/monitordoc.html	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Max retries exceeded with url: /cdx/search/cdx?url=http%3A%2F%2Fwww.naic.edu%2F%257Ephil%2Fhardware%2Fmonitordoc.html&output=json&limit=1&fl=timestamp%2Coriginal&filter=statuscode%3A200 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103ea6ad0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+http://www.naic.edu/~phil/mbeam/refrigfail_apr06.html	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~astro/RXstatus/Lwide/Lwide.shtml	SKIP		
+http://www.naic.edu/public/about/photos/hires/ao024.jpg	YES	http://web.archive.org/web/20220611014703/http://www.naic.edu/public/about/photos/hires/ao024.jpg	20220611014703
+http://www.naic.edu/public/about/photos/hires/ao005.jpg	YES	http://web.archive.org/web/20220611014729/http://www.naic.edu/public/about/photos/hires/ao005.jpg	20220611014729
+http://www.naic.edu/public/about/photos/hires/ao014.jpg	YES	http://web.archive.org/web/20220611014633/http://www.naic.edu/public/about/photos/hires/ao014.jpg	20220611014633
+http://www.naic.edu/public/about/photos/hires/ao002.jpg	YES	http://web.archive.org/web/20221017115815/http://www.naic.edu/public/about/photos/hires/ao002.jpg	20221017115815
+http://www.naic.edu/public/about/photos/hires/ao021.jpg	YES	http://web.archive.org/web/20220611014844/http://www.naic.edu/public/about/photos/hires/ao021.jpg	20220611014844
+http://www.naic.edu/public/about/photos/hires/ao016.jpg	YES	https://web.archive.org/web/20060106115725/http://www.naic.edu:80/public/about/photos/hires/ao016.jpg	20060106115725
+http://www.naic.edu/alfa/gen_info/alfa_pics/p4214447.jpg	YES	http://web.archive.org/web/20220618115608/http://www.naic.edu/alfa/gen_info/alfa_pics/p4214447.jpg	20220618115608
+http://www.naic.edu/alfa/gen_info/alfa_pics/p3162940.jpg	YES	http://web.archive.org/web/20220618115602/http://www.naic.edu/alfa/gen_info/alfa_pics/p3162940.jpg	20220618115602
+http://alfa.naic.edu/hardware/backend/wapp_fact_sheet.html	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~phil/mbeam/calibration/29nov04calib.html	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Read timed out. (read timeout=10)
+http://www.naic.edu/~astro/general_info/correlator/correlat.htm	SKIP		
+http://www.naic.edu/~phil/mbeam/problems/bm1a_noisy_01nov06.html	YES	http://web.archive.org/web/20100528073201/http://www.naic.edu/%7Ephil/mbeam/problems/bm1a_noisy_01nov06.html	20100528073201
+http://www.naic.edu/~operator/oplogs/alfatemps/ReceiverStatus.jpg	SKIP		
+http://www.naic.edu/~phil/software/datataking/aoscramnet.html#25nov14	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Max retries exceeded with url: /cdx/search/cdx?url=http%3A%2F%2Fwww.naic.edu%2F~phil%2Fsoftware%2Fdatataking%2Faoscramnet.html%2325nov14%2F&output=json&limit=1&fl=timestamp%2Coriginal&filter=statuscode%3A200 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103e926d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+http://alfa.naic.edu/hardware/backend/backend-requirements-matrix.html	YES	http://web.archive.org/web/20060207204150/http://alfa.naic.edu:80/hardware/backend/backend-requirements-matrix.html	20060207204150
+http://www.naic.edu/~phil/hardware/vertex/encfailoct06/az1encfail_oct06.html	YES	http://web.archive.org/web/20211019054927/http://www.naic.edu/~phil/hardware/vertex/encfailoct06/az1encfail_oct06.html	20211019054927
+http://www.naic.edu/~phil/software/datataking/cima/fixedazdrift_attransit.html	NO		ERROR: HTTPConnectionPool(host='web.archive.org', port=80): Max retries exceeded with url: /cdx/search/cdx?url=http%3A%2F%2Fwww.naic.edu%2F~phil%2Fsoftware%2Fdatataking%2Fcima%2Ffixedazdrift_attransit.html&output=json&limit=1&fl=timestamp%2Coriginal&filter=statuscode%3A200 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103ea5ed0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+http://www.hartwick.edu/academics/majors-and-minors/physical-and-life-sciences/physics/faculty-and-staff-physics/naic2012	YES	http://web.archive.org/web/20130904033247/http://www.hartwick.edu/academics/majors-and-minors/physical-and-life-sciences/physics/faculty-and-staff-physics/naic2012	20130904033247
