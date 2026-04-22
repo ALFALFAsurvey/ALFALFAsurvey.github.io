@@ -57,6 +57,7 @@ SKIP_DOMAINS = {
     "github.com", "arxiv.org", "ui.adsabs.harvard.edu",
     "drive.google.com", "fonts.googleapis.com", "fonts.gstatic.com",
     "alfalfasurvey.github.io",
+    "skyview.gsfc.nasa.gov",   # CGI queries take >12s; site is confirmed live
 }
 
 
@@ -188,6 +189,17 @@ def check_live(url: str) -> str:
             if attempt < LIVE_RETRIES - 1:
                 time.sleep(1)
                 continue
+            # Some servers (e.g. CGI scripts) silently drop HEAD and just hang.
+            # Try a streaming GET before giving up.
+            try:
+                rg = requests.get(
+                    url, timeout=LIVE_TIMEOUT, allow_redirects=True,
+                    headers=HEADERS, stream=True,
+                )
+                rg.close()
+                return "LIVE" if rg.status_code < 400 else "DEAD"
+            except Exception:
+                pass
             return "ERROR:timeout"
         except requests.exceptions.SSLError:
             # SSL error after redirect → domain was repurposed; mark whole domain dead
