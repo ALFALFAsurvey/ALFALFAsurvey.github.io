@@ -59,6 +59,18 @@ Again, run with `DRY_RUN = True` to preview, then `DRY_RUN = False` to apply.
 
 A small helper script for verifying Google Drive API connectivity and OAuth credentials before running `gdrive_sort.py`. Run it first if you're setting up credentials on a new machine.
 
+**Link checker — `check_wayback.py`**
+
+Scans all HTML files in the repo for external links, checks whether each is currently live, and for dead links checks the Wayback Machine for an archived snapshot. Output is saved to `wayback_results.tsv`.
+
+```
+python check_wayback.py                # scan all external URLs
+python check_wayback.py --naic-only   # NAIC URLs only
+python check_wayback.py --recheck-errors  # retry rows that previously errored (uses longer timeout)
+```
+
+The TSV has columns: `url | live | wayback | wayback_url | wayback_timestamp`. Runs can be interrupted and resumed — already-completed rows are skipped on re-run.
+
 ---
 
 ## Setting up the Google Drive API
