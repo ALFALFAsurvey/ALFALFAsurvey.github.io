@@ -89,23 +89,40 @@ def collect_urls_from_repo(naic_only: bool = False) -> list[str]:
 
 def _harvest(path: Path, urls: set[str], naic_only: bool) -> None:
     text = path.read_text(encoding="utf-8", errors="replace")
-    # ATTR_URL_RE captures the full attribute value (may contain spaces in query params).
-    # URL_RE catches bare URLs in text content (stops at whitespace).
-    # Using both and deduplicating via the set is safe.
-    raw: list[str] = [m.group(1) for m in ATTR_URL_RE.finditer(text)]
-    raw += [m.group(0) for m in URL_RE.finditer(text)]
-    for raw_url in raw:
-        url = normalize(raw_url.strip())
+
+    # Attribute URLs are authoritative: capture the full value (may contain literal
+    # spaces in query params like &dec=  2.15) and percent-encode those spaces.
+    attr_urls: list[str] = [
+        normalize(m.group(1).strip().replace(" ", "%20"))
+        for m in ATTR_URL_RE.finditer(text)
+    ]
+
+    # Text URLs stop at whitespace, so a URL like ...&dec=  2.15 becomes ...&dec=
+    # (truncated). We add text URLs only when they aren't a truncated prefix of an
+    # attribute URL already captured above.
+    attr_set = set(attr_urls)
+    text_urls: list[str] = [
+        normalize(m.group(0))
+        for m in URL_RE.finditer(text)
+        if not any(a.startswith(m.group(0).rstrip("/.,;:!?)")) for a in attr_set)
+    ]
+
+    def _add(url: str) -> None:
         if not url.startswith("http"):
-            continue
+            return
         if A2010_RE.search(url):
-            continue
+            return
         if naic_only and not NAIC_RE.search(url):
-            continue
+            return
         parsed = urlparse(url)
         if parsed.netloc in SKIP_DOMAINS:
-            continue
+            return
         urls.add(url)
+
+    for url in attr_urls:
+        _add(url)
+    for url in text_urls:
+        _add(url)
 
 
 # ─── Liveness check ──────────────────────────────────────────────────────────
