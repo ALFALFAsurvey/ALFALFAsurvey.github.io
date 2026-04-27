@@ -25,6 +25,8 @@ Flags (append after the positional arg, or before it for repo-scan mode):
                      domain is down and just want Wayback coverage)
   --recheck-errors   re-check rows from an existing TSV that have
                      live=ERROR or wayback=ERROR (reads wayback_results.tsv)
+  --recheck-wayback  re-query Wayback for all DEAD+YES rows to get the most
+                     recent snapshot (useful after fixing the CDX sort order)
 """
 
 import sys
@@ -37,8 +39,9 @@ import requests
 from pathlib import Path
 from urllib.parse import urlparse
 
-REPO_ROOT  = Path("/Users/lleisman/Luke/github/ALFALFAsurvey.github.io")
-OUTPUT     = REPO_ROOT / "wayback_results.tsv"
+REPO_ROOT        = Path("/Users/lleisman/Luke/github/ALFALFAsurvey.github.io")
+OUTPUT           = REPO_ROOT / "wayback_results.tsv"
+FALLBACKS_FILE   = REPO_ROOT / "wayback_fallbacks.txt"
 
 SCAN_DIRS  = ("aweb", "rwebhtml")   # sub-dirs to scan (plus root *.html)
 
@@ -263,7 +266,7 @@ def _strip_default_port(url: str) -> str:
 def _query_availability(url: str) -> tuple[bool, str, str]:
     _rate_limit()
     r = requests.get(
-        AVAILABILITY_API, params={"url": url},
+        AVAILABILITY_API, params={"url": url, "timestamp": "20260101000000"},
         timeout=_active_wayback_timeout, headers=HEADERS,
     )
     r.raise_for_status()
@@ -280,6 +283,7 @@ def _query_cdx(url: str) -> tuple[bool, str, str]:
         params={
             "url": url, "output": "json", "limit": 1,
             "fl": "timestamp,original", "filter": "statuscode:200",
+            "sort": "reverse",
         },
         timeout=_active_wayback_timeout, headers=HEADERS,
     )
@@ -388,14 +392,31 @@ def load_error_urls(tsv_path: Path) -> list[str]:
     ]
 
 
+def load_wayback_yes_urls(tsv_path: Path) -> tuple[list[str], dict[str, tuple[str, str]]]:
+    """Return (urls_to_recheck, fallback_map) for all DEAD+YES rows.
+
+    fallback_map: {url: (old_wayback_url, old_timestamp)} — used if the
+    re-query errors so we fall back to the previously found snapshot.
+    Deduplicates: if a URL appears multiple times (e.g. from a mid-run crash
+    followed by a retry), only the last occurrence is kept.
+    """
+    fallback: dict[str, tuple[str, str]] = {}
+    for url, live, wayback, wb_url, ts in _read_tsv(tsv_path):
+        if live == "DEAD" and wayback == "YES":
+            fallback[url] = (wb_url, ts)   # last occurrence wins
+    urls = list(fallback.keys())
+    return urls, fallback
+
+
 # ─── Main ────────────────────────────────────────────────────────────────────
 
 def main():
     args = sys.argv[1:]
 
-    naic_only       = "--naic-only" in args
-    skip_live_check = "--skip-live-check" in args
-    recheck_errors  = "--recheck-errors" in args
+    naic_only        = "--naic-only" in args
+    skip_live_check  = "--skip-live-check" in args
+    recheck_errors   = "--recheck-errors" in args
+    recheck_wayback  = "--recheck-wayback" in args
     args = [a for a in args if not a.startswith("--")]
 
     # ── Load prior results before opening the output file for writing ─────────
@@ -404,6 +425,9 @@ def main():
     prior: dict[str, tuple[str, str, str, str]] = {}
     if OUTPUT.exists():
         prior = load_prior_results(OUTPUT)
+
+    # Fallback map for --recheck-wayback: old snapshot to use if re-query errors
+    _wayback_fallback: dict[str, tuple[str, str]] = {}
 
     if recheck_errors:
         if not OUTPUT.exists():
@@ -414,6 +438,29 @@ def main():
         urls = load_error_urls(OUTPUT)
         print(f"Rechecking {len(urls)} URLs that previously errored "
               f"(Wayback timeout: {WAYBACK_TIMEOUT_RECHECK}s)...\n")
+    elif recheck_wayback:
+        if not OUTPUT.exists():
+            print(f"No existing {OUTPUT.name} to recheck.")
+            sys.exit(1)
+        all_yes_urls, _wayback_fallback = load_wayback_yes_urls(OUTPUT)
+        if FALLBACKS_FILE.exists():
+            fallback_set = {
+                l.strip() for l in FALLBACKS_FILE.read_text().splitlines()
+                if l.strip() and not l.startswith("#")
+            }
+            urls = [u for u in all_yes_urls if u in fallback_set]
+            print(f"Re-querying {len(urls)} fallback URLs from {FALLBACKS_FILE.name} "
+                  f"(will keep old snapshot on error)...\n")
+        else:
+            urls = all_yes_urls
+            print(f"Re-querying Wayback for {len(urls)} DEAD+YES URLs "
+                  f"(will keep old snapshot on error)...\n")
+        # Intentionally keep DEAD+YES rows in prior so they are written to the
+        # output file at the start of the run. If the script dies mid-run, those
+        # rows are still present in the TSV. Phase 2 appends updated rows for
+        # each URL as it completes; load_prior_results uses a dict so the last
+        # occurrence (the updated one) wins on the next read. After a successful
+        # run the TSV is deduplicated and rewritten atomically.
     elif not args:
         urls = collect_urls_from_repo(naic_only=naic_only)
         mode = "NAIC-only" if naic_only else "all external"
@@ -464,9 +511,12 @@ def main():
 
     if not n:
         print("Nothing new to check.")
-    elif skip_live_check:
+    elif recheck_wayback or skip_live_check:
         live_results = {u: "DEAD" for u in urls}
-        print(f"Skipping liveness check — treating all {n} as DEAD.\n")
+        if recheck_wayback:
+            print(f"Skipping liveness check — all {n} already known DEAD.\n")
+        else:
+            print(f"Skipping liveness check — treating all {n} as DEAD.\n")
     else:
         workers = min(LIVE_WORKERS, n)
         counts = {"done": 0, "live": 0, "dead": 0, "error": 0}
@@ -526,9 +576,22 @@ def main():
         return url, result
 
     wb_workers = min(WAYBACK_WORKERS, total_dead) if total_dead else 1
+    recheck_updated = 0
+    recheck_fallback_urls: list[str] = []
     print(f"\nPhase 2 — Wayback checks ({total_dead} dead URLs, {wb_workers} workers)...")
     with concurrent.futures.ThreadPoolExecutor(max_workers=wb_workers) as ex:
         for url, (wayback, snap_url, ts) in ex.map(_wb_check_one, dead_urls):
+            # On error during --recheck-wayback, fall back to the old snapshot
+            if wayback.startswith("ERROR") and url in _wayback_fallback:
+                old_url, old_ts = _wayback_fallback[url]
+                wayback, snap_url, ts = "YES", old_url, old_ts
+                recheck_fallback_urls.append(url)
+                with print_lock:
+                    print(f"\r  FALLBACK (error → kept old)  {url}")
+            if recheck_wayback and wayback == "YES":
+                old_url, _ = _wayback_fallback.get(url, (snap_url, ""))
+                if snap_url != old_url:
+                    recheck_updated += 1
             _write((url, "DEAD", wayback, snap_url, ts))
             with print_lock:
                 wb_counts["done"] += 1
@@ -550,18 +613,48 @@ def main():
 
     out.close()
 
+    # ── Dedup TSV after --recheck-wayback ─────────────────────────────────────
+    # Prior rows + Phase 2 appends may have left duplicate entries (each DEAD+YES
+    # URL appears twice: once from prior, once from Phase 2). Rewrite atomically.
+    if recheck_wayback:
+        rows = _read_tsv(OUTPUT)
+        seen: dict[str, tuple[str, str, str, str]] = {}
+        for url, live, wayback, wb_url, ts in rows:
+            seen[url] = (live, wayback, wb_url, ts)  # last value wins
+        tmp = OUTPUT.with_suffix(".tmp")
+        with tmp.open("w", encoding="utf-8") as f:
+            f.write("url\tlive\twayback\twayback_url\twayback_timestamp\n")
+            for url, (live, wayback, wb_url, ts) in seen.items():
+                f.write(f"{url}\t{live}\t{wayback}\t{wb_url}\t{ts}\n")
+        tmp.replace(OUTPUT)
+
     # ── Summary ───────────────────────────────────────────────────────────────
     total_checked = len(prior) + n
-    total_errors  = tally["live_err"] + tally["wb_err"]
     tally["dead"] += len(dead_urls)
 
+    # Write/clear fallbacks file
+    if recheck_wayback:
+        if recheck_fallback_urls:
+            FALLBACKS_FILE.write_text("\n".join(recheck_fallback_urls) + "\n", encoding="utf-8")
+        elif FALLBACKS_FILE.exists():
+            FALLBACKS_FILE.unlink()
+
+    recheck_note  = (f"  ← {recheck_updated} snapshots updated to more recent"
+                     if recheck_wayback and recheck_updated else "")
+    wb_err_note   = "  ← rerun with --recheck-errors" if tally["wb_err"] else ""
+    live_err_note = "  ← rerun with --recheck-errors" if tally["live_err"] else ""
+    fallback_note = (f"  ← {len(recheck_fallback_urls)} fell back; rerun --recheck-wayback to retry"
+                     if recheck_wayback and recheck_fallback_urls else "")
+
     print(f"\n── Summary ──────────────────────────────────────────")
-    print(f"  URLs total   : {total_checked}  ({len(prior)} prior + {n} new)")
-    print(f"  Live         : {tally['live']}")
-    print(f"  Dead         : {tally['dead']}  (Wayback YES: {tally['wb_yes']}, NO: {tally['wb_no']})")
-    print(f"  Errors       : {total_errors}  (live:{tally['live_err']}  wayback:{tally['wb_err']})"
-          + ("  ← rerun with --recheck-errors" if total_errors else ""))
-    print(f"  Saved to     : {OUTPUT.relative_to(REPO_ROOT)}")
+    print(f"  URLs checked     : {total_checked}")
+    print(f"  ├─ Live          : {tally['live']}")
+    print(f"  ├─ Dead          : {tally['dead']}{recheck_note}")
+    print(f"  │    Wayback YES : {tally['wb_yes']}{fallback_note}")
+    print(f"  │    Wayback NO  : {tally['wb_no']}")
+    print(f"  │    Wayback err : {tally['wb_err']}{wb_err_note}")
+    print(f"  └─ Live chk err  : {tally['live_err']}  (wayback skipped){live_err_note}")
+    print(f"  Saved to         : {OUTPUT.relative_to(REPO_ROOT)}")
 
 
 if __name__ == "__main__":
