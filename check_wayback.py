@@ -560,15 +560,22 @@ def main():
     # ── Phase 2: parallel Wayback checks for dead URLs ───────────────────────
     dead_urls = [u for u in urls if live_results.get(u) == "DEAD"]
     total_dead = len(dead_urls)
-    wb_counts = {"done": 0, "yes": 0, "no": 0, "error": 0}
+    wb_counts = {"done": 0, "yes": 0, "no": 0, "error": 0, "fallback": 0}
 
     def _progress2() -> str:
         d = wb_counts["done"]
-        return (
+        base = (
             f"  [{d:{len(str(total_dead))}}/{total_dead}  "
             f"yes:{wb_counts['yes']}  no:{wb_counts['no']}  "
             f"error:{wb_counts['error']}]          "
         )
+        if recheck_wayback:
+            base = (
+                f"  [{d:{len(str(total_dead))}}/{total_dead}  "
+                f"yes:{wb_counts['yes']}  no:{wb_counts['no']}  "
+                f"error:{wb_counts['error']}  fallback:{wb_counts['fallback']}]          "
+            )
+        return base
 
     def _wb_check_one(url: str) -> tuple[str, tuple[str, str, str]]:
         result = check_wayback(url)
@@ -588,6 +595,7 @@ def main():
                 wayback, snap_url, ts = "YES", old_url, old_ts
                 recheck_fallback_urls.append(url)
                 with print_lock:
+                    wb_counts["fallback"] += 1
                     print(f"\r  FALLBACK [{error_msg}]  {url}")
             if recheck_wayback and wayback == "YES":
                 old_url, _ = _wayback_fallback.get(url, (snap_url, ""))
