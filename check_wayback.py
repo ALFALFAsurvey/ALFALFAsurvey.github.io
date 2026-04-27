@@ -584,10 +584,11 @@ def main():
             # On error during --recheck-wayback, fall back to the old snapshot
             if wayback.startswith("ERROR") and url in _wayback_fallback:
                 old_url, old_ts = _wayback_fallback[url]
+                error_msg = wayback
                 wayback, snap_url, ts = "YES", old_url, old_ts
                 recheck_fallback_urls.append(url)
                 with print_lock:
-                    print(f"\r  FALLBACK (error → kept old)  {url}")
+                    print(f"\r  FALLBACK [{error_msg}]  {url}")
             if recheck_wayback and wayback == "YES":
                 old_url, _ = _wayback_fallback.get(url, (snap_url, ""))
                 if snap_url != old_url:
