@@ -493,12 +493,16 @@ def main():
     out.flush()
 
     # summary counters (prior + new)
+    # In --recheck-wayback mode the rechecked URLs are already in prior (crash
+    # safety), so exclude them from the initial counts to avoid double-counting.
+    # Phase 2 will count them correctly when it processes them.
+    recheck_set = set(urls) if recheck_wayback else set()
     tally = {
-        "live": sum(1 for v in prior.values() if v[0] == "LIVE"),
-        "dead": sum(1 for v in prior.values() if v[0] == "DEAD"),
+        "live":    sum(1 for u, v in prior.items() if v[0] == "LIVE" and u not in recheck_set),
+        "dead":    sum(1 for u, v in prior.items() if v[0] == "DEAD" and u not in recheck_set),
         "live_err": 0,
-        "wb_yes":  sum(1 for v in prior.values() if v[1] == "YES"),
-        "wb_no":   sum(1 for v in prior.values() if v[1] == "NO"),
+        "wb_yes":  sum(1 for u, v in prior.items() if v[1] == "YES"  and u not in recheck_set),
+        "wb_no":   sum(1 for u, v in prior.items() if v[1] == "NO"   and u not in recheck_set),
         "wb_err":  0,
     }
 
@@ -638,7 +642,7 @@ def main():
         tmp.replace(OUTPUT)
 
     # ── Summary ───────────────────────────────────────────────────────────────
-    total_checked = len(prior) + n
+    total_checked = len(prior) if recheck_wayback else len(prior) + n
     tally["dead"] += len(dead_urls)
 
     # Write/clear fallbacks file
