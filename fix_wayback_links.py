@@ -132,6 +132,10 @@ def main():
 
         def replace_match(m: re.Match) -> str:
             old = m.group(0)
+            # Skip if this URL is already embedded inside a Wayback URL
+            preceding = original[max(0, m.start() - 40):m.start()]
+            if "archive.org/web/" in preceding:
+                return old
             new = replacements[old]
             count[0] += 1
             if DRY_RUN and samples_shown + len(file_samples) < SAMPLE_COUNT:
