@@ -229,7 +229,7 @@ CDX_API                 = "https://web.archive.org/cdx/search/cdx"   # MUST be h
 WAYBACK_TIMEOUT         = 15   # normal runs: API responds in 5-7s on a slow day
 WAYBACK_TIMEOUT_RECHECK = 30   # recheck runs: known-slow URLs get more time
 WAYBACK_WORKERS         = 3    # conservative parallelism to stay polite to archive.org
-WAYBACK_RATE_LIMIT      = 60   # max API calls per 60-second window
+WAYBACK_RATE_LIMIT      = 30   # max API calls per 60-second window
 
 # Active timeout — bumped to WAYBACK_TIMEOUT_RECHECK in --recheck-errors mode
 _active_wayback_timeout = WAYBACK_TIMEOUT
