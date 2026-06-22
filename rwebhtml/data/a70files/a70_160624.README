@@ -1,0 +1,50 @@
+#  a70 version 16.06.24  by mph
+See changelog at bottom
+
+DISCLAIMER: 
+As the ALFALFA catalog is completed (in 2016) its dataset is revised, most notably to account for overlapping
+grids but also wherever we are able to make improvements. This dataset therefore supercedes the 40% data
+release but itself will be superceded by datasets posted after this date (11 Nov 2015).
+
+Please address questions/comments/suggestions to Martha Haynes (haynes _At& astro.cornell.edu).
+
+    Column entries are:
+
+    Col  1     AGCnr      I6       Entry number in the AGC ("Arecibo General Catalog"), our internal database
+    Col  2     Name       A8       A common name from the NGC/IC/CGCG or other catalog (abbreviated to 8 characters)
+    Col  3     HIra       F11.6    Right ascension (J2000) of the centroid of the ALFALFA HI signal, in degrees
+    Col  4     HIdec      F11.6    Declination (J2000) of the centroid of the ALFALFA HI signal, in degrees
+    Col  5     OCra       F11.6    Right ascension (J2000) of the assigned optical counterpart, in degrees, where applicable
+    Col  6     OCdeg      F11.6    Declination (J2000) of the assigned optical counterpart, in degrees, where applicable
+    Col  7     v21        I5       Heliocentric velocity of the HI line emission, in km/s
+    Col  8     w50        I3       Width of the HI line measured at 50% of the peak flux, in km/s
+    Col  9     werr       I3       Error on w50, in km/s
+    Col 10     flux       F6.2     HI line flux density, in Jy-km/s
+    Col 11     fluxerr    F4.2     Error on flux, in Jy-km/s
+    Col 12     snratio    F5.1     Signal-to-noise ratio of HI signal
+    Col 13     rms        F5.2     RMS noise at 10 km/s, in mJy
+    Col 14     dist       F6.1     Distance in Mpc as assigned
+    Col 15     loghimass  F5.2     Logarithm of the HI mass in solar units
+    Col 16     detcode    I1       Code for HI line detection status
+                                   Code 1 = High signal to noise ratio, extragalactic source
+                                   Code 2 = Lower signal to noise ratio HI signal coincident with optical counterpart
+                                            of unknown redshift
+                                   Code 9 = High signal to noise ratio source with no optical counterpart and
+                                            likely Galactic high velocity cloud
+
+Notes:  
+    -- The AGC number refers both to the location of optical counterpart (where applicable) and the properties of 
+       the HI emission.
+    -- The resolution of the ALFA receiver is 3.3 x 3.8 arcmin. The HI centroid position is accurate only to about
+       18" in the median, and depends on the signal-to-noise ratio and the source extent (particularly relevant
+       for the high velocity clouds and the largest galaxies).
+    -- Distances are assigned using a combination of primary distance indicators, assignments to known groups and
+       clusters, a local flow model or the CMB reference frame.
+ 
+The columns are labelled accordingly in the first line of the CSV file
+AGCNr,Name,HIra,HIdec,OCra,OCdec,v21,w50,werr,flux,fluxerr,snratio,rms,dist,loghimass,detcode
+
+
+CHANGE LOG
+16.06.24    Found incorrect AGC assignment:  123324 should be 124324    fixed; mh
+            Found incorrect AGC assignment:  123594 should be 124954    fixed; mh

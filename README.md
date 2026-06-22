@@ -29,6 +29,21 @@ Converts the original PHP source tree (from a local copy of the rweb archive) in
 
 Run with `DRY_RUN = True` (the default) to preview actions, then set `DRY_RUN = False` to write files.
 
+**Phase 1b — `fix_cornell_links.py`**
+
+Rewrites all `http://egg.astro.cornell.edu/alfalfa/PATH` links in `rwebhtml/` and `aweb/` HTML files:
+- Path exists in `rwebhtml/` → relative link
+- Path found in `drive_url_map.json` → Google Drive URL
+- Neither → original Cornell URL left unchanged (logged)
+
+**Phase 1c — `fix_naic_links.py`**
+
+Rewrites all `http://www.naic.edu/~a2010/PATH` (and `%7Ea2010` URL-encoded variant) links in `aweb/` and `rwebhtml/` HTML files:
+- Path exists in `aweb/` → relative link (computed per source file, works across directories)
+- Path not found → original NAIC URL left unchanged (logged)
+
+Other NAIC URLs (e.g. `alfa.naic.edu`, `~cima`, `~phil`) are not touched by this script.
+
 **Phase 2 — `gdrive_sort.py`**
 
 Trims `rwebhtml/` to fit within GitHub's size limits and rewrites links to point to Google Drive:
@@ -43,6 +58,28 @@ Again, run with `DRY_RUN = True` to preview, then `DRY_RUN = False` to apply.
 **Utility — `test_drive.py`**
 
 A small helper script for verifying Google Drive API connectivity and OAuth credentials before running `gdrive_sort.py`. Run it first if you're setting up credentials on a new machine.
+
+**Link checker — `check_wayback.py`**
+
+Scans all HTML files in the repo for external links, checks whether each is currently live, and for dead links checks the Wayback Machine for an archived snapshot. Output is saved to `wayback_results.tsv`.
+
+```
+python check_wayback.py                    # scan all external URLs
+python check_wayback.py --naic-only        # NAIC URLs only
+python check_wayback.py --recheck-errors   # retry rows that previously errored (longer timeout)
+python check_wayback.py --recheck-wayback  # re-query Wayback for all DEAD+YES rows to get
+                                           # the most recent snapshot instead of oldest
+```
+
+The TSV has columns: `url | live | wayback | wayback_url | wayback_timestamp`. Runs can be interrupted and resumed — already-completed rows are skipped on re-run. If `--recheck-wayback` is interrupted mid-run, no data is lost (original snapshots are preserved in the TSV as a safety net). If any re-queries error out, the old snapshot is kept and the affected URLs are written to `wayback_fallbacks.txt`; re-running `--recheck-wayback` will retry only those.
+
+**Dead-link fixer — `fix_wayback_links.py`**
+
+Reads `wayback_results.tsv` and fixes broken links across all HTML files:
+- `DEAD + YES wayback` → URL replaced with the Wayback archive snapshot
+- `DEAD + NO wayback` → listed in `dead_links_report.txt` for manual review
+
+Run with `DRY_RUN = True` (the default) to preview replacements and generate the report, then set `DRY_RUN = False` to apply. Run `check_wayback.py --recheck-wayback` first to ensure snapshots point to the most recent archive rather than the oldest.
 
 ---
 
