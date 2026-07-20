@@ -207,7 +207,12 @@ body {
 }
 
 .statement:first-of-type {
-  margin-top: 0;
+  margin-top: -1rem;
+}
+
+/* Tighten the gap between the intro statements and the first card group */
+.statement + .card-group {
+  margin-top: 1.75rem;
 }
 
 
@@ -223,6 +228,22 @@ body {
 .split img {
   width: 100%;
   border-radius: 12px;
+}
+
+/* Tighter split spacing when nested inside a boxed section */
+.citation .split {
+  margin: 2rem auto 2.5rem;
+}
+
+.split-figure {
+  margin: 0;
+}
+
+.split-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.4;
 }
 
 @media (max-width: 900px) {
