@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caveats — ALFALFA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+<header class="site-header">
+  <nav class="top-nav">
+    <div class="nav-inner">
+      <div class="site-title">
+        <a href=index.html>ALFALFA Legacy</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="data.html">Data</a>
+        <a href="science.html">Science</a>
+        <a href="education.html">Education</a>
+        <a href="index.html#archive">Archives</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>The ALFALFA Legacy</h1>
+    </div>
+  </div>
+</header>
+
+
+<main class="content">
+
+  <h2>Important Caveats for Using ALFALFA Data</h2>
+
+  <section id="beam" class="citation">
+    <h3>The beam is big</h3>
+    <p>
+      The ALFA beam was approximately 3.3’ x 3.8’, which means that any additional sources within a few arcmin of any ALFALFA detection can potentially contribute to the observed HI flux, if they are also at a similar radial velocity (although in practice this is uncommon; Jones et al. 2015). The beam also has significant side lobes (approximately -15 dB for the central beam for ALFA; Giovanelli et al. 2005), which complicates the extraction of spatially extended sources. The ALFALFA source extraction process was optimized for point-like sources that are smaller than the beam and caution is advised for any sources larger than the beam (Hoffman et al. 2019).
+    </p>
+    <p>
+      Despite the large beam size, high signal-to-noise sources can be localized much more accurately than one beam diameter, typically to within 20”. The ALFALFA team also manually identified the optical counterpart (OC) source of each HI detection, wherever possible, based on the HI centroid, optical morphology, and prior redshifts (where they existed at the time). The OC coordinates are the most accurate coordinates available and are recommended for most use cases. However, users should note that these were assigned manually and on occasion involved subjective choices (e.g., when there were multiple potential OCs). A small number of ALFALFA sources are also not nearby galaxies, there are High Velocity Clouds (HVCs; Code 9 in the catalog) and OH megamasers. Although many of the former and a handful of the latter were identified in the ALFALFA catalog, it is possible that a small number may remain within the ~30,000 extragalactic sources.
+    </p>
+  </section>
+
+  <section id="bandwidth" class="citation">
+    <h3>Bandwidth matters (Finite frequency coverage of a spectral survey)</h3>
+    <p>
+      The ALFALFA survey is a spectral line survey. The frequency coverage was 1335-1435 MHz. The edge of the frequency coverage corresponds to an optical velocity of 18,000 km/s, or a distance of ~260 Mpc. HI sources further than this cannot be detected by ALFALFA.
+    </p>
+    <p>
+      In addition, within the frequency range of ALFALFA, human-produced radio frequency interference (RFI) also results in the (partial) loss of frequency (or redshift) windows within the ALFALFA bandwidth. Figure 2 of Haynes et al. 2018 shows these loss spectral ranges. Notably, velocities above 15,000 km/s are significantly impacted and should not be used for statistical studies.
+    </p>
+    <p>
+      Additionally, the Milky Way foreground makes it near impossible to detect extragalactic HI emission at very low velocities. The GALFA survey is optimized for Galactic studies of the HI in our own Milky Way.
+    </p>
+  </section>
+
+  <section id="completeness" class="citation">
+    <h3>Completeness and statistics</h3>
+    <p>
+      The completeness of the ALFALFA survey is a function of both the integrated flux and the velocity width (W50) of a source (Equations 4 &amp; 5 of Haynes et al. 2011). This is because the flux of a source with a narrow velocity width will be spread over fewer spectral channels than one with a broad profile, and will therefore have a higher peak flux density (for the same integrated flux). In more practical terms, for two identical spiral galaxies at the same distance, one face-on and one edge-on, the face-on galaxy will be much easier to detect in ALFALFA as it will have a much narrower spectral profile (as all of its rotational motion will be perpendicular to the line-of-sight).
+    </p>
+    <p>
+      The ALFALFA catalog (Haynes et al. 2018) contains two classes of extragalactic sources, Code 1s, high signal-to-noise (S/N &gt; 6.5) detections, and Code 2s, lower signal-to-noise (4.5 &lt; S/N &lt; 6.5) detections with matching prior redshifts from another survey. While Code 1s are confident detections based solely on the strength of their HI emission, without a prior matching redshift (at the time the survey was conducted) the Code 2s would not have been considered reliable detections. For this reason, statistical analyses of the ALFALFA sample, for which completeness is important, are generally advised to only use Code 1 sources and the corresponding completeness limit.
+    </p>
+    <p>
+      Even lower signal-to-noise (S/N &lt; 4.5) Code 3 sources were also cataloged by ALFALFA, but were never published, as follow-up observations indicated that these were invariably spurious detections. Although S/N = 4.5 may seem like a high threshold, remember that within all the ALFALFA data cubes combined there are approximately 10^8 pixels (not to mention regions of significant radio frequency interference), thus a relatively high threshold is needed to avoid spurious sources.
+    </p>
+  </section>
+
+  <section id="velocity-widths" class="citation">
+    <h3>Velocity widths</h3>
+    <p>
+      The ALFALFA velocity widths contain important information about the kinematics of the HI detections and are a powerful tool for understanding the galaxies. There are a few important things to note about the velocity widths.
+    </p>
+    <ul>
+      <li>
+        We strongly encourage using the W50 values, e.g., the velocity width measured at 50% of the peak flux, as this value is more robust, especially at lower S/N (Bicay &amp; Giovanelli 1986)
+      </li>
+      <li>
+        The provided velocity width values are corrected for instrumental broadening but not other factors, such as turbulence or relativistic broadening (expected to be small for the ALFALFA redshift range). Most importantly, they are the projected rotation of the galaxy with no inclination correction applied.
+      </li>
+      <li>
+        The channel spacing of the ALFALFA cubes is 24.4 kHz, which is 5.1 km/s (optical definition) at the rest frequency of HI and varies up to 5.5 km/s (optical definition) at the highest redshift of the cubes. Due to Hanning smoothing, the spectral resolution is a factor of 2 worse, varying from 10 to 11 km/s across the ALFALFA velocity range.
+      </li>
+      <li>
+        Relating the HI velocity width to other kinematic tracers is not necessarily straightforward. Lelli et al. 2019 provide statistical corrections for converting a velocity width to the flat rotation of a galaxy, noting that their velocity width definitions do differ slightly from ALFALFA.
+      </li>
+    </ul>
+  </section>
+
+  <section id="two-halves" class="citation">
+    <h3>A survey of two halves</h3>
+    <p>
+      The ALFALFA survey consists of two disjoint footprints: the “spring” sky (7.5h &lt; R.A. &lt; 16.5h) and the “fall” sky (22h &lt; R.A. &lt; 3h). These two parts of the ALFALFA survey are very different. The spring sky is dominated by the presence of the Virgo Cluster, while the fall sky has the Local Void. This can be seen, for example, in the different low-mass slopes of the HI mass function between the spring and fall skies (Jones et al. 2017).
+    </p>
+    <p>
+      The multi-wavelength coverage available at the time of ALFALFA also varied significantly between the two survey regions. Notably, SDSS spectroscopic redshifts were available in the spring sky, but optical spectroscopic redshifts in the fall sky were limited. Practically, this means that many sources classified as code 2s in the spring sky (S/N &lt; 6.5 with a consistent optical redshift) would have been classified as code 4s in the fall sky (same low S/N but without a matching redshift) due to the lack of available optical redshifts. Code 2 sources are included in the ALFALFA catalogs, while code 4s are not; thus the overall ALFALFA catalog is impacted by this difference in multi-wavelength coverage.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    © ALFALFA Survey Legacy • Arecibo Observatory (1963–2020)
+  </div>
+</footer>
+
+</body>
+</html>
