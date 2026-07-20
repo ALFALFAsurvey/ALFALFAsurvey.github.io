@@ -25,7 +25,7 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="data.html">Data</a>
-        <a href="rwebhtml/pubs.html">Publications</a>
+        <a href="science.html">Science</a>
         <a href="education.html">Education</a>
         <a href="index.html#archive">Archives</a>
       </div>
@@ -47,44 +47,107 @@
   blind HI surveys ever conducted.
 </section> -->
 
-  <p>
-    The Arecibo Legacy Fast ALFA (ALFALFA) Survey was a state-of-the-art 21 cm 
+  <p class="statement">
+    The Arecibo Legacy Fast ALFA (ALFALFA) Survey was a state-of-the-art 21 cm
     neutral hydrogen survey that observed approximately a sixth of the sky with the former Arecibo radio telescope and detected
     more than 30,000 extragalactic sources.
+  </p>
+
+  <p class="statement">
     This website is dedicated to preserving the legacy of the ALFALFA survey through both its scientific and educational products.
   </p>
 
-  <section class="cards">
-    <a class="card" href="data.html">
-      <h2>Data Products & Documentation</h2>
-	<p> Catalogs, grids, spectra, and other data products.</p>
-    </a>
+  <div class="card-group">
+    <h2 class="group-title">Using ALFALFA</h2>
+    <p class="group-desc">
+      The ALFALFA Survey produced a rich set of data products, including catalogs of over 30,000 extragalactic sources and data cubes covering the non-galactic sky visible to Arecibo to cz~17,000 km/s. Users are strongly advised to consult the caveats before downloading or using the data.
+    </p>
 
-    <a class="card" href="#design">
-      <h2>Survey Design and Caveats</h2>
-      <p> Design, caveats, and recommendations for future surveys. </p>
-    </a>
+    <section class="cards">
+      <a class="card" href="data.html">
+        <h2>Data Products & Documentation</h2>
+        <p> Catalogs, grids, spectra, and other data products.</p>
+      </a>
 
-    <a class="card" href="#science">
-      <h2>Key Science Results</h2>
-      <p>Major scientific results from the ALFALFA survey.</p>
-    </a>
+      <a class="card" href="#design">
+        <h2>Survey Design & Caveats</h2>
+        <p> Design, caveats, and recommendations for future surveys. </p>
+      </a>
 
-    <a class="card" href="education.html">
-      <h2>Undergraduate Education</h2>
-      <p>Student research, training materials, and educational programs.</p>
-    </a>
+      <a class="card" href="#citeALFALFA">
+        <h2>Acknowledgements</h2>
+        <p>How to cite and acknowledge ALFALFA. </p>
+      </a>
+    </section>
+  </div>
 
-    <a class="card" href="#archive">
-      <h2>Archives</h2>
-      <p>Original ALFALFA web pages and long-term archival materials.</p>
-    </a>
+  <div class="card-group">
+    <h2 class="group-title">Learning about ALFALFA</h2>
+    <p class="group-desc">
+      The ALFALFA Survey was transformational to our understanding of extragalactic HI in the local universe. The links below summarize the scientific legacy of ALFALFA, as well as it's pioneering educational model that involved hundreds of undergraduate students and faculty from small colleges and universities.
+    </p>
 
-    <a class="card" href="#citeALFALFA">
-      <h2>Acknowledgements</h2>
-      <p>How to cite and acknowledge ALFALFA. </p>
-    </a>
-  </section>
+    <section class="cards">
+      <a class="card" href="science.html">
+        <h2>Key Science Results</h2>
+        <p>Major scientific results from the ALFALFA survey.</p>
+      </a>
+
+      <a class="card" href="education.html">
+        <h2>Undergraduate Education</h2>
+        <p>Student research, training materials, and educational programs.</p>
+      </a>
+
+      <a class="card" href="#archive">
+        <h2>Archives</h2>
+        <p>Original ALFALFA web pages and long-term archival materials.</p>
+      </a>
+    </section>
+  </div>
+
+<section id="caveats" class="citation">
+  <h2>Important Caveats for Using ALFALFA Data</h2>
+
+  <details class="caveat">
+    <summary>The beam is big</summary>
+    <div class="caveat-body">
+      <p>The ALFA beam was large (~3.3′ × 3.8′) with significant side lobes, so nearby sources at similar velocities can blend into a detection and extended sources are hard to extract cleanly. Positions are still reliable for high signal-to-noise detections, and published manually assigned optical-counterpart coordinates are recommended for most uses.</p>
+      <p><a href="caveats.html#beam">More details...</a></p>
+    </div>
+  </details>
+
+  <details class="caveat">
+    <summary>Bandwidth matters</summary>
+    <div class="caveat-body">
+      <p>ALFALFA only covered 1335–1435 MHz, so it cannot detect HI beyond ~18,000 km/s (~260 Mpc), and radio frequency interference removes parts of that range. Velocities above 15,000 km/s are strongly affected and should not be used for statistical studies.</p>
+      <p><a href="caveats.html#bandwidth">More details...</a></p>
+    </div>
+  </details>
+
+  <details class="caveat">
+    <summary>Completeness and statistics</summary>
+    <div class="caveat-body">
+      <p>Completeness depends on both a source's integrated flux and its velocity width, so narrow-profile (e.g. face-on) galaxies are easier to detect than broad-profile ones. For statistical work, use only the high-S/N Code 1 sources and their completeness limit, not the redshift-confirmed Code 2s.</p>
+      <p><a href="caveats.html#completeness">More details...</a></p>
+    </div>
+  </details>
+
+  <details class="caveat">
+    <summary>Velocity widths</summary>
+    <div class="caveat-body">
+      <p>The catalog's W50 velocity widths are robust and corrected for instrumental broadening, but carry no inclination correction and are limited by the ~10–11 km/s spectral resolution. Converting them to other kinematic measures such as flat rotation speed requires care and external calibrations.</p>
+      <p><a href="caveats.html#velocity-widths">More details...</a></p>
+    </div>
+  </details>
+
+  <details class="caveat">
+    <summary>A survey of two halves</summary>
+    <div class="caveat-body">
+      <p>ALFALFA covers two very different regions: the Virgo-dominated “spring” sky and the “fall” sky containing the Local Void. They also had unequal optical redshift coverage, so some low-S/N sources catalogued in the spring sky would have been excluded in the fall sky.</p>
+      <p><a href="caveats.html#two-halves">More details...</a></p>
+    </div>
+  </details>
+</section>
 
 <section id="science" class="citation">
 <h2> Major Scientific Achievements of the ALFALFA HI Survey </h2>
@@ -182,7 +245,10 @@ The survey led to over a <a href="https://scixplorer.org/public-libraries/3ZQifd
 <div class="split">
   <div>
     <h2>Survey Design and Details</h2>
-    <p>ALFALFA mapped nearly 7000 square degrees…</p>
+    <p>
+      ALFALFA was a blind 21 cm HI spectral-line survey carried out with the Arecibo telescope between 2005 and 2012, using nearly 5000 hours of time and a two-pass drift-scan technique with the seven-horn ALFA receiver. It mapped roughly 7000 square degrees of high-Galactic-latitude sky (about a fifth of the sky) over a 1345–1435 MHz bandpass, reaching recessional velocities up to ~17,500 km/s (D ~ 250 Mpc) at ~4 arcmin resolution and 2–4 mJy/beam sensitivity.
+    </p>
+    <p><a href="surveydesign.html">Read more about the survey design →</a></p>
   </div>
   <img src="survey_footprint.png" alt="Survey footprint">
 </div>
