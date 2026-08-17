@@ -113,8 +113,8 @@ Astronomical Journal or from our own <a href="http://egg.astro.cornell.edu/alfal
 data products</a> page. It is now standard practice in astronomy to provide
 data for use by others in standard formats such as "CSV", so we have done that. Note that this is
 the same file you used in the SH#2 activity.</p>
-<li> &nbsp If you haven't already, download the file in <a href="files/Haynes_datafile1.csv" target=new>CSV format</a> 
-or <a href="files/Haynes_datafile1.txt" target=new>ASCII text format</a> and then use
+<li> &nbsp If you haven't already, download the file in <a href="https://drive.google.com/file/d/1OeU7z0yQl0fj6b-JU8Ythpa91bMqtF3s/view?usp=sharing" target=new>CSV format</a> 
+or <a href="https://drive.google.com/file/d/1k3YIQI_T_KoEExPnZHlO4vr4w16XN49g/view?usp=sharing" target=new>ASCII text format</a> and then use
 TOPCAT to generate the plots. </p><br>
 <hr>
 
@@ -235,7 +235,9 @@ First, correct the colors for both galactic and internal extinction:<br>
 corr_modelmag_g = ModelMag_g - Gext_g - Iext_g <br>
 corr_modelmag_i = ModelMag_i - Gext_i - Iext_i <br>
 corr_PetroMag_i = PetroMag_i - Gext_i - Iext_i <br>
-corr_gminusi=corr_modelmag_g - corr_modelmag_i <br>AbsMag_i = corr_PetroMag_i + 5. - 5.0* log10 (distMpc*1000000.)<br>     
+corr_gminusi=corr_modelmag_g - corr_modelmag_i <br>
+AbsMag_i = corr_PetroMag_i + 5. - 5.0* log10 (distMpc*1000000.)
+<br>     
 -->
 
 <li> &nbsp Now, you are ready to make a color-magnitude diagram

@@ -17,3 +17,7 @@ drive_url_map_dryrun.json
 
 # Editor backups
 *~
+
+# Local session notes / planning (never commit)
+sessions/
+lukeplanning.txt
