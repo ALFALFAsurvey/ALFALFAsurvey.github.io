@@ -65,7 +65,7 @@
   </figure>
 
   <p>
-    The ALFALFA bandpass covered 1345-1435 MHz, which equates to the HI line being emitted by galaxies with recessional velocities of -2000 to +17500 km/s (z=0-0.058, or a distance of D ~ 250 Mpc; and accounting for blueshifted emission from galaxies in the Virgo cluster). The spectrum was sampled with 4096 channels, resulting in 5 km/s (=23 kHz) channels over the 100 MHz bandpass, and a spectral resolution of two channels (=10km/s or 46 kHz). As described below, the survey covered 7000 square degrees of Northern Hemisphere sky, producing a detection catalog and associated datacubes with an angular resolution (= beam FWHM) of 4 arcmin and a sensitivity of 2-4 mJy/beam.
+    The ALFALFA bandpass covered 1335-1435 MHz, which equates to the HI line being emitted by galaxies with recessional velocities of -2000 to +18,000 km/s (z~0-0.06, or a distance of approximately 250 Mpc; and accounting for blueshifted emission from galaxies in the Virgo cluster). The spectrum was sampled with 4096 channels, resulting in 5 km/s (=23 kHz) channels over the 100 MHz bandpass, and a spectral resolution of two channels (=10km/s or 46 kHz). As described below, the survey covered 7000 square degrees of Northern Hemisphere sky, producing a detection catalog and associated datacubes with an angular resolution (= beam FWHM) of 4 arcmin and a sensitivity of 2-4 mJy/beam.
   </p>
 
   <p>
@@ -73,11 +73,11 @@
   </p>
 
   <p>
-    In detail, ALFALFA employed a two pass drift scan technique, where for each pass, the telescope was pointed at a specific declination and right ascension (RA) starting point, and then (mostly) not moved. The rotation of the Earth causes the sky to “drift” overhead making scans at fixed (current epoch) declination and across RA. This technique is described in more detail in this page describing the <a href="https://alfalfasurvey.github.io/rwebhtml/ugrad/observingmode.htm">”ALFALFA observing mode”</a> and in <a href="https://ui.adsabs.harvard.edu/abs/2005AJ....130.2598G/abstract">Giovanelli et al. 2005</a>. The two-pass drift scan technique results in a total effective integration time of ~40 seconds, given the ALFA beam size of approximately 3 arcminutes. Full details of the ALFA beam and sensitivity are given in [section/ reference]. The data acquisition sequence was interrupted every 600 s to allow the injection of a calibration noise diode for 1 s and to make minor pointing corrections to ensure constant declination in J2000.0 coordinates; this process in practice took 4-7 seconds.
+    In detail, ALFALFA employed a two pass drift scan technique, where for each pass, the telescope was pointed at a specific declination and right ascension (RA) starting point, and then (mostly) not moved. The rotation of the Earth causes the sky to “drift” overhead making scans at fixed (current epoch) declination and across RA. This technique is described in more detail in this page describing the <a href="https://alfalfasurvey.github.io/rwebhtml/ugrad/observingmode.htm">”ALFALFA observing mode”</a> and in <a href="https://ui.adsabs.harvard.edu/abs/2005AJ....130.2598G/abstract">Giovanelli et al. 2005</a>. The two-pass drift scan technique results in a total effective integration time of ~40 seconds, given the ALFA beam size of approximately 3 arcminutes. Details of the ALFA beam and sensitivity are discussed on the <a href="caveats.html">caveats page</a>. The data acquisition sequence was interrupted every 600 s to allow the injection of a calibration noise diode for 1 s and to make minor pointing corrections to ensure constant declination in J2000.0 coordinates; this process in practice took 4-7 seconds.
   </p>
 
   <p>
-    Observations in the L-band require mitigation of strong radio frequency interference (RFI; used here to mean any non-cosmic signal), both transient and persistent. Each individual polarization/ beam spectral drift scan was run through a peak-finding RFI flagging routine and then examined by an expert who could accept or reject the pipelined flags and/or set additional ones. While laborious, this procedure of data flagging produced a spectral mask that maintains a record of flagged spectral pixels that can be downloaded as an ancillary data file, important for identifying RFI “holes” in the 21 cm line sky, as the spectrum at each grid point is associated with a spectral weight at each frequency/velocity point. These weights are given and discussed in detail in Haynes et al 2018, Martin et al. 2010, and Giovanelli et al. 2007.  [DATA LINKS].
+    Observations in the L-band require mitigation of strong radio frequency interference (RFI; used here to mean any non-cosmic signal), both transient and persistent. Each individual polarization/ beam spectral drift scan was run through a peak-finding RFI flagging routine and then examined by an expert who could accept or reject the pipelined flags and/or set additional ones. While laborious, this procedure of data flagging produced a spectral mask that maintains a record of flagged spectral pixels that can be downloaded as an ancillary data file, important for identifying RFI “holes” in the 21 cm line sky, as the spectrum at each grid point is associated with a spectral weight at each frequency/velocity point. These weights are given and discussed in detail in <a href="https://scixplorer.org/abs/2018ApJ...861...49H/abstract">Haynes et al 2018</a>, Martin et al. 2010, and Giovanelli et al. 2007. Weights can be accessed with the ALFALFA data through the <a href="data.html">data page</a>.
   </p>
 
   <p>
@@ -85,11 +85,11 @@
   </p>
 
   <p>
-    Upon acquisition of all of the drift scans covering a region of sky, all of the relevant spectra were combined to produce a 2.4 degree by 2.4 degree 3D spectral grid (full details of the process are given in Appendix A.2 of Haynes et al. 2018).
+    Upon acquisition of all of the drift scans covering a region of sky, all of the relevant spectra were combined to produce a 2.4 degree by 2.4 degree 3D spectral grid (full details of the process are given in Appendix A.2 of <a href="https://scixplorer.org/abs/2018ApJ...861...49H/abstract">Haynes et al. 2018</a>).
   </p>
 
   <p>
-    Full discussion of the data products is given on the data products page. This includes the catalog and its associated 1-d spectra and the data cubes, as well as relevant supporting documentation.
+    Full discussion of the data products is given on the <a href="data.html">data products page</a>. This includes the catalog and its associated 1-d spectra and the data cubes, as well as relevant supporting documentation.
   </p>
 
 </main>
