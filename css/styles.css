@@ -68,12 +68,23 @@ body {
   background: white;
 }
 
+/* The nav is a direct child of <body> (not nested inside .site-header) so that
+   its sticky containing block is the whole document -- that is what keeps it
+   pinned for the entire scroll rather than only for the height of the banner. */
 .top-nav {
   background: white;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+/* Height reserved for the pinned nav when jumping to an in-page anchor
+   (#science, #archive, #caveats, ...), so the target heading lands below the
+   nav bar instead of underneath it. Roughly .nav-inner's height: the 0.85rem
+   links plus its 0.75rem top and bottom padding, with a little breathing room. */
+[id] {
+  scroll-margin-top: 4rem;
 }
 
 .nav-inner {
